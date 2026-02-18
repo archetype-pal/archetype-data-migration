@@ -1,0 +1,55 @@
+%% New DB — Scribes (FK flow)
+%% Source: evidence/snapshots/2026-02-18/new_fk_edges_scribes.csv
+%% Purpose: show the core Scribes entities and the FK relationships they rely on.
+
+flowchart LR
+
+  %% ----------------------------
+  %% SCRIBES (core family)
+  %% ----------------------------
+  subgraph SCRIBES["Scribes (new DB)"]
+    direction LR
+    scribes_hand["scribes_hand"]
+    scribes_scribe["scribes_scribe"]
+    scribes_script["scribes_script"]
+    scribes_hand_item_part_images["scribes_hand_item_part_images"]
+  end
+
+  %% ----------------------------
+  %% CONTEXT (referenced families)
+  %% ----------------------------
+  subgraph CONTEXT["Referenced outside Scribes"]
+    direction LR
+    common_date["common_date"]
+    manuscripts_itempart["manuscripts_itempart"]
+    manuscripts_itemimage["manuscripts_itemimage"]
+    annotations_graph["annotations_graph"]
+  end
+
+  %% ----------------------------
+  %% FK edges (as per CSV)
+  %% ----------------------------
+
+  %% annotations_graph.hand_id → scribes_hand.id
+  annotations_graph -- "hand_id → id" --> scribes_hand
+
+  %% scribes_hand.date_id → common_date.id
+  scribes_hand -- "date_id → id" --> common_date
+
+  %% scribes_hand.item_part_id → manuscripts_itempart.id
+  scribes_hand -- "item_part_id → id" --> manuscripts_itempart
+
+  %% scribes_hand.scribe_id → scribes_scribe.id
+  scribes_hand -- "scribe_id → id" --> scribes_scribe
+
+  %% scribes_hand.script_id → scribes_script.id
+  scribes_hand -- "script_id → id" --> scribes_script
+
+  %% scribes_hand_item_part_images.hand_id → scribes_hand.id
+  scribes_hand_item_part_images -- "hand_id → id" --> scribes_hand
+
+  %% scribes_hand_item_part_images.itemimage_id → manuscripts_itemimage.id
+  scribes_hand_item_part_images -- "itemimage_id → id" --> manuscripts_itemimage
+
+  %% scribes_scribe.period_id → common_date.id
+  scribes_scribe -- "period_id → id" --> common_date
