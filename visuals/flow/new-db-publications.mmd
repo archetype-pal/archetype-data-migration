@@ -1,0 +1,38 @@
+flowchart LR
+
+%% ------------------------------------------------------------
+%% New DB: Publications family (FK edges)
+%% Source CSV:
+%% - evidence/snapshots/2026-02-18/new_fk_edges_publications.csv
+%% ------------------------------------------------------------
+
+subgraph PUBLICATIONS["Publications (new DB)"]
+  direction LR
+  %% Nodes will appear as edges are declared.
+end
+
+%% FK edges (fill from CSV)
+%% NOTE: If the CSV has different columns/names, we will adjust after showing 10 lines of it.
+
+%% -----------------------------
+%% Nodes
+%% -----------------------------
+
+publications_publication["publications_publication"]
+publications_comment["publications_comment"]
+publications_publication_keywords["publications_publication_keywords"]
+publications_tagulous_publication_keywords["publications_tagulous_publication_keywords"]
+publications_publication_similar_posts["publications_publication_similar_posts"]
+auth_user["auth_user"]
+
+%% -----------------------------
+%% Foreign-key edges (from CSV)
+%% -----------------------------
+
+publications_comment -- "post_id → id" --> publications_publication
+publications_publication -- "author_id → id" --> auth_user
+publications_publication_keywords -- "publication_id → id" --> publications_publication
+publications_publication_keywords -- "tagulous_publication_keywords_id → id" --> publications_tagulous_publication_keywords
+publications_publication_similar_posts -- "from_publication_id → id" --> publications_publication
+publications_publication_similar_posts -- "to_publication_id → id" --> publications_publication
+
