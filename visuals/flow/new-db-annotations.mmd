@@ -1,0 +1,50 @@
+%% New DB — Annotations (FK flow)
+%% Source: evidence/snapshots/2026-02-18/new_fk_edges_annotations.csv
+%% Purpose: show annotations core entities and their FK dependencies (symbols/scribes/manuscripts).
+
+flowchart LR
+
+  %% ----------------------------
+  %% ANNOTATIONS (core family)
+  %% ----------------------------
+  subgraph ANNOTATIONS["Annotations (new DB)"]
+    direction LR
+    annotations_graph["annotations_graph"]
+    annotations_graph_positions["annotations_graph_positions"]
+    annotations_graphcomponent["annotations_graphcomponent"]
+    annotations_graphcomponent_features["annotations_graphcomponent_features"]
+  end
+
+  %% ----------------------------
+  %% CONTEXT (referenced families)
+  %% ----------------------------
+  subgraph CONTEXT["Referenced outside Annotations"]
+    direction LR
+    symbols_structure_allograph["symbols_structure_allograph"]
+    symbols_structure_position["symbols_structure_position"]
+    symbols_structure_component["symbols_structure_component"]
+    symbols_structure_feature["symbols_structure_feature"]
+    scribes_hand["scribes_hand"]
+    manuscripts_itemimage["manuscripts_itemimage"]
+  end
+
+  %% ----------------------------
+  %% FK edges (as per CSV)
+  %% ----------------------------
+
+  %% annotations_graph.*
+  annotations_graph -- "allograph_id → id" --> symbols_structure_allograph
+  annotations_graph -- "hand_id → id" --> scribes_hand
+  annotations_graph -- "item_image_id → id" --> manuscripts_itemimage
+
+  %% annotations_graph_positions.*
+  annotations_graph_positions -- "graph_id → id" --> annotations_graph
+  annotations_graph_positions -- "position_id → id" --> symbols_structure_position
+
+  %% annotations_graphcomponent.*
+  annotations_graphcomponent -- "graph_id → id" --> annotations_graph
+  annotations_graphcomponent -- "component_id → id" --> symbols_structure_component
+
+  %% annotations_graphcomponent_features.*
+  annotations_graphcomponent_features -- "graphcomponent_id → id" --> annotations_graphcomponent
+  annotations_graphcomponent_features -- "feature_id → id" --> symbols_structure_feature
