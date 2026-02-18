@@ -1,0 +1,7 @@
+"src_table","src_column","ref_table","ref_column"
+"publications_comment","post_id","publications_publication","id"
+"publications_publication","author_id","auth_user","id"
+"publications_publication_keywords","publication_id","publications_publication","id"
+"publications_publication_keywords","tagulous_publication_keywords_id","publications_tagulous_publication_keywords","id"
+"publications_publication_similar_posts","from_publication_id","publications_publication","id"
+"publications_publication_similar_posts","to_publication_id","publications_publication","id"

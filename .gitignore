@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Env / secrets
+.env
+.env.*
+*.secret
+*.key
+*.pem
+
+# Temporary exports and local scratch
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Archives
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar

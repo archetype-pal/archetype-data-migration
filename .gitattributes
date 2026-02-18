@@ -1,0 +1,7 @@
+# Keep text files normalized to LF in the repo
+* text=auto eol=lf
+
+# Be explicit for CSVs
+*.csv text eol=lf
+*.md  text eol=lf
+*.mmd text eol=lf

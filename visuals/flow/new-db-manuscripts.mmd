@@ -1,0 +1,22 @@
+flowchart LR
+
+%% New DB — Manuscripts family (context view)
+%% Source: evidence/snapshots/2026-02-18/new_edges_manuscripts_context.csv
+%% Status: Provisional
+
+manuscripts_itemimage --> manuscripts_itempart
+manuscripts_itempart --> manuscripts_currentitem
+manuscripts_itempart --> manuscripts_historicalitem
+manuscripts_historicalitem --> common_date
+manuscripts_historicalitem --> manuscripts_itemformat
+manuscripts_historicalitemdescription --> manuscripts_historicalitem
+manuscripts_historicalitemdescription --> manuscripts_bibliographicsource
+manuscripts_cataloguenumber --> manuscripts_historicalitem
+manuscripts_cataloguenumber --> manuscripts_bibliographicsource
+manuscripts_currentitem --> manuscripts_repository
+
+%% Context edges touching manuscripts
+annotations_graph --> manuscripts_itemimage
+manuscripts_imagetext --> manuscripts_itemimage
+scribes_hand --> manuscripts_itempart
+scribes_hand_item_part_images --> manuscripts_itemimage
