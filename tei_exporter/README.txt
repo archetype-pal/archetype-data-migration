@@ -8,7 +8,7 @@ Requirements:
   lxml (install with: python3 -m pip install -r requirements.txt)
 
 Usage:
-  python3 export_tei.py --sql-dump /path/to/old_moa.sql --project-title "Models of Authority"
+  python3 export_tei.py --sql-dump /path/to/old_moa.sql
 
 Outputs:
   TEI XML files in ./tei_exports (or --output-dir)
