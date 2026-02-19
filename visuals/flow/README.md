@@ -2,7 +2,7 @@
 
 These Mermaid flowcharts visualise **foreign-key relationships** in the **new database**, grouped by entity family.
 
-## Diagrams (locked order)
+## Diagrams
 
 1. **Manuscripts** — `new-db-manuscripts.mmd`
 2. **Symbols** — `new-db-symbols.mmd`
