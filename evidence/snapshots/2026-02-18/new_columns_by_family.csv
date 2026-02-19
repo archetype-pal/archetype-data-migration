@@ -1,0 +1,198 @@
+"family_prefix","table_name","column_name","data_type","udt_name","is_nullable","column_default"
+"annotations","annotations_graph","id","bigint","int8","NO",NULL
+"annotations","annotations_graph","annotation","jsonb","jsonb","NO",NULL
+"annotations","annotations_graph","allograph_id","bigint","int8","NO",NULL
+"annotations","annotations_graph","hand_id","bigint","int8","NO",NULL
+"annotations","annotations_graph","item_image_id","bigint","int8","NO",NULL
+"annotations","annotations_graph","annotation_type","character varying","varchar","YES",NULL
+"annotations","annotations_graph_positions","id","bigint","int8","NO",NULL
+"annotations","annotations_graph_positions","graph_id","bigint","int8","NO",NULL
+"annotations","annotations_graph_positions","position_id","bigint","int8","NO",NULL
+"annotations","annotations_graphcomponent","id","bigint","int8","NO",NULL
+"annotations","annotations_graphcomponent","component_id","bigint","int8","NO",NULL
+"annotations","annotations_graphcomponent","graph_id","bigint","int8","NO",NULL
+"annotations","annotations_graphcomponent_features","id","bigint","int8","NO",NULL
+"annotations","annotations_graphcomponent_features","graphcomponent_id","bigint","int8","NO",NULL
+"annotations","annotations_graphcomponent_features","feature_id","bigint","int8","NO",NULL
+"auth","auth_group","id","integer","int4","NO",NULL
+"auth","auth_group","name","character varying","varchar","NO",NULL
+"auth","auth_group_permissions","id","bigint","int8","NO",NULL
+"auth","auth_group_permissions","group_id","integer","int4","NO",NULL
+"auth","auth_group_permissions","permission_id","integer","int4","NO",NULL
+"auth","auth_permission","id","integer","int4","NO",NULL
+"auth","auth_permission","name","character varying","varchar","NO",NULL
+"auth","auth_permission","content_type_id","integer","int4","NO",NULL
+"auth","auth_permission","codename","character varying","varchar","NO",NULL
+"auth","auth_user","id","integer","int4","NO",NULL
+"auth","auth_user","password","character varying","varchar","NO",NULL
+"auth","auth_user","last_login","timestamp with time zone","timestamptz","YES",NULL
+"auth","auth_user","is_superuser","boolean","bool","NO",NULL
+"auth","auth_user","username","character varying","varchar","NO",NULL
+"auth","auth_user","first_name","character varying","varchar","NO",NULL
+"auth","auth_user","last_name","character varying","varchar","NO",NULL
+"auth","auth_user","email","character varying","varchar","NO",NULL
+"auth","auth_user","is_staff","boolean","bool","NO",NULL
+"auth","auth_user","is_active","boolean","bool","NO",NULL
+"auth","auth_user","date_joined","timestamp with time zone","timestamptz","NO",NULL
+"auth","auth_user_groups","id","bigint","int8","NO",NULL
+"auth","auth_user_groups","user_id","integer","int4","NO",NULL
+"auth","auth_user_groups","group_id","integer","int4","NO",NULL
+"auth","auth_user_user_permissions","id","bigint","int8","NO",NULL
+"auth","auth_user_user_permissions","user_id","integer","int4","NO",NULL
+"auth","auth_user_user_permissions","permission_id","integer","int4","NO",NULL
+"authtoken","authtoken_token","key","character varying","varchar","NO",NULL
+"authtoken","authtoken_token","created","timestamp with time zone","timestamptz","NO",NULL
+"authtoken","authtoken_token","user_id","integer","int4","NO",NULL
+"common","common_date","id","bigint","int8","NO",NULL
+"common","common_date","date","character varying","varchar","NO",NULL
+"common","common_date","min_weight","integer","int4","NO",NULL
+"common","common_date","max_weight","integer","int4","NO",NULL
+"django","django_admin_log","id","integer","int4","NO",NULL
+"django","django_admin_log","action_time","timestamp with time zone","timestamptz","NO",NULL
+"django","django_admin_log","object_id","text","text","YES",NULL
+"django","django_admin_log","object_repr","character varying","varchar","NO",NULL
+"django","django_admin_log","action_flag","smallint","int2","NO",NULL
+"django","django_admin_log","change_message","text","text","NO",NULL
+"django","django_admin_log","content_type_id","integer","int4","YES",NULL
+"django","django_admin_log","user_id","integer","int4","NO",NULL
+"django","django_content_type","id","integer","int4","NO",NULL
+"django","django_content_type","app_label","character varying","varchar","NO",NULL
+"django","django_content_type","model","character varying","varchar","NO",NULL
+"django","django_migrations","id","bigint","int8","NO",NULL
+"django","django_migrations","app","character varying","varchar","NO",NULL
+"django","django_migrations","name","character varying","varchar","NO",NULL
+"django","django_migrations","applied","timestamp with time zone","timestamptz","NO",NULL
+"django","django_session","session_key","character varying","varchar","NO",NULL
+"django","django_session","session_data","text","text","NO",NULL
+"django","django_session","expire_date","timestamp with time zone","timestamptz","NO",NULL
+"manuscripts","manuscripts_bibliographicsource","id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_bibliographicsource","name","character varying","varchar","NO",NULL
+"manuscripts","manuscripts_bibliographicsource","label","character varying","varchar","NO",NULL
+"manuscripts","manuscripts_cataloguenumber","id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_cataloguenumber","number","character varying","varchar","NO",NULL
+"manuscripts","manuscripts_cataloguenumber","url","character varying","varchar","YES",NULL
+"manuscripts","manuscripts_cataloguenumber","historical_item_id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_cataloguenumber","catalogue_id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_currentitem","id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_currentitem","description","text","text","YES",NULL
+"manuscripts","manuscripts_currentitem","shelfmark","character varying","varchar","NO",NULL
+"manuscripts","manuscripts_currentitem","repository_id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_historicalitem","id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_historicalitem","type","character varying","varchar","NO",NULL
+"manuscripts","manuscripts_historicalitem","language","character varying","varchar","YES",NULL
+"manuscripts","manuscripts_historicalitem","hair_type","character varying","varchar","YES",NULL
+"manuscripts","manuscripts_historicalitem","format_id","bigint","int8","YES",NULL
+"manuscripts","manuscripts_historicalitem","date_id","bigint","int8","YES",NULL
+"manuscripts","manuscripts_historicalitemdescription","id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_historicalitemdescription","content","text","text","NO",NULL
+"manuscripts","manuscripts_historicalitemdescription","historical_item_id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_historicalitemdescription","source_id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_imagetext","id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_imagetext","content","text","text","NO",NULL
+"manuscripts","manuscripts_imagetext","type","character varying","varchar","NO",NULL
+"manuscripts","manuscripts_imagetext","status","character varying","varchar","NO",NULL
+"manuscripts","manuscripts_imagetext","item_image_id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_imagetext","language","character varying","varchar","NO",NULL
+"manuscripts","manuscripts_imagetext","created","timestamp with time zone","timestamptz","NO",NULL
+"manuscripts","manuscripts_imagetext","modified","timestamp with time zone","timestamptz","NO",NULL
+"manuscripts","manuscripts_itemformat","id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_itemformat","name","character varying","varchar","NO",NULL
+"manuscripts","manuscripts_itemimage","id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_itemimage","image","character varying","varchar","NO",NULL
+"manuscripts","manuscripts_itemimage","locus","character varying","varchar","NO",NULL
+"manuscripts","manuscripts_itemimage","item_part_id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_itempart","id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_itempart","current_item_id","bigint","int8","YES",NULL
+"manuscripts","manuscripts_itempart","historical_item_id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_itempart","current_item_locus","character varying","varchar","NO",NULL
+"manuscripts","manuscripts_itempart","custom_label","character varying","varchar","NO",NULL
+"manuscripts","manuscripts_repository","id","bigint","int8","NO",NULL
+"manuscripts","manuscripts_repository","name","character varying","varchar","NO",NULL
+"manuscripts","manuscripts_repository","label","character varying","varchar","YES",NULL
+"manuscripts","manuscripts_repository","place","character varying","varchar","NO",NULL
+"manuscripts","manuscripts_repository","url","character varying","varchar","YES",NULL
+"manuscripts","manuscripts_repository","type","character varying","varchar","YES",NULL
+"publications","publications_carouselitem","id","bigint","int8","NO",NULL
+"publications","publications_carouselitem","ordering","integer","int4","NO",NULL
+"publications","publications_carouselitem","image","character varying","varchar","NO",NULL
+"publications","publications_carouselitem","title","character varying","varchar","NO",NULL
+"publications","publications_carouselitem","url","character varying","varchar","NO",NULL
+"publications","publications_comment","id","bigint","int8","NO",NULL
+"publications","publications_comment","content","text","text","NO",NULL
+"publications","publications_comment","author_name","character varying","varchar","NO",NULL
+"publications","publications_comment","author_email","character varying","varchar","NO",NULL
+"publications","publications_comment","author_website","character varying","varchar","YES",NULL
+"publications","publications_comment","is_approved","boolean","bool","NO",NULL
+"publications","publications_comment","created_at","timestamp with time zone","timestamptz","NO",NULL
+"publications","publications_comment","updated_at","timestamp with time zone","timestamptz","NO",NULL
+"publications","publications_comment","post_id","bigint","int8","NO",NULL
+"publications","publications_event","id","bigint","int8","NO",NULL
+"publications","publications_event","title","character varying","varchar","NO",NULL
+"publications","publications_event","slug","character varying","varchar","NO",NULL
+"publications","publications_event","content","text","text","NO",NULL
+"publications","publications_event","created_at","timestamp with time zone","timestamptz","NO",NULL
+"publications","publications_event","updated_at","timestamp with time zone","timestamptz","NO",NULL
+"publications","publications_publication","id","bigint","int8","NO",NULL
+"publications","publications_publication","title","character varying","varchar","NO",NULL
+"publications","publications_publication","slug","character varying","varchar","NO",NULL
+"publications","publications_publication","content","text","text","NO",NULL
+"publications","publications_publication","preview","text","text","NO",NULL
+"publications","publications_publication","status","character varying","varchar","NO",NULL
+"publications","publications_publication","is_blog_post","boolean","bool","NO",NULL
+"publications","publications_publication","is_news","boolean","bool","NO",NULL
+"publications","publications_publication","is_featured","boolean","bool","NO",NULL
+"publications","publications_publication","allow_comments","boolean","bool","NO",NULL
+"publications","publications_publication","published_at","timestamp with time zone","timestamptz","YES",NULL
+"publications","publications_publication","created_at","timestamp with time zone","timestamptz","NO",NULL
+"publications","publications_publication","updated_at","timestamp with time zone","timestamptz","NO",NULL
+"publications","publications_publication","author_id","integer","int4","NO",NULL
+"publications","publications_publication_keywords","id","bigint","int8","NO",NULL
+"publications","publications_publication_keywords","publication_id","bigint","int8","NO",NULL
+"publications","publications_publication_keywords","tagulous_publication_keywords_id","bigint","int8","NO",NULL
+"publications","publications_publication_similar_posts","id","bigint","int8","NO",NULL
+"publications","publications_publication_similar_posts","from_publication_id","bigint","int8","NO",NULL
+"publications","publications_publication_similar_posts","to_publication_id","bigint","int8","NO",NULL
+"publications","publications_tagulous_publication_keywords","id","bigint","int8","NO",NULL
+"publications","publications_tagulous_publication_keywords","name","character varying","varchar","NO",NULL
+"publications","publications_tagulous_publication_keywords","slug","character varying","varchar","NO",NULL
+"publications","publications_tagulous_publication_keywords","count","integer","int4","NO",NULL
+"publications","publications_tagulous_publication_keywords","protected","boolean","bool","NO",NULL
+"scribes","scribes_hand","id","bigint","int8","NO",NULL
+"scribes","scribes_hand","name","character varying","varchar","NO",NULL
+"scribes","scribes_hand","place","character varying","varchar","NO",NULL
+"scribes","scribes_hand","description","text","text","NO",NULL
+"scribes","scribes_hand","item_part_id","bigint","int8","NO",NULL
+"scribes","scribes_hand","scribe_id","bigint","int8","NO",NULL
+"scribes","scribes_hand","script_id","bigint","int8","YES",NULL
+"scribes","scribes_hand","date_id","bigint","int8","YES",NULL
+"scribes","scribes_hand_item_part_images","id","bigint","int8","NO",NULL
+"scribes","scribes_hand_item_part_images","hand_id","bigint","int8","NO",NULL
+"scribes","scribes_hand_item_part_images","itemimage_id","bigint","int8","NO",NULL
+"scribes","scribes_scribe","id","bigint","int8","NO",NULL
+"scribes","scribes_scribe","name","character varying","varchar","NO",NULL
+"scribes","scribes_scribe","scriptorium","character varying","varchar","NO",NULL
+"scribes","scribes_scribe","period_id","bigint","int8","YES",NULL
+"scribes","scribes_script","id","bigint","int8","NO",NULL
+"scribes","scribes_script","name","character varying","varchar","NO",NULL
+"symbols","symbols_structure_allograph","id","bigint","int8","NO",NULL
+"symbols","symbols_structure_allograph","name","character varying","varchar","NO",NULL
+"symbols","symbols_structure_allograph","character_id","bigint","int8","NO",NULL
+"symbols","symbols_structure_allographcomponent","id","bigint","int8","NO",NULL
+"symbols","symbols_structure_allographcomponent","allograph_id","bigint","int8","NO",NULL
+"symbols","symbols_structure_allographcomponent","component_id","bigint","int8","NO",NULL
+"symbols","symbols_structure_allographcomponentfeature","id","bigint","int8","NO",NULL
+"symbols","symbols_structure_allographcomponentfeature","set_by_default","boolean","bool","NO",NULL
+"symbols","symbols_structure_allographcomponentfeature","allograph_component_id","bigint","int8","NO",NULL
+"symbols","symbols_structure_allographcomponentfeature","feature_id","bigint","int8","NO",NULL
+"symbols","symbols_structure_character","id","bigint","int8","NO",NULL
+"symbols","symbols_structure_character","name","character varying","varchar","NO",NULL
+"symbols","symbols_structure_character","type","character varying","varchar","YES",NULL
+"symbols","symbols_structure_component","id","bigint","int8","NO",NULL
+"symbols","symbols_structure_component","name","character varying","varchar","NO",NULL
+"symbols","symbols_structure_component_features","id","bigint","int8","NO",NULL
+"symbols","symbols_structure_component_features","component_id","bigint","int8","NO",NULL
+"symbols","symbols_structure_component_features","feature_id","bigint","int8","NO",NULL
+"symbols","symbols_structure_feature","id","bigint","int8","NO",NULL
+"symbols","symbols_structure_feature","name","character varying","varchar","NO",NULL
+"symbols","symbols_structure_position","id","bigint","int8","NO",NULL
+"symbols","symbols_structure_position","name","character varying","varchar","NO",NULL
