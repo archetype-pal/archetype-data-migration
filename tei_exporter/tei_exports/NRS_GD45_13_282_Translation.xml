@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/282</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-30 13:23:39.733748+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/282</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church, Earl Duncan of Carrick sends Greeting:</seg> Y<seg type="diplomatic" subtype="disposition">ou all should know that, moved by divine goodness, I have given, and granted,
+                  and by this my charter made firm, to God and to the church of
+                  Blessed Mary in North Berwick, and in perpetuity to the nuns
+                  serving God there now and in the future, the church of
+                  Maybole, with the lands of the same church, and with the
+                  teinds and oblations and all revenues rightly belionging to
+                  it, to be held of me and my heirs in pure and perpetual alms,
+                  as freely and quietly, fully and honourably, as any earl or
+                  baron in the Kingdom of Scotland is able to give any church
+                  to an abbey freely, quietly, fully and honourably.</seg> <seg type="diplomatic" subtype="witnesses">With these witness, Hector and Alan, knights, and Gillespie the steward of
+                  Carrick, John the dean, Master Hugh, Somerled, Niall mac
+                  Gilla Winnin, David Sibbald, Master Alan, Alexander and Alan
+                  the earl’s sons, and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,32 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 578</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:12:05.565452+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 578</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">M . Rex Scot’ .</seg> Omnibus probis hominibus tocius terre sue . <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition">precipio ubicumque prior<lb/> de goldingaham . aut clientes sui  fugitiuos iuste ad goldingaham pertinentes
+                     inue<lb/>nire poterunt quatinus illos iuste habeant sine disturbacione . et vexatione . <seg type="diplomatic" subtype="injunction">et prohibeo<lb/> ne aliquis uestrum eos iniuste detineat super meam defensionem</seg> .</seg> <seg type="diplomatic" subtype="witnesses">T<ex>estibus</ex> Waltero Cancell<ex>ario</ex><lb/> Hug<ex>one</ex> de Morevill<ex>a</ex> .</seg> <seg type="diplomatic" subtype="dating">apud Berewic .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

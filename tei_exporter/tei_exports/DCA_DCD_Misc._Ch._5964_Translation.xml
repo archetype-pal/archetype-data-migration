@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 5964</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 21:10:50.691044+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5964</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all men who shall view or hear this writing, <seg type="diplomatic" subtype="intitulatio">Eustace of Newbiggin</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know me, all of you</seg>, <seg type="diplomatic" subtype="disposition">to have ratified the sale which William of Scremerston made to the lord prior, R<ex>ichard</ex>, and the convent of Coldingham, of all the lands which the same William had out
+                     of Robert of Prenderguest's gift and sale, in the toun and
+                     territory of Prenderguest. So that neither I nor anyone
+                     through me or for me in any earthly age should be able to
+                     sell the right or claim.</seg> <seg type="diplomatic" subtype="sealing">In testimony of this matter I have applied my seal to the present writing.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord William of Lindsay, the lord William of
+                  Mordington, Adam of Prenderguest, Adam son of John of Over
+                  Ayton, Bertram of Reston, Patrick Scott, Robert son of
+                  Gregory of Coldingham, Gilbert of Lumsdaine, David of
+                  Lumsdaine, William son of Waldef of Reston, Roger son of the
+                  grieve, and others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

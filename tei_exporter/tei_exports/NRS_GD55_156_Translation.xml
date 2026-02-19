@@ -1,0 +1,46 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/156</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:17:08.238768+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/156</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church present and to come, <seg type="diplomatic" subtype="intitulatio">Geoffrey son of Waldef of Lilliesleaf</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me to have given and granted and by this my charter to have made firm to God and
+                     to the Church of St Mary at Melrose and to the monks
+                     serving God in that place, in free and perpetual alms,
+                     three oxgangs of arable land in the territory of Whitton,
+                     just as they lie in one holding above ‘Raven’s Fen’ near
+                     the land of the same monks which they have from the
+                     donation of Patrick of Ryedale my lord. <seg type="diplomatic" subtype="holding">This whole land and whatever is comprised within the boundaries of the said land
+                     I have given to the said monks of Melrose free, quit and
+                     loosed from every earthly service and custom and secular
+                     exaction, so that they may have it, hold it and possess it
+                     for ever, as freely, fully and honourably as any alms can
+                     be quitely, fully and honourably held and possessed,</seg> and we shall discharge for ever all forinsec service towards our lords and all
+                     other things that can be exacted for any land.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Robert archdeacon of Glasgow; Patrick of Ryedale, my lord;
+                  Walter and Nicholas his sons; Richard, parson of Ancrum;
+                  Robert of Barnoldby; Adam of Whitton; William of Whitton;
+                  Adam of Chatto; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

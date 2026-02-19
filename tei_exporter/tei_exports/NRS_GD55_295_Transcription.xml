@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/295</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:35:03.477248+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/295</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="notification">Sciant omnes qui hoc scriptum viderint uel audierunt quod</seg> <seg type="diplomatic" subtype="intitulatio">ego isabel sponsa roberti . de . polloc</seg> <seg type="diplomatic" subtype="narration">In propria uoluntate constituta . de consensu eiusdem . R . uiri<lb/> mei et consilio patris mei Roberti croc . <seg type="diplomatic" subtype="disposition">dedi et concessi simoni de Lindesey ad perpetuam firmam maritagium meum que
+                     habeo in territorio de . Molle . scilicet<lb/> <supplied>Hun</supplied>gerig cum omnibus pertinenciis suis . et libertatibus et aisiamentis sicut eadem
+                        terra data fuit patri meo a domina chine . de molle . <seg type="diplomatic" subtype="holding">tenendum sibi et here<lb/><supplied>dibus</supplied> suis uel quibus eam assignare uoluerit . de me et heredibus meis libere et
+                           quiete . ab omni seruitio et exactione Reddendo inde
+                           annuatim decem<lb/> <supplied>soli</supplied>dos quinque silicet ad pentecosten et quinque ad festum sancti martini . et
+                           domine chine et heredibus suis pro me et heredibus
+                           meis unum nisum sor annuatim ad nun<lb/><supplied>dinas R</supplied>okesb’</seg>.</seg> et ad hanc conuentionem firmiter et fideliter tenendam pro me et heredibus meis
+                     ego isabel coram viris discretis tactis sacrosanctis
+                     iuraui quod si<lb/> <supplied>ego</supplied> et heredes mei . aliquo tempore contra scriptam conuencionem ire uoluerimus .
+                     nomine pene centum solidos . dicto . S . uel eius
+                     atornatis persoluemus . prescripta conuentione in sua<lb/> ... manente</seg> . <seg type="diplomatic" subtype="sealing">et quia sigillum meum proprium non habui ad roborationem huius scriptum sigillum
+                  uiri mei et sigillum patris mei huic scripto apposui</seg><lb/> <seg type="diplomatic" subtype="witnesses">... <supplied>te</supplied>stibus Ioh<ex>ann</ex>e decano de Walle cluid . ph’. de perthet . alano . de nes . Will<ex>el</ex>mo filio . thoraldi . hug<ex>one</ex> Lurgot ada iuuene et aliis</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

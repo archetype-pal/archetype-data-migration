@@ -1,0 +1,50 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/281</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-30 12:43:08.221762+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/281</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church, Thomas of Lundin sends Greeting:</seg> <seg type="diplomatic" subtype="disposition">Let present and future know that I have given and granted and by this my charter
+                  made firm to God and to the church of Blessed Mary at North
+                  Berwick and to the monks serving God there, in free and pure
+                  and perpetual alms, twelve acres of land on the north side of
+                  Aithernie. Futhermore, I have given and granted to the same
+                  nuns the common pasture of my land at ... which descends to
+                  the head of the ‘Cnoc derenin’ on the west side; and that
+                  they may take fuel for their own use and what shall be of use
+                  to them within the same bounds. I have given, moreover, and
+                  granted and quitclaimed for myself and my heirs in perpetuity
+                  the blanch land that was in dispute, between Pratis and
+                  Montrave, and towards the east as the high road falls into
+                  the valley. For them and their successors to hold of me and
+                  my heirs in free and pure and perpetual alms, as freely and
+                  quietly, fully and honourably, as any alms is freely,
+                  quietly, fully and honourably held and possessed of any baron
+                  in the kingdom of the Scots.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, Earl Malcolm of Fife, Ness of Ramsay, Alexander Uviet, Thomas of
+                  Kilmaron, William of Wyville, Alexander of Blair, Alexander
+                  of Ceres, Richard English, Walter and Alexander, chaplains,
+                  Hugh the clerk, David of Ayton, and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

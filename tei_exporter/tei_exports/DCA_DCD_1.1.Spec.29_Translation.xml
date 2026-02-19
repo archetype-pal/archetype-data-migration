@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD 1.1.Spec.29</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:44:43.349316+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD 1.1.Spec.29</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p> C H A R T E R</p> <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">B<ex>ertram</ex> the prior, and the monastic community of the Church of Durham</seg>, to their well-beloved brethren, the monks of Durham at Farne serving God and
+                     Saint Cuthbert now and and for ever in the future, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> us, prompted by charitable love and with the agreement of our chapter, to have
+                     given, granted, and by this our present charter to have
+                     made firm, to God and Saint Cuthbert, and to the monastery
+                     of Farne and to you who are serving God and Saint Cuthbert
+                     there now and for ever in the future, the entire teind of
+                     corn of our church at Old Cambus in everlasting alms and
+                     to support Christ’s poor, rendering thereupon annually to
+                     our almary one merk of silver, half at Pentecost and half
+                     at the feast of St Martin.</seg> <seg type="diplomatic" subtype="sealing">And so that this our donation remain authoritative and undisputed in times to
+                  come, we have strenghthened it by the application of the seal
+                  of our chapter.</seg></p></div>
+    </body>
+  </text>
+</TEI>

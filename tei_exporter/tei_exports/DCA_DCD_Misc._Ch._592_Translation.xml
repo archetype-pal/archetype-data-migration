@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 592</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:51:20.453865+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 592</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W<ex>illiam,</ex> by the grace of God king of the Scots,</seg> to all worthy men of his entire land, clerk and lay, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know</seg> me to have approved, and by this my charter to have made firm, the donation
+                     which David of Quixwood made to the hospital of Old Cambus
+                     and the lepers dwelling there of the half ploughgate of
+                     land in Old Cambus which Ralph the tanner held. <seg type="diplomatic" subtype="holding">To be held in free, pure, and perpetual alms, with all liberties and easements
+                     pertaining to the said land, as freely and quitly as the
+                     charter of the said David bears witness. Saving my
+                     service.</seg></seg> <seg type="diplomatic" subtype="witnesses">As witnesses: William del Bois, my chancellor; Walter of Lindsay; John of
+                  Maxwell; Walter Comyn; David of Hastings.</seg> <seg type="diplomatic" subtype="dating">At Jedburgh on the 16th day of May.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 721</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:41:10.654657+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 721</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Ranulfus de Bonkil</seg> Omnibus videntibus uel audientibus has literas <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me<lb/> intuitu karitatis et ob amorem et reuerenciam beati Cuthberti gloriosi
+                     confessoris et pro animabus<lb/> patris mei et matris mee et pro salute anime mee et uxoris mee et omnium
+                     parentum meorum<lb/> Totum clamum quod habui et ius si quod habui uel habere potui in boscis et moris
+                     prioris et monachorum de Coldingham . Scilicet
+                     Brockesholes et Harewde et Denewde omnino eisdem<lb/> monachis sine aliquo renunciamento quietum clamasse . Et insuper sciatis quod
+                     ego et heredes mei<lb/> diuisas factas et perambulatas inter Coldingham et Bonkil Scilicet a
+                     Middeldeneshe<lb/>ued per Mereburnesheued versus occidentem usque ad Cratoketrestrete et inde per
+                     eandem<lb/> stratam usque ad Eiford predictis monachis in perpetuum pacifice tenebimus et
+                     conseruabimus .</seg><lb/> <seg type="diplomatic" subtype="witnesses">Hiis Testibus . Patricio filio Comitis . Patricio filio Ade . Roberto de
+                  Vpsetelingtona .<lb/> Dauid <persName><roleName>Marescallo</roleName></persName> Thoma de Gordona . Matheo de Normanuilla . Iohanne de<lb/> sancte michaele . Will<ex>elm</ex>o de Veteri ponte . Stephano de La Warderobe . Henrico de prender<lb/>gest . Will<ex>elm</ex>o de Witeslade Alano de Swintona . Patricio de Prestona . Symone filio<lb/> Thome . Waltero de Paxtona . Andrea de paxtona . Will<ex>elm</ex>o de Lumesdene . et multis aliis ;</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

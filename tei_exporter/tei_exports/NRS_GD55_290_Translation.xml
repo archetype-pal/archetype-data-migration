@@ -1,0 +1,51 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/290</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:22:42.600214+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/290</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Christ's faithful people who shall view or hear the present writing <seg type="diplomatic" subtype="intitulatio">Adam son of Adam of Durham</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Your whole community should know</seg> <seg type="diplomatic" subtype="disposition">me to have sold, for my own, my wife's and my childens' needs, to the monks of
+                  Melrose my whole land that I have in 'Thodholeside' and
+                  'Standestanerigis', which I held of the lord William of
+                  Ryedale and his heirs in West Lilliesleaf, situated between
+                  the land of the same monks which is called 'Clerk's Land' and
+                  the land of William son of Alexander, in respect of which
+                  payment has been fully made to us for twenty shillings. <seg type="diplomatic" subtype="holding">The said monks shall hold and possess for ever the whole said land as freely and
+                     quitely as they freely and quitely hold and possess any
+                     land in the kingdom of Scotland, with common easements of
+                     the said toun as they pertain to so much land, and the
+                     monks shall be free and immune from every private and
+                     external service, from every custom, exaction and demand
+                     which can occur in the land.</seg> <seg type="diplomatic" subtype="warrandice">And I and my heirs shall warrant and defend the said land with all its
+                     pertinents with everything that was mentioned before to
+                     the said monks against all people for ever, so that
+                     neither I nor my heirs shall alienate the residue of our
+                     land that we have in West Lilliesleaf, in order that
+                     through it we should be able to warrant the said land to
+                     the said monks if a cause arises.</seg></seg> <seg type="diplomatic" subtype="sealing">In testimony of this matter I have caused my seal for myself and my heirs to be
+                  applied to this writing.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses William son of Alexander, Alan Spenser, Alexander of Herdmanston,
+                  Simon the brewer, William son of Hugh, and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

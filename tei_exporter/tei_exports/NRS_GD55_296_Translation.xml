@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/296</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:33:15.903825+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/296</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all who shall view or hear this writing, <seg type="diplomatic" subtype="intitulatio">William de Vescy</seg> <seg type="diplomatic" subtype="salutation">sends greeting in the Lord</seg>.</seg> <seg type="diplomatic" subtype="notification">Know me</seg> <seg type="diplomatic" subtype="disposition">to have allowed and by this my present charter to have made firm the gift that
+                  Walter son of Alan has made to God and Blessed Mary at
+                  Melrose and the monks serving God in that place; that is of
+                  the whole land that the same Walter held of me in Mow, with
+                  all its pertinents, as the charter of Walter himself which
+                  they have thereupon more fully bears witness; <seg type="diplomatic" subtype="holding">for the same monks to have and to hold for ever, in free, pure, and everlasting
+                     alms, as freely and quitely as one can be given any alms
+                     freely or quitely within the <ex>regio</ex> of Scotia</seg>.</seg> <seg type="diplomatic" subtype="sealing">As testimony of this matter I have strengthened the present document by the
+                  application of my seal.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: William de Vescy my brother, John of Lexington, Rainer the
+                  German, knights; Simon of Horsley, Robert of Airth, Robert de
+                  Valle.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

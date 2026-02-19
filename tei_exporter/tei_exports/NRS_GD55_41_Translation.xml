@@ -1,0 +1,96 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/41</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.934399+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/41</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church, <seg type="diplomatic" subtype="intitulatio">Gervase Avenel, son of Robert Avenel</seg>, <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know me to have</seg> granted, and by this my charter to have made firm, to God and to the church of
+                     St Mary at Melrose, and to the monks in that place serving
+                     God, the donation of my father, to wit, the land of
+                     Eskdale, which my father donated to them as everlasting
+                     alms, and by his charter made firm, first by the agreement
+                     of the most pious King Malcolm, and afterwards by the
+                     noble King William, his brother; to wit, <ex>Tumloher </ex>and <ex>Weidkerroc</ex>, as free and pure and perpetual alms, for the soul of the glorious King David,
+                     who donated the same land to my father in return for his
+                     service, and for the soul of Earl Henry, and of the
+                     aforesaid King Malcolm, and for the soul of the aforesaid
+                     William, king of Scots, my lord, and of all their
+                     ancestors and successors, and for my own soul, and of my
+                     wife and all my successors. This land therefore, to wit, <ex>Thumloher</ex> and <ex>Weidkerroc</ex>, I granted to the aforesaid monks, and gave and made firm, and embodied in this
+                     my charter, <seg type="diplomatic" subtype="boundaries">by these boundaries: namely, as the two Esks meet, so upwards by the Black Esk
+                     as far as the first stream that descends from Hartside;
+                     and from that stream, upwards through the middle ridge of
+                     the mountains, between themselves and Robert de Brus, as
+                     the waters descend towards the monks themselves; and so
+                     between the forest of <ex>Thimeus</ex> and themselves, by the middle ridge of the mountains, as they descend towards
+                        themselves; similarly between the land of <ex>Bordewich</ex> and the monks themselves, by the middle ridge of the mountains, as the waters
+                        descend towards them; and so as far as the land of <ex>Hawich</ex>, and thence across by the middle ridge of the mountains, that is, between
+                        myself and the aforesaid monks, as the waters descend
+                        towards them; this ridge extends from above <ex>Harewude</ex>, and so descends to where the two Esks meet.</seg> This whole land and possession, just enumerated, and whatever is contained
+                     within these aforesaid boundaries, in wood and plain, in
+                     meadows and pastures, in waters and marshes, and in all
+                     usages and easements, I have granted and given and made
+                     firm to the aforesaid monks as pure and everlasting alms, <seg type="diplomatic" subtype="holding">to be held and possessed by everlasting right, free and quit from me and my
+                     heirs, and released from all services, and from every
+                     custom and secular exaction, just as freely and quietly,
+                     fully and honourably as any alms can be held and
+                     possessed.</seg> <seg type="diplomatic" subtype="warrandice">And if anyone should at any time wish to claim this aforesaid land, I and my
+                     heirs shall answer every claimant and sufficiently defend
+                     and warrant it for the aforesaid monks.</seg> <seg type="diplomatic" subtype="notification">This is also to be known:</seg> that I retain for myself and my heirs only deer and hind, swine and roebuck,
+                     within the aforenamed boundaries, without harm and injury
+                     of crops, meadows, hedges, livestock, animals, and all the
+                     other possessions of the same monks. Provided however that
+                     I and my heirs shall not have a forester within the
+                     described boundaries, nevertheless we shall have within
+                     the same boundaries robbers, and eyries of hawks and
+                     sparrow-hawks, and the guards to guard them, and
+                     trespassers, <seg type="diplomatic" subtype="notification">and it should be known that</seg> <seg type="diplomatic" subtype="holding">the aforesaid monks shall have and possess the whole aforesaid land, free and
+                     quit from me and my heirs, saving my aforesaid wild game,
+                     and the eyries of hawks and sparrow-hawks;</seg> and the monks shall make use of all this tenement according to their will and
+                     pleasure, just as it shall seem to them best and most
+                     useful to be of use to themselves, their brethren, their
+                     servants and livestock. With the exception that they shall
+                     not hunt there with packs of hounds and ropes, nor bring
+                     others there for hunting, nor set traps there, unless for
+                     catching wolves; and they shall not take the eyries of
+                     hawks and sparrow-hawks within these boundaries. <seg type="diplomatic" subtype="notification">It should be known in addition that</seg> the five merks that my father at one time received from them as ferm, and which
+                     he and my mother quit claimed before their death, these I
+                     likewise have quitclaimed and given to them in alms, and
+                     remitted for ever, and this same I have made firm by the
+                     present charter. And that this alms may be established and
+                     firm for ever and not able to be brought by any means to
+                     nought, my lord William, king of Scots, at my entreaty and
+                     request, has conceded and given the same alms, and made it
+                     firm by his own charter.</seg> <seg type="diplomatic" subtype="witnesses">Witnesses: Jocelin, bishop of Glasgow; Symeon, bishop of Dunblane; Archibald,
+                  abbot of Dunfermline; Osbert, abbot of Kelso; Richard, abbot
+                  of Jedburgh; Simon, archdeacon; Guy, prior of Kelso; Richard,
+                  dean Hassendean; Master Roger of Newport; Master John of
+                  Roxburgh; Master Adam of Hirsel; William the steward; … the
+                  parson of Lilliesleaf; Walter, clerk; Hugh, clerk; Walter
+                  Olifard; Walter Corbet; William de la Haye; Gervase, nephew
+                  of Robert Avenel; Glay his nephew; Robert son of Robert
+                  Avenel; … of the king of Scots.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

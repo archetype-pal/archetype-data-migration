@@ -1,0 +1,65 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/59</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:38.293357+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/59</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Sancte Matris Ecclesie filiis tam presentibus quam futuris . <seg type="diplomatic" subtype="intitulatio">Rob’ de Kent</seg> . <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me dedisse et hac presenti mea carta confirmasse deo et ecclesie Sancte<lb/> Marie de Melr’ . et monachis ibidem deo seruientibus . pro animabus dominorum
+                     meorum D<ex>aui</ex>D . et Malcolm . Regum Scotie . et Walteri filii alani . et pro salute domini
+                     mei . Will<ex>elm</ex>i . Re<lb/>gis Scott’. et alani . filii Walteri . domini mei et mea . et uxoris mea . et
+                     omnium parentum . et antecessorum et successorum . duas
+                     partes illius terre et pasture territorii de<lb/> Inuerwic . quam monachi de kelcho . tenebant de me . et henr<ex>ico</ex> . Sancti Martini . et Roallnd . genero Nichol’ de Costentin . scilicet quantum
+                     pertinet ad feudum meum <seg type="diplomatic" subtype="boundaries">in<lb/>fra easdem diuisas . uidelicet sicut bothkil descendit usque ad Fulhope . et de
+                        Fulhope . in transuersum usque ad Monimet et de monimet
+                        inde transuersum inter terram<lb/> de Inuerwic et terram monachorum de kelcho . sicut quondam Rad’ . de Kent .
+                        pater meus . et Nichol’ . de Costentin eandem terram
+                        coram multis aliis prefatis monachis de kelko<lb/> perambulauerunt . quando eam monachi ad firmam de eis ad statutum terminum
+                        susceperunt</seg> . Dedi autem predicte terre duas partes plenarie . scilicet quantum pertinet ad
+                     feudum<lb/> meum infra predictas diuisas . monachis de Melr<ex>os</ex> . saluo communi hominibus qui eo uti debent  in liberam . et puram . et
+                     perpetuam elemosinam . <seg type="diplomatic" subtype="holding">ad tenendum de me et heredibus me<lb/>is in perpetuum . reddendo mihi singulis annis in uita mea uiginti . solidos .
+                        post decessum uero meum heredibus meis annuatim . unam
+                        tantum marcham argenti de recognitione . Tene<lb/>bunt autem eam monachi de Melr<ex>os</ex> . liberam . et quietam . et solutam . de me et heredibus meis . pro predicta
+                        recognitione . ab omni seruitio . et de Inware . et de
+                        vtware . et de omnibus au<lb/>xiliis . et geldis . et assisis . et omni consuetudine . et exactione seculari 
+                        sicut ullam elemosinam liberius . quietius . plenius .
+                        et honorificencius tenent . et licebit ipsis monachis
+                        ubicumque uo<lb/>luerint in parte sua . infra predictas diuisas illius terre . sibi et aueriis
+                        suis edificare . et uti eadem terra omnibus Modis
+                        quibus melius et utilius uisum fuerit</seg> . Ipsi etiam<lb/> monachi accipent ad aisiamenta sua de bosco . et ad proprios usus . quantum
+                     uoluerint . et opus habuerint . ad edificandum . et
+                     ardendum sine dare et uendere . et de Brueria<lb/> similiter . <seg type="diplomatic" subtype="notification">et sciendum quod</seg> ipsi monachi dederunt mihi centum solidos . totam scilicet recognitionem vnquam
+                     annorum tempore <supplied>quo hec donatio me facta est</supplied><lb/> ... possidendum . quam monachi de kelcho adhuc eam tenebant . Vnde cum monachi
+                     de kelcho post quinquennium . id est terminum suum ...<lb/> <supplied>monachi de Melr<ex>os</ex></supplied> intrauerunt ad possessionem  ipsi monachi de Mel<ex>ros</ex> . omnino quiete erunt de recognitione primorum quinque annorum . <seg type="diplomatic" subtype="warrandice">et ego et heredes mei warantizabimus eis eandem do<lb/>nationem nostram . et adquietabuimus de forensi seruitio . et omni terreno
+                        seruitio . uersus dominum Regem . et omnes alios
+                        dominos nostros  in perpetuum . et si forte contigerit
+                        quod ego uel heredes<lb/> mei propter uiolentiam domini nostri hanc donationem monachis warantizare non
+                        potuerimus quod absit  monachi illam carrucatam terre
+                        et pasturam qua tenent de me in ter<lb/>ritorio de Inuerwic  habebunt ultra . decem . annos qui continentur in
+                        cyrographo de eadem terra inter nos facto . donec
+                        centum solidos . fuerint persoluti . sicut manu mea
+                        affidaui . ita<lb/> quod singulis annis cadent due Marce .</seg> <seg type="diplomatic" subtype="notification">et sciendum quod</seg> hanc donationem feci ecclesie de Melr<ex>os</ex> . cum meipso . ita quod monachi concesserunt mihi cimiterium suum . et seruitium<lb/> monachi in decessu meo . et si ita libere et expeditus fuero . ut ante et uelim
+                     . et possim meipsum reddere  monachi me suscipient .</seg> <seg type="diplomatic" subtype="witnesses">His testibus Will<ex>elmo</ex> de Morev’ constabular<ex>io</ex> Regis . henr<ex>ico</ex> de Sancto ... Alano de Thirlestain . Petro . de la hage . Ric<ex>ardo</ex> le Walays . Thoma de hob</seg> .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Cotton Ch. xv.21</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:50:42.252786+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xv.21</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio"><persName>M</persName> Rex Scotie</seg> Ep<ex>iscop</ex>is . Abbatibus . Iusticiis . Comitibus . Uicecomitibus . Baronibus . Ministris .<lb/> et omnibus probis hominibus totius regni sui et Honoris de Huntedune Clericis et
+                     laicis .<lb/> <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> . <seg type="diplomatic" subtype="notification">Sciant tam posteri quam presentes</seg> <seg type="diplomatic" subtype="disposition">me dedisse et concessisse . et per hanc meam cartam confir<lb/>masse Deo et Sancte MARIE et monachis ordinis Cistercii qui sunt de domo de
+                     Sartis . inperpetuam<lb/> elemosinam ad abbatiam construendam Pro salute anime mee et antecessorum et
+                     successorum<lb/> meorum totam Saltreiam cum omnibus pertinentiis suis in bosco et in Plano . in
+                     Pratis et aquis .<lb/> et Pasturis et Mariscis . et omnibus aliis rebus sicut eam tenuit bone memorie <persName>d<ex>aui</ex>d</persName> rex a<lb/>uus meus . et sicut iam michi reddidit <persName>Henricus</persName> rex Anglie cum aliis rectis meis de Hunte<lb/>dune . <seg type="diplomatic" subtype="holding">Quare uolo et firmiter precipio ut predicti monachi eam habeant et teneant<lb/> de me et de heredibus meis sicut meam propriam elemosinam bene et in pace et
+                        honori<lb/>fice et quiete . et libere ab omni exactione temporali et seruitio sicut alii
+                        monachi eiusdem<lb/> ordinis in regno meo elemosinas suas liberius et quietius habent et tenent</seg> .</seg> <seg type="diplomatic" subtype="witnesses">HIS<lb/> testibus <persName>Herberto</persName> episcopo Glasc’ . <persName>Waldeuo</persName> abbate de Malros . <persName>Ernaldo</persName> abbate de Ruch’b’.<lb/> <persName>Osberto</persName> abbate de Ieddewrd’ . <persName>Waltero</persName> cancell<ex>ari</ex>o . <persName>Adam</persName> capellano de Roch’b’ . <persName>Nicholao</persName><lb/> clerico . <persName>Will<ex>elm</ex>o</persName> fratre meo . <persName>Waltero</persName> filio <persName>Alani</persName> . <persName>Ricardo</persName> de Moreuilla . <persName>Rand’</persName> . de<lb/> Sulis . <persName>Will<ex>el</ex>mo</persName> de Moreuilla . <persName>Will<ex>el</ex>mo</persName> de Sumeruilla . <persName>Liolfo</persName> filio <persName>Maccus</persName> . <persName>Or<lb/>mo</persName> filio <persName>Eilaui</persName> . <persName>D<ex>aui</ex>D olifard</persName> . <persName>Roberto Freb<ex>ern</ex></persName> . <persName>Dauid</persName> de Boeuilla . <persName>H .</persName> de perci .</seg><lb/> Apud Rochesburd’;</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NLS Adv. MS 15.1.18, no. 12</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-01-30 04:44:05.635123+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 12</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Robertus dei gr<ex>ati</ex>a humilis minister ecclesie sancti Andree</seg> . uniuersis sancte matris ecclesie filiis <seg type="diplomatic" subtype="salutation">salutem</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Innotescat tam posteris quam presentibus</seg> <lb/> nos dedisse &amp; in liberam elemosinam concessisse deo &amp; ecclesie sancti Andree &amp;
+                     canonicis ibi deo seruientibus kininmuned cum toft de <lb/> Kilrimund &amp; cum omnibus aliis appendiciis suis . <seg type="diplomatic" subtype="holding"><seg type="diplomatic" subtype="injunction">Quapropter uolumus &amp; precipimus quatinus ipsi hanc elemosinam ita <lb/> libere . &amp; honorifice teneant ut decet elemosinam teneri</seg> .</seg></seg> <seg type="diplomatic" subtype="malediction">Et si quis de hac elemosina iniuriam ecclesie sancti ANDREE &amp; pre<lb/>dictis fratribus intulerit  uinculo anathematis constringatur . nisi digne
+                     satis fecerit .</seg> <seg type="diplomatic" subtype="witnesses">T . Herb<ex>er</ex>to episcopo <span data-dpt="place" data-dpt-cat="chars" data-dpt-type="name">Glasguensi</span> . Will<ex>e</ex>l<ex>m</ex>o <lb/> episcopo MVR’ . Arnaldo abbate de Chelc’ . Gaufrido abbate . de Dunf’ . Will<ex>elm</ex>o Abbate de Sancta Cruce . Ysaac abbate de striuel’ . Matheo archidiacono . <persName>Thor</persName> archidiacono . Aiulfo decano . Nich<ex>olai</ex>o clerico regis . Will<ex>elm</ex>o capellano episcopi Magistro ANDREA . Magistro herb<ex>er</ex>to . Ioh<ex>ann</ex>e nepote episcopi . Radulfo nepote episcopi .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,50 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/247</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 09:35:34.111333+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/247</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p>C Y R O G R A P H</p> <p><seg type="diplomatic" subtype="narration">This is the agreement made between the lord abbot, W., and the convent of
+                  Holyrood in Edinburgh on the one side and Walter the Master,
+                  and the brethren of Torphichen on the other side, concerning
+                  the dispute which arose between them and was aired for a long
+                  while before judges delegate, over the teinds and revenues
+                  from Ogilface, that the aforesaid abbot and convent, with the
+                  consent and authority of the judges delegate, in the presence
+                  of the lord William del Bois, chancellor of the lord king,
+                  and other judicious men, for the sake of good peace, granted
+                  to the aforesaid brethen all the teinds and ecclesiastical
+                  revenues that they themselves used to have and were
+                  accustomed to receive from the land of Ogilface. The
+                  aforesaid brethren, however, shall hold and in perpetuity
+                  possess the aforenamed teinds freely and quietly, fully and
+                  honourably, by rendering thereupon to the abbot and convent
+                  of Holyrood in Edinburgh each year four merks of silver, two
+                  at Pentecost and two at the feast of Saint Martin.</seg> <seg type="diplomatic" subtype="sealing">In order that this agreement remain sure and unbroken in perpetuity the seals of
+                  the judges delegate of the aforesaid case and the chapter of
+                  the convent of St Andrews and the chapter of the hospital of
+                  London [Clerkenwell?] are set to the present document in
+                  testimony and confirmation of this agreement lest it could be
+                  revoked as being invalid.</seg></p></div>
+    </body>
+  </text>
+</TEI>

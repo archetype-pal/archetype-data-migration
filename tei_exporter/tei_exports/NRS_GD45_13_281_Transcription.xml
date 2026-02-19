@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/281</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-30 12:43:05.532608+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/281</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Vniuersis sancte Matris ecclesie filiis . Thomas de Lundin salutem .</seg> <seg type="diplomatic" subtype="disposition">Sciant presentes ⁊ futuri me dedisse ⁊<lb/> concessisse ⁊ Hac carta me confirmasse deo ⁊ ecclesie beate Marie de Nortberwic
+                     ⁊ Moniablibus ibidem<lb/> deo seruientibus in liberam ⁊ puram ⁊ perpetuam elemosinam duodecim Acras terre
+                     In Aquilon<lb/>ali parte de Adherenin . preterea dedi ⁊ concessi eidem Monialibus communem
+                     pasturam de terra mea ad ...[<ex>damaged</ex>]<lb/>cterum qui descendit ad capud de enoc derenin ex parte occidentali . Et ut
+                     capiant focale ad usus<lb/> suos ⁊ quod opus eis fuerit Infra easdem diuisas . Dedi Insuper ⁊ conccessi ⁊
+                     quietam clamaui de me<lb/> ⁊ Heredibus meis in perpetuum terram illam albam que fuit In contentatione Inter
+                     pratras ⁊ Math’riue .<lb/> ⁊ uersus orientem sicut magna uia cadit In uallem . Tenendas sibi ⁊
+                     successoribus suis de me<lb/> ⁊ heredibus meis In liberam ⁊ puram ⁊ perpetuam elemosinam adeo libere ⁊ quiete
+                     plenarie ⁊ hon<lb/>orifice sicut aliqua elemosina de aliquo barone in regno scot’ liberius quietius
+                     plenius ⁊ honorificen<lb/>tius tenetur ⁊ possidetur .</seg> <seg type="diplomatic" subtype="witnesses">Testibus Comite Malcolmo de fif . Nesso de Ramesia . Alexandro uuiet<lb/> Thomas de Kenmaron . Will<ex>elm</ex>o de Wiuilla . Alexand<ex>ro</ex> de blalre . Alexand<ex>ro</ex> de Sireis . Ricardo Anglico .<lb/> Waltero . ⁊ Alexand<ex>ro</ex> capellanis . Hugoni clerico . D<ex>aui</ex>D de Atune . ⁊ Multis Aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,71 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/197</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-30 13:59:30.024428+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/197</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte Matris ecclesie filiis <seg type="diplomatic" subtype="intitulatio">Rogerus Auenel filius Geruasii Auenel</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Sciatis</seg> <seg type="diplomatic" subtype="disposition">me concessisse et hac carta mea confirmasse deo et ecclesie Sancte Marie<lb/> de Melros et Monachis ibidem deo seruientibus donationem Roberti auenel aui mei
+                     . quam Geruasius auenel pater meus eis confirmauit .
+                     scilicet terram de eskedale quam<lb/> predictus Robertus auenel auus meus illis donauit in perpetuam elemosinam
+                     annuente piissimo Rege Malcolmo prius . et postea illustri
+                     Rege Will<ex>elm</ex>o fratre eius . scilicet<lb/> Tumlouher et Watkerroc in liberam . et puram . et perpetuam elemosinam . pro
+                     anima gloriosi Regis d<ex>aui</ex>d qui eandem terram donauerat eidem [auo] meo pro seruicio suo et pro anima<lb/> comitis Henrici et predicti Malcolmi Regis . et pro anima dicti Will<ex>elm</ex>i Regis et Alexandri filii Regis scottorum domini mei . et omnium antecessorum
+                     et successorum eius . et pro anima mea . et<lb/> omnium antecessorum et successorum meorum . Hanc itaque scilicet Tumlouher et
+                     Watkerroc concessi predictis Monachis et dedi et
+                     confirmaui et hac carta mea incartaui . <seg type="diplomatic" subtype="boundaries">per has diuisas . Vi<lb/>delicet sicut duo eskes conueniunt . et ita sursum per blac eske usque ad primum
+                        torrentem qui de Hertesfel descendit . et de illo
+                        torrente sursum per medium condos montium inter ipsos<lb/> et Robertum de brus sicut aque descendunt uersus ipsos Monachos . et ita inter
+                        forestam de timei et ipsos per medium condos montium
+                        sicut aque descendunt uersus ipsos . similiter inter
+                        ter<lb/>ram de borthwic et ipsos Monachos per medium condos montium sicut aque
+                        descendunt uersus ipsos . et ita usque ad terram de
+                        hawic . et inde in transuersum per medium condos<lb/> montium que est inter meipsum et predictos Monachos sicut aque descendunt uersus
+                        ipsos . que condos includit Harwde uersus Monachos . et
+                        ita se extendit ex orientali parte<lb/> de ipso harwde . et sic semper descendendo usque ubi duo eskes conueniunt</seg> . <seg type="diplomatic" subtype="holding">Totam autem hanc prenominatam terram et possessionem et quicquid continetur
+                     infra has predictas<lb/> diuisas in bosco et plano . in pratis et pasturis . in aquis et mariscis . et in
+                        omnibus utilitatibus et aisiamentis concessi et dedi et
+                        confirmaui antedictis Monachis in puram et perpetuam<lb/> elemosinam perpetuo iure tenendam et possidendam . liberam et quietam a me et
+                        heredibus meis et soluta ab omnibus seruitiis . et ab
+                        omni consuetudine et exaccione seculari . sicut
+                        liberius<lb/> et quietius plenius et honorificentius aliqua elemosina teneri et possideri
+                        potest .</seg> <seg type="diplomatic" subtype="warrandice">Et siquis forte aliquando hanc predictam terram calumniari uoluerit  ego et
+                     heredes mei omni calum<lb/>nianti respondebimus et sufficienter defendemus eam predictis monachis et
+                        warantizabimus .</seg> Hoc autem sciendum est que mihi et heredibus meis retineo tantum . ceruum et
+                     ceruam . porcum et<lb/> capreolum infra prenominatas diuisas  absque damno tamen et lesione segetum .
+                     pratorum . sepium . pecudum . animalium et omnium aliarum
+                     possessionum eorundem Monachorum . Ita tamen<lb/> quod ego et heredes mei forestarium non habebimus infra predicta diuisas .
+                     verumptamen habebimus infra easdem diuisas latrones et
+                     accipitrum et sperueriorum nidos et custodes<lb/> ad illos custodiendos et forisueias . <seg type="diplomatic" subtype="holding">Et sciendum quod monachi predicti habebunt et possidebunt totam predictam terram
+                     liberam et quietam a me et heredibus meis salua predicta<lb/> saluagina mea et nidis accipitrum et sperueriorum . et ipsi Monachi utentur omni
+                        hoc tenemento et facient logias ubicumque uoluerint pro
+                        libitu et uoluntate sua sicut melius et utilius<lb/> sibi et fratribus suis seruientibus et aueriis suis proficere uisum fuerit .</seg> Excepto quod non uenabuntur ibi cum motis et cordis . nec alios ibi ducent ad
+                     uenandum . nec pedicas ibi ponent nisi ad<lb/> capiendos lupos . neque accipeient infra has diuisas accipitrum et sperueriorum
+                     nidos . Preterea sciendum quod quinque marchas quas
+                     aliquando auus meus in firmam accepit ab eis . qua . . . <lb/>uxor eius necnon et pater meus illis ante mortem suam quietas clamauerit . has
+                     ego similiter quietas clamaui et eis in elemosinam dedi et
+                     in perpetuum remisi et hoc idem p<supplied>resenti car</supplied><lb/>ta confirmaui .</seg> Et ut hec elemosina stabilis et firma sit in perpetuum nec ullomodo possit in
+                  irritum duci dominus meus Will<ex>elm</ex>us Rex scottorum peticione et rogatu<lb/> eandem elemosinam eis concessit et dedit . et carta sua confirmauit . <seg type="diplomatic" subtype="witnesses">Testibus Ric’ Abbate de kelco . Waltero olif’ . Will<ex>elm</ex>o filio ioh<ex>ann</ex>is . Ioh<ex>ann</ex>e de Maccuswel . Bernardo de h<supplied>aud<lb/> Rogero</supplied> burnard . Gregorio de ruthirforde . Will<ex>elm</ex>o de cresseuil . Will<ex>elm</ex>o persona fratre meo . et aliis Multis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

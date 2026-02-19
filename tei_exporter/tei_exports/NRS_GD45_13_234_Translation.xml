@@ -1,0 +1,46 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/234</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 09:26:02.113494+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/234</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Christian, by the grace of God bishop of Candida Casa [Whithorn],</seg> to all sons of the most holy Mother Church, clerk and lay, present and future, <seg type="diplomatic" subtype="salutation">Greeting:</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">You should all be notified that</seg> I have granted, and by this my charter have made firm, to God and to the church
+                     of Holyrood in Edinburgh, and to the canons serving God
+                     there, the church of St Mary and St Bruoc of Dunrod, in
+                     free and perpetual alms with all its revenues and
+                     pertinents, reserving episcopal right, and the church of
+                     Twynholm, with all its revenues and pertinents. I also
+                     confirm by this same charter the donation of Fergus and
+                     his son Uhtred of the whole toun of Dunrod by its correct
+                     bounds, with all its rightful pertinents and revenues, and
+                     as their own charters the better and more fully bear
+                     witness.</seg> <seg type="diplomatic" subtype="witnesses">As witness, William abbot of Dundrennan, John the archdeacon, Gilbert the
+                  chaplain, James the parson of Troqueer, Robert the priest,
+                  son of Dolfin, Mac Raith of Spittal, Máel Bethad the bishop’s
+                  nephew, Walter his brother, Nicholas [and] James the bishop’s
+                  nephews, William of Cartmel, Gilbert the bishop’s steward,
+                  Bran son of Macgillegunnin, Arnold the doorward, Adam de Ele.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

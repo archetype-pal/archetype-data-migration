@@ -1,0 +1,44 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/213</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 16:05:09.761278+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/213</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all who shall see or hear these letters, as well present and to come, <seg type="diplomatic" subtype="intitulatio">John son of Waldef</seg> <seg type="diplomatic" subtype="salutation">sends greeting.</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know me</seg> to have granted and by this my charter to have made firm, to God and the church
+                     of St Mary at Melrose, and the monks in that place serving
+                     God, all donations, agreements, and grants which John of
+                     Methil has made to them regarding the land of Penshiel,
+                     with all its pertinents, and liberties and easements
+                     pertaining to the said land of Penshiel; <seg type="diplomatic" subtype="holding">for them to have and to hold for ever, of the said John of Metliil and his
+                     heirs, according to the tenor of the charters which the
+                     said monks have of the said John over the said land;</seg> saving the service to me and my heirs of the said John of Methil and his heirs,
+                     contained in my charter and the charters of my
+                     predecessors, which the said John has in respect of the
+                     said land.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord earl, Patrick of Dunbar; Patrick, his son;
+                  William, his son; Walter Oliohant; Bernard Fraser; Adam of
+                  Polwarth; Roger of Merlay; William of Boltby; Alan, son of
+                  Alan son of Edgar; John, my son.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

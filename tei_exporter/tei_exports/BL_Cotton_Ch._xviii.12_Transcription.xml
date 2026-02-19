@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Cotton Ch. xviii.12</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:39:23.03292+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.12</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">. <persName>D .</persName> dei Gr<ex>ati</ex>a Rex Scot’ .</seg> Ep<ex>iscop</ex>is Abbatibus . Comitibus . Iustic<ex>iis</ex> . Baronibus . Vic<ex>ecomitibus</ex> . prepositis . Ministris . et Omnibus .<lb/> fidelibus suis francis . et Anglicis . Clericis . et Laicis . tam futuris . quam
+                     presentibus totius terrę suę . <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Sciatis me</seg> <seg type="diplomatic" subtype="disposition">dedisse . et concessisse .<lb/> deo et ecclesię sanctę Marie de Hadintune . Clerchetune . in perpetuam
+                     elemosinam . cum suis rectis diuisis ex utraque parte Aquę
+                     sicut . <persName>Will<ex>elmus</ex></persName> .<lb/> de Graham . et <persName>Durand<ex>us</ex></persName> vic<ex>ecomes</ex> . et <persName>Ric<ex>ardus</ex></persName> cler<ex>icus</ex> . et <persName>Osbertus</persName> prior . de Edeneb’ . et <persName>Malbet</persName> de Libertune . et <persName>Gilandr’</persName> filius <persName>Oggu</persName> . preierunt . et circuerunt .<lb/> postquam <persName>Thoroldus</persName> Archidiaconus mecum finiuit apud pebles . et etiam sicut antea mensurata fuit .
+                     Concedo predictę ecclesię .<lb/> unum plenarium . Toft[um] . iuxta ecclesiam . in villa de Hadintun’ . et Omnes
+                     decimas . et rectitudines ecclesiasticas de tota Ha<lb/>dintun<ex>e</ex>schire . tam de Molendinis quam de aliis rebus . <seg type="diplomatic" subtype="holding">Volo itaque et firmiter precipio quod predicta ecclesia teneat . et habeat .
+                     prenominatam<lb/> terram . Clerchetun’ . solam . et quietam . de me . et de Theino . et de omnibus
+                        aliis qui terram predictam tenuerint . de Hadint<ex>un</ex> . de me . et heredibus meis .<lb/> et etiam de heredibus eorum . et etiam omnes alias rectitudines . et
+                        consuetudines . in decimis . et elemosinis . ita libere
+                        . et honorifice . et<lb/> et quiete . et plenarie . sicut aliqua elemosina in tota terra mea . melius . et
+                        plenius . et honorificentius . et quiecius . potest .
+                        dari .<lb/> et concedi . Has autem omnes prenominatas elemosinas . do . et Carta mea
+                        confirmo . pro anima mea . et patris . matrisque meę .<lb/> et animabus antecessorum . et successorum meorum</seg> .</seg> Annuente et concedente hoc . <persName>Henr<ex>ico</ex></persName> filio meo . <seg type="diplomatic" subtype="witnesses">et hoc idem testante :<lb/> <persName>Roberto</persName> Episcopo S<ex>ancte</ex> Andreę . et <persName>Ioh<ex>ann</ex>e</persName> Episcopo . de Glesgu . et <persName>Gregorio</persName> Episcopo de Duncheldin . et <persName>Galfrid<ex>o</ex></persName> Abbate de Dunfermel<ex>in</ex><lb/> et <persName>Dionisio</persName> priore de Scon’ . et <persName>Rogero</persName> priore de Dunfermel<ex>in</ex> . et <persName>Roberto</persName> de Sigill<ex>o</ex> . et <persName>Dunec<ex>ano</ex></persName> Com<ex>ite</ex> . et <persName>Hug<ex>one</ex></persName> de Moruill<ex>a</ex> . et<lb/> et <persName>Mallise</persName> Com<ex>ite</ex> . et <persName>Edward<ex>o</ex></persName> Cunestab<ex>ulario</ex> . et <persName>Leod</persName> de Brechin . et <persName>Rand’</persName> de sules . et <persName>Rogero</persName> nepote Ep<ex>iscop</ex>i <persName>Rob<ex>ert</ex>i</persName> .</seg> Apud . pert .<lb/> xviii . kalendas . IVLII .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

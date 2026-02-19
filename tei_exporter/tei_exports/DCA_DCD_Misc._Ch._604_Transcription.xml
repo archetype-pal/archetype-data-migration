@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 604</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:47:55.658313+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 604</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">. W . dei gratia Rex Scott’ .</seg> Iusticiis Uicecomitibus . Ministris et Omnibus probis Hominibus totius terre sue
+                     . <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg><lb/> <seg type="diplomatic" subtype="injunction">Mando et firmiter precipio . Ne quis uestrum aliquem de hominibus prioris de
+                  Coldingham contra ipsum priorem siue<lb/> contra domum suam iniuste manuteneat  quin quod de ratione facere debeat ei
+                     faciat .</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> Com’. D<ex>aui</ex>d<lb/> fratre meo . Hug’. Cancellario meo . Com<ex>ite</ex> . Dunec<ex>ano</ex> .</seg> <seg type="diplomatic" subtype="dating">Apud Castellum puellarum .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

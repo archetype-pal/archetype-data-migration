@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 592</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:51:20.44021+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 592</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">. W . dei Gr<ex>ati</ex>a Rex Scott’ .</seg> Omnibus probis Hominibus Tocius Terre Sue . Clericis et laicis  <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant<lb/> presentes et futuri</seg> . me Concessisse . et Hac Carta mea Confirmasse . donationem illam quam . D<ex>aui</ex>d . de Quiches<lb/>wde . fecit Hospitali de AldeCambus . et leprosis ibi manentibus . de illa
+                     dimidia Carrucata terre in<lb/> Aldecambus . quam Radulfus . pelliparius tenuit . <seg type="diplomatic" subtype="holding">Tenend<ex>am</ex> . in liberam et puram . et perpetuam Elemosinam .<lb/> Cum Omnibus libertatibus . et aisiamentis ad predictam terram iuste
+                        pertinentibus . ita libere et Quiete  sicut<lb/> Carta predicti . D<ex>aui</ex>d . testatur . Saluo Seruitio meo</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . Will<ex>elmo</ex> . de Bosch<ex>o</ex> . Cancellario . meo . Walter<ex>o</ex> . de Lindes’ .<lb/> Ioh<ex>ann</ex>e . de Maccuswel’ . Walter<ex>o</ex> . Cumin’ . D<ex>aui</ex>d . de Hastings .</seg> <seg type="diplomatic" subtype="dating">Apud Ieddewrth’ . xvi . die . Maii .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

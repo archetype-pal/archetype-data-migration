@@ -1,0 +1,50 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/139</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:05:47.106739+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/139</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let all who shall see or hear this charter know</seg> that <seg type="diplomatic" subtype="intitulatio">I, Simon of Lindsay,</seg> have given and granted and by my present charter made firm to Helen my daughter
+                     my land at ‘Hungerigge’ that I hold in the territory of
+                     Mow of Robert of Pollok and his wife Isabel, and a certain
+                     meadow within ‘Ederedesete’ that is called ‘Holemede’,
+                     which I hold of the lady Eschyna and her heirs; <seg type="diplomatic" subtype="holding">for her and her heirs to hold and to have of the said Robert and his heirs, and
+                     of the lady Eschyna and her heirs, free and quit of every
+                     service and aid and exaction; by annually returning
+                     thereupon to the said Robert and his heirs ten shillings,
+                     that is five shillings at Pentecost and five shillings at
+                     the feast of St Martin; and to the lady Eschyna and her
+                     heirs one red <ex>not moulted</ex> hawk at the Roxburgh Fair.</seg> And if it should happen that the said Helen has died by ill fortune without
+                     issue, I will that my daughter Eschina, her sister and
+                     heir, succeed her in the said land. And I have bestowed
+                     and entrusted the said land to Helen and her heirs as
+                     freely and quitely in all things and through all things as
+                     the charter of the said Robert and his wife Isabel, and
+                     the confirmation of the heirs of the lady Eschina of Mow
+                     composed thereupon, confer and bear witness.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Simon Mauleverer; Gilbert Avenel; Richard of Lincoln;
+                  Ralph le Nain; Simon of Grubbit; Adam of Yetholm; Adam son of
+                  Nicholas; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

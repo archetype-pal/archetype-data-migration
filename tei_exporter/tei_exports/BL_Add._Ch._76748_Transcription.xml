@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Add. Ch. 76748</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:48:47.27971+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 76748</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus has literas visuris uel audituris <seg type="diplomatic" subtype="intitulatio"><persName>Alwinus</persName> filius <persName>Duncani</persName> de fofrekin</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> <seg type="diplomatic" subtype="notification">Sciatis</seg> <seg type="diplomatic" subtype="disposition">me dedisse et concessisse et hac<lb/> carta mea confirmasse <persName>Malbrido Marrenah</persName> et heredibus suis terram illam que fuit in lite inter me et dominum <persName>laurentium</persName> filium <persName>orm</persName><lb/> per rectas diuisas <seg type="diplomatic" subtype="boundaries">ab illi mec ewin usque ad modlahin et ex alia parte inter Gahnakarbet et aldi
+                     nalar</seg> <seg type="diplomatic" subtype="holding">ad tenendum<lb/> de me et heredibus meis ille et heredes sui libere et quiete ab omni seruicio et
+                        consuetudine et exactione et forinseco et ab aliquo<lb/> ausilio</seg> . et predictus <persName>Malbrid</persName> habebit comunam pasturam et multuram suam liberam eundo ubicumque . uoluerit et
+                     predictus <persName>Malbrid</persName><lb/> habebit merchet et blodwit et vnlah libere quantum ad terram illam pertinet . et
+                     predictus malbrid reddet annuatim<lb/> et heredes sui mihi et heredibus meis octo solidos argenti . quatuor solidos .
+                     ad pentecosten et quatuor solidos ad festum sancti Martini</seg><lb/> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> <persName>Waldeuo</persName> filio <persName>merleswain</persName> et herede suo . <persName>Duncano</persName> filio <persName>ade</persName> et herede suo <persName>Will<ex>elm</ex>o</persName> persona de Kilconcat . <persName>Toma</persName> de<lb/> lundin et herede suo . <persName>Malcolmo</persName> Iudice . et Multis aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

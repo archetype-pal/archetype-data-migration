@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 564</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 15:48:09.565817+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 564</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">D<ex>avid</ex> king of the Scot<ex>s</ex>, and H<ex>enry</ex> his son</seg>, to all his sheriffs and each of his barons, French and English, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know that</seg> I have given and conceded herein Swinton in feu to my knight Arnulf, to him and
+                     his heir with all his men and livestock, <seg type="diplomatic" subtype="holding">to hold well, freely and honourably, just any of my barons best and most freely
+                     holds, and whatever pertains to it, by the same customs by
+                     which Liulf son of Edulf and Udard his son held, to hold
+                     of Saint Cutherbert and of me by rendering 40 shillings to
+                     the monks of Durham without any other services.</seg></seg> <seg type="diplomatic" subtype="witnesses">As witnesses: William son of Duncan; Maduc the earl; Earl Duncan; Ralph Lovell;
+                  Marcel Marmion; Walter son of Alan; Herbert Chamberlain; Adam
+                  son of Edward; William of Lindsay.</seg> <seg type="diplomatic" subtype="dating">At Haddington.</seg> <seg type="diplomatic" subtype="salutation">Farewell.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

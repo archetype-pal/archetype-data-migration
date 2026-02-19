@@ -1,0 +1,63 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 5954</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.825856+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5954</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Christi fidelibus Has literas visuris uel Audituris <seg type="diplomatic" subtype="intitulatio">Bertramus de parua Ristona</seg> <seg type="diplomatic" subtype="salutation">salutem</seg>.</seg> <seg type="diplomatic" subtype="notification">Nouerit vniueritas uestra</seg> <seg type="diplomatic" subtype="disposition">me intuitu caritatis et pro salute anime mee Antece<lb/>ssorum et successorum meorum Dedisse. et Concesisse . et hac presenti carta mea
+                     Confirmasse Deo et sancto Cvhtberto priori et monachis de
+                     Coldingh<ex>am</ex> ibidem deo seruientibus et in<lb/>perpetuum seruituris vnam dimidiam carucatam terre In Campo et Territorio parue
+                     Ristone in liberam. puram. et perpetuam elemosinam silicet
+                     Duas accras terre et dimidiam In Tofto et Crofto in quo
+                     sedi Aliquando tempore patris mei. et Totam terram meam ad
+                     Ralfesaccres et Thorn. et vnam accram terre propinquiorem
+                     prati Rogeri<lb/> et Ricardi fili Iosep Hunderhecsyde extendentem se uersus occidentem. et Totam
+                     terram meam iacentem in mora ad australi parte de
+                     Blackechest’. et Totam<lb/> terram meam ad Blakechloeshefed excepta terra tantum Dauid de Drilton’. et Totam
+                     terram meam in Blackelawesflat. et omnem terram meam in
+                     Wilkedenflat<lb/> excepta terra tantum Dauid de Drilton’. et Totam terram meam in orientali parte
+                     de Stublisyde . et Totum Dominicum meum iacens in Duabus
+                     partibus in Hebr<lb/>andes castel. et vnam accram terre ad Grengate uersus occidentem. et Totam
+                     terram meam in Thyrstlislad quam Patricius filius Wtredi
+                     de me quondam tenuit. et<lb/> omnem friscam meam desuper iacentem. et Totam terram meam quam Ada Cocus quondam
+                     de me tenuit exceptis quatuor accriis terre quas Prior
+                     Dunelmensis<lb/> habet de Eadem terra in Eadem villa. et Totam terram meam in Tepermer. et
+                     quatuor accras terre et dimidiam in occidentali parte ad
+                     Morcroc. Omnes<lb/> istas terras superecriptas Dedi et hac presenti carta mea Confirmaui prefatis
+                     priori et monachis de Coldingh<ex>am</ex> pro vna dimidia carucata terre in liberam. puram.<lb/> et perpetuam elemosinam. Renuncians in hoc facto pro me et heredibus meiis omni
+                     Iuris Ausilio canonici et ciuilis quod Dicti prior et
+                     monachi de Coldingh<ex>am</ex><lb/> nullo tempore pro hac pura. et perpetua elemosina in foro laicali trahantur nec
+                     vexentur. In moris et maricis. In pratis et pasturis. In
+                     petariis et turbariis. In<lb/> viis et semitis. et In omnibus aliis assiamentis ad Eandem pertinentibus terram
+                     infra villam et extra. <seg type="diplomatic" subtype="holding">Habend<ex>as</ex> et Tenend<ex>as</ex> Dictis priori et monachis de Coldin<lb/>gh<ex>am</ex> de me et heredibus meiis inperpetuum adeo libere. quiete. et honorifice In
+                        omnibus sicut aliqua elemosina infra Regnum Scocie
+                        liberius aut quiecius tenetur<lb/> uel possidetur.</seg> <seg type="diplomatic" subtype="warrandice">Ego uero Bertramus et heredes mei predictam dimidiam carucatam terre cum Dicto
+                     tofto et Crofto et cum omnibus supradictis particulis
+                     terre<lb/> et cum omnibus suis pertinenciis infra villam et extra sepedictis priori et
+                        monachis de Coldingham contra omnes homines et feminas
+                        in perpetuum warantizabimus. adquie<lb/>tabimus. et deffendemus.</seg></seg> <seg type="diplomatic" subtype="sealing">In Cuius Rei Testimonium huic scripto sigillum meum appossui.</seg> <seg type="diplomatic" subtype="witnesses">Hiis Testibus Domino Will<ex>elm</ex>o de Mordington<ex>a</ex>. Domino Alano de<lb/> Swyntona. Thoma de Nesbyt. Dauid de Lumesden. Roberto filio Gregorii de Coldingh<ex>am</ex>. Ada de Prendergest’. Patricio Scoto. Ada filio Iohannis de Super<lb/>ioriaytona. Gregorio de Bethyoc. Gilberto de Lumesden. Roberto filio Reginaldi.
+                     Rogero filio Ade de magna Ristona et ALIIS.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

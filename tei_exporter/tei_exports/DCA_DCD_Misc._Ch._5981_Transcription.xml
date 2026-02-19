@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 5981</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:57:31.624951+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5981</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Christi fidelibus ad quorum noticiam littere iste peruenerint . <seg type="diplomatic" subtype="intitulatio">Bertramus filius Robert<lb/> coco</seg> <seg type="diplomatic" subtype="salutation">salutem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerit vniuersitas uestra</seg> me dedisse . concesisse . et hac presenti carta<lb/> mea confirmasse deo et beato Cuthberto et sancte Ebbe et priori de Coldingham .
+                     et mona<lb/>chis ibidem deo seruientibus et inperpetuum seruituris . in liberam et perpetuam
+                     elemosinam<lb/> vnam dimidiam carucatam terre cum tofto et crofto in villa et territorio de Re<lb/>ningtona cum omnibus pertinetiis ad tantam terram in eadem villa pertinentibus
+                     infra<lb/> villa et extra sine vllo retinemento . Illo scilicet dimidiam carucatam terre
+                     quam<lb/> Waldeuus filius Cren quondam tenuit in villa de Reningtona . <seg type="diplomatic" subtype="holding">Tenend’ et habend’ .<lb/> dictis priori et conuentui et eorum successoribus inperpetuum . adeo libere .
+                        quiete . et honorifice .<lb/> sicut aliqua elemosina forinsecum faciens seruicium infra rengnum Scocie .
+                        liberius . uel<lb/> quietius tenetur . uel possidetur cum omnibus libertatibus et asiamentis suis .</seg> Et sciendum est<lb/> quod ego Bertramus et heredes mei quiti erimus de forinseco seruicio domini
+                     Regis et domus<lb/> de Coldingham quantum pertinet ad tantam terram in eadem uilla .</seg> <seg type="diplomatic" subtype="warrandice">Et preterea sciendum<lb/> est quod ego Bertramus et heredes mei predictam terram dictis priori et
+                     conuentui et eorum suc<lb/>cessoribus contra omnes homines et feminas inperpetuum warantizabimus .
+                     adquietabimus<lb/> et defendemus .</seg> <seg type="diplomatic" subtype="sealing">Et vt hec mea donacio robur opptineat perpetuum huic scripto<lb/> sigillum meum apposui .</seg> <seg type="diplomatic" subtype="witnesses">Hiis testibus . dominus . d<ex>aui</ex>d . de Graham . W . de Mothingt<ex>ona</ex><lb/> . W . de Scremerstona . R . nobili . R . de Mungumery . R . filio senescalli . d<ex>aui</ex>d . de Lu<lb/>mesden’ . Ad<ex>a</ex> filio Ioh<ex>annis</ex> . Ad<ex>a</ex> filio Walteri de Aytun . Patricio Scot . Ioh<ex>anne</ex> filio eius .<lb/> Ioh<ex>ann</ex>e filio ynggram . Patricio filio Coleman . et ALIIS .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

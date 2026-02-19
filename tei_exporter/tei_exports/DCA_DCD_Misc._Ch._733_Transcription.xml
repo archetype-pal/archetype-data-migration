@@ -1,0 +1,49 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 733</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:12:45.990712+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 733</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus has litteras uisuris uel audituris . <seg type="diplomatic" subtype="intitulatio">Patricius filius Patricii Comitis de Dunbar</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Noueritis</seg> me ueraciter intellexisse per cartam<lb/> regis Eadgari . et per plura alia inditia et recgnouisse in curia domini Regis
+                     Alexandri plenum Ius Priori et Monachorum Dunnelmensium
+                     aput<lb/> Coldingham deo seruientium de villa et Dominico de Swineuude cum eorum
+                     pertinentiis de quibus eos aliquando iniuste uexaui . Hinc
+                     est quod notum<lb/> facio vniuersitati uestre me deo et sancto Cuthberto et sancte Ebbe et Priori et
+                     monachis Dunelmi apud Coldingham deo seruientibus et in
+                     perpetuum<lb/> ibidem seruituris villam de Swinewde et totum dominicum eiusdem uille cum
+                     omnibus pertinentiis suis et totum ius et omne genus iuris
+                     . et cla<lb/>mium si quod habui uel habere potui  in eadem uilla . tam in dominicis quam
+                     hominibus . seruitiis et homagiis . boscis et planis .
+                     terris cultis et incultis . et<lb/> omnibus aliis ad dictam uillam et dictum dominicum pertinentibus  quieta
+                     clamasse et abiurasse in perpetuum pro me et heredibus
+                     meis sine aliquo retinemento<lb/> et per fustum et baculum in curia domini regis  eisdem reddidisse . que
+                     antecessores mei iniuste occupauerunt et detinuerunt . ita
+                     quod nec ego nec<lb/> heredes mei nec aliquis ex parte nostra de cetero ius aut clamium in
+                     prenominatis uilla et dominico cum pertinenciis habere
+                     poterimus .</seg> <seg type="diplomatic" subtype="dating">Dicta autem<lb/> quieta clamatio facta fuit in curia domini regis Alexandri illustris regis
+                     Scottorum apud Rokisburk’ tercio kalend’ April<ex>is</ex> . Anno regni eiusdem<lb/> regis . Decimo septimo .</seg> <seg type="diplomatic" subtype="sealing">vt autem omnia predicta rata et inconcussa permaneant  presens scriptum sigilli
+                  mei appositione roboraui .</seg> <seg type="diplomatic" subtype="witnesses">Hiis<lb/> Testibus . Domino Waltero Olifard’ Iusticiar<ex>io</ex> Laodon<ex>ie</ex> . Domino Willelmo domini regis cancellar<ex>io</ex> . Domino Iohanne de Maccuswel domini regis Camer<ex>ario</ex> . Domino Roberto<lb/> de Ros’ . Domino rannulfo de Bonekil . Domino Bernardo fraser . Domino Thom<ex>a</ex> filio Ran’ . Domino Thoma de Haya . Dauid Clerico domini Walteri<lb/> olifard’ . et multis aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

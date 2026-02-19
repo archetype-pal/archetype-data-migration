@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of TNA DL 25/87</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.103141+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/87</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="notification">. Sciant omnes presentes et futuri quod</seg> <seg type="diplomatic" subtype="intitulatio">Ego Will<ex>elmus</ex> . filius Radulfi Lardenarii et frater d<ex>aui</ex>d . filii eius et heres eorum </seg> <seg type="diplomatic" subtype="disposition">quietam clamaui<lb/> et abiuraui de me et de heredibus meis et resignaui per fustum et baculum
+                     Roberto de brus et heredibus suis uel quibus assig<lb/>nare voluerint totam terram quam predictas Radul<ex>fus</ex> et dictus d<ex>aui</ex>d et predecessores mei et ego tenuimus de predicto Roberto<lb/> de brus et de predecessoribus suis . et omne ius quod nobis competebat infra
+                     uillam de Anant et infra pertinentias . Pro compoto<lb/> scilicet . d<ex>aui</ex>d . fratris mei qui illo tempore fuit seruiens domini Roberti de brus in
+                     herteruilla . quod inde licet compotum  ego Will<ex>elmus</ex><lb/> suscepi ad soluendum pro predicto d<ex>aui</ex>d . fratre meo et non potui persoluere . et pro . c<ex>entum</ex> . solidis . quos predictus dominus Rob<ex>ertus</ex> . de brus<lb/> mihi prebuit .</seg> <seg type="diplomatic" subtype="sealing">In huius etiam quiete clamationis et abiurationis testimonio  sigillum meum
+                  huic scripto apposui .</seg> <seg type="diplomatic" subtype="witnesses">Hiis test<ex>ibus</ex> .<lb/> Domino Ric<ex>ardo</ex> de Leuinent . Domino Rog<ex>ero</ex> auenel . Will<ex>elmo</ex> de brus . Ioh<ex>ann</ex>e de brus . Will<ex>elmo</ex> de heriz . vmfrido de gardin .<lb/> Hug<ex>one</ex> de Corri . Rob<ex>erto</ex> de Crossebi . Gilleb<ex>erto</ex> . filio Ioh<ex>ann</ex>is . Rog<ex>ero</ex> de Kirkepatric . Rob<ex>erto</ex> de tramor . Ric<ex>ardo</ex> . de<lb/> bosco . Ric<ex>ardo</ex> de Humez . hug<ex>one</ex> Mauleuerer . Hug<ex>one</ex> filio Hamelin . Will<ex>elmo</ex> franceis . Eng<ex>el</ex>ram . Thom<ex>a</ex><lb/> clerico . et curia predcti domini Roberti de brus de Anant .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

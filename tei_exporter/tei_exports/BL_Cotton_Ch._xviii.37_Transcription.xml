@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Cotton Ch. xviii.37</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:09:42.834437+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.37</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">. <persName>W.</persName> Permissione Diuina Ecclesie Sancti Andr<ex>ee</ex> Minister Humil<ex>is</ex></seg> Dilectis Suis . R . Decano de Liston’. et Magistro . <persName>R .</persName><lb/> De Doure Rectori ecclesie de Tinigham . et domino . <persName>I .</persName> de Penthcadland’ . <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition">Mandamus uobis Quatinus in uigilia<lb/> sancti Mathei apostoli apud Hadington<ex>a</ex> in propriis personis accedatis ad taxandum uicariam de Hadington<ex>a</ex> auctoritate nostra ad<lb/> ualenciam . XL . marcarum . Et si Senescallus noster dictis die et Loco ad hoc
+                     faciend<ex>um</ex> una uobiscum interesse non potuerit  ad<lb/> gerendum uices dicti senescalli nostri  mittemus ad uos prenominato die domini
+                     . <persName>R .</persName> de Methfen capellanum nostrum . Hoc autem<lb/> mandatum nostrum nullo modo facere omitteritis .</seg> <seg type="diplomatic" subtype="salutation">Valete .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 564</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 15:48:09.555167+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 564</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">D Rex Scot’ . et H suus filius</seg> . omnibus vicecomitibus suis cunctisque baronibus francis et angl<ex>icis</ex> . <seg type="diplomatic" subtype="salutation">salutem</seg></seg> .<lb/> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis quod</seg> dedi et concessi hvic meo militi hernulfo . Swintun . in fevdam sibi et heredi<lb/> suo cum omnibus hominibus suisque pecuniis <seg type="diplomatic" subtype="holding">tenere bene et libere et honorifice . sicut vllus<lb/> ex meis baronibus melius ac liberius tenet . et quicquid ad eam pertinet . per
+                        easdem consuetudines per quas<lb/> Liulfus filius edulfi . et vdardus filius suus tenuerunt . tenere de sancto
+                        cuthberto et de me<lb/> . xl . solidos reddente monachis de dunelmia sine omnibus aliis seruiciis</seg> .</seg> <seg type="diplomatic" subtype="witnesses">T<ex>estibus</ex> Will<ex>elmo</ex> . filio<lb/> dunecan . et Maduc consule . et comite dunecan . et Radulfo Nuuel . et Marsel
+                     Marmiun . et<lb/> Walter filio alani . et herb<ex>erto</ex> . Cha<ex>m</ex>b<ex>er</ex>lein . et adam filio edwardi . et Will<ex>elmo</ex> . de lindesi .</seg> <seg type="diplomatic" subtype="dating">ad hadintunia .</seg> <seg type="diplomatic" subtype="salutation">Valete .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

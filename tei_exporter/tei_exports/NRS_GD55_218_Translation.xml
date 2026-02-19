@@ -1,0 +1,52 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/218</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 07:53:56.313607+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/218</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church, present and future, <seg type="diplomatic" subtype="intitulatio">Philip of Pitcox</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me to have given and granted, and by this my charter to have made firm, out of
+                     the good will and agreement of Philip my son and heir, to
+                     God and to the church of St Mary at Melrose, and to the
+                     monks in that place serving God, for the souls of my
+                     lords, Cospatric, and Waldef, earls of Dunbar, and for the
+                     souls of my father and mother, and of all my ancestors,
+                     and for the salvation of my lord, P<ex>atrick</ex>, earl of Dunbar, and for my own salvation, and of P<ex>hilip</ex> my son and heir, and of all my successors, the land in the territory of Pitcox
+                     which lies between the boundaries of the monks' land at
+                     Hartside and the little stream that is called Pressmennan
+                     Burn, which the aforesaid monks have annexed along the
+                     aforesaid stream to their own land at Hartside by reason
+                     of my donation and instruction; and ten acres in
+                     ploughland at 'Beleside' most closely adjacent to their
+                     land at Edmundstoun; <seg type="diplomatic" subtype="holding">in free, pure, and perpetual alms; as freely and quitely, fully and honourably,
+                     as they freely, quitely, fully and honourably hold and
+                     possess any alms.</seg> <seg type="diplomatic" subtype="warrandice">And I and my heirs shall maintain and warrant the said land to the
+                     aforementioned monks against all men for ever, and we
+                     shall discharge claims in respect of the lord king and all
+                     others from every service and custom and secular exaction</seg>.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: Earl Patrick my lord; Patrick his son; Bernard Fraser; Roger de
+                  Merlay; Adam of Polwarth; Adam of Gordon; Thomas of Nisbet;
+                  Philip my son and heir; Waldef parson of Whittinghame; Master
+                  William of Earlston; Master John, parson; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

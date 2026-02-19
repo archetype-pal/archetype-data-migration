@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/156</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:17:06.904588+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/156</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte matris Ecclesie filiis presentibus et futuris <seg type="diplomatic" subtype="intitulatio">Gaufridus filius Walleui de Lilles<lb/>cliue</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me dedisse et concessisse et hac mea Carta confirmasse deo et Ecclesie<lb/> Sancte Marie de Melros et monachis ibidem deo seruientibus in liberam puram et
+                     perpetuam<lb/> Elemosinam tres bouatas terre arabilis In territorio de Wittun sicut iacent in
+                     uno<lb/> tenemento desuper Rauenesfen propinquiores terre eorundem monachorum quam habent
+                     ex do<lb/>natione Patricii de Ridale domini meo . <seg type="diplomatic" subtype="holding">Totam hanc terram et quicquid continetur infra diui<lb/>sas predicte terre dedi predictis monachis de Melros libera . quieta et soluta
+                        ab omni terreno seruitio<lb/> et consuetudine et exactione seculari ut ea habeant . teneant et possideant in
+                        perpetuum ita libere<lb/> plene et honorifice sicut aliqua Elemosina liberius . quietius plenius et
+                        honorificentius teneri potest et<lb/> possideri .</seg> Et ego et heredes mei manutenebimus et warantizabimus prefatis monachis ean<lb/>dem terram contra omnes homines qui uiuunt et mori poterunt . et adquietabimus
+                     de omni forensi ser<lb/>uitio erga dominos nostros et de omnibus aliis rebus que pro aliqua terra exigi
+                     poterunt in perpetuum</seg> .<lb/> <seg type="diplomatic" subtype="witnesses">Hiis Test’. Rob<ex>erto</ex> . Glasguen<ex>si</ex> . Archid<ex>iacono</ex> . Patricio de Ridale domino meo . Waltero et Nichol’<lb/> filiis eius . Ric’. persona de Alnecr<ex>um</ex> . Rob<ex>erto</ex> . de Bernoldeb’<lb/> Adam de Wittun . Will<ex>elmo</ex> . de Wittun . Adam de Chattun . et multis aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

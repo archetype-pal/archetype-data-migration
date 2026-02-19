@@ -1,0 +1,46 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 597</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:37:09.668257+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 597</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p>
+          <seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">William, king of the Scots,</seg> to all the worthy men of his entire land, <seg type="diplomatic" subtype="salutation">greeting.</seg> </seg>
+          <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present future know</seg> me to have conceded, and by this my charter to have made firm, to the monks of
+                     Coldingham, Fishwick with all things justly pertaining to
+                     it in lands and waters, and half of Prenderguest, and the
+                     land which Swain the priest of Fishwick had in Coldingham
+                     and Lumsdaine, those lands which Swain the priest of
+                     Fishwick gave back to them and quitclaimed in the presence
+                     of the Earl Henry my father. <seg type="diplomatic" subtype="holding">Wherefore I will that the monks may hold the forenamed lands as freely and
+                     quitly, fully and honourably, as the charter of the Earl
+                     Henry my father bears witness and affirms.</seg> </seg>
+          <seg type="diplomatic" subtype="witnesses">As witnesses: Ingram, bishop of Glasgow; Richard Comyn; Dolphin the chaplain;
+                  Robert de Saint-Michel; Walter de Berkeley; Hugh, my clerk;
+                  Richard the clerk. </seg>
+          <seg type="diplomatic" subtype="dating">At Selkirk.</seg>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/220</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-25 23:57:18.781864+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/220</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Norman, sheriff of Berwick, to all his men of Corstorphine, <seg type="diplomatic" subtype="salutation">Greeting</seg>:</seg> <seg type="diplomatic" subtype="disposition">Know that I have granted and given in perpetual alms to Holyrood in Edinburgh
+                  and to the abbot, and to the brethren serving God there, my
+                  Chapel at Corstorphine with all revenues belonging to the
+                  same chapel.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, Henry the Earl, and Edward the Chancellor, and Thurald the
+                  Archdeacon of Lothian, and Richard the Clerk of Edinburgh.</seg> At Berwick.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

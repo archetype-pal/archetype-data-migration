@@ -1,0 +1,78 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/1</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-07-22 17:22:55.816644+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/1</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">David, by the grace of God king of the Scots</seg>, to his bishops, abbots, earls, barons, and worthy men, and to all his sworn
+                     men of his entire kingdom, French, and English, and
+                     Gaelic, and Galwegian, <seg type="diplomatic" subtype="salutation">Greeting:</seg></seg> Know me, for the sake of my soul and the souls of my father and mother, and of
+                  my brother Edgar, and of my other brothers and my sisters,
+                  and of my wife Matilda, and also for the sake of the soul of
+                  Henry my son and heir, and of my ancestors and successors, to
+                  have granted and given to God and St Mary at Melrose, and to
+                  the monks of Rievaulx serving God there, with Henry my son
+                  and heir approving and consenting, and affirming by his own
+                  charter, in perpetual alms, the whole land of Melrose, and
+                  the whole land of Eildon, and the whole land of Darnick, by
+                  their boundaries and correct divisions, in wood and plain, in
+                  meadows and waters, in pastures and moors, in roads and
+                  paths, and in all other things, free and quit and loosed from
+                  all earthly service and worldly exaction, to possess in
+                  perpetual tenure. Moreover, know me to have given to the
+                  aforesaid monks, and made firm by this my charter, in my land
+                  and in my forests of Selkirk and at Traquair, all their
+                  easements, that is, pasture for their cattle, and wood, and
+                  timber, and pannage everywhere for their own uses, as well as
+                  I myself have for my own use, especially between Gala and
+                  Leader. Moreover, in the waters of the Tweed, within their
+                  boundaries, fishing as well on my side of the stream as
+                  anywhere on their side. Besides all the things said above, I
+                  have given and made firm to them, for an augmentation,
+                  Gatton, and the whole land and wood of Gattonside, just as I
+                  myself and Henry my son, and Abbot Richard of the same church
+                  went before and around on Friday, the morrow of the Ascension
+                  of the Lord, in the second year in which Stephen king of
+                  England was held captive. As witnesses to this present gift,
+                  John the bishop, William the king’s nephew, Hugh de Morville,
+                  William de Somerville, Henry son of Swain, Gervase Ridel. I
+                  therefore will that they should hold and possess all these
+                  their aforesaid lands and things so freely and quitely as any
+                  alms can be freely and quitely held and possessed in
+                  perpetual tenure. As witness, Henry my son, John the bishop,
+                  William my nephew, William the chancellor, Madad the earl,
+                  Robert de Umfraville, Hugh de Morville, Walter son of Alan,
+                  Hugh Brett, Osbert of Arden, Gervase Ridel, William de
+                  Somerville, Richard Gernun, Richard English, William of
+                  Lindsay, Ascelin the archdeacon, Jordan the clerk, Eastmund
+                  the almoner. In addition, the men of the same land, Gospatic
+                  the earl, Ulkil son of Æthelstan, Osulf son of Uhtred, Maccus
+                  son of Undweyn, Uhtred son of Sioth, Uhtred son of Gospatric,
+                  Orm son of Eilaf, Eilaf son of Gospatric, Eadwulf son of
+                  Norman, Osulf son of Eadgifu, Osulf son of Ælfstan, Robert
+                  Bruce meschin, Ralph son of Thurstan, Robert the bishop’s
+                  nephew. At Earlston, in June.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

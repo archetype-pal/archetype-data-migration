@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/86</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:47.006835+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/86</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="notification">Sciant presentes et futuri</seg> <seg type="diplomatic" subtype="disposition">quod ego <seg type="diplomatic" subtype="intitulatio">Rogerus</seg> dedi et concessi et hac mea carta confir<lb/>maui deo et beate Marie et Monachis de Melros deo seruientibus tresdecim acras
+                     terre mee et<lb/> vnam percatam in territorio de farnigdun . illas scilicet que iacent et
+                     propinquiores sunt terre Simonis<lb/> de farburne scilicet ex orientali parte subtus regiam uiam qua itur ad Rokesburc
+                     . In puram et liberam<lb/> et perpetuam elemosinam . <seg type="diplomatic" subtype="holding">Tenendas et habendas Liberas et Quietas ab omni exactione consuetudine et<lb/> demanda .</seg> <seg type="diplomatic" subtype="warrandice">Et ego et Heredes mei warantizabimus et in plena pace possideri faciemus ab
+                     isdem Mo<lb/>nachis predictam terram perpetuo contra omnes homines et quietam faciemus ab
+                        omni seruicio et que<lb/>rela .</seg> Hanc quidem donationem feci prefatis Monachis in libera potestate mea et plena
+                     possessione terre<lb/> mee de farnigdun existens .</seg> <seg type="diplomatic" subtype="witnesses">Hiis Testibus . Ioh<ex>ann</ex>e de Mackuswel et Ailmero fratre eius . Gaufrido Rad<ex>ulfo</ex><lb/> Waltero Ric<ex>ardo</ex> filiis meis . Gregorio de Rutherford . Waltero filio Thom<ex>a</ex> . Alano caellano de farnig<lb/>dun . Simone Seruiente meo et Multis aliis .</seg> a quibus predicta terra perambulata fuit per preceptum<lb/> meum secundum prefatas diuisas et fossatum coram ipsis testibus a Monachis
+                  ibidem factum .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

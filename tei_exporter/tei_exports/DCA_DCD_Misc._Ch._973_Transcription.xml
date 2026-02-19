@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 973</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.583568+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 973</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">. W . rex anglorum .</seg> Thomę eburacensi archiepiscopo . et omnibus suis fidelibus francis et anglicis
+                     et scottis<lb/> <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Sciatis me</seg> <seg type="diplomatic" subtype="disposition">concessisse deo omnipotenti . et ęcclesię dunelmensi . et sancto confessori
+                  cuthberto . et Willelmo<lb/> episcopo . et monachis in eadem ęcclesia deo seruientibus et inperpetuum
+                     seruituris terras in lodeneio quas<lb/> EADGARVS rex filius malcolmi regis scottorum deo et supradictę ęcclesię me
+                     concedente donauit . man<lb/>sionem scilicet de berwic . et has subscriptas mansiones . greidene . leinhale .
+                     dylsterhale . brycgham<lb/> ederham . cirneside . hyltun . blacedre . cynebrihtham . hotun . reinintun .
+                     paxtun . fugeldene .<lb/> mordintun . lambertun . aliam lambertun . hædrintun . fiscwic . horeford .
+                     upsetintun . et mansio<lb/>nem de collinghaham . et has subscriptas mansiones . aldcambus . lummesdene .
+                     ristun . suinestun . farn<lb/>dun . eitun . aliam eitun . prenegest . crammesmue . hædentun . Has
+                     superscriptas mansiones<lb/> cum adiacentibus terris et siluis et aquis . et omnibus theloneis . et nauuium
+                     fracturis . et aliis consuetudinibus<lb/> suis . <seg type="diplomatic" subtype="holding">sicut malcolmus rex unquam melius habuit </seg> deo et Sacnto Cuthberto inperpetuum concedo .</seg> <seg type="diplomatic" subtype="salutation">VALETE .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

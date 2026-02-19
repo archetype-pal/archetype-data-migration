@@ -1,0 +1,50 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 560</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 15:48:09.412114+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 560</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Edgarus dei gracia Rex Scotorum</seg> Omnibus ad quos presentes littere peruenerint tam Francis et Anglis quam Scotis
+                     . <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> . <seg type="diplomatic" subtype="notification">Sciatis</seg> <seg type="diplomatic" subtype="disposition">nos ex licencia<lb/> Willelmi regis Anglie superioris domini regni Scocie pro animabus Malcolmi
+                     patris nostri et Margarete matris nostre ac pro animabus
+                     edwardi et duncani fratrum nost<lb/>rorum necnon pro salute nostra dedisse et concessisse deo et sancto Cuthberto
+                     confessori Willelmo episcopo Drugeto priori et monachis
+                     dunolmie deo seruientibus<lb/> in perpetuum Baroniam et Manerium de Coldingham cum hiis mansionibus subscriptis
+                     scilicet Berwic Oldcambows Lummesden Reston’ Faudon’
+                     Ayton’ alia Ayton’<lb/> Prendregest Cramesmouth Graiden Leinhale dilchestre Ederham Chirnside Hilton’
+                     Blaketyr Hoton’ Raynton’ Paxton’ Fulden Morthington’<lb/> Lamberton’ alia lamberton’ Edington’ horford Fishewic et vpesetlington cum
+                     omnibus pertinenciis iuribus et decimis garbarum et feni
+                     cum omnibus libertatibus<lb/> et franchesiis regalibus adeo libere et plenarie sicut predictus pater noster et
+                     dominus illa tenuit . <seg type="diplomatic" subtype="holding">Habenda et tenenda omnia et singula predicta Baroniam et Mane<lb/>rium mansiones decimas cum omnibus libertatibus Franchesiis regalibus et iuribus
+                        quibuscumque predictis episcopo priori et monachis ac
+                        eorum successoribus<lb/> de nobis et heredibus nostris in puram et perpetuam elemosinam in perpetuum</seg> . <seg type="diplomatic" subtype="warrandice">Et nos et heredes nostri omnia et singula predicta Baroniam Manerium mansiones<lb/> decimas cum ominbus libertatibus Franchesiis Regalibus et iuribus quibuscumque
+                        ut predictum est prefatis episcopo priori et monachis
+                        et eorum successoribus contra<lb/> omnes gentes protegemus imperpetuum et defendemus</seg> .</seg> <seg type="diplomatic" subtype="salutation">In cuius rei testimonium presentibus litteris nostris sigillum nostrum apponi
+                  fecimus apud Norham</seg> <seg type="diplomatic" subtype="witnesses">in presencia<lb/> predicti Regis Willelmi Anglie superioris domini regni Scocie et predictorum
+                     episcopi et prioris Walteri Valonis Odnelli Umfrauile
+                     Rachonis de Loreyns Odnelli<lb/> Heron Roberti de Amundi villa et maximae multitudinis Francorum Anglorum et
+                     Scotorum</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

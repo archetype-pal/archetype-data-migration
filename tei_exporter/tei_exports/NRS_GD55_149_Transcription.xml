@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/149</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:12:17.339022+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/149</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte matris ecclesie filiis  <seg type="diplomatic" subtype="intitulatio">V<supplied>ctredus</supplied> usulfi</seg> <seg type="diplomatic" subtype="salutation">salutem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant tam posteri quam presentes . quod</seg> ego vctredus bono consensu <supplied>et assensu</supplied> Thome filii mei et heredis .<lb/> pro redemptione anime domini mei regis . M<supplied>alcolmi</supplied> . . . us . et pro salute anime meę et filiorum meorum . do et concedo ęcclesię
+                     Sancte M<supplied>arie de</supplied> maylros . et monachis ibidem<lb/> deo seruientibus Ringuude . liberam <supplied>et quieta</supplied>m ab omni terreno seruitio . et assisis . et geldis . et auxiliis . et omni
+                     seculari exactione et consuetudine . in perpetuam ele<lb/>mosinam . in bosco . in plano . in pratis . . . . <supplied>et in pa</supplied>scuis . <seg type="diplomatic" subtype="boundaries">per has diuisas . scilicet ab eo loco quo alewent cadit in Teuiet . et inde
+                     sursum usque ad blachapol . et ita ad<lb/> bollinnes burne . et sic inde ad . . . <supplied>et inde r</supplied>ecte in transuersum usque pennango . et a pennango recte in transuersum . . . <supplied>ad</supplied> Alewente . et inde sursum ad bru<lb/>nemore super dod . et sic usque ad . . . <supplied>u</supplied>sque ubi illa burna cadit in alewente</seg> . Preterea do et concedo <supplied>eis hanc liber</supplied>tatem . ut nec ego nec alius uenetur<lb/> infra predictas diuisas  nisi per ipsos</seg> <seg type="diplomatic" subtype="witnesses">. . . o abbate Rieuall’ . Thoma filio meo . Adam de dunbar . Will<ex>elm</ex>o frater e<supplied>ius . Waltero cle</supplied>rico de ercheldune . Thoma<lb/> clerico de uuittun . Gamello clerico . . . Adam de stanford . hugone de cole .
+                     Edmundo auunculo vctredi . Gospat<supplied>ricio filio</supplied> aldani . Radulfo filio vctredi . Eiulfo ruffo . Edmundo . . . Will<ex>elm</ex>o de ireuude .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

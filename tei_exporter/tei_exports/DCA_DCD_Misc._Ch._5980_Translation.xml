@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 5980</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:57:31.562067+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5980</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all who shall view or hear this written document, <seg type="diplomatic" subtype="intitulatio">Mariota of Chirnside, formerly the wife of Richard of Renton, and Patrick her
+                     son</seg> <seg type="diplomatic" subtype="salutation">send greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know you all</seg> that since we have taken the prior and convent of Coldingham to court, before
+                     the lord W<ex>alter</ex> Oliphant, then justiciar of Lothian, by a brieve of recognition of the lord
+                     king, concerning one ploughgate of land with pertinents in
+                     Renton, we have quitclaimed and renounced in full court,
+                     in respect of ourselves and our heirs, all our right and
+                     claim, if we had or could have had any, to the said prior
+                     and convent and their successors.</seg> <seg type="diplomatic" subtype="sealing">As witness of this matter, we have put our seals to this present document.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord W. of Lindsay, Ranulf of Bunkle, the lord Ralph
+                  Noble, the lord W<ex>illiam</ex> of Mordington, the lord Alan of Swinton, Alan his son, Robert and William of
+                     Paxton, Adam of Prenderguest, Adam son of John of Ayton,
+                     Bertram of Reston, John son of Ingram, and others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

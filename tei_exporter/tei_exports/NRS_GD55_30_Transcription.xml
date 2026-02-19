@@ -1,0 +1,72 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/30</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 10:00:49.643302+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/30</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte matris Ecclesie filiis tam presentibus quam futuris . <seg type="diplomatic" subtype="intitulatio"><persName>Dunecanus</persName> filius <persName>Gileb<ex>er</ex>ti</persName> filii <persName>ferg<ex>us</ex></persName></seg> . <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis me</seg> dedisse et concessisse et hac mea carta confirmasse deo et Ecclesie<lb/> sancte marie de Melros . et monachis ibidem deo seruientibus pro animabus <persName>D<ex>aui</ex>d</persName> . et <persName>Melcolmi</persName> Regum dominorum meorum . et Comitis . <persName>Henr<ex>ici</ex></persName> . et pro salute domini mei <persName>Willelmi</persName> Regis . et <persName>D<ex>aui</ex>d</persName> fratris eius .<lb/> et Comitis . <persName>Dunecani</persName> . et pro salute mea . et animabus patris mei et matris mee . et omnium
+                     antecessorum et successorum meorum in liberam et puram et
+                     perpetuam elemosinam . totam terram de<lb/> Meibothelbeg . ut eam habeant et possideant in perpetuum liberam quietam et
+                     solutam ab omni terreno seruitio . et exactione et
+                     consuetudine seculari . et sicut aliqua elemosina liberius
+                     . quietius<lb/> plenius et honorificentius . possidetur in Regno Scott’ . per diuisas in hac mea
+                     carta nominatas . <seg type="diplomatic" subtype="boundaries">Scilicet a capite burne que descendit de Crubder . et per eandem burnam usque in
+                     Culelung<lb/>ford . et sicut eadem burna descendit de Culelungford in polnetyber . et sicut
+                        polnetyber cadit in Don . et per Don sursum usque ubi
+                        polgarroh cadit in don . et sic sursum per Polgarroh 
+                        usque ad paruam mussam . Notandum autem quod in parte
+                        australi eiusdem musse descendit sicus quidam in
+                        polgarroh . et per eundem sicum sursum usque diuidere
+                        sicus ascendit in Polcog<ex>ri</ex> . et polcog<ex>ri</ex><lb/> adcendit in Dufah . inter Meibothelbeg . et Meibothelmor . et de eodem Dufah per
+                        sicum quendam qui ascendit in aliam mussam . et a
+                        capite sici illius per transuersum ipsius musse . et a
+                        mussa illa<lb/> sicut alius sicus in parte australi de Brokelaue ascendit in uiam . et per
+                        eandem uiam sursum usque ad nemorosam uallem que
+                        ascendit de predicto Crubder et per eandem uallem usque
+                        ubi eadem uallis<lb/> des[-i]cendit in Crubder</seg> . Preterea dedi eis et hac mea carta confirmaui totam terram de Bethoc . in
+                     liberam puram et perpetuam elemosinam per terminos et
+                     rectas diuisas suas .<lb/> <seg type="diplomatic" subtype="boundaries">Scilicet sicut uia uadit ad Scipsate . et per eandem uiam usque ad sicum qui
+                     uadit per mediam mussam usque ad capud de Altercreue . et
+                     inde usque ad uiam qua itur . ultra altecreue . et de illa<lb/> uia usque ad sicum qui ascendendo uadit ex aquilonali parte de Cragan . et per
+                        eundem sicum usque ad illum locum qui uocatur Tunregaid
+                        . ubi de ipso sico egreditur quidam Riuulus que dicitur
+                        polsalach<lb/>aric . et inde sicut idem Riuulus currit usque in Polnetyhered</seg> <seg type="diplomatic" subtype="holding">Totam hanc terram tam illam de Meitbothelbeg . quam istam de Bethoc . et quiquid
+                     continetur infra diuisas prenominatas in bosco<lb/> et plano . in pratis et pascuis . in uiis et semitis . in terris et aquis et
+                        piscariis . et in omnibus aliis rebus et aisiamentis
+                        dedi predictis monachis et Ecclesie de Melros . ut ea
+                        habeant et possi<lb/>deant in perpetuum libere . quiete plenarie honorifice et absolute ab omni
+                        terreno seruitio . sicut aliquam elemosinam liberius
+                        quietius plenius et honorificentius tenent et possident
+                        .<lb/> ita tamen quod singulis annis dabunt mihi et heredibus meis . ii . marcas .
+                        argenti . tantum ad recognitionem pro eadem terra de
+                        Bethoc . i . marcam . ad pentecosten . et alteram ad
+                        festum sancti martini .</seg> Et ipsi<lb/> monachi utentur omnibus que continentur infra prenominatas diuisas modis omnibus
+                     ad libitum suum melius et utilius sibi uisum fuerit .</seg> <seg type="diplomatic" subtype="warrandice">et ego et heredes mei manutenebimus et warantizabimus<lb/> eis hec omnia contra omnes homines in perpetuum .</seg> et adquietabimus uersus dominum Regem de omni forensi et terreno seruitio . Et
+                  quia uolui ut hec mea elemosina firma esset et stabilis et
+                  nullo modo in<lb/> irritum duci posset . horum omnium testem et fideiussorem posui Episcopum et
+                  Ecclesiam Glasgu<ex>ensem</ex> . ut si aliquando ego uel heredes mei a tenore huius carte deuiare temptauimus .
+                  ipsa Ecclesia et eius pon<lb/>tifices per Ecclesiasciam censuram ad correctionem nos reuocent . <seg type="diplomatic" subtype="witnesses">His T<ex>estibus</ex> . Domino <persName>Ioc<ex>elino</ex></persName> . Gla<ex>s</ex>g<ex>uensi</ex> . Episcopo . <persName>Will<ex>elm</ex>o</persName> abbate de Sancta Cruce . Comite . <persName>Dunnec<ex>ano</ex></persName> . Comite . <persName>Gileb<ex>er</ex>to</persName> . <persName>Sim’</persName> archid<ex>iacono</ex> . Domino <persName>Ro<lb/>lando</persName> . <persName>Melcolmo</persName> filio Comitis <persName>Dunec<ex>ani</ex></persName> . <persName>Eth</persName> filio Comitis . de Leuen’ . <persName>Will<ex>elm</ex>o</persName> <persName>Walter</persName> . <persName>Ioh<ex>ann</ex>e</persName> clericis Episcopi . <persName>Rog’</persName> de Scaleb’ . <persName>Gilasald</persName> . mac <persName>Giland’</persName> . <persName>Gillenem</persName> . mac <persName>Colem’</persName> . <persName>Edg’</persName> . <persName><roleName>camerario</roleName></persName> meo .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

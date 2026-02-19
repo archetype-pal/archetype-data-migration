@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/46</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:25:54.2925+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/46</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Vniuersis sancte Matris Ecclesie filiis presentibus et futuris . <seg type="diplomatic" subtype="intitulatio">Walterus filius Alani Dapifer regis scoct’</seg> . <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg><lb/> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis me</seg> concessisse et hac Carta mea confirmasse deo et Ecclesie sancte Marie de Melros
+                     . et mo<lb/>nachis ibidem deo seruientibus donationem illam quam Walterus filius alani Auus
+                     meus fecit<lb/> illis de quatuor Carucatis terre in edmundest’ . <seg type="diplomatic" subtype="holding">habend’ et tenend’ in puram et perpetuam elemo<lb/>sinam adeo libere plenarie et quiete sicut idem monachi eas tenuerunt et tenent
+                        . et sicut Carta quam de eo habent testatur</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Hiis Testibus . Will<ex>elm</ex>o de bosco Cancellario regis . Ro<lb/>gero Auenel . Alano de Mundegumeri . D<ex>aui</ex>D de lindesei . Rogero filio Glai . hug<ex>one</ex> Mauleuerer<lb/> Hugone Ridell’ . Radulfo nano . Will<ex>elm</ex>o heris . et Multis Aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

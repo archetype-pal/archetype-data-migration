@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NLS Adv. MS 15.1.18, no. 67</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:02.780117+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 67</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte matris ecclesie filiis . clericis ⁊ laicis presentibus ⁊ futuris
+                  . <seg type="diplomatic" subtype="intitulatio">Malcolmus filius Dunc<ex>ani</ex> Comitis <lb/> de fif</seg> . <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> . <seg type="diplomatic" subtype="notification">Sciant tam posteri quam presentes</seg> . <seg type="diplomatic" subtype="disposition">me concessisse ⁊ hac mea carta confirmasse <lb/> deo ⁊ sancto Andree ⁊ priori ⁊ conuentui apud sanctam Andream deo seruientibus ⁊
+                     seruitu<lb/>ris <lb/> donationes quas Dunc<ex>anus</ex> Comes pater meus fecit illis . scilicet . ecclesiam de Cupre . ecclesiam de Mar<lb/>king . ecclesiam de Sconin . Capellam de katel . cum omnibus pertinentiis suis . <seg type="diplomatic" subtype="holding">Quare uolo . ut predic<lb/>tus prior ⁊ conuentus prioratus ecclesias teneant ⁊ possideant de me ⁊ de
+                        heredibus meis . <lb/> ita libere ⁊ quiete  sicut carte patris mei testantur</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . Merleswano . Adam de Syrais . <lb/> Adam fratre Comitis . Alano filio Symonis . Odone senescaldo . Will<ex>elm</ex>o de lacel’ . Waltero <lb/> de lundin . hug<ex>one</ex> pincerna . Albino capellano . Milone de Raiuill’ . Gaufr<ex>ido</ex> de <lb/> Malleuill’ . ⁊ aliis quampluribus .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/239</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-08 13:29:20.175074+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/239</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Richard by the grace of God humble servant of the church of St Andrews to all
+                  sons of Holy Mother Church, Greeting:</seg> <seg type="diplomatic" subtype="disposition">Let those to come as well as those present know that we have given and granted
+                  and by this our charter made firm to the church of Holyrood
+                  in Edinburgh, and to the canons serving God there, the church
+                  of Bolton, to be held in free and perpetual alms. Wherefore I
+                  will and by episcopal authority command that the said canons
+                  should hold that church freely, quietly and honourably with
+                  everything rightfully belonging to it. Reserving episcopal
+                  right, and reserving the tenure of Ralph de St-Martin.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Master A<ex>ndrew</ex> archdeacon of Lothian, Walter archdeacon of St Andrews, John the Bishop Robert’s
+                     nephew, A<ex>iulf</ex> dean of Lothian, Alexander and William chaplains of Bishop Richard, Geoffrey the
+                     bishop’s steward, Master Abraham, Robert the chaplain,
+                     Godwin the chaplain, David the chaplain, Hugh the bishop’s
+                     butler, and very many other men of good testimony.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

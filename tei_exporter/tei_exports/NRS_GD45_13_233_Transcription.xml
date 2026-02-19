@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/233</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-28 23:19:41.931854+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/233</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Uctredus filius Fergus et Gunnild filia Waldef sponsa ipsius</seg> . Omnibus sancte matris ecclesie filiis <seg type="diplomatic" subtype="salutation">salutem</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant tam posteri quam<lb/> presentes</seg> nos consensu Lochlan heredis nostri dedisse . et hac karta nostra confirmasse
+                     ecclesiam de torpennoth cum<lb/> terra et omnibus rectitudinibus ad eandem ecclesiam iuste pertinentibus .
+                     ecclesie Sancte Crucis de castello puellarum .<lb/> et canonicis ibidem deo seruientibus in perpetuam elemosinam pro redemptione
+                     anime Waldeui . et Fergus .<lb/> et omnium antecessorum nostrorum . <seg type="diplomatic" subtype="holding">Quare firmiter uolumus . ut idem canonici ecclesiam prenominatam habeant<lb/> et possideant ita libere et quiete . sicut aliqua ecclesia in toto episcopatu
+                        karloliensi liberius tenetur et possidetur</seg>;</seg><lb/> <seg type="diplomatic" subtype="witnesses">His testibus . Galfrido abbate de dunfermelin . Osberto abbate de Iedeuurde .
+                  Aluredo abbate de striuelin . Gillemure mac<lb/> blancard . Gillemure Albanach . Gilleb<ex>er</ex>to mac gillefin . Serlone . Bernardo . Ricardo bertha buregensibus.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

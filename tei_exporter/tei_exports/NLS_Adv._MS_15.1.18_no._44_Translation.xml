@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NLS Adv. MS 15.1.18, no. 44</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-06-07 14:30:42.891832+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 44</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church, <seg type="diplomatic" subtype="intitulatio">Adam son of Abraham of Lour</seg>, <seg type="diplomatic" subtype="salutation">Greeting</seg></seg>: <seg type="diplomatic" subtype="notification">Let all men know, present as well as to come,</seg> t<seg type="diplomatic" subtype="disposition">hat I have given and have granted and by this my charter have made firm, to God
+                  and to the church of St Andrews and to the Canons in that
+                  place serving God now and in the future, three acres of land
+                  in Lour, with one toft, in perpetual alms, and with every
+                  liberty, without any secular service and exaction.</seg> <seg type="diplomatic" subtype="witnesses">With common pasture for four oxen, as many cows, two horses, and forty sheep. As
+                  witnesses: Michael son of Simon; Ralph the Chaplain; David
+                  Ruff; Robert son of Adelard, and Gilbert his brother.</seg></p> <p> </p></div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,50 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 5945</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.964856+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5945</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Christ's faithful to whom the present writing shall have come, <seg type="diplomatic" subtype="intitulatio">Robert son of Reginald</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know me, all of you,</seg> <seg type="diplomatic" subtype="disposition">moved by divine love and for the soul of my father and of all my ancestors, and
+                  for the salvation of my own soul, and especially for the soul
+                  of Nicholas, son of Adam, whose death has been attributed to
+                  me, to have given, granted, and made firm by this my charter,
+                  in pure, free, and everlasting alms, to God, Saint Mary, to
+                  the prior, and to the monks of Coldingham serving God in that
+                  place now and for ever in the future, thirteen acres and one
+                  rood in the territory of Great Reston in three places; that
+                  is, in Billieside and <ex>Sonƿiwesacre</ex> and in <ex>Holewaye</ex>; <seg type="diplomatic" subtype="holding">to have and to hold for ever, as freely, quitely, fully, and honourably as any
+                     alms in the kingdom of Scotland is freely, quitely, fully,
+                     and honourably held or possessed</seg>. <seg type="diplomatic" subtype="warrandice">And I, Robert, and my heir, shall warrant the said thirteen acres and one rood
+                     to the said prior and monks against all men and women; and
+                     we shall defend and acquit them in all services and aids,
+                     both towards the lord king and also the house of
+                     Coldingham.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord William of Lindsay; the lord William of
+                  Mordington; the lord Alan of Swinton; the lord Adam of
+                  Prenderguest; Robert, Alexander, William of Paxton; William,
+                  clerk of the lord prior; John son of Elias of Ayton; Maurice
+                  of Ayton; Bertram of Reston; Robert son of Gregory; Ralph the
+                  grieve; Roger his son; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

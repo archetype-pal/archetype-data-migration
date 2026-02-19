@@ -1,0 +1,54 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 5970</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:57:31.52489+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5970</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p><seg type="diplomatic" subtype="notification">Let all present as well as future know that</seg> <seg type="diplomatic" subtype="disposition">I, <seg type="diplomatic" subtype="intitulatio">John Neville</seg>, have given, granted, and by this present charter made firm to Robert Goscelin,
+                     my kinsman, in return for his homage and service, one
+                     oxgang of land in the territory of Prenderguest from the
+                     fortified land, namely the oxgang of land towards the east
+                     which Haldane son of Waldef held, and fifteen acres of my
+                     demesne, that is, six acres at Thorndales, two and a half
+                     acres at Bakestanesrig, and three and a half acres at
+                     Crumbedales, one and a half acres at Shortlands, one acre
+                     at Lillesacre, and a half-acre at Crumbedales. <seg type="diplomatic" subtype="holding">For the said Robert and his heirs or assigns to hold and to have of me and my
+                     heirs in feu and heritage, freely and quitely, with all
+                     liberties and easements belonging to the said land</seg>; by him and his heirs or assignees yearly rendering to me and my heirs
+                     thereupon in return for the said fifteen acres some white
+                     gloves at Pentecost for every service pertaining to me or
+                     my heirs, and performing for the said oxgang of fortified
+                     land as much as pertains to one oxgang of land of the same
+                     holding to the service of the lord king and the house of
+                     Coldingham. Robert himself and his heirs or assigns shall
+                     also give to me and my heirs, in return for a fine, should
+                     it occur, twelve pence, and for relief, twelve pence. <seg type="diplomatic" subtype="warrandice">And I, John, and my heirs shall defend and warrant all the aforenamed land with
+                     all their pertinents and aforewritten liberties to the
+                     said Robert and his heirs and their assigns against all
+                     men and women for ever.</seg> And it should be known that this is the first land which I have given or
+                     alienated since I became lord of my land of Prenderguest.</seg> <seg type="diplomatic" subtype="sealing">As witness of this matter I have applied my seal to the present document.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, the lord A<ex>nketin</ex>, prior of Coldingham, the lord Henry the terrar, the lord A<ex>dam</ex> of Prenderguest, Thomas of Nisbet, William vicar of Oldcambus, William of
+                     Scremerston, John son of Elias, Adam his son, Richard of
+                     Prenderguest, Bertram of Reston, Robert son of Gregory,
+                     Robert son of Maurice, and many others.</seg></p> <p> </p></div>
+    </body>
+  </text>
+</TEI>

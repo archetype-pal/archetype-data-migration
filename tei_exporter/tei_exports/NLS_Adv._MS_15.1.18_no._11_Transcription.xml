@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NLS Adv. MS 15.1.18, no. 11</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:27:58.891687+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 11</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">R . dei gr<ex>ati</ex>a Sancti Andree episcopus</seg>  Omnibus Sancte matris ecclesie filiis  Salutem ∙</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant <lb/> omnes tam posteri quam presentes</seg>  nos concessisse ⁊ episcopali autoritate confirm<lb/>asse  Priori Sancti Andree ∙ fratribus que ibidem deo seruientibus . omnes
+                     partes oblacionum altaris <lb/> excepta septima . que de iure conpetit episcopo . liberas ⁊ quietas . ⁊ ab omni
+                     exactione <lb/> inmunes .</seg> <seg type="diplomatic" subtype="witnesses">His testibus . Will<ex>elmo</ex> episcopo morauie . Osb<ex>er</ex>to abbate de Gedd’ . Aiulfo decano . <lb/> Magistro Andrea . Magistro herberto . Ioh<ex>ann</ex>e nepote episcopi . Magistro Thoma . Adam capellano</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,86 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/198</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:38:52.766267+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/198</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alexander, by the grace of God king of the Scots</seg>, to all worthy men of the whole of his land, clerk as well as lay, <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">May you all know that</seg> <seg type="diplomatic" subtype="narration">in our presence and of our barons at the colloquium at Liston in the Year of
+                  Grace 1235 an amicable agreement was made between the Abbot
+                  and Monks of Melrose on the one side, and Roger Avenel on the
+                  other, over the disputes instigated between them, that is,
+                  how Roger, contrary to the tenor of his charter and those of
+                  his predecessors, put a horse-stud and his own animals and
+                  men into the Monks’ land in Eskdale within the boundaries set
+                  out in his charter, and how the said Roger and his men
+                  destroyed some houses built by the said monks, and levelled
+                  their dykes and other enclosures of theirs, and brought other
+                  injuries upon them, as they said. To wit that Roger has
+                  allowed that neither he himself nor his heirs nor their men
+                  shall have a horse-stud, cattle, pigs, sheep or any other
+                  live-stock within the boundaries specified in the said
+                  Roger’s charter, unless by the monks’ permission, saving to
+                  the said Roger the beasts of the chase in the manner stated
+                  in his charter, which we and our barons have explained in
+                  this way; to wit, that Roger and his heirs shall have so many
+                  stag and hind, boar and sow, and roe-bucks and roe-does; in
+                  addition, the eyries of hawks and sparrow-hawks, provided
+                  that the monks do not maliciously cause hindrance so that
+                  they can nest in the place where they nest as long as they
+                  have the habit of nesting there; they should not remove the
+                  nests of hawks or sparrow-hawks within the said boundaries,
+                  nor should they fell the trees in which they nest in one year
+                  until it is determined whether they wish to nest in those
+                  trees in the following year or not; and if then they have not
+                  nested, let the monks make use of the trees by all means that
+                  they wish. In other places within the boundaries set out in
+                  the charter of the said R<ex>oger</ex>, they may build lodges and buildings wherever they wish, according to their
+                     pleasure and intent, and make use of the tenement
+                     contained within the said boundaries as shall seem to them
+                     best and most usefully profitable to themselves, their
+                     brethren, servants, and livestock. In addition, thus have
+                     we determined about thieves and trespassers: that they are
+                     not deemed trespassers in respect of the right of the
+                     monks and the use of the same, of their tenants, brethren,
+                     and men, whenever they go for grazing their own animals,
+                     or keeping watch, or searching, or carrying out their
+                     other business, whether by day or by night, unless they
+                     have been caught in clear wrongdoing. And if they have
+                     been discovered in such a way at night, they should be
+                     guarded until the next day; and if they are tenants of the
+                     monks, they should straightaway freely be given up in
+                     order to obey the law where they ought to obey. When
+                     captured by day, they should be returned immediately to
+                     them. Also the said monks shall not hunt there with packs
+                     of hounds and ropes, nor lead others to that place for
+                     hunting, nor set traps there except for catching wolves.
+                     Accordingly the said Roger and his heirs shall enjoy the
+                     wild game as was agreed before, without deceit and bad
+                     intention, without loss and injury of crops, hedges,
+                     meadows, livestock, animals and all the other possessions
+                     of the same monks.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, A<ex>ndrew</ex> of Moray, and C<ex>lement</ex> of Dunblane, bishops; W<ex>alter</ex>, earl of Menteith; W<ex>alter</ex> son of Alan, steward of Scotland; W<ex>alter</ex> Oliphant, justiciar of Lothian; Henry de Balliol; David the Marischal; Geoffrey
+                     the clerk of the Liverance.</seg> On the eighth day of April in the twenty-second year of the reign of our lord
+                  the king [1236].</p>
+      </div>
+    </body>
+  </text>
+</TEI>

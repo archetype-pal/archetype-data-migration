@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NLS Adv. MS 15.1.18, no. 21</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:27:59.50703+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 21</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">. R . d<ex>e</ex>i gr<ex>ati</ex>a sancti Andree episcopus .</seg> omnibus sancte matris ecclesie filijs  <seg type="diplomatic" subtype="salutation">salutem . &amp; episcopalem benedictionem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Noscant tam posteri <lb/> quam presentes</seg> me concessisse . ⁊ presentis scripti munimine confirmasse . Domno Rodb<ex>ert</ex>o primo priori ecclesie sancti <lb/> Andree eiusque successoribus . prioratum canonicorum in ecclesia beati Andree
+                     deo seruientium . eorumque benedictionem .<lb/> ⁊ debite obedientie professionem . Nichilominus etiam eiusdem loci fratribus
+                     liberam prioris electionem  concedimus . ut <lb/> cuicumque totum consenserit capitulum . uel eius pars sanior . ipse in eorum
+                     regimen sullimetur . eique debite professio<lb/>nis obedientiam obseruent subiecti</seg> . <seg type="diplomatic" subtype="witnesses">His assistentibus testibus . Will<ex>elm</ex>o episcopo Morauie . Osberto abbate de Gedd’ . Math' <lb/> archidiacono . Thuraldo archidiacono . Rod’b<ex>er</ex>to priore de Rostinot . Aiuffo decano . Magistro andrea . Joh<ex>ann</ex>e cancellario <lb/> episcopi . Magistro Thoma . Magistro h<ex>er</ex>b<ex>er</ex>to .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

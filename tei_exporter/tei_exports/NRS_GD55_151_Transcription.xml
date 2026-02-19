@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/151</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:12:50.211159+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/151</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-family: Junicode;"><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">. W . rex Scott’ .</seg> Omnibus probis hominibus terre sue . Clericis et laicis . francis . Angl<ex>icis</ex> . et Scottis . <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant tam posteri quam presentes</seg> .<lb/> me concessisse et hac mea carta confirmasse ecclesie Sancte Marie de Mailros et
+                        monachis ibidem deo seruientibus donationem quam<lb/> Osulfus filius Vctredi et Vctredus filius eius contulerunt eidem Ecclesie de
+                        terra Ringwde . in omnibus ita libere et quiete . in
+                        elemosi<lb/>na perpetua  sicut liberius et quietius cartæ eorum eis testantur  et carta
+                        regis Malcolmi fratris mei concedit et affirmat .</seg> <seg type="diplomatic" subtype="witnesses">Teste<lb/> <supplied>Ricardo</supplied> Episcopo Sancti Andree . Engelramo episcopo Glasguesnsi . Ioh<ex>ann</ex>e abbate de kelchou . Osberto Abbate de Gedewrde . Nicholao Cancellario<lb/> <supplied>M</supplied>atheo Archidiacono . Ric<ex>ardo</ex> . Capellano . Ric<ex>ardo</ex> de Morauilla . Waltero filio Alani . Philippo de Valunnes . Valtero Corbet .<lb/> Roberto Auenel . Gilleberto filio Richerii . Bernardo filio breani . Roberto
+                        filio Guidonis . Will<ex>elm</ex>o de haia . Will<ex>elm</ex>o de Mor<lb/>temer . Radulfo namo . Imero clerico . Waltero de berchelai .</seg> Apud Lannarc . </span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

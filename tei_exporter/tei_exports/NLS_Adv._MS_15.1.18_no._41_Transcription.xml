@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NLS Adv. MS 15.1.18, no. 41</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:00.955657+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 41</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte matris ecclesie filiis . <seg type="diplomatic" subtype="intitulatio">Saerus de quinci</seg> . <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> . <seg type="diplomatic" subtype="notification">Sciant omnes tam presentes quam futuri</seg> . <seg type="diplomatic" subtype="disposition">me concessisse ⁊ hac mea Carta confir<lb/>masse deo ⁊ ecclesie Sancti Andree apostoli de Scotia . ⁊ Canonicis ibidem deo
+                     seruientibus ⁊ seruituris Dauac Icthar Hathyn per <lb/> rectas diuisas suas . quam mater mea dedit eis . In pascuis . in pratis . in
+                     bosco . in plano . in moris . in aquis . cum omnibus
+                     aisiamentis ad <lb/> terram illam pertinentibus . Tenendam de me ⁊ de heredibus meis . in perpetuam
+                     elemosinam . Pro Salute anime mee ⁊ predecessorum <lb/> ⁊ Successorum meorum . Concedo etiam eis commune pasturam per totam Hathyn . <seg type="diplomatic" subtype="holding">Quare uolo ut predicti Canonici predictam elemo<lb/>sinam habeat teneant ⁊ Possideant ita libere quiete ⁊ honorifice  sicut aliquam
+                        elemosinam liberius quietius ⁊ honorificentius te<lb/>nent ⁊ Possident . Sicut Carta Matris mee testatur</seg> .</seg> <seg type="diplomatic" subtype="witnesses">His testibus . Roberto de quinci patre meo . Stephano persona de locres . <lb/> Alano Capellano . Joh<ex>ann</ex>e senescaldo . Will<ex>elm</ex>o Capellano Vthing’ . fratre eius . Constant’ . ⁊ Patricio . filiis Nesii aui
+                     mei . Dunc’ filio Emel’ . Sywardo .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

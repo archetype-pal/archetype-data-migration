@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/70</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 13:18:57.298388+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/70</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church both present and to come, <seg type="diplomatic" subtype="intitulatio">Alan son of Walter, steward of the lord king of the Scots,</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know me</seg> to have granted, and by this charter to have confirmed, to God and the church of
+                     St Mary at Melrose, and to the monks in that place serving
+                     God, the whole land that they hold of Richard Wallace,
+                     that is Barmuir and Godenech, by the same boundaries that
+                     are contained in the charter of the same Richard, which
+                     they have concerning the same land, <seg type="diplomatic" subtype="holding">so that whatever was within the same boundaries they may have and possess for
+                     ever as freely and quitely and honourably as any alms is
+                     freely, quitely and honourably possessed in the kingdom of
+                     the king of the Scots.</seg> <seg type="diplomatic" subtype="warrandice">And I and my heirs shall maintain and warrant to them the same land against all
+                     men for ever.</seg> Saving my service from Richard himself.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord Jocelin, bishop of Glasgow; Richard, abbot of
+                  Dryburgh; Elias the bishop's nephew; Walter the bishop's
+                  clerk; Richard Malebisse; Elias the bishop's brother; William
+                  Passelew; Peter of Corrie.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

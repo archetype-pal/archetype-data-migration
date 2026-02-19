@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/75</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:46.51883+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/75</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus hoc scriptum uisuris uel audituris . <seg type="diplomatic" subtype="intitulatio">Petrus de curri</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Sciatis quod</seg> <seg type="diplomatic" subtype="disposition">ego in bona deuotione nutu diuino me reddidi fratrem domui de Melros . ab abbate
+                  et conuentui eiusdem Domus benigne sus<lb/>ceptus . Ita quod ego pro domo de Melros in omnibus ubique stabo sicut frater et
+                     particeps omnium bonorum eiusdem domus<lb/> in his quibus potero consulendo et auxiliando ualere . nec ullatenus eidem domui
+                     uel fratribus seu hominibus predictorum mona<lb/>corum decetero aduersabor . Insuper sopita controuersia inter nos habita . anno
+                     domini Millesimo ducentesimo quinto super terris illis
+                     scilicet<lb/> Dalhengan et Bargouer que iacent inter riuulum cadentem de Duueloc . et saxenoc
+                     . Ego quicquid iuris habui<lb/> uel habere potui pro me et heredibus meis deo et sancte Marie et conuentui de
+                     Melros quietum clamaui . Huius<lb/> igitur rei deum et fidem meam . nec non et me ipsum testes constitui . et hanc
+                     presentem cartam meam . quam super mag<lb/>num altare coram conuentu de Melros fratribus meis optuli . Igitur terciam
+                     partem substantie mee domui de<lb/> Melros assignaui siue uiuus siue mortuus ad eandem domum uenero .</seg> <seg type="diplomatic" subtype="witnesses">His Testibus . Reginaldo de crau<lb/>ford . Will<ex>elm</ex>o de lindeseia . Ioh<ex>ann</ex>e hesse et aliis</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

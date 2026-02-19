@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 625</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.648591+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 625</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">. A . dei gr<ex>ati</ex>a Rex scott<ex>orum</ex> .</seg> Th<ex>ome</ex> . Priori Dunelm<ex>ensi</ex> . dilecto amico suo . <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition">Mandamus vobis .<lb/> precantes quatinus quadraginta Libras quas per monachos de Coldingham’ anno
+                     preterito misi<lb/>mus vsque Dunelm<ex>um</ex> . Hugolin<ex>o</ex> nuntio et famulo domini Reiner<ex>i</ex> Cardinal<ex>is</ex> . habere<lb/> faciatis . In cuius rei testimonium  has Litteras nostras patentes vobis
+                     transmittimus</seg> .<lb/> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . E. Abbate de sancta Cruce . W. Olif<ex>ard</ex> . Iust’ Laod<ex>onie</ex> .</seg> <seg type="diplomatic" subtype="dating">apud castr<ex>um</ex> puellar<ex>um</ex> . xxix . die<lb/> Maii . Anno regni domini regis vicesimo secundo .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

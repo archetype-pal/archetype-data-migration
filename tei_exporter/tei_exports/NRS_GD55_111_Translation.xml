@@ -1,0 +1,29 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/111</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-06-14 11:15:03.982846+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/111</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p  style="text-align: center; background: white; margin: 3.75pt 0cm 11.25pt 0cm;" align="center"><span style="font-size: 13.0pt; font-family: 'Junicode','serif'; color: #050505;">C Y R G R P H U M</span></p> <p  style="text-align: center; background: white; margin: 3.75pt 0cm 11.25pt 0cm;" align="center"> </p></div>
+    </body>
+  </text>
+</TEI>

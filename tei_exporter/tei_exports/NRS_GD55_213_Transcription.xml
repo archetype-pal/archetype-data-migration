@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/213</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 16:05:11.350344+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/213</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Has Litteras uisuris uel Audituris Tam Presentibus quam futuris <seg type="diplomatic" subtype="intitulatio">Iohannes filius Waldeui .</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg></seg><lb/> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Noueritis me</seg> Concessisse et Hac presenti Carta mea Confirmasse deo et Ecclesie sancte Marie
+                     De Melros<lb/> et Monachis ibidem deo seruientibus Omnes Donationes et Conuentiones . et
+                     Concessiones quas Iohannes de Methkill’ ipsis fecit De
+                     terra de Pannesceles Cum Omnibus pertinenciis suis et
+                     Libertatibus<lb/> et Aeisiamentis Eidem terre de Pannesceles pertinentibus <seg type="diplomatic" subtype="holding">tenendas et habendas ipsis inperpetuum . de Dicto<lb/> Iohanne De Methkil et Heredibus suis secundum tenorem cartarum quas ipsi Monachi
+                        Habent de dicto Ioh<ex>ann</ex>e<lb/> super dicta terra</seg> . saluo seruicio michi et Heredibus meis de dicto Iohanne De Methkil et
+                     Heredibus suis<lb/> Contento In Carta mea et Cartis Antecessorum meorum quas dictus Iohannes Habet
+                     de eadem terra .</seg><lb/> <seg type="diplomatic" subtype="witnesses">Hiis Testibus Domino Comite Patricio de Dunbar . Patricio filio eius . Will<ex>el</ex>mo filio eius . Walt’ Olifard . Bernardo<lb/> Fraser . Adam de Paulewurth . Rogero de Merlay . Will<ex>el</ex>mo De Bolteby . Alano filio Alan<ex>i</ex> filii Edgari .<lb/> Iohanne filio meo .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NLS Adv. MS 15.1.18, no. 14</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-01-31 16:28:02.466357+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 14</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Will<ex>elmus</ex> . miseratione diuina Ecclesie Sancti Andr<ex>ee</ex> . minister humilis .</seg> vniuersis sancte matris Ecclesie filiis <seg type="diplomatic" subtype="salutation">eternam in domino <lb/> Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Ad uniuersitatis uestre noticiam uolumus deuenire</seg> nos de assensu prioris ⁊ Capituli sancti Andr<ex>ee</ex> . ad incre<lb/>mentum archidiaconatus sancti Andr<ex>ee</ex> . dedisse ⁊ concessisse Magistro Laur<ex>encio</ex> . Archidiacono sancti Andr<ex>ee</ex> . et eius successoribus in perpetuum Ecclesiam de Teruet cum omnibus iustis
+                     pertinentiis suis . liberam ⁊ Quietam a <lb/> sinodalibus ⁊ omnibus episcopalibus ⁊ exactionibus . <seg type="diplomatic" subtype="sealing">Et ut hec nostra donatio robur perpetue firmitatis optineat  eam <lb/> sigilli nostri appositione ⁊ presentis pagine testimonio duximus coroborandam</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Hiis Test<ex>ibus</ex> . Andr<ex>ea</ex> . Decano <lb/> Laodonie . Andr<ex>ea</ex> . de morauia . Geruasio de Neafla . Petro ⁊ Edwardo Capellanis . Magistro
+                     Michaele . <lb/> Magistro Steph<ex>an</ex>o . Ric<ex>ardo</ex> . Capellano . Ric<ex>ardo</ex> . <persName><roleName>Camerario</roleName></persName> . Nicholao de Coldingham . ⁊ multis aliis ;</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

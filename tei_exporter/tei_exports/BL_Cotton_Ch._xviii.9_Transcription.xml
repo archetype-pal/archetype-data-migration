@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Cotton Ch. xviii.9</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:35:34.704811+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.9</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio"><persName>Alex’</persName> . Dei Gratia Rex Scott’ .</seg> Omnibus probis hominibus tocius terre sue <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Sciatis nos</seg> <seg type="diplomatic" subtype="disposition">concessisse et<lb/> hac presenti Carta nostra confirmasse in puram et perpetuam elemosinam abbati et
+                     conuentui de Melros ut<lb/> omnes terras inter Galwhe et Ledyr quas tenuerunt uel in quarum possessione
+                     fuerunt . et etiam omnes alias<lb/> terras quas tenuerunt uel in quarum possessione fuerunt ex parte australi de
+                     Twed que sunt contigue terris<lb/> de Lessedewin’ et terris Monachorum de kalkou et quicquid continetur infra omnes
+                     predictas terras quas eis<lb/> deforestauimus tam sub terra quam supra teneant et habeant in perpetuum in
+                     Liberum forestum . <seg type="diplomatic" subtype="prohibition">firmiter<lb/> prohibentes ne quis sine speciali licentia ipsorum Abbatis et conuentus . in
+                        dictis terris . Secare . venari . piscari .<lb/> aut aucupari . aut aliquid aliud contra uoluntatem ipsorum facere presumat .
+                        super nostram plenariam<lb/> forisfacturam . Decem Librarum</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . <persName>G .</persName> electo Dunkeldensi . <persName>Laur<ex>entio</ex></persName> . de Abbirnith’ . <persName>Bernardo fraser’</persName> .<lb/> <persName>Thom<ex>a</ex></persName> filio . <persName>Ranulf<ex>i</ex></persName> . <persName>Willelmo</persName> de Lindeseia . <persName>Dauid</persName> de Lindeseia . <persName>Alexandr<ex>o</ex></persName> . de Striuelin’ .</seg> Apud Al<lb/>necr<ex>um</ex>b . tercio die Decembris . Anno Regni domini Regis vicesimo Secundo .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

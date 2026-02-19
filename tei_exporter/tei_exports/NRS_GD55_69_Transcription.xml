@@ -1,0 +1,55 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/69</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.150772+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/69</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Sancte matris ecclesie filiis . tam presentibus quam futuris . <seg type="diplomatic" subtype="intitulatio">Ric<ex>ardus</ex> le Walais</seg> . <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis me</seg> dedisse . et hac mea carta confirmasse deo et ecclesie Sancte marie de<lb/> Meylr<ex>os</ex> . et monachis ibidem deo seruientibus pro animabus d<ex>aui</ex>d et Melcolmi . Regum Scott<ex>orum</ex> . et Comitis Henr<ex>ici</ex> . et Walteri filii Alani domini mei . et omnium antecessorum . et successorum
+                     eorum<lb/> et pro animabus patris et matris mee . et omnium parentum . et antecessorum et
+                     successorum meorum . et pro salute domini mei . W . Reg<ex>is</ex> Scott<ex>orum</ex> . et comitis d<ex>aui</ex>d fratris eius . et alani filii Walteri domini<lb/> mei . et omnium antecessorum et successorum eius . et pro salute mea . et uxoris
+                     mee . et omnium heredum nostrorum . illam terra in
+                     Galwedia que uocatur Godenehc . <seg type="diplomatic" subtype="boundaries">per has diuisas . scilicet a capite<lb/> burne que uocatur polncarn . usque ad quercum in qua crux facta est . et sic
+                        sursum uersus septentrionem per quendam sicum . qui est
+                        iuxta predictum quercum . uersus orientem . usque ad
+                        loudonetha<lb/> et sic in transuersum musse uersus occidentem . per quendam sicum . usque . ad
+                        caput burne que cadit in saxnoc ad clonsangan</seg> . Dedi etiam predicte ecclesie illam terram que uocatur baremor . <seg type="diplomatic" subtype="boundaries">per<lb/> has diuisas . scilicet ab hostio burne de hactenewetne sursum usque ad caput
+                        eiusdem burne . et sic a capite burne sursum per
+                        quoddam uetus fossatum . usque . ad bog sub<lb/> hactnedonan . et sic deorsum sicut cruces facte sunt in quercus usque . ad
+                        louteuenan . et sic sursum uersus septemtrionem per
+                        uetus fossatum . usque . ad polnecreihs . et sic
+                        deorsum<lb/> sicut polnecreihs descendit in fale . et sic deorsum per fale . usque . ad
+                        hostium burne de hactnewetne .</seg> <seg type="diplomatic" subtype="holding">Totas has terras . et quicquid continetur infra prescriptas diuisas dedi<lb/> ecclesie de Meylr<ex>os</ex> . in liberam . et puram . et perpetuam elemosinam in perpetuum tenendas de me et
+                        heredibus meis . pro . ii . Marcis argenti ad duos
+                        terminos . mihi et heredibus meis<lb/> annuatim redendis . scilicet ad penthec<ex>osten</ex> . i . marcam . et unam ad festum sancti Martini . ita libere . quiete . plene .
+                        et honorifice . sicut ullam elemosinam liberius .
+                        quietius . plenius<lb/> et honorificentius tenent et possident . sine omni terreno seruitio . et
+                        consuetudine . et exactione seculari . salua mihi et
+                        heredibus meis prefata pensione .</seg> <seg type="diplomatic" subtype="warrandice">Et ego et<lb/> heredes mei manutenebimus . et warantizabimus eis prefatas terras . contra omnes
+                        homines in perpetuum . et adquietabimus . de forensi .
+                        et omni terreno seruitio uersus dominum regem et<lb/> omnes dominos nostros . saluis cartis eorum de Machel . quas habent de Waltero
+                        filio alani . et Alano filio Walteri dominis meis . et
+                        quietis clamatis de me et heredibus meis in perpetuum</seg></seg> .<lb/> <seg type="diplomatic" subtype="witnesses">His . T<ex>estibus</ex> . I . Glasg’ episcopo . E . Abbate de dunfermel<ex>ino</ex> . R . abbate de kinlos . A . abbate de cupro . Will<ex>elmo</ex> maluaisin archid<ex>icaono</ex> de laod<ex>onie</ex> . Hug<ex>one</ex> capellano regis . Rob<ex>erto</ex> filio Rob<ex>erti</ex> . Werneb’</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

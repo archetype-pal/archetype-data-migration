@@ -1,0 +1,50 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 721</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:41:10.645198+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 721</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Ranulf of Bunkle</seg> to all who view or hear these letters sends greeting.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me, moved by charitable love, out of love and reverence for blessed Cuthbert the
+                     glorious confessor, and for the souls of my father and my
+                     mother and for the salvation of my own soul and the soul
+                     of my wife and all my ancestors, to have quitclaimed the
+                     entire claim which I had, and the right which I had or was
+                     able to have, in the woods and moors of the prior and
+                     monks of Coldingham, that is, Brockesholes, Harewood,
+                     Denewood, entirely to the same monks, without any
+                     renouncing. In addition, know that I and my heirs shall
+                     maintain and preserve to the aforesaid monks in perpetual
+                     peace the boundaries made and perambulated between
+                     Coldingham and Bunkle, that is, from 'Middeldenesheued' by
+                     'Mereburnesheued' westwards to 'Cratoketrestrete' and from
+                     there by the same path to Eiford.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Patrick son of the earl, Patrick son of Adam, Robert of
+                  Upsettlington, David the Marischal, Thomas of Gordon, Matthew
+                  of Normanville, John of St-Michel, William de Vieuxpont,
+                  Stephen of the Wardrobe, Henry of Prenderguest, William of
+                  Wideslade, Alan of Swinton, Patrick of Preston, Simon son of
+                  Thomas, Walter of Paxton, Andrew of Paxton, William of
+                  Lumsdaine, and many others. </seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

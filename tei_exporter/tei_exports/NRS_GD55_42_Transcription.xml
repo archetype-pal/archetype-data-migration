@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/42</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.904905+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/42</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Will<ex>elmu</ex>s dei gratia rex scot’ .</seg> Episcopis . Abbatibus . Comit<ex>ibus</ex> . Baron<ex>ibus</ex> . Iustic<ex>iis</ex> . Viceom<ex>itibus</ex> . preposit<ex>is</ex> . ministris . et omnibus probis hominibus totius terre sue <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant<lb/> presentes et posteri</seg> me concessisse et hac mea carta confirmasse deo et ecclesie sancte Marie de
+                     Meylros . et monachis ibidem deo seruientibus<lb/> totam illam terram de eschedale . <seg type="diplomatic" subtype="boundaries">per easdem diuisas que nominantur et continentur in cartis Domini Roberti Auenel
+                     et Geruasii heredis ipsius .<lb/> quas habent de eis de eadem terra .</seg> <seg type="diplomatic" subtype="holding">Ita ut quicquid infra easdem diuisas fuerit . habeant et possideant imperpetuum
+                     . ita libere et quiete .<lb/> integre et pacifice . sicut aliqua elemosina liberius et quietius in regno meo
+                        possidetur .</seg> <seg type="diplomatic" subtype="holding">Confirmaui enim et concessi eis eandem terram<lb/> imperpetuum liberam . et solutam ab omnibus auxiliis . et omni seruitio et
+                        consuetudine et exactione seculari . saluo seruitio meo<lb/> de geruasio et heredibus eius .</seg></seg> <seg type="diplomatic" subtype="witnesses">His testibus . Osberto abbate de kelcho . Hug<ex>one</ex> abbate de Nevbotle . Will<ex>elm</ex>o malueisin . Ricardo<lb/> de la prouende . Hug<ex>one</ex> del seel . Dauid comite fratre Regis . Roberto de quinci . Hug<ex>one</ex> ridel . Ricardo de munfichet . Philippo<lb/> de valuines . Rogero de valuines . Waldeuo filio baldewini . Alexandro de seint
+                     martin . Herueio le marescal . Ricard<lb/> le marescal . Roberto de seint michel . Adam de stanford .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

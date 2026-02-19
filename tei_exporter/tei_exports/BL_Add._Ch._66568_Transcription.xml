@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Add. Ch. 66568</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-11-28 15:17:26.344022+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 66568</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Uniuersis Sancte matris ecclesie filiis .</seg> <seg type="diplomatic" subtype="intitulatio"><persName>Svanus</persName> filius <persName>thorii</persName></seg> <seg type="diplomatic" subtype="salutation">salutem</seg> . <seg type="diplomatic" subtype="notification">Sciatis me</seg> <seg type="diplomatic" subtype="disposition">dedisse et concessisse . et hac mea carta con<lb/>firmasse . Deo et Sancto Michaeli de Scone et canonicis ibidem deo seruientibus
+                     et seruituris  Ahednepobbel . per easdem diuisas cum<lb/> quibus <persName>Robertus</persName> capellanus illam tenuit . Et toftum unum in tuberm<ex>ur</ex>e . illum scilicet quem aurifaber tenuit . <seg type="diplomatic" subtype="boundaries">Pratum quoque<lb/> quod est super Lochethin ex australi parte . a loco quo in oriente contiguum est
+                        terre rusticorum . quantumcumque extenditur per latum<lb/> et longum uersus occidentem</seg> cum communi pastura et aisiamento nemoris mei ad quecumque necesse habuerint .
+                     in liberam et perpetu<lb/>am elemosinam  pro anima comitis <persName>henrici</persName> . et omnium antecessorum necnon et successorum meorum . et pro anima mea . <seg type="diplomatic" subtype="holding">Quare uolo . ut prefati canonici prenominatam terram cum omnibus supradictis
+                     teneant et possideant iure perpetuo de me et heredibus
+                     meis mihi in per<lb/>petuum successuris . Ita libere et quiete . plenarie et honorifice  sicut
+                        aliqua domus religionis in toto Regno . ab aliquo baro<lb/>ne liberius tenet et quietius . plenarius et honorificentius</seg></seg> . <seg type="diplomatic" subtype="witnesses">Hiis testibus . <persName>Ioh<ex>ann</ex>e</persName> episcopo Dunkeld<ex>ensi</ex> . <persName>Roberto</persName> de b<ex>er</ex>kelei . <persName>Hugone</persName> de kaled’ . <persName>Macbeth</persName><lb/> iudice de gourin . <persName>Galfrido</persName> capellano de pert . <persName>Will<ex>elm</ex>o</persName> clerico de forf<ex>ar</ex> . <persName>henrico</persName> capellano . <persName>Philippo vuieth</persName> . <persName>Iacob</persName> de pert <persName>Andr’</persName>. et <persName>Will<ex>elmo</ex></persName> fratribus<lb/> eiusdem . <persName>Galfrido</persName> filio <persName>martini</persName> . <persName>Dauid</persName> et <persName>henrico</persName> filiis eius . <persName>Waltero</persName> de sancto eadmundo . et Multis Aliis</seg> ;</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/73 (1)</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:14:10.666384+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/73 (1)</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Vniuersis ecclesie filiis presens scriptum uisuris uel audituris <seg type="diplomatic" subtype="intitulatio">Walterus filius Alani Senescaldus domini Regis Scocie</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Nouerit<lb/> uniuersitas uestra quod</seg> <seg type="diplomatic" subtype="narration">ego honori dei et paci ecclesie . et maxime quieti de Melros uolens prouidere 
+                  dubia quondam contenta in<lb/> Carta Walteri aui mei data Monachis de Melros duxi declaranda . In illa parte
+                     scilicet ipsius Carte ubi dictus auus meus loquitur<lb/> de landis et de halches et de pastura foreste . volo etiam hoc quod ibi minus
+                     caritatis et securitatis continetur  In hoc instrv<lb/>mento clarius exprimere . et dictis Monachis plenius prouidere .</seg> <seg type="diplomatic" subtype="disposition">Concessi igitur prefatis Monachis omnes landas et halches tam in fo<lb/>resta mea quam extra ex aquilonari parte fluminis de Ar et totam forestam meam
+                     ad utend<ex>um</ex> secundum quod eis utiliuis uisum fuerit . scilicet<lb/> ad arandum et seminandum ubicumque sibi uiderint expedire  tam in foresta quam
+                     extra . et ad nutriendum et pascendum et<lb/> habendum in eadem foresta assidue pecora sua quotquot uoluerint secundum quod
+                     territorium eiusdem foreste poterit continere . et hoc<lb/> erit in arbitrio Monachorum estimare quantum idem territorium poterit sustinere
+                     . Concessi etiam eis usum eiusdem foreste in<lb/> omnibus aisiamentis et utilitatibus ipsius habendum et possidendum plene et
+                     pacifice ad omnes necessitates suas hoc solo excepto<lb/> quod Monachi nec conuersi nec aliqui alii illorum auctoritate  uenabuntur nec
+                     accipitres capient in eadem foresta hoc<lb/> enim illorum ordini non conuenit nec illis credimus expedire . Hec omnia deo et
+                     prefatis Monachis in perpetuum dedi con<lb/>cessi et hac mea carta confirmaui . <seg type="diplomatic" subtype="warrandice">Ego quidem et heredes et successores mei uniuersi warantizabimus et defendemus<lb/> predictis Monachis omnia supradicta</seg> <seg type="diplomatic" subtype="holding">et eos illa faciemus in pace possidere libere et quiete ab omni seruitio et
+                     exactione et con<lb/>suetudine seculari .</seg></seg> <seg type="diplomatic" subtype="sealing">Et ut hec mea concessio firma sit et inperpetuum illesa presens scriptum
+                  prefatis Monachis Sigillo<lb/> meo presenti tradidi roboratum</seg> . <seg type="diplomatic" subtype="witnesses">Hiis testibus . Will<ex>elm</ex>o capellano meo . Malcolmo filio comitis de leuenaus nepo<lb/>te meo . Ioh<ex>ann</ex>e de mundegumeri . Roger filio Glay . Will<ex>elm</ex>o de hauekerest’ . Alano Wallensi . Vmfirdo de Bosco .<lb/> Ioh<ex>ann</ex>e de lindesey . Hug<ex>one</ex> filio Sim<ex>onis</ex> filii Bertini . et Multis Aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

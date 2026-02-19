@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/287</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:24:16.076054+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/287</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte matris ecclesie filiis et fidelibus presentibus et futuris
+                  litteras istas uisuris uel audituris <seg type="diplomatic" subtype="intitulatio">Walterus de<lb/> Ridal’ filius patricii de Ridal’</seg> <seg type="diplomatic" subtype="salutation">salutem in domino</seg> .</seg> <seg type="diplomatic" subtype="notification">Nouerit vniuersitas uestra</seg> <seg type="diplomatic" subtype="disposition">me dedisse concessisse et hac mea presenti carta<lb/> confirmasse deo et ecclesie beate Marie de melros et Monachis ibidem deo
+                     seruientibus in liberam . puram . et perpetuam elemosi<lb/>nam quandam partem terre mee in territorio de lilliscliue cum Toftis et Croftis
+                     que sunt inter terram Rogeri de Neu<lb/>botl’ et terram quam dedi Alexandro de Askirke scilicet totam terram quam matild<ex>is</ex> chorbeth tenuit in duarium in lintedikes<lb/> et benelandes et brunerig  in duobus locis . et in kaueres . et ch<ex>e</ex>ngisflat . Et pratum quod dicitur stobimedue . et quinque acras<lb/> et unam percatam de dominico meo subtus harekamb ex australi parte . scilicet de
+                     terra quam alexander filius thoc de me tenuit<lb/> ad firmam . Terras istas et quicquid in eis continetur dedi predictis monachis . <seg type="diplomatic" subtype="holding">Et uolo ut eas cum predicto prato et cum omnibus commu<lb/>nibus aisiamentis eiusdem uille habeant teneant et possideant in perpetuum ita
+                        libere quiete plene et honorifice  sicut ali<lb/>quam elemosinam liberius quiecius plenius et honorificencius tenent uel
+                        possident .</seg> <seg type="diplomatic" subtype="warrandice">Et ego et heredes mei manutenebimus et warantizabimus predictas terras cum
+                     predicto prato et adquietabimus ab omni terreno seruicio
+                     et consuetudine et exaccione se<lb/>culari et demanda erga dominum Regem et omnes alios in perpetuum</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Hiis testibus . Domino meo Will<ex>elm</ex>o de Vesci . Ricardo ger<lb/>nun . Roberto de Euurth . Ricardo de Nichol’ . Hugone de reuedene . Gileberto de
+                     Wittune . Will<ex>elm</ex>o filio alexanderi de<lb/> lilliscliue et multis aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

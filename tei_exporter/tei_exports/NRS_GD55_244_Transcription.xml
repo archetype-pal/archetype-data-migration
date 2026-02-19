@@ -1,0 +1,53 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/244</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:35.061456+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/244</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><seg type="diplomatic" subtype="address">Omnibus Christi fidelibus presens scriptum uisuris uel audituris <seg type="diplomatic" subtype="intitulatio">ioh<ex>anne</ex>s de Normanuill' dominus de Makest’</seg> <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me pro animabus dominorum<lb/> meorum regum Scocie et omnium antecessorum meorum et pro salute domini mei
+                        Alexandri Regis Scocie et pro salute mea propria et
+                        uxoris mee<lb/> et liberorum et parentum meorum dedisse concessisse et hac presenti carta mea
+                        confirmasse deo et Monachis de Melros in puram et
+                        perpetu<lb/>am et liberam elemosinam illam partem terre in territorio de Makest’ que intra
+                        has diuisas continetur . <seg type="diplomatic" subtype="boundaries">scilicet per fossatum subtus kelwelaue<lb/> usque in keluesetescloch et sic descendendo per keluesetescloch usque ad
+                           fossatum de grerig et sic per idem fossatum usque ad
+                           lillesetheburne<lb/> et sic ascendendo per eandem burnam usque ad fossatum de grenerig et per
+                           fossatum uersus occidentem usque ad derstret et sic
+                           uersus austrum<lb/> per destret usque ad regiam uiam qua itur de valle Anant uersus Rokesburg et sic
+                           per eandem uiam uersus orientem usque ad diuisas
+                           inter<lb/> faringdun’ et terram eorundem Monachorum de Melros</seg> . <seg type="diplomatic" subtype="holding">Totam terram inter has diuisas contentam dedi prefatis Monachis et eos in
+                        corpora<lb/>lem possessionem ipsius terre manu mea induxi nemine reclamante uel
+                           contradicente . et uolo ut prefati Monachi habeant
+                           et teneant . imper<lb/>petuum . eandem terram pacifice et integre in moris et Mariscis pratis et
+                           pascuis in terris cultis et incultis in aquis et
+                           omnibus aliis<lb/> asiamentis in eadem terra contentis .</seg> Concessi etiam predictis Monachis liberum ingressum et egressum et transitum
+                        liberum ispis et auenis<lb/> et uecturis suis et familie sue ad predictam terram per terram meam de Makest’ . <seg type="diplomatic" subtype="warrandice">Ego quidem et heredes mei omnia supradicta predictis Mo<lb/>nachis Warantizabimus et defendemus contra omnes homines . et faciemus eos
+                           possidere imperpetuum libera quieta et absoluta ab
+                           omni<lb/> terreno seruicio et consuetudine et exactione et demanda .</seg></seg> <seg type="diplomatic" subtype="sealing">Et ad huius donationis perpetuam securitatem presens scriptum Sigilli<lb/> mei appositione roboraui</seg> . <seg type="diplomatic" subtype="witnesses">Hiis testibus . Thom<ex>a</ex> Cancellario domini Regis . Waltero Olifart tunc iusticiarius Regis . Henrico de
+                        bayli<lb/>ol Camerario Regis . Rob<ex>erto</ex> de Ros . Ioh<ex>ann</ex>e de Makeswel . Ioh<ex>ann</ex>e de vallibus . Will<ex>el</ex>mo de lindeseye . Rob<ex>erto</ex> de Malewill’ . Bernard<ex>o</ex><lb/> de Hauden . Alexand<ex>ro</ex> de Sint’ . Will<ex>el</ex>mo de veteriponte . Symone malo leporar’ . et Multis aliis .</seg></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

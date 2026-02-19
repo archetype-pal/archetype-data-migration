@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 627</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.627775+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 627</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alex<ex>ander</ex> Dei Gr<ex>ati</ex>a Rex Scott<ex>orum</ex>.</seg> Episcopis . Abbatibus . Comitibus . Baronibus . Iusticiariis . vicecomitibus .
+                     prepositis .<lb/> Ministris . et omnibus aliis probis hominibus Tocius terre sue <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant presentes et futuri</seg> nos<lb/> diuine pietatis intuitu dedisse . concessisse . et hac carta nostra confirmasse
+                     deo et Beate Marie<lb/> et sancto Cuthberto. et Thom<ex>e</ex> priori de Coldingham’ . et Monachis ibidem deo seruientibus . et in<lb/> perpetuum seruituris Illas viginti Marcas annuas quas nos et antecessores nostri
+                     percipere<lb/> consueuimus de Coldingham Syre nomine Waytingge . <seg type="diplomatic" subtype="holding">Tenendas . percipiendas . et habendas .<lb/> eisdem Monachis et successoribus suis In perpetuum In Liberam . puram . et
+                        perpetuam elemosinam .<lb/> adeo Libere . quiete . plenarie et honorifice . sicut idem Monachi aliquas alias
+                        elemosinas .<lb/> Liberius . quietius . plenius et honorificentius . tenent et possident .</seg></seg> <seg type="diplomatic" subtype="witnesses">Testibus . A. abbate de Melros .<lb/> W. de Bondint<ex>on</ex> Cancellario . W. filio Alan<ex>i</ex> Senescall<ex>o</ex> . Iusticiar<ex>io</ex> Scot' . P. filio Comitis Patricii .<lb/> Iohann<ex>e</ex> de Makeswel Camerar<ex>io</ex> . Roger<ex>o</ex> Auenel . Dauid <persName><roleName>Marescall<ex>o</ex></roleName></persName> . Aeymer<ex>o</ex> de Makes<lb/>wel . Iohanne de Striuelin</seg> <seg type="diplomatic" subtype="dating">apud Berewich' Sextodecimo die Maii . Anno Regni domini Regis<lb/> Octauo decimo .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

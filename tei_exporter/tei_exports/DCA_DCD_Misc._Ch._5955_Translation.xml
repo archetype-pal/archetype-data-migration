@@ -1,0 +1,49 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 5955</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.813496+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5955</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Christ's faithful to whom the present writing shall come, <seg type="diplomatic" subtype="intitulatio">Bertram of Little Reston</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know me, all of you,</seg> <seg type="diplomatic" subtype="disposition">to have given, granted, and by this my present charter to have made firm, to God
+                  and to Saint Cuthbert, and to Anketin the Prior, and the
+                  Convent of Coldingham, the homage and service of Patrick son
+                  of Uhtred, with all lands and possessions which he had out of
+                  the donation of Adam, my father, in the toun and territory of
+                  Little Reston; that is, the toft and croft which lies near
+                  the land of Henry towards the east, and fourteen acres of
+                  land near <ex>Wambenese Cross</ex>, and three roods in <ex>Blakeclou,</ex> and two acres and a half near <ex>Blakeclou</ex> towards the east, and eight acres near <ex>Faules</ex>; <seg type="diplomatic" subtype="holding">for the Prior and Convent and their successors to have and to hold for ever,
+                     quit in respect of me and my heirs, without any custom and
+                     secular exaction and demand, just as any alms within the
+                     kingdom of Scotland is well and freely held and possessed.</seg> <seg type="diplomatic" subtype="warrandice">I, Bertram, and my heirs, shall warrant and defend for ever the aforesaid homage
+                     and service for the Prior and Convent and their
+                     successors, with all the lands and possessions written
+                     before, against all men and women.</seg></seg> <seg type="diplomatic" subtype="sealing">In testimony of this matter, I have applied my seal to the present writing.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord William of Lindsay; the lord William of
+                  Mordington; the lord Alan of Swinton; Thomas of Nisbet;
+                  William of Scremerston; Adam of Prenderguest; David of
+                  Lumsdaine; Robert son of Gregory; Gilbert of Lumsdaine; Adam
+                  son of John of Ayton; Adam Francis; John son of Ingram; and
+                  others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

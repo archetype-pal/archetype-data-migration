@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Add. Ch. 76747</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:45:10.219649+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 76747</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Sancte Matris Ecclesie filiis . Tam presentibus quam futuris  <seg type="diplomatic" subtype="intitulatio"><persName>Alanus</persName> filius <persName>Elti</persName></seg> . <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant omnes ad quorum noticiam<lb/> litere iste peruenirent</seg>  me concessisse et dedisse . et hac mea presenti carta confirmasse deo et
+                     Ecclesie Sancte<lb/> Marie de Melros . et <supplied>m</supplied>onachis ibidem deo seruientibus pro anima patris mei et Matris mee . et pro
+                     animabus omnium<lb/> antecessorum et successorum meorum et pro salute anime mee et omnium heredum et
+                     parentum meorum  in puram et perpe<lb/>tuam elemosinam <supplied>u</supplied>nam petram de cera ad procurandum lumen ante altare sancte Marie imperpetuum
+                     Hanc<lb/> autem petram cere Ego et heredes mei singulis annis ad pentecosten dabimus deo
+                     et domui de Melros <lb/> scilicet nominatim de redditu illius terre . quam <persName>Howein</persName> filius <persName>Gillemihchel</persName> et heredes eius tenent de me et here<lb/>dibus meis tenore perp<supplied>et</supplied>uo in uilla de Thirlestan ... quicumque post ... ram tenuerint .</seg> <seg type="diplomatic" subtype="witnesses">His Test<ex>ibus</ex> .<lb/> <persName>Iocel<ex>ino</ex></persName> Glesg<ex>uensi</ex> Episcopo . <persName>S<supplied>imone</supplied></persName> Glesg<ex>uensi</ex> Archid<ex>iacono</ex> . <persName>Aldred</persName> p<supplied>ersona de La</supplied>weder . <persName>Rog</persName>’ lecras . <persName>Radulf</persName> lecras . <persName>Petro</persName> de la Hag . <persName>Thom<ex>a</ex></persName> de Wa<lb/>rewic . <persName>Will<ex>elm</ex>o</persName> ... <persName>T</persName> pincerna . <persName>Will<ex>elm</ex>o</persName> filio pagani <persName>Henrico</persName> filio <persName>Baldewini</persName><lb/> <persName>Will<ex>elmo</ex></persName> clerico .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 5969</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 21:10:50.584252+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5969</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Christi fidelibus ad quos presens scriptum peruenerit . <seg type="diplomatic" subtype="intitulatio">Hugo leuedyman de lagehope et eua vxor sua<lb/> soror laurenci fili Will<ex>elm</ex>i fili Gocelini de Berewic</seg> <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerit vniuersitas uestra</seg> nos ad instantiam dicti<lb/> laurenci Concessisse . et hac presenti carta nostra confirmasse . quietam
+                     clamasse . et de nobis et heredibus nostris In perpe<lb/>tuum omnino abiurasse Donationem et Concessionem Totius terre sine aliquo
+                     Retinemento In territorio de<lb/> Prendergest quam laurencius filius Will<ex>elm</ex>i filii Gocelini de Berewic habuit de dono Roberti fratris sui . quam<lb/> idem laurencius dedit . Concessit . et carta sua confirmauit deo . sancte Ebbe .
+                     Ricardo priori et conuentui de col<lb/>dingh<ex>am</ex> . et eorum successoribus In liberam . puram . et perpetuam elemosinam .</seg> Afidauimus eciam et Tactis sacrosanctis<lb/> Iurauimus pro nobis et heredibus nostris quod nullo tempore seculi contra
+                  donacionem et Concessionem predic<lb/>tam venire presumemus . <seg type="diplomatic" subtype="sealing">In Cuius Rei Testimonium  presenti scripto sigilla nostra apposuimus .</seg> <seg type="diplomatic" subtype="witnesses">Testibus  Domino Will<ex>elm</ex>o de Mordingtona . Domino dauid de Haddingtona . Domino Radfulf<ex>o</ex> nobil<ex>i</ex> . Domino Will<ex>elm</ex>o de scremerstona .<lb/> Ada de Prendergest’ . Ada filio Ioh<ex>ann</ex>is de s<ex>upe</ex>ryory Eytona . Thom<ex>a</ex> de Nesbyt . Bertramo de Ristona . Patricio<lb/> scotto . Gilberto de lumesden’ . Ioh<ex>ann</ex>e filio Ingrami . Gregorio de Betyoc . et Aliis</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

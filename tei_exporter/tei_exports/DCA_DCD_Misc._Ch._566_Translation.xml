@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 566</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 15:48:09.58958+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 566</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">D<ex>avid</ex> king of the Scots</seg> to his bishops, abbots, earls, barons, justices, sheriffs, and all his worthy
+                     men, Gael and English, of his entire land, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know</seg> me to have conceded and by this my charter to have made firm the boundaries
+                     between Coldingham and Bunkle which I with my worthy men
+                     perambulated, <seg type="diplomatic" subtype="holding">to be held freely, quitly, and fully, in perpetuity</seg>. <seg type="diplomatic" subtype="boundaries">That is to say, from Milldown head westwards by Mereburn head as far as
+                     Crachotre, and from there by the same way as far as
+                     Eiford.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: John, bishop of Glasgow; Herbert the chancellor; R<ex>obert</ex> de Brus; Payn de Briouze; Hugh de Morville; Berengar Engaine.</seg> <seg type="diplomatic" subtype="dating">At Roxburgh.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

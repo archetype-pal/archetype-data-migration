@@ -1,0 +1,48 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/42</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.891465+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/42</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">William, by the grace of God king of Scots</seg>, to Bishops, Abbots, Earls, Barons, Justices, Sheriffs, Provosts, Officials,
+                     and all worthy men of the whole of his land, <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know</seg> me to have granted and by this my charter to have made firm, to God and the
+                     church of St Mary at Melrose, and to the monks in that
+                     place serving God, the whole land of Eskdale, <seg type="diplomatic" subtype="boundaries">by the same boundaries which are named and contained in the charters of the lord
+                     Robert Avenel and Gervase his heir, which they have from
+                     them in respect of the same land;</seg> <seg type="diplomatic" subtype="holding">so that whatever is within the same boundaries, they shall have and possess for
+                     ever, as freely and quietly, fully and peacefully, as any
+                     alms is freely and quietly possessed in my kingdom; I
+                     have, then, confirmed and granted to them the same land
+                     for ever, released also from all aids, and from all
+                     service and custom and secular exaction, reserving my
+                     service from Gervase and his heirs.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Osbert, abbot of Kelso; Hugh, abbot of Newbattle; William
+                  Malveisin; Richard de Prebenda; Hugh de Sigillo; Earl David,
+                  the king’s brother; Robert de Quincy; Hugh Ridel; Richard de
+                  Muschet; Philip de Valognes; Roger de Valognes; Waldef son of
+                  Baldwin; Alexander de Saint-Martin; Hervé the marischal;
+                  Richard the marischal; Robert de Saint-Michel; Adam of
+                  Stanford.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

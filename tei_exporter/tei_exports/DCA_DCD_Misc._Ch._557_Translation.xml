@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 557</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:08:22.118906+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 557</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Edgar king of the Scots</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg> to all in his kingdom, Scots and English.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know that</seg> I concede and donate Paxton to my master Saint Cuthbert and to his monks, just
+                     as I had it, with men, lands and waters; <seg type="diplomatic" subtype="holding">and the monks should possess it as freely and quitly as Coldingham, according to
+                     their own desire</seg>.</seg> <seg type="diplomatic" subtype="salutation">Farewell.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

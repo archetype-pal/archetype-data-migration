@@ -1,0 +1,32 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 563</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:02:00.992699+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 563</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">A. d<ex>e</ex>i gr<ex>ati</ex>a rex scottorum</seg> priori. A. et toto conuentui ęcclesię sancti cuthberti <seg type="diplomatic" subtype="salutation">salutem</seg></seg>.<lb/> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="injunction">Mando et precipio uobis ut nullo modo intretis placitum neque in aliquam<lb/> diratiocinationem de terra de suintune ante quam ueniat ante me</seg></seg>.<lb/> Tibi etiam domine prior notum facio quia de multis rebus multa uobis habeo
+                  secrete<lb/> loqui. quam citius fiere poterit. <seg type="diplomatic" subtype="salutation">valete.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

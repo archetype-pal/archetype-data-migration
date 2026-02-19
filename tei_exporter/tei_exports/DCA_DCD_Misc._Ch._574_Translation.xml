@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 574</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:12:05.494969+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 574</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">D<ex>avid</ex>, king of the Scots,</seg> to earls, justices, barons, sheriffs, provosts, officials, and all his worthy
+                     men, French and English, of his entire land, as much
+                     future as present, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me to have conceded to God and Saint Cuthbert [and to the monks of Coldingham a
+                     toft] with dwellings ... ... which Gilbert the priest of
+                     Stichill held of me [rendering] to me each year two
+                     shillings, and by this writing free from ... ... any
+                     service. <seg type="diplomatic" subtype="holding">I also grant to them the aforesaid land as ... ...to hold in feu and in alms</seg>.</seg> <seg type="diplomatic" subtype="witnesses">Present as witnesses: Hugh de Morville, Robert son of Guy, Swain the priest of
+                  Fishwick.</seg> <seg type="diplomatic" subtype="dating">At Roxburgh.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

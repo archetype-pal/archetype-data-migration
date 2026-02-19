@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Cotton Ch. xviii.1</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:30:59.212986+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.1</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio"><persName>Alex’</persName> . dei Gr<ex>ati</ex>a Rex Scott’ .</seg> Iustic’ . Vicecomitibus . Prepositis . et omnibus probis Hominibus Tocius terre
+                     sue <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> .<lb/> <seg type="diplomatic" subtype="disposition">Precipio quod fratres nostri de Melros et omnes fratres eiusdem ordinis sint
+                  quieti de Teloneo et omnibus aliis consuetudi<lb/>nibus et rectitudinibus et de omnibus mercatis que ad suos proprios usus
+                     fecerint ubicumque in tota terra<lb/> mea uenerint  Sicut Carta domini Regis patris mei <persName>Will<ex>elmi</ex></persName> . testatur . et confirmat .</seg> <seg type="diplomatic" subtype="witnesses">Testibus . <persName>Will<ex>elmo</ex></persName> . de Boscho<lb/> Cancellario . meo . Comite <persName>Malc’</persName> . de Fif . <persName>Will<ex>elmo</ex></persName> . de Valon’ . <persName>Ioh<ex>ann</ex>e</persName> de Maccuswel’ .</seg> Apud Edenb’ . Secundo die . ApriliS .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

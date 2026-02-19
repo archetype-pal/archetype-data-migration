@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of TNA DL 25/78</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-07-05 08:53:38.38563+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/78</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">. D . Rex Scott’ .</seg> Omnibus probis hominibus totius terre sue francis . et anglicis . et<lb/> Galweiensibus  <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me dedisse et Concessisse Rob<ex>ert</ex>o de Brus in feudo et<lb/> hereditate illi et heredi suo in foresto uallum de Anant ex utraque parte aque<lb/> de <supplied>An</supplied>ant sicut diuise sunt a foresto de Seleschirche quantum terra sui protenditur<lb/> uersus stradnut . et uersus Clud libere et quiete sicut aliud forestum suum te<supplied>net</supplied><lb/> melius et liberius . Quare defendo ne ullus uenatur in predicto foresto nisi per
+                     ipsum super<lb/> forisfactu . x . librarum . et ne ullus eat per predictum forestum nisi recta
+                     uia nominata</seg><lb/> <seg type="diplomatic" subtype="witnesses">. T . Waltero cancellario . et Hug<ex>one</ex> de Moreuilla . et Waltero filio Alani<lb/> et Odenello de Vmframuilla . et Waltero de Lindeseia . et Ricardo de More<lb/>uilla .</seg> Apud . Stap<supplied>ilgo</supplied>rtune .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/250</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-24 13:33:18.901534+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/250</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">William by the grace of God king of Scots to all worthy men of the whole of his
+                  land, clerk and lay, Greeting:</seg> <seg type="diplomatic" subtype="disposition">Let present and future know that I have granted and by this my charter made firm
+                  to God and to the church of Holyrood in Edinburgh and to the
+                  canons serving God there now and to come those churches in
+                  Galloway that Fergus and Uhtred his son and David son of
+                  Terrus gave to them. These churches John the bishop of
+                  Whithorn confirmed to the same canons by his charter, and
+                  granted, to be converted to their own benefit. To be held in
+                  free and pure and perpetual alms, with all their just
+                  pertinents, as freely and quietly, fully and honourably, as
+                  the charter of the aforesaid Bishop John bears witness.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, Walter the bishop of Glasgow, Hugh the abbot of Jedburgh, Oliver
+                  my chaplain, Philip de Valognes my chamberlain, William
+                  Comyn, <persName><roleName>justice of the Scots</roleName></persName>, William del Bois my clerk, William de Valognes, Richard Revel.</seg> At Jedburgh on the 18th day of April.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

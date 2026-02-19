@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Cotton Ch. xviii.32</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:27:40.534581+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.32</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio"><persName>Ric<ex>ardus</ex></persName> dei gr<ex>ati</ex>a ecclesie beati Andr<ex>ee</ex> humilis minister</seg> vniuersis sancte matris ecclesie filiis  <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Sciatis tam posteri quam presentes</seg> <seg type="diplomatic" subtype="disposition">nos dedisse et concessisse et presentis scripti mu<lb/>nimine confirmasse deo et ecclesie Sancti Andree et canonicis ibidem deo
+                     seruientibus et seruituris . ecclesiam de hadintunia cum
+                     terra de Clerckintune per rectas di<lb/>uisas suas . et cum ceteris omnibus eidem ecclesie iuste pertinentibus . in
+                     liberam et perpetuam elemosinam tenendam libere et quiete
+                     et honorifice  ab omni exactione et consuetu<lb/>dine . salua tenura monialium quam eis dedimus et carta nostra confirmauimus . <seg type="diplomatic" subtype="holding">Quare uolumus et auctoritate episcopali mandamus ut predicti canonici
+                     prenominatam<lb/> ecclesiam adeo libere teneant . quiete et honorifice possideant . sicut aliqua
+                        ecclesia in tota diocesi nostra liberius tenetur .
+                        quiecius et honorificentius possidetur . saluis syno<lb/>dalibus et auxiliis episcopalibus</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Hiis testibus . <persName>Ioh<ex>ann</ex>e</persName> abbate de Sancta Cruce . <persName>A</persName> . archidiacono Laod’ . <persName>Waltero</persName> archidiacono de Sancto Andr<ex>ea</ex> . <persName>I</persName> . priore de hadingt’. <persName>Will<ex>elmo</ex></persName> priore de Gal<lb/>weia . <persName>Will<ex>elm</ex>o</persName> priore de Sancta cruce . <persName>Roberto</persName> fratre episcopi . <persName>Ioh<ex>ann</ex>e de Sancto Andrea</persName> . <persName>Rogero</persName> de Listune . <persName>Roberto</persName> de pert . <persName>Alexandro</persName> et <persName>Will<ex>elm</ex>o</persName> capellanis episcopi . <persName>Galfr<ex>ido</ex> </persName><lb/> dapifero episcopi . Magistro <persName>Abraham</persName> . <persName>Stephano</persName> clerico . <persName>Will<ex>elm</ex>o</persName> filio <persName>Roberti</persName> filii <persName>Gvidonis</persName> . <persName>Adam</persName> fratre Comitis Dunk’ . <persName>Merlesuano</persName> filio <persName>merlesuani</persName> . <persName>Odone</persName> Senes<lb/>caldo . <persName>Gospatricio</persName> de Rerais . <persName>hugone</persName> pincerna . <persName>Waltero</persName> nepote episcopi . <persName>Will<ex>elm</ex>o</persName> camerario . <persName>Gvidone</persName> <persName><roleName>marescaldo</roleName></persName> . <persName>Gamel</persName> ostiario . et aliis quam pluribus boni testi<lb/>monii uiris</seg> ;</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.37</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:09:41.930636+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.37</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W<ex>illiam</ex> by divine permission humble servant of the church of St Andrews</seg> to his well beloved R<ex>alph</ex>, dean of Liston, and Master R<ex>ichard</ex> of Dover, rector of the church of Tyninghame, and the lord J<ex>ohn</ex> of Pencaitland, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition">We command you that on the vigil of Saint Matthew the apostle, at Haddington,
+                  you undertake an assessment of the vicarage of Haddington by
+                  our authority to the value of forty marks. And if our steward
+                  cannot be present on the said day and place to do this with
+                  you, I shall send you on the aforenamed day the lord R<ex>obert</ex> of Methven, our chaplain, to act as the said steward’s deputy. By no means fail
+                     to carry out this our mandate.</seg> <seg type="diplomatic" subtype="salutation">Farewell.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

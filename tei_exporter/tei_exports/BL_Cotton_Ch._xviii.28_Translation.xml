@@ -1,0 +1,108 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.28</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:52:49.865711+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.28</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="notification">Let all sons of Holy Mother Church know, those present as well as those to come
+                  after, that</seg> <seg type="diplomatic" subtype="narration">when a dispute at law was initiated and deliberated for a long time in the
+                  chapter-house of East Lothian between lord John the prior and
+                  the community of St Andrews on the one side, and the master
+                  and nuns of Haddington on the other, over various teinds,
+                  great and small, claimed on either side, that is to say, when
+                  the teinds of a ploughgate of land in the territory of
+                  Athelstaneford which once belonged to the territory of Drem,
+                  and the teinds of two oxgangs of land contained in the old
+                  garden of Stevenson, and the teinds of that land which lies
+                  between the old garden and the toun of Haddington, and the
+                  teinds of half of that land next to the mill of Stevenson,
+                  and the teinds of the crofts belonging to certain burgesses
+                  of Haddington, which the master and nuns were then holding,
+                  were claimed on the part of the prior and community of St
+                  Andrews from the aforementioned nuns; and on the part of the
+                  master and nuns of Haddington, the small teinds of Byres, and
+                  the cottaries of Byres and of Barney were demanded in law;
+                  and the dispute in law over the aforementioned claims on both
+                  sides having been lawfully asserted, and the witnesses on
+                  either side having been produced and examined, and evidence
+                  having been published and inspected, and with allegations on
+                  either side having been heard and understood, and having
+                  inspected the instruments of the same, when nothing remained
+                  except for the judgment to be rendered, at length after many
+                  labours and undue troubles, the parties through their agents
+                  lawfully constituted to settle and complete [the case] on
+                  Saturday after St Peter’s Chains in the church of Lauder in
+                  the year of grace 1245 before of Master Andrew of Aberdeen,
+                  official of the lord bishop of St Andrews, they compeared
+                  with the men of discretion present, the lord J<ex>ohn</ex>, abbot of Dryburgh, Master William of Greenlaw, Adam of Maxton, Henry of
+                     Holtal, and other worthy men, clerk and lay, of religion
+                     and secular, representing their own parties for the
+                     restoration of peace, the suit initiated between the
+                     parties, and for a long time pursued, was in this form
+                     amicably settled, namely, that Peter the canon, agent of
+                     the canons of St Andrews, remitted and quitclaimed in the
+                     name of the said prior and canons of St Andrews to the
+                     aforesaid nuns of Haddington all the teinds named above so
+                     that the said nuns may in future receive and possess
+                     undisturbed the aforementioned teinds for ever, and turn
+                     them to their own use without any disagreement. In return
+                     for this remission and quitclaim, the aforesaid master and
+                     nuns have given to the oft-mentioned canons of St Andrews
+                     a rent of twenty shillings in the teinds of Falside in the
+                     parish of Crail. And since all the aforementioned garbal
+                     teinds of Falside have been reckoned by the inspection of
+                     worthy and faithful men from both sides, of the electors
+                     and the jurors, that they were worth seventeen shillings
+                     more than the rent of twenty shillings assigned to the
+                     aforementioned canons, by joint approval and agreement of
+                     either side it was laid down that the aforenamed canons
+                     would pay to the aforenamed nuns seventeen shillings
+                     annually at Easter for the remainder of the said teinds.
+                     And so, the aforementioned canons shall forever possess,
+                     and lawfully turn over to their own purposes, all the
+                     garbal teinds. And in order that this restoration of peace
+                     and gracious agreement may gain the validity of
+                     everlasting endurance, and lest by the malice and
+                     craftiness of wicked men the legal suit thus amicably
+                     settled could again be revived, either side, the canons as
+                     much as the nuns, have submitted themselves to the
+                     jurisdiction of the one who is at the time bishop of St
+                     Andrews, so that it be possible to compel by one single
+                     warning through ecclesiastical censure the party
+                     witholding the foregoing things or unwilling to abide by
+                     this agreement to observe it faithfully for ever through
+                     ecclesiastical censure.</seg> <seg type="diplomatic" subtype="sealing">And in addition, for greater security, and so that all uncertainty may be
+                  removed, to the side of the document – produced in the manner
+                  of a cyrograph – remaining in the possession of the canons of
+                  St Andrews, the seal of the nuns of Haddington together with
+                  the seal of the lord David, by the grace of God bishop of St
+                  Andrews, and of Master Andrew, official of the said bishop,
+                  have been applied; and to the side remaining in the
+                  possession of the nuns the seal of the chapter of St Andrews,
+                  and of the said bishop, and of the official, have been
+                  attached.</seg> <seg type="diplomatic" subtype="witnesses">As witness the whole chapter of Lothian, before whom this agreement was read out
+                  and approved by the parties.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

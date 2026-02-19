@@ -1,0 +1,48 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/266</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:40:03.063835+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/266</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">A<ex>lexander</ex> by the grace of God king of the Scots</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg> to all worthy men, clerk and lay, of the whole of his land.</seg> <seg type="diplomatic" subtype="notification">Let present and future know</seg> <seg type="diplomatic" subtype="disposition">us to have given, granted, and by this our charter made firm, for the honour of
+                  God and his glorious virgin Mother, as well as for our own
+                  salvation and our ancestors’ and successors’, to the monks of
+                  Melrose serving God in that place and who will serve there in
+                  perpetuity, the fishery on the Tweed which is called the
+                  fishery of Selkirk; and seven acres of land with buildings
+                  and a meadow contained within those seven acres of land, just
+                  as the same seven acres of land of the same monks were
+                  enclosed by a ditch and fence on the day of this conveyance;
+                  and also a pasture for eight oxen and eight cows in ‘Wauhop’.
+                  We have also allowed to the said monks that they, by the view
+                  of our foresters at the time, may have and take timber in our
+                  forest for the upkeep of their stank in the same fishery. <seg type="diplomatic" subtype="holding">For them to hold and to have for ever in free, pure, and everlasting alms, as
+                     freely, quitely, fully, and honourably as any alms out of
+                     our gift is freely, quitely, fully and honourably held or
+                     possessed by any religious men in our kingdom</seg>.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, the venerable father W<ex>illiam</ex>, bishop of Glasgow, our chancellor; Philip, abbot of Jedburgh; David of
+                     Lindsay, justiciar of Lothian; Bernard of Ripley.</seg> At Jedburgh on the eighth day of February, in the thirty-third year of the reign
+                  of the lord king [1247].</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/277</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-29 12:00:50.171666+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/277</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all who shall view or hear this deed, Duncan Earl of Carrick sends Greeting:</seg> <seg type="diplomatic" subtype="disposition">Know that we have given, granted, and by this our present charter made firm, to
+                  God and to the church of Blessed Mary in North Berwick, and
+                  to the monks serving God there, and in perpetuity to those
+                  who will serve there, three merks of silver to be received
+                  annually from the land of Berbeth, at two terms, that is half
+                  at the feast of Pentecost, and half at the feast of St
+                  Martin, until we have provided them with two-and-a-half
+                  pennylands in a suitable place</seg>. <seg type="diplomatic" subtype="witnesses">And that this our donation and grant, and the confirmation of our charters
+                  remain certain and constant, we have handed over the present
+                  deed to the same, secured with our seal. With these
+                  witnesses, the lord John, knight, son of the Earl, Master
+                  Hugh, Alan the dean, Mudoch the steward, and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

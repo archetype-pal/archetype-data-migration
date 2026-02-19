@@ -1,0 +1,47 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/343</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 17:01:18.132375+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/343</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Vniuersis Christi fidelibus ad quos presentes littere peruenerint . Gvydo de
+                  Normanuill<ex>a</ex> . Miles  <seg type="diplomatic" subtype="salutation">eternam in domino salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerint uniuersitas uestra . quod</seg> cum ego Domino Thome fratri meo<lb/> dedissem in excambium terre sue de . Anegus . quam habuit ex dono Domine Matild<ex>is</ex> . comitisse de Anegus . totam terram meam de Machustum . sitam inter le . Denes
+                     . cum mesua<lb/>gio . tofto . et crofto . cum omnibus pertinentiis . aisiamentis et libertatibus
+                     ad eandem spectantibus . uel spectare debentibus . que
+                     tenui de domino Waleranno fratre meo . et eidem<lb/> Th’ . corporalem eiusdem quare dedissem possessionem  idem Th’ . frater meus
+                     eandem terram de Machust’ cum omnibus premissis dicto
+                     Walerann<ex>o</ex> . fratre meo . et me presentibus<lb/> et consentientibus . ecclesie sancte Marie de Melr<ex>os</ex> . et Monachis ibidem deo seruientibus in elemosinam contulit perpetuam  prout
+                     in carta sua plenius continetur . Necnon et in<lb/> eadem terra personaliter existens  eosdem Monacos in eiusdem terre induxit
+                     possessionem . <seg type="diplomatic" subtype="warrandice">Et tam ego quam heredes mei omnia premissa eisdem Monachis imperpetuum . uuaran<lb/>tizabimus . et defendemus contra omnes</seg> . ita quod nec uir nec mulier eos occasione trium solidorum . uel unius tercelli
+                     domino feodi temporibus transactis non solutorum . nec
+                     etiam super<lb/> premissis siue ratione premissorum in parte uel in toto nomine dotis siue alio
+                     modo quacumque occasione uexare poterit uel inquietare .
+                     Et tam ego quam prefatus<lb/> Walterann<ex>us</ex> . frater meus dictam donationem ratam habentes et gratam approbamus eandem . et
+                     omnia premissa eisdem monachis hac presenti carta
+                     confirmamus .</seg> <seg type="diplomatic" subtype="sealing">In cuius<lb/> rei testimonium . et munimen  presenti scripto sigilla nostra apposuimus .</seg> <seg type="diplomatic" subtype="witnesses">Hiis testibus . Domino Will<ex>elm</ex>o . de haud’ . constabul<ex>ario</ex> . de Rokesb’ . ad hoc uocato . Domino Ricard<ex>o</ex> .<lb/> burnard’ . Ricard’ . domino de Rotherford’ . Waltero de Wodeford’ . Symone de
+                     Fard’ . senescal<ex>lo</ex> . de farmgd’ . Walt<ex>er</ex> . filio . hug<ex>onis</ex> . senescal’ . de uet<ex>er</ex>i Roxburg’ . Petro<lb/> preposito de bouild’ . Huthred’ . todde  et Multis aliis .</seg> <seg type="diplomatic" subtype="dating">Datum anno gracie . Millesimo . ducentesimo . quinquagesimo  In uigilia sancti
+                  Math<ex>e</ex>i Apostoli .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

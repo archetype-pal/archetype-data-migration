@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 590</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:47:55.713299+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 590</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">. W . dei gr<ex>ati</ex>a rex Scott’ .</seg> Omnibus probis Hominibus Totius terre sue Clericis et Laicis <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant pre<lb/>sentes et futuri</seg> me concessisse et Hac Carta mea confirmasse renuntiationem et abiurationem quam
+                     . Will<ex>elmus</ex> . de golin<lb/> cum Nich<ex>olao</ex> . et Ioh<ex>ann</ex>e fratribus suis et Emme matertera sua pro se et tota cognatione sua fecit de
+                     uilla ma<lb/>ioris lumesdene cum omnibus ad eam spectantibus . et de iure quod in eadem uilla
+                     habuit . pro una Carucata ter<lb/>re ei et Heredibus suis in territorio de Swintun a Priore et Conuentui Dunelmen<ex>si</ex> . concessa . Quare<lb/> uolo et firmiter precipio . ut renuntiatio et abiuratio illa facta firmiter in
+                     posterum obseruetur . sicut Car<lb/>ta ipsius Will<ex>elmi</ex> . testatur . saluo seruitio meo de predictis terris .</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . Will<ex>elmo</ex> . Episcopo Sancti . Andr<ex>ee</ex> . Ph<ex>ilippo</ex><lb/> de Valon<ex>iis</ex> . Camerario . meo . Rob<ex>erto</ex> . de London<ex>iis</ex> . filio . meo . Will<ex>elmo</ex> . Cumin . Alex<ex>andro</ex> vicecomite de striuel<ex>in</ex> .</seg> <seg type="diplomatic" subtype="dating">apud Wedale . xvi . die<lb/> Maii ;</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

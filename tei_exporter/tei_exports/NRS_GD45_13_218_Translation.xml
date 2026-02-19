@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/218</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-26 02:19:56.223138+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/218</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">David by the grace of God king of Scots to the Bishop of St Andrews and the
+                  sheriff and all worthy men of the whole of the shire of
+                  Stirling, <seg type="diplomatic" subtype="salutation">Greeting</seg>:</seg> <seg type="diplomatic" subtype="disposition">Know that I will and firmly instruct that the abbot of Holyrood in Edinburgh
+                  shall have all those customs in Airth, that is, in waters and
+                  other places, and all revenues that belong to the church of
+                  the same toun just as it well had on the day that I had it in
+                  my demesne.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, John the Bishop, Robert de Burneville, Roger the bishop’s nephew.</seg> At Stirling.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

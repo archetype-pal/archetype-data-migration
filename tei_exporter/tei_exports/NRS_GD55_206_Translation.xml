@@ -1,0 +1,45 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/206</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:49:05.195772+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/206</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Christ's faithful who shall see or hear this written deed, <seg type="diplomatic" subtype="intitulatio">Thomas de Aunay, knight,</seg> <seg type="diplomatic" subtype="salutation">wishes eternal salvation in the Lord.</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let your whole community know</seg> me to have given, granted and by this my present charter to have made firm to
+                     God and to Blessed Mary at Melrose and to the monks
+                     serving God in that place now and to come, for ever, in
+                     free and everlasting almsthe lands of ‘Brunsceth’,
+                     Auchencrieff, and Dargavel, by their correct boundaries,
+                     with all their pertinents and whatever is comprised within
+                     the same bounds as well in men as in pastures, buildings,
+                     meadows, moors, marshes, waters, mills, woods and all
+                     other things, <seg type="diplomatic" subtype="holding">so that they hold and have all the foregoing things with their pertinents so
+                     freely in perpetuity as I held them, and in all the
+                     foregoing things I have withheld nothing to myself.</seg> <seg type="diplomatic" subtype="warrandice">Indeed, I and my successors shall warrant all the foregoing to the same monks
+                     for ever.</seg></seg> <seg type="diplomatic" subtype="sealing">In testimony of this matter I have applied my seal to the present written deed.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: John of Maxwell; Thomas son of Ranulf, sheriff of
+                  Dumfries; John of Mandeville, Walter Crook, and Thomas
+                  Maitland, knights; Laurence of Brackley; Thomas of Kent; and
+                  many others.</seg> Given in the year of the Lord 1237.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

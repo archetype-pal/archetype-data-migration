@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/248</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:09:48.673133+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/248</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W. miseratione diuina Ecclesie . Sancti Andree minister Humilis</seg> omnibus has litteras uisuris uel audituris<lb/> <seg type="diplomatic" subtype="salutation">eternam in domino Salutem</seg></seg>. <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Ad uniuersitatis uestre noticiam uolumus deuenire</seg> . nos de communi assensu ⁊ uolun<lb/>tate Capituli nostri . ⁊ archidiaconorum nostrorum . dedisse . ⁊ concessisse .
+                     abbati . ⁊ canonicis de Sancta cruce<lb/> et eorum successoribus in perpetuum in puram ⁊ perpetuam elemosinam . totam
+                     medietatem . Decime Bladi pertinentis ad<lb/> ecclesiam de Kyngor ad sustentationem predictorum canonicorum et pauperum . et
+                     peregrinorum. <seg type="diplomatic" subtype="holding">Quare uo<lb/>lumus ut predicti canonici et eorum successores easdem decimas teneant et
+                        possideant in perpetuum nomine sim<lb/>plicis beneficii . adeo Libere . integre . et honorifice . sicut aliquod simplex
+                        benefitium in toto regno Scotie . liberius<lb/> quietius ⁊ honorificentius tenetur et possidetur</seg>.</seg> <seg type="diplomatic" subtype="sealing">Et ut hec nostra concessio rata ⁊ inconcussa perseueret [ms. pererseueret]  eam<lb/> presentis pagine testimonio . ⁊ sigilli nostri ⁊ sigillorum Capituli ⁊
+                     archidiaconorum nostrorum appositione corrobora<lb/>uimus</seg>. <seg type="diplomatic" subtype="witnesses">Hiis testibus . magistro Laurentio Archidiacono . Sancti Andree . W . de Bosco .
+                  Archidiacono . Laodon’ . Rad’ nig<ex>ero</ex> . decano<lb/> Laodon’ . Rad’. decano de Karel . Magistro . alexandro de Sancto martino .
+                     Magistro . Dauid de Bernham . Symone de<lb/> Noisi . Will<ex>elmo</ex> . de Golin . Symone capellano domini episcopi . Ricardo de Kalcou . clerico .
+                     Ioh<ex>ann</ex>e clerico domini episcopi . ⁊ multis aliis</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

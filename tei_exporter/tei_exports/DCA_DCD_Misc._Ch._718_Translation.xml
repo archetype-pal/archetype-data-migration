@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 718</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 12:40:59.643199+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 718</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all the faithful <seg type="diplomatic" subtype="intitulatio">William de Vieuxpont</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know that,</seg> guided by repentance, I return to God, and Saint Cuthbert and his monks at
+                     Coldingham, the land about which there had been a dispute
+                     between me and the same monks in the time of King David;
+                     [land] which I had unlawfully seized from them; free and
+                     quit from every claim for ever; by the time-honoured
+                     boundary, <seg type="diplomatic" subtype="boundaries">that is, as the burn flows into the Tweed;</seg> so that there should be a free road open for travelling from Horndean to the
+                     river.</seg> <seg type="diplomatic" subtype="witnesses">With these as witnesses: Arnold abbot of Kelso; Richard, John, Romwald his
+                  monks; Rabel le Cheyne; Thomas Abbet; John de Biliols;
+                  Richard de Aldre; Ulfkil of Howden; William son of <persName>Thor</persName>; Alan son of Cospatric.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

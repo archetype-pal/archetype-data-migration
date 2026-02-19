@@ -1,0 +1,55 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/199</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-08-08 11:01:38.869038+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/199</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p>Omnibus has litteras visuris vel audituris Affrica filia Edgari salutem in
+               domino Nouerit vniuersitas vestra me pro anima anima domini mei
+               Will<ex>elm</ex>i Will<ex>elm</ex>i Regis scot’ et pro animabus antecessorum suorum et pro anima patris mei et
+                  matris mee et pro animabus antecessorum meorum Dedisse et
+                  Concessisse et hac presenti karta mea Confirmasse deo et
+                  GLoriose virgini marie et Abbati et Conuentui de Melros
+                  ibidem deo seruientibus et seruituris unam quartam partem
+                  plenarie ville in territorio de dunscor illam scilicet inter
+                  quendam riuulum qui dicitur pollelogan et darcungal .
+                  Tenendam sibi de me et heredibus meis per suas rectas diuisas
+                  in puram et perpetuam Elemosinam in bosco et plano in patris
+                  et pascuis in Mosis et maresiis in stagnis et molendinis et
+                  in ceteris omnibus libertatibu et Asiamentis que ad liberam
+                  terram datam in Elemosinam debeant pertinere . Volo autem ut
+                  prefati Monachi prefatam Elemosinam Cum dictis libertatibus
+                  et Asiamentis teneant et in perpetuum possideant adeo libere
+                  et quiete pure plenarie et honorifice sicut aliqua Abbatia in
+                  toto Regno scot’ plenius liberius quietius et honorificentius
+                  aliquam terram tenet et possidet . Testibus hiis . Domino
+                  Waltero Episcopo de Candida Casa . Domino Michale Clerico
+                  Episcopi . Cornelio Canonico de darcungal . Enoc Rectore
+                  Ecclesie de dalgernoc . domino simone Capellano . Iohanne Mac
+                  dufthi . A . . . Capellano . Gillcristo filio Gillcunil .
+                  Gillenbract . filio pađi . pađi Mac Cuning . Gillid iudice .
+                  et Multis aliis .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

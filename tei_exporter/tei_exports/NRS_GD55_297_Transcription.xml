@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/297</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:31:43.454124+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/297</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Uniuersis presentes litteras visuris vel Audituris . <seg type="diplomatic" subtype="intitulatio">H . abbas de Kelkou et eiusdem loci conuentus</seg> <seg type="diplomatic" subtype="salutation">eternam<lb/> in domino salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Nouerint vniuersi</seg> . <seg type="diplomatic" subtype="disposition">Quod Quicquid Iuris habebamus in terris et pasturis de Molle<lb/> infra partem domini Walter<ex>i</ex> . filii Alan<ex>i</ex> . Senescall<ex>i</ex> . Scot<ex>ie</ex> . et etiam communam quam habebamus in mora<lb/> de Inuerwic eidem Walter<ex>o</ex> . et heredibus suis . siue suis attornatis  resignauimus . et in perpetuum
+                     quieta clama<lb/>uimus . nichil iuris in eisdem decetero reclamaturi  pro quadam parte dicte
+                     more de Inuerwic ab eodem . W .<lb/> nobis in excambium collata .</seg> <seg type="diplomatic" subtype="sealing">In huius uero rei testimonium  sigillum capituli nostri presenti scripto
+                  fecimus<lb/> apponi .</seg> <seg type="diplomatic" subtype="witnesses">Hiis testibus . Domino W. episcopo Glasguens<ex>e</ex> . Scoc<ex>ie</ex> . Cancellar<ex>io</ex> . Domino . W . abbate de Passeleth’ .<lb/> Magistro . W . de Lyndeseia . decano Glasg’ Magistro . H . Archidiacon<ex>i</ex> . Glasg’ . Magistro . W . de Grenlau<lb/> et multis aliis .</seg> Actum apud Kelkou . Anno Gr<ex>aci</ex>e . Mill<ex>esimo</ex> . Ducentes<ex>imo</ex> Tricesima sexto .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

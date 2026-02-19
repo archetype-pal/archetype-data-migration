@@ -1,0 +1,52 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/234</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-12 13:45:35.983215+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/234</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Christ's faithful as well present as future to whom the present writing
+                  shall come, <seg type="diplomatic" subtype="intitulatio">Master William of Greenlaw son of Roland</seg> <seg type="diplomatic" subtype="salutation">sends greeting in the Lord</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">I make known to your whole community that</seg> moved by divine love and for the salvation of my soul and for the salvation of
+                     the souls of all my predecessors and successors I have
+                     given and granted and by this my charter made firm to God
+                     and to the church of Blessed Mary at Melrose and to the
+                     monks in that place serving God and their Mother and who
+                     in perpetuity will serve there three ploughgates of land
+                     that I had in the territory of the toun of Hassington with
+                     all its pertinents; that is, those that the lady Matilda,
+                     mother of the lord Robert de Muschamp, gave to William,
+                     son of John of Hownam, with Gilia, daughter of the said
+                     Matilda, in free marriage; <seg type="diplomatic" subtype="holding">for the said monks to hold and have with all liberties, easements, and rights
+                     belonging to it for ever, in free, pure, and everlasting
+                     alms; by performing no secular service whatever for them
+                     to anyone, except for prayers and sugffrages and other
+                     spiritual goods which the said monks promised in faith, as
+                     much as they owe to God and their own Order, that they
+                     would perform for me for ever.</seg></seg> <seg type="diplomatic" subtype="warrandice">And I and my heirs shall maintain to the said monks this alms, and we shall
+                  warrant it against all men, and we shall acquit it in respect
+                  of every service for ever.</seg> <seg type="diplomatic" subtype="sealing">In testimony of this thing my seal has been applied to these presents.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Ralph of Bunkle; John of Latham; John of Papedy; David of
+                  Burradon; Alan of Harcarse; John son of Simon; John of
+                  Lambden; Robert his son; Roland son of John; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

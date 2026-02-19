@@ -1,0 +1,32 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/245</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-13 14:14:00.719839+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/245</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alex’ . dei gratia Rex scott’ .</seg> Omnibus probis hom<supplied>i</supplied>nibus tocius terre sue Clericis ⁊ Laicis  <seg type="diplomatic" subtype="salutation">Salutem</seg> . </seg><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant <lb/> presentes ⁊ futuri</seg> nos concessisse et hac carta nostra confirmasse donationem illam quam I<supplied>o</supplied>h<ex>ann</ex>es de <lb/> Normanuill’ . fecit deo ⁊ Monachis de Melros’ de illa parte terre in territorio
+                     de Makeston’ . que <lb/> continetur infra Rectas d<supplied>i</supplied>uisas conte<supplied>ntas in</supplied> ca<supplied>rta</supplied> ipsius Ioh<ex>ann</ex>is de Normanuill’ . <seg type="diplomatic" subtype="holding">Tenend<ex>am</ex> . et habend<ex>am</ex> . <lb/> predictis Monachis de Melros’ . in liberam <supplied>et pu</supplied>ram et perpetuam elemosin<supplied>am c</supplied>um libero ingressu ⁊ <lb/> egressu et transitu ipsis Monachis et Auerii<supplied>s</supplied> et vecturis suis et familie sue ad predictam terram <lb/> per terram predicti Ioh<ex>ann</ex>is de Makeston’ . Ita libere et quiete . plenarie et honorifice  sicut Car<lb/>ta predicti Ioh<ex>ann</ex>is inde facta predictis Monachis iuste testatur  saluo seruicio nostro .</seg> </seg><seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . Thom<ex>a</ex> . de <lb/> striuelin’ . Cancellario . Walter<ex>o</ex> . Olifard’ . Iustic’ . Laodon’ . Henric<ex>o</ex> . de Balliol’ . Camerar<ex>io</ex> . Robert<ex>o</ex> . filio . <lb/> Rob<ex>erti</ex> . de Ros’ . Ioh<ex>ann</ex>e de Maccuswel’ . Ioh<ex>ann</ex>e de vallibus . Will<ex>elm</ex>o de vet<ex>er</ex>i ponte . Bernard<ex>o</ex> de Hauden’ . Alex<ex>andro</ex> <lb/> . de Synton’ . </seg><seg type="diplomatic" subtype="dating">Apud Seleschr’ . xxij . die Iulii Anno Regni nostri duodecimo</seg> .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

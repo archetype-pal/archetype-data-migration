@@ -1,0 +1,45 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/140</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:01:51.697184+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/140</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all who shall see or hear this charter, <seg type="diplomatic" subtype="intitulatio">Simon Mauleverer and Gilbert Avenel</seg> <seg type="diplomatic" subtype="salutation">send greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let your whole community know</seg> us to have granted and by our present charter to have made firm to Helen
+                     daughter of Simon of Lindsay the land of ‘Hungerigge’ in
+                     the territory of Mow, that is, which the said Helen holds
+                     in our feu of Mow of Robert of Pollok and Isabel his wife.
+                     And in addition a portion <ex>of land</ex> near ‘Hederedesete’ in our land, which is called ‘Holemede’. <seg type="diplomatic" subtype="holding">For the said Helen and her heirs to have and to hold of us and our heirs for
+                     ever by right of heritage, freely, quitely, fully and
+                     honourably, in the same way in all things and through all
+                     things, just as the charter of Simon of Lindsay, her
+                     father, shows, bears witness and confirms</seg>. <seg type="diplomatic" subtype="sealing">And that this our grant and confirmation to the same Helen and her heirs should
+                     endure established and undisputed into the future, I Simon
+                     Mauleverer apply my seal to this charter. And I Gilbert
+                     Avenel, since I do not have my own seal, have confirmed it
+                     with the seal of my father, William Avenel</seg>.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Richard of Lincoln; Ralph le Nain; Simon of Grubbit; Adam
+                  of Yetholm; John of Munford; Adam son of Nicholas; Henry son
+                  of Ulf; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

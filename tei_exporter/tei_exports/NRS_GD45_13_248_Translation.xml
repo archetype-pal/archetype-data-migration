@@ -1,0 +1,47 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/248</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:09:54.987278+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/248</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W<ex>illiam</ex> by divince mercy humble servant of the church of St Andrews</seg> to all who shall view or hear these letters, <seg type="diplomatic" subtype="salutation">Eternal Salvation in the Lord:</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">We wish to bring to your attention of you all that</seg> we have, by the common agreement and will of our chapter and of our archdeacons,
+                     given and granted to the abbot and canons of Holyrodd and
+                     their successors in perpetuity, in pure and perpetual
+                     alms, the whole moiety of the teind of corn pertaining to
+                     the church of Kinghorn for the support of the aforesaid
+                     canons, paupers and pilgrims. <seg type="diplomatic" subtype="holding">Wherefore we will that the aforesaid canons and their successors should hold and
+                     possess the same teinds in perpetuity as a simple
+                     benefice, as freely, wholly, and honourably as any simple
+                     benefice in the whold kingdom of Scotia is freely, quietly
+                     and honourably held and possessed</seg>.</seg> <seg type="diplomatic" subtype="sealing">And that this our grant might endure sure and unbroken, we have secured it by
+                  the testimony of this document, and by the application of our
+                  own seal and the seals of the Chapter and our archdeacons.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Master Laurence the archdeacon of St Andrews, W<ex>illiam</ex> del Bois the archdeacon of Lothian, Ralph Niger the dean of Lothian, Ralph the
+                     dean of Crail, Master Alexander de Saint-Martin, Master
+                     David of Bernham, Simon de Noisy, William of Gullane,
+                     Simon the chaplain of the lord bishop, Richard of Kelso
+                     the clerk, John the clerk of the lord Bishop, and many
+                     others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NLS Adv. MS 15.1.18, no. 81</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:01.700552+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 81</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Vniuersis sancte matris ecclesie filiis <seg type="diplomatic" subtype="intitulatio">Ricardus dei gratia duncheldensis episcopus</seg> <seg type="diplomatic" subtype="salutation">salutem ⁊ episcopalem <lb/> benedictionem</seg></seg> . <seg type="diplomatic" subtype="arenga">Quoniam ad nostrum spectat officium sancte religionis cultum amplificare</seg>  <lb/> <seg type="diplomatic" subtype="notification">noscant tam posteri quam presentes</seg> <seg type="diplomatic" subtype="disposition">me concessisse &amp; hac mea carta confirmasse abbati de <lb/> dunf<ex>er</ex>mel’ ⁊ monachis ibidem deo seruientibus donationem regis malcholmi ⁊ an<lb/>dree episcopi katenensis secundum quod eorum carte testantur ecclesiam sancte ∙
+                     trinitatis de dunchelde <lb/> ⁊ omnes terras iuste ad eam pertinentes liberas ⁊ quietas ab omni exactione
+                     \tam/ ecclesiastice quam secularis <lb/> persone saluo episcopali iure . Concedo etiam eis conuersationem in episcopatu
+                     meo . ⁊ ut di<lb/>uinum exerceant officium ⁊ subditorum suorum curam habeant animarum ⁊ ut
+                     conuersan<lb/>tes in diocesi mea a me quod ad christianitatem pertinerit  accipiant .</seg> <seg type="diplomatic" subtype="witnesses">Testibus . Matheo archidi<lb/>acono . \sancti . Andree/ Bricio priore de insula Michaele clerico . Magistro
+                     matheo . &amp; Ioh<ex>anne</ex> fra<lb/>tre suo . Roberto dapifero episcopi Radulfo capellano . Thoma presbitero .
+                     Murdac cle<lb/>rico . Abraham paruo .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

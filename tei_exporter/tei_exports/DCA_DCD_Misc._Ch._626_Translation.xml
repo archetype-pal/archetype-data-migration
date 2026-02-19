@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 626</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-12 13:45:36.160003+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 626</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alexander, by the grace of God king of Scots,</seg> to all worthy men of his whole land, <seg type="diplomatic" subtype="salutation">greeting</seg>:</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know that</seg> we have granted to God and to St Cuthbert at Coldingham and to the monks serving
+                     God there that they and their servants throughout our
+                     whole land be free and quit from all toll for their own
+                     chattels and merchandise.</seg> <seg type="diplomatic" subtype="prohibition">Wherefore we forbid that anyone unjustly bring any injury or violence on them
+                  contrary to this liberty within our land, upon our
+                  forfeiture, as the charter of the lord King William, our
+                  father, bears witness</seg>. <seg type="diplomatic" subtype="witnesses">As witnesses: William del Bois, chancellor; William Comyn, earl of Buchan,
+                  justiciar of the Scots; Alexander, <persName><roleName>sheriff</roleName></persName> of Stirling; John of Maxwell. </seg><seg type="diplomatic" subtype="dating">At Kinross on the 21st day of July, in the eighth year of our reign</seg>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

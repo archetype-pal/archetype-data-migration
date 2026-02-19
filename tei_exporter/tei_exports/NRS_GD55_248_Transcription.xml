@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/248</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-29 15:57:28.188408+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/248</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alex’ Dei Gratia Rex scott’ .</seg> Omnibus Probis Hominibus tocius terre sue <seg type="diplomatic" subtype="salutation">salutem .</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant presentes et futuri</seg> nos <lb/> concessisse et hac carta nostra confirmasse donationem illam quam Iohannes de
+                     Normanuill’ fecit deo et ecclesie sancte <lb/> Marie de Melros’ . et Monachis ibidem deo seruientibus et in perpetuum
+                     seruituris de quadam parte terre sue <lb/> in territorio de Mackestun’ . <seg type="diplomatic" subtype="holding">Tenend’ et Habend’ dictis Monachis de Melros et suis successoribus de predicto <lb/> Johanne de Normanuill’ et Heredibus suis . in puram et perpetuam elemosinam per
+                        easdem rectas diuisas que <lb/> continentur in carta eiusdem Johann<ex>is</ex> de Normanuill’ . Libere . Qviete . Plenarie . et honorifice  sicut Carta
+                        predicti <lb/> Johann<ex>is</ex> inde Plenius confecta predictis Monachis de Melros’  iuste testatur . saluo
+                        seruitio nostro .</seg></seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . W . <lb/> de Bond’ . Cancellar<ex>io</ex> . Walt<ex>er</ex> Olifard’ Justic’ Laodon’ . Rob<ex>erto</ex> de Ros’ . Walt<ex>er</ex> Cumyn’ . Johanne de <lb/> Maccuswel Camer<ex>ario</ex> . Bernard’ Fraser’ . Rad’ de Campan’ . Eymer’ de Maccuswel .</seg> <seg type="diplomatic" subtype="dating">apud Traueqr’ . quarto die <lb/> Februarii . Anno regni . domini regis Nonodecimo</seg> .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

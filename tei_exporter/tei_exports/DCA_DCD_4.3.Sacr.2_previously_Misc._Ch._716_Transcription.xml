@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD 4.3.Sacr.2 (previously, Misc. Ch. 716)</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-02 13:02:56.824381+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD 4.3.Sacr.2 (previously, Misc. Ch. 716)</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte matris ecclesie filiis Joh<ex>anne</ex>s de Vallibus <seg type="diplomatic" subtype="salutation">salutem</seg>.</seg> <seg type="diplomatic" subtype="disposition">Sciant presentes ⁊ futuri . me con<lb/>cessisse ⁊ hac carta mea confirmasse deo ⁊ sancte Marie ⁊ sancto Cuthberto . ⁊
+                     monachis de <lb/> Dunelm<ex>o</ex> . terram illam in territorio de Golin’ . quam Will<ex>elmus</ex> de Vallibus pater meus eis dedit <lb/> in puram ⁊ perpetuam elemosinam. Et uolo . ut Lucas filius Osmund’ . ⁊ heredes
+                     sui terram illam te<lb/>neant de eisdem monachis per easdem diuisas per quas idem Osmund . terram illam
+                     tenuit eo die quo <lb/> ipse fuit uiuus ⁊ mortuus . ⁊ cum omnibus aisiamentis ⁊ iustis pertinentiis suis
+                     . libere quiete plenarie <lb/> ⁊ honorifice sicut carta dicti Will<ex>elmi</ex> patris mei dictis monachis . ⁊ Osmund . ⁊ heredibus eius inde facta <lb/> testatur . reddendo inde annuatim dictis monachis septem Solidos . ad festum
+                     sancti Michaelis .</seg> <seg type="diplomatic" subtype="witnesses">Hiis testibus . <lb/> Rob<ex>erto</ex> de Vallibus de Ellbotl’ . Will<ex>elmo</ex> de Munfichet’ . Walter de Lindes’ . Walter<ex>o</ex> de Fentun’ . Regi<lb/>nald<ex>o</ex> de Hotot’</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,45 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/178</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:46:55.519153+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/178</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know that</seg> <seg type="diplomatic" subtype="intitulatio">I, Robert de Bernham</seg>, have given, granted and by this my present charter made firm to God and
+                     Blessed Mary at Melrose and to the monks serving God in
+                     that place, in free and everlasting alms, the net in
+                     Berwickstream upon the Tweed, which Master David my
+                     brother, then chamberlain of the lord king, purchased from
+                     Ralph de Hauville, falconer of the lord king, and gave it
+                     to Roger my brother and to his heirs or his assignees.
+                     From this net the same Roger endowed Christiana daughter
+                     of Adam the Marshal, his wife, for her lifetime, after
+                     whose death the net shall belong to me by reight of
+                     heritage. <seg type="diplomatic" subtype="holding">For the said monks to hold and have as freely and quitely, fully and honourably,
+                     as the charter of the said Ralph de Hauville, made more
+                     fully thereupon for the said Master David, bears witness.</seg> <seg type="diplomatic" subtype="warrandice">I and my heirs shall entirely warrant and defend the said net to the said monks
+                     against all people.</seg></seg> <seg type="diplomatic" subtype="sealing">In testimony of this matter I, for myself and for my heirs, have applied my seal
+                  to this written deed.</seg> <seg type="diplomatic" subtype="witnesses">As witness, the community of Berwick.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

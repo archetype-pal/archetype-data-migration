@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/342</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.783738+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/342</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="notification">Sciant omnes tam presentes quam futuri quod</seg> <seg type="diplomatic" subtype="intitulatio">ego Wydo de Normanuill’</seg> <seg type="diplomatic" subtype="disposition">concessi et hac<lb/> mea carta confirmaui Abbati et conuentui de Melr<ex>os</ex> donacionem illam quam dominus Thomas de<lb/> Normanuill’ frater meus fecit eisdem caritatiue super terram de Mackistun’. Quam
+                     quid terram<lb/> dictus dominus Thomas de Normanuill’ frater meus de me tenet in escambium terre
+                     sue de Ane<lb/>gus . Vnde uolo et concedo quod dicti abbas et conuentus de Melros dictam terram
+                     de Mackistun’ cum<lb/> mesuagio . tofto . crofto . libertatibus et asiamentis . prout in carta quam
+                     dicti abbas et conuen<lb/>tus habent de dicto domino Thoma de Normanuill’ fratre meo continetur  integre
+                     . quiete et honori<lb/>fice imperpetuum teneant et possideant .</seg> <seg type="diplomatic" subtype="sealing">In cuius rei testimonium presenti scripto sigillum meum ap<lb/>poni feci .</seg> <seg type="diplomatic" subtype="witnesses">Testibus . Dompno Radulfo abbate de Balmorinauch . domino Willelmo filio .P.
+                  comitis<lb/> de Dunbar . Domino Nichol’ Corbeth filio eiusdem .W. domino Will<ex>elm</ex>o de Normanuill’ rectore ecclesie de<lb/> Mackist’ fratre meo . domino Leone nepote meo et multis aliis .</seg> <seg type="diplomatic" subtype="dating">Actum anno gr<ex>aci</ex>e . m . cc .<lb/> Quinquagesimo . mense Iulio.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

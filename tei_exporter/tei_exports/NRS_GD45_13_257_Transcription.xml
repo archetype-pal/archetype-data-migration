@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/257</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 09:01:35.158013+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/257</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alex’ dei Gratia Rex Scott’</seg> Omnibus probis Hominibus totius terre sue Clericis et Laicis <seg type="diplomatic" subtype="salutation">Salutem</seg></seg><lb/> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant presentes et futuri</seg> nos concessisse et Hac Carta nostra confirmasse finalem concordiam . factam<lb/> inter Abbatem et conuentum Sancte crucis de Edneburg’ ex una parte et Inger’ de
+                     Baill’ ex alia .<lb/> super diuisis terraRum ecclesiaRum eiusdem abbatis et Conuentus scilicet de
+                     Kircost’ et de Kirkebrid’<lb/> <seg type="diplomatic" subtype="holding">tenend’ et Habend’ dictis Abbati et Conuentui de predicto Inger’ et heredibus
+                     suis . per rectas di<lb/>uisas contentas in carta ipsius Inger’ et cum omnibus rectitudinibus et
+                        pertinentiis suis . ita<lb/> Libere et Quiete . plenarie et honorifice sicut Carta eiusdem Inger’ de Baill’
+                        dictis Abbati<lb/> et conuentui confecta plennius iuste testatur . Saluo seruitio nostro .</seg></seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . Magistro Math’ cancellario .<lb/> Will<ex>elmo</ex> Cum’ Comite de Buch’ . Iust’ Scott’ . Inger’ de Baill’ . Iohanne de haya . Walt’
+                     Cum’ . d<ex>aui</ex>d Cum’<lb/> Will<ex>elmo</ex> de Munfichet’ . Alex<ex>andro</ex> de Seton’ . Ph’ de Maleuill’ vicecomite de Aberden’ . d<ex>aui</ex>d de Lindes’ .</seg><lb/> Apud Aberden’ Octauo die Iulij . Anno Regni nostri Quartodecimo</p>
+      </div>
+    </body>
+  </text>
+</TEI>

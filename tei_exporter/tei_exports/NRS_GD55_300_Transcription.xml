@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/300</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:30:14.983902+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/300</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte matris Ecclesie filiis presentibus et futuris . <seg type="diplomatic" subtype="intitulatio">Patricius de Ridale</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis me</seg> dedisse et concessisse et hac mea Carta confirmasse<lb/> deo et Ecclesie Sancte marie de melros et monachis ibidem deo seruientibus . In
+                     liberam . puram . et perpetuam Elemosinam . pro salute
+                     domini mei<lb/> Regis Alexandri et pro salute mea . et pro animabus antecessorum meorum et
+                     successorum viginti acras terre que Rauennesfen appellatur
+                     . <seg type="diplomatic" subtype="boundaries">per has diuisas<lb/> Scilicet a Capite superiori de harehowedene totam illam leche sursum usque ad
+                        terram quam Will<ex>el</ex>mus de Ridale dedit Matildi Corb’ uxori<lb/> sue in dotem . et Inde sursum uersus Withtun sicut sulcus trahitur inter
+                        predictam terram et Rauenesfen . usque ad foueam quam
+                        monachi fecer<lb/>unt . et inde sicut uetus fossatum descendit in harehowedene</seg> . Totam hanc terram que infra predictis diuisas continetur . cum omnibus<lb/> pertinentiis suis dedi predictis monachis pro uiginti acris terre . Liberam .
+                     solutam . et quietam . ab omni terreno seruicio . et
+                     consuetudine . et ex<lb/>actione seculari . <seg type="diplomatic" subtype="holding">tenend' et possidend' . et utend' sicut eis melius uisum fuit . Ita libere .
+                     Quiete . plene et honorifice . sicut aliquam elemosinam<lb/> liberius . Quietius . plenius . et honorificentius tenent et possident</seg> .</seg> <seg type="diplomatic" subtype="warrandice">Et ego et heredes mei manutenebimus et warantizabimus eisdem monachis<lb/> totam predictam terram contra omnes homines de omnibus rebus que pro terra exigi
+                     possunt</seg> . <seg type="diplomatic" subtype="witnesses">Hiis testibus . Waltero Episcopo Glasg’ . Ric’ Decano<lb/> de Teuidale . Will<ex>elm</ex>o filio Ioh<ex>ann</ex>is . Thom’ de Colleuill’ . Ric’ nano . Sim’ de Grubheueth .Walt’ de Ridale filio
+                     meo . Rad’ de Ridal<ex>e</ex> .<lb/> Adam de chathov . Rob’ de b<ex>ar</ex>noldebi . Adam de Withtun . hug’ de Neubot<ex>i</ex>ll . Will<ex>elm</ex>o nepote meo et multis Aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,50 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/280</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-27 19:27:43.844111+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/280</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">William, by divine permission humble servant of the church of St Andrews, to all
+                  who shall view or hear this document, eternal salvation in
+                  the Lord:</seg> <seg type="diplomatic" subtype="disposition">You all should know that we have granted, and by this our charter made firm, to
+                  the convent of nuns serving God at North Berwick, the
+                  donation that Earl Duncan of Fife made to them by his own
+                  charter in respect of the church of Largo; the grant also of
+                  the same church to the same nuns made by Earl Malcolm of Fife
+                  by his own charter; we also grant and confirm to the same
+                  convent the church of Largo mentioned before, with all its
+                  just pertinents for their own use for their own support and
+                  the support of paupers, reserving the vicarage of the same
+                  church to Master Hugh the physician for the whole of his
+                  life; and in granting or yielding this, the foresaid nuns
+                  shall be bound to present to us or our successors for the
+                  foresaid vicarage a suitable vicar.</seg> <seg type="diplomatic" subtype="witnesses">Witness Brother James, canon of Edinburgh, Andrew the dean of Tyninghame, Master
+                  Martin the king’s physician, Gervase de Néauflé, Andrew of
+                  Moray, William of Gullane and Nicholas, our clerks, Hugh the
+                  chaplain, vicar of North Berwick, Peter our chaplain, Richard
+                  the chaplain, Robert of Upsettlington, Richard of Liddell,
+                  Richard of Twyford, John Marcaldus, our sergeands.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

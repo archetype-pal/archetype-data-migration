@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/87</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:47.201783+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/87</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte Matris Ecclesie filiis presentibus et futuris . <seg type="diplomatic" subtype="intitulatio">Rogerus Burnard</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> . <seg type="diplomatic" subtype="notification">Sciatis</seg> <seg type="diplomatic" subtype="disposition">me dedisse et Concessisse et hac mea Carta<lb/> confirmasse Deo et Ecclesie Sancte Marie de Melros . et Monachis ibidem deo
+                     seruientibus pro salute animarum dominorum meorum Regum<lb/> Scotie . Scilicet . Regis dauid . et Regis Malcolmi . et Regis Will<ex>el</ex>mi . et pro Salute anime mee . et pro Animabus Omnium antecessorum . et<lb/> successorum meorum in liberam . Puram . et perpetuam elemosinam quandam partem
+                     petarie mee interritorio De farnigdun . quam ego cum aliis<lb/> multis probis hominibus perambulaui per easdem diuisas . et eosdem terminos .
+                     Scilicet . per Lapides grandes quos tunc perambulando<lb/> posui per circuitum . Concessi etiam eisdem Monachis ut extra easdem diuisas
+                     Fossatum faciant per circuitum Sex pedum Latitudinis . et
+                     tantum terre mee et More de iuxta dedi eis et concessi ubi
+                     sufficienter possint exsiccare petas suas . et ineundo et
+                     Redeundo Liberum<lb/> transsitum sine disturbatione . ad ipsas petas abducendas . <seg type="diplomatic" subtype="holding">Hec omnia tenebunt et habebunt ipsi Monachi de me et heredibus meis<lb/> Libere . et Quiete . plene . et honorifice sicut aliquam elemosinam . Liberius .
+                        et Quietius . plenius et honorificentius tenent et
+                        possident</seg> . <seg type="diplomatic" subtype="warrandice">Et<lb/> ego et heredes mei manutenebimus . et warantizabimus ipsis Monachis totam
+                        petariam predictam contra omnes homines .</seg></seg> <seg type="diplomatic" subtype="witnesses">Hiis<lb/> Test<ex>ibus</ex> Ric<ex>ardo</ex> decano . Walter Olifard . Thom<ex>a</ex> de Colleuill<ex>a</ex> . Bernard<ex>o</ex> De Hawed’ . G<ex>re</ex>G<ex>orio</ex> De Rutheford . Alex<ex>andro</ex> de Suintun .<lb/> Roberto filio Maccus . Et Multis Aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

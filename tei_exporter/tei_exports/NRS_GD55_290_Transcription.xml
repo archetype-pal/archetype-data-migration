@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/290</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:22:45.973624+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/290</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Christi fidelibus presens scriptum uisuris uel audituris <seg type="diplomatic" subtype="intitulatio">Adam filius Ade de Dunelmo</seg> <seg type="diplomatic" subtype="salutation">salutem in domino</seg></seg> ;<lb/> <seg type="diplomatic" subtype="notification">Nouerit uniuersitas uestra</seg> <seg type="diplomatic" subtype="disposition">me pro necessitate mea . uxoris mee et liberorum meorum uendidisse monachis<lb/> de Melr<ex>os</ex> totam terram meam quam habui in Thodholesid’ et Standestanerig<ex>is</ex> . quam quidem tenui<lb/> de domino Will<ex>elm</ex>o de Ridal’ et heredibus suis in Westlilliscliue . sitam inter terram eorundem
+                     monachorum que<lb/> uocatur Clerkisland’ et terram Will<ex>elm</ex>i filii Alexandri . pro viginti solid<ex>os</ex> sterlingorum super quibus nobis<lb/> est plenarie satisfactum . <seg type="diplomatic" subtype="holding">Dicti uero monachi tenebunt et possidebunt inperpetuum totam dictam terram<lb/> <supplied>adeo</supplied> libere et quiete sicut aliquam terram in regno Scocie liberius et quietius
+                        tenent aut possident .<lb/> <supplied>c</supplied>um communibus asiamentis dicte uille  ad tantam terram pertinentibus . et ipsi
+                        monachi liberi e<lb/>runt et immunes ab omni seruicio priuato et forensi . ab omni consuetudine .
+                        exaccione et demanda que euenire poterunt in terra .</seg> <seg type="diplomatic" subtype="warrandice">Et ego et heredes mei dictam terram cum omnibus suis pertinenciis et cum<lb/> omnibus que premissa sunt dictis monachis contra omnes imperpetuum
+                        warantizabimus ac defendemus .<lb/> Ita quod nec ego nec heredes mei alienabimus residuum terre nostre quam habemus
+                        in Westlilliscliu’ ut per eam<lb/> possimus dictam terram dictis monachis si casus contigerit warentizare .</seg></seg> <seg type="diplomatic" subtype="sealing">In cuius rei testimonium ego<lb/> pro me et heredibus meis huic scripto sigillum meum apponi feci</seg> . <seg type="diplomatic" subtype="witnesses">Testibus . Will<ex>elm</ex>o filio Alex<ex>andri</ex> . Alano<lb/> Spens’ . Alex<ex>andro</ex> de Hirmannist’ . Symone braciatore . Will<ex>elm</ex>o filio Hugonis et multis aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

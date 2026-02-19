@@ -1,0 +1,54 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/127</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2020-12-18 12:51:19.813405+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/127</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><seg type="diplomatic" subtype="address">Omnibus sancte matris ecclesie filiis tam presentibus quam futuris . <seg type="diplomatic" subtype="intitulatio">Ioh<ex>annes</ex> filius orm</seg> <seg type="diplomatic" subtype="salutation">salutem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant tam futuri quam presentes</seg> me dedisse consensu et bona uoluntate domini mei Will<ex>elm</ex>i Regis et concessisse et hac mea carta confirmasse deo et ecclesie sancte marie
+                        de melros . et monachis ibidem deo<lb/> seuientibus pro animabus d<ex>aui</ex>d et melcolmi regum dominorum meorum et pro anima comitis Henrici et pro salute
+                        domini mei regis Will<ex>elm</ex>i et d<ex>aui</ex>d fratris eius et<lb/> pro salute mea et uxoris mee et redemptione animarum nostrarum et pro animabus
+                        patris mei et matris mee et animabus omnium
+                        antecessorum et he<lb/>redum meorum in liberam et puram et perpetuam elemosinam terram de hunedun <seg type="diplomatic" subtype="boundaries">per illas rectas diuisas quas ego perambulaui inter terram<lb/> meam et terram de witun et inter terram meam et terram de grubheued . et inter
+                           terram meam et terram de cliftun . et similiter
+                           inter<lb/> terram meam et terram de molle et sicut diuise perambulate sunt inter me et
+                           ipsos monachos coram multis probis hominibus usque
+                           ad locum<lb/> illum ubi paruus riuulus cadit in huneduneburne exorientali parte de
+                           hulkilescroc . et inde sursum per eundem riuulum
+                           usque ad sur<lb/>sam eius . et inde uersus occidentem usque ad paruum collem . et exinder extrans
+                           uerso condoso inter brunecnolh . et helle . et inde
+                           descendendo<lb/> per diuisas quas feci eis usque in haufurlang dene . et inde sicut burna
+                           descendit in kalna</seg> . <seg type="diplomatic" subtype="holding">Totam hanc terram et quicquid continetur infra<lb/> prenominatas diuisas dedi predicte ecclesie sancte marie de melros et monachis
+                           ibidem deo seruientibus liberam . solutam . et
+                           quietam . ab omnibus<lb/> auxiliis placitis geldis . assisis . et ab omni seruitio et consuetudine et
+                           exactione seculari . ut ea habeant teneant . et
+                           possideant in<lb/> perpetuum . libere . quiete . pacifice . plenarie . et honorifice sicut aliqua
+                           elemosina liberius tenetur et possidetur a monachis
+                           ordinis cistercien<lb/>sis reddendo annuatim mihi et heredibus meis . viginti . solidos de eadem
+                           elemosina</seg> . Et hoc sciendum est quod predicti monachi nullam com<lb/>munionem habebunt de me et heredibus meis extra diuisas suas perambulatas et
+                        similiter sciendum quod siquis hanc terram infra has<lb/> diuisas permabulatas calumpniari uoluerit <seg type="diplomatic" subtype="warrandice">ego et heredes mei omni calumpnianti respondebimus et monachis predictam<lb/> terram cum prenominatis diuisis per omnia warantizabimus .</seg></seg> <seg type="diplomatic" subtype="witnesses">His Test’ . Ingeramno episcopo glasg’ . Dauid frater regis . Ric’ . et Will<ex>elm</ex>o capellanis .<lb/> regis . d<ex>aui</ex>d olifar’ . Rob’ auenel . Gaufr’ de maleuuile . Alexa’ de S’ Mart’ . d<ex>aui</ex>d de boiu’ . Hug’ giffard’ . Ric’ clerico . de S’ Albano . hug’<lb/> clerico regis et alio Hug’ clerico regis . Magistro ioh<ex>ann</ex>e de rochesb’ . Archil de witt’ . Vctred de grubeued .</seg></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

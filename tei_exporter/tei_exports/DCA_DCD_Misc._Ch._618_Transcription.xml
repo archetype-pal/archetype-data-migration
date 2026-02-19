@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 618</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.728949+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 618</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alex’ Dei Gr<ex>ati</ex>a Rex Scott’</seg>. Episcopis . Abbatibus . Comitibus . Baronibus . Iusticiariis . vicecomitibus .
+                     prepositis .<lb/> Ministris . et omnibus aliis probis hominibus tocius terre sue <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant presentes et futuri</seg> nos diuine pie<lb/>tatis Intuitu dedisse . concessisse . et hac carta nostra confirmasse deo et
+                     Beate Marie et sancto Chutberto et<lb/> Thom<ex>e</ex> priori de Coldingham’ . et Monachis Ibidem deo seruientibus et in perpetuum
+                     seruituris illas viginti<lb/> Marchas annuas quas nos et antecessores nostri percipere consueuimus de
+                     Coldinghamsshyre nomine waytinge. <seg type="diplomatic" subtype="holding">Tenend<ex>as</ex><lb/> percipiend<ex>as</ex> . et habend<ex>as</ex> . eisdem Monachis et successoribus suis in perpetuum . In liberam puram et
+                        perpetuam elemosinam<lb/> adeo libere . quiete . plenarie . et honorifice . sicut Idem Monachi aliquas
+                        elemosinas . liberius . quietius . plenius . et<lb/> honorificentius . tenent et possident</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . A . abbate de Melros . W. de Bondingt<ex>on</ex> Cancellar<ex>io</ex> . Walter<ex>o</ex><lb/> filio Alan<ex>i</ex> Senescallo Iusticiar<ex>io</ex> scoc’ . Patricio filio Comitis Patric<ex>ii</ex> . Iohann<ex>e</ex> de Maccuswel Camerario . <persName>Roger<ex>o</ex><lb/> Avenel</persName> . Dauid Marscallo . Eymer’ de Maccuswel . Iohanne de Striuelin’</seg> . <seg type="diplomatic" subtype="dating">apud Berwyk’ Sexto<lb/>decimo die Maii . Anno regni domini Regis octauodecimo .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

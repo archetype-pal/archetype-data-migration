@@ -1,0 +1,45 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/52</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-30 14:18:52.678495+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/52</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of holy mother Church, <seg type="diplomatic" subtype="intitulatio">A[andrew] the archdeacon, and all the clergy of Lothian,</seg> <seg type="diplomatic" subtype="salutation">send greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Those present as well as those to come should know</seg> <seg type="diplomatic" subtype="disposition">that we have taken part in and rendered both advice and assent to the agreement
+                  for the observance of perpetual peace and charity made in the
+                  presence of the venerable Richard, bishop of St Andrews,
+                  between the monastery of Melrose and the church of Dunbar
+                  concerning the teinding of the granges at ‘Edmuneston’ and
+                  Hartside, according to the form contained in the chirograph
+                  of each party, or the letters of our aforesaid bishop, that
+                  is, that the monastery of Melrose shall pay 30 shillings each
+                  year to the church of Dunbar, so that the church of Dunbar
+                  can demand nothing more than the these 30 shillings from the
+                  aforementioned monastery.</seg> <seg type="diplomatic" subtype="witnesses">Witness, W[alter] the archdeacon of St Andrews, A[mfred], abbot of Newbattle,
+                  Geoffrey [abbot] of Dunfermline, Robert the abbot of Scone,
+                  John the abbot of Holyrood, Roger the abbot of Dryburgh,
+                  Aiulf and Patrick the deans, Robert of Perth, Ald[red] the
+                  parson of Lauder, Gillies of Wedale.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

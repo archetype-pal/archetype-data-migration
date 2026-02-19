@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD 1.4.Ebor.9</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 15:48:09.544642+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD 1.4.Ebor.9</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="notification">Let all sons of holy Mother Church to whom these letters shall have come know:</seg> <seg type="diplomatic" subtype="narration">in the year of the Lord's incarnation 1167, for the restoration of perpetual
+                  peace, the controversy which had for a long time been argued
+                  between the church of Durham and the church of Croyland over
+                  the toun and church of Edrom and all its pertinents, at
+                  Stirling, in the presence of William the illustrious king of
+                  the Scots, Richard bishop of St Andrews, Ingram bishop of
+                  Glasgow, Geoffrey abbot of Dunfermline, William abbot of
+                  Melrose, Waldeve the earl, Nicholas the chancellor, Richard
+                  the chaplain, David Oliphant, and other worthy men as well
+                  clerics as laity, was put to rest, and by an act of trust on
+                  both sides was concluded in this manner:</seg> <seg type="diplomatic" subtype="disposition">The abbot and chapter of Croyland church have renounced every right which they
+                  had in the toun of Edrom and the church of the same toun and
+                  its pertinents, so that they ceded the same toun and church
+                  with all its pertinents to the church of Durham without
+                  counter-claim in perpetuity. And the prior and monastic
+                  community of the churh cof Durham shall annually pay, in
+                  perpetuity, nine merks of silver in cash to the church of
+                  Croyland in Stanford at St Leonard's church without
+                  assignment of any possession, namely, sixty shillings on the
+                  day of Saint Agatha, Virgin and Martyr, after the
+                  Purification of Saint Mary, and the other sixty shillings on
+                  the day of Saint Oswald, King and Martyr, after the feast of
+                  Saint Peter in Chains.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Geoffrey, prior of York; John the monk, son of Daniel;
+                  Master Richard of Coldingham; Master Stephen; Robert of
+                  Edington; Robert de Mesnil; Gervase the physician; Hugh of
+                  Lewes; Walter of Kettins; Ralph de Het; William of the
+                  refectory; Robert of Waltham; Guy the steward; Adam of
+                  Wallsend; Roger of Lindsay; Ambrose of Bolton; Geoffrey son
+                  of Achar; Roger the chamberlain; Guy the marischal; Bernard
+                  Bonfoi; Geoffrey de Baston.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

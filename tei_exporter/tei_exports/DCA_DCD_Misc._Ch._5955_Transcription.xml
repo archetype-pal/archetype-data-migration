@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 5955</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.803383+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5955</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Christi fidelibus ad quos presens scriptum peruenerit  <seg type="diplomatic" subtype="intitulatio">Bertramus de parua Ristona</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Nouerit uniuersitas uestra</seg> <seg type="diplomatic" subtype="disposition">me dedisse . concessisse . et hac<lb/> mea presenti carta confirmasse deo et sancto Cudberto et Anketino Prior et
+                     Conuentui de Coldingham homagium et seruicum Patricii
+                     filii Vtredi<lb/> cum omnibus terris et possessionibus quas habuit ex donacionem Ade patris mei in
+                     uilla et in teritorio parue Ristone . scilicet . Toftum et
+                     croftum que<lb/> iacent iuxta terram Henrici uersus orientem et quatuor decim acras iuxta
+                     Wambenese crosse . et tres rodas in Blakeclou . et duas
+                     acras et<lb/> dimidiam iuxta Blakeclou uersus orientem . et octo acras iuxta Faules . <seg type="diplomatic" subtype="holding">habendas et tenendas dictis Priori et Conuentui et eorum succes<lb/>soribus in perpetuum . quietas de me et heredibus meis absque omni consuetudine
+                        et exaccione seculari et demanda sicut aliqua elemosina
+                        infra regnum<lb/> Scocie melius uel liberius tenetur uel possidetur .</seg> <seg type="diplomatic" subtype="warrandice">Ego uero Bertramus et heredes mei predictum homagium et seruicium cum omnibus
+                     terris et posses<lb/>sionibus prescriptis Priori et Conuentui et eorum successoribus contra omnes
+                        homines et feminas warantizabimus et defendemus
+                        inperpetuum</seg></seg> .<lb/> <seg type="diplomatic" subtype="sealing">in cuius rei testimonium presenti scripto sigillum meum apposui</seg> . <seg type="diplomatic" subtype="witnesses">Hiis testibus domino Willelmo de Lindesey . domino Willelmo de Morginton<ex>a</ex> .<lb/> domino Alano de Swinton<ex>a</ex> . Thomas de Nesebite . Willelmo de Scremerstona . Ada de Prenderghest . D<ex>aui</ex>d . de Lummesdene . Roberto<lb/> filio Gregorii . Gilberto de Lummesdene . Ada filio Iohannis de Aytona . Ada
+                     Franzais . Iohanne filio Ingerani et aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

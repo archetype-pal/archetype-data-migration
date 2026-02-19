@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL L.F.C. Ch. xxx.7</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:19:44.457341+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>L.F.C. Ch. xxx.7</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alexander, by the grace of God king of the Scots,</seg> to all worthy men of his entire land, clerk and lay, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Let present and future know</seg> <seg type="diplomatic" subtype="disposition">me to have conceded, and by this my charter to have made firm, to God and to the
+                  church of St Mary at Melrose, and to the monks serving God in
+                  that place, the whole fishery in the Tweed at Old Roxburgh,
+                  as far as ‘Brokestrem’, which King David my great-grandfather
+                  gave and his own charter made firm. <seg type="diplomatic" subtype="holding">For them to hold in free and everlasting alms, as freely and quitly as they most
+                     freely and quitely hold their other alms, and just as the
+                     charters of King David my great-grandfather and the
+                     confirmation of the lord King William, my father, bear
+                     witness and affirm.</seg></seg> <seg type="diplomatic" subtype="witnesses">As witnesses: William del Bois, my chancellor; Earl Malcolm of Fife; Philip de
+                  Valognes, my chamberlain; William de Valognes, his son; John
+                  of Maxwell; Thomas of Lundie, my doorward; David the
+                  marischal; Hervey the marischal.</seg> At Edinburgh on the third day of April.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

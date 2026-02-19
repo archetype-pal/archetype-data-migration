@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/291</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.184839+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/291</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="notification">Let all people present and future know that</seg> <seg type="diplomatic" subtype="intitulatio">I William of Ryedale knight</seg> <seg type="diplomatic" subtype="disposition">have granted and by this my charter made firm to God and to the church of
+                  Blessed Mary at Melrose and to the monks serving God in that
+                  place the thowl land by its correct boundaries which Adam son
+                  of Adam of Durham sold to the same monks in the territory of
+                  West Lilliesleaf, <seg type="diplomatic" subtype="holding">to hold and to have in free and everlasting alms with all liberties and common
+                     easements of the said toun of West Lilliesleaf as freely,
+                     quitely, fully and peaceably as the charter which they
+                     have from the said Adam bears witness.</seg> <seg type="diplomatic" subtype="warrandice">I and my heirs shall warrant and defend the said land with all its pertinents
+                     for the said monks against all people for ever.</seg></seg> <seg type="diplomatic" subtype="sealing">In testimony of this matter I for myself and my heirs have caused my seal to be
+                  applied to the present writing.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: William son of Alexander of West Lilliesleaf; Robert of Bathgate;
+                  William of Bernoldby; and others .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

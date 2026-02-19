@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/136</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:03:46.543504+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/136</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-family: Junicode;"><seg type="diplomatic" subtype="address">Omnibus sancte Matris Ecclesie filiis presentibus et futuris <seg type="diplomatic" subtype="intitulatio">Ric<ex>ardus</ex> . de Lincolnia</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me dedisse et concessisse<lb/> et hac mea Carta confirmasse deo et Ecclesie Sancte marie de Melros et Monachis
+                        ibidem deo seruientibus pro<lb/> animabus patris mei et matris mee et Omnium antecessorum et successorum meorum .
+                        et pro salute domini mei Willelmi Regis et Re<lb/>gine et Alexandri filii sui et Comitis . d<ex>aui</ex>d . et pro salute mea et uxoris mee et Omnium heredum nostrorum in puram et
+                        perpetu<lb/>am elemosinam illam partem terre in territorio de Molle quam Ansel de Wittune
+                        dedit eidem Ecclesie et monachis cum<lb/> pratis adiacentibus <seg type="diplomatic" subtype="holding">tenendam et possidendam in perpetuum per omnes terminos et diuisas que
+                        continentur in Carta predicti Anselmi</seg> .<lb/> preterea dedi eis et confirmaui totam illam petariam que est inter Molope et
+                        Berope et Herdstrete que diuidit terram de Mol<lb/>le et de Hunum . Insuper dedi eis et confirmaui in bosco meo de Molope buschiam
+                        quantum equus unus potest portare<lb/> usque ad grangiam de Hunedun singulis annis a pascha usque ad Natiuitatem Sancte
+                        Marie . <seg type="diplomatic" subtype="holding">Volo itaque ut predicti<lb/> monachi teneant et possideant hec omnia in perpetuum ita libere et quiete
+                           plenarie et honorifice sicut aliquam aliam ele<lb/>mosinam liberius et quietius plenius et honorificentius tenent et possident</seg> . <seg type="diplomatic" subtype="warrandice">Et ego et heredes mei manutenebimus et warantizabi<lb/>mus predictis monachis hanc elemosinam contra omnes homines</seg> et adquietabimus eam de forensic et Omni terreno seruitio erga<lb/> omnes homines in perpetuum . Et ipsi monachi habebunt liberum et congruum
+                        ingressum et egressum per terram meam ad ducendam<lb/> buschiam suam et petas et alia sibi neccessaria sine disturbatione et molestia</seg> . <seg type="diplomatic" subtype="witnesses">Hiis T’. Geruasio Auenel . Will<ex>elmo</ex> . auenel .<lb/> W . de Cresseuill’ . W. de Cracin . Alano clerico . Walt<ex>er</ex> . de Ridale . Rob<ex>erto</ex> . de Bernoluebi</seg> .</span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

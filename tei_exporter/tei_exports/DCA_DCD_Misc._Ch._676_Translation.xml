@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 676</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:44:43.340057+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 676</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">William of Lindsay to all sons of Holy Mother Church sends <seg type="diplomatic" subtype="salutation">greeting</seg>. </seg><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let it be known to all who see or hear these letters</seg> that inasmuch as it pertains to me just as to the possessor I have given and by
+                     this my charter made firm, to God, Saint Cuthbert, and to
+                     the monks of the same saint serving God in Durham, the
+                     Church of Earlston with one ploughgate of land and all its
+                     other pertinents in pure and perpetual alms. <seg type="diplomatic" subtype="holding">Wherefore I will that the same monks should possess the aforesaid church and all
+                     that belongs to it so freely, quitely and wholly for ever.
+                     And they should have its multure entirely quit.</seg> <seg type="diplomatic" subtype="warrandice">And whosoever might hold the aforesaid church of them I have promised however
+                     that according to my ability I shall maintain this alms
+                     for the benefit and use of the church of Durham</seg>.</seg> <seg type="diplomatic" subtype="witnesses">As witness<ex>es</ex></seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

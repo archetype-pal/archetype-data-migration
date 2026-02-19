@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/107</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 13:36:20.452248+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/107</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte matris ecclesie filiis tam futuris quam presentibus <seg type="diplomatic" subtype="intitulatio">Ric<ex>ardus</ex> de Morevill' Constab<ex>u</ex>l<ex>arius</ex> reg<ex>is</ex> Scott'</seg> <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg><lb/> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me dedisse . et hac mea carta confirmasse deo et ecclesie sancte Marie de
+                     Mailros et monachis<lb/> ibidem deo seruientibus in liberam et quietam et perpetuam elemosinam .
+                     libertatem et licentiam habendi apud<lb/> buchelm unam uaccariam sexaginta uaccarum . et domum ad opus earum ideoneam 
+                     infra illa eadem<lb/> septa que ibi erant antequam hanc licentiam eis dedissem . <seg type="diplomatic" subtype="holding">Quare uolo ut prenominata ecclesia sancte Ma<lb/>rie de Mailros et predicti monachi prefatam libertatem et licentiam in liberam
+                        et perpetuam elemosinam<lb/> habeant . perpetualiter que possideant . Ita libere . quiete . et honorifice 
+                        sicut aliquam elemosinam liberius<lb/> quietius et honorificentius possident .</seg> Ita quod hoc non remaneat propter cartam meam de Þhiteleie<lb/> quam prius eis dederam . que testatur me concessisse eis ut habeant solummodo
+                     tres domos in<lb/> foresta  et hoc apud predictam Þhiteleie</seg> ; <seg type="diplomatic" subtype="witnesses">Teste Domina auice de loncastria . Will<ex>elm</ex>o de Moreuill'<lb/> filio et herede nostro . herberto decano Glasg' . magistro Clemente capellano .
+                     Adam persona ecclesie de<lb/> lawed<ex>e</ex>r . Rogero clerico et dapifero . Alano de turlestan . Sampsone filio Will<ex>elm</ex>i de Vlchilestun .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

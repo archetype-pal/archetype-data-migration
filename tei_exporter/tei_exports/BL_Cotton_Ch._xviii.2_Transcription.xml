@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Cotton Ch. xviii.2</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:32:22.168825+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.2</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio"><persName>ALex’</persName> dei Gr<ex>ati</ex>a Rex Scott’</seg> . Omnibus probis Hominibus Totius terre sue Clericis et Laicis <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Sciant<lb/> presentes et futuri</seg> <seg type="diplomatic" subtype="disposition">nos diuine pietatis intuitu dedisse et concessisse et hac Carta nostra
+                  confirmasse . deo et Ecclesie sancte<lb/> marie de Melros’ . Et Abbati et monachis ibidem deo seruientibus Quartam partem
+                     de Dunscor’ . in valle<lb/> de Nyth’ . scilicet illam Quartam partem . que propinquior est terre Canonicorum
+                     de Dercungall’ . per rectas diuisas suas<lb/> et cum omnibus iustis pertinentiis suis . <seg type="diplomatic" subtype="holding">Tenend<ex>am</ex> eisdem monachis in Liberam . puram . et perpetuam elemosi<lb/>nam . adeo Libere et Quiete . plenarie et honorifice . sicut aliqua elemosina in
+                        regno nostro . ex dono nostro uel<lb/> alicuius antecessorum nostrorum Liberius et Quietius . plenius et
+                        honorificentius tenetur . et possidetur . Ita ut
+                        predicti<lb/> Monachi quolibet anno vigilia Sancti Bartholom<ex>ei</ex> apostoli pitantiam habeant . de redditu predicte terre</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> .<lb/> Magistro <persName>Math’</persName> Cancellario . <persName>Walt’ OLifard’</persName> . Iust’ Laod<ex>onie</ex> . <persName>Walt’</persName> filio <persName>Alan<ex>i</ex></persName> Senescallo . <persName>Patricio</persName> filio Comitis . <persName>Walt’ Cum<ex>in</ex></persName> .<lb/> <persName>IngeR’</persName> de Baill’ . <persName>HenR<ex>ico</ex></persName> filio Comitis . <persName>d<ex>aui</ex>d</persName> . Marscallo . <persName>Thom<ex>a</ex></persName> filio <persName>Rand<ex>ulfi</ex></persName> . <persName>d<ex>aui</ex>d Cum<ex>in</ex> .</persName></seg> Apud Belford’ . decimo<lb/> octauo die Marcii . Anno regni domini Regis Quintodecimo .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

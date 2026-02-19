@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/52</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-30 14:18:48.936592+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/52</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte matris ecclesie filiis . <seg type="diplomatic" subtype="intitulatio">A . archidiaconus . et vniuersus Clerus Laudoniensis</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Nouerint tam presentes<lb/> quam futuri</seg> <seg type="diplomatic" subtype="disposition">nos interfuisse et consilium et assensum prebuisse ad perpetue pacis et
+                  Caritatis obseruantiam compositi<lb/>oni facte in presentia uenerabilis . Ricar’ episcopi sancti andree . inter
+                     Monasterium de Mailros . et ecclesiam de<lb/> Dunbar super Decimationibus grangiarum de edmundestune et hertesheued . secundum
+                     formam que in cyro<lb/>grapho utriusque partis . uel litteris predicti episcopi nostri continetur .
+                     scilicet quod monasterium de Mailros singulis<lb/> annis xxx solidos persoluet ecclesie de Dunbar . ita quod ecclesia de dunbar
+                     nichil amplius supra hos<lb/> xxx solidos a prefato monasterio in perpetuum exigere possit uel debeat .</seg> <seg type="diplomatic" subtype="witnesses">T . Walter archi[diacon]o [<ex>written </ex>archiado] de sancto<lb/> and<ex>ree</ex> . A . abbate de Neubot’ . Gauf’ de dunf’ . Rob<supplied>erto ab</supplied>batte de scona . Ioh<ex>anne</ex> abbate de Sancta Cruce . Rog<ex>er</ex><lb/> abbate de driburg . Aiul’ . et Patricio decanis . Rob’ de pert Ald’ persona de
+                     lawad’ . Gilis de Wadale .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

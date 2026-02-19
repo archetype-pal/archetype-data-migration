@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NLS Adv. MS 15.1.18, no. 34</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:00.648873+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 34</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus hoc scriptum uisuris uel audituris <seg type="diplomatic" subtype="intitulatio">Rad<ex>ulfus</ex> permissione diuina ecclesie Aberd<ex>onie</ex> minister humilis</seg> <seg type="diplomatic" subtype="salutation">eternam in domino salutem</seg></seg> . <seg type="diplomatic" subtype="notification">Nouerit vniuer<lb/>sitas uestra</seg> <seg type="diplomatic" subtype="disposition">nos ad presentacionem prioris et conuentus de sancto andr<ex>ee</ex> caritatis intuitu dedisse concessisse et hac carta nostra confir<lb/>masse Rob<ex>erto</ex> de La Runce capellano nostro vicariam ecclesie de Bourdin . et eum in eadem
+                     canonice instituisse cum terra ipsius <lb/> ecclesie et decima eiusdem terre . et cum omnibus obuencionibus et pertinenciis
+                     suis . salua prefatis canonicis terra assingnata ad lu<lb/>minare ecclesie . <seg type="diplomatic" subtype="holding">Quare volumus ut prefatus Rob<ex>ertus</ex> prefatam vicariam ita libere quiete teneat et possideat . sicut aliquis uicarius <lb/> aliquam vicariam in diocesa nostra liberius quietius tenet et possidet . saluis
+                        episcopalibus</seg> .</seg> <seg type="diplomatic" subtype="sealing">In huius rei testimonium  presenti scripto sigillum <lb/> nostrum apposuimus</seg> . <seg type="diplomatic" subtype="witnesses">Testibus magistro hug<ex>one</ex> de bosch<ex>o</ex> . magistro Rad<ex>ulfo</ex> de bosch<ex>o</ex> . magistro Ric<ex>ardo</ex> offic<ex>iario</ex> Aberd<ex>onie</ex> . domino steph<ex>an</ex>o senescall<ex>o</ex> <lb/> nostro . domino Joh<ex>ann</ex>e de solt<ex>re</ex> capellano nostro . and<ex>rea</ex> . henr<ex>ico</ex> . Will<ex>elm</ex>o . et Rogero clericis nostris et aliis</seg> .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

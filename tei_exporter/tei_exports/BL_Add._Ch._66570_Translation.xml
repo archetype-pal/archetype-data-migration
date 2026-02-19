@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Add. Ch. 66570</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-11-28 15:22:14.478925+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 66570</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alexander, by the grace of God king of the Scots</seg>, to all worthy men of his entire land <seg type="diplomatic" subtype="salutation">greeting.</seg></seg><seg type="diplomatic" subtype="notification"> Know that</seg> <seg type="diplomatic" subtype="disposition">we have conceded to Geoffrey of Farsley, our knight and sworn man, <seg type="diplomatic" subtype="holding">that he shall have and hold his lands that he holds of us in feu at Crail in
+                     free Warren</seg>. <seg type="diplomatic" subtype="injunction">Wherefore we strictly forbid that anyone may fell timber or hunt within the same
+                     lands without licence of the same Geoffrey, on pain of our
+                     full forfeiture of ten pounds</seg></seg>. <seg type="diplomatic" subtype="witnesses">As witnesses: Robert, abbot of Dunfermline; Robert Menzies and William Oliphant.</seg> At Dunfermline, on the 16th day of April, in the 30th year of the reign of the
+                  lord King.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

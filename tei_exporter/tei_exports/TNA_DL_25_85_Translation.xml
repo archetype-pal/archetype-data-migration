@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of TNA DL 25/85</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-07-05 08:54:09.112339+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/85</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all who shall view or hear these letters <seg type="diplomatic" subtype="intitulatio">Adam of Crosby</seg> <seg type="diplomatic" subtype="salutation">sends greeting.</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let all of you know</seg> me to have quitclaimed for myself and my heirs to the lord Robert de Brus and
+                     his heirs all lands and tenements as well in saltpans as
+                     in mills and services and rents and in all things
+                     pertaining to me in the toun of Cummertrees or which ought
+                     lawfully to have pertained to me, in return for sixty-four
+                     acres of land which he has given to me in exchange for the
+                     aforesaid lands in the tenement of Gretna. <seg type="diplomatic" subtype="warrandice">And I, A<ex>dam</ex> of Crosby, and my heirs shall warrant all the said lands and tenements with
+                        their pertinents to the said lord Robert de Brus and
+                        his heirs for ever</seg>.</seg> <seg type="diplomatic" subtype="witnesses">As witness: Alan of Dunwoodie, then steward of Annandale; the lord William de
+                  Mortaigne; the lord William of Carlisle; the lord Ingram de
+                  Monceus; the lord Adam de Chartres; Humphrey Mauleverer;
+                  Robert de Heriz; Hugh fitz Hamelin; the lord William, vicar
+                  of Annan; William, clerk of Annan; Adam, clerk; and others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

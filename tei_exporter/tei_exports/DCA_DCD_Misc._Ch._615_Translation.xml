@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 615</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:34.021513+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 615</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Alexander, by the Grace of God King of Scots, to Bishops, Abbots, Priors, Earls,
+                  Justices, Barons, Sheriffs, Provosts, Officials, and All
+                  worthy men of the Whole of his land, Clerk and lay : <seg type="diplomatic" subtype="salutation">Greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know that</seg> I will and firmly instruct that the woods of the monks of Coldingham, namely,
+                     Greenwood, and the whole wood of Reston, and
+                     Brockholeswood, and Aikieside, and 'Chirchedeneswde', and
+                     'Harewde', and 'Denewde', and Swinewood, and Houndwood,
+                     and all their other woods and wastelands shall be under
+                     the protection and custody of the prior as well as of the
+                     monks of Coldingham. Let no one, on pain of the forfeiture
+                     of ten pounds, take anything in the aforesaid woods or
+                     wastelands, except through the prior, or through the monks
+                     of the aforenamed place if he is not himself present,
+                     except for the requirements of my castle at Berwick alone,
+                     those things only which are proper to me myself. And if my
+                     servants shall come to the aforesaid woods for my needs
+                     for the maintenance of my castle at Berwick, by the prior
+                     or through his servants, and where he or his servants show
+                     what things are necessary for me, they shall receive them.
+                     I furthermore add and grant to them, that the aforesaid
+                     prior and monks shall have warren in the aforesaid woods,
+                     and throughought the whole of their land, as it stretches
+                     by its right and ancient boundaries, namely, from the
+                     boundaries between Berwick and Lamberton as far as Biollie
+                     and as far as 'Drieforde' and so by the 'Mereburne' as far
+                     as 'Crachoctre' and as far as 'Eieforde' and as far as the
+                     burn which flows into the sea by Oldcambus peth, so that
+                     nothing shall be taken there, neither firewood nor any
+                     woodland beast, except by themselves. If anyone shall be
+                     caught hunting in the aforesaid woods or wastelands, or
+                     cutting firewood, or taking away anything from there
+                     without the permission of the prior and monks, the prior
+                     and monks shall have that which they find upon him and
+                     with him, and I shall make the aforenamed forfeiture, as
+                     the Charters of King David and of King William my father
+                     bear witness and confirm. </seg><seg type="diplomatic" subtype="witnesses">As witnesses : William del Bois, my Chancellor; Earl Malcolm of Fife; Master
+                  Adam of Scone and Robert, my Chaplains; Philip of Lundin;
+                  David the marischal; Hervey the marischal; Adam Hastings. </seg><seg type="diplomatic" subtype="dating">At Selkirk on the last day of July</seg>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

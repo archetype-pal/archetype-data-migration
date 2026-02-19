@@ -1,0 +1,53 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/1</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-21 18:15:51.0717+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/1</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">D dei gratia Rex scottorum</seg> Episcopis . Abbatibus . Comitibus . Baronibus . et probis hominibus suis . et
+                     Omnibus fidelibus suis totius regni sui . francis . et
+                     Anglic<ex>is</ex> .<lb/> et Scottis . et Galwensibus  <seg type="diplomatic" subtype="salutation">salutem</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis me</seg> pro anima mea et animabus patris et matris mee . et fratris me Ædgari . et
+                     aliorum fratrum et Sororum mearum<lb/> et vxoris mee Matild<ex>is</ex> . et etiam pro anima Henrici filii mei et heredis . et Antecessorum et
+                     Successorm meorum Concessisse et dedisse deo et Sancte<lb/> MARie de MelR<ex>os</ex> . et Monachis ibidem deo seruientibus de Rieuall’ Annuente et Concedente Henr<ex>ico</ex> filio meo et herede et per cartam suam<lb/> confirmante . in perpetuam Elemosinam . totam scilicet terram de MelR<ex>os</ex> . et totam terram de Eldune . et totam terram de Dernewic . per terminos et
+                     Rectas diuisas suas . in Bosco et plano . in pratis et
+                     aquis . in pasturis et Moris . in uiis et semitis . et in
+                     omnibus aliis rebus liberas et quie<lb/>tas . et Solutas ab omni terreno seruitio et exactione seculari . perpetuo
+                     tenore possidere. Insuper autem sciatis me dedisse
+                     predictis monach<ex>is</ex><lb/> et hac mea Carta Confirmasse in terra mea . et in forestis meis . scilicet de
+                     Seleschirche . et de Trauequair omnia aisiamenta sua .
+                     pasturam<lb/> scilicet . ad aueria sua . et ligna . et materiem . et pasnagium . ubique ad
+                     suos proprios usus sicut ego ipse melius habeo ad opus
+                     meum . et nominatum inter<lb/> Galche et Leder . Preterea in aquis de Tweda infra terminos eorum piscaturam .
+                     tam ex mea parte fluminis quam ex eorum parte ubique .<lb/> Preter uero omnia supradicta dedi et confirmaui eis ad incrementum
+                     Galtuneshalech . et totam terram et boscum de Galtunesside<lb/> sicut ego ipse et Henricus filius meus . et Abbas Ricardus eiusdem ecclesie
+                     preiuimus et circuiuimus die Veneris Crastino Ascensionis<lb/> domini . Anno scilicet secundo quo Steph<ex>anu</ex>s Rex Anglie captus est.</seg> <seg type="diplomatic" subtype="witnesses">Testibus ad hoc presens donum . Iohanne episcopo . Will<ex>elm</ex>o nepote regis . Hug<ex>one</ex> de<lb/> Moreuill’ . Willelmo de Sumeruill’ . Henrico filio Swain . Geruasio Ridel.</seg> <seg type="diplomatic" subtype="disposition">Volo itaque ut ipsi omnes has predictas terras et Res suas . ita libere<lb/> et quiete teneant . et possideant . sicut aliqua Elemosina liberius et quietius
+                     . perpetuo tenore teneri potest et possideri.</seg> <seg type="diplomatic" subtype="witnesses">Teste HenR<ex>ico</ex> . filio<lb/> meo . Ioh<ex>ann</ex>e episcopo . Will<ex>elm</ex>o nepote meo . Will<ex>elm</ex>o cancellario . Madad comite . Roberto de Humframuill’ . Hug<ex>one</ex> de Moreuill’ . Waltero filio Ala<lb/>ni Hug<ex>one</ex> Briton . Osberto de Ardene . Geruasio Ridel . Will<ex>elmo</ex> de Sumeruill’ . Ricardo Gernun . Ric<ex>ardo</ex> Anglico . Will<ex>elm</ex>o de Lind<supplied>es’</supplied><lb/> Ascelino archidiacono . Iordane clerico . Estmundo Elemosinario. Preterea
+                     homines de eadem terra. Gopatric’ comite . Vlfchillo filio
+                     Ethestan . Osol<lb/>fo filio HuctR’ . Maccus filius Vndwain . Huctredo filio Sioth . Huctredo filio
+                     Gospatric . Orm filio Eilaf . Eilaf filio Gospatric .
+                     Edulfo<lb/> filio Norm’ . Osolfo filio Ediue . Osolfo filio Elfstan . Roberto Brus meschin .
+                     Rad<ex>ulfo</ex>. filio Turstain . Rogero nepote episcopi.</seg><lb/> APud ERcheldoN IN IuNio.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

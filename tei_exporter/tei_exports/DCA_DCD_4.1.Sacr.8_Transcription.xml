@@ -1,0 +1,31 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD 4.1.Sacr.8</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-09-14 02:05:17.782716+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD 4.1.Sacr.8</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="notification">Notum sit Omnibus presens scriptum inspecturis</seg> <seg type="diplomatic" subtype="disposition">. quod Ego <seg type="diplomatic" subtype="intitulatio"><persName>Willelmus Cumin .</persName> et heredes</seg> <lb/> mei dedimus . et concessimus . deo . et sancto cuthberto . ad lum<ex>en</ex> ecclesie sancti cuthberti .<lb/> in perpetuam elemosinam . unam petram cere reddundam annuatim ad festum <lb/> sancti cuthberti . in septembri .</seg> <seg type="diplomatic" subtype="sealing">Et ut donacio ista rata . et inconcussa perma<lb/>neat  ego <persName>Will<ex>elmus</ex> Cum<ex>in</ex> .</persName> sigilli mei apposicione corroboraui</seg> . <seg type="diplomatic" subtype="witnesses">his testibus . <lb/> <persName>Ric<ex>ardo</ex></persName> filio . et herede meo . <persName>d<ex>aui</ex>d de graham</persName> . <persName>Rog<ex>er</ex>o</persName> persona de Rule . et aliis pluribus</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

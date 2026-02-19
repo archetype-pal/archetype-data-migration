@@ -1,0 +1,31 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 575</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:12:05.50617+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 575</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio"><supplied>Dauid rex</supplied> Scot’</seg> . G . Ridell’ . vic<ex>ecomiti</ex> de Rokesburg . <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="injunction"><supplied>Tibi</supplied> precipio <supplied>ut</supplied><lb/> terra monacorum Dunelm’ quam Gospatric de Dunbar dedit ...<lb/> decessu . ponatur in respectum donec in illam uenero prouinciam <supplied>. Nemo</supplied><lb/> de monacis nec de Gospatrico aliquam operat<supplied>ionem</supplied> . nec seruitium <supplied>capiet sed</supplied> monac<supplied>i t</supplied>eneant illam terram bene et in pace . et quiete <supplied>infra suum</supplied><lb/> termin<supplied>um</supplied>. Et non permittas quod aliquis eis iniuriam <supplied>faciat sed fac inde sicu</supplied>t meam dominiam faceres</seg> . <seg type="diplomatic" subtype="witnesses">t’ . hug<ex>one</ex> de M<supplied>oruill'</supplied></seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

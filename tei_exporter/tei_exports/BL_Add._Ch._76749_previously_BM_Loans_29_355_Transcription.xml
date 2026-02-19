@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Add. Ch. 76749 (previously, BM Loans, 29/355)</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:17:14.913077+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 76749 (previously, BM Loans, 29/355)</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio"><persName>Robertus</persName> de londoniis</seg> omnibus hominibus suis tam futuris quam presentibus clericis ac laicis . francis
+                     et anglicis . <seg type="diplomatic" subtype="salutation">salutem</seg></seg> . <seg type="diplomatic" subtype="notification">No<lb/>tum sit omnibus tam futuris quam presentibus</seg> <seg type="diplomatic" subtype="disposition">quod ego <persName>Robertus</persName> de londoniis dedi et concessi . et hac mea carta confirmaui <persName>Waltero</persName><lb/> de berkelaie cognato meo unam carrucatam terre in lassedwine . Et plainmalaur
+                     mea terram de tindale pro hominio et ser<lb/>uicio suo . in feudo et hereditate . <seg type="diplomatic" subtype="holding">sibi et heredibus suis de me et heredibus meis tenendam . libere et quiete .
+                     plenarie et honorifice . in<lb/> bosco et in plano . in pratis et pascuis . in aquis et molendinis . reddendo
+                        mihi et heredibus meis annuatim duos ancipitres soros
+                        pro<lb/> seruicio quod ad me pertinet . saluo seruicio Regis</seg></seg> . <seg type="diplomatic" subtype="witnesses">his testibus . <persName>Will<ex>elm</ex>o</persName> filio odardi . et <persName>Will<ex>elm</ex>o</persName> de foscote . et <persName>Will<ex>elm</ex>o</persName> de Cvningburc .<lb/> et <persName>mauricio</persName> de Reigni . et <persName>Henrico</persName> filio <persName>iordani</persName> . et <persName>Will<ex>elm</ex>o</persName> clerico de chausi . et <persName>Gregorio</persName> persona . et <persName>Rogero</persName> clerico qui hanc cartam<lb/> dictatuit . et <persName>Ricardo</persName> de cameis . et <persName>Will<ex>elm</ex>o</persName> de thoeni . et <persName>Radulfo beleth</persName> . et <persName>Macus</persName> prepostio . et <persName>Roberto bochart</persName> . et <persName>hosmundo</persName><lb/> famulo . et <persName>Waltero</persName> filio <persName>Gaufridi</persName> . et <persName>Paruo consilio</persName> . et <persName>Vnwine</persName> .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

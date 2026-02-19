@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NLS Adv. MS 15.1.18, no. 62</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-07-31 00:48:29.023074+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 62</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="notification">Notum sit omnibus sancte Matris ecclesie fidelibus quod <seg type="diplomatic" subtype="intitulatio">Ego <persName>Agnes</persName> Comitissa de Mar</seg></seg> <seg type="diplomatic" subtype="disposition">dedi et concessi . et hac mea car<lb/>ta confirmaui deo et ecclesie sancti Andree . et canoncicis ibidem deo
+                     seruientibus eccleisam sancti finini de Mig<lb/>geu in liberam et perpetuam elemosinam cum omnibus ecclesiasticis rectitudinibus
+                     ad eandem ecclesiam iuste <lb/> spectantibus . Cum terra . et cum decimis plenarie dandis  <seg type="diplomatic" subtype="holding">tenendum in perpetuum tam libere et quiete et ho<lb/>norifice . sicut aliqua elemosina melius . liberius . et quietius in regno
+                        Scottorum tenetur</seg> . Hac itaque elemo<lb/>sinam dedi super memoratis canonicis pro salute anime <persName>Morgun’</persName> Comitis sponsi mei . et pro sa<lb/>lute anime mee . et pro animabus omnium antecessorum meorum et successorum .</seg> <seg type="diplomatic" subtype="witnesses">T<ex>estibus</ex> . <persName>Ada</persName> Comitissa Matre Regis . <lb/> <persName>Alex<ex>andro</ex></persName> de sancto Martino . <persName>Rob<ex>erto</ex></persName> de Capella . <persName>Will<ex>elm</ex>o</persName> giff’ . <persName>Will<ex>elm</ex>o</persName> capellano . <persName>Will<ex>elmo</ex></persName> caperon . <persName>Rob<ex>erto</ex></persName> de Neuham . <lb/> <persName>Mauric’</persName> coquo . <persName>Alan<ex>o</ex></persName> de Inuermet . <persName>edward<ex>o</ex></persName> . <persName>Will<ex>elm</ex>o</persName> de Mar . </seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

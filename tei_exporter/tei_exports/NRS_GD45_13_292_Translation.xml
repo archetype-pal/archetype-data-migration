@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/292</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-20 11:57:30.329213+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/292</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Hugh by the grace of God Bishop of Dunkeld, to all who shall view or hear the
+                  present document, wishes eternal salvation in the Lord.</seg> <seg type="diplomatic" subtype="disposition">You all should know that, out of grace and godly piety, we have remitted and
+                  quitclaimed in perpetuity to the abbot and canons of
+                  Inchaffray the cain and conveth that the clergy of the church
+                  of Dunkeld were accustomed to receive at Madderty from the
+                  land which in Gaelic is called ‘apdaine’.</seg> For the perpetual strength of this quitclaim, we have affixed our seal to this
+                  document. <seg type="diplomatic" subtype="witnesses">As witness, the Chapter of Dunkeld.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

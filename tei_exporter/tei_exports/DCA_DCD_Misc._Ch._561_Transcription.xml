@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 561</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 15:48:09.440395+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 561</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">A . dei gratia rex scottorum .</seg> Omnibus per regnum suum scottis et anglis  <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis quod</seg><lb/> ego dono deo et Sancto Cuthberto domino meo et Monachis eius omnia que habebant<lb/> tam in terris quam in aquis die qua frater meus rex Eadgarus uiuus et mortuus
+                     fuit .<lb/> ita ... <seg type="diplomatic" subtype="holding">cum omnibus consuetudinibus sicut Monachi predicti illo eodem<lb/> die melius et quieti<supplied>us</supplied> habuerunt illam eandem terram</seg> . Et nominatim illam terram quę iacet inter Horeuoredane et Cnapedane sicut
+                     breue fratris mei Eadgari eis<lb/> testatur .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

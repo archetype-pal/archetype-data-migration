@@ -1,0 +1,48 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/295</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:34:59.504385+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/295</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="notification">Let everyone who shall have seen or heard this document know that</seg> <seg type="diplomatic" subtype="intitulatio">I, Isabella the spouse of Robert of Pollok</seg>, <seg type="diplomatic" subtype="narration">being determined in my own will, by the consent of Robert [my] husband and the
+                  advice of Robert Crock my father, <seg type="diplomatic" subtype="disposition">have given and granted to Simon of Lindsay at perpetual ferme my marriage dowry
+                     which I have in the territory of Mow, that is ‘Hungerig’
+                     with all its pertinents, freedoms, and easements, just as
+                     the same land was given to my father by the Lady Eschina
+                     of Mow; for him and his heirs or those to whom they might
+                     wish to assign it, <seg type="diplomatic" subtype="holding">to hold of me and my heirs free and quit from all service and exaction, by
+                        rendering thereupon ten shillings yearly, that is, five
+                        at Pentecost and five at the feast of Saint Martin, and
+                        to the Lady Eschina and her heirs for me and my heirs
+                        one sore sparrow-hawk yearly at the Roxburgh fair</seg>;</seg> and for this agreement firmly and faithfully to be held, for me and my heirs, I,
+                     Isabella, having held sacred relics, have sworn before men
+                     of discretion that if [I] and my heirs at any time wish to
+                     go against the written agreement, we should pay by way of
+                     a penalty one hundred shillings to the said S<ex>imon</ex> or his attorneys, the forewritten agreement remaining in his ...</seg> <seg type="diplomatic" subtype="sealing">and since I do not have my own seal for the corroboration of this document, I
+                  have applied the seal of my husband and the seal of my father
+                  to this document.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, John the dean of Clydesdale, Philip of Partick, Alan of Ness,
+                  William son of Thorald, Hugh Lurgot, Adam Young, and others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

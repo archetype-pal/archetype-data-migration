@@ -1,0 +1,59 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/137</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:05:02.65494+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/137</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-family: Junicode;"><seg type="diplomatic" subtype="address">Omnibus sancte Matris ecclesie filiis . tam presentibus quam futuris . <seg type="diplomatic" subtype="intitulatio">Ansellus de Molla</seg> <seg type="diplomatic" subtype="salutation">salutem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me dedisse . et hac presenti mea carta confirmasse deo et ecclesie sancte<lb/> Marie de Meylros . et Monachis ibidem deo seruientibus . pro animabus dominorum
+                        meorum . Regis D<ex>aui</ex>d . et Comitis . henr<ex>ici</ex> . et Regis Melcolm<ex>i</ex> . et pro salute domini mei Will<ex>elm</ex>i Regis .<lb/> Scott’ . et pro anima mea . et uxoris mee . et omnium antecessorum et
+                        successorum meorum . concessu et assensu heredum meorum
+                        . illam partem terre in territorio de Molla.<lb/> <seg type="diplomatic" subtype="boundaries">que proxima est terre monachorum de Meylros . ad australem partem montis de
+                        hunedune . Et ex orientali parte est diuisa uia illa .
+                        per quam uadunt<lb/> de hunedune ad Mollam . que uia iacet inter predictam terram . et terram
+                           ecclesie de Molla . usque ad sursam cuiusdam fontis
+                           que est proxima ad occidentalem<lb/> partem eiusdem uie . et ab illa predicta sursa . per diuisas et metas factas per
+                           latus de kippemoder . per desursum omnes sursas
+                           fontium eiusdem lateris . scilicet de kippemod<ex>er</ex> .<lb/> excepta tantum una sola sursa uersus occidentem . usque ad quosdam magnos
+                           lapides ueteris edificii . quod est super unum
+                           paruum cundos . quod cundos est ad australem<lb/> partem terre que dicitur cruche . Et post . diuisa descendit per idem cundos
+                           usque ad unum magnum lapidem . et post usque ad
+                           alium . et sic usque ad riuulum qui currit<lb/> iuxta predictam terram de cruch . scilicet ad australem partem eiusdem cruch .
+                           Et sic descendit uersus occidentem usque ad riuulum
+                           illum qui est diuisa [in]ter terram uille<lb/> de hunum et Molle</seg> . Totam hanc terram . et quicquid est infra prescriptas diuisas iuxta terram
+                        monachorum . scilicet montis de hunedune . dedi deo et
+                        sancte Marie<lb/> et toti conuentu de Meylros . pro dimidia carrucata terre . in puram et
+                        perpetuam elemosinam . liberam et solutam ab omni
+                        terreno seruicio et exactione<lb/> seculari sicut ulla elemosina liberius et quietius dari potest . Et rex Will<ex>elmu</ex>s dominus meus pro amore dei et salute anime sue et antecessorum suorum . rogatu
+                        meo<lb/> eisdem monachis terram predictam concessit . et carta sua confirmauit . <seg type="diplomatic" subtype="warrandice">Et ego et heredes mei warantizabimus prefatis monachis terram predictam
+                        inperpetu<lb/>um . contra omnes homines</seg> . Et ego et heredes mei adquietabimus eidem monachis eandem terram de forensic
+                        et omni terreno seruicio et omnibus aliis seruitiis .<lb/> probis et liberis hominibus patrie</seg> . <seg type="diplomatic" subtype="witnesses">qui sunt nominate testes huius carte mee et donationis . scilicet hii . Petrus
+                     persona de Merebothle . Edwardus persona de lintune .<lb/> Henricus le neym . Yuo diaconus . Ioh<ex>anne</ex>s filius horm . Ingelramnus de dummar . Walterus corbeth . Robertus de Wiltune .
+                        Robertus de clipanuile . Gaufridus Ridel .<lb/> Radulfus le neym . et Ricardus le neym filius eius Rogerus filius ioh<ex>ann</ex>is de hawic . Vthredus grubbeheued . et Adam filius eius . Hubertus . et
+                        Walterus et Ra<lb/>dulfus . filii Radulfi le neym . Gillebertus cognatus petri persone de
+                        Merebothle . Adam filius orm . Stephanus filius Will<ex>elm</ex>i Ricardus filius Anselli .</seg></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

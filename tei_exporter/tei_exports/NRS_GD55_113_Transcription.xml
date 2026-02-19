@@ -1,0 +1,59 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/113</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:54.654037+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/113</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p>Omnibus Sancte matris Ecclesie filiis presentibus quam futuris . <seg type="diplomatic" subtype="intitulatio">Robertus Corbet filius filie Gileberti de vmframuilla</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg> . <seg type="diplomatic" subtype="notification">Sciatis</seg> <seg type="diplomatic" subtype="disposition">me dedisse et concessisse et hac presenti mea carta<lb/> confirmasse deo et Sancte Marie de Melros . et Monachis ibidem deo seruientibus
+                     pro salute somini mei Will<ex>el</ex>mi Regis Scoct’ . et Alexandri filii eius . et pro animabus omnium<lb/> antecessorum et successorum illorum et pro anima aui mei . Gileberti de
+                     Vmframuilla . et pro animabus patris mei et Matris mee et
+                     pro salute mea . et omnium antecessorum et successorum<lb/> meorum . In liberam . puram . et perpetuam elemosinam quandam partem terre mee
+                     in territorio de Cliftun . <seg type="diplomatic" subtype="boundaries">que continetur infra has diuisas . Scilicet a promintentia duorum lapidum<lb/> de Rupe supra paruam iunccariam ad orientalem partem de Crukehou . que
+                        propinquior est vbi terra de Prenwensete . et terra de
+                        Grubbeheued in simul conueniunt .<lb/> per ipsam iunccariam . et lapidem de subtus iacentem . per quoddam Cundosum per
+                        metas et diuisas quas ego perambulaui eis coram
+                        pluribus liberis hominibus usque in Bireburnam .<lb/> et inde per transuersum Bireburnam contra australem partem uersus Mollam . usque
+                        ad Rupem propinquiorem uie uersus orientem supra
+                        Lukoueburnam . et inde sicut Cukouebur<lb/>na descendit usque in eandem uiam magnam . qua scilicet itur de Rochesburc ad
+                        Mollam . et inde per ipsam usque in Mereburnam que
+                        diuidit terram de Cliftona<lb/> et terram de Molla . et inde per Mereburnam usque ad diuisas de Hunum . et inde
+                        sicut diuise tendunt inter terram de Hunum . et terram
+                        de Cliftun usque ad diuisas<lb/> de Grubbeheued . et inde per metas et diuisas quas perambulaui inter terram de
+                        Cliftun . et terram de Grubbeheued . et inde supra
+                        predictum Crukehou per diuisas<lb/> quas perambulaui inter terram de Cliftun et terram de Prenwensete . et inde
+                        usque ad predictos duos lapides de Rupe supra prefatam
+                        iunccariam .</seg> <seg type="diplomatic" subtype="holding">Hanc<lb/> terram et quicquid continetur infra prenominatas diuisas dedi predictis Monachis
+                        et Ecclesie de Melros in Elemosinam liberam et quietam
+                        et solutam ab omni seruicio<lb/> et consuetudine et exactione seculari . vt ea habeant . teneant . et possideant
+                        in perpetuum libere . quiete . pacifice . plenarie et
+                        honorifice . sicut aliqua Elemosina<lb/> melius . liberius . quietius . et plenius dari potest et teneri</seg> . <seg type="diplomatic" subtype="warrandice">Ita Ego et heredes mei hec omnia manutenebimus . et warantizabimus illis contra
+                     omnes homines qui uiuunt<lb/> et morituri sunt . de omni calumpnia . et omni seruicio et de omnibus aliis
+                        rebus que pro terra exigi possunt .</seg> Et quia uolui ut hec mea elemosina firma sit et stabilie .<lb/> Nec ullo casu possit in irritum duci  Hec omnia fideliter et sine male ingenio
+                     seruanda et warantizanda illis in perpetuum manu mea
+                     affidaui pro<lb/> me et pro heredibus meis .</seg> <seg type="diplomatic" subtype="witnesses">His Testibus . Adam abbate de Neuboth’ . G . Abbate de Drieburc . R . abbate de
+                  Ieddew’ . R . Archid<ex>iacono</ex> . de Glasg’ . Magistro Iohanne de lillescliue .<lb/> Iohanne decano de Rochesburg . W . patre meo Corbet . Philipp’ . de Wailoniis .
+                     Will<ex>elm</ex>o filio eius . Ric<ex>ardo</ex> nano . et Rad<ex>ulfo</ex> filio eius . Bernardo de Haud’ . et Bern<ex>ardo</ex> filio eius<lb/> Will<ex>elm</ex>o domino de Hunum . Sim<ex>one</ex> de Grubbeheued . Magistro . W . de bleis . Magistro . H . de Melros . Will<ex>elm</ex>o Corbet . Rogero clerico . Regin<ex>aldo</ex> filio antonie . Hyuone<lb/> clerico de Merboth’ . Ricardo . de Welpingt’ . Ric<ex>ardo</ex> filio Ioh<ex>ann</ex>is . Ric<ex>ardo</ex> persona ed Alnec’.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

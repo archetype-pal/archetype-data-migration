@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 622</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:34.048707+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 622</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Alexander, by the Grace of God king of Scots, to Bishops, Abbots, Earls, Barons, <persName><roleName>Justices</roleName></persName>, Sheriffs, Provosts, Officials, and All worthy men of all his land, clerk and
+                     lay : <seg type="diplomatic" subtype="salutation">Greeting</seg>. </seg><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know</seg> that I have granted, and by this my charter made firm, the boundaries between
+                     Coldingham and Bunkle, to be held as freely and quitly,
+                     fully and honourably, as the charter of King David my
+                     great-grandfather and the charter of the lord King William
+                     my father bear witness and confirm, that is, from
+                     'Midlesdeneheued' by 'Mereburnesheued' westwards to
+                     'Crhachoctrestrete' and by the same path to Eiford</seg>.<span class="st"> <seg type="diplomatic" subtype="witnesses">As witnesses William del Bois, my Chancellor; Earl Malcolm of Fife; Philip of
+                     Lundin; David the Marischal; Hervey the Marischal; Adam
+                     Hastings. </seg><seg type="diplomatic" subtype="dating">At Selkirk, on the last [day of ...]</seg><br/></span></p>
+      </div>
+    </body>
+  </text>
+</TEI>

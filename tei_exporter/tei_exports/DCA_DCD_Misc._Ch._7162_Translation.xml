@@ -1,0 +1,47 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 7162</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:22:01.895383+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 7162</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">M<ex>alcolm</ex> king of the Scots,</seg> to bishops, abbots, earls and barons, justices, sheriffs, provosts and
+                     officials, French and English, Gaelic and Galwegian, clerk
+                     and lay, and all men of his entire land, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know that</seg> after I assumed knighthood, I gave, granted, and by this my charter made firm,
+                     to Walter son of Alan, my steward, Birkenside and
+                     Legerwood by their correct boundaries, that is to say,
+                     fully and entirely, just as King David, my grandfather
+                     held the said lands in demesne. I have also given Mow to
+                     the said Walter by its correct boundaries, and with all
+                     its lawful pertinents, <seg type="diplomatic" subtype="holding">for him and his heirs to hold and to have of me and my heirs in feu and
+                     heritage, as freely and quitly, fully and honourably, as
+                     any earl or baron holds and possesses any land of me
+                     freely, fully, and honourably,</seg> performing for the said lands to me and my heirs the service of one knight.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Arnold the bishop of St Andrews, Herbert the bishop of
+                  Glasgow, John the abbot of Kelso, William the abbot of
+                  Melrose, Obser the abbot of Jedburgh, Walter the chancellor,
+                  William the king's brother, Richard de Morville, Gilbert de
+                  Umfraville, Waldeve the brother of Earl Cospatric, Jordan
+                  Ridel.</seg> <seg type="diplomatic" subtype="dating">At Roxburgh.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

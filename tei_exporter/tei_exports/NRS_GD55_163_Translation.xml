@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/163</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-24 14:07:36.64375+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/163</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">TO ALL sons of Holy Mother Church present and future <seg type="diplomatic" subtype="intitulatio">Isabel wife of William of Ryedale</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg></seg>. <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know me</seg> to have given and granted and by this my charter to have made firm to God and to
+                     the church of St Mary at Melrose and the monks serving God
+                     in that place, for the salvation of the lord Patrick of
+                     Ryedale, and Walter his son, and William my spouse, and
+                     for my own salvation, and for the souls of all our
+                     ancestors and successors, the oxgang of land in the
+                     territory of Whitton that my father William, the parson of
+                     Hownam, bought from Geoffrey the cook, and donated to me
+                     along with the charter of the foresaid G<ex>eoffrey</ex> and the confirmation of P<ex>atrick</ex> of Ryedale together, <seg type="diplomatic" subtype="boundaries">by these boundaries, as the same oxgang of land falls between Hardlaw and
+                     Shielstockbraes, and between the fosse of Harrow and the
+                     dower-land of Matilda Corbet, and as the course of the
+                     ditch goes around it by the foresaid boundaries.</seg> <seg type="diplomatic" subtype="holding">I have given this whole land and whatever is contained within the foresaid
+                     boundaries to the same monks in free, pure, and perpetual
+                     alms and released from every earthly service, custom, and
+                     secular exaction, that they may have, hold and possess it
+                     for ever, as freely, quitely, fully, and honourably as
+                     they hold or possess any alms freely, quitely, fully, and
+                     honourably.</seg> <seg type="diplomatic" subtype="warrandice">And I and my heirs shall maintain and warrant this alms to the foresaid monks
+                     against all men, and acquit it of every service for ever.</seg> And that this my donation should be firm and fixed I have sworn by holding the
+                     holy gospels in the presence of the church before worthy
+                     men; and neither I, nor any of my heirs, shall seek to
+                     challenge it by art or cunning from which the house of
+                     Melrose could in future incur any loss or injury in
+                     respect of the same land.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, the lord Patrick of Ryedale; Walter of Ryedale, his son; William
+                  my spouse; William our son; Patrick son of Walter of Ryedale;
+                  Ralph of Ryedale; Robert of Barnoldby; Alexander the clerk;
+                  Reginald the parson's man; Adam of Huntly; Henry de Heriz;
+                  Walter son of Geoffrey Cook; Geoffrey son of Henry of
+                  Newbattle; William son of Mabilla; William nephew of the lord
+                  P<ex>atrick</ex> of Ryedale; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

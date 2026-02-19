@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/256</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:35:40.220262+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/256</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church, present and future, <seg type="diplomatic" subtype="intitulatio">Walter, by divine mercy, servant of the church of Glasgow,</seg> <seg type="diplomatic" subtype="salutation">wishes eternal salvation in the Lord</seg>:</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">May you all be aware</seg> that we, with the agreement of the dean and chapter of Glasgow, and moved by
+                     charity, have given and granted, and by this present
+                     charter made firm, to God and to the church of Holyrood in
+                     Edinburgh, and to the canons serving God there now and in
+                     the future, that in respect of the four churches that they
+                     have in our diocese, the vicarages should be valued
+                     according to this pattern in perpetuity, that is, for the
+                     church of <ex>Kyrkecok </ex>[Urr], the vicar should receive ten merks as the altarage of the said church,
+                     assigned to him by the inspection of Master H<ex>ugh</ex>, archdeacon of Glasgow, and Masters Richard of Braid and Richard of Arnhall,
+                     our clerks; for the church of Crawford, the vicar should
+                     receive a hundred shillings as the altarge of the said
+                     church, assigned to him by the same men; for the church of
+                     Dalgarnock, the vicar should receive ten merks as goods of
+                     the altarge of the same church, assigned to him by the
+                     same men; in the church of St Bride at Blaiket
+                     [Kirkbride], the vicar should receive a hundred shillings
+                     as altarage of the same church, assigned to him by the
+                     same men; the vicars of the said churches should answer
+                     for episcopal dues, ordinary fees and customs relating to
+                     the said churches, but for extraordinary dues, the abbot
+                     and convent of the said church of Holyrood in Edinburgh;
+                     and the vicars of the said churches should answer equally
+                     for the portions relating to them in the churches
+                     mentioned above. And when any of the said churches is
+                     vacant, we have granted to the said canons that they
+                     should enter it without any objection and difficulty, and
+                     turn it to their use as they please, reserving to ourself
+                     and our successors the wardship of the vicarages when they
+                     become vacant until they have presented us with a suitable
+                     chaplain to the same, or a canon if they prefer, according
+                     to the canonical precepts; and while he possesses the said
+                     vicarage, he should during his time keep himself chaste
+                     and honest.</seg> <seg type="diplomatic" subtype="sealing">In testimony of this matter and that this grant remain certain and stable in
+                  perpetuity, we have sealed the present document with out
+                  seal.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Master H<ex>ugh</ex>, archdeacon of Glasgow; Masters R<ex>ichard</ex> and R<ex>ichard</ex> of Braid and of Arnhall; Master Simon the physician of Biggar; the lord Richard,
+                     chaplain and vicar of Glasgow; the lord Richard, vicar of
+                     Douglas; the lord Walter, clerk of Ledemere; and others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

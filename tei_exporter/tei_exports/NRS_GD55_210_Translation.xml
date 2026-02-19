@@ -1,0 +1,52 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/210</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 16:02:24.555125+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/210</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church present and to come <seg type="diplomatic" subtype="intitulatio">John son of Michael of Methil</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let your whole community know</seg> me to have given, granted, and by this my charter to have made firm to God and
+                     to the church of St Mary at Melrose and to the monks
+                     serving God in that place now and to come, my whole land
+                     at Penshiel; <seg type="diplomatic" subtype="holding">for the same monks to hold and to have of me and my heirs in pure and perpetual
+                     alms for ever; as freely, quitely, fully, and honourably
+                     as any alms in the kingdom of Scotland is freely, quitely,
+                     and fully held and possessed; in wood and plain, in lands
+                     cultivated and uncultivated, in meadows and pastures, in
+                     roads and paths, in moors, peat-bogs and marshes, in
+                     running waters and ponds, fish-ponds and mills, and all
+                     other easments that can be found or employed within the
+                     said land.</seg> <seg type="diplomatic" subtype="warrandice">And I and my heirs shall maintain and defend to the said monks the whole
+                     aforesaid land with all its liberties and just pertinents
+                     against all men; except for the land that I gave to the
+                     monks of May, and except for the land that I allowed to
+                     Henry Little and his heirs by its correct boundaries in
+                     the territory of Penshiels.</seg> <seg type="diplomatic" subtype="holding">The whole aforesaid land, as it is said, the aforementioned monks shall hold and
+                     have free and quit from every service, custom and exaction
+                     and demand of me and my heirs for ever.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Thomas, earl of Atholl; Thomas of Kent; Master John the
+                  Albigensian; Master Ness, physician of the lord king;
+                  Geoffrey del Bois; James son of William; Andrew of Swinton;
+                  and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

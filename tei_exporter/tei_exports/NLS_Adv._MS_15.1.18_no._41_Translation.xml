@@ -1,0 +1,44 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NLS Adv. MS 15.1.18, no. 41</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-06-07 13:04:55.077741+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 41</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church, Saer de Quincy sends greeting:</seg> <seg type="diplomatic" subtype="notification">Let all people know, present as well as future,</seg> <seg type="diplomatic" subtype="disposition">that I have granted and by this my charter made firm, to God and to the church
+                  of St Andrew the apostle in Scotia, and to the canons serving
+                  God there now and in the future, the davoch of lower Ethie by
+                  its right marches, which my mother gave to them, in pastures,
+                  in meadows, in wood, in plain, in moors, in waters, with all
+                  easements pertaining to that land; to be held of me and my
+                  heirs in perpetual alms, for the salvation of my soul and my
+                  ancestors’ and successors’ souls. I also allow them common
+                  pasture throughout the whole of Ethie. <seg type="diplomatic" subtype="holding">Wherefore I will that the aforesaid canons shall have, hold and possess the
+                     aforesaid alms as freely, quietly and honourably as they
+                     freely, quietly and honourably hold and possess any alms,
+                     just as the charter of my mother bears witness</seg>.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Robert de Quincy, my father; Stephen, parson of Leuchars;
+                  Alan the chaplain; John the steward; William the chaplain;
+                  Uhting his brother; Constant<ex>ine</ex> and Patrick, sons of my grandfather, Ness; Duncan, son of Hamelin; Siward.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

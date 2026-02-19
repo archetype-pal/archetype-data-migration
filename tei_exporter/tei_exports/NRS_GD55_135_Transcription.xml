@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/135</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:03:02.617855+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/135</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-family: Junicode;"><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Ansel’ . de Wichetune</seg> . Uniuersis Sancte matris ecclesie filiis . tam laicis quam litteratis <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant tam posteri quam presentes</seg> me dedisse<lb/> et hac mea carta confirmasse deo et domui de melros et monachis ibidem deo
+                        seruientibus in perpetuam elemosinam . terram cum
+                        pratis<lb/> . . . perambulauimus . ego et Glai nepos Rob<ex>ert</ex>i Auenel . cum cell<ex>er</ex>ario et fratribus eiusdem loci . <seg type="diplomatic" subtype="boundaries">uidelicet sicut sulcus aratri ex parte aquilonali<lb/> <supplied>?tend</supplied>it de uia que iacet de hunedune uersus molle et uadit usque ad rupem . et de
+                           rupe usque ad fontem . et sicut idem sulcus uadit de
+                           fon<lb/><supplied>te</supplied> . . . et inde usque in burnam</seg> . et hanc elemosinam dedi eis pro anima D<ex>aui</ex>d regis . et Henrici comitis et Malcolmi regis . et pro salute<lb/> Will<ex>elm</ex>i Regis et D<ex>aui</ex>d fratis sui . et pro anima mea et uxoris mee et liberorum meorum . Preterea
+                        dedi eis in perpetuam elemosinam totam illam meam
+                        petariam<lb/> que est inter molope et berope et herdstrete que diuidit terram de molle et de
+                        hunum . Insuper dedi predictis monachis in perpetuam
+                        ele<lb/>mosinam in bosco meo de molope bushciam quantum potest unus equus portare
+                        singulis annis a pascha usque ad natiuitatem<lb/> <supplied>sancte Marie . Et</supplied> <seg type="diplomatic" subtype="holding">monachi de melros habebunt hanc meam elemosinam . et ceteras predictas et
+                        tenebunt de me et de heredibus meis quietas et<lb/> . . . seruitiis et omnibus consuetudinibus</seg> . <seg type="diplomatic" subtype="warrandice">et ego et heredes mei warantizabimus illas monachis erga omnes homines</seg> .</seg> <seg type="diplomatic" subtype="witnesses">His test<lb/> . . . abbate de neubotle . Rob<ex>erto</ex> auenel . et Geruasio filio . eius . Will<ex>elm</ex>o de Sumeruilla . Ioh<ex>ann</ex>e filio Horm . Will<ex>elm</ex>o filio eius . Glai nepote Rob<ex>ert</ex>i auenel .<lb/> Gernun . Nicol’ filio ade . Petro persona de Morbotle . W . . . de Hunum .</seg></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

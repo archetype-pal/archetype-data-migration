@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 629*</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.616379+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 629*</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alexander, by the grace of God king of the Scots</seg>, to all worthy men of the whole of his land <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know that</seg> <seg type="diplomatic" subtype="disposition">I have granted to the prior and monks of Coldingham, our well-beloved and sworn
+                  men, that no one may take poinds from them, or from their men
+                  on the demesne of the barony of Coldingham, for any debt or
+                  forfeit save for their own debt or forfeit.</seg> <seg type="diplomatic" subtype="injunction">Wherefore we forbid that anyone unjustly seek to trouble the said monks and
+                  their men against this our grant, on pain of our full
+                  forfeiture.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: W<ex>illiam</ex>, earl of Mar; Alex<ex>ander</ex>, steward; David of Graham; Nichol<ex>as</ex> de Soules, sheriff of Roxburgh; Thom<ex>as</ex> son of Ranulf.</seg> <seg type="diplomatic" subtype="dating">At Coldingham, 21 April, in the 34th year of the king's reign [1248].</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

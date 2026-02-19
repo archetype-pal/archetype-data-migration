@@ -1,0 +1,44 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 760</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.057654+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 760</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">David the earl,</seg> to John the bishop, Cospatric, Colban, Robert, and all his sworn men, thanes and
+                     drengs of Lothian and Teviotdale, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know that</seg> <seg type="diplomatic" subtype="disposition">I grant to the monks of saint Cuthbert with all customs everything which they
+                  had as well in lands as in waters on the day when my brother
+                  Edgar was alive and dead, and just as I myself have granted
+                  to my lord Saint Cuthbert after my brother's death to the
+                  same monks; and just as my brother Edgar gave, and offered
+                  upon the altar of Coldingham, Swinton to Saint Cuthbert and
+                  his monks, so for my part</seg> <seg type="diplomatic" subtype="holding">I present as a gift and grant the same entire and whole to the aforesaid saint
+                  and his monks, to be held free and undisturbed, and to be had
+                  in future just as the brieve of my aforesaid brother for them
+                  bears witness. And I instruct all my men that no one shall in
+                  future make any trouble or do any injustice in respect of it,
+                  since I will that they should have, hold, and possess this my
+                  donation in peace for ever.</seg> <seg type="diplomatic" subtype="witnesses">As witness, Matilda the queen, William her son, and John the bishop.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

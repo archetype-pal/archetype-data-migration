@@ -1,0 +1,45 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/45</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.797628+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/45</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Walter by the grace of God bishop of Glasgow</seg> <seg type="diplomatic" subtype="salutation">sends greeting in Christ</seg> to all sons of Holy Mother Church, both those to come as well as those present.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> us to have given and granted and by this our charter to have made firm to God
+                     and to the church of St Mary at Melrose and to the monks
+                     serving God in that place, in free and everlasting alms,
+                     the toft in the burgh of Glasgow that Ralph of Haddington
+                     built at the first erection of the burgh, for the benefit
+                     of the monks of Melrose, as fully as he built it and held
+                     it, and just as the charter of our predecessor of good
+                     memory, J<ex>ocelin</ex> bishop of Glasgow, bears witness to the aforementioned toft given to the
+                     aforesaid monks. <seg type="diplomatic" subtype="holding">Wherefore we will that the abovesaid monks of Melrose hold and possess the
+                     aforesaid toft as freely and quietly as they freely and
+                     quietly hold and possess any alms.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Master William de Blois, archdeacon of Buckingham; Master
+                  William of Greenlaw, Master William of Ednam, Master Adam of
+                  Walpole, Master Theodoric, our clerks; Thomas and Walter our
+                  chaplains; William of Ainslie; Warin our nephew; Ralph our
+                  clerk; and many others. <seg type="diplomatic" subtype="dating">At Melrose.</seg><br/></seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

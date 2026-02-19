@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/234</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-12 13:45:36.011+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/234</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Christi fidelibus tam presentibus quam futuris ad quos presens Scriptum
+                  peruenerit <seg type="diplomatic" subtype="intitulatio">Magister Willelmus de Grenelau filius Rolandi<lb/> filius Willelmi</seg> <seg type="diplomatic" subtype="salutation">salutem in domino</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">vniuersitati vestre notum facio</seg> me diuine pietatis intuitu et pro salute anime mee et pro salute<lb/> animarum omnium predecessorum et successorum meorum dedisse et concessisse et
+                     hac carta mea confirmasse deo et ecclesie beate Marie de<lb/> Melros et monachis ibidem deo et matri sue seruientibus et inperpetuum
+                     seruituris tres carucatas terre quas habui in territorio<lb/> ville de halsingtun cum omnibus pertinenciis suis illas scilicet quas domina
+                     Matildis mater Domini Roberti de Muscampo dedit<lb/> Willelmo filio Iohannis de honum cum Gilia filia dicte Matildis in liberum
+                     Maritagium <seg type="diplomatic" subtype="holding">Tenendas et habendas dictis Monachis<lb/> de Melros cum omnibus libertatibus aisiamentis et Iuribus ad eas pertinentibus
+                        inperpetuum in liberam puram et perpetuam elemosinam<lb/> nullum omnino seculare seruicium pro eis alicui faciendo preter oraciones et
+                        suffragia et alia beneficia deo placentia que<lb/> dicti monachi promiserunt in fide quam deo debent et ordini suo se facturos pro
+                        me inperpetuum</seg></seg> <seg type="diplomatic" subtype="warrandice">Et ego et heredes mei<lb/> manutenebimus predictis Monachis hanc elemosinam et warantizabimus contra omnes
+                     homines et adquietabimus eam de omni<lb/> seruicio inperpetuum</seg> <seg type="diplomatic" subtype="sealing">In cuius Rei testimonium sigillum meum presentibus est appensum</seg> <seg type="diplomatic" subtype="witnesses">hiis testibus Radulpho de Bonekil<lb/> Iohanne de letham Iohanne pepedi Dauid de Buredon halano de harcar’ Iohanne
+                     filio Simonis Iohanne de lembeden’<lb/> Roberto filio suo . Rolando filio Iohannis . et multis aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,55 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 556</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:19:35.841127+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 556</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p>
+          <seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Edgar king of the Scots</seg> to all Scots and English throughout his kingdom <seg type="diplomatic" subtype="salutation">greeting.</seg> </seg>
+          <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me to have come to the consecration of the church of St Mary at Coldingham. This
+                     dedication was fulfilled to the glory of God and to my
+                     pleasing, was acceptable to all and honourably received.
+                     And I have offered to the same church upon the altar as an
+                     endowment and have donated the whole toun of Swinton with
+                     the boundaries just as Liulf had, to be had in perpetuity
+                     free and quit from every claim, and to be disposed at the
+                     will of the monks of Saint Cuthbert; for the souls of my
+                     father and mother, and for the salvation of my own soul
+                     and my brothers’ and sisters’. I have also donated to the
+                     monks 24 beasts to re-stock that same land. And I have
+                     established the same peace in Coldingham, to those going
+                     and returning and abiding there, which is preserved in
+                     Island and in Norham. I have moreover also established
+                     with the men in Coldinghamshire, just as they themselves
+                     have chosen and have confirmed in my hand, that they they
+                     should pay every year for each plough half a merk of
+                     silver to the monks. </seg>
+          <seg type="diplomatic" subtype="witnesses">As witnesses: Ælfwine, Óttar, and Thor Long, and Ælfric the butler, and Algar
+                  the priest, and Osbern the priest, and Cnut Carl’s son, and
+                  Oggu and Leising, and Swain Ulfkill’s son, and Liulf of
+                  Bamburgh, and Uhtred Eilaf’s son, Uviet White, and Tigerna.</seg>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,53 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/155</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:16:38.104696+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/155</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all who shall see or hear these letters, <seg type="diplomatic" subtype="intitulatio">Patrick of Ryedale</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me to have licensed and by this my charter to have made firm to God and to the
+                     Church of St Mary at Melrose and to the monks serving God
+                     in that place, in free, pure, and perpetual alms, the
+                     donation of Robert of Barnoldby which he made to the
+                     aforementioned church in respect of that portion of land
+                     in the territory of Whitton which is comprised <seg type="diplomatic" subtype="boundaries">within these boundaries, namely, from the head of ‘Harrowdean’ going up towards
+                     the west by the syke that is the division between the same
+                     land and that which is called ‘[?] the land of the Dower’,
+                     as far as the thornbush opposite the meadow, and from
+                     there across towards the south along the length of the
+                     furrow which is the division between the same land and
+                     that which William the parson of Hownam held at ferm of
+                     the aforementioned Robert of Barnodlby, as far as a fosse
+                     that is the division between the said lands to the south
+                     side, and from there downwards towards the east as the
+                     ditch goes between the aforewritten lands up to the said
+                     head at ‘Harrowdean’.</seg> <seg type="diplomatic" subtype="holding">Wherefore I will that the said monks of Melrose should hold and possess the said
+                     land as freely and quitely, fully and honourably by all
+                     means, just as the charter of the aforesaid Robert bears
+                     witness and affirms;</seg> <seg type="diplomatic" subtype="warrandice">so that I and my heirs shall maintain and warrant to the aforesaid monks the
+                     same land against all men for ever;</seg> saving only my service from the said Robert and his heirs.</seg> <seg type="diplomatic" subtype="witnesses">Witness: Master John of Huntingdon; Thomas of Colville; Richard le Naym; Roger
+                  Burnard; John de Perndell; William Chernun; Richard of
+                  Coxwald; Michael of Makerstoun; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

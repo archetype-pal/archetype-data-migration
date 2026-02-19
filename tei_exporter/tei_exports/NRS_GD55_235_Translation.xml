@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/235</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:08:01.794465+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/235</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">[To the entirety of Christ's faithful people, who shall hear or view the present
+                  letters,] <seg type="diplomatic" subtype="intitulatio">Patrick, earl of Dunbar </seg><seg type="diplomatic" subtype="salutation">sends greeting in the Lord</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know</seg> us to have granted and by this our charter to have made firm the donation that
+                     Master <supplied>William made</supplied> in our court at Edrom to the abbot and monastic community of Melrose as well as
+                     to their assigns, of a land to be found in the territory
+                     of Hassington, of which Master <supplied>William</supplied> ... dispossessed himself and solemnly gave them saisine, and it was this land
+                     that Robert de Muschamp, our tenant, gave to the said
+                     Master William for him and his assigns to possess by
+                     everlasting right; <seg type="diplomatic" subtype="holding">for the said abbot and monastic community to have and to hold in free, pure and
+                     everlasting alms by the boundaries by which the said
+                     Master William held it, and with all pertinents, liberties
+                     and easements pertaining to it, and with the common
+                     pasture of the said toun of Hassington and with free
+                     entrance and exit to the the same pasture and to the said
+                     easements, as wholly, freely, quitely, and fully from
+                     every secular service, exaction, custom and demand as any
+                     alms in the kingdom of Scotland is freely, quitely, fully
+                     and honourably held and possessed.</seg> <seg type="diplomatic" subtype="warrandice">And so that the abbot and monastic community should not have to be troubled in
+                     times to come by any one in respect of the same land, we
+                     and our heirs for the salvation of our souls shall
+                     guarantee, release from obligation, and protect the same
+                     land by its said boundaries, with everything
+                     aforementioned, for the abbot and monastic community
+                     against all men for ever.</seg> And in order to do this [easily] and without any difficulty, we and our heirs
+                     bind ourselves to the aforesaid abbot and monastic
+                     community by these letters patent.</seg> Done at Berwick in the presence of the well-beloved ... ... ... on the
+                  eighteenth day of April in the thirty-fourth year of the same
+                  king. <seg type="diplomatic" subtype="witnesses">As witness: Robert of Roos; David Graham; Robert Menzies; William the earl's
+                  son; Thomas de Normanville ... ... ... Henry Graham; Nicholas
+                  Corbett; Walter son of Walter the Steward; Robert the earl's
+                  son; Thomas del Bois, Bernard of Ripley, and ... ... ...</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

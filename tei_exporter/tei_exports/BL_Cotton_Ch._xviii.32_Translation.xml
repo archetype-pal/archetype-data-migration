@@ -1,0 +1,53 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.32</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:27:42.509664+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.32</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Richard, by the grace of God a humble servant of blessed Andrew</seg> to all sons of Holy Mother Church <seg type="diplomatic" subtype="salutation">[sends] greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know us, as much those to come after as those present,</seg> <seg type="diplomatic" subtype="disposition">to have given, conceded, and by the guarantee of the present writing to have
+                  made firm, to God, the church of St Andrew, and to the canons
+                  serving God in that same place now and in the future, the
+                  church of Haddington with the land of Clerkington by its
+                  right marches, and with everything else rightfully pertaining
+                  to the same church, in free and everlasting alms, to be held
+                  freely and quitly and honourably from every exaction and
+                  custom, saving the tenure of the nuns which we gave to them
+                  and affirmed by our charter. <seg type="diplomatic" subtype="holding">Wherefore we will and by episcopal authority command that the aforesaid canons
+                     hold the aforenamed church as freely, and quitly and
+                     honourably possess, just as any church in our whole
+                     diocese is held most freely, and quitly and honourably
+                     possessed, saving synodal dues and episcopal aids.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: John, abbot of Holyrood; A<ex>ndrew</ex>, archdeacon of St Andrews; Ilbert, prior of Haddington; William, prior of
+                     Galloway; William, prior of Holyrood; Robert, the bishop's
+                     brother; John of St Andrews; Roger of Liston; Robert of
+                     Perth; Alexander and William, the bishop's chaplains;
+                     Geoffrey, the bishop's steward; Master Abraham; Stephen
+                     the clerk; William, son of Robert son of Guy; Adam,
+                     brother of Earl Duncan; Merlswain son of Merlswain; Odo
+                     the steward; Cospatric of Rires; Hugh the butler; Walter
+                     the bishop's nephew; William the chamberlain; Guy the
+                     marischal; Gamel the doorward; and very many other men of
+                     good character.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

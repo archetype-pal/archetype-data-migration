@@ -1,0 +1,56 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/91</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-24 13:35:55.869298+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/91</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W<ex>illiam</ex> by the grace of God king of Scots</seg> to the bishops, abbots, earls, barons, justices, sheriffs, provosts, officials,
+                     and all worthy men of all his land clerk and lay <seg type="diplomatic" subtype="salutation">greeting</seg></seg><seg type="diplomatic" subtype="disposition">. <seg type="diplomatic" subtype="notification">Let present and future</seg> know me to have granted and by this my charter to have made firm to God and to
+                     the church of St Mary at Melrose and to the monks in that
+                     place serving God the donation which Robert of Berkeley
+                     and his spouse Cecilia the daughter of Liulf made to the
+                     same monks of the ploughgate of land in the territory of
+                     Maxton which the aforesaid Robert perambulated for the
+                     aforementioned monks and by the same bounds which are
+                     contained in the charter of the aforenamed Robert and his
+                     spouse Cecilia, and with all easements of the same toun as
+                     well in pastures as in easements of firewood, and stone of
+                     the quarry of Alwerdene sufficient for the building of the
+                     edifice of the monastery of Melrose, just as it is
+                     contained in the charter of the aforesaid. <seg type="diplomatic" subtype="holding">Wherefore I will and firmly enjoin that the aforesaid monks have and possess the
+                     aforementioned land with all the above-written easements
+                     in free and pure and everlasting alms as freely and
+                     quitely, fully and honourably, as any other alms in all my
+                     kingdom is as freely and quitely, fully and honourably
+                     held and possessed, and just as the charter of the
+                     aforesaid Robert and his spouse Cecilia bears witness and
+                     affirms; saving my service, and saving the teinds of the
+                     church of Maxton</seg>.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: Hugh my chancellor; Robert and Ralph my chaplains; Richard de
+                  Prebenda my clerk; Robert of London; William of Lindsay;
+                  Malcolm son of Earl Duncan; William Comyn; William de la
+                  Haye; William Giffard; Walter of Berkeley, chamberlain;
+                  Herbert Chalmers;</seg> AT FORFAR.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

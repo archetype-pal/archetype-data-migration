@@ -1,0 +1,48 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NLS Adv. MS 15.1.18, no. 20</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-12-20 15:32:42.542833+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 20</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">William, by the grace of God Bishop of St Andrews,</seg> to all who shall view or hear these letters, wishes <seg type="diplomatic" subtype="salutation">eternal salvation in the Lord</seg>:</seg> <seg type="diplomatic" subtype="notification">Know us all of you</seg>,<seg type="diplomatic" subtype="disposition"> at the request of Adam of Kinninmonth, to have granted and by this our charter
+                  to have made firm to William son of Lambin and his heirs, the
+                  ploughgate of land, that is, Balrymont, which the
+                  aforementioned Adam holds for his lifetime of the Prior and
+                  religious community of St Andrews; for him and his heirs to
+                  hold of the said Adam for as long as Adam of Kinninmonth
+                  shall live; by rendering thereupon annually to the aforenamed
+                  Adam one merk of silver, half at the feast of St Martin and
+                  half at Pentecost. <seg type="diplomatic" subtype="holding">Wherefore we will that the aforesaid William son of Lambin and his heirs shall
+                     have, hold and possess the aforesaid land of Balrymont
+                     with everything rightly pertaining to the aforesaid land,
+                     as long as the aforenamed Adam of Kinninmonth shall live;
+                     as freely and quietly, fully and honourably as the charter
+                     of Adam of Kinninmonth bears witness.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Master Laurence, archdeacon of St Andrews; Peter and
+                  Edward, our chaplains; John of Haltwhistle, Gervase de
+                  Neaufles, Master Stephen, Master Michael, Geoffrey de
+                  Neaufles, Peter of Dryburgh, our clerks; William of Wyville;
+                  Malcolm the judex; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

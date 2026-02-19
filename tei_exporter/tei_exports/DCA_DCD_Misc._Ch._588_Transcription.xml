@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 588</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 15:48:09.509896+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 588</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">. <seg type="diplomatic" subtype="intitulatio">W . dei gratia Rex Scott’</seg> vic<ex>ecomiti</ex> suo de Berewic et omnibus probis hominibus<lb/> suis de Laodonia et de Merkes . <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Sciatis me</seg> <seg type="diplomatic" subtype="disposition">concessisse . [left blank] . Prior de<lb/> Coldingham quod remoueat homines suos de Coldinghamschiria ad uillam de
+                     Coldingham<lb/> hospitandam quos de iure remouere poterit . <seg type="diplomatic" subtype="prohibition">Quare prohibeo firmiter nequis predictum<lb/> priorem iniuste disturbet omnes illos remouere ad prefatam uillam hospitandam 
+                        quos<lb/> de iure remouere poterit et debebit</seg> .</seg> <seg type="diplomatic" subtype="witnesses">T<ex>estibus</ex> Hug<ex>one</ex> Cancellario meo . Ric<ex>ardo</ex> de Prebenda<lb/> clerico meo</seg> <seg type="diplomatic" subtype="dating">Apud Selechirch’ . xvii . die Iulii</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

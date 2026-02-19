@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 1330</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:44:43.369013+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 1330</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">. <seg type="diplomatic" subtype="intitulatio">Ric<ex>ardus</ex> dei gr<ex>ati</ex>a episcopus sancti And<ex>ree</ex> . et Edelred abbas Rieuallensis . et Will<ex>elmus</ex> abbas . Mailrosensis</seg>  Vniuersis sancte Matris<lb/> ecclesie filiis . <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Notificamus dilectioni uestre</seg> <seg type="diplomatic" subtype="narration">nos mandato Alexandri dei gratia summi pontificis apud<lb/> b<ex>er</ex>ewic terminasse controuersiam que fuit inter ecclesiam dunolmensem et ecclesiam
+                     de Kelchou super capella<lb/> de Ercheldun secundum formam literarum domini pape  que talis est . scilicet
+                     quod si prior dunolmensis quadra<lb/>genariam posset probare prescripcionem sine interruptione super capella de
+                     Ercheldun  ut monachis ecclesie de<lb/> Kelchou super capella prenominata silencium omni appelatione et excusatione
+                     postposita imponeremus .</seg> <seg type="diplomatic" subtype="injunction">Prescriptione<lb/> itaque quadragenaria in nostra presencia iuramento . x . ii . sacerdotum . et
+                     unius diaconi et duorum laicorum canonice<lb/> probata  predictis monachis de capella prenominata silencium indiximus . et eam
+                     . ecclesie dunolmensi inperpetuum adiu<lb/>dicauimus .</seg> <seg type="diplomatic" subtype="witnesses">testibus . Osberto abbate de geddewrthe . Nicol<ex>ao</ex> cancellario . And<ex>rea</ex> Archidiacono laudonie . Aiulfo et Iocio de<lb/>canis . Roberto canonico de sancto And<ex>rea</ex><ex> </ex>. Magistro herberto . Elia de ildertun . herueio et Eilaf capell<ex>anis</ex> de berewic .<lb/> Romfar capellano . Alano presbitero de Hiltune . Alano presbitero de Walesede .
+                     Magistro Gocelino .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

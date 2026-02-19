@@ -1,0 +1,32 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/40</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 11:35:12.787402+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/40</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p>C Y R O G R P H V S <lb/></p> <p><seg type="diplomatic" subtype="notification">Sciant tam presentes quam futurus . quod</seg> <seg type="diplomatic" subtype="narration"><persName>Robertus Auenel</persName> et <persName>geruasius</persName> heres eius . pro salute animarum suarum . et antecessorum et successorum<lb/> suorum . quietas clamauerunt in perpetuum illas quatuor marchas . quas monachi
+                     de meylros aliquando annuatim solebant illis reddere .<lb/> in firmam pro terra de eschedale . ad quatuor pitantias faciendum conuentui
+                     eiusdem loci per annum .</seg> <seg type="diplomatic" subtype="notification">Sciendum etiam quod</seg> <seg type="diplomatic" subtype="narration">abbas et totus<lb/> predictus conuentus . concesserunt fideliter eidem <persName>Roberto</persName> et <persName>geruasio</persName> heredi eius . et omnibus heredibus eorum . quod iste prefate pitantie in perpetu<lb/>um dabuntur eidem conuentui quatuor per annum . his scilicet diebus . Die quo
+                     ipse dominus <persName>Robertus</persName> seculum relinquens . se ex toto reddidit<lb/> domui illi . Et iterum die illo quo idem ipse domini <persName>Robertus</persName> defunctus est . Et iterum die sexta ante die natiuitatis dominice . in comemora<lb/>tionem anime domine <persName>Sibille</persName> uxoris eiusdem domni <persName>roberti</persName> . Dies autem quartus . est dies obitus ipsius <persName>geruasii</persName> . Quandiu uero uixit ipse geruasius . in po<lb/>testate eius fuit . quo die uoluit ipsam pitantiam conuentui dari</seg> . <seg type="diplomatic" subtype="notification">Et sciendum quod</seg> <seg type="diplomatic" subtype="narration">in istis prenominatis diebus . in capitulo eiusdem domus .<lb/> comemoratio animarum eorum . et absolutio inperpetuum fiet</seg> . <seg type="diplomatic" subtype="witnesses">Hi sunt testes . <persName>Iocelinus</persName> episcopus glascuensis . <persName>Symeon</persName> episcopus de dunblain . <persName>Osbertus</persName><lb/> abbas de kelcou <persName>Erkenbaldus</persName> abbas de dunfermelin . <persName>Ricardus</persName> abbas de ieddewrth . <persName>Dauid</persName> comes frater regis scotie . <persName>Symon</persName> ar<lb/>chidiaconus <persName>Glai</persName> nepos domni <persName>Roberti auenel</persName> <persName>Robertus</persName> clericus filius <persName>roberti</persName> . Magister <persName>rogerus</persName> de neuporth .</seg></p></div>
+    </body>
+  </text>
+</TEI>

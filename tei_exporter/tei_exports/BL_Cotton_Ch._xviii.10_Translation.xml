@@ -1,0 +1,54 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.10</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:36:56.436823+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.10</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alexander, by the grace of God king of the Scots</seg>, to all worthy men of his entire land <seg type="diplomatic" subtype="salutation">[sends] greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know us</seg> <seg type="diplomatic" subtype="disposition">to have given, conceded, and by this our present charter to have made firm, to
+                  the abbot and convent of Melrose, that they may have, hold,
+                  and possess for ever, all the lands between the Gala and the
+                  Leader which they have held, or in the possession of which
+                  they have been; and also to have conceded, and by this our
+                  same charter to have made firm, to the same abbot and
+                  convent, all other lands which they have held or in the
+                  possession of which they have been on the south side of the
+                  Tweed, which are adjacent to the lands of Lessudden and the
+                  lands of the monks of Kelso, so that they shall in future
+                  build as well buildings as whatsoever other things are useful
+                  for themselves and their own, wheresoever within the
+                  aforesaid lands they see fit, and they shall make use of all
+                  the aforementioned by all means as they shall consider most
+                  expedient, <seg type="diplomatic" subtype="holding">so that all those lands and whatever is contained within the same lands, as much
+                     below ground as above, they may have in future in free,
+                     pure, and everlasting alms, outside the forest.</seg> <seg type="diplomatic" subtype="warrandice">And we and our heirs and successors shall warrant all the aforementioned things
+                     to the same abbot and convent against all men; withholding
+                     for ourselves nothing of right on the same lands or within
+                     the same in future, nor asking anything in return for them
+                     besides prayers only.</seg></seg> <seg type="diplomatic" subtype="witnesses">As witnesses: G<ex>eoffrey</ex>, elect of Dunkeld; Laurence of Abernethy; Bernard Fraser; Thomas son of Ranulf;
+                     William of Lindsay; Daivd of Lindsay; Alexander of
+                     Stirling.</seg> At Ancrum, on the third day of December, in the twenty-second year of the reign
+                  of the lord king.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

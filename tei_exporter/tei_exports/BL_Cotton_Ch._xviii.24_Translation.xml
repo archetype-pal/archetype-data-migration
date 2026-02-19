@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.24</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 16:24:04.941082+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.24</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Holy Mother Church's sons</seg>, <seg type="diplomatic" subtype="intitulatio">Alan son of Walter, steward of the king of Scots,</seg> <seg type="diplomatic" subtype="salutation">[sends] greeting.</seg> <seg type="diplomatic" subtype="notification">Let present and future know</seg> <seg type="diplomatic" subtype="disposition">me to have given, conceded, and by this my charter to have made firm, to God, St
+                  Mary and St Benedict, and to the monks of Coupar, one full
+                  toft in my burgh of Renfrew beside the churchyard, and one
+                  net for salmon in the Clyde; <seg type="diplomatic" subtype="holding">to have and possess in everlasting alms just as the monks of the Cistercian
+                     Order freely, quitly, and honourably possess any alms;</seg> for the soul of King David, and of King Malcolm, and of Earl Henry, and for the
+                     soul of my father and of my mother, and for the salvation
+                     of my own soul and of my predecessors'. <seg type="diplomatic" subtype="warrandice">This alms I, Alan, and my heirs, shall warrant for ever to the monks and to
+                     those holding of them</seg>.</seg> <seg type="diplomatic" subtype="witnesses">With these as witnesses: the bishop of Glasgow; Prior Osbert of Paisley and the
+                  convent; William of Wells, chaplain; Richard, parson of
+                  Dundov; William of Paisley; Fulk, clerk; Robert Crock;
+                  Gilbert son of Swein; Richard Ruhefd; Wulfbrand; Reginald
+                  Mothsune; Eadwulf Waite.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

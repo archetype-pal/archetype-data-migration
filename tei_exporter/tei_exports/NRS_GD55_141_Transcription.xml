@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/141</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:06:35.762427+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/141</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-family: Junicode;"><supplied>Sciant prese</supplied><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">ntes quam futuri quod</seg> <seg type="diplomatic" subtype="intitulatio">Ego Simon de Lindess’</seg> dedi . Concessi . et hac Carta mea confirmaui Patricio homini meo et<lb/> . . . <supplied>pro</supplied> homagio . et seruicio suo in terra mea de Molle quam ex dono matris mee habui .
+                        sex acras terre . et unam acram prati<lb/> <supplied>et unam</supplied> acram et dimid<ex>iam</ex> terre in tofto et crofto et unam acram prati illi terre proximam iuxta
+                        Erdeburesburne . et subchest<ex>re</ex>s<lb/> . . . ras . et super Selestede ade . duas acras et dimid<ex>iam</ex> . <seg type="diplomatic" subtype="holding">Tenend’ . sibi et heredibus suis de me et heredibus meis in feodo et hereditate<lb/> <supplied>libere</supplied> et quiete . plenarie et honorifice cum omnibus etiam communibus a[i]siamentis
+                           terre mee et communibus aisiamentis que homines mei
+                           in <supplied>terr</supplied>a matris mee<lb/> <supplied>possu</supplied>nt et habere debent . Reddendo mihi et heredibus meis . unam libram Cimini . uel
+                           tres denarios ad festum sancti . Iacobi . pro
+                           omnibus serui<lb/><supplied>ciis</supplied> ad me uel ad heredes meos pertinentibus . et faciendo forinsecum seruicium
+                           quantum pertinet ad tantum terre in terra mea</seg> . volo itaque<lb/> . . . <supplied>ut mihi et</supplied> heredibus meis pro forisfactio suo det quatuor denarios . et pro auxilio suo
+                        mihi et heredibus meis . sex denarios .</seg><lb/> <seg type="diplomatic" subtype="witnesses"><supplied>His testibus Pe</supplied>tro de valoniis . Roberto de Rap<ex>er</ex>l’ . Ada de waleuhop’ . Ada de whitton’ . et Gileberto filio suo . Waltero de<lb/> . . . Ric’ Scoto . M<ex>er</ex>uino de Molle . Ric’ . clerico . et multis aliis .</seg></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

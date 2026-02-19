@@ -1,0 +1,44 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 621</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.676435+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 621</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">A<ex>lexander</ex>, by the grace of God king of the Scots</seg>, to all worthy men of the whole of his kingdom, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know</seg> us to have granted and made firm by this our charter the donation which William,
+                     son of Robert of Scremerston, with the consent of William
+                     his heir, made to God, Saint Cuthbert, adn Richard the
+                     Prior and the Convent of Coldingham and their successors,
+                     in respect of his whole land of Prenderguest, with two
+                     tofts and crofts, and with all its pertinents, without any
+                     withholding. <seg type="diplomatic" subtype="holding">For the same prior and convent of Coldingham to hold and to have for ever of the
+                     said William and his heirs, with all its pertinents and
+                     easements, as freely, quitely, fully, and honourably as
+                     the charter of the said William drawn up on the matter for
+                     the same prior and convent justly bears witness; saving
+                     our service.</seg></seg> <seg type="diplomatic" subtype="witnesses">As witnesses: W<ex>illiam</ex>, earl of Mar; Bernard of Ripley; William of Mordington; William Gifford;
+                     Geoffrey of Farsley.</seg> <seg type="diplomatic" subtype="dating">At Berwick on the sixth day of October in the thirty-first year of the lord
+                  king's reign [1245]</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

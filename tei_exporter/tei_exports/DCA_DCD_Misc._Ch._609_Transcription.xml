@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 609</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-29 15:57:28.240744+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 609</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Will<ex>elmu</ex>s Rex Scott<ex>orum</ex></seg> . Omnibus probis hominibus tocius terrę sue clericis ⁊ laicis  <seg type="diplomatic" subtype="salutation">salutem</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> quod controuersia que fuit inter ęcclesiam dunel<lb/>mensem ⁊ ęcclesiam croilandensem de uilla de hederham ⁊ ecclesia eiusdem uille ⁊
+                     omnibus pertinentiis suis . in presentia mea ⁊ episcoporum
+                     ⁊ proborum <lb/> hominum meorum terminata est  ita quod uilla ⁊ ecclesia de hederham cum omnibus
+                     capellis ⁊ pertinentiis suis ęcclesię dunelmensi cesserit
+                     inperpe<lb/>tuum.</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . Ricard<ex>o</ex> Episcopo Sancti Andree . Engelr’ episcopo de glasgu . Nichol’ cancell<ex>ario</ex> . Comite Wald’ . Ricard<ex>o</ex> de moræuilla <persName><roleName>constabulario</roleName></persName> . <lb/> Walt<ex>er</ex>o filio alani Dapif<ex>er</ex>o . DD’. olifard .</seg> <seg type="diplomatic" subtype="dating">Apud pert</seg> .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,51 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/48</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-08-23 15:15:49.708666+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/48</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p>To all sons of holy Mother Church, present and future, Patrick earl of Dunbar
+               sends greeting. Know me to have given and granted, and by this
+               my charter to have made firm, to God and to the church of St
+               Mary at Melrose, and to the monks serving God in that place, for
+               the souls of David and Malcolm, kings of the Scots, and of Earl
+               Henry, and for the souls of my father and my mother, and of Ada
+               the countess, my late wife, and for the salvation of the lord
+               William the king, and the queen, and of Alexander their son, and
+               for my own salvation and of Christina the countess, my wife, and
+               for the salvation of Patrick my son and of all my sons and
+               daughters, one ploughgate of land, just as I myself perambulated
+               it for the aforesaid monks, with Adam, abbot of Melrose, and
+               with my worthy men, which are contained within these limits,
+               that is, from the place which is called <ex>Munkedic</ex>, going upwards by the syke which is called <ex>Luggild</ex>, until you are opposite Greenlaw; and from there northwards by the stones which
+                  are placed along the boundaries, done by me, as far as the
+                  aforesaid Greenlaw; and from there northwards by the same
+                  boundaries, as far as the <ex>Crumbestan</ex>, which was moved from the place where it had first stood and was placed at the
+                  aforesaid boundaries; and from there northwards by the stones
+                  places along the boundaries as far as <ex>Tympanelecche</ex>; and from there northwards by the same boundaires as far as the <ex>Tacwith</ex>; and from there, going down by the same <ex>Tacwith</ex>, as far as the eastern side of the <ex>Cruc</ex>; and from there, northwards across Whiterigg, by the stones place along the
+                  boundaries, as far as the <ex>Cakkewellelecche</ex>; and from there, going down by the same <ex>Cakkewellelecche</ex> as far as St Cuthbert's Spring; and from there going down by the stream which
+                  comes out from the aforesaid spring, as far as <ex>Nesefflat</ex>. </p>
+      </div>
+    </body>
+  </text>
+</TEI>

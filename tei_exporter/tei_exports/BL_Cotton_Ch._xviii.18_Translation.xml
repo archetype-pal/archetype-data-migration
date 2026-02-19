@@ -1,0 +1,51 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.18</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:30:25.769453+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.18</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">William, by the grace of God king of the Scots,</seg> to all worthy men of his entire land <seg type="diplomatic" subtype="salutation">[sends] greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know that</seg> <seg type="diplomatic" subtype="narration">in my presence, and with bishops, barons, and many other worthy men of my realm
+                  being present, on the Day of Saint Luke the Evangelist, by
+                  the oaths of sworn men, perambulation was made and the
+                  limitation of the boundaries fixed between the monks of
+                  Melrose and the men of Wedale concerning the pasture of my
+                  forest that my ancestors and I gave to the said monks of
+                  Melrose in pure and everlasting alms. <seg type="diplomatic" subtype="boundaries">The aforesaid sworn men indeed swore an oath in front of me and my worthy men,
+                     that my forest, which is the pasture of the aforesaid
+                     monks of Melrose, extends to the road that leads to the
+                     western side of the church of Wedale and as far as the
+                     stream which is called Fasseburn</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="holding">Wherefore I will, grant and instruct that the said monks peaceably hold and
+                     possess the whole pasture aforementioned with all its
+                     easements and liberties as far as the boundaries
+                     aforementioned in pure, free and everlasting alms, as
+                     their own property and their successors', so that none
+                     shall have common between them or with them within the
+                     aforementioned boundaries of the said pasture, saving to
+                     myself and my heirs wild beasts, birds and game within the
+                     said forest</seg>.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses Richard bishop of St Andrews, Jocelin bishop of Glasgow, John of
+                  Kelso, Osbert abbot of Jedburgh, Earl David, Richard de
+                  Morville the constable and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

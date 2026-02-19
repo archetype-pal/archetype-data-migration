@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 5954</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.837177+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5954</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Christ's faithful who shall view or hear these letters, <seg type="diplomatic" subtype="intitulatio">Bertram of Little Reston</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know me, all of you,</seg> <seg type="diplomatic" subtype="disposition">out of charity and for the salvation of my own soul, and of my ancestors' and
+                  successors' <ex>souls</ex>, to have given, and granted, and to have made firm by this my present charter,
+                     to God and to St Cuthbert, to the prior, and to the monks
+                     of Coldingham serving God in that place now and in the
+                     future, for ever, a half-ploughgate of land in the
+                     cultivated fields and territory of Little Reston, in pure
+                     and everlasting alms; that is, two-and-a-half acres of
+                     land in the toft and croft in which I settled at some time
+                     in my father's day; and all my land at <ex>Ralfesaccres</ex> and <ex>Thorn</ex>; and one acre of land nearest the meadow belonging to Roger and Richard, sons
+                     of Joseph Hunderhecsyde, extending westwards; and all my
+                     land lying in the moor, from the south side of <ex>Blackechest'</ex>; and all my land at <ex>Blackechloeshefed</ex>, saving only the land of David of Drilton; and all my land in <ex>Blackelawesflat</ex>; and all my land in <ex>Wilkedenflat</ex>, saving only that of David of Drilton; and all my land on the eastern side of <ex>Stublisyde</ex>; and my whole demesne lying on the two sides of <ex>Hebrandes Castle</ex>; and one acre of land at <ex>Grengate</ex> towards the west; and my whole land in <ex>Thyrslislad</ex> which Patrick son of Uhtred once held of me, and all my uncultivated <ex>land</ex> lying thereon; and my whole land which Adam Cook once held of me, except for
+                     four acres of land which the Prior of Durham had of the
+                     same in the same toun; and all my land in <ex>Tepermer</ex>; and four-and-a-half acres of land on the western side at Morcroc. All these
+                     lands written above I have given and made firm by this, my
+                     present charter, to the aforementioned prior and monks of
+                     Coldingham, in return for a half-ploughgate of land, in
+                     free, pure, and everlasting alms, renouncing by this
+                     action, for my own part and for my heirs, every aid of
+                     canon and civil law, in order that the said prior and
+                     monks of Coldingham at no time for this pure and
+                     everlasting alms may be brought to a lay court nor be
+                     harassed; in moors and marshes, in meadows and pastures,
+                     in peataries and turbaries, in roads and paths, and in all
+                     other easements pertaining to the same land, within the
+                     toun and outside it; <seg type="diplomatic" subtype="holding">for the said prior and monks of Coldingham to have and to hold of me and my
+                     heirs for ever, as freely, quitely, and honourably in all
+                     things as any alms within the kingdom of Scotland is
+                     freely or quitely held or possessed.</seg> <seg type="diplomatic" subtype="warrandice">And I, Bertram, and my heirs, the aforesaid half-ploughgate of land, with the
+                     said toft and croft, and with all the above-said portions
+                     of land, and with all their pertinents within the toun and
+                     outside it, to the oft-mentioned prior and monks of
+                     Coldingham shall warrant, acquiet, and defend against all
+                     men and women for ever.</seg></seg> <seg type="diplomatic" subtype="sealing">In testimony of this matter, I have applied my seal to this writing.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord William of Mordington; the lord Alan of Swinton;
+                  Thomas of Nisbet; David of Lumsdaine; Robert son of Gregory
+                  of Coldingham; Adam of Prenderguest; Patrick Scot; Adam son
+                  of John of Over Ayton; Gregory of Beoch; Gilbert of
+                  Lumsdaine; Robert son of Reginald; Roger son of Adam of Great
+                  Reston; and others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

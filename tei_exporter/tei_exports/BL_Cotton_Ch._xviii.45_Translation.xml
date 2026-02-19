@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.45</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:23:28.891853+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.45</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">D<ex>avid</ex> by the grace of God king of the Scots</seg> to all his barons, and men, and friends, French and English, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know me</seg> <seg type="diplomatic" subtype="disposition">to have given and conceded Annandale [Estrahanent] to Robert de Brus, and the
+                  whole land from the boundary of Dunegal of Nithsdale
+                  [Stranit] as far as the boundary of Ranulf le Meschin. <seg type="diplomatic" subtype="holding">And I will and concede that he hold and have the land and its castle well and
+                     honourably with all its customs, namely, with all those
+                     customs which Ranulf le Meschin ever had in Carlisle and
+                     his land of Cumberland on that day in which he ever had
+                     them best and most freely</seg></seg>. <seg type="diplomatic" subtype="witnesses">As witness: Eustace fitz John; Hugh de Morville; Alan de Percy; William de
+                  Somerville; Berengar Engaine; Ranulf de Soules; Walter de
+                  Morville; Hervey fitz Warin; Edmund the chamberlain.</seg> At Scone.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

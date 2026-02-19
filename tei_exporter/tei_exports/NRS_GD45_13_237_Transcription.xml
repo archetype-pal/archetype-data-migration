@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/237</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-14 18:43:21.995354+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/237</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">.V. dei gratia Rex Scott’. Omnibus probis hominibus totius terre sue <seg type="diplomatic" subtype="salutation">salutem</seg>.</seg> <seg type="diplomatic" subtype="disposition">Sciant presentes ⁊ posteri me dedisse<lb/> ⁊ concessisse . ⁊ hac mea carta confirmasse . deo ⁊ ecclesie sancte crucis de
+                     edenburc . ⁊ canonicis ibidem<lb/> deo seruientibus . in exscambio elemosinarum quas per castellanos amiserunt 
+                     iiii. marcas de molendino meo de<lb/> Karramunt . ⁊ .xxxiii. solidos de molendino de Libertun’ . ⁊ de firma de
+                     Merihennest’ .xx. solidos . ⁊ de terra<lb/> furbarii .viii. solidos . ⁊ de firma clerenbaud .v. solidos . ⁊ .viii. denarios
+                     . Tenendum sibi in liberam ⁊ quietam elemosinam<lb/> ita libere ⁊ quiete . sicut alias elemosinas suas liberius ⁊ quietius tenent ⁊
+                     possident . donec predictas elemosinas<lb/> quas per castellanos de Edenburc amiserunt  eis warrantizare potero . uel alibi
+                     redditum .ix. marcarum assigna<lb/>uero.</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> Hug’ Episcopo Sancti Andr<ex>ee</ex> . Waltero olifart <persName><roleName>Iustic<ex>ia</ex></roleName></persName> . Hug’ Giffart . Waltero de Berchelei . Will<ex>el</ex>mo de Haia .<lb/> Roberto de Berchelei.</seg> Apud Adingtun’.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

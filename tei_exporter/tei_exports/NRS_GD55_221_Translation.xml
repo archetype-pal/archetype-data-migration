@@ -1,0 +1,54 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/221</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 07:55:03.22692+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/221</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all who shall see or hear the present letters, <seg type="diplomatic" subtype="intitulatio">Philip of Pitcox</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me in good will to have allowed to the monks of Melrose that they may cross the
+                     stream called the Pressmennan Burn, which is the boundary
+                     between me and the monks, because frequently damage was
+                     occurring to their meadows and crops. <seg type="diplomatic" subtype="boundaries">The crossing of this stream begins at Swine Burn, and extends southwards in the
+                     same way as the land cultivated of old and the meadow come
+                     together, as far as the ford where the road from
+                     'Lunkepeth' descends into the Pressmennan Burn and from
+                     the siad ford as far as 'Thorneburht' and so below
+                     'Thorneburht' as far as the 'Broc'.</seg> This whole land and meadow indeed which is contained within the aforementioned
+                     crossing towards the monks themsleves I have given and
+                     granted, and by this my charter mande firm, to God and the
+                     church of St Mary at Melrose, and to the aforesaid monks
+                     in that place serving God, in free, pure, and perpetual
+                     alms, for the salvation of my lord, Earl Patrick, and his
+                     heirs, and for the salvation of my own soul, and of my
+                     wife's, and of all our forefathers', quit and released
+                     from every earthly service and custom and secular
+                     exaction. <seg type="diplomatic" subtype="warrandice">And I and my heirs shall maintain to the said monks this alms, and warrant
+                     against all men, and acquit it from every service for
+                     every.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Simon and Hugh, chaplains of Dunbar; Richard the chaplain
+                  of Stenton; Patrick son of Adam of Whitehouse; Roger de
+                  Merlay; Bertin of Ruchlaw; Adam, at that time cellarer of
+                  Melrose; Walter and Albin, lay-brethren of Melrose; and many
+                  others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

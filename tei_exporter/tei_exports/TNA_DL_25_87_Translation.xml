@@ -1,0 +1,51 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of TNA DL 25/87</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.090431+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/87</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="notification">Let all present and future know that</seg> <seg type="diplomatic" subtype="intitulatio">I, William, son of Ralph the Lardener, and brother David, his sons, and their
+                  heir</seg>, <seg type="diplomatic" subtype="disposition">have quiclaimed and abjured for myself and for my heirs, and resigned by rod and
+                  staff, to Robert de Brus and his heirs, or those to whom they
+                  may have wished to assign, the whole land which the aforesaid
+                  Ralph and the said David and my predecessors and I have held
+                  of the aforesaid Robert de Brus and his predecessors, and
+                  every right which belonged to us within the toun of Annan and
+                  within the dependent area; in return for the account, that is
+                  to say, of David my brother, who at that time was the
+                  sergeand of the lord Robert de Brus in 'Herterville'; the
+                  account which although I, William, undertook to settle on
+                  behalf the said David my brother, I was not able to pay off;
+                  and in return for the hundred shillings which the aforesaid
+                  lord Robert de Brus proffered to me.</seg> <seg type="diplomatic" subtype="sealing">In testimony of this quitclaim and abjuration I have applied my seal to this
+                  writing.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord Richard of Levington; the lord Roger Avenel;
+                  William de Brus; John de Brus; William de Heriz; Humphrey de
+                  Jardin; Hugh of Corrie; Robert of Crosby; Gilbert son of
+                  John; Roger of Kirkpatrick; Robert of Tremore; Richard de
+                  Bosco; Richard de Humez; Hugh Mauleverer; Hugh fitz Hamelin;
+                  William Francis; Ingram; Thomas, clerk; and the court of the
+                  aforesaid Robert de Brus of Annant.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

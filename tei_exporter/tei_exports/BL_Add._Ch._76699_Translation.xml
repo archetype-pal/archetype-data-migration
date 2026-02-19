@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Add. Ch. 76699</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:44:23.549325+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 76699</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Holy Mother Church's sons intending to examine the present writing, <seg type="diplomatic" subtype="intitulatio">Roger, by the grace of God a humble servant of the church of St Andrew,</seg> <seg type="diplomatic" subtype="salutation">[sends] greeting in the Lord</seg>.</seg> <seg type="diplomatic" subtype="notification">Know us, all of you,</seg> <seg type="diplomatic" subtype="disposition">to have given and granted and by the present charter to have made firm to
+                  William son of Adam of Nevay, at the presentation of the same
+                  A<ex>dam</ex>, the church of [Meathie] Lour with all its just pertinents in free, pure, and
+                     perpetual alms. <seg type="diplomatic" subtype="holding">Wherefore I will and firmly instruct that the same William hold and possess the
+                     aforenamed church freely, quitly, and honourably, just as
+                     any parson most freely, quitly, and honourably holds and
+                     possesses his church in our diocese.</seg> Reserving episcopal rights.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: Henry, abbot of Arbroath; Thomas, prior of St Andrews; Archibald,
+                  abbot of Scone; Hugh, prior of Restenneth; Master Ranulf,
+                  official; Master Isaac; Master William of Lyne; Richard and
+                  Richard, chaplains; John of London; Richard le Megre; William
+                  Wyville; John of Bearford; Hugh the steward; Ralph, priest of
+                  Glamis; Baldwin the Scot; John, dean of Angus; Simon, dean of
+                  Perth; John, dean of Kinghorn; and a great many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

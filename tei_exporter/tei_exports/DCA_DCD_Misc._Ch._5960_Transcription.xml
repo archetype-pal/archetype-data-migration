@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 5960</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.715383+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5960</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte matris eccllesie fidelibus clericis et laicis tam presentibus
+                  quam futuris  <seg type="diplomatic" subtype="intitulatio">Rodb<ex>ertus</ex> . dei gratia<lb/> sanctiandree episcopus</seg> <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Notum sit uobis omnibus quod</seg> <seg type="diplomatic" subtype="disposition">nos concessimus et quantum ad episcopalem aucto<lb/>ritatem pertinet presentis carte attestatione et munimine confirmauimus
+                     donationem illam<lb/> quam Gospatr<ex>ic</ex> frater Dolf<ex>ini</ex> concessit et dedit in perpetuam elemosinam deo et sancto Cuthberto et mona<lb/>chis ipsius . scilicet Hederham cum ecclesia . et uilla que dicitur Nesbit . cum
+                     aquis . pratis et pascuis et molendi<lb/>nis et omnibus aliis rebus que ad easdem uillas pertinent sicut carta Regis et
+                     carta Gospatr<ex>ici</ex> testantur .</seg><lb/> <seg type="diplomatic" subtype="notification">Notum quoque sit uobis omnibus quod</seg> <seg type="diplomatic" subtype="disposition">nos episcopali auctoritate et presentis carte munimine concessimus<lb/> et confirmauimus deo et sancto Cuthberto et monachis ipsius ecclesiam de Swintun
+                     et ecclesiam de Fiswic<lb/> in perpetuam elemosinam .</seg> <seg type="diplomatic" subtype="witnesses">Et hoc fecimus prece et consilio uenerabilium fratrum nostrorum Rodberti prioris
+                  sancti<lb/> Andree . Thoma prioris de Scona . Osberti prioris de Gedewrtha . Osberti prioris
+                     de sancta Cruce . Ade capel<lb/>lani regis de Rochesburh . et multorum aliorum nobiscum residentium in sinodo
+                     que sedit apud Berwic</seg><lb/> . <seg type="diplomatic" subtype="dating">viii . kal’ Nouembris . Anno ab incarnacione domini . Mo . Co . Lo .</seg> </p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,47 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of TNA DL 25/90</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.068457+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/90</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know that</seg> this agreement between William de Brus, lord, and William de Heineville, that
+                     is, which I, William de Brus ... to William de Heineville
+                     and his heirs that land which is towards Logan above
+                     Blakebec and that land which is between Aybeg bec and
+                     Logan just as Aybegbec falls into the Serk, and ... the
+                     valley ... Serk ... as far as the Raeburn, and from the
+                     side ... from Serke as the boundaries ... so as to please
+                     him I grant to him and his heirs those ... ... of my
+                     father and my brother Robert de Brus; I also grant that
+                     land between Blabeok ... ... of my father and my brother
+                     ... ... also, I grant to him ... ... pasture in wood, in
+                     meadow ... ... he remits in common pasture to me those
+                     lands which were ploughed and settled from new just as the
+                     lands in which he had no right unless by my mandate. I
+                     also will and enjoin that my men have common right of the
+                     wood and of the pasture between him and them, just as they
+                     had in the time of my father.</seg> <seg type="diplomatic" subtype="witnesses">Witness Udard of Hoddom etc.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

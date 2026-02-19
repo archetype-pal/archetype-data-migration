@@ -1,0 +1,47 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/159</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:20:42.322925+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/159</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church present and future, <seg type="diplomatic" subtype="intitulatio">Patrick of Ryedale</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me to have licensed and by this my charter to have made firm to God and to the
+                     church of St Mary at Melrose and monks serving God in that
+                     place the donation of Geoffrey son of Waldef of
+                     Lilliesleaf which he made to the aforesaid church and
+                     monks in respect of four oxgangs of arable land in the
+                     territory of Whitton, in free, pure, and perpetual alms,
+                     just as they lie in one holding above ‘Raven’s Fen’ near
+                     the land of ‘Heuiside’ which they have from my donation. <seg type="diplomatic" subtype="holding">Wherefore I will that the aforesaid monks of Melrose should hold and possess the
+                     aforenamed land free, quit, and loosed from all earthly
+                     service and custom and secular exaction, just as the
+                     charter of the said Geoffrey more fully bears witness and
+                     affirms.</seg> <seg type="diplomatic" subtype="warrandice">And I and my heirs shall maintain and warrant to the oft-mentioned monks the
+                     aforewritten land against all men for ever, saving only
+                     the service to me and my heirs from Geoffrey himself and
+                     his heirs in respect of the the same land.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Robert, archdeacon of Glasgow; John, dean of Roxburgh;
+                  Richard le Naym; Walter, my son and heir; Ralph of Ryedale;
+                  Robert of Bernoldby; Adam of Whitton; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

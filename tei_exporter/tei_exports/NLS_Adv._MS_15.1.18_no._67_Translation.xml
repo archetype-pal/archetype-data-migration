@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NLS Adv. MS 15.1.18, no. 67</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-06-07 15:02:50.615886+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 67</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church, clerk and lay, present and future, <seg type="diplomatic" subtype="intitulatio">Malcolm, son of Duncan earl of Fife,</seg> <seg type="diplomatic" subtype="salutation">sends Greeting</seg></seg>: <seg type="diplomatic" subtype="notification">Let those to come as well as those present know</seg> <seg type="diplomatic" subtype="disposition">that I have granted and by this my charter made firm, to God and to Saint
+                  Andrew, and to the prior and religious community serving God
+                  at St Andrews now and in the future, the donations that
+                  Duncan the Earl, my father, made to them, that is, the church
+                  of Cupar, the church of Markinch, the church of Scoonie, the
+                  chapel of Kettle, with everything belonging to them. <seg type="diplomatic" subtype="holding">Wherefore I will that the aforesaid prior and community of the priory should
+                     hold and possess the churches of me and my heirs, as
+                     freely and quietly as the charters of my father bear
+                     witness</seg>.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: Merleswain; Adam of Ceres; Adam the Earl’s brother; Alan son of
+                  Simon; Odo the steward; William de Lascelles; Walter of
+                  Lundin; Hugh the butler; Albin the chaplain; Milo de
+                  Raiville; Geoffrey de Melville; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

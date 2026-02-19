@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/162</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:47:33.039283+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/162</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte Matris Ecclesie filiis Tam futuris quam presentibus <seg type="diplomatic" subtype="intitulatio">Patricius de Ridal</seg> <seg type="diplomatic" subtype="salutation">salutem in Christo</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me concessisse<lb/> et hac carta mea confirmasse hospitali ierosolime vnam bouatam terre in
+                     territorio de Wittun . illam scilicet que<lb/> iacet inter hord lauue et toccechelis . et inter fossam et harhou . et terram
+                     dotis Mathildi corbet quam Galfridus<lb/> cocus meus liber homo dedit hospitali prenomintato ierosolime per concessionem
+                     et bonam uoluntatem heredum suorum in liberam . et<lb/> in puram . et in perpetuam elemosinam . pro animabus antecessorum et successorum
+                     suorum . <seg type="diplomatic" subtype="holding">Condicione tali quod Isabella<lb/> sponsa Will<ex>elm</ex>i de Ridal’ . et heredes sui uel cui ipsa assignare uoluerit in feudo et
+                        hereditate teneant predictam<lb/> terram de prenominata domo et in pace possideant . libere . et quiete a multura
+                        . et ab omni alio seruicio . et consu<lb/>etudine . et ab omni seculari exaccione . Reddendo annuatim hospitali
+                        prenominato . ad festum Sancti Jacobi vnam libram<lb/> cumini .</seg></seg> <seg type="diplomatic" subtype="witnesses">Hiis testibus . Domino W<ex>i</ex>ll<ex>elm</ex>o filio Ioh<ex>ann</ex>is . Domino Waltero de Ridal’ . Radulfo de Ridal’ . Ada de Wittun et filiis<lb/> suis . Ada de Waleuhop . Ioh<ex>ann</ex>e filio Ade de chatthou . Rob<ex>erto</ex> de bernardebi . et Rob<ex>erto</ex> filio eius . Alexandro de lillescliue<lb/> henrico de herice . Ricardo homine abbatis . et multis aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

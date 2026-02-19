@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 601</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:22:01.946777+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 601</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W<ex>illiam</ex>, king of the Scots,</seg> to all worthy men of his entire land, clerk and lay, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know</seg> me to have allowed, and by this my charter to have made firm, to God and Saint
+                     Cuthbert, and to his monks at Durham, the donation of
+                     Cospatric the earl and his successors, that is to say,
+                     Nisbet and the toun of Edrom, and the church in the same
+                     toun, with all its chapels and pertinents, in free and
+                     perpetual alms, <seg type="diplomatic" subtype="holding">to be held as freely and quitly and honourably as the charters of Earl Cospatric
+                     and his successors bear witness and affirm</seg>.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: Richard bishop of St Andrews, Nicholas the chancellor, Richard the
+                  chaplain, Richard de Morville the constable, William son of
+                  Alan, steward, David Oliphant, Dolphin the chaplain, John son
+                  of Orm, sheriff of Roxburgh,</seg> <seg type="diplomatic" subtype="dating">at Roxburgh.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

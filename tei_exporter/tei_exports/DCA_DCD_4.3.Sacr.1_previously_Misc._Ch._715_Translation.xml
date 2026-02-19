@@ -1,0 +1,48 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD 4.3.Sacr.1 (previously, Misc. Ch. 715)</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.94762+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD 4.3.Sacr.1 (previously, Misc. Ch. 715)</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><persName>William</persName> de Vaux to all who hear or see these letters</seg> : <seg type="diplomatic" subtype="salutation">greeting</seg>. <seg type="diplomatic" subtype="disposition">Know that I have given and granted and by this my charter made firm to God and
+                  to blessed Cuthbert and to the monks of <span data-dpt="place" data-dpt-cat="chars" data-dpt-type="name">Durham</span> serving God there, for their infirmary, two oxgangs of land in the territory of
+                     Gullane, that is, the three perches that lie next to St
+                     John's Croft to the west, and the twelve acres minus one
+                     perch that lie between the land of William son of
+                     Archibald and the Wingate, and the thirteen acres and
+                     three perches that lie between the sea and those three
+                     acres that belong to the sergeandry of Gullane on the
+                     north with the pasture, as much as pertains to the two
+                     oxgangs of land, in pure and perpetual alms, free and quit
+                     from all secular service, custom and exaction. This
+                     donation have I also made for the sake of the salvation of
+                     my own soul and for the souls of my father and mother and
+                     my heirs and all my forefathers. Wherefore I will and
+                     firmly enjoin, that this my alms be as free and quit as
+                     any alms is freely and quietly held and possessed in the
+                     bishopric of St Andrews. </seg><seg type="diplomatic" subtype="witnesses">With these witnesses: Ralph the Prior of Coldingham, Godard and Gumer the <persName><roleName>chaplains</roleName></persName>, Walter of Lindsay, Hubert de Vaux, Richard son of Michael, Simon the <persName><roleName>clerk</roleName></persName>, Richard Sans-Avoir, Richard son of Selburg, Nicholas of Gullane, Walter of
+                     Ednam, and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

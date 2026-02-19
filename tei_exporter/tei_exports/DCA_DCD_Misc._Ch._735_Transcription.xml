@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 735</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 10:59:47.552821+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 735</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Has Literas visuris vel audituris . <seg type="diplomatic" subtype="intitulatio">P . filius Comitis . P . de Dumb<ex>ar</ex></seg> <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="narration"><seg type="diplomatic" subtype="notification">Nouerit vniuersitas<lb/> vestra</seg> Me Anno ab incarnatione Domini . M . c c . xxx . ii . Die Sancti Iohannis
+                     baptiste Recepisse a Priore<lb/> de Coldigham et conuentu Ducentas Marcas argenti in quarum persolucione .
+                     predicti prior et conuentus<lb/> per quieta clamatione mea Eisdem facta de villa de Swinewde et Dominio cum
+                     omnibus pertinenciis<lb/> suis pro me et heredibus meis in perpetuum Mihi obligati fuerunt .</seg> <seg type="diplomatic" subtype="sealing">In huius autem receptionis<lb/> testimonium huic scripto Sigillum meum apposui .</seg> <seg type="diplomatic" subtype="salutation">valete .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

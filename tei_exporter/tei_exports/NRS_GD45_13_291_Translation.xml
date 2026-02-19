@@ -1,0 +1,52 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/291</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:43:44.574843+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/291</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Richard, by the grace of God Bishop of Dunkeld,</seg> to all sons of Holy Mother Church, <seg type="diplomatic" subtype="salutation">Greeting</seg>:</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know</seg> that we have granted, and by this our charter made firm, to God and to the
+                     church of St John the Apostle at Inchaffray, and to the
+                     brethren serving God there now and in the future, our land
+                     in Madderty, the land that is called ‘apdaine’, by its
+                     correct bounds, with all is just pertinents, at the
+                     request of Earl Gilbert of Strathearn and his brother M<ex>alise</ex>, for the redemption of our soul and of our ancestors’, and of the the foresaid
+                     Earl G<ex>ilbert</ex> and his own people. For the foresaid brethren and their successors to hold in
+                     free and perpetual alms, by rendering to us and our
+                     successors annually one merk of silver, that is, half at
+                     Pentecost and half at the feast of St Martin. <seg type="diplomatic" subtype="holding">We therefore will and enjoin that the same foresaid brethren and their
+                     successors hold and possess the foresaid land of us and
+                     our successors, as freely and quietly, fully and
+                     honourably, from every exaction and custom and secular
+                     service pertaining to us, in wood and plain, in meadows
+                     and pastures, in waters and mills, and all other easements
+                     pertaining to the same land, just as any land in our
+                     bishopric is freely and honourably held and possessed, and
+                     just as the charter of Bishop John, our predecessor, bears
+                     witness, but saving the foresaid pension.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Henry our archdeacon, Ralph, Bernard, and Thomas, our
+                  chaplains, Louis and John our clerks, Brice the parson of
+                  Crieff, Robert the chaplain of Tibbermore, Gilbert the son of
+                  the archdeacon of Strathearn.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

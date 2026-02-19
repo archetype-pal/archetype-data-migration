@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of TNA DL 36/3/219</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 09:22:37.005404+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 36/3/219</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">. <seg type="diplomatic" subtype="intitulatio">Rob’ de brus</seg> omnibus hominibus suis de valle <supplied>de Anand’</supplied> <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me reddidisse et concessisse Hug<ex>oni</ex> filio Ingenbaldi et<lb/> heredibus suis tenendum de me et heredibus meis totam terram quam pater suus
+                     tenuit in driuesdale . eadem seruitio et eisdem
+                     Libertatibus quibus pater suus Ingenbaldus eam ante ipsum
+                     tenuit . faciendo . s . mihi pro ea seruitium duarum
+                     villarum . et<lb/> in exercitu Regis  seruitium vnius Militis . <seg type="diplomatic" subtype="holding">Hanc terram predictam tenebit Hugo et heredes sui in nemore et plano .<lb/> in terra et aqua . In Monasteria et Molynd<supplied>in</supplied>o . et in omnibus Libertatibus quibus pater suus eam melius et Liberius et
+                        quietius<lb/> tenuit ante ipsum</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Hiis T<ex>estibus</ex> . Domino Waldevo . Henrico murdac . Iuone de Sot’ . Will<ex>elm</ex>o de Gardino . Iuone de Crosobi .<lb/> Hadardo filio odonis . Rob<ex>erto</ex> de Hodolm’ . Hug<ex>one</ex> Mauleuer’ . Hug<ex>one</ex> de Corri . Ric’ de Crossebi . Radulfo<lb/> de Grenesbi . Hamelino . T . clerico .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

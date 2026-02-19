@@ -1,0 +1,66 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/96</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:16:49.070754+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/96</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W<ex>illiam</ex>, by the grace of God king of the Scots</seg>, to bishops, abbots, earls, barons, justices, sheriffs, provosts, and all
+                     worthy men of his entire land, clerk and lay, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know</seg> me to have given and by this my present charter to have made firm to God and to
+                     the church of St Mary at Melrose, and to the monks of
+                     Rievaulx serving God there, for the souls of my father and
+                     my mother, and of King David my grandfather, and for my
+                     own soul, and of all my brothers and sisters, my ancestors
+                     and successors, in free, pure, and perpetual alms, the
+                     enitre land of Blainslie, by the boundaries named in the
+                     charter of Richard de Morville, for ploughing and
+                     cultivating just as it shall seem best and most useful to
+                     them, without performing assart, and permission for
+                     constructing their own buildings wherever they wish on the
+                     burn which is between Blainslie and Milsie, and the entire
+                     land of Milsie which Richard de Morville and his heir gave
+                     to them, and made firm by their charters, by the same
+                     boundaries which are contained in their charters, and the
+                     chapel of Park just as it is contained in their charters,
+                     and the building at Colmslie and at Buckholm and at
+                     Whitelee, just as they were at the feast of Saint Michael
+                     next after the first coronation of Richard, son of Henry
+                     king of England, provided no enlargement or more buildings
+                     are built there than were theere at that time unless by my
+                     permission. <seg type="diplomatic" subtype="holding">And so that none of my foresters give or sell wood within their boundaries
+                     specified in my charter, I give and grant all these things
+                     to them to possess in everlasting tenure, and by this my
+                     charter make firm in free and everlasting alm, and I will
+                     and instruct that they have and possess all things
+                     mentioned above as freely and quitly, fully and
+                     honourably, as any alms can most freely and quitly, fully
+                     and honourably be had and possessed by monks of the
+                     Cistercian order</seg>.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, Jocelin bishop of Glasgow, Arnold abbot of Rievaulx, Hugh my
+                  chancellor, Robert my chaplain, Philip de Valognes, Robert of
+                  London, William of Lindsay, Malcolm son of Earl Duncan,
+                  William Comyn, Gervase Avenel, William de la Hay, Adam son of
+                  Gilbert, Adam of Ceres, Adam of Stanford, Herbert the
+                  marischal.</seg> At Traqhuair.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

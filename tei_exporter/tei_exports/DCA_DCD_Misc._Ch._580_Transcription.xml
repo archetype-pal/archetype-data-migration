@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 580</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:12:05.617886+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 580</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">M . Rex Scott’ .</seg> Iusticiis . vicecomitibus . Prepositis . Ministris . Cunctisque aliis probis
+                     hominibus totius<lb/> terre sue tam futuris quam presentibus <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me concessisse deo et Sancto Cuthberto de Dunelmo<lb/> et Monachis ibidem deo seruientibus  ut ipsi et eorum seruientibus per totam
+                     terram meam sint liberi et<lb/> quieti ab omni teloneo de propriis catallis et mercaturis eorum . <seg type="diplomatic" subtype="injunction">Prohibeo itaque ut nemo contra hanc libertatem<lb/> eis infra terram meam uim aut iniuria faciat super forisfacturam meam</seg> .</seg> <seg type="diplomatic" subtype="witnesses">T<ex>estibus</ex> Nicol’ <persName><roleName>Camerario</roleName></persName> . Ric<ex>ardo</ex> Capell<ex>ano</ex><lb/> Regis . Ric<ex>ardo</ex> de Sancto Albano clerico regis .</seg> <seg type="diplomatic" subtype="dating">Apud Goldingham .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

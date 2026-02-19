@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/251</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:03:23.321016+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/251</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerint uniuersi presens scriptum uisuri uel audituri quod</seg> <seg type="diplomatic" subtype="intitulatio">ego ioh<ex>ann</ex>es de normanuill'</seg> dedi et concessi<lb/> et hac mea carta confirmaui deo et ecclesie sancte Marie de Melr<ex>os</ex> . et Monachis ibidem deo seruien<lb/>tibus . In liberam . puram . et perpetuam elemosinam . quatuor acras terre et
+                        dimidiam . In territorio de<lb/> Mackustun’ . <seg type="diplomatic" subtype="boundaries">scilicet de ierbranderig ascendendo uersus occidentem desuper ripam de
+                        lillesietburne<lb/> ex aquilonali parte usque ad uetus fossatum de gretrig . et alibi in eodem
+                           territorio illam partem<lb/> more que iacet inclusa inter suthside . et arewes et ex orientali parte contigua
+                           est more de<lb/> Rutherforde .</seg> <seg type="diplomatic" subtype="holding">Totam hanc terram dedi prefatis monachis cum omnibus pertinenciis suis et
+                        libertati<lb/>bus sine aliquot retinemento vt eam habeant teneant et possideant plene
+                           honorifice et<lb/> quiete ab omni seruicio forensic et priuato . consuetudine . exactione</seg> . . . <supplied>Ego et</supplied><lb/> <seg type="diplomatic" subtype="warrandice">heredes mei manutenebimus warantizabimus et defendemus dictis monachis dictam
+                        terram . . . in perpetuum contra omnes homines</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Hiis Testibus . Hug<ex>one</ex> de normanuill' . Thom<ex>a</ex> . Waleramo .<lb/> Henr<ex>ico</ex> . fratribus meis . Iohanne capellano . Ioh<ex>ann</ex>e filio philippi et Multis aliis .</seg></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

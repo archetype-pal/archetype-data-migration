@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of TNA DL 25/84</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.11438+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/84</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p><seg type="diplomatic" subtype="address">To all who shall view or hear this writing <seg type="diplomatic" subtype="intitulatio">Richard of Banchory</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me to have quitclaimed for myself and for my heirs for ever to my lord, Robert
+                     de Brus, and his heirs, the entire land of Locharwoods <seg type="diplomatic" subtype="boundaries">by these boundaries, namely, from 'Polhulin' to 'Blakebecke', just as it extends
+                     halfway along the mosse, and from the said middle of the
+                     mosse to the Water of Lochar</seg>; with pertinents, with a common pasture in the feu of Comlongon which the men
+                     of the said Robert de Brus of Mouswald used to have at
+                     ferme from me, in return for one merk to be paid yearly,
+                     reserving to myself and my heirs in my wood of ..., just
+                     as before the day of this quitclaim </seg></p> <p><seg type="diplomatic" subtype="sealing">In testimony of this matter I have applied my seal to this writing.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lords Adam de Chartres; David Park; Humphrey of
+                  Kirkpatrick; Roger of Kirkpatrick; William de Saint-Michel;
+                  Ingram de Monceus; James the clerk; and others.</seg></p></div>
+    </body>
+  </text>
+</TEI>

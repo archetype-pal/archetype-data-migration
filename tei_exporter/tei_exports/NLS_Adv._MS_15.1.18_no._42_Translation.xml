@@ -1,0 +1,55 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NLS Adv. MS 15.1.18, no. 42</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-06-07 14:28:26.644818+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 42</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church, <seg type="diplomatic" subtype="intitulatio">Hugh de Mortimer</seg> <seg type="diplomatic" subtype="salutation">sends Greeting</seg>:</seg> <seg type="diplomatic" subtype="notification">Let those to come as well as those present know</seg> t<seg type="diplomatic" subtype="disposition">hat I have granted and by this my charter made firm, to God and to the Canons of
+                  the Church of St Andrews, the Chapel of Fowlis together with
+                  the land that went with it before Fowlis was given to William
+                  Maule my grandfather, and with ten acres of land which the
+                  same William gave to the said Chapel as an addition, and with
+                  teinds and oblations, and with everything pertaining to the
+                  same Chapel, in perpetual alms, for the welfare of my soul,
+                  and of my wife’s, and for the souls of my ancestors and
+                  successors. <seg type="diplomatic" subtype="holding">Wherefore I firmly will that the aforesaid Canons hold and possess the
+                     aforementioned Chapel free and quit from every secular
+                     service and exaction, and without my or my heirs’ claiming
+                     it back, just as freely and quietly as they hold and
+                     possess their other alms in Scot[ia <ex>or</ex> Scotland]</seg>. I have also allowed to the said Canons the teind of my mill and common pasture
+                     according to the easement of my feu at Fowlis, namely, for
+                     eight oxen, and ten cows, and three horses, and 100 sheep.
+                     I have also allowed to the same Canons that there be
+                     support of the said livestock in that pasture for one
+                     year, the first after giving birth, just as it is more
+                     fully set out in the charter of the aforesaid William;</seg> <seg type="diplomatic" subtype="sealing">and that this my grant should maintain the force of perpetual endurance, I have
+                  caused it to be confirmed by the reinforcement of the present
+                  written document with the application of my seal.</seg> <seg type="diplomatic" subtype="witnesses">With theses witnesses: the lord William, bishop of St Andrews; Master Laurence,
+                  archdeacon of St Andrews; Master Adam Ovid; Master Alexander
+                  de Saint-Martin; Master David of Bernham; the lord Simon de
+                  Noisy; William of Gullen; John of Haddington; and many
+                  others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/36</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-07-20 12:11:18.52272+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/36</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Sancte matris Ecclesie filiis presentibus et futuris <seg type="diplomatic" subtype="intitulatio"><persName>Raderic</persName> Mac<persName>Gillescop</persName> . et <persName>Cristiana</persName> sponsa eius filia <persName>Rogeri</persName><lb/> de Scalebroc</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis nos</seg> concessisse et hac nostra Carta confirmasse deo et Ecclesie de Melr’ et monachis<lb/> ibidem deo seruientibus in liberam et puram et perpetuam elemosinam donationem <persName>Rogeri</persName> de Scaleb<ex>ro</ex>c quam fecit eidem<lb/> ecclesie et monachis predictis de piscatura de Don super harenam et una salina
+                     cum terris et toftis et Omnibus<lb/> aisiamentis que continentur in Carta predicti <persName>Rogeri</persName> <seg type="diplomatic" subtype="holding">tenenda et possidenda in perpetuum ita libere et quiete plenarie<lb/> et honorifice sicut aliqua elemosina liberius et quietius plenius et
+                        honorificentius tenetur uel possidetur et sicut Carta
+                        predicti<lb/> <persName>Rogeri</persName> testatur</seg> .</seg> <seg type="diplomatic" subtype="warrandice">Et nos et heredes nostri manutenebimus et warrantizabimus eis omnia predicta et
+                  adquietabimus ea<lb/> erga omnes homines de omni seruitio in perpetuum .</seg> <seg type="diplomatic" subtype="disposition">Concessimus etiam eisdem monachis et hac Carta confirmauimus<lb/> totam terram de Drumteisuiene et de Alesburc et de Authenephur . quantum ad nos
+                     pertinet <seg type="diplomatic" subtype="holding">tenendam et possi<lb/>dendam in perpetuum ita libere et quiete et honorifice sicut carta predicti <persName>Rogeri</persName> et confirmatio domini nostri <persName>Dun<ex>ecani</ex></persName> . testan<lb/>tur</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Teste eodem <persName>Dun<ex>ecano</ex></persName> . <persName>Will<ex>elmo</ex></persName> . vicec<ex>omite</ex> . de nouo Castello super Ar . <persName>Waltero</persName> clerico Regis <persName>Ioh<ex>ann</ex>e</persName> clerico . <persName>Ioh<ex>anne</ex></persName> fratre<lb/> <persName>Vdardi</persName> <persName>Gilleb’</persName> mac <persName>Kenedi</persName> . <persName>Ewein</persName> mac <persName>Alewi<supplied>n</supplied></persName> . <persName>Gillenem</persName> mac<persName>colem’</persName> .</seg> <seg type="diplomatic" subtype="sealing">Et quia sigillum proprium non<lb/> habuimus Dominus <persName>Dunec<ex>anus</ex></persName> . rogatu nostro sigillum suum pro nobis huic carte nostre apposuit .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

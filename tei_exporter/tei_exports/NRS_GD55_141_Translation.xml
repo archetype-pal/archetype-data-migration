@@ -1,0 +1,46 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/141</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:06:37.856219+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/141</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know that</seg> <seg type="diplomatic" subtype="intitulatio">I, Simon of Lindsay,</seg> have given, granted, and by this my charter made firm to Patrick my man and [in
+                     return for] his homage and service in my land at Mow,
+                     which he has had from the gift of my mother, six acres of
+                     land, and one acre of meadow, and one and a half acres of
+                     land in toft and croft, and one acre of meadow of the the
+                     land nearest ‘Erdeburesburne’, and ‘Subchestres[?burne]’ . <supplied>?two acres</supplied> . and upon ‘Selestede Adam’ two and a half acres; <seg type="diplomatic" subtype="holding">for him and his heirs to hold of me and my heirs in feu and heritage freely and
+                     quitely, fully and honourably, also with all common
+                     easements of my land and common easements which my men in
+                     my mother’s land [can] and ought to have; by paying me and
+                     my heirs one pound of cumin or three pence at the feast of
+                     St James in return for all services pertaining to me or my
+                     heirs, and by doing such forinsec service on my land as
+                     pertains to such an amount of land;</seg> I therefore will that he should give four pence [to me and] my heirs for his
+                     fine, and six pence for his aid.</seg> <seg type="diplomatic" subtype="witnesses">[With these witnesses: Peter] de Valognes; Robert of Rapelaw; Adam of Wauchope;
+                  Adam of Whitton, and Gilbert his son; Walter de . . . Richard
+                  Scott; Mervyn of Mow; Richard the clerk; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

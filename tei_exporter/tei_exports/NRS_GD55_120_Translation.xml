@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/120</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 14:56:56.403713+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/120</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church as well present as future <seg type="diplomatic" subtype="intitulatio">Earl Patrick</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg></seg>. <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me to have given and by this my charter to have made firm to God and to the
+                     church of St Mary at Melrose and to the monks serving God
+                     in that place, for the souls of all my ancestors and
+                     predecessors, in free and pure and perpetual alms, two and
+                     a half acres of land at Harcarse, that is, <seg type="diplomatic" subtype="boundaries">as the ditch encloses the same land</seg>, <seg type="diplomatic" subtype="holding">to be held of me and my heirs as freely, quitely, fully, and honourably as they
+                     hold and possess any alms freely, quitely, fully, and
+                     honourably in the king's land, free and quit from every
+                     earthly service and custom and secular exaction for ever</seg>.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Roland de Roland, steward; Bernard Fraser; Gilbert of
+                  Home; Ness of Walton; Ketill of Letham; Oliver, son of
+                  Kilvert; Patrick de Fachener; Gilbert, my clerk; Peter of
+                  Whittinghame.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

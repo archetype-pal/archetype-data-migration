@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 608</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-29 15:57:28.253279+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 608</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">William, king of Scots</seg>, to the <persName><roleName>justices</roleName></persName>, sheriffs, provosts, officials, and all other worthy men of the whole of his
+                     land, <seg type="diplomatic" subtype="salutation">greeting</seg>: </seg><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know that</seg> I have granted to God and to Saint Cuthbert at Coldingham and to the monks
+                     serving God there, that they and their servants shall be
+                     free and quit throughout the whole of my land from all
+                     toll on their own chattels and merchandise.</seg> <seg type="diplomatic" subtype="prohibition">I therefore forbid that anyone shall cause violence or injury to them against
+                  this liberty within my land upon pain of my forfeiture, just
+                  as the charter of King Malcolm my brother bears witness and
+                  confirms.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: Ingram the bishop of Glasgow, Nicholas the chancellor, Walter son
+                  of Alan. </seg><seg type="diplomatic" subtype="dating">At Stirling</seg>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

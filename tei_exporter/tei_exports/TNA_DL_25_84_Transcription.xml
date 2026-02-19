@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of TNA DL 25/84</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.126145+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/84</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus hoc scriptum visuris uel audituris <seg type="diplomatic" subtype="intitulatio">Ricardus de Bancori</seg> <seg type="diplomatic" subtype="salutation">salutem</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me quietam cla<lb/>masse pro me et heredibus meis Imperpetuum domino meo Roberto de Brus . et
+                     heredibus suis totam terram<lb/> de loyerwode <seg type="diplomatic" subtype="boundaries">per has diuisas . videlicet de Polhulin vsque Blakebecke . sicut medietas mos<lb/>se extendit . et de dicta medietate mosse  vsque aquam de loyer</seg> cum Pertinenciis . cum quadam communi<lb/> pastura In feodo de Comlongan quam homines dicti Roberti de Brus de misefaud de
+                     me<lb/> solebant habere ad firmam . pro vna marca annuatim soluenda . saluo cum mihi et
+                     heredibus meis <supplied>in</supplied> <lb/> bosco meo ... gigo . sicut ante diem huius quiete clamacionis ipsum b...uus de<lb/>nui .</seg> <seg type="diplomatic" subtype="sealing">In cuius rei testimonium huic scripto sigillum meum apposui .</seg> <seg type="diplomatic" subtype="witnesses">Hiis testibus . Dominis .<lb/> Ada de Carnoto . Dauid de Parco . Vmfrido de Kirkepatric . Rogero de Kirkepatric
+                     . Will<ex>elm</ex>o de<lb/> sancto mich’ . Engramo de musseus . Iacobo Clerico . et Aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

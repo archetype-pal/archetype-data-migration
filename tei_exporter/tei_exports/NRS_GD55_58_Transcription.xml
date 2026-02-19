@@ -1,0 +1,44 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/58</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:31.640915+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/58</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte Matris Ecclesie filii presentibus et futuris <seg type="diplomatic" subtype="intitulatio">Patricius de Withichun</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sci<lb/>atis</seg> me concessisse et dedisse et hac mea carta confirmasse Deo et ecclesie Sancte
+                     Marie de<lb/> Melros . et Monachi Ibidem deo seruientibus pro animabus patris mei et matris
+                     mee et omnium<lb/> antecessorum meorum . et pro salute Domini Patricii Comitis . et heredum suorum
+                     . et pro salute anime mee<lb/> et vxoris mee et Omnium successorum meorum . In liberam puram et perpetuam
+                     Elemosinam<lb/> quandam partem terre mee In territorio de Spot . scilicet Lochaneshalech <seg type="diplomatic" subtype="boundaries">per has diui<lb/>sas . A capite fossati ipsorum monachorum quod inchoatur a Caldebec et tendit
+                        sursum usque<lb/> ad viridem uiam que descendit de Lambermor . et sic per eandem uiam usque ad
+                        Akiside . et<lb/> sic Deorsum subtus Akiside per fossatum usque ad Akisideseneb . et sic deorsum
+                        tam prope eundem<lb/> Akiside quanto propius meatus antedicti Riuuli poterit fieri . usque ad
+                        Carlehalech<lb/> et in transuersum Karlehalech usque In Presmuneburne .</seg> <seg type="diplomatic" subtype="holding">Hanc terram et quicquid continetur infra<lb/> prenominatas diuisas uersus eosdem monachos dedi eis . tenendam et possidendam
+                        In perpetuum<lb/> Ita libere et quiete . Plenarie et honorifice sicut aliqua Elemosina liberius et
+                        quietius plenius et hono<lb/>rificencius teneri potest uel possideri .</seg> <seg type="diplomatic" subtype="warrandice">Et ego et heredes mei manutenebimus et warantizabimus<lb/> predictis monachis hanc Elemosinam contra omnes homines et adquietabimus eam de
+                        omni forensi et terre<lb/>no seruitio erga omnes homines et de omni exactione et consuetudine seculari in
+                        perpetuum .</seg><lb/> Et Idem Monachi utentur omni hac terra pro libitu et uoluntate sua modis omnibus
+                     sicut me<lb/>lius sibi et suis uisum fuerit .</seg> <seg type="diplomatic" subtype="witnesses">Hiis test<ex>ibus</ex> . Domino Patricio Comite . Geruasio Auenel . Nesio de<lb/> Walect’ . Rob<ex>erto</ex> . de Burneuill’ . Ioh<ex>ann</ex>e de Mackeswel tunc temporis vicec<ex>omite</ex> . de Theuid’ . Will<ex>elm</ex>o de<lb/> Cresswuil’ . Rogero de Merlai . Will<ex>elm</ex>o de cracri . Adam de Paulewrthe .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

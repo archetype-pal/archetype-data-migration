@@ -1,0 +1,45 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/98</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:18:17.527927+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/98</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">William by the grace of God king of the Scots</seg>, to bishops, abbots, earls, barons, justices, sheriffs, provosts, officials,
+                     and all worthy men of his entire land, clerk and lay, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know</seg> me to have granted, and by this my charter to have made firm, to God and to the
+                     church of St Mary at Melrose, and to the monks serving God
+                     there, the quitclaim which Alan son of Walter my steward
+                     made to the same monks in my presence and full court, of
+                     the whole claim and every right which the said Alan or his
+                     heirs have had or ever could have had in the pasture on
+                     the western side of the Leader. <seg type="diplomatic" subtype="holding">Wherefore I will and instruct that the said monks of Melrose should hold the
+                     named land for ever and have it free and quit from every
+                     claim from the said Alan and his heirs, as freely and
+                     quitly, fully and honourably, as the charter of the said
+                     Alan son of Walter my steward bears witness</seg>.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, Jocelin bishop of Glasgow, John bishop of Dunkeld, Earl David my
+                  brother, Earl Duncan, Earl Gilbert, William de Morvillethe
+                  constable, William of Lindsay, Malcolm son of Earl Duncan,
+                  Walter of Berkeley, Robert of Berkeley, Henry of Graham.</seg> At Edinburgh.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

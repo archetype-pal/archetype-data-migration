@@ -1,0 +1,52 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xv.21</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:50:44.667952+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xv.21</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">M<ex>alcolm</ex>, king of Scotland,</seg> to bishops, abbots, justices, earls, sheriffs, barons, officials, and all worthy
+                     men of his entire kingdom and of the Honour of Huntingdon,
+                     clerk and lay, <seg type="diplomatic" subtype="salutation">greeting.</seg></seg> <seg type="diplomatic" subtype="notification">Let those to come after as well as those present know</seg> <seg type="diplomatic" subtype="disposition">me to have given, conceded, and by this my charter to have made firm, to God,
+                  Saint Mary, and the monks of the Cistercian Order who are at
+                  the house of Sartis, in everlasting alms for the construction
+                  of an abbey, for the salvation of my own soul and my
+                  predecessors' and successors' [souls], the whole of Sawtry,
+                  with all its pertinents in wood and plain, in meadows and
+                  waters, and pastures and marshes, and all other property,
+                  just as David the king, my grandfather of good memory, held
+                  it, and just as Henry, king of England, has now returned to
+                  me with my other rights of Huntingdon. <seg type="diplomatic" subtype="holding">Wherefore I will and firmly command that the aforesaid monks have and hold it of
+                     me and my heirs, just as my own alms; well, in peace,
+                     honourably, quitly, and free from all temporal exaction
+                     and service, just as other monks of the same order in my
+                     kingdom most freely and quitly have and hold their alms.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these as witnesses: Herbert, bishop of Glasgow; Waldef, abbot of Melrose;
+                  Arnold, abbot of Roxburgh; Osbert, abbot of Jedburgh; Walter
+                  the chancellor; Adam the chaplain of Roxburgh; Nicholas the
+                  clerk; William my brother; Walter fitz Alan; Richard de
+                  Morville; Ranulf de Soulis; William de Morville; William de
+                  Somerville; Liulf son of Maccus; Orm son of Eilaf; David
+                  Oliphant; Robert Frebern; David de Boeville; H<ex>enry</ex> de Percy.</seg> At Roxburgh.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

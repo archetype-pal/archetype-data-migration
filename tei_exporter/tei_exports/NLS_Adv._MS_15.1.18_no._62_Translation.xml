@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NLS Adv. MS 15.1.18, no. 62</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-10-21 08:17:57.675434+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 62</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="notification">Let it be known by all the faithful of Holy Mother Church that <seg type="diplomatic" subtype="intitulatio">I, Agnes the Countess of Mar</seg>,</seg> <seg type="diplomatic" subtype="disposition">gave and granted, and by this my charter made firm, to God and to the church of
+                  St Andrew, and to the canons serving God in that place, the
+                  church of St Finian at Migvie, in free and perpetual alms,
+                  with all ecclesiastical revenues belonging to the same
+                  church. With land, and with teinds to be fully given, <seg type="diplomatic" subtype="holding">to be held in perpetuity, as freely, and quietly, and honourably, as any alms
+                     are well, freely, and quietly held in the kingdom of the
+                     Scots.</seg> This alms I have therefore given to the said canons for the welfare of the soul
+                     of Earl Morgan, my spouse, and for the welfare of my own
+                     soul, and for the souls of all my ancestors and
+                     successors.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: Countess Ada, the king’s mother; Alexander de St-Martin; Robert de
+                  Capella; William Gifford; William the chaplain; William
+                  Caperon; Robert of Newham; Maurice the cook; Alan of
+                  Invermeith; Edward [and?] William of Mar.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

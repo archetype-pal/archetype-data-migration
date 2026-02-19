@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/243</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-07-01 17:16:19.34438+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/243</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Christ’s faithful who shall view or hear the present writing <seg type="diplomatic" subtype="intitulatio">W<ex>illiam</ex> de Vieuxpont first-born of the three sons of the lady Emma de Saint-Hilaire</seg> <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know all of you that</seg> moved by charity I have given, granted, and by this present charter made firm to
+                     the church of Holyrood in Edinburgh and to the canons in
+                     that place serving God the whole teind of my charcoal at
+                     Carriden and the teind of the money from all ships and
+                     boats laden or unladen in my land of Blackness in pure and
+                     perpetual alms.</seg> <seg type="diplomatic" subtype="sealing">So that it may be strictly adhered to in the future I have corroborated the
+                  present deed with my seal.</seg> <seg type="diplomatic" subtype="witnesses">With these as witnesses: William the middle, and W. the youngest, my brothers;
+                  Roger de la Cray; Ralph Bret<ex>on</ex>; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NLS Adv. MS 15.1.18, no. 2</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-06-07 09:02:31.620063+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 2</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">William by the grace of God King of Scots,</seg> to bishops, abbots, earls, barons, <persName><roleName>justices</roleName></persName>, <persName><roleName>sheriffs</roleName></persName>, officials, and all worthy men of the whole of his land, clerk and lay [-and] <seg type="diplomatic" subtype="salutation">Greeting</seg>:</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know</seg> that I have granted, and by this my charter made firm to God, and to the Church
+                     of Saint Andrew the Apostle, and to the Canons there
+                     serving God, and who shall serve there in perpetuity, the
+                     land at 'Hebrecces' that Walter son of Philip has given,
+                     granted and made firm in perpetuity to them, with common
+                     pasture, <seg type="diplomatic" subtype="holding">to be held perpetually as freely and quietly from every service and custom and
+                     exaction as the brethren of the Hospital of the Temple
+                     ever hold, and just as the charter of the aforesaid Walter
+                     son of Philip bears witness and makes firm.</seg></seg> <seg type="diplomatic" subtype="witnesses">As witnesses: Richard Bishop of Dunkeld, Walter de Bidun the Chancellor, Earl
+                  Duncan, Richard de Morville the Constable, Walter of Windsor,
+                  Geoffrey de Malville.</seg> At Kinghorn.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

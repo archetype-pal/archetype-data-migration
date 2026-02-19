@@ -1,0 +1,80 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/283</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 09:10:49.255138+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/283</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p>C Y R O G R A P H</p> <p><seg type="diplomatic" subtype="narration">Inasmuch as there was a dispute between the prioress and convent of the nuns of
+                  North Berwick on the one side, and the abbot and convent of
+                  St Serf on the other, over the teinds of the earl of Fife
+                  from all his ferms and profits and revenues and gifts, and
+                  over the second teinds belonging to the their own house from
+                  the corn, flour, hops, provender and every type of grain,
+                  cheese, and butter; at last, with the noble man, Malcolm earl
+                  of Fife, patron of both houses, acting as procurator, he
+                  interposed an amicable agreement between them, to the end
+                  that either party might be strengthened by the security of
+                  perpetual peace. Willingly received from either side, both by
+                  the prioress for herself and her convent concerning their
+                  said mandate, and by the abbot for himself and his convent
+                  for their mandate, fortified by an interposed oath, such
+                  namely that the said prioress and nuns each year in
+                  perpetuity, for the sake of peace, to the said abbot and
+                  convent of St Serf, or to their authentic representative sent
+                  by letter, shall pay twenty pounds of good sterling at the
+                  monastery of North Berwick, half at the feast of St Andrew,
+                  and half at the Nativity of St John the Baptist, with such a
+                  condition added, that if the said money were not paid to them
+                  or to their authentic representative sent by letter, at the
+                  place and times stated above, from then, each month, by way
+                  of penalty, one merk of silver is paid to the monk who is
+                  gatekeeper of St Serf at the gate of the said monastery, to
+                  be distributed by his own hand to the poor until such time as
+                  the said money has been paid. And for these things faithfully
+                  to be observed they bound their moveable and immoveable
+                  goods. The said abbot and convent, on account of the
+                  aforementioned agreements, renounced every right they used to
+                  have in the aforementioned teinds, and they unsealed the
+                  written instruments which they had held concerning these
+                  matters, to be struck through and considered invalid for
+                  ever. And lest any of the parties could at any time ever
+                  protest against this agreement, either side renounced every
+                  legal action, exception, cavil, both already brought and to
+                  be brought, and petition of restitution in full, and every
+                  remedy of civil and canon law, putting themselves under the
+                  jurisdiction of the bishop of St Andrews, so that he might
+                  compel the opposing party to the observance of this agreement
+                  by ecclesiastical censure with the appeal withdrawn.</seg> <seg type="diplomatic" subtype="sealing">And to the end that this agreement should obtain everlasting authority and
+                  strength, the parties took care that the seals of the
+                  venerable father, W<ex>illiam</ex>, by the grace of God bishop of St Andrews, and of the said Malcolm, their
+                     patron, were applied to each part of this written deed,
+                     drawn up in the manner of a cyrograph, with their own seal
+                     having been applied at the same time in like manner.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, the lord Malcolm Earl of Fife, Master Peter of Ramsay,
+                  Master Henry of Norham, Rober the clerk, the lord William of
+                  Blair, the lord Ness of Ramsay, the lord Malcolm of Menteith,
+                  Duncan of Ramsay, Duncan of Blair, Maurice the sergeand of
+                  the countess of Fife, Odinel, Malcolm of Norham, Elias of
+                  Cults, and many others.</seg> Done in the year of grace 1237, within the octave of the apostles Peter and
+                  Paul.</p></div>
+    </body>
+  </text>
+</TEI>

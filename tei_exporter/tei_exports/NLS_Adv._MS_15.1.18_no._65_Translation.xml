@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NLS Adv. MS 15.1.18, no. 65</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-10-21 01:08:26.656265+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 65</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Christ’s faithful who shall view or hear the present written deed, <seg type="diplomatic" subtype="intitulatio">Marjory Comyn, Countess of Buchan,</seg> <seg type="diplomatic" subtype="salutation">wishes eternal salvation in the Lord</seg>.</seg> <seg type="diplomatic" subtype="notification">May you all know</seg> <seg type="diplomatic" subtype="disposition">that I have granted, and by this my charter made firm, to God and to the church
+                  of St Andrew the apostle in Scotia and to the canons serving
+                  God in that place now and in the future, the church of
+                  Kennoway, with teinds, and oblations, and lands, and with all
+                  things rightfully belonging to the same church, just as the
+                  charter of Merleswain son of Colban and the confirmations of
+                  his heirs bear witness.</seg> <seg type="diplomatic" subtype="sealing">And in testimony of this matter I have confirmed the present deed with my seal.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord German the prior, and the convent of Restenneth;
+                  Ranulf of Bunkle; Robert Mowat; Michael Mowat; Philip of
+                  Feodarg; Elias the chaplain; Adam of Theket and Adam of Rule,
+                  clerks; and others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

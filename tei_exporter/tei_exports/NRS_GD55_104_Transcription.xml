@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/104</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:48.856214+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/104</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="undefined">Omnibus Sancte Matris Ecclesie filiis presentibus . et futuris . <seg type="diplomatic" subtype="intitulatio">Com<ex>es</ex> patricius de Dunbar</seg> . <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Noueritis uniuersi</seg><lb/> <seg type="diplomatic" subtype="disposition">me dedisse . concessisse et hac mea carta confirmasse deo et sancte Marie de
+                  Melros . et Monachis ibidem deo<lb/> seruientibus . consentiente . et concedente patricio filio meo et herede . pro
+                     salute domini mei Regis Will<ex>elm</ex>i . et Alex<ex>andri</ex><lb/> filii eius . et omnium antecessorum . et successorum suorum . et pro salute
+                     anime mee et sponse mee . et heredis mei . et<lb/> omnium antecessorum . et successorum Meorum Totam terram arabilem que uocatur
+                     forwelesfeld ultra ledre ex occidentali<lb/> parte uersus grangiam predictorum Monachorum . sicut Will<ex>elmu</ex>s sorweles eam umquam plenius tenuit . in liberam . puram .<lb/> et perpetuam elemosinam . <seg type="diplomatic" subtype="holding">perpetuo tenendam . et possidendam ita libere . quiete . plenarie . et
+                     honorifice sine omni<lb/> seruitio . consuetudine . et exactione seculari . sicut alias elemosinas suas
+                        Melius tenent . et possident</seg> .<lb/> <seg type="diplomatic" subtype="warrandice">Et ego . et heredes mei manutenebimus . et warantizabimus predictam elemosinam
+                     prenominatis Mona<lb/>chis inperpetuum . Contra omnes homines . et accquietabimus de omni terreno .
+                        forensi . et seculari seruitio</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Hiis<lb/> Test<ex>ibus</ex> . Rad<ex>ulfo</ex> dune<ex>lmen</ex>si episcopo . Bricio episcopo Morauie . Henrico abbate de Kelch’ . Ernaldo
+                     priore de Coldingham . Alex<ex>andro</ex><lb/> filio Regis . Comite d<ex>aui</ex>d fratre regis . Will<ex>elm</ex>o . et Oliuero Capellanis Domini Regis . Eust’ de vesci . Rob<ex>erto</ex> de lund’ filio Regis<lb/> Will<ex>elm</ex>o de boscho . Hug<ex>one</ex> de prebenda . Adam de kingor . Gileb’ de striuelin clericis domini regis . Geru<ex>asio</ex> ave<lb/>nel . d<ex>aui</ex>d de lindes’ . Dunec<ex>ano</ex> filio comitis dunec<ex>ani</ex> . Ioh<ex>ann</ex>e de hunted’ . Philipp<ex>o</ex> de Mubrai . Ingel<ex>ram</ex> de balloel .<lb/> Hug<ex>one</ex> de Norm<ex>an</ex>uill<ex>a</ex> . D<ex>aui</ex>D Marescal’ . Rog<ex>er</ex> de Mort Mer . Patricio filio meo . Patricio de Withuns . Ne<lb/>sio de Walhtun . Roger . de Merl’ . Philipp<ex>o</ex> de coleuill<ex>a</ex> . Roland<ex>o</ex> de grenelaw’ . Alex<ex>andro</ex> de suintun . Thom<ex>a</ex><lb/> freser</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

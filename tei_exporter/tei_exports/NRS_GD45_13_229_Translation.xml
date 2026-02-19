@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/229</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-09-14 01:23:16.151699+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/229</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">M<ex>alcolm</ex> by the grace of God king of Scots to the Bishops, Abbots, Earls, Barons, <persName><roleName>Justices</roleName></persName>, <persName><roleName>Sheriffs</roleName></persName>, and all his sworn men, <seg type="diplomatic" subtype="salutation">Greeting</seg>:</seg> <seg type="diplomatic" subtype="disposition">Let those to come as well as those present know that I have given and granted in
+                  perpetual alms, to God and the church of Holyrood at
+                  Edinburgh and to the canons serving God there, for the
+                  salvation of my ancestors and successors, the church of
+                  Tranent with everything rightfully belonging to it, just as
+                  Waleran the chaplain ever had and held it well, reserving the
+                  tenure of Waleran the chaplain himself for as long as he
+                  remains in secular life. I therefore will that the aforesaid
+                  Canons hold that church in perpetuity after Walter’s
+                  departure, as freely and quietly as they have and hold their
+                  other alms and possessions.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, Countess Ada my mother, Hugh de Morville, Walter the chancellor,
+                  Walter son of Alan, Nicholas the clerk, Waleran himself being
+                  present and suggesting it.</seg> <seg type="diplomatic" subtype="dating">At Edinburgh.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 733</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:12:45.970169+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 733</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all who shall view or hear these letters, <seg type="diplomatic" subtype="intitulatio">Patrick, son of Patrick earl of Dunbar</seg>, <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me faithfully to have understood and recognised through the charter of King
+                     Edgar, and by many other proofs, in the court of the lord
+                     king, Alexander, the full right of the prior and monks of
+                     Durham serving God at Coldingham in respect of the toun
+                     and demesne of Swinewood with its pertinents concerning
+                     which I have at some time disturbed them. Hence it is that
+                     I make known to you all that I, for myself and my heirs,
+                     have quitclaimed and renounced for ever, to God, Saint
+                     Cuthbert, Saint Ebbe, and the prior and monks of Durham
+                     serving God at Coldingham, and who will in perpetuity
+                     serve there, the toun of Swinewood and the entire demesne
+                     of the same toun, with all its pertinents, and the whole
+                     right and every kind of right and claim, if I had or could
+                     have had it in the same toun, as well in demesnes as in
+                     men, services and homages, woods and plains, lands
+                     cultivated and uncultivated, and all other things
+                     belonging to the said toun and the said demesne, without
+                     any withholding; and I returned by rod and staff in the
+                     king's court what my ancestors unawfully appropriated and
+                     withheld, so that neither I nor my heirs nor any on our
+                     side could have in the future right or claim in the
+                     aforementioned toun and demesne with its pertinents.</seg> <seg type="diplomatic" subtype="dating">The said quitclaim was made in the court of the lord king, Alexander,
+                  illustrious king of the Scots, at Roxburgh on the third
+                  kalends of April [30 March] in the seventeenth year of reign
+                  of the same king.</seg> <seg type="diplomatic" subtype="sealing">So that everything aforesaid should remain valid and undisputed, I have
+                  authenticated the present writing by the application of my
+                  seal.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord Walter Oliphant, justice of Lothian; the lord
+                  William, chancellor of the lord king; the lord John of
+                  Maxwell, chamberlain of the lord king; the lord Robert of
+                  Roos; the lord Ranulf of Bunckle; the lord Bernard Fraser;
+                  the lord Thomas son of Ranulf; the lord Thomas de la Haye;
+                  David, clerk of Walter Oliphant; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

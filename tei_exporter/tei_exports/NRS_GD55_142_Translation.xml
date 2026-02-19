@@ -1,0 +1,44 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/142</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:07:42.590974+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/142</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all who shall see or hear this written deed, <seg type="diplomatic" subtype="intitulatio">Walter son of Alan, steward of the lord king of Scotland</seg>, <seg type="diplomatic" subtype="salutation">sends greeting in the Lord</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let your whole community know that</seg> the land of Mow with its correct boundaries and with whatever is contained
+                     within the same boundaries that I held in feu of the lord
+                     William de Vescy I have given in exchange to the monks of
+                     Melrose in return for a land that is called ‘Freretun’,
+                     with all its pertinents, everything that the nuns of South
+                     Berwick possessed in that place; and in addition, together
+                     with the same land which is called ‘Freretun’, the same
+                     monks have given me two hundred merks by reason of the
+                     same exchange. <seg type="diplomatic" subtype="warrandice">I and my heirs shall warrant, defend and maintain this land of Mow with its
+                     contents and its pertinents within its boundaries.</seg> <seg type="diplomatic" subtype="sealing">As witness of this matter I have reinforced the present written deed by the
+                     application of my seal.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Thomas Crook, Simon son of Bertolf, Adam Wallace, William
+                  of Halkerston, Robert of Kippo, knights; William and Robert,
+                  our chaplains; Leon de Normanville, Richard of Musselburgh,
+                  John of Leicester, monks of Melrose; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

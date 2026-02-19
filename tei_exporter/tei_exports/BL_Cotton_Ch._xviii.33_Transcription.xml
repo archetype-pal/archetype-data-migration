@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Cotton Ch. xviii.33</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:26:43.811493+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.33</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p>C Y R O G R A P H V M</p> <p><seg type="diplomatic" subtype="narration">Hec est compositio facta inter ecclesiam de cupro et ecclesiam de blare in
+                  presencia magistrorum <persName>Ranulfi</persName> archidiaconi . et<lb/> <persName>laurencii</persName> officialis de Sancto andrea tociusque synodi apud perth. Scilicet quod monachi
+                     de cupro persoluent ecclesie de<lb/> blare unam petram cere pro omnibus decimis pertinentibus ad terras de lethcassi
+                     et de parthesin . quas habent<lb/> idem monachi . persoluetur autem predicta cera prefate ecclesie de blare ad
+                     lumen eiusdem ecclesie . singulis annis ad<lb/> festum Sancti Martini . <seg type="diplomatic" subtype="sealing">Et ut hec composicio rata et inconcussa permaneat in posterum  prenominatus <persName>Ran’</persName> archidiaconus et supradictus<lb/> <persName>laurencius</persName> officialis quibus uices suas commisit dominus <persName>Will<ex>elmu</ex>s</persName> episcopus de Sancto andrea  illam sigillorum suorum munimine ro<lb/>borauerunt .</seg></seg> <seg type="diplomatic" subtype="witnesses">Teste synodo</seg> apud perth  Kalendis . Maii .</p></div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NLS Adv. MS 15.1.18, no. 20</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:27:59.361805+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 20</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Will<ex>elmus</ex> . dei gratia Episcopus Sancti Andr<ex>ee</ex> .</seg> Omnibus has litteras uisuris uel audituris <seg type="diplomatic" subtype="salutation">eternam in domino Salutem .</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerit <lb/> uniuersitas uestra</seg> nos ad petitionem Adam de Kinigmund concessisse . ⁊ Hac karta nostra confirmasse
+                     Will<ex>elm</ex>o . filio . Lambini <lb/> ⁊ heredibus suis illam Carucatam terre Scilicet Balrimund quam prenominatus adam
+                     tenet in uita sua de Priore ⁊ Con<lb/>uentu sancti Andr<ex>ee</ex> . Tenend’ sibi ⁊ Heredibus suis de predicto Adam quam diu idem adam de kinigm<ex>un</ex>d uixerit . red<lb/>dendo inde annuatim prenominato adam unam marcam argenti medietatem ad Festum
+                     sancti martini ⁊ medietatem ad <lb/> Pentecosten . <seg type="diplomatic" subtype="holding">Quare uolumus ut predictus Will<ex>elmus</ex> . filius . Lambini ⁊ heredes sui habeant teneant ⁊ possideant predictam <lb/> terram de Balrimund cum omnibus ad predictam terram iuste pertinentibus quamdiu
+                        prenominatus adam de kinigmund uixerit . <lb/> ita libere ⁊ Quiete . plenarie ⁊ honorifice sicut karta adam de kinigmund
+                        testatur</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Hiis Tes<ex>tibus</ex> . Magistro Laur’ . <lb/> Archidiacono sancti andr<ex>ee</ex> . Petro ⁊ Edwardo Capallanis nostris . Joh<ex>ann</ex>e de Hautewise . Geruasio de Neafle . Magistro <lb/> Steph<ex>an</ex>o . Magistro Michaele . Galfrido de Neafle . Petro de Driburc . Clericis nostris
+                     . Will<ex>elmo</ex> de Wiuile Malc' iudice . ⁊ multis aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

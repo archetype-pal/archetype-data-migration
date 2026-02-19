@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.14</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:40:00.688555+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.14</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W<ex>illiam</ex>, by the grace of God king of the Scots</seg>, to bishops, abbots, earls, barons, justices, officials, and all worthy men of
+                     his entire land, clerk and lay, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know</seg> <seg type="diplomatic" subtype="disposition">me, for the sake of my soul and for the souls of my father and my mother, and of
+                  my grandfather King David, and of my brothers and sisters,
+                  and of my predecessors and successors, to have conceded and
+                  given to God, to the church of St Mary at Melrose, and to the
+                  monks of Rievaulx serving God in that same place, in free and
+                  everlasting alms, the land of Melrose, and the land of
+                  Eildon, and the land of Darnick, freely and honourably, to
+                  hold in perpetual tenure. In addition, know me to have given
+                  and conceded to them their easements throughout my whole
+                  forest of Selkirk and of Traquhair, that is to say, firewood,
+                  timber, and pannage, for their own use wherever they will the
+                  better and more usefully be able to find for themselves. In
+                  addition I give and make firm the entire pasture by the River
+                  Gala towards them, <seg type="diplomatic" subtype="boundaries">that is, from the eastern side, as the same river flows, as far as the limits of
+                     Wedale, and from there by the right marches of Richard de
+                     Morville's land, that is, from the Gala as far as the
+                     Leader</seg>, and the whole usage of the wood within the aforenamed boundaries for their own
+                     employment as might be necessary for them. Furthermore,
+                     fishing also in the waters of the Tweed, anywhere inside
+                     their boundaries, as much on my side of the river as on
+                     their side. And in addition to the things mentioned above
+                     I have given and conceded to them, as an augmentation, <seg type="diplomatic" subtype="boundaries">Gattonside by these boundaries, namely, as the River Leader fall into the Tweed,
+                     and so upwards to the Fauhope burn which falls into the
+                     Leader, and so upwards by the same burn and thus across
+                     the moor as far as the Rae burn which falls into the
+                     Allan, and so following the same river Allan as far as the
+                     Tweed.</seg> Besides all the aforenamed things I have given and conceded to them on the lower
+                     side of Colmslie a place for building one cow-shed for one
+                     hundred cows, and one cattle-fold. I have given and
+                     conceded to them the fishery of Selkirk, and one net in
+                     Berwick Stream from my two nets which I have in Berwick
+                     Stream, so freely and quitly as I myself held for my own
+                     use. All these aforementioned things I give and concede to
+                     the monks of Melrose, and make firm by this my charter, in
+                     everlasting and free alms, <seg type="diplomatic" subtype="holding">and I will and instruct that they may hold all the things mentioned above as
+                     freely and quitly, fully and honourably as the charter of
+                     my brother King Malcolm bears witness and affirms</seg>.</seg> <seg type="diplomatic" subtype="witnesses">With these as witnesses: Walter Bidun, chancellor; Earl Duncan; Richard de
+                  Morville, constable; Richard Comyn, justice; Robert Avenel; W<ex>alter</ex> of Berkeley, chamberlain; W<ex>illiam</ex> de Somerville; Walter Ryedale; Hugh the king's clerk; William the chaplain;
+                     Robert the chaplain; Hugh the chancellor's clerk; Master
+                     John; Earl Waldef; Walter son of Alan, steward; Alan his
+                     son; Thomas de Muschamp; William de la Haye; Ralph Ruffus.</seg> At Roxburgh.</p> <p> </p></div>
+    </body>
+  </text>
+</TEI>

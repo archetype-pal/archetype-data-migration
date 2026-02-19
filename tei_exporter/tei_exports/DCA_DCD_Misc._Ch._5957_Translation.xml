@@ -1,0 +1,53 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 5957</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.769803+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5957</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Liulf son of Ælsi and his heirs, namely, Cospatric, Gamel, <persName>Macbeth</persName>, Reginald, and Ecgheard,</seg> to all who view or hear these letters <seg type="diplomatic" subtype="salutation">send greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know us,</seg> <seg type="diplomatic" subtype="disposition">in the court of the prior of Coldingham, and in his presence, to have abjured
+                  whatever right we have had in Little Reston and to have
+                  quitclaimed it to Adam son of Cospatric and his heirs, in
+                  respect of ourselves or our successors, without any trouble
+                  or counter-claim, in return for seven merks and one horse of
+                  two merks which he has given to us in the presence of many
+                  worthy men. And since we will that it should be firm, we have
+                  affirmed by faith the oath to be sworn, in the hands of
+                  Walter Oliphant, the king's justice, to be held for ever
+                  without any deceit or counter-claim.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Walter Oliphant, the king's justice; Robert of Burneville,
+                  sheriff, and his heir, Robert; Richard the marischal;
+                  Patrick, the earl's uncle; Adam son of Aldan, and his heir,
+                  Patrick; Gilbert Fraser, and John and Bernard, his sons;
+                  Richard de Merlay; Stephen Papedy; Waldef of Prenderguest;
+                  Edward of Oldcambus and his sons, Thomas, William, Stephen;
+                  William the grieve; William of Nisbet; Adam son of Pace; Adam
+                  of Prenderguest; Elias of Ayton; Adam of Lamberton; Alan of
+                  Swinton; Richard of Swinton; Richard of Lumsdaine; Uchtred
+                  son of Colman, and Adam his son; Waldef son of Uchtred; Ralph
+                  son of Godwin; Adam of Beoch; Thomas son of Siward, and his
+                  heir, Patrick; Adam son of Leysing; Eilaf son of Oddger, and
+                  his heir; Robert the cook, and Philip of the cellar; and many
+                  others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

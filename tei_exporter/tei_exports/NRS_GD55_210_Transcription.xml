@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/210</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 16:02:26.968678+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/210</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Sancte Matris Ecclesie filiis presentibus et futuris <seg type="diplomatic" subtype="intitulatio">Ioh<ex>ann</ex>es filius Michael<ex>is</ex> de Methkil</seg> . <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerit vniuersitas<lb/> uestra</seg> me dedisse concessisse et Hac Carta me confirmasse Deo et Ecclesie Sancte Marie
+                     de Melros et Monachis ibidem<lb/> Deo seruientibus et seruituris totam terram meam de Panneschelys . <seg type="diplomatic" subtype="holding">Tenendam et habendam eisdem Monachis de me<lb/> et heredibus meis in puram et perpetuam Elemosinam in perpetuum . Ita Libere .
+                        quiete . plenarie . et honorifice  sicut<lb/> aliqua Elemosina in Regno Scocie . Liberius . quietius . et plenius . Tenetur
+                        vel possidetur . In Bosco et<lb/> Plano . In terris cultis et incultis . In pratis . et Pascuis . In viis et
+                        Semitis . In Moris . Mosis . et Mare<lb/>siis . In aquis . et stagnis . Viuariis . et Molendinis . et omnibus aliis
+                        asiamentis que infra predictam terram<lb/> inueniri poterunt aut excerceri</seg> . <seg type="diplomatic" subtype="warrandice">Ego autem et heredes mei manutebimus et defendemus predictis Monachis<lb/> totam predictam terram cum omnibus Libertatibus et iustis pertinentiis suis
+                        contra omnes homines . Excepta terra quam dedi Monachis
+                        de May . et excepta terra quam concesse Henrico paruo
+                        et heredibus suis per rectas diuisas suas in territorio
+                        de Panneschelys .</seg> <seg type="diplomatic" subtype="holding">Totam uero terram predictam sicut dictum est Tenebunt<lb/> et habebunt prefati Monachi de Melros Liberam et quietam ab omni seruitio
+                        consuetudine et exactione<lb/> et demanda de me et heredibus meis in perpetuum</seg></seg> . <seg type="diplomatic" subtype="witnesses">Hiis Testibus . Thoma Comite de Æthol’ . Thomas<lb/> de Cantia . Magistro Ioh<ex>ann</ex>e abigensi . Magistro nessio medice domini Regis . Gaufrido de Bosco . Iacobo<lb/> filio Will<ex>elm</ex>i . Andrea de Suintun’ . et Multis aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

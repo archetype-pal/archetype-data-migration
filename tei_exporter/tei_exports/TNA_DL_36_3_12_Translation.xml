@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of TNA DL 36/3/12</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-07-05 08:53:00.769776+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 36/3/12</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all people who shall view or hear these letters <seg type="diplomatic" subtype="intitulatio">Robert de Brus</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let them know</seg> me to have given, and granted, and made firm by this present charter, to
+                     Humphrey fitz Simon and his heirs in return for his homage
+                     and service 'Hunnelvecroft' \by the correct boundaries/
+                     freely and quitly, honourably and peaceably. <seg type="diplomatic" subtype="holding">This and the aforesaid croft the aforesaid Humphrey and his heirs shall hold of
+                     me and my heirs, rendering to me and my heirs annually two
+                     golden spurs at the time of the Carlisle fair.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Hugh of Corrie; Williem de Heriz; Richard del Bois; Robert
+                  of Crosby; Richard de Humez; Laurence of Berkeley; William
+                  Francis; Hugh fitz Hamelin; Ivo fitz Hamelin.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

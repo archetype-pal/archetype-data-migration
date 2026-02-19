@@ -1,0 +1,52 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Harley 111.B14</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:22:49.218016+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Harley 111.B14</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Richard, by the grace of God humble servant of the church of St Andrews</seg>, to all sons of Holy Mother Church of the whole of his diocese <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Let those to come as well as those present know</seg> <seg type="diplomatic" subtype="disposition">us to have given by the advice and agreement of our clergy in full chapter, and
+                  by the corroboration of the present writing to have made firm
+                  to the church of the Holy Cross and to the canons serving God
+                  in that place the Church of Falkirk, which is called Varia
+                  Capella, and the whole land which we ourselves had there, or
+                  any of our ancestors, with everything belonging by right to
+                  the aforenamed church and land, for the sake of the souls of
+                  the kings David, Malcolm; and of our predecessors, Robert,
+                  Arnold; and of our uncle, Alwin; and of each of the faithful;
+                  in everlasting alms, by rendering each year in respect of the
+                  above-written land one stone of wax to the our chapel and our
+                  successors', at Pentecost. <seg type="diplomatic" subtype="holding">Wherefore we will and enjoin that they have and possess the aforesaid church
+                     with the aforenamed land free and quit from every
+                     exaction, saving episcopal dues in respect of the church,
+                     and the afornamed rent in respect of the land</seg>.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Geoffrey, abbot of Dunfermline; John, abbot of Kelso;
+                  Osbert, abbot of Jedburgh; Andrew the archdeacon; Master
+                  Osbert de Merlay; Walter, prior of Kelso; Aiulf the dean;
+                  Robert, the bishop's brother; John, Bishop Robert's nephew;
+                  Robert of Perth, son of Saewulf; Master Herbert; Alexander
+                  the chaplain; Master Abraham; Henry, the archdeacon's
+                  chaplain.</seg> This donation was made in the full chapter celebrated at Berwick, in 1166th year
+                  since the Incarnation.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/219</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-12 13:45:36.048048+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/219</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Sancte Matris Ecclesie filiis presentibus et futuris . <seg type="diplomatic" subtype="intitulatio">Philippus filius Ph’ . De Pethcox</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis me</seg> concessisse et hac mea Carta<lb/> Confirmasse Deo et Ecclesie Sancte Marie de Melros . et Monachis ibidem Deo
+                     seruientibus . pro animabus Dominorum meorum Cospatric<ex>i</ex> .<lb/> et Waldeui . Comitum De Dunbar et pro animabus patris et Matris mee . et Omnium
+                     antecessorum meorum . et Pro salute domini mei Comitis<lb/> Patricii . et pro salute mea . et omnium successorum meorum terras illas in
+                     territorio De Pethcox . quas pater meus eisdem Monach’
+                     dedit . scilicet .<lb/> terram illam que Iacet inter diuisas terre Monachorum de Hertesheuede . et
+                     Riuulum qui nominatur prestmunethburne . quam<lb/> predicti Monachi ex donatione . et precepti patris mei per predictum Riuulum .
+                     terre sue De Hertesh<ex>euede</ex> . incluserunt . et Decem acras In<lb/> Cultura De Beleside . terre sue de Edmunest’ propinquius adiacentes . In liberam
+                     . puram . et perpetuam Elemosinam .<lb/> <seg type="diplomatic" subtype="holding">Quare uolo . et concedo ut predicti Monachi De Melros prenominatas terras .
+                     habeant . teneant . et possideant . Ita libere . et quie<lb/>te . Plene et Honorifice . sicut aliquam Elemosinam liberius . Quietius Plenius
+                        et honorificentius . tenent et possident</seg> .<lb/> <seg type="diplomatic" subtype="warrandice">Et ego et heredes mei Manutenebimus et warantizabimus predictas terras prefatis
+                     Monachis contra omnes homines inperpetuum .<lb/> et adquietabimus de omni terreno seruicio et consuetudine . et exactione
+                        seculari .</seg></seg> <seg type="diplomatic" subtype="witnesses">Test’ . Comiti Patric<ex>io</ex> Domino meo . Patric<ex>io</ex> filio eius<lb/> Bernardo fraser . Rog<ex>ero</ex> . De Merlay . Adam de Paulew’ . Adam De Gord’ . Thom’ De Neseb’. [Ph<ex>ilippo</ex> filio meo et <ex>struck through</ex>] Waldeuo<lb/> persona . de withnham . Magistro Will<ex>elm</ex>o de hercheld’. Magistro Ioh<ex>ann</ex>e persona . Et Multis Aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

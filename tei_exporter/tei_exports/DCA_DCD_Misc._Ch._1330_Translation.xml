@@ -1,0 +1,50 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 1330</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:44:43.378593+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 1330</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Richard, by the grace of God bishop of St Andrews, Æthelred abbot of Rievaulx,
+                     and William abbot of Melrose,</seg> to all sons of holy Mother Church <seg type="diplomatic" subtype="salutation">send greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">We notify your aimiability</seg> <seg type="diplomatic" subtype="narration">that at Berwick, by the command of Alexander, by the grace of God supreme
+                  pontiff, we concluded the dispute which there was between the
+                  church of Durham and the church of Kelso over the chapel of
+                  Earlston according to the tenor of the letters of the lord
+                  pope, which is such, that is to say, that if the prior of
+                  Durham was able to prove forty-year title without
+                  interruption in respect of the chapel of Earlston, that we
+                  would impose on the monks of the church of Kelso in respect
+                  of the aforenamed chapel restraint from all appeal and the
+                  laying-aside of accusation.</seg> <seg type="diplomatic" subtype="injunction">The forty-year title having been proved, therefore, by canonical oath-swearing,
+                  in our presence, of 12 priests, one deacon, and two laymen,
+                  we have imposed restraint on the aforesaid monks concerning
+                  the aforenamed chapel, and adjudged it to the church of
+                  Durham in perpetuity.</seg> <seg type="diplomatic" subtype="witnesses">As witness Osbert the abbot of Jedburgh, Nicholas the chancellor, Andrew the
+                  archdeacon of Lothian, Aiulf and Joce the deans, Robert the
+                  canon of St Andrews, Master Herbert, Elias of Ilderton,
+                  Hervey and Eilaf the chaplains of Berwick, Romfar the
+                  chaplain, Alan the priest of Hilton, Alan the priest of
+                  Wallsend, Master Gocelin.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

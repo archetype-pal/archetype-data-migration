@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 723</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:41:10.605692+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 723</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know that</seg> Edward son of Peter of Restalrig, baron of the king of Scots, has granted and
+                     given and by this his charter made firm to Robert son of
+                     Matilda of Berwick and to all his heirs two tofts at
+                     Eyemouth, and one at Leith, honourably, freely, quitly,
+                     and in peace, from every custom and service, in feu and
+                     heritage, <seg type="diplomatic" subtype="holding">to be held of him and his heirs, rendering each year three toises of lace</seg>.</seg> <seg type="diplomatic" subtype="witnesses">Witness Alexander of Softlaw, William son of Hugh of Restalrig, William provost
+                  of Berwick, William Benive, Alexander provost of Berwick,
+                  William Neve, Rainer, Roger of Palgrave clerk of Walter fitz
+                  Alan.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/72 (1)</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:45.628774+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/72 (1)</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte matris ecclesie filiis presentibus et futuris <seg type="diplomatic" subtype="intitulatio">Walterus filius Alani Walteri dapifer regis scotie</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Sciatis me</seg><lb/> <seg type="diplomatic" subtype="disposition">concessisse et hac mea carta confirmasse deo et ecclesie sancte Marie de Melros
+                  et Monachis ibidem deo seruientibus in liberam et puram<lb/> et perpetuam elemosinam Mackelin <seg type="diplomatic" subtype="boundaries">per omnes terminos et diuisas suas inter terram de Mackelin et terram gilleberti
+                     filii richeri. Scilicet ab<lb/> illo loco quo milneburne cadit in ar subtus culteicouan . et ascendendo per
+                        eandem burnam usque ad fule lecche . et sic ascenden<lb/>do per eundem sicum ex transuerso musso usque ad burnam que descendit de
+                        rederburne . et ascendendo per burnam extransuerso
+                        condoso<lb/> de rederburne usque in burnam que cadit in duuelou . et per burnam que descendit
+                        de duuelou descendendo per eandem burnam<lb/> usque in saxnou . et ascendendo per saxnou usque ad polmulin . et sic ascendendo
+                        per polmulin usque per medium achnebron . et inde<lb/> sursum usque ad condosum . et sic per condosum sicut aque defluunt uersus eos ex
+                        australi parte usque ad caput ned . et deorsum per ned
+                        usque in<lb/> ar . et per ar deorsum usque lugar et per lugar sursum usque ad dufpol et per
+                        dufpol sursum per diuisas quas Walterus auus meus et<lb/> alanus pater meus qui hanc elemosinam ipsis Monachis dederunt eis perambulare
+                        fecerunt usque econtra monecapel .</seg> Cum<lb/> hac terra concessi eis et confirmaui landas et haleues ex aquilonali parte
+                     fluminis ar quas uoluerint excolere et piscaturam in<lb/> ostio fluminis ar cum uno rete primo scilicet de tribus retibus ab ipso ostio
+                     sursum ut utantur flumine ar . tam in piscatio<lb/>nibus quam in aliis rebus sicut eis placuerit et utilius uisum fuerit . <seg type="diplomatic" subtype="holding">Hanc elemosinam uolo ut predicti Monachi de Melros ita<lb/> libere et quiete . plene et honorifice in perpetuum ab omnibus seruiciis et omni
+                        exactione seculari et consuetudine teneant et pos<lb/>sideant sicut aliquam elemosina liberius et quietius plenius et honorificentius
+                        teneri potest uel possideri .</seg> Preterea concessi eis et confima<lb/>ui totam pasturam foreste mee usque ad diuisas de duueglas et de lesmahagu et de
+                     glengeual a parte aquilonali fluminis ar<lb/> cum omnibus aisiamentis in nemore et in omnibus aliis rebus eis necessariis et
+                     unam carucatam terre ad excolendam in illis locis ubi pro<lb/>uiderint melius et utilius esse ad opus suum . <seg type="diplomatic" subtype="holding">libere et quiete de me et heredibus meis ad omnibus seruiciis perpetuo tenore
+                     possidendam excep<lb/>to quod quinque Marchas argenti mihi et heredibus meis annuatim persoluent de
+                        ipsa foresta mea et salua eadem foresta mea tan<lb/>tum in bestiis et auibus</seg> . <seg type="diplomatic" subtype="warrandice">Et ego et heredes mei manutenebimus et warantizabimus eisdem Monachis omnia
+                     predicta contra omnes<lb/> Homines in perpetuum sicut liberam et puram et perpetuam elemosinam et
+                        adquietabimus erga dominum nostrum Regem de omni
+                        forensi<lb/> seruitio .</seg> Totam hanc elemosinam concessit dominus meus rex Willelmus predictis Monachis et
+                     carta sua confirmauit sicut suam<lb/> propriam elemosinam . Insuper ego concessi predictis Monachis donationem quam
+                     ricardus walensis fecit eisdem Monachis et ecclesie de
+                     Melros<lb/> de terra de barremor et de godenei cum omnibus pertinentiis suis modis omnibus
+                     ita libere et quiete et honorifice in perpetuam elemosinam<lb/> tenenda et possidenda sicut liberius et quietius et honorificentius carta ipsius
+                     ricardi testatur et in confirmatione alani patris mei quam<lb/> predicti Monachi habent de eadem elemosina continetur .</seg> <seg type="diplomatic" subtype="witnesses">Testibus . Domino Radulfo episcop de dun . Comite patricio . Patricio filio eius
+                  . Ma<lb/>gistro Will<ex>el</ex>mo archidiacono de buckingham . Waltero de lindesei . Ricardo de neim . Neso de
+                     Waloutun . Ioh<ex>ann</ex>e hose .<lb/> Will<ex>el</ex>mo de lindesei . Adam de kelebeuhoc . Alano de mungumer<ex>i</ex> . Henric<ex>o</ex> capellano de crag’ . Thoma Fraser et multis aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

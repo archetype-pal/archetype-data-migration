@@ -1,0 +1,57 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NLS Adv. MS 15.1.18, no. 66</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-06-07 15:00:51.783125+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 66</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Malcolm, son of Morgan Earl of Mar,</seg> To all who shall view or hear these letters, <seg type="diplomatic" subtype="salutation">Greeting</seg></seg>: <seg type="diplomatic" subtype="notification">Know that</seg> <seg type="diplomatic" subtype="disposition">I have granted, and by his my charter made firm, to God and to the church of St
+                  Andrew the apostle in Scotia and the canons serving God in
+                  that place now and in the future, the church of St Moluoc at
+                  Tarland, which my father gave them, with teinds, and
+                  oblations, and all revenues pertaining to the same church,
+                  and the land which belongs to the said church, with a mill
+                  built on the same land, and a ploughgate of land which is
+                  called ‘Hachadgouan’ by its right marches; in pastures, in
+                  meadows, in wood and plain, with all easements pertaining to
+                  those lands, to be held of me and my heirs in perpetual alms,
+                  for the welfare of my soul, and the souls of my ancestors and
+                  successors. I also grant in perpetual alms the teind of my
+                  whole render from my whole land, namely, of hides, grain,
+                  cheese, flour, malt, fatted cattle, muttons, pigs, and of my
+                  game, with meat and hides, and the teind of my pleas and
+                  reliefs, in cash as well as other income. I also allow to
+                  them that they may receive material from my woods for their
+                  buildings, as much as they might need, and and that they
+                  should have common pasture for their livestock with my own
+                  livestock and the livestock of my own men on my lands without
+                  any disturbance and annoyance. <seg type="diplomatic" subtype="holding">Wherefore I will that the aforesaid canons should fully have and hold the
+                     aforesaid alms of me and my heirs as freely and quietly as
+                     they freely and quietly have and possess any alms in
+                     Scotia</seg>.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses : Adam, bishop of Aberdeen; Omer the archdeacon; Alexander
+                  the dean; Malcolm, William, Edward, Alan, canons; Master
+                  William, John of Calder, clerks; James son of Morgan, Duncan
+                  his brother, and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

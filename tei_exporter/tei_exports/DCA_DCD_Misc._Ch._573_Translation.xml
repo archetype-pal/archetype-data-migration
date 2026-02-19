@@ -1,0 +1,53 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 573</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:12:05.474939+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 573</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">D(avid), by the grace of God king of the Scots,</seg> to all Holy Church's faithful, present and to come, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me to have allowed to the church of St Mary and St Cuthbert at Coldingham and to
+                     the monks serving God there the gift which Cospatric
+                     brother of Dolphin gave to the aforesaid church and monks,
+                     that is to say, Edrom and Nisbet in perpetual alms, with
+                     churches, waters, meadows, pastures, mills, and all other
+                     places, and with the same correct boundaries by which he
+                     held them on the day on which he was alive and dead, free
+                     and quit from every service, and every custom, except for
+                     thirty shillings which the said monks shall give to his
+                     son Cospatric and his heirs after him in return for the
+                     king's corrody each year at the feast of St Martin, and
+                     excepting the king's army service, for which the monks
+                     shall be responsible to the king himself; and Cospatric
+                     shall be quit in respect of army service for ever.</seg> <seg type="diplomatic" subtype="witnesses">Present as witnesses: Robert the bishop of St Andrews, John the bishop of
+                  Glasgow, Herbert the abbot of Roxburgh, Richard the abbot of
+                  Melrose, Edward the chancellor, <persName>Thor</persName> the archdeacon, Hugh the constable, Herbert the chamberlain, Ralf de Soules,
+                     Walter of Ryedale, Robert of Bournville, Orm son of
+                     Malcolm, Norman sheriff of Berwick, Robert son of Guy, the
+                     sheriff of Roxburgh, Swain the priest of Fishwick, William
+                     of Lamberton, Haldane of Prenderguest.</seg> <seg type="diplomatic" subtype="dating">At Coldingham on the day of the Invention of the Holy Cross, in the year 1147
+                  since the incarnation of the Lord, that is, the year in which
+                  the king of France and many Christiants made their way to
+                  Jerusalem. </seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

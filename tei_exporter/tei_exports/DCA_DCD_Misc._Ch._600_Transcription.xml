@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 600</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 12:40:59.75782+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 600</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">. W’ . dei Gr<ex>ati</ex>a Rex Scott’ .</seg> Omnibus probis Hominibus Tocius Terre sue . Clericis et laicis  <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant presentes et futuri</seg> . me dedisse . et Concessisse . et Hac Carta mea Confirmasse . Robert<ex>o</ex> . de<lb/> Aubein’ . et heredibus suis . illas viginti . marcas . que mihi debentur
+                     annuatim de Waitinga quam Prior<lb/> et Conuentus de Coldingham . mihi debent de terris suis de Coldingham . donec
+                     ego uel heredes mei<lb/> eidem Robert<ex>o</ex> . uel heredibus suis dederimus . viginti . marcatis . terre . ex australi parte
+                     maris<lb/> Scott’ . uel inter le Muneth . et mare Scott’ . Quare uolo ut predictus Rob<ex>ertus</ex> . de Aubein’ . et here<lb/>des sui illas viginti . marcas percipiant singulis annis ad pascha . et precipio
+                     priori de Colding<lb/>ham . et bailliuis eius . quatinus annuatim sine inpedimento illas viginti .
+                     marcas eis reddant ad pas<lb/>cha  donec ego uel heredes mei eis dederimus predictas viginti . marcatas terre
+                     .</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . Alex<ex>andro</ex> .<lb/> filio meo . Will<ex>elm</ex>o . de Bosch<ex>o</ex> . Cancellario . meo . Philipp<ex>o</ex> . de Valon<ex>iis</ex> . Camerario . meo . Ioh<ex>ann</ex>e de Maccuswel’ . Ma<lb/>gistro Martin<ex>o</ex> . medico meo . Walter<ex>o</ex> . Cumin’ . Iordan<ex>o</ex> . Cumin’ .</seg> <seg type="diplomatic" subtype="dating">Apud Seleschr’ . xxviii . die<lb/> Februarii .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

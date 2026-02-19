@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/217</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 07:53:00.107609+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/217</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte Matris ecclesie filiis presentibus et futuris <seg type="diplomatic" subtype="intitulatio">Henricus de beletun</seg> <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerit uniuersitas uestra</seg> me dedisse concessis<lb/>se et hac carta mea confirmasse monachis de Melros totam terram meam de
+                     kingissete in territorio de panneselis sicut iacet<lb/> inter calueburne et ki<supplied>ngeburn’ et witedd</supplied>re <seg type="diplomatic" subtype="holding">tenendam et habendam de me et heredibus meis ad feudam firmam in perpetuum .
+                     Reddendo<lb/> inde michi et heredibus m<supplied>eis singulis annis duas</supplied> marcas argenti . vnam scilicet ad festum sancti Michaelis . et alteram ad
+                        pentecosten</seg> .<lb/> <seg type="diplomatic" subtype="warrandice">Ego quidem et herede<supplied>s mei manutenebimus</supplied> et warantizabimus et defendemus predictis Monachis totam predictam terram cum
+                        omnibus<lb/> libertatibus et pertinenciis suis et adquietabimus erga omnes homines ab omni
+                        seruicio . consuetudine . exactione et demanda .</seg> <seg type="diplomatic" subtype="holding">Ita quod predicti<lb/> Monachi predictam terram libere et quiete tenebunt et habebunt in perpetuum per
+                        predictum redditum duarum Marcarum</seg> .</seg> Actum anno gracie<lb/> millesimo . ducentesimo . tricesimo primo . <seg type="diplomatic" subtype="witnesses">Hiis Testibus . Domino Ioh<ex>ann</ex>e de <supplied>Maccu</supplied>swell’ <persName><roleName>Camerario</roleName></persName> Regis . Domino Thom<ex>a</ex> filio Ranulfi . Domino . Bern’ de<lb/> haudene . Domino Ioh<ex>ann</ex>e de Metkil . Philippo de pethcox . Et Multis aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

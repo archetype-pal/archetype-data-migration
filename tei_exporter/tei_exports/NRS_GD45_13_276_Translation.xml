@@ -1,0 +1,44 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/276</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-14 19:36:44.398406+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/276</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Edgar son of Donald, to all the faithful in Christ both present and to come,
+                  wishes eternal salvation in the Lord:</seg> <seg type="diplomatic" subtype="disposition">You should all know that I have given, and granted, and by this present charter
+                  made firm, to Gilbert my nephew, the church of St Michael in
+                  Dalgarnock, in free and pure, quiet and perpetual alms, with
+                  lands and chapels, with teinds and oblations, with obventions
+                  and all the rest pertaining to the same church. To be held of
+                  me and my heirs as freely and quietly, purely and
+                  perpetually, fully and honourably, as other in the bishopric
+                  of Glasgow hold and possess any church freely and quietly,
+                  fully and honourably.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Walter de Wellam, Ralph, dean of Dumfries, Adam son of
+                  Hawise, Gilla Conaill my son, Donald my son, Matthew the
+                  clerk, Gilchrist the judex, Patrick mac Gilla na Náem,
+                  Aliugan, chaplain of Closeburn, Muirchertach, priest of St
+                  Cairpre of Dunscore.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

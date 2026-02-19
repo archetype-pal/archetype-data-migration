@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 5961</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 21:10:50.74891+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5961</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all who shall view or hear this writing, <seg type="diplomatic" subtype="intitulatio">William son of Robert of Scremerston</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know me, all of you</seg>, <seg type="diplomatic" subtype="disposition">by the consent of my heir, William, to have given, granted, and made firm by
+                  this my present charter, to God, and to Saint Cuthbert, and
+                  to the lord Richard the prior, and to the convent of
+                  Coldingham, and their successors for ever, in return for
+                  forty-seven merks of silver which they have paid to me as an
+                  advance, my whole land of Prenderguest, with dwellings,
+                  tofts, and crofts, and with all its pertinents, without any
+                  withholding; namely, six oxgangs of land with pertinents in
+                  the territory of Prenderguest; that is, the two oxgangs with
+                  toft and croft which Robert Wind held; and the two oxgangs of
+                  land which William son of Geoffrey held; and the two oxgangs
+                  of land which Geoffrey son of Waldef held; and the toft and
+                  croft which Haldan son of Waldef held; and the toft and croft
+                  which Richard son of Agnes held. These said lands with
+                  dwellings, tofts, and crofts, with all their pertinents, I
+                  had out of the gift of Robert son of Robert of Prenderguest
+                  in the toun and territory of Prenderguest. <seg type="diplomatic" subtype="holding">For the aforementioned prior and convent of Coldingham and their successors to
+                     have and to hold of me and my heirs for ever, as freely,
+                     quitely, and honourably in all things, as it is the more
+                     fully and better set out and witnessed in the charter of
+                     the same Robert drawn up thereupon. </seg><seg type="diplomatic" subtype="warrandice">And I, William of Scremerston, and my heirs shall warrant, acquit, and defend
+                     all the lands aforenamed, with dwellings, tofts and
+                     crofts, and with all their pertinents, to the
+                     oft-mentioned prior and convent of Coldingham and their
+                     successors, against all men and women for ever.</seg></seg> <seg type="diplomatic" subtype="sealing">In testimony of this matter, I have applied my seal to this writing.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord William of Lindsay; the lord William of
+                  Mordington; the lord Alan of Swinton; Alan his son; Thomas of
+                  Nisbet; Adam his son; Ada of Prenderguest; Robert son of
+                  Gregory of Coldingham; David of Lumsdaine; Gilbert of
+                  Lumsdaine; Adam son of John of Ayton; Bertram of Reston; John
+                  son of Ingram; Robert son of Reginald; and others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

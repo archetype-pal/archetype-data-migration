@@ -1,0 +1,51 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/252</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:18:18.00307+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/252</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons and faithful people of Holy Mother Church, <seg type="diplomatic" subtype="intitulatio">Edgar son of Donald</seg> <seg type="diplomatic" subtype="salutation">sends Greeting:</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let all people, both present and future, know</seg> that, with the consent of my son and heir, Fergus, I have given and granted, and
+                     by this present charter made firm, to God and to the
+                     church of Holyrood in Edinburgh, and to the canons serving
+                     God there now and in the future, the church of Dalgarnock
+                     with all the land pertaining to the same church, and with
+                     common pasture of the foresaid toun, and all its other
+                     revenues and pertinents, in teinds as well as in other
+                     obventions, justly belonging to the same church, for them
+                     to hold in free, pure and perpetual alms, for the
+                     salvation of the souls of my lords the kings of Scots, and
+                     for the souls of my father and my mother and of all my
+                     ancestors and successors. <seg type="diplomatic" subtype="holding">Wherefore I will that the foresaid canons hold and possess the forementioned
+                     church with its land and all its liberties so freely,
+                     quietly, fully and honourably in perpetuity as any church
+                     in the whole of the kingdom of the Scots is freely given,
+                     is quietly and fully held and possessed, reserving the
+                     parsonage of G. the parson, and the perpetual vicarage of
+                     Enoch</seg>.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Fergus son of the lord Edgar, Martin the parson of
+                  Dumfries, Enoch the clerk, John son of Ralph the dean of
+                  Dumfries, Gilchrist the judex, Gilla Conaill and Donald sons
+                  of Edgar, and many other men of good testimony.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/258</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 14:39:31.075004+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/258</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte matris ecclesie filiis ⁊ fidelibus ad quos presens scriptum
+                  peruenerit presentibus ⁊ futuris  Willelmus<lb/> filius Gamelli de tuinham salutem.</seg> <seg type="diplomatic" subtype="disposition">Vniuersitati vestre significo me consensu domini mei Alani filii Rollandi .<lb/> ⁊ assensu Walteri filii ⁊ heredis mei dedisse ⁊ concessisse ⁊ hac carta mea
+                     confirmasse deo ⁊ ecclesie sancte<lb/> crucis de edenburc ⁊ canonicis ibidem deo seruientibus in liberam ⁊ puram ⁊
+                     perpetuam elemosinam totum ius<lb/> quod habere uidebar in ecclesia de Tuenham . ⁊ in perpetuum pro me ⁊ heredibus
+                     meis abrenunciasse clamori quem clamabam<lb/> in aduocatione ipsius ecclesie . Preterea do ⁊ concedo assensu ipsius Walteri
+                     filii mei predicte ecclesie ⁊ predictis canonicis<lb/> in perpetuam ellemosinam quatuor acras terre in territorio eiusdem ville .
+                     eiusdem diuisis per quas ego ipsam terram in consepectu<lb/> prudentum virorum Ipsis canonicis tenendas perambulaui ⁊ domum una in ipsa uilla
+                     de qua predictos cano<lb/>nicos saisiaui predicte ecclesie do ⁊ concedo cum communi pastura eiusdem uille
+                     ad sexdecim aueria ⁊ ad unum<lb/> equum . ⁊ cum omnibus aliis communibus aisiamentis eiusdem uille . Quare volo ut
+                     predictam ecclesiam prenominati ca<lb/>nonici cum omnibus iustis pertinenciis suis libere ⁊ quiete in perpetuam
+                     elemosinam ⁊ puram teneant in perpe<lb/>tuum . ⁊ possideant.</seg> <seg type="diplomatic" subtype="witnesses">Hiis testibus . Siluestro . ⁊ Andrea . ⁊ thoma capellanis . Matheo decano .
+                  Roberto<lb/> clerico . Roberto halfchniht . Roberto ⁊ Gamello fratribus . Roberto filio
+                     Matildis . ⁊ aliis quam pluribus .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,48 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 5969</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 21:10:50.597554+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5969</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Christ's faithful to whom the present written document shall come, <seg type="diplomatic" subtype="intitulatio">Hugh Levedyman of Langehope, and Eve his wife, sister of Laurence son of William
+                     son of Gocelin of Berwick</seg>, <seg type="diplomatic" subtype="salutation">send greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know us, all of you,</seg> to have granted at the urging of the said Laurence, and have made firm by this
+                     our present charter, quitclaimed, and for ourselves and
+                     our heirs for ever, entirely abjured the donation and
+                     grant of the whole land, without any withholding, in the
+                     territory of Prenderguest which Laurence, son of William
+                     son of Gocelin of Berwick, had from the gift of Robert his
+                     brother, which the same Laurence gave, granted, and by his
+                     own charter made firm to God, St Ebbe, Richard the prior,
+                     and the convent of Coldingham and their successors, in
+                     free, pure, and perpetual alms.</seg> We have also pledged and sworn, touching holy relics, for ourselves and our
+                  heirs, that we shall in no era of the world seek to move
+                  against the aforesaid donation and grant. <seg type="diplomatic" subtype="sealing">As witness of this matter, we have applied our seals to the present document.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, the lord William of Mordington, the lord David of Haddington, the
+                  lord Ralph Noble, the lord William of Scremerston, Adam of
+                  Prenderguest, Adam son of John of Over Ayton, Thomas of
+                  Nisbet, Bertram of Reston, Patrick Scott, Gilbert of
+                  Lumsdaine, John son of Ingram, Gregory of Bethock, and
+                  others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

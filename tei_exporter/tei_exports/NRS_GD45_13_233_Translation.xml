@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/233</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-28 23:19:44.859178+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/233</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Uhtred son of Fergus and his spouse, Gunnild daughter of Waldef</seg>, <seg type="diplomatic" subtype="salutation">send greeting</seg> to all sons of Holy Mother Church.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let those to come and those present know</seg> that we, with the consent of Lachlan our heir, have given and by this our
+                     charter made firm the church of Torpenhow with land and
+                     all revenues rightfully belonging to it to the church of
+                     Holyrood at Maidens’ Castle [i.e. Edinburgh] and to the
+                     canons serving God there, in perpetual alms, for the
+                     redemption of the soul of Waldef and Fergus and of all our
+                     ancestors. <seg type="diplomatic" subtype="holding">Wherefore we firmly will that the same canons should have and possess the
+                     aforenamed church as freely and quitely as any church in
+                     the whole bishopric of Carlisle is freely held and
+                     possessed.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Geoffrey abbot of Dunfermline, Osbert abbot of Jedburgh,
+                  Alured abbot of Stirling; Gilla Muire mac Blancard, Gilla
+                  Muire Albanach, Gilla Brigte mac Gillefin, Serlo, Bernard,
+                  Richard Berth, burgesses.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Cotton Ch. xviii.17</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:43:39.146309+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.17</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">. <persName>W .</persName> dei gr<ex>ati</ex>a Rex Scott’ .</seg> Ep<ex>sicop</ex>is . Abbatibus . Com<ex>itibus</ex> . Baron<ex>ibus</ex> . Iustic<ex>iis</ex> . vicecomitibus . prepositis . ministris .<lb/> et Omnibus probis Hominibus Tocius terre sue . Clericis et Laicis  <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Sciant presentes et futuri</seg> .<lb/> <seg type="diplomatic" subtype="disposition">nos concessisse . et Hac Carta nostra confirmasse . amicabilem pacem factam
+                  inter conuentum<lb/> et Ecclesiam de Kelch’ . ex una parte . et Comuentum et Ecclesiam de Melros ex
+                     altera parte .<lb/> super diuisis terrarum de Bowlden’ . et de Eldun . et de Dernewic’ . Quare
+                     uolumus et precipimus<lb/> quatinus predicta pax inter Conuentus et predictas domos facta . firmiter et
+                     inuiolabiliter futuris temporibus in<lb/> perpetuum teneatur . sicut in Cyrographo inter Conuentus et predictas domos inde
+                     facto euidentius<lb/> continetur . Concedimus etiam et Hac Carta nostra confirmamus amicabilem pacem
+                     factam inter<lb/> predictos Conuentus et predictas domos super controuersia que uertebatur inter
+                     predictos Conuentus et domos<lb/> prenominatas . de terra de Molle et de Cliftun’ . sicut in predicto Cyrographo
+                     inter eos facto<lb/> continetur</seg> . <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . <persName>Alex<ex>andro</ex></persName> . filio . domini Regis . <persName>Philipp<ex>o</ex></persName> . de Valon<ex>iis</ex> . Camer<ex>ario</ex> . <persName>Rob<ex>erto</ex></persName> . de london<ex>iis</ex> . filio . domini Regis .<lb/> <persName>Will<ex>elmo</ex> . Cumin</persName> . <persName>D<ex>aui</ex>D</persName> . de lindes<ex>eia</ex> . Iustic<ex>iis</ex> . <persName>Oliuer<ex>o</ex></persName> . Capellano domini Regis . <persName>Will<ex>elmo</ex></persName> . de Bosch<ex>o</ex> . Clerico domini Regis .<lb/> <persName>Philipp<ex>o</ex></persName> . de Mubray . <persName>Walter<ex>o</ex> . Olifard’</persName> . <persName>Henr<ex>ico</ex></persName> . filio . Com<ex>itis</ex> . <persName>D<ex>aui</ex>D</persName> . <persName>Philipp<ex>o</ex></persName> . de Lundin’ . <persName>D<ex>aui</ex>D</persName> . <persName><roleName>Marescall<ex>o</ex> .</roleName></persName><lb/> <persName>Ric<ex>ardo</ex></persName> . filio . <persName>Hugon<ex>is</ex></persName> . <persName>Herb<ex>erto</ex></persName> . de Camera . <persName>Ioh<ex>anne</ex></persName> . de Stiruel<ex>in</ex> . <persName>Ric<ex>ardo</ex></persName> . <persName>Ad<ex>am</ex> . Hasteng’</persName> .</seg> Apud Striuel<ex>in</ex> .<lb/> xxii . die Iun<ex>ii</ex> .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.16</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:29:53.141758+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.16</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W<ex>illiam,</ex> by the grace of God king of the Scots,</seg> to all worthy men of the whole of his land, clerk and lay, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Let present and future know</seg> <seg type="diplomatic" subtype="disposition">me to have given, conceded, and by this my charter to have made firm, to God,
+                  the church of St Mary at Melrose, and to the monks serving
+                  God in that place, one full toft in my burgh of Lanark, <seg type="diplomatic" subtype="holding">to be held in free, pure, and everlasting alms, as freely, quitly, fully, and
+                     honourably as they freely, quitly, fully and honourably
+                     hold and possess their other alms</seg>.</seg> <seg type="diplomatic" subtype="witnesses">As witness: Hugh my chancellor; Philip de Valognes the chamberlain; Richard de
+                  Prebenda; William de la Haye; William Gifford; Duncan de
+                  Lascelles.</seg> At Perth on the first day of June.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

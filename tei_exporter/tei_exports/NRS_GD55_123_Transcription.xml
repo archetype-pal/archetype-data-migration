@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/123</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:09:40.302875+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/123</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">WILLELMUS dei gratia Rex Scott’</seg> . Episcopis . Abbatibus . Comit’ . Baron’ . Iust’ . Uicecom’ . Prepo<ex>s</ex>itis . Ministris . et Omnibus probis Hominibus<lb/> totius terre sue clericis et laicis  <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant presentes et futuri</seg> nos concessisse et Hac carta nostra confimasse deo et Sancte Marie et ecclesie
+                     de<lb/> Melros et monachis ibidem deo seruientibus In liberam et quietam et perpetuam
+                     elemosinam . ecclesiam de Hatstanesden’ . cum terris et
+                     decimis et omnibus<lb/> ad ipsam ecclesiam pertinentibus . ad susceptionem et sustentationem pauperum et
+                     peregrinorum ad domum de Melros uenientum  a Ioc’ .
+                     Glasguen’ . episcopo per consilium<lb/> nostrum assignatam . De qua ecclesia cum esset inter nos et eundem episcopum
+                     controuersia . ad quem nostram donatio ipsius ecclesie
+                     pertineret  ius nostrum quod in ea ha<lb/>buimus . uel habere potuimus  eidem episcopo concessimus . ad ipsam ecclesiam
+                     secundum deum ordinandam . Et ipse episcopus ut prouentus
+                     ipsius ecclesie in caritatis operibus expendantur  et in
+                     bonos usus perpetuo conuertantur  ipsam ecclesiam cum
+                     omnibus pertinentiis suis pro animabus omnium
+                     predecessorum nostrorum et suorum . et salute et anima
+                     nostra et sua . et omnium<lb/> heredum nostrorum . et successorum suorum . per consilium et concessionem
+                     nostram ad perpetuos usus pauperum et peregrinorum .
+                     ecclesie et conuentui de Melros pia consideratione contu<lb/>lit et confirmauit . Ut autem hoc pium factum et rationabile perpetuam et
+                     illibatam habeat firmitatem  predictam ecclesiam de
+                     Hatstanesden’ cum omnibus perti<lb/>nenciis suis . deo et Sancte Marie et ecclesie de Melros . In liberam et
+                     pereptuam elemosinam ad Sanctos usus prenominatos
+                     concedimus et Hac carta nostra confirmamus . <seg type="diplomatic" subtype="holding">Tenendam In<lb/> perpetuum ita libere . Quiete plenarie et Honorifice  Sicut aliqua parrochialis
+                        ecclesia in regno nostro liberius . Quietius . Plenius
+                        . et Honorificentius . ab aliqua conuen<lb/>tuali ecclesia tenetur et possidetur . Salua pensione viginti solidorum ecclesie
+                        Glasguen’ de Ipsa ecclesia de Hatstanesd’ ab ipsis
+                        monachis singulis annis persoluenda . Sicut<lb/> carta eiusdem Ioc’ . Glasguen’ episcopi testatur .</seg> Et ne inter nos uel heredes nostros uel ipsos qui de manerium predictum
+                     tenuerint . et ipsos monachos aliqua in posterum<lb/> super pastura predicte uille possit esse controuersia  per preceptum nostrum et
+                     per considerationem proborum Hominum nostrorum prouisum
+                     est . quantum predictum Monachi in pastura predicte<lb/> uille habere debeant . Scilicet ducentas matrices oues . et sexdecim boues . et
+                     quatuor uaccas . quod illis in pastura illa perpetuo
+                     Habend’  concessimus . et hac carta nostra<lb/> confirmauimus . <seg type="diplomatic" subtype="injunction">firmiter prohibentes nequis eis super Hoc  iniuriam aut uexationem aliquam
+                     inferat . Super nostram plenariam forisfacturam</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Test’ . Ioc’ . Glasg’ .<lb/> episcopo . Ric’ . Episcopo Morauen’ . Æ . abbate de Dunferm’ . Com’ . Dauid
+                     fratre nostro . Hug’ . Cancellario nostro . Will<ex>elm</ex>o de Lind’ . Iust’ . Phil de valon’ . Dauid de Lindes’ .<lb/> Hugone de Normanuill’ . Waltero de Berkel’ <persName><roleName>camerario</roleName></persName> nostro Herb’ . de Camera</seg> ___ Apud ___Melros</p>
+      </div>
+    </body>
+  </text>
+</TEI>

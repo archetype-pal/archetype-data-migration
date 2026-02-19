@@ -1,0 +1,32 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/217</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-17 01:41:32.898959+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/217</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">D<ex>auid</ex> rex Scottorum</seg> . Omnibus probis hominibus suis de Edenesburc Sira .<lb/> <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="prohibition">prohibeo ne aliquis super terram aliquid accipiat quam dedi in elemosina<lb/> ecclesie sancte Crucis de edenesburc  nisi per licentiam ⁊ concessum
+                     canonicorum<lb/> ibidem deo ⁊ sancte Cruci seruientium . scilicet nec in herba . nec in cespiti<lb/>bus . siue aliis rebus nisi per concessum canonicorum predictorum .</seg> <seg type="diplomatic" subtype="witnesses">T<ex>este</ex> Ioh<ex>ann</ex>e episcopo</seg> .<lb/> Apud Edenesburc .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

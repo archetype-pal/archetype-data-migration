@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/240</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-02 13:02:56.723639+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/240</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">William by the grace of God king of Scots to the Bishops, Abbots, Earls, Barons, <persName><roleName>Justices</roleName></persName>, Sheriffs, and all his worthy men both future as well as present, Greeting:</seg> <seg type="diplomatic" subtype="disposition">Know that I have granted and by this my charter made firm to the church of
+                  Holyrood that is near Edinburgh and to the brethren serving
+                  God there, the Church of Tranent, which King Malcolm my
+                  brother gave to them for their clothing in perpetual alms,
+                  and made firm by his charter, with all pertinents and
+                  liberties which rightfully belong to the said church; by
+                  lands, that is, and waters, pastures and meadows, wood and
+                  plain, as free and quiet as other alms in the whole of my
+                  land are freely and quietly possessed, and as Waleran, King
+                  David’s chaplain, ever well and freely held it.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Nicholas the chancellor, Richard the king’s chaplain,
+                  Walter the steward, Richard de Morville, David Oliphant.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

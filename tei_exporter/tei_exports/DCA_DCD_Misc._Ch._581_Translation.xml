@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 581</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:12:05.652949+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 581</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">M<ex>alcolm</ex>, king of the Scots,</seg> to justices, sheriffs, provosts, officials, and all other worthy men of his
+                     entire land, as much future as present, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me to have conceded to God, to Saint Cuthbert of Coldingham, and to the monks
+                     serving God there, that they and their tenants throughout
+                     my entire land be free and quit from all toll on their own
+                     cattle and merchandise. <seg type="diplomatic" subtype="injunction">I therefore forbid that anyone do violence or injury to them within my land
+                     contrary to this liberty on pain of my forfeiture</seg>.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: Nicholas the chamberlain, Richard the king's chaplain, Richard of
+                  St Albans the king's clerk.</seg> <seg type="diplomatic" subtype="dating">At Coldingham.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

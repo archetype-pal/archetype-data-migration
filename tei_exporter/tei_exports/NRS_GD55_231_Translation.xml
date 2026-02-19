@@ -1,0 +1,52 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/231</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:40:45.914978+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/231</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">A<ex>lexander</ex> by the grace of God king of the Scots</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg> to all worthy men of the whole of his land.</seg> <seg type="diplomatic" subtype="notification">Know us</seg> <seg type="diplomatic" subtype="disposition">to have allowed, and by this our charter to have made firm, the sale that P<ex>atrick</ex> earl of Dunbar, by the agreement of Patrick his son and heir, made to the abbot
+                     and convent of Melrose of his whole horse-stud that he had
+                     in the feu of Lauder in the Year of Grace One Thousand Two
+                     Hundred and Forty-Seven on the feast of the Beheading of
+                     John the Baptist. And we have likewise allowed, and by
+                     this our charter made firm, the concession and quitclaim
+                     that the same earl, with the agreement of the said Patrick
+                     his son and heir, made to the same abbot and convent for
+                     the common that he had for feeding or pasturing the
+                     horse-stud or any other animals within the lands and
+                     pastures which the said abbot and convent held and
+                     possessed on the said day in the said feu of Lauder, that
+                     is, so the said earl or his heirs or anyone else in their
+                     name shall in future instigate or have no claim or
+                     complaint in the said lands or pastures; which very sale
+                     and quitclaim we will to be observed for ever, just as the
+                     charter of the foresaid Patrick earl of Dunbar which the
+                     said abbot and convent have thereupon rightly bears
+                     witness.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, W<ex>illiam</ex> Comyn, earl of Menteith; Alan Durward, justiciar of Scotia; Robert of Roos;
+                     David of Lindsay; Thomas de Normanville; Thomas son of
+                     Ranulph; Robert Menzies.</seg> At Holyrood on the twenty-eighth day of November, in the thirty-third year of
+                  the reign of the lord King. [1247]</p>
+      </div>
+    </body>
+  </text>
+</TEI>

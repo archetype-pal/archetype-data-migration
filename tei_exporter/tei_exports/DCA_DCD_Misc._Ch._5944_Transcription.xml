@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 5944</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.975545+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5944</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">. Omnibus Christi fidelibus presens scriptum visuris uel Audituris  <seg type="diplomatic" subtype="intitulatio">Radulfus Nobilis</seg> <seg type="diplomatic" subtype="salutation">salutem .<lb/> in domino</seg> .</seg> <seg type="diplomatic" subtype="notification">Nouerit vnuersitas uestra</seg> <seg type="diplomatic" subtype="disposition">me presenti carta mea sigillo meo singnata me<lb/> et heredes meos In perpetuum obligasse quod occasione carte Prioris et Conuentus
+                     Dunelm<ex>ensis</ex><lb/> Ecclesie quam michi fecerint super terra quam de eis Iure hereditario tenebo In
+                     villa de<lb/> Lambertona silicet vnum Toftum . et quatuor accras terre prout Continetur In
+                     carta eorum inde<lb/> Confecta non qu[e]ram defensionem . uel warantizac[i]onem a dictis Priore et
+                     conuentu<lb/> si contigit ab aliquo questionem moueri in foro clericali uel laycali super
+                     dicta terra .<lb/> Et quod conseruabo Priorem et conuentum Dunelm<ex>ensem</ex> . et Priorem et conuentum de Coldingh<ex>am</ex> indempnes<lb/> in omnibus  quantum ad predictam terram . Et si placitum inde motum fuerit 
+                     ego et heredes<lb/> mei onera tocius placiti sustinebimus . Et quod fidelitatem inuiolabilem eis in<lb/> hac parte obseruabimus .</seg> <seg type="diplomatic" subtype="sealing">In Cuius Rei testimonium  presenti scripto pro me et heredibus meis<lb/> sigillum meum apposui .</seg> <seg type="diplomatic" subtype="witnesses">Hiis Testibus Domino Willelmo de Mordingto<ex>na</ex> . Domino Willelmo de Screm<lb/>ersto<ex>na</ex> . Adam de Prendergest’ . Rob<ex>erto</ex> filio Gregori de Coldingh<ex>am</ex> . Dauid de Lumesden . Ad<ex>am</ex> filio Iohannis<lb/> de Eyton<ex>a</ex> superiori . Iohanne filio Ingerami de eadem uilla . Bertramo de Risto<ex>na</ex> . Patricio Scotto . Grego<lb/>rio de Betyoc</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

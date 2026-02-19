@@ -1,0 +1,46 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 5960</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.728883+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5960</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all the faithful of holy Mother Church, clerk and lay, as well present as
+                  future, <seg type="diplomatic" subtype="intitulatio">Robert, by the grace of God bishop of St Andrews</seg>, <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Be it known to you all that</seg> <seg type="diplomatic" subtype="disposition">we have granted and, so far as it belongs to episcopal authority, have made firm
+                  by the testimony and guarantee of the present charter the
+                  donation which Cospatric brother of Dolfin granted and gave
+                  in everlasting alms to God and Saint Cuthbert and his monks,
+                  that is, Edrom with the church, and the toun which is called
+                  Nisbet, with waters, meadows and pastures and mills, and all
+                  other things that belong to the same touns, just as the
+                  charter of the King and of Cospatric bear witness.</seg> <seg type="diplomatic" subtype="notification">Be is also known to you all that</seg> <seg type="diplomatic" subtype="disposition">we, by episcopal authority, have granted and made firm to God and to Saint
+                  Cuthbert and to his monks, the church of Swinton and the
+                  church of Fishwick, in perpetual alms.</seg> <seg type="diplomatic" subtype="witnesses">And this we have made by the prayer and counsel of our venerable brothers,
+                  Robert the prior of St Andrews, Thomas the prior of Scone,
+                  Osbert the prior of Jedburgh, Osbert the prior of Holyrood,
+                  Adam the king's chaplain at Roxburgh, and many others
+                  residing with us at the synod which sat at Berwick</seg> <seg type="diplomatic" subtype="dating">on the 8th of the kalends of November [25 October], in the year of the Lord's
+                  incarnation, 1150.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of TNA DL 25/78</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-07-05 08:53:41.561187+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/78</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">D<ex>avid</ex> king of the Scots</seg>, to all worthy men of his entire land, French, English, and Galwegian, <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me to have given and granted to Robert de Brus in feu and heritage, to him and
+                     his heir in forest, Annandale on both sides of the Water
+                     of Annan, just as the boundaries are from the forest of
+                     Selkirk as far as his land extends towards Nithsdale and
+                     towards the Clyde, freely and quitly just as he holds his
+                     other forest well and freely. Wherefore I forbid that
+                     anyone may hunt in the aforesaid forest unless with his
+                     permission, on pain of the forefieture of ten pounds, and
+                     that anyone may go through the aforesaid forest unless by
+                     the proper, named ways.</seg> <seg type="diplomatic" subtype="witnesses">As witness: Walter the chancellor; and Hugh de Morville; and Walter son of Alan;
+                  and Odenel d'Umfraville; and Walter of Lindsay; and Richard
+                  de Moreville.</seg> At Staplegordon.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

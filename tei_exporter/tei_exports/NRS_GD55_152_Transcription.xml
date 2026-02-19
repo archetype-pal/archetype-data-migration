@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/152</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:15:18.270326+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/152</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Sancte matris Ecclesie filius tam presentibus quam futuris . <seg type="diplomatic" subtype="intitulatio">Rober<ex>tus</ex> de Bernaldebi</seg> . <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis me</seg> consensu et uoluntate heredum<lb/> meorum dedisse et concessisse et hac mea carta confirmasse deo et ecclesie
+                     Sancte Marie de Meylr<ex>os</ex> et monachis . ibidem deo<lb/> seruientibus pro anima domini mei Asketini de ridale et omnium antecessorum et
+                     successorum suorum . et pro anima mea et omnium
+                     antecessorum et successorum meorum . uiginti . acras terre
+                     . scilicet rauenes fen . <seg type="diplomatic" subtype="boundaries">per diuisas quas ego et monachi de Meylr<ex>os</ex> perambulauimus scilicet a capite superiori<lb/> de harehowedene totam illam leche sursum usque ad terram quam Will<ex>el</ex>mus de Ridale dedit matildi corbet uxori<lb/> sue in dotem . et inde sursum uersus wittun sicut sulcus trahitur inter
+                        predictam terram et rauenesfen usque ad foueam quam<lb/> monachi fecerunt . et inde intransuersum uersus harehov usque ad paruam spinam .
+                        et inde sicut fouee facte sunt inter terram<lb/> domini patricii et rauenesfen usque ad harecar . et inde sicut uetus fossatum
+                        decendit in harehowedene</seg> . Totam hanc terram<lb/> que infra predictas diuisas continetur cum omnibus pertinentiis suis dedi
+                     predicte ecclesie pro . uiginti . acris terre liberam
+                     solutam et quietam<lb/> ab omni terreno seruitio et consuetudine et exactione seculari . <seg type="diplomatic" subtype="holding">tenend<ex>am</ex> et possidend<ex>am</ex> . ita libere quiete . plenarie . et honor<lb/>ifice  sicut aliquam elemosinam liberius . quietius . plenius et
+                        honorificentius tenet et possidet</seg> . <seg type="diplomatic" subtype="warrandice">Quia ego et heredes mei<lb/> manutenebimus et warantizabimus monachis predictam terram contra omnes homines
+                        de omnibus rebus que pro terra exigi<lb/> possunt</seg> .</seg> Et ut hec mea elemosina firma sit et stabilis in perpetuum  dominus meus
+                  patricius de ridale eam mea petitione con<lb/>cessit et carta sua confirmauit . <seg type="diplomatic" subtype="sealing">Et quia sigillum non habui rogaui dominum Simon<ex>em</ex> Glasg<ex>uensem</ex> archidiaconum et Will<ex>el</ex>mum filium<lb/> Ioh<ex>ann</ex>is ut sigilla sua presenti carte apponerent .</seg> <seg type="diplomatic" subtype="witnesses">His T<ex>estibus</ex> domino Ioce<ex>elino</ex> Glasg<ex>uensi</ex> episcopo . Ernaldo abbate Rieuall’ Simon<ex>e</ex><lb/> glasg<ex>uensi</ex> archid<ex>iacono</ex> . Patricio de Ridale et Waltero filio eius . Will<ex>el</ex>mo filio Ioh<ex>ann</ex>is . Ric<ex>ardo</ex> nano . Henrico de Molle . Sim<ex>one</ex><lb/> de Grubbeheued Adam de chathov . Adam de Wittun . Radul<ex>fo</ex> de Ridale</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

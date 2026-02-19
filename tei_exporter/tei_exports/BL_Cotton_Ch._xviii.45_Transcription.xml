@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Cotton Ch. xviii.45</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:23:30.860623+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.45</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">. <persName>D’.</persName> dei gr<ex>ati</ex>a Rex Scott’</seg> Omnibus Baronibus suis . et hominibus . et Amicis <lb/> francis . et Angl’  <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Sciatis me</seg> <seg type="diplomatic" subtype="disposition">dedisse . et concessisse <persName>Robert<ex>o</ex></persName> de<lb/> Brus Estrahanent . et totam terram a diuisa <persName>Dunegal</persName> de Stranit<lb/> usque ad Diuisam <persName>Rand’</persName> Meschin’ . <seg type="diplomatic" subtype="holding">Et uolo et concedo . ut illam<lb/> terram . et suum castell<ex>um</ex> bene . et honorifice  cum omnibus consuetudinibus<lb/> suis teneat . et habeat . videlicet cum omnibus illis consuetudinibus quas Rand’
+                        Meschin unquam habuit In Carduill’ . et In terra sua de
+                        Cumber<lb/>land’ illo die in quo unquam meliores . et liberiores habuit</seg> .</seg> <seg type="diplomatic" subtype="witnesses">T’ . <persName>Eusat’</persName> fil’<lb/> <persName>Ioh<ex>annis</ex></persName> . et <persName>Hug’</persName> de Morvill’ . et <persName>Alan’</persName> de P<ex>er</ex>ci et <persName>Will’</persName> de Sumervill’ . et <persName>Bereng’<lb/> Inganio</persName> . et <persName>Rand’</persName> . de Sules . et <persName>Walt’</persName> de Morvill’ . et <persName>Herui</persName> fil’ <persName>Warin<ex>i</ex><lb/></persName> et <persName>Edmund’</persName> Camer’ .</seg> Apud Sconam .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,52 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/106</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 13:37:00.611595+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/106</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church <seg type="diplomatic" subtype="intitulatio">Richard de Morville constable of the King of Scotland and William his son and
+                     heir </seg><seg type="diplomatic" subtype="salutation">send greeting</seg></seg>. <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> us to have granted and by this our present charter to have made firm to God and
+                     to the church of St Mary at Melrose and to the monks
+                     serving God in that place, for our souls and of all our
+                     ancestors' and successors' souls, a place in Whitelee
+                     inside the limits of the forest for making a vaccary, that
+                     is, for a hundred and twenty-six cows, or a sheep-fold,
+                     whatever seems better and more useful to them and their
+                     house; <seg type="diplomatic" subtype="holding">to be held and possessed freely and quitely by them for ever without any
+                     disturbance from us and of all our men </seg><seg type="diplomatic" subtype="warrandice">and of all men against whom we shall have been able to maintain them and warrant
+                     the same possession to them</seg>; and one building in which they may make a dwelling for the brethren and their
+                     shepherds and one building also in which they may put
+                     their hay. We have granted these three buildings in pure
+                     and everlasting alms to the same monks to be built in the
+                     forementioned place at Whitelee and to be possessed for
+                     ever. <seg type="diplomatic" subtype="notification">And it is to be known that</seg> they shall build no other dwellings in the forest, but their shepherds shall
+                     have wattled huts under which the livestock being guarded
+                     shall lie when the need arises</seg>. <seg type="diplomatic" subtype="witnesses">With these witnesses: Jocelin bishop of Glasgow; Herbert dean of Glasgow;
+                  Thomas, clerk; Godfrey de Ros; Ralph Mackerel; Richard son of
+                  Sewar; Alan son of Aelsi; Gilbert of Lancaster; Richard son
+                  of Gilbert; Richard son of Geoffrey; William the bishop of
+                  Glasgow's steward; Master Roger of Newport.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/247</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 09:35:37.563782+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/247</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p>C Y R O G R A P H U M</p> <p><seg type="diplomatic" subtype="narration">Hec est conuentio facta Inter Dominum . W . abatem ⁊ conuentum sancte crucis de
+                  Edinburg ex una parte ⁊ Walterum<lb/> Magistrum ⁊ fratres de Torphean . ex altera parte de contouersia que uertebatur
+                     inter eos ⁊ coram iudicibus delegatis diu<lb/> uentilabatur super decimis ⁊ ouentionibus de Ogilfas . quod predicti abbas ⁊
+                     conuentus consensu ⁊ autoritate iudicum<lb/> delegatorum in presencia domini . W . de Bosch’ . domini regis cancellarii ⁊
+                     aliorum prudentum uiros . pro bono pacis concesserunt<lb/> predictis fratribus omnes decimationes ⁊ ouentiones ecclesiasticas quas ipsi
+                     habebant ⁊ percipere solebant de terra de Ogilfas .<lb/> Predicti uero fratres tenebunt ⁊ inperpetuum possidebunt prenominatas decimas
+                     libere ⁊ quiete plenarie ⁊ honorifice reddendo inde<lb/> abbati ⁊ conuentui sancte crucis de Edenburg singulis annis quatuor Marcas
+                     argenti . duas ad pentecost’ ⁊ duas ad festum<lb/> sancti martini.</seg> <seg type="diplomatic" subtype="sealing">Ut autem hec conuentio rata ⁊ inconcussa permaneat in perpetuum signa iudicum de
+                  predicta causa delegatorum<lb/> ⁊ capituli conuentus sancti andree ⁊ capituli domus hospitalis lundon’ .
+                     presenti scripto in testimonium ⁊ confirmationem<lb/> huius conuentionis apponuntur ne in irritum possit reuocari.</seg></p></div>
+    </body>
+  </text>
+</TEI>

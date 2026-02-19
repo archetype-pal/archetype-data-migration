@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 563</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:02:02.061275+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 563</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alexander by the grace of God king of the Scots</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg> to Prior A<ex>lgar</ex> and the whole community of the church of St Cuthbert.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="injunction">I command and enjoin you that by no means should you enter a plea nor a
+                     deraignment in respect of the land of Swinton before it
+                     should come before me.</seg></seg> I am also making known to you, Lord Prior, that I have many things to say to you
+                  privately about many matters, as soon as possible. <seg type="diplomatic" subtype="salutation">Farewell.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,48 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/48</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-07-30 05:36:10.497061+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/48</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Sancte Matris ecclesie filiis presentibus et futuris <seg type="diplomatic" subtype="intitulatio">Patricius Comes de dumbar</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me dedisse et concessisse et hac mea carta confir<lb/>masse deo et ecclesie Sancte Marie de Melros et Monachis ibidem deo seruientibus
+                     pro animabus d<ex>aui</ex>d et malcolmi regum scotie et comitis<lb/> henrici et pro animabus patris mei et matris mee et <persName>ade</persName> comitisse quondam uxoris mee . et pro salute domini will<ex>el</ex>mi regis et regine<lb/> et alexandri filii eorum . et pro salute mea et cristine comitisse uxoris mee et
+                     pro salute patricii filii mei et omnium filiorum meorum<lb/> et filiarum unam carucatam terre sicut ego ipse eam perambulaui predictis
+                     monachis cum adam abbate de Melros et cum probis hominibus
+                     meis <seg type="diplomatic" subtype="boundaries">que continentur infra has diuisas . Scilicet ab illo loco qui dicitur Munekedic
+                     ascendendo per sicum qui<lb/> uocatur luggild usque contra grenelawe et inde uersus aquilonem per lapides qui
+                        positi sunt per diuisas a me factis usque ad<lb/> predictum grenelawe et inde uersus aquilonem per easdem diuisas usque ad
+                        crumbestan qui translatus de loco ubi prius steterat<lb/> positus est ad predictas diuisas . et inde uersus aquilonem per lapides positos
+                        per diuisas usque in tympanelecche et inde uersus<lb/> aquilonem per easdem diuisas usque in tacwith et inde descendendo per eundem
+                        tacwith usque ad orientalem partem de<lb/> cruc et inde uersus aquilone per transuersum witerig per lapides positos per
+                        diuisas usque in cakkewellelecche et inde<lb/> descendendo per eundem cakkewellelecche usque ad fontem sancti cuthberti et inde
+                        descendendo per riuulum qui exit de predicto<lb/> fonte usque ad nesefflat .</seg> Totam hanc terram et quicquid continentur infra prescriptas diuisas uersus
+                     edmundestun grangiam<lb/> eorundem Monachorum dedi eis in liberam . puram . et perpetuam elemosinam <seg type="diplomatic" subtype="holding">ut ea habeant . teneant et possideant in<lb/> perpetuum ita libere et quiete plene et honorifice absque omni terreno seruitio
+                        et consuetudine et exactione seculari sicut<lb/> aliqua elemosina liberius . quietius . plenius et honorficentius teneri potest
+                        uel possideri .</seg> <seg type="diplomatic" subtype="warrandice">Et ego et heredes emi manute<lb/>nebimus et warantizabimus eandem elemosinam predictis Monachis contra omnes
+                        homines in perpetuum et acquietabimus<lb/> eam erga dominum regem de omni forensi seruitio</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Testibus Domino Raduffo dunensi episcopo . Patricio filio meo . Lauren<lb/>tio de abernithi’ . Will<ex>elm</ex>o patric . Patricio filio Ade . Neso filio nes . Rogero de merlei . Ric’ nano .
+                     Rolando . Waltero<lb/> filio edgar et alano fratre eius . Waldeuo persona de Witigham . Nigello fratre
+                     eius . Thoma Fraser . et multis aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

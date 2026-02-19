@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/273</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:32.642414+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/273</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant presentes et futuri . quod</seg> <seg type="diplomatic" subtype="intitulatio">Ego Cristina filia Willelmi filii Ade de Astenesdene</seg> . dedi .<lb/> concessi . et hac presenti carta mea confirmaui . Hugoni braciatori de
+                        Astenesden<ex>e</ex> totam illam<lb/> terram quam habui apud Creswell’ in territorio de Astend’ . cum paruo prato que
+                        iacet inter Craswell'<lb/> et Monekesflattes . cum omnibus pertinenciis suis et libertatibus . <seg type="diplomatic" subtype="holding">Habendam . et tenendam predicto Hugoni et heredibus<lb/> suis uel assignatis libere . quiete . pacifice . et integre . iure hereditario
+                           inperpetuum . Reddendo inde annu<lb/>atim mihi et heredibus meis ipse et heredes sui uel assignati ad pentecosten .
+                           unum denarium pro omni seruicio seculari<lb/> et demandis .</seg> <seg type="diplomatic" subtype="warrandice">Ego uero dicta Cristina et heredes mei predicto Hugoni et heredibus suis uel
+                        assignatis totam<lb/> predictam terram et pratum cum pertinenciis suis . contra omnes homines et
+                           feminas warantizabimus . acquietabimus .<lb/> et defendemus inperpetuum .</seg></seg> <seg type="diplomatic" subtype="sealing">In cuius rei testimonium presentem Cartam sigilli mei munimine roboraui .</seg> <seg type="diplomatic" subtype="witnesses">Hiis<lb/> testibus . Roberto de Scona . Elia de Haulton’ . Gilberto filio eius . Benedicto
+                        Grundi . Roberto filio eius .<lb/> Rogero preposito de Astend’ . Ada de Lillescliue . Roberto carpentario et multis
+                        aliis .</seg></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

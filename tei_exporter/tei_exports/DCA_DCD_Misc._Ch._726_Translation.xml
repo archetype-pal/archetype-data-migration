@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 726</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:41:10.535672+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 726</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all the faithful of Holy Church, <seg type="diplomatic" subtype="intitulatio">Walter of Lindsay</seg> <seg type="diplomatic" subtype="salutation">sends greeting.</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let those to come as well as those present know</seg> me to have given, granted, and by this my charter to have made firm, to the
+                     church of St Mary at Kelso, and to the monks serving God
+                     there, the church of Earlston with one ploughgate of land
+                     and all the rest belonging to it, in perpetual alms, for
+                     the soul of King David, and for the soul of Earl Henry his
+                     son, and for the soul of Walter my uncle, and for my own
+                     soul and for my wife's, and for the souls of all my
+                     ancestors and successors. And the hospital in the same
+                     toun shall be quit from all rent of teinds. William my son
+                     consents and witnesses.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, Hugh the clerk, William the chaplain, John the chaplain of
+                  Sprouston, Richard the priest of Bowden, Robert the scribe.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

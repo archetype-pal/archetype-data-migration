@@ -1,0 +1,50 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of TNA DL 25/546</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 09:24:05.305431+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/546</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let it be known to all</seg> ... with the consent of our heirs ... in everlasting alms for the souls ... that
+                     is to say, of our ancestors and successors ... of Skeldhou
+                     with all its pertinents ... <supplied>to St</supplied> Mary <supplied>and</supplied> the monks of Man ... <seg type="diplomatic" subtype="boundaries">as the syke divides Godfrey's moor and the mills, and as the stream divides
+                     Langliferee and the land of Mor... as the boundary is
+                     known to all local inhabitants between ... and the same
+                     land of Mora and descends into the sea by the Skeldhou.</seg> This land which is within these boundaries we have granted to the aforementioned
+                     monks and <seg type="diplomatic" subtype="sealing">strengthened by the defence of our seal</seg>, free and quit from every earthly service which pertains to us in wood and
+                     plain, in meadows and pastures, in moors, peat-bogs and
+                     marshes, in saltpans and mills, in roads and pathways ...
+                     can be done with easements as well named as unnamed, as an
+                     evening sacrifice to God as a savour of sweetness for our
+                     souls and the souls of our fathers and mothers, our wives
+                     and our children, and of all our friends, as well living
+                     as departed, except that the monks shall do forinsec
+                     service.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Roger the prior of Furness; Ivo the dean of Copeland; Adam
+                  the parson of Millum; Robert the priest of 'Punzurebi';
+                  William of Esbie; John son of Pontius and William his son;
+                  Edward son of Ulf and Ketill his brother; Richard son of
+                  Pontius; Hugh son of Edward; Alan son of Ketill; WIlliam
+                  Lubright.</seg> </p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 610</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:22:02.007249+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 610</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W Rex Scott’ .</seg> Iusticiis suis . et vicecomiti suo de Berewic . <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="injunction">prohibeo firmiter<lb/> ne seuienties mei uicecomitatus de Berewic . alias habeant consuetudines . aut
+                     alias<lb/> faciant exacciones . in elemosina mea de Goldingham . et Goldinghamshire de<lb/> placitis . et querelis quas ipsi mouent  quam seruientes mei aliorum
+                     uicecomitatuum<lb/> meorum habent in aliis elemosinas meis in terra mea .</seg> <seg type="diplomatic" subtype="witnesses">T<ex>estibus</ex> Eng’ Episcopo de Glasg’<lb/> Nich’ Cancellario . D<ex>aui</ex>d . Olif’ Iustic’ . Hug’ Rid’ . Rob’ Auenel .</seg> <seg type="diplomatic" subtype="dating">Apud Rokesburg .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

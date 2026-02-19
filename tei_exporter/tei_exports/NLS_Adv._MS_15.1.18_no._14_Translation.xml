@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NLS Adv. MS 15.1.18, no. 14</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-06-06 15:29:49.154796+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 14</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">William, by divine mercy humble servant of the Church of St Andrews</seg>, wishes to all sons of Holy Mother Church <seg type="diplomatic" subtype="salutation">eternal salvation in the Lord</seg>:</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">We wish it to come to the attention of you all</seg> that we, with the assent of the prior and the chapter of St Andrews, for the
+                     improvement of the archdeaconry of St Andrews, have given
+                     and granted to Master Laurence, archdeacon of St Andrews,
+                     and to his successors for ever, the church of Tarvit with
+                     all its rightful pertinents, free and quit from synodal
+                     dues and all episcopal dues and exactions. <seg type="diplomatic" subtype="sealing">And that this our donation should remain secure for ever, we have caused it to
+                     be confirmed by the application of our seal and the
+                     witness of the present document</seg>.</seg> <seg type="diplomatic" subtype="witnesses">With theses witnesses: Andrew, dean of Lothian; Andrew of Moray; Gervase de
+                  Neaufles; Peter and Edward, chaplains; Master Michael; Master
+                  Stephen; Richard the chaplain; Richard the chamberlain;
+                  Nicholas of Coldingham; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

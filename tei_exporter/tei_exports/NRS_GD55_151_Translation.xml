@@ -1,0 +1,44 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/151</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:12:51.703621+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/151</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W<ex>illiam</ex> king of Scots</seg> to all worthy men of his land, clerk and lay, French, English, and Scots, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let those to come as well as those present know</seg> me to have allowed and by this my charter made firm to the church of St Mary at
+                     Melrose and to the monks in that place serving God the
+                     donation that Osulf son of Uhtred and Uhtred his son
+                     conveyed to the same church in respect of the land of
+                     Ringwood, in all things so freely and quitely in
+                     everlasting alms as freely and quietly as their charters
+                     to them bear witness, and the charter of King Malcolm my
+                     brother has allowed and affirmed.</seg> <seg type="diplomatic" subtype="witnesses">As witness: <supplied>Richard</supplied> bishop of St Andrews; Ingram, bishop of Glasgow; John, abbot of Kelso; Osbert,
+                     abbot of Jedburgh; Nicholas, chancellor; Matthew,
+                     archdeacon; Richard, chaplain; Richard de Morville; Walter
+                     son of Alan; Philip de Valognes; Walter Corbet; Robert
+                     Avenel; Gilbert son of Richer; Bernard son of Brian;
+                     Robert son of Guy; William de la Haye; William de
+                     Mortimer; Ralph le Naym; Imer, clerk; Walter of Berkeley.</seg> At Lanark.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

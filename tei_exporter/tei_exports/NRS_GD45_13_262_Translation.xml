@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/262</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-17 01:44:37.072284+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/262</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To the whole body of Christ’s faithful who shall view or hear the present
+                  charter, Roger de Quincy, earl of Winchester, constable of
+                  Scotland, sends Greeting:</seg> <seg type="diplomatic" subtype="disposition">I make known to you all that I have given, granted, and by my present charter
+                  made firm, for the salvation of my own soul and my
+                  predecessors’, to the abbot and convent of Holyrood in
+                  Edinburgh, and to their tenants in Preston, that they be quit
+                  in perpetuity of suit of my mill of Tranent, and of multure
+                  of all manner of grain of the whole land of Preston
+                  pertaining to their church of Tranent.</seg> That this may obtain the strength of endurance, I have duly caused the present
+                  charter to be strengthened with the defence of my seal. Given
+                  at Tranent, on the Monday next before the feast of the
+                  apostles Simon and Jude, in the year of grace 1250.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

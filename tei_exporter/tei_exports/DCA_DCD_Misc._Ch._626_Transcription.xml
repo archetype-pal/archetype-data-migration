@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 626</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-12 13:45:36.142887+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 626</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alex<ex>ander</ex> . dei gr<ex>ati</ex>a rex Scott<ex>orum</ex></seg> . omnibus probis hominibus tocius terre sue  <seg type="diplomatic" subtype="salutation">salutem</seg> . </seg><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> nos conces<lb/>sisse . deo et sancto Cuthberto de Coldingham’ . et monachis ibidem deo
+                     seruientibus . ut ipsi et eorum <lb/> seruientes per totam terram nostram liberi sint et quieti ab omni tolneyo de
+                     propriis catallis <lb/> et mercaturis eorum . </seg><seg type="diplomatic" subtype="prohibition">Quare prohibemus . ne quis contra hanc libertatem eis infra terram nostram <lb/> iniuriam uel uiolentiam aliquam iniuste inferat super nostram forisfacturam .
+                     sicut carta domini regis . <lb/> Willelmi patris nostri testatur .</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . Willelmo de Bosch<ex>o</ex> . cancellario . Willelmo Cumin . comite . de Buchan’ . iusticiario . scott<ex>orum</ex> . Alex<ex>andro</ex> . vicecomit<ex>e</ex> . de Striuelin’ . Iohanne de Maccuswel’ . </seg><seg type="diplomatic" subtype="dating">Apud Kinros’ . xxi . die Iulii . anno regni nostri octauo</seg> .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/51</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:31.179862+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/51</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">R . dei gratia sancti andree episcopus</seg> orthodoxe ecclesie filiis <seg type="diplomatic" subtype="salutation">salutem et perpetuam benedictionem</seg> .</seg><lb/> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerint tam presentes quam futuri .</seg> nos concessisse et autoritate presentis scripti . et consi<lb/>lio atque consensu capituli nostri confirmasse composi[ti]onem inter Monasterium
+                     de Maylros . et ec<lb/>clesiam de Dunbar in nostra presentia factam . et Cyrographo utriusque partis
+                     munitam . super decima<lb/>tionibus duarum grangiarum de Edmundestune et hertesheued . Spot et omnium
+                     pertinentium<lb/> ad easdem grangeas . sub tali forma . quod Monasterium de Maylros singulis annis
+                     xxx solidos per<lb/>soluet ecclesie de Dunbar . ita quod ecclesia de Dunbar nichil amplius supra hos
+                     xxx solidos a prefa<lb/>to monasterio exigere possit uel debeat in perpetuum . Hanc compositionem ad
+                     utriusque partis<lb/> peticionem . in sinodo a nobis confirmatam . in perpetuum ab omnibus filiis
+                     ecclesie dei ra<lb/>tam et illibatam auctoritate episcopali haberi censemus . <seg type="diplomatic" subtype="injunction">et ne forte in posterum cuiusquam<lb/> ecclesiastice secularisue persone potestate . siue temeritate . uel machinatione
+                        aliqua<lb/> cassari possit uel quo quomodo i[nfrin]gi ab aliquo . sub anathemate . et ira
+                        uenturi iusti<lb/> iudicis et ultione domini nostri iesu christi cum omni synodo nostra inhibemus .</seg></seg> <seg type="diplomatic" subtype="witnesses">Te<supplied>stibus</supplied><lb/> and<ex>rea</ex> archidiacono . laudo<ex>n</ex>ie · walt<ex>er</ex> archidiacono Sancti and<ex>ree</ex> . A . abbate de Neubothel . Gauf’ abbate<lb/> de dunf’ . Rob’ abbate de scona . Ioh<ex>anne</ex> abbate de sancta cruce . Rogero abbate de driburg . Rob’ de pert<lb/> cancellario episcopi . Alex’ albino ca<supplied>pe</supplied>llanis episcopi . Aeiul’ . et Patricio decanis Adam de dunbar .<lb/> Ald’ persona de lawader . Gilis de W<supplied>e</supplied>dala .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

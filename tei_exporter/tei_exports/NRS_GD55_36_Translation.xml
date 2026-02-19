@@ -1,0 +1,49 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/36</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 11:31:18.310406+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/36</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church, present and future, <seg type="diplomatic" subtype="intitulatio">Rory mac Gillespie and Christiana his spouse, the daughter of Roger of
+                     Skelbrooke</seg>, <seg type="diplomatic" subtype="salutation">send Greeting</seg>:</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know us</seg> to have granted, and by this our charter to have made firm, to God and to the
+                     Church of Melrose and to the monks serving God in that
+                     place, in free and pure and perpetual alms, the donation
+                     of Roger of Skelbrooke which he made to the same church
+                     and monks aforesaid, of a fishery on the Doon above <ex>Harenam</ex>, and one saltpan, with lands and tofts and all easements that are contained in
+                     the charter of the aforesaid Roger, <seg type="diplomatic" subtype="holding">to be held and possessed for all time in this wise freely and quietly, fully and
+                     honourably, just as any alms is freely and quietly, fully
+                     and honourably held possessed, and just as the charter of
+                     the aforesaid Roger bears witness</seg>.</seg> <seg type="diplomatic" subtype="warrandice">And we and our heirs shall maintain and warrant all things aforesaid to them and
+                  we shall acquit them in respect of all men from every service
+                  for all time.</seg> <seg type="diplomatic" subtype="disposition">We have also granted to the same monks, and by this charter have made firm, the
+                  whole land of <ex>Drumteisuiene</ex> and of <ex>Alesburc</ex> and of <ex>Authenephur</ex>, so much as belongs to us, <seg type="diplomatic" subtype="holding">to be held and possessed for all time, in this wise freely and quietly and
+                     honourably, just as the charter of the aforesaid Robert
+                     and the confirmation of our lord Duncan bear witness.</seg></seg> <seg type="diplomatic" subtype="witnesses">As witness, the same Duncan, William the sheriff of Newcastle-upon-Ayr, Walter
+                  the king’s clerk, John the clerk, John the brother of Udard,
+                  Gilbert mac Kennedy, Ewen mac Alewine, Gilla na Náem mac
+                  Colmán.</seg> <seg type="diplomatic" subtype="sealing">And since we did not have our own seal, the lord Duncan, at our request, has set
+                  his seal to this charter for us.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

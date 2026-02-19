@@ -1,0 +1,44 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/44</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.827713+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/44</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Florence, by the grace of God elect of Glasgow</seg>, to all the sons of Holy Mother Church, as well future as present, <seg type="diplomatic" subtype="salutation">sends greeting in Christ</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> us to have given and granted, and by this our charter to have made firm, to God
+                     and to the church of Saint Mary at Melrose, and to the
+                     monks in that place serving God, as free and everlasting
+                     alms, the toft in the burgh of Glasgow that Ranulf of
+                     Haddington built at the original construction of the burgh
+                     for the benefit of the monastic house of Melrose, as fully
+                     as he built and held it, just as the charter of our
+                     predecessor of good memory, Jocelin bishop of Glasgow,
+                     also witnesses the aforementioned toft given to the
+                     aforesaid monks. <seg type="diplomatic" subtype="holding">Wherefore we will that the monks of Melrose mentioned above shall hold and
+                     possess the aforesaid toft as freely and quietly as they
+                     freely and quietly hold and possess any alms.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Ralph, bishop of Down; R<ex>alph</ex>, abbot of Kinloss; Master J. the official; Benedict, chaplain; Alexander,
+                     chaplain; Master Terri [Theodoric], Hugh Lovell; Walter de
+                     Paris; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

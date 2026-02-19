@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/268</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:32.983046+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/268</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><seg type="diplomatic" subtype="address">Omnibus Sancte matris Ecclesie filiis <seg type="diplomatic" subtype="intitulatio">Gaufridus filius Gaufridi</seg> <seg type="diplomatic" subtype="salutation">eternam in domino Salutem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerit uniuersitas uestra</seg> me dedisse et concessisse et hac carta mea carta confirmasse<lb/> deo et Ecclesie Sancte Marie de Melros’ et monachis ibidem deo seruientibus in
+                        liberam . puram et perpetuam elemosinam medietatem
+                        tocius terre quam prius tenuerunt in feodo de<lb/> Cliftun’ quam mihi ut ius meum recognouerunt . illam Scilicet que remotior est a
+                        sole sicut mihi accidit in eodem manerio . sorte diuiso
+                        inter dominum Willelmum filium Comitis Patricii et me .<lb/> <seg type="diplomatic" subtype="boundaries">Scilicet inter has diuisas . A prominentia duorum lapidum de Rupe supra paruam
+                        iunccariam ad orientalem partem de Crukehou que
+                        propinquior est vbi terra de Prenwensete et terra<lb/> de Grubbesheved insimul conueniunt per ipsam iunccariam . et lapidem desubtus
+                           iacentem per quoddam cundosum per metas et diuisas a
+                           me ipso perambulatas . usque in bireburne . et<lb/> inde per transuersum bireburne contra australem partem uersus Mollam usque rupem
+                           propinquiorem uie uersus orientem supra Cukoueburne
+                           . et inde sicut Cukoueburne descendit  usque in<lb/> eandem uiam magnam . qua itur de Rokesburg ad Mollam . et inde ipsam uiam usque
+                           in Mereburnam . que diuidit terram de Cliftun et
+                           terram de Molla . et inde per mereburna usque ad
+                           diuisas<lb/> de Hunhum . et inde sicut diuise tendunt inter terram de Hunhum et terram de
+                           Cliftun’ usque ad diuisas de Grubbesheued . et inde
+                           per metas et diuisas a meipso deambulatas inter<lb/> terram de Cliftun’ et terram de Grubbheued . et inde supra predictum Crukehov
+                           per diuisas a meipso perambulatas inter terram de
+                           Cliftun’ et terram de Prenwensete . et inde usque ad
+                           predictos<lb/> duos lapides de rupe supra prefatam iunccariam .</seg> <seg type="diplomatic" subtype="holding">Habebunt igitur et tenebunt prefati Monachi et successores sui de me et
+                        heredibus meis predictam medietatem tocius terre infra
+                        has<lb/> diuisas comprehense cum omnibus pertinenciis suis integre plenarie et pacifice
+                           liberam et quietam ab omni seruicio forinseco et
+                           priuato et omni consuetudine et secta curie et omni<lb/> exaccione vel demanda seculari .</seg> <seg type="diplomatic" subtype="warrandice">Et ego et heredes mei predictam medietatem cum omnibus pertinenciis suis infra
+                        predictas diuisas comprehensam manutenebimus et
+                        warantizabimus<lb/> sepedictis monachis inperpetuum contra omnes homines et feminas . et de omni
+                           seruicio seculari erga dominum Regem scocie
+                           defendemus .</seg></seg> <seg type="diplomatic" subtype="witnesses">Hiis Test’ . Patricio Comite . de Dunbar . Patricio<lb/> filio eius . Alexandro vicecomite de Striuelin . Marmeduc de Thweng’ . Iohanne
+                        de Makeswell’ . Will<ex>elmo</ex> filio Ioh<ex>annis</ex> . Bern<ex>ardo</ex> de Hauden’ . Symone de Grubbheued . Et multis Aliis .</seg></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

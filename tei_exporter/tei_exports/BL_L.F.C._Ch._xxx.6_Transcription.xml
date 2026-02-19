@@ -1,0 +1,48 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL L.F.C. Ch. xxx.6</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:15:11.063798+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>L.F.C. Ch. xxx.6</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio"><persName>Alexand<ex>er</ex></persName> Dei Gratia Rex Scott’</seg> . Ep<ex>iscop</ex>iS . Abbatibus . Comitibus . Baronibus . Uicecomi˹t’ . Iustic’ . Prepositis .
+                     Ministris et˺ <lb/> Omnibus probis Hominibus tocius <supplied>ter</supplied>re Sue Clericis et Laicis <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant presentes et ˹futuri</seg> nos ad Honorem Dei et˺ <lb/> Gloroise uirginis Marie . et Sanct<supplied>issimi</supplied> Reg<ex>is</ex> <persName>EDWardi</persName> . et ad exaltationem Sancte Religionis pro Salute nostra et Omnium <lb/> Antecessorum et successorum nostrorum . et pro Animabus Illustris Reg<ex>is</ex> <persName>Willelmi</persName> patris nostri et <persName>ERmegard’</persName> Regine ma<lb/>tris nostre . et Omnium Antecessorum . et successorum nostrorum quandam Abbatiam
+                     Cysterciens<ex>is</ex> Ordinis fundasse Apud <lb/> Balmurinath in fif . nosque m<supplied>onachis</supplied> ipsius ordinis Ibidem deo Seruientibus . et Seruituris dedisse et Concessisse et
+                     Hac Carta <lb/> nostra Confirmasse totam terram de Balmurinath . et De Cultran In fif . per Suas
+                     Rectas Diuisas . Concessimus etiam eisdem <lb/> Ecclesiam matricem de Balmurinath cum Omnibus pertinentiis Suis . et Omnia ad
+                     predictas terras iuste pertinentia. Quas <lb/> etiam <persName>Adam</persName> de Stawell’ frater . et HereS <persName>Ricardi Reuell’</persName> nobis Ad Opus predicte Domine . E . Regine matris nostre <lb/> In Plena Curia nostra Apud fo<supplied>r</supplied>ephar quietas calamauit . et In manu nostra pro se et Heredibus Suis per fustum
+                     et Bacu<lb/>lum Resignauit . Concessimus etiam prefatis monach<ex>is</ex> Cysterciens<ex>is</ex> Ordinis Ad fundationem prenominate Abbatie feuth<lb/>mure In Anegus per Suas rectas diuisaS . et cum Omnibus iustis pertinentiis Suis
+                     . <seg type="diplomatic" subtype="warrandice">Et nos et Heredes nostri manutenebimus et <lb/> Warantizabimus predictis monach<ex>is</ex> predictas terras cum Omnibus pertinentiis et Libertatibus Suis inperpetuum
+                        contra omnes <lb/> Homines .</seg> <seg type="diplomatic" subtype="holding">Quare uolumus ut predicti monachi omnes predictas terras Habeant . et teneant .
+                     De nobis et Successoribus nostris <lb/> In Liberam . Puram . Quietam . et perpetuam elemosinam . In terris . et Aquis .
+                        In pratis et pascuis . In moris . et maresiis . In
+                        stang<lb/>nis et molendinis . In uiis et Semitis . et Salinis et piscariis . et Omnibus
+                        aliis Aeisiamentis ad predictas terras Iuste
+                        pertinentibus . <lb/> Ita Libere . et Quiete . Plenarie . et Honorifice . Sicut aliqua elemosina .
+                        Liberius . et Quietius . plenius et Honorificentius .
+                        Ab auxi<lb/>Liis . Excercitibus . Talliagiis . Tol<supplied>lenei</supplied>s . et Omnibus exactionibus . Consuetudinibus . et Seruiciis Secularibus in
+                        Regno Scocie tenetur <lb/> aut possidetur . Ita quod nichil Horum Omnino ab eis per totum Regnum Scocie
+                        possit exigi preter solas Orationes</seg> . <lb/></seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . <persName>A.</persName> Episcopo Moraui<supplied>ensi . W.</supplied> Comit<ex>e</ex> De Buwan Iustic’ Scott’ . <persName>W. Olifard</persName> Iustic’ Laodon’ . <persName>W.</persName> fil<ex>io</ex> <persName>Alan’</persName> <lb/> Senescallo . <persName>Patric’</persName> fil<ex>io</ex> Com<ex>itis</ex> <persName>Pat<supplied>ric’</supplied> H.</persName> De Baill’ . <persName>Th’</persName>. De hay . <persName>Ioh’</persName>. et <persName>W.</persName> fratribus Suis . <persName>Th’</persName> fil<ex>io</ex> <persName>Rand’</persName>. <persName>H.</persName> fil<ex>io</ex> . Com<ex>itis</ex> <lb/> <persName>Rob’</persName> De hay . <persName>Gaufrid’</persName> . <persName>W.</persName> <supplied>de</supplied> Nidin . Clericis nostris</seg> Apud Clacmanan . iii. die feb<ex>ruarii</ex> . Anno Regni nostri xvii.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

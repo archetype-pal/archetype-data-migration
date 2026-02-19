@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/241</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-02 13:02:56.701546+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/241</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte martris Ecclesie filiis ⁊ fidelibus . Seier de Quinci Comes .
+                  Winton’ . Salutem.</seg> <seg type="diplomatic" subtype="disposition">Nouerit uniuersitas uestra me in<lb/> presentia domini regis Scott’ ⁊ optimatum suorum in plenaria Curia sua apud
+                     forfar quietum clamasse pro me omnibus<lb/> heredibus meis abbati Ecclesie sancte crucis de Edenburc ⁊ Conuentu eiusdem
+                     domus in perpetuum quicquid iuris habere uidebar in<lb/> Ecclesia de Trauernent ⁊ eius pertinentiis diuine remunerationis intuitu ⁊ pro
+                     salute dominorum meorum Regum Scott’ ⁊ pre<lb/>decessorum ⁊ successorum meorum . Preterea confirmo eis unam Carucatam terre ⁊
+                     decem acras in territorio de Trauernent<lb/> apud faueside cum libero exitu ⁊ communi pastura quam pater meus eis in liberam
+                     ⁊ perpetuam Elemosinam dedit<lb/> sicut Carta sua eis testatur . Confirmo Etiam Eis totam illam terram in nodrif
+                     quam pater meus eis dedit ad<lb/> seruiendum Capelle eiusdem uille . Tenend’ sibi in liberam ⁊ puram Elemosinam
+                     per easdem diuisas per quas pater meus in<lb/> presentia proborum uirorum ipsos Canonicos inde saisiauit.</seg> <seg type="diplomatic" subtype="witnesses">Teste Domino Rege . Comite D<ex>aui</ex>d . fratre domini Regis . Rob’<lb/> de London’ . Will<ex>elm</ex>o Cumin . Florent’ . Cancell’ . Will<ex>elm</ex>o de Bosco . Will<ex>elm</ex>o ⁊ Oliuero . Capellanis domini regis . Hugone<lb/> de prebenda . Herberto de Camera . A . persona de Kingor . A . de Hasteng’ ⁊
+                     aliis quam pluribus</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

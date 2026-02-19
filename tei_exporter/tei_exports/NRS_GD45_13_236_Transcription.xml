@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/236</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-02 18:17:04.298971+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/236</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">.W. dei gratia Rex Scott’ . Omnibus probis hominibus tocius terre sue Salutem.</seg> <seg type="diplomatic" subtype="disposition">Sciatis me concessisse<lb/> abbati ⁊ Conuentui de Sancta cruce ut nullus super eos aut super homines suos
+                     namum capiat<lb/> nisi pro dominicis debitis suis aut pro debitis hominum suorum . Quare prohibeo
+                     firmiter ne quis<lb/> uel in Scotia . uel apud Insulam de May . cum homines predicti Abbatis illuc ad
+                     piscandum uenerint  super<lb/> canonicos de sancta cruce aut super eorum homines namum capiat nisi sit pro
+                     dominicis debi<lb/>tis suis . aut pro debitis hominum suorum . Super meam forisfacturam .</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . Hug’ . Cancellario<lb/> meo . Ric’ . de Prebenda clerico meo</seg> Apud Hadint’.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

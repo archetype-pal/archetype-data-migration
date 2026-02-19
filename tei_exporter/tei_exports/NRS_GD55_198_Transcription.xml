@@ -1,0 +1,57 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/198</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:38:54.978807+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/198</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alex’ . Dei gratia Rex Scott’</seg> . Omnibus probis hominibus totius terre sue tam clericis quam laicis <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Nouerit vniuersitas uestra</seg> <seg type="diplomatic" subtype="narration">quod<lb/> in presentia nostra et Baronum nostrorum . ad colloquium apud Listun’ Anno gr<ex>ati</ex>e Millesimo . ducentesimo . tricesimo quinto .<lb/> facta est hec amicabilis compositio inter Abbatem et Monachos de Melros ex una
+                     parte . et Roger<ex>um</ex> . Auenel ex altera . super<lb/> contentionibus motis inter eosdem . super eo scilicet quod idem . R. contra
+                     tenorem carte sue . et predecessorum suorum . posuit
+                     equicium .<lb/> aueria sua et hominum suorum . in terra ipsorum Monachorum in Eskedal’ infra
+                     diuisas contentas in carta sua . et super eo<lb/> quod dictus . R. et sui quasdam domos per dictos Monachos erectas diruerunt . et
+                     fossata et alia clausa eorundem Mona<lb/>chorum prostrauerunt . et alias eis iniurias intulerunt ut dicebant . Videlicet
+                     quod dictus . R. concessit . quod nec ipse<lb/> nec heredes sui . nec homines eorum habebunt equicium . aueria . porcos . oues .
+                     nec aliqua alia aueria domestica uel Sil<lb/>uestria infra diuisas contentas in Carta dicti . R. nisi de licentia ipsorum
+                     Monachorum . Salua dicto Rogero saluagina .<lb/> eo modo quo continetur in Carta sua . Quem modum nos et Barones nostri taliter
+                     explanauimus . Scilicet . quod idem . R. et<lb/> heredes sui habebunt tantum ceruum et ceruam . Aprum . et Apram . capreolum . et
+                     capreolam . Preterea . aerium . accipitrum .<lb/> et Sperueriorum . ita quod Monachi maliciose non impediant quin eo loco quo
+                     aeriant possint aeriare quamdiu habu<lb/>erint consuetudinem ibidem aeriandi . Neque accipitrum aut Sperueriorum capiant
+                     nidos infra dictas diuisas . Nec ar<lb/>bores in quibus aeriant uno anno secentur donec in anno proximo sequenti
+                     perpendatur si in illis arboribus uelint aeriare .<lb/> uel non . Et si tunc non aeriauerint . Licite de arboribus commodum suum facient
+                     Monachi  modis omnibus quibus uo<lb/>luerint . In aliis uero locis infra diuisas contentas in Carta dicti . R.
+                     facient logias et edificia ubicumque uoluerint pro libito<lb/> et uoluntate sua . et vtentur tenemento contento infra dictas diuisas prout
+                     melius et utilius sibi . fratribus suis . seruientibus .
+                     et<lb/> aueriis suis proficere  eis uisum fuerit . Preterea . de Latronibus et
+                     forisuiis sic determinauimus . quod non dicuntur forisuie
+                     quo<lb/>ad ius monachorum et usum eorundem . seruientium . et fratrum . et hominum
+                     suorum . ubi eunt pascendo animalia sua . uel<lb/> custodiendo . uel querendo . uel alia eorum negocia gerendo . siue de die . siue
+                     de nocte . nisi in manifesto facinore<lb/> fuerint deprehensi . Et si de nocte fuerint taliter deprehensi custodiantur
+                     usque in crastinum . qui si fuerint seruientes Mo<lb/>nachorum  ipsis statim libere tradantur ad parendum iuri ubi parere debent . De
+                     die uero capti . statim reddantur eisdem .<lb/> Dicti etiam Monachi non uenabuntur ibi cum Moetis . et cordis . nec alios ibidem
+                     ducent ad uenandum . nec pedicas<lb/> ibi ponent nisi ad capiendos lupos . Dicta siquidem Saluagina utentur dictus Rog<ex>erus</ex> . et heredes sui sicut pretaxa<lb/>tum est sine fraude et malo ingenio . absque dampno et lesione . Segetum .
+                     Sepium . Pratorum . Pecudum . Animalium . et omnium
+                     aliarum possessionum eorundem Monachorum .</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . A. de Moreuia . et C. de Dunblain Episcopis . W. Comi<lb/>te de Menethet . W. filio Alani Senescall<ex>o</ex> Scotie . W. Olifard Iust’ Laodonie . Henrico de Baylloll’<lb/> Dauid Mariscallo . Gaufrido clerico de Liberatione .</seg> Octauo die Aprilis . Anno Regni domini Regis vicesimo<lb/> secundo .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

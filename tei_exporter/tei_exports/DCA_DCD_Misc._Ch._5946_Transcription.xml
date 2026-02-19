@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 5946</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.933879+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5946</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="notification">Sciant omnes tam presentes quam futuri quod</seg> <seg type="diplomatic" subtype="intitulatio">ego Robertus filius Reginaldi de Ristona</seg> <seg type="diplomatic" subtype="disposition">de<lb/>di et concessi et hac presenti carta mea confirmaui deo et sancto Cuthberto et
+                     sancte Ebbe et<lb/> Priori et Monachis de Coldingham in puram et perpetuam elemosinam humagium et
+                     seruicium<lb/> quod Patricius Scotus de Ristona mihi et heredibus meis debebat pro terra quam
+                     eidem . P . et<lb/> heredibus suis dedi pro humagio et seruicio suo de terra mea in campo de Ristona
+                     cum omnibus es<lb/>chaetis sine aliquo retinemento que in mihi uel heredibus meis accidere poterunt
+                     de dicta<lb/> terra . Et ego Robertus et heredes mei aquietabimus dictum . P . et heredes suos
+                     uel suos assigna<lb/>tos de omni forinseco seruicio dicte terre pertinenti . tam uersus dominum Regem
+                     quam uersus<lb/> domum de Codlginham . excepto quod dictus . P . et heredes sui uel sui assignati
+                     reddent<lb/> annuatim domui de Coldingham . vi . denarios ad festum sancti Iohannis Baptiste
+                     nomine firme .</seg><lb/> <seg type="diplomatic" subtype="sealing">Et ut hec mea donatio inperpetuum firma permaneat presenti scripto sigillum meum
+                  apposui .</seg><lb/> <seg type="diplomatic" subtype="witnesses">Hiis Testibus . Domino . W . de Morthingtona . Domino Alano de Swintona . Ada de
+                  Prender<lb/>gest . Galfrido Ridel . Ada de Rist<ex>ona</ex> . Bertramo filio eius . Mauricio de Aytona . Ioh<ex>anne</ex> filio<lb/> Helye . Ada clerico de Prendergest . Rad<ex>ulfo</ex> preposito . Rad<ex>ulfo</ex> seruiente . et multis Aliis</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

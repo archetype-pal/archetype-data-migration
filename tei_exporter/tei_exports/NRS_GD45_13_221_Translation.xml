@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/221</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-07-07 10:00:45.19291+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/221</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Robert, by the grace of God a humble servant of the church of Saint Andrew</seg>, <seg type="diplomatic" subtype="salutation">sends greeting and episcopal blessing</seg> to all sons of Holy Mother Church.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let all people, as well present as future, know</seg> me to have given, and by the guarantee of this charter to have made firm, to the
+                     church of the Holyrood in Edinburgh, and to the canons
+                     serving God there, the church of Carriden, with two
+                     ploughgates of land, and with everything rightfully
+                     belonging to it; that is to say, in teinds, in meadows, in
+                     pastures, in mills, and in all its other rights; so free
+                     and quit of all exaction as they freely and quietly
+                     possess any church in the whole diocese .</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Geoffrey, abbot of Dunfermline; Alured, abbot of Stirling;
+                  Robert, prior of St Andrews; Samson and Alan, monks of
+                  Durham; T<ex>horald</ex>, the archdeacon; Aiulf, the dean; Geoffrey of Lasswade; Master Andrew; Adam and
+                     Richard, the bishop’s chaplains; Geoffrey, the clerk;
+                     Peter of Stirling; and the full synod.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

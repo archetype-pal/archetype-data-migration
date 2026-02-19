@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/69</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.136271+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/69</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church, as well present as to come, <seg type="diplomatic" subtype="intitulatio">Richard Wallace</seg> sends <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know me</seg> to have given, and by this my charter to have made firm, to God and to the
+                     church of Saint Mary at Melrose, and to the monks there
+                     serving God, for the souls of David and Malcolm, kings of
+                     the Scots, and of Earl Henry, and of Walter fitz Alan, my
+                     lord, and of all their ancestors and successors; and for
+                     the souls of my father and my mother, and of all my
+                     forefathers, and my ancestors and successors; and for the
+                     salvation of my lord, W<ex>illiam</ex>, king of the Scots, and of Earl David his brother, and of Alan fitz Walter my
+                     lord, and of all his ancestors and successors, and for my
+                     own salvation, and my wife's, and all our heirs'; that
+                     land in Galloway which is called 'Godenehc'; <seg type="diplomatic" subtype="boundaries">by these boundaries, to wit, from the head of the burn which is called
+                     'Polncarn', as far as the oak tree on which a cross has
+                     been made, and so up, northwards by a syke which is near
+                     the said oak tree, towards the east, as far as
+                     'Loudonetha', and so across the bog towards the west along
+                     a syke, as far as the head of the burn which falls into
+                     the 'Saxnoc' at 'Clonsangan'.</seg> I have also given to the said church the land which is called Barmuir, <seg type="diplomatic" subtype="boundaries">by these boundaries, to wit, from the mouth of the burne at 'Hactenewetne'
+                     upwards as fas as the head of the same burn, and so from
+                     the head of the burn upwards along an old ditch as far as
+                     the bog below 'Hactnedonan', and so downwards as the
+                     crosses have been made on the oak trees, as far as
+                     'Louteuenan, and so up, northwards by the old ditch as far
+                     as 'Polnecreihs', and so downwards as 'Polnecreihs'
+                     descends into the 'Fale', and so downwards along the
+                     'Fale', as far as the mouth of the burn at 'Hactnewetne'.</seg> <seg type="diplomatic" subtype="holding">All these lands and whatever is contained within the afore-written bounds have I
+                     given to the church of Melrose, in free, pure, and
+                     perpetual alms for ever, to be held of me and my heirs in
+                     return for 2 merks of silver to be rendered to me and my
+                     heirs at two terms, to wit, one merk at Pentecost and one
+                     at the feast of Saint Martin; so freely, quitly, fully,
+                     and honourably as hey hold and possess any alms freely,
+                     quitly, fully, and honourably, without every earthly
+                     service, custom and secular exaction; reserving to myself
+                     and my heirs the aforementioned pension.</seg> <seg type="diplomatic" subtype="warrandice">And I and my heirs shall maintain and warrant to them the aforementioned lands
+                     against all men for ever, and acquit from forinsec and
+                     every earthly service towards the lord king and all our
+                     lords, except for their charters concerning Mauchline
+                     which they have from Walter fitz Alan and Alan fitz Walter
+                     my lords, and quitclaimed for me and my heirs for ever</seg>.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, J<ex>ocelin</ex>, bishop of Glasgow, A<ex>rchibald</ex> abbot of Dunfermline, R<ex>alph</ex> abbot of Kinloss, A<ex>dam</ex> abbot of Cupar, William Malveisin, archdeacon of Lothian, Hugh the king's
+                     chaplain, Robert son of Robert Warnebald.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

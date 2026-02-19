@@ -1,0 +1,46 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of TNA DL 36/1/240</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 09:22:03.14279+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 36/1/240</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Christ's faithful who shall view or hear the present letters, <seg type="diplomatic" subtype="intitulatio">Humphrey del Bois son of the lord Thomas del Bois</seg> <seg type="diplomatic" subtype="salutation">sends greeting in the Lord.</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me to have given, granted, and by this my present charter to have made firm, and
+                     for myself and my heirs to have quitclaimed to my lord,
+                     the lord Robert de Brus the lord of Annandale,
+                     Elshieshiels with all its pertinents, without any
+                     withholding, as it is divided by my land of Eskby by the
+                     ditch which my said lord had made there, in all places as
+                     long and as wide as it extends towards the south, the
+                     north, and east. <seg type="diplomatic" subtype="holding">For my said lord and his heirs or assigns to hold and to have freely, quitly,
+                     wholly and peaceably, in woods, plains, moors, marshes,
+                     and other places, with all liberties, free customs and
+                     easements of whatever kind pertaining to the same place
+                     within and without.</seg> <seg type="diplomatic" subtype="warrandice">And I Humphrey and my heirs shall warrant, acquit, and protect the aforesaid
+                     land for ever, for my aforesaid lord, with its pertinents
+                     as said before</seg>.</seg> <seg type="diplomatic" subtype="sealing">In testimony of this matter I have applied my seal to the presents.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, the lords William de Brus, Humphrey of Kirkpatrick, David of
+                  Torthorwald, Robert de Heriz, Roger of Kirkpatrick, John of
+                  Seton, knights, Adam of Hoddom, Hugh Mauleverer, and others. </seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

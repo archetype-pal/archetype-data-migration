@@ -1,0 +1,32 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 754</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 10:59:47.397407+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 754</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Henr<ex>icus</ex> comes filius regis scotie</seg> . episcopis . abbatibus . prioribus . comitibus . baronibus .<lb/> iusticiis . vicecomitibus . ministris . et omnibus probis hominibus tocius regni
+                     scotię<lb/> <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Notum sit uobis omnibus</seg> <seg type="diplomatic" subtype="narration">Swæn presbiterum coram me et in mea presen<lb/>tia quietas clamasse monachis de coldingham et illis reddidisse<lb/> apud berewihc fiswihe cum omnibus ad illam pertinentibus in terris et<lb/> aquis et dimidiam prenderghest . et terram quam habuit in coldingham<lb/> et lummesdene</seg> <seg type="diplomatic" subtype="disposition">Volo itaque quatinus predicti Swen omni uexatione<lb/> remota terras suas prenominatas teneant et in pace possideant</seg><lb/> <seg type="diplomatic" subtype="witnesses">Test canc' . Hingelr<ex>amo</ex> . et Will<ex>elm</ex>o de sumeru<ex>illa</ex> .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

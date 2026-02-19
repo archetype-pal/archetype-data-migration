@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/224</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-01-17 01:10:07.490749+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/224</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">M. Rex Scott’. <persName><roleName>Iusticiis</roleName></persName> suis . <persName><roleName>Vicecomitibus</roleName></persName> . Prepositis . Ministris . Cunctisque<lb/> aliis probis hominibus totius terre sue . salutem</seg> . <seg type="diplomatic" subtype="disposition">Mando ⁊ firmiter precipio ut in cuiuscumque terra aut potestate Abbas de Sancta
+                  Cruce inuenire poterit Natiuos<lb/> homines terre sue aut fugitiuos suos  eos iuste habeat . Nullusque ei aut ser<lb/>uienti suo quemquam ex illis iniuste detineat  super meam plenariam
+                     forisfacturam .</seg> <seg type="diplomatic" subtype="witnesses">T<ex>estibus</ex> Ern’ Episcopo de Sancto Andr<ex>ea</ex> . Ioh<ex>ann</ex>e abbate de Calchou . Galfr’ abbate de Dunferml’</seg> .<lb/> Apud Castellum puellarum.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

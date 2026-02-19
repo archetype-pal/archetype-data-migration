@@ -1,0 +1,47 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/342</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.759042+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/342</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="notification">Let all, both present and future, know that <seg type="diplomatic" subtype="intitulatio">I, Guy de Normanville,</seg></seg> <seg type="diplomatic" subtype="disposition">have granted, and by this my charter made firm, to the abbot and convent of
+                  Melrose the donation which the lord Thomas de Normanville, my
+                  brother, charitably made to the same in respect of the land
+                  of Maxton. The said lord Thomas de Normanville, my brother,
+                  holds this land of me in exchange for his land of Angus.
+                  Wherefore I will and allow that the said abbot and convent of
+                  Melrose may hold and possess of the said lord Thomas de
+                  Normanville, my brother, the said land of Maxton with
+                  messuage, toft, croft, liberties and easements, as it is set
+                  out in the charter that the said abbot and convent have from
+                  the said lord Thomas de Normanville my brother, fully,
+                  quitely and honourably for ever.</seg> <seg type="diplomatic" subtype="sealing">In testimony of this matter I have caused my seal to be applied to this
+                  document.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, Dom Ralph the abbot of Balmerino, the lord William son of Patrick
+                  the earl of Dunbar, the lord Nicholas Corbet, son of the same
+                  William, the lord William de Normanville the rector of the
+                  church of Maxton, my brother, the lord Leo my nephew, and
+                  many others.</seg> <seg type="diplomatic" subtype="dating">Enacted in the year of grace 1240 in the month of July.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

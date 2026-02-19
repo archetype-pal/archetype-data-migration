@@ -1,0 +1,51 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/76</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:41:32.707682+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/76</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Earl Waldef</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg> to all sworn men and friends, French and English.</seg> <seg type="diplomatic" subtype="notification">Let those to come as well as those present know</seg> <seg type="diplomatic" subtype="disposition">me to have given, and made firm by this my charter, with the agreement of my
+                  heir, to God and St Mary at Melrose, and to the monks serving
+                  God in that place, common pasture upon Lammermuir, with me
+                  and my men, by these boundaries, that is: from Baldred’s
+                  Stane by the highway as far as the Hazliecleugh and thence
+                  downwards as the Hazliecleugh falls into the Bothwell and
+                  thence as far as the boundaries of Innerwick; for the
+                  salvation of my soul and my ancestors’ and successors’; in
+                  everlasting alms, as freely and quitely and honourably from
+                  all secular services and customs as any alms is freely,
+                  quitely and honourably given or held. And if they shall quit
+                  the pasture of Innerwick, their sheep-folds shall follow
+                  their flocks, with their bothies that belong to the said
+                  sheep-folds within the marches named before, without manual
+                  labour, and with my own bothies at Belton.</seg> <seg type="diplomatic" subtype="warrandice">This donation I and my heirs shall warrant to the foresaid monks against all men
+                  for ever.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Aelina, countess; Ralph, chaplain; John, chaplain; Walter,
+                  chaplain; Hugh of Duns; Patrick the earl’s brother; Edward
+                  the earl’s uncle; Gilbert Fraser; Adam son of Aldan; Aldan
+                  the seneschal; Gamel of Pitcox; Adam of Fogo; Gilbert son of
+                  Walter; Stephen Papedy; Warin le Malle; Adam son of Edgar;
+                  Adam of Edington.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

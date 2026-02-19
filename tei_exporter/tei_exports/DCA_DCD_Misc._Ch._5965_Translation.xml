@@ -1,0 +1,49 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 5965</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 21:10:50.67455+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5965</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Christ's faithful to whom these present letters shall have come, <seg type="diplomatic" subtype="intitulatio">Simon son of Elias of Prenderguest</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know me, all of you,</seg> <seg type="diplomatic" subtype="disposition">to have given, granted, and by this my present charter to have made firm, for
+                  myself and for my heirs for ever, to God and to the blessed
+                  Cuthbert and the blessed Æbbe of Coldingham, and to the monks
+                  in that place serving God now and in the future, for the
+                  salvatino of my soul and of my ancestors', and in return for
+                  a certain sum of money which the prior and convent of
+                  Coldingham paid to me as a downpayment in my need, ten acres
+                  of land in the ploughland at <ex>Coteflat</ex> with one toft and croft of one acre of land on the western side of my brother
+                     Richard's garden, which the same Richard gave to me in
+                     return for my homage and service; <seg type="diplomatic" subtype="holding">for the said monks and their successrs to hold and to have as freely and quitely
+                     as I held the aforesaid land at any time.</seg> <seg type="diplomatic" subtype="warrandice">And I, Simon, and my heirs shall warrant the aforesaid land to the aforesaid
+                     monks against all men, with all its pertinents inside and
+                     outside the toun, without any withholding.</seg></seg> <seg type="diplomatic" subtype="sealing">And so that this my donation and confirmation should possess the perpetual
+                  strength of a charter, I have applied my seal to this
+                  charter.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, the lords David of Graham, then sheriff of Berwick, David
+                  of Haddington, Ralph Noble, Alan of Harcarse, William of
+                  Scremerston, Adam of Morham, Robert of Paxton, Adam son of
+                  John of Ayton, Adam son of Walter of the same, Patrick Scot,
+                  Patrick son of Colman of Oldcambus, and others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

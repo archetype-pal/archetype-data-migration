@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/217</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 07:52:57.409275+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/217</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church, present and to come, <seg type="diplomatic" subtype="intitulatio">Henry of Belton</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let your whole community know</seg> me to have given, granted, and by this my charter to have made firm, to the
+                     monks of Melrose my whole land of Kingside in the
+                     territory of Penshiel, as it lies between Kell Burn and
+                     King Burn and Whiteadder; <seg type="diplomatic" subtype="holding">to be held and had of me and my heirs at feu ferme for ever; by paying from it
+                     to me and my heirs each year two merks of silver, that is
+                     one at the feast of St Michael, and the other on
+                     Whitsunday.</seg> <seg type="diplomatic" subtype="warrandice">I and my heirs shall assuredly maintain and warrant and defend to the said monks
+                     the whole aforesaid land with all its liberties and
+                     pertinents and we shall discharge claims towards all men
+                     from every service, custom, exaction and demand;</seg> <seg type="diplomatic" subtype="holding">so that the said monks shall hold and have the said land freely and quitely for
+                     ever by the siad rent of two merks.</seg></seg> Enacted in the year of grace 1231. <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord Joh of Maxwell, king's chamberlain; the lord
+                  Thomas son of Ranulf; the lord Bernard of Howden; the lord
+                  John of Methkil; Philip of Pitcox; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

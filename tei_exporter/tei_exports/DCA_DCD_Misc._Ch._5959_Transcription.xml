@@ -1,0 +1,54 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 5959</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-28 09:51:01.108481+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5959</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus has literas uisuris uel audituris . <seg type="diplomatic" subtype="intitulatio">H . Abbas de Kelch<ex>ou</ex> . et . L . H . Sancti Andree et Glasguen<ex>sis</ex> dioces<ex>ium</ex> Archid<ex>iaconi</ex></seg> <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Mandatum domini pape in hec uerba suscepimus</seg> .<lb/> <seg type="diplomatic" subtype="narration">Gregorius episcopus seruus seuorum dei dilectis filiis abbati de Kelch<ex>ou</ex> Sancti Andree diocesis . et Glasguensis et Sancti Andr<ex>ee</ex> . H . et L . Archid<ex>iaconis</ex> Salutem . Et apostolicam benediccionem .<lb/> Th<ex>omas</ex> miles et . I . vxor sua nobis congerendo monstrarunt . quod Dunelm’ et de
+                     Coldigh<ex>am</ex> priores ac eorum conuentus et quidam alii clerici Sancti Andr<ex>ee</ex> et Dunelm’ dioces<ex>ium</ex> super terris<lb/> possessionibus et rebus aliis iniuriantur eisdem . Ideoque discretioni uestre
+                     per apostolica scripta mandamus . quatenus partibus
+                     conuocatis audiatis causam et eam appellatione remota fine<lb/> debito terminetis . facientes quod decreueritis per cesuram ecclesiasticam
+                     firmiter obseruari . Testes autem qui fuerint nominati si
+                     se gratia odio timore subtraxerint  per censuram eandem<lb/> apellatione cessante cogatis ueritati testimonium perhibere . Quod si non omnes
+                     exequendis potueritis interesse  duo uestrum ea
+                     nichilominus exequantur . Datum Spolet<ex>i</ex> quinta kalendas Iunii<lb/> pontificatus nostri anno sexto .</seg> <seg type="diplomatic" subtype="disposition">Huius igitur auctoritate mandati uocauimus priorem et conuentum Dunelm’ et
+                  priorem et conuentum de Coldigh<ex>am</ex> . et Dauid vicariuim capelle de Stichil<lb/> coram nobis ut responderent et iuri pererent Thom<ex>a</ex> filio Ranulfi militi et Iuliane vxori sue</seg> <seg type="diplomatic" subtype="narration">super una caruc<ex>ata</ex> terre in territorio de Stichil de qua quidem caruc<ex>ata</ex> terre Will<ex>elmu</ex>s de bosco quadam<lb/> cancellarius Scocie dimidiam caruc<ex>atam</ex> tenuit cum capellam de Stichil et cum toftis pertinentibus ad eandem dimidiam
+                     caruc<ex>atam</ex> terre . et Walterus de Paxtu<ex>n</ex> aliam medietatem dicte ca<lb/>ruc<ex>at</ex>r terre cum quodam tofto et aliis ad dictam medietatem pertinentibus sib annuo
+                     censu dimidiam petre cere reddende capelle de Stichil ut
+                     asserebat . Tandem<lb/> partibus in presencia nostra constitutis lis inter eos mota in hunc modum
+                     amicabiliter conquieuit . Scilicet quod dicti priores
+                     Dunelm’ et de Coldigh<ex>am</ex> ac eorum conuentus et Dauid<lb/> uicarius capelle de Stichol concesserunt reddiderunt et quietum clamauerunt pro
+                     se et successoribus suis dictis . Th<ex>ome</ex> . et . I . vxori sue et heredibus eorum tanquam ius suum et<lb/> hereditatem dicte Iuliane illam dimidiam caruc<ex>atam</ex> terre cum tofto et aliis pertinenciis suis quas Walterus de Paxtona tenuit de
+                     capella de Stichil ut dicebat . et quicquid iu<lb/>ris habuerunt uel habere potuerunt . Dictus autem Th<ex>omas</ex> . miles et . I . vxor sua concesseunt et quietum clamauerunt pro se et heredibus
+                     suis in perpetuum priori et conuentui<lb/> Dunelm’ et ecclesie de Stichil quicquid iuris habuerunt in illa dimidiam caruc<ex>ate</ex> terre cum toftis ad illam pertinentibus quam . W . de Bosco tenuit cum capella
+                     de Stichil ut<lb/> habeant dictam terram cum suis pertinenciis liberam et quietam in puram et
+                     pereptuam elemosinam . Concesserunt etiam dicti . Th<ex>omas</ex> . et . I . vxor sua pro salute animarum suarum<lb/> dictis prior et conuentui Dunelm’ et Capelle de Stichil in perpetuam culturam
+                     quam ex antiquo tenuit ex orientali parte uille de Stichil
+                     cum toftis et croftis quos prius tenu<lb/>it ex occidentali parte eiusdem uille cum suis pertinenciis . excepto tofto qui
+                     fuit Walteri de Paxtona</seg> . <seg type="diplomatic" subtype="disposition">Nos autem auctoritate iuris dictionis nobis a domino papa commisse 
+                  composicionem predictam ratam et gratam habentes</seg> ; <seg type="diplomatic" subtype="sealing">ad maiorem securitatem una cum signis partium mutuo positis huic scripto signa
+                  nostra apposuimus .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

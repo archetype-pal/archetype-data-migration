@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/262</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-07-31 01:59:31.512532+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/262</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Uniuersis Christi fidelibus Presentem Cartam Visuris uel Audituris . <persName>Rogerus</persName> de Qvenc’ Comes Wynton<ex>ie</ex> Constabularius Scoc<ex>ie</ex><lb/> Salutem.</seg> <seg type="diplomatic" subtype="disposition">Vniuersitati uestre notum facio me dedisse Concessisse . ⁊ presenti Carta mea
+                  confirmasse Pro salute anime mee<lb/> ⁊ predecessorum meorum Abbati ⁊ conuentus De sancta Cruce de Edenburg’ . ⁊
+                     tenentibus eorum in prestona quod quieti sint In<lb/> perpetuum de sequela molendini mei de Tauernent . Et de multura omnimodi Bladi
+                     tocius terre de prestun<ex>a</ex> ad ecclesiam<lb/> suam de Trauernent spectantis.</seg> Qvod  ut perpetue firmitatis robur optineat  presentem cartam sigilli mei<lb/> munimine Roborandam Dignumduxi. Datum apud Trauernent . die Lune proxima ante
+                  festum apostolorum<lb/> Symonis ⁊ Iude . Anno Gracie . Millesimo . Ducentesimo . Quinquagesimo.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

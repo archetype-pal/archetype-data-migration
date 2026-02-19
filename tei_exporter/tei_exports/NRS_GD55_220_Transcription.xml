@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/220</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 07:54:21.533754+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/220</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Hoc scriptum visuris uel Audituris . <seg type="diplomatic" subtype="intitulatio">Philippus De Pethcox</seg> <seg type="diplomatic" subtype="salutation">salutem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerit vniuersitas uestra quod</seg> quia<lb/> Decem Acras terre In Beleside quas Dedi Monachis De Melros . et Ph’ . filius
+                     meus Eisdem Confirmauit . In longum<lb/> iuxta terram suam De Edmundist’ a bele . usque in Drituede . impediente quadam
+                     Conuentione Inter me et Rog<ex>erum</ex> .<lb/> de Merlay facta tempore Donationis extendere non potui  ego et Ph. filius meus
+                     pro nobis et heredibus nostris fide inter<lb/>posita votum vouimus . quod finito termino Decem annorum si ante facere non
+                     possumus . eisdem Monachis . predictas<lb/> decem acras terre sicut iacet propinquius terre de Edmundist’ in longitudinem de
+                     Drituede usque in Bele . sine omni dubitacione extendi
+                     faciemus .</seg> <seg type="diplomatic" subtype="sealing">Et vt hoc presens votum nostrum firmum sit et stabile  hoc scriptum sigilli<lb/> mei et sigilli filii mei apposicione et Roborauimus .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

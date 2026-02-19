@@ -1,0 +1,44 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NLS Adv. MS 15.1.18, no. 21</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-06-07 10:53:15.450407+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 21</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Robert, by the grace of God bishop of St Andrews,</seg> to all sons of holy mother Church, <seg type="diplomatic" subtype="salutation">Greeting and Episcopal Blessing</seg>:</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let those who are to come as well as those who are present know</seg> that I have granted, and made firm by the protecion of the present written deed,
+                     to Dom Robert, the first prior of the church of St Andrews
+                     and to his successors, the office of prior of the canons
+                     serving God in the church of the blessed Andrew, and their
+                     blessing, and their due profession of obedience.
+                     Nevertheless we have also granted to the brethren of the
+                     same place the free election of a prior, so that whomever
+                     the whole chapter, or its wiser part, agrees upon, shall
+                     be raised to rule them, and as subjects they should
+                     observe due profession of obedience to him.</seg> <seg type="diplomatic" subtype="witnesses">With these assisting as witnesses: William the bishop of Moray, Osbert the abbot
+                  of Jedburgh, Matthew the archdeacon, Thorald the archdeacon,
+                  Robert the prior of Restenneth, Aiulf the dean, Master
+                  Andrew, John the bishop's chancellor, Master Thomas, Master
+                  Herbert.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

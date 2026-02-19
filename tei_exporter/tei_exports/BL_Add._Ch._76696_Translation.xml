@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Add. Ch. 76696</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 14:25:33.248029+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 76696</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">William, king of the Scots,</seg> to all worthy men of his enitre land, present and future, <seg type="diplomatic" subtype="salutation">greeting.</seg></seg> <seg type="diplomatic" subtype="notification">Know that</seg> <seg type="diplomatic" subtype="disposition">I have given and conceded Inverarity to Orm son of Hugh by its correct
+                  boundaries, <seg type="diplomatic" subtype="holding">for him and his heirs to hold of me and my heirs in feu and heritage, freely and
+                     quitly, saving to me my service that pertains to that land</seg>. <seg type="diplomatic" subtype="injunction">I also strictly enjoin that wherever he may find neyfs and fugitives beloning to
+                     that land he may justly have them, and I strictly forbid
+                     that anyone should unjustly withhold any of these from
+                     him, upon my prohibition</seg>.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: Nicholas the chancellor; Earl Waldef; Walter son of Alan, the
+                  steward; Ness son of Williaml; Richard Comyn; Gilbert son of
+                  Richer; William de la Haye; Walter Berkeley.</seg> At Forfar.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

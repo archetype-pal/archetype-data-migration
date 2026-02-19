@@ -1,0 +1,54 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 5962</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 21:10:50.728229+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5962</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all who shall view or hear these letters, <seg type="diplomatic" subtype="intitulatio">Robert of Prenderguest</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know</seg> <seg type="diplomatic" subtype="disposition">me to have given and to have made firm by this present charter, to William of
+                  Scremerston and his heirs, in return for their homage and
+                  service, and for twenty-four merks of silver, six oxgangs of
+                  land with pertinents in the territory of Prenderguest; that
+                  is, the two oxgangs with toft and croft which Robert Wynd
+                  held; and the two oxgangs which William son of Geoffrey held;
+                  and the two oxgangs which Geoffrey son of Waldef held; and
+                  the toft and croft which Haldan son of Waldef held; and the
+                  toft and croft which Richard son of Agnes held. <seg type="diplomatic" subtype="holding">For the said William and his heirs to hold and to have of me and my heirs in feu
+                     and heritage, freely, quitely, and honourably; he and his
+                     heirs yearly returning thereupon to me and my heirs seven
+                     shillings and nine pence in return for every service
+                     pertaining to me or my heirs; and performing such forinsec
+                     service for the same holding as pertains to six oxgangs.</seg> And it is to be known that this is the first land which I have given or
+                     alienated after my land of Prenderguest was given to me.
+                     And if by chance William or his heirs incur a fine against
+                     me or my heirs, they shall give twelve pence for the fine,
+                     and give twelve pence for the relief. <seg type="diplomatic" subtype="warrandice">And I, Robert, and all my heirs, shall warrant and defend for ever the
+                     aforenamed lands with pertinents to the aforesaid William
+                     and his heirs against all men and women.</seg></seg> <seg type="diplomatic" subtype="sealing">In testimony of this matter, I have applied my seal to the present writing.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord Anketin, prior of Coldingham; the lord Laurence,
+                  terrar; the lord William of Lindsay; Thomas of Nisbet; Adam
+                  of Prenderguest; John son of Elias; Bertram of Reston;
+                  Richard son of Elias; Alan Ridel; Robert son of Maurice; and
+                  others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,56 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/280</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 07:56:31.348363+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/280</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Mother Church who shall view or hear this writing <seg type="diplomatic" subtype="intitulatio">Alexander of Chatto</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Your community shall know</seg> that when the land of Rasawes had been granted to the abbot and monks of Melrose
+                     by the true lord by certain bounds and handed over to be
+                     possessed by everlasting right, I Alexander considering
+                     myself to have right in a portion of the land contained
+                     between the said boundaries claimed that same portion for
+                     myself. Since however it became clear to me that I have no
+                     right in the aforesaid portion of land, on the advice of
+                     my friends I have for ever renounced for myself and my
+                     heirs every action and every right to be pursued, if I and
+                     my heirs had or could have had or might have in future any
+                     at all in the aforesaid portion of the land for whatever
+                     reason. For the observance of firm peace between me and
+                     the aforesaid monks these boundaries have been established
+                     by our common agreement between my land and the land of
+                     the said monks. <seg type="diplomatic" subtype="boundaries">That is from the eastern side of 'Derestreet' going upwards from 'Calne' by the
+                     syke as far as 'Scolceuescluch' and by the same syke going
+                     upwards as far as the cross build with our agreement and
+                     thus straight on as far as the head of 'Seteburne' and by
+                     the same burn going downwards as far as the burn which
+                     goes down from 'Thedbrichteshop' and thus descending as
+                     far as the small stream of 'Cuithenhop'.</seg> These boundaries have been established and inviolably granted by me and the
+                     monks, so that I for myself and my heirs and all my
+                     successors have entirely renounced every right and claim
+                     competent to us now or for ever in the future over the
+                     boundaries mentioned beforehand.</seg> Enacted in the year of grace 1226. <seg type="diplomatic" subtype="witnesses">With these as witnesses: William son of John; Bernard of Howden; Gilbert of
+                  Whitton; Adam of Chatto; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.46</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.163873+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.46</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Henry the Earl, son of the King of Scotland,</seg> to all his sworn men <seg type="diplomatic" subtype="salutation">[sends] greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know me</seg> to have granted and to have given to Uhtred of London 140 [7 × 20] acres of land
+                     in the Hanger of Tottenham and the half holm that Ingram
+                     had, and 4 tree trunks for his fire from my wood of
+                     Tottenham, and ten pigs quit of pasture dues <seg type="diplomatic" subtype="holding">for him and his heirs to hold of me and my heirs forever with sake and soke and
+                     toll and team and all liberties that pertain to the land,
+                     by rendering each year 1 merk of silver at the feast of St
+                     Michael in return for all services</seg>.</seg> <seg type="diplomatic" subtype="witnesses">By the witness of David my father, and Hugh de Morville, and of Herbert the
+                  chamberlain, and of Robert de Bruce, and of Robert Foliot,
+                  and of many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

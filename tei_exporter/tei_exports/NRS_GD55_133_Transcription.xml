@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/133</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:36.718179+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/133</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p>C Y R G R A <supplied>V M</supplied></p> <p><seg type="diplomatic" subtype="address"><supplied>Omnibus sancte matris ecclesie filiis ad quos</supplied> littere iste peruenerint . <seg type="diplomatic" subtype="intitulatio">P . de Dunfermelin . et G . de Drieburc abbates . et . A . prior de Coldingham</seg> <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition">Mandatum domini pape in hec verba suscepimus</seg> . <seg type="diplomatic" subtype="narration">Innocentius episcopus<lb/> <supplied>seruus seruorum dei dilec</supplied>tis filiis de Dunf’ . et de Drieburc Abbatibus . et priori de coldingham
+                     diocesis sancti Andree Salutem . et Apostolicam
+                     benediccionem . Querela dilectorum filiorum Abbatis et
+                     conuentus de Meylr<ex>os</ex> cisterciensis ... ta continebat  quod Will<ex>elmu</ex>s miles de hunum Glasguensis diocesis quandam terram quam ecclesie melrosensi
+                     intuitu dederat pietatis  nunc uoluntate mutata ipsis
+                     uiolenter auferre<lb/> ... circa discretioni uestre per apostolica scripta mandamus . quatinus partibus
+                     conuocatis audiatis hinc inde proposita . et quod iustum
+                     fuerit appellatione prepostia statuatis . facientes quod
+                     statueritis per cen<lb/><supplied>suram</supplied>ecclesiasticam firmiter obseruari . Testes autem qui fuerint nominati si se
+                     gratia odio uel timore subtraxerint  per districcionem
+                     eandem apellatione remota cogatis ueritati testimonium
+                     perhibere . nullis litteris<lb/> ueritati et iusticie preiudicantibus a sede apostolica impetratis . Quod si non
+                     omnes hiis exequendis potueritis interesse  duo uestrum
+                     ea nichilominus exequantur  Datum . viterbii . ii . idus
+                     iunii . pontificatus nostri anno decimo .</seg><lb/> <seg type="diplomatic" subtype="disposition">Huius igitur auctoritate mandati partibus conuocatis et coram nobis in iuditio
+                  constitutis . proposita intentione predictorum Abbatis et
+                  Monachorum tam de possessione quam de proprietate predicte
+                  terre . tandem prefata controuersia<lb/> conquieuit sub hac forma . Prefatus . W . miles in iure confessus est coram
+                     nobis se prefatam terram predictis abbati et monachis in
+                     liberam puram et perpetuam elemosinam contulisse . sicut
+                     in carta eiusdem<lb/> militis et in carta confirmationis domini Regis . quas prefati abbas et monachi
+                     de eadem terra habent coram nobis publicatis et perlectis
+                     continetur . Prefati uero abbas et monachi coram nobis
+                     concesserunt<lb/> ... W . militi tenere eandem terram toto tempore uite sue de domo de melr<ex>os</ex> sicut liberam elemosinam eiusdem domus . et nomine eiusdem domus . Ita quod post
+                     decessum eiusdem . W . militis eadem terra<lb/> ... suo et integritate cedet in usus predictorum Abbatis et monachorum .
+                     Prefatus uero . W . miles tactis sacrosanctis euangeliis
+                     coram nobis corporale iusiurandum prestitit quod contra
+                     formam et tenorem predicte<lb/> ... ueniret . et quod artem et ingenium non quereret . nec aliquam machinationem
+                     uel aliquid omnino procuraret  per quod aliquod fieri
+                     preiudicium possit domui predicte de predicta terra contra
+                     for<lb/> ... compositionis per se uel [<ex>written </ex>uel/ per se//] interpositam personam . Prefatus vero abbas pro se et conuentu
+                     suo coram nobis fideliter promisit se prefatam
+                     compositionem fideliter obseruaturos . Nos itaque<lb/> ... compositionem confirmauimus . et predictus . W . miles reddidit cartam quam
+                     habuit de predictis monachis et iurauit quod aliam non
+                     habuit . et quod si alia</seg><lb/> ... <seg type="diplomatic" subtype="witnesses">Testibus . Domino Will<ex>elm</ex>o . et domino Waltero sancti Andree et Glasguens<ex>i</ex> . episcopis . Henrico Abbate kelcouensi . Magistro Io<lb/> ... ...rico de laudonia et de Dunkelde Archidiaconis . Hugone . et Waltero
+                     Monachis Kelcoens<ex>i</ex> . Helya et Will<ex>elm</ex>o monachis de Coldingham . Thoma et<lb/> ... ...um et de Drieburc canonicis . Magistro Aconcio . Magistris . Laurentio
+                     officiali . Michaele . Stephano . clericis domini episcopi
+                     sancti Andree . Magistro Alano de<lb/> ... Ricardo de Murreuia . Magistro Ada de Pert . Magistro . Will<ex>elm</ex>o de Edenham . Magistro Henrico de sancto Andrea . Waltero Monacho de
+                     Dunfermelin .<lb/> <supplied>Rica</supplied>rdo nano . Thoma de Coleuile . Ricardo de kukewald . Michaele de malcaruuestune
+                     . Will<ex>elm</ex>o clerico Magistri ... et multis aliis .</seg></p></div>
+    </body>
+  </text>
+</TEI>

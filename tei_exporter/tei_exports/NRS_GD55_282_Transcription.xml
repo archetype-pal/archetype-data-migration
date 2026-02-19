@@ -1,0 +1,45 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/282</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 17:01:18.156941+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/282</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: Junicode;"><seg type="diplomatic" subtype="address">Omnibus hoc scriptum uisuris uel audituris <seg type="diplomatic" subtype="intitulatio">Matildis Corb<ex>et</ex></seg> <seg type="diplomatic" subtype="salutation">Eternam In domino salutem</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerit uniuersitas vestra</seg> me re<lb/> . . . et fide media quietam clamasse in perpetuum Domino meo Patricio de Ridale
+                        et heredibus suis quamdam partem<lb/> terre mee de lilliecliue . per has diuisas . scilicet a uado de Curlewudeburne
+                        ex occidentali parte de Caldelawe per<lb/> uiam que uadit de Selekirke uersus Iedewurth . usque in alne . et sic
+                        descendendo per eandem aquam que est diuisa in<lb/>ter t<supplied>erram episco</supplied>pi Glasguensis et terram meam . usque in sicum qui est diuisa inter me et
+                        abbatem de kelcov et sic per diui<supplied>sas in</supplied>ter me et eundem abbatem usque in Curlewudeburne . et sic sursum per eandem
+                        burnam usque ad prenominatum<lb/> uadum de Curlewudeburne . Totam hanc terram et quicquid continetur infra has
+                        diuisas excepta terra Will<ex>elm</ex>i<lb/> filii Alex’ . predicto . P . resignaui et quietam clamaui In super resignaui et
+                        quietam clamaui pasturam ad . duodecim<lb/> <supplied>boues et decem</supplied> uaccas . et . quinque . equos . et centum oues ubicumque aueria mea . uel aueria
+                        hominum meorum eisdem uille pascunt .<lb/> . . . communibus aesiamentis eiusdem uille .</seg> <seg type="diplomatic" subtype="sealing">et ut hec resignacio quieta sit . firma et stabilis in<lb/> perpetuum in testimonium hoc presens scriptum Sigillo meo roboraui et hos
+                        pleggios inueni . Magistrum . A . de<lb/> . . . Alex’ de setun filium meum . A . de Paulewurth .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Et Sciendum quod</seg> totam hanc predictam<lb/> resignacionem et quietam clamationem tali conditione feci . ut Scilicet predicta
+                        terra tam pro me et antecessoribus<lb/> <supplied>et suc</supplied>cessoribus meis . quam pro donatore et eius predecessoribus et successoribus in
+                        puram elemosinam Deo et Ecclesie Sancte<lb/> <supplied>Marie de</supplied> Melros et Monach’ ibidem deo seruientibus daretur .</seg> <seg type="diplomatic" subtype="witnesses">Hiis Test<ex>ibus</ex> . R . et A . abbatibus de Nuebotill<lb/> . . . Cup’ . Rad<ex>ulfo</ex> de Campania Constabulario de Rokesburg’ . Petro de hawe . Alex’ de Sintun .
+                        Walter<lb/> . . . Rob<ex>erto</ex> de bernolbi . Rad<ex>ulfo</ex> de Ridale . Thom<ex>a</ex> . fleming’ . et Multis aliis .</seg></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

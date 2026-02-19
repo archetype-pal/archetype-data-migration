@@ -1,0 +1,47 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/134</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:02:32.291977+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/134</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Anselm of Whitton</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg> to all sons of Holy Mother Church both present as well as to come.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present as well as future know</seg> me to have given and by this my charter to have made firm to God and to the <ex>monastic</ex> house of Melrose, and to the monks serving God in that place, in perpetual alms
+                     my whole peatery which is [between] Mowhope and Berhope
+                     and ‘Herdstrete’ which divides the land of Mow and Hownam,
+                     for the soul of King David, and Earl Henry, and King
+                     Malcolm, and for the salvation of King William, and David
+                     his brother, and for my own soul and my wife’s and my
+                     childrens’ <ex>souls</ex>. And so the monks of Melrose shall hold the said peatery in pure and
+                     everlasting alms, quit and free from all aids and all
+                     customs. <seg type="diplomatic" subtype="warrandice">And I and my heirs shall warrant to the said monks the same peatery in respect
+                     of all men for ever.</seg> In addition I have given to them in everlasting alms in my wood of Mowhope as
+                     much firewood as one horse can carry to their grange of
+                     Hownam each year from Easter to the Nativity of Saint
+                     Mary, by the same liberty by which I gave them the
+                     peatery.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Simon archdeacon of Glasgow; Richard dean of Hassendean;
+                  Peter the parson of Morebattle; William the parson of Hownam;
+                  John son of Orm, and William his son; William de Somerville;
+                  Roger of Wilton; William of London.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

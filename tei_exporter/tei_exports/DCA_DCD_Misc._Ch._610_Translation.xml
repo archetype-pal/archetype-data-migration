@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 610</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:22:02.018827+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 610</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W<ex>illiam</ex> king of the Scots</seg> to his justices and sheriff of Berwick <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="injunction">I strictly forbid that my sergeands of the sheriffdom of Berwick may have any
+                  customs or make any demands in my alms of Coldingham and
+                  Coldinghamshire in respect of pleas and plaints which they
+                  move, which my sergeands of my other sheriffdoms have in my
+                  other alms in my land.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, Ingram bishop of Glasgow, Nicholas the chancellor, David Oliphant
+                  justice, Hugh Ridel, Robert Avenel.</seg> <seg type="diplomatic" subtype="dating">At Roxburgh. </seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NLS Adv. MS 15.1.18, no. 22</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:27:59.663979+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 22</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte matris ecclesie filijs  <seg type="diplomatic" subtype="intitulatio">Ric<ex>ardus</ex> dei gratia episcopus sancti ANDREE apostoli</seg> . <seg type="diplomatic" subtype="salutation">salutem ⁊ episcopalem benedictionem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant tam posteri quam presentes</seg> . nos <lb/> dedisse ⁊ concessisse ⁊ presentis scripti pagina confirmasse deo ⁊ ecclesie
+                     beati ANDREE apostoli ⁊ canonicis ibidem deo seruientibus
+                     ⁊ seruituris <lb/> capellam de Inche Ђore cum omnibus eidem capellę iuste pertinentibus inperpetuam
+                     elemosinam pro salute anime méé ⁊ predecessorum ⁊
+                     successorum meorum <lb/> animabus  saluis consuetudinibus episcopalibus .</seg> <seg type="diplomatic" subtype="witnesses">Testibus his . Greg<ex>orio</ex> episcopo dunkeld<ex>ensi</ex> . Math<ex>e</ex>o archidiacono . de sancto Andr<ex>ea</ex> . Magistro andrea archidiacono Laodon’. <lb/> Gaufr<ex>ido</ex> abbate dumf’ . Aluredo abbate Striuelin Will<ex>elm</ex>o abbate de Sancta Cruce . Magistro herberto . Magistro Abraham . Alexand<ex>ro</ex> capellano . Rob<ex>er</ex>to filio <lb/> Seulfi de pert . Steph<ex>an</ex>o clerico . Odone fratre Archidiaconi math<ex>e</ex>i .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

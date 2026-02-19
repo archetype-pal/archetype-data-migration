@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/195</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-08-08 11:03:33.40778+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/195</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p>C Y R O G R A P H V M</p> <p>Hec est conuentio facta inter monasteria de Melros et de valle dei quod cum
+               terra de keresban in Galweia data esset et concessa Monachis de
+               valle dei a bone memorie Thoma de Coleuill<ex>a</ex> secundum tenorem carte ipsius Thome et confirmationis Wilelmi filii eiusdem . T
+                  . et heredis In liberam et perpetuam elemosinam  idem
+                  Monachi de valle dei sentientes possessionem eiusdem terre .
+                  tum propter defectum discipline . tum propter barbarice
+                  gentis insidias sibi minus esse utilem . et in aliquo
+                  periculosam  ipsam terram cum omnibus libertatibus et
+                  pertinenciis suis per suas rectas diuisas que continentur in
+                  carta predicti . T . et confirmatione . W . filii sui
+                  concesserunt et tradiderunt Abbati et conuentui de Melros ad
+                  perpetuam firmam . Ita quod Monachi de Melros adquietabunt
+                  predictam terram erga dominum regem scotie . Loco et nomine
+                  domus de valle dei de quinque Marcis annuis . Soluendo domino
+                  Regi medietatem ad festum Sancti Martini et medietatem ad
+                  pentecosten pro omni seruitio et insuper reddent annuatim pro
+                  terra illa domui de valle dei quatuor Marcas argenti ad
+                  Nundinas sancti Botulfi . Et per hanc solam solutionem factam
+                  domino Regi et Monachis de valle dei Immunes erunt Monachi de
+                  Melros ab omni seruicio . et exactione et demanda . Monachi
+                  uero de valle dei defendent . et warantizabunt predictam
+                  terram et totam formam huius conuentionis erga omnes homines
+                  . Vt quidem tota conuentio ista stabilis sit inperpetuum .
+                  domini abbates de Rieualle et de fontibus attendentes
+                  honestatem ordinis et omnem scandali occasionem uolentes
+                  precauere  ad instantiam parcium sigilla sua vna cum
+                  sigillis parcium huic conuentioni apposuerunt . Actum anno
+                  gracie . millesimo . ducentesimo . viginti tercio . Hiis
+                  testibus . Domino . W . Abbate Rieuall’ . et Domino . J .
+                  Abbate de fontibus . et . A . Abbate de Melros . et . J .
+                  Abbate de valle dei . et Multis aliis personis de conuentu de
+                  Melros et de valle dei .</p></div>
+    </body>
+  </text>
+</TEI>

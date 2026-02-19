@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/293</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:21:22.229929+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/293</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte Matris Ecclesie filiis presentibus et futuris litteras istas
+                  uisuris uel audituris <seg type="diplomatic" subtype="intitulatio">Adam de Hetun’<lb/> et Helena uxor eius</seg> <seg type="diplomatic" subtype="salutation">salutem in domino</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerit vniuersitas uestra</seg> quod nos coram Magistro Hugone Archidiac<ex>ono</ex> Glasgu<lb/>ensi . et Magistro Waltero decano de Teuidal’ et Domino Ada de bagath et multis
+                     aliis uiris discretis clericis et laicis<lb/> affidauimus et tactis sacrosanctis iurauimus quod nos nunquam contra domum de
+                     Melros de terris quas eidem domui uendidimus<lb/> in territorio de Molle querelam mouebimus . Nec alicui contra eandem domum de
+                     predictis terris querelam mouere uolenti<lb/> consenciemus .</seg> <seg type="diplomatic" subtype="sealing">Ad maiorem uero huius rei securitatem hoc scriptum apposicione sigillorum
+                  predicti Archidiaconi . et predicti decani .<lb/> et domini Ade de bagath’ vna cum apposictione sigilli nostri roborauimus .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

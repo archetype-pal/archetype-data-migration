@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of TNA DL 25/91</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 09:21:11.537684+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/91</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">dunegal filius Vdavd</seg> omnibus qui audient uel uidebunt literas istas . <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis me</seg> redd<supplied>idisse et pe</supplied>r<lb/> fustem et battonem et quietam clamasse willelmo de brus et heredibus suis de me
+                     et heredibus meis et <supplied>abiuras</supplied><lb/>se in plenaria curia illi et heredibus suis pro me et heredibus meis terram quam
+                     de eo tenebam . silicet unam caru<lb/>catam terre in weremundebi . et dimidiam curucatam terre in anant cum uno tofto
+                      ad opus gileberti<lb/> filii iohannis <seg type="diplomatic" subtype="holding">tenendam de predicto Willelmo de brus et heredibus suis Gileberto et heredibus
+                     suis .</seg> et hanc meam cartam eidem<lb/> Willelmo de brus dedi in testimonium huius reddicionis et quietclamacionis et
+                     abiutarionis .</seg> <seg type="diplomatic" subtype="witnesses">His testibus Willelmo in...<lb/> adam de Set’ . Roberto de Hodal<ex>m</ex> . Humfr<ex>ido</ex> del gardin . adam filio adam . Ricardo de penresax . Willelmo de heriz ...<lb/> Murdac . vdardo de hodalm hugone de corri . hugone filio ingebald . Waltero de
+                     Walham . patricio brus . W...<lb/> Walbi . adam de dunwidie . Roberto de crossebi . Ricardo de bosco . Roberto de
+                     leuingtouna . Rogero de Kirk...<lb/> Malcolum loccard . Roberto de tremor . Willelmo de heneuil’ . hugone Malleuerer
+                     . et Multis aliis</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

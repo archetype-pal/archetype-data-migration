@@ -1,0 +1,44 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 567</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 15:48:09.600047+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 567</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">. <seg type="diplomatic" subtype="intitulatio">DD . dei gratia rex scottorum</seg> . omnibus per regnum suum in scottia et Lodoneio constitutis scottis et anglis  <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me concessisse et dedisse deo<lb/> et Sancto Cuthberto et monachis eius in elemosinam has terras in lodoneio .
+                     scilicet Goldingeham . Aldecambes . Lummesdene . Ristun .
+                     Reinintun . Swinewde<lb/> prenegest . Eitun . et aliam Eitun . et Cramesmutham . Lambertun . et aliam
+                     Lamberun . Paxtun . Fiswic . et Swintun . et omnes has
+                     superscriptas terras ego do et concedo<lb/> deo et Sancto predicto et monachis eius cum sacca et socna . et toll et team .
+                     et Infangethef . et cum omnibus terris et siluis . et
+                     aquis . et fracturis<lb/> nauium . et cum omnibus consuetudinibus liberas et quietas . ab omni opere et
+                     seruitio . pro salute anime mee . et filii mei Henrici .
+                     et pro animabus patris<lb/> et matris mee . et fratrum et sororum mearum . <seg type="diplomatic" subtype="injunction">Precipio etiam et defendo ne aliquis de hac mea donatione aliquam iniuriam uel
+                     molestiam<lb/> aut calumpniam monachis sancti cuthberti amodo faciat . quia uolo ut hec mea
+                        elemosina libera et quieta ab omni calumpnia
+                        imperpetuum<lb/> remaneat</seg> .</seg> <seg type="diplomatic" subtype="dating">Hec carta firmata est anno ab incarnatione domini . m . c . xxvi . tercio anno
+                  regni mei aput pebles .</seg> <seg type="diplomatic" subtype="witnesses">t<ex>este</ex> . et concessu Henrici<lb/> filii mei . et isti alii sunt inde testes . Ioh<ex>anne</ex>s episcopus . Rodbertus de brus . Herbertus cancellarius . ascelinus
+                     archidiaconus . Paganus de braiosa .<lb/> hugo brito . Berengarius ingania . Gospatricus . vicecomes . aimarus .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,47 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/161</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-08-08 11:08:12.824156+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/161</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p>Omnibus sancte Matris ecclesie filiis tam futuris quam presentibus Galfridus
+               cocus de wittun salutem in Christo . Sciatis me dedisse et
+               concessisse et hac presenti carta mea confirmasse hospitali
+               ierosolime vnam bouatam terre in territorio de wittun scilicet
+               inter horlaue et toccechelis et inter fossam de harhou . et
+               terram dotis matilde corbet . per concessionem et bonam
+               uoluntatem heredum meorum . in liberam . et in puram . et in
+               perpetuam elemosinam pro animabus antecessorum et successorum
+               meorum . condicione tali quod isabella sponsa Will<ex>el</ex>mi de Ridale et heredes sui uel cui ipsa assignare uoluerit in feudo et
+                  hereditate teneant predictam terram de prenominata domo . et
+                  in pace possideant libere et quiete a multura et ab omni alio
+                  seruicio et consuetudine . et ab omni seculari exaccione .
+                  Reddendo annuatim hospitali prenominato ad festum sancti
+                  iacobi vnam libram cumini . His testibus . Will<ex>el</ex>mo filio Ioj<ex>ann</ex>is . Domino Waltero de Ridal . Radulfo de Ridal . Dominus Ada de Wittun et
+                  filiis suis . Domino Ada de Waleuhope . et filio suo in lege
+                  . Rob<ex>erto</ex> de bernardebi . et Rob<ex>erto</ex> filio eius . Alexandro de lillescliue . Henrico de herice . Ricardo homine
+                  Abbatis . et multis aliis .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

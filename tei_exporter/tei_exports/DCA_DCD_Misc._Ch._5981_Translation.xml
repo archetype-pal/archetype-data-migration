@@ -1,0 +1,53 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 5981</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:57:31.665127+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5981</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Christ's faithful to whose notice these letters shall come, <seg type="diplomatic" subtype="intitulatio">Bertram son of Robert Cook</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know me, all of you</seg>, to have given, granted, and by this my present charter to have confirmed to
+                     God, to blessed Cuthbert, St Ebbe, the prior of
+                     Coldingham, and the monks in that place serving God now an
+                     for ever, in free and everlasting alms, one
+                     half-ploughgate of land with toft and croft in the toun
+                     and territory of Renton, with all pertinents belonging to
+                     so much land, inside the same toun as well as outside,
+                     without any withholding; that is, the half-ploughgate of
+                     land which the late Waldef son of Cren held in the toun of
+                     Renton; <seg type="diplomatic" subtype="holding">for the said prior and convent and their successors to hold and to have for
+                     ever, as freely, quitely, and honourably as any alms doing
+                     forinsec service within the kingdom of Scotia are freely
+                     or honourably held or possessed, with all their liberties
+                     and easements.</seg> And it should be know that I, Bertram and my heirs, shall be quit of the
+                     forinsec service of the lord king and of the house of
+                     Coldingham, so far as it pertains to so much land in the
+                     same toun.</seg> <seg type="diplomatic" subtype="warrandice">In addition, it should be known that I, Bertram, and my heirs shall warrant,
+                  acquit and defend the aforesaid land to the said prior and
+                  convent and their successors against all men and women for
+                  ever.</seg> <seg type="diplomatic" subtype="sealing">And that this my donation should have force for ever, I have applied my seal to
+                  this written document.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, the lord David of Graham, W<ex>illiam</ex> of Mordington, W<ex>illiam</ex> of Scremerston, R<ex>alph</ex> Noble, R<ex>obert</ex> of Montgomery, R<ex>obert</ex> son of the Steward, David of Lumsdaine, Adam son of John, Adam son of Walter of
+                     Ayton, Patrick Scott, John his son, John son of Ingram,
+                     Patrick son of Colman, and others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

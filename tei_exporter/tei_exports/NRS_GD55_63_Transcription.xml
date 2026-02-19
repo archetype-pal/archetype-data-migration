@@ -1,0 +1,46 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/63</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:38.652575+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/63</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Sancte Matris Ecclesie filiis presentibus et futuris . <seg type="diplomatic" subtype="intitulatio">Robertus de stainth’</seg> . <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me<lb/> dedisse . et hac mea carta confirmasse deo et Ecclesie Sancte Marie de Melr<ex>os</ex> et Monachis<lb/> Ibidem deo seruientibus pro animabus d<ex>aui</ex>d et Malc’ . Regum Scott’ . et Comitis Henrici . et Walteri filii<lb/> Alani . dominorum meorum et omnium antecessorum et successorum eorum et pro
+                     salute Will<ex>elm</ex>i Regis Scott’ . et . d<ex>aui</ex>d<lb/> fratris eius . et Alani filii Walteri dominorum meorum . et pro anima mea et
+                     vxoris mee . et omnium antecessorum et<lb/> successorum nostrorum . quinque acras terre cum pastura que dicitur
+                     Elwaldescaleslon<ex>n</ex>igge in territorio de Stai<ex>n</ex>th’<lb/> ex occidentali parte de hertesheu’ <seg type="diplomatic" subtype="boundaries">per has diuisas . Scilicet ab illa Gila que diuidit terram Monachorum<lb/> et terram quam dedi Roberto filio meo per condosum versus occidentem vsque ad
+                        caput veteris fossati . et<lb/> sic per idem fossatum versus austrum deorsum vsque in riuulum qui diuidit terram
+                        meam et terram<lb/> Monachorum . ex australi parte .</seg> <seg type="diplomatic" subtype="holding">Hanc terram et pasturam et quicquid continetur infra predictas<lb/> diuisas et diuisas Monachorum versus eos dedi eis in liberam et puram et
+                        perpetuam ele<lb/>mosinam ad tenendum de me et heredibus meis sine omni terreno seruicio et
+                        exaccione seculari .<lb/> Ita libere . quiete . plene . et honorifice . sic vllam elemosinam liberius .
+                        quiecius . plenius . et honorificencius . tenent et
+                        possident .</seg> <seg type="diplomatic" subtype="warrandice">Et ego et heredes mei Manutenebimus et Warantizabimus eis eandem<lb/> elemosinam . contra . omnes homines . et adquietabimus de omnibus erga dominum
+                        Regem et omnes alios homines<lb/> in perpetuum .</seg> Preterea . de diuisis inter stainth’ et hertesheu’ . vnde lis et controuersia
+                     diu fuerat inter<lb/> me et predictors Monachos . si quid iuris habui . vel habere potui . totum
+                     quietum pro me et heredibus meis<lb/> clamaui . saluo cyrographo inter me et ipsos de eisdem diuisis facto .</seg> <seg type="diplomatic" subtype="witnesses">His Testibus . Hugone<lb/> de Mortuo mari priore de May . helia de perthic fratre meo et Canonico de glasgu
+                     . And<ex>rea</ex> . decano de<lb/> Tiningham . Gilberto et petro clericis de Witingham . Adam filio aldn’ . et
+                     Patricio filio eius . Nes filio Nes .<lb/> Oliuero de linth’ . philippo de pethcox . Alexand<ex>ro</ex> . de Hath<ex>er</ex>vic . Rob<ex>erto</ex> filio gregorii . Guafrido<lb/> filio Norm’ . Aldn’ albo Waltero le burgunun . Edwino forestario . Aldredo de
+                     popple .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

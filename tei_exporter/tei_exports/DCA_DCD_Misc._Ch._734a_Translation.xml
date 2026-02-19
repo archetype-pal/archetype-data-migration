@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 734a</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:12:45.923693+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 734a</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Christ's faithful to whom the present writing shall have come, <seg type="diplomatic" subtype="intitulatio">P<ex>atrick</ex> son of Earl P<ex>atrick</ex> of Dunbar</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me in the year of the Incarnation 1231, on the vigil of Saint Thomas the martyr,
+                     to have received from the prior of Coldingham and the
+                     convent, forty merks of sterling of the two hundred merks
+                     which they owed me in return for my quitclaim made to the
+                     same of the demesne and toun of Swinewood with all its
+                     pertinents; and they were bound to pay these forty merks
+                     to me at the feast of the purification of the aforenamed
+                     year.</seg> <seg type="diplomatic" subtype="sealing">And as testimony of this matter I have applied my seal to the present writing.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,31 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Cotton Ch. xviii.6</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:34:01.561381+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.6</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio"><persName>Alex’</persName> . Dei Gr<ex>ati</ex>a Rex Scott’</seg> . Omnibus probis hominibus tocius terre sue <seg type="diplomatic" subtype="salutation">salutem</seg></seg> .<lb/> <seg type="diplomatic" subtype="notification">Sciatis quod</seg> <seg type="diplomatic" subtype="disposition">concessimus Monachis de Melros’ . Vt totam terram suam<lb/> de Etryk’ . per easdem diuisas que continentur in Carta nostra que de<lb/> eadem terra eis plenius confecta est  in perpetuum habeant in Liberum<lb/> forestum . <seg type="diplomatic" subtype="prohibition">Quare firmiter prohibemus . ne quis sine eorum Licentia in dicta<lb/> terra secet aut uenetur super nostram plenariam forisfacturam decem<lb/> librarum</seg></seg> . <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . <persName>Walter<ex>o</ex> . Olifard</persName> . Iustic’ . Laodon<ex>ie</ex> . <persName>Roger<ex>o</ex> Auenel</persName><lb/> <persName>Dauid</persName> Marscallo .</seg> Apud Edemburc’ . Vicesimo Octauo die maii<lb/> Anno . Regni . domini Regis Vicesimo secundo .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

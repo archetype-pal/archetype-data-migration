@@ -1,0 +1,51 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 714</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 12:40:59.663423+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 714</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know that</seg> <seg type="diplomatic" subtype="intitulatio">I, William de Vaux,</seg> have given, and granted, and by this my present charter have made firm to God
+                     and Saint Cuthbert of Durham and the holy monks serving
+                     God and Saint Cuthbert there, one toft in Gullane, <seg type="diplomatic" subtype="boundaries">that is the toft which lies nearest the croft of the hospital of St John of
+                     Jerusalem towards the south, as long as the aforesaid
+                     croft of Saint John is broad; and one perch of land which
+                     Udard the fisherman held in the aforementioned toun, that
+                     is the perch of land which lies nearest the croft of
+                     William Smallware towards the north, and the northern edge
+                     of Swindgthates, as it has gone out from Gullane towards
+                     the large stone which lies outside Windgthates, towards
+                     the north, and so upwards as the land of Saint Cuthbert
+                     was perambulated and measured.</seg> <seg type="diplomatic" subtype="holding">I also will that Osmund of Gullane and his heirs should hold the aforesaid toft,
+                     and the aforementioned perch of land, and the
+                     aforementioned edge, as freely, quitly, and honourably as
+                     any alms is most freely and quitly held or possessed in
+                     the whole kindgom of Scotland, by rendering annually to
+                     the aforesaid monks four pence at the feast of Saint
+                     Michael in return for every service</seg></seg>. <seg type="diplomatic" subtype="witnesses">With these witnesses, Robert Hotoft, Gregory of Fenton, Walter of Lindsay,
+                  Richard Sans Avoir, Richard son of Seleburh, Godard the
+                  chaplain, Gummer the chaplain, Simon the clerk, Gilbert the
+                  butler of Gullane, Robert son of Adam of Dirleton.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

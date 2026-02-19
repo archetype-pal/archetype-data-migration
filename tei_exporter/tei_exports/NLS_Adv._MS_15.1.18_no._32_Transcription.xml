@@ -1,0 +1,44 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NLS Adv. MS 15.1.18, no. 32</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:00.327985+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 32</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus presentes litteras inspecturis <seg type="diplomatic" subtype="intitulatio">Magister Guill<ex>elmu</ex>s Parmen<ex>sis</ex> domini pape Capellanus ec eiusdem contradictarum auditor</seg> <seg type="diplomatic" subtype="salutation">Salutem in domino</seg> .</seg> <lb/> <seg type="diplomatic" subtype="notification">Noueritis quod</seg> <seg type="diplomatic" subtype="narration">cum Radulfus de helig’ clericus procurator amissus de speciali domini pape .
+                  mandato . pro . . preposito et Capitulo ecclesie sancte <lb/> Marie sancti ndree in Scotia impetrasset litteras apostolicas sub hac forma .
+                     Innoc<ex>entius</ex> episcopus etc. Dilectis filiis . . Preposito ⁊ Capitulo <lb/> ecclesie sancte Marie Sancti Andree in Scotia Salutem etc. Cum a nobis petitur
+                     quod iustum est ⁊ honestum tam uigor equitatis <lb/> quam ordo exigit rationis . ut id per sollicitudinem officij nostri ad debitum
+                     perducatur effectum . Eapropter dilecti in domino filij <lb/> uestris iustis postulationibus grato concurrentes assensu ecclesias .
+                     possessiones ⁊ alia bona uestra que in presentiarum
+                     rationabiliter <lb/> possidetis aut in futurum iustis modis prestante domino poteritis adipisci sub
+                     beati petri ⁊ nostra protectione suscipimus <lb/> ⁊ ea uobis ⁊ ecclesie uestre auctoritate apostolica confirmamus ⁊ presentis
+                     scripti patrocinio communimus . Nulli ergo etc. Si quis
+                     autem <lb/> etc. Datum lugdun’ xii kaldendas . Septembris pontificatus nostri anno Septimo .
+                     Eisdem litteris petrus de Vercell’ procurator prioris <lb/> ⁊ Capituli sancti andree cathedralis ecclesie in Scotia . pro ipsis in audientia
+                     publica con<supplied>tradixit quas tande</supplied>m ea <supplied>conditione</supplied> <lb/> absoluit quo per predictas litteras nullum priuillegiis . predictorum prioris ⁊
+                     Capituli sancti andree ecclesie cathedralis <supplied>prejudicium generetur <lb/> nec ad iurisdictionem executorum eorundem priuilegiorum impediendam aliquatenus
+                        intendatur . Quod pars <altera promisit="" firmiter<="" span=""> <lb/> coram nobis</altera></supplied> . <seg type="diplomatic" subtype="sealing">In Cujus rei testimonium presentes litteras fieri fecimus ⁊ nostro <supplied>muniri</supplied> sigillo .</seg> Datum lugduni .ij. idus <supplied>Septembris</supplied> <lb/> pontificatus domini Innocentii pape iiij an<supplied>no</supplied> Septimo .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

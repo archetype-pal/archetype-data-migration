@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/231</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-07-30 05:30:03.060227+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/231</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p>. <seg type="diplomatic" subtype="intitulatio">M Rex Scott’</seg> Omnibus probis hominibus tocius terre sue <seg type="diplomatic" subtype="salutation">salutem</seg>. <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant Clerici et laici</seg> me Concessisse<lb/> et hac presenti Carta confirmasse deo et ecclesie sancte crucis de edenesb’ et
+                     Canonicis ibidem deo seruientibus donacionem<lb/> illam quam . <persName>A .</persName> Comitissa mater mea eis fecit de uno tofto in karel et de redditu dimidiam marce
+                     de firma eiusdem uille annuatim<lb/> percipiendo . et de uno tofto in hadint’ Cum decima cum lucrorum et placidorum
+                     que proueniunt de hadint’scire . <seg type="diplomatic" subtype="holding">Tenend’ sibi et habend’<lb/> in liberam et perpetuam elemosinam . sicut carta . <persName>A .</persName> comitisse matris mee testatur</seg> .</seg> <seg type="diplomatic" subtype="witnesses">T<ex>estibus</ex> . Eng’ Cancellario . Walter filio alani Dapifero . Rob’<lb/> Auenel .</seg> Apud striuelyN</p>
+      </div>
+    </body>
+  </text>
+</TEI>

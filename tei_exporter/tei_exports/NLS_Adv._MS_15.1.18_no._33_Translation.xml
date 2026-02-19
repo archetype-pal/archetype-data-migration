@@ -1,0 +1,63 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NLS Adv. MS 15.1.18, no. 33</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-06-07 13:00:13.582348+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 33</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">P<ex>atrick</ex> and W<ex>ido/Guy</ex>, abbots of Dunfermline and of Lindores, and H<ex>ugh</ex>, prior of Pittenweem</seg> : To all to whose attention and understanding the content of the present written
+                     document shall have come : <seg type="diplomatic" subtype="salutation">Greeting in the Lord.</seg></seg> <seg type="diplomatic" subtype="notification">May your fraternity know</seg> <seg type="diplomatic" subtype="narration">that, with the mandate of Innocent the lord Pope having been received by us, we
+                  have been enjoined either to decide by a judgment the dispute
+                  which Ranulf, archdeacon of St Andrews, brought against Hugh
+                  the Steward and Jordan his nephew over the lands on the west
+                  side of the new work standing opposite the dwellings of
+                  Lamburc, and which he was claiming to belong to his own
+                  archdeaconry, having called together and heard the parties;
+                  or to impose an end to the dispute by mediating an agreement.
+                  The parties therefore having been called together several
+                  times, with William, lord bishop of St Andrews, acting as
+                  mediator, and standing between the two sides, with us also
+                  discharging authority and employing effort and diligence, it
+                  was agreed between the parties so that Hugh the Steward and
+                  Jordan his nephew resigned and quitclaimed those lands for
+                  the future, and the buildings in them that were built by
+                  them, to R<ex>anulf</ex> the archdeacon and to his successors. And R<ex>anulf</ex> the archdeacon himself has given to Hugh the Steward, in return for making the
+                     resignation and for the sake of peace, 15 merks, and to
+                     Jordan 10 merks and four perches of land that he had
+                     received from T<ex>homas</ex> the prior and his community near the dwelling of Simon the clerk on the east
+                     side, for Jordan and his heirs to hold of him and his
+                     successors by paying one pound of cumin yearly. </seg><seg type="diplomatic" subtype="sealing">And so that this authoritative agreement should stand firm and remain unchanged
+                  in perpetuity, to be observed without violation, it has been
+                  reinforced and made firm by the application of the seal of
+                  the lord bishop as well as our own.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord T<ex>homas</ex> the prior, and the community; Andrew of Moray; Master Adam; Master Stephen;
+                     Master Isaac; Master Simon; William of Crail, dean;
+                     William, chaplain of Brechin; William of Dairsie; Peter
+                     and Edward, the chaplains of the lord bishop; John of
+                     Haltwhistle; William of Gullane; John of London; Ralph
+                     Niger; John the marischal; Simon de Noisy; Eutrope the
+                     dispenser; Peter and Hugh of Nydie and Robert of Calder,
+                     man-servants of the lord bishop; William Lambin; Gilbert
+                     Breton; Simon the clerk.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of TNA DL 25/85</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 16:26:22.715028+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/85</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus has litteras visuris uel audituris <seg type="diplomatic" subtype="intitulatio">Adam de crosseby</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerit vniuersitas uestra</seg> me quietum clamasse pro me et heredibus meis<lb/> Domino Rob<ex>erto</ex> de bruis et heredibus suis <supplied>om</supplied>nes terras et tenementa tantum in salinis quam in molendinis et seruitiis et
+                     redditibus et in<lb/> omnibus michi pertinentibus in uilla de cumbertres uel de iure pertinere mihi
+                     debuissent pro sexaginta . quatuor acr<supplied>a</supplied>s terre quas mihi dedit<lb/> in excambio predictarum terrarum in tenemento de <supplied>G</supplied>retinhou . <seg type="diplomatic" subtype="warrandice">Et ego . A . de crosseby et heredes mei omnes ... dictas terras et te<lb/>nementa cum pertinentiis . dicto Domino Rob<ex>erto</ex> de <supplied>Bruis</supplied> et heredibus suis warantizabimus inperpet<supplied>uum</supplied> .</seg></seg> <seg type="diplomatic" subtype="witnesses">T[estibus] Alano de dun<lb/>widi tunc senescallo wall<ex>is</ex> de Anand . Domino Wi<supplied>llelmo</supplied> de Mortaigne . Domino Will<ex>elm</ex>o de Karlioli . Domino <supplied>Enger</supplied>amo de Muscens<lb/> Domino Ad<ex>a</ex> de carnoto . Vmfrido Maul<supplied>ever</supplied>er . Rob<ex>erto</ex> de Heriz . Hug<ex>one</ex> filio Hamelin’ . Domino Will<ex>elm</ex>o vicario de anand’ . Will<ex>elmo</ex><lb/> clerico de Anand’ . Ad<ex>a</ex> . clerico  Et AliiS .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

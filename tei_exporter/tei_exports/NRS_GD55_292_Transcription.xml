@@ -1,0 +1,51 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/292</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:51.554028+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/292</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: Junicode;"><seg type="diplomatic" subtype="address">Omnibus sancte matris Ecclesie filiis presentibus et futuris litteras istas
+                     uisuris uel audituris <seg type="diplomatic" subtype="intitulatio">Adam de Hetune et<lb/> Helena uxor eius</seg> <seg type="diplomatic" subtype="salutation">salutem in domino</seg> .</seg> <seg type="diplomatic" subtype="notification">Nouerit vniuersitas uestra</seg> <seg type="diplomatic" subtype="disposition">nos de mera uoluntate nostra uendidisse domui de Melros<lb/> pro decem libris esterlingorum terram nostram de Hungerig’ quam tenuimus in
+                        territorio de Molle de Roberto de pollehoc et Ysabel
+                        uxore eius . et<lb/> quoddam pratum sub hedredissete quod uocatur holemede quod tenuimus de Domina
+                        Elchina et heredibus suis et omne ius quod in eisdem
+                        habuimus<lb/> uel habere potuimus . Has predictas terras cum omnibus libertatibus et
+                        aisiamentis ad easdem terras pertinentibus uendidimus
+                        predicte domui de<lb/> Melros pro decem libris esterlingorum sicut prenotatum est  tenendas sibi et
+                        possidendas in perpetuum libere . quiete . plene et
+                        pacifice . Redden<lb/>do inde annuatum decem solidos ysabel’ filie Roberti Croc uel heredibus suis
+                        scilicet quinque solidos ad pentecosten . et quinque
+                        solidos ad festum<lb/> Sancti Martini . Nos uero et heredes nostri easdem terras cum omnibus ad easdem
+                        terras pertinentibus predicte domui de Melr<ex>os</ex> contra omnes homines waran<lb/>tizabimus . Si uero aliquot casu contingente uel nos uel heredes nostri easdem
+                        terras predicte domui de Melr<ex>os</ex> warantizare non poterimus  <lb/> pecuniam in integrum quam ab eadem domo recepimus eidem domui absque omni
+                        contradiccione restituemus . Et eandem domum indempnem<lb/> conseruabimus ab omnibus que uel eisdem terris competere poterant uel ab eisdem
+                        terries exigi poterant usque ad diem illum quo eadem
+                        domus<lb/> de predictis terris plenariam saysinam recepit .</seg> <seg type="diplomatic" subtype="sealing">Et ad maiorem huius rei securitatem ego Adam presenti scripto sigillum meum<lb/> apposui .</seg> <seg type="diplomatic" subtype="witnesses">Hiis testibus . Magistro Hugone Archidiacono Glasguensi . Magistro Waltero
+                     Decano de Teuidal’ . Domino Ada<lb/> de bagath’ . Gileberto de Wittun’ et Waltero . Michaele . Iohanne de Hetun’ .
+                        fratribus . et multis aliis .</seg></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

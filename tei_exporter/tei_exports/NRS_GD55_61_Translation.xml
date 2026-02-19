@@ -1,0 +1,54 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/61</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 13:17:54.01879+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/61</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p><seg type="diplomatic" subtype="address">To all sons of holy Mother Church as well present as future, <seg type="diplomatic" subtype="intitulatio">William of Halkerston, and Richard of Halkerston, his brother, and John son of
+                     Alan of Montgomery, and Vincent son of Robert Avenel, and
+                     Nicholas son of Roland,</seg> <seg type="diplomatic" subtype="salutation">send greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know</seg> <seg type="diplomatic" subtype="disposition">us to have given and granted, and by this our present charter to have made firm,
+                  to God and to the church of Saint Mary at Melrose, and to the
+                  monks serving God there, for the salvation of our souls, and
+                  for the souls of our fathers and mothers and of all our
+                  ancestors and successors, and for the soul of Walter son of
+                  Alan our lord, and for the souls of all the faithful
+                  departed, a land in the territory of Innerwick, as the ditch
+                  encircles the same ... made by their brethren, in free, pure,
+                  and everlasting alms, loosed and quit of every earthly
+                  service and secular exaction, just as they hold any alms
+                  freely, <supplied>quitely</supplied> and honourably in the land of the king of Scotland. <seg type="diplomatic" subtype="warrandice">And we and our heirs shall warrant to the aforesaid monks the same land against
+                     all men for ever.</seg> In addition we have given up to the aforesaid monks the common pasture of the
+                     same toun of Innerwick, <seg type="diplomatic" subtype="boundaries">from the low road to the head of <ex>Manineth</ex> at the boundaries which are between us and the monks of Kelso, that is, across
+                        from <ex>Monnesclacht</ex> as far as <ex>Witsclad</ex>, and from <ex>Witsclad</ex> as far as <ex>Edwardescloth</ex>, and <ex>Edwardescloth</ex> as far as <ex>Botkil</ex>, and so upwards by the same water, that is <ex>Botkil</ex>, by the correct boundaries of Innerwick as far as the sheep-fold of the
+                        aforesaid monks, and from that sheep-fold as far as the
+                        low road aforenamed.</seg> <seg type="diplomatic" subtype="holding">This aforesaid pasture with easements within the aforesaid boundaries, that is,
+                     in peataries, in turbaries, in heathland, the aforesaid
+                     monks shall hold of us and our heirs in feu ferme for
+                     ever, freely and quitely, released from all services and
+                     earthly exactions by returning from it yearly to us and
+                     our heirs ten shillings at Pentecost</seg>.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: William Wallace of Stenton, Nigel, parson of Rutherglen,
+                  Master William of Earlston, William clerk of ...ford, Robert
+                  Avenel, Robert son of Gregory, William Francis, Richard
+                  Taylor, Walter ... and many others.</seg></p> <p> </p></div>
+    </body>
+  </text>
+</TEI>

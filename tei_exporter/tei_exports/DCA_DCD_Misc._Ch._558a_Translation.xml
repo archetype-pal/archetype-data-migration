@@ -1,0 +1,44 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 558a</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.803026+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 558a</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W<ex>illiam</ex> king of the English</seg>, to Thomas archbishop of <span data-dpt="place" data-dpt-cat="chars" data-dpt-type="name">York</span>, and to all his sworn men, French, English, and Gaelic, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know</seg> <seg type="diplomatic" subtype="disposition">me to have conceded to God Almighty, and to the church of Durham, and to the
+                  holy confessor Cuthbert, and to Bishop William, and to the
+                  monks there who are serving and in perpetuity will be serving
+                  God, the lands in Lothian which Edgar, son of Malcolm king of
+                  Scots, with my consent, donated to God and the above-said
+                  church; that is, the manor of Berwick; and these manors
+                  written below: Graden, Lennel, <ex>Dylsterhale</ex>, Birgham, Edrom, Chirnside, Hilton, Blackadder, Kimmerghame, Hutton, Renton,
+                     Paxton, Foulden, Mordington, Lamberton, the other
+                     Lamberton, Edrington. Fishwick, <ex>Horeford</ex>, Upsettlington, and the manor of Coldingham; and these manors written below:
+                     Old Cambus, Lumsdaine, Reston, Swinton, <ex>Farndun</ex>, Ayton, the other Ayton, Prenderguest, Cramsmoo, Edington. These manors written
+                     above, with their appurtenant lands, woods, waters, and
+                     all tolls and wrecked ships, and their other customs, just
+                     as King Malcolm ever best had them, I concede for ever to
+                     God and Saint Cuthbert.</seg> <seg type="diplomatic" subtype="witnesses">As witness William the chancellor and Robert fitz Hamon.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

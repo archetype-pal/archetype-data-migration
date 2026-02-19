@@ -1,0 +1,45 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NLS Adv. MS 15.1.18, no. 27</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-06-07 10:59:52.971677+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 27</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p>I<seg type="diplomatic" subtype="narration">n the 1222nd year since the Incarnation of the Lord this agreement was made
+                  between the lord S<ex>imon</ex>, prior of St Andrews and the religious community of the same place on the one
+                     side, and on the other, Gillemuire the scoloc of Tarland,
+                     their liegeman and neyf: namely that the same G<ex>illemuire</ex>, as their neyf and liegeman shall have permission to be with the lord J<ex>ames</ex>, son of M<ex>organ</ex> of good memory, late earl of Mar, for as long as it pleases the prior and
+                     community, so that G<ex>illemuire</ex> and his children, with all their belongings, without any objection or any
+                     impediment, should be returned to the said prior and
+                     convent as their neyfs when it shall pease the said prior
+                     and community; and they shall assign to them a suitable
+                     dwelling place in good faith. And if G<ex>illemuire</ex> or his children should remain for a year or more with the said lord J<ex>ames</ex>, the same G<ex>illemuire</ex> or his children shall pay one pound of wax annually on the Assumption of Blessed
+                     Mary in recognition of their homage to the said prior and
+                     community.</seg> <seg type="diplomatic" subtype="sealing">And because the same G<ex>illemuire</ex> does not have his own seal, he has caused this agreement to be sealed with the
+                     seal of the said lord J<ex>ames</ex> son of M<ex>organ</ex> the earl of Mar.</seg> And for greater security, the aforementioned G<ex>illemuire</ex>, touching holy relics, swore that he would faithfully uphold this agreement in
+                  good faith without any objection. <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord D<ex>uncan</ex>, son of M<ex>organ</ex>, late earl of Mar; the lord J<ex>ames</ex>, his brother; the lord P<ex>hilip</ex> de Malville, sheriff of Aberdeen; the lord R<ex>obert</ex> of Strathearn; Beldin, judex of Fern; William, chaplain of Tarland; Adam of
+                     Cushnie; Mael Domnaig mac Gilla Doraid; Gilleserf of
+                     Ruthven.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD 1.1.Sacr.12</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-06 22:26:42.989673+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD 1.1.Sacr.12</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio"><persName>Walt<ex>eru</ex>s</persName> del Bois</seg> Omnibus sancte matris Ecclesie filiis uidentibus uel audientibus has litteras <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition">Sciatis me pro salute anime mee. ⁊ <lb/> Patris mei. ⁊ Matris mee. &amp; Galiene sponse mee. ⁊ Ricardi heredis mei. ⁊
+                     antecessorum meorum. ⁊ successorum meorum. dedisse. ⁊
+                     conces<lb/>sisse. ⁊ et hac presenti Carta confirmasse deo et sancto Cuthberto et monachis <span data-dpt="place" data-dpt-cat="chars" data-dpt-type="name">Dunelmensibus</span> in puram ⁊ perpetuam elemosinam terram illam <lb/> apud Tauenaus per istas diuisa. <seg type="diplomatic" subtype="boundaries">Scilicet. del Redehow super kircelesbanc usque ad uiam que tendit apud Rob<ex>er</ex>desbi. ⁊ per illam uiam <lb/> uersus aquilonem usque ad primum sich quod uenit de petera. ⁊ cadit in kirtel. ⁊
+                        descendendo usque ad redebanc.</seg> <seg type="diplomatic" subtype="holding">Quare uolo. ⁊ pre<lb/>cipio. quod predicti monachi habeant. ⁊ possidant totam terram predictam infra
+                        prenominatas diuisas. in bosco ⁊ plano. cum communi <lb/> pastura uille de Carruderes ad Centum bidentes. ⁊ Qu<supplied>a</supplied>draginta aueria. ⁊ ad Quinquaginta capras. ⁊ viginti porcos. ⁊ ad <lb/> tres equos. libere. quiete ⁊ honorifice. ab omni consuetudine uel auxilio. ⁊
+                        exactione. sicut aliqua Elemosina in toto Regno <lb/> liberius uel quietius habetur. uel possidetur.</seg></seg> <seg type="diplomatic" subtype="witnesses">Hiis testibus. Ricardo filio meo . Galiena sponsa mea. Radulfo de Wansa<ex>n</ex>t. Padino pre<lb/>posito. Will<ex>elm</ex>o de Ispania. Rob<ex>er</ex>to de Lithum. Adam filio Ric<ex>ardi</ex>. Steph<ex>an</ex>o clerico. Hamone. Gaufrido filio albelot. ⁊ multis aliis.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

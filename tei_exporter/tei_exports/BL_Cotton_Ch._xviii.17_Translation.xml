@@ -1,0 +1,52 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.17</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:43:41.799659+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.17</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W<ex>illiam,</ex> by the grace of God king of the Scots,</seg> to bishops, abbots, earls, barons, justices, sheriffs, provosts, officials, and
+                     all worthy men of his entire land, clerk and lay, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Let present and future know</seg> <seg type="diplomatic" subtype="disposition">us to have conceded, and by this our charter to have made firm, the amicable
+                  peace made between the convent and church of Kelso on the one
+                  side, and the convent and church of Melrose on the other
+                  side, over the boundaries of the lands of Bowden, Eildon, and
+                  Darnick. Wherefore we will and instruct that the aforesaid
+                  peace made between the aforesaid convents and houses be
+                  firmly and inviolably held in times to come and for ever,
+                  just as it is more plainly specified in the cyrograph made
+                  between the aforesaid convents and houses. We have also
+                  conceded and by this our charter made firm the amicable peace
+                  made between the aforesaid convents and aforesaid houses over
+                  the dispute that was at issue between the aforesaid convents
+                  and houses aforenamed, about the land of Mow and of Clifton,
+                  just as it is specified in the aforesaid cyrograph made
+                  between the two.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: Alexander the lord king's son; Philip de Valognes, chamberlain;
+                  Robert of London, the lord king's son; William Comyn, David
+                  of Lindsay, justices; Oliver the lord king's chaplain;
+                  William del Bois, the lord king's clerk; Philip of Mowbray;
+                  Walter Oliphant; Henry the son of Earl David; Philip of
+                  Lundin; David the marischal; Richard son of Hugh; Herbert de
+                  Camera; John of Stirling; Richard, Adam Hastings.</seg> At Stirling on the 22nd day of June.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

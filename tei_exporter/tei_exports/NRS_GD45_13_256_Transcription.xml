@@ -1,0 +1,59 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/256</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:35:36.242606+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/256</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Vniuersis sancte Matris Ecclesie filiis presentibus ⁊ futuris . <seg type="diplomatic" subtype="intitulatio">Walter . miseratione diuina ecclesie Glasg’ minister</seg> <seg type="diplomatic" subtype="salutation">eternam in domino . salutem.</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerit uniuersitas uestra</seg> nos de consensu decani et<lb/> capituli Glasguensis . caritatis intuitu dedisse et concessisse . et hac
+                     presenti carta nostra confirmasse . deo et Ecclesie Sancte
+                     Crucis de Edinburc . et Canonicis ibidem deo seruientibus
+                     et seruituris<lb/> Quod de quatuor ecclesiis quas habent in diocesi nostra sub hanc forma
+                     imperpetuum taxentur uicarie . scilicet . de ecclesia de
+                     kyrkecok  percipiat uicarius decem marcas in altaragio
+                     eiusdem<lb/> ecclesie sibi assignandas per visum magistri . H . Archidiaconi . Glasg’. et
+                     Magistrorum . Ricardi de Brade . et Ricardi de Harhall’ .
+                     clericorum nostrorum . De ecclesia uero de Crauford
+                     percipiat uicarius centum<lb/> solidos in altaragio eiusdum ecclesie . sibi assignandos per eosdem . De
+                     ecclesia uero de dalgernoc  percipiat uicarius decem
+                     marcas in bonis altaragii eiusdem ecclesie sibi
+                     assignandas per eosdem . In ecclesia<lb/> uero sancte Brigide de Loublaket  percipiat uicarius centum solidos  in
+                     altaragio eiusdem ecclesie sibi assignandos per eosdem .
+                     vicarii uero dictarum ecclesiarum de Episcopalibus et
+                     honoribus ordinariis et consue<lb/>tis dictas ecclesias contingentibus respondeant . De extra ordinariis autem
+                     abbas et conuentus dicte ecclesie sancte Crucis de
+                     Edenburc . Et dictarum ecclesiarum uicarii pro porcionibus
+                     in suprascriptis<lb/> ecclesiis se contingentibus  equaliter respondeant . Et cum aliqua dictarum
+                     ecclesiarum uacauerit  concessimus supra dictis Canonicis
+                     ut eam sine aliqua contradiccione et difficultate
+                     ingrediantur .<lb/> eamque in usus proprios  pro uoluntate sua conuertant . salua nobis et
+                     successoribus custodia uicariarum cum uacauerint donec
+                     cappellanum ydoneum uel canonicum si maluerint Iuxta
+                     canonicas sanc<lb/>ciones nobis ad easdem presentauerint Qui dictam uicariam dum caste et honeste
+                     se habuerit  tempore suo possideat</seg> <seg type="diplomatic" subtype="sealing">IN huius autem rei testimonium et ut ista concessio rata et<lb/> firma maneat inperpetuum presens scriptum sigillo nostro signamus.</seg> <seg type="diplomatic" subtype="witnesses">Hiis Testibus Magistro . H . Archidiacono Glasg’ . Magistris R . et R . de Brade
+                  ⁊ de Harhall’<lb/> Magistro symon medico de Bygre . Domino . Ric’ . cappellano ⁊ uicario de Galsg’
+                     . Domino . Ric . vicario de Dunoglas . Domino Waltero
+                     clerico de Ledemere . Et aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

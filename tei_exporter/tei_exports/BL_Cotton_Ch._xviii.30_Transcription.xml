@@ -1,0 +1,57 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Cotton Ch. xviii.30</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:51:49.690324+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.30</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p>
+          <seg type="diplomatic" subtype="narration">Dicit et in iure proponit coram vobis domine abbas de balmurinath’ unice iudex a
+                  sede apostolica delegate procurator prioris et conuentus
+                  cathedralis<lb/> ecclesie sancti andr<ex>ee</ex> contra magistrum priorissam . et moniales de Hadigton . quod cum ipsi prior et
+                     conuentus sint veri rectores ecclesie de Hadigton ̷
+                     magister moni<lb/>alium de Hadigton priorissa et moniales predicte . quasdam decimas infra dictam
+                     paroch<ex>iam</ex> de Hadigton . ad ipsos priorem et conuentum de Iure com<lb/>muni spectantes . videlicet . dec<ex>imam</ex> vnius carucate terre in territorio de Helfstanford’ . que quondam spectabat ad
+                     territoriam de drem . et decimas<lb/> duarum bouatarum terre contentarum in veteri gardine de steueniston . et decimas
+                     illius terre que iacet inter vetus gardinum et villam de
+                     Hadigton . et<lb/> decimas dimidie acre terre iuxta molendinum de steueniston . et decimas
+                     croftorum quorundam burgensium de Hadigton . et minutas
+                     decimas de byris<lb/> et cottariorum de byris et de bernis . per aliqua tempora occupauerunt et in
+                     usus suos conuerterunt in preiudicium et dampnum non
+                     modicum ipsorum<lb/> prioris et conuentus necnon lesionem monasterii sui enormem . et adhuc ocupare
+                     non formidant quare petit procurator predictorum prioris
+                     et conuentus<lb/> predictas decimas ad ius et proprietatem predicte ecclesie sue de Hadigton . et
+                     sic ad monasterium sancti Andr<ex>ee</ex> per uos pertinere declarari . non obstantibus<lb/> literis instrumentis iuramentis penis renunciacionibus et confirmacionibus in
+                     communi forma a sede apostolica impetratis . per
+                     quemcumque seu<lb/> quoscumque priorem seu priores supradicti monasterium sancti Andr<ex>ee</ex> forsitas interpositis . ac <supplied>pre</supplied>dictos magistrum prioressam et moniales ab ocupacione dictarum<lb/> decimarum in futurum per uos compelli desistere sentencialiter et diffinitiue .
+                     petit etiam dictos magistrum priorissam et moniales in
+                     decimis predictis me<lb/>dio tempore perceptis quas estimant centum libras sterlingorum sibi condempnari
+                     et condempnatos ad solucionem compelli . petit etiam
+                     expensas circa in<lb/>gressum litis factas quas estimat decem libras sterlingorum et protestatur de
+                     faciendis in processu pro loco et tempore petendis vestrum
+                     implorans<lb/> officium in omnibus in quibus fuerit de Iure implorand<ex>um</ex> . non artans se ad omnia et singula prescise probanda . set eatenus optineat in
+                     premissis<lb/> quatenus probauerit .</seg>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

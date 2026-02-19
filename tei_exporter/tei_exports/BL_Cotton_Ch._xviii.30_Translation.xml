@@ -1,0 +1,75 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.30</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:51:51.62806+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.30</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p>
+          <seg type="diplomatic" subtype="narration">The agent of the prior and community of St Andrews cathedral church says and
+                  argues in law before you, Lord Abbot of Balmerino, the only
+                  judge assigned by the Apostolic See, against the master,
+                  prioress, and the nuns of Haddington, that although they
+                  themselves – the prior and community – are the true rectors
+                  of the church of Haddington, the master of the nuns of
+                  Haddington, the prioress, and nuns aforesaid, have
+                  appropriated for some time certain teinds within the said
+                  parish of Haddington belonging to the prior and community by
+                  common right, namely, the teind of one ploughgate of land in
+                  the territory of Athelstaneford, which once belonged to the
+                  territory of Drem, and the teinds of two oxgangs of land
+                  contained in the old garden of Stevenson, and the teinds of
+                  the land that lies between the old garden and the toun of
+                  Haddington, and the teinds of half an acre of land between
+                  the mill of Stevenson and the teinds of the crofts of certain
+                  burgessses of Haddington, and the small teinds of Byres, and
+                  of the cottaries of Byres and of Barney, and they have turned
+                  them over to their own use to the no-small detriment and
+                  damage of the prior and community as well as the grave injury
+                  of their monastery, and until now have not been afraid to
+                  appropriate [them]; wherefore the agent of the aforesaid
+                  prior and convent seeks the aforesaid teinds as the right and
+                  property of his aforesaid church of Haddingotn, and thus by
+                  you to be declared to belong to the monastery of St Andrews,
+                  not withstanding the letters, instruments, judgments,
+                  penalties, renunciations, and confirmations obtained from the
+                  Apostolic See in the common form, interposed perchance
+                  through whichsoever prior or priors of the monastery of St
+                  Andrews; and the aforesaid master, prioress, and nuns be
+                  compelled by you to cease from the appropriation of the said
+                  teinds in future by definitive judicial sentence; he also
+                  seeks the said master, prioress, and nuns to be condemned in
+                  the aforesaid teinds received in the meantime which they
+                  assess as a hundred pounds sterling, and the condemned to be
+                  compelled to pay; and he also seeks costs incurred for entry
+                  of the lawsuit, which he assesses as ten pounds sterling; and
+                  he bears witness in respect of the things to be done in the
+                  legal proceedings for the place and time of asking, invoking
+                  your service in all things in which it was invoked by law,
+                  not constraining yourself to a categorical proving of all
+                  things in general and particular, but only so far as he may
+                  obtain so much as he may have proved in the foregoing.</seg>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

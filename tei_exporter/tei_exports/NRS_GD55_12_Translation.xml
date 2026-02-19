@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/12</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 14:50:02.545372+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/12</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">William of Lindsay</seg> to all sons of the Church <seg type="diplomatic" subtype="salutation">Greeting</seg>:</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let those to come as well as those present</seg> know that I have given and by the present charter have made firm to God and to
+                     St Mary at Melrose and to the monks serving God there
+                     Fauhope as Leader Water runs and as the hedge encloses, in
+                     perpetual alms, for the soul of my father and my mother
+                     and of all my ancestors and my own soul.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Amfred the abbot of Newbattle, Swain the son of Thor,
+                  Drogo of Lindsay, Swain of Earlston, William …, Cospatric of
+                  Earlston.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

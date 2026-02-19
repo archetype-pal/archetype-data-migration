@@ -1,0 +1,44 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Add. Ch. 76700</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-02-02 22:04:34.764905+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 76700</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alexander, king of the Scots,</seg> to all worthy men of his entire land, clerk and lay, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Let present and future know</seg> <seg type="diplomatic" subtype="disposition">us to have given, conceded, and by this our charter to have made firm, to Thomas
+                  d'Aunay, Burntscarthgreen, Auchencrieff, and Dargavel, by
+                  their own right boundaries by which William son of Derman
+                  held those lands, that is, the land which William son of the
+                  same William son of Derman has quitclaimed to us by staff and
+                  baton in our court at Dumfries for himself and his heirs. <seg type="diplomatic" subtype="holding">For the said Thomas d'Aunay and his own heirs to hold of us and our heirs in feu
+                     and heritage, in lands and waters, in meadows and
+                     pastures, in moors and marshes, in ponds and mills, and
+                     with all other things belonging by right to the foresaid
+                     lands, with gallows and ditch, with soke and sake, with
+                     toll and team, and infangtheif, freely and quitely, fully
+                     and honourably, by a quarter of the service of one knight.</seg></seg> <seg type="diplomatic" subtype="witnesses">As witnesses: William del Bois, chancellor; Thomas of Stirling, archdeacon of
+                  Glasgow; Roger Avenel; Robert son of Robert of Roos; John of
+                  Maxwell; Peter de Valognes; William Bisset; William Avenel.</seg> At Ed[inburgh?] on the <seg type="diplomatic" subtype="dating">29th day of September, in the tenth year of the lord king's reign</seg>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

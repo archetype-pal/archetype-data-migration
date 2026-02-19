@@ -1,0 +1,48 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/107</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 13:36:22.367529+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/107</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church both future and present, <seg type="diplomatic" subtype="intitulatio">Richard de Morville, constable of the king of the Scots</seg>, <seg type="diplomatic" subtype="salutation">sends greeting</seg></seg>. <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me to have given, and by this my charter to have made firm, to God and to the
+                     church of St Mary at Melrose, and the monks serving God in
+                     that place, in free and quit and everlasting alms, the
+                     freedom and licence to have at Buckholm one cow pasture
+                     for sixty cows, and a suitable building for their needs,
+                     within the same enclosure which was there before I had
+                     given them this permission. <seg type="diplomatic" subtype="holding">Wherefore I will that the aforenamed church of St Mary at Melrose and the
+                     foresaid monks should have the forementioned liberty and
+                     licence in free and everlasting alms, and possess it for
+                     ever; as freely, quitely, and honourably as they possess
+                     any alms freely, quitely, and honourably;</seg> so that it shall non remain a hindrance on account of my charter for Whitelee
+                     which I had given to them previously, which shows me to
+                     have granted to them that they may have only three
+                     buildings in the forest, and that at the foresaid
+                     Whitelee.</seg> <seg type="diplomatic" subtype="witnesses">As witness: the lady Avice of Lancaster; William de Morville our son and heir;
+                  Herbert the dean of Glasgow; Master Clement, chaplain; Adam,
+                  parson of the church of Lauder; Roger clerk and steward; Alan
+                  of Thirlestane; Sampson son of William of Oxton.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

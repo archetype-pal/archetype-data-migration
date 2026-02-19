@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/43</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.879119+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/43</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Ioc<ex>elinus</ex> . dei gratia glasg<ex>uensis</ex></seg> episcopus . vniuersis sancte matris ecclesie filiis tam posteris quam
+                     presentibus <seg type="diplomatic" subtype="salutation">salutem in christo</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> nos dedisse<lb/> et concessisse . et hac carta nostra confirmasse deo et ecclesie Sancte Marie de
+                     maylros et monachis ibidem deo seruientibus<lb/> in liberam et perpetuam elemosinam . illud toftum in burgo de glasgu . quod
+                     Rannulfus de hadintun edifica<supplied>uit</supplied><lb/> in prima edificatione burgi ad opus domus de maylros . ita plenarie sicut illud
+                     edificauit et tenuit . <seg type="diplomatic" subtype="holding">Quare<lb/> uolumus ut predicti monachi de maylros teneant et possideant predictum toftum
+                        ita libere et quiete sicut ipsi ali<supplied>quam</supplied><lb/> elemosinam liberius et quietius tenent et possident .</seg></seg> <seg type="diplomatic" subtype="witnesses">His test<ex>ibus</ex> . Hug<ex>one</ex> abbate de Neubot’ . Symo<ex>ne</ex> a<supplied>rchi</supplied>diacono glasg<ex>uensi</ex> . Helia .<lb/> Magistro Ioh<ex>ann</ex>e . Helia Philippo . Beda . Eng’. Herb<ex>erto</ex> . canonicis de glasg’ . Will<ex>elm</ex>o et Walt<ex>er</ex>o <supplied>clericis</supplied> episcopi . Ala<supplied>no<lb/> dapifero</supplied> regis . Erkembaldo de Duueglas . Roberto de mungumbri . Hug<ex>one</ex> de paduin’. Alexandro . senescaldo episcopi .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

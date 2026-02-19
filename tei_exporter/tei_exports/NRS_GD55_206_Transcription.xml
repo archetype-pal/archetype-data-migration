@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/206</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:49:07.563746+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/206</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Uniuersis christi fidelibus hoc scriptum uisuris uel audituris <seg type="diplomatic" subtype="intitulatio">Thomas de Alneto Miles</seg> <seg type="diplomatic" subtype="salutation">eternam salutem in domino</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerit vniuersitas uestra</seg><lb/> me dedisse . concessisse et hac presenti carta mea confirmasse deo et beate
+                     Marie de Melros et Monachis ibidem deo seruientibus et in<lb/> perpetuum seruituris in liberam et perpetuam elemosinam terras de Brunsceth . de
+                     hauthyncref et de Dergauel per suas rectas diui<lb/>sas cum omnibus pertinenciis suis et quicquid imfra easdem diuisas continetur
+                     tam in hominibus quam pasturis . domibus . pratis . moris
+                     .<lb/> mariscis . aquis . molendinis . nemoribus et omnibus aliis . <seg type="diplomatic" subtype="holding">ita ut ipsi omnia premissa cum suis pertinentiis ita libere in perpetuum<lb/> teneant et habeant prout ea tenui . et in omnibus premissis nichil michi retinui
+                        .</seg> <seg type="diplomatic" subtype="warrandice">Immo Ego et successores mei omnia premissa eisdem<lb/> monachis in perpetuum warantizabimus .</seg></seg> <seg type="diplomatic" subtype="sealing">In cuius rei testimonium presenti scripto sigillum meum apposui .</seg> <seg type="diplomatic" subtype="witnesses">Hiis testibus . Ioh<ex>ann</ex>e de<lb/> Makuswell’ . Thomas filio Ranulfi vicecomite de Dunfres . Ion<ex>ann</ex>e de Mundeuil’ . Waltero Croc . et Thoma Mautalent  militibus .<lb/> Laurencio de braccheley . Thoma de Cantia . et multis aliis .</seg> Datum Anno domini millesimo ducentesimo tricesimo septimo .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

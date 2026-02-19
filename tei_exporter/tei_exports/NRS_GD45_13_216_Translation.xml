@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/216</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 09:01:59.433809+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/216</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">David king of Scots to all worthy men of the whole of Lothian, clerk and lay,
+                  French and English, Greeting:</seg> <seg type="diplomatic" subtype="disposition">Know that I have given and granted to the church of St Cuthbert beside the
+                  castle the whole land beneath the same castle, namely, from
+                  the spring that rises beside the corner of the king’s garden,
+                  along the road that runs to the same church, and from the
+                  other side beneath the castle until a road is reached which
+                  is beneath the same castle towards the east.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, Henry the king’s son, and William de Graham, and Thor of Tranent,
+                  and Malbeth of Liberton ...</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

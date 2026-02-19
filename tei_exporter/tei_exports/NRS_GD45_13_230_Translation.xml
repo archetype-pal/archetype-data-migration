@@ -1,0 +1,46 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/230</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 09:20:01.812941+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/230</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Robert by the grace of God bishop of St Andrews</seg> to all sons of Holy Mother Church <seg type="diplomatic" subtype="salutation">Greeting and Blessing</seg>:</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let those to come as well as those present know that</seg> I have granted in perpetual alms to God and to the church of Holyrood in
+                     Edinburgh and to the canons serving God there the church
+                     of Tranent with everything that rightfully belongs to it,
+                     free and quit from every exaction, as Waleran the chaplain
+                     ever had and held it well, reserving the tenure of Waleran
+                     the chaplain himself for as long as he remains in secular
+                     life, just as King Malcolm has given and affirmed by his
+                     charter the aforesaid church of Tranent to the church of
+                     the Holy Cross and to the canons serving God there by the
+                     advice of his barons. <seg type="diplomatic" subtype="holding">I therefore will and by this my charter make firm that after the departure of
+                     Waleran the aforesaid canons shall hold that church as
+                     freely and quietly as they have and hold their other alms
+                     and possessions, reserving the episcopal right.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Thor<ex>ald</ex> the archdeacon, Aiulf the dean, Waleran himself being present and suggesting it,
+                     Swain of Fishwick, William the bishop’s chaplain, Aelward
+                     the chaplain, John the bishop’s nephew, Ralph the bishop’s
+                     nephew.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

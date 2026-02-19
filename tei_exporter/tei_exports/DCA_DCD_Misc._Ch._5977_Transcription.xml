@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 5977</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:57:31.581822+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5977</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Christi fidelibus ad quos presens Scriptum peruenerit  <seg type="diplomatic" subtype="intitulatio">Patricius filius Helye Dunning’ de Renigt’</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerit vniuersitas uestra</seg> me quietum clamasse<lb/> domui de Coldingham de Me et heredibus meis In perpetuum homagium et seruicium
+                     quod mihi debebant henricus frater meus et heredes sui pro
+                     vno<lb/> tofto et uno crofto unius acre in uilla de Rengt’ . et duabus acris in campo
+                     eiusdem uille . scilicet . in occidentali parte de
+                     cromstaniside unam acram .<lb/> et magnam acram super aletone . cum omnibus eschaetis que mihi et heredibus meis
+                     de dicta terra possent accidere . Dabunt etiam dictus
+                     henricus et heredes<lb/> sui singulis annis nomine firme domui de Coldingham Sex denarios ad pascha . Et
+                     dabunt per Marcheto duodecim denarios . pro herieto duo<lb/>decim denarios . pro forisfacto duodecim denarios .</seg> <seg type="diplomatic" subtype="sealing">Et In testimonium huius mee quiete clamationis sigillum meum huic scripto
+                  apposui</seg> . <seg type="diplomatic" subtype="witnesses">Testibus<lb/> Domino Will<ex>elm</ex>o de Morhint’ . Domino alano de Swint’ . Ada de prendergest . Roberto . andr’ .
+                     alex’ . de paxt’ . ada de Reston’ . Bertramo filio eius<lb/> Mauric<ex>i</ex>o de aytona . Rob<ex>ert</ex>o filio Reginaldi . Radulfo preposito . Rogero filio eius . Rob<ex>ert</ex>o filio gregor<ex>ii</ex> . Ioh<ex>ann</ex>e filio Helye de aytona . Et aliis</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

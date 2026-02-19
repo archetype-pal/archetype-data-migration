@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/184</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:34.077121+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/184</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Alex<ex>ander</ex> . dei gr<ex>ati</ex>a rex Scott<ex>orum</ex> . omnibus probis hominibus tocius terre sue . <lb/> clericis ⁊ laicis  <seg type="diplomatic" subtype="salutation">salutem</seg> . </seg><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant presentes ⁊ futuri</seg> . me dedisse . ⁊ concessisse . <lb/> ⁊ hac carta mea confirmasse . deo ⁊ ecclesie sancte Marie de Melros’ . ⁊
+                     monachis ibidem <lb/> deo seruientibus totam terram de Moybothelbeg’ . quam Dunecan<ex>us</ex> . filius Gilleb<ex>erti</ex> . <lb/> eis dedit . per rectas diuisas contentas in carta ipsius Dunecan<ex>i</ex> . ⁊ totam terram de <lb/> Bethoc’ . quam idem Dunec<ex>anus</ex> . eis dedit . per rectas diuisas suas similiter contentas <lb/> in carta ipsius Dunec<ex>ani</ex> . Tenend’ in liberam ⁊ puram ⁊ perpetuam elemosinam cum <lb/> omnibus aisiamentis . ⁊ aliis ad predictas terras iuste pertinentibus . ita
+                     libere <lb/> ⁊ quiete . plenarie ⁊ honorifice . sicut carta predicti Dunec<ex>ani</ex> . inde facta predictis <lb/> monachis  testatur . saluo seruitio meo . </seg><seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . Will<ex>elmo</ex> . episcopo Sancti Andree . Will<ex>elmo</ex> . de Bosch<ex>o</ex> . cancellario . comite . Patric<ex>io</ex> . comite . Malc<ex>olmo</ex> . de fif’ . Will<ex>elmo</ex> . Cumin’ . com<ex>ite</ex> . <lb/> de Buchan’ . Alan<ex>o</ex> . fil<ex>io</ex> . Roll<ex>andi</ex> . constab<ex>ulario</ex> . Ph<ex>ilippo</ex> . de Mubray . Walt<ex>ero</ex> . Olifard’ . Ad<ex>am</ex> . <lb/> fil<ex>io</ex> Gilleb<ex>erti</ex> . Ingelram<ex>o</ex> . de Baillol’ . Alex<ex>andro</ex> . uicecomite . de Striuel<ex>in</ex> . Walt<ex>ero</ex> . de <lb/> Lindes’ . Joh<ex>anne</ex> . de Maccuswel’ .</seg> <seg type="diplomatic" subtype="dating">Apud Edenb’ . secundo die Octobris .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

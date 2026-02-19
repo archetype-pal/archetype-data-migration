@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 1344</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 10:59:47.484756+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 1344</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Roger, by the grace of God humble servant of the church of St Andrews</seg>, to his own beloved and sworn men, Master Ranulf, archdeacon of the same
+                     church, and his officials, <seg type="diplomatic" subtype="salutation">greeting and blessing</seg>.</seg> <seg type="diplomatic" subtype="disposition">We command you that out of respect for Cuthbert the glorious confessor, the
+                  charters granted to our sons, the prior and monks of Durham,
+                  you cause to be read and heard in the common hearing of our
+                  chapter, so that if by chance any problem about it should
+                  emerge during the passage of time, you with our aformentioned
+                  chapter may bear witness to the truth of this our concession.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/152</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:15:16.379082+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/152</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church as well present as to come, <seg type="diplomatic" subtype="intitulatio">Robert of Barnoldby</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> me by the consent and will of my heirs to have given and granted and by this my
+                     charter to have made firm to God and to the church of St
+                     Mary at Melrose and to the monks serving God in that
+                     place, for the soul of my lord Ansketil of Ryedale and of
+                     all his ancestors and successors, and for my own soul and
+                     of all my ancestors’ and successors’ <ex>souls</ex>, twenty acres of land, namely ‘Raven’s Fen’ <seg type="diplomatic" subtype="boundaries">by the boundaries which I and the monks of Melrose walked around, namely, from
+                     the upper head of ‘Harrowdean’, the whole sedge-bed,
+                     upwards as far as the land that William of Ryedale gave to
+                     Matilda Corbet his wife as a marriage-portion, and from
+                     there upwards towards Whitton as the ditch is drawn
+                     between the said land and ‘Raven’s Fen’, as far as the
+                     trench which the monks made, and from there across towards
+                     Harrow, as far as the small thornbush, and from there as
+                     the the trenches have been made between the land of the
+                     lord Patrick and ‘Raven’s Fen’ as far as ‘Harecar’, and
+                     from there as the old fosse descends to ‘Harrowdean’.</seg> This whole land which is comprised between the said boundaries with all its
+                     pertinents I have given to the said church in return for
+                     twenty acres of land free, loosed and quit from every
+                     earthly service and custom and secular exaction, <seg type="diplomatic" subtype="holding">to be held and possessed as freely, quitely, fully, and honourably as it holds
+                     and possesses any alms.</seg> <seg type="diplomatic" subtype="warrandice">For I and my heirs shall maintain and warrant to the monks the said land against
+                     all men in respect of all things that can be exacted in
+                     return for land.</seg></seg> And so that this my alms should be strong and established for ever, my lord
+                  Patrick of Ryedale at my request has licensed it and affirmed
+                  it by his charter. <seg type="diplomatic" subtype="sealing">And since I do not have a seal, the lord Simon, archdeacon of Glasgow, and
+                  William son of John to apply their seals to the present
+                  charter.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord Jocelin, bishop of Glasgow; Arnold abbot of
+                  Rievaulx; Simon, archdeacon of Glasgow; Patrick of Ryedale
+                  and Walter his son; William son of John; Richard le Nain;
+                  Henry of Mow; Simon of Grubbit; Adam of Chatto; Adam of
+                  Whitton; Ralph of Ryedale.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

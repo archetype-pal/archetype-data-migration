@@ -1,0 +1,47 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NLS Adv. MS 15.1.18, no. 61</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:03.384072+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 61</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus hoc scriptum visuris uel audituris <seg type="diplomatic" subtype="intitulatio">Richenda filia Wynfridi de berkeley</seg> . <seg type="diplomatic" subtype="salutation">eternam In domino Salutem</seg></seg> . <seg type="diplomatic" subtype="notification">Nouerit vniuersitas uestra</seg> <seg type="diplomatic" subtype="disposition">me In <lb/> legitima potestate mea ⁊ In libera voluntate mea . de bona voluntate mea ⁊
+                     concessione dominorum nostrorum abbatis ⁊ conuentus de
+                     abberbro<lb/>th’ . dedisse concessisse ⁊ hac carta me confirmasse Rogero Wyrfaut’ totam
+                     terram illam que fuit hugonis filii Waldeui In territorio
+                     de <lb/> cuneueth’ . <seg type="diplomatic" subtype="holding">Tenendam sibi ⁊ attornatis suis de me ⁊ heredibus meis in feodo ⁊ hereditate .
+                     libere ⁊ quiete per rectas diuisas suas cum <lb/> communi pastura de Scotestun’ . cum merchetis ⁊ blodwytis . ⁊ cum omnibus aliis
+                        iustis pertinenciis suis ⁊ aysiamentis . libere ⁊ quie<lb/>te ab omni seruitio ad me uel ad heredes meos pertinente . saluo forinseco
+                        domini Regis . de quo Ipse ⁊ attornati sui respondebunt
+                        . <lb/> videlicet quantum pertinet ad dimidiam dauach . ⁊ salua mihi multura mea de
+                        terra illa que pertinet ad molendinum de cuneveth .
+                        quam <lb/> non faciam te liberior humfrido de mediltun ⁊ Ioh<ex>ann</ex>e Wythard . Reddendo Inde annuatim mihi ⁊ heredibus meis ipse ⁊ attorna<lb/>ti sui  unam libram piperis ad pentecosten quando venient ad predicatm terram .</seg> ⁊ ne ego uel heredes mei contra hanc donationem ve<lb/>nire possimus  Iuramentum pro me ⁊ heredibus meis tactis sacrosanctis
+                     interposui . subponens ego ⁊ heredes mei Iurisdictionem
+                     domini episcopi sancti an<lb/>dree uel archidiaconi eiusdem loci qui per tempore fuerint . vt alter eorum me ⁊
+                     heredes meos ad huius donationis obseruantiam  quacumque
+                     vo<lb/>luerit  censura conpellerat . Non obstante exceptione fori . nec aliqua alia
+                     excepcione nec appellatione . ne aliquo remedo Iuris ci<lb/>uilis uel canonici .</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> domino Sibaldo milite de meornes . Domino Roberto de Rossyn . Iohanne Wyscard .
+                     Wynfrido de middeltun’ . hugone <lb/> de abberbroth’ . hugone scot ⁊ aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 611</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 12:40:59.706443+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 611</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W<ex>illiam</ex> by the grace of God king of the Scots</seg> to all worthy men of his entire land, clerk and lay, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know</seg> me to have granted, and by this my charter to have made firm, to Richard, nephew
+                     of Simon formerly prior of Coldingham, the sale which
+                     Ralph son of Elwald made to him of one toft in Coldingham,
+                     and of twenty acres of land; <seg type="diplomatic" subtype="holding">for him and his heirs to hold of the said Ralph and his heirs, as freely and
+                     quitly as the charter of the same Ralph lawfully bears
+                     witness. Saving my service</seg>.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, Walter and William my chaplains, Philip de Valognes my
+                  chamberlain, William del Bois, Philip of London, Richard
+                  Revel.</seg> <seg type="diplomatic" subtype="dating">At Jedburgh on the second day of August.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

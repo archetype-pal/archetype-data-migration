@@ -1,0 +1,48 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/61</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 13:17:52.665125+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/61</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Sancte Matris Ecclesie filiis tam presentibus quam futuris . <seg type="diplomatic" subtype="intitulatio">Will<ex>elmu</ex>s de hauecestertun . et Ric’ de haucestertun frater eius . et ioh<ex>anne</ex>s filius . alani de Mundegumeri<lb/> et Vincencius filius . Roberti auenel . et Nicholaus filius . Rolandi</seg> . <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> nos dedisse et concessisse . et hac presenti carta nostra confirmasse deo et
+                     ecclesie sancte<lb/> Marie de Melros et Monachis ibidem deo seruientibus pro salute animarum
+                     nostrarum et pro animabus patrum et matrum et omnium
+                     anceteccorum et successroum nostrorum <supplied>et</supplied><lb/> pro anima Walteri filio alani domini nostri . et pro animabus omnium fidelium
+                     defunctorum quamdam terram in territorio de Inuerwich
+                     sicut fassatum circuit eamdem ...<lb/> fratribus eorum factum . in liberam et puram et perpetuam elemosinam solutam et
+                     quietam ab omni terreno seruicio et exaccione seculari .
+                     sicut aliquam elemosinam liberius ...<lb/>cius et honorificencius tenent in terra regis scotie . <seg type="diplomatic" subtype="warrandice">Et nos et heredes nostri warantizabimus predictis Monachis . eamdem terram
+                     contra omnes homines inperpetuum .</seg> <supplied>Preter</supplied><lb/>ea dimisimus eisdem predictis Monachis . communem pasturam eiusdem uille de
+                     Inuerewich <seg type="diplomatic" subtype="boundaries">de profunda uia ad capud de Manineth ad diuisas illas que sunt inter nos<lb/> et Monachos de Kelcou . scilicet ex transuerso de monnesclacht usque in Witsclad
+                        . et de Witsclad usque in edwardescloth . et
+                        edwardescloth usque in botkil . et<lb/> sic sursum per eandem aquam scilicet botkil per rectas diuisas de Innerwich
+                        usque ad bercariam predictorum monachorum et de illa
+                        bercaria usque ad profundam uiam pre<lb/>nominatam</seg> . <seg type="diplomatic" subtype="holding">Hanc predictam pasturam cum aisiamentis infra predictas diuisas scilicet in
+                     petariis . in turbariis . in bruariis tenebunt predicti
+                     Monachi de nobis et<lb/> heredibus nostris in feudam firmam inperpetuum . libere et quiete et solute de
+                        omnibus seruiciis et terrenis exactionibus reddendo
+                        inde annuatim nobis et heredibus nostris de<lb/>cem solidos ad pentecosten</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Hiis test<ex>ibus</ex> . Will<ex>elm</ex>o Walensi de staintum . Nigello persona de . uthirglen . Magistro Will<ex>elm</ex>o de ercheldun . Will<ex>elm</ex>o cl’ ... <lb/>ford Roberto Auenel . Roberto filio . gregorii . Will<ex>elm</ex>o lefranceis . Ricardo letaillur . Waltero ... et Multis aliis</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

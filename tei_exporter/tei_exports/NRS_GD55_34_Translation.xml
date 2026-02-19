@@ -1,0 +1,59 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/34</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 11:29:48.642851+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/34</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church, present and future, <seg type="diplomatic" subtype="intitulatio">Roger of Skelbrooke</seg> <seg type="diplomatic" subtype="salutation">sends Greeting</seg></seg>: <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know me</seg> to have granted, and to have given, and by this my charter to have made firm, to
+                     God and to the church of St Mary at Melrose and to the
+                     monks serving God in that place, for the salvation and the
+                     soul of my lord Duncan son of Gilbert son of Fergus, and
+                     for the souls of all his ancestors and successors, and for
+                     the salvation of my own soul and of all my kindred and
+                     heirs, in free and pure and perpetual alms, my fishery in
+                     the mouth of the River Doon above <ex>Harenam</ex>, and one saltpan, and one pan, wheresoever they might wish in the whole of my
+                     land of Greenan, and sufficient timber from my wood near
+                     the said fishery and saltpan and for the enjoyment in all
+                     ways of the brethren and their own men abiding there. I
+                     have also granted to them one toft to inhabit where they
+                     will near the sea shore, and another toft below my castle
+                     at Greenan where they can keep their moveable goods and
+                     cattle, and the parcel of arable land that is to the west
+                     side of the old elm towards the former saltpan, and
+                     pasture sufficient for six oxen and ten cows. All these
+                     things have I granted and given to the said monks free and
+                     quit and released from all earthly service, custom and
+                     secular exaction. And I will that they have, hold and
+                     possess them for all time in this wise freely and quietly,
+                     fully and honourably, just as freely and quietly, fully
+                     and honourably as they hold or possess any alms. And the
+                     monks shall make use of all things described before as it
+                     pleases them, and by all means, just as it might seem good
+                     and useful to them and to their brethren and their men.</seg> <seg type="diplomatic" subtype="warrandice">And I and my heirs shall warrant to them all these things against all men and we
+                  shall acquit every service which could be exacted in return
+                  for any alms</seg>. <seg type="diplomatic" subtype="witnesses">As witnesses, the lord Jocelin, bishop of Glasgow, Simon the archdeacon, Duncan
+                  my lord, Walter Corbet.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

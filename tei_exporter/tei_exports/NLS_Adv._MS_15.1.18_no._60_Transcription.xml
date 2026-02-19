@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NLS Adv. MS 15.1.18, no. 60</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-01-31 16:29:10.868826+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 60</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte Matris Ecclesie filiis . <seg type="diplomatic" subtype="intitulatio">Henricus Comes de hathodl</seg>’ <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Sciant omnes tam presentes quam futuri</seg> <lb/> <seg type="diplomatic" subtype="disposition">me concessisse . ⁊ hac mea Carta confirmasse deo ⁊ Ecclesie sancti andree
+                  apostoli ⁊ Canonicis ibidem deo ser<lb/>uientibus ⁊ seruituris . Ecclesiam de Dul cum capella . et terris . ⁊ cum
+                     omnibus ad eam iuste pertinenetibus . in liberam <lb/> ⁊ perpetuam elemosinam . pro salute anime mee . ⁊ commitisse sponse mee . ⁊ pro
+                     animabus antecessorum ⁊ successorum <lb/> meorum . <seg type="diplomatic" subtype="holding">Quare uolo ut predicti Canonici predictam ecclesiam ⁊ omnia ad eam pertinentia
+                     ita libere <lb/> ⁊ quiete teneant ⁊ possideant . sicut liberius ⁊ quietius aliqua elemosina
+                        tenetur ⁊ possidetur intoto regno <lb/> scotorum . Sicut in carta Malcolmi commitis patris mei continetur</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Testibus . Comitissa Magareta sponsa mea <lb/> Alexandro de Setona . Malisio Iudice . Colino nepote meo . Michaele <persName><roleName>camerario</roleName></persName> meo . Anegus clerico meo <lb/> Ricardo clerico domini Electi sancti Andree .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

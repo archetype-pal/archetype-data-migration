@@ -1,0 +1,55 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/249 (1)</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:07:10.539386+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/249 (1)</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Ioh<ex>ann</ex>es Dei gratia Candide case Episcopus</seg> Omnibus sancte matris Ecclesie filiis  fidelibus <seg type="diplomatic" subtype="salutation">salutem</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerint presentes  futuri .</seg> nos tocius capituli nostri assensu pro salute anime nostre Omniumque
+                     predecessorum nostrorum successorumque<lb/> Animarum . salute  concessisse  Episcopali auctoritate presentisque scripti
+                     testimonio confirmasse Deo  Ecclesie Sancte crucis de
+                     edenb<ex>ur</ex>g .  Canonicis ibidem Deo Seruientibus  seruituris in liberam  puram 
+                     perpetuam<lb/> Elemosinam . Omnes Ecclesias quas bone memorie Fergus  filius eius Huctredus .
+                     &amp; D<ex>aui</ex>D filius Terri cum terris eisdem Canonicis diuine remuneracionis intuitu assensu
+                     diocesani Episcopi contulerunt   Cartis suis confir<lb/>mauerunt. Ex donacione Scilicet fergus  Ecclesiam de Dunroden cum tota uilla de
+                     Dunroden  Omnibus pertinenciis suis .  Insulam de Trahil
+                     .  Galtweith cum Ecclesia eiusdem uille  Omnibus
+                     pertinenciis<lb/> Suis . Ex donacione uero huctredi filii eius  Ecclesiam Sancti Cuthb<ex>er</ex>ti de Desnesmor .  Ecclesiam de Tuncgeland .  Ecclesiam de Twenham . 
+                     Ecclesiam sancti Andree .  Ecclesiam de lockelletun . 
+                     Ecclesiam<lb/> de kyrkecormac cum Capella de Balnecros . Et ex donacione D<ex>aui</ex>D filii Terri  Ecclesiam de Anewith cum Capella de Culenes   omnibus
+                     pertinenciis suis . <seg type="diplomatic" subtype="holding">Quare uolumus  Episcopali auctoritate concedimus  ut predicti ca<lb/>nonici Omnes prenominatas Ecclesias cum Capellis  Omnibus obuencionibus suis .
+                         cum terris  Omnibus pertinenciis suis  prout sibi
+                        placuerit in usus proprios totaliter conuertant .  eas
+                        libere  quiete  solute ab omni procuracione 
+                        consuetudine<lb/>  exactione inperpetuum teneant  possideant </seg> Easdemque Ecclesias per Capellanos sibi congruos nobis uel successoribus nostris
+                     presentatos . uel per semet ipsos prout sibi expedire
+                     uiderint  deseruiri faciant . minusque<lb/> idoneos consulto tamen Episcopo  amoueant . Saluis nobis  successoribus
+                     nostris tantum sinodalibus .  communibus auxiliis
+                     racionabilibus de predictis Ecclesiis . exceptis de
+                     kyrkecormac cum Capella de Balnescors .  lockelletun
+                     Ecclesiis <lb/> que per predecessorem nostrum bone memorie christianum Episcopum  per nos a
+                     sinodalibus  ceteris episcopalibus penitus sunt exempte.</seg> <seg type="diplomatic" subtype="witnesses">Hiis testibus . mich’ priore de Wytherne  eiusdem loci capitulo . Domino Alano
+                  filio Rolandi .<lb/> Constabulario Domini Regis Scottorum . Ioh<ex>ann</ex>e Archidiacono . Matheo decano de Desnes . Will<ex>elm</ex>o decano de farenes . Gilb<ex>er</ex>to decano de Rennes . Walt<ex>er</ex>o persona . Durando persona de Magof . Martino<lb/> clerico de kyrkecuthb<ex>er</ex>t  Aliis quam pluribus.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

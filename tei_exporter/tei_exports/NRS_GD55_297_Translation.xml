@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/297</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:31:45.246755+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/297</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all who shall see or hear the present letters, <seg type="diplomatic" subtype="intitulatio">H., abbot of Kelso, and the convent of the same place</seg>, <seg type="diplomatic" subtype="salutation">wish eternal salvation in the Lord</seg>.</seg> <seg type="diplomatic" subtype="notification">All should know</seg> <seg type="diplomatic" subtype="disposition">that whatever right we used to have in the lands and pastures of Mow within the
+                  portion of Walter son of Alan, the Steward of Scotland, and
+                  also the common <ex>pasture</ex> that we used to have in the moor of Innerwick, we have resigned and quitclaimed
+                     for ever to the same Walter and his heirs or their
+                     attorneys, nothing of the right in the same to be claimed
+                     back in the future; in return for a portion of the said
+                     moor of Innerwick conferred by the same Walter to us as an
+                     exchange.</seg> <seg type="diplomatic" subtype="sealing">As testimony of this matter we have applied the seal of our chapter to the
+                  present document.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord W<ex>illiam</ex>, bishop of Glasgow and Chancellor of Scotland; the lord W<ex>illiam</ex>, abbot of Paisley; Master W<ex>illiam</ex> Lindsay, dean of Glasgow; Master H<ex>ugh</ex>, archdeacon of Glasgow; Master W<ex>illiam</ex> Greenlaw, and many others.</seg> Enacted at Kelso in the year of grace One Thousand Two Hundred and Thirty Six.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

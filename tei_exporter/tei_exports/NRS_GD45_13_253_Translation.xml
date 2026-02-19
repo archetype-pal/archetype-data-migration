@@ -1,0 +1,55 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/253</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:22:43.995059+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/253</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">J<ex>ohn</ex>, by the grace of God abbot of Lindores, and H<ex>enry</ex>, by the same grace prior of St Andrews, and [blank space], prior of Lindores,</seg> to the whole body of Christ’s faithful people to whom the present written
+                     document might come, <seg type="diplomatic" subtype="salutation">Eternal salvation in the Lord:</seg></seg> <seg type="diplomatic" subtype="notification">May all of you come to know that</seg> <seg type="diplomatic" subtype="narration">since, by a mandate of the lord Pope, a certain case was set in motion between
+                  the abbot and convent of Dunfermline and Master Richard the
+                  rector of the church of Hailes on the one side, and the abbot
+                  and convent of Holyrood on the other, over the teinds of the
+                  Craigs of Gorgie, at length, with the consent of the parties,
+                  the dispute moved between the parties was amicably laid to
+                  rest, that is,</seg> <seg type="diplomatic" subtype="disposition">that the foresaid abbot and convent of Dunfermline, and Master R<ex>ichard</ex>, the rector of the said church of Hailes, for themselves and their successors
+                     in perpetuity renounced the foresaid dispute in this form,
+                     that is, that the foresaid abbot and convent of Holyrood,
+                     for the sake of peace, shall each year give one bezant or
+                     two shillings at the feast of St Martin for the lights to
+                     be found in the church of St Cuthbert in Hailes, and so
+                     all controversies between the churches of St Cuthbert in
+                     Hailes and St Cuthbert beneath the Castle in Edinburgh
+                     shall cease in perpetuity.</seg> <seg type="diplomatic" subtype="sealing">We, the Judges Delegate, have confirmed and strengthened by the corroboration of
+                  our seals this foresaid amicable agreement by the authority
+                  of the lord Pope, by which we have been engaged at the time
+                  of this agreement, together with the seals of our venerable
+                  father the bishop of St Andrews, and of his chapter, and the
+                  seals of the abbot and convent of Dumfermline, and the seal
+                  of Master Richard the rector of the said church of Hailes.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, H<ex>ugh</ex> the bishop of Dunkeld, Master Lawrence the archdeacon of St Andrews, Master
+                     Matthew the chancellor of the lord king, W<ex>illiam</ex> del Bois the archdeacon of Lothian, Ralph Niger the dean of Lothian, Master
+                     Peter of Ramsay, Gilbert of Stirling and Andrew the clerks
+                     of the lord king, Richard and Hugh the clerks of W<ex>illiam</ex> del Bois, and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

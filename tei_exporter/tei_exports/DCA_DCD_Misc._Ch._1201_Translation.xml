@@ -1,0 +1,55 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 1201</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 17:01:18.08898+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 1201</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Thomas, prior, and the chapter of St Cuthbert of the church of Durham,</seg> to all Holy Mother Church's sons present and future, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know</seg> <seg type="diplomatic" subtype="disposition">us to have given, conceded, and by this our charter to have made firm, to R<ex>obert</ex> son of Goze, our clerk, the church of Ednam with the entire land and all the
+                     tofts and crofts belonging to the same church, and with
+                     the three chapels of the same church, that is to say, the
+                     chapel of Stichill, the chapel of Nenthorn, and the chapel
+                     of Newton, and with all benefices belonging to the same
+                     church, <seg type="diplomatic" subtype="holding">to be held of Saint Cuthbert and us for his life, freely and quitly from all
+                     service that pertains to us, except that he shall give to
+                     us yearly as recognition sixteen merks at three terms, 5
+                     merks within the octave of the Purification of Saint Mary,
+                     5 merks within the octave of Saint John the Baptist, and 6
+                     merks within the octave of Saint Cuthbert in September.</seg> And he shall discharge all episcopal dues and customs, and when the prior or
+                     monks of Durham shall pass through there he shall provide
+                     suitable lodging for them and provide for their needs. And
+                     if the dedication of the chapels should have happened, he
+                     shall cover the expenditure. These things have I conceded,
+                     however, to the same R<ex>obert</ex>, so long as he shall maintain the aforesaid agreement. The same R<ex>obert</ex> has indeed sworn that he shall faithfully maintain and not question the
+                     aforesaid agreement by any craft or trickery so that we
+                     are the loser in respect of the same church. For as long
+                     as Goze, his father, shall live and shall wish to be in
+                     the secular world, he shall have custody of the said
+                     Rodbert and the same church; but if Robert should have
+                     died before the said Goze, his father, Goze shall hold the
+                     church by the same agreement. R<ex>obert</ex> has provided as pledge to this agreement Abbot Osbert and the community of
+                     Jedburgh.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: John, archdeacon; Master Thomas de Vaux; Robert de
+                  Fribois; S<ex>imon</ex> de Camera; John de Raine; Ingram, Elias, and W., the bishop's clerks; R., priest
+                     of Selkirk; Dolfin, priest; William, priest; and Sigmund,
+                     priest.</seg></p> <p> </p></div>
+    </body>
+  </text>
+</TEI>

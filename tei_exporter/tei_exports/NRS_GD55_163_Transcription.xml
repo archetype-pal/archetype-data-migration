@@ -1,0 +1,46 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/163</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-24 14:07:33.764542+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/163</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">UNIUERSIS sancte matris ecclesie filiis presentibus et futuris . <seg type="diplomatic" subtype="intitulatio">Ysabel uxor Will<ex>el</ex>mi de Ridale</seg> <seg type="diplomatic" subtype="salutation">salutem</seg></seg>  <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis me</seg> dedisse et concessisse<lb/> et hac mea carta confirmasse deo et ecclesie sancte . M<ex>ari</ex>e . de melros . et monachis ibidem deo seruientibus . pro salute domini patricii
+                     de Rid<ex>ale</ex> . et Walteri filii eius . et Will<ex>el</ex>mi<lb/> sponsi mei . et pro salute mea . et pro animabus omnium antecessorum et
+                     successorum nostrorum . illam bouatam terre in territorio
+                     de Whittun . quam pater meus Will<ex>elmu</ex>s persona de<lb/> Hunum emit a Gaufrido coco . et mihi donauit cum carta predicti . G. et
+                     confirmatione domini . P . de Rid<ex>ale</ex> . simul . <seg type="diplomatic" subtype="boundaries">per has diuisas sicut eadem bouata terre iacet inter<lb/> Hordlawe et tockesheles . et inter fossatum de Harhov et dotem matildis corbeth
+                        . et sicut tractus sulci circuit eam per predictas
+                        diuisas .</seg> <seg type="diplomatic" subtype="holding">Totam<lb/> hanc terram et quicquid continetur infra predictas diuisas dedi eisdem monachis
+                        . in liberam . puram . et perpetuam elemosinam et
+                        solutam ab omni terreno serui<lb/>cio . et consuetudine . et exactione seculari . ut ea habeant . teneant . et
+                        possideant inperpetuum . ita libere . quiete . plene .
+                        et honorifice . sicut aliquam elemo<lb/>sinam . liberius . quietius . plenius . et honorificentius . tenent uel
+                        possident</seg> . <seg type="diplomatic" subtype="warrandice">Et ego et heredes mei manutenebimus . et warantizabimus . predictis mona<lb/>chis hanc elemosinam contra omnes homines . et adquietabimus de omni seruicio
+                        inperpetuum</seg> . Et ut hec mea donatio firma sit et stabile . ego iuraui tactis<lb/> sacrosanctis ewangeliis in facie ecclesie . coram probis hominibus . que nec ego
+                     . nec aliquis heredum meorum . artem uel ingenium queremus
+                     . unde domus de melros<lb/> in posterum de eadem terra . aliquod dampnum incurrere possit uel grauamen</seg> . <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . Domino patricio de Rid<ex>ale</ex> . Waltero filio eius de Rid<ex>ale</ex> . Will<ex>elm</ex>o<lb/> sponso meo . Will<ex>el</ex>mo filio nostro . Patricio filio Walt<ex>eri</ex> . de Rid<ex>ale</ex> . Rad<ex>ulfo</ex> de Rid<ex>ale</ex> . Roberto de bernoldebi . Alexandro clerico . Reginaldo homine persone .<lb/> Adam de hunteley . Henrico de heriz . Waltero filio . G . coc' . Gaufrido filio
+                     henric<ex>i</ex> de neuhbotle . Will<ex>el</ex>mo filio mabile . Will<ex>elm</ex>o<lb/> nep<ex>ote</ex> . d<ex>omi</ex>ni . P . de Rid<ex>ale</ex> . et multis . Aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/285</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:29:01.190447+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/285</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus sancte Matris Ecclesie filii presentibus et futuris <seg type="diplomatic" subtype="intitulatio">Margeria de Vesci</seg> <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerit vniuersitas uestra</seg> me concessisse<lb/> Deo et Ecclesie sancte Marie de Melros et Monachis ibidem deo seruientibus .
+                     illam donacionem terre et pasture . quam fecit<lb/> illis Patricius de Ridale in territorio De Lillescliue . sicut carta ipsius
+                     Patricii et Confirmacio Walteri filii eius et heredis<lb/> testantur . per easdem diuisas que continentur in carta prefati . P . et
+                     Confirmacione prenominati . W . filii eius . <seg type="diplomatic" subtype="holding">Et uolo et conce<lb/>do ut predicti Monachi predictam terram et pasturam habeant et teneant . in
+                        liberam . puram . et perpetuam elemosinam cum omnibus<lb/> aisiamentis suis et libertatibus ita libere . et quiete plene et honorifice
+                        absque omni Consuetudine et exactione seculari  sicut<lb/> aliquam elemosinam liberius . quietius plenius et honorifi<supplied>cenc</supplied>ius in regno scocie tenent et possident . Saluo mihi et her<lb/>edibus meis s<supplied>erui</supplied>tio ad predictam terram pertinente De prefato Patricio De Ridale . et her<supplied>e</supplied>dibus suis .</seg> <seg type="diplomatic" subtype="warrandice">Et ego et heredes mei Ma<lb/>nuteneb<supplied>imus et w</supplied>arantizabimus predicta omnia predictis Monachis vt ea habent et teneant et
+                        possideant et utantur mo<lb/>dis q<supplied>uibus eis</supplied> melius et utilius uisum fuerit ita libere . sicut predictorum donatorum carte
+                        testantur .</seg></seg> <seg type="diplomatic" subtype="witnesses">Hiis Testibus . Ber<lb/>nardo de Hauden Will<ex>elmo</ex> de Vesci . Philippo de stichel . Roberto de brockesmu<supplied>the</supplied> Magistro . W . de edenham . Nicho<supplied>lao</supplied><lb/> Capellano . Waltero De Ridale . Rad<ex>ulfo</ex> De Ridale . E<supplied>t multis a</supplied>liis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

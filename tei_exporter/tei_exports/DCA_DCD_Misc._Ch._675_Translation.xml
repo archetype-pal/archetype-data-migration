@@ -1,0 +1,50 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 675</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-02 13:02:56.801876+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 675</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Thomas the Prior, and the Convent of the church of Durham</seg>, to all to whom the present written deed shall come : <seg type="diplomatic" subtype="salutation">greeting in the Lord.</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know that</seg> <seg type="diplomatic" subtype="narration">since I have examined the Charters of the lady Ada of Paxton, Robert her own
+                     first-born, Robert and William her sons, clerks, her own
+                     daughters, Cecilia and Matilda, and of Ogier of Tyas our
+                     clerk, prepared in the form of a Cyrograph, and confirmed
+                     by the application of their seals, by which they had
+                     granted and handed over to our same clerk, Ogier of Tyas,
+                     all their fisheries in Paxton upon the Tweed with all
+                     liberties, easements, and all other things pertaining to
+                     the same fisheries, without any withholding, for the same
+                     Ogier and his heirs or assignees to have and to hold, from
+                     the feast of Saint Martin in the winter, in the 1236th
+                     year of the Lord, until the term of nine years following
+                     is completed</seg> : We, very much approving the donation and grant between the aforementioned Ada,
+                     Robert the first-born, Robert and William her sons, the
+                     clerks, Cecilia and Matilda her daughters, and the said
+                     Ogier de Tyas, made concerning the fisheries of Paxton
+                     described before, have considered them to be confirmed
+                     exactly as it is the more fully contained in the charters
+                     described above; <seg type="diplomatic" subtype="sealing">and we have caused them to be reinforced by the protection of the present
+                     written deed to which is appended our seal.</seg> Saving the wardships contingent on the churches of Durham and of Coldingham.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

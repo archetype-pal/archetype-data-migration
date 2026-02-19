@@ -1,0 +1,45 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Add. Ch. 66569</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-07-20 09:56:38.271015+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 66569</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Christ’s faithful people who shall view or hear this writing, <seg type="diplomatic" subtype="intitulatio">Patrick son of William</seg> <seg type="diplomatic" subtype="salutation">wishes everlasting salvation in the Lord</seg>.</seg> <seg type="diplomatic" subtype="notification">May you all know</seg> <seg type="diplomatic" subtype="disposition">the lord abbot and convent of Scone to have made satisfaction to me in respect
+                  of all manner of debts in which they were obliged to me, by
+                  written deeds as well as by any other contract, in respect of
+                  the livestock and fermes of Blair, and all other agreements,
+                  loans, or any other contracts; and to have renounced for
+                  myself and my heirs all loans which I have or could have in
+                  relation to them, in respect of any contract of the
+                  aforesaid. Wherefore I will that if any instrument be found
+                  concerning any contract entered into between us, and
+                  especially in respect of Blair, it be of no value or force.</seg> <seg type="diplomatic" subtype="sealing">In testimony of this matter I have applied my seal to this writing together with
+                  the seal of the venerable father, Geoffrey, bishop of
+                  Dunkeld.</seg> Given at Cargill on the Day of Saint Augustine, bishop of the English, in the
+                  Year of Grace 1246. <seg type="diplomatic" subtype="witnesses">As witnesses: the lord Malcolm, precentor of Dunkeld; Master John of Everley,
+                  canon of Dunkeld; the lord Peter of Cargill; William of
+                  Clunie; Simon the clerk, and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

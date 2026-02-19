@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/21</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-09-12 15:00:01.917278+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/21</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus presens scriptum uisuris uel audituris  <seg type="diplomatic" subtype="intitulatio">dauid <persName><roleName>Marescallus</roleName></persName> domini regis scott<ex>orum</ex> .</seg> <seg type="diplomatic" subtype="salutation">salutem .</seg></seg> <seg type="diplomatic" subtype="disposition">Nouerit<lb/> vniuersitas uestra me dedisse et concessisse . et hac mea carta confirmasse Will<ex>elm</ex>o Lunnoc et heredibus<lb/> suis piscarias meas de Thueda . scilicet totam piscariam meam de holdema’ . et
+                     vnum rethe<lb/> super schipwel . quas Iocelinus lunnoc pater predicti Will<ex>elm</ex>i tenuit . <seg type="diplomatic" subtype="holding">Tenendas de me . et de heredibus meis<lb/> sibi et heredibus suis libere et quiete ab omni seruitio . et consuetudine . et
+                        exactione . reddendo singulis<lb/> annis viginti solidos . scilicet . vnam medietatem ad pentecosten . et aliam
+                        medietatem ad festum sancti mar<lb/>tini</seg></seg> . <seg type="diplomatic" subtype="witnesses">Hiis testibus . Com<ex>ite</ex> patricio . Will<ex>elm</ex>o cvmin . Waltero de lindes’ . Rog<ex>ero</ex> fili<ex>o</ex> henr<ex>ici</ex> . Will<ex>elmo</ex> de B<ex>er</ex>nham . Will<lb/><ex>elmo</ex> de fifle . Will<ex>elmo</ex> de salle . Alexand<ex>er</ex> de fifle . Will<ex>elmo</ex> miriild . patricio fil<ex>io</ex> W<ex>i</ex>ll<ex>elmi</ex> de fifle . Ric<ex>ardo</ex> luuedar . Ric<ex>ardo</ex><lb/> fil<ex>io</ex> Anke . b<ex>er</ex>tolfo de hilton . Ric<ex>ardo</ex> b<ex>er</ex>nake . W<ex>i</ex>ll<ex>elm</ex>o guth<ex>er</ex>ed . Waltero b<ex>ra</ex>nd . Ric<ex>ardo</ex> clerico . et multis aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

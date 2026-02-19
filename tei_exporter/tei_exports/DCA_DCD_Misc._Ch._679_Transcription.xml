@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 679</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-02 13:02:56.769436+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 679</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus x͞pi fidelibus has literas videntibus vel audientibus . Rad’ Prior ⁊
+                  conuentus Dunelm’ ecclesie <lb/> Salutem In domino.</seg> <seg type="diplomatic" subtype="disposition">Noueritis nos con<supplied>cess</supplied>isse ⁊ hac presenti carta nostra confirmasse dilecto amico nostro . Domino . W . <lb/> De Bondington’ . Cancellario . Scott’ . maritagium heredis Galfrid<ex>i</ex> Ridel . ⁊ custodiam terre eiusdem <lb/> heredis In uilla de Flamington’ . donec dictus . heres ad legitomam peruenerit
+                     etatem</seg> <seg type="diplomatic" subtype="sealing">⁊ In huius rei <lb/> testimonium sigill<supplied>um capi</supplied>tuli nostri huic script<supplied>o</supplied> appossuimus</seg> .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

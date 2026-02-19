@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 621</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.666653+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 621</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">. <seg type="diplomatic" subtype="intitulatio">Alex<ex>ander</ex>. dei gr<ex>ati</ex>a Rex Scott<ex>orum</ex></seg> . Omnibus Probis Hominibus Tocius Terre Sue <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant presentes et<lb/> futuri</seg> nos concessisse et hac carta nostra confirmasse donationem illam quam Willelmus
+                     filius Roberti de Schreme<lb/>ristun . de consensu Will<ex>elmi</ex> heredis sui fecit deo et sancto Cuthberto et Ricard<ex>o</ex> Priori et Conuentui de Coldingha<ex>m</ex><lb/> et eorum successoribus  de tota terra sua de Prendergest’ . cum domibus .
+                     Toftis . et Croftis . et cum omnibus pertinentiis<lb/> suis sine aliquo Retenemento . <seg type="diplomatic" subtype="holding">Tenend<ex>am</ex> . et habend<ex>am</ex> . eisdem priori et Conuentui de Coldingham’ inperpe<lb/>tuum . de dicto Will<ex>elmo</ex> . et heredibus suis . cum omnibus pertinentiis et aisiamentis suis Ita libere .
+                        quiete . plena<lb/>rie . et honorifice  sicut carta dicti Will<ex>elmi</ex> . inde plenius confecta eisdem priori et Conuentui iuste testatur . Saluo
+                        seruitio nostro</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . W . Comite de Mar’ . Bernard<ex>o</ex> . de Rippeley . Will<ex>elmo</ex> . de Morthyntu<ex>n</ex> . Will<ex>elmo</ex> . Giffard’ . Galfr<ex>ido</ex> .<lb/> de Ferselay .</seg> <seg type="diplomatic" subtype="dating">apud Berwic’ . sexto die Octobr<ex>is</ex> . Anno . Regni domini Regis Tricesimo Primo .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

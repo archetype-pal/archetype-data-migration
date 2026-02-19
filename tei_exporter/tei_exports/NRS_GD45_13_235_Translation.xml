@@ -1,0 +1,47 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/235</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-09 21:24:44.352366+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/235</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">M<ex>alcolm</ex> king of Scots to Uhtred son of Fergus, and Gilbert his brother, and Ralph son of
+                     Dunegal, and Domnall his brother, and to all his other
+                     worthy men of the whole of Galloway and Clydesdale,
+                     Greeting:</seg> <seg type="diplomatic" subtype="disposition">Know that I have justly given my firm peace to all those men who go or shall go
+                  to Galloway to lodge or dwell in the Land of Dunrod, which
+                  Fergus gave to the church of Holyrood in Edinburgh in
+                  perpetual alms and affirmed by his charter, which Uhtred his
+                  son also confirmed by his charter, whose charters I myself
+                  have also confirmed. I therefore firmly forbid that any man
+                  presume unjustly to vex or disturb anyone travelling to the
+                  said land by reason of dwelling in it, or dwelling in the
+                  same land by consent and will of the canons of the aforesaid
+                  church, or departing from that land in the fealty of the same
+                  [canons]. And no-one may remain in the same land by anyone’s
+                  advowson or lordship against the will of the said canons, on
+                  pain of my forfeiture of ten pounds.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, Alured abbot of Stirling, Robert prior of May, Ingram the
+                  chancellor, W<ex>alter</ex> the steward, son of Alan, John de Vaux.</seg> At Clackmannan.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

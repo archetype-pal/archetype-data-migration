@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL L.F.C. Ch. xxx.5</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:22:00.551018+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>L.F.C. Ch. xxx.5</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">William, by the grace of God king of the Scots,</seg> to bishops, abbots, earls, barons, justices, sheriffs, provosts, officials, and
+                     all the worthy men of the whole of his land, clerk and
+                     lay, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Let present and future know</seg> <seg type="diplomatic" subtype="disposition">me to have given and conceded, and by this my charter to have made firm, to John
+                  Waleram, in return for his homage and service, the whole land
+                  which William Carpenter held in Babbet, that is, every fifth
+                  rig of the whole half of Babbet, and in the fields of Drony,
+                  the land which Hugh Gifford, Alexander de St-Martin, Godfrey
+                  the marischal, Winemar, and other worthy men perambulated for
+                  Roger de Camera at the instruction of the Countess Ada, my
+                  mother; and in addition, the whole land in Airdrie [in Crail]
+                  that William de Beauver held, that is, the land which is on
+                  the east side of the burn that runs beside the land of
+                  Geoffrey the chaplain, as far as the well at Crail which in
+                  Gaelic is called 'Tolari' [Toldrie, in Crail]; and the whole
+                  land by the same boundaries which Geoffrey de Malville, Hugh
+                  Gifford, Godfre the marischal, Winemar and other worthy men
+                  perambulated for the aforesaid William on every side towards
+                  the moor and elsewhere; and common pasture at Crail; and one
+                  toft in Crail, that is, the one which the Countess A<ex>da</ex>, my mother, gave to the aforesaid William. <seg type="diplomatic" subtype="holding">Wherefore I will and firmly enjoin that the aforesaid John and his heirs have
+                     and hold all the aforewritten holdings of me and my heirs
+                     in feu and heritage, in meadows and pastures, in moors and
+                     marshes, and in all other easements that belong by right
+                     to the aforesaid lands, freely and quitly, fully and
+                     honourably, by the service of one sergeand on a horse with
+                     a haubergel, and performing in aids and forinsec services
+                     in return for the whole land that he has in Airdrie as
+                     much service as pertains to half a Scottish ploughgate in
+                     Crailshire.</seg> I have also granted to the aforesaid John and his heirs that they be quit of
+                     multure for their own house at my mill, but that his men
+                     should give multure; and that the corn of John and his
+                     heirs be milled at my mill first after the corn that is in
+                     already in the hopper, unless my corn already be there or
+                     arrive in the meantime.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: Philip de Valognes, my chamberlain; William, my chaplain; William
+                  Comyn; Hugh and William and Adam, my clerks; Master Nicholas
+                  and Master Martin, my clerks; Alexander, sheriff of Stirling;
+                  William de Valognes; Alexander, son of Thor; John of
+                  Stirling; Robert Quarrantilly.</seg> At Clackmannan, on the 13th day of October.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

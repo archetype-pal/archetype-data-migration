@@ -1,0 +1,31 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/218</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-26 02:19:53.689294+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/218</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">D<ex>auid</ex> . Rex Scot’ Ep<ex>iscop</ex>o S<ex>ancti</ex> Andree . ⁊ <persName><roleName>vic’</roleName></persName> . ⁊ Omnibus probis<lb/> hominibus suis totius Striuelinschire . <seg type="diplomatic" subtype="salutation">sal<ex>utem</ex> .</seg></seg> <seg type="diplomatic" subtype="disposition">Sciatis quod uolo<lb/> ⁊ firmiter precipio . quatinus abbas . Sancti Crucis de Edeneb’ habeat<lb/> omnes consuetudines illas . in Herez . uidelicet . in aquis . ⁊ in<lb/> aliis locis . ⁊ omnes rectitudines que ad ecclesiam eiusdem uille pertinent<lb/> sicut melius habuit die illa qua illud habui . in meo dominio .</seg> <seg type="diplomatic" subtype="witnesses">T<ex>estibus</ex> Ioh<ex>ann</ex>e<lb/> episcopo . Roberto de Burnouille’ . Rogero Nepote Roberti episcopi . apud .<lb/> Striuelin</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

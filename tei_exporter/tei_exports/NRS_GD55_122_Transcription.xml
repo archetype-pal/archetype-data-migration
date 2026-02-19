@@ -1,0 +1,52 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/122</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:37.604633+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/122</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><seg type="diplomatic" subtype="address">Vniuersis Sancte Matris ecclesie filiis . tam presentibus quam futuris . <seg type="diplomatic" subtype="notification">herb’ . decanus . et totum Capitulum . Ecclesie glasguen’</seg> . <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> nos communi consensu nostro et<lb/> consilio . unanimiter concessisse et hac Carta nostra confirmasse . deo et
+                        Sancte Marie . et ecclesie de Melr<ex>os</ex> . et monachis ibidem deo seruientibus . in liberam . et quietam .<lb/> et pereptuam elemosinam . ecclesiam de hatstanesden’ . cum terris . et decimius
+                        . et omnibus ad ipsam pertinentibus . quam uenerabilis
+                        dominus noster . Iocel’ . episcopus . per consilium .
+                        et consensum .<lb/> et concessionem domini nostri . Will<ex>elm</ex>i . Illustris . Scott’ . Regis . et consilium et consensum nostrum . predictis
+                        monachis de Melr<ex>os</ex> . ad perpetuam susceptionem pauperum . et peregrinorum .<lb/> pia deuotione contulit et confirmauit . De qua ecclesia cum esset inter
+                        predictum dominum Regem . et eundem episcopum
+                        controuersia . ad quem eorum ius patronatus ipsius
+                        ecclesie per<lb/>tineret . idem dominus . Rex . ius suum quod in predicta ecclesia de
+                        hatestanesd’ . habuit uel habere potuit . karissimo
+                        patri nostro . predicto . Ioc’ . episcopo . concessit .
+                        ad ipsam ecclesiam secundum deum<lb/> ordinandam . ut ipsius ecclesie prouentus uniuersi in karitatis operibus
+                        expenderentur . et in bonos usus perpetuo conerterentur
+                        . Nos itaque donationi domini episcopi . et concessioni<lb/> domini . Regis . nostrum unanimiter adhibentes assensum . predictam ecclesiam de
+                        hatstan’ . cum omnibus ad ipsam pertinentibus . sicut a
+                        karissimis dominis nostris . Rege . et episcopo .
+                        collata et<lb/> confirmata est predicte ecclesie de Melr<ex>os</ex> . et eiusdem loci conuentui . inperpetuum concessimus . et hac carta nostra
+                        confirmauimus . <seg type="diplomatic" subtype="holding">Tenend’ . inperpetuum et possidenend’ . ita libere .<lb/> quiete . plenarie . et honorifice  sicut aliqua conuentualis ecclesia . in
+                           episcopatu glasguen’ . et domino nostro . Ioc’ .
+                           episcopo . suisque successoribus . ab ipsis mona<lb/>chis . de Melr<ex>os</ex> . singulis annis . ad festum sancti . Martini . persoluenda</seg> . Et saluis episcopalibus</seg> . <seg type="diplomatic" subtype="witnesses">hiis Test’ . Domino . Will<ex>elm</ex>o . Rege . Scott’ . et Comite . d<ex>aui</ex>d . fratre suo .<lb/> domino nostro . Ioc’ . episcopo . glasg’ . domino Ioh<ex>ann</ex>e . episcopo dunkeld<ex>ensi</ex> . domino . Ric’ . Morauien<ex>si</ex> . episcopo . domino . Regin’ . Rosen<ex>si</ex> . episcopo . Sim’ . archid<ex>iacono</ex> . et Magistro . Ioh<ex>ann</ex>e . Rog<ex>er</ex>o .<lb/> de houed’ . helia . Will<ex>elm</ex>o . Beda . helia . Canonicis ecclesie nostre . Ioh<ex>ann</ex>e . decano . de Teuid’ . Petro . dec<ex>ano</ex> . de Cludesd’ . Thom’ . dec<ex>ano</ex> . de ualle anant . Ric’ . dec<ex>ano</ex> .<lb/> de Esked’ . Rad’ . dec’ . de strathnith . Iac’ . dec<ex>ano</ex> . de desn’ . Rog’ . priore . de passel’ . Waltero . Ioh<ex>ann</ex>e . clericis domini eipscopi . Philipp<ex>o</ex> . clerico de Moern’ . Et multis aliis ;</seg></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

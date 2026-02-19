@@ -1,0 +1,36 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of TNA DL 25/90</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.081433+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/90</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant presentes et futuri quod</seg> Hec conuencio inter Will<ex>elmu</ex>m de Brus dominum . et Will<ex>elmu</ex>m de Heiueuill’ . silicet quod<lb/> ego Will<ex>elmus</ex> de <supplied>Brus</supplied> ...Will<ex>elm</ex>o de Heynevill’ et heredibus suis <supplied>i</supplied>llam terram que est uersus logan ultra Blakebec et illam<lb/> terram que <supplied>est</supplied> inter aybeg’ bec et logan . <supplied>?sicut</supplied> Aybegbec ca<supplied>?dit i</supplied>n Serke . et ... vallem ...serke .. usque Raburn<lb/> et a parte ... de serke quantum diuise ... ...d’ prout ei placuere concedo etiam
+                     ei et heredibus<lb/> suis illas ... ... <supplied>patris</supplied> mei et fratris mei Roberti de Brus . concedo<lb/> .etiam . ill... <supplied>t</supplied>erram inter Blabeok... ... patris mei . et fratris mei excole... ...<lb/> . etiam . ei con... ... pasturam in bosco in p... ...tuti ... habuit in tempore
+                     patris mei et fratris mei ... tempore ... ...ill’<lb/> de he... ... remittit in commune pasturam mihi . illas terras que de nouo
+                     fuerunt culte et edificate sicut <lb/> terras in quibus Ius non habebat nisi per mandatum meum . volo etiam . et
+                     precipio ut homines mei habeant communionem<lb/> de bosco et de pastura inter ipsum et illos . sicut habuerunt tempore patris mei
+                     .</seg> <seg type="diplomatic" subtype="witnesses">testis Hudard de Hodolm et c.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

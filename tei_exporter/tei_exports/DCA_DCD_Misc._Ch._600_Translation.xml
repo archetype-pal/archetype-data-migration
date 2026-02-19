@@ -1,0 +1,45 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 600</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 12:40:59.747406+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 600</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W<ex>illiam</ex>, by the grace of God king of the Scots,</seg> to all worthy men of his entire land, clerk and lay, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let present and future know</seg> me to have given, conceded, and by this my charter to have made firm, to Robert
+                     de Aubein and his heirs the twenty merks which he owed me
+                     annually for 'waiting' which the prior and convent of
+                     Coldingham owe me for their lands of Coldingham, until I
+                     or my heirs shall have given to the same Robert or his
+                     heirs twenty merks of land on the south side of the
+                     Scottish Sea [the Forth], or between the Mounth and the
+                     Scottish Sea. Wherefore I will that the said Robert de
+                     Aubein and his heirs receive those twenty merks each year
+                     at Easter and I instruct the prior of Coldingham and his
+                     baillies that they annually render the twenty merks to
+                     them without impediment at Easter untill I or my heirs
+                     shall have given the twenty merks of land.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: Alexander, my son; William del Bois, my chancellor; Philip de
+                  Valognes, my chamberlain; John of Maxwell; Master Martin, my
+                  physician; Walter Comyn; Jordan Comyn.</seg> <seg type="diplomatic" subtype="dating">At Selkirk on the 28th day of February.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

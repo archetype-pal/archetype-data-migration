@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/231</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:40:44.427656+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/231</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">. A . Dei Gratia Rex scott’ .</seg> Omnibus probis hominibus tocius terre sue <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Sciatis</seg> <seg type="diplomatic" subtype="disposition">nos concessisse et hac carta nostra confirmasse uendi<lb/>tionem illam quam . P . Comes de Dunbar’ de consensu Patr<ex>icii</ex> . filii et heredis sui fecit abbati et Conuentuj de Melros’ de toto equitio<lb/> suo quod habuit in feodo de Lauhedir’ . Ann<ex>o</ex> gr<ex>atie</ex> Mill<ex>esimo</ex> . Ducentes<ex>imo</ex> . Quadrages<ex>imo</ex> septimo in festo decollationis sancti Iohannis Baptiste . Et<lb/> similiter concessimus et hac carta nostra confirmauimus concessionem et quietam
+                     clamationem quam Idem Comes de consensu dicti . P . filii
+                     et heredis sui<lb/> fecit eisdem abbati et Conuentui de communa quam habuit ad equitium uel ad
+                     aliqua alia animalia nutrienda uel pascenda infra terras
+                     et pastu<lb/>ras quas dicti abbas et Conuentus in feodo de Lauhedir’ dicto die tenuerunt et
+                     possederunt<ex>e</ex> . Ita scilicet quod dictus Comes aut heredes sui uel Aliquis<lb/> alius nomine eorum nullum clamium aut calumpniam in dictis terris aut pasturis
+                     decetero exigent aut habebunt . quam quidem uenditionem et
+                     quietam<lb/> clamationem ita uolumus in perpetuum obseruari : sicut carta predicti Patr<ex>icii</ex> Com<ex>itis</ex> . de Dunbar’ . quam dicti abbas et Conuentus inde habent . iuste testatur .</seg><lb/> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . W . Cumin Com<ex>ite</ex> . de Meneteth’ . Alan<ex>o</ex> hostiar<ex>io</ex> . Iustic’ . scoc<ex>ie</ex> . Rob<ex>erto</ex> . de Ros’ . Dauid de Lindes’ . Thom<ex>a</ex> de Normanuill’ . Thom<ex>a</ex><lb/> filio Ranulf<ex>i</ex> . Robert<ex>o</ex> . de Meiners’ .</seg> apud sanctam crucem Vicesim<ex>o</ex> Octauo die Nouembr<ex>is</ex> . ann<ex>o</ex> regni domini reg<ex>is</ex> . Tricesimo tertio .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

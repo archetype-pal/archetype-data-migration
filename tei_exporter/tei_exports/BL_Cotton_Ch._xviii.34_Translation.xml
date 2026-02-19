@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.34</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:25:19.239185+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.34</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p>C Y R O G R A P H</p> <p><seg type="diplomatic" subtype="narration">This is the agreement made between the church of Cupar and the church of Blair
+                  in the presence of Masters Ranulf the archdeacon and Laurence
+                  the official of St Andrews and the whole synod at Perth. That
+                  is, that the monks of Cupar should pay to the church of Blair
+                  one stone of wax in return for all the teinds belonging to
+                  the lands of ‘Lethcassi’ and of Persey, which the same monks
+                  have. The aforesaid wax should be paid, however, to the
+                  church of Blair for the light of the same church, each year
+                  at the feast of Saint Martin</seg>. <seg type="diplomatic" subtype="sealing">And so that this agreement remain firm and unshaken in the future, the
+                  aforenamed Ranulf the archdeacon and the above-said Laurence
+                  the official, to whom the the lord William, bishop of St
+                  Andrews, has entrusted his duties, have validated it with the
+                  corroboration of their own seals.</seg> <seg type="diplomatic" subtype="witnesses">Witnessed by the synod</seg> at Perth on the kalends of May. </p></div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 620</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.68676+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 620</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alex<ex>ander</ex> dei gr<ex>ati</ex>a Rex Scott<ex>orum</ex></seg> . Omnibus probis Hominibus tocius terre sue <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis nos</seg> monasterium de<lb/> Coldingham’ . Priorem et Conuentum eiusdem Monasterii . Homines et terras suas .
+                     ac vniuersas eorundem possessiones .<lb/> sub firma pace et protectione nostra iuste suscepisse . <seg type="diplomatic" subtype="injunction">Quare firmiter prohibemus ne quis eis malum . iniu<lb/>riam . molestiam aut grauamen aliquod iniuste presumat inferre  Super nostram
+                        plenariam forisfacturam</seg></seg> .<lb/> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . Magistro Ric<ex>ardo</ex> de Inuirkethyn’ . Cam<ex>erario</ex> . Rob<ex>erto</ex> de Meyners’ . Willelmo de Haya . et Galfrid<ex>o</ex> de Boscho .</seg> <seg type="diplomatic" subtype="dating">apud<lb/> Tynigham’ . viij . die Aprilis . Anno regni domini Regis  xxx Quinto .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

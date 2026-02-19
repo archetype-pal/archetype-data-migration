@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 724</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:41:10.58516+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 724</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Everard of Pencaitland</seg>, to all who view or hear these letters, <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let all of you know that</seg> I have quitclaimed for ever, with the agreement of my heirs, for the salvation
+                     of my soul, and for the souls of my father and my mother,
+                     and of all my ancestors, and for the fraternity and
+                     society of the monastic house of Durham, to God and Saint
+                     Cuthbert and Bertram the prior and the convent of the same
+                     house of Durham, the claim which I had against them over
+                     the land between Edrom and Blanerne, and I and my heirs
+                     have entirely renounced my right, if any I had within the
+                     aforementioned land.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Adam of Bunkle, Patrick son of Adam son of Haldane, Roland
+                  the earl's steward, Henry of Prenderguest, Robert of
+                  Prenderguest, Alan of Swinton, Gregory the steward of
+                  Coldingham, Elias of Elmdene, David of Paxton, John of
+                  Kettins, Richard Broun, Thomas Burdun, and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

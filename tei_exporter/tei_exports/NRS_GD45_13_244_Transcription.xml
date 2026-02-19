@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/244</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-30 15:49:56.000215+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/244</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">. W . dei gratia Rex Scott’.</seg> Omnibus probis hominibus Totius terre sue Clericis ⁊ laicis <seg type="diplomatic" subtype="salutation">Salutem</seg>.</seg> <seg type="diplomatic" subtype="disposition">Sciant<lb/> presentes ⁊ futuri me concessisse . ⁊ hac Carta mea confirmasse deo ⁊ Ecclesie
+                     Sancte crucis<lb/> de Edeneburg . ⁊ Canonicis ibidem deo seruiebtibus . donationem illam quam
+                     Gilebertus de vmfra<ex>n</ex><lb/>villa eis fecit . de una Carukata terre in kinard’ . sicud eis per probos
+                     homines<lb/> patrie perambulata fuit . cum communi pastura sicut in Carta predicti . G .
+                     continentur<lb/> Et cum libertate multure sue ⁊ hominum suorum super terram illam sedentium 
+                     sicut in carta<lb/> predicti . G . continentur. Tenend’ in liberam ⁊ quietam ⁊ perpetuam elemoysinam
+                     . Ita libere ⁊ quiete .<lb/> plenarie . ⁊ honorifice . sicut alias terras ⁊ tenuras suas tenent ⁊ possident .
+                     ⁊<lb/> sicut Carta prediti . G . testatur . saluo seruicio meo .</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . Hug’ Canceallario meo . Roberto<lb/> Capellano meo Ioc’ archidiacono Dunk’ . Ricard’ de prebenda clericis meis .
+                     Philipp<ex>o</ex> de valon’ .<lb/> Walter de berch’ Cam<ex>erario</ex> . Ricard<ex>o</ex> filio hugonis . Will<ex>elm</ex>o de Rameseia . Adam de Sireis</seg> apud Edeneburg .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

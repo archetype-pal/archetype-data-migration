@@ -1,0 +1,53 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/167</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:41:57.231279+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/167</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To All sons of Holy Mother Church present and future <seg type="diplomatic" subtype="intitulatio">Walter of Ryedale son and heir of Patrick of Ryedale</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg></seg><seg type="diplomatic" subtype="disposition">. <seg type="diplomatic" subtype="notification">Know me</seg> to have granted and by this my charter to have made firm to God and to the
+                     Church of St Mary at Melrose, and to the monks serving God
+                     in that place, for the salvation of my soul and the soul
+                     of my father and for the souls of all my ancestors and
+                     successors all the donations that my father gave to the
+                     same monks in the territory of Whitton, in perpetual alms,
+                     by the borders and boundaries named in the charters of my
+                     father, as freely and quitely, fully and honourably, as
+                     the charters of my father more fully bear witness. I have
+                     also granted to them and by this my charter have made firm
+                     all the confirmations of my father and all the lands that
+                     they have from Robert of Barnoldby and of Geoffrey the
+                     cook, as the charters of Robert and of the same Geoffrey
+                     and the confirmations of my father bear witness. <seg type="diplomatic" subtype="holding">Wherefore I will that the foresaid monks hold and possess the whole lands
+                     forenamed well and in peace with all their borders and
+                     boundaries as pure alms, quit and released from every
+                     earthly service and custom and secular exaction according
+                     to the terms of the forenamed charters, saving the service
+                     of the same Robert and Geoffrey the cook.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Richard, dean of Teviotdale and official; William son of
+                  John; Thomas de Colville; Richard le Nain; Simon of Grubbit;
+                  Ralph of Ryedale; John of Maxwell; Adam of Chatto; Adam of
+                  Whitton; Richard of Heton; Hugh of Newbattle; William my
+                  nephew; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

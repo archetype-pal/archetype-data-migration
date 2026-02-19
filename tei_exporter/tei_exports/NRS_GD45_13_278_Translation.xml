@@ -1,0 +1,45 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/278</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:39:47.499965+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/278</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Jocelin, by the grace of God bishop of Glasgow,</seg> to all sons of Holy Mother Church, both present and future, <seg type="diplomatic" subtype="salutation">Greeting in the Lord</seg>:</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">You should all know</seg> that, at the request and by the consent of Roger de Skelbrooke, we have given,
+                     granted, and by this our charter made firm, to God and to
+                     the church of St Mary at North Berwick, and to the nuns
+                     serving God there, in free and perpetual alms, the church
+                     of Kirkbride in Largs, with half a ploughgate of land, and
+                     with one saltpan, and with two acres at the croft, and
+                     with teinds and oblations and all other things rightfully
+                     belonging to that church, <seg type="diplomatic" subtype="holding">to be held as freely, quietly, fully and honourably as any religious house holds
+                     aand possesses any church in our bishopric.</seg> We have also granted to the forementioned nuns that may at will convert all
+                     revenues and profits of that church to their own use in
+                     perpetuity, saving the episcopal dues.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Ralph the abbot of Melrose, Simon our archdeacon, Herbert
+                  the dean of Glasgow, Christian the dean of Carrick, Elias,
+                  William, canons of Glasgow, Richard, clerk of Dundonald,
+                  John, Walter, Gervase, our clerks, Alexander of Cunningham,
+                  chaplain.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

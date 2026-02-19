@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/221</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-07-07 09:45:14.727312+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/221</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Rodbertus dei gratia humilis minister ecclesie Sancti Andree</seg> . Omnibus sancte matris ecclesie filiis  <seg type="diplomatic" subtype="salutation">salutem. et episcopalem benedictionem</seg> .</seg><lb/> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant omnes tam presentes quam futuri</seg> me dedisse et presentis carte munimine confirmasse ecclesie sancte CRUCIS de
+                     edenesburch<lb/> et canonicis ibidem deo seruientibus ecclesiam de karreden cum duobus carrucatis
+                     terre. et cum omnibus ad eam iuste perti<lb/>nentibus . Scilicet in decimis . in pratis . in pascuis . in molendinis . et in
+                     omnibus aliis rectitudinibus suis . ita liberam<lb/> et ex omni exactione quietam sicut aliquam in tota diocesi nostra ecclesiam
+                     liberius et quietius possident .</seg> <seg type="diplomatic" subtype="witnesses">His testibus . Gaufrido<lb/> abbate de dunfermelin . Alwredo abbate de striuelin . Rodberto priore de Sancto
+                     Andrea . Samsone et Alano monachis<lb/> dunelmi . T . Archidiacono . Aiulfo decano . Gaufrido de laswade . Magistro
+                     Andrea . Adam et Ricardo capellanis episcopi . Gaufrido<lb/> clerico . Petro de Striuelin . et plenaria synodo .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

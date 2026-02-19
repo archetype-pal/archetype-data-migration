@@ -1,0 +1,48 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 5944</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.986178+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5944</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p><seg type="diplomatic" subtype="address">To all Christ's faithful who shall view or hear the present writing, <seg type="diplomatic" subtype="intitulatio">Ralph Noble</seg> <seg type="diplomatic" subtype="salutation">sends greeting in the Lord.</seg></seg> <seg type="diplomatic" subtype="notification">Know me, all of you,</seg> <seg type="diplomatic" subtype="disposition">by having sealed the present charter with my seal, to have obliged myself and my
+                  heirs for ever, that on account of the charter of the Prior
+                  and Convent of the Church of Durham which they made for me
+                  concerning the land which I shall hold of them by right of
+                  heritage in the toun of Lamberton, to wit, one toft, and four
+                  acres of land, as it is specified in their charter composed
+                  concerning that matter, I shall not seek defence or
+                  warrandice from the said Prior and Convent if it should
+                  happen that a demand be moved by anyone in a clerical or a
+                  lay court over the said land, and that I shall keep the Prior
+                  and Convent of Durham, and the Prior and Convent of
+                  Coldingham free from financial loss in all things as to the
+                  aforesaid land. And if a plea should be moved upon it, I and
+                  my heirs shall support the expenses of the whole of the plea;
+                  and that we shall keep inviolate faith on this side.</seg> <seg type="diplomatic" subtype="sealing">In testimony of this matter, I have put my seal to the present writing for
+                  myself and my heirs.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord William of Mordington; the lord William of
+                  Scremerston; Adam of Prenderguest; Robert son of Gregory of
+                  Coldingham; David of Lumsdaine; Adam son of John of Over
+                  Ayton; John son of Ingram, of the same toun; Bertram of
+                  Reston; Patrick Scott; Gregory of Beoch.</seg></p> <p> </p></div>
+    </body>
+  </text>
+</TEI>

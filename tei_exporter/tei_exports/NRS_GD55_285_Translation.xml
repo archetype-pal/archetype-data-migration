@@ -1,0 +1,52 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/285</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:28:58.779935+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/285</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church present and future <seg type="diplomatic" subtype="intitulatio">Margery de Vescy</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know me all of you</seg> to have granted to God and to the Church of St Mary at Melrose and to the monks
+                     in that place serving God the donation of land and pasture
+                     which Patrick of Ryedale made to them in the territory of
+                     Lilliesleaf just as Patrick's own charter and the
+                     confirmation of his son and heir Walter bear witness, by
+                     the same boundaries which are contained in the charter of
+                     the aforementioned Patrick and the confirmation of the
+                     aforenamed W<ex>alter</ex> his heir. <seg type="diplomatic" subtype="holding">And I will and grant that the aforesaid monks have and hold the aforesaid land
+                     and pasture in free, pure, and perpetual alms with all
+                     their easements and liberties as freely, quitely and
+                     honourably, minus every custom and secular exaction, as
+                     they hold and possess any alms freely, quitely, fully and
+                     honourably in the kingdom of Scotland; reserving to myself
+                     and my heirs the service pertaining to the aforesaid land
+                     from the aforementioned Patrick of Ryedale and his heirs.</seg> <seg type="diplomatic" subtype="warrandice">And I and my heirs shall maintain and warrant all the aforesaid things to the
+                     aforesaid monks that they should have them and hold them
+                     and possess them and make use of them by all means which
+                     seem to them best and most convenient to them, so freely
+                     as the aforesaid charters of the aforesaid donors bear
+                     witness.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Bernard of Howden, William de Vescy, Philip of Stichill,
+                  Robert of Broxmouth, Master W<ex>illiam</ex> of Ednam, Nicholas the chaplain, Walter of Ryedale, Ralf of Ryedale, and many
+                     others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

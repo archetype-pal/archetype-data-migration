@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 616</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.995842+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 616</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Alex<ex>ander</ex> dei Gr<ex>ati</ex>a Rex Scott<ex>orum</ex> . Omnibus probis hominibus tocius terre sue . Clericis et laicis  <seg type="diplomatic" subtype="salutation">Salutem</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant presentes et futuri me concessisse</seg> . ⁊ <lb/> hac Carta mea confirmasse Robert<ex>o</ex> . de Aubein’ . ⁊ heredibus suis . illas uiginti marcas que mihi debentur
+                     annuatim de waitinga quam <lb/> Prior ⁊ Conuentus de Coldingham’ . mihi debent de terris suis de Coldingham’ .
+                     donec Ego uel heredes mei eidem Robert<ex>o</ex> . uel here<lb/>dibus suis dederimus . uiginti marcatas terre ex australi parte Maris Scocie .
+                     uel inter le Muneth . ⁊ Mare Scocie. Quare volo . ut <lb/> predictus Robert<ex>us</ex> . de Aubein’ . ⁊ heredes sui illas uiginti marcas percipiant singulis annis ad
+                     pascha. Et precipio Priori de <lb/> Coldingham’ . ⁊ Balliuis eius . quatinus annuatim sine impedimento illas uiginti
+                     marcas eis reddant ad pascha . donec Ego uel <lb/> heredes mei eis dederimus predictas uiginti marcatas terre. Sicut Carta domini
+                     Regis . Willelmi patris mei inde facta predicto Robert<ex>o</ex> . <lb/> testatur. </seg><seg type="diplomatic" subtype="witnesses">Testibus . Willelmo de Bosch<ex>o</ex> . Cancellario meo . Willelmo de Valon<ex>iis</ex> . Camerario meo . Philipp<ex>o</ex> . de Mubray . Galfr<ex>ido</ex> . filio . Ric<ex>ardi</ex> . <persName><roleName>vic<ex>ecomite</ex></roleName></persName> . de Pert’ . <lb/> Philipp<ex>o</ex> . de Lundin’. </seg><seg type="diplomatic" subtype="dating">Apud Pert’ . tercio die Marcii.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

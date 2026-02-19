@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.1</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:31:00.922816+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.1</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alexander, by the grace of God king of the Scots</seg>, to justices, sheriffs, provosts, and all worthy men of his entire land <seg type="diplomatic" subtype="salutation">[sends] greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition">I order that our brethren of Melrose and all brethren of the same order shall be
+                  quit of toll and all other customs and what is owed by right
+                  even from all trading which they may have done for their own
+                  purposes wherever they may have come in the whole of my land,
+                  just as the charter of the lord king, William my father,
+                  bears witness and affirms.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: William del Bois, my chancellor; Earl Malcolm of Fife; William de
+                  Valognes; John of Maxwell.</seg> At Edinburgh on the second day of April.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

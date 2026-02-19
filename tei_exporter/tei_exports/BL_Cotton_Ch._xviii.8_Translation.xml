@@ -1,0 +1,46 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.8</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:34:58.083145+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.8</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alexander, by the grace of God king of the Scots</seg>, to all worthy men of his entire land <seg type="diplomatic" subtype="salutation">[sends] greeting</seg>.</seg> <seg type="diplomatic" subtype="intitulatio">Let present and future know</seg> <seg type="diplomatic" subtype="disposition">us, for the welfare of our soul, and of our predecessors' and successors'
+                  [souls], to have given, conceded, and by this our charter to
+                  have made firm, to God, St Mary at Melrose, and to the monks
+                  serving God in that same place now and for ever in the
+                  future, the loch of Dunscore in Nithsdale, and that pennyland
+                  which belongs to the same loch, and whatever is contained
+                  within the same loch and land; <seg type="diplomatic" subtype="holding">for the same monks to hold and to have for ever, in free, pure, and perpetual
+                     alms, of us and our heirs, freely, quitly, fully, and
+                     honourably from all service, custom, and secular exaction.</seg> <seg type="diplomatic" subtype="warrandice">We and our heirs shall warrant all the aforesaid to the same monks against all
+                     men,</seg> withholding nothing of right in the same, nor requesting in return for them
+                     anything other than prayers only, provided that the same
+                     monks each year on St Andrew's day have a pittance from
+                     the profits of the same.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, G<ex>eoffrey</ex>, elect of Dunkeld; Laurence of Abernethy; Bernard Fraser; Thomas son of Ranulf;
+                     William of Lindsay; David of Lindsay; Alexander of
+                     Stirling.</seg> At Ancrum, on the third day of December in the twenty-second year of the reign
+                  of the lord king.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/238</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 14:38:26.726815+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/238</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">.W. dei gratia Rex Scott’. Omnibus probis Hominibus Tocius terre sue . Clericis
+                  ⁊ laicis  Salutem.</seg> <seg type="diplomatic" subtype="disposition">Sciant<lb/> presentes ⁊ futuri . me Concessisse . ⁊ Hac Carta mea confirmasse . donationem
+                     illam quam Ada filia<lb/> Alex’ . de Sancto Martin<ex>o</ex> . fecit deo ⁊ Ecclesie Sancte Crucis de Edenb<ex>ur</ex>g . ⁊ Canonicis ibidem deo ser<lb/>uientibus ⁊ seruituris de Redditu dimidie marce annuatim percipiend’ de firma
+                     molendini de Alsta<lb/>nesford’ . Tenend’ ita libere ⁊ Quiete . plenarie ⁊ honorifice . sicut Carta
+                     predicte Ade testatur .<lb/> Saluo seruicio meo.</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . Will’. de Bosch’ . Cancellario . meo . Philipp’ . de mubray . magistro martin<ex>o</ex> . me<lb/>dico meo . Gilleb’ . de Striuel’ . Clerico meo . Ric’ . filio . Hugon<ex>is</ex>.</seg> Apud Edenb<ex>ur</ex>g . xxii. die Aprilis.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

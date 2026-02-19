@@ -1,0 +1,47 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/254</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:28:52.555398+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/254</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons and faithful people of Holy Mother Church, present and future, <seg type="diplomatic" subtype="intitulatio">Ness of London</seg> <seg type="diplomatic" subtype="salutation">sends Greeting</seg>:</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know that</seg> I have granted, and by my present charter made firm, to God and to the church of
+                     Holyrood in Edinburgh and to the canons serving God there
+                     now and in the future, for the salvation of my soul and of
+                     my wife’s, and for the salvation of the souls of my lords,
+                     and my predecessors and successors, the mill of Linton,
+                     which Ness my predecessor gave to the same canons, and
+                     made firm by his charter, with the easement of the Tyne
+                     Water and the messuage assigned to them. <seg type="diplomatic" subtype="holding">For them to hold in pure and perpetual alms, in every ecclesiastical liberty,
+                     just as they hold and posses alms from any gift, freely,
+                     quietly, fully and honourably,</seg> reserving the multure of my mills, provided that none of my own men might mill
+                     at the mill of the foresaid canons without the permission
+                     of the canons’ miller. If the miller of the foresaid
+                     canons mills any grain at the foresaid mill except the
+                     canons’ grain and the grain of their own men, I and my
+                     heirs shall receive a half of the whole of that multure.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Walter of Lindsay, William Noble, Walter of Congleton,
+                  Alan de Crahoc, Robert son of Patrick, Jocelin of Fortune,
+                  William of Carmichael, and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

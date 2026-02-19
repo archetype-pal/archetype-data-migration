@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 720</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:41:10.673791+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 720</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio"><persName>Ranulfus</persName> de Bonkil</seg> Omnibus videntibus uel Audientibus has literas <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me intui<lb/>tu karitatis et pro animabus patris mei et matris mee et pro salute anime mee et
+                     uxoris mee et omnium<lb/> parentum meorum concessisse . dedisse et hac presenti carta confirmasse deo et
+                     beato Cuthberto<lb/> et monachis de Coldingham terram in territorio de Ederham que iacet iuxta Edere
+                     et uocatur<lb/> Toddehalech . in liberam puram et perpetuam elemosinam . <seg type="diplomatic" subtype="holding">Quare uolo ut predicti monachi prenominatam<lb/> terram habent teneant et possideant ita libere quiete et honorifice sicut aliqua
+                        elemosina in reg<lb/>no scotie liberius quietius et honorificentius habetur tenetur et possdetur</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Hiis testibus . <persName>Patricio</persName><lb/> filio Com<ex>itis</ex> . <persName>Patricio</persName> filio <persName>Ade</persName> . <persName>Roberto</persName> de Vpsetelingtona . <persName>Dauid</persName> <persName><roleName>Marescallo</roleName></persName> . <persName>Thoma</persName> de Gordona .<lb/> <persName>Matheo</persName> de Normanuill' . <persName>Ioh<ex>ann</ex>e</persName> de sancto Michaele . <persName>Will<ex>elm</ex>o</persName> de Veteri ponte . <persName>Stephano</persName> de la Warde<lb/>robe . <persName>Henr<ex>rico</ex></persName> de Prendergest . <persName>Will<ex>elm</ex>o</persName> de Witeslade . <persName>Alano</persName> de Swinton' . <persName>Patricio</persName> de Preston' . <persName>Symone</persName> filio<lb/> <persName>Thome</persName> . <persName>Waltero</persName> de Paxtona . <persName>Andr<ex>ea</ex></persName> de Paxtona . <persName>Will<ex>elm</ex>o</persName> de Lumesdene et multis aliis .</seg> </p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,40 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/234</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 09:26:00.45545+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/234</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Christianus dei gratia candide case episcopus</seg> uniuersis sacro sancte matris ecclesie filiis clericis  laicis presen<lb/>tibus  futuris <seg type="diplomatic" subtype="salutation">salutem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Vniuersitati uestre notificetur</seg> me concessisse .  hac carta mea confirmas<lb/>se . deo  ecclesie sancte crucis de edenb’ .  canonicis ibidem deo
+                     seruientibus . ecclesiam sancte marie  sancti bruoc de
+                     dunrod . in liberam  perpetuam elemosinam cum omnibus
+                     rectitudinibus  pertinenciis<lb/> suis saluo iure episcopali .  ecclesiam de tuignam cum omnibus rectitudinibus 
+                     pertinenciis suis . hac<lb/> eadem etiam karta confirmo donationem fergussi  huct’ filii eius de tota uilla
+                     de dun<lb/>rodde . per recctas diuisas suas cum omnibus iustis pertinentiis 
+                     rectitudinibus suis .  ut melius  plenarius karte
+                     ipsorum testantur .</seg> <seg type="diplomatic" subtype="witnesses">Teste W<ex>i</ex>ll<ex>elm</ex>o abbate de dundrainan . Io<lb/>hanne archidiacono . Gilleberto capellano . Iacobo persona de creuecoer Roberto
+                     pres<lb/>bitero filio dolfin . Macraith . de ospitali . Malbet nepote episcopi . Valtero
+                     fratre eius .<lb/> Nicholao . Iacobo nepotibus episcopi . W<ex>i</ex>ll<ex>elm</ex>o de kertmel . Gilleberto dapifero episcopi .<lb/> Bran . filio macgillegunnin . Arnaldo hostiario . Adam de ele .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

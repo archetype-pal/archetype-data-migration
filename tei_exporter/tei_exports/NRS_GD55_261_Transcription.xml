@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/261</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-07-05 21:39:50.046703+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/261</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><seg type="diplomatic" subtype="address">Vniuersis istas litteras uisuris uel audituris . <seg type="diplomatic" subtype="intitulatio">Auicia filia iohannis filii ylif de ylifistun</seg> <seg type="diplomatic" subtype="salutation">salutem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerit uniuersitas uestra</seg> me<lb/> concessisse . et hac presenti carta mea confirmasse . deo . et sancte marie et
+                        sancto Benedicto et porte de Melros . ad sustentacionem<lb/> pauperum ibidem adueniencium . pro salute anime mee . et omnium antecessorum .
+                        et successorum meorum . illam terram quam<lb/> <supplied>pater</supplied> meus ioh<ex>ann</ex>es filius ylif de ylifistun illis dedit . scilicet croftum et toftum que
+                        Ricardus ker tenuit in villa de yli<lb/>fistun . . . acram et vnam rodam in crofto suo proximo adiacentes crofto
+                        Laurencii . et illas duas acras terre<lb/> super Grenloue flath . et super Grenside . adeo quiete . libere . plenarie . et
+                        honorifice . sicut continetur in carta predicti
+                        iohannis<lb/> patris mei de ylifistun .</seg> <seg type="diplomatic" subtype="sealing">In cuius rei testimonium fide mea mediante huic scripto sigillum meum apposui .</seg> <seg type="diplomatic" subtype="witnesses">Hiis testibus .<lb/> Domino Alexandro de striuelin . Domino Andrea de Syntun . Magistro Ad<ex>a</ex> de Baggate . Patre meo ioh<ex>ann</ex>e de ylifistun . Andrea<lb/> Cameis . Ricardo filio eius . Rad’ . clerico . Ad’ hopper . Ioh<ex>ann</ex>e filio Ricardi . et aliis .</seg></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

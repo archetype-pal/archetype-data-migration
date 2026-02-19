@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 594</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.772887+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 594</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">. <seg type="diplomatic" subtype="intitulatio">W . Rex Scott’</seg> Episcopis . Abbatibus . Prioribus . Comitibus . Iusticiis . Baronibus . Vicecom<ex>itibus</ex> . Prepositis . Ministris . Et Omnibus hominibus suis francis<lb/> et Anglis et Scottis tam presentibus quam futuris . tocius terre sue <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Sciatis quod</seg> <seg type="diplomatic" subtype="disposition">uolo et firmiter precipio . quod nemora Monachorum de<lb/> Collingaham . videlicet Grenewde . et totum nemus de Ristuna . et Brocheholewde
+                     . et Akesside . et Richedeneswde . et Harewde .<lb/> et Denewde . et Swinewde . et Hundewde . et Omnia nemora et Gwastinia sua sint
+                     sub defensione Prioris et custodia . necnon et<lb/> Monachorum de Collingaham . ne aliquis super . x. libras forisfacture quicquam
+                     in predictis nemoribus vel Gwastinis capiat . nisi per
+                     ipsum Priorem .<lb/> vel per Monachos prenominati loci  si ipse presens non fuerit . Exceptis
+                     tantumodo necessariis de Castello meo de Berewich . que<lb/> mihimet ipsi solummodo conueniunt . Et si clientes mei pro necessariis meis ad
+                     opus Castelli mei de Berewich ad nemora predicta<lb/> uenerint  per Priorem uel per clientes suos que opus fuerint mihi et ubi ipse
+                     vel clientes sui monstrauerint accipiant . Insuper<lb/> addo et illis concedo quod predictus Prior et Monachi habeant Gwarrennam in
+                     predictis nemoribus . et per totam terram suam . sicut<lb/> extenduntur rectę et Antiquę divise . <seg type="diplomatic" subtype="boundaries">Videlicet a diuisis inter Berewich et lambertunam usque ad Bilie . et usque<lb/> ad Drieforde . et usque ad Riuulum qui manat in mare per Aldechambus pethe .</seg> ita quod nullus ibi aliquid capiat . nec<lb/> ligna . nec aliqua bestiam siluestrem nisi per ipsos . Quod si aliquis in
+                     predictis nemoribus uel Gwastinis capiatur uenenado vel<lb/> ligna secando . uel aliquid inde accipiendo . preter licentiam Prioris et
+                     monachorum . habeant Prior et monachi quod super illum<lb/> et cum illo inuenerint . et ego forisfacturam prenominatam .</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . Ric<ex>ardo</ex> Episcopo sancti Andree . Ingelram Episcopo de Glesgu . Nic<ex>holao</ex><lb/> Cancellario . Abbate de Ieddewrth . D<ex>aui</ex>D . olifart iustic<ex>io</ex> . Dolfin<ex>o</ex> capellano . Hug<ex>one</ex> clerico regis . Walter de Windleshore .<lb/> Robert freburn .</seg> <seg type="diplomatic" subtype="dating">Apud Berewich .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

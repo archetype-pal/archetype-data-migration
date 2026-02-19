@@ -1,0 +1,74 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/249 (2)</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-30 14:27:45.759292+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/249 (2)</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">John, by the grace of God Bishop of Whithorn, to all sons and faithful of Holy
+                  Mother Church, Greeting:</seg> <seg type="diplomatic" subtype="disposition">Let present and future come to know that with the agreement of the whole of our
+                  chapter, for the salvation of our soul and of all
+                  predecessors’ and successors’, we have granted and by
+                  episcopal authority confirmed by the testimony of the present
+                  document, to God and the church of Holyrood at Edinburgh, and
+                  to the canons serving God there now and in the future, in
+                  free and pure and perpetual alms, all the churches, with
+                  their lands, that Fergus of good memory, and Uhtred his son,
+                  and David son of Terrus, bestowed to the same canons,
+                  inspired by divine reward, with the agreement of the diocesan
+                  bishiop, and made firm with their charters. That is, from the
+                  donation of Fergus, the church of Dunrod with the whole toun
+                  and with all its pertinents, and the Isle of Trail, and
+                  Galtway with the church of the same toun and with all its
+                  pertinents. And from the donation of Uhtred his son, the
+                  church of St Cuthbert of Desnesmor, and the church of
+                  Tongland, and the church of Twynholm, and the church of St
+                  Andrew, and the church of Kelton, and the church of
+                  Kirkcormack with the chapel of Barncrosh. And from the
+                  donation of David son of Terrus, the church of Anwoth with
+                  the chapel of Culenes, and with all its pertinents. Wherefore
+                  we will and grant by episcopal authority that the aforesaid
+                  canons should wholly convert to their own benefit all the
+                  aforenamed churches with chapels and all their revenues, and
+                  with lands and all their pertinents, as it pleases them; and
+                  hold and possess them freely and quietly and released from
+                  all procuration and exaction in perpetuity; and they should
+                  cause the same chapels to be served by chaplains agreeable to
+                  them, presented by us or our successors, or by themselves, as
+                  it seems expedient to them, and they may remove the less
+                  suitable ones in consultation with the bishop. Reserving to
+                  the ourself and our successors only reasonable synodals, and
+                  common aids from the aforesaid churches, except from the
+                  churches of Kirkcormack, with the chapel of Barncrosh, and
+                  Kelton, which have been entirely exempted from synodals and
+                  the rest of the episcopal dues by our predecessor, Bishop
+                  Christian of good memory, and by us.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Michael the prior of Whithorn, and the chapter of the same
+                  place, the lord Alan son of Roland, constable of the lord
+                  king of Scots, John the archdeacon, Matthew the dean of
+                  Desnes, William the dean of Farines, Gilbert the dean of
+                  Rhinns, Walter the parson of Kinkandres, Durand the parson of
+                  Minnigaff, Martin the clerk of Kirkcudbright, and very many
+                  others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

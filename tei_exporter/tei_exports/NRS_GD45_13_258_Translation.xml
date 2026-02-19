@@ -1,0 +1,55 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/258</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 14:39:35.432678+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/258</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons and faithful of Holy Mother Church to whom the present deed shall
+                  come, present and future, William son of Gamel of Twynholm
+                  sends Greeting:</seg> <seg type="diplomatic" subtype="disposition">I make known to you all that I, with the consent of my lord, Alan son of Roland,
+                  and the agreement of Walter my son and heir, have given and
+                  granted, and by this my charter made firm, to God and to the
+                  church of Holyrood in Edinburgh and to the canons serving God
+                  there, in free and pure and perpetual alms, the whole right
+                  that I thought good to have in the church of Twynholm, and I
+                  have renounced in perpetuity, for myself and my heirs, the
+                  claim that I claimed in the advowson of that church.
+                  Furthermore I give and grant, with the assent of Walter my
+                  son himself, to the foresaid church and the foresaid canons,
+                  in perpetual alms, four acres of land in the territory of the
+                  same toun, for the canons themselves to hold the same bounds
+                  by which I perambulated that very land in the sight of worthy
+                  men. And to the foresaid church I give and grant one dwelling
+                  in the toun itself, in respect of which I have put the
+                  foresaid canons in possession, with common pasture of the
+                  same toun for sixteen draught animals and for one horse, and
+                  with all other common easements of the same toun. Wherefore I
+                  will that the aforenamed canons should hold and possess in
+                  perpetuity the foresaid church with all its just pertinents,
+                  freely and quietly in perpetual and pure alms.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses, Silvester, Andrew and Thomas, chaplains, Matthew the dean,
+                  Robert the clerk, Robert Halfknight, Robert and Gamel,
+                  brothers, Robert son of Matilda, and very many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

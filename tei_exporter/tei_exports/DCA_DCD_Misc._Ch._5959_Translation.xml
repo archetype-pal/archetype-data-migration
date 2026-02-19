@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 5959</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 14:28:25.225376+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5959</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all who shall view or hear these letters</seg>, <seg type="diplomatic" subtype="intitulatio">H(erbert) abbot of Kelso, and L(aurence) and H(ugh), archdeacons of the dioceses
+                  of St Andrews and Glasgow</seg>, <seg type="diplomatic" subtype="salutation">send greeting</seg>. <seg type="diplomatic" subtype="notification">The mandate of the lord pope have we received in these words</seg>: 'Gregory the bishop, servant of the servants of God, to his well-beloved sons,
+                  the abbot of Kelso in St Andrews diocese, and of Glasgow and
+                  St Andrews, Hugh and Laurence the archdeacons, greeting and
+                  apostolic blessing. Thomas the knight and J(uliana) his wife
+                  having come to us have demonstrated that the priors of Durham
+                  and of Coldingham and their communities, and certain other
+                  clergy of the dioceses of St Andrews and Durham are
+                  committing an injustice against the same in respect of lands,
+                  possessions, and other things. Therefore we command your
+                  judgment by apostolic writing, so that with the parties
+                  assembled you hear the case and conclude it </p>
+      </div>
+    </body>
+  </text>
+</TEI>

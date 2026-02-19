@@ -1,0 +1,49 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 628</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-29 15:57:28.277371+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 628</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Alexander by the grace of God king of Scots</seg> to all worthy men of his whole land, clerk and lay, <seg type="diplomatic" subtype="salutation">greeting</seg></seg>: <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know that</seg> we have granted and confirmed by this our charter the quitclaim and abjuration
+                     that Patrick son of Earl Patrick has made for himself and
+                     his own heirs to God, Saint Cuthbert, Saint Æbbe, and to
+                     the prior and monks of Durham at Coldingham who are
+                     serving God and, in perpetuity, those who will serve God,
+                     of the toun of Swinwood and the whole demesne of that same
+                     toun with all its pertinents and whole right, and every
+                     kind of right and claim, if he has had or was able to have
+                     such in the same toun, in demesnes as well as in men,
+                     services and homages, woods and plains, lands cultivated
+                     and uncultivated, and all other things pertaining to the
+                     said toun and the said demesne. As freely and quietly,
+                     fully and honourably, as the charter of the same Patrick
+                     made more fully for the said prior and monks of Durham at
+                     Coldingham justly declares. Saving our service.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: Walter Oliphant, justiciar of Lothian; John of Maxwell,
+                  chamberlain; David the marischal; Roger Avenel; Ranulf of
+                  Bunkle; Ralph de Champagne; Thomas son of Ranulf; Bernard
+                  Fraser; Thomas de la Haye; William of Bunkle. </seg><seg type="diplomatic" subtype="dating">At Roxburgh, on the twenty-ninth day of March, in the seventeenth year of the
+                  reign of the Lord king</seg>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

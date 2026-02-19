@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD45/13/237</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-14 18:43:24.496271+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/237</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">W<ex>illiam</ex> by the grace of God king of Scots to all worthy men of the whole of his land, <seg type="diplomatic" subtype="salutation">Greeting</seg>:</seg> <seg type="diplomatic" subtype="disposition">Let present and future know that I have given and granted, and by this my
+                  charter made firm, to God and to the church of Holyrood in
+                  Edinburgh, and to the canons serving God there, in exchange
+                  for the alms that they lost through the garrison, 4 merks
+                  from my mill of Cramond, and 33 shillings from the mill of
+                  Liberton, and from the ferm of Merchiston 20 shillings, and
+                  from the land of the furbisher 8 shillings, and from the ferm
+                  of Clermiston 5 shillings and 8 pence. For them to hold in
+                  free and quiet alms as freely and quietly as they hold and
+                  possess their other alms freely and quietly, until I shall be
+                  able to warrant to them the said alms which they lost through
+                  the garrison of Edinburgh, or until I shall have assigned an
+                  income of 9 merks elsewhere.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses, Hugh bishop of St Andrews, Walter Oliphant the <persName><roleName>justice</roleName></persName>, Hugh Gifford, Walter of Berkeley, William de la Haye, Robert of Berkeley.</seg> At Haddington.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

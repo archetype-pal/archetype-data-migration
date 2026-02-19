@@ -1,0 +1,57 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.15</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:41:38.776452+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.15</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">William, by the grace of God king of the Scots,</seg> to bishops, abbots, earls, barons, justices, officials, and all worthy men of
+                     his entire land, clerk and lay, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know me</seg> <seg type="diplomatic" subtype="disposition">to have given, and by this my charter to have made firm, to God, St Mary, the
+                  church of Melrose, and the monks serving God in that place,
+                  for the soul of King David my grandfather, and for the soul
+                  of Earl Henry my father, and of my mother, and for the soul
+                  of King Malcolm, and for my own salvation, and of all my
+                  predecessors' and successors' [salvation], that piece of land
+                  at Blainslie which King David conceded to his foresters, and
+                  I afterwards had conceded to William son of Oein, that is to
+                  say, the toft and messuage that the aforesaid William held
+                  and possessed, so that they may build it just as it shall
+                  seem most beneficial to them at their own will. And it is
+                  permitted to them to plough and cultivate that entire land
+                  only which had beforehand been broken and ploughed, with all
+                  the liberties of the forest between Gala and Leader, as it is
+                  specified in the charters of my predecessors, and my own. <seg type="diplomatic" subtype="holding">This land I therefore concede to them, and by the present charter make firm in
+                     everlasting alms, so that the aforesaid monks may have and
+                     possess it freely and quitly, fully and honourably, just
+                     as any alms can most quitly and freely be held, released
+                     from every earthly service and secular exaction,</seg> <seg type="diplomatic" subtype="warrandice">so that I and my heirs shall warrant this land to them against all men.</seg></seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Osbert abbot of Kelso; Hugh abbot of Newbattle; William
+                  Malveisin; Richard de Prebenda; Hugh de Sigillo; Earl David,
+                  the king's brother; Robert de Quincy; Hugh Ridel; Richard de
+                  Munfichet; Philip de Valognes; Roger de Valognes; Waldef son
+                  of Baldwin; Alexander de Saint-Martin; Hervey the marischal;
+                  Richard [the] marischal; Robert de Saint-Michel; Alan son of
+                  Hugh, Earl David's steward; Richard son of Eissun; Adam of
+                  Standford.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

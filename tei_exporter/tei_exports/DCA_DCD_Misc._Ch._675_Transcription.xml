@@ -1,0 +1,41 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 675</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-02 13:02:56.779574+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 675</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Th<ex>omas</ex> Prior et Conuentus dunelm<ex>ensis</ex> Ecclesie</seg> . omnibus ad quos presens scriptum peruenerit  <seg type="diplomatic" subtype="salutation">salutem in domino.</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis quod</seg> <seg type="diplomatic" subtype="narration">cum inspexissem Cartas domine Ede de paxtona <lb/> et Roberti primogeniti sui et Roberti et Willelmi filiorum suorum clericorum et
+                        filiarum suarum Cecilie et Matildis et Ogeri de Tyeys
+                        clerici nostri in modum Cyrographi confectas <lb/> et sigillorum suorum apposicione confirmatas per quas concesserunt et
+                        tradiderunt eidem clerico nostro Ogero de Tyeys . omnes
+                        piscarias suas de paxtona super twede cum <lb/> omnibus libertatibus . asiamentis et omnibus aliis sine aliquo retinemento ad
+                        easdem piscarias pertinentibus habend’ et tenend’ eidem
+                        ogero et heredibus suis uel <lb/> assignatis . a festo sancti martini in hyeme . anno domini . m . cc . tricesimo
+                        sexto usque ad terminum nouem annorum subsequentum
+                        completum.</seg> Nos donacionem et con<lb/>cessionem inter prefatas Edam et Rob<ex>ertu</ex>m primogenitum . et Rob<ex>ertu</ex>m et Will<ex>elmu</ex>m filios suos clericos . et Ceciliam et matildam filias suas et dictum ogerum de
+                     tyeys <lb/> factas super prescriptis piscariis de paxtona plurimum approbantes  <seg type="diplomatic" subtype="sealing">eas prout in cartis suprascriptis plenius contintetur duximus confirmandas et
+                     presentis scripti <lb/> cui est nostrum sigillum appensum patrocinio fecimus communiri .</seg> Saluis custodiis ecclesiis dunelm<ex>i</ex> et de Coldingh<ex>am</ex>i contingentibus .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

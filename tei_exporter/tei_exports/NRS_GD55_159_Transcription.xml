@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/159</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:20:37.919935+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/159</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Sancte Matris Ecclesie filiis presentibus et futuris <seg type="diplomatic" subtype="intitulatio">Patricius de Ridale</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> . <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me concessisse et hac<lb/> mea carta confirmasse deo et Ecclesie Sancte Marie de Melros et Monachis ibidem
+                     deo seruientibus donationem<lb/> Gaufridi filii Walleui de lillesclif quam fecit antedicte Ecclesie et Monachis
+                     de quattuor Bouatis terre arabi<lb/>lis interritorio de Wittun in liberam . puram . et perpetuam Elemosinam . sicut
+                     iacent in uno tenemento desuper<lb/> Rauenesfen propinquiores terre de Heuiside quam habent ex donatione me . <seg type="diplomatic" subtype="holding">Quare uolo ut antedicti Monachi<lb/> de Melros teneant et possideant prenominatam terram liberam . quietam . et
+                        solutam ab omni terreno serui<lb/>cio et consuetudine et exactione seculari . sicut plenius carta predicti
+                        Gaufridi testatur et confirmat .</seg> <seg type="diplomatic" subtype="warrandice">Et ego et here<lb/>des mei . manutenebimus et warantizabimus sepedictis Monachis prescriptam terram
+                        contra omnes homines inperpe<lb/>tuum . Saluo tamen seruicio mihi et heredibus meis de ipso Gaufrido et heredibus
+                        suis de eadem terra .</seg></seg> <seg type="diplomatic" subtype="witnesses">Hiis Testibus<lb/> Rob<ex>erto</ex> archidiacon<ex>o</ex> . Glasg<ex>uensi</ex> Ioh<ex>ann</ex>e Decano de Rokesburc . Ric<ex>ardo</ex> nono . Waltero filio meo et herede . Radulfo de Ridale .<lb/> Rob<ex>erto</ex> de Bernoldebi . Adam de Wittun et Mulits aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

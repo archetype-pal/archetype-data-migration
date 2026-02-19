@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/76</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:41:30.179232+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/76</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Comes Waldeuus</seg> Omnibus fidelibus et amicis francis et anglis <seg type="diplomatic" subtype="salutation">salutem</seg></seg> . <seg type="diplomatic" subtype="notification">Sciant tam futuri quam presentes</seg>  <seg type="diplomatic" subtype="disposition">me dedisse et confir<lb/>asse hac mea carta concessione heredis mei deo et sancte marie de Melros . et
+                     monachis ibidem deo seruientibus<lb/> communem pasturam super lambermoram mecum et cum hominibus meis per has diuisas
+                     scilicet de baldredestan per al<lb/>tam uiam usque ad eslingcloh et inde deorsum sicut heslingcloh cadit in bothkyl
+                     et inde usque in diuisas de Inuer<lb/>wic pro salute anime mee et antecessorum meorum et successorum meorum in
+                     perpetuam elemosinam ita libere et quiete et honorifice ab
+                     omnibus secularibus seruiciis et consuetudinibus sicut
+                     aliqua elemosina liberius et quietius et honorificentius
+                     datur uel<lb/> tenetur. Si autem dimiserint pasturam de Inuerwic caule eorum sequentur pecora
+                     sua cum logiis suis que pertinent ad ipsas<lb/> caulas infra has prenominatas diuisas sine manuali opere et meis propriis logiis
+                     de beltun.</seg> <seg type="diplomatic" subtype="warrandice">Hanc donationem ego<lb/> et heredes mei warantizabimus predictis monachis contra omnes homines
+                     inperpetuum</seg> . <seg type="diplomatic" subtype="witnesses">His testibus . Aelina Com<ex>itissa</ex> . Radul<lb/>fo capellano . Ioh<ex>ann</ex>e cap<ex>el</ex>l<ex>ano</ex> . Waltero . cap<ex>el</ex>l<ex>ano</ex> . Hugone de duns . Patricio fratre com<ex>itis</ex> . Edwardo auunculo com<ex>itis</ex> . Gilbert<lb/> fraser , Adam filio alden . Alden senescaldo . Gamello de pethcox . Adam de
+                     Foghou . Gilberto filio Walteri .<lb/> Steph<ex>an</ex>o papedi . Warino lemalla . Adam filio eggari . Adam de edintun .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

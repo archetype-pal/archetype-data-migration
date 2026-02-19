@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 723</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:41:10.616602+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 723</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant tam presentes quam futuri quod</seg> Eadwardus filius Petri de Lastailrig Baro regis scott' concessit et dedit atque<lb/> hac carta sua confirmauit Rodberto filio Matildis de Berewic et omnibus
+                     heredibus suis duas toftes ad Eie<lb/>muthe . et unam ad leth . honorifice et libere et quiete atque in pace in feudo
+                     et hereditate . ab omni consuetudine et<lb/> seruitio <seg type="diplomatic" subtype="holding">tenend<ex>as</ex> de se et omnibus heredibus suis . reddendo singulis annis . iii . teises de laz</seg> .</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>es</ex> . Alexand<ex>er</ex> de<lb/> Softe lawe . Will<ex>elmus</ex> filio hugonis de lastailrig . Will<ex>elmus</ex> prepositus de Berewic . Will<ex>elmus</ex> Beniue . Alexand<ex>er</ex><lb/> prepositus de Berewic . Will<ex>elmus</ex> Neue . Rein<ex>er</ex> . Rog<ex>er</ex> de pagraua clericus Walteri filii Alani .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

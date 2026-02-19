@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/8</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-07-30 04:42:22.768171+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/8</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">M . Rex Scot’</seg> Omnibus hominibus totius terre sue  Clericis et Laicis francis <supplied>et</supplied> anglicis <seg type="diplomatic" subtype="salutation">salutem</seg>.</seg> <seg type="diplomatic" subtype="notification">Sciatis</seg> <seg type="diplomatic" subtype="disposition">me conces<lb/>sisse . et hac mea carta confirmasse Ecclesie de Malros et fratribus ibidem deo
+                     seruientibus donacionem quam Gospatricus Comes fecit<lb/> de terra hertesheued . et de quadam salina pro salute animarum predecessorum
+                     suorum . sicut carta ipsius Gospatric<ex>i</ex> eis testatur.<lb/> Preterea eis confirmo terram quam de Edward<ex>o</ex> . fratre suo in firma tenent saluo seruicio meo <supplied>sicut</supplied> carta Edwardi testatur . et<lb/> omnia aisiamenta de terris suis sicut eorum carte testantur.</seg> <seg type="diplomatic" subtype="witnesses">Test<ex>ibus</ex> . Waltero Cancellario . Gospatrico Comite . Hug<ex>one</ex> de Moreuill’ . Ric’<lb/> filio suo . Tom’ de lundon’. Roberto foliot . Will<ex>elm</ex>o . de Sum<ex>er</ex>uill’ . D<ex>aui</ex>d . olifard . <persName>Rob<ex>er</ex>to Auenel</persName> . Henrico de perci<lb/> Nicholao clerico . Rad’ . namo .</seg> Apud Rochisburc</p>
+      </div>
+    </body>
+  </text>
+</TEI>

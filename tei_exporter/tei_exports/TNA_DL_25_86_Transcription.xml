@@ -1,0 +1,34 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of TNA DL 25/86</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 09:20:17.39869+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/86</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">. Omnibus hoc scriptum visuris . vel audituris . <seg type="diplomatic" subtype="intitulatio">Rogerus filius Will<ex>elm</ex>i francisci</seg> <seg type="diplomatic" subtype="salutation">salutem in domino</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Nouerit vniuersitas<lb/> vestra</seg> . me concessisse . et h<supplied>ac pres</supplied>enti carta mea quietclamasse . Domino Roberto de Bru<ex>i</ex>s . Domino vall<ex>is</ex> Anand’<lb/> et heredibus suis . pro me <et h<eredibus="" meis="" inperpetuum="" ="" duas="" bouatas="" terre="" .="" quas="" tenui="" de="" dicto="" domino<span="" data-dpt="lb" data-dpt-src="ms">|</et></seg> Roberto de Bru<ex>i</ex>s in territorio de Anand’ versus Weremundebi  pro Excambio duarum bouatarum
+                  terre . quas<lb/> Will<ex>elmu</ex>s franciscus . pater meus . de dicto Domino Roberto de Bru<ex>i</ex>s . quondam tenuit ad firmam in territorio de<lb/> Moffet . <seg type="diplomatic" subtype="sealing">In Cuius rei Testimonium  presenti carte quieteclamacionis sigillum meum
+                  apposui .</seg> <seg type="diplomatic" subtype="witnesses">Hiis Tesibus .<lb/> Domino Ioh<ex>ann</ex>e de Rumundebi . Domino Humfr’ de Kirkepatric . Domino Rogero fratre eius .
+                     Domino Gilberto de Ioneston’<lb/> Domino Roberto de Herice Domino Humfr’ Mauleuerer . Will<ex>elm</ex>o de Heneuil<ex>le</ex> . Ada de Dunwdhi et aliis</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,54 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.22</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:14:05.226954+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.22</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Henry the earl, son of the king of Scots</seg>, to bishops, abbots, earls, justiciars, barons, sheriffs, officials, and all
+                     his sworn men, French and English, clerk and lay, future
+                     as well as present, of his whole land, <seg type="diplomatic" subtype="salutation">greeting.</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know</seg> that I have conceded Clerkington to God and to the church of St Mary at
+                     Haddington in perpetual alms with its right marches on
+                     either side of the the river just as William of Graham and
+                     Durand the sheriff, and Richard the clerk and Osbert the
+                     prior of Edinburgh [Holyrood], and Malbeth of Liberton and
+                     Gillanders son of Oggu led the way and went around, after
+                     Thorald the archdeacon determined the bounds with me at
+                     Peebles, and just as it was previously measured. I also
+                     concede to the aforesaid church one full toft next to the
+                     church in the toun of Haddington, and all teinds and
+                     ecclesiastical revenues from the whole of Haddingtonshire
+                     from mills as well as other things. <seg type="diplomatic" subtype="holding">I therefore will and firmly enjoin that the aforesaid church hold and have the
+                     aforenamed land, Clerkington, alone, and quit in relation
+                     to me and the thane and all others who shall have held the
+                     aforesaid land of Haddington of me and my heirs and of
+                     their heirs, and all other revenues and customs in teinds
+                     and alms as freely and honourably and quietly and fully as
+                     other alms in my whole land are well and fully and
+                     honourably and quietly able to be given and granted.</seg> These aforenamed alms I give and confirm by my charter for the sake of my own
+                     soul and of my father’s and mother’s, and the souls of my
+                     ancestors and successors. </seg><seg type="diplomatic" subtype="witnesses">As witnesses: Engelram [Ingram] the chancellor, and William Maule, and Edmund
+                  son of Aimar, and Anselm nephew of Bishop John.</seg> At Haddington.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

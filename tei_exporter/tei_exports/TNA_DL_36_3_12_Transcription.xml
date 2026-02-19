@@ -1,0 +1,33 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of TNA DL 36/3/12</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-02-02 18:06:26.421363+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 36/3/12</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus hominibus Has Litteras visuris uel audituris . <seg type="diplomatic" subtype="intitulatio">Robertus de Brus</seg> <seg type="diplomatic" subtype="salutation">salutem</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciatis</seg> me dedisse. et Concessisse et<lb/> hac presenti carta mea confirmasse vmfrido filio Simonis et heredibus suis pro
+                     Homagio et seruitio suo Hunnelve<lb/>croft \per rectas diuisas/ Libere et quiete. Honorifice et pacifice. <seg type="diplomatic" subtype="holding">Hunc et predictum Croftum  tenebunt ipse predictus Vmfridus et here<lb/>di sui de me et Heredibus meis. Reddendo mihi et heredibus meis annuatim duo
+                        calcaria deaurata. Infra nun<lb/>dinas Karlioli.</seg></seg> <seg type="diplomatic" subtype="witnesses">Hiis Testibus Hug<ex>one</ex> de Corri. Will<ex>elmo</ex> de Heri<supplied>z</supplied>. Ricardo de Bosco. Roberto de Crossebi. Ric’.<lb/> de Humeth . Laurencio de berkelai. Will<ex>elmo</ex> franceis. Hug<ex>one</ex> filio hamelin. Iuone filio hamelin</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,64 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/73 (1)</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:14:16.161409+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/73 (1)</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of the Church who shall view or hear the present writing, <seg type="diplomatic" subtype="intitulatio">Walter son of Alan, steward of the king of Scotland,</seg> <seg type="diplomatic" subtype="salutation">sends greeting.</seg></seg> <seg type="diplomatic" subtype="notification">Know, all of you, that</seg> <seg type="diplomatic" subtype="narration">I, in honour of God and for the peace of the Church, and mainly wishing to
+                  provide tranquility at Melrose, have thought fit to clarify
+                  doubts once contained in the charter of Walter my grandfather
+                  given to the monks of Melrose, in that part of the charter,
+                  that is, where my said grandfather spoke of untilled lands
+                  and haughs and of forest pasture. This I also will, that
+                  where there is contained less of charity and security, in
+                  this instrument to describe more clearly, and to provide for
+                  the monks more fully.</seg> <seg type="diplomatic" subtype="disposition">I have therefore granted to the aforementioned monks all untilled lands and
+                  haughs, as well in my forests as outside, on the northern
+                  side of the River Ayr, and my whole forest to be used
+                  according to what should seem the more useful to them, that
+                  is, to be tilled and sown wherever it should seem to them to
+                  be suitable, as well within the forest as outside, and for
+                  the feeding and pasturing and constantly keeping their flocks
+                  within the same forest, as many as they wish, according to
+                  what the territory of the same forest is able to contain; and
+                  it shall be in the judgment of the monks to calculate how
+                  much the same land is able to support. I have also granted to
+                  them the use of the same forest in all its easements and
+                  benefits; to be had and possessed fully and peaceably for all
+                  their own needs; this alone excepted, that [neither] the
+                  monks nor the lay-brothers nor any other of their men under
+                  authority shall hunt or catch sparrow-hawks in the same
+                  forest; for this is not appropriate to their order, not do we
+                  believe it to be beneficial for them. All these things have I
+                  given, granted, and made firm by this my charter, to God and
+                  the aforementioned monks. <seg type="diplomatic" subtype="warrandice">And I, and my heirs and successors all, shall warrant and defend for the
+                     aforesaid monks all the above-said things</seg> <seg type="diplomatic" subtype="holding">and we shall cause them to possess them in peace, free and quit from every
+                     service and exaction and secular custom</seg>.</seg> <seg type="diplomatic" subtype="sealing">And so that my grant should be firm and unimpaired, I have handed over the
+                  present writing confirmed with my own present seal.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: William, my chaplain; Malcolm, son of the earl of Lennox,
+                  my nephew; John of Montgomery; Roger son of Glay; William of
+                  Halkerston; Alan Wallace; Humphrey del Bois; John of Lindsay;
+                  Hugh, son of Simon son of Bertin; and many others.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,35 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 601</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:22:01.933152+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 601</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W . Rex Scott’</seg> . Omnibus probis hominibus tocius terre sue . Clericis et laicis <seg type="diplomatic" subtype="salutation">salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant presentes . et<lb/> futuri</seg> me concessisse . et hac Carta mea confirmasse deo . et sancto Cudberto . et
+                     Monachis eius<lb/> de Dunelmo donacionem Gospatrici comitis . et successorum eius . scilicet
+                     Nesebite . et uillam de Ederam<lb/> et ecclesiam eiusdem uille . cum omnibus capellis . et iustis pertinenciis suis
+                     . in liberam et perpetuam elemo<lb/>sinam <seg type="diplomatic" subtype="holding">tenendam ita libere . et quiete . plenarie . et honorifice  sicut carte comitis
+                     Gospatr’ . et succes<lb/>sorum eius testantur . et confirmant .</seg></seg> <seg type="diplomatic" subtype="witnesses">T<ex>estibus</ex> . Ric<ex>ardo</ex> episcopo sancti Andr<ex>ee</ex> . Nichol<ex>ao</ex> Cancellario . Ric<ex>ardo</ex> capell<ex>ano</ex><lb/> Ric<ex>ardo</ex> de Moreuill<ex>a</ex> consabulario . W<ex>ellmo</ex> filio Alani dapifero . D<ex>aui</ex>d . olifard . Dolfino capell<ex>ano</ex> . Ioh<ex>ann</ex>e filio<lb/> Ormin . uicecomite de Rokesburgo .</seg> <seg type="diplomatic" subtype="dating">apvd Rokesburgvm .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

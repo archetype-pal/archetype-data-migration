@@ -1,0 +1,50 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 5953</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.858958+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5953</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all Christ's faithful who shall view or hear these letters, <seg type="diplomatic" subtype="intitulatio">Bertram, son of Adam son of Cospatric of Little Reston</seg>, <seg type="diplomatic" subtype="salutation">sends Greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know me, all of you,</seg> <seg type="diplomatic" subtype="disposition">moved by charity and for the salvation of my own soul, and of my wife
+                  Margaret's, and for the salvation of my father and my mother,
+                  and of Robert my son, and my predecessors and successors, to
+                  have given, granted, and to have made firm by this present
+                  charter, to God and to Saint Mary, and for the improvement of
+                  the church of Coldingham, in pure and perpetual alms, nine
+                  acres of land in the territory of Little Reston, that is,
+                  four acres in <ex>Blackechet'</ex> near <ex>Farnebed</ex>, and five acres in <ex>Goselauflat</ex>, <seg type="diplomatic" subtype="holding">to be held and had of me and my heirs in pure and everlasting alms for ever,
+                     with common pasture and all liberties and easements
+                     pertaining to so much land inside and outside the toun.
+                     Wherefore I will and grant that the aforesaid church
+                     should have and possess the aforementioned nine acres of
+                     land for ever, free, quit, and released from all works,
+                     secular services, aids, exactions and demands.</seg> <seg type="diplomatic" subtype="warrandice">And I and my heirs shall warrant the aforementioned nine acres of land to the
+                     oft-mentioned church against all men and women.</seg></seg> <seg type="diplomatic" subtype="sealing">And so that my donation should ever remain valid and undisputed, I have applied
+                  my seal to this writing.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: the lord A<ex>nketin</ex>, then prior of Coldingham; the lord William of Mordington; the lord Alan of
+                     Swinton; Alan his son; Adam of Prenderguest; William of
+                     Scremerston; William, vicar of Oldcambus; John son of
+                     Elias; Adam, then marischal; Robert, son of Gregory the
+                     Steward; and many others. </seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

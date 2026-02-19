@@ -1,0 +1,48 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of BL Cotton Ch. xviii.25</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:28:30.357351+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.25</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">William de Morville, constable of Scotland</seg>, to all his own friends and worthy men, present and future, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know</seg> <seg type="diplomatic" subtype="disposition">me to have given, conceded, and by this my present charter to have made firm, to
+                  James of Loudon the land of Loudon, by these boundaries, that
+                  is to say, from Polbaith to the boundaries of Strathaven, and
+                  from the water which is called Irvine as far as the
+                  boundaries of Eaglesham. <seg type="diplomatic" subtype="holding">For him and his heirs to hold outside the forest, and quit of forest, of me and
+                     my heirs in feu and heritage, in wood and plain, in
+                     meadows and pastures, in roads and paths, in monastery and
+                     mills, and in all other things rightfully pertaining to
+                     the aforesaid land, freely, quitly, fully, wholly, and
+                     honourably by the service of one knight</seg>.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Christina my spouse; Godfrey de Ros; Robert son of
+                  Warnebald; Stephen son of Richard; William Mansell; Alan of
+                  Thirlestane; Peter de la Haig; Henry de Sinclair; Ivo de
+                  Vieuxpont; Duncan son of Earl Duncan; Richard fitz Gilbert;
+                  Arthur of Ardrossan; Robert of Logan; Reginald de Ros; James
+                  his brother; Richard de Morville; Richard de Néhou; Elias son
+                  of Hugh; Alan de Sinclair; Thomas English; William son of
+                  John; Herbert, and William his brother; Richard of Whitton;
+                  John the clerk.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

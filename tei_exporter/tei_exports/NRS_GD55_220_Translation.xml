@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/220</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 07:54:23.087785+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/220</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all that shall see or hear this text, <seg type="diplomatic" subtype="intitulatio">Philip of Pitcox</seg> <seg type="diplomatic" subtype="salutation">sends greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let your whole community know that</seg> because I could not extend the ten acres of land in Bielside which I have given
+                     to the monks of Melrose, and Philip my son has confirmed
+                     to the same, in length near their own land of Edmunistoun
+                     from Biel as far as Drituede, a certain agreement made at
+                     the time of the donation between me and Roger de Merlay
+                     being in the way: I and Philip my son for ourselves and
+                     our heirs have made with faith the vow, that if we have
+                     not been able do it after a period of ten years, we shall
+                     without any doubt cause the aforesaid ten acres of land,
+                     as it lies close to the land of Edmundistoun alongside the
+                     Drituede as fas as the Biel, to be extended to the monks.</seg> <seg type="diplomatic" subtype="sealing">And that this our present vow be firm and established, we have reinforced this
+                  text by the application of my seal and the seal of my son.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

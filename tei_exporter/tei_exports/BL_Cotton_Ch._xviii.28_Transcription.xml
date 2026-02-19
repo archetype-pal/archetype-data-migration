@@ -1,0 +1,56 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of BL Cotton Ch. xviii.28</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:52:47.822432+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.28</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="notification">Sciant vniuersi Sancte Matris Ecclesie filii</seg> <supplied>tam presentes quam futuri . Quod cum lis mota fuisset . et diutius</supplied> <seg type="diplomatic" subtype="narration">ventilata <supplied>in capi</supplied>tulo Or<supplied>ienta</supplied>li Laudonie inter<lb/> dominum . <persName>I .</persName> Priorem et conuentum Sancti A<supplied>ndree</supplied> <supplied>ex una parte . et Magistrum et Moniales de Ha</supplied>digton<ex>a</ex> ex alter<supplied>a</supplied> <supplied>super</supplied> diuersis <supplied>decimis</supplied> Maioribus et<lb/> Minoribus hinc Inde petitis : Scilicet quod cum de<supplied>cime carrucate ter</supplied>re i<supplied>n terr</supplied>itorio Helfstanford que quondam <supplied>spectabat a</supplied>d territorium<lb/> de drem . Et decime duarum bouatarum terr<supplied>e contentarum in ueteri ga</supplied>rdino de Stefniston<ex>a</ex> . Et decime illius terre que iace<supplied>t in</supplied>ter vetus gardinum .<lb/> et villam de hadigton<ex>a</ex> . et decime dimidie <supplied>illius ter</supplied>re iuxta molendinum de Stefiniston<ex>a</ex> . et decime Croftorum quorundam burgensium de<lb/> hadigton<ex>a</ex> . quas tunc temporis Magister et Moniales tenebant ex parte prioris et Conuentus
+                     de Sancto Andrea prefatis Monialibus peterentur <lb/> et ex parte Magistri et Monialium de Hadigton<ex>a</ex> Minute decime de biris . et Cotariorum de biris et de Bernis a predictis
+                     Canonicis exigerentur<lb/> in iure . ac lite Super prefatis petitionibus hinc Inde legitime contestata . Et
+                     testibus ex vtraque parte productis et examinatis et
+                     attesta<lb/>tionibus publicatis et inspectis . atque allegationibus vtriusque partis auditis
+                     et intellectis . et inspectis instrumentis eorundem : Cum
+                     nichil resta<lb/>bat nisi sentencia ferenda . Tandem post multorum labores et vexationes
+                     indebitas  partes per procuratores legittime constitutos
+                     ad com<lb/>ponendum et transigendum Die Sabbati post ad vincula Sancti Petri in Ecclesia de
+                     Lauheder . Anno gracie Millesimo ducentesimo quadragesimo
+                     quinto Coram Magistro <persName>Andrea</persName><lb/> de Aberden Officiali domini Episcopi Sancti Andr<ex>ee</ex> comparuerunt presentibus viris discretis . Domino . <persName>I .</persName> abbate de Driburc . et Magistris <persName>Will<ex>elm</ex>o</persName> de gren<lb/>lau . et <persName>Adam</persName> de Malkaruiston<ex>a</ex> . et <persName>Henrico</persName> de holtal et aliis probis hominibus Clericis et laicis Religionis et Secularibus
+                     partes suas ad pa<lb/>cis reformationem interponentibus lis inter partes mota ac diucius agitata in
+                     hac forma amicabiliter conquieuit . videlicet quod <persName>Petrus</persName><lb/> Canonicus procurator Canonicorum Sancti Andr<ex>ee</ex> remisit et quietas clamauit nomine dictorum prioris et Conuentur Sancti Andr<ex>ee</ex> predictis Monialibus de<lb/> hadigton<ex>a</ex> . omnes decimas superius nominatas ita quod dicte Moniales prefatas decimas
+                     decetero percipiant in perpetuum et pacifice<lb/> possideant . et in vsus proprios sine aliqua contradictione conuertant . Pro qua
+                     remissione et quieta Clamatione prefati Magister et Monia<lb/>les dederunt sepedictis Canonicis de Sancto Andr<ex>ee</ex> redditum . viginti . solidorum . in decimis de faueside in parrochia de karel .
+                     Et quia<lb/> omnes prefate decime garbarum de faueside estimate fuerunt per visum proborum et
+                     fidelium hominum ex vtraque parte electorum<lb/> et iuratorum quod plus valebant in septemdecim Solidos quam Redditus viginti
+                     solidorum prefatis Canonicis assignatus . Et de communi
+                     con<lb/>sensu et assensu vtriusque partis prouisum fuit quod prenominati Canonici
+                     persoluant prenominatis Monialibus Septemdecim solidos<lb/> annuatim ad Pascha . pro residuo dictarum Decimarum . Et ita prefati Canonici
+                     omnes Decimas garbarum de faueside in perpetuum<lb/> possidebunt . et in vusus proprios Licite conuertent . Et vt ista pacis
+                     Reformatio . et gratuita compositio Robur perpetue
+                     firmitatis<lb/> optineat . et ne per maliciam et Calliditates Malignancium Lis ita amicabiliter
+                     Sopita iterum valeat suscitari  vtraque pars<lb/> tam Canonicorum quam Monialium Subiecit se iurisdicioni Episcopi Sancti Andr<ex>ee</ex> qui pro tempore fuerit sic Quod possit vna sola<lb/> ammonitione premissa partem retinentem vel nolentem istam compositionem
+                     obseruare . vt fideliter ipsam perpetuo obseruet<lb/> per Censuram ecclesiasticam Compellere</seg> . <seg type="diplomatic" subtype="sealing">Et insuper ad Maiorem securitatem . et vt omnis ambiguitas tollatur parti
+                  Scripture<lb/> in Modum Cyrographi confecte . et remanenti penes Canonicos de Sancto Andr<ex>ea</ex> Sigillum Monialium de Hadigton<ex>a</ex> vna Cum<lb/> sigillo domini <persName>D<ex>aui</ex>d</persName> . dei gr<ex>ati</ex>a Episcopi Sancti Andr<ex>ee</ex> . Et Magistri <persName>Andr<ex>ee</ex></persName> Officialis dicti Epicopi sunt apposita . Et parti remanenti penes monia<lb/>les Sigillum Capituli Sancti Andr<ex>ee</ex> . et dicti Episcopi . et Officialis sunt appensa .</seg> <seg type="diplomatic" subtype="witnesses">Teste toto Capitulo Laudonie . Coram quo lec<lb/>ta fuit hec Compositio . et a partibus approbata</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,45 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 5947</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.912263+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5947</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Christi fidelibus ad quos presens scriptum peruenerit  <seg type="diplomatic" subtype="intitulatio">Robertus filius Reginaldi de Magna Ristona</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg></seg> . <seg type="diplomatic" subtype="notification">Nouerit vniuersitas<lb/> uestra</seg> <seg type="diplomatic" subtype="disposition">me dedisse . concessisse . et hac presenti carta mea confirmasse deo et sancto
+                  Chudhberto et sancte Ebbe et monachis Dunelmen<lb/>sibus apud Coldingham deo seruientibus . et in perpetuum ibidem seruituris in
+                     puram et perpetuam Elemosinam pro salute anime mee<lb/> et antecessorum et successorum meorum triginta acras et dimidiam in territorio
+                     ville Magne Ristone . Scilicet In tofto et crofto vnam
+                     acram<lb/> et dimidiam ex orientali parte tofti mei . In Held’ quinque acras . et tres
+                     rodas . Inter nemora unam acram et dimidiam . In Gorbald
+                     acram<lb/> vnam . In Coleleche et Bilie haluch unam acram . In Hopeland et Smethemedwe unam
+                     acram . In Brere unam acram .<lb/> In Wyterleche duas acras . Subtus Bilielawe unam rodam . In superiori parte de
+                     Laytolf quatuor acras . Ex occidentali parte<lb/> e Wythenehep vndecim acras et dimidiam . Cum communi pastura et communibus
+                     aysiamentis dicte uille de Ristona . <seg type="diplomatic" subtype="holding">Quare<lb/> volo quod dicti prior et monachi dunelmenses dictas terras habeant et teneant in
+                        perpetuum Ita Libere . quiete . plenarie et hono<lb/>rifice sicut aliqua Elemosina in regno Scotie . Liberius . quiecius . plenarius
+                        . et honorificencius . tenetur . uel possidetur .</seg><lb/> <seg type="diplomatic" subtype="warrandice">Ego autem et heredes mei warantizabimus dictis priori et monachis dictas terras
+                     In perpetuum contra omnes homines</seg> .</seg> <seg type="diplomatic" subtype="sealing">Et in huius rei testi<lb/>monium  huic scripto sigillum meum apposui .</seg> <seg type="diplomatic" subtype="witnesses">Hiis Testibus Domino Will<ex>elm</ex>o de Morthintona . Domino Alano de Swintona . Domino Ada de<lb/> Prendergest . Waltero . Andrea . Alex<ex>andro</ex> . de Paxtona . Will<ex>elm</ex>o vicario de Aldekambus . Roberto filio Gregorii . Adam de Parua Ristona .<lb/> Bertramo filio eius . Iohanne filio Elye de Superiori Aytona . Mauricio filio
+                     Merlini . Radulfo preposito de Coldingham . et multis
+                     aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

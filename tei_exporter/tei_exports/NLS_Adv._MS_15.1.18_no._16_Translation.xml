@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NLS Adv. MS 15.1.18, no. 16</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-09-14 01:16:58.08343+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 16</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church who shall view or hear the present document, <persName>David</persName> and <persName>Albin</persName>, bishops by the grace of God, of St Andrews and of Brechin, and Master <persName>Abel</persName>, chaplain of the lord Pope and archdeacon of St Andrews, <seg type="diplomatic" subtype="salutation">wish eternal salvation in the Lord</seg>.</seg> <seg type="diplomatic" subtype="notification">We have inspected the mandate of the bishops of the kingdom of Scotland in these
+                  words:</seg> <seg type="diplomatic" subtype="narration">To their most excellent lord, A<ex>lexander</ex>, by the grace of God illustrious king of Scot<ex>s</ex>, David, William, Peter, Clement, Albin, Robert, William, servants of the
+                     churches of St Andrews, <span data-dpt="place" data-dpt-cat="chars" data-dpt-type="name">Glasgow</span>, Aberdeen, Dunblane, Brechin, Ross, Caithness, wish health and ever faithful
+                     and devoted allegience. Although those things that had
+                     been appointed during the last council celebrated at
+                     Edinburgh, where you and to your magnates were present,
+                     have hardly been put in writing, we nevertheless do not
+                     believe that they have been forgotten by your counsellors,
+                     namely, that the churches and their prelates might rejoice
+                     in the peaceful possession of all rights and liberties
+                     which they had during the time of King Alexander your
+                     father of happy memory, saving your right and your
+                     possession in all things. Yet now a certain new thing
+                     previously unheard of in the kingdom of Scotland has been
+                     introduced by your counsellors, namely that ecclesiastical
+                     persons may be deprived by laymen of their ecclesiastical
+                     possessions granted in alms without a judicial inquiry of
+                     their prelates taking place, as lately we heard from the
+                     prior of St Andrews to have happened. Since, however,
+                     these things and things like them, against God, and
+                     ecclesiastical liberty ... ought not to pass by
+                     unregarded, we humbly and devotedly entreat your
+                     Excellency, that what among the goods of the said prior
+                     has been irreverently and inconsiderately appropriated,
+                     having first considered our appeals, you would please in
+                     no way permit similar things to be done in future.
+                     Otherwise we shall expose ourselves instead to however
+                     many dangers, a more inestimable injury to the church than
+                     we would wish to sustain in the future. May your
+                     Excellency ever have strength in the Lord. In testimony of
+                     this matter we have caused our seal to be affixed to the
+                     present document.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

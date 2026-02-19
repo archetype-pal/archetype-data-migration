@@ -1,0 +1,39 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 5945</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.954653+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5945</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Omnibus Christi fidelibus ad quos presens scriptum peruenerit  <seg type="diplomatic" subtype="intitulatio">Robertus filius Reginaldi</seg> <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="notification">Nouerit vniuersitas uestra</seg><lb/> <seg type="diplomatic" subtype="disposition">me diuine pietatis intuitu et pro anima patris mei et omnium antecessorum meorum
+                  . et pro salute anime mee et preci<lb/>pue pro anima Nicholay filii Ade cuius mors michi imponebatur  dedise .
+                     concessisse . et hac carta mea confirmasse . In<lb/> puram . liberam . et pereptuam elemosinam . deo et sancte Marie et priori et
+                     monachis de Coldingham ibidem deo ser<lb/>uientibus et in perpetuum seruituris . tresdecim acras et unam Rodam in
+                     territorio Magne Ristone in tribus locis .<lb/> scilicet in Bilyeside et Sonƿiwesacre et in Holewaye . <seg type="diplomatic" subtype="holding">habendas et tenendas in perpetuam adeo libere . quiete .<lb/> plenarie . et honorifice sicut aliqua elemosina in regno Scotie . liberius .
+                        quietius . plenarius et honorificentius<lb/> tenetur uel possidetur .</seg> <seg type="diplomatic" subtype="warrandice">Ego autem Robertus et heredes mei dictas tresdecim acras et vnam rodam dictis
+                     priori et mo<lb/>nachis contra omnes homines et feminas warantizabimus . Et in omnibus seruiciis
+                        et auxiliis tam uersus dominum<lb/> regem quam domum de Coldingham defendemus et acquietabimus .</seg></seg> <seg type="diplomatic" subtype="witnesses">Hiis testibus . Domino Willelmo de Lindeseia . Domino<lb/> Willelmo de Morthint<ex>ona</ex> . Domino Alano de Swintona . Domino Ada de Prendergest . Roberto . Alex<ex>andro</ex> . Will<ex>elmo</ex> de Paxt<ex>ona</ex> . Will<ex>elmo</ex><lb/> clerico domini prioris . Iohanne filio Elye de Aytona . Mauricio de Aytona .
+                     Bertramo de Restona . Roberto filio Gregor<ex>ii</ex><lb/> Radulfo preposito . Rogero filio eius . Et multis aliis .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

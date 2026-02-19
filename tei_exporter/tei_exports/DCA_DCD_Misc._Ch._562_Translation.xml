@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 562</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 12:40:59.685584+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 562</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">A<ex>lexander</ex> by the grace of God king of the Scots</seg> to A<ex>lgar</ex> the prior and all the community of Saint Cuthbert <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="notification">Know that</seg> <seg type="diplomatic" subtype="disposition">I donate and concede for my part to God and Saint Cuthbert and to you his monks
+                  Swinton, entire, free and quit, <seg type="diplomatic" subtype="holding">to be held and entirely had just as my brother King Edgar bears witness for you</seg>.</seg> <seg type="diplomatic" subtype="injunction">In addition I instruct and forbid that any of you by any means plead or respond
+                  to any man concerning the same Swinton unless I myself shall
+                  have given instruction in person or by my letters, since I
+                  and my brother David shall acquiet the alms of our brother,
+                  and our own likewise, to the aforesaid saint and to you
+                  monks.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

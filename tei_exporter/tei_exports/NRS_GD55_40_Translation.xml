@@ -1,0 +1,52 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/40</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 11:35:09.155114+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/40</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div><p>C Y R O G R A P H <lb/></p> <p><seg type="diplomatic" subtype="notification">Let present as well as future know that</seg> <seg type="diplomatic" subtype="narration">Robert Avenel and Gervase his heir, for the salvation of their souls, and their
+                  ancestors' and successors', quitclaimed for ever the four
+                  merks which the monks of Melrose at one time were accustomed
+                  to render to them annually in ferme in return for the land of
+                  Eskdale, to make four pittances to the convent of the same
+                  place every year.</seg> <seg type="diplomatic" subtype="notification">It is also to be known that</seg> <seg type="diplomatic" subtype="narration">the abbot and the whole aforesaid convent have faithfully conceded to the same
+                  Robert and Gervase his heir and to all their heirs that these
+                  aforesaid pittances shall be given to the same convent four
+                  times every year, on these days: that is, on the day that the
+                  lord Robert himself, giving up the secular life, wholly gave
+                  himself up to that haouse; and again on the day in which the
+                  same lord Robert himself died; and again on the Friday before
+                  the Nativity of the Lord [Christmas Day], in commemoration of
+                  the soul of the lady Sibyl, wife of the same lord Robert; the
+                  fourth day, then, is the day of the death of Gervase; as long
+                  as Gervase survived, indeed, he was in his right mind; he
+                  willed the same pittance to be given to the convent on this
+                  day.</seg> <seg type="diplomatic" subtype="notification">And it is to be known that</seg> <seg type="diplomatic" subtype="narration">on these aforenamed days, in the chapterhouse of the same house, commemoration
+                  and absolution of their souls shall be made in perpetuity.</seg> <seg type="diplomatic" subtype="witnesses">These are the witnesses, Jocelin the bishop of Glasgow, Simon the bishop of
+                  Dunblane, Osbert the abbot of Kelso, Archibald the abbot of
+                  Dunfermline, Richard the abbot of Jedburgh, Earl David the
+                  brother of the king of Scotland, Simon the archdeacon of
+                  Glasgow, Glay the nephew of the lord Robert Avenel, Robert
+                  the clerk, son of Robert, Master Roger of Newport.</seg></p></div>
+    </body>
+  </text>
+</TEI>

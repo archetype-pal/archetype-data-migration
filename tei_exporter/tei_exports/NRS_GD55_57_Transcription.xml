@@ -1,0 +1,45 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/57</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 07:59:04.59717+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/57</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">W. d<ex>e</ex>i gr<ex>aci</ex>a Rex Scott’ .</seg> Omnibus probis hominibus Tocius terre sue clericis et laicis <seg type="diplomatic" subtype="salutation">Salutem</seg> .</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Sciant presentes et futuri</seg> me concessisse et Hac Carta mea<lb/> confirmasse deo et ecclesie Sancte Marie . de Melros . et monachis ibidem deo
+                     seruientibus donacionem illam quam auus et pater . Comitis
+                     patric<ex>ii</ex> .<lb/> et Comes Patricius eis fecerint . de hertesheued . et de Spot . per rectas
+                     diuisas predictarum terrarum . inter predictos monachos et
+                     steintun . quas habue<lb/>runt temporibus aui et patris predicti comitis . Patr<ex>icii</ex> . et que nominantur in confirmacionem prefati Comitis . patric<ex>ii</ex> . in Boscho . et plano . in pratis . et pascuis . et omnibus aliis ad predictas
+                     terras iuste pertinentibus . et preterea cum communi
+                     pastura de Mora . ad tres greges arietum . ita ut
+                     unusquisque<lb/> Grex contineat . Quingentos arietes . cum aisiamentis eiusdem more . Preterea .
+                     concedo et hac Carta mea confirmo . prefatis monachis<lb/> illas Quinque acras terre . quas prefatus Comes . Patricius . eis dedit in
+                     incrementum in australi parte de Mosiburnerig . ut
+                     includant eas fossato<lb/> ad faciendum Berkariam ad prefatos tres greges . arietum . et illis Quinque
+                     acris terre utentur sicut melius eis uisum fuerit . ita
+                     tamen ut<lb/> eas non colant . Et preterea . quicquid iuris prefatus comes . patricius . uel
+                     heredes sui uel homines sui habebant uel habere poterant
+                     de communi<lb/> in prato illo quod prefati Monachi tenent . de Militibus Alan<ex>i</ex> . filio Walteri in feudo de Inuerwic’ . subtus Brunrig . que prefatus . co<lb/>mes Patric<ex>ius</ex> . prefatis monachis concessit . et carta sua confirmauit . <seg type="diplomatic" subtype="holding">Tenend’ . in liberam et puram et perpetuam elemosinam ita li<lb/>bere . et Quiete . plenarie et honorifice . sicut Carta prefati Comitis . Patr<ex>icii</ex> . Testatur . Saluo seruicio meo .</seg></seg> <seg type="diplomatic" subtype="witnesses">Test’ . Hug’.<lb/> Cancellario . meo . Will<ex>elm</ex>o . de Moruill’ . const<ex>abulario</ex> . philipp<ex>o</ex> . de valon’ . <persName><roleName>Cam<ex>erario</ex></roleName></persName> . Will<ex>elmo</ex> . Cumin . Ioh<ex>anne</ex> . de hasting’ . Ric<ex>ardo</ex> . <persName><roleName>Marescall<ex>o</ex> .</roleName></persName><lb/> Rob<ex>erto</ex> de Burneuill’ . d<ex>aui</ex>d de Haia . Rob’ . de Moruill’ .</seg> Apud . Berewic’ . xvi . die April .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

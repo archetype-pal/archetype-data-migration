@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD45/13/228</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 14:37:23.188203+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/228</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">Turstanus filius leuig . vniuersis sancte matris ecclesie filiis  Salutem;</seg> <seg type="diplomatic" subtype="disposition">Notum sit uobis me concessisse ⁊ hac mea carta confirmasse deo ⁊ ecclesie<lb/> sancte crucis de castello puellarum ⁊ canonicis ibidem deo seruientibus
+                     ecclesiam de leuiggestun cum dimidia carucata terre ⁊ uno
+                     tofto<lb/> ⁊ cum omnibus rectitudinibus ⁊ pertinentiis suis<lb/> sicut pater meus eis dedit . in liberam elemosinam ⁊ perpetuam . Volo igitur ut
+                     predicti canonici pre<lb/>nominatam ecclesiam ita libere ⁊ quiete possideant  sicut aliqua ecclesia in
+                     tota laudonia liberius ⁊ quietius possidetur.</seg> <seg type="diplomatic" subtype="witnesses">His testibus . Gaufrido<lb/> abbate de dunferm’ . Aufrido de neob’ . Waltero monacho illius . Gaufrido de
+                     lessew’ . Petro capellano de louw’ . Waltero capellano
+                     comitis . Simundo de Ra<lb/>mesie . Rogero diacono . Dauide filio Gaufridi . Martino clerico . Waltero
+                     camerario regis de Rokesb’ . Will<ex>el</ex>mo de Aldri .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

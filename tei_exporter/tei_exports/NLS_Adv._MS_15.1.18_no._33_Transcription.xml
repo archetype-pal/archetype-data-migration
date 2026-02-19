@@ -1,0 +1,49 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NLS Adv. MS 15.1.18, no. 33</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:00.473884+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 33</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">. <seg type="diplomatic" subtype="intitulatio">P . ⁊ W. abbates de Dunfermelin ⁊ de lundores . ⁊ h . prior de pethneweme</seg>  Omnibus ad quorum noticiam ⁊ intellectum tenor presentis scripti peruenerit  <seg type="diplomatic" subtype="salutation">salutem in domino</seg> .</seg> <lb/> <seg type="diplomatic" subtype="notification">Nouerit fraternitas uestra</seg> <seg type="diplomatic" subtype="narration">[nos] mandato domini pape Innocentii suscepto nobis iniunctum fuisse  ut
+                  questionem quam Ranulfus archidiaconus de sancto andrea
+                  proponebat aduersus hugonem <lb/> seneschaldum ⁊ Jordanum nepotem ipsius super terris ex occidentalis parte noui
+                     operis existentibus uersus domos lamburc quas asserebat ad
+                     archidiaconatum suum specta<lb/>re  conuocatis partibus ⁊ auditis vel iudicio decideremus  vel compositione
+                     interueniente liti finem imponeremus . Conuocatis igitur
+                     aliquociens partibus tandem mediante <lb/> domino episcopo sancti andree Will<ex>elm</ex>o . ⁊ partes suas interponente nobis etiam auctoritatem prestantibus ⁊ operam ⁊
+                     diligentiam adhibentibus  compositum est inter partes ita
+                     quod <lb/> hugo seneschaldus ⁊ Jordanus nepos eius resignauerunt ⁊ quietas in posterum
+                     clamauerunt terras illas cum edificiis in eis ab ipsis
+                     constructis . R . archidiacono ⁊ succes<lb/>soribus eius . Ipse uero . R . archidiaconus pro resignatione facienda ⁊ pro
+                     bono pacis dedit hugoni seneschaldo . xv . marcas . ⁊
+                     Jordano . x . marcas ⁊ quatuor perticatas <lb/> terre quas a . T . priore ⁊ eius conuentu acceperat proximas domui symonis
+                     clerici ex parte orientali tenendas de se ⁊ successoribus
+                     suis sibi ⁊ heredibus suis soluendo <lb/> annuatim unam libram cimini</seg> . <seg type="diplomatic" subtype="sealing">⁊ ut hec compositio rata consistat ⁊ imperpetuum inconcussa permaneat
+                  inuiolabiliter obseruanda  tam sigilli domini episcopi quam
+                  nostrorum <lb/> appositione est corroborata ⁊ confirmata</seg> . <seg type="diplomatic" subtype="witnesses">His testibus . Domino . T . priore ⁊ eius conuentu . Andrea de morauia .
+                  Magistro Adam . Magistro Steph<ex>an</ex>o . Magistro ysaac . <lb/> Magistro Symone . Will<ex>elm</ex>o de karel decano . Will<ex>elm</ex>o capellano de Brechhin . Will<ex>elm</ex>o de deruesin . Petro ⁊ Eadwardo capellanis domini episcopi . Joh<ex>ann</ex>e de hautuisel . <lb/> Will<ex>elm</ex>o de Colin . Joh<ex>anne</ex> de londiniis . Radulfo nigro . Joh<ex>ann</ex>e maraschaldo . Symone de nuisi . Eutropio dispensatore . Petro ⁊ hugone de
+                     nidin ⁊ Rob<ex>er</ex>to <lb/> de kalledouer pueris domini episcopi . Will<ex>elm</ex>o lambin . Gileb<ex>er</ex>to Britone . Symone clerico</seg> .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

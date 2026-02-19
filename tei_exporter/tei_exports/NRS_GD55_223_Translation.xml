@@ -1,0 +1,43 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NRS GD55/223</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-08-10 15:10:12.057623+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/223</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p>To all Christ's faithful who shall see or hear the present text, Alexander of
+               Seton, knight, son of Sir Saer of Seton, greeting in the Lord.
+               Let your whole community know [that I] have given, granted, and
+               by this my present charter made firm, to God and to the church
+               of St Mary at Melrose and the monks in that place serving God
+               now and in the future, for ever [for the souls] of all my
+               ancestors and successors, and for my own salvation and my
+               wife's, and my heirs', the whole land that I had in the
+               territory of Ruchlaw near the water of . . . from either side of
+               the same water, by these boundaries: beginning at the Biel ford
+               abover the upper millpond at 'Edmunistoun', and from there going
+               up as far as 'Graycragge', and from 'Graycragge' eastwards, by
+               the foot of the </p>
+      </div>
+    </body>
+  </text>
+</TEI>

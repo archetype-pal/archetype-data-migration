@@ -1,0 +1,46 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NLS Adv. MS 15.1.18, no. 71</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-01 18:52:48.838147+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 71</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">Ric<ex>ardus</ex> . dei gr<ex>ati</ex>a ecclesie sancti Andree humilis minister</seg> . uniuersis sancte matris ecclesię filiis clericis ⁊ laicis . <seg type="diplomatic" subtype="salutation">salutem</seg></seg> . <seg type="diplomatic" subtype="arenga">Quoniam ad officium nostrum nouimus spectare in ęcclesia dei edi<lb/>ficare . &amp; que edificata sunt in melius emendare . dignumduximus . ea que in
+                     ecclesia Dunfermelinensi confirmanda erant . sub pacis
+                     nostre tranquillitate suscipere <lb/> &amp; carta nostra confirmare</seg> . <seg type="diplomatic" subtype="disposition">Dominica igitur moniti &amp; freti auctoritate <seg type="diplomatic" subtype="notification">tam absentibus quam presentibus notificamus</seg> nos concessisse ⁊ carta nostra confirmasse ut prefata <lb/> ęcclesia ęcclesias &amp; earum possessiones ⁊ omnia ecclesiastica beneficia que
+                     eidem largitione regum pontificum ⁊ aliorum fidelium in
+                     elemosinam largita fuerint  ita <lb/> libere ⁊ honorifice ⁊ quiete ab omni seruitio &amp; exactione possideat . sicuti
+                     aliqua ęcclesia melius ⁊ honorificentius ⁊ liberius ⁊
+                     quietius possessiones suas in toto episcopatu <lb/> nostro tenet &amp; possidet . uidelicet ęcclesiam de pert . ⁊ scolam eiusdem uillę .
+                     ⁊ capellam de castello . ⁊ ecclesiam sancti leonardi . ⁊
+                     ecclesiam de uilla Glinen . ⁊ ecclesiam <lb/> de Striuelin . ⁊ scolam eiusdem uillę . ⁊ capellam de castello ⁊ cetera que
+                     iuste ad eas pertinent . ⁊ ecclesiam de kellin . ⁊
+                     ecclesiam de Abercrumbi . ⁊ ecclesiam de Nithbren <lb/> ⁊ ecclesiam de kilglessin . ⁊ capellam de inuerchethin . ⁊ ecclesiam de
+                     inueresck . ⁊ capellam de covslande . ⁊ decimas de keth .
+                     ⁊ ecclesiam de Wimet . ⁊ ecclesiam <lb/> de hala cum omnibus apendiciis suis . ⁊ ecclesiam de Neutune . ⁊ ecclesiam de
+                     Wehtercaledoure . saluo iure episcopali . ⁊ consuetudine .</seg> <seg type="diplomatic" subtype="witnesses">Testibus his . G . episcopo de <lb/> Dunkelde . W . abbate . de sancta cruce . W . priore de sancto Andrea . M .
+                     archidiacono . A . archidiacono . laud’ . Aiulfo decano .
+                     Ioh<ex>anne</ex> nepote R<ex>oberti</ex> . episcopi . Rob<ex>erto</ex> . filio Sevl<ex>fi</ex> <lb/> magistro hereb<ex>erto</ex> . A . capellano . magistro Barthol<ex>omeo</ex> . magistro Turp<ex>in</ex> . magistro Abraa<ex>m</ex> . Symone capellano . archidiaconi .</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

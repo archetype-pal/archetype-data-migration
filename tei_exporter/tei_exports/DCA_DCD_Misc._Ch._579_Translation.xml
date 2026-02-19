@@ -1,0 +1,37 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of DCA DCD Misc. Ch. 579</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:12:05.605741+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 579</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address"><seg type="diplomatic" subtype="intitulatio">M<ex>alcolm</ex>, king of the Scots,</seg> to the prior of Coldingham, <seg type="diplomatic" subtype="salutation">greeting</seg>.</seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Know that</seg> I will and resolutely instruct that you fully have every liberty that I have
+                     confirmed to you by my charter, that is to say, that you
+                     have your wood and warren throughout your land and that in
+                     respect of your woods and your warren no one presume to
+                     intrude or to enter them unless by your permission, and if
+                     by chance anyone may have undertaken to violate this
+                     liberty, he shall do it on pain of my full forfeiture.</seg> <seg type="diplomatic" subtype="witnesses">As witnesses: Walter the chancellor, David Oliphant.</seg> <seg type="diplomatic" subtype="dating">At Maidens' Castle.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,42 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Translation of NLS Adv. MS 15.1.18, no. 22</title>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-06-07 10:55:21.323394+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <authority/>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 22</idno>
+          </msIdentifier>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div>
+        <p><seg type="diplomatic" subtype="address">To all sons of Holy Mother Church, <seg type="diplomatic" subtype="intitulatio">Richard by the grace of God bishop of St Andrew the apostle,</seg> <seg type="diplomatic" subtype="salutation">greeting and episcopal benediction:</seg></seg> <seg type="diplomatic" subtype="disposition"><seg type="diplomatic" subtype="notification">Let those to come as well as those present know</seg> that we have given and granted and by the present written document made firm, to
+                     God and to the church of blessed Andrew the apostle and to
+                     the canons serving God in that place now and in the
+                     future, the chapel of Inchture, with everything rightfully
+                     pertaining to the same chapel, in perpetual alms, for the
+                     welfare of my soul, and of my predecessors’ and
+                     successors’ souls, saving episcopal customs.</seg> <seg type="diplomatic" subtype="witnesses">With these witnesses: Gregory, bishop of Dunkeld; Matthew, archdeacon of St
+                  Andrews; Master Andrew, archdeacon of Lothian; Geoffrey,
+                  abbot of Dunfermline; Alured, abbot of Stirling; William,
+                  abbot of Holyrood; Master Herbert; Master Abraham; Alexander
+                  the chaplain; Robert, son of Seulf of Perth; Stephen the
+                  clerk; Odo, brother of Archdeacon Matthew.</seg></p>
+      </div>
+    </body>
+  </text>
+</TEI>
