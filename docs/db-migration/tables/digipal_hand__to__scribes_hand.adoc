@@ -1,0 +1,197 @@
+= public.digipal_hand (old) → public.scribes_hand (new)
+
+== Summary
+* Rows: 696 → 696 (complete transfer; IDs preserved)
+* Major schema remodel (only 4 shared columns: `id`, `item_part_id`, `scribe_id`, `script_id`)
+* New required semantic fields introduced: `name`, `place`, `description`
+* New normalized date FK introduced: `date_id` → `common_date`
+* Critical transformation fully verified: old NULL `scribe_id` values were migrated to sentinel `-1` (valid FK in `scribes_scribe`)
+* `item_part_id`, `script_id`, and `date_id` (vs old `assigned_date_id`) are preserved exactly by row ID
+* In this dataset, `place` is a whitespace placeholder for all rows, and `description` is blank for most rows (691/696)
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.digipal_hand|696
+|new|public.scribes_hand|696
+|===
+
+== Direct row identity preservation
+|===
+|Check|Result
+|Missing IDs after migration|0
+|Conclusion|All hand entities were preserved by ID
+|===
+
+== Column model comparison
+
+=== Common columns
+|===
+|Column|Old|New|Notes
+|id|int4 NOT NULL|int8 NOT NULL|type widened
+|item_part_id|int4 NOT NULL|int8 NOT NULL|FK retargeted to `manuscripts_itempart`
+|scribe_id|int4 NULLABLE|int8 NOT NULL|NULLs transformed to sentinel `-1`
+|script_id|int4 NULLABLE|int8 NULLABLE|FK retargeted to `scribes_script`
+|===
+
+=== New-only columns (new semantic representation)
+* `name` (varchar(100), NOT NULL)
+* `place` (varchar(100), NOT NULL)
+* `description` (text, NOT NULL)
+* `date_id` (FK to `common_date`, NULLABLE)
+
+=== Old-only columns (removed/relocated/re-modeled)
+Includes:
+
+* `assigned_date_id`, `assigned_place_id`
+* `display_label`, `label`, `display_note`, `internal_note`, `comments`
+* `em_title`, `locus`, `selected_locus`, `surrogates`
+* `appearance_id`, `latin_style_id`, `stewart_record_id`, `glossed_text_id`
+* boolean flags and counters (`relevant`, `latin_only`, `gloss_only`, `scribble_only`, `imitative`, etc.)
+* audit/legacy fields (`created`, `modified`, `legacy_id`)
+
+== Constraints and indexes
+Old:
+
+* FKs to multiple Digipal tables, including:
+
+** `item_part_id` → `digipal_itempart`
+** `scribe_id` → `digipal_scribe`
+** `script_id` → `digipal_script`
+** `assigned_date_id` → `digipal_date`
+** `assigned_place_id` → `digipal_place`
+(and others)
+
+New:
+
+* FKs to simplified/new targets:
+
+** `item_part_id` → `manuscripts_itempart`
+** `scribe_id` → `scribes_scribe`
+** `script_id` → `scribes_script`
+** `date_id` → `common_date`
+
+== Data quality / blocker checks (generic same-column checks)
+|===
+|Check|Result
+|Old NULLs in common new NOT NULL column `id`|0
+|Old NULLs in common new NOT NULL column `item_part_id`|0
+|Old NULLs in common new NOT NULL column `scribe_id`|689 (handled by sentinel mapping)
+|Old values exceeding new varchar lengths (same-name columns)|None detected / not applicable
+|===
+
+== Semantic migration verification
+
+=== Shared FK/value preservation by row ID
+Verified by joining old/new rows on `id`.
+
+|===
+|Check|Result
+|Total rows compared|696
+|`item_part_id` exact matches|696
+|`item_part_id` changed|0
+|`script_id` exact matches (NULL-safe)|696
+|`script_id` changed|0
+|`date_id` matches old `assigned_date_id` numerically|696
+|`date_id` differs from old `assigned_date_id`|0
+|===
+
+Additional observations:
+
+* `script_id` is NULL for all 696 rows in new (therefore old `script_id` also NULL for all rows, given exact preservation).
+* `date_id` is NULL for all 696 rows in new (therefore old `assigned_date_id` also NULL for all rows, given exact preservation).
+
+=== `scribe_id` NULL-to-sentinel transformation (critical)
+Verified by joining old/new rows on `id`.
+
+|===
+|Check|Result
+|Total rows compared|696
+|Old `scribe_id` NULLs|689
+|Old `scribe_id` non-NULL rows|7
+|New `scribe_id` NULLs|0
+|Old NULL → New `-1`|689
+|Old NULL → other value|0
+|Old non-NULL preserved exactly|7
+|Old non-NULL changed|0
+|===
+
+Sentinel/FK validation:
+|===
+|Check|Result
+|Sentinel row exists in `scribes_scribe` (`id=-1`)|Yes
+|FK orphans in `scribes_hand.scribe_id`|0
+|===
+
+Conclusion:
+
+* Migration uses a valid sentinel record (`scribes_scribe.id = -1`) to satisfy the new NOT NULL `scribe_id` constraint.
+* This is an intentional schema-hardening transformation, not data loss.
+
+=== New required field population profile (`name`, `place`, `description`)
+|===
+|Field|Observation
+|`name`|0 blank-or-null; fully populated
+|`place`|696 blank-or-null (whitespace placeholder across all rows)
+|`description`|691 blank-or-null; 5 non-blank rows (HTML-rich content)
+|===
+
+=== `name` derivation (verified)
+Verified by joining old/new rows on `id` and comparing `new.name` to `old.label`.
+
+|===
+|Check|Result
+|Total rows compared|696
+|Rows where `new.name = old.label`|696
+|Rows where `new.name` differs from `old.label`|0
+|===
+
+Additional check (for old `display_label`):
+|===
+|Check|Result
+|Rows where `new.name = old.display_label`|0
+|Max old `display_label` length|0 (effectively empty strings)
+|===
+
+Sample comparisons consistently show:
+
+* `new.name = "Main Hand"`
+* `old.display_label = ''`
+* `old.label = "Main Hand"`
+
+Conclusion:
+
+* `new.name` is an exact semantic carry-over of `old.label`.
+* `old.display_label` did not contribute to `new.name` in this dataset.
+
+=== `description` derivation status
+Tested direct mappings from old hand text fields (`label`, `display_note`, `internal_note`, `comments`) do not explain the new `description` values.
+Observed outcome:
+
+* 691 rows have blank/placeholder `description`
+* 5 rows contain non-blank HTML-rich content
+* Non-blank values are not explained by simple direct equality/fallback rules against tested old `digipal_hand` fields
+
+Conclusion:
+
+* `description` appears to be mostly placeholder/default in this dataset, with a small number of curated or separately transformed values.
+* The source of those 5 non-blank descriptions is not evidenced by same-row `digipal_hand` text columns alone.
+
+=== `place` field behavior
+Observed outcome:
+
+* `place` is NOT NULL in the new schema
+* all 696 rows contain blank/whitespace values
+
+Conclusion:
+
+* In this dataset, `place` is populated with a placeholder blank/whitespace string rather than migrated place names.
+
+== Conclusion
+This table migrated completely at the entity level (all IDs preserved) but underwent substantial schema redesign and controlled transformation.
+The key documented migration behaviors are:
+
+* exact carry-over of `item_part_id`, `script_id`, and `assigned_date_id` → `date_id`
+* strict NOT NULL enforcement for `scribe_id` via sentinel mapping (`NULL` → `-1`)
+* introduction of new required text fields with placeholder/default population (`place`, mostly `description`)
+* exact derivation of \name` from old `label` (696/696); old `display_label` unused for this mapping`
