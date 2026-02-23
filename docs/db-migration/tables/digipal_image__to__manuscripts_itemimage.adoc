@@ -1,4 +1,4 @@
-= public.digipal_image (old_arch) → public.manuscripts_itemimage (test_db)
+= public.digipal_image (old) → public.manuscripts_itemimage (new)
 
 == Summary
 * Rows: 3277 → 3277 (complete transfer; no missing IDs)
@@ -9,8 +9,8 @@
 == Counts
 |===
 |DB|Table|Rows
-|old_arch|public.digipal_image|3277
-|test_db|public.manuscripts_itemimage|3277
+|old|public.digipal_image|3277
+|new|public.manuscripts_itemimage|3277
 |===
 
 == Common columns
