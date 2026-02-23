@@ -1,0 +1,62 @@
+= public.digipal_cataloguenumber (old) → public.manuscripts_cataloguenumber (new)
+
+== Summary
+* Rows: 1414 → 1414 (complete transfer; IDs preserved)
+* Migration mapping: new `catalogue_id` = old `source_id` for all 1414 rows
+* `text_id` was NULL in all old rows and is not represented in the new table
+* Hardening: `historical_item_id` became NOT NULL (old had 0 NULLs, so no row loss)
+* Hardening: `number` length reduced 100 → 30 (no over-length values detected)
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.digipal_cataloguenumber|1414
+|new|public.manuscripts_cataloguenumber|1414
+|===
+
+== Column changes
+|===
+|Column|Old|New|Notes
+|id|int4 NOT NULL|int8 NOT NULL|type widened
+|historical_item_id|int4 NULLABLE|int8 NOT NULL|old NULLs = 0 (safe hardening)
+|number|varchar(100) NOT NULL|varchar(30) NOT NULL|no over-length values detected
+|url|varchar(200) NULLABLE|varchar(200) NULLABLE|unchanged
+|catalogue_id|—|int8 NOT NULL|NEW: FK to `manuscripts_bibliographicsource(id)`; values come from old `source_id`
+|created|timestamptz NOT NULL|—|dropped
+|modified|timestamptz NOT NULL|—|dropped
+|number_slug|varchar(100) NULLABLE|—|dropped (and related indexes dropped)
+|source_id|int4 NOT NULL|—|replaced by `catalogue_id`
+|text_id|int4 NULLABLE|—|dropped; all values NULL in old data
+|===
+
+== Constraints
+Old:
+
+* FK `historical_item_id` → `digipal_historicalitem(id)`
+* FK `source_id` → `digipal_source(id)`
+* FK `text_id` → `digipal_text(id)`
+* UNIQUE (`source_id`, `text_id`, `number`, `historical_item_id`)
+
+New:
+
+* FK `historical_item_id` → `manuscripts_historicalitem(id)`
+* FK `catalogue_id` → `manuscripts_bibliographicsource(id)`
+* No equivalent DB-level UNIQUE constraint observed in the schema diff
+
+== Migration mapping verification (`catalogue_id`)
+Verification queries showed:
+
+|===
+|Check|Result
+|Total rows in new|1414
+|Rows where `catalogue_id = old.source_id`|1414
+|Rows where `catalogue_id = old.text_id`|0
+|Old rows with `text_id IS NULL`|1414
+|Rows where `catalogue_id` matched neither `source_id` nor `text_id`|0
+|Sentinel `catalogue_id = -1` used?|No (0 rows)
+|===
+
+Conclusion:
+
+* `catalogue_id` is a direct carry-over of `source_id` from the old table.
+* `text_id` was not needed for migrated data in this table (all NULL in old rows).
