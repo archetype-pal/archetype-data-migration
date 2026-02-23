@@ -1,0 +1,47 @@
+= public.digipal_image (old_arch) → public.manuscripts_itemimage (test_db)
+
+== Summary
+* Rows: 3277 → 3277 (complete transfer; no missing IDs)
+* Key rule: old NULL item_part_id values were replaced with -1 to satisfy NOT NULL + FK constraints
+* FK integrity: enforced and validated
+* Schema: new table is a reduced model; many old columns were intentionally dropped
+
+== Counts
+|===
+|DB|Table|Rows
+|old_arch|public.digipal_image|3277
+|test_db|public.manuscripts_itemimage|3277
+|===
+
+== Common columns
+|===
+|Column|Old type|Old NULLs|New type|New NULLs|Notes
+|id|int4|0|int8|0|type widened
+|item_part_id|int4|1235 NULL|int8|0 NULL|old NULLs migrated as -1
+|image|varchar(100)|nullable|varchar(200)|NOT NULL|required in new schema
+|locus|varchar(64)|NOT NULL|varchar(72)|NOT NULL|length increased
+|===
+
+== Why 1235 rows had no item_part_id in old
+* Old had 1235 rows where digipal_image.item_part_id IS NULL.
+* New schema disallows NULL and enforces a validated FK to manuscripts_itempart(id).
+* Migration substituted item_part_id = -1 for all those rows.
+* manuscripts_itempart contains id = -1 (sentinel record), so FK remains valid.
+
+Verification:
+|===
+|Check|Result
+|new NULL item_part_id|0
+|new item_part_id = -1|1235
+|sentinel exists in manuscripts_itempart|yes (id = -1)
+|FK orphans|0
+|FK validated|true
+|old NULL → new mapping|all 1235 mapped to -1
+|===
+
+== Dropped columns (present in old only)
+Old columns removed from the new model include (non-exhaustive):
+annotation_status_id, caption, created, custom_label, display_label, folio_number, folio_side, height, iipimage,
+internal_notes, keywords_string, media_permission_id, modified, page_boundaries, quire, size, transcription, width.
+
+Reason: these fields have no destination columns in public.manuscripts_itemimage.
