@@ -1,0 +1,155 @@
+= public.digipal_date (old) → public.common_date (new)
+
+== Summary
+* Rows: 594 → 594 (complete transfer; IDs preserved)
+* 1:1 migration by `id` (no missing old IDs; no extra new IDs)
+* `date` is an exact carry-over (594/594)
+* `min_weight` and `max_weight` are NOT copied from old nullable fields; they are newly populated for all rows
+* Strong evidence indicates new `min_weight` / `max_weight` are normalized bounds derived from the textual `date` expression
+* Significant schema simplification: legacy metadata/flags/audit fields removed
+* `date` length reduced from varchar(128) to varchar(100) with no overflow/truncation blockers detected
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.digipal_date|594
+|new|public.common_date|594
+|===
+
+== Direct row identity preservation
+|===
+|Check|Result
+|Old IDs missing in new|0
+|New IDs not in old|0
+|Conclusion|Complete 1:1 migration by `id`
+|===
+
+== Column model comparison
+
+=== Common columns
+|===
+|Column|Old|New|Notes
+|id|int4 NOT NULL|int8 NOT NULL|type widened
+|date|varchar(128) NOT NULL|varchar(100) NOT NULL|exact text preserved; length reduced safely
+|min_weight|float8 NULLABLE|int4 NOT NULL|semantic redesign + hardening
+|max_weight|float8 NULLABLE|int4 NOT NULL|semantic redesign + hardening
+|===
+
+=== Old-only columns (removed in new model)
+* `legacy_id`
+* `sort_order`
+* `weight`
+* `band`
+* `additional_band`
+* `post_conquest`
+* `s_xi`
+* `created`
+* `modified`
+* `legacy_reference`
+* `evidence`
+
+=== New-only columns
+None (beyond remodeled shared fields).
+
+== Constraints and indexes
+Old:
+
+* Primary key on `id`
+
+New:
+
+* Primary key on `id`
+
+No foreign keys defined on either table (table-local FK list empty).
+
+== Data quality / blocker checks (generic same-column checks)
+|===
+|Check|Result
+|Old NULLs in common new NOT NULL column `id`|0
+|Old NULLs in common new NOT NULL column `date`|0
+|Old NULLs in common new NOT NULL column `min_weight`|594
+|Old NULLs in common new NOT NULL column `max_weight`|594
+|Old values exceeding new varchar length for `date` (100)|0
+|===
+
+Interpretation:
+
+* `min_weight` / `max_weight` required explicit migration logic, because old values were NULL for all rows while new fields are NOT NULL.
+
+== Semantic migration verification
+
+=== `date` exact carry-over
+Verified by joining old/new rows on `id`.
+
+|===
+|Check|Result
+|Total rows compared|594
+|Rows where `new.date = old.date`|594
+|Rows where `new.date` differs|0
+|===
+
+Conclusion:
+
+* `common_date.date` is an exact semantic carry-over of `digipal_date.date`.
+
+=== `min_weight` / `max_weight` transformation (not direct carry-over)
+Verified by joining old/new rows on `id`.
+
+|===
+|Check|Result
+|Total rows compared|594
+|Old `min_weight` NULLs|594
+|Old `max_weight` NULLs|594
+|New `min_weight` NULLs|0
+|New `max_weight` NULLs|0
+|Rows where new `min_weight` exactly equals old `min_weight` numerically|0
+|Rows where new `max_weight` exactly equals old `max_weight` numerically|0
+|===
+
+Conclusion:
+
+* New `min_weight` and `max_weight` were fully populated by migration/normalization logic.
+* They were not copied from old `digipal_date.min_weight` / `max_weight` (which are NULL for all rows).
+
+=== Evidence for derivation from textual date expressions (sample-based)
+Observed examples (from mismatch sample) show consistent normalization of chronological bounds from `date` text:
+
+* `"24 May 1153 X 1162"` → `min_weight=1153`, `max_weight=1162`
+* `"3 May 1147"` → `min_weight=1147`, `max_weight=1147`
+* `"prob. 1124, soon after 23 Apr"` → `min_weight=1124`, `max_weight=1124`
+* `"29 September 1189 X 1190"` → `min_weight=1189`, `max_weight=1190`
+
+Conclusion:
+
+* There is strong evidence that `common_date.min_weight` and `common_date.max_weight` are normalized year bounds derived from `digipal_date.date`.
+
+== Dropped legacy/auxiliary fields profile (old table)
+Old table profiling shows intentional model simplification rather than accidental omission:
+|===
+|Field|Old null profile|Observation
+|`weight`|0 NULLs (fully populated)|Dropped in new model
+|`legacy_reference`|0 NULLs (fully populated)|Dropped in new model
+|`evidence`|0 NULLs (fully populated)|Dropped in new model
+|`sort_order`|594 NULLs|Dropped
+|`band`|594 NULLs|Dropped
+|`additional_band`|594 NULLs|Dropped
+|`post_conquest`|594 NULLs|Dropped
+|`s_xi`|594 NULLs|Dropped
+|===
+
+== New table population profile
+|===
+|Check|Result
+|Rows with blank/null `date`|0
+|Rows with NULL `min_weight`|0
+|Rows with NULL `max_weight`|0
+|Minimum `min_weight`|0
+|Maximum `max_weight`|1309
+|===
+
+== Conclusion
+This table migrated as a complete 1:1 entity transfer with preserved IDs and exact `date` text, while the date-weight model was intentionally redesigned:
+
+* old nullable floating-point `min_weight` / `max_weight` were replaced by non-null integer bounds
+* new weight bounds were populated by migration normalization logic (strongly evidenced as derived from the textual `date` field)
+* several old legacy metadata and audit fields were intentionally removed in the new normalized `common_date` table
