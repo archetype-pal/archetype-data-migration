@@ -1,0 +1,55 @@
+= public.digipal_currentitem (old) → public.manuscripts_currentitem (new)
+
+== Summary
+* Rows: 718 → 718 (complete transfer; IDs preserved)
+* Schema simplification: metadata/audit fields removed (`created`, `modified`, `display_label`, `legacy_id`)
+* Hardening: `shelfmark` length reduced 128 → 60, but no over-length values detected
+* Hardening: `repository_id` remains NOT NULL with FK to the new repository table
+* Constraint change: old DB-level unique constraint on (`repository_id`, `shelfmark`) is not present in the new schema diff
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.digipal_currentitem|718
+|new|public.manuscripts_currentitem|718
+|===
+
+== Column changes
+|===
+|Column|Old|New|Notes
+|id|int4 NOT NULL|int8 NOT NULL|type widened
+|repository_id|int4 NOT NULL|int8 NOT NULL|type widened; FK retargeted to `manuscripts_repository`
+|shelfmark|varchar(128) NOT NULL|varchar(60) NOT NULL|length reduced; no over-length values detected
+|description|text NULLABLE|text NULLABLE|carried across
+|created|timestamptz NOT NULL|—|dropped
+|modified|timestamptz NOT NULL|—|dropped
+|display_label|varchar(128) NOT NULL|—|dropped
+|legacy_id|int4 NULLABLE|—|dropped
+|===
+
+== Constraint and index changes
+Old:
+
+* FK `repository_id` → `digipal_repository(id)`
+* UNIQUE (`repository_id`, `shelfmark`)
+* Index on `repository_id`
+
+New:
+
+* FK `repository_id` → `manuscripts_repository(id)`
+* Primary key on `id`
+* Index on `repository_id`
+* No equivalent DB-level UNIQUE (`repository_id`, `shelfmark`) observed in schema diff
+
+== Data quality / blocker checks
+|===
+|Check|Result
+|Old NULLs in common new NOT NULL columns (`id`, `repository_id`, `shelfmark`)|0
+|Old values exceeding new varchar lengths (common string columns)|None detected
+|Missing IDs after migration|0
+|===
+
+== Conclusion
+This table migrated completely (all rows and IDs preserved). Changes are primarily schema simplification and constraint/index redesign rather than partial data transfer.
+
+* Additional verification: `repository_id` values were preserved exactly by row ID (718/718 matched; 0 changed).
