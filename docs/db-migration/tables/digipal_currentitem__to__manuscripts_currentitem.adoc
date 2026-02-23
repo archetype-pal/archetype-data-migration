@@ -53,3 +53,12 @@ New:
 This table migrated completely (all rows and IDs preserved). Changes are primarily schema simplification and constraint/index redesign rather than partial data transfer.
 
 * Additional verification: `repository_id` values were preserved exactly by row ID (718/718 matched; 0 changed).
+
+== Final conclusion for this table pair
+
+`public.digipal_currentitem` → `public.manuscripts_currentitem` is a:
+
+* **Complete migration** (all rows, IDs preserved)
+* **Direct FK value carry-over** (repository_id unchanged by row)
+* **Safe schema hardening** (shelfmark length reduced, but no data violations)
+* **Schema simplification / redesign** (dropped metadata columns, removed old DB-level uniqueness)
