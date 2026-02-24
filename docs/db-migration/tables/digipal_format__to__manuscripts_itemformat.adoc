@@ -1,0 +1,179 @@
+= public.digipal_format (old) → public.manuscripts_itemformat (new)
+
+== Summary
+* Rows: 20 → 20 (complete transfer; IDs preserved)
+* 1:1 migration by `id` (no missing old IDs; no extra new IDs)
+* `name` is an exact carry-over (20/20 by `id`)
+* `name` remains `varchar(128)` in both old and new (no length reduction; no overflow blockers)
+* Schema simplified in new model: legacy/audit fields removed (`legacy_id`, `created`, `modified`)
+* New schema drops old `UNIQUE(name)` constraint (data still remains unique in practice: no duplicates in new)
+* Downstream usage preserved: `historicalitem -> format` references match exactly by grouped usage counts (15 format IDs used, 5 unused)
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.digipal_format|20
+|new|public.manuscripts_itemformat|20
+|===
+
+== Direct row identity preservation
+|===
+|Check|Result
+|Old IDs missing in new|0
+|New IDs not in old|0
+|Old `(id,name)` pairs missing in new|0
+|New `(id,name)` pairs not in old|0
+|Conclusion|Complete 1:1 migration by `id`, with exact `name` preservation
+|===
+
+== Column model comparison
+
+=== Common columns
+|===
+|Column|Old|New|Notes
+|id|int4 NOT NULL|int8 NOT NULL|type widened
+|name|varchar(128) NOT NULL|varchar(128) NOT NULL|exactly preserved; same max length
+|===
+
+=== Old-only columns (removed in new model)
+* `legacy_id` (integer, nullable)
+* `created` (timestamptz)
+* `modified` (timestamptz)
+
+=== New-only columns
+* None
+
+== Constraints and indexes
+
+=== Constraints
+Old:
+
+* Primary key on `id`
+* Unique constraint on `name`
+
+New:
+
+* Primary key on `id`
+
+Observation:
+
+* The new schema removes the old `UNIQUE(name)` constraint.
+* Migrated data still has no duplicate names (0 duplicate rows in new).
+
+=== Indexes
+Old:
+
+* PK index
+* Unique index on `name`
+* pattern index on `name`
+
+New:
+
+* PK index only
+
+== Data quality / blocker checks (generic same-column checks)
+|===
+|Check|Result
+|Old NULLs in common new NOT NULL column `id`|0
+|Old NULLs in common new NOT NULL column `name`|0
+|Old values exceeding new varchar length for `name`|0
+|===
+
+Interpretation:
+
+* No blockers for direct transfer of shared columns (`id`, `name`).
+
+== Semantic migration verification
+
+=== `name` exact carry-over
+Verified by joining old/new rows on `id`.
+
+|===
+|Check|Result
+|Total rows compared|20
+|Rows where `new.name = old.name`|20
+|Rows where `new.name` differs|0
+|Trimmed-name matches|20
+|Case-folded matches|20
+|===
+
+Conclusion:
+
+* `manuscripts_itemformat.name` is an exact semantic carry-over of `digipal_format.name`.
+
+=== Name-set equality and uniqueness profile
+|===
+|Check|Result
+|Old duplicate names|0 rows
+|New duplicate names|0 rows
+|Old names missing in new|0
+|New names not in old|0
+|===
+
+Interpretation:
+
+* The migration preserves the full name vocabulary exactly.
+* Although the new table no longer enforces uniqueness at schema level, the migrated dataset remains unique by `name`.
+
+== Relationship preservation (incoming usage via historical items)
+
+This table is referenced by historical items:
+
+* Old: `digipal_historicalitem.historical_item_format_id -> digipal_format.id`
+* New: `manuscripts_historicalitem.format_id -> manuscripts_itemformat.id`
+
+=== FK integrity checks
+|===
+|Check|Result
+|Old historicalitem→format FK orphans|0
+|New historicalitem→format FK orphans|0
+|===
+
+=== Usage-count preservation by `format_id`
+|===
+|Check|Result
+|Format IDs compared (non-null references)|15
+|Usage count identical old vs new|15
+|Usage count different|0
+|===
+
+=== Used vs unused format distribution
+|===
+|Metric|Old|New
+|Total formats|20|20
+|Used formats (referenced by historical items)|15|15
+|Unused formats|5|5
+|===
+
+Conclusion:
+
+* Downstream references to format entities are preserved exactly (both membership and per-format usage counts).
+
+== Legacy dropped field profile (`legacy_id`)
+Old table profiling (`digipal_format`):
+
+|===
+|Check|Result
+|Total rows|20
+|`legacy_id` NULLs|0
+|`legacy_id` non-NULLs|20
+|Distinct non-NULL `legacy_id` values|19
+|Duplicate `legacy_id` values present?|Yes (`1234` appears twice)
+|===
+
+Interpretation:
+
+* `legacy_id` is fully populated in old data but not unique in practice.
+* Dropping `legacy_id` in the new schema removes legacy baggage and does not affect the proven 1:1 migration by primary `id` or exact `name` carry-over.
+
+== FK definitions on the table itself
+* No foreign keys exist on either `digipal_format` or `manuscripts_itemformat` (table-local FK list is empty in both).
+
+== Conclusion
+This is a complete 1:1 migration with exact identity and name preservation plus schema simplification:
+
+* `id` preserved exactly (with integer widening `int4 -> int8`)
+* `name` preserved exactly (20/20), with unchanged max length (`varchar(128)`)
+* old audit/legacy fields (`legacy_id`, `created`, `modified`) removed in the new model
+* old `UNIQUE(name)` constraint removed in schema, while migrated data still remains unique
+* downstream historical-item usage of formats is preserved exactly (15 used IDs, identical per-format reference counts)
