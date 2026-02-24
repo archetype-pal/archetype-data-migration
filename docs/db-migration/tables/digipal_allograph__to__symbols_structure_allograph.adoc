@@ -1,4 +1,4 @@
-= public.digipal_allograph (old_arch) → public.symbols_structure_allograph (test_db)
+= public.digipal_allograph (old) → public.symbols_structure_allograph (new)
 
 == Summary
 * Rows: 102 → 103 (complete transfer of legacy rows + 1 intentional extra sentinel row in new table)
@@ -14,8 +14,8 @@
 == Counts
 |===
 |DB|Table|Rows
-|old_arch|public.digipal_allograph|102
-|test_db|public.symbols_structure_allograph|103
+|old|public.digipal_allograph|102
+|new|public.symbols_structure_allograph|103
 |===
 
 == Direct row identity preservation (legacy rows)
@@ -52,25 +52,30 @@
 
 === Constraints
 Old:
+
 * Primary key on `id`
 * Unique constraint on `(name, character_id)`
 * FK `character_id` → `digipal_character(id)`
 
 New:
+
 * Primary key on `id`
 * FK `character_id` → `symbols_structure_character(id)`
 
 Observation:
+
 * The legacy uniqueness constraint `(name, character_id)` is not present as a DB constraint in the new schema.
 * Despite this, the new data still respects uniqueness (`0` duplicate `(name, character_id)` pairs).
 
 === Indexes
 Old:
+
 * PK index
 * index on `character_id`
 * unique index on `(name, character_id)`
 
 New:
+
 * PK index
 * index on `character_id`
 
@@ -84,6 +89,7 @@ New:
 |===
 
 Interpretation:
+
 * No blockers for direct transfer of shared columns (`id`, `name`, `character_id`).
 
 == Semantic migration verification
@@ -103,6 +109,7 @@ Verified by joining old/new on `id` for rows present in old.
 |===
 
 Conclusion:
+
 * `symbols_structure_allograph.name` and `symbols_structure_allograph.character_id` are exact semantic carry-overs of the legacy table for all migrated rows.
 
 === Pair-level preservation checks
@@ -114,6 +121,7 @@ Conclusion:
 |===
 
 Interpretation:
+
 * The migrated legacy data is preserved exactly at pair level.
 * The only pair-level difference is the additional sentinel tuple introduced in the new table.
 
@@ -139,6 +147,7 @@ Resolved target in `public.symbols_structure_character`:
 |===
 
 Interpretation:
+
 * The extra row is not an error or orphan.
 * It is an intentional sentinel/fallback allograph record anchored to an existing character (`stroke`).
 
@@ -152,17 +161,20 @@ The sentinel row is actively used in downstream data:
 |===
 
 Interpretation:
+
 * `allograph_id = -1` is an operational fallback bucket used by annotation records.
 * This explains the extra row in the new table and supports an intentional migration/modeling decision rather than incomplete transfer.
 
 == Example evidence (sample-based)
 Sample new rows show the expected carry-over pattern for migrated legacy rows:
+
 * `id=1`, `name='stroke'`, `character_id=109` (present in legacy and preserved)
 * `id=3`, `name='punctus elevatus'`, `character_id=3` (preserved)
 * `id=14`, `name='et (&)'`, `character_id=12` (preserved)
 * `id=39`, `name='long'`, `character_id=29` (preserved)
 
 Additional new-only row:
+
 * `id=-1`, `name='unmapped_allographs'`, `character_id=109` (sentinel)
 
 == Conclusion
