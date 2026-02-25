@@ -1,0 +1,286 @@
+= public.digipal_graphcomponent (old) → public.annotations_graphcomponent (new)
+
+== Summary
+* Rows: 3103 → 2461 (subset migration; not a complete 1:1 transfer by `id`)
+* `new_ids_not_in_old = 0`, but `old_ids_missing_in_new = 642` (new table is a strict subset by `id`)
+* Shared fields are structurally simple and preserved for retained rows: `id`, `graph_id`, `component_id` (all NOT NULL; int4→int8 widening)
+* `component_id` is preserved exactly for retained rows (`2461/2461`)
+* New schema adds a uniqueness rule on `(graph_id, component_id)`; old raw data contains duplicates on that pair (61 duplicate groups)
+* **Critical semantic finding:** `annotations_graphcomponent.graph_id` does **not** match the expected derived target (`old digipal_annotation.id` via `old digipal_annotation.graph_id = old digipal_graphcomponent.graph_id`) for almost all retained rows (`2/2461` match; `2459/2461` mismatch)
+* FK integrity in the new table is technically valid (0 orphans), but evidence strongly indicates a **semantic remapping problem** on `graph_id`
+* Cross-table evidence shows bridge data (`annotations_graphcomponent_features`) is preserved exactly for retained graphcomponent IDs (2444/2444 usage counts match)
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.digipal_graphcomponent|3103
+|new|public.annotations_graphcomponent|2461
+|===
+
+== Direct row identity preservation
+|===
+|Check|Result
+|Old IDs missing in new|642
+|New IDs not in old|0
+|Conclusion|New table is a strict subset of old rows by `id`
+|===
+
+Interpretation:
+
+* All new rows come from old IDs.
+* 642 old rows were not carried over.
+
+== Column model comparison
+
+=== Common columns
+|===
+|Column|Old|New|Notes
+|id|int4 NOT NULL|int8 NOT NULL|type widened
+|graph_id|int4 NOT NULL|int8 NOT NULL|same column name, but FK target domain changed (see semantic verification)
+|component_id|int4 NOT NULL|int8 NOT NULL|type widened; value-preserved on retained rows
+|===
+
+=== Old-only columns (removed in new model)
+* `created`
+* `modified`
+
+=== New-only columns
+* None
+
+=== Column order (not semantic, but changed)
+Old:
+
+* `id`, `graph_id`, `component_id`, `created`, `modified`
+
+New:
+
+* `id`, `component_id`, `graph_id`
+
+== Constraints and indexes
+
+=== Constraints
+Old:
+
+* Primary key on `id`
+* FK `graph_id` → `digipal_graph(id)`
+* FK `component_id` → `digipal_component(id)`
+
+New:
+
+* Primary key on `id`
+* FK `graph_id` → `annotations_graph(id)`
+* FK `component_id` → `symbols_structure_component(id)`
+* Unique constraint on `(graph_id, component_id)`
+
+Observation:
+
+* The FK target for `graph_id` changes fundamentally (old graph entity → new annotation graph entity).
+* This requires a semantic remap, not a simple numeric carry-over.
+
+=== Indexes
+Old:
+
+* PK index on `id`
+* index on `graph_id`
+* index on `component_id`
+
+New:
+
+* PK index on `id`
+* index on `graph_id`
+* index on `component_id`
+* unique index on `(graph_id, component_id)`
+
+== Data quality / blocker checks (generic same-column checks)
+|===
+|Check|Result
+|Old NULLs in common new NOT NULL column `id`|0
+|Old NULLs in common new NOT NULL column `graph_id`|0
+|Old NULLs in common new NOT NULL column `component_id`|0
+|Old values exceeding new varchar length (same-name columns)|No applicable varchar blockers (empty result)
+|===
+
+Interpretation:
+
+* No generic blockers for transferring shared columns.
+* Migration differences are therefore semantic/selection-driven, not caused by NULL or length issues.
+
+== Duplicate pair profile (raw old vs raw new)
+
+=== Raw `(graph_id, component_id)` duplicates
+|===
+|Side|Duplicate pair groups
+|old|61
+|new|0
+|===
+
+Observation:
+
+* Old data contains repeated `(graph_id, component_id)` pairs.
+* New schema enforces uniqueness on `(graph_id, component_id)`, and new data satisfies it.
+
+== Migration subset behavior and coverage
+
+=== Old graphcomponent rows and annotation-target derivability
+(Using old `digipal_annotation.graph_id` as the bridge from old graph IDs to new annotation IDs)
+
+|===
+|Check|Result
+|Old graphcomponent rows|3103
+|Old `graph_id` NULLs|0
+|Old graph FK orphans (`digipal_graph`)|0
+|Rows with annotation target (`old annotation` found for old `graph_id`)|3095
+|Rows without annotation target|8
+|===
+
+Interpretation:
+
+* Only 8/3103 rows (~0.26%) lack a derivable annotation target.
+* Therefore, the large drop from 3103 → 2461 cannot be explained only by missing old annotation mappings.
+
+== Retained-row verification (join old/new by `id`)
+
+=== Field preservation on retained IDs
+|===
+|Check|Result
+|Total retained rows compared (`id` join)|2461
+|`new.component_id = old.component_id`|2461
+|`new.component_id != old.component_id`|0
+|===
+
+Conclusion:
+
+* `component_id` is preserved exactly for all retained IDs.
+
+== Critical semantic migration verification for `graph_id`
+
+=== Expected remap rule
+Because:
+
+* old `digipal_graphcomponent.graph_id` → `digipal_graph(id)`
+* new `annotations_graphcomponent.graph_id` → `annotations_graph(id)`
+* and `annotations_graph` is the migrated annotation table (`digipal_annotation → annotations_graph`, IDs preserved there)
+
+the expected mapping for retained rows is:
+
+* `new.graph_id = old digipal_annotation.id`
+* where `old digipal_annotation.graph_id = old digipal_graphcomponent.graph_id`
+
+=== Result of derived remap check (retained IDs only)
+|===
+|Check|Result
+|Total retained rows (`id` join)|2461
+|Rows where `new.graph_id = derived old annotation.id`|2
+|Rows where `new.graph_id != derived old annotation.id`|2459
+|===
+
+Interpretation:
+
+* The expected semantic remap of `graph_id` is **not** present for almost all retained rows.
+* This is not a small edge case; it is a pervasive mismatch.
+
+=== Pair-set comparison (expected semantic pairs vs actual new pairs)
+Comparing:
+
+* old-derived pair = `(derived_annotation_id, component_id)`
+* new pair = `(graph_id, component_id)`
+
+|===
+|Check|Result
+|Old-derived pairs missing in new|2885
+|New pairs not in old-derived|2319
+|===
+
+Interpretation:
+
+* The new `(graph_id, component_id)` set is largely different from the semantically expected one.
+* This strongly supports that `graph_id` values were not remapped correctly.
+
+=== Evidence pattern from mismatch samples
+Observed mismatch samples repeatedly show patterns like:
+
+* `old_graph_id=1227`, `derived_new_graph_id=1228`, `new_graph_id=1227`
+* `old_graph_id=937`, `derived_new_graph_id=938`, `new_graph_id=937`
+
+This indicates (based on sampled evidence) that:
+
+* `new.graph_id` often appears to retain the **old graph ID numeric value**
+* instead of being translated to the corresponding **old annotation ID** (which is what the new FK target requires semantically)
+
+Important:
+
+* New FK constraints still pass (0 orphans) because many such numeric IDs exist in `annotations_graph(id)`.
+* Therefore this can create a **referentially valid but semantically incorrect** migration.
+
+== Missing old rows classification (why 642 old IDs are absent in new)
+
+|===
+|Reason|Rows
+|`MAPPED_PAIR_NOT_PRESENT_IN_NEW`|614
+|`OTHER_MISSING_DESPITE_MAPPING`|14
+|`NO_ANNOTATION_TARGET`|8
+|`DERIVED_PAIR_COLLISION_DEDUPED`|6
+|Total missing old IDs|642
+|===
+
+Interpretation:
+
+* Most missing rows (614) had a derivable target pair but that mapped pair is not present in new.
+* 6 rows are explained by deduplication collisions (consistent with new unique constraint behavior).
+* 8 rows truly lack an annotation target.
+* 14 rows remain as “other” cases and should be inspected individually if exact migration rules are being reconstructed.
+
+== New FK integrity (technical integrity only)
+|===
+|Check|Result
+|New `graph_id` FK orphans|0
+|New `component_id` FK orphans|0
+|===
+
+Interpretation:
+
+* New table is internally consistent.
+* This does **not** prove semantic correctness of `graph_id` remapping.
+
+== Cross-table consistency with graphcomponent_features (bridge evidence)
+
+Using old/new graphcomponent-feature bridge tables as an external consistency check:
+
+|===
+|Check|Result
+|Graphcomponent IDs compared (have feature rows on both sides)|2444
+|Usage count same|2444
+|Usage count diff|0
+|===
+
+Interpretation:
+
+* For graphcomponent IDs retained into the new system, associated feature-link counts are preserved exactly.
+* This supports a pattern of:
+** correct preservation of retained rows and their local component/feature links
+** but incomplete retention and likely incorrect semantic `graph_id` targeting
+
+== Conclusion
+This is **not** a full 1:1 migration of `digipal_graphcomponent` into `annotations_graphcomponent`.
+
+What is preserved well:
+
+* shared schema core (`id`, `component_id`, `graph_id` with widened integer types)
+* `component_id` values for retained rows (`2461/2461`)
+* bridge feature usage counts for retained graphcomponent IDs
+
+What changed / was lost:
+
+* 642 old rows were not retained
+* old audit fields (`created`, `modified`) were dropped
+* new uniqueness on `(graph_id, component_id)` removes old duplicates
+
+Most important finding:
+
+* `annotations_graphcomponent.graph_id` appears to be **semantically mis-mapped**.
+* Although the new FK is valid (0 orphans), the expected remap from old `digipal_graph` IDs to new `annotations_graph` IDs (via old annotation linkage) fails for `2459/2461` retained rows.
+
+Recommended interpretation for migration documentation:
+
+* Treat this pair as a **partial/subset migration with likely `graph_id` remapping defect** (or a migration rule materially different from the intended semantic mapping).
+* Any downstream analysis using `annotations_graphcomponent.graph_id` should be validated before assuming it represents the original old graphcomponent-to-annotation linkage.
