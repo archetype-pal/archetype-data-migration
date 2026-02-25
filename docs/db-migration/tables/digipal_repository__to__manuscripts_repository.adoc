@@ -1,0 +1,205 @@
+= public.digipal_repository (old) → public.manuscripts_repository (new)
+
+== Summary
+* Rows: 9 → 9 (complete transfer; IDs preserved)
+* 1:1 migration by `id` (no missing old IDs; no extra new IDs)
+* `name` is an exact carry-over by `id` (9/9 exact matches)
+* Shared varchar constraints are safe:
+** `name` narrowed from `varchar(256)` → `varchar(100)` with no overflow blockers
+** `url` remains `varchar(200)` with no overflow blockers
+* New model is a schema redesign / flattening:
+** old FK-based fields (`place_id`, `type_id`) replaced by textual fields (`place`, `type`)
+** new `label` introduced
+** many legacy flags / metadata / audit columns removed
+* `name` is *not* unique in either dataset (`"The National Archives"` appears twice in both), so row identity must be tracked by `id`, not by `name`
+* Usage preservation check via `currentitem.repository_id` is clean (counts and FK integrity preserved)
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.digipal_repository|9
+|new|public.manuscripts_repository|9
+|===
+
+== Direct row identity preservation
+|===
+|Check|Result
+|Old IDs missing in new|0
+|New IDs not in old|0
+|Conclusion|Complete 1:1 migration by `id`
+|===
+
+Additional evidence:
+
+* `name` exact match by `id`: 9/9
+* Therefore `(id,name)` pairs are effectively preserved as well (given no missing/extra IDs and exact `name` by `id`)
+
+== Column model comparison
+
+=== Common columns
+|===
+|Column|Old|New|Notes
+|id|int4 NOT NULL|int8 NOT NULL|type widened
+|name|varchar(256) NOT NULL|varchar(100) NOT NULL|exactly preserved; length narrowed safely
+|url|varchar(200) NULL|varchar(200) NULL|same max length and nullability
+|===
+
+=== Old-only columns (removed / replaced in new model)
+* `legacy_id`
+* `short_name`
+* `place_id` (FK to `digipal_place`)
+* `comma`
+* `british_isles`
+* `digital_project`
+* `created`
+* `modified`
+* `copyright_notice`
+* `media_permission_id` (FK)
+* `type_id` (FK to `digipal_ownertype`)
+* `part_of_id` (self-FK)
+
+=== New-only columns
+* `label` (`varchar(64)`, nullable)
+* `place` (`varchar(50)`, NOT NULL)
+* `type` (`varchar(30)`, nullable)
+
+Interpretation:
+
+* The new table appears to flatten and simplify legacy repository metadata:
+** `place_id` → likely textual `place` (flattened from related place entity)
+** `type_id` → likely textual `type` (flattened from owner/repository type entity)
+** `label` likely a presentation/display field (possibly derived or curated)
+* These semantic derivations are strongly suggested by schema shape, but were not directly verified in the provided checks.
+
+== Constraints and indexes
+
+=== Constraints
+Old:
+
+* Primary key on `id`
+* FK `media_permission_id` → `digipal_mediapermission(id)`
+* FK `part_of_id` → `digipal_repository(id)` (self-reference)
+* FK `place_id` → `digipal_place(id)`
+* FK `type_id` → `digipal_ownertype(id)`
+
+New:
+
+* Primary key on `id`
+
+Observation:
+
+* The new schema removes all legacy FKs from this table and stores a simplified, denormalized repository record.
+* No unique constraint on `name` exists in either old or new schema (consistent with duplicate `"The National Archives"` rows).
+
+=== Indexes
+Old:
+
+* PK index
+* index on `media_permission_id`
+* index on `part_of_id`
+* index on `place_id`
+* index on `type_id`
+
+New:
+
+* PK index only
+
+== Data quality / blocker checks (generic same-column checks)
+|===
+|Check|Result
+|Old NULLs in common new NOT NULL column `id`|0
+|Old NULLs in common new NOT NULL column `name`|0
+|Old values exceeding new varchar length for `name` (100)|0
+|Old values exceeding new varchar length for `url` (200)|0
+|===
+
+Interpretation:
+
+* No blockers for direct transfer of shared columns (`id`, `name`, `url`).
+
+== Name-level verification
+
+=== Duplicate name profile
+|===
+|Check|Result
+|Duplicate names in old|`"The National Archives"` appears 2 times
+|Duplicate names in new|`"The National Archives"` appears 2 times
+|Name set differences (old vs new)|0 missing in new / 0 extra in new
+|===
+
+Conclusion:
+
+* `name` values are preserved as a set, including duplicates.
+* `name` is not a reliable unique business key for this table.
+
+=== `name` exact carry-over by `id`
+Verified by joining old/new rows on `id`.
+
+|===
+|Check|Result
+|Total rows compared|9
+|Rows where `new.name = old.name`|9
+|Rows where `new.name` differs|0
+|Trimmed-name matches|9
+|Case-folded matches|9
+|===
+
+Conclusion:
+
+* `manuscripts_repository.name` is an exact semantic carry-over of `digipal_repository.name`.
+
+== Relationship / usage preservation (current items)
+
+=== FK integrity in usage tables
+|===
+|Check|Result
+|Old `digipal_currentitem.repository_id` FK orphans|0
+|New `manuscripts_currentitem.repository_id` FK orphans|0
+|===
+
+=== Usage count preservation by repository
+(Comparing number of current-item rows per repository ID)
+
+|===
+|Check|Result
+|Repository IDs compared|5
+|Usage counts preserved exactly|5
+|Usage count differences|0
+|===
+
+=== Used vs unused repository profile
+|===
+|Metric|Old|New
+|Total repositories|9|9
+|Used repositories (referenced by current items)|5|5
+|Unused repositories|4|4
+|===
+
+Conclusion:
+
+* Repository linkage from current items was preserved exactly for all used repository IDs.
+
+== Schema redesign observations
+
+The migration is not a simple column-for-column copy. It preserves identity (`id`) and core label (`name`) while simplifying the repository model:
+
+* normalized foreign-key relations removed from the repository row
+* textual descriptive fields added (`label`, `place`, `type`)
+* legacy flags and audit metadata dropped
+* self-referential hierarchy (`part_of_id`) not represented in the new table schema (at least not directly in this table)
+
+This indicates a deliberate denormalization / presentation-oriented redesign in the new manuscripts model.
+
+== Conclusion
+This is a complete `id`-preserving migration with exact `name` preservation and preserved downstream usage via current-item references.
+
+What is proven from the provided checks:
+
+* row counts match (9 → 9)
+* no missing/extra IDs
+* `name` is exact by `id` (9/9)
+* shared column length/nullability constraints introduce no blockers
+* repository usage counts and FK integrity are preserved in current-item tables
+
+What changed structurally:
+* the old repository table’s FK-rich normalized model was replaced by a smaller flattened schema (`label`, `place`, `type`) with only a primary key index/constraint retained.
