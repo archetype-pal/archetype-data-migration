@@ -3,16 +3,15 @@
 == Summary
 * Rows: 9 → 9 (complete transfer; IDs preserved)
 * 1:1 migration by `id` (no missing old IDs; no extra new IDs)
-* `name` is an exact carry-over by `id` (9/9 exact matches)
-* Shared varchar constraints are safe:
-** `name` narrowed from `varchar(256)` → `varchar(100)` with no overflow blockers
-** `url` remains `varchar(200)` with no overflow blockers
-* New model is a schema redesign / flattening:
-** old FK-based fields (`place_id`, `type_id`) replaced by textual fields (`place`, `type`)
-** new `label` introduced
-** many legacy flags / metadata / audit columns removed
-* `name` is *not* unique in either dataset (`"The National Archives"` appears twice in both), so row identity must be tracked by `id`, not by `name`
-* Usage preservation check via `currentitem.repository_id` is clean (counts and FK integrity preserved)
+* `name` is an exact carry-over (9/9)
+* `url` is semantically preserved (9/9 trim/casefold match; 3 NULLs on both sides)
+* `name` length reduced from `varchar(256)` to `varchar(100)` with no overflow/truncation blockers
+* `url` remains `varchar(200)` with no overflow/truncation blockers
+* New `place` is a fully materialized string and matches legacy `digipal_place.name` exactly (9/9)
+* New `type` is a fully materialized string and matches legacy `digipal_ownertype.name` exactly (9/9)
+* New `label` is a curated abbreviation field: exact carry-over from old `short_name` in 6/9 rows, with 3/9 additional labels populated where old `short_name` was blank (e.g. `CAM`, `PMFED`, `LTNA`)
+* Major schema redesign: legacy FKs / flags / permissions / hierarchy metadata removed or flattened into in-row strings (`place`, `type`, `label`)
+* Repository usage via related item FK is preserved (same used IDs and same per-repository usage counts)
 
 == Counts
 |===
@@ -29,10 +28,23 @@
 |Conclusion|Complete 1:1 migration by `id`
 |===
 
-Additional evidence:
+== Name identity and duplicate-name preservation
+|===
+|Check|Result
+|Rows compared by `id`|9
+|`new.name = old.name` exact|9
+|`name` differences|0
+|Trimmed-name matches|9
+|Case-folded-name matches|9
+|Duplicate `name` rows in old|1 duplicated value (`The National Archives` appears 2 times)
+|Duplicate `name` rows in new|1 duplicated value (`The National Archives` appears 2 times)
+|Name-set parity (`old_names_missing_in_new`, `new_names_not_in_old`)|0 / 0
+|===
 
-* `name` exact match by `id`: 9/9
-* Therefore `(id,name)` pairs are effectively preserved as well (given no missing/extra IDs and exact `name` by `id`)
+Interpretation:
+
+* `name` is preserved exactly by `id`.
+* Non-unique names are intentionally preserved (this is not a unique-name table).
 
 == Column model comparison
 
@@ -41,10 +53,10 @@ Additional evidence:
 |Column|Old|New|Notes
 |id|int4 NOT NULL|int8 NOT NULL|type widened
 |name|varchar(256) NOT NULL|varchar(100) NOT NULL|exactly preserved; length narrowed safely
-|url|varchar(200) NULL|varchar(200) NULL|same max length and nullability
+|url|varchar(200) NULL|varchar(200) NULL|semantically preserved
 |===
 
-=== Old-only columns (removed / replaced in new model)
+=== Old-only columns (removed / flattened in new model)
 * `legacy_id`
 * `short_name`
 * `place_id` (FK to `digipal_place`)
@@ -56,20 +68,12 @@ Additional evidence:
 * `copyright_notice`
 * `media_permission_id` (FK)
 * `type_id` (FK to `digipal_ownertype`)
-* `part_of_id` (self-FK)
+* `part_of_id` (self-FK hierarchy)
 
 === New-only columns
-* `label` (`varchar(64)`, nullable)
-* `place` (`varchar(50)`, NOT NULL)
-* `type` (`varchar(30)`, nullable)
-
-Interpretation:
-
-* The new table appears to flatten and simplify legacy repository metadata:
-** `place_id` → likely textual `place` (flattened from related place entity)
-** `type_id` → likely textual `type` (flattened from owner/repository type entity)
-** `label` likely a presentation/display field (possibly derived or curated)
-* These semantic derivations are strongly suggested by schema shape, but were not directly verified in the provided checks.
+* `label` (`varchar(64)`, nullable in schema; fully populated in data)
+* `place` (`varchar(50)`, NOT NULL) — materialized from legacy place lookup
+* `type` (`varchar(30)`, nullable in schema; fully populated in data) — materialized from legacy owner-type lookup
 
 == Constraints and indexes
 
@@ -77,10 +81,10 @@ Interpretation:
 Old:
 
 * Primary key on `id`
-* FK `media_permission_id` → `digipal_mediapermission(id)`
-* FK `part_of_id` → `digipal_repository(id)` (self-reference)
 * FK `place_id` → `digipal_place(id)`
 * FK `type_id` → `digipal_ownertype(id)`
+* FK `media_permission_id` → `digipal_mediapermission(id)`
+* FK `part_of_id` → `digipal_repository(id)` (self-reference)
 
 New:
 
@@ -88,17 +92,17 @@ New:
 
 Observation:
 
-* The new schema removes all legacy FKs from this table and stores a simplified, denormalized repository record.
-* No unique constraint on `name` exists in either old or new schema (consistent with duplicate `"The National Archives"` rows).
+* The new schema removes all legacy FK dependencies and stores selected lookup values directly as strings (`place`, `type`).
+* Legacy repository hierarchy (`part_of_id`) is not represented in the new table.
 
 === Indexes
 Old:
 
 * PK index
-* index on `media_permission_id`
-* index on `part_of_id`
 * index on `place_id`
 * index on `type_id`
+* index on `media_permission_id`
+* index on `part_of_id`
 
 New:
 
@@ -115,24 +119,11 @@ New:
 
 Interpretation:
 
-* No blockers for direct transfer of shared columns (`id`, `name`, `url`).
+* No blockers for transfer of shared columns (`id`, `name`, `url`).
 
-== Name-level verification
+== Semantic migration verification
 
-=== Duplicate name profile
-|===
-|Check|Result
-|Duplicate names in old|`"The National Archives"` appears 2 times
-|Duplicate names in new|`"The National Archives"` appears 2 times
-|Name set differences (old vs new)|0 missing in new / 0 extra in new
-|===
-
-Conclusion:
-
-* `name` values are preserved as a set, including duplicates.
-* `name` is not a reliable unique business key for this table.
-
-=== `name` exact carry-over by `id`
+=== `name` exact carry-over
 Verified by joining old/new rows on `id`.
 
 |===
@@ -148,58 +139,186 @@ Conclusion:
 
 * `manuscripts_repository.name` is an exact semantic carry-over of `digipal_repository.name`.
 
-== Relationship / usage preservation (current items)
-
-=== FK integrity in usage tables
+=== `url` semantic preservation
 |===
 |Check|Result
-|Old `digipal_currentitem.repository_id` FK orphans|0
-|New `manuscripts_currentitem.repository_id` FK orphans|0
+|Total rows|9
+|Old `url` NULLs|3
+|New `url` NULLs|3
+|Exact `=` matches|6
+|Trimmed matches (NULL-safe coalesce comparison)|9
+|Case-folded matches (NULL-safe)|9
 |===
 
-=== Usage count preservation by repository
-(Comparing number of current-item rows per repository ID)
+Interpretation:
+
+* `url` is preserved exactly, including NULL distribution.
+* The `6` exact matches reflect non-NULL rows only; the remaining 3 are NULL on both sides.
+
+=== `new.place` derives from legacy place lookup (`digipal_place.name`)
+Old FK-resolution sanity:
+|===
+|Check|Result
+|Total old rows|9
+|`old.place_id` NULLs|0
+|Unresolved `place_id` FKs after join to `digipal_place`|0
+|===
+
+Comparison (`new.place` vs joined `old_place_name`):
+|===
+|Check|Result
+|Total rows|9
+|`new.place` NULLs|0
+|`new.place` blank-or-null|0
+|`old_place_name` NULLs|0
+|Exact matches (`new.place = old_place_name`)|9
+|Trimmed matches|9
+|Case-folded matches|9
+|===
+
+Conclusion:
+
+* `manuscripts_repository.place` is an exact materialization of legacy `digipal_repository.place_id → digipal_place.name`.
+
+=== `new.type` derives from legacy owner-type lookup (`digipal_ownertype.name`)
+Old FK-resolution sanity:
+|===
+|Check|Result
+|`old.type_id` NULLs|0
+|Unresolved `type_id` FKs after join to `digipal_ownertype`|0
+|===
+
+Comparison (`new.type` vs joined `old_type_name`):
+|===
+|Check|Result
+|Total rows|9
+|`new.type` NULLs|0
+|`new.type` blank-or-null|0
+|`old_type_name` NULLs|0
+|Exact non-NULL matches|9
+|Case-folded matches (including null logic)|9
+|Old type NULL → new type NULL|0
+|Old type NULL → new type non-NULL|0
+|Old type non-NULL → new type NULL|0
+|===
+
+Observed distribution:
+
+* `Library` → `Library` = 7
+* `Unknown` → `Unknown` = 2
+
+Conclusion:
+
+* `manuscripts_repository.type` is an exact materialization of legacy `digipal_repository.type_id → digipal_ownertype.name`.
+
+=== `new.label` derivation evidence (legacy `short_name` + curated backfill)
+Profiling and candidate checks:
+|===
+|Check|Result
+|Total rows|9
+|`new.label` NULLs|0
+|`new.label` blank-or-null|0
+|Old `short_name` NULLs|3
+|Old `short_name` blank-or-null|3
+|`new.label = old.short_name` exact|6
+|`new.label = old.short_name` trim/casefold|6
+|`new.label = old.name` exact|0
+|`new.label = coalesce(NULLIF(old.short_name,''), old.name)`|6
+|===
+
+Row-level evidence:
+
+* 6 rows match old `short_name` exactly (`NRS`, `TNA`, `BL`, `NLS`, `DCA`, `TNA (not DL)`)
+* 3 rows have blank old `short_name` but populated new `label`:
+** id `3`: `Charters of the Abbey of Melrose` → `CAM`
+** id `8`: `Papers of the Maule Family, Earls of Dalhousie` → `PMFED`
+** id `11`: `London, The National Archives` → `LTNA`
+
+Interpretation:
+
+* `label` is not simply copied from `name`.
+* `label` is populated from old `short_name` where available.
+* Where old `short_name` is blank, `label` has been curated/backfilled (likely acronym/abbreviation generation or manual mapping).
+
+Strong evidence supports:
+
+* `manuscripts_repository.label` is a normalized shorthand/abbreviation field sourced primarily from `short_name`, with additional migration enrichment for missing legacy values.
+
+== Legacy dropped field profile (old table)
+|===
+|Field / check|Observation
+|`short_name` NULLs|3 / 9
+|`part_of_id` non-NULL|1 / 9
+|`media_permission_id` non-NULL|2 / 9
+|`type_id` non-NULL|9 / 9
+|`comma` TRUE / FALSE / NULL|0 / 0 / 9
+|`british_isles` TRUE / FALSE / NULL|3 / 0 / 6
+|`digital_project` TRUE / FALSE / NULL|0 / 0 / 9
+|===
+
+Interpretation:
+
+* Several legacy boolean/permission fields were sparse or mostly NULL and are omitted in the new simplified model.
+* `type_id` and `place_id` were not dropped semantically; they were flattened into `type` and `place`.
+
+== Legacy hierarchy (`part_of_id`) note
+Old self-FK profile:
+|===
+|Check|Result
+|Total rows|9
+|`part_of_id` NULLs|8
+|`part_of_id` non-NULL|1
+|Hierarchy FK orphans|0
+|===
+
+Observed edge:
+
+* `British Library` (id `5`) has `part_of_id = 5` (self-reference)
+
+Interpretation:
+
+* The only legacy hierarchy edge is a self-loop, and hierarchy is not represented in the new schema.
+
+== Usage preservation (related item FK usage)
+Checks performed on repository usage in related item table(s):
 
 |===
 |Check|Result
-|Repository IDs compared|5
-|Usage counts preserved exactly|5
-|Usage count differences|0
+|Old repository FK orphans in related items|0
+|New repository FK orphans in related items|0
+|Repository IDs compared for usage counts|5
+|IDs with same usage count old vs new|5
+|IDs with different usage count|0
 |===
 
-=== Used vs unused repository profile
+Population summary:
 |===
 |Metric|Old|New
 |Total repositories|9|9
-|Used repositories (referenced by current items)|5|5
+|Used repositories|5|5
 |Unused repositories|4|4
 |===
 
 Conclusion:
 
-* Repository linkage from current items was preserved exactly for all used repository IDs.
+* Repository references were preserved consistently in dependent data, not just in the repository table itself.
 
-== Schema redesign observations
+== Example evidence (sample-based)
+Representative rows from the semantic proof sheet (`id`-joined old/new):
 
-The migration is not a simple column-for-column copy. It preserves identity (`id`) and core label (`name`) while simplifying the repository model:
-
-* normalized foreign-key relations removed from the repository row
-* textual descriptive fields added (`label`, `place`, `type`)
-* legacy flags and audit metadata dropped
-* self-referential hierarchy (`part_of_id`) not represented in the new table schema (at least not directly in this table)
-
-This indicates a deliberate denormalization / presentation-oriented redesign in the new manuscripts model.
+* `id=2` — `place_id=4 → Edinburgh`, new `place='Edinburgh'`; `short_name='NRS'`, new `label='NRS'`
+* `id=3` — old `short_name` blank, new `label='CAM'`; `place_id=3 → Unknown`, new `place='Unknown'`; `type='Unknown'`
+* `id=5` — `url='https://www.bl.uk/'` preserved exactly; `place='London'`; `type='Library'`; self `part_of_id=5` in old only
+* `id=11` — old `short_name` blank, new `label='LTNA'`; `place='London, The National Archives'` materialized from place lookup
 
 == Conclusion
-This is a complete `id`-preserving migration with exact `name` preservation and preserved downstream usage via current-item references.
+This table is a complete 1:1 entity migration with exact identity preservation and a clear flattening/normalization redesign:
 
-What is proven from the provided checks:
-
-* row counts match (9 → 9)
-* no missing/extra IDs
-* `name` is exact by `id` (9/9)
-* shared column length/nullability constraints introduce no blockers
-* repository usage counts and FK integrity are preserved in current-item tables
-
-What changed structurally:
-* the old repository table’s FK-rich normalized model was replaced by a smaller flattened schema (`label`, `place`, `type`) with only a primary key index/constraint retained.
+* `id` and `name` are preserved exactly
+* `url` is preserved (including NULL distribution)
+* legacy FK-backed values are materialized as strings:
+** `place_id` → `place` (exact lookup-name carry-over)
+** `type_id` → `type` (exact lookup-name carry-over)
+* new `label` is a fully populated shorthand field, mostly sourced from `short_name` with additional curated backfill where legacy `short_name` was missing
+* legacy permissions/flags/audit metadata and self-hierarchy fields are removed from the new model
+* downstream repository usage counts remain consistent across old and new datasets
