@@ -1,0 +1,252 @@
+= public.django_content_type (old) → public.django_content_type (new)
+
+== Summary
+* Rows: 114 → 37 (**77-row reduction**)
+* Schema is effectively unchanged: same 3 columns (`id`, `app_label`, `model`), same PK, same uniqueness rule on `(app_label, model)`; only constraint/index names differ
+* This is **not** an ID-preserving migration table in the business-data sense; it is a Django framework registry table whose contents reflect the models/apps installed in each environment
+* New IDs are a subset of old IDs (`new_ids_not_in_old = 0`), but ID values do **not** preserve the same `(app_label, model)` meaning except for 1 exact row
+* Direct `id`-based comparison is therefore misleading: only **1/37** joined rows preserve the exact business key
+* Pair-set comparison on `(app_label, model)` shows very large divergence: only **6 shared pairs**, with **108 old-only** and **31 new-only**
+* Every content type on both sides is used by `auth_permission` (`old_unused_content_types = 0`, `new_unused_content_types = 0`)
+* Conclusion: this table should be interpreted as an **environment/framework metadata table rebuilt for the new installed app set**, not as a row-by-row migrated domain table
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.django_content_type|114
+|new|public.django_content_type|37
+|===
+
+== Direct row identity preservation
+|===
+|Check|Result
+|Old IDs missing in new|77
+|New IDs not in old|0
+|Joined rows by `id` (old↔new)|37
+|Joined rows where `app_label` unchanged|2
+|Joined rows where `model` unchanged|1
+|Joined rows where exact `(app_label, model)` unchanged|1
+|Conclusion|ID values are largely reused for different content-type meanings in the new environment
+|===
+
+Interpretation:
+
+* Although new IDs are numerically contained within old IDs, they mostly refer to different registered models.
+* Therefore, `id` is not a stable semantic identity across old/new databases for this table.
+
+== Column model comparison
+
+=== Common columns
+|===
+|Column|Old|New|Notes
+|id|int4 NOT NULL|int4 NOT NULL|unchanged
+|app_label|varchar(100) NOT NULL|varchar(100) NOT NULL|unchanged
+|model|varchar(100) NOT NULL|varchar(100) NOT NULL|unchanged
+|===
+
+=== Old-only columns
+* None
+
+=== New-only columns
+* None
+
+== Constraints and indexes
+
+=== Constraints
+Old:
+
+* Primary key on `id`
+* Unique constraint on `(app_label, model)` named `django_content_type_app_label_key`
+
+New:
+
+* Primary key on `id`
+* Unique constraint on `(app_label, model)` named `django_content_type_app_label_model_76bd3d3b_uniq`
+
+Observation:
+
+* The uniqueness rule is identical; only the generated constraint name differs.
+* This is consistent with Django recreating the same framework table in a different project/app configuration.
+
+=== Indexes
+Old:
+
+* PK index
+* unique index on `(app_label, model)`
+
+New:
+
+* PK index
+* unique index on `(app_label, model)`
+
+== Data quality / blocker checks
+|===
+|Check|Result
+|Old NULLs in common new NOT NULL column `id`|0
+|Old NULLs in common new NOT NULL column `app_label`|0
+|Old NULLs in common new NOT NULL column `model`|0
+|Old values exceeding new varchar length for `app_label` (100)|0
+|Old values exceeding new varchar length for `model` (100)|0
+|===
+
+Interpretation:
+
+* There are no schema-fit blockers.
+* The difference is not due to nullability, length shrinkage, or datatype incompatibility.
+* The difference is entirely due to different registered application/model sets.
+
+== Business-key semantic comparison (`app_label`, `model`)
+
+=== Duplicate profiling
+Old duplicate `(app_label, model)` pairs:
+
+* none
+
+New duplicate `(app_label, model)` pairs:
+
+* none
+
+Summary:
+|===
+|Side|Duplicate pair rows
+|old|0
+|new|0
+|===
+
+Conclusion:
+
+* Both environments correctly enforce uniqueness of content-type business keys.
+
+=== Pair-set comparison on `(app_label, model)`
+|===
+|Check|Result
+|Old pairs missing in new|108
+|New pairs not in old|31
+|Old distinct pairs|114
+|New distinct pairs|37
+|Shared pairs|6
+|===
+
+Interpretation:
+
+* Only 6 content types are shared across both environments.
+* The overwhelming majority of old content types correspond to legacy apps/models not present in the new project.
+* The new table contains new app/model registrations for the restructured project.
+
+=== Shared app/model pairs
+From the distributions and environment overlap, the shared app labels are limited to framework/core Django apps such as:
+
+* `admin`
+* `auth`
+* `contenttypes`
+* `sessions`
+
+This is exactly what would be expected if the new project is a different Django app landscape with only core framework overlap.
+
+== App-label distribution comparison
+
+=== Old distribution
+Largest groups:
+
+* `digipal` = 72
+* `digipal_text` = 8
+* `forms` = 4
+* `generic` = 4
+* `auth` = 3
+* `pages` = 3
+* several smaller legacy app groups (`blog`, `comments`, `django_comments`, `galleries`, `reversion`, `twitter`, etc.)
+
+=== New distribution
+Largest groups:
+
+* `manuscripts` = 10
+* `symbols_structure` = 7
+* `publications` = 5
+* `scribes` = 4
+* `auth` = 3
+* `annotations` = 2
+* `authtoken` = 2
+* plus core Django app labels (`admin`, `common`, `contenttypes`, `sessions`)
+
+=== Side-by-side interpretation
+Old project content types are dominated by legacy apps:
+
+* `digipal`
+* `digipal_text`
+* `pages`
+* `forms`
+* `generic`
+* `blog`
+* `comments`
+* `django_comments`
+* `reversion`
+* `twitter`
+* `sites`
+* `redirects`
+* `south`
+
+New project content types are dominated by refactored domain apps:
+
+* `manuscripts`
+* `symbols_structure`
+* `scribes`
+* `annotations`
+* `publications`
+* `common`
+* `authtoken`
+
+Conclusion:
+
+* The row-count reduction and pair divergence directly reflect the new application architecture rather than failed migration.
+
+== Why direct `id` matching is misleading
+A joined-by-`id` comparison shows:
+
+* `total_joined_by_id = 37`
+* `app_label_same = 2`
+* `model_same = 1`
+* `exact_business_key_same = 1`
+
+Sample mismatches clearly show ID reassignment across meaning, e.g.:
+
+* old `id=1` = `auth.permission`
+* new `id=1` = `contenttypes.contenttype`
+
+and many similar shifts.
+
+Interpretation:
+
+* Django content type IDs are environment-generated registry identifiers.
+* They should only be compared meaningfully by `(app_label, model)`, not by numeric `id`.
+
+== Dependency / usage validation through `auth_permission`
+|===
+|Check|Old|New
+|Total permissions|344|148
+|Used content types in `auth_permission`|114|37
+|Unused content types|0|0
+|===
+
+Interpretation:
+
+* Every content type row is actively referenced by `auth_permission` in each environment.
+* This confirms the table is internally coherent and generated to match the installed models for that environment.
+
+== Migration behavior interpretation
+Strong evidence supports the following interpretation:
+
+* `django_content_type` was **not migrated as business data**
+* instead, it was **rebuilt/generated** for the currently installed apps and models in each database
+* old content types represent the legacy project/app ecosystem
+* new content types represent the restructured new project ecosystem
+* the only meaningful semantic comparison is at business-key level `(app_label, model)`, which confirms substantial intentional project restructuring rather than data-loss or malformed migration
+
+== Conclusion
+This table is a **framework metadata registry, not a domain-data migration table**:
+
+* schema is unchanged
+* uniqueness/integrity rules are preserved
+* numeric IDs are not semantically stable across environments
+* old/new row-set differences reflect different installed app/model registries
+* all content types are valid and used in permissions on each side
+* therefore this table should be documented as **environment-regenerated Django metadata**, not as a 1:1 migrated table
