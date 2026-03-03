@@ -1,0 +1,242 @@
+= public.auth_group (old) → public.auth_group (new)
+
+== Summary
+* Rows: 2 → 2 (row-count preserved)
+* Complete 1:1 migration by `id` (`0` old IDs missing in new; `0` extra new IDs)
+* `name` preserved exactly for both rows (`2/2` exact matches)
+* Schema is effectively the same, with one safe widening: `name varchar(80)` → `varchar(150)`
+* PK and `UNIQUE(name)` are preserved unchanged
+* No duplicate names on either side
+* However, the **group definitions only** were carried over: group memberships and group-permission assignments were **not** carried over for these groups in the new DB
+* Old groups were actively used; new groups exist as unlinked records (`auth_user_groups` and `auth_group_permissions` usage = 0 for both groups)
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.auth_group|2
+|new|public.auth_group|2
+|===
+
+== Direct row identity preservation
+|===
+|Check|Result
+|Old IDs missing in new|0
+|New IDs not in old|0
+|Joined rows by `id` (old↔new)|2
+|Rows where `name` unchanged|2
+|Rows where `name` differs|0
+|Conclusion|Complete 1:1 carry-over of the two group definition rows
+|===
+
+== Column model comparison
+
+=== Common columns
+|===
+|Column|Old|New|Notes
+|id|int4 NOT NULL|int4 NOT NULL|unchanged
+|name|varchar(80) NOT NULL|varchar(150) NOT NULL|length widened safely
+|===
+
+=== Old-only columns
+* None
+
+=== New-only columns
+* None
+
+== Constraints and indexes
+
+=== Constraints
+Old:
+
+* Primary key on `id`
+* Unique constraint on `name`
+
+New:
+
+* Primary key on `id`
+* Unique constraint on `name`
+
+Observation:
+
+* The logical integrity rules are unchanged.
+
+=== Indexes
+Old:
+
+* PK index
+* unique index on `name`
+* pattern index on `name`
+
+New:
+
+* PK index
+* unique index on `name`
+* pattern index on `name`
+
+Observation:
+
+* Index structure is effectively the same.
+* Only the generated name of the pattern index differs:
+** old: `auth_group_name_like`
+** new: `auth_group_name_a6ea08ec_like`
+
+== Data quality / blocker checks
+|===
+|Check|Result
+|Old NULLs in common new NOT NULL column `id`|0
+|Old NULLs in common new NOT NULL column `name`|0
+|Old values exceeding new varchar length for `name` (150)|0
+|===
+
+Interpretation:
+
+* There were no nullability or length blockers for this table.
+* The shared row data fits cleanly into the new schema.
+
+== Duplicate / name-set verification
+
+=== Duplicate names
+Old:
+
+* none
+
+New:
+
+* none
+
+Summary:
+|===
+|Side|Duplicate-name rows
+|old|0
+|new|0
+|===
+
+=== Name-set comparison
+|===
+|Check|Result
+|Old names missing in new|0
+|New names not in old|0
+|===
+
+Conclusion:
+
+* The group-name set is identical across old and new.
+
+== Semantic migration verification
+
+=== Exact name preservation by `id`
+|===
+|Check|Result
+|Total joined by `id`|2
+|`name` exact match|2
+|`name` differs|0
+|Trimmed-name matches|2
+|Case-folded matches|2
+|===
+
+Conclusion:
+
+* `auth_group.name` was preserved exactly for every migrated row.
+
+=== Group inventory
+Old:
+|===
+|id|name
+|1|Data Editor
+|2|Blog Editor
+|===
+
+New:
+|===
+|id|name
+|1|Data Editor
+|2|Blog Editor
+|===
+
+Conclusion:
+
+* The two group definition rows are identical by both `id` and `name`.
+
+== Usage preservation through linked auth tables
+
+=== User memberships via `auth_user_groups`
+Comparison result:
+|===
+|Check|Result
+|Group IDs compared in old/new usage join|0
+|Same membership counts|0
+|Different membership counts|0
+|===
+
+Interpretation:
+
+* No group IDs had usage on both sides simultaneously.
+* This is because the new DB has no membership rows for these groups.
+
+Detailed profile:
+|===
+|Group id|Group name|Old user links|New user links
+|1|Data Editor|9|0
+|2|Blog Editor|8|0
+|===
+
+Conclusion:
+
+* Group memberships were **not transferred**.
+
+=== Group-permission bundles via `auth_group_permissions`
+Comparison result:
+|===
+|Check|Result
+|Group IDs compared in old/new usage join|0
+|Same permission-link counts|0
+|Different permission-link counts|0
+|===
+
+Interpretation:
+
+* Again, no overlapping used group IDs exist because the new DB has no permission-link rows for these groups.
+
+Detailed profile:
+|===
+|Group id|Group name|Old permission links|New permission links
+|1|Data Editor|220|0
+|2|Blog Editor|27|0
+|===
+
+Conclusion:
+
+* Group-to-permission assignments were **not transferred**.
+
+== Migration behavior interpretation
+This table shows a split outcome:
+
+* as a **standalone lookup table**, `auth_group` was migrated perfectly:
+** same row count
+** same IDs
+** same names
+** same uniqueness rules
+
+but
+
+* as a **security/authorization construct**, the migration is incomplete:
+** no user memberships remain attached to these groups in the new DB
+** no permission bundles remain attached to these groups in the new DB
+
+So the new DB contains the group records themselves, but not their operational meaning.
+
+== Conclusion
+`auth_group` is a **row-perfect structural carry-over but an incomplete semantic authorization migration**:
+
+* the 2 group records were preserved exactly
+* schema and integrity rules remain effectively unchanged
+* no data-fit blockers exist
+* however, both groups are unlinked in the new DB:
+** old `Data Editor`: 9 users, 220 permissions → new: 0 users, 0 permissions
+** old `Blog Editor`: 8 users, 27 permissions → new: 0 users, 0 permissions
+
+This should therefore be documented as:
+
+* **group definitions migrated**
+* **group memberships not migrated**
+* **group permission assignments not migrated**
