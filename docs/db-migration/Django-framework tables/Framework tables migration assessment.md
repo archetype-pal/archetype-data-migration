@@ -1,0 +1,79 @@
+# Django / framework tables migration assessment
+
+## Scope
+This report assesses Django/framework-managed tables separately from domain tables.  
+These tables are interpreted as framework metadata, auth configuration, admin/runtime state, or environment-specific records rather than primary business data.
+
+## Classification model
+- migrated business-relevant  
+- framework metadata  
+- runtime / environment-generated  
+- legacy-only removed table  
+- new-only introduced framework table  
+
+## Group A — paired core Django/auth tables
+
+### public.auth_group (old) → public.auth_group (new)
+...short subsection...
+
+### public.auth_permission (old) → public.auth_permission (new)
+...deeper subsection...
+
+### public.auth_group_permissions (old) → public.auth_group_permissions (new)
+...short subsection...
+
+### public.auth_user (old) → public.auth_user (new)
+...deeper subsection...
+
+### public.auth_user_groups (old) → public.auth_user_groups (new)
+...short subsection...
+
+### public.auth_user_user_permissions (old) → public.auth_user_user_permissions (new)
+...short subsection...
+
+### public.django_content_type (old) → public.django_content_type (new)
+...deeper subsection...
+
+### public.django_admin_log (old) → public.django_admin_log (new)
+...deeper subsection...
+
+### public.django_migrations (old) → public.django_migrations (new)
+...deeper subsection...
+
+### public.django_session (old) → public.django_session (new)
+...deeper subsection...
+
+## Group B — old-only framework tables
+
+### Legacy-only framework tables in old
+- django_comment_flags  
+- django_comments  
+- django_redirect  
+- django_site  
+
+For each:
+- row count  
+- purpose in old stack  
+- no paired table in new  
+- whether intentionally dropped / obsolete / functionally replaced  
+
+## Group C — new-only framework tables
+
+### New framework tables introduced in new
+- authtoken_token  
+
+For each:
+- row count  
+- purpose in new stack  
+- whether runtime-generated / environment-specific  
+- not a migrated business-data target  
+
+## Overall interpretation
+These Django/framework tables should not be interpreted the same way as domain-table migrations.  
+Differences often reflect:
+- app renaming  
+- regenerated framework metadata  
+- permission re-seeding  
+- new auth infrastructure  
+- runtime/admin/session state  
+- environment-specific migration history  
