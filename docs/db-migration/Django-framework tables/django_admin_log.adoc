@@ -1,0 +1,147 @@
+= public.django_admin_log (old) → public.django_admin_log (new)
+
+== Summary
+* Rows: 7566 → 0
+* No log rows were migrated to the new database
+* Shared schema is largely preserved for the table definition, but the data itself was not carried over
+* All 7566 old row IDs are missing in new; no extra new IDs exist
+* Because the new table is empty, there is no 1:1 row preservation, no joined-by-`id` matches, and no comparable data-level migration
+* Referential integrity on the old side is clean (`user_id` and non-null `content_type_id` resolve correctly)
+* Referential integrity on the new side is trivially clean because the table contains no rows
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.django_admin_log|7566
+|new|public.django_admin_log|0
+|===
+
+== Direct row identity preservation
+|===
+|Check|Result
+|Old IDs missing in new|7566
+|New IDs not in old|0
+|Joined rows by `id`|0
+|Conclusion|No admin log rows were migrated
+|===
+
+Interpretation:
+
+* This is a full data drop / non-migration for this table.
+* The table exists in the new schema, but its contents were not transferred.
+
+== Column model comparison
+
+=== Common columns
+|===
+|Column|Old|New|Notes
+|id|int4 NOT NULL|int4 NOT NULL|unchanged
+|action_time|timestamptz NOT NULL|timestamptz NOT NULL|unchanged
+|user_id|int4 NOT NULL|int4 NOT NULL|unchanged FK target type
+|content_type_id|int4 NULL|int4 NULL|unchanged nullable FK
+|object_id|text NULL|text NULL|unchanged
+|object_repr|varchar(200) NOT NULL|varchar(200) NOT NULL|unchanged
+|action_flag|int2 NOT NULL|int2 NOT NULL|unchanged
+|change_message|text NOT NULL|text NOT NULL|unchanged
+|===
+
+=== Old-only columns
+* None
+
+=== New-only columns
+* None
+
+== Constraints and indexes
+
+=== Constraints
+Old:
+
+* Primary key on `id`
+* Check constraint: `action_flag >= 0`
+* FK `user_id` → `auth_user(id)`
+* FK `content_type_id` → `django_content_type(id)`
+
+New:
+
+* Primary key on `id`
+* Check constraint: `action_flag >= 0`
+* FK `user_id` → `auth_user(id)`
+* FK `content_type_id` → `django_content_type(id)`
+
+Observation:
+
+* The structural model is effectively preserved.
+* The difference is not schema loss, but absence of migrated data.
+
+=== Indexes
+Old:
+
+* PK index
+* index on `user_id`
+* index on `content_type_id`
+
+New:
+
+* PK index
+* index on `user_id`
+* index on `content_type_id`
+
+== Data quality / blocker checks (generic same-column checks)
+|===
+|Check|Result
+|Old NULLs in common new NOT NULL column `id`|0
+|Old NULLs in common new NOT NULL column `action_time`|0
+|Old NULLs in common new NOT NULL column `user_id`|0
+|Old NULLs in common new NOT NULL column `object_repr`|0
+|Old NULLs in common new NOT NULL column `action_flag`|0
+|Old NULLs in common new NOT NULL column `change_message`|0
+|Old NULLs in comparable varchar column `object_repr` exceeding new length 200|0
+|===
+
+Interpretation:
+
+* There were no obvious nullability or varchar-length blockers preventing migration of the shared columns.
+* The absence of rows in the new table therefore appears to be a migration decision, not a schema-fit failure.
+
+== Duplicate / identity sanity checks
+|===
+|Check|Result
+|Old duplicate `id` groups|0
+|New duplicate `id` groups|0
+|===
+
+Conclusion:
+
+* Both sides are structurally sound with respect to primary-key uniqueness.
+* The new table is simply empty.
+
+== Referential integrity checks
+|===
+|Check|Result
+|Old `user_id` FK orphans|0
+|Old non-null `content_type_id` FK orphans|0
+|New `user_id` FK orphans|0
+|New `content_type_id` FK orphans|0
+|===
+
+Interpretation:
+
+* Old admin log rows reference valid users and valid content types where present.
+* No evidence suggests the old data was unusable from an FK perspective.
+
+== Migration behavior interpretation
+The evidence supports a straightforward conclusion:
+
+* `django_admin_log` was retained as a table in the new database schema
+* its structure remains compatible in practical terms
+* its historical rows were not migrated at all
+
+This is consistent with a deliberate choice to exclude audit/admin history from the migrated dataset.
+
+== Conclusion
+This table is a **schema-retained but data-not-migrated** case:
+
+* shared structure is preserved
+* all 7566 old rows are absent from the new database
+* there are no apparent nullability, length, duplication, or FK-integrity blockers in the old data
+* the empty new table strongly indicates intentional omission of legacy Django admin audit history during migration
