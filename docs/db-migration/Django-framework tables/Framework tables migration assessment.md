@@ -2,10 +2,10 @@
 
 ## Scope
 This report assesses Django/framework-managed tables separately from domain tables.  
-These tables are interpreted as framework metadata, auth configuration, admin/runtime state, or environment-specific records rather than primary business data.
+These tables are interpreted as framework metadata, auth configuration, admin/runtime state, or environment-specific records rather than primary project data.
 
 ## Classification model
-- migrated business-relevant  
+- migrated project-relevant  
 - framework metadata  
 - runtime / environment-generated  
 - legacy-only removed table  
@@ -66,7 +66,7 @@ For each:
 - row count  
 - purpose in new stack  
 - whether runtime-generated / environment-specific  
-- not a migrated business-data target  
+- not a migrated project-data target  
 
 ## Overall interpretation
 These Django/framework tables should not be interpreted the same way as domain-table migrations.  
