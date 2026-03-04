@@ -1,0 +1,751 @@
+= Django / framework tables report (old → new)
+:toc:
+:toclevels: 3
+
+This report documents the Django/framework tables reviewed across the old and new databases.
+
+Rather than treating these exactly like the domain-table migrations, this report classifies each table according to its real function in the system:
+
+* **migrated project-relevant** — rare for this group
+* **framework metadata** — permissions, content types, migration history, admin/system metadata
+* **runtime / environment-generated** — sessions, tokens, admin logs in active deployments
+* **legacy-only framework table** — old package tables not present in the new schema
+
+== Scope
+
+=== Group A — paired core framework tables
+* `auth_group`
+* `auth_group_permissions`
+* `auth_permission`
+* `auth_user`
+* `auth_user_groups`
+* `auth_user_user_permissions`
+* `django_content_type`
+* `django_admin_log`
+* `django_migrations`
+* `django_session`
+
+=== Group B — old-only / removed in new
+* `django_comment_flags`
+* `django_comments`
+* `django_redirect`
+* `django_site`
+
+=== Group C — new-only / introduced in new
+* `authtoken_token`
+
+== Overall interpretation
+
+The framework tables do **not** behave like the main domain-data migrations.
+
+The evidence supports four broad conclusions:
+
+* **auth/admin/runtime state was not migrated as a full historical copy**
+* **content types and permissions were substantially regenerated around the new app layout**, not preserved by raw ID
+* **group membership / group permissions / user direct permissions were intentionally or effectively reset in the new environment**
+* **sessions, admin logs, migration history, and token tables reflect environment/bootstrap/runtime state rather than historical project content migration**
+
+This means that row-count differences here are usually **not migration failures in the same sense as domain tables**; they more often reflect framework re-initialization, app restructuring, or deliberate omission of non-essential runtime data.
+
+== Classification summary
+
+|===
+|Table|Category|Observed behavior
+
+|`auth_group`
+|Framework metadata
+|Group names preserved, but related membership/permission bridges are empty in new
+
+|`auth_group_permissions`
+|Framework metadata
+|Not migrated; new table empty
+
+|`auth_permission`
+|Framework metadata
+|Semantic permission universe rebuilt around new apps/models; not preserved by raw ID
+
+|`auth_user`
+|Framework / operational user accounts
+|Partial carry-over in row count only; raw IDs reused for different users; not a semantic 1:1 migration
+
+|`auth_user_groups`
+|Framework metadata
+|Not migrated; new table empty
+
+|`auth_user_user_permissions`
+|Framework metadata
+|Not migrated; new table empty
+
+|`django_content_type`
+|Framework metadata
+|Rebuilt for new installed apps/models; raw IDs not semantically stable
+
+|`django_admin_log`
+|Runtime / admin history
+|Not migrated; new table empty
+
+|`django_migrations`
+|Framework metadata / environment bootstrap history
+|New environment has its own migration history; raw ID overlap is not semantically meaningful
+
+|`django_session`
+|Runtime / environment-generated
+|No shared session keys; all old and new rows are environment-local session state
+
+|`django_comment_flags`
+|Legacy-only framework table
+|Old-only, zero rows, tied to removed comments framework usage
+
+|`django_comments`
+|Legacy-only framework table
+|Old-only, zero rows; replacement candidate detected: `publications_comment`
+
+|`django_redirect`
+|Legacy-only framework table
+|Old-only, zero rows
+
+|`django_site`
+|Legacy-only framework/config table
+|Old-only, one configured site row retained only in old schema
+
+|`authtoken_token`
+|New-only framework/runtime table
+|New DRF token-auth table with one environment-generated row
+|===
+
+== Group A — paired core framework tables
+
+=== public.auth_group (old) → public.auth_group (new)
+
+==== Summary
+
+* Rows: `2 → 2`
+* Raw group rows are preserved by `id`
+* `name` matches exactly for both rows
+* Schema is essentially the same; `name` length increases from `varchar(80)` to `varchar(150)`
+* However, the related bridge tables `auth_group_permissions` and `auth_user_groups` are empty in new
+* Therefore the **group entities exist**, but their operational assignments/privileges were not migrated
+
+==== Counts
+|===
+|Check|Result
+|Old rows|2
+|New rows|2
+|Old IDs missing in new|0
+|New IDs not in old|0
+|Joined by `id`|2
+|Joined rows with exact `name` match|2
+|===
+
+==== Preserved group rows
+|===
+|ID|Name
+|1|`Data Editor`
+|2|`Blog Editor`
+|===
+
+==== Structural notes
+* PK on `id` exists on both sides
+* `UNIQUE(name)` exists on both sides
+* only notable schema change is widened `name`
+* pattern index name differs between old/new due Django naming conventions
+
+==== Important semantic caveat
+Group rows themselves are preserved, but the linked assignments are not:
+
+|===
+|Group|Old user links|New user links|Old permission links|New permission links
+|`Data Editor`|9|0|220|0
+|`Blog Editor`|8|0|27|0
+|===
+
+Conclusion:
+
+* `auth_group` is only **structurally preserved**
+* the effective authorization model attached to those groups was **not migrated**
+
+=== public.auth_group_permissions (old) → public.auth_group_permissions (new)
+
+==== Summary
+
+* Rows: `247 → 0`
+* New table exists structurally but is empty
+* No pair-level migration occurred
+* Old table is referentially clean and contains unique `(group_id, permission_id)` pairs
+* This is strong evidence of **authorization reset / non-migration** rather than partial copy failure
+
+==== Counts
+|===
+|Check|Result
+|Old rows|247
+|New rows|0
+|Old IDs missing in new|247
+|New IDs not in old|0
+|Old distinct `(group_id,permission_id)` pairs missing in new|247
+|New pairs not in old|0
+|===
+
+==== Integrity
+|===
+|Check|Result
+|Old group FK orphans|0
+|Old permission FK orphans|0
+|New group FK orphans|0
+|New permission FK orphans|0
+|===
+
+==== Usage profile
+|===
+|Check|Result
+|Old used groups|2
+|New used groups|0
+|Old used permissions|247
+|New used permissions|0
+|===
+
+Interpretation:
+
+* all legacy group-permission assignments were dropped in the new environment
+* the two preserved groups therefore carry no permissions in `new`
+
+=== public.auth_permission (old) → public.auth_permission (new)
+
+==== Summary
+
+* Rows: `344 → 148`
+* Table shape is essentially the same
+* Raw ID overlap is not semantically meaningful
+* Semantic permission set changed substantially because the new project uses a different app/model universe and Django now includes `view_*` permissions
+* Only `18` exact semantic permission rows are shared across old/new
+* This is a **framework metadata regeneration**, not a direct migration
+
+==== Counts
+|===
+|Check|Result
+|Old rows|344
+|New rows|148
+|Old IDs missing in new|196
+|New IDs not in old|0
+|Old semantic permissions missing in new|326
+|New semantic permissions not in old|130
+|Exact semantic rows shared|18
+|===
+
+==== Structural notes
+* Columns preserved: `id`, `name`, `content_type_id`, `codename`
+* PK preserved
+* FK to `django_content_type` preserved conceptually
+* uniqueness on `(content_type_id, codename)` preserved conceptually with Django-renamed constraint/index names
+
+==== Semantic interpretation
+The permission universe changes for three main reasons:
+
+* many old apps/models disappeared (`digipal`, `digipal_text`, `blog`, `forms`, `generic`, etc.)
+* many new apps/models were introduced (`manuscripts`, `annotations`, `scribes`, `symbols_structure`, `authtoken`, `publications`, etc.)
+* newer Django permission conventions add `view_*` permissions, giving many models `4` permissions instead of `3`
+
+Per-model permission multiplicity confirms this:
+
+|===
+|Side|Typical permission rows per model
+|old|mostly 3 (`add`, `change`, `delete`)
+|new|mostly 4 (`add`, `change`, `delete`, `view`)
+|===
+
+Conclusion:
+
+* `auth_permission` should be treated as **re-generated framework metadata aligned to the new installed apps**, not as a migrated semantic permission ledger
+
+=== public.auth_user (old) → public.auth_user (new)
+
+==== Summary
+
+* Rows: `15 → 14`
+* Superficially similar schema, but **not** a semantic 1:1 migration
+* `14` rows join by raw `id`, yet many of those IDs now represent different people/accounts
+* `6` old usernames are missing in new, and `5` new usernames are not present in old
+* Old `id=9` (`dbeditor`) is missing entirely in new
+* New user records look like environment/bootstrap accounts for the new deployment
+
+==== Counts
+|===
+|Check|Result
+|Old rows|15
+|New rows|14
+|Old IDs missing in new|1
+|Missing old ID sample|9 (`dbeditor`)
+|New IDs not in old|0
+|Old usernames missing in new|6
+|New usernames not in old|5
+|Joined by raw `id`|14
+|===
+
+==== Shared-schema comparison on joined IDs
+|===
+|Check|Result
+|Username exact match|8
+|Username differs|6
+|Email exact match|9
+|Email differs|5
+|First name exact match|9
+|First name differs|5
+|Last name exact match|9
+|Last name differs|5
+|Password exact match|8
+|Password differs|6
+|`is_active` same|12
+|`is_staff` same|14
+|`is_superuser` same|11
+|`date_joined` same|8
+|`last_login` same incl. nulls|8
+|===
+
+==== Interpretation
+The mismatch samples show that several old IDs were reused for different new users, for example:
+
+* old `id=1` = `admin`, new `id=1` = `ahmed`
+* old `id=3` = `pstokes`, new `id=3` = `faidon`
+* old `id=4` = `jdavies`, new `id=4` = `luca`
+* old `id=5` = `dbroun`, new `id=5` = `stewart`
+* old `id=6` = `twebber`, new `id=6` = `admin`
+
+So while the numeric IDs overlap, the identities do not reliably match.
+
+==== Profile difference
+|===
+|Check|Old|New
+|Total users|15|14
+|`is_active = true`|10|12
+|`is_superuser = true`|9|12
+|`last_login` NULLs|0|4
+|===
+
+Conclusion:
+
+* `auth_user` was **not migrated as a historical identity table**
+* the new table represents a new operational user population, with partial reuse of raw numeric IDs
+
+=== public.auth_user_groups (old) → public.auth_user_groups (new)
+
+==== Summary
+
+* Rows: `17 → 0`
+* New table exists but is empty
+* All old user↔group memberships are absent in new
+* Old table is clean and unique on `(user_id, group_id)`
+
+==== Counts
+|===
+|Check|Result
+|Old rows|17
+|New rows|0
+|Old pair rows missing in new|17
+|New pairs not in old|0
+|===
+
+==== Usage profile
+|===
+|Check|Result
+|Old used users|9
+|New used users|0
+|Old used groups|2
+|New used groups|0
+|===
+
+Interpretation:
+
+* group memberships were not migrated
+* this matches the empty `auth_group_permissions` table and explains why preserved groups are operationally inert in new
+
+=== public.auth_user_user_permissions (old) → public.auth_user_user_permissions (new)
+
+==== Summary
+
+* Rows: `318 → 0`
+* New table exists but is empty
+* All direct user↔permission assignments from old are absent in new
+* Old table is referentially clean and unique on `(user_id, permission_id)`
+
+==== Counts
+|===
+|Check|Result
+|Old rows|318
+|New rows|0
+|Old pair rows missing in new|318
+|New pairs not in old|0
+|===
+
+==== Usage profile
+|===
+|Check|Result
+|Old used users|2
+|New used users|0
+|Old used permissions|316
+|New used permissions|0
+|===
+
+Interpretation:
+
+* direct user-level permissions were not migrated
+* together with the empty group-bridge tables, this indicates a full reset of old authorization assignments
+
+=== public.django_content_type (old) → public.django_content_type (new)
+
+==== Summary
+
+* Rows: `114 → 37`
+* Schema is effectively unchanged
+* Raw IDs are not semantically preserved
+* Distinct `(app_label, model)` project keys changed heavily: `108` old pairs missing in new; `31` new pairs not in old
+* Only `6` content-type pairs are shared semantically between old and new
+* This table is framework metadata rebuilt around the new installed app/model set
+
+==== Counts
+|===
+|Check|Result
+|Old rows|114
+|New rows|37
+|Old IDs missing in new|77
+|New IDs not in old|0
+|Old semantic pairs missing in new|108
+|New semantic pairs not in old|31
+|Shared semantic pairs|6
+|===
+
+==== Structural notes
+* Columns preserved: `id`, `app_label`, `model`
+* PK preserved
+* uniqueness on `(app_label, model)` preserved conceptually
+
+==== Interpretation
+The old content-type universe is dominated by legacy apps such as:
+
+* `digipal`
+* `digipal_text`
+* `blog`
+* `forms`
+* `generic`
+* `pages`
+* `twitter`
+* `django_comments`
+
+The new content-type universe is dominated by:
+
+* `manuscripts`
+* `symbols_structure`
+* `publications`
+* `scribes`
+* `annotations`
+* `authtoken`
+* `common`
+
+Conclusion:
+
+* `django_content_type` is **not a project-data migration target**
+* differences are expected and reflect installed-model redefinition in the new project
+
+=== public.django_admin_log (old) → public.django_admin_log (new)
+
+==== Summary
+
+* Rows: `7566 → 0`
+* New table exists structurally but is empty
+* No admin-log history was migrated
+* This table should be treated as runtime/admin audit history local to an environment
+
+==== Counts
+|===
+|Check|Result
+|Old rows|7566
+|New rows|0
+|Old IDs missing in new|7566
+|Joined by `id`|0
+|===
+
+==== Structure and integrity
+* Common columns preserved structurally: `id`, `action_time`, `user_id`, `content_type_id`, `object_id`, `object_repr`, `action_flag`, `change_message`
+* old and new FKs point to their respective `auth_user` and `django_content_type` tables
+* old FK orphans: `0`
+* new FK orphans: `0`
+
+Conclusion:
+
+* `django_admin_log` was intentionally or effectively **not migrated**
+* this is appropriate for environment-local admin audit history
+
+=== public.django_migrations (old) → public.django_migrations (new)
+
+==== Summary
+
+* Rows: `49 → 60`
+* Raw IDs `1..49` are present in both, but this is **not semantically meaningful**
+* Semantic migration records differ heavily: `39` old `(app,name)` pairs are missing in new and `50` new ones are absent in old
+* Only a small subset of the earliest built-in migration rows align by app/name
+* This table records environment migration history and therefore reflects **project/bootstrap state**, not migrated project content
+
+==== Counts
+|===
+|Check|Result
+|Old rows|49
+|New rows|60
+|Old IDs missing in new|0
+|New IDs not in old|11
+|Old semantic `(app,name)` pairs missing in new|39
+|New semantic `(app,name)` pairs not in old|50
+|Joined by raw `id`|49
+|Joined rows with exact raw `(app,name,applied)` match|0
+|===
+
+==== Why raw ID overlap is misleading
+The new environment reused low numeric IDs for its own migration ledger. On joined IDs:
+
+* only `3` rows have same `app`
+* only `9` rows have same `name`
+* `0` rows have same `applied` timestamp
+* `0` rows are exact raw matches
+
+So the overlap is sequencing coincidence, not migration preservation.
+
+==== Interpretation
+Old migration history belongs to the legacy project/apps (`digipal`, `digipal_text`, `blog`, `forms`, etc.).
+
+New migration history belongs to the rebuilt project/apps (`manuscripts`, `symbols_structure`, `scribes`, `annotations`, `publications`, `authtoken`, etc.), plus more recent built-in Django migrations.
+
+Conclusion:
+
+* `django_migrations` should be treated as **environment/bootstrap metadata**
+* differences are expected and should not be judged by the same standards as domain-table migration reports
+
+=== public.django_session (old) → public.django_session (new)
+
+==== Summary
+
+* Rows: `604 → 5`
+* Primary key is `session_key` rather than numeric ID
+* No session keys are shared between old and new
+* Both old and new rows are entirely expired at the time of inspection
+* This table is pure runtime state and should not be expected to migrate semantically
+
+==== Counts
+|===
+|Check|Result
+|Old rows|604
+|New rows|5
+|Old session keys missing in new|604
+|New session keys not in old|5
+|Shared session keys|0
+|Joined by `session_key`|0
+|===
+
+==== Expiry profile
+|===
+|Side|Total|Expired now|Unexpired now|Min expire date|Max expire date
+|old|604|604|0|2014-11-18 20:09:44.350911+00|2024-07-16 10:57:54.350684+00
+|new|5|5|0|2025-02-27 15:08:22.075427+00|2026-02-13 11:05:33.574785+00
+|===
+
+Conclusion:
+
+* `django_session` is **runtime/environment-generated session state**
+* the old and new tables are unrelated operational artifacts from different environments
+
+== Group B — old-only / removed in new
+
+These tables do not have paired equivalents in the new schema and should be treated as **legacy-only framework/package tables**.
+
+=== Group B overview
+|===
+|Table|Rows in old|Observed status
+|`django_comment_flags`|0|legacy comments framework table; unused
+|`django_comments`|0|legacy comments framework table; unused; replacement candidate detected in new project: `publications_comment`
+|`django_redirect`|0|legacy redirects table; unused
+|`django_site`|1|legacy site-configuration table retained only in old
+|===
+
+=== public.django_comment_flags (old-only)
+
+==== Summary
+* Row count: `0`
+* Legacy comments-flag bridge table
+* Still fully constrained and indexed in old schema
+* References `django_comments` and `auth_user`
+* Not present in new schema
+
+==== Structure
+Columns:
+
+* `id`
+* `user_id`
+* `comment_id`
+* `flag`
+* `flag_date`
+
+Constraints:
+
+* PK on `id`
+* FK `user_id` → `auth_user(id)`
+* FK `comment_id` → `django_comments(id)`
+* unique on `(user_id, comment_id, flag)`
+
+Interpretation:
+
+* this is a removed/unused legacy comments subsystem artifact
+* because it contains `0` rows, there is no migration payload to account for
+
+=== public.django_comments (old-only)
+
+==== Summary
+* Row count: `0`
+* Legacy Django comments table
+* Not present in new schema
+* A replacement candidate was detected in new: `public.publications_comment`
+* No live data remained in this table at inspection time
+
+==== Structure
+Columns include:
+
+* `id`
+* `content_type_id`
+* `object_pk`
+* `site_id`
+* `user_id`
+* `user_name`
+* `user_email`
+* `user_url`
+* `comment`
+* `submit_date`
+* `ip_address`
+* `is_public`
+* `is_removed`
+
+Constraints include:
+
+* PK on `id`
+* FK to `django_content_type`
+* FK to `django_site`
+* FK to `auth_user`
+
+Interpretation:
+
+* old comments framework was effectively unused (`0` rows)
+* it appears to have been dropped in the rebuilt application architecture
+* any current commenting functionality belongs to a different app/model design
+
+=== public.django_redirect (old-only)
+
+==== Summary
+* Row count: `0`
+* Legacy redirects table
+* Not present in new schema
+* No redirect data existed to migrate
+
+==== Structure
+Columns:
+
+* `id`
+* `site_id`
+* `old_path`
+* `new_path`
+
+Constraints:
+
+* PK on `id`
+* FK `site_id` → `django_site(id)`
+* unique on `(site_id, old_path)`
+
+Interpretation:
+
+* legacy redirects framework was present but unused
+* omission from new schema is not a data-loss event given zero rows
+
+=== public.django_site (old-only)
+
+==== Summary
+* Row count: `1`
+* Legacy site-configuration table
+* Not present in new schema under the reviewed paired framework tables
+* One configured site exists in old: `www.modelsofauthority.ac.uk`
+* This is configuration/runtime framework metadata, not project-domain content
+
+==== Structure
+Columns:
+
+* `id`
+* `domain`
+* `name`
+
+==== Stored row
+|===
+|ID|Domain|Name
+|1|`www.modelsofauthority.ac.uk`|`Default`
+|===
+
+==== Dependency notes
+Inbound references in old include:
+
+* `blog_blogcategory.site_id`
+* `blog_blogpost.site_id`
+* `conf_setting.site_id`
+* `core_sitepermission_sites.site_id`
+* `django_comments.site_id`
+* `django_redirect.site_id`
+* `generic_keyword.site_id`
+* `pages_page.site_id`
+
+Interpretation:
+
+* this table anchored the old Django sites framework configuration
+* absence from the paired new framework set indicates the new deployment either does not use the sites framework in the same way, or it is being handled outside the reviewed migration scope
+
+== Group C — new-only / introduced in new
+
+=== public.authtoken_token (new-only)
+
+==== Summary
+* Row count: `1`
+* New DRF token-auth table
+* No legacy counterpart in old
+* One token row exists, tied to one user
+* No null, duplicate, or FK-orphan issues
+
+==== Structure
+Columns:
+
+* `key` varchar(40) — primary key
+* `created` timestamptz
+* `user_id` int4 — FK to `auth_user(id)`
+
+Constraints:
+
+* PK on `key`
+* FK `user_id` → `auth_user(id)`
+* unique on `user_id`
+
+==== Profile
+|===
+|Check|Result
+|Rows|1
+|Distinct keys|1
+|Distinct users|1
+|Min/Max created|2026-01-30 11:05:45.707469+00
+|User FK orphans|0
+|===
+
+Interpretation:
+
+* this is operational authentication state generated in the new environment
+* it should be documented as **new-only runtime/framework data**, not migrated legacy data
+
+== Final conclusion
+
+The Django/framework layer behaves very differently from the domain-table migrations.
+
+Across Groups A, B, and C, the evidence supports the following final interpretation:
+
+* **framework metadata tied to installed apps/models** (`django_content_type`, `auth_permission`) was rebuilt around the new project structure
+* **authorization assignments** (`auth_group_permissions`, `auth_user_groups`, `auth_user_user_permissions`) were not migrated and are empty in new
+* **user rows** were partially re-created/reassigned rather than semantically preserved by historical identity
+* **admin logs, sessions, tokens, and migration history** reflect environment-local runtime/bootstrap state rather than project-domain migration
+* **legacy package tables** for comments/redirects/sites were either unused, dropped, or replaced by different mechanisms in the new project
+
+Therefore, these framework tables should be interpreted primarily as **system-state and framework-configuration evidence**, not as core migrated research data.
