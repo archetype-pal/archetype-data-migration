@@ -1,0 +1,308 @@
+= Group B — old-only Django/framework tables (old)
+
+== Scope
+This section documents legacy Django/framework tables that exist in `old` but have no direct paired table in the new schema.
+
+Covered tables:
+
+* `public.django_comment_flags`
+* `public.django_comments`
+* `public.django_redirect`
+* `public.django_site`
+
+These are not pairwise table migrations in the same sense as the domain tables already documented. They are best treated as old-only framework/configuration artefacts.
+
+== Overall summary
+* `django_comment_flags`: old-only, empty
+* `django_comments`: old-only, empty
+* `django_redirect`: old-only, empty
+* `django_site`: old-only, contains 1 row
+* No evidence here of lost migrated research/project data
+* The three empty tables are legacy framework tables with no data obligation in the audited snapshot
+* `django_site` is a framework configuration table rather than a domain-data table
+
+== Counts
+|===
+|Table|Rows
+|`public.django_comment_flags`|0
+|`public.django_comments`|0
+|`public.django_redirect`|0
+|`public.django_site`|1
+|===
+
+== Classification
+|===
+|Table|Classification|Interpretation
+|`django_comment_flags`|deprecated legacy framework table|empty old-only moderation support table
+|`django_comments`|deprecated legacy framework table|empty old-only comments framework table
+|`django_redirect`|deprecated legacy framework table|empty old-only redirects framework table
+|`django_site`|legacy framework configuration table|single-row site configuration table
+|===
+
+== public.django_comment_flags
+
+=== Summary
+* Rows: 0
+* Legacy comment-flagging support table
+* No counterpart in new schema
+* Empty in the audited snapshot
+* No inbound FK references from other old tables
+
+=== Schema
+|===
+|Column|Type|Nullable|Notes
+|`id`|integer|NO|primary key
+|`user_id`|integer|NO|FK to `auth_user(id)`
+|`comment_id`|integer|NO|FK to `django_comments(id)`
+|`flag`|varchar(30)|NO|flag label
+|`flag_date`|timestamptz|NO|timestamp
+|===
+
+=== Constraints
+* PK on `id`
+* FK `user_id` → `auth_user(id)`
+* FK `comment_id` → `django_comments(id)`
+* UNIQUE (`user_id`, `comment_id`, `flag`)
+
+=== Indexes
+* PK index
+* index on `user_id`
+* index on `comment_id`
+* index on `flag`
+* pattern index on `flag`
+* unique index on (`user_id`, `comment_id`, `flag`)
+
+=== Referential role
+Outbound FKs:
+
+* `user_id` → `auth_user(id)`
+* `comment_id` → `django_comments(id)`
+
+Inbound FKs:
+
+* none
+
+=== Data profile
+|===
+|Check|Result
+|Total rows|0
+|Distinct flagged comments|0
+|Distinct flagging users|0
+|Distinct flag values|0
+|===
+
+=== Conclusion
+`django_comment_flags` is a legacy framework support table that is structurally present but empty in the audited old snapshot. Its absence from the new schema does not indicate migration loss.
+
+== public.django_comments
+
+=== Summary
+* Rows: 0
+* Legacy Django comments framework table
+* No direct paired table in new
+* A conceptually related new table exists: `public.publications_comment`
+* However, there are no old rows here to migrate
+* Empty in the audited snapshot
+
+=== Schema
+|===
+|Column|Type|Nullable|Notes
+|`id`|integer|NO|primary key
+|`content_type_id`|integer|NO|FK to `django_content_type(id)`
+|`object_pk`|text|NO|generic target object id
+|`site_id`|integer|NO|FK to `django_site(id)`
+|`user_id`|integer|YES|optional FK to `auth_user(id)`
+|`user_name`|varchar(50)|NO|display name
+|`user_email`|varchar(254)|NO|email
+|`user_url`|varchar(200)|NO|URL
+|`comment`|text|NO|comment body
+|`submit_date`|timestamptz|NO|submission timestamp
+|`ip_address`|inet|YES|poster IP
+|`is_public`|boolean|NO|public flag
+|`is_removed`|boolean|NO|removed flag
+|===
+
+=== Constraints
+* PK on `id`
+* FK `content_type_id` → `django_content_type(id)`
+* FK `site_id` → `django_site(id)`
+* FK `user_id` → `auth_user(id)`
+
+=== Indexes
+* PK index
+* index on `content_type_id`
+* index on `site_id`
+* index on `user_id`
+* index on `submit_date`
+
+=== Referential role
+Outbound FKs:
+
+* `content_type_id` → `django_content_type(id)`
+* `site_id` → `django_site(id)`
+* `user_id` → `auth_user(id)`
+
+Inbound FKs:
+
+* `django_comment_flags.comment_id` → `django_comments.id`
+* `generic_threadedcomment.comment_ptr_id` → `django_comments.id`
+
+=== Data profile
+|===
+|Check|Result
+|Total rows|0
+|Distinct content types|0
+|Distinct object PKs|0
+|Distinct sites|0
+|Distinct user IDs|0
+|Anonymous comment rows|0
+|Public rows|0
+|Non-public rows|0
+|Removed rows|0
+|===
+
+=== Relocation / replacement note
+A new table named `public.publications_comment` exists in the new schema.
+
+Interpretation:
+
+* comments functionality may have been reintroduced in a different app/model in the new system
+* but there is no row-level evidence of migration from `django_comments`, because the old table is empty
+
+=== Conclusion
+`django_comments` is an empty old-only framework table. Its absence as a paired migrated table does not represent loss of comment data in the audited snapshot.
+
+== public.django_redirect
+
+=== Summary
+* Rows: 0
+* Legacy Django redirects framework table
+* No counterpart in new schema
+* Empty in the audited snapshot
+
+=== Schema
+|===
+|Column|Type|Nullable|Notes
+|`id`|integer|NO|primary key
+|`site_id`|integer|NO|FK to `django_site(id)`
+|`old_path`|varchar(200)|NO|source path
+|`new_path`|varchar(200)|NO|redirect target
+|===
+
+=== Constraints
+* PK on `id`
+* FK `site_id` → `django_site(id)`
+* UNIQUE (`site_id`, `old_path`)
+
+=== Indexes
+* PK index
+* index on `site_id`
+* index on `old_path`
+* pattern index on `old_path`
+* unique index on (`site_id`, `old_path`)
+
+=== Referential role
+Outbound FKs:
+
+* `site_id` → `django_site(id)`
+
+Inbound FKs:
+
+* none
+
+=== Data profile
+|===
+|Check|Result
+|Total rows|0
+|Distinct sites|0
+|Distinct old paths|0
+|Distinct new paths|0
+|Blank `new_path` rows|0
+|===
+
+=== Conclusion
+`django_redirect` is an empty old-only framework routing table. Its absence in the new schema is consistent with framework cleanup or changed routing/configuration handling.
+
+== public.django_site
+
+=== Summary
+* Rows: 1
+* Legacy Django sites-framework configuration table
+* No counterpart in new schema
+* Referenced by several old site-aware tables
+* Contains a single default configuration row
+
+=== Schema
+|===
+|Column|Type|Nullable|Notes
+|`id`|integer|NO|primary key
+|`domain`|varchar(100)|NO|site domain
+|`name`|varchar(50)|NO|site label
+|===
+
+=== Constraints
+* PK on `id`
+
+=== Indexes
+* PK index only
+
+=== Referential role
+Outbound FKs:
+
+* none
+
+Inbound FKs from old tables include:
+
+* `blog_blogcategory.site_id`
+* `blog_blogpost.site_id`
+* `conf_setting.site_id`
+* `core_sitepermission_sites.site_id`
+* `django_comments.site_id`
+* `django_redirect.site_id`
+* `generic_keyword.site_id`
+* `pages_page.site_id`
+
+=== Data profile
+|===
+|Check|Result
+|Total rows|1
+|Distinct domains|1
+|Distinct names|1
+|===
+
+Contained row:
+|===
+|id|domain|name
+|1|`www.modelsofauthority.ac.uk`|`Default`
+|===
+
+=== Migration interpretation
+The new schema has no detected `django_site` table.
+
+This strongly suggests one of the following:
+
+* the new application no longer uses Django’s sites framework
+* old site-aware framework/apps were removed
+* equivalent configuration is handled outside the database
+
+Because this table contains only a single framework configuration row, it should not be treated like a missing project-data migration.
+
+=== Conclusion
+`django_site` is a legacy framework configuration table with one row. Its absence from the new schema appears intentional and architectural, not a failed migration of domain data.
+
+== Group B conclusion
+Group B consists of old-only framework/configuration tables rather than domain-data migrations.
+
+Key findings:
+
+* `django_comment_flags` — empty legacy moderation support table
+* `django_comments` — empty legacy comments framework table
+* `django_redirect` — empty legacy redirects table
+* `django_site` — single-row legacy framework configuration table
+
+Overall interpretation:
+
+* no evidence of missing migrated research/project data
+* three of the four tables are completely empty in the audited snapshot
+* the only non-empty table (`django_site`) is infrastructural configuration, not research-domain content
+* these tables are best documented as intentionally absent from the new schema due to framework/app cleanup and architectural change
