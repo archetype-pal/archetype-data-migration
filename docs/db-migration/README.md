@@ -46,7 +46,7 @@ This directory contains `.adoc` reports for all old→new mappings investigated 
   Not a strict ID-preserve migration; bucket-level status/type checks validated; language links absent in old.
 - `public.digipal_repository` → `public.manuscripts_repository`
 - `public.digipal_source` → `public.manuscripts_bibliographicsource`
-- Date dimension: legacy Digipal date table(s) → `public.common_date` (used by e.g. `scribes_scribe.period_id`)
+- Date dimension: legacy Digipal date table(s) `digipal_date` → `public.common_date` (used by e.g. `scribes_scribe.period_id`)
 
 ---
 
