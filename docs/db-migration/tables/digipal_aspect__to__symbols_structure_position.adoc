@@ -1,0 +1,91 @@
+= public.digipal_aspect (old) → public.symbols_structure_position (new)
+
+== Summary
+* Rows: 17 → 17
+* ID preservation: **full** (0 missing old IDs; 0 extra new IDs)
+* `name` values preserved exactly for all joined rows (17/17)
+* Schema simplification: audit columns (`created`, `modified`) dropped in new
+* Type/length changes:
+** `id`: int4 → int8
+** `name`: varchar(128) → varchar(100) (no shrink blockers found)
+* Uniqueness preserved: `UNIQUE(name)` exists in both old and new
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.digipal_aspect|17
+|new|public.symbols_structure_position|17
+|===
+
+== Column model comparison
+
+=== Common columns
+|===
+|Column|Old|New|Notes
+|id|int4 NOT NULL|int8 NOT NULL|type widened
+|name|varchar(128) NOT NULL|varchar(100) NOT NULL|length reduced; no overlength values detected
+|===
+
+=== Old-only columns (removed)
+* `created` (timestamptz NOT NULL)
+* `modified` (timestamptz NOT NULL)
+
+=== New-only columns
+* None
+
+== Constraints and indexes
+
+=== Constraints
+Old:
+
+* PK on `id`
+* `UNIQUE(name)`
+
+New:
+
+* PK on `id`
+* `UNIQUE(name)`
+
+=== Indexes
+Old:
+
+* PK index
+* unique index on `name`
+* `name` varchar_pattern_ops index
+
+New:
+
+* PK index
+* unique index on `name`
+* `name` varchar_pattern_ops index
+
+== Blocker checks
+
+=== NULL blockers (old values that would violate new NOT NULL)
+|===
+|Column|Old NULLs
+|id|0
+|name|0
+|===
+
+=== Varchar shrink blockers (old values exceeding new max length)
+|===
+|Column|New max length|Old too long
+|name|100|0
+|===
+
+== Direct row identity preservation
+|===
+|Check|Result
+|Old IDs missing in new|0
+|New IDs not in old|0
+|Joined rows by `id`|17
+|Name exact matches (joined)|17
+|===
+
+== Conclusion
+This is a **clean 1:1 migration** of aspect/position vocabulary:
+
+* row counts unchanged (17 → 17)
+* IDs and `name` values preserved exactly
+* new schema tightens `name` length and removes audit timestamps, without causing data loss
