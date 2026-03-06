@@ -1,0 +1,122 @@
+= public.digipal_scribe (old) → public.scribes_scribe (new)
+
+== Summary
+* Rows: 2 → 3 (one extra row exists in new)
+* ID preservation: all old IDs are present in new (0 missing); new contains 1 additional ID (`id = -1`)
+* Shared value preservation: migrated rows preserve `name` exactly (2/2 exact matches)
+* Schema refactor:
+** `scriptorium_id` (old FK → `digipal_institution`) is replaced by `scriptorium` (new required text field)
+** new introduces `period_id` (FK → `common_date`)
+** legacy/audit fields removed: `created`, `modified`, `legacy_id`, `legacy_reference`, `date`
+* Type/length changes:
+** `id`: int4 → int8 (widened)
+** `name`: varchar(128) → varchar(100) (shrunk; no truncation blockers observed)
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.digipal_scribe|2
+|new|public.scribes_scribe|3
+|===
+
+== Direct row identity preservation
+|===
+|Check|Result
+|Old IDs missing in new|0
+|New IDs not in old|1 (sentinel row)
+|===
+
+== Interpretation of row-count increase
+The extra new row is a *sentinel/placeholder* record used for future relationship repair:
+
+|===
+|id|name|scriptorium|period_id
+|-1|[name] update records relations later|<blank>|(NULL)
+|===
+
+This explains the 2 → 3 increase without implying loss of old data.
+
+== Column model comparison
+
+=== Common columns
+|===
+|Column|Old|New|Notes
+|id|int4 NOT NULL|int8 NOT NULL|type widened
+|name|varchar(128) NOT NULL|varchar(100) NOT NULL|length shrunk (no blockers)
+|===
+
+=== Old-only columns (removed in new model)
+* `created` (timestamptz NOT NULL)
+* `modified` (timestamptz NOT NULL)
+* `date` (varchar(128), nullable)
+* `legacy_id` (int4, nullable)
+* `legacy_reference` (varchar(128), nullable)
+* `scriptorium_id` (int4, nullable; FK to `digipal_institution(id)`)
+
+=== New-only columns
+* `scriptorium` (varchar(100) NOT NULL) — replaces the old FK relationship with a denormalized string
+* `period_id` (int8, nullable) — FK to `common_date(id)`
+
+== Constraints and indexes
+
+=== Constraints
+Old:
+
+* Primary key on `id`
+* Unique constraint on `name`
+* FK `scriptorium_id` → `digipal_institution(id)`
+
+New:
+
+* Primary key on `id`
+* FK `period_id` → `common_date(id)`
+
+Observation:
+
+* The old uniqueness rule on `name` is not shown as present in the new constraints (new may allow duplicate names).
+* `period_id` is optional (nullable), consistent with the placeholder row having `NULL`.
+
+=== Indexes
+Old:
+
+* PK index
+* unique index on `name`
+* index on `scriptorium_id`
+* pattern ops index on `name` (`varchar_pattern_ops`)
+
+New:
+
+* PK index
+* index on `period_id`
+
+== Data quality / blocker checks
+
+=== NULL blockers (shared columns only)
+|===
+|Column (shared)|Old NULLs
+|id|0
+|name|0
+|===
+
+=== Varchar shrink blockers
+|===
+|Column|New max length|Old values exceeding max
+|name|100|0
+|===
+
+== Name preservation check
+For the two migrated rows, `name` is preserved exactly:
+
+|===
+|old_id|old_name|new_name|exact_match
+|1|Barrow, Scribe Ab|Barrow, Scribe Ab|true
+|2|Barrow, Scribe Aa|Barrow, Scribe Aa|true
+|===
+
+== Conclusion
+This migration is a **2-row 1:1 preservation** of core identity (`id`, `name`), plus a **single new sentinel row** added in the new schema.
+The new model also:
+
+* simplifies/denormalizes scriptorium handling (`scriptorium_id` → `scriptorium` string)
+* adds an optional `period_id` link to `common_date`
+* removes legacy and audit metadata columns
