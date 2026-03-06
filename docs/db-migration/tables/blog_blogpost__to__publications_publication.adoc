@@ -1,0 +1,163 @@
+= public.blog_blogpost (old) → public.publications_publication (new)
+
+== Summary
+* Rows: 61 → 61 (complete transfer; IDs preserved)
+* 1:1 migration by `id` (no missing old IDs; no extra new IDs)
+* Shared core fields are preserved exactly on `id` join:
+** `slug` exact (61/61)
+** `title` exact (61/61)
+** `content` identical (MD5 match 61/61)
+** `allow_comments` identical (61/61)
+* Varchar shrink is safe:
+** `slug` reduced from varchar(2000) → varchar(150) with 0 overflow cases
+** `title` reduced from varchar(500) → varchar(350) with 0 overflow cases
+* Status is *mapped* (not copied) from integer → semantic string:
+** old `status` values {1,2} both map to new `status='Published'`
+* Timestamp derivation:
+** `published_at` equals old `publish_date` (61/61)
+** `created_at` and `updated_at` do *not* match old `created`/`updated` (0/61), indicating regeneration during migration/import
+* New model introduces publication metadata (`preview`, `is_blog_post`, `is_news`, `is_featured`) and replaces old author column (`user_id`) with `author_id`
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.blog_blogpost|61
+|new|public.publications_publication|61
+|===
+
+== Direct row identity preservation
+|===
+|Check|Result
+|Old IDs missing in new|0
+|New IDs not in old|0
+|Joined rows by `id`|61
+|Joined rows where `slug` exact|61
+|Joined rows where `title` exact|61
+|Joined rows where `content` identical (MD5)|61
+|Joined rows where `allow_comments` identical|61
+|Conclusion|Complete 1:1 migration by `id`, with exact preservation of the primary shared content fields
+|===
+
+== Column model comparison
+
+=== Common columns
+|===
+|Column|Old|New|Notes
+|id|int4 NOT NULL|int8 NOT NULL|type widened
+|title|varchar(500) NOT NULL|varchar(350) NOT NULL|exactly preserved; length narrowed safely
+|slug|varchar(2000) NULL|varchar(150) NOT NULL|old allows NULL but none present; length narrowed safely
+|content|text NOT NULL|text NOT NULL|exactly preserved (MD5 match 61/61)
+|allow_comments|bool NOT NULL|bool NOT NULL|exactly preserved
+|status|int4 NOT NULL|varchar(10) NOT NULL|semantic mapping (see below)
+|===
+
+=== Old-only columns (removed in new model)
+* `description` (text) — migrated into `preview` (see semantic checks)
+* `publish_date` (timestamptz) — migrated into `published_at`
+* `created`, `updated` (timestamptz) — replaced by `created_at`, `updated_at` (regenerated)
+* `user_id` (FK to `auth_user`) — replaced by `author_id`
+* `site_id` (FK to `django_site`)
+* `keywords_string`, `comments_count`, `rating_average`, `rating_count`, `rating_sum`
+* `short_url`, `expiry_date`, `featured_image`, `_meta_title`, `in_sitemap`, `gen_description`
+
+=== New-only columns
+* `preview` (text, NOT NULL)
+* `is_blog_post` (bool, NOT NULL)
+* `is_news` (bool, NOT NULL)
+* `is_featured` (bool, NOT NULL)
+* `published_at` (timestamptz, nullable)
+* `created_at` (timestamptz, NOT NULL)
+* `updated_at` (timestamptz, NOT NULL)
+* `author_id` (int4, NOT NULL; FK to `auth_user`)
+
+== Constraints and indexes
+
+=== Constraints
+Old:
+
+* Primary key on `id`
+* FK `site_id` → `django_site(id)`
+* FK `user_id` → `auth_user(id)`
+
+New:
+
+* Primary key on `id`
+* Unique constraint on `slug`
+* FK `author_id` → `auth_user(id)`
+
+Observation:
+
+* The new model enforces global slug uniqueness.
+* Site scoping via `site_id` is removed (likely because the new system is single-site / per-deployment).
+
+=== Indexes
+Old:
+
+* PK index
+* index on `publish_date`
+* index on `site_id`
+* index on `user_id`
+
+New:
+
+* PK index
+* unique index on `slug` (+ pattern index)
+* index on `author_id`
+
+== Data quality / blocker checks (generic)
+|===
+|Check|Result
+|Old NULLs in shared new NOT NULL columns (`id`, `title`, `slug`, `content`, `allow_comments`, `status`)|0 across all checked columns
+|Old values exceeding new varchar length for `slug` (150)|0
+|Old values exceeding new varchar length for `title` (350)|0
+|===
+
+== Semantic migration verification
+
+=== Status mapping (old int → new string)
+Joined by `id`:
+
+|===
+|old.status|new.status|rows
+|1|Published|10
+|2|Published|51
+|===
+
+=== Timestamp derivation
+Joined by `id`:
+
+|===
+|Check|Result
+|`published_at = old.publish_date`|61/61
+|`created_at = old.created`|0/61
+|`updated_at = old.updated`|0/61
+|===
+
+=== Preview derivation from legacy description
+Joined by `id`:
+
+|===
+|Check|Result
+|Rows where `preview` equals old `description` (exact)|61/61
+|Rows where old `description` is blank-or-null|14
+|Rows where new `preview` is blank-or-null|14
+|===
+
+=== New classification flags (profile)
+New table distributions:
+
+* `status='Published'`: 61
+* `is_blog_post=true`: 19
+* `is_news=true`: 38
+* `is_featured=true`: 10
+* `allow_comments=true`: 61
+* `published_at` NULLs: 0
+
+== Conclusion
+`publications_publication` is a complete 1:1 migration of the legacy blog posts with a schema redesign:
+
+* IDs and core content (`slug`, `title`, `content`, `allow_comments`) are preserved exactly
+* legacy `description` is renamed to `preview`
+* legacy integer `status` is normalized into semantic text status (`Published`)
+* publishing timestamps are preserved; audit timestamps are regenerated
+* the new model introduces publication-specific flags and enforces unique slugs
