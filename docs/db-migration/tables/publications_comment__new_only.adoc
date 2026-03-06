@@ -1,0 +1,59 @@
+= public.publications_comment (new-only) — legacy source investigation
+
+== Summary
+* **Rows (new):** 0
+* **Status:** Table exists in the new schema but is currently **unused/empty**.
+* **Old pair:** No migrated comment dataset is present.
+* **Legacy evidence:** Legacy Django comments tables are **empty** (`django_comments=0`, `django_comment_flags=0`), so there is no comment content to migrate into the new `publications_comment` model.
+
+== Counts
+|===
+|DB|Table|Rows
+|new|public.publications_comment|0
+|old|public.django_comments|0
+|old|public.django_comment_flags|0
+|===
+
+== Column model (new)
+|===
+|Ordinal|Column|Type|Nullable|Notes
+|1|`id`|bigint|NO|PK
+|2|`content`|text|NO|Comment body
+|3|`author_name`|varchar(150)|NO|Stored author display name
+|4|`author_email`|varchar(254)|NO|Stored author email
+|5|`author_website`|varchar(200)|YES|Optional URL
+|6|`is_approved`|boolean|NO|Moderation flag
+|7|`created_at`|timestamptz|NO|
+|8|`updated_at`|timestamptz|NO|
+|9|`post_id`|bigint|NO|FK → `publications_publication(id)`
+|===
+
+== Constraints and indexes
+
+=== Constraints (new)
+* Primary key on `id`
+* Foreign key `post_id` → `publications_publication(id)`
+
+=== Indexes (new)
+* PK index on `id`
+* B-tree index on `post_id`
+
+== Data quality / blocker checks
+Because the table is **empty**, data-quality checks are trivially satisfied.
+
+== Legacy comment sources (old)
+The legacy DB contains the Django-contrib-comments tables, but they have **no rows**:
+
+* `public.django_comments`: 0
+* `public.django_comment_flags`: 0
+
+As a result:
+
+* There are **0** comment rows referencing `blog_blogpost` via content types.
+* There is no evidence of any alternative legacy comment store being used for blog posts in this dataset.
+
+== Interpretation
+The evidence supports that:
+
+* comments were either **never used**, or were **cleared** in the legacy database snapshot used for migration.
+* the new comments model is in place to support future functionality, but it is not a migrated dataset.
