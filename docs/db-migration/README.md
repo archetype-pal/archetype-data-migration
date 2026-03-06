@@ -105,8 +105,8 @@ Key interpretation: several are environment/runtime generated and/or intentional
 
 ---
 
-## Insert/backfill operations actually executed in this thread
-
+## Insert/backfill operations executed recently
+ 
 1) **Positions**
 - `public.symbols_structure_position` populated from `public.digipal_aspect` (17 → 17; IDs+names preserved)
 
