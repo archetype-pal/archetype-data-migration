@@ -42,14 +42,14 @@
   <text>
     <body>
       <div type="transcription">
-        <p><cl type="address"><cl type="intitulatio">W. Rex Scott’</cl> <persName><roleName>Iustic<ex>iis</ex></roleName></persName> . <persName><roleName>Vicec<ex>omitibus</ex></roleName></persName> . prepositis . Ministris . Cuntisque aliis probis hominibus tocius terre sue <cl type="salutation">salutem</cl> . </cl><cl type="disposition"><cl type="notification">Sci<lb/>atis</cl> me concessisse deo et Sancto cuthberto de Goldingcham et monachis ibidem deo
+        <p><cl type="address"><cl type="intitulatio">W. Rex Scott’</cl> <roleName>Iustic<ex>iis</ex></roleName> . <roleName>Vicec<ex>omitibus</ex></roleName> . prepositis . Ministris . Cuntisque aliis probis hominibus tocius terre sue <cl type="salutation">salutem</cl> . </cl><cl type="disposition"><cl type="notification">Sci<lb/>atis</cl> me concessisse deo et Sancto cuthberto de Goldingcham et monachis ibidem deo
                      seruientibus . ut ipsi et eorum <lb/> seruientes per totam terram meam sint liberi et quieti ab omni theloneo de
                      propriis catallis et mercaturis <lb/> eorum .</cl> <cl type="prohibition">prohibeo itaque ut nemo contra hanc libertatem eis infra terram meam uim aut
                   iniuriam faciat super meam forisfacturam sicut carta Regis M.
                   fratris mei testatur et confirmat</cl> . <cl type="witnesses">t’ . Eng<ex>eramo</ex> episcopo de Glasgu . Nic<ex>olao</ex> cancell<ex>ario</ex> . Waltero filio alani .</cl> <cl type="dating">Apud Striuelin</cl> .</p>
       </div>
       <div type="translation">
-        <p><cl type="address"><cl type="intitulatio">William, king of Scots</cl>, to the <persName><roleName>justices</roleName></persName>, sheriffs, provosts, officials, and all other worthy men of the whole of his
+        <p><cl type="address"><cl type="intitulatio">William, king of Scots</cl>, to the <roleName>justices</roleName>, sheriffs, provosts, officials, and all other worthy men of the whole of his
                      land, <cl type="salutation">greeting</cl>: </cl><cl type="disposition"><cl type="notification">Know that</cl> I have granted to God and to Saint Cuthbert at Coldingham and to the monks
                      serving God there, that they and their servants shall be
                      free and quit throughout the whole of my land from all

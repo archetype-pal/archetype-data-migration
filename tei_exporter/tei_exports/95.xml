@@ -42,13 +42,13 @@
   <text>
     <body>
       <div type="transcription">
-        <p><cl type="address"><cl type="intitulatio">W'. Dei gr<ex>ati</ex>a Rex Scott'.</cl> Episcopis . Abbatibus . Comitibus . Baronibus <persName><roleName>Iusticiis</roleName></persName> . <persName><roleName>Vicecomitibus</roleName></persName> . Ministris . ⁊ <lb/> Omnibus probis hominibus tocius terre sue . Clericis ⁊ laicis ⁊ <cl type="salutation">Salutem</cl>.</cl> <cl type="disposition"><cl type="notification">Sciant presentes ⁊ futuri</cl> me con<lb/>cessisse . ⁊ hac Carta mea confirmasse Deo . ⁊ Ecclesie Sancti Andree Apostoli ⁊
+        <p><cl type="address"><cl type="intitulatio">W'. Dei gr<ex>ati</ex>a Rex Scott'.</cl> Episcopis . Abbatibus . Comitibus . Baronibus <roleName>Iusticiis</roleName> . <roleName>Vicecomitibus</roleName> . Ministris . ⁊ <lb/> Omnibus probis hominibus tocius terre sue . Clericis ⁊ laicis ⁊ <cl type="salutation">Salutem</cl>.</cl> <cl type="disposition"><cl type="notification">Sciant presentes ⁊ futuri</cl> me con<lb/>cessisse . ⁊ hac Carta mea confirmasse Deo . ⁊ Ecclesie Sancti Andree Apostoli ⁊
                      Canonicis ibidem seruienti<lb/>bus deo ⁊ in perpetuum seruituris terram ad hebrecces . quam Walterus filius
                      philippi eis in perpetuam elemosi<lb/>am dedit concessit . ⁊ Confirmauit . Cum communi pastura . <cl type="holding">Tenend' perpetualiter Ita libere ⁊ quiete . ab <lb/> omni seruicio ⁊ consuetudino ⁊ exactione . sicut fratres de hospitali ⁊ de
                         templo vbique tenent . ⁊ sicud<lb/> Carta predicti Walteri filii philippi testatur ⁊ confirmat.</cl></cl> <cl type="witnesses">Test'. Ric' Ep<ex>iscop</ex>o de Dunkeld' . Waltero de Bid'.<lb/> Cancellario . Com<ex>ite</ex> Dunec'. Ric' de Moreuill' const<ex>abulario</ex>. Waltero de Winles'. Galfrido de Maleuill'.</cl> apud Kingor.</p>
       </div>
       <div type="translation">
-        <p><cl type="address"><cl type="intitulatio">William by the grace of God King of Scots,</cl> to bishops, abbots, earls, barons, <persName><roleName>justices</roleName></persName>, <persName><roleName>sheriffs</roleName></persName>, officials, and all worthy men of the whole of his land, clerk and lay [-and] <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> that I have granted, and by this my charter made firm to God, and to the Church
+        <p><cl type="address"><cl type="intitulatio">William by the grace of God King of Scots,</cl> to bishops, abbots, earls, barons, <roleName>justices</roleName>, <roleName>sheriffs</roleName>, officials, and all worthy men of the whole of his land, clerk and lay [-and] <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> that I have granted, and by this my charter made firm to God, and to the Church
                      of Saint Andrew the Apostle, and to the Canons there
                      serving God, and who shall serve there in perpetuity, the
                      land at 'Hebrecces' that Walter son of Philip has given,

@@ -133,7 +133,7 @@ Defined in `tei_templates.xslt`:
 - `span[data-dpt="supplied"]` -> `<supplied>...</supplied>`
 - `span[data-dpt="clause"]` -> `<cl type="{@data-dpt-type}">...</cl>`
 - `span[data-dpt="person"][data-dpt-type="name"]` -> `<persName>...</persName>`
-- `span[data-dpt="person"][data-dpt-type="title"]` -> `<persName><roleName>...</roleName></persName>`
+- `span[data-dpt="person"][data-dpt-type="title"]` -> `<roleName>...</roleName>`
 
 ## 9) Current Header Elements Intentionally Removed
 

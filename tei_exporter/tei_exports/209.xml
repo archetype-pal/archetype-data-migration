@@ -42,7 +42,7 @@
   <text>
     <body>
       <div type="transcription">
-        <p><cl type="address">Will<ex>elmu</ex>s dei gratia Rex Scott’. Episcopis . Abbatibus . Comitibus . Baronibus . <persName><roleName>Iust<ex>iciis</ex></roleName></persName> . Vicecomitibus . ⁊ omnibus<lb/> suis probis hominibus tam futuris quam presentibus salutem.</cl> <cl type="disposition">Sciatis me concessisse ⁊ hac mea carta con<lb/>firmasse ecclesie Sancte Crucis que est iuxta edenesburch ⁊ fratribus ibidem deo
+        <p><cl type="address">Will<ex>elmu</ex>s dei gratia Rex Scott’. Episcopis . Abbatibus . Comitibus . Baronibus . <roleName>Iust<ex>iciis</ex></roleName> . Vicecomitibus . ⁊ omnibus<lb/> suis probis hominibus tam futuris quam presentibus salutem.</cl> <cl type="disposition">Sciatis me concessisse ⁊ hac mea carta con<lb/>firmasse ecclesie Sancte Crucis que est iuxta edenesburch ⁊ fratribus ibidem deo
                      seruientibus . Ecclesiam<lb/> de treuernent . quam eis Malcolmus Rex frater meus ad indumenta eorum dedit in
                      perpetuam<lb/> elemosinam . ⁊ carta sua confirmauit . cum omnibus pertinentiis ⁊ libertatibus
                      que predicte ecclesie<lb/> iuste pertinent . terris uidelicet ⁊ aquis . pascuis ⁊ pratis . bosco ⁊ plano .
@@ -50,7 +50,7 @@
                      Walerannus capel<lb/>lanus D<ex>aui</ex>d Regis eam melius unquam ⁊ liberius tenuit.</cl> <cl type="witnesses">his testibus . Nicholao cancellario .<lb/> Ricardo capellano Regis . Waltero dapifero . Ricardo de moreuila . D<ex>aui</ex>d<lb/> Olifiard.</cl></p>
       </div>
       <div type="translation">
-        <p><cl type="address">William by the grace of God king of Scots to the Bishops, Abbots, Earls, Barons, <persName><roleName>Justices</roleName></persName>, Sheriffs, and all his worthy men both future as well as present, Greeting:</cl> <cl type="disposition">Know that I have granted and by this my charter made firm to the church of
+        <p><cl type="address">William by the grace of God king of Scots to the Bishops, Abbots, Earls, Barons, <roleName>Justices</roleName>, Sheriffs, and all his worthy men both future as well as present, Greeting:</cl> <cl type="disposition">Know that I have granted and by this my charter made firm to the church of
                   Holyrood that is near Edinburgh and to the brethren serving
                   God there, the Church of Tranent, which King Malcolm my
                   brother gave to them for their clothing in perpetual alms,

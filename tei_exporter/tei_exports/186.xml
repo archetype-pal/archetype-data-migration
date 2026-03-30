@@ -42,7 +42,7 @@
   <text>
     <body>
       <div type="transcription">
-        <p><cl type="address">M . Dei gratia Rex Scot’ . Episcopis . Abbatibus . Comitibus . Baronibus . <persName><roleName>Iust<ex>iciis</ex></roleName></persName> . <persName><roleName>Vicecomit<ex>ibus</ex></roleName></persName> <lb/> ⁊ Omnibus fidelibus suis  <cl type="salutation">salutem</cl>.</cl> <cl type="disposition">Sciant tam posteri quam presentes me dedisse ⁊ Concessisse<lb/> inperpetuam elemosinam . deo ⁊ Ecclesie sancte crucis de edeneburc ⁊ Canonicis
+        <p><cl type="address">M . Dei gratia Rex Scot’ . Episcopis . Abbatibus . Comitibus . Baronibus . <roleName>Iust<ex>iciis</ex></roleName> . <roleName>Vicecomit<ex>ibus</ex></roleName> <lb/> ⁊ Omnibus fidelibus suis  <cl type="salutation">salutem</cl>.</cl> <cl type="disposition">Sciant tam posteri quam presentes me dedisse ⁊ Concessisse<lb/> inperpetuam elemosinam . deo ⁊ Ecclesie sancte crucis de edeneburc ⁊ Canonicis
                      deo ibi seruientibus<lb/> pro salute antecessorum ⁊ successorum meorum ecclesiam de trauernant cum omnibus
                      Iuste ad eam<lb/> pertinentibus sicut Walerannus Capellanus unquam melius eam habuit ⁊ tenuit .
                      salua tenura<lb/> ipsius Waleranni Capellani quandiu in conuersatione seculari manserit . Volo
@@ -50,7 +50,7 @@
                      dicessum ita libere<lb/> ⁊ quiete obtineant sicut alias suas habent ⁊ tenent elemosinas ⁊ possessiones</cl> . <cl type="witnesses">Test<ex>ibus</ex><lb/> <persName>Ada</persName> Comitissa matre mea . Hug<ex>one</ex> De Moreuill’ . Waltero Cancellario . Waltero filio alani<lb/> Nicolao clerico ipso Waleranno presente ⁊ hoc postulante</cl> <cl type="dating">apud EdeneBVRG</cl></p>
       </div>
       <div type="translation">
-        <p><cl type="address">M<ex>alcolm</ex> by the grace of God king of Scots to the Bishops, Abbots, Earls, Barons, <persName><roleName>Justices</roleName></persName>, <persName><roleName>Sheriffs</roleName></persName>, and all his sworn men, <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition">Let those to come as well as those present know that I have given and granted in
+        <p><cl type="address">M<ex>alcolm</ex> by the grace of God king of Scots to the Bishops, Abbots, Earls, Barons, <roleName>Justices</roleName>, <roleName>Sheriffs</roleName>, and all his sworn men, <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition">Let those to come as well as those present know that I have given and granted in
                   perpetual alms, to God and the church of Holyrood at
                   Edinburgh and to the canons serving God there, for the
                   salvation of my ancestors and successors, the church of

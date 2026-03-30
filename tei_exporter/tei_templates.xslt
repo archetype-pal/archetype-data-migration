@@ -45,7 +45,7 @@
   </xsl:template>
 
   <xsl:template match="span[@data-dpt='person'][@data-dpt-type='title']">
-    <persName><roleName><xsl:apply-templates/></roleName></persName>
+    <roleName><xsl:apply-templates/></roleName>
   </xsl:template>
 
 </xsl:stylesheet>

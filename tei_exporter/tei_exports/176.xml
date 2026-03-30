@@ -42,12 +42,12 @@
   <text>
     <body>
       <div type="transcription">
-        <p><cl type="address">M. Rex Scott’. <persName><roleName>Iusticiis</roleName></persName> suis . <persName><roleName>Vicecomitibus</roleName></persName> . Prepositis . Ministris . Cunctisque<lb/> aliis probis hominibus totius terre sue . salutem</cl> . <cl type="disposition">Mando ⁊ firmiter precipio ut in cuiuscumque terra aut potestate Abbas de Sancta
+        <p><cl type="address">M. Rex Scott’. <roleName>Iusticiis</roleName> suis . <roleName>Vicecomitibus</roleName> . Prepositis . Ministris . Cunctisque<lb/> aliis probis hominibus totius terre sue . salutem</cl> . <cl type="disposition">Mando ⁊ firmiter precipio ut in cuiuscumque terra aut potestate Abbas de Sancta
                   Cruce inuenire poterit Natiuos<lb/> homines terre sue aut fugitiuos suos  eos iuste habeat . Nullusque ei aut ser<lb/>uienti suo quemquam ex illis iniuste detineat  super meam plenariam
                      forisfacturam .</cl> <cl type="witnesses">T<ex>estibus</ex> Ern’ Episcopo de Sancto Andr<ex>ea</ex> . Ioh<ex>ann</ex>e abbate de Calchou . Galfr’ abbate de Dunferml’</cl> .<lb/> Apud Castellum puellarum.</p>
       </div>
       <div type="translation">
-        <p><cl type="address">M<ex>alcolm</ex> king of Scots to his <persName><roleName>Justices</roleName></persName>, Sheriffs, Provosts, <persName><roleName>Officials</roleName></persName>, and all other worthy men of the whole of his land, Greeting:</cl> <cl type="disposition">I command and firmly enjoin that in whosesoever land or power the abbot of
+        <p><cl type="address">M<ex>alcolm</ex> king of Scots to his <roleName>Justices</roleName>, Sheriffs, Provosts, <roleName>Officials</roleName>, and all other worthy men of the whole of his land, Greeting:</cl> <cl type="disposition">I command and firmly enjoin that in whosesoever land or power the abbot of
                   Holyrood is able to find neyfs of his own land or his own
                   fugitives, he should rightly have them. And no one may
                   withhold any of them from him or his servant, on pain of my
