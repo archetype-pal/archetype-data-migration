@@ -1,0 +1,65 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-379">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/70</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 13:19:00.530859+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">379</idno>
+        <idno type="textcontent">383</idno>
+        <idno type="transcription_textcontentxml">379</idno>
+        <idno type="translation_textcontentxml">380</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/70</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/70</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T13:19:00.530859+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T13:19:00.530859+00:00" status="published">transcription moa=379 status=live modified=2021-04-06 13:19:00.530859+00 | translation moa=380 status=live modified=2021-04-06 13:18:57.298388+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte matris Ecclesie filiis tam presentibus quam futuris . <cl type="intitulatio">Alanus filius . Walteri Dapifer domini Regis<lb/> Scott'</cl> . <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis me</cl> concessisse et hac carta confirmasse deo et Ecclesie sancte marie de Melr<ex>os</ex><lb/> et monachis ibidem deo seruientibus totam illam terram quam tenent de Ric<ex>ardo</ex> le Waleis . scilicet Baremor et<lb/> Godenech . per ipsas diuisas que continentur in carta ipsius Ric<ex>ardi</ex> . quam habent de eadem terram . <cl type="holding">ita ut quicquid infra<lb/> easdem diuisas fuerit habeant et possideant in perpetuum ita libere et quiete et
+                        honorifice sicut aliqua elemosina<lb/> liberius quiecius et honorificentius in regno Regis . Scott' possidetur</cl> . <cl type="warrandice">Et ego et heredes mei manutenebimus et wa<lb/>rantizabimus illis eandem terram contra omnes homines in perpetuum</cl> . saluo seruitio meo de ipso Ric<ex>ardo</ex> . et heredibus eius .</cl><lb/> <cl type="witnesses">His T<ex>estibus</ex> . Domino Ioc<ex>elino</ex> Glasg' . episcopo . Ric<ex>ardo</ex> . abbate de D<ex>ri</ex>eb<ex>urc</ex> . Helia nepote episcopi . Waltero clerico episcopi<lb/> Ric<ex>ardo</ex> . malebise . helia fratre episcopi . Will<ex>elm</ex>o passelewe . petro de curri .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church both present and to come, <cl type="intitulatio">Alan son of Walter, steward of the lord king of the Scots,</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know me</cl> to have granted, and by this charter to have confirmed, to God and the church of
+                     St Mary at Melrose, and to the monks in that place serving
+                     God, the whole land that they hold of Richard Wallace,
+                     that is Barmuir and Godenech, by the same boundaries that
+                     are contained in the charter of the same Richard, which
+                     they have concerning the same land, <cl type="holding">so that whatever was within the same boundaries they may have and possess for
+                     ever as freely and quitely and honourably as any alms is
+                     freely, quitely and honourably possessed in the kingdom of
+                     the king of the Scots.</cl> <cl type="warrandice">And I and my heirs shall maintain and warrant to them the same land against all
+                     men for ever.</cl> Saving my service from Richard himself.</cl> <cl type="witnesses">With these witnesses: the lord Jocelin, bishop of Glasgow; Richard, abbot of
+                  Dryburgh; Elias the bishop's nephew; Walter the bishop's
+                  clerk; Richard Malebisse; Elias the bishop's brother; William
+                  Passelew; Peter of Corrie.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

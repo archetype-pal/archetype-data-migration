@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-980">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 735</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 10:59:47.552821+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">980</idno>
+        <idno type="textcontent">1008</idno>
+        <idno type="transcription_textcontentxml">980</idno>
+        <idno type="translation_textcontentxml">981</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 735</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 735</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T10:59:47.552821+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T10:59:47.552821+00:00" status="approved">transcription moa=980 status=reviewed modified=2022-11-01 10:59:47.552821+00 | translation moa=981 status=reviewed modified=2022-11-01 10:59:47.543373+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Has Literas visuris vel audituris . <cl type="intitulatio">P . filius Comitis . P . de Dumb<ex>ar</ex></cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="narration"><cl type="notification">Nouerit vniuersitas<lb/> vestra</cl> Me Anno ab incarnatione Domini . M . c c . xxx . ii . Die Sancti Iohannis
+                     baptiste Recepisse a Priore<lb/> de Coldigham et conuentu Ducentas Marcas argenti in quarum persolucione .
+                     predicti prior et conuentus<lb/> per quieta clamatione mea Eisdem facta de villa de Swinewde et Dominio cum
+                     omnibus pertinenciis<lb/> suis pro me et heredibus meis in perpetuum Mihi obligati fuerunt .</cl> <cl type="sealing">In huius autem receptionis<lb/> testimonium huic scripto Sigillum meum apposui .</cl> <cl type="salutation">valete .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall view or hear these letters, <cl type="intitulatio">P<ex>atrick</ex> son of Earl Patrick of Dunbar</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="narration"><cl type="notification">Know me, all of you,</cl> in the 1232nd year after the Lord's incarnation, on Saint John the Baptist's day
+                     [24th June], to have received from the prior and convent
+                     of Coldingham two hundred merks of silver, in payment of
+                     which the aforesaid prior and convent were obliged to me
+                     in return for my own quitclaim to the same made in respect
+                     of the toun of Swinewood and the demesne with all its
+                     pertinents for myself and my heirs for ever.</cl> <cl type="sealing">As witness of this receipt I have applied my seal to this writing.</cl> <cl type="salutation">Farewell.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

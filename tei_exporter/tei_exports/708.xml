@@ -1,0 +1,58 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-708">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/94</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:47.539045+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">708</idno>
+        <idno type="textcontent">719</idno>
+        <idno type="transcription_textcontentxml">708</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/94</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/94</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:47.539045+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:47.539045+00:00" status="draft">transcription moa=708 status=draft modified=2017-01-30 19:28:47.539045+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte Matris ecclesie filiis tam presentibus quam futuris <cl type="intitulatio">Ricard<ex>us</ex> de Moreuill<ex>a</ex> constabularius Regis Scott<ex>orum</ex> .</cl> <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Sciatis</cl> <cl type="disposition">me cum assensu et bo<lb/>na uoluntate Will<ex>elm</ex>i . de Moreuill<ex>a</ex> filii et heredis mei . dedisse et hac presenti mea carta confirmasse in liberam
+                     et puram et perpetuam elemo<lb/>sinam deo et ecclesie sancte Marie de melr<ex>os</ex> et monachis ibidem deo seruientibus libertatem et licentiam arandi et seminandi
+                     totam terram<lb/> de blanesleye et totam planitiem in circuitu extra nemus usque ad ledre et inde
+                     faciendi commodum suum secundum uoluntatem suam ubique
+                     infra<lb/> diuisas suas excepto sarto faciendo usque ad Windislaue et inde per magnam
+                     stratam que descendit per Windeslaue uersus laweder usque
+                     ad di<lb/>uisas de laweder . Hanc autem predictam libertatem et licentiam dedi eis pro
+                     amore dei et salute animarum dauid et malcolmi Regum<lb/> scott<ex>orum</ex> . dominorum meorum . et pro anima henrici comitis et pro salute Will<ex>elm</ex>i regis scott<ex>orum</ex> domini mei . et pro salute <supplied>da</supplied>uid fratris eius . et pro salute ani<lb/>me mee et anime uxoris mee auicie et will<ex>elm</ex>i filii mei et omnium antecessorum et successorum meorum . <cl type="holding">Quare uolo ut predicti<lb/> monachi prenominatam libertatem et licentiam ita libere et quiete habeant in
+                        perpetuam elemosinam et possideant . sicut aliquam ele<lb/>mosinam liberius et quietius et honorificentius possident .</cl></cl> <cl type="witnesses">His testibus . Iocelino episcopo GlasG’ . Euerard<ex>o</ex> abbate de Holm <supplied>. Rai</supplied>nerio abbate de kin<lb/>los . Magistro adam de eccles . Herberto decano Glasg’ . Roll’ filio huctredi .
+                     Radulfo masculo . Ric<ex>ardo</ex> masculo . petro de la hage . Alano<lb/> de thirlestan . Rogero masculo . Thom<ex>a</ex> clerico . Ric<ex>ardo</ex> filio Gilleb' . Roberto filio Radulfi .</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

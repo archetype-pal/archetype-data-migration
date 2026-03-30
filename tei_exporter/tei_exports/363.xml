@@ -1,0 +1,56 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-363">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 563</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:02:02.061275+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">363</idno>
+        <idno type="textcontent">367</idno>
+        <idno type="transcription_textcontentxml">363</idno>
+        <idno type="translation_textcontentxml">364</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 563</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 563</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T13:02:02.061275+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:02:02.061275+00:00" status="approved">transcription moa=363 status=reviewed modified=2022-11-01 13:02:00.992699+00 | translation moa=364 status=reviewed modified=2022-11-01 13:02:02.061275+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">A. d<ex>e</ex>i gr<ex>ati</ex>a rex scottorum</cl> priori. A. et toto conuentui ęcclesię sancti cuthberti <cl type="salutation">salutem</cl></cl>.<lb/> <cl type="disposition"><cl type="injunction">Mando et precipio uobis ut nullo modo intretis placitum neque in aliquam<lb/> diratiocinationem de terra de suintune ante quam ueniat ante me</cl></cl>.<lb/> Tibi etiam domine prior notum facio quia de multis rebus multa uobis habeo
+                  secrete<lb/> loqui. quam citius fiere poterit. <cl type="salutation">valete.</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander by the grace of God king of the Scots</cl> <cl type="salutation">sends greeting</cl> to Prior A<ex>lgar</ex> and the whole community of the church of St Cuthbert.</cl> <cl type="disposition"><cl type="injunction">I command and enjoin you that by no means should you enter a plea nor a
+                     deraignment in respect of the land of Swinton before it
+                     should come before me.</cl></cl> I am also making known to you, Lord Prior, that I have many things to say to you
+                  privately about many matters, as soon as possible. <cl type="salutation">Farewell.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

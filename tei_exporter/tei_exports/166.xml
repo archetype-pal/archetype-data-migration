@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-166">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/219</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-07-30 04:38:24.054708+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">166</idno>
+        <idno type="textcontent">166</idno>
+        <idno type="transcription_textcontentxml">166</idno>
+        <idno type="translation_textcontentxml">167</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/219</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/219</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2018-07-30T04:38:24.054708+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2018-07-30T04:38:24.054708+00:00" status="published">transcription moa=166 status=live modified=2018-07-30 04:38:24.054708+00 | translation moa=167 status=live modified=2017-02-27 00:39:59.855472+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><persName>.D.</persName> rex Scot’. Episcopis . Abbatibus Comitibus <persName><roleName>Iustic<ex>iis</ex></roleName></persName> Baronibus Vic<ex>ecomitibus</ex> . ⁊ Omnibus fidelibus suis Clericis . ⁊ Laicis . tam<lb/> presentibus quam futuris totius Regni sui . <cl type="salutation">salutem</cl>.</cl> <cl type="disposition">Sciatis me dedisse ⁊ Concessisse . pro animabus antecessorum ⁊ successorum<lb/> meorum . in perpetuum . deo ⁊ Sancte Cruci de Edeneburc . ⁊ Canonicis fratribus
+                     nostris eiusdem loci . Videlicet .lii. acras<lb/> de terra de Dolchet inter nemus . ⁊ planam terram . in escambio de Rhuchale 
+                     quam monachis de Niwebotle<lb/> in perpetuam elemosinam donaui . Concedo etiam prenominatis Canonicis sanctę
+                     Crucis . Omnem decimam noui<lb/> molendini de Dene . ⁊ Burgi mei de Edeneb’ . ⁊ Libertonię in perpetuam
+                     elemosinam .</cl> <cl type="witnesses">Presentibus testibus . <persName>Ioh<ex>ann</ex>e</persName> Episcopo<lb/> <persName>Edwardo</persName> Cancellario . <persName>Dunec’</persName> Comite . <persName>Hugone</persName> de Moruill’ . <persName>Will<ex>el</ex>mo</persName> de Lindes’ . <persName>Waltero</persName> de Ridal’ . <persName>Thor’</persName> de<lb/> Treuernent . <persName>Malbet</persName> de Liberton’ .</cl> Apud . Castellum puellarum.</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">D<ex>avid</ex> king of Scots to the Bishops, Abbots, Earls, Justices, Barons, Sheriffs, and all
+                     his sworn men, clerk and lay, present as well as future,
+                     of the whole of his kingdom, Greeting:</cl> <cl type="disposition">Know that I have given and granted, for the souls of my ancestors and
+                  successors, in perpetuity, to God and to Holyrood in
+                  Edinburgh, and to the canons our brethren of the same place,
+                  namely 52 acres of land at Dalkeith in the midst of the
+                  woodland and the level land, in exchange for ‘Rhuchdale’,
+                  which I have donated to the monks at Newbattle in perpetual
+                  alms. I also grant to the aforenamed canons of Holyrood every
+                  teind of the the new mill at Dean, and of my Burgh at
+                  Edinburgh, and of Liberton, in perpetual alms.</cl> <cl type="witnesses">Present as witnesses, John the Bishop, Edward the Chancellor, Duncan the Earl,
+                  Hugh de Morville, William of Lindsay, Walter of Ryedale, Thor
+                  of Tranent, Malbeath of Liberton.</cl> At Maidens’ Castle.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

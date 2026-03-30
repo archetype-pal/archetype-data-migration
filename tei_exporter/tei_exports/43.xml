@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-43">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 624</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-13 14:14:00.588392+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">43</idno>
+        <idno type="textcontent">43</idno>
+        <idno type="transcription_textcontentxml">43</idno>
+        <idno type="translation_textcontentxml">44</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 624</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 624</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-13T14:14:00.588392+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-13T14:14:00.588392+00:00" status="approved">transcription moa=43 status=reviewed modified=2023-06-13 14:14:00.588392+00 | translation moa=44 status=reviewed modified=2023-06-13 14:14:00.541237+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Alex’ . dei gr<ex>ati</ex>a Rex Scott’</cl> . Omnibus probis hominibus tocius terre sue . Clericis et Laicis  <lb/> <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> nos concessisse . et hac Carta nostra confirmasse illam resig<lb/>nationem et quietam clamationem quam Patricius filius Comitis . Patric<ex>ii</ex> . fecit deo et <lb/> Beate Marie . et Sancto Cuthberto . et Sancte Abbe . et Monachis Dunolmensibus
+                     apud . Coldigh<ex>am</ex> . <lb/> deo seruientibus de villa de Swinewude cum hominibus et iustis pertinentiis suis
+                     . <cl type="holding">Tenend’ . <lb/> ita libere et quiete . Sicut Carta predicti Patric<ex>ii</ex> . et Confirmatio Comit<ex>is</ex> . Patric<ex>ii</ex> . patris <lb/> ipsius testantur . Saluo seruicio nostro</cl> . </cl><cl type="witnesses">Test<ex>ibus</ex> . Herbert<ex>o</ex> . Abbate de Calch<ex>ou</ex> . Walter<ex>o</ex> . Olifard’ . <persName><roleName>Ius<lb/>tic’</roleName></persName> . Laodon<ex>ie</ex> . Ingelram<ex>o</ex> . de Balliol’ . Iohanne de Maccuswel’ . d<ex>aui</ex>d . <persName><roleName>Marescall<ex>o</ex></roleName></persName> . Iohanne Giffard’ . <lb/> Bernard<ex>o</ex> . de Hauden’ . Heruic<ex>o</ex> . <persName><roleName>Marescall<ex>o</ex></roleName></persName> . </cl><cl type="dating">Apud Rokesburg’ . ultimo die Nouembris . <lb/> Anno regni nostri Octauo</cl> .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, by the grace of God king of Scots</cl>, to all worthy men of his whole land, clerk and lay, <cl type="salutation">greeting</cl>:</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> that we have granted, and by this our charter made firm the resignation and
+                     quitclaim that Patrick son of Earl Patrick made to God and
+                     to Blessed Mary, and to Saint Cuthbert, and to Saint Æbbe,
+                     and to the monks of Durham serving God at Coldingham, of
+                     the toun of Swinwood with its men and just pertinents, <cl type="holding">to be held as freely and quietly as the charter of the aforesaid Patrick and the
+                     Confirmation of Earl Patrick, his father, declare, Saving
+                     our service</cl></cl>. <cl type="witnesses">As witnesses: Herbert, Abbot of Kelso, Walter Oliphant, Justiciar of Lothian,
+                  Ingram de Balliol, John of Maxwell, David the Marshal, John
+                  Gifford, Bernard of Howden, Hervey the Marshal. </cl><cl type="dating">At Roxburgh, the last day of November, the Eighth Year of our reign</cl>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,84 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-429">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/155</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:16:38.104696+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">429</idno>
+        <idno type="textcontent">434</idno>
+        <idno type="transcription_textcontentxml">429</idno>
+        <idno type="translation_textcontentxml">430</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/155</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/155</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:16:38.104696+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:16:38.104696+00:00" status="published">transcription moa=429 status=live modified=2021-04-06 15:16:36.607006+00 | translation moa=430 status=live modified=2021-04-06 15:16:38.104696+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus qui has litteras uiderint uel audierint <cl type="intitulatio">Patricius de Ridale</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me concessisse et hac mea Carta confirmas<lb/>se Deo et Eccelsie Sancte marie de melros et monachis ibidem deo seruientibus in
+                     liberam . puram et perpetuam Elemosinam<lb/> Donationem Roberti de Bernoldebi quam fecit prefate Ecclesie de illa parte terre
+                     in territorio de Wittun que continetur <cl type="boundaries">infra has di<lb/>uisas . Scilicet a capite de Harhopedene ascendendo uersus occidentem per sicum
+                        qui est diuisa inter eandem terram et illam que<lb/> dicitur terra Duarii usque ad spinam decontra pratum . et inde in transuersum
+                        uersus austrum per tractum sulci qui est diuisa inter
+                        ipsam ter<lb/>ram et illam quam Will<ex>elmu</ex>s persona de Hunum tenuit ad firmam de prefato Roberto De Bernoldebi  usque ad
+                        fossam quandam<lb/> que est diuisa inter predictas terras ad australem partem . et inde deorsum
+                        uersus orientem sicut sulcus uadit inter prescriptas
+                        terras usque ad pre<lb/>dictam capud de Harhopedene .</cl> <cl type="holding">Quare uolo ut prefati monachi de melros teneant et possideant predictam terram
+                     ita libere et<lb/> quiete plene et honorifice modis omnibus sicut carta predicti Rob<ex>erti</ex> . testatur et confirmat .</cl> <cl type="warrandice">Ita quod ego et heredes mei manutenebimus et<lb/> warantizabimus predictis monachis eandem terram contra omnes homines in
+                        perpetuum .</cl> Saluo tamen seruitio meo de predicto Rob<ex>erto</ex> . et heredibus<lb/> suis .</cl> <cl type="witnesses">Test’. Magistro Ioh<ex>ann</ex>e de Hunted’ . Thomas de Coleuill’ . Ric<ex>ardo</ex> le Naim . Rogero . Burnard . Ioh<ex>ann</ex>e de Perndell’ .<lb/> Will<ex>elmo</ex> . Chernun . Ric<ex>ardo</ex> . de Cukewald’ . Michaele de Malcarwest’ . et Multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall see or hear these letters, <cl type="intitulatio">Patrick of Ryedale</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have licensed and by this my charter to have made firm to God and to the
+                     Church of St Mary at Melrose and to the monks serving God
+                     in that place, in free, pure, and perpetual alms, the
+                     donation of Robert of Barnoldby which he made to the
+                     aforementioned church in respect of that portion of land
+                     in the territory of Whitton which is comprised <cl type="boundaries">within these boundaries, namely, from the head of ‘Harrowdean’ going up towards
+                     the west by the syke that is the division between the same
+                     land and that which is called ‘[?] the land of the Dower’,
+                     as far as the thornbush opposite the meadow, and from
+                     there across towards the south along the length of the
+                     furrow which is the division between the same land and
+                     that which William the parson of Hownam held at ferm of
+                     the aforementioned Robert of Barnodlby, as far as a fosse
+                     that is the division between the said lands to the south
+                     side, and from there downwards towards the east as the
+                     ditch goes between the aforewritten lands up to the said
+                     head at ‘Harrowdean’.</cl> <cl type="holding">Wherefore I will that the said monks of Melrose should hold and possess the said
+                     land as freely and quitely, fully and honourably by all
+                     means, just as the charter of the aforesaid Robert bears
+                     witness and affirms;</cl> <cl type="warrandice">so that I and my heirs shall maintain and warrant to the aforesaid monks the
+                     same land against all men for ever;</cl> saving only my service from the said Robert and his heirs.</cl> <cl type="witnesses">Witness: Master John of Huntingdon; Thomas of Colville; Richard le Naym; Roger
+                  Burnard; John de Perndell; William Chernun; Richard of
+                  Coxwald; Michael of Makerstoun; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

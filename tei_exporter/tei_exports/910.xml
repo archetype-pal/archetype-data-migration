@@ -1,0 +1,65 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-910">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 601</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:22:01.946777+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">910</idno>
+        <idno type="textcontent">935</idno>
+        <idno type="transcription_textcontentxml">910</idno>
+        <idno type="translation_textcontentxml">911</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 601</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 601</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:22:01.946777+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:22:01.946777+00:00" status="approved">transcription moa=910 status=reviewed modified=2022-11-01 16:22:01.933152+00 | translation moa=911 status=reviewed modified=2022-11-01 16:22:01.946777+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">W . Rex Scott’</cl> . Omnibus probis hominibus tocius terre sue . Clericis et laicis <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes . et<lb/> futuri</cl> me concessisse . et hac Carta mea confirmasse deo . et sancto Cudberto . et
+                     Monachis eius<lb/> de Dunelmo donacionem Gospatrici comitis . et successorum eius . scilicet
+                     Nesebite . et uillam de Ederam<lb/> et ecclesiam eiusdem uille . cum omnibus capellis . et iustis pertinenciis suis
+                     . in liberam et perpetuam elemo<lb/>sinam <cl type="holding">tenendam ita libere . et quiete . plenarie . et honorifice  sicut carte comitis
+                     Gospatr’ . et succes<lb/>sorum eius testantur . et confirmant .</cl></cl> <cl type="witnesses">T<ex>estibus</ex> . Ric<ex>ardo</ex> episcopo sancti Andr<ex>ee</ex> . Nichol<ex>ao</ex> Cancellario . Ric<ex>ardo</ex> capell<ex>ano</ex><lb/> Ric<ex>ardo</ex> de Moreuill<ex>a</ex> consabulario . W<ex>ellmo</ex> filio Alani dapifero . D<ex>aui</ex>d . olifard . Dolfino capell<ex>ano</ex> . Ioh<ex>ann</ex>e filio<lb/> Ormin . uicecomite de Rokesburgo .</cl> <cl type="dating">apvd Rokesburgvm .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex>, king of the Scots,</cl> to all worthy men of his entire land, clerk and lay, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have allowed, and by this my charter to have made firm, to God and Saint
+                     Cuthbert, and to his monks at Durham, the donation of
+                     Cospatric the earl and his successors, that is to say,
+                     Nisbet and the toun of Edrom, and the church in the same
+                     toun, with all its chapels and pertinents, in free and
+                     perpetual alms, <cl type="holding">to be held as freely and quitly and honourably as the charters of Earl Cospatric
+                     and his successors bear witness and affirm</cl>.</cl> <cl type="witnesses">As witnesses: Richard bishop of St Andrews, Nicholas the chancellor, Richard the
+                  chaplain, Richard de Morville the constable, William son of
+                  Alan, steward, David Oliphant, Dolphin the chaplain, John son
+                  of Orm, sheriff of Roxburgh,</cl> <cl type="dating">at Roxburgh.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

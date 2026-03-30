@@ -1,0 +1,58 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-555">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/253</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:34.190227+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">555</idno>
+        <idno type="textcontent">563</idno>
+        <idno type="transcription_textcontentxml">555</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/253</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/253</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:34.190227+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:34.190227+00:00" status="draft">transcription moa=555 status=draft modified=2017-01-30 19:28:34.190227+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><cl type="address">Vniuersis Christi fidelibus Hoc scriptum uisuris uel audituris <cl type="intitulatio">Iohannes filius Philippi de Mackestun’</cl><lb/> <cl type="salutation">salutem</cl></cl> . <cl type="disposition"><cl type="notification">Nouerit uniersitas uestra</cl> me in curia domini mei iohannis de normanuill' sponte et absque<lb/> omni coactione omne ius quod habui uel habere potui in terra quam dictus . I .
+                        dominus meus de<lb/>dit Monachis de Melros in territorio de Mackustun’  quietum clamasse scilicet
+                        quoad communem<lb/> pasturam et alia communia aisiamenta que me et heredes meos in eadem terra
+                        contingebant . Ple<lb/>num siquidem et sufficiens ab eodem . I . domino meo recepi escambium in
+                        territorio de Neutun’ pro om<lb/>nibus asisiamentis que me et heredes meos in prenominata terra que data est
+                        dictis monachis de Melros<lb/> contingebant . Ita quod omni iuri quod in dicta terra habui  pro me et
+                        heredibus meis in per<lb/>petuum plene renunciaui .</cl> <cl type="witnesses">Hiis Testibus . Bernardo de Hauden . Hug’ de normanuill<ex>a</ex> per<lb/>sona de stamfordham . Gregorio de Rutherforde . Ric’ de hetun’ . Elgi prudfot et
+                        mul<lb/>tis aliis .</cl></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

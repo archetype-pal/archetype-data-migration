@@ -1,0 +1,65 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-616">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL L.F.C. Ch. xxx.7</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:19:44.457341+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">616</idno>
+        <idno type="textcontent">626</idno>
+        <idno type="transcription_textcontentxml">616</idno>
+        <idno type="translation_textcontentxml">617</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>L.F.C. Ch. xxx.7</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL L.F.C. Ch. xxx.7</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:19:44.457341+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:19:44.457341+00:00" status="published">transcription moa=616 status=live modified=2021-04-05 08:19:42.325178+00 | translation moa=617 status=live modified=2021-04-05 08:19:44.457341+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>Alex’</persName> . dei Gr<ex>ati</ex>a Rex Scott’</cl> . Omnibus probis hominibus Tocius terre sue . Clericis et Laicis <lb/> <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Sciant presentes et futuri</cl> <cl type="disposition">me concessisse . et hac Carta mea confirmasse Deo . Et<lb/> Ecclesie Sancte Marie de Melros . et Monachis . ibidem deo seruientibus totam
+                     piscariam de<lb/> veteri Rokesburg . in Twede usque ad Brockestrem . quam Rex <persName>d<ex>aui</ex>d</persName> . proauus meus eis<lb/> dedit . et Carta sua confirmauit . <cl type="holding">Tenend<ex>am</ex> . Sibi in liberam et perpetuam elemosinam .<lb/> Ita libere . et quiete . sicut alias elemosinas suas . liberius . et quietius
+                        tenent . et sicut<lb/> Carta Regis . <persName>d<ex>aui</ex>d</persName> . proaui mei . et confirmatio domini Regis . <persName>Willelmi</persName> patris mei testantur et<lb/> confirmant</cl></cl> . <cl type="witnesses">Test<ex>ibus</ex> . <persName>Willelmo</persName> de Bosch<ex>o</ex> . Cancellario . meo . Comite <persName>Malcolm<ex>o</ex></persName> . de Fif’ . <persName>Ph<ex>ilippo</ex></persName> .<lb/> de Valon<ex>iis</ex> . <persName><roleName>Camerario</roleName></persName> . meo . <persName>Will<ex>elm</ex>o</persName> de Valon<ex>iis</ex> . filio . eius . <persName>Ioh<ex>ann</ex>e</persName> de Maccuswel’ . <persName>Thoma</persName> .<lb/> de lundin’ . hostiario . meo <persName>d<ex>aui</ex>d</persName> . <persName><roleName>Marescallo</roleName></persName> . <persName>Heruico</persName> . <persName><roleName>Marescallo</roleName></persName> .</cl> Apud Edenb’ . tercio die<lb/> Aprilis .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, by the grace of God king of the Scots,</cl> to all worthy men of his entire land, clerk and lay, <cl type="salutation">greeting</cl>.</cl> <cl type="notification">Let present and future know</cl> <cl type="disposition">me to have conceded, and by this my charter to have made firm, to God and to the
+                  church of St Mary at Melrose, and to the monks serving God in
+                  that place, the whole fishery in the Tweed at Old Roxburgh,
+                  as far as ‘Brokestrem’, which King David my great-grandfather
+                  gave and his own charter made firm. <cl type="holding">For them to hold in free and everlasting alms, as freely and quitly as they most
+                     freely and quitely hold their other alms, and just as the
+                     charters of King David my great-grandfather and the
+                     confirmation of the lord King William, my father, bear
+                     witness and affirm.</cl></cl> <cl type="witnesses">As witnesses: William del Bois, my chancellor; Earl Malcolm of Fife; Philip de
+                  Valognes, my chamberlain; William de Valognes, his son; John
+                  of Maxwell; Thomas of Lundie, my doorward; David the
+                  marischal; Hervey the marischal.</cl> At Edinburgh on the third day of April.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

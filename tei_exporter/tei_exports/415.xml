@@ -1,0 +1,71 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-415">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/142</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:07:42.590974+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">415</idno>
+        <idno type="textcontent">420</idno>
+        <idno type="transcription_textcontentxml">415</idno>
+        <idno type="translation_textcontentxml">416</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/142</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/142</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:07:42.590974+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:07:42.590974+00:00" status="published">transcription moa=415 status=live modified=2021-04-06 15:07:40.982791+00 | translation moa=416 status=live modified=2021-04-06 15:07:42.590974+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-family: Junicode;"><cl type="address">Omnibus hoc scriptum uisuris uel audituris <cl type="intitulatio">Walterus filius Alani Domini Regis scocie senescallus</cl> <cl type="salutation">salutem <lb/> in domino</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit vniuersitas uestra quod</cl> terram de Molle cum rectis diuisis suis et quicquid continetur imfra<lb/> easdem diuisas quam tenui in feodo de domino Will<ex>elm</ex>o de vesci dedi in escambium Monachis de Melros pro quadam<lb/> terram que dicitur Freretun’ cum omnibus pertinenciis suis . que omnia Moniales
+                        de subereuuic ibidem possederunt .<lb/> et insuper cum eadem terra que dicitur freretun  dederunt mihi idem monachi
+                        racione dicti escambii ducentas<lb/> marcas . <cl type="warrandice">Quam terram de Molle cum contentis imfra diuisas suas et pertinenciis suis  ego
+                        et heredes mei eisdem –<lb/> monachis in perpetuum contra omnes Warantizabimus . defendemus et manutenebimus</cl> . <cl type="sealing">In cuius rei testimonium presens<lb/> scriptum sigilli mei apposicione roboraui</cl> .</cl> <cl type="witnesses">Hiis testibus . Thomas Croc . Symone filio bertulfi . Ada le Waleys .<lb/> Will<ex>el</ex>mo de hauekerill’ . Roberto de kiphau . militibus . Will<ex>el</ex>mo et Roberto capellanus . nostris . Leonio de Normannuil’ . Ricardo de
+                        Muskilbur’ . Ioh<ex>ann</ex>e de Lycest’ Monachis de Melros et multis aliis .</cl></span>
+        </p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall see or hear this written deed, <cl type="intitulatio">Walter son of Alan, steward of the lord king of Scotland</cl>, <cl type="salutation">sends greeting in the Lord</cl>.</cl> <cl type="disposition"><cl type="notification">Let your whole community know that</cl> the land of Mow with its correct boundaries and with whatever is contained
+                     within the same boundaries that I held in feu of the lord
+                     William de Vescy I have given in exchange to the monks of
+                     Melrose in return for a land that is called ‘Freretun’,
+                     with all its pertinents, everything that the nuns of South
+                     Berwick possessed in that place; and in addition, together
+                     with the same land which is called ‘Freretun’, the same
+                     monks have given me two hundred merks by reason of the
+                     same exchange. <cl type="warrandice">I and my heirs shall warrant, defend and maintain this land of Mow with its
+                     contents and its pertinents within its boundaries.</cl> <cl type="sealing">As witness of this matter I have reinforced the present written deed by the
+                     application of my seal.</cl></cl> <cl type="witnesses">With these witnesses: Thomas Crook, Simon son of Bertolf, Adam Wallace, William
+                  of Halkerston, Robert of Kippo, knights; William and Robert,
+                  our chaplains; Leon de Normanville, Richard of Musselburgh,
+                  John of Leicester, monks of Melrose; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

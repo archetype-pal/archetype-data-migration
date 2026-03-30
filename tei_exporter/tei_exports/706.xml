@@ -1,0 +1,74 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-706">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/92</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:47.370737+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">706</idno>
+        <idno type="textcontent">717</idno>
+        <idno type="transcription_textcontentxml">706</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/92</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/92</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:47.370737+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:47.370737+00:00" status="draft">transcription moa=706 status=draft modified=2017-01-30 19:28:47.370737+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris Ecclesie filiis tam presentibus quam futuris <cl type="intitulatio">Hugo de Normanneuill<ex>a</ex> . et Alina uxor eius .</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Sciatis</cl> <cl type="disposition">nos dedisse et<lb/> concessisse et hac carta nostra confirmasse deo et ecclesie sancte marie de Melr<ex>os</ex> . et monachis ibidem deo seruientibus . pro animabus d<ex>aui</ex>d et Melcolmi Regum<lb/> Scott<ex>orum</ex> . et Henr<ex>ici</ex> . Comitis . et pro salute domini nostri Will<ex>elm</ex>i Regis Scott<ex>orum</ex> . et Alex<ex>andri</ex> . filii sui . et Comitis . d<ex>aui</ex>d . fratis Regis . et pro animabus nostris et<lb/> patrum nostrorum et matrum et omnium antecessorum et successorum nostrorum
+                     terram de Keluesete et de Faulawe <cl type="boundaries">per has diuisas scilicet a<lb/> terra inculta directe usque ad fossatam ex aquilonali parte de Kelfsete . et sic
+                        per illam fossatam uersus orientem et per petras que
+                        posite sunt<lb/> ad diuisas usque ad uiam que uenit de Eckeforde uersus melr<ex>os</ex> . et sic ab illa uia per semitam transuersum Celfesecestele uersus austrum<lb/> per petras que ibi posite sunt ad diuisas usque ad aliam fossatam ex australi
+                        parte de Kelfsetestele . et sic per illam fossatam
+                        usque<lb/> ad uiam que in de tendit uersus orientem . et sic per illam uiam usque ad petras
+                        sicut angulatim posite sunt ad diuisas usque in Fawela<lb/>we leche . et per illum sicut uersus orientem usque ad fossatam que est diuisa
+                        inter terram de Mackest<ex>une</ex> . et terram de Ruderforde . et per illam<lb/> diuisam uersus austrum et uersus occidentem usque ad uiam que uenit de Eckeforde
+                        . et sic transuersum uiam illam uersus occidentem sicut
+                        pe<lb/>tre posite sunt ad diuisam inter terram cultam et Moram . et sic circulando per
+                        petras postias uersus austram et inde uersus orientem
+                        usque ad diuisas<lb/> terre de Ruderford . et per illam diuisam usque ad stratam que est diuisa inter
+                        Mackustun . et Faringd’ . et per illam stratam uersus
+                        occidentem usque ad pe<lb/>tras que posite sunt ad diuisam . et inde ex transuerso uersus aquilonem per
+                        petras usque in sicum et per illum sicut et petras ibi
+                        positas usque ad locum ubi perambula<lb/>tio ista incepit .</cl> Totam hanc terram et quicquid continetur infra has diuisas . dedimus eis in
+                     excambium pro terram quam Rob<ex>ertus</ex> . de Berkelaie et Cecilia uxor sua eis dederant in territorio de Mackest<ex>une</ex> ex orientali parte de Derestre<lb/>te . Dedimus etiam eis communem pasturam uille de Mackust<ex>une</ex> . ad centum oues et uiginti boues et sex uaccas . et tres equos et unam suem cum
+                     nutrimentis<lb/> suis duorum annorum intus et foris . longe et prope et ubique per omnia ubi
+                     aueria nostra et aueria hominum nostrorum eiusdem uille
+                     pascuntur preter blada et prata .<lb/> Dedimus etiam eis communia focalia eiusdem uille tam in turbaria quam in brueria
+                     . et petram quararie nostre de Alwardene ad sufficientiam
+                     ad<lb/> edificia domus de melr<ex>os</ex> edificanda . <cl type="holding">Hec omnia dedimus eis et hac carta nostra confirmauimus in liberam et puram et
+                     perpetuam elemosinam ita ut ea<lb/> omnia habeant et teneant et possideant in perpetuum libere et quiete plenarie et
+                        honorifice sicut aliquam elemosinam liberius quietius .
+                        plenius et honori<lb/>ficentius tenent et possident .</cl> <cl type="warrandice">et nos et heredes nostri warantizabimus eis hec omnia predicta <supplied>defendemus</supplied> et adquietabimus uersus dominum Regem et successores<lb/> eius de forensi seruitio et de omni terreno seruitio et de omni consuetudine et
+                        exaccione seculari et perpetuum .</cl> Saluis decimis ecclesie Sancti Cuth<lb/>berti de Mackust<ex>une</ex> .</cl> <cl type="witnesses">His T<ex>estibus</ex> Domino Will<ex>elm</ex>o Glasg’ . epsicopo . Hug<ex>one</ex> . Capell<ex>ano</ex> . et clerico Regis . Will<ex>elmo</ex> Canonico Glasg’ . Ioh<ex>ann</ex>e de Hunt’<lb/> clerico . Petro Capell<ex>ano</ex> . et Petro et Rad<ex>ulfo</ex> . clericis episcopi . Ric<ex>ardo</ex> persona de Alnecrum . Idelo capell<ex>ano</ex> . de lillescliu<ex>e</ex> . Adam persona de Maccust<ex>une</ex> .<lb/> Girardo clerico de Neut<ex>une</ex> . Rog<ex>ero</ex> . burnard . Alano de thirlest<ex>une</ex> . Petro de la hage . Ric<ex>ardo</ex> de Cornewal’ . Vmfr<ex>ido</ex> de<lb/> Raperell . Alex<ex>andro</ex> . de hirdmanest<ex>une</ex> . Rob<ex>erto</ex> filio Maccus . Rob<ex>erto</ex> tinctore de Rokesburc . Philipp<ex>o</ex> de Maccust<ex>une</ex> . Henr<ex>ico</ex> de<lb/> Daltun<ex>e</ex> . Will<ex>elmo</ex> le franceis . Will<ex>elmo</ex> de Gouuill<ex>e</ex> . d<ex>aui</ex>d et henr<ex>ico</ex> . filiis Arkilli . et Multis aliis</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

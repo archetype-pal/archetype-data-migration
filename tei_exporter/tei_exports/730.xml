@@ -1,0 +1,65 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-730">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/291</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.201135+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">730</idno>
+        <idno type="textcontent">742</idno>
+        <idno type="transcription_textcontentxml">730</idno>
+        <idno type="translation_textcontentxml">731</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/291</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/291</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-03-13T15:02:37.201135+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-03-13T15:02:37.201135+00:00" status="approved">transcription moa=730 status=reviewed modified=2023-03-13 15:02:37.201135+00 | translation moa=731 status=reviewed modified=2023-03-13 15:02:37.184839+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="notification">Sciant omnes presentes et futuri quod</cl> <cl type="intitulatio">ego Will<ex>elmu</ex>s de Ridall’ miles</cl> <cl type="disposition">concessi et hac mea carta confirmaui deo et ecclesie beate<lb/> Marie de Melr<ex>os</ex> et monachis ibidem deo seruientibus totam terram per suas rectas diuisas . quam
+                     Adam filius Ade de Dunelmo uen<lb/>didit eisdem monachis in territorio de Westlilliscliue . <cl type="holding">tenendam et habendam in liberam et perpetuam elemosinam cum omnibus<lb/> libertatibus et communibus asiamentis dicte uille de Weslill’ . adeo libere .
+                        quiete . plene et pacifice sicut carta quam habent de<lb/> dicto Adam testatur</cl> . <cl type="warrandice">Ego uero et heredes mei totam dictam terram cum omnibus suis pertinenciis dictis
+                     monachis contra omnes in<lb/>perpetuum warentizabimus ac defendemus</cl> .</cl> <cl type="sealing">In cuius rei testimonium ego pro me et heredibus meis presenti scripto sigillum<lb/> meum apponi feci .</cl> <cl type="witnesses">Testibus . Will<ex>elm</ex>o filio Alex’ de Westlill’ . Roberto de Banget’ . Will<ex>elm</ex>o de Bernardeby . et aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="notification">Let all people present and future know that</cl> <cl type="intitulatio">I William of Ryedale knight</cl> <cl type="disposition">have granted and by this my charter made firm to God and to the church of
+                  Blessed Mary at Melrose and to the monks serving God in that
+                  place the thowl land by its correct boundaries which Adam son
+                  of Adam of Durham sold to the same monks in the territory of
+                  West Lilliesleaf, <cl type="holding">to hold and to have in free and everlasting alms with all liberties and common
+                     easements of the said toun of West Lilliesleaf as freely,
+                     quitely, fully and peaceably as the charter which they
+                     have from the said Adam bears witness.</cl> <cl type="warrandice">I and my heirs shall warrant and defend the said land with all its pertinents
+                     for the said monks against all people for ever.</cl></cl> <cl type="sealing">In testimony of this matter I for myself and my heirs have caused my seal to be
+                  applied to the present writing.</cl> <cl type="witnesses">As witnesses: William son of Alexander of West Lilliesleaf; Robert of Bathgate;
+                  William of Bernoldby; and others .</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

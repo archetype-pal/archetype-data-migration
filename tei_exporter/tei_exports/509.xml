@@ -1,0 +1,79 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-509">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/343</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 17:01:18.132375+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">509</idno>
+        <idno type="textcontent">516</idno>
+        <idno type="transcription_textcontentxml">509</idno>
+        <idno type="translation_textcontentxml">510</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/343</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/343</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-11-01T17:01:18.132375+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T17:01:18.132375+00:00" status="draft">transcription moa=509 status=draft modified=2022-11-01 17:01:18.132375+00 | translation moa=510 status=draft modified=2018-12-11 13:21:19.641738+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis Christi fidelibus ad quos presentes littere peruenerint . Gvydo de
+                  Normanuill<ex>a</ex> . Miles  <cl type="salutation">eternam in domino salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerint uniuersitas uestra . quod</cl> cum ego Domino Thome fratri meo<lb/> dedissem in excambium terre sue de . Anegus . quam habuit ex dono Domine Matild<ex>is</ex> . comitisse de Anegus . totam terram meam de Machustum . sitam inter le . Denes
+                     . cum mesua<lb/>gio . tofto . et crofto . cum omnibus pertinentiis . aisiamentis et libertatibus
+                     ad eandem spectantibus . uel spectare debentibus . que
+                     tenui de domino Waleranno fratre meo . et eidem<lb/> Th’ . corporalem eiusdem quare dedissem possessionem  idem Th’ . frater meus
+                     eandem terram de Machust’ cum omnibus premissis dicto
+                     Walerann<ex>o</ex> . fratre meo . et me presentibus<lb/> et consentientibus . ecclesie sancte Marie de Melr<ex>os</ex> . et Monachis ibidem deo seruientibus in elemosinam contulit perpetuam  prout
+                     in carta sua plenius continetur . Necnon et in<lb/> eadem terra personaliter existens  eosdem Monacos in eiusdem terre induxit
+                     possessionem . <cl type="warrandice">Et tam ego quam heredes mei omnia premissa eisdem Monachis imperpetuum . uuaran<lb/>tizabimus . et defendemus contra omnes</cl> . ita quod nec uir nec mulier eos occasione trium solidorum . uel unius tercelli
+                     domino feodi temporibus transactis non solutorum . nec
+                     etiam super<lb/> premissis siue ratione premissorum in parte uel in toto nomine dotis siue alio
+                     modo quacumque occasione uexare poterit uel inquietare .
+                     Et tam ego quam prefatus<lb/> Walterann<ex>us</ex> . frater meus dictam donationem ratam habentes et gratam approbamus eandem . et
+                     omnia premissa eisdem monachis hac presenti carta
+                     confirmamus .</cl> <cl type="sealing">In cuius<lb/> rei testimonium . et munimen  presenti scripto sigilla nostra apposuimus .</cl> <cl type="witnesses">Hiis testibus . Domino Will<ex>elm</ex>o . de haud’ . constabul<ex>ario</ex> . de Rokesb’ . ad hoc uocato . Domino Ricard<ex>o</ex> .<lb/> burnard’ . Ricard’ . domino de Rotherford’ . Waltero de Wodeford’ . Symone de
+                     Fard’ . senescal<ex>lo</ex> . de farmgd’ . Walt<ex>er</ex> . filio . hug<ex>onis</ex> . senescal’ . de uet<ex>er</ex>i Roxburg’ . Petro<lb/> preposito de bouild’ . Huthred’ . todde  et Multis aliis .</cl> <cl type="dating">Datum anno gracie . Millesimo . ducentesimo . quinquagesimo  In uigilia sancti
+                  Math<ex>e</ex>i Apostoli .</cl></p>
+      </div>
+      <div type="translation">
+        <p>To all Christ's faithful to whom the present letters shall have come, Guy de
+               Normanville, knight, wishes eternal well-being in the Lord. Let
+               all of you know that since I had given to the lord Thomas, my
+               brother, in exchange for his land of Angus, which he had from
+               the gift of the lady Matilda, countess of Angus, my entire land
+               of Maxton, situated between the 'Denes', with messuage, toft,
+               and croft, with all pertinents, easements and liberties
+               belonging to it, or that ought to belong to it, which I held of
+               the lord Waleran, my brother; and to the same Thomas had I given
+               corporeal possession of the same; the same Thomas, my brother,
+               the same land of Maxton with all the aforementioned, the said
+               Waleran, my brother, and I being present and consenting, </p>
+      </div>
+    </body>
+  </text>
+</TEI>

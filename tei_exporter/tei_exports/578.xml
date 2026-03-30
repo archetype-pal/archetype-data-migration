@@ -1,0 +1,59 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-578">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/226</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:36.325346+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">578</idno>
+        <idno type="textcontent">586</idno>
+        <idno type="transcription_textcontentxml">578</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/226</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/226</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:36.325346+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:36.325346+00:00" status="draft">transcription moa=578 status=draft modified=2017-01-30 19:28:36.325346+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><cl type="address">Vniuersis christi fidelibus hoc scriptum uisuris uel audituris . <cl type="intitulatio">A . rector ecclesie de Balinclog</cl> <cl type="salutation">Salutem</cl></cl> . <cl type="narration">Cum inter me ex una parte<lb/> et abbatem et monachos de Melros ex altera super decimas territorii de Barmor
+                        discordia aliquandiu durasit  tandem hoc fine quie<lb/>uit . Quod Monachi de Melros nomine Monasterii sui soluent annuatim mihi et
+                        exxlesie mee de Balinclog decem solidos ad<lb/> festum Sancti Iacobi pro bono pacis . Et per hanc solutionem decem solidorum
+                        immune erit Monaserium de Melros erga ecclesiam<lb/> parochialem de Balinclog et rectores illius in perpetuum ab aomni vexatione et
+                        exactione quo ad decimas dicti territorii de Bar<lb/>mor  et ab omni uindicatione priuilegiorum super dictis decimis et quolibet
+                        honere parochiali sibi conpetentium . Soluent<lb/> quidem Monachi decem solidos illos hoc adhibito moderamine quod quotiens dictam
+                        terram tradiderint ad firmam  cessabunt a solucione
+                        dicte pecunie toto tempore firme . Terra quidem ad
+                        Manus Monachorum reuoluta soluent prefata pecuniam tem<lb/>pore debito more pretaxata .</cl> <cl type="sealing">Et ut hec amicabil<ex>is</ex> compositio inter dictas ecclesias illibata permaneat . presens scriptum<lb/> sigilli mei appositione roboraui .</cl> Actum anno gracie . millesimo . ducentesimo . viginti sexto .</span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

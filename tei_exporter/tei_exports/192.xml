@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-192">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/232</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-28 15:44:00.73171+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">192</idno>
+        <idno type="textcontent">192</idno>
+        <idno type="transcription_textcontentxml">192</idno>
+        <idno type="translation_textcontentxml">193</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/232</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/232</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-02-28T15:44:00.73171+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-02-28T15:44:00.73171+00:00" status="published">transcription moa=192 status=live modified=2017-02-28 15:43:57.748983+00 | translation moa=193 status=live modified=2017-02-28 15:44:00.73171+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">M Rex Scott’ . Omnibus probis hominibus totius terre sue . salutem .</cl> <cl type="disposition">Sciant Clerici ⁊<lb/> Laici me in perpetuam elemosinam dedisse ⁊ hac mea carta confirmasse Deo ⁊
+                     Sancte<lb/> Cruci de Edeneb’ ⁊ Canonicis ibidem deo seruientibus unum toftum plenarium in<lb/> in Burgo meo de Inuerkethin . Tenendum sibi ita libere ⁊ quiete  sicut aliquod
+                     toftum<lb/> in eodem Burgo liberius ⁊ quietius in elemosinam tenetur ⁊ possidetur</cl> . <cl type="witnesses">T<ex>estibus</ex> Eng’ Cancellario<lb/> Waltero filio Alani dapifero . Rob’ Auenel .</cl> Apud Linlidcu .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">M<ex>alcolm</ex> king of Scots to all worthy men of the whole of his land Greeting:</cl> <cl type="disposition">Let the clergy and laymen know that I have given in perpetual alms and by this
+                  my charter made firm to God and to Holyrood at Edinburgh and
+                  to the canons serving God there one full toft in my burgh of
+                  Inverkeithing. For them to hold as freely and quietly as any
+                  toft in the same burgh is freely and quietly held and
+                  possessed in alms</cl>. <cl type="witnesses">As witnesses, Ingram the chancellor, Walter the steward, son of Alan, Robert
+                  Avenel</cl>. At Linlithgow.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

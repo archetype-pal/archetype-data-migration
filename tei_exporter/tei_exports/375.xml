@@ -1,0 +1,93 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-375">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/60</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 13:16:56.552392+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">375</idno>
+        <idno type="textcontent">379</idno>
+        <idno type="transcription_textcontentxml">375</idno>
+        <idno type="translation_textcontentxml">376</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/60</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/60</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T13:16:56.552392+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T13:16:56.552392+00:00" status="published">transcription moa=375 status=live modified=2021-04-06 13:16:55.157322+00 | translation moa=376 status=live modified=2021-04-06 13:16:56.552392+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte Matris Ecclesie filius tam presentibus quam futuris <cl type="intitulatio"><persName>Rogerus</persName> filius <persName>Glay</persName></cl> . <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis me</cl> dedisse et concessisse et hac presenti Carta mea confirmasse<lb/> deo et Ecclesie Sancte Marie de Melros et monachis ibidem deo seruientibus pro
+                     salute <persName>Walter</persName> filii <persName>Alani</persName> Domini mei et pro salute mea . pro anima pa<lb/>tris et matris meorum . quandam Terram in territorio de Ynnerwyc sicut fossatum
+                     circuit eandam terram a fratribus eorum factum . in
+                     liberam . puram et perpetuam<lb/> elemosinam . solutam et quietam . ab omni terreno seruicio et exactione et
+                     demanda seculari  sicut aliquam elemosinam liberius
+                     quietius . et honorificencius<lb/> tenent et possident in regno Scocie . <cl type="warrandice">Et ego et Heredes mei warantizabimus predictis Monachis eandem terram contra
+                     omnes homines in perpetuum</cl><lb/> Preterea dedi et concessi et Hac carta mea confirmaui predictis Monachis
+                     communem pasturam eiusdem ville de Ynnerwic <cl type="boundaries">de profunda uia ad capud<lb/> de Manyneth . ad diuisas illas que sunt inter nos et Monachos de Kelcou scilicet
+                        ex trans<supplied>uer</supplied>so de Monesclhat usque in Wytsclad et de<lb/> Wytsclad usque in Edwardescloth et de Edwardescloth usque in Botkil et sic
+                        sursum per eandem aquam scilicet Botkil per rectas<lb/> diuisas de Ynnerwic usque ad Bercariam predictorum monachorum et de illa
+                        Bercaria usque ad profundam uiam prenominatam</cl> . <cl type="holding">Totam hanc<lb/> terram cum aisiamentis infra predictas diuisas scilicet in Petariis in turbariis
+                        . In Bruariis . In pasturis tenebunt predicti monachi
+                        de me et<lb/> Heredibus meis in puram et perpetuam elemosinam libere . quiete . et solute ab
+                        omnibus seruitiis . exactionibus . et demandis sicut
+                        aliqua elemo<lb/>sina liberius et quiecius et honorificencius tenetur in regno Scocie</cl> .</cl> <cl type="witnesses">Hiis testibus . Domino meo <persName>Waltero</persName> filio <persName>Alan<ex>i</ex></persName> . <persName>Rogero Auenell</persName> . <persName>Hugone Mal<lb/>leuerer</persName> . <persName>Hugone Ridell</persName> . <persName>Will<ex>elm</ex>o</persName> de Heryz . et Multis Aliis</cl> </p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church both present and to come, <cl type="intitulatio">Roger son of Glay</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know me</cl> to have given and granted, and by this my present charter to have made firm, to
+                     God and to the church of St Mary at Melrose and to the
+                     monks in that place serving God; for the salvation of
+                     Walter fitz Alan my lord, and for my own salvation, for
+                     the soul of my father and mother; certain land in the
+                     territory of Innerwick, as the ditch built by their
+                     brethren encloses the same land; in free, pure, and
+                     everlasting alms, released and quit from every earthly
+                     service and exaction, and secular demand, just as they
+                     freely, quitely, and honourably hold and possess any alms
+                     in the kingdom of Scotland. <cl type="warrandice">And I and my heirs shall warrant to the foresaid monks the same land against all
+                     men for ever.</cl> In addition I have given and granted, and by this my charter made firm, to the
+                     foresaid monks the common pasture of the same toun of
+                     Innerwick, <cl type="boundaries">from the low road to the head of the 'Manyneth', to those boundaries that are
+                     between us and the monks of Kelso, that is, transversely
+                     from the 'Monesclhat' to the 'Wytsclad', and from the
+                     'Wytsclad' to the 'Edwardescloth', and from the
+                     'Edwardescloth' to the 'Botkil', and so upwards by the
+                     same water, that is the 'Botkil', by the correct
+                     boundaries of Innerwick to the sheepfold of the foresaid
+                     monks, and from that sheepfold to the forenamed low road.</cl> <cl type="holding">The foresaid monks shall hold this whole land with easements within the foresaid
+                     boundaries, that is in peateries, in peat bogs, in heath
+                     ground, in pastures, of me and my heirs in pure and
+                     perpetual alms, freely, quitely, and released from all
+                     services, exactions and demands, just as any alms is
+                     freely and quitely and honourably held in the kingdom of
+                     Scotland.</cl></cl> <cl type="witnesses">With these witnesses: my lord, Walter fitz Alan; Roger Avenel; Hugh Mauleverer;
+                  Hugh Ridel; William de Heriz, and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

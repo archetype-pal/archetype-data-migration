@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-993">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 759</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 10:59:47.454131+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">993</idno>
+        <idno type="textcontent">1022</idno>
+        <idno type="transcription_textcontentxml">993</idno>
+        <idno type="translation_textcontentxml">992</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 759</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 759</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T10:59:47.454131+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T10:59:47.454131+00:00" status="approved">transcription moa=993 status=reviewed modified=2022-11-01 10:59:47.454131+00 | translation moa=992 status=reviewed modified=2022-11-01 10:59:47.442823+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Dauid comes</cl> . Ioh<ex>ann</ex>i episcopo . et Colbano . et Cospatrico . et omnibus suis fidelibus  <cl type="salutation">salutem</cl> .</cl> <cl type="narration">Vos ipsi scitis quod iudicatum fuit<lb/> ante me inter monachos Sancti Cuthberti et Drengos meos de terre de Horeuoredane
+                     . scilicet quod si ipsi<lb/> monachi haberent legales testes . uel breue fratris mei quieta eis illa predicta
+                     terra remaneret .</cl> <cl type="notification">Et ideo<lb/> uolo sciatis quod ego ipse uidi breue et donum fratris mei Eadgari regis quod ad
+                     uos etiam misi .</cl> <cl type="disposition">Et quicquid illud breue<lb/> eis testatur . uolo et concedo ut libere et quiete habeant .</cl> <cl type="witnesses">t<ex>estibus</ex> Will<ex>elmo</ex> nepotis mei . et Osb<ex>erto</ex> capell<ex>ano</ex> . et Hug<ex>one</ex> de moreuilla .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">David the earl</cl> to John the bishop, Colban, Cospatric, and all his sworn men <cl type="salutation">sends greeting</cl>.</cl> <cl type="narration">You yourselves know that there was a judgment before me between the monks of
+                  Saint Cuthbert and my drengs concerning the land of Horndean,
+                  that is to say, that if the monks had legal witnesses, or the
+                  brieve of my brother, the aforesaid land should remain theirs
+                  unchallenged.</cl> <cl type="notification">For that reason I want you to know that I have seen the very brieve and gift of
+                  my brother, Edgar the king, which I have also sent to you.</cl> <cl type="disposition">And I will and grant that whatever that brieve bears witness in their favour I
+                  wish and allow that they have free and unchallenged.</cl> <cl type="witnesses">As witness William my nephew, Osbert the chaplain, and Hugh de Morville.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

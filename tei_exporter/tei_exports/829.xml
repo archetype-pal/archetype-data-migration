@@ -1,0 +1,58 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-829">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 558</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.821741+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">829</idno>
+        <idno type="textcontent">846</idno>
+        <idno type="transcription_textcontentxml">829</idno>
+        <idno type="translation_textcontentxml">828</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 558</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 558</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T14:52:15.821741+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T14:52:15.821741+00:00" status="approved">transcription moa=829 status=reviewed modified=2022-11-01 14:52:15.812648+00 | translation moa=828 status=reviewed modified=2022-11-01 14:52:15.821741+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Eadgarus dei gratia rex scottorum</cl>  Omnibus suis fidelibus per regnum suum scottis et anglis .<lb/> <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis quod</cl> ego dono in elemosinam . deo et Sancto Cuthberto et monachis<lb/> eius Fiscwic tam in terris quam in aquis . et cum omnibus sibi adiacentibus .<lb/> et nominatim illam terram quę iacet inter Horuerdene et Cnapadene . pro<lb/> anima patris et matris meę . et pro salute animę . meę et fratrum meorum<lb/> et sororum <cl type="holding">liberam et quietam tenendam et habendam et ad uoluntatem mo<lb/>nachorum Sancti Cuthberti domini mei disponendam</cl> .</cl> <cl type="salutation">Valete .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Edgar by the grace of God king of the Scots</cl>, to all his sworn men throughout his kingdom, Gaelic and English, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know that</cl> I give Fishwick in alms to God and to Saint Cuthbert and his monks, as much in
+                     lands as in waters, and with everything belonging to it,
+                     namely the land that lies between Horndean and Nabdean,
+                     for the soul of my father and mother, and for the
+                     salvation of my own soul, and of my brothers' and sisters'
+                     [souls], <cl type="holding">to hold and to have free and quit, and to be disposed at the will of the monks
+                     of my lord, Saint Cuthbert.</cl></cl> <cl type="salutation">Farewell.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

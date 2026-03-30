@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-646">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.1</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:31:00.922816+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">646</idno>
+        <idno type="textcontent">656</idno>
+        <idno type="transcription_textcontentxml">646</idno>
+        <idno type="translation_textcontentxml">647</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.1</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.1</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:31:00.922816+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:31:00.922816+00:00" status="published">transcription moa=646 status=live modified=2021-04-05 08:30:59.212986+00 | translation moa=647 status=live modified=2021-04-05 08:31:00.922816+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>Alex’</persName> . dei Gr<ex>ati</ex>a Rex Scott’ .</cl> Iustic’ . Vicecomitibus . Prepositis . et omnibus probis Hominibus Tocius terre
+                     sue <cl type="salutation">Salutem</cl></cl> .<lb/> <cl type="disposition">Precipio quod fratres nostri de Melros et omnes fratres eiusdem ordinis sint
+                  quieti de Teloneo et omnibus aliis consuetudi<lb/>nibus et rectitudinibus et de omnibus mercatis que ad suos proprios usus
+                     fecerint ubicumque in tota terra<lb/> mea uenerint  Sicut Carta domini Regis patris mei <persName>Will<ex>elmi</ex></persName> . testatur . et confirmat .</cl> <cl type="witnesses">Testibus . <persName>Will<ex>elmo</ex></persName> . de Boscho<lb/> Cancellario . meo . Comite <persName>Malc’</persName> . de Fif . <persName>Will<ex>elmo</ex></persName> . de Valon’ . <persName>Ioh<ex>ann</ex>e</persName> de Maccuswel’ .</cl> Apud Edenb’ . Secundo die . ApriliS .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, by the grace of God king of the Scots</cl>, to justices, sheriffs, provosts, and all worthy men of his entire land <cl type="salutation">[sends] greeting</cl>.</cl> <cl type="disposition">I order that our brethren of Melrose and all brethren of the same order shall be
+                  quit of toll and all other customs and what is owed by right
+                  even from all trading which they may have done for their own
+                  purposes wherever they may have come in the whole of my land,
+                  just as the charter of the lord king, William my father,
+                  bears witness and affirms.</cl> <cl type="witnesses">As witnesses: William del Bois, my chancellor; Earl Malcolm of Fife; William de
+                  Valognes; John of Maxwell.</cl> At Edinburgh on the second day of April.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

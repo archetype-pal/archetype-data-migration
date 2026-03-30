@@ -1,0 +1,79 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-399">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/125</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:00:52.271082+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">399</idno>
+        <idno type="textcontent">403</idno>
+        <idno type="transcription_textcontentxml">399</idno>
+        <idno type="translation_textcontentxml">400</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/125</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/125</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:00:52.271082+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:00:52.271082+00:00" status="published">transcription moa=399 status=live modified=2021-04-06 15:00:50.712314+00 | translation moa=400 status=live modified=2021-04-06 15:00:52.271082+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-size: 16.0pt; font-family: Junicode;"><cl type="address"><cl type="intitulatio">Florentius d<ex>e</ex>i gr<ex>ati</ex>a Glasguen<ex>sis</ex> Electus</cl> . Omnibus has litteras uisuris uel auditurus <cl type="salutation">salutem<lb/> in domino</cl></cl> . <cl type="disposition"><cl type="notification">Sciatis</cl> nos per consilium et consensum capituli Glasg’ et cleri diocesis nostre
+                        concessisse et hac<lb/> carta nostra confirmasse . deo et sancte Marie et ecclesie de Melros . et
+                        monachis ibidem deo serui<lb/>entibus in liberam et quietam et perpetuam elemosinam . Ecclesiam de
+                        hastenesdene cum terris et<lb/> decimis . et omnibus ad ipsam pertinentibus . ad perpetuam susceptionem pauperum
+                        . et peregrinorum ad<lb/> domum de Melros uenientum . <cl type="sealing">Insuper eisdem Monachis intutiu pio concessimus . et hac<lb/> carta nostra confirmandum duximus . ut cum deo annuente munus consecrationis
+                           nostre consecuti fu<lb/>erimus  predictam ecclesiam de hastenesdene cum omnibus libertatibus . eis a
+                           bone Memorie Ioc’ .<lb/> Glasg’ episcopo predecessorem nostro concessis  eisdem episcopali sigillo
+                           confirmabimus</cl></cl> . <cl type="witnesses">his Testibus<lb/> . R . archid<ex>iacono</ex> . Ioh<ex>ann</ex>e officiali . Benedicto capellano . Mauritio et Magistro Henr<ex>ico</ex> clericis nostris .<lb/> henr<ex>ico</ex> clerico regine . Gregor<ex>io</ex> de stobhou . Theoderico nepote nostro . Nicholao . Ingerammo<lb/> Stephano . Waltero . hamone seruientibus nostris . et multis aliis videlicet
+                        personis Glasg’ dio<lb/>cesis</cl> .</span>
+        </p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Florence by the grace of God (bishop) elect of Glasgow</cl> <cl type="salutation">sends greeting in the Lord</cl> to all who shall see or hear these letters.</cl> <cl type="disposition"><cl type="notification">Know</cl> us by the advice and consent of the chapter of Glasgow and the clergy of our
+                     diocese to have granted and by this our charter to have
+                     made firm to God and to St Mary and the church of Melrose
+                     and to the monks serving God in that place, in free and
+                     quit and everlasting alms, the church of Hassendean with
+                     lands and teinds and everything belonging to it, for the
+                     perpetual support of the poor and the pilgrims coming to
+                     the (monastic) house of Melrose. <cl type="sealing">In addition, moved by religious compassion, we have granted to the same monks
+                     and we have directed to be made firm by this our charter,
+                     that when, God willing, the gift of our consecration has
+                     been obtained, we shall confirm to the same the aforesaid
+                     church of Hassendean with all liberties granted to them by
+                     our predecessor, Jocelin of good memory, bishop of
+                     Glasgow, by episcopal seal</cl>.</cl> <cl type="witnesses">With these witnesses: R(obert) the archdeacon; John the official; Benedict the
+                  chaplain; Maurice and Master Henry our clerks; Henry the
+                  queen's clerk; Gregory of Stobbo; Theodore our nephew;
+                  Nicholas, Ingram, Stephen, Walter, Haimo, our servants; and
+                  many other persons of the diocese of Glasgow.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

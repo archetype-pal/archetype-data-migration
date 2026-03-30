@@ -1,0 +1,54 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-359">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 557</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:08:22.118906+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">359</idno>
+        <idno type="textcontent">363</idno>
+        <idno type="transcription_textcontentxml">359</idno>
+        <idno type="translation_textcontentxml">360</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 557</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 557</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T13:08:22.118906+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:08:22.118906+00:00" status="approved">transcription moa=359 status=reviewed modified=2022-11-01 13:08:20.368935+00 | translation moa=360 status=reviewed modified=2022-11-01 13:08:22.118906+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Edgarus rex scottorum</cl> . Omnibus in regno suo scottis et anglis . <cl type="salutation">salutem</cl></cl> .<lb/> <cl type="disposition"><cl type="notification">Sciatis quod</cl> ego concedo et dono domino meo Sancto Cuthberto et monachis<lb/> eius Paxtun ita sicut ego eam habui cum hominibus . terris et aquis . <cl type="holding">et monachi<lb/> eam possideant ita libere et quiete sicut Coldingham ad uoluntatem<lb/> suam</cl> .</cl> <cl type="salutation">val<ex>ete</ex> .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Edgar king of the Scots</cl> <cl type="salutation">sends greeting</cl> to all in his kingdom, Scots and English.</cl> <cl type="disposition"><cl type="notification">Know that</cl> I concede and donate Paxton to my master Saint Cuthbert and to his monks, just
+                     as I had it, with men, lands and waters; <cl type="holding">and the monks should possess it as freely and quitly as Coldingham, according to
+                     their own desire</cl>.</cl> <cl type="salutation">Farewell.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

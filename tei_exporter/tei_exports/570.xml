@@ -1,0 +1,101 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-570">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/235</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:08:01.794465+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">570</idno>
+        <idno type="textcontent">578</idno>
+        <idno type="transcription_textcontentxml">570</idno>
+        <idno type="translation_textcontentxml">571</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/235</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/235</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T08:08:01.794465+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T08:08:01.794465+00:00" status="published">transcription moa=570 status=live modified=2021-04-07 08:07:54.76559+00 | translation moa=571 status=live modified=2021-04-07 08:08:01.794465+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><cl type="address">[?Vniuersis Christi fidelibus presentes audituris litter]as uel [uisuris] <cl type="intitulatio"><supplied>P</supplied>atricius Comes de Dunbar</cl> <cl type="salutation">salutem in domino</cl></cl> . <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> nos concessisse et hac carta nostra confirmasse donacionem illam quam Magister<lb/> <supplied>Willelmus fecit</supplied> in curia nostra apud Edirham Abbati et Conuentui de Melros tanquam suis
+                        assignatis . de quadam terra sita in territorio de
+                        Halsingtune . de qua Idem Magister<lb/> <supplied>Wi</supplied>ll<ex>elmu</ex>s ... se dissaisiuit . et ipsos sollempniter insaisiuit . quam quidem terram
+                        Robertus de Muscampo tenens noster dedit dicto Magistro
+                        Will<ex>elm</ex>o . sibi et suis assignatis iure perpetuo possidendam . <cl type="holding">Te<lb/>nend’ et habend’ . Dictis abbati et conuentui in liberam . puram et perpetuam
+                           elemosinam per illas diuisas per quas dictus
+                           Magister Will<ex>elmu</ex>s eam tenuit . et cum omnibus pertinenciis . libertatibus et aisiamentis ad eam
+                           perti<lb/>nentibus <supplied>et</supplied> c<supplied>um</supplied> communi pastura dicte ville de Halsingtune et cum libero intuitu et exitu ad
+                           eandem pasturam et ad dicta aisiamenta  adeo
+                           integre . libere . quiete . et plenarie ab omni
+                           seculari seruicio . exaccione .<lb/> cons<supplied>uetu</supplied>d<supplied>ine</supplied> et demanda . sicut aliqua elemosina in regno Scocie liberius . quiecius .
+                           plenius et honorificencius tenetur aut possidetur .</cl> <cl type="warrandice">Et ut Idem abbas et Conuentus super eadem terra non ualeant futuris temporibus<lb/> ab aliquo molestari  nos et heredes nostri p<supplied>ro</supplied> s<supplied>a</supplied>l<supplied>u</supplied>te <supplied>anim</supplied>arum nostrarum eandem terram per dictas diuisas suas cum omnibus premissis .
+                           Ipsis abbati et conuentui contra omnes homines
+                           inperpetuum warantizabimus .<lb/> <supplied>acqu</supplied>ietabimus et defendemus</cl> Et ad hoc [?faciliter] et sine difficultate qualibet faciendum  nos et heredes
+                        nostros predictis abbati et conuentui per has nostras
+                        patentes litteras obligamus .</cl> Actum apud Berewic .<lb/> in presencia karissimi ... ... ... octodecimo die aprilis anno regni eiusdem
+                     tricesimo quarto . <cl type="witnesses">Test’ . Roberto de Ros’. Dauid de Graham . Roberto de Meiners . Will<ex>elm</ex>o filio Co<lb/><supplied>mi</supplied>tis . Thom’ . de <supplied>Normanuill’</supplied> ... Henrico de Graham . Nicholao Corbeth . Waltero filio Walteri Senescalli .
+                        Roberto filio Comitis . Thom’ . de Boscho . et Bernardo
+                        de Ryppelei . et<lb/> ...</cl></span>
+        </p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">[To the entirety of Christ's faithful people, who shall hear or view the present
+                  letters,] <cl type="intitulatio">Patrick, earl of Dunbar </cl><cl type="salutation">sends greeting in the Lord</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> us to have granted and by this our charter to have made firm the donation that
+                     Master <supplied>William made</supplied> in our court at Edrom to the abbot and monastic community of Melrose as well as
+                     to their assigns, of a land to be found in the territory
+                     of Hassington, of which Master <supplied>William</supplied> ... dispossessed himself and solemnly gave them saisine, and it was this land
+                     that Robert de Muschamp, our tenant, gave to the said
+                     Master William for him and his assigns to possess by
+                     everlasting right; <cl type="holding">for the said abbot and monastic community to have and to hold in free, pure and
+                     everlasting alms by the boundaries by which the said
+                     Master William held it, and with all pertinents, liberties
+                     and easements pertaining to it, and with the common
+                     pasture of the said toun of Hassington and with free
+                     entrance and exit to the the same pasture and to the said
+                     easements, as wholly, freely, quitely, and fully from
+                     every secular service, exaction, custom and demand as any
+                     alms in the kingdom of Scotland is freely, quitely, fully
+                     and honourably held and possessed.</cl> <cl type="warrandice">And so that the abbot and monastic community should not have to be troubled in
+                     times to come by any one in respect of the same land, we
+                     and our heirs for the salvation of our souls shall
+                     guarantee, release from obligation, and protect the same
+                     land by its said boundaries, with everything
+                     aforementioned, for the abbot and monastic community
+                     against all men for ever.</cl> And in order to do this [easily] and without any difficulty, we and our heirs
+                     bind ourselves to the aforesaid abbot and monastic
+                     community by these letters patent.</cl> Done at Berwick in the presence of the well-beloved ... ... ... on the
+                  eighteenth day of April in the thirty-fourth year of the same
+                  king. <cl type="witnesses">As witness: Robert of Roos; David Graham; Robert Menzies; William the earl's
+                  son; Thomas de Normanville ... ... ... Henry Graham; Nicholas
+                  Corbett; Walter son of Walter the Steward; Robert the earl's
+                  son; Thomas del Bois, Bernard of Ripley, and ... ... ...</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

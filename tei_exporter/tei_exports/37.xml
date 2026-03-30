@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-37">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 617</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-07-13 13:05:56.842121+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">37</idno>
+        <idno type="textcontent">37</idno>
+        <idno type="transcription_textcontentxml">37</idno>
+        <idno type="translation_textcontentxml">38</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 617</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 617</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-07-13T13:05:56.842121+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-07-13T13:05:56.842121+00:00" status="approved">transcription moa=37 status=reviewed modified=2023-07-13 13:05:56.842121+00 | translation moa=38 status=reviewed modified=2023-07-13 13:05:56.819853+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">ALex’ . dei gratia Rex Scott’</cl> . Omnibus probis hominibus tocius terre sue  <cl type="salutation">Salutem</cl> . </cl><cl type="disposition"><cl type="notification">Sciatis</cl> quod monachis de Colding<lb/>ham’ . quieta clamauimus auxilium ⁊ exercitum que nobis antiquitus reddi
+                     solebant de duodecima <lb/> uilla de Coldingham<ex>s</ex>shyre . scilicet de uilla in qua fundata est ecclesia de . Coldingham’ .</cl> <cl type="disposition">Quare <lb/> uolumus ut predicti monachi decetero non respondeant de auxilio ⁊ exercitu que
+                     nobis de predicta duodecima uilla reddi solebant .</cl> <cl type="witnesses">Test<ex>ibus</ex> . magistro math’ . Cancell<ex>ario</ex> . Walt’ . fil<ex>io</ex> . Alan’ . Senescall’ . Inger’ . <lb/> de Baill’ . Will<ex>elmo</ex> . de Lindes’ . Thom<ex>a</ex> . de Haya .</cl> <cl type="dating">apud Edenb’ . quinto die Iun<ex>ii</ex> . anno Regni nostri xiij</cl> .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander by the grace of God king of Scots</cl> to all worthy men of his whole land, <cl type="salutation">greeting</cl>: </cl><cl type="disposition"><cl type="notification">Know that</cl> we have quitclaimed to the monks of Coldingham the aid and army which they were
+                     accustomed to render to us of old for the twelfth toun of
+                     Coldinghamshire, that is for the toun in which the church
+                     of Coldingham was founded.</cl> <cl type="disposition">Wherefore we will that the aforesaid monks henceforth should not answer for the
+                  aid and army which used to be rendered to us from the
+                  aforesaid twelfth toun.</cl> <cl type="witnesses">As witnesses: Master Matthew, chancellor, Walter son of Alan, steward, Ingram de
+                  Balliol, William of Lindsay, Thomas de la Haye.</cl> <cl type="dating">At Edinburgh, on the fifth day of June, in the 13th year of our reign</cl>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

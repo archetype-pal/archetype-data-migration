@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-714">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/98</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:18:17.527927+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">714</idno>
+        <idno type="textcontent">725</idno>
+        <idno type="transcription_textcontentxml">714</idno>
+        <idno type="translation_textcontentxml">715</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/98</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/98</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T08:18:17.527927+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T08:18:17.527927+00:00" status="published">transcription moa=714 status=live modified=2021-04-07 08:18:15.287203+00 | translation moa=715 status=live modified=2021-04-07 08:18:17.527927+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Will<ex>elmus</ex> dei gr<ex>ati</ex>a Rex Scott<ex>orum</ex> .</cl> episcopis Abbatibus Com<ex>itis</ex> Baron<ex>ibus</ex> Iust<ex>iciis</ex> Vicec<ex>omitibus</ex> prepositis ministris et omnibus probis<lb/> hominibus tocius terre sue clericis et laicis <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> me concessisse et hac carta mea<lb/> confirmasse . deo et eccelsie sancte marie de melr<ex>os</ex> . et monachis ibidem deo seruientibus illam quietam<lb/> clamationem quam Alanus filius Walteri dapifer meus eisdem monachis in presentia
+                     et plena curia<lb/> mea fecit . de tota calumpnia et omni iure quod predictus alanus aut heredes sui
+                     habuerunt uel<lb/> unquam habere poterunt de pastura ex occidentali parte de led’ . <cl type="holding">Quare uolo et precipio ut prefati<lb/> monachi de melros prenominatam pasturam teneant in perpetuum et habeant liberam<lb/> et quietam de omni calumpnia de prefato Alano et heredibus <supplied>suis</supplied> ita libere et quiete plenarie et<lb/> honorifice sicut carta predicti Alani filii Walteri dapiferi mei testatur</cl> .</cl> <cl type="witnesses">Test<ex>ibus</ex> Ioc<ex>elino</ex> episcopo glasg .<lb/> Ioh<ex>ann</ex>e episcopo Dunkeld’ . Comite d<ex>aui</ex>d fratre meo . Comite Dunec<ex>ano</ex> . Comite Gileb’ . Will<ex>elmo</ex> de moru’ const<ex>abulario</ex> . Will<ex>elm</ex>o<lb/> de lindes’ . Malc’ filio comitis Dunec<ex>ani</ex> . Walter de Berk<ex>eley</ex> . Rob<ex>erto</ex> de Berk<ex>eley</ex> . Henrico de Graham .</cl> Apud Edenburg </p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">William by the grace of God king of the Scots</cl>, to bishops, abbots, earls, barons, justices, sheriffs, provosts, officials,
+                     and all worthy men of his entire land, clerk and lay, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have granted, and by this my charter to have made firm, to God and to the
+                     church of St Mary at Melrose, and to the monks serving God
+                     there, the quitclaim which Alan son of Walter my steward
+                     made to the same monks in my presence and full court, of
+                     the whole claim and every right which the said Alan or his
+                     heirs have had or ever could have had in the pasture on
+                     the western side of the Leader. <cl type="holding">Wherefore I will and instruct that the said monks of Melrose should hold the
+                     named land for ever and have it free and quit from every
+                     claim from the said Alan and his heirs, as freely and
+                     quitly, fully and honourably, as the charter of the said
+                     Alan son of Walter my steward bears witness</cl>.</cl> <cl type="witnesses">As witnesses, Jocelin bishop of Glasgow, John bishop of Dunkeld, Earl David my
+                  brother, Earl Duncan, Earl Gilbert, William de Morvillethe
+                  constable, William of Lindsay, Malcolm son of Earl Duncan,
+                  Walter of Berkeley, Robert of Berkeley, Henry of Graham.</cl> At Edinburgh.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

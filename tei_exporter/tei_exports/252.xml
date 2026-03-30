@@ -1,0 +1,69 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-252">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/277</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-29 12:00:50.171666+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">252</idno>
+        <idno type="textcontent">252</idno>
+        <idno type="transcription_textcontentxml">252</idno>
+        <idno type="translation_textcontentxml">253</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/277</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/277</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-03-29T12:00:50.171666+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-03-29T12:00:50.171666+00:00" status="published">transcription moa=252 status=live modified=2017-03-29 12:00:46.786347+00 | translation moa=253 status=live modified=2017-03-29 12:00:50.171666+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus hoc scriptum uisuris uel audituris . Donecanus Comes de . Carrick .
+                  Salutem.</cl> <cl type="disposition">Sciatis nos dedisse<lb/> Concessisse . ⁊ hac presenti Carta nostra confirmasse . deo et ecclesie beate
+                     Marie de . Norberewic . et Mo<lb/>nialibus ibidem deo seruientibus et in perpetuum seruituris tres marchas argenti
+                     percipiendas annuatim de terra<lb/> de . Barrebeth . ad duos terminos . scilicet medietatem ad festum Pentecostes .
+                     et medietatem ad festum sancti Mar<lb/>tini quousque eis in loco conpetenti prouiderimus de duobus penilandis et
+                     dimidiam .</cl> Et ut hec nostra donacio<lb/> et concessio . et carte nostre confirmacio rata et stabilis permaneat  presens
+                  scriptum eisdem tradidimus<lb/> sigillo nostro roboratum. <cl type="witnesses">Hiis testibus . domino Ioh<ex>ann</ex>e milite filio Comitis . Magsitro Hugone . Alano<lb/> Decano . Murthac’ senescallo et multis aliis.</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall view or hear this deed, Duncan Earl of Carrick sends Greeting:</cl> <cl type="disposition">Know that we have given, granted, and by this our present charter made firm, to
+                  God and to the church of Blessed Mary in North Berwick, and
+                  to the monks serving God there, and in perpetuity to those
+                  who will serve there, three merks of silver to be received
+                  annually from the land of Berbeth, at two terms, that is half
+                  at the feast of Pentecost, and half at the feast of St
+                  Martin, until we have provided them with two-and-a-half
+                  pennylands in a suitable place</cl>. <cl type="witnesses">And that this our donation and grant, and the confirmation of our charters
+                  remain certain and constant, we have handed over the present
+                  deed to the same, secured with our seal. With these
+                  witnesses, the lord John, knight, son of the Earl, Master
+                  Hugh, Alan the dean, Mudoch the steward, and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,74 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-999">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 760</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.057654+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">999</idno>
+        <idno type="textcontent">1031</idno>
+        <idno type="transcription_textcontentxml">999</idno>
+        <idno type="translation_textcontentxml">998</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 760</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 760</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-03-13T15:02:37.057654+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-03-13T15:02:37.057654+00:00" status="approved">transcription moa=999 status=reviewed modified=2023-03-13 15:02:37.02737+00 | translation moa=998 status=reviewed modified=2023-03-13 15:02:37.057654+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Dauid Comes</cl> . Iohanni episcopo . et Cospatr<ex>ico</ex> . et Colbano . et Rodb<ex>erto</ex> . et omnibus suis fidelibus Tegnis et dringis de lodeneio et de Teuegetedale . <cl type="salutation">Salutem</cl></cl><lb/> <cl type="notification">Sciatis quod</cl> <cl type="disposition">ego concedo Monachis Sancti Cuthberti cum omnibus consuetudinibus omnia que
+                  habebant tam in terris quam in aquis . die qua frater meus
+                  Eadgarus uiuus<lb/> et mortuus fuit . et sicut ego ipse domino meo sancto Cuthberto post mortem
+                     illius fratris mei eisdem Monachis concessi . Et sicut
+                     frater meus Eadgarus Sancto Cuthberto<lb/> et Monachis suis dedit Swintunam et super altare in Coldingeham obtulit  ita
+                     eandem omnino totam ex mea parte <cl type="holding">dono et concedo Sancto predicto<lb/> et monachis eius liberam et quietam tenendam et amodo habendam sicut breue
+                        fratris mei predicti eis testatur . Et precipio omnibus
+                        meis hominibus ut nullus<lb/> eis amodo aliquam inde faciat molestiam uel iuniuriam . quia uolo ut hanc meam
+                        donationem in pace et honorifice habeant et teneant et
+                        in perpetuum possideant</cl> .</cl> <cl type="witnesses">test<ex>ibus</ex> Mathildis reginę . et Willelmi filii sui . et Iohannis episcopi .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">David the earl,</cl> to John the bishop, Cospatric, Colban, Robert, and all his sworn men, thanes and
+                     drengs of Lothian and Teviotdale, <cl type="salutation">greeting</cl>.</cl> <cl type="notification">Know that</cl> <cl type="disposition">I grant to the monks of saint Cuthbert with all customs everything which they
+                  had as well in lands as in waters on the day when my brother
+                  Edgar was alive and dead, and just as I myself have granted
+                  to my lord Saint Cuthbert after my brother's death to the
+                  same monks; and just as my brother Edgar gave, and offered
+                  upon the altar of Coldingham, Swinton to Saint Cuthbert and
+                  his monks, so for my part</cl> <cl type="holding">I present as a gift and grant the same entire and whole to the aforesaid saint
+                  and his monks, to be held free and undisturbed, and to be had
+                  in future just as the brieve of my aforesaid brother for them
+                  bears witness. And I instruct all my men that no one shall in
+                  future make any trouble or do any injustice in respect of it,
+                  since I will that they should have, hold, and possess this my
+                  donation in peace for ever.</cl> <cl type="witnesses">As witness, Matilda the queen, William her son, and John the bishop.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,122 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-409">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/137</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:05:02.65494+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">409</idno>
+        <idno type="textcontent">413</idno>
+        <idno type="transcription_textcontentxml">409</idno>
+        <idno type="translation_textcontentxml">410</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/137</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/137</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:05:02.65494+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:05:02.65494+00:00" status="published">transcription moa=409 status=live modified=2021-04-06 15:05:02.65494+00 | translation moa=410 status=live modified=2021-04-06 15:05:01.064431+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-family: Junicode;"><cl type="address">Omnibus sancte Matris ecclesie filiis . tam presentibus quam futuris . <cl type="intitulatio">Ansellus de Molla</cl> <cl type="salutation">salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciatis</cl> me dedisse . et hac presenti mea carta confirmasse deo et ecclesie sancte<lb/> Marie de Meylros . et Monachis ibidem deo seruientibus . pro animabus dominorum
+                        meorum . Regis D<ex>aui</ex>d . et Comitis . henr<ex>ici</ex> . et Regis Melcolm<ex>i</ex> . et pro salute domini mei Will<ex>elm</ex>i Regis .<lb/> Scott’ . et pro anima mea . et uxoris mee . et omnium antecessorum et
+                        successorum meorum . concessu et assensu heredum meorum
+                        . illam partem terre in territorio de Molla.<lb/> <cl type="boundaries">que proxima est terre monachorum de Meylros . ad australem partem montis de
+                        hunedune . Et ex orientali parte est diuisa uia illa .
+                        per quam uadunt<lb/> de hunedune ad Mollam . que uia iacet inter predictam terram . et terram
+                           ecclesie de Molla . usque ad sursam cuiusdam fontis
+                           que est proxima ad occidentalem<lb/> partem eiusdem uie . et ab illa predicta sursa . per diuisas et metas factas per
+                           latus de kippemoder . per desursum omnes sursas
+                           fontium eiusdem lateris . scilicet de kippemod<ex>er</ex> .<lb/> excepta tantum una sola sursa uersus occidentem . usque ad quosdam magnos
+                           lapides ueteris edificii . quod est super unum
+                           paruum cundos . quod cundos est ad australem<lb/> partem terre que dicitur cruche . Et post . diuisa descendit per idem cundos
+                           usque ad unum magnum lapidem . et post usque ad
+                           alium . et sic usque ad riuulum qui currit<lb/> iuxta predictam terram de cruch . scilicet ad australem partem eiusdem cruch .
+                           Et sic descendit uersus occidentem usque ad riuulum
+                           illum qui est diuisa [in]ter terram uille<lb/> de hunum et Molle</cl> . Totam hanc terram . et quicquid est infra prescriptas diuisas iuxta terram
+                        monachorum . scilicet montis de hunedune . dedi deo et
+                        sancte Marie<lb/> et toti conuentu de Meylros . pro dimidia carrucata terre . in puram et
+                        perpetuam elemosinam . liberam et solutam ab omni
+                        terreno seruicio et exactione<lb/> seculari sicut ulla elemosina liberius et quietius dari potest . Et rex Will<ex>elmu</ex>s dominus meus pro amore dei et salute anime sue et antecessorum suorum . rogatu
+                        meo<lb/> eisdem monachis terram predictam concessit . et carta sua confirmauit . <cl type="warrandice">Et ego et heredes mei warantizabimus prefatis monachis terram predictam
+                        inperpetu<lb/>um . contra omnes homines</cl> . Et ego et heredes mei adquietabimus eidem monachis eandem terram de forensic
+                        et omni terreno seruicio et omnibus aliis seruitiis .<lb/> probis et liberis hominibus patrie</cl> . <cl type="witnesses">qui sunt nominate testes huius carte mee et donationis . scilicet hii . Petrus
+                     persona de Merebothle . Edwardus persona de lintune .<lb/> Henricus le neym . Yuo diaconus . Ioh<ex>anne</ex>s filius horm . Ingelramnus de dummar . Walterus corbeth . Robertus de Wiltune .
+                        Robertus de clipanuile . Gaufridus Ridel .<lb/> Radulfus le neym . et Ricardus le neym filius eius Rogerus filius ioh<ex>ann</ex>is de hawic . Vthredus grubbeheued . et Adam filius eius . Hubertus . et
+                        Walterus et Ra<lb/>dulfus . filii Radulfi le neym . Gillebertus cognatus petri persone de
+                        Merebothle . Adam filius orm . Stephanus filius Will<ex>elm</ex>i Ricardus filius Anselli .</cl></span>
+        </p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, both present and to come, <cl type="intitulatio">Anselm of Mow</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have given and by this my present charter to have made firm to God and to
+                     the church of St Mary at Melrose, and to the monks serving
+                     God in that place, for the souls of my lords, King David,
+                     and Earl Henry, and King Malcolm, and for the salvation of
+                     my lord William, king of the Scots, and for my own soul,
+                     and my wife’s, and of all my ancestors’ and successors’ <ex>souls</ex>, with the advice and agreement of my heirs, the portion of land in the
+                     territory of Mow <cl type="boundaries">which is next to the monks’ land at Melrose, on the south side of the hill of
+                     ‘Hunedune’, and on the east side the boundary is the road
+                     which runs from ‘Hunedune’ to Mow, the road which lies
+                     between the said land and the church-lands of Mow, as far
+                     as the fountain-head of a certain stream on the west side
+                     of ‘Kippemoder’, along above all the fountain-heads of the
+                     streams on the same side, that is of ‘Kippemoder’, except
+                     only for one spring alone towards the west, as far as
+                     certain large stones of the old building which is upon a
+                     small ridge, the ridge which is to the south side of the
+                     land called ‘Cruche’. And afterwards the boundary descends
+                     along the same ridge as far as a large stone, and
+                     afterwards to another, and thus as far as the rivulet
+                     which runs between the said land of ‘Cruch’, that is on
+                     the south side of the same ‘Cruch’, and as it descends
+                     towards the west as far as the rivulet which is the
+                     boundary between the land of the toun of Hownam and Mow.</cl> This whole land and whatever is within the fore-written boundaries next to the
+                     monks’ land, that is of the hill of ‘Hunedune’, I have
+                     given to God and to St Mary and the whole monastic
+                     community at Melrose, in return for half a ploughgate of
+                     land, in pure and everlasting alms, free and released from
+                     all earthly service and secular exaction, just as any alms
+                     can be freely and quitely given. And my lord, King
+                     William, for the love of God and the salvation of his own
+                     soul and of his ancestors’ <ex>souls</ex>, at my request has granted and by his charter made firm the said land to the
+                     same monks. <cl type="warrandice">And I and my heirs shall warrant to the aforementioned monks the said land for
+                     ever, against all men.</cl> And I and my heirs shall discharge the same land for the same monks in respect
+                     of forinsec and all earthly service and all other
+                     services, by worthy and free men of the land, who are
+                     named witnesses of this my charter and donation,</cl> <cl type="witnesses">that is these: Peter, parson of Morebattle; Edward, parson of Linton; Henry le
+                  Nain; Ivo the deacon; John son of Orm; Ingram of Domart;
+                  Walter Corbet; Robert of Wilton; Robert de Cliponville;
+                  Geoffrey Ridel; Ralph le Nain, and Richard le Nain his son;
+                  John of Hawick; Uhtred Grubbit, and Adam his son; Hubert and
+                  Walter and Ralph, sons of Ralph le Nain; Gilbert, cousin of
+                  Peter the parson of Morebattle; Adam son of Orm; Stephen son
+                  of William; Richard son of Anselm.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

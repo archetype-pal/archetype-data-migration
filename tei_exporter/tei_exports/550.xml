@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-550">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/260</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:33.867321+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">550</idno>
+        <idno type="textcontent">558</idno>
+        <idno type="transcription_textcontentxml">550</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/260</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/260</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:33.867321+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:33.867321+00:00" status="draft">transcription moa=550 status=draft modified=2017-01-30 19:28:33.867321+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><cl type="address">Omnibus Christi fidelibus ad quos presens Scriptum peruenerit  <cl type="intitulatio">Ioh<ex>annes</ex> filius Iliue De Iliuestun<lb/></cl> <cl type="salutation">Eternam in domino Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Nouerit vniuersitas uestra</cl> me in Libera potestate mea de Con<lb/>sensu et bona uoluntate heredum meorum dedisse et Concessisse et presenti Carta
+                        mea confirmasse <lb/> magistro Ade de Baggat . et heredibus suis uel Cui dare uel assignare uoluerit 
+                        illam bouatam<lb/> terre cum vna acra prati in territorio de Iliuestun integre et sine aliquo
+                        Retinemento cum<lb/> omnibus aisiamentis et pertinenciis suis quam Will<ex>elmu</ex>s Pile De Bouyldene ad firmam habuit de<lb/> me per aliquot annos . <cl type="holding">Tenendam et habendam in perpetuum Sibi et Heredibus suis uel Cui dare uel<lb/> assignare uoluerit . de me et heredibus meis . Libere . Quiete . Pacifice . et
+                           honorifice . ab omni<lb/> Seruicio . Consuetudine . Ausilio . Exactione  et Demanda .</cl> Reddendo mihi et heredibus meis pro<lb/> omnibus Seruiciis . consuetudinibus . Ausiliis . Exactionibus . et demandis .
+                        singulis Annis quasdam<lb/> cyrotecas albas in nundinis de Rokesburg’  vel unum denarium . Et Sciendum est
+                        quod prefatus<lb/> magister . A . de Baggat pro concessione et Donatione predicte terre ad meam
+                        magnam pauper<lb/>tatem alleuiandum  quatuor marcas Legalium sterlingorum mihi dedit . <cl type="warrandice">Ego uero et heredes mei<lb/> predictam terram adeo libere sicut predicum est  predicto magistro . A . de
+                           Baggat et heredibus suis uel<lb/> cui dare vel assignare uoluerit  contra omnes homines et feminas in perpetuum
+                           Warantizabimus <lb/> et defendemus .</cl> Volo autem . et Concedo pro me et heredibus meis et successoribus meis <lb/> ne aliquod aliud seruicium Extrinsecum vel intrinsecum a predicta bouata terre
+                        cum predicta acra<lb/> prati adiacente  et aliis suis pertinenciis et aisiamentis postuletur  nisi
+                        tantummodo illud  quod in<lb/> Carta ista prescriptum est . Quam Ego et heredes mei de Residuo terre mee de<lb/> Iliuestun  illam de omnibus aliis seruiciis et postulationibus  aquietabimus .</cl> <cl type="sealing">In Huius uero Rei<lb/> testimonium  sigillum meum huic scripto apposui .</cl> <cl type="witnesses">Hiis Testibus  Domino Thom<ex>a</ex> filio Randol’ .<lb/> Bernard<ex>o</ex> de Haudene . Ioh<ex>ann</ex>e de Letham . Gregor<ex>io</ex> de Rutherfurd’ . Alex’ de Sintun .<lb/> Ada de Walchope . Thom<ex>a</ex> de Wittusme . Dauid de Graham  Alex’ Lundon’ . Ada<lb/> tunc Senescallo de Lintun . Edgaro tunc Senscallo . I . de Laundel’ . Ada tunc<lb/> Senescallo de Hawhic . Ada tunc Senescallo . W . de Coleu<ex>i</ex>ll<ex>a</ex> . et Multis aliis</cl></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

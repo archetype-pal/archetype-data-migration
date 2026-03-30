@@ -1,0 +1,102 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-116">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 33</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:00.473884+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">116</idno>
+        <idno type="textcontent">116</idno>
+        <idno type="transcription_textcontentxml">116</idno>
+        <idno type="translation_textcontentxml">117</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 33</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 33</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:28:00.473884+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:00.473884+00:00" status="published">transcription moa=116 status=live modified=2017-01-30 19:28:00.473884+00 | translation moa=117 status=live modified=2016-06-07 13:00:13.582348+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. <cl type="intitulatio">P . ⁊ W. abbates de Dunfermelin ⁊ de lundores . ⁊ h . prior de pethneweme</cl>  Omnibus ad quorum noticiam ⁊ intellectum tenor presentis scripti peruenerit  <cl type="salutation">salutem in domino</cl> .</cl> <lb/> <cl type="notification">Nouerit fraternitas uestra</cl> <cl type="narration">[nos] mandato domini pape Innocentii suscepto nobis iniunctum fuisse  ut
+                  questionem quam Ranulfus archidiaconus de sancto andrea
+                  proponebat aduersus hugonem <lb/> seneschaldum ⁊ Jordanum nepotem ipsius super terris ex occidentalis parte noui
+                     operis existentibus uersus domos lamburc quas asserebat ad
+                     archidiaconatum suum specta<lb/>re  conuocatis partibus ⁊ auditis vel iudicio decideremus  vel compositione
+                     interueniente liti finem imponeremus . Conuocatis igitur
+                     aliquociens partibus tandem mediante <lb/> domino episcopo sancti andree Will<ex>elm</ex>o . ⁊ partes suas interponente nobis etiam auctoritatem prestantibus ⁊ operam ⁊
+                     diligentiam adhibentibus  compositum est inter partes ita
+                     quod <lb/> hugo seneschaldus ⁊ Jordanus nepos eius resignauerunt ⁊ quietas in posterum
+                     clamauerunt terras illas cum edificiis in eis ab ipsis
+                     constructis . R . archidiacono ⁊ succes<lb/>soribus eius . Ipse uero . R . archidiaconus pro resignatione facienda ⁊ pro
+                     bono pacis dedit hugoni seneschaldo . xv . marcas . ⁊
+                     Jordano . x . marcas ⁊ quatuor perticatas <lb/> terre quas a . T . priore ⁊ eius conuentu acceperat proximas domui symonis
+                     clerici ex parte orientali tenendas de se ⁊ successoribus
+                     suis sibi ⁊ heredibus suis soluendo <lb/> annuatim unam libram cimini</cl> . <cl type="sealing">⁊ ut hec compositio rata consistat ⁊ imperpetuum inconcussa permaneat
+                  inuiolabiliter obseruanda  tam sigilli domini episcopi quam
+                  nostrorum <lb/> appositione est corroborata ⁊ confirmata</cl> . <cl type="witnesses">His testibus . Domino . T . priore ⁊ eius conuentu . Andrea de morauia .
+                  Magistro Adam . Magistro Steph<ex>an</ex>o . Magistro ysaac . <lb/> Magistro Symone . Will<ex>elm</ex>o de karel decano . Will<ex>elm</ex>o capellano de Brechhin . Will<ex>elm</ex>o de deruesin . Petro ⁊ Eadwardo capellanis domini episcopi . Joh<ex>ann</ex>e de hautuisel . <lb/> Will<ex>elm</ex>o de Colin . Joh<ex>anne</ex> de londiniis . Radulfo nigro . Joh<ex>ann</ex>e maraschaldo . Symone de nuisi . Eutropio dispensatore . Petro ⁊ hugone de
+                     nidin ⁊ Rob<ex>er</ex>to <lb/> de kalledouer pueris domini episcopi . Will<ex>elm</ex>o lambin . Gileb<ex>er</ex>to Britone . Symone clerico</cl> .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">P<ex>atrick</ex> and W<ex>ido/Guy</ex>, abbots of Dunfermline and of Lindores, and H<ex>ugh</ex>, prior of Pittenweem</cl> : To all to whose attention and understanding the content of the present written
+                     document shall have come : <cl type="salutation">Greeting in the Lord.</cl></cl> <cl type="notification">May your fraternity know</cl> <cl type="narration">that, with the mandate of Innocent the lord Pope having been received by us, we
+                  have been enjoined either to decide by a judgment the dispute
+                  which Ranulf, archdeacon of St Andrews, brought against Hugh
+                  the Steward and Jordan his nephew over the lands on the west
+                  side of the new work standing opposite the dwellings of
+                  Lamburc, and which he was claiming to belong to his own
+                  archdeaconry, having called together and heard the parties;
+                  or to impose an end to the dispute by mediating an agreement.
+                  The parties therefore having been called together several
+                  times, with William, lord bishop of St Andrews, acting as
+                  mediator, and standing between the two sides, with us also
+                  discharging authority and employing effort and diligence, it
+                  was agreed between the parties so that Hugh the Steward and
+                  Jordan his nephew resigned and quitclaimed those lands for
+                  the future, and the buildings in them that were built by
+                  them, to R<ex>anulf</ex> the archdeacon and to his successors. And R<ex>anulf</ex> the archdeacon himself has given to Hugh the Steward, in return for making the
+                     resignation and for the sake of peace, 15 merks, and to
+                     Jordan 10 merks and four perches of land that he had
+                     received from T<ex>homas</ex> the prior and his community near the dwelling of Simon the clerk on the east
+                     side, for Jordan and his heirs to hold of him and his
+                     successors by paying one pound of cumin yearly. </cl><cl type="sealing">And so that this authoritative agreement should stand firm and remain unchanged
+                  in perpetuity, to be observed without violation, it has been
+                  reinforced and made firm by the application of the seal of
+                  the lord bishop as well as our own.</cl> <cl type="witnesses">With these witnesses: the lord T<ex>homas</ex> the prior, and the community; Andrew of Moray; Master Adam; Master Stephen;
+                     Master Isaac; Master Simon; William of Crail, dean;
+                     William, chaplain of Brechin; William of Dairsie; Peter
+                     and Edward, the chaplains of the lord bishop; John of
+                     Haltwhistle; William of Gullane; John of London; Ralph
+                     Niger; John the marischal; Simon de Noisy; Eutrope the
+                     dispenser; Peter and Hugh of Nydie and Robert of Calder,
+                     man-servants of the lord bishop; William Lambin; Gilbert
+                     Breton; Simon the clerk.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-562">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/246</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:34.905967+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">562</idno>
+        <idno type="textcontent">570</idno>
+        <idno type="transcription_textcontentxml">562</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/246</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/246</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:34.905967+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:34.905967+00:00" status="draft">transcription moa=562 status=draft modified=2017-01-30 19:28:34.905967+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="narration">Hec est . Amicabilis Compositio facta inter Monasteryum de Melros ex una parte
+                  et Ecclesiam Baptismalem de Mackestun ex altera de<lb/> assensu Abbatis et Monachorum de Melros et de assensu Leonii persone de
+                     Mackestun . Adhibito etiam assensu Domini Walteri
+                     Glasguensis<lb/> Episcopi et Domini Ioh<ex>ann</ex>is de Normauill' Eiusdem Ecclesie Patroni Super Omnibus Decimis et obuentionibus
+                     prouenientibus de tota terra quam<lb/> dicti monachi possiderunt . Anno domini millesimo ducentesimo . vicesimo Septimo
+                     intra Limites Parochie de Mackest’ . Monachi . Scilicet de
+                     Melros<lb/> Soluent Singulis annis ad pentecosten Ecclesie de Mack’ quatuor Marcas argenti
+                     pro Bono Pacis . Et per hanc Solucionem quatuor<lb/> Marcarum . Liberi erunt Monachi penitus et inmunes erga Ecclesiam De Mack’ et
+                     Rectores illius in perpetuum ab omni perturbacione<lb/> priuilegiorum Suorum et ab Omni uexatione et exactione Decimarum et aliarum
+                     Obuentionum omnium In dicta terra prouenientium</cl> .<lb/> <cl type="sealing">Hanc uero Compositionem ad obseruantiam pacis et Caritatis initam et ab utraque
+                  parte Sponte Receptam dictus Dominus Episcopus Glasguensis .<lb/> approbando Sigilli Sui presentis appositione confirmauit inter Monasteryum de
+                     Melros et Ecclesiam De Mack’ perpetuo valituram</cl> . <cl type="witnesses">Hiis Testibus . Magistro Hug<ex>one</ex> Archidiacono Glasguensi . Magistro Will<ex>el</ex>mo Will<ex>el</ex>mo Archidiacono Dunkeldensi . Domino Hug<ex>one</ex><lb/> de Normanuill' persona De Stanfordham</cl> .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

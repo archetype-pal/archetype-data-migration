@@ -1,0 +1,108 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-178">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/225</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-07-07 12:16:15.524087+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">178</idno>
+        <idno type="textcontent">178</idno>
+        <idno type="transcription_textcontentxml">178</idno>
+        <idno type="translation_textcontentxml">179</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/225</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/225</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-07-07T12:16:15.524087+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-07-07T12:16:15.524087+00:00" status="published">transcription moa=178 status=live modified=2017-07-07 12:16:15.524087+00 | translation moa=179 status=live modified=2017-07-07 12:14:11.662629+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Ricardus dei gratia Sancti Andree minister humilis .</cl> dilectis in Christo sancte matris ecclesie filiis <cl type="salutation">salutem et episcopalem benedictionem</cl>.</cl> <cl type="disposition"><cl type="notification">Noscat uestra fraternitas</cl> nos<lb/> concessisse et carta nostra confirmasse omnes ecclesias quas in nostra diocesi
+                     rex DauiD . et rex Malcolmus . et bone memorie Rodbertus
+                     episcopus . et Ernaldus episcopus . uel<lb/> alii christi fideles in elemosinam perpetuam dederunt ecclesie Sancte Crucis de
+                     edenesburch . scilicet ecclesiam de castello cum saletunia
+                     . et omnibus aliis eius<lb/> appendiciis . et ecclesiam Sancti Cudberti . cum duabus carucatis terre . et cum
+                     aliis rectitudinibus suis . et ecclesiam de Crostorphin
+                     cum duabus bouatis . et sex<lb/> acris terre . et ceteris rebus ad eam iuste pertinentibus . et ecclesiam de
+                     hereth . cum duabus carucatis terre . et ceteris
+                     appendiciis . et unam salinam cum . uiginti .<lb/> septem acris terre . et ecclesiam de uilla Leuing . cum dimidia carucata terre .
+                     et omnibus aliis que ad eam iuste pertinent . et ecclesiam
+                     de kinel .<lb/> cum una carucata terre . et decima molendini . et salinarum eiusdem uille . et
+                     ecclesiam de hamara cum omnibus appenticiis suis . et
+                     ecclesiam de karreden .<lb/> cum terra que iuste ad eam pertinet . et omnibus rectitudinibus suis . et
+                     ecclesiam de Trauernent cum terra et omnibus ad eam recte
+                     pertinentibus . et ecclesiam de<lb/> Bathchet cum una carucata terre . et omnibus ad eam iuste pertinentibus . et
+                     omnia quecumque prefata ecclesia ex alicuius donacione
+                     iuste possidet . sicut<lb/> carta regis . D<ex>aui</ex>D . et carta regis Malcolmi . et carta Rodberti episcopi . et carta Ærnaldi
+                     episcopi . testantur et confirmant . <cl type="holding">Uolumus itaque et assensu tocius capituli<lb/> nostri concedimus . et concedendo confirmamus . predictam Sancte Crucis
+                        ecclesiam . uniuersas prenominatas ecclesias .
+                        ceterasque suas possessiones . cum omnibus<lb/> rectitudinibus suis liberas tenere et quietas . et ab omni exactione tutas et
+                        inconcussas . saluo iure episcopali .</cl></cl> <cl type="witnesses">His testibus . Andrea archidiacono .<lb/> Aiulfo decano . Rodberto capellano fratre episcopi . Gaufrido presbitero de
+                     laswade . Rodberto canonico sancti Andree . Alexandro
+                     capellano episcopi . Magistro<lb/> Herberto . Magistro abraham . clericis episcopi.</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Richard, by the grace of God a humble servant of Saint Andrew</cl>, to his beloved in Christ, the sons of Holy Mother Church, <cl type="salutation">sends greeting and episcopal blessing.</cl></cl> <cl type="disposition"><cl type="notification">Let your fraternity know</cl> that we have granted, and by his charter made firm, all the churches that are in
+                     our diocese which King David, and King Malcolm, and
+                     Bishops Robert of good memory, and Bishop Arnald, or other
+                     faithful of Christ, gave in perpetual alms to the church
+                     of Holyrood in Edinburgh; that is to say, the church of
+                     [Edinburgh] castle with Saughton, and all its other
+                     dependencies; the church of St Cuthbert [in Edinburgh]
+                     with two ploughgates of land and its other rights; and the
+                     church of Corstorphine with two oxgangs, and six acres of
+                     land, and the rest of the things rightfully belonging to
+                     it; the church of Airth with two ploughgates of land, and
+                     the rest of its dependencies, and a saltpan with
+                     twenty-seven acres of land; and the church of Livingston,
+                     with half a ploughgate of land, and all other things which
+                     rightfully belong to it; and the church of Kinneil, with
+                     one ploughgate of land, the teind of the mill, and the
+                     saltworks of that toun; and the church of Whitekirk with
+                     all its dependencies; and the church of Carriden, with the
+                     land which rightfully belongs to it, and all its rights;
+                     and the church of Tranent, with land and everything
+                     rightfully belonging to it; and the church of Bathgate,
+                     with one ploughgate of land, and everything rightfully
+                     belonging to it; and all things which that church
+                     rightfully possesses from any donation, as the charter of
+                     King David, and the charter of King Malcolm, and the
+                     charter of Bishop Robert, and the charter of Bishop Arnald
+                     attest and confirm. <cl type="holding">We therefore wish, and with the assent of all our chapter we grant, and by
+                     granting we confirm, that the aforesaid church of the
+                     Holyrood is to hold all the aforenamed churches, and the
+                     rest of its possessions, with all its rights free and
+                     quit, and protected and unharmed by any exaction.
+                     Reserving episcopal right.</cl></cl> <cl type="witnesses">With these witnesses: Andrew, archdeacon; Aiulf, dean; Robert, chaplain and the
+                  bishop’s brother; Geoffrey, priest of Lasswade; Robert, canon
+                  of St Andrews; Alexander, the bishop’s chaplain; Master
+                  Herbert [and] Master Abraham, the bishop’s clerks.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

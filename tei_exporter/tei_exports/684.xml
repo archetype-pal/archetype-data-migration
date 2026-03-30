@@ -1,0 +1,154 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-684">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.28</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:52:49.865711+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">684</idno>
+        <idno type="textcontent">695</idno>
+        <idno type="transcription_textcontentxml">684</idno>
+        <idno type="translation_textcontentxml">685</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.28</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.28</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:52:49.865711+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:52:49.865711+00:00" status="published">transcription moa=684 status=live modified=2021-04-05 08:52:47.822432+00 | translation moa=685 status=live modified=2021-04-05 08:52:49.865711+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="notification">Sciant vniuersi Sancte Matris Ecclesie filii</cl> <supplied>tam presentes quam futuri . Quod cum lis mota fuisset . et diutius</supplied> <cl type="narration">ventilata <supplied>in capi</supplied>tulo Or<supplied>ienta</supplied>li Laudonie inter<lb/> dominum . <persName>I .</persName> Priorem et conuentum Sancti A<supplied>ndree</supplied> <supplied>ex una parte . et Magistrum et Moniales de Ha</supplied>digton<ex>a</ex> ex alter<supplied>a</supplied> <supplied>super</supplied> diuersis <supplied>decimis</supplied> Maioribus et<lb/> Minoribus hinc Inde petitis : Scilicet quod cum de<supplied>cime carrucate ter</supplied>re i<supplied>n terr</supplied>itorio Helfstanford que quondam <supplied>spectabat a</supplied>d territorium<lb/> de drem . Et decime duarum bouatarum terr<supplied>e contentarum in ueteri ga</supplied>rdino de Stefniston<ex>a</ex> . Et decime illius terre que iace<supplied>t in</supplied>ter vetus gardinum .<lb/> et villam de hadigton<ex>a</ex> . et decime dimidie <supplied>illius ter</supplied>re iuxta molendinum de Stefiniston<ex>a</ex> . et decime Croftorum quorundam burgensium de<lb/> hadigton<ex>a</ex> . quas tunc temporis Magister et Moniales tenebant ex parte prioris et Conuentus
+                     de Sancto Andrea prefatis Monialibus peterentur <lb/> et ex parte Magistri et Monialium de Hadigton<ex>a</ex> Minute decime de biris . et Cotariorum de biris et de Bernis a predictis
+                     Canonicis exigerentur<lb/> in iure . ac lite Super prefatis petitionibus hinc Inde legitime contestata . Et
+                     testibus ex vtraque parte productis et examinatis et
+                     attesta<lb/>tionibus publicatis et inspectis . atque allegationibus vtriusque partis auditis
+                     et intellectis . et inspectis instrumentis eorundem : Cum
+                     nichil resta<lb/>bat nisi sentencia ferenda . Tandem post multorum labores et vexationes
+                     indebitas  partes per procuratores legittime constitutos
+                     ad com<lb/>ponendum et transigendum Die Sabbati post ad vincula Sancti Petri in Ecclesia de
+                     Lauheder . Anno gracie Millesimo ducentesimo quadragesimo
+                     quinto Coram Magistro <persName>Andrea</persName><lb/> de Aberden Officiali domini Episcopi Sancti Andr<ex>ee</ex> comparuerunt presentibus viris discretis . Domino . <persName>I .</persName> abbate de Driburc . et Magistris <persName>Will<ex>elm</ex>o</persName> de gren<lb/>lau . et <persName>Adam</persName> de Malkaruiston<ex>a</ex> . et <persName>Henrico</persName> de holtal et aliis probis hominibus Clericis et laicis Religionis et Secularibus
+                     partes suas ad pa<lb/>cis reformationem interponentibus lis inter partes mota ac diucius agitata in
+                     hac forma amicabiliter conquieuit . videlicet quod <persName>Petrus</persName><lb/> Canonicus procurator Canonicorum Sancti Andr<ex>ee</ex> remisit et quietas clamauit nomine dictorum prioris et Conuentur Sancti Andr<ex>ee</ex> predictis Monialibus de<lb/> hadigton<ex>a</ex> . omnes decimas superius nominatas ita quod dicte Moniales prefatas decimas
+                     decetero percipiant in perpetuum et pacifice<lb/> possideant . et in vsus proprios sine aliqua contradictione conuertant . Pro qua
+                     remissione et quieta Clamatione prefati Magister et Monia<lb/>les dederunt sepedictis Canonicis de Sancto Andr<ex>ee</ex> redditum . viginti . solidorum . in decimis de faueside in parrochia de karel .
+                     Et quia<lb/> omnes prefate decime garbarum de faueside estimate fuerunt per visum proborum et
+                     fidelium hominum ex vtraque parte electorum<lb/> et iuratorum quod plus valebant in septemdecim Solidos quam Redditus viginti
+                     solidorum prefatis Canonicis assignatus . Et de communi
+                     con<lb/>sensu et assensu vtriusque partis prouisum fuit quod prenominati Canonici
+                     persoluant prenominatis Monialibus Septemdecim solidos<lb/> annuatim ad Pascha . pro residuo dictarum Decimarum . Et ita prefati Canonici
+                     omnes Decimas garbarum de faueside in perpetuum<lb/> possidebunt . et in vusus proprios Licite conuertent . Et vt ista pacis
+                     Reformatio . et gratuita compositio Robur perpetue
+                     firmitatis<lb/> optineat . et ne per maliciam et Calliditates Malignancium Lis ita amicabiliter
+                     Sopita iterum valeat suscitari  vtraque pars<lb/> tam Canonicorum quam Monialium Subiecit se iurisdicioni Episcopi Sancti Andr<ex>ee</ex> qui pro tempore fuerit sic Quod possit vna sola<lb/> ammonitione premissa partem retinentem vel nolentem istam compositionem
+                     obseruare . vt fideliter ipsam perpetuo obseruet<lb/> per Censuram ecclesiasticam Compellere</cl> . <cl type="sealing">Et insuper ad Maiorem securitatem . et vt omnis ambiguitas tollatur parti
+                  Scripture<lb/> in Modum Cyrographi confecte . et remanenti penes Canonicos de Sancto Andr<ex>ea</ex> Sigillum Monialium de Hadigton<ex>a</ex> vna Cum<lb/> sigillo domini <persName>D<ex>aui</ex>d</persName> . dei gr<ex>ati</ex>a Episcopi Sancti Andr<ex>ee</ex> . Et Magistri <persName>Andr<ex>ee</ex></persName> Officialis dicti Epicopi sunt apposita . Et parti remanenti penes monia<lb/>les Sigillum Capituli Sancti Andr<ex>ee</ex> . et dicti Episcopi . et Officialis sunt appensa .</cl> <cl type="witnesses">Teste toto Capitulo Laudonie . Coram quo lec<lb/>ta fuit hec Compositio . et a partibus approbata</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="notification">Let all sons of Holy Mother Church know, those present as well as those to come
+                  after, that</cl> <cl type="narration">when a dispute at law was initiated and deliberated for a long time in the
+                  chapter-house of East Lothian between lord John the prior and
+                  the community of St Andrews on the one side, and the master
+                  and nuns of Haddington on the other, over various teinds,
+                  great and small, claimed on either side, that is to say, when
+                  the teinds of a ploughgate of land in the territory of
+                  Athelstaneford which once belonged to the territory of Drem,
+                  and the teinds of two oxgangs of land contained in the old
+                  garden of Stevenson, and the teinds of that land which lies
+                  between the old garden and the toun of Haddington, and the
+                  teinds of half of that land next to the mill of Stevenson,
+                  and the teinds of the crofts belonging to certain burgesses
+                  of Haddington, which the master and nuns were then holding,
+                  were claimed on the part of the prior and community of St
+                  Andrews from the aforementioned nuns; and on the part of the
+                  master and nuns of Haddington, the small teinds of Byres, and
+                  the cottaries of Byres and of Barney were demanded in law;
+                  and the dispute in law over the aforementioned claims on both
+                  sides having been lawfully asserted, and the witnesses on
+                  either side having been produced and examined, and evidence
+                  having been published and inspected, and with allegations on
+                  either side having been heard and understood, and having
+                  inspected the instruments of the same, when nothing remained
+                  except for the judgment to be rendered, at length after many
+                  labours and undue troubles, the parties through their agents
+                  lawfully constituted to settle and complete [the case] on
+                  Saturday after St Peter’s Chains in the church of Lauder in
+                  the year of grace 1245 before of Master Andrew of Aberdeen,
+                  official of the lord bishop of St Andrews, they compeared
+                  with the men of discretion present, the lord J<ex>ohn</ex>, abbot of Dryburgh, Master William of Greenlaw, Adam of Maxton, Henry of
+                     Holtal, and other worthy men, clerk and lay, of religion
+                     and secular, representing their own parties for the
+                     restoration of peace, the suit initiated between the
+                     parties, and for a long time pursued, was in this form
+                     amicably settled, namely, that Peter the canon, agent of
+                     the canons of St Andrews, remitted and quitclaimed in the
+                     name of the said prior and canons of St Andrews to the
+                     aforesaid nuns of Haddington all the teinds named above so
+                     that the said nuns may in future receive and possess
+                     undisturbed the aforementioned teinds for ever, and turn
+                     them to their own use without any disagreement. In return
+                     for this remission and quitclaim, the aforesaid master and
+                     nuns have given to the oft-mentioned canons of St Andrews
+                     a rent of twenty shillings in the teinds of Falside in the
+                     parish of Crail. And since all the aforementioned garbal
+                     teinds of Falside have been reckoned by the inspection of
+                     worthy and faithful men from both sides, of the electors
+                     and the jurors, that they were worth seventeen shillings
+                     more than the rent of twenty shillings assigned to the
+                     aforementioned canons, by joint approval and agreement of
+                     either side it was laid down that the aforenamed canons
+                     would pay to the aforenamed nuns seventeen shillings
+                     annually at Easter for the remainder of the said teinds.
+                     And so, the aforementioned canons shall forever possess,
+                     and lawfully turn over to their own purposes, all the
+                     garbal teinds. And in order that this restoration of peace
+                     and gracious agreement may gain the validity of
+                     everlasting endurance, and lest by the malice and
+                     craftiness of wicked men the legal suit thus amicably
+                     settled could again be revived, either side, the canons as
+                     much as the nuns, have submitted themselves to the
+                     jurisdiction of the one who is at the time bishop of St
+                     Andrews, so that it be possible to compel by one single
+                     warning through ecclesiastical censure the party
+                     witholding the foregoing things or unwilling to abide by
+                     this agreement to observe it faithfully for ever through
+                     ecclesiastical censure.</cl> <cl type="sealing">And in addition, for greater security, and so that all uncertainty may be
+                  removed, to the side of the document – produced in the manner
+                  of a cyrograph – remaining in the possession of the canons of
+                  St Andrews, the seal of the nuns of Haddington together with
+                  the seal of the lord David, by the grace of God bishop of St
+                  Andrews, and of Master Andrew, official of the said bishop,
+                  have been applied; and to the side remaining in the
+                  possession of the nuns the seal of the chapter of St Andrews,
+                  and of the said bishop, and of the official, have been
+                  attached.</cl> <cl type="witnesses">As witness the whole chapter of Lothian, before whom this agreement was read out
+                  and approved by the parties.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

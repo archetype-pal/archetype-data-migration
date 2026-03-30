@@ -1,0 +1,76 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-389">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/107</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 13:36:22.367529+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">389</idno>
+        <idno type="textcontent">393</idno>
+        <idno type="transcription_textcontentxml">389</idno>
+        <idno type="translation_textcontentxml">390</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/107</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/107</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T13:36:22.367529+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T13:36:22.367529+00:00" status="published">transcription moa=389 status=live modified=2021-04-06 13:36:20.452248+00 | translation moa=390 status=live modified=2021-04-06 13:36:22.367529+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte matris ecclesie filiis tam futuris quam presentibus <cl type="intitulatio">Ric<ex>ardus</ex> de Morevill' Constab<ex>u</ex>l<ex>arius</ex> reg<ex>is</ex> Scott'</cl> <cl type="salutation">salutem</cl> .</cl><lb/> <cl type="disposition"><cl type="notification">Sciatis</cl> me dedisse . et hac mea carta confirmasse deo et ecclesie sancte Marie de
+                     Mailros et monachis<lb/> ibidem deo seruientibus in liberam et quietam et perpetuam elemosinam .
+                     libertatem et licentiam habendi apud<lb/> buchelm unam uaccariam sexaginta uaccarum . et domum ad opus earum ideoneam 
+                     infra illa eadem<lb/> septa que ibi erant antequam hanc licentiam eis dedissem . <cl type="holding">Quare uolo ut prenominata ecclesia sancte Ma<lb/>rie de Mailros et predicti monachi prefatam libertatem et licentiam in liberam
+                        et perpetuam elemosinam<lb/> habeant . perpetualiter que possideant . Ita libere . quiete . et honorifice 
+                        sicut aliquam elemosinam liberius<lb/> quietius et honorificentius possident .</cl> Ita quod hoc non remaneat propter cartam meam de Þhiteleie<lb/> quam prius eis dederam . que testatur me concessisse eis ut habeant solummodo
+                     tres domos in<lb/> foresta  et hoc apud predictam Þhiteleie</cl> ; <cl type="witnesses">Teste Domina auice de loncastria . Will<ex>elm</ex>o de Moreuill'<lb/> filio et herede nostro . herberto decano Glasg' . magistro Clemente capellano .
+                     Adam persona ecclesie de<lb/> lawed<ex>e</ex>r . Rogero clerico et dapifero . Alano de turlestan . Sampsone filio Will<ex>elm</ex>i de Vlchilestun .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church both future and present, <cl type="intitulatio">Richard de Morville, constable of the king of the Scots</cl>, <cl type="salutation">sends greeting</cl></cl>. <cl type="disposition"><cl type="notification">Know</cl> me to have given, and by this my charter to have made firm, to God and to the
+                     church of St Mary at Melrose, and the monks serving God in
+                     that place, in free and quit and everlasting alms, the
+                     freedom and licence to have at Buckholm one cow pasture
+                     for sixty cows, and a suitable building for their needs,
+                     within the same enclosure which was there before I had
+                     given them this permission. <cl type="holding">Wherefore I will that the aforenamed church of St Mary at Melrose and the
+                     foresaid monks should have the forementioned liberty and
+                     licence in free and everlasting alms, and possess it for
+                     ever; as freely, quitely, and honourably as they possess
+                     any alms freely, quitely, and honourably;</cl> so that it shall non remain a hindrance on account of my charter for Whitelee
+                     which I had given to them previously, which shows me to
+                     have granted to them that they may have only three
+                     buildings in the forest, and that at the foresaid
+                     Whitelee.</cl> <cl type="witnesses">As witness: the lady Avice of Lancaster; William de Morville our son and heir;
+                  Herbert the dean of Glasgow; Master Clement, chaplain; Adam,
+                  parson of the church of Lauder; Roger clerk and steward; Alan
+                  of Thirlestane; Sampson son of William of Oxton.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

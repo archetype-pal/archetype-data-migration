@@ -1,0 +1,80 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-954">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 721</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:41:10.654657+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">954</idno>
+        <idno type="textcontent">982</idno>
+        <idno type="transcription_textcontentxml">954</idno>
+        <idno type="translation_textcontentxml">955</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 721</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 721</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T11:41:10.654657+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T11:41:10.654657+00:00" status="approved">transcription moa=954 status=reviewed modified=2022-11-01 11:41:10.654657+00 | translation moa=955 status=reviewed modified=2022-11-01 11:41:10.645198+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Ranulfus de Bonkil</cl> Omnibus videntibus uel audientibus has literas <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me<lb/> intuitu karitatis et ob amorem et reuerenciam beati Cuthberti gloriosi
+                     confessoris et pro animabus<lb/> patris mei et matris mee et pro salute anime mee et uxoris mee et omnium
+                     parentum meorum<lb/> Totum clamum quod habui et ius si quod habui uel habere potui in boscis et moris
+                     prioris et monachorum de Coldingham . Scilicet
+                     Brockesholes et Harewde et Denewde omnino eisdem<lb/> monachis sine aliquo renunciamento quietum clamasse . Et insuper sciatis quod
+                     ego et heredes mei<lb/> diuisas factas et perambulatas inter Coldingham et Bonkil Scilicet a
+                     Middeldeneshe<lb/>ued per Mereburnesheued versus occidentem usque ad Cratoketrestrete et inde per
+                     eandem<lb/> stratam usque ad Eiford predictis monachis in perpetuum pacifice tenebimus et
+                     conseruabimus .</cl><lb/> <cl type="witnesses">Hiis Testibus . Patricio filio Comitis . Patricio filio Ade . Roberto de
+                  Vpsetelingtona .<lb/> Dauid <persName><roleName>Marescallo</roleName></persName> Thoma de Gordona . Matheo de Normanuilla . Iohanne de<lb/> sancte michaele . Will<ex>elm</ex>o de Veteri ponte . Stephano de La Warderobe . Henrico de prender<lb/>gest . Will<ex>elm</ex>o de Witeslade Alano de Swintona . Patricio de Prestona . Symone filio<lb/> Thome . Waltero de Paxtona . Andrea de paxtona . Will<ex>elm</ex>o de Lumesdene . et multis aliis ;</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Ranulf of Bunkle</cl> to all who view or hear these letters sends greeting.</cl> <cl type="disposition"><cl type="notification">Know</cl> me, moved by charitable love, out of love and reverence for blessed Cuthbert the
+                     glorious confessor, and for the souls of my father and my
+                     mother and for the salvation of my own soul and the soul
+                     of my wife and all my ancestors, to have quitclaimed the
+                     entire claim which I had, and the right which I had or was
+                     able to have, in the woods and moors of the prior and
+                     monks of Coldingham, that is, Brockesholes, Harewood,
+                     Denewood, entirely to the same monks, without any
+                     renouncing. In addition, know that I and my heirs shall
+                     maintain and preserve to the aforesaid monks in perpetual
+                     peace the boundaries made and perambulated between
+                     Coldingham and Bunkle, that is, from 'Middeldenesheued' by
+                     'Mereburnesheued' westwards to 'Cratoketrestrete' and from
+                     there by the same path to Eiford.</cl> <cl type="witnesses">With these witnesses, Patrick son of the earl, Patrick son of Adam, Robert of
+                  Upsettlington, David the Marischal, Thomas of Gordon, Matthew
+                  of Normanville, John of St-Michel, William de Vieuxpont,
+                  Stephen of the Wardrobe, Henry of Prenderguest, William of
+                  Wideslade, Alan of Swinton, Patrick of Preston, Simon son of
+                  Thomas, Walter of Paxton, Andrew of Paxton, William of
+                  Lumsdaine, and many others. </cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

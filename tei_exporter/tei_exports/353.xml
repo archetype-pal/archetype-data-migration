@@ -1,0 +1,81 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-353">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/266</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:40:03.063835+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">353</idno>
+        <idno type="textcontent">357</idno>
+        <idno type="transcription_textcontentxml">353</idno>
+        <idno type="translation_textcontentxml">354</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/266</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/266</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T12:40:03.063835+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T12:40:03.063835+00:00" status="published">transcription moa=353 status=live modified=2021-04-06 12:40:01.432243+00 | translation moa=354 status=live modified=2021-04-06 12:40:03.063835+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. <cl type="intitulatio">A . dei Gratia Rex scott’</cl> . Omnibus probis hominibus tocius terre sue Clericis et laicis <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Sciant presentes et futuri</cl> <cl type="disposition">nos ad honorem<lb/> dei et gloriose uirginis matris sue . necnon et pro salute nostra et
+                     antecessorum et successorum nostrorum . dedisse
+                     concessisse . et hac carta nostra confirmasse<lb/> monachis de Melros’ deo ibidem seruientibus et inperpetuum seruituris piscariam
+                     illam super Twed’ . que uocatur piscaria de Selechirk’ .
+                     Et septem<lb/> acras terre cum edificiis et prato infra easdem septem acras terre contentis .
+                     sicut eedem septem acre terre per fossatum et sepem
+                     eorundem monachorum die<lb/> huius collationis includebantur . Et eciam pasturam ad Octo boues . et Octo
+                     uaccas in Wauhop’ . Concessimus etiam dictis monachis vt
+                     ipsi per uisum foresta<lb/>riorum nostrorum qui pro tempore erunt . habeant et capiant in foresto nostro
+                     maremium ad sustentationem stagni sui in eadem piscaria . <cl type="holding">Tenend’ . et habend’ .<lb/> eisdem inperpetuum in liberam . puram . et perpetuam elemosinam . ita libere
+                        quiete . plenarie . et honorifice : sicut aliqua
+                        elemosina ex dono nostro ab aliquibus uiris<lb/> religiosis in regno nostro . liberius . quiecius . plenius et honorificentius
+                        tenetur uel possidetur</cl> .</cl> <cl type="witnesses">Test<ex>ibus</ex> . venerabili patre W episcopo Glasguens<ex>i</ex> . Cancellar<ex>io</ex> nostro . Ph<ex>ilippo</ex> . abbate<lb/> de Ieddewurd’ . Dauid de Lindes’ . Iustic’ . Laodon<ex>ie</ex> . Bernard<ex>o</ex> de Rippeley .</cl> Apud Ieddewurd’ . Oct<ex>auo</ex> die Febr<ex>uarii</ex> . ann<ex>o</ex> regn<ex>i</ex> . domini reg<ex>is</ex> . Tricesim<ex>o</ex> tercio .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">A<ex>lexander</ex> by the grace of God king of the Scots</cl> <cl type="salutation">sends greeting</cl> to all worthy men, clerk and lay, of the whole of his land.</cl> <cl type="notification">Let present and future know</cl> <cl type="disposition">us to have given, granted, and by this our charter made firm, for the honour of
+                  God and his glorious virgin Mother, as well as for our own
+                  salvation and our ancestors’ and successors’, to the monks of
+                  Melrose serving God in that place and who will serve there in
+                  perpetuity, the fishery on the Tweed which is called the
+                  fishery of Selkirk; and seven acres of land with buildings
+                  and a meadow contained within those seven acres of land, just
+                  as the same seven acres of land of the same monks were
+                  enclosed by a ditch and fence on the day of this conveyance;
+                  and also a pasture for eight oxen and eight cows in ‘Wauhop’.
+                  We have also allowed to the said monks that they, by the view
+                  of our foresters at the time, may have and take timber in our
+                  forest for the upkeep of their stank in the same fishery. <cl type="holding">For them to hold and to have for ever in free, pure, and everlasting alms, as
+                     freely, quitely, fully, and honourably as any alms out of
+                     our gift is freely, quitely, fully and honourably held or
+                     possessed by any religious men in our kingdom</cl>.</cl> <cl type="witnesses">As witnesses, the venerable father W<ex>illiam</ex>, bishop of Glasgow, our chancellor; Philip, abbot of Jedburgh; David of
+                     Lindsay, justiciar of Lothian; Bernard of Ripley.</cl> At Jedburgh on the eighth day of February, in the thirty-third year of the reign
+                  of the lord king [1247].</p>
+      </div>
+    </body>
+  </text>
+</TEI>

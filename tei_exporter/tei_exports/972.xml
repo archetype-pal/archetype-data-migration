@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-972">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 732</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:12:46.014679+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">972</idno>
+        <idno type="textcontent">1000</idno>
+        <idno type="transcription_textcontentxml">972</idno>
+        <idno type="translation_textcontentxml">973</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 732</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 732</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T11:12:46.014679+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T11:12:46.014679+00:00" status="approved">transcription moa=972 status=reviewed modified=2022-11-01 11:12:46.014679+00 | translation moa=973 status=reviewed modified=2022-11-01 11:12:46.003973+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi fidelibus ad quos prefatas scriptum peruenerit  <cl type="intitulatio">Walterus Olifard</cl> <cl type="salutation">Salutem in domino</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit Vniuersitas uestra</cl><lb/> me confirmasse Deo et Sancto Chudberto Et Sancte Ebbe Et Monachis Dunelmensibus
+                     apud Coldingham Deo seruientibus donacionem<lb/> illam quam Clarebaldus de Esseby fecit deo et sancto Chudberto et sancte Ebbe et
+                     monachis de Coldingham ibidem deo seruientibus de duabus
+                     piscariis super Twedam . scilicet de vna piscaria sub
+                     Gardino de fissewich’ . et alia apud Schipeswel .<lb/> sicut continetur in carta quam dictus Clarebaldus dedit dictis monachis de
+                     dictis piscariis . quas ego dedi et concessi et<lb/> carta mea confirmaui dicto Clarebaldo et heredibus suis pro homagio et seruicio
+                     suo</cl> <cl type="sealing">Et in huius confirmacionis<lb/> testimonium presenti scripto sigillum meum apposui .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful to whom the present writing shall have come, <cl type="intitulatio">Walter Oliphant</cl> <cl type="salutation">sends greeting in the Lord</cl>.</cl> <cl type="disposition"><cl type="notification">Know all of you that</cl> I have confirmed to God, Saint Cuthbert, Saint Ebbe, and to the monks of Durham
+                     serving God at Coldingham, the donation which Clarebald of
+                     Ashby made to God, Saint Cuthbert, Saint Ebbe, and to the
+                     monks of Coldingham serving God in that place, of two
+                     fisheries on the Tweed, that is, one fishery below the
+                     garden at Fishwick, and the other at Shipswell, as it is
+                     comprised in the charter which the said Clarebald gave to
+                     the said monks for the said fisheries, which I gave,
+                     granted, and by my charter made firm to the said Clarebald
+                     and his heirs in return for their homage and service.</cl> <cl type="sealing">And as witness of this confirmation I have applied my seal to the present
+                  writing.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

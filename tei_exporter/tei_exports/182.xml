@@ -1,0 +1,66 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-182">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/227</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 09:15:54.467529+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">182</idno>
+        <idno type="textcontent">182</idno>
+        <idno type="transcription_textcontentxml">182</idno>
+        <idno type="translation_textcontentxml">183</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/227</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/227</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T09:15:54.467529+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T09:15:54.467529+00:00" status="published">transcription moa=182 status=live modified=2021-04-05 09:15:52.586344+00 | translation moa=183 status=live modified=2021-04-05 09:15:54.467529+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Ric’ dei gratia ecclesie beati Andr<ex>ee</ex> humilis minister .</cl> vniuersis sancte matris ecclesie filiis  <cl type="salutation">salutem</cl>.</cl> <cl type="disposition"><cl type="notification">Sciant tam posteri<lb/> quam presentes</cl> nos concessisse  presentis scripti munimine confirmasse deo  canonicis apud
+                     Edenburg<lb/> deo seruientibus  seruituris ecclesiam de kynal cum omnibus eidem iuste
+                     pertinentibus tenendam in liberam<lb/>  perpetuam elmosinam . <cl type="holding">Quare uolumus  auctoritate episcopali mandamus ut predicti canonici
+                     prenominatam<lb/> ecclesiam adeo libere teneant . quiete  honorifice possideant  sicut liberius
+                        . quietius .  honorificentius aliquam<lb/> ecclesiam in tota diocesi nostra tenent  possident . saluis episcopalibus</cl></cl> . <cl type="witnesses">hiis testibus . A. archidiacono Laodonie .<lb/> Waltero archidiacono de sancto andrea . I. priore de hadintune . Rogero priore
+                     de Insula . Roberto clerico de pert .<lb/> Alexandro  Will<ex>elm</ex>o capellanis episcopi . Galfr’ dapifero . magistro Abraham . Odone dapifero .
+                     hugone pincerna .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Richard by the grace of God humble servant of the church of the blessed Andrew,</cl> to all sons of Holy Mother Church, <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition"><cl type="notification">Let those to come as well as those present know</cl> that we have granted and by the defence of this document made firm to God and to
+                     the canons serving God at Edinburgh now and in the future,
+                     the church of Kinneil with all things rightfully belonging
+                     to it, to be held in free and perpetual alms. <cl type="holding">Wherefore I will and command by episcopal authority that the aforesaid canons
+                     should hold and possess that church as freely, quietly and
+                     honourably as they hold and possess any church in the
+                     whole of our diocese. Reserving the episcopal dues.</cl></cl> <cl type="witnesses">With these witnesses, A<ex>ndrew</ex> archdeacon of Lothian, Walter, archdeacon of St Andrews, I<ex>lbert </ex>prior of Haddington, Roger prior of Loch Leven, Robert clerk of Perth, Alexander
+                     and William the bishop’s chaplains, Geoffrey the steward,
+                     Master Abraham, Odo the steward, Hugh the butler.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

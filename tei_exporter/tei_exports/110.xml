@@ -1,0 +1,85 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-110">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 28</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-01 18:51:37.544143+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">110</idno>
+        <idno type="textcontent">110</idno>
+        <idno type="transcription_textcontentxml">110</idno>
+        <idno type="translation_textcontentxml">111</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 28</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 28</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-01T18:51:37.544143+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-01T18:51:37.544143+00:00" status="published">transcription moa=110 status=live modified=2021-04-01 18:51:37.544143+00 | translation moa=111 status=live modified=2016-06-07 11:03:03.493815+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus hoc scriptum uisuris uel audituris <cl type="intitulatio">Alexand<ex>er</ex> de striuelin</cl> . <cl type="salutation">Salutem eternam in domino</cl></cl>. <cl type="disposition"><cl type="notification">Noueritis quod</cl> <lb/> cum venerabilis in Christo pater D<ex>aui</ex>d dei gratia Episcopus Sancti Andree de consensu prioris ⁊ conuentus eiusdem <lb/> loci propter diuini cultus augmentum . ⁊ ad instanciam meam capelle mee de
+                     Laurencistun <lb/> cantariam concescisset  ne matrix Ecclesia de Eglisgirge ex tali concessione
+                     aliquam paciatur <lb/> iacturam  promisi fideliter quod ego et heredes mei faciemus dicte capelle
+                     honeste exspensis propriis <lb/> deseruiri ⁊ omnes obuenciones siue oblaciones ad dictam capellam prouenientes
+                     faciemus in<lb/>tegre ad dictam matricem Ecclesiam de Eglisgirge deferri . eam in omnibus
+                     indempnem con<lb/>seruantes . capellanus eciam quicunque dicte capelle deseruiet  priusquam ibi
+                     celebret sacramentum <lb/> fidelitatis dicte matrici Ecclesie prestabit. Et ad recognicionem subiectionis
+                     ego et heredes mei sin<lb/>gulis annis in perpetuum . In nundinis de munros vnam libram cere persoluemus.
+                     Quod si ego uel <lb/> heredes mei uel capellanus qui in dicta capella ministrauerit contra aliquod
+                     predictorum venerimus  promitto firmiter <lb/> pro me ⁊ heredibus meis quod usque ad condignam satisfaccionem a celebracionem
+                     diuinorum in predicta capella <lb/> cessabitur .</cl> <cl type="sealing">In cuius rei testimonium vna cum sigillo Archidiaconi sancti Andr<ex>ee</ex> presenti scripto sigillum meum <lb/> apposui</cl> Datum apud Ormest<ex>un</ex> Nonas decembris . Anno gracie . m . cc . xliii .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall view or hear this deed, <cl type="intitulatio">Alexander of Stirling</cl> <cl type="salutation">wishes eternal salvation in the Lord</cl></cl>: <cl type="disposition"><cl type="notification">May you all know that</cl> since the venerable father in Christ, David by the grace of God bishop of St
+                     Andrews, by the consent of the prior and religious
+                     community of the same place and for the augmentation of
+                     divine worship, and at my urging, granted to my chapel at
+                     Lauriston a chantry: lest the mother church of Egglisgrig
+                     should suffer any loss from such a grant, I promised
+                     faithfully that I and my heirs would cause its own
+                     expenses properly to be paid to the said chapel, and we
+                     would cause all obventions or offerings coming in to the
+                     said chapel to be transferred entirely to the said mother
+                     church of Egglisgrig, keeping it without injury or loss in
+                     all things, the chaplain also, whoever it be, that shall
+                     minister at the said chapel, before he celebrate the
+                     sacrament there shall take an oath of fealty to the said
+                     mother church, and as acknowledgement of submission, I and
+                     my heirs shall pay out one pound of wax each year on the
+                     Fair of Montrose in perpetuity. But if I or my heirs, or
+                     the chaplain who ministers in the said chapel, should act
+                     against any of the aforesaid things, I firmly promise for
+                     myself and my heirs that until appropriate satisfaction
+                     [has been made] there shall be no celebration of divine
+                     service in the aforesaid chapel.</cl> <cl type="sealing">In testimony whereof together with the seal of the Archdeacon of St Andrews I
+                  have applied my seal to the present deed.</cl> Given at Ormiston on the Nones of December [5 December] in the year of grace
+                  1243.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

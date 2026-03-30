@@ -1,0 +1,80 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-742">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/285</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:29:01.190447+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">742</idno>
+        <idno type="textcontent">754</idno>
+        <idno type="transcription_textcontentxml">742</idno>
+        <idno type="translation_textcontentxml">743</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/285</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/285</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T08:29:01.190447+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T08:29:01.190447+00:00" status="published">transcription moa=742 status=live modified=2021-04-07 08:29:01.190447+00 | translation moa=743 status=live modified=2021-04-07 08:28:58.779935+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris Ecclesie filii presentibus et futuris <cl type="intitulatio">Margeria de Vesci</cl> <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit vniuersitas uestra</cl> me concessisse<lb/> Deo et Ecclesie sancte Marie de Melros et Monachis ibidem deo seruientibus .
+                     illam donacionem terre et pasture . quam fecit<lb/> illis Patricius de Ridale in territorio De Lillescliue . sicut carta ipsius
+                     Patricii et Confirmacio Walteri filii eius et heredis<lb/> testantur . per easdem diuisas que continentur in carta prefati . P . et
+                     Confirmacione prenominati . W . filii eius . <cl type="holding">Et uolo et conce<lb/>do ut predicti Monachi predictam terram et pasturam habeant et teneant . in
+                        liberam . puram . et perpetuam elemosinam cum omnibus<lb/> aisiamentis suis et libertatibus ita libere . et quiete plene et honorifice
+                        absque omni Consuetudine et exactione seculari  sicut<lb/> aliquam elemosinam liberius . quietius plenius et honorifi<supplied>cenc</supplied>ius in regno scocie tenent et possident . Saluo mihi et her<lb/>edibus meis s<supplied>erui</supplied>tio ad predictam terram pertinente De prefato Patricio De Ridale . et her<supplied>e</supplied>dibus suis .</cl> <cl type="warrandice">Et ego et heredes mei Ma<lb/>nuteneb<supplied>imus et w</supplied>arantizabimus predicta omnia predictis Monachis vt ea habent et teneant et
+                        possideant et utantur mo<lb/>dis q<supplied>uibus eis</supplied> melius et utilius uisum fuerit ita libere . sicut predictorum donatorum carte
+                        testantur .</cl></cl> <cl type="witnesses">Hiis Testibus . Ber<lb/>nardo de Hauden Will<ex>elmo</ex> de Vesci . Philippo de stichel . Roberto de brockesmu<supplied>the</supplied> Magistro . W . de edenham . Nicho<supplied>lao</supplied><lb/> Capellano . Waltero De Ridale . Rad<ex>ulfo</ex> De Ridale . E<supplied>t multis a</supplied>liis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church present and future <cl type="intitulatio">Margery de Vescy</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know me all of you</cl> to have granted to God and to the Church of St Mary at Melrose and to the monks
+                     in that place serving God the donation of land and pasture
+                     which Patrick of Ryedale made to them in the territory of
+                     Lilliesleaf just as Patrick's own charter and the
+                     confirmation of his son and heir Walter bear witness, by
+                     the same boundaries which are contained in the charter of
+                     the aforementioned Patrick and the confirmation of the
+                     aforenamed W<ex>alter</ex> his heir. <cl type="holding">And I will and grant that the aforesaid monks have and hold the aforesaid land
+                     and pasture in free, pure, and perpetual alms with all
+                     their easements and liberties as freely, quitely and
+                     honourably, minus every custom and secular exaction, as
+                     they hold and possess any alms freely, quitely, fully and
+                     honourably in the kingdom of Scotland; reserving to myself
+                     and my heirs the service pertaining to the aforesaid land
+                     from the aforementioned Patrick of Ryedale and his heirs.</cl> <cl type="warrandice">And I and my heirs shall maintain and warrant all the aforesaid things to the
+                     aforesaid monks that they should have them and hold them
+                     and possess them and make use of them by all means which
+                     seem to them best and most convenient to them, so freely
+                     as the aforesaid charters of the aforesaid donors bear
+                     witness.</cl></cl> <cl type="witnesses">With these witnesses, Bernard of Howden, William de Vescy, Philip of Stichill,
+                  Robert of Broxmouth, Master W<ex>illiam</ex> of Ednam, Nicholas the chaplain, Walter of Ryedale, Ralf of Ryedale, and many
+                     others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

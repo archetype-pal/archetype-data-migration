@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-276">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/12</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 14:50:02.545372+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">276</idno>
+        <idno type="textcontent">276</idno>
+        <idno type="transcription_textcontentxml">276</idno>
+        <idno type="translation_textcontentxml">277</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/12</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/12</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-04T14:50:02.545372+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-04T14:50:02.545372+00:00" status="published">transcription moa=276 status=live modified=2021-04-04 14:50:00.571427+00 | translation moa=277 status=live modified=2021-04-04 14:50:02.545372+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">W. de lindeseia .</cl> Omnibus ecclesie filiis <cl type="salutation">salutem .</cl></cl> <cl type="disposition"><cl type="notification">Sciant tam posteri quam presentes .</cl> me dedisse et presenti carta<lb/> confirmasse deo et sancte Marie de Mailros . et monachis ibidem deo seruientibus
+                     fauope sicut aqua ledre<lb/> uadit . et sicut sepes includit . in perpetuam elemosinam  pro anima patris mei
+                     et matris et omnium paren<lb/>tum meorum et anima mea .</cl> <cl type="witnesses">Hiis testibus . Anfredo abbate de Neubotila Swano filio <persName>thor</persName> . Drogone de<lb/> lindeseia . Swano de ercedun . Willelmo …ueles . Cospatricio de Ercedun</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">William of Lindsay</cl> to all sons of the Church <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition"><cl type="notification">Let those to come as well as those present</cl> know that I have given and by the present charter have made firm to God and to
+                     St Mary at Melrose and to the monks serving God there
+                     Fauhope as Leader Water runs and as the hedge encloses, in
+                     perpetual alms, for the soul of my father and my mother
+                     and of all my ancestors and my own soul.</cl> <cl type="witnesses">With these witnesses, Amfred the abbot of Newbattle, Swain the son of Thor,
+                  Drogo of Lindsay, Swain of Earlston, William …, Cospatric of
+                  Earlston.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

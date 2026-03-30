@@ -1,0 +1,93 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-371">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/168</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:42:33.595415+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">371</idno>
+        <idno type="textcontent">375</idno>
+        <idno type="transcription_textcontentxml">371</idno>
+        <idno type="translation_textcontentxml">372</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/168</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/168</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T12:42:33.595415+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T12:42:33.595415+00:00" status="published">transcription moa=371 status=live modified=2021-04-06 12:42:32.073036+00 | translation moa=372 status=live modified=2021-04-06 12:42:33.595415+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte matris ecclesie filiis presentibus et futuris . <cl type="intitulatio">Eust' de vesci</cl> <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> me concessisse et hac presenti carta mea confirmasse deo<lb/> et Sancte Marie de Melros et monachis ibidem deo seruientibus omnes elemosinas
+                     et terras quas habuerunt et tenuerunt in feudo me proximo
+                     anno<lb/> priusquam Alexander filius domini Willelmi Regis Scott' fecit homagium suum Ioh<ex>ann</ex>i Regi Anglie in crastino inuentionis sancte crucis . In liberam puram et<lb/> perpetuam elemosinam . Scilicet totam quam habuerunt in territorio de Wittun tam
+                     ex donatione patricii de ridale quam ex dono roberti<lb/> de bernaldebi . et ex dono Gaufridi filii walleui de lillesclif sicut in cartis
+                     eorum continetur et eorum autentica testantur . Et totam
+                     elemosinam<lb/> quam habuerunt in territorio de molle ex dono anselmi de wichetun sicut carte
+                     eius testantur . Et totam terram quam habuerunt in
+                     territorio de pron<lb/>wenseth per compositionem factam a Rege scottie inter domum de Melros et domum
+                     de kelchou sicut confirmatio domini Regis de eadem terra
+                     testatur.<lb/> <cl type="holding">Quare uolo et precipio ut predicti monachi de melros omnes prefatas terrs et
+                     elemosinas habeant teneant et possideant in bosco et plano
+                     in pratis et<lb/> pascuis et peteriis in moris et maricis Ita libere plene quiete pacifice et
+                        honorifice sicut aliquam elemosinam in Regno Scotie
+                        quietius plenius et honori<lb/>ficentius tenent et possident . Et sicut carte predictorum donatorum
+                        rationabiliter testantur et confirmant</cl></cl> . <cl type="witnesses">His testibus . Roberto de lundon' fil<ex>io</ex> Reg<ex>is</ex> . Will<ex>elm</ex>o<lb/> de ualuns . D<ex>aui</ex>d marscallo . Bernardo de hauden . Will<ex>elm</ex>o de turberuile . Reinaldo de capeth' . Radulfo uacca . Ric<ex>ardo</ex> nano . Gaufrido ridel . Ric<ex>ardo</ex> Scotto.<lb/> Ric<ex>ardo</ex> de brideshale . Ric<ex>ardo</ex> Gernun . Ric<ex>ardo</ex> de hetun et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To All sons of Holy Mother Church present and future, <cl type="intitulatio">Eustace de Vescy</cl> <cl type="salutation">sends greeting.</cl></cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have granted and by this my present charter to have made firm to God and
+                     to St Mary at Melrose and the monks serving God in that
+                     place all the alms and lands that they had and held in my
+                     feu in the year immediately before Alexander son of the
+                     lord William, king of the Scots, made his homage to John
+                     the king of England on the morrow of the Invention of the
+                     Holy Cross; in free, pure, and perpetual alms, that is,
+                     the whole of what they had in the territory of Whitton,
+                     both from the donation of Patrick of Ryedale and from the
+                     gift of Robert of Barnoldby, and from the gift of Geoffrey
+                     son of Waldef of Lilliesleaf, as it is contained in their
+                     charters and their authentic [deeds] bear witness. And the
+                     whole alms that they had in the territory of Mow from the
+                     gift of Anselm of Whitton, as his charters bear witness.
+                     And the whole land which they had in the territory of
+                     Primside by the agreement made by the king of Scotland
+                     between the monastic house of Melrose and the monastic
+                     house of Kelso as the confirmation of the lord king in
+                     respect of the same land bears witness. <cl type="holding">Wherefore I will and enjoin that the foresaid monks of Melrose have, hold, and
+                     possess all the forementioned lands and alms in wood and
+                     plain, in meadows and pastures and peateries, in moors and
+                     marshes, as freely, fully, quitely, peaceably, and
+                     honourably as they quitely, fully, and honourably hold and
+                     possess any alms in the kingdom of Scotland.</cl></cl> <cl type="witnesses">With these witnesses: Robert of London, son of the King; William de Valognes;
+                  David the marischal; Bernard of Howden; William de
+                  Turberville; Reinald of Caputh; Ralph Vache; Richard le Nain;
+                  Geoffrey Ryedale; Richard Scott; Richard of Birdsall; Richard
+                  Gernun; Richard of Heton; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

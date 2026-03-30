@@ -1,0 +1,81 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-736">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/288</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:23:23.801217+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">736</idno>
+        <idno type="textcontent">748</idno>
+        <idno type="transcription_textcontentxml">736</idno>
+        <idno type="translation_textcontentxml">737</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/288</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/288</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T08:23:23.801217+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T08:23:23.801217+00:00" status="published">transcription moa=736 status=live modified=2021-04-07 08:23:23.801217+00 | translation moa=737 status=live modified=2021-04-07 08:23:22.387766+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte Matris Ecclesie filiis presentibus et futuris <cl type="intitulatio">Margeria De Vesci</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Nouerit vniuersitas vestra</cl> <cl type="disposition">me conccessisse et Hac<lb/> mea Carta confirmasse Deo et Ecclesie Sancte Marie De Melros et Monachis ibidem
+                     deo seruientibus pro Salute mea et<lb/> Omnium antecessorum et Successorum meorum . vnam Carrucatam terre In territorio
+                     De Lilliscliue illam Scilicet quam Walterus de Rida<lb/>le filius Patricii dedit eis cum Omnibus aeisiamentis et Libertatibus et per
+                     easdem diuisas que continentur in Carta predicti Walteri .<lb/> <cl type="holding">Quare volo et Concedo vt predicti Monachi predictam terram Habeant et teneant .
+                     In Liberam . puram et perpetuam elemo<lb/>sinam . cum Omnibus Aesiamentis et Libertatibus ad eandem pertinentibus . Ita
+                        Libere . quiete . Plene et Honorifice . absque<lb/> omni consuetudine et exactione seculari . sicut aliquam elemosinam Liberius .
+                        Quietius plenius et honorificentius in regno scocie te<lb/>nent et possident . Saluo mihi et Heredibus meis seruicio ad ipsam terram
+                        pertinente de predicto Waltero <supplied>de Ri</supplied>dale et Heredibus<lb/> suis .</cl> <cl type="warrandice">Et ego et Heredes mei Manutenebimus et Warantizabimus predicta omnia prefatis
+                     Monachis . ut ea Habeant . Teneant<lb/> possideant . et vtuntur modis Omnibus quibus eis melius et utilius fuerit . In
+                        perpetuum .</cl></cl> <cl type="witnesses">Hiis Test’ . Rogero de Merley .<lb/> Adam de poulwrthe Alexandro de Setun . Bernardo de Hauden . Will<ex>elm</ex>o de Vesci . Magistro Will<ex>elmo</ex> de Edenham . Rad’ de <supplied>ri</supplied><lb/>dale . Roberto de bernol... Multis Aliis</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church present and future <cl type="intitulatio">Margery de Vescy</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Know me all of you</cl> <cl type="disposition">to have granted and by this my charter to have made firm to God and to the
+                  church of St Mary at Melrose and the monks in that place
+                  serving God for the salvation of my own soul and all my
+                  ancestors' and successors' (souls), one ploughgate of land in
+                  the territory of Lillliesleaf, that is, the one which Walter
+                  of Ryedale son of Patrick gave with all easements and
+                  liberties and by the same boundaries which are contained in
+                  the charter of the aforesaid Walter. <cl type="holding">Wherefore I will and grant that the aforesaid monks should have and hold the
+                     aforesaid land in free, pure and everlasting alms, with
+                     all easements and liberties pertaining to the same, as
+                     freely, quitely, fully and honourably, without every
+                     custom and secular exaction, just as they hold and possess
+                     any alms freely, quietly, fully and honourably in the
+                     kingdom of Scotland, reserving to myself and my heirs the
+                     service pertaining to the same land from the aforesaid
+                     Walter de Ryedale an his heirs.</cl> <cl type="warrandice">And I and my heirs shall maintain and warrant all things aforesaid to the
+                     aforementioned monks, that they may have, hold, possess
+                     and use them by all means which seem best and convenient
+                     to them for ever.</cl></cl> <cl type="witnesses">With these witnesses, Roger de Merlay, Adam of Polwarth, Alexander of Seton,
+                  Bernard of Howden, William de Vescy, Master William of Ednam,
+                  Ralph of Ryedale, Robert of Barnoldby, and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

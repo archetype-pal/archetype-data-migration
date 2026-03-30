@@ -1,0 +1,72 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-338">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/52</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-30 14:18:52.678495+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">338</idno>
+        <idno type="textcontent">339</idno>
+        <idno type="transcription_textcontentxml">338</idno>
+        <idno type="translation_textcontentxml">337</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/52</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/52</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-03-30T14:18:52.678495+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-03-30T14:18:52.678495+00:00" status="published">transcription moa=338 status=live modified=2017-03-30 14:18:48.936592+00 | translation moa=337 status=live modified=2017-03-30 14:18:52.678495+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte matris ecclesie filiis . <cl type="intitulatio">A . archidiaconus . et vniuersus Clerus Laudoniensis</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Nouerint tam presentes<lb/> quam futuri</cl> <cl type="disposition">nos interfuisse et consilium et assensum prebuisse ad perpetue pacis et
+                  Caritatis obseruantiam compositi<lb/>oni facte in presentia uenerabilis . Ricar’ episcopi sancti andree . inter
+                     Monasterium de Mailros . et ecclesiam de<lb/> Dunbar super Decimationibus grangiarum de edmundestune et hertesheued . secundum
+                     formam que in cyro<lb/>grapho utriusque partis . uel litteris predicti episcopi nostri continetur .
+                     scilicet quod monasterium de Mailros singulis<lb/> annis xxx solidos persoluet ecclesie de Dunbar . ita quod ecclesia de dunbar
+                     nichil amplius supra hos<lb/> xxx solidos a prefato monasterio in perpetuum exigere possit uel debeat .</cl> <cl type="witnesses">T . Walter archi[diacon]o [<ex>written </ex>archiado] de sancto<lb/> and<ex>ree</ex> . A . abbate de Neubot’ . Gauf’ de dunf’ . Rob<supplied>erto ab</supplied>batte de scona . Ioh<ex>anne</ex> abbate de Sancta Cruce . Rog<ex>er</ex><lb/> abbate de driburg . Aiul’ . et Patricio decanis . Rob’ de pert Ald’ persona de
+                     lawad’ . Gilis de Wadale .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of holy mother Church, <cl type="intitulatio">A[andrew] the archdeacon, and all the clergy of Lothian,</cl> <cl type="salutation">send greeting</cl>.</cl> <cl type="notification">Those present as well as those to come should know</cl> <cl type="disposition">that we have taken part in and rendered both advice and assent to the agreement
+                  for the observance of perpetual peace and charity made in the
+                  presence of the venerable Richard, bishop of St Andrews,
+                  between the monastery of Melrose and the church of Dunbar
+                  concerning the teinding of the granges at ‘Edmuneston’ and
+                  Hartside, according to the form contained in the chirograph
+                  of each party, or the letters of our aforesaid bishop, that
+                  is, that the monastery of Melrose shall pay 30 shillings each
+                  year to the church of Dunbar, so that the church of Dunbar
+                  can demand nothing more than the these 30 shillings from the
+                  aforementioned monastery.</cl> <cl type="witnesses">Witness, W[alter] the archdeacon of St Andrews, A[mfred], abbot of Newbattle,
+                  Geoffrey [abbot] of Dunfermline, Robert the abbot of Scone,
+                  John the abbot of Holyrood, Roger the abbot of Dryburgh,
+                  Aiulf and Patrick the deans, Robert of Perth, Ald[red] the
+                  parson of Lauder, Gillies of Wedale.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

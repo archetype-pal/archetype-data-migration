@@ -1,0 +1,87 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-343">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/300</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:30:44.250349+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">343</idno>
+        <idno type="textcontent">346</idno>
+        <idno type="transcription_textcontentxml">343</idno>
+        <idno type="translation_textcontentxml">344</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/300</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/300</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T12:30:44.250349+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T12:30:44.250349+00:00" status="published">transcription moa=343 status=live modified=2021-04-06 12:30:14.983902+00 | translation moa=344 status=live modified=2021-04-06 12:30:44.250349+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte matris Ecclesie filiis presentibus et futuris . <cl type="intitulatio">Patricius de Ridale</cl> <cl type="salutation">Salutem</cl></cl> <cl type="disposition"><cl type="notification">Sciatis me</cl> dedisse et concessisse et hac mea Carta confirmasse<lb/> deo et Ecclesie Sancte marie de melros et monachis ibidem deo seruientibus . In
+                     liberam . puram . et perpetuam Elemosinam . pro salute
+                     domini mei<lb/> Regis Alexandri et pro salute mea . et pro animabus antecessorum meorum et
+                     successorum viginti acras terre que Rauennesfen appellatur
+                     . <cl type="boundaries">per has diuisas<lb/> Scilicet a Capite superiori de harehowedene totam illam leche sursum usque ad
+                        terram quam Will<ex>el</ex>mus de Ridale dedit Matildi Corb’ uxori<lb/> sue in dotem . et Inde sursum uersus Withtun sicut sulcus trahitur inter
+                        predictam terram et Rauenesfen . usque ad foueam quam
+                        monachi fecer<lb/>unt . et inde sicut uetus fossatum descendit in harehowedene</cl> . Totam hanc terram que infra predictis diuisas continetur . cum omnibus<lb/> pertinentiis suis dedi predictis monachis pro uiginti acris terre . Liberam .
+                     solutam . et quietam . ab omni terreno seruicio . et
+                     consuetudine . et ex<lb/>actione seculari . <cl type="holding">tenend' et possidend' . et utend' sicut eis melius uisum fuit . Ita libere .
+                     Quiete . plene et honorifice . sicut aliquam elemosinam<lb/> liberius . Quietius . plenius . et honorificentius tenent et possident</cl> .</cl> <cl type="warrandice">Et ego et heredes mei manutenebimus et warantizabimus eisdem monachis<lb/> totam predictam terram contra omnes homines de omnibus rebus que pro terra exigi
+                     possunt</cl> . <cl type="witnesses">Hiis testibus . Waltero Episcopo Glasg’ . Ric’ Decano<lb/> de Teuidale . Will<ex>elm</ex>o filio Ioh<ex>ann</ex>is . Thom’ de Colleuill’ . Ric’ nano . Sim’ de Grubheueth .Walt’ de Ridale filio
+                     meo . Rad’ de Ridal<ex>e</ex> .<lb/> Adam de chathov . Rob’ de b<ex>ar</ex>noldebi . Adam de Withtun . hug’ de Neubot<ex>i</ex>ll . Will<ex>elm</ex>o nepote meo et multis Aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of holy Mother church present and future <cl type="intitulatio">Patrick of Ryedale</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know me</cl> to have given and granted, and by this my charter to have made firm, to God and
+                     to the Church of Saint Mary at Melrose and the monks in
+                     that place serving God, in free, pure, and perpetual alms,
+                     for the salvation of my lord, King Alexander, and for my
+                     own salvation, and for the souls of my ancestors and
+                     successors, twenty acres of the land called ‘Raven’s Fen’, <cl type="boundaries">by these boundaries; that is, from the upper end of the Harrow valley, the whole
+                     of the little stream upwards as far as the land that
+                     William of Ryedale gave as a dower to his wife, Matilda
+                     Corbet, and from there upwards towards Whitton as the
+                     furrow has been drawn between the said land and ‘Raven’s
+                     Fen’, as far as the dyke that the monks built, and from
+                     there as the old dyke descends into the Harrow valley</cl>. I have given this whole land contained within the said boundaries with all its
+                     pertinents to the said monks in return for twenty acres of
+                     land, free, released, and quit from every earthly service,
+                     custom, and secular demand; <cl type="holding">to be held, possessed and used as seems best to them; as freely, quitely, fully
+                     and honourably as they freely, quitely, fully, and
+                     honourably hold and possess any alms</cl>.</cl> <cl type="warrandice">And I and my heirs shall maintain and warrant to the monks the whole said land
+                  against all men in respect of all things which can be
+                  demanded in return for land</cl>. <cl type="witnesses">With these witnesses: Walter the bishop of Glasgow, Richard the dean of
+                  Tweeddale, William son of John, Thomas of Colville, Richard
+                  le Nain, Simon of Grubbit, Walter of Ryedale my son, Ralph of
+                  Ryedale, Adam of Chatto, Robert of Barnoldby, Adam of
+                  Whitton, Hugh of Newbattle, William my nephew, and many
+                  others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

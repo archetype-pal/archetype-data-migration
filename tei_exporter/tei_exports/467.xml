@@ -1,0 +1,76 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-467">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/162</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:47:33.039283+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">467</idno>
+        <idno type="textcontent">472</idno>
+        <idno type="transcription_textcontentxml">467</idno>
+        <idno type="translation_textcontentxml">468</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/162</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/162</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:47:33.039283+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:47:33.039283+00:00" status="published">transcription moa=467 status=live modified=2021-04-06 15:47:33.039283+00 | translation moa=468 status=live modified=2021-04-06 15:47:22.655047+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris Ecclesie filiis Tam futuris quam presentibus <cl type="intitulatio">Patricius de Ridal</cl> <cl type="salutation">salutem in Christo</cl></cl> . <cl type="disposition"><cl type="notification">Sciatis</cl> me concessisse<lb/> et hac carta mea confirmasse hospitali ierosolime vnam bouatam terre in
+                     territorio de Wittun . illam scilicet que<lb/> iacet inter hord lauue et toccechelis . et inter fossam et harhou . et terram
+                     dotis Mathildi corbet quam Galfridus<lb/> cocus meus liber homo dedit hospitali prenomintato ierosolime per concessionem
+                     et bonam uoluntatem heredum suorum in liberam . et<lb/> in puram . et in perpetuam elemosinam . pro animabus antecessorum et successorum
+                     suorum . <cl type="holding">Condicione tali quod Isabella<lb/> sponsa Will<ex>elm</ex>i de Ridal’ . et heredes sui uel cui ipsa assignare uoluerit in feudo et
+                        hereditate teneant predictam<lb/> terram de prenominata domo et in pace possideant . libere . et quiete a multura
+                        . et ab omni alio seruicio . et consu<lb/>etudine . et ab omni seculari exaccione . Reddendo annuatim hospitali
+                        prenominato . ad festum Sancti Jacobi vnam libram<lb/> cumini .</cl></cl> <cl type="witnesses">Hiis testibus . Domino W<ex>i</ex>ll<ex>elm</ex>o filio Ioh<ex>ann</ex>is . Domino Waltero de Ridal’ . Radulfo de Ridal’ . Ada de Wittun et filiis<lb/> suis . Ada de Waleuhop . Ioh<ex>ann</ex>e filio Ade de chatthou . Rob<ex>erto</ex> de bernardebi . et Rob<ex>erto</ex> filio eius . Alexandro de lillescliue<lb/> henrico de herice . Ricardo homine abbatis . et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church as well future as present <cl type="intitulatio">Patrick of Ryedale</cl> <cl type="salutation">sends greeting in Christ</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have granted and by this my charter to have made firm to the hospital of
+                     Jerusalem one oxgang of land in the territory of Whitton,
+                     that which lies to wit between ‘hord lauue’ and
+                     ‘toccechelis’ and between the trench and Harrow and the
+                     dower land of Matilda Corbet which Geoffrey my cook as a
+                     free man has given to the hospital of Jerusalem by the
+                     consent and good will of his heirs in free, and in pure,
+                     and in perpetual alms, for the souls of his ancestors and
+                     successors, <cl type="holding">on the condition that Isabel the spouse of William of Ryedale and her heirs or
+                     the one to whom she may wish to assign it may in feu and
+                     heritage hold the foresaid land of the aforenamed <ex>monastic</ex> house and have possession in peace, free and quit from multure and from all
+                        other service and custom and from all secular exaction,
+                        by the yearly rendering one pound of cumin annually to
+                        the aforenamed hospital at the feast of Saint James.</cl></cl> <cl type="witnesses">With these witnesses: the lord William son of John; the lord Walter of Ryedale;
+                  Ralph of Ryedale; Adam of Whitton and his sons; Adam of
+                  Wauchope; John son of Adam of Chatto; Robert of Bernoldby and
+                  Robert his brother; Alexander of Lilliesleaf; Henry de Heriz;
+                  Richard the abbot's man; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

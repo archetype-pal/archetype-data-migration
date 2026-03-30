@@ -1,0 +1,76 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-752">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5977</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:57:31.598434+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">752</idno>
+        <idno type="textcontent">765</idno>
+        <idno type="transcription_textcontentxml">752</idno>
+        <idno type="translation_textcontentxml">753</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5977</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5977</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T20:57:31.598434+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T20:57:31.598434+00:00" status="approved">transcription moa=752 status=reviewed modified=2022-10-31 20:57:31.581822+00 | translation moa=753 status=reviewed modified=2022-10-31 20:57:31.598434+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi fidelibus ad quos presens Scriptum peruenerit  <cl type="intitulatio">Patricius filius Helye Dunning’ de Renigt’</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit vniuersitas uestra</cl> me quietum clamasse<lb/> domui de Coldingham de Me et heredibus meis In perpetuum homagium et seruicium
+                     quod mihi debebant henricus frater meus et heredes sui pro
+                     vno<lb/> tofto et uno crofto unius acre in uilla de Rengt’ . et duabus acris in campo
+                     eiusdem uille . scilicet . in occidentali parte de
+                     cromstaniside unam acram .<lb/> et magnam acram super aletone . cum omnibus eschaetis que mihi et heredibus meis
+                     de dicta terra possent accidere . Dabunt etiam dictus
+                     henricus et heredes<lb/> sui singulis annis nomine firme domui de Coldingham Sex denarios ad pascha . Et
+                     dabunt per Marcheto duodecim denarios . pro herieto duo<lb/>decim denarios . pro forisfacto duodecim denarios .</cl> <cl type="sealing">Et In testimonium huius mee quiete clamationis sigillum meum huic scripto
+                  apposui</cl> . <cl type="witnesses">Testibus<lb/> Domino Will<ex>elm</ex>o de Morhint’ . Domino alano de Swint’ . Ada de prendergest . Roberto . andr’ .
+                     alex’ . de paxt’ . ada de Reston’ . Bertramo filio eius<lb/> Mauric<ex>i</ex>o de aytona . Rob<ex>ert</ex>o filio Reginaldi . Radulfo preposito . Rogero filio eius . Rob<ex>ert</ex>o filio gregor<ex>ii</ex> . Ioh<ex>ann</ex>e filio Helye de aytona . Et aliis</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful to whom the present written document shall come, <cl type="intitulatio">Patrick son of Elias Dunning of Renton</cl> <cl type="salutation">sends greeting</cl></cl>. <cl type="disposition"><cl type="notification">Know me all of you</cl> to have quitclaimed to the house of Coldingham for myself and my heirs in
+                     perpetuity the homage and service that Henry my brother
+                     and his heirs owe me for one toft and one croft of one
+                     acre in the toun of Renton, and two acres in the plain of
+                     the same toun, that is, one acre on the west side of
+                     'Cromstaniside', and a large acre above 'Aletone', with
+                     all escheats that could be due to me an dmy heirs for the
+                     said land. The said Henry and his heirs shall each year
+                     give as ferme to the house of Coldingham six pence at
+                     Easter; and they shall give twelve pence for merchet,
+                     twelve pence for heriot, twelve pence for forfeit.</cl> <cl type="sealing">And as witness of this my quitclaim I have applied my seal to this written
+                  document.</cl> <cl type="witnesses">As witness, the lord William of Mordington, the lord Alan of Swinton, Adam of
+                  Prenderguest, Robert, Andrew, Alexander of Paxton, Adam of
+                  Reston, Bertram his son, Maurice of Ayton, Robert son of
+                  Reginald, Ralph the provost, Roger his son, Robert son of
+                  Gregory, John son of Elias of Ayton, and others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

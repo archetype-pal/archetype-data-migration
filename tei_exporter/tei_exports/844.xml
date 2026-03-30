@@ -1,0 +1,65 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-844">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of TNA DL 25/78</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-07-05 08:53:41.561187+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">844</idno>
+        <idno type="textcontent">865</idno>
+        <idno type="transcription_textcontentxml">844</idno>
+        <idno type="translation_textcontentxml">845</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/78</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>TNA DL 25/78</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-07-05T08:53:41.561187+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-07-05T08:53:41.561187+00:00" status="published">transcription moa=844 status=live modified=2017-07-05 08:53:38.38563+00 | translation moa=845 status=live modified=2017-07-05 08:53:41.561187+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. D . Rex Scott’ .</cl> Omnibus probis hominibus totius terre sue francis . et anglicis . et<lb/> Galweiensibus  <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me dedisse et Concessisse Rob<ex>ert</ex>o de Brus in feudo et<lb/> hereditate illi et heredi suo in foresto uallum de Anant ex utraque parte aque<lb/> de <supplied>An</supplied>ant sicut diuise sunt a foresto de Seleschirche quantum terra sui protenditur<lb/> uersus stradnut . et uersus Clud libere et quiete sicut aliud forestum suum te<supplied>net</supplied><lb/> melius et liberius . Quare defendo ne ullus uenatur in predicto foresto nisi per
+                     ipsum super<lb/> forisfactu . x . librarum . et ne ullus eat per predictum forestum nisi recta
+                     uia nominata</cl><lb/> <cl type="witnesses">. T . Waltero cancellario . et Hug<ex>one</ex> de Moreuilla . et Waltero filio Alani<lb/> et Odenello de Vmframuilla . et Waltero de Lindeseia . et Ricardo de More<lb/>uilla .</cl> Apud . Stap<supplied>ilgo</supplied>rtune .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">D<ex>avid</ex> king of the Scots</cl>, to all worthy men of his entire land, French, English, and Galwegian, <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have given and granted to Robert de Brus in feu and heritage, to him and
+                     his heir in forest, Annandale on both sides of the Water
+                     of Annan, just as the boundaries are from the forest of
+                     Selkirk as far as his land extends towards Nithsdale and
+                     towards the Clyde, freely and quitly just as he holds his
+                     other forest well and freely. Wherefore I forbid that
+                     anyone may hunt in the aforesaid forest unless with his
+                     permission, on pain of the forefieture of ten pounds, and
+                     that anyone may go through the aforesaid forest unless by
+                     the proper, named ways.</cl> <cl type="witnesses">As witness: Walter the chancellor; and Hugh de Morville; and Walter son of Alan;
+                  and Odenel d'Umfraville; and Walter of Lindsay; and Richard
+                  de Moreville.</cl> At Staplegordon.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

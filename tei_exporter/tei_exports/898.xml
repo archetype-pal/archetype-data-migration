@@ -1,0 +1,56 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-898">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 578</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:12:05.575631+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">898</idno>
+        <idno type="textcontent">922</idno>
+        <idno type="transcription_textcontentxml">898</idno>
+        <idno type="translation_textcontentxml">899</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 578</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 578</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:12:05.575631+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:12:05.575631+00:00" status="approved">transcription moa=898 status=reviewed modified=2022-11-01 16:12:05.565452+00 | translation moa=899 status=reviewed modified=2022-11-01 16:12:05.575631+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">M . Rex Scot’ .</cl> Omnibus probis hominibus tocius terre sue . <cl type="salutation">salutem</cl> .</cl> <cl type="disposition">precipio ubicumque prior<lb/> de goldingaham . aut clientes sui  fugitiuos iuste ad goldingaham pertinentes
+                     inue<lb/>nire poterunt quatinus illos iuste habeant sine disturbacione . et vexatione . <cl type="injunction">et prohibeo<lb/> ne aliquis uestrum eos iniuste detineat super meam defensionem</cl> .</cl> <cl type="witnesses">T<ex>estibus</ex> Waltero Cancell<ex>ario</ex><lb/> Hug<ex>one</ex> de Morevill<ex>a</ex> .</cl> <cl type="dating">apud Berewic .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">M<ex>alcolm</ex>, king of the Scots</cl>, to all worthy men of his entire land, <cl type="salutation">greeting.</cl></cl> <cl type="disposition">I instruct that anywhere the prior of Coldingham or his servants shall be able
+                  to find fugitives legitimately belonging to Coldingham, they
+                  may lawfully have them without disturbance and harrassment; <cl type="injunction">and I forbid that anyone of you unlawfully withhold them, on pain of my
+                     prohibition</cl>.</cl> <cl type="witnesses">As witnesses: Walter the chancellor, Hugh de Morville.</cl> <cl type="dating">At Berwick.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,81 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-678">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Add. Ch. 76750</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:50:03.945869+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">678</idno>
+        <idno type="textcontent">688</idno>
+        <idno type="transcription_textcontentxml">678</idno>
+        <idno type="translation_textcontentxml">679</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 76750</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Add. Ch. 76750</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:50:03.945869+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:50:03.945869+00:00" status="published">transcription moa=678 status=live modified=2021-04-05 08:50:03.945869+00 | translation moa=679 status=live modified=2021-04-05 08:50:02.175966+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris ecclesie filiis <cl type="intitulatio"><persName>Robertus</persName> de Quinci</cl> <cl type="salutation">salutem</cl></cl> . <cl type="notification">Sciant presentes et futuri</cl> <cl type="disposition">me dedisse et concessisse et hac mea karta<lb/> confirmasse deo et ecclesie sancte crucis de Edenburh et Canonicis ibidem deo
+                     seruientibus unam Carucatam terre et decem<lb/> acras interritorio de trauernent uersus Phaeside pro excambio illius Carucate
+                     terre de prestun quam Canonici predicti uersis me<lb/> et Monachos de Neubotle Calumpniauerunt ita quod prenominati Canonici me et
+                     heredes meos et predictos Monachos<lb/> super illa Calumpnia predicte terre de prestun quietos clamauerunt pro predicto
+                     excambio . Hinc est quod ego <persName>Robertus</persName> de<lb/> Quinci dedi et concessi et hac karta mea confirmaui predictis Canonicis
+                     prenominatam terram cum decem acris terre <cl type="holding">te<lb/>nendam in puram elemosinam et perpetuam de me et heredibus meis cum communi
+                        pastura hominium meorum de<lb/> trauernent ad tantum terre pertinenti et cum libero exitu ad predictam communem
+                        pasturam adeo libere et quiete et<lb/> honorifice sicut liberius et quietius et honorificentius aliqua elemosina in
+                        Regno Regis scocie tenetur uel possidetur</cl> .</cl><lb/> <cl type="witnesses">His test<ex>ibus</ex> <persName>Symone</persName> Canonico de bethleem <persName>Will<ex>elm</ex>o</persName> Capellano de trauernent <persName>Ricardo Ridel</persName> <persName>Radulfo</persName> de Graam<lb/> pagano de hetleia . <persName>Will<ex>elm</ex>o</persName> de Graam <persName>Sim<ex>one</ex></persName> de tunderley . <persName>Dauid</persName> de lassewade <persName>Alvredo</persName> de cranestun <lb/> <persName>Alano</persName> et <persName>stephano</persName> de Phaeside . <persName>Laurentio</persName> et <persName>Roberto</persName> de boneire . et <persName>Bartholomeo</persName> burgensibus de<lb/> edenesburch . <persName>Gileberto</persName> clerico . <persName>Michaele flandrensi</persName> . et Aliis multis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Holy Mother Church's sons, <cl type="intitulatio">Robert de Quincy</cl> <cl type="salutation">[sends] greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have given, conceded, and by this my charter made firm, to God, the church
+                     of the Holyrood at Edinburgh, and to the canons serving
+                     God in that place, one ploughgate of land and ten acres in
+                     the territory of Tranent, in the direction of Fa'side, for
+                     the exchange of that ploughgate of land at Preston which
+                     the canons aforesaid claimed against me and the monks of
+                     Newbattle, so that the aforenamed canons quitclaimed me
+                     and my heirs and the aforesaid monks over that claim of
+                     the aforesaid land of Preston in return for the aforesaid
+                     exchange. That is why I, Robert de Quincy, gave, conceded,
+                     and by this my charter made firm, to the aforesaid canons
+                     the aforenamed land with ten acres of land, <cl type="holding">to be held in pure and everlasting alms of me and my heirs, with my men of
+                     Tranent's common pasture pertaining to so much land, and
+                     with free right of egress towards the aforesaid common
+                     pasture; as freely, quitly, and honourably as any alms is
+                     most freely, quitly, honourably held and possessed in the
+                     kingdom of the king of Scotland</cl>.</cl> <cl type="witnesses">With these as witnesses: Simon, canon of Bethlehem; William, chaplain of
+                  Tranent; Richard Ridel; Ralph of Graham; Payn of Hedley;
+                  William of Graham; Simon of Thunderley; David of Lasswade;
+                  Alured of Cranston; Alan and Stephen of Falside; Laurence and
+                  Robert de Bonaire, and Bartholomew, burgesses of Edinburgh;
+                  Gilbert the clerk; Michael Fleming; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

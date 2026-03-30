@@ -1,0 +1,75 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-656">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.8</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:34:59.979321+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">656</idno>
+        <idno type="textcontent">666</idno>
+        <idno type="transcription_textcontentxml">656</idno>
+        <idno type="translation_textcontentxml">657</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.8</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.8</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:34:59.979321+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:34:59.979321+00:00" status="published">transcription moa=656 status=live modified=2021-04-05 08:34:59.979321+00 | translation moa=657 status=live modified=2021-04-05 08:34:58.083145+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>Alex’</persName> . Dei gr<ex>ati</ex>a . Rex Scott’ .</cl> Omnibus probis hominibus tocius terre sue <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Sciant presentes et futuri</cl><lb/> <cl type="disposition">nos pro salute anime nostre . et antecessorum et successorum nostrorum . dedisse
+                  . concessisse . et hac Carta<lb/> nostra confirmasse deo et beate Marie de Melros . et Monachis ibidem deo
+                     seruientibus et in perpe<lb/>tuum seruituris . Lacum de Dunschor’ in valle de Nyth’ . et illam denariatam
+                     terre que pertinet<lb/> ad eundem Lacum . et quicquid continetur infra eundem Lacum et terram . <cl type="holding">Tenend’ . et habend’ .<lb/> eisdem Monachis in perpetuum . in Liberam . puram . et perpetuam elemosinam de
+                        nobis et heredibus nostris .<lb/> libere . quiete . plenarie . et honorifice . ab omni seruicio . consuetudine .
+                        et exaccione seculari .</cl> <cl type="warrandice">Nos<lb/> uero et heredes nostri omnia predicta eisdem Monachis contra omnes homines
+                        warantizabimus .</cl> nichil<lb/> iuris in eisdem  nobis retinentes . nec pro ipsis aliquid petentes preter
+                     orationes tantum . Ita tamen quod idem<lb/> Monachi singulis annis Die Sancti Andree de prouentibus eorundem habeant
+                     pitanciam .</cl> <cl type="witnesses">Test<ex>ibus</ex> . <persName>G .</persName> electo .<lb/> Dunkeldensi . <persName>Laur<ex>entio</ex></persName> . de Abbirnith’ . <persName>Bernard<ex>o</ex> fraser’</persName> . <persName>Thom<ex>a</ex></persName> filio . Ranulf<ex>i</ex> . <persName>Will<ex>elm</ex>o</persName> de Lyndeseia . <persName>Dauid</persName><lb/> de Lyndes’ . <persName>Alexandr<ex>o</ex></persName> de striuelin’ .</cl> apud Alnecr<ex>um</ex>b tercio die Decembris . Anno Regni domini Regis<lb/> vicesimo Secundo .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, by the grace of God king of the Scots</cl>, to all worthy men of his entire land <cl type="salutation">[sends] greeting</cl>.</cl> <cl type="intitulatio">Let present and future know</cl> <cl type="disposition">us, for the welfare of our soul, and of our predecessors' and successors'
+                  [souls], to have given, conceded, and by this our charter to
+                  have made firm, to God, St Mary at Melrose, and to the monks
+                  serving God in that same place now and for ever in the
+                  future, the loch of Dunscore in Nithsdale, and that pennyland
+                  which belongs to the same loch, and whatever is contained
+                  within the same loch and land; <cl type="holding">for the same monks to hold and to have for ever, in free, pure, and perpetual
+                     alms, of us and our heirs, freely, quitly, fully, and
+                     honourably from all service, custom, and secular exaction.</cl> <cl type="warrandice">We and our heirs shall warrant all the aforesaid to the same monks against all
+                     men,</cl> withholding nothing of right in the same, nor requesting in return for them
+                     anything other than prayers only, provided that the same
+                     monks each year on St Andrew's day have a pittance from
+                     the profits of the same.</cl> <cl type="witnesses">As witnesses, G<ex>eoffrey</ex>, elect of Dunkeld; Laurence of Abernethy; Bernard Fraser; Thomas son of Ranulf;
+                     William of Lindsay; David of Lindsay; Alexander of
+                     Stirling.</cl> At Ancrum, on the third day of December in the twenty-second year of the reign
+                  of the lord king.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

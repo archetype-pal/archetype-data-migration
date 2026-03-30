@@ -1,0 +1,66 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-534">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/274</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:32.478051+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">534</idno>
+        <idno type="textcontent">541</idno>
+        <idno type="transcription_textcontentxml">534</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/274</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/274</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:32.478051+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:32.478051+00:00" status="draft">transcription moa=534 status=draft modified=2017-01-30 19:28:32.478051+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription"><p>C Y R O G R A P H U M</p> <p  style="text-align: justify; background: white;"><cl type="disposition"><cl type="notification">Nouerint vniuersi tam presentes quam futuri . quod</cl> talis facta est amicabilis composicio super ecclesia de Honum Inter Abbatem<lb/> et conuentum de Melros et Abbatem et conuentum de Ieddewrd’ . interueniente
+                     auctoritate et consensus venerabilis patris Domini Will<ex>elm</ex>i<lb/> Glasguensis episcopi eorum ordinarii . videlicet quod dicti Abbas et conuentus
+                     de Melros renunciauerunt omni iuri quod habebant . uel<lb/> habere se dicebant in ecclesia de honum . Ita quod dictis Abbati et canonicis de
+                     Ieddewrd’ nullo umquam tempore possint super dicta
+                     ecclesia aliquam mouere questionem . Dicti uero abbas et
+                     conuentus de Ieddewrd’ zelo dei inducti mera sua
+                     liberalitate concesserunt dictis<lb/> Abbati et conuentui de Melros vt de cetero aliquid non soluant pro decimis de
+                     raschawe et de huned’ . Immo in perpetuum sint liberi .<lb/> quieti . et immunes a prestacione decimarum terrarium dictorum locorum . et
+                     omnium terrarium et aliarum rerum quas habuerunt tempore
+                     huius composicionis <lb/> in parochia siue imfra fines parochie ecclesie de Honum . Inuenient eciam dicti
+                     Abbas et conuentus de Ieddewrd’ quondam capellanum<lb/> ydoneum qui celebrabit diuina pro animabus Will<ex>elm</ex>i filii Ioh<ex>ann</ex>is . et Donancie uxoris sue et omnium fidelium defunctorum in perpetuum . in
+                     loco vbi<lb/> dictus dominus episcopus Glasg’ ordinauerit . Et ad eos compellenda . ad
+                     premissa obseruanda  subiecerunt se Iurisdiccioni
+                     episcopi Glasguensis . qui pro<lb/> tempore fuerit  renunciantes tam Abbas et conuentus de Melros . quam Abbas et
+                     conuentus de Ieddewrd’ quo ad hec  omni excepcioni<lb/> et priuilegio .</cl> <cl type="sealing">vt autem presens composicio inter dictos conuentus et eorum monasteria perpetuum
+                  robur firmitatis obtineat  parti presentis cy<lb/>rografphi remanenti penes dictos Abbatem et conuentum de Melros  sigilla dicti
+                     W . episcopi Glasg<ex>uensi</ex> et dicti Abbatis et conuentus Canoni<lb/>corum de Ieddewrt sunt apposita . Alteri uero parti remanenti penes dictos
+                     Abbatem et conuentum de Ieddewrd . dicti episcopi et Abbas
+                     et conuentus<lb/> de Melros sig<supplied>illa</supplied> apposuerunt</cl> <cl type="witnesses">Hiis testibus . Magistro Will<ex>el</ex>mo de Lyndes’ Decano Glasguensi . Magistro Petro de Alent’ . Archi<lb/>diach’ de Teuidal’ . Magistro Will<ex>elm</ex>o de Grenlawe . Magistris Abel et Symon de Bigr’ canonicis Glasguensibus . qui
+                     sigilla sua vna<lb/> cum premissis sigillis huic scripto apposuerunt .</cl> Actum anno gracie millesimo . ducentesimo . tricesimo septimo .</p></div>
+    </body>
+  </text>
+</TEI>

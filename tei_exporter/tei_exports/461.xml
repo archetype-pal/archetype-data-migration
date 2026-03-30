@@ -1,0 +1,83 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-461">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/189</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-03-21 12:00:35.741619+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">461</idno>
+        <idno type="textcontent">466</idno>
+        <idno type="transcription_textcontentxml">461</idno>
+        <idno type="translation_textcontentxml">462</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/189</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/189</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-03-21T12:00:35.741619+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-03-21T12:00:35.741619+00:00" status="published">transcription moa=461 status=live modified=2021-03-21 12:00:35.741619+00 | translation moa=462 status=live modified=2017-02-24 14:10:11.415155+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris Ecclesie filiis et fidelibus presentibus et futuris has
+                  litteras visuris uel audituris <cl type="intitulatio">Duncanus<lb/> Comes de karric</cl> <cl type="salutation">salutem in domino</cl></cl> . <cl type="notification">Nouerit vniuersitas vestra quod</cl> <cl type="narration">cum Monachi de Melros mihi annuatim tenerentur in<lb/> solucione trium Marcarum duarum scilicet pro terra de Bethoc et vnius pro terra
+                     de Auchnefure sicut in eorum cartis conti<lb/>netur </cl> <cl type="disposition">Ego easdem tres Marcas prefatis Monachis omnino relaxaui et in perpetuum quietas
+                  clamaui pro quadraginta<lb/> Marcis esterlingorum quas Idem Monachi simul et semel in magna necessitate mea
+                     scilicet pro terra mea in libertatem<lb/> ponenda mihi pacauerunt . <cl type="warrandice">vnde et Ego et heredes mei et successores mei hanc quietam clamacionem
+                     predictarum trium<lb/> Marcarum contra omnes homines prefatis monachis in perpetuum warantizabimus .</cl> Et ut hec quieta clamacio firma sit et stabilis  posui<lb/> testem et fideiussorem Dominum Will<ex>elmu</ex>m Episcopum Glasguens’<ex>em</ex> . concedens ut si aliquando Ego uel heredes mei uel successores mei contra hoc<lb/> uel contra elemosinas eisdem Monachis a me factas prout in cartis meis
+                     continetur aliquid attemptauerimus  Idem Episcopus et
+                     eius successores<lb/> nos ad omnia premissa obseruanda ad instanciam ipsorum monachorum sine
+                     cognicione caus<supplied>e super</supplied> censuram ecclesiasticam compellant .<lb/></cl> <cl type="sealing">In cuius rei testimonium et munimen presenti scripto sigillum meum una cum
+                  sigillo Domini . W . Episcopi Glasguensis apponi feci .</cl> <cl type="witnesses">Hiis<lb/> Testibus . Domino Waltero filio Alani senescallo Scoc’ . Radulfo de leuint’
+                     Clerico . Alano Milite meo . Alano filio<lb/> meo persona de kirchemanen et de stratun . Magistro hugone clerico meo et Multis
+                     aliis .</cl> Actum anno domini millesimo<lb/> ducentesimo tricesimo sexto .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of holy Mother Church and to the faithful, present and future, who
+                  shall view or hear these letters, <cl type="intitulatio">Duncan, earl of Carrick,</cl> <cl type="salutation">sends greeting in the Lord</cl>.</cl> <cl type="notification">Know, all of you, that</cl> <cl type="narration">since the monks of Melrose were yearly bound to me in the payment of three
+                  merks, that is, two for the land of Beoch and one for the
+                  land of Auchnefure, just as it is set out in their charters</cl>: <cl type="disposition">I have entirely released and perpetually quitclaimed the same three merks for
+                  the aforementioned monks in return for the forty merks
+                  sterling which the same monks have paid to me in my great
+                  need, that is, for my land to be put at liberty. <cl type="warrandice">For this reason, both I and my heirs and successors shall warrant this quitclaim
+                     of the aforesaid three merks against all men for the
+                     aforementioned monks for ever.</cl> And so that this quitclaim should be strong and enduring, I have placed as
+                     witness and guarantor the lord William, bishop of Glasgow,
+                     allowing that if at any time I or my heirs or successors
+                     should try anything against this or against the alms made
+                     to the same monks by me as set out in my charters, the
+                     same bishop and his successors shall compel us to observe
+                     all the foregoing at the request of the monks themselves,
+                     without knowledge of the cause, upon pain of
+                     ecclesiastical censure.</cl> <cl type="sealing">As witness and defence of this matter I have applied my own seal to the present
+                  writing together with the seal of the lord W<ex>illiam</ex>, bishop of Glasgow.</cl> <cl type="witnesses">With these witnesses: the lord Walter son of Alan, steward of Scotland, Ralph of
+                  Livingston, clerk, Alan my knight, Alan my son, parson of
+                  Kirchemanen and of Straiton, Master Hugh my clerk, and many
+                  others.</cl> Done in the year of the Lord 1236.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

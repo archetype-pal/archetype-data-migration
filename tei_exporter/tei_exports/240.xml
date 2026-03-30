@@ -1,0 +1,72 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-240">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/255</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-04-03 15:24:22.190999+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">240</idno>
+        <idno type="textcontent">240</idno>
+        <idno type="transcription_textcontentxml">240</idno>
+        <idno type="translation_textcontentxml">241</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/255</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/255</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-04-03T15:24:22.190999+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-04-03T15:24:22.190999+00:00" status="published">transcription moa=240 status=live modified=2017-04-03 15:24:18.030767+00 | translation moa=241 status=live modified=2017-04-03 15:24:22.190999+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Willelmus dei gratia abbas de sancta cruce ⁊ conuentus eiusdem domus ominbus
+                  fidelibus salutem.</cl> <cl type="disposition">Sciant tam posteri quam presentes . nos concessisse ⁊ hac<lb/> carta nostra confirmasse . Domine Aufrice filie eadgari totam terram nostram
+                     quam habemus ex donatione patris sui in territorio de
+                     dalgarnoc tenendam de no<lb/>bis in tota uita sua . reddendo inde nobis primis quatuor annis annuatim unam
+                     marcam argenti . medietatem ad festum sancti martini . ⁊<lb/> medietatem ad pentecosten . post quatuor uero annos ad eosdem terminos in tota
+                     uita sua uiginti solidos. Quod si forte predicta terra<lb/> inculta fuerit ⁊ uasta nobis unam marcam argenti ad prefatos terminos quamdiu
+                     illa terra uasta fuerit ⁊ inculta . predicta . A .
+                     annuatim persoluet</cl> .<lb/> [damaged parchment] <supplied>hec conuentio</supplied> facta est Anno ab incarnatione domini millesimo ducentesimo uicesimo primo . ⁊
+                  in testimonium huius conuentionis sigillum nostrum<lb/> [damaged parchment] <supplied>et sigillo</supplied> predicte aufrice presenti scripto apposuimus . Teste conuentu .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">William, by the grace of God abbot of Holyrood, and the convent of the same
+                  house, to all the faithful, Greeting:</cl> <cl type="disposition">Let both future and present know that we have granted, and by this our charter
+                  made firm, to the lady Affrica, daughter of Edgar, our whole
+                  land that we have from the donation of her father in the
+                  territory of Dalgarnock, to be held of us for the whole of
+                  her life, by returning thereupon to us annually for the first
+                  four years one merk of silver, half at the feast of St
+                  Martin, and half at Pentecost, but after four years, at the
+                  same terms for the whole of her life, twenty shillings. If,
+                  however, the said land should be uncultivated or waste, the
+                  foresaid A<ex>ffrica</ex> should pay us one silver merk at the forementioned terms for as long as that
+                     land should be waste or uncultivated.</cl> <supplied>This agreement</supplied> was made in the year of the Incarnation of the Lord 1221, and in testimony of
+                  this agreement we affixed our seal <supplied>and the seal</supplied> of the foresaid Affrica to the present document.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

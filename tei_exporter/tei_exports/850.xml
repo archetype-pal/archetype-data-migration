@@ -1,0 +1,69 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-850">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of TNA DL 25/86</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 09:20:17.39869+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">850</idno>
+        <idno type="textcontent">872</idno>
+        <idno type="transcription_textcontentxml">850</idno>
+        <idno type="translation_textcontentxml">851</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/86</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>TNA DL 25/86</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T09:20:17.39869+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T09:20:17.39869+00:00" status="published">transcription moa=850 status=live modified=2021-04-07 09:20:17.39869+00 | translation moa=851 status=live modified=2021-04-07 09:20:16.01894+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. Omnibus hoc scriptum visuris . vel audituris . <cl type="intitulatio">Rogerus filius Will<ex>elm</ex>i francisci</cl> <cl type="salutation">salutem in domino</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit vniuersitas<lb/> vestra</cl> . me concessisse . et h<supplied>ac pres</supplied>enti carta mea quietclamasse . Domino Roberto de Bru<ex>i</ex>s . Domino vall<ex>is</ex> Anand’<lb/> et heredibus suis . pro me &lt;et h&lt;eredibus meis inperpetuum  duas bouatas terre
+                     . quas tenui de dicto  Domino&lt;span data-dpt="lb"
+                     data-dpt-src="ms"&gt;</cl> Roberto de Bru<ex>i</ex>s in territorio de Anand’ versus Weremundebi  pro Excambio duarum bouatarum
+                  terre . quas<lb/> Will<ex>elmu</ex>s franciscus . pater meus . de dicto Domino Roberto de Bru<ex>i</ex>s . quondam tenuit ad firmam in territorio de<lb/> Moffet . <cl type="sealing">In Cuius rei Testimonium  presenti carte quieteclamacionis sigillum meum
+                  apposui .</cl> <cl type="witnesses">Hiis Tesibus .<lb/> Domino Ioh<ex>ann</ex>e de Rumundebi . Domino Humfr’ de Kirkepatric . Domino Rogero fratre eius .
+                     Domino Gilberto de Ioneston’<lb/> Domino Roberto de Herice Domino Humfr’ Mauleuerer . Will<ex>elm</ex>o de Heneuil<ex>le</ex> . Ada de Dunwdhi et aliis</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall view or hear this writing <cl type="intitulatio">Roger son of William Francis</cl> <cl type="salutation">sends greeting in the Lord</cl>.</cl> <cl type="disposition"><cl type="notification">Let all of you know</cl> me to have granted and by this my present charter to have quitclaimed to the
+                     lord Robert de Brus, lord of Annandale, and his heirs, for
+                     myself and my heirs, for ever, two oxgangs of land which I
+                     held of the said lord Robert de Brus in the territory of
+                     Annan towards Warmanbie, in exchange for two oxgangs of
+                     land which William Francis my father formerly held of the
+                     said lord Robert de Brus at ferme in the territory of
+                     Moffat.</cl> <cl type="sealing">In testimony of this matter I have applied my seal to the the present charter of
+                  quitclaim.</cl> <cl type="witnesses">With these witnesses: the lord John of Romundeby; the lord Humphrey of
+                  Kirkpatrick; the lord Roger his brother; the lord Gilbert of
+                  Johnstone; the lord Robert de Heriz; the lord Humphrey
+                  Mauleverer; William de Heineville; Adam of Dunwoodie; and
+                  others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

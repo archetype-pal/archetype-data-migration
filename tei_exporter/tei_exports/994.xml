@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-994">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 756</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 10:59:47.431762+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">994</idno>
+        <idno type="textcontent">1025</idno>
+        <idno type="transcription_textcontentxml">994</idno>
+        <idno type="translation_textcontentxml">995</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 756</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 756</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T10:59:47.431762+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T10:59:47.431762+00:00" status="approved">transcription moa=994 status=reviewed modified=2022-11-01 10:59:47.431762+00 | translation moa=995 status=reviewed modified=2022-11-01 10:59:47.421207+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. <cl type="intitulatio">H . filius regis scotię</cl> . Omnibus suis hominibus tam francis quam anglis .<lb/> <cl type="salutation">salutes</cl> .</cl> <cl type="notification">Sciatis me</cl> <cl type="disposition">dedisse et concessisse monachis sancti cuthberti Swintun<lb/> imperpetuum possidendam . et libere disponendam in dominicum seruitium<lb/> suum . sicut carta bonę memorię Ædgari regis auunculi mei testatur . et<lb/> sicut pater meus eis concessit et reddidit . Et uolo et precipio ne aliquis de
+                     hoc<lb/> molestiam uel calumpniam eis faciat . quia hoc eis concessi imperpetuam ele<lb/>mosinam . pro salute animę męę . et parentum meorum . scilicet Malcolmi regis .<lb/> et margaretę reginę et filiorum ac filiarum ipsorum .</cl> <cl type="witnesses">T<ex>estibus</ex> Eustachio filio ioh<ex>ann</ex>is .<lb/> et Roberto de umframuilla . et Herberto camerario . et Gileberto de umfram<lb/>uilla . et Willelmo de Sumeruilla .</cl> <cl type="dating">Apud huntendunam .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">H<ex>enry</ex> son of the king of Scotland</cl> to all his men as well French as English <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Know me</cl> <cl type="disposition">to have given and granted Swinton to the monks of Saint Cuthbert to be possessed
+                  for ever, and to be dealt with freely as their demesne
+                  service, just as the charter of my uncle King Edgar of good
+                  memory bears witness and as my father granted and restored to
+                  them. And I will and instruct that no one should disturb them
+                  or make claims in respect of this, since I have granted it in
+                  perpetual alms, for the health of my soul, and of my parents’
+                  [souls], namely King Malcolm and Queen Margaret, and of their
+                  sons’ and daughters’ [souls].</cl> <cl type="witnesses">As witness Eustace fitz John, Robert de Umfraville, Herbert the chamberlain,
+                  Gilbert de Umfraville, William de Somerville.</cl> <cl type="dating">At Huntingdon.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,75 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-802">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5944</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.986178+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">802</idno>
+        <idno type="textcontent">817</idno>
+        <idno type="transcription_textcontentxml">802</idno>
+        <idno type="translation_textcontentxml">803</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5944</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5944</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T13:36:57.986178+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:36:57.986178+00:00" status="approved">transcription moa=802 status=reviewed modified=2022-11-01 13:36:57.975545+00 | translation moa=803 status=reviewed modified=2022-11-01 13:36:57.986178+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. Omnibus Christi fidelibus presens scriptum visuris uel Audituris  <cl type="intitulatio">Radulfus Nobilis</cl> <cl type="salutation">salutem .<lb/> in domino</cl> .</cl> <cl type="notification">Nouerit vnuersitas uestra</cl> <cl type="disposition">me presenti carta mea sigillo meo singnata me<lb/> et heredes meos In perpetuum obligasse quod occasione carte Prioris et Conuentus
+                     Dunelm<ex>ensis</ex><lb/> Ecclesie quam michi fecerint super terra quam de eis Iure hereditario tenebo In
+                     villa de<lb/> Lambertona silicet vnum Toftum . et quatuor accras terre prout Continetur In
+                     carta eorum inde<lb/> Confecta non qu[e]ram defensionem . uel warantizac[i]onem a dictis Priore et
+                     conuentu<lb/> si contigit ab aliquo questionem moueri in foro clericali uel laycali super
+                     dicta terra .<lb/> Et quod conseruabo Priorem et conuentum Dunelm<ex>ensem</ex> . et Priorem et conuentum de Coldingh<ex>am</ex> indempnes<lb/> in omnibus  quantum ad predictam terram . Et si placitum inde motum fuerit 
+                     ego et heredes<lb/> mei onera tocius placiti sustinebimus . Et quod fidelitatem inuiolabilem eis in<lb/> hac parte obseruabimus .</cl> <cl type="sealing">In Cuius Rei testimonium  presenti scripto pro me et heredibus meis<lb/> sigillum meum apposui .</cl> <cl type="witnesses">Hiis Testibus Domino Willelmo de Mordingto<ex>na</ex> . Domino Willelmo de Screm<lb/>ersto<ex>na</ex> . Adam de Prendergest’ . Rob<ex>erto</ex> filio Gregori de Coldingh<ex>am</ex> . Dauid de Lumesden . Ad<ex>am</ex> filio Iohannis<lb/> de Eyton<ex>a</ex> superiori . Iohanne filio Ingerami de eadem uilla . Bertramo de Risto<ex>na</ex> . Patricio Scotto . Grego<lb/>rio de Betyoc</cl></p>
+      </div>
+      <div type="translation"><p><cl type="address">To all Christ's faithful who shall view or hear the present writing, <cl type="intitulatio">Ralph Noble</cl> <cl type="salutation">sends greeting in the Lord.</cl></cl> <cl type="notification">Know me, all of you,</cl> <cl type="disposition">by having sealed the present charter with my seal, to have obliged myself and my
+                  heirs for ever, that on account of the charter of the Prior
+                  and Convent of the Church of Durham which they made for me
+                  concerning the land which I shall hold of them by right of
+                  heritage in the toun of Lamberton, to wit, one toft, and four
+                  acres of land, as it is specified in their charter composed
+                  concerning that matter, I shall not seek defence or
+                  warrandice from the said Prior and Convent if it should
+                  happen that a demand be moved by anyone in a clerical or a
+                  lay court over the said land, and that I shall keep the Prior
+                  and Convent of Durham, and the Prior and Convent of
+                  Coldingham free from financial loss in all things as to the
+                  aforesaid land. And if a plea should be moved upon it, I and
+                  my heirs shall support the expenses of the whole of the plea;
+                  and that we shall keep inviolate faith on this side.</cl> <cl type="sealing">In testimony of this matter, I have put my seal to the present writing for
+                  myself and my heirs.</cl> <cl type="witnesses">With these witnesses: the lord William of Mordington; the lord William of
+                  Scremerston; Adam of Prenderguest; Robert son of Gregory of
+                  Coldingham; David of Lumsdaine; Adam son of John of Over
+                  Ayton; John son of Ingram, of the same toun; Bertram of
+                  Reston; Patrick Scott; Gregory of Beoch.</cl></p> <p> </p></div>
+    </body>
+  </text>
+</TEI>

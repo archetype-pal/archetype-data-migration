@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-221">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/246</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-30 15:51:37.140095+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">221</idno>
+        <idno type="textcontent">221</idno>
+        <idno type="transcription_textcontentxml">221</idno>
+        <idno type="translation_textcontentxml">220</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/246</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/246</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-03-30T15:51:37.140095+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-03-30T15:51:37.140095+00:00" status="published">transcription moa=221 status=live modified=2017-03-30 15:51:18.726468+00 | translation moa=220 status=live modified=2017-03-30 15:51:37.140095+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. W . dei gratia Rex Scott’ .</cl> Omnibus probis hominibus Totius Terre sue clericis ⁊ laicis <lb/> <cl type="salutation">Salutem</cl>.</cl> <cl type="disposition">Sciant presentes ⁊ futuri me concessisse ⁊ hac Carta mea confirmasse .<lb/> donacionem quam Will<ex>elmu</ex>s de Veteri Ponte fecit deo ⁊ Sancte Cruci de Edeneb’ . ⁊ Cano<lb/>nicis ibidem deo seruientibus de terra de Okelfas’ . per rectas diuisas suas ⁊
+                     cum<lb/> omnibus iustis pertinenciis suis . Tenend’ . Sibi . in liberam . ⁊ puram ⁊
+                     perpetuam elemosi<lb/>nam . cum omnibus ad predictam Terram iuste pertinentibus . Ita libere . ⁊
+                     Quiete plenarie ⁊ ho<lb/>norifice  Sicut Carta predicti Will<ex>elm</ex>i de Veteri Ponte eis inde facta Testatur .<lb/> Saluo seruicio meo de terra illa ⁊ in auxiliis ⁊ in aliis de heredibus prefati
+                     Will<ex>elm</ex>i.</cl><lb/> T<cl type="witnesses">este . Walter . Capellano meo . Ph’ . de Valon’ . Cam<ex>erario</ex> meo . Will<ex>elm</ex>o Cum’ . Will<ex>elmo</ex> de Bosch’ .<lb/> DD . de Haia . Will<ex>elm</ex>o de Morau’ . Ric’ Reuel’ . H<ex>e</ex>nric<ex>o</ex> Reuel.</cl> Apud Forf<ex>ar</ex> . quarto . die Nouembris.<lb/> Datum per manum Will<ex>elm</ex>i de Bosch’ . tempore Flor’ . Cancellarii . anno ab incarnatio . domini m.cciii</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex> by the grace of God King of Scots</cl> to all worthy men of the whole of his land, clerk and lay, <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition">Let present and future know me to have granted, and by this my charter to have
+                  made firm, the donation which William de Vieuxpont made to
+                  God and to Holy Rood at Edinburgh and to the Canons there
+                  serving God, of the land of Ogilface, by its correct bounds
+                  and with all its just pertinents. For them to hold in free
+                  and pure and perpetual alms, with all things justly
+                  pertaining to the aforesaid land, so freely and quitely,
+                  fully and honourably, as the charter of the aforesaid William
+                  de Vieuxpont made for them thereupon bears witness. Reserving
+                  my service from that land both in aids and in other things
+                  from the heirs of the aforementioned William.</cl> <cl type="witnesses">Witness, Walter my chaplain, Philip de Valognes my chamberlain, William Comyn,
+                  William del Bois, David de la Haye, William of Moray, Richard
+                  Revel, Henry Revel.</cl> At Forfar on the fourth day of November. Given by the hand of William del Bois,
+                  in the time of Florence the chancellor, in the year of the
+                  Incarnation of the Lord, 1203.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

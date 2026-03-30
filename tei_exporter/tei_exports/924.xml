@@ -1,0 +1,72 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-924">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 598</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:47:55.650019+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">924</idno>
+        <idno type="textcontent">949</idno>
+        <idno type="transcription_textcontentxml">924</idno>
+        <idno type="translation_textcontentxml">925</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 598</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 598</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:47:55.650019+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:47:55.650019+00:00" status="approved">transcription moa=924 status=reviewed modified=2022-11-01 16:47:55.641848+00 | translation moa=925 status=reviewed modified=2022-11-01 16:47:55.650019+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. W . dei gr<ex>aci</ex>a Rex Scott’ .</cl> Omnibus probis Hominibus tocius terre sue Clericis et laicis  <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Scia<lb/>tis</cl> me ecclesiam Sancti chutberti de Halieland’ . et Monachis ibidem deo seruientes
+                     . et eorum<lb/> homines . et eorum possessiones uniuersas . In mea firma pace et protectione
+                     Iuste recepisse . Concessi<lb/> etiam eis ut ubique per totam terram meam liberi sint et quieti ab omni tolneio
+                     de dominicis catallis<lb/> suis . Et precipio ut ubique fugitiuos terre sue extra dominia mea inuenire
+                     poterunt <lb/> illos Iuste habeant .</cl> <cl type="injunction">Quare prohibeo firmiter Nequis prefatis monachis . aut eorum ho<lb/>minibus iniuriam uel uiolentiam aliquam inferre presumat . aut ab eis tolneum
+                     exigat<lb/> de dominicis catallis suis . aut fugitiuos terre sue eis inuiuste detineat 
+                     Super meam plenari<lb/>am forisfacturam . Sicut Carta Regis D<ex>aui</ex>d . aui mei . Et Carta Regis . Malcolm<ex>i</ex> . fratris mei .<lb/> testantur .</cl> <cl type="witnesses">Test<ex>ibus</ex> . Hug<ex>one</ex> . Cancellario . meo . Æ . Abbate de Dunfermel’ . Will<ex>elm</ex>o de lindes’ . Rob<ex>erto</ex> .<lb/> de london<ex>iis</ex> . filio meo . Geru<ex>asio</ex> . auenel . D<ex>auid</ex> . de lindes’ .</cl> <cl type="dating">Apud Rokesb<ex>urc</ex> .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex>, by the grace of God king of the Scots,</cl> to all worthy men of his entire land, clerk and lay, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have lawfully received the church of Saint Cuthbert at Holy Island and the
+                     monks serving God there and their men and all their
+                     possessions under my firm peace and protection. I have
+                     also gratned to them that they be free and quit anywhere
+                     throughout my entire land from every toll on their demesne
+                     cattle. And I instruct that, wherever they can find
+                     fugitives of their land outside my demesne they may
+                     lawfully have them.</cl> <cl type="injunction">Wherefore I strictly forbid that anyone seek to cause injustice or violence to
+                  the said monks or their men, or demand toll from them for
+                  their demesne cattle, or unlawfully withhold from them
+                  fugitives of their land, on pain of my full forfeiture. As
+                  the charter of King David my grandfather, and the charter of
+                  King Malcolm my brother bears witness.</cl> <cl type="witnesses">As witnesses, Hugh my chancellor, Archibald abbot of Dunfermline, William of
+                  Lindsay, Robert of London, my son, Gervase Avenel, David of
+                  Lindsay.</cl> <cl type="dating">At Roxburgh.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

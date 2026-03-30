@@ -1,0 +1,87 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-513">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/312</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 07:58:25.818669+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">513</idno>
+        <idno type="textcontent">520</idno>
+        <idno type="transcription_textcontentxml">513</idno>
+        <idno type="translation_textcontentxml">514</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/312</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/312</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T07:58:25.818669+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T07:58:25.818669+00:00" status="published">transcription moa=513 status=live modified=2021-04-07 07:58:25.818669+00 | translation moa=514 status=live modified=2021-04-07 07:58:24.404367+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis Christi fidelibus presens Scriptum uisuris uel audituris <supplied><cl type="intitulatio">Nicholaus textor bur</cl>gensis de Berwic</supplied><lb/> <cl type="salutation">salutem in domino</cl> </cl> <cl type="notification">Nouerit uniuersitas uestra quod</cl> <cl type="disposition">cum abbati et conu<supplied>entui de Mel</supplied>ros’ medietatem terre mee<lb/> <supplied>de</supplied> Briggath in puram et perpetuam elemosinam contulissem . et aliam medietatem pro
+                     centum marcarum le<lb/><supplied>g</supplied>alium sterlingorum eis vendidissem sicut sigilla que super easdem terras de me
+                     habent . testantur . Dicti<lb/> abbas et conuentus ad incrementum prefate pecunie michi . . . Hilde uxori mee
+                     uel alteri nostrum qui di<lb/>ucius uixerit in tota uita nostra dederunt et concesserunt decem bollas
+                     pacabilis frumenti et unam<lb/> cheldram pacabilis ordei et dimidiam marcam argenti singulis annis ad festum
+                     Sancti Michaelis apud<lb/> Berwic percipiend<ex>as</ex> . primo termino incipiente ad festum Sancti Michaelis anno gracie . Millesimo .
+                     Ducentesimo . Quin<lb/>quagesimo secundo . Vnde ego per hanc cartam meam obligo me et omnia bona mea
+                     mobilia et immobilia dic<lb/>tis abbati et conuentui . quod si forte pro defectu Warentie super terris
+                     premissis uexati fuerint . uel eas<lb/> in parte uel in toto perdiderint . statim a pacatione istius incrementi <supplied>ce</supplied>ssabunt . Et quicquid de hoc<lb/> incremento ego uel Hilda uxor mea perceperimus . illud cum centum Marcis
+                     supradictis . et cum omnibus sump<lb/>tibus . et dampnis que exinde incurrerint sine contradiccione plenarie et
+                     integre eisdem<lb/> restituemus</cl> . <cl type="sealing">In cuius rei testimonium ego pro me et heredibus meis huic scripto sigillum meum
+                  ap<lb/>poni feci</cl> . <cl type="witnesses">Testibus . Domino Will<ex>elm</ex>o filio Comitis . Domino Nicholao filio eius . Ioh<ex>ann</ex>e de Letham et aliis .</cl><lb/> Actum anno gracie . Millesimo . Ducentesimo . Quinquagesimo . vndecimo kal’
+                  Marcii .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To the whole body of Christ's faithful who shall view or hear the present
+                  writing, <cl type="intitulatio">Nicholas Weaver, burgess of Berwick,</cl> <cl type="salutation">sends greeting in the Lord</cl>.</cl> <cl type="notification">Know, all of you, that</cl> <cl type="disposition">since I conveyed to the abbot and convent of Melrose half of my land at Briggate
+                  in pure and perpetual alms, and sold the other half in return
+                  for one hundred merks of legal sterling, just as the seal
+                  which they have from me concerning the same land testifies;
+                  the said abbot and convent, for the increase of the
+                  aforementioned money, have given and granted to me [and]
+                  Hilda, my wife, or to others of ours who live for a longer
+                  time, for the whole of our life, 10 bolls of marketable wheat
+                  and one chalder of marketable barley and a half mark of
+                  silver each year at the feast of Saint Michael, to be
+                  received at Berwick. Wherefore, I, by this my charter, bind
+                  myself and all my goods, moveable and immovable, to the said
+                  abbot and convent, so that if by chance they are put to
+                  trouble on account of a defect of warranty relating to the
+                  aforementioned lands, or they lose them in part or in whole,
+                  they shall immediately cease from the payment of this
+                  increase. And whatever I or Hilda my wife shall have received
+                  from this increase, we shall fully and wholly restore it to
+                  the same with the hundred merks above said, and with all
+                  costs or losses they may have incurred, without dispute.</cl> <cl type="sealing">As witness of this matter I, for myself and my heirs, have caused my seal to be
+                  put to this writing.</cl> <cl type="witnesses">As witnesses, the lord William the Earl's son, the lord Nicholas his son, John
+                  of Letham, and others.</cl> Enacted in the year of grace 1251, on the eleventh of the kalends of March [19
+                  February 1250 n.s.]</p>
+      </div>
+    </body>
+  </text>
+</TEI>

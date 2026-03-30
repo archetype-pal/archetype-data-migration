@@ -1,0 +1,72 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-856">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of TNA DL 25/89</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 16:31:03.0824+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">856</idno>
+        <idno type="textcontent">879</idno>
+        <idno type="transcription_textcontentxml">856</idno>
+        <idno type="translation_textcontentxml">857</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/89</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>TNA DL 25/89</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-04T16:31:03.0824+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-04T16:31:03.0824+00:00" status="published">transcription moa=856 status=live modified=2021-04-04 16:31:01.382225+00 | translation moa=857 status=live modified=2021-04-04 16:31:03.0824+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus hoc scriptum visuris uel audituris <cl type="intitulatio">Angnes Auenel filia primogenita quondam Rauf Auenel</cl> <cl type="salutation">salutem In domino</cl> .</cl> <cl type="disposition"><cl type="notification">Noueritis me</cl><lb/> concessisse . et per fustum et baculum resignasse et pro me et heredes meis .
+                     omnino quietum clamasse . domino Roberto de Brus . domino
+                     vallis Anand’<lb/> totam terram quam habui uel habere potero In tenemento de withstan . In feodo de
+                     Thongera[y]th . et Holgrilemire et totum pratum meum de<lb/> Capilker . cum omnibus aliis pertinentiis ad dictam terram ubique pertinentibus
+                     . uel aliquo modo pertinere valentibus sine aliquo
+                     retenemento  <cl type="holding">Habendum<lb/> et Tenendum dicto domino Roberto de Brus <supplied>uel heredibus</supplied> suis uel suis assignatis In perpetuum Ita quod nec ego uel heredes mei . nec
+                        aliquis nomine nostro <lb/> aliquid Iuris uel clamii In dicta terra . cum ius pertinenciis de certo exigere
+                        poterimus uel clamare</cl> .</cl> <cl type="sealing">In cuius rei testimonium huic scripto sigillum meum<lb/> apposui .</cl> <cl type="witnesses">Hiis testibus . Dominis . Hunfr’. de Gardino . Roberto de Harryngton<ex>a</ex> . Dauid de Thorthorald’. Hunfr’ de Bosco militibus<lb/> Galfr’ de Caldecote . Ad<ex>a</ex> flamank’. Roberto forestar’ . Iohanne de Resholes et aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall view or hear this writing <cl type="intitulatio">Agnes Avenel the first-born daughter of the late Ralph Avenel</cl> <cl type="salutation">sends greeting in the Lord</cl>.</cl> <cl type="disposition"><cl type="notification">Know me</cl> to have granted, and by rod and staff to have resigned, and for myself and my
+                     heirs entirely quitclaimed, to the lord Robert de Brus the
+                     lord of Annandale the entire land which I had or shall be
+                     able to have in the holding of 'Withstan' in the feu of
+                     Tundergarth and 'Holgrilmire' and my entire meadow of
+                     Capilker, with all other pertinents belonging to the said
+                     land everywhere, or by any means being able to belong,
+                     without any withholding, <cl type="holding">for the said lord Robert de Brus or his heirs or his assigns to have and to hold
+                     for ever so that neither I or my heirs, nor anyone in our
+                     name shall certainly be able to exact or claim any right
+                     or claim in the said land.</cl></cl> <cl type="sealing">In testimony of this matter I have applied my seal to this writing.</cl> <cl type="witnesses">With these witnesses, the lords Humphrey de Jardin, Robert of Harrington, David
+                  of Torthorwald, Humphrey del Bois, knights, Geoffrey of
+                  Caldicote, Adam Fleming, Robert the forester, John of
+                  Resholes, and others.</cl> </p>
+      </div>
+    </body>
+  </text>
+</TEI>

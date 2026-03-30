@@ -1,0 +1,101 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-54">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 615</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:34.021513+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">54</idno>
+        <idno type="textcontent">54</idno>
+        <idno type="transcription_textcontentxml">54</idno>
+        <idno type="translation_textcontentxml">53</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 615</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 615</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-06T15:19:34.021513+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-06T15:19:34.021513+00:00" status="approved">transcription moa=54 status=reviewed modified=2023-06-06 15:19:34.009024+00 | translation moa=53 status=reviewed modified=2023-06-06 15:19:34.021513+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. Alex<ex>ander</ex> . dei Gr<ex>ati</ex>a Rex Scottorum : Episcopis . Abbatibus . Prioribus . Comitibus . <persName><roleName>Iustic’</roleName></persName> . Baronibus . <persName><roleName>Vicecom<ex>itibus</ex></roleName></persName> . Prepositis . Ministris . ⁊ Omnibus probis hominibus <lb/> Tocius terre sue . Clericis ⁊ laicis  <cl type="salutation">Salutem</cl> . </cl><cl type="disposition"><cl type="notification">Sciatis</cl> . quod uolo ⁊ firmiter precipio . quod nemora monachorum de Coldingham . vide<lb/>licet . Grenewde .⁊ totum nemus de Ristuna . ⁊ Broccheholewde . ⁊ Akesside . ⁊
+                     Chirchedeneswde . ⁊ Harewde . ⁊ Denewde . <lb/> ⁊ Swinewde . ⁊ Hundewde . ⁊ omnia nemora ⁊ Gwastina sua sint sub defensione
+                     prioris ⁊ custodia . necnon ⁊ monachorum <lb/> de Coldingham . ne aliquis super decem libras forisfacture . quicquam in
+                     predictis nemoribus uel Gwastinis capiat  nisi per ipsum
+                     pri<lb/>orem . uel per monachos prenominati loci  si ipse presens non fuerit . exceptis
+                     tantummodo necessariis de castello meo <lb/> de Berewic’ . que mihimet ipsi solummodo conueniunt . Et si clientes mei pro
+                     necessariis meis ad opus castelli mei de <lb/> Berewic’ . ad nemora predicta uenerint  per priorem uel per clientes suos . que
+                     opus fuerint mihi . et ubi ipse uel Clientes <lb/> sui monstrauerint accipiant . Insuper addo et illis concedo . quod predictus
+                     prior et monachi habeant Gwarennam in pre<lb/>dictis nemoribus . ⁊ per totam terram suam . sicut extenduntur Recte ⁊ antique
+                     diuise . uidelicet . a diuisis inter Berewic’ . ⁊ <lb/> Lambertunam  usque ad Bilie . ⁊ usque ad Drieforde . ⁊ ita per Mereburne .
+                     usque ad Crachochtre . ⁊ usque ad Eieforde . ⁊ <lb/> usque ad Riuulum qui manat in mare per Aldecambuspethe . ita quod nullus ibi
+                     aliquid capiat . nec lingna . nec aliquam <lb/> bestiam siluestrem  nisi per ipsos . Quod si aliquis in predictis nemoribus uel
+                     Gwastinis capiatur uenando . uel lingna secando <lb/> uel aliquid inde accipiendo . preter licentiam prioris ⁊ monachorum  habeant
+                     prior ⁊ monachi . quod super illum ⁊ cum illo <lb/> inuenerint . ⁊ ego forisfacturam prenominatam . sicut Carte Regis . D<ex>aui</ex>D . ⁊ Regis Willelmi . patris mei testantur . ⁊ Con<lb/>firmant .</cl> <cl type="witnesses">Test<ex>ibus</ex> . Will<ex>elmo</ex> . de Bosch<ex>o</ex> . Cancellario . meo . Comite . Malcolm<ex>o</ex> . de Fif : Magistro Ad<ex>am</ex> . de Scon’ . ⁊ Robert<ex>o</ex> . Capellanis meis . Philipp<ex>o</ex> . <lb/> de Lundin’ . D<ex>aui</ex>D . <persName><roleName>marescallo</roleName></persName> . Heruic<ex>o</ex> . <persName><roleName>marescallo</roleName></persName> . Ad<ex>am</ex> . Haste<ex>n</ex>g :</cl> <cl type="dating">Apud Selesch<ex>e</ex>R’ . ultimo die Iulii</cl> .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">Alexander, by the Grace of God King of Scots, to Bishops, Abbots, Priors, Earls,
+                  Justices, Barons, Sheriffs, Provosts, Officials, and All
+                  worthy men of the Whole of his land, Clerk and lay : <cl type="salutation">Greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know that</cl> I will and firmly instruct that the woods of the monks of Coldingham, namely,
+                     Greenwood, and the whole wood of Reston, and
+                     Brockholeswood, and Aikieside, and 'Chirchedeneswde', and
+                     'Harewde', and 'Denewde', and Swinewood, and Houndwood,
+                     and all their other woods and wastelands shall be under
+                     the protection and custody of the prior as well as of the
+                     monks of Coldingham. Let no one, on pain of the forfeiture
+                     of ten pounds, take anything in the aforesaid woods or
+                     wastelands, except through the prior, or through the monks
+                     of the aforenamed place if he is not himself present,
+                     except for the requirements of my castle at Berwick alone,
+                     those things only which are proper to me myself. And if my
+                     servants shall come to the aforesaid woods for my needs
+                     for the maintenance of my castle at Berwick, by the prior
+                     or through his servants, and where he or his servants show
+                     what things are necessary for me, they shall receive them.
+                     I furthermore add and grant to them, that the aforesaid
+                     prior and monks shall have warren in the aforesaid woods,
+                     and throughought the whole of their land, as it stretches
+                     by its right and ancient boundaries, namely, from the
+                     boundaries between Berwick and Lamberton as far as Biollie
+                     and as far as 'Drieforde' and so by the 'Mereburne' as far
+                     as 'Crachoctre' and as far as 'Eieforde' and as far as the
+                     burn which flows into the sea by Oldcambus peth, so that
+                     nothing shall be taken there, neither firewood nor any
+                     woodland beast, except by themselves. If anyone shall be
+                     caught hunting in the aforesaid woods or wastelands, or
+                     cutting firewood, or taking away anything from there
+                     without the permission of the prior and monks, the prior
+                     and monks shall have that which they find upon him and
+                     with him, and I shall make the aforenamed forfeiture, as
+                     the Charters of King David and of King William my father
+                     bear witness and confirm. </cl><cl type="witnesses">As witnesses : William del Bois, my Chancellor; Earl Malcolm of Fife; Master
+                  Adam of Scone and Robert, my Chaplains; Philip of Lundin;
+                  David the marischal; Hervey the marischal; Adam Hastings. </cl><cl type="dating">At Selkirk on the last day of July</cl>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

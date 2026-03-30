@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-618">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL L.F.C. Ch. xxx.2</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:20:22.130768+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">618</idno>
+        <idno type="textcontent">628</idno>
+        <idno type="transcription_textcontentxml">618</idno>
+        <idno type="translation_textcontentxml">619</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>L.F.C. Ch. xxx.2</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL L.F.C. Ch. xxx.2</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:20:22.130768+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:20:22.130768+00:00" status="published">transcription moa=618 status=live modified=2021-04-05 08:20:20.576335+00 | translation moa=619 status=live modified=2021-04-05 08:20:22.130768+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>W.</persName> dei gr<ex>ati</ex>a Rex Scott’</cl> . Episcopis . abbatibus . Comitibus . Baronibus . Iustic<ex>iis</ex> . Ministris . et Omnibus probis hominibus tocius terre<lb/> sue . Clericis . et laicis . <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Sciant presentes et futuri .</cl> <cl type="disposition">me concessisse . et hac carta mea confirmasse deo atque<lb/> ecclesie Sancte Marie de fonte clericorum . et Monialibus ibidem de seruientibus
+                     . illas . vii . xx . acras terre in Hangre<lb/> de totham . quas <persName>Robertus</persName> filius <persName>Sewin</persName> de Norhamton’ eis dedit . et de dono eiusdem dimidium Holmum<lb/> quem <persName>engelramus</persName> tenuerat . et . quatuor . truncos ad ignem suum de bosco meo de toteham . et
+                     decem porcos<lb/> quietos a pasnagio . <cl type="holding">tenendum in perpetuam elemosinam . ita libere . et quiete . plenarie . et
+                     honorifice . sicut Car<lb/>ta Regis <persName>Malcol’</persName> fratris mei et mea tenuras illas predicto <persName>Roberto</persName> filio <persName>Sewini</persName> confirmant . et Carta<lb/> eidem <persName>Roberti</persName> . eis liberius . quiecius . plenius . et honorificencius . testatur . et
+                        confirmat </cl> saluo seruicio meo .</cl> <cl type="witnesses">test’.<lb/> <persName>Ric’</persName> de Moreu’ constabulario . <persName>Ric’ Cuttun</persName> . <persName>philippo</persName> de Valon’. <persName>Hugone Ridel</persName> . <persName>Waltero</persName> de berkel’.<lb/> <persName>Waltero</persName> de Windesour’ <persName>Roberto</persName> de berkel . <persName>Will<ex>elm</ex>o</persName> filio <persName>Emme</persName> . <persName>Ioh<ex>ann</ex>e</persName> de Hasting’.</cl> Apud Norhamton’ .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex>, by the grace of God king of the Scots,</cl> to bishops, abbots, earls, barons, justices, officials, and all worthy men of
+                     his entire land, clerk and lay, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have conceded, and by this my charter to have made firm, to God and also
+                     to the church of St Mary at Clerkenwell [Clerks'-Well] and
+                     the monks serving God there the 140 [⁊ × 20] acres of land
+                     in the Hanger of Tottenham that Robert fitz Sewin of
+                     Northampton gave them, and of the gift of the same half
+                     holm which Ingram had held, and four tree trunks for their
+                     fire from my wood at Tottenham, and ten pigs quit of
+                     pasture dues, <cl type="holding">to be held in everlasting alms, as freely and quitly, fully, and honourably, as
+                     the charter of King Malcolm my brother and my own confirm
+                     those holdings to the aforesaid Robert fitz Sewin, and the
+                     charter of the same Robert bears witness and confirms to
+                     them freely, quitly, fully, and honourably;</cl> saving my service.</cl> <cl type="witnesses">As witnesses: Richard de Morville the constable; Richard Cotton; Philip de
+                  Valognes; Hugh Ridel; Walter of Berkeley; Walter of Windsor;
+                  Robert of Berkeley; William son of Emma; John of Hastings.</cl> At Northampton.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

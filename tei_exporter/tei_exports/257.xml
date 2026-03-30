@@ -1,0 +1,96 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-257">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/279</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 14:42:11.797728+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">257</idno>
+        <idno type="textcontent">256</idno>
+        <idno type="transcription_textcontentxml">257</idno>
+        <idno type="translation_textcontentxml">256</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/279</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/279</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-04T14:42:11.797728+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-04T14:42:11.797728+00:00" status="published">transcription moa=257 status=live modified=2021-04-04 14:42:09.147729+00 | translation moa=256 status=live modified=2021-04-04 14:42:11.797728+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis sancte matris ecclesie filiis Malcolmus Comes de fif Salutem.</cl> <cl type="disposition">Sciant presentes ⁊ futuri me concessisse ⁊ hac carta mea confirmasse deo ⁊ beate
+                  marie ⁊ monialibus<lb/> de Norberwic in liberam ⁊ puram ⁊ perpetuam elemosinam ecclesiam de Norberwic
+                     cum terra eiusdem ecclesie ⁊ cum decimis ⁊ oblationibus ⁊
+                     omnibus aliis rectitudinibus eidem ecclesie iuste pertinen<lb/>tibus ⁊ terram in qua domus predictarum monialium fundata est . scilicet que
+                     Gillecalmestun solet nominari . ⁊ terram hospitalis de
+                     Norberwic . ⁊ terram hospitalis de Ardros . ⁊ ecclesia <lb/> de Kilconkath in terra eiusdem ecclesie . ⁊ decimis . ⁊ oblationibus ⁊ omnibus
+                     aliis rectitudinibus suis . ⁊ ecclesiam de largach cum
+                     decimis ⁊ oblationibus ⁊ omnibus aliis rectitudinibus suis<lb/> ⁊ ecclesiam de login cum drumnach scilicet terra eiusdem ecclesie ⁊ cum decimis
+                     ⁊ oblationibus ⁊ omnibus rectitudinibus eidem ecclesie
+                     pertinentibus . ⁊ Athernin . ⁊ Mathriue . ⁊ dimidietatem
+                     terre de<lb/> Brech per rectas diuisas suas . Quare uolo ut prenominate moniales predictas
+                     ecclesias ⁊ predictas terras adeo libere <supplied>quiete plena</supplied>rie ⁊ hon<supplied>orifice t</supplied>eneant ⁊ possideant in pratis ⁊ pascu<lb/>is in aquis in moris ⁊ maresiis ⁊ omnibus aliis aisiamentis ⁊ iustis
+                     pertinenciis suis sicut aliqua abbacia aliquam elemosinam
+                     in terra regis Scott’ liberius quiecius plenius de Comite
+                     . uel Barone<lb/> tenet ⁊ possidet sicut carte patris mei dant dant [sic] ⁊ confirmant ⁊ testantur
+                     super predictis ecclesiis ⁊ prenominatis terris.</cl> <cl type="witnesses">His Testibus . Domino Iacobo priore de Norberwic . Dunecano ⁊<lb/> d<ex>aui</ex>d . fratribus meis . Waldeuo filio merlesuein . Ioh<ex>ann</ex>e filio Micael . Nesso de Rammisseia . Tom’ de kilmeron . Will<ex>elm</ex>o . de wiull’ . Malcolmo de maleuill’ . Alex<ex>andr</ex>o . de blar . Henr<ex>ico</ex> de Abirnid’ .<lb/> Will<ex>elm</ex>o norrensi . Waltero . Gregorio . Alex<ex>andr</ex>o . Capellanis . ⁊ MVLTIS ALIIS .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, Malcolm Earl of Fife send Greeting:</cl> <cl type="disposition">Let present and future know that I have granted, and by this my charter made
+                  firm, to God and to Blessed Mary and to the nuns of North
+                  Berwick, in free and pure and perpetual alms, the church of
+                  North Berwick with the land of the same church and with
+                  teinds and oblations and all other revenues rightly belonging
+                  to the same church, and the land in which the house of the
+                  foresaid nuns is built, that is, which used to be called
+                  ‘Gillecalmestun’, and the land of the hospital of North
+                  Berwick; and the land of the hospital of Ardross, and the
+                  church of Kilconquhar in the land of the same church, and its
+                  teinds, and oblations and all other revenues; and the church
+                  of Largo with its teinds and oblations and all other
+                  revenues; and the church of Logie with ‘Drumnach’, that is,
+                  the land of the same church and with teinds and oblations and
+                  all revenues belonging to the same church; and Athernie, and
+                  Montrave, and half of the land of Breich by its correct
+                  bounds. Wherefore I will that the forenamed nuns hold and
+                  possess the foresaid churches and foresaid lands as freely,
+                  quietly, fully and honourably, in meadows and pastures, in
+                  waters and moors and marshes and all other easements and just
+                  pertinents as any abbey freely, quietly and fully holds and
+                  possesses any alms in the land of the king of Scots of an
+                  earl of baron, just as the charters of my father give,
+                  confirm and bear witness concerning the foresaid churches and
+                  foresiad lands.</cl> <cl type="witnesses">With these witnesses, the lord James, prior of North Berwick, Duncan and David
+                  my brothers, Waldef son of Merleswain, John son of Michael,
+                  Ness of Ramsay, Thomas of Kilmaron, William of Wyville,
+                  Malcolm de Malville, Alexander of Blair, Henry of Abernethy,
+                  William Norris, Walter, Gregory, Alexander, chaplains, and
+                  many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-726">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/293</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:21:22.229929+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">726</idno>
+        <idno type="textcontent">738</idno>
+        <idno type="transcription_textcontentxml">726</idno>
+        <idno type="translation_textcontentxml">727</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/293</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/293</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T08:21:22.229929+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T08:21:22.229929+00:00" status="published">transcription moa=726 status=live modified=2021-04-07 08:21:22.229929+00 | translation moa=727 status=live modified=2021-04-07 08:21:17.107951+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris Ecclesie filiis presentibus et futuris litteras istas
+                  uisuris uel audituris <cl type="intitulatio">Adam de Hetun’<lb/> et Helena uxor eius</cl> <cl type="salutation">salutem in domino</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit vniuersitas uestra</cl> quod nos coram Magistro Hugone Archidiac<ex>ono</ex> Glasgu<lb/>ensi . et Magistro Waltero decano de Teuidal’ et Domino Ada de bagath et multis
+                     aliis uiris discretis clericis et laicis<lb/> affidauimus et tactis sacrosanctis iurauimus quod nos nunquam contra domum de
+                     Melros de terris quas eidem domui uendidimus<lb/> in territorio de Molle querelam mouebimus . Nec alicui contra eandem domum de
+                     predictis terris querelam mouere uolenti<lb/> consenciemus .</cl> <cl type="sealing">Ad maiorem uero huius rei securitatem hoc scriptum apposicione sigillorum
+                  predicti Archidiaconi . et predicti decani .<lb/> et domini Ade de bagath’ vna cum apposictione sigilli nostri roborauimus .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church present and future who shall view or hear
+                  these letters <cl type="intitulatio">Adam of Heiton and Helen his wife</cl> <cl type="salutation">send greeting in the Lord</cl>.</cl> <cl type="disposition"><cl type="notification">Your whole community should know</cl> that we have pledged our faith and sworn on holy relics in front of Master Hugh
+                     the archdeacon of Glasgow and Master Walter the dean of
+                     Tweeddale and the lord Adam of Bathgate and many other
+                     distinguished men, clerk and lay, that we shall never move
+                     a plaint against the monastic house of Melrose about the
+                     lands that we sold to the same house; nor shall we give
+                     willing consent to move a plaint against the same house
+                     about the aforesaid lands.</cl> <cl type="sealing">For the greater security of this matter we have verified this writing by the
+                  application of the seals of the aforesaid archdeacon and the
+                  aforesaid dean and the lord Adam of Bathgate together with
+                  the application of our own seal.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

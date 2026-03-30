@@ -1,0 +1,87 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-393">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/108</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:22.523534+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">393</idno>
+        <idno type="textcontent">397</idno>
+        <idno type="transcription_textcontentxml">393</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/108</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/108</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:22.523534+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:22.523534+00:00" status="draft">transcription moa=393 status=draft modified=2017-01-30 19:28:22.523534+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte matris ecclesie filiis tam presentibus quam futuris . <cl type="intitulatio">R . de moreuill’ constabularius Regis Scot’ et Auicia uxor eius</cl> . <cl type="salutation">Salutem</cl></cl> . <cl type="notification">Sciatis</cl> <cl type="disposition">nos<lb/> dedisse et hac presenti carta nostra confirmasse deo et Ecclesie Sancte Marie de
+                     Melr<ex>os</ex> et monachis ibidem deo seruientibus consensu et assen<lb/>su et bona uoluntate Will<ex>elmi</ex> filii et heredis nostri . in liberam et puram et perpetuam elemosinam pro salute
+                     domini nostri Regis Scot’ et nostra .<lb/> et pro animabus patrum et matrum et omnium antecessorum et successorum nostrorum
+                     . Capellam Sancte Marie de parco cum tota curte ad ipsam
+                     capellam perti<lb/>nente . <cl type="boundaries">uidelicet sicut fossa circuit ipsam Curtem eiusdem Capelle . et uersus
+                     occidentem et uersus aquilonem et usque ad orientalem
+                     portam . et sic deorsum ad<lb/> Riuulum descendentem de bosco ex aquilonali parte Calcee usque in Riuulum a quo
+                        duo uiuaria oriuntur . quorum superius prescripte
+                        Capelle . infe<lb/>rius uero infirmis nostris de Bune assignauimus . et inde sursum per eundem
+                        Riuulum usque ad fossatum quod prescriptam Curtem
+                        capelle ex occiden<lb/>tali parte circuit</cl> . Et totam terram de Milcheside per diuisas a nobis eidem terre assignatas . et
+                     in hac carta nostra nominatas . <cl type="boundaries">scilicet a superi<lb/>ori uiuario deorsum per eundem Riuulum qui in ipsa uiuaria descendit usque ad
+                        magnam stratam que uadit a lowed<ex>er</ex> . uersus birkeneside .<lb/> et inde per eandem stratam uersus austrum . usque ad caput orientale fossati
+                        quod prescripti monachi fecerunt p<ex>ost</ex> nostram assignationem inter terram suam<lb/> et terram quam infirmis nostris ex parte australi assignauimus . Et a prescripto
+                        capite fossati a monachis facti per idem fossatum
+                        monach<lb/>orum uersus occidentem . usque ad uetus fossatum quod audit ex transuerso campi
+                        ab austro uersus aquilonem et illinc uersus austrum
+                        usque ad caput<lb/> eiusdem ueteris fossati . et inde descendo in obliquum sicut dominus Ioc<ex>elinus</ex> . Glasg<ex>uensis</ex> episcopus . et Cell<ex>erarii</ex> Melrosenses diuisam perambulauerunt usque<lb/> in riuulum qui dicitur M<ex>er</ex>eburne . qui est diuisa inter terram de Milkeside et terram de blainesleie . et
+                        illinc sursum per rectas diuisas terre de Milke<lb/>side et terre de blainesleie uesque ad magnam stratam que descendit a Windesl’
+                        uersus lauw’ . et illinc per eandem stratam uersus
+                        aquilonem<lb/> usque ad uiam que ab illam strata uadit uersus milckeside . et per illiam uiam
+                        usque ad caput fossati quod nos ex aquilonali parte
+                        eiusdem<lb/> uie inceperamus . antequam terram de Milkeside abbatie melrosensi dedimus . Inde
+                        etiam usque in australe caput fossati quod curtem
+                        supradicte capelle<lb/> ex parte occidentali circuit</cl> . <cl type="holding">Hec autem omnia et quicquid infra has predictas diuisas continetur dedimus eis
+                     ita libere et solute et quiete . et hono<lb/>rifice . a forensi seruicio . et omni terreno seruicio et exactione seculari
+                        possidenda  sicut ulla elemosina liberius . quietius .
+                        et honorabilius dari potest<lb/> uel haberi</cl> . <cl type="warrandice">Nos autem et heredes nostri adquietabimus eandem terram uersus dominum Regem .
+                     et warantizabimus eisdem monachis contra omnes homines in<lb/> perpetuum</cl> . Et quam hanc donationem nostram firmam et stabilem in perpetuum uolumus
+                     permanere rogauimus . W . filium et heredem nostrum<lb/> ut ipse hanc donationem nostram concederet . et Carta sua confirmaret . Quod
+                     ipse fecit in presentia nostra et aliorum proborum hominum
+                     . Unde<lb/> et nos eiusdem carte sue testes esse rogauit et alios probos homines quam plures
+                     . Per hanc autem elemosinam et per alias quas ego . R'. de<lb/> Moreuill’ et A . sponsa mea . et W . filius et heres noster abbatie melrosensi .
+                     et aliis locis religionis contulimus pro amore dei . et sa<lb/>lute animarum nostrarum  a uoto quod uoueram de abbatia cisterciensis ordinis
+                     facienda absolutus sum per dominum . Ioc<ex>elinum</ex> . Glasg<ex>uensem</ex> episcopum au<lb/>ctorite et precepto domini pape vrbani tercii . Predicti uero monachi pro amore
+                     dei et nostro infirmis nostris de Bune concesserunt<lb/> ut in territorio de Milcheside . ubi ipsi monachi prouiderint idem infirmi usque
+                     ad petram uiam habeant  per quam focalia sua<lb/> bigis suis attrahere poterunt</cl> . <cl type="witnesses">His T<ex>estibus</ex> . Iocel<ex>ino</ex> . GlasG’ episcopo . Euerardo abbate de Holm’ . Rain’ . abbate de kill’ .
+                     Magistro<lb/> Adam de Ecles . Hereberto decano GlasG’ . ecclesie . Roll’. filio Huctr<ex>edi</ex> . Rad’ masculo . Ric’. masculo . Petro de la hage . Alano<lb/> de thirlestain . Rogero masculo . Toma Clerico . Ricardo filio Gilberti .
+                     Roberto filio Radulfi</cl> .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-960">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 724</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:41:10.595819+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">960</idno>
+        <idno type="textcontent">988</idno>
+        <idno type="transcription_textcontentxml">960</idno>
+        <idno type="translation_textcontentxml">961</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 724</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 724</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T11:41:10.595819+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T11:41:10.595819+00:00" status="approved">transcription moa=960 status=reviewed modified=2022-11-01 11:41:10.595819+00 | translation moa=961 status=reviewed modified=2022-11-01 11:41:10.58516+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Ebrardus de Pentkatleht .</cl> Omnibus videntibus uel audientibus has litteras <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit uniuersitas<lb/> uestra</cl> me de consensu heredum meorum pro salute anime mee et pro animabus patris mei et
+                     matris mee<lb/> et omnium parentum meorum et pro fraternitate et societate domus dunelmensis
+                     quietam clamasse in perpetuum<lb/> deo et sancto Cuthberto et Bertramo priori et Conuentui predicte domus
+                     Dunelmensis calumpniam quam<lb/> habui aduersus eos super terra inter Ederham et Blenerne . et iuri meo si
+                     aliquod in prefatam terram<lb/> habui  me et heredes meos omnino renuntiasse .</cl> <cl type="witnesses">Hiis . test<ex>ibus</ex> . ada de Bonkihil . Patricio filio<lb/> ade filii alden . Rollando senescaldo comitis . Henrico de Prendregest . Roberto
+                     de Predregest<lb/> alano de suinet' . Gregorio senescaldo de coldingh' . Helya de Elmedene . Dauid
+                     de Paxtona<lb/> Ioh<ex>ann</ex>e de Kett' . Ric' . brun . thoma burdun et multis aliis </cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Everard of Pencaitland</cl>, to all who view or hear these letters, <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let all of you know that</cl> I have quitclaimed for ever, with the agreement of my heirs, for the salvation
+                     of my soul, and for the souls of my father and my mother,
+                     and of all my ancestors, and for the fraternity and
+                     society of the monastic house of Durham, to God and Saint
+                     Cuthbert and Bertram the prior and the convent of the same
+                     house of Durham, the claim which I had against them over
+                     the land between Edrom and Blanerne, and I and my heirs
+                     have entirely renounced my right, if any I had within the
+                     aforementioned land.</cl> <cl type="witnesses">With these witnesses, Adam of Bunkle, Patrick son of Adam son of Haldane, Roland
+                  the earl's steward, Henry of Prenderguest, Robert of
+                  Prenderguest, Alan of Swinton, Gregory the steward of
+                  Coldingham, Elias of Elmdene, David of Paxton, John of
+                  Kettins, Richard Broun, Thomas Burdun, and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

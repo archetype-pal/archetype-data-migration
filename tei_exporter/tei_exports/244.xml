@@ -1,0 +1,88 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-244">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/258</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 14:39:35.432678+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">244</idno>
+        <idno type="textcontent">244</idno>
+        <idno type="transcription_textcontentxml">244</idno>
+        <idno type="translation_textcontentxml">245</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/258</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/258</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-04T14:39:35.432678+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-04T14:39:35.432678+00:00" status="published">transcription moa=244 status=live modified=2021-04-04 14:39:31.075004+00 | translation moa=245 status=live modified=2021-04-04 14:39:35.432678+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte matris ecclesie filiis ⁊ fidelibus ad quos presens scriptum
+                  peruenerit presentibus ⁊ futuris  Willelmus<lb/> filius Gamelli de tuinham salutem.</cl> <cl type="disposition">Vniuersitati vestre significo me consensu domini mei Alani filii Rollandi .<lb/> ⁊ assensu Walteri filii ⁊ heredis mei dedisse ⁊ concessisse ⁊ hac carta mea
+                     confirmasse deo ⁊ ecclesie sancte<lb/> crucis de edenburc ⁊ canonicis ibidem deo seruientibus in liberam ⁊ puram ⁊
+                     perpetuam elemosinam totum ius<lb/> quod habere uidebar in ecclesia de Tuenham . ⁊ in perpetuum pro me ⁊ heredibus
+                     meis abrenunciasse clamori quem clamabam<lb/> in aduocatione ipsius ecclesie . Preterea do ⁊ concedo assensu ipsius Walteri
+                     filii mei predicte ecclesie ⁊ predictis canonicis<lb/> in perpetuam ellemosinam quatuor acras terre in territorio eiusdem ville .
+                     eiusdem diuisis per quas ego ipsam terram in consepectu<lb/> prudentum virorum Ipsis canonicis tenendas perambulaui ⁊ domum una in ipsa uilla
+                     de qua predictos cano<lb/>nicos saisiaui predicte ecclesie do ⁊ concedo cum communi pastura eiusdem uille
+                     ad sexdecim aueria ⁊ ad unum<lb/> equum . ⁊ cum omnibus aliis communibus aisiamentis eiusdem uille . Quare volo ut
+                     predictam ecclesiam prenominati ca<lb/>nonici cum omnibus iustis pertinenciis suis libere ⁊ quiete in perpetuam
+                     elemosinam ⁊ puram teneant in perpe<lb/>tuum . ⁊ possideant.</cl> <cl type="witnesses">Hiis testibus . Siluestro . ⁊ Andrea . ⁊ thoma capellanis . Matheo decano .
+                  Roberto<lb/> clerico . Roberto halfchniht . Roberto ⁊ Gamello fratribus . Roberto filio
+                     Matildis . ⁊ aliis quam pluribus .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons and faithful of Holy Mother Church to whom the present deed shall
+                  come, present and future, William son of Gamel of Twynholm
+                  sends Greeting:</cl> <cl type="disposition">I make known to you all that I, with the consent of my lord, Alan son of Roland,
+                  and the agreement of Walter my son and heir, have given and
+                  granted, and by this my charter made firm, to God and to the
+                  church of Holyrood in Edinburgh and to the canons serving God
+                  there, in free and pure and perpetual alms, the whole right
+                  that I thought good to have in the church of Twynholm, and I
+                  have renounced in perpetuity, for myself and my heirs, the
+                  claim that I claimed in the advowson of that church.
+                  Furthermore I give and grant, with the assent of Walter my
+                  son himself, to the foresaid church and the foresaid canons,
+                  in perpetual alms, four acres of land in the territory of the
+                  same toun, for the canons themselves to hold the same bounds
+                  by which I perambulated that very land in the sight of worthy
+                  men. And to the foresaid church I give and grant one dwelling
+                  in the toun itself, in respect of which I have put the
+                  foresaid canons in possession, with common pasture of the
+                  same toun for sixteen draught animals and for one horse, and
+                  with all other common easements of the same toun. Wherefore I
+                  will that the aforenamed canons should hold and possess in
+                  perpetuity the foresaid church with all its just pertinents,
+                  freely and quietly in perpetual and pure alms.</cl> <cl type="witnesses">With these witnesses, Silvester, Andrew and Thomas, chaplains, Matthew the dean,
+                  Robert the clerk, Robert Halfknight, Robert and Gamel,
+                  brothers, Robert son of Matilda, and very many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

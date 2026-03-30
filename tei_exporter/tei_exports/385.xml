@@ -1,0 +1,78 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-385">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/95</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 13:33:32.714656+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">385</idno>
+        <idno type="textcontent">389</idno>
+        <idno type="transcription_textcontentxml">385</idno>
+        <idno type="translation_textcontentxml">386</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/95</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/95</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T13:33:32.714656+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T13:33:32.714656+00:00" status="published">transcription moa=385 status=live modified=2021-04-06 13:25:42.274433+00 | translation moa=386 status=live modified=2021-04-06 13:33:32.714656+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris ecclesie filiis . tam presentibus quam futuris . <cl type="intitulatio">Will<ex>elmus</ex> de Morev'</cl> <cl type="salutation">Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciatis me</cl> concessisse et hac presenti mea car<lb/>ta confirmasse deo et ecclesie sancte Marie de Melr<ex>os</ex> . et Monachis ibidem deo seruientibus . in liberam et puram et perpetuam
+                     elemosin<supplied>am</supplied><lb/> libertatem et licentiam arandi et seminandi totam terram de bleyneslei . et
+                     totam planitiem in circuitu extra nemus usque ad ledre<lb/> et in faciendi commodum suum secundum uoluntatem suam usque infra diuisas suas
+                     excepto sarto faciendo <cl type="boundaries">usque ad Windeslawe<lb/> et inde per magnam stratam que descendit per Windeslawe uersus lawed<ex>er</ex> usque ad diuisas de lawed<ex>er</ex></cl> . sicut pater meus Ric'<lb/> de Moreuill' illis in liberam elemosinam dedit. Hanc autem predictam libertate
+                     et licentiam illis concessi peticione patris mei .<lb/> et pro salute animarum d<ex>aui</ex>d et Melcolmi quondam Regum scott' dominorum meorum . et pro salute Will<ex>elm</ex>i Regis Scott' . domini mei et pro salute<lb/> anime mee et anime uxoris mee et omnium antecessorum et successorum meorum . <cl type="holding">Quare uolo ut predicti Monachi prenominatam liber<lb/>tatem et licentiam ita libere et quiete habeant in perpetuam elemosinam et
+                        possideant . sicut aliquam elemosinam liberius et
+                        quietius et<lb/> honorificentius possident</cl></cl> . <cl type="witnesses">His test<ex>ibus</ex> . Iocel<ex>ino</ex> GlasG' episcopo . Ric' de Morv' patre meo . Auice de loncastre Matre mea herber<lb/>to decano GlasG' . Clemente medico capellano . Adam persona ecclesie de lawed<ex>er</ex> . Rogero clerico dapifero patris mei . Alano de<lb/> Thirlestan . Will<ex>elm</ex>o Mansello . fintor [?<ex>for </ex>funtor<ex>e</ex> <ex>or </ex>finitor<ex>e</ex>]. Herberto filio Roberti . Alano de Clalpeham</cl> .</p>
+      </div>
+      <div type="translation"><p><cl type="address">To all sons of holy Mother Church, both present and to come, <cl type="intitulatio">William de Morville</cl> <cl type="salutation">sends greeting</cl></cl>. <cl type="disposition"><cl type="notification">Know me</cl> to have granted, and by this my present charter to have made firm, to God and to
+                     the church of St Mary at Melrose, and to the monks serving
+                     God in that place, in free and pure and perpetual alms,
+                     the freedom and licence to plough and sow the whole land
+                     of Blainslie, and the whole plain around the outside of
+                     the wood down to the Leader, and to make good use of it
+                     according to their will between its boundaries, except for
+                     clearing woodland, <cl type="boundaries">as far as 'Windeslawe' and from there by the great road which descends by
+                     'Windeslawe' towards Lauder, down to the boundaries of
+                     Lauder,</cl> just as my father Richard de Morville gave them in free alms. This foresaid
+                     liberty and licence I have granted to them at the request
+                     of my father, and for the salvation of the souls of David
+                     and Malcolm, late kings of the Scots, my lords, and for
+                     the salvation of William, king of the Scots, my lord, and
+                     for the salvation of my own soul, and of the soul of my
+                     wife and of all my ancestors and successors. <cl type="holding">Wherefore I will that the foresaid monks should have and possess the previously
+                     named liberty and licence as freely and quitely in
+                     everlasting alms, just as they possess any alms freely and
+                     quitely and honourably</cl>.</cl> <cl type="witnesses">With these witnesses: Jocelin, bishop of Glasgow; Richard de Morville, my
+                  father; Avice of Lancaster, my mother; Herbert, dean of
+                  Glasgow; Clement the physician, chaplain; Adam, parson of the
+                  church of Lauder; Roger the clerk, my father's steward; Alan
+                  of Thirlestane; William Mansell, fintor [?founder <ex>or</ex> ?surveyor of boundaries*]; Herbert son of Robert; Alan of Clapham.</cl> </p> <p>*<ex>fintor</ex> is not attested; <ex>finitor </ex>is otherwise only attested in Classical Latin; <ex>funtor</ex>, 'founder', is the most likely reading.</p></div>
+    </body>
+  </text>
+</TEI>

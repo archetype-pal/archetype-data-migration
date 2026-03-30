@@ -1,0 +1,86 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-568">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/236</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:35.41223+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">568</idno>
+        <idno type="textcontent">576</idno>
+        <idno type="transcription_textcontentxml">568</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/236</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/236</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:35.41223+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:35.41223+00:00" status="draft">transcription moa=568 status=draft modified=2017-01-30 19:28:35.41223+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><cl type="address">Omnibus Christi fidelibus hoc scriptum visuris vel audituris . <cl type="intitulatio">Patricius comes de dunbar</cl> . <cl type="salutation">salutem eternam in domino</cl></cl> . <cl type="disposition"><cl type="notification">Sciant omnes tam presentes quam futuri quod</cl> cum Magister . Will<ex>elmu</ex>s de grenlawe quamdam terram<lb/> quam habuit ex dono Roberti de Monscampo tenentis nostri in feodo de halsington’
+                        sibi et suis assignatis donatam . Abbati et conuentui
+                        de Melr<ex>os</ex> . tanquam suis assignatis dedisset sollemp<lb/>niter In curia nostra apud heddreham . Et idem magister . W . de eadem terra
+                        ibidem se dissaisisset . et ipsos sollempniter
+                        saisisset in eandem . vt ipsorum abbatis et conuentus
+                        possessioni paci<lb/>fice et perpetue futuris temporibus prouideretur . Ita inter ipsos ex parte vna
+                        . et nos ex altera in presencia karissimi domini nostri
+                        . A . illustris Regis Scocie . et baronum suorum
+                        conuenit quod nos promisimus .<lb/> concessismus . et hac presenti Carta nostra nos et heredes nostros obligauimus .
+                        quod dictum tenementum ipsis abbati et conuentui contra
+                        omnes homines adquietabimus . warantizabimus . et
+                        inperpetuum<lb/> defendemus . <cl type="holding">Tenendum et habendum eisdem Abbati . et conuentui in liberam et perpetuam
+                        elemosinam per illas diuisas per quas dictus Magister .
+                        W . eam tenuit . et cum omnibus pertinenciis
+                        libertatibus<lb/> et asiamentis ad eam pertinentibus . et cum communi pastura dicte ville de
+                           halsington’ et cum libero introitu et exitu ad
+                           eandem pasturam . et ad dicta asiamenta Adeo integre
+                           libere<lb/> quiete et honorifice ab omni seculari seruicio exactione et demanda  sicut
+                           aliqua elemosina in regno scocie liberius quietius
+                           plenius et honorificencius tenetur aut possidetur .</cl> Et<lb/> si forte aliquis contra dictos abbatem et conuentum de melros super premissis
+                        mouerit calumpniam . et nos vel heredes nostri eos non
+                        defenderimus ita quod ipsos oporteat dictam terram
+                        amittere aut de ipsa per<lb/> iudicium eici . Nos et heredes nostri dabimus ipsi calumpniatori rationabilem
+                        extentam . in dominicis nostris . vel alibi in loco
+                        competenti ad valorem dicte terre . Et ita eidem in
+                        omnibus satisfa<lb/>ciemus quod dicti abbas et conuentus de Melr<ex>os</ex> . dictam terram quam dictus Magister . W . de grenlawe eis contulit liberam et
+                        quietam pacifice et continue in perpetuum retinebunt ac
+                        possidebunt<lb/> Nos autem ad omnia predicta facienda pro nobis et heredibus nostris corporale
+                        prestitimus iuramentum . et nosmetipsos et heredes
+                        nostros plenius obligauimus Subicientes nos et heredes
+                        nostros<lb/> iurisdiccioni episcopi Glasg’ . qui pro tempore fuerit ut preter potestatem
+                        regiam per quam debemus et uolumus coherceri  dictus
+                        episcopus nos et heredes nostros ad omnium predictorum
+                        obser<lb/>uanciam sublato omni iuris remedio et apellatione cessante per censuram
+                        ecclesiasticam valeat compellere .</cl> <cl type="sealing">Et vt hoc scriptum Robur firmitatis optineat  illud<lb/> sigilli nostri apposicione fecimus Roborari</cl> . Actum . Apud berwich quatrodecimo die aprilis . Anno regni domini Regis
+                     Alexandri . tricesimo quarto . <cl type="witnesses">Testibus . Magistro Gamell’<lb/> Dominis . Roberto de Ros . D<ex>aui</ex>D . de Graham . Roberto de Maneriis . Will<ex>elm</ex>o filio Comitis . Th’ . de Normanvilla . Ioh<ex>ann</ex>e Cumin . Henr<ex>cio</ex> de Graham . Nicholao cor<lb/>beth . Waltero filio Walteri senescalli . Roberto filio Comitis . Thom<ex>a</ex> de boscho . Bernardo de Ripelae . et Multis aliis .</cl></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

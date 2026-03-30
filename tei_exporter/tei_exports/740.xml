@@ -1,0 +1,86 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-740">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/286</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:27:06.488381+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">740</idno>
+        <idno type="textcontent">752</idno>
+        <idno type="transcription_textcontentxml">740</idno>
+        <idno type="translation_textcontentxml">741</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/286</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/286</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T08:27:06.488381+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T08:27:06.488381+00:00" status="published">transcription moa=740 status=live modified=2021-04-07 08:27:06.488381+00 | translation moa=741 status=live modified=2021-04-07 08:27:03.845592+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris ecclesie filiis presentibus et futuris <cl type="intitulatio">Will<ex>el</ex>mus de Vesci</cl> <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Nouerit uniuersitas uestra</cl><lb/> <cl type="disposition">me concessisse et hac mea carta confirmasse . diuine pietatis intuitu et pro
+                  salute mea et pro salute omnium<lb/> antecessorum et successorum meorum deo et ecclesie sancte Marie de Melros et
+                     monachis ibidem deo seruienti<lb/>bus . illas duas carucatas terre . quarum unam dedit eis Patricius de Ridale .
+                     et aliam Walterus<lb/> filius eius . In territorio de Lillescliue . Cum pasturis et pertinentiis suis .
+                     per easdem diuisas que con<lb/>tinentur . In cartis predictorum patricii et Walteri filii eius . <cl type="holding">Et uolo et concedo ut predicti monachi . predicas ter<lb/>ras et pasturas habeant et teneant . In liberam puram et perpetuam elemosinam .
+                        Cum omnibus ai<lb/>siamentis suis et libertatibus . ita Libere . quiete . plene et honorifice 
+                        sicut aliquam elemosinam . Liberi<lb/>us . quietius . plenius et honorificentius In regno scotie tenent et possident .
+                        Saluo mihi et heredi<lb/>bus meis seruicio ad ipsas terras pertinente de prefatis patricio et Waltero et
+                        eorum heredibus</cl> . <cl type="warrandice">Ego etiam<lb/> et heredes mei Manutenebimus et warantizabimus predicta omnia predictis monachis
+                        . vt ea habe<lb/>ant et teneant et utantur modis omnibus quibus eis melius et utlius uisum fuerit
+                         sicut predicto<lb/>rum donatorum carte et confirmationes Margerie matris mee quas inde habent
+                        predicti monachi tes<lb/>tantur .</cl></cl> <cl type="witnesses">Hiis Testibus . Domino . I . de Mackuswel . Rob’ de Ros . Waldeuo Marscallo .
+                  Will<ex>elm</ex>o Latim<ex>er</ex><lb/> Rad’ Bardolf . Simone de horsley . Rob’ de Heuurth’ et Multis Aliis</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church present and future <cl type="intitulatio">William de Vescy</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Know me all of you</cl> <cl type="disposition">to have granted and by this my charter to have confirmed, moved by love of God
+                  and for the salvation of my soul and for the salvation of all
+                  my ancestors and successors, to God and to the church of St
+                  Mary at Melrose and to the monks in that place serving God,
+                  the two ploughgates of land, one of which Patrick of Ryedale
+                  gave to them, and the other Walter his son, in the territory
+                  of Lilliesleaf, with the pastures belonging to them, by the
+                  same boundaries which are contained in the charters of the
+                  aforesaid Patrick and Walter his son. <cl type="holding">And I will and grant that the aforesaid monks have and hold the aforesaid lands
+                     and pastures in free, pure and perpetual alms, with all
+                     their easements and liberties, as freely, quitely, fully
+                     and honourably as they hold and possess any alms freely,
+                     quitely, fully and honourably in the kingdom of Scotland,
+                     reserving to myself and my heirs the service pertaining to
+                     those lands from the aforesaid Patrick and Walter and
+                     their heirs.</cl> <cl type="warrandice">I and my heirs also maintain and warrant all things aforesaid to the aforesaid
+                     monks, that they have and hold and use them by all means
+                     which seem best and useful to them, just as the charters
+                     of the aforesaid donors and confirmations of Margery my
+                     mother which the aforesaid monks have thereupon bear
+                     witness</cl>.</cl> <cl type="witnesses">With these witnesses, the lord J(ohn) of Maxwell, Robert of Roos, Waldef the
+                  marischal, William the latimer (interpreter), Ralph Bardolf,
+                  Simon of Horsley, Robert of Airth, and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,76 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-766">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5965</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 21:10:50.67455+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">766</idno>
+        <idno type="textcontent">780</idno>
+        <idno type="transcription_textcontentxml">766</idno>
+        <idno type="translation_textcontentxml">767</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5965</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5965</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T21:10:50.67455+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T21:10:50.67455+00:00" status="approved">transcription moa=766 status=reviewed modified=2022-10-31 21:10:50.66686+00 | translation moa=767 status=reviewed modified=2022-10-31 21:10:50.67455+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. Omnibus Christi fidelibus ad quos presentes littere peruenerint . <cl type="intitulatio">Simon filius Elye de Prendergest</cl> <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Nouerit vni<lb/>uersitas uestra</cl> <cl type="disposition">me dedisse . concessisse . et hac presenti carta mea confirmasse pro me et
+                  heredibus meis in perpetuum . deo et<lb/> beato Cuthberto et beate Ebbe de Coldingham . et monachis ibidem deo
+                     seruientibus et seruituris . pro salute anime mee et ante<lb/>cessorum meorum . et pro quadam summa pecunie quam prior et conuentus de
+                     Coldingham mihi in necessitate mea premanibus pacauerunt<lb/> decem acras terre in cultura de Coteflat cum vno tofto et crofto vnius accre
+                     terre . ex occidentali parte gardini Ricardi<lb/> fratris mei que Idem Ricardus mihi dedit pro homagio et seruicio meo . <cl type="holding">Tenend<ex>as</ex> et habend<ex>as</ex> dictis monachis et eorum successoribus<lb/> adeo libere et quiete sicut ego aliquo tempore predictam terram tenui</cl> . <cl type="warrandice">Ego vero Simon et heredes mei predictam terram<lb/> cum omnibus pertinenciis suis infra villam et extra sine aliquo retinemento
+                        predictis monachis contra omnes homines<lb/> et feminas in perpetuum Warantizabimus .</cl></cl> <cl type="sealing">Et vt hec mea donacio . et carte confirmacio robur optineant<lb/> perpetuum huic carte sigillum meum apposui .</cl> <cl type="witnesses">Hiis testibus . dominis . d<ex>aui</ex>d de Graham tunc vic<ex>ecomite</ex> de Berewic . d<ex>aui</ex>d . de<lb/> hadingtona . Rad<ex>ulfo</ex> Nobili . Alan<ex>o</ex> de Harecar’ . Will<ex>elmo</ex> de Scremerstona . Ad<ex>am</ex> de Morh’ . Rob<ex>erto</ex> de Pauxtona . Ad<ex>am</ex> fil<ex>io</ex> Ioh<ex>annis</ex><lb/> de Aytona . Ad<ex>am</ex> filio Walteri de eadem . Patricio Scot . Patricio filio Coleman de Aldecambus et
+                     ALIIS .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful to whom these present letters shall have come, <cl type="intitulatio">Simon son of Elias of Prenderguest</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Know me, all of you,</cl> <cl type="disposition">to have given, granted, and by this my present charter to have made firm, for
+                  myself and for my heirs for ever, to God and to the blessed
+                  Cuthbert and the blessed Æbbe of Coldingham, and to the monks
+                  in that place serving God now and in the future, for the
+                  salvatino of my soul and of my ancestors', and in return for
+                  a certain sum of money which the prior and convent of
+                  Coldingham paid to me as a downpayment in my need, ten acres
+                  of land in the ploughland at <ex>Coteflat</ex> with one toft and croft of one acre of land on the western side of my brother
+                     Richard's garden, which the same Richard gave to me in
+                     return for my homage and service; <cl type="holding">for the said monks and their successrs to hold and to have as freely and quitely
+                     as I held the aforesaid land at any time.</cl> <cl type="warrandice">And I, Simon, and my heirs shall warrant the aforesaid land to the aforesaid
+                     monks against all men, with all its pertinents inside and
+                     outside the toun, without any withholding.</cl></cl> <cl type="sealing">And so that this my donation and confirmation should possess the perpetual
+                  strength of a charter, I have applied my seal to this
+                  charter.</cl> <cl type="witnesses">With these witnesses, the lords David of Graham, then sheriff of Berwick, David
+                  of Haddington, Ralph Noble, Alan of Harcarse, William of
+                  Scremerston, Adam of Morham, Robert of Paxton, Adam son of
+                  John of Ayton, Adam son of Walter of the same, Patrick Scot,
+                  Patrick son of Colman of Oldcambus, and others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

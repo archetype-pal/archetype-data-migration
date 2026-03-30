@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-720">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/102</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-09-03 21:38:33.506984+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">720</idno>
+        <idno type="textcontent">731</idno>
+        <idno type="transcription_textcontentxml">720</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/102</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/102</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-09-03T21:38:33.506984+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-09-03T21:38:33.506984+00:00" status="draft">transcription moa=720 status=draft modified=2017-09-03 21:38:33.506984+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="notification">Sciant presentes . et futuri quod comtrouersia que uertebatur inter . Patricium
+                  Comitem de Dunbar . et Domum de Melr<ex>os</ex> super pastura uersus<lb/> occidentem a ledre per amicabilem compositionem conquieuit in hunc modum .
+                     Videlicet quod predictus Comes consentiente . et
+                     concedente patricio<lb/> filio suo et herede . in presentia . W . illustris Regis Scott<ex>orum</ex> . et Dauid Comitis . fratris eiusdem Regis . et aliorum proborum hominum . dedit
+                     . con<lb/>cessit . et carta sua confirmauit in liberam . et puram . et perpetuam
+                     elemosinam deo . et ecclesie sancte Marie de Melr<ex>os</ex> . et Monachis ibidem<lb/> deo seruientibus . totam terram arabilem . que dicitur Sorulesfeld . sicut eam
+                     tenuit . Will<ex>elmu</ex>s sorules . ex parte occidentali a leder . uersus<lb/> grangiam predictorum Monachorum . Et preterea concessit eis pasturam perpetuo
+                     possidendam quintentis auibus . et septies . uiginti .
+                     aueriis . bobus<lb/> scilic<ex>et</ex> uel uaccis prout eis placuerit in bosco et extra boscum . ubique inter uiam qua
+                     itur uersus Louueder per calceias . que uia dicitur<lb/> Malcholmisrode  et leder . et a diuisis de Cadesley usque in fauhopburne .
+                     saluo comiti . et heredibus suis boscho tamen in arbo<lb/>ribus . Conuenit etiam inter eois quod neque Monachi neque comes uel heredes sui
+                     habebunt domos . uel bercharias . uel sepes . uel<lb/> Logias . uel faldas . uel aliquas mansiones infra predictam pasturam . nec
+                     arabitur a quoquam illorum excepta terra arabili que<lb/> dicitur sorulesfeld . que propria est Monachorum ex donationem predicti comitis
+                     . Nec aueria comitis predictam uiam transgredientur . nec<lb/> ipse comes uel heredes sui uel homines sui . aliquid sibi iuris ultra dictam
+                     uiam uendicabunt . Redibun etiam aueria dicti<lb/> comitis singulis noctibus ad uillam de hercheldune nisi tempestate uel
+                     inundatione aquarum impediantur . Et sciendum quod<lb/> aueria Monachorum de proximis uacariis et bercariis intrandi et exeundi liberos
+                     exitus et ingressus ad pasturam suam habebunt .<lb/> Idem uero comes concessit insuper predictis Monachis de Melr<ex>os</ex> sexies . uiginti . charetas de pecis singulis annis in petria proxima<lb/> de scabbedraburth .</cl> <cl type="sealing">Ad maiorem etiam securitatem domnus episcopus Morauie qui postremus in hac causa
+                  fuit a summo pon<lb/>tifice iudex delegatus et Henricus abbas de kelchou in testimonium pacis et
+                     concordie facte sua sigilla utrique parti huius<lb/> cirographi apposuerunt .</cl> Hec compositio facta fuit in plena curia domini Regis apud selechirche anno
+                  domini Millesimo Ducentesimo octauo .<lb/> in octauis apostolorum petri et pauli . <cl type="witnesses">His test<ex>ibus</ex> . Domino nostro Will<ex>elmo</ex> Rege . Alex<ex>andro</ex> filio Regis . Rad<ex>ulfo</ex> dune<ex>lmensi</ex> episcopo . Bric’ episcopo Morau’ .<lb/> Comite d<ex>aui</ex>d fratre regis . Eust<ex>acio</ex> de vesci . Will<ex>elmo</ex> et Oliuero  Capellanis Regis . Rob<ex>erto</ex> de london’ filio Regis . Will<ex>elmo</ex> de bosco . Hug<ex>one</ex> de prebenda .<lb/> Adam de Kingor<ex>n</ex> . Gileb’ de striuel’  clericus domini Regis . Geruas’ auenel . d<ex>aui</ex>d de lindes’ . Hug<ex>one</ex> de normanv’ . Will<ex>elmo</ex> de ualon’ .<lb/> Phil’ de mubray .Ing<ex>eramo</ex> de ball’ . d<ex>aui</ex>d <persName><roleName>marescallo</roleName></persName> . Rog<ex>ero</ex> de mortuo mari . Patricio filio comitis . Patric<ex>io</ex> de Witheram . Nesio de Walg<lb/>th’ . Rol’ de grenel’ . Rog<ex>er</ex> de merl’ . Phil’ de coleum . Will<ex>elmo</ex> de coleum . Thoma fraser . et Multis aliis .</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

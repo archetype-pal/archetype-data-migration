@@ -1,0 +1,88 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-595">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/91</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-24 13:35:57.906787+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">595</idno>
+        <idno type="textcontent">603</idno>
+        <idno type="transcription_textcontentxml">595</idno>
+        <idno type="translation_textcontentxml">594</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/91</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/91</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-02-24T13:35:57.906787+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-02-24T13:35:57.906787+00:00" status="published">transcription moa=595 status=live modified=2017-02-24 13:35:57.906787+00 | translation moa=594 status=live modified=2017-02-24 13:35:55.869298+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. W . dei gratia Rex Scott<ex>orum</ex></cl> . Episcopis . Abbatibus . Com<ex>itibus</ex> . Baron<ex>ibus</ex> . Iust<ex>iciis</ex> . vicecom<ex>itibus</ex> . prepositis . Ministris . et Omnibus probis Hominibus tocius su<lb/>e terre clericis et laicis <cl type="salutation">Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> me concessisse et hac carta mea confirmasse deo et Ecclesie<lb/> Sancte Marie de Melros et monachis ibidem deo seruientibus donacionem quam
+                     Robertus de Berkel' et cecilia filia<lb/> Liulfi sponsa eius eisdem monachis fecerunt  de illa carrucata terre In
+                     territorio de Mackerstun’ qua<lb/> predictus Robertus prefatis monachis perambulauit . et per easdem diuisas que
+                     continentur In carta prenominati<lb/> Rob<ex>erti</ex> et cecilie sponse sue . et cum communibus aisiamentis eiusdem uille tam In
+                     pasturis quam in aisiamentis focha<lb/>lium . et petram quadrarii de Alwerdene ad sufficienciam ad edificia domus de
+                     Melr’ edificanda sicut in carta<lb/> predictorum continentur . <cl type="holding">Quare uolo et firmiter precipio ut predicti monachi prefatam terram cum omnibus
+                     suprascrip<lb/>tis aisiamentis habeant et possideant In liberam et puram et perpetuam
+                        elemosinam ita libere et quiete ple<lb/>narie et honorifice  sicut aliqua alia elemosina In toto Regno meo liberius et
+                        quietius plenius et honorificencius tenetur et
+                        possidetur . et sicut carta predicta Roberti de Berk’
+                        et cecilie sponse sue testatur et<lb/> confirmat saluo seruicio meo . et saluis decimis ecclesie de Mackestune’</cl> .</cl> <cl type="witnesses">Test’ . Hug’ Cancellario meo<lb/> Roberto et Rad’ capellanis meis . Ric’ de prebenda clerico meo . Roberto de
+                     london’ . Will<ex>elm</ex>o de Lindes’ . Mal<lb/>colm’ filio Comitis Dunec’ . Will<ex>elm</ex>o Cumin . Will<ex>elm</ex>o de haia . Will<ex>elmo</ex> Giffard’ . Waltero de Berkel’ Camerario<lb/> Herberto de Camera .</cl> APVD FORFARE</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex> by the grace of God king of Scots</cl> to the bishops, abbots, earls, barons, justices, sheriffs, provosts, officials,
+                     and all worthy men of all his land clerk and lay <cl type="salutation">greeting</cl></cl><cl type="disposition">. <cl type="notification">Let present and future</cl> know me to have granted and by this my charter to have made firm to God and to
+                     the church of St Mary at Melrose and to the monks in that
+                     place serving God the donation which Robert of Berkeley
+                     and his spouse Cecilia the daughter of Liulf made to the
+                     same monks of the ploughgate of land in the territory of
+                     Maxton which the aforesaid Robert perambulated for the
+                     aforementioned monks and by the same bounds which are
+                     contained in the charter of the aforenamed Robert and his
+                     spouse Cecilia, and with all easements of the same toun as
+                     well in pastures as in easements of firewood, and stone of
+                     the quarry of Alwerdene sufficient for the building of the
+                     edifice of the monastery of Melrose, just as it is
+                     contained in the charter of the aforesaid. <cl type="holding">Wherefore I will and firmly enjoin that the aforesaid monks have and possess the
+                     aforementioned land with all the above-written easements
+                     in free and pure and everlasting alms as freely and
+                     quitely, fully and honourably, as any other alms in all my
+                     kingdom is as freely and quitely, fully and honourably
+                     held and possessed, and just as the charter of the
+                     aforesaid Robert and his spouse Cecilia bears witness and
+                     affirms; saving my service, and saving the teinds of the
+                     church of Maxton</cl>.</cl> <cl type="witnesses">As witnesses: Hugh my chancellor; Robert and Ralph my chaplains; Richard de
+                  Prebenda my clerk; Robert of London; William of Lindsay;
+                  Malcolm son of Earl Duncan; William Comyn; William de la
+                  Haye; William Giffard; Walter of Berkeley, chamberlain;
+                  Herbert Chalmers;</cl> AT FORFAR.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,71 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-332">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Add. Ch. 76749 (previously, BM Loans, 29/355)</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:17:16.885967+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">332</idno>
+        <idno type="textcontent">332</idno>
+        <idno type="transcription_textcontentxml">332</idno>
+        <idno type="translation_textcontentxml">333</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 76749 (previously, BM Loans, 29/355)</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Add. Ch. 76749 (previously, BM Loans, 29/355)</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:17:16.885967+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:17:16.885967+00:00" status="published">transcription moa=332 status=live modified=2021-04-05 08:17:14.913077+00 | translation moa=333 status=live modified=2021-04-05 08:17:16.885967+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>Robertus</persName> de londoniis</cl> omnibus hominibus suis tam futuris quam presentibus clericis ac laicis . francis
+                     et anglicis . <cl type="salutation">salutem</cl></cl> . <cl type="notification">No<lb/>tum sit omnibus tam futuris quam presentibus</cl> <cl type="disposition">quod ego <persName>Robertus</persName> de londoniis dedi et concessi . et hac mea carta confirmaui <persName>Waltero</persName><lb/> de berkelaie cognato meo unam carrucatam terre in lassedwine . Et plainmalaur
+                     mea terram de tindale pro hominio et ser<lb/>uicio suo . in feudo et hereditate . <cl type="holding">sibi et heredibus suis de me et heredibus meis tenendam . libere et quiete .
+                     plenarie et honorifice . in<lb/> bosco et in plano . in pratis et pascuis . in aquis et molendinis . reddendo
+                        mihi et heredibus meis annuatim duos ancipitres soros
+                        pro<lb/> seruicio quod ad me pertinet . saluo seruicio Regis</cl></cl> . <cl type="witnesses">his testibus . <persName>Will<ex>elm</ex>o</persName> filio odardi . et <persName>Will<ex>elm</ex>o</persName> de foscote . et <persName>Will<ex>elm</ex>o</persName> de Cvningburc .<lb/> et <persName>mauricio</persName> de Reigni . et <persName>Henrico</persName> filio <persName>iordani</persName> . et <persName>Will<ex>elm</ex>o</persName> clerico de chausi . et <persName>Gregorio</persName> persona . et <persName>Rogero</persName> clerico qui hanc cartam<lb/> dictatuit . et <persName>Ricardo</persName> de cameis . et <persName>Will<ex>elm</ex>o</persName> de thoeni . et <persName>Radulfo beleth</persName> . et <persName>Macus</persName> prepostio . et <persName>Roberto bochart</persName> . et <persName>hosmundo</persName><lb/> famulo . et <persName>Waltero</persName> filio <persName>Gaufridi</persName> . et <persName>Paruo consilio</persName> . et <persName>Vnwine</persName> .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Robert of London</cl>, to all his own men, future as well as present, clerk and lay, French and
+                     English, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Be it known to all, future as well as present, that</cl> I, Robert of London, gave, conceded, and by this my charter made firm, to Walter
+                     of Berkeley my cousin, one ploughgate of land in
+                     Lessudden; and Plenmeller, my land of Tynedale; in return
+                     for his homage and service, in feu and heritage; <cl type="holding">for him and his heirs to hold of me and my heirs, free and quit, fully and
+                     honourably, in wood and in plain, in meadows and pastures,
+                     in waters and mills, rendering to me and my heirs annually
+                     two sore sparrowhawks by way of the service which pertains
+                     to me, reserving the king's service</cl>.</cl> <cl type="witnesses">With these as witnesses: William son of Odard; William of Forscote; William of
+                  Conisbrough; Maurice de Reingny; Henry son of Jordan; William
+                  the clerk of Chausi; Gregory the parson; Roger the clerk, who
+                  composed this charter; Richard de Cameis; William de Tosny;
+                  Ralph Beleth; Maccus the provost; Robert Bochart; Osmund the
+                  servant; Walter son of Geoffrey; 'Paruum consilium' [i.e.
+                  'Modest advice']; and Unwine.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,66 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-200">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/236</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-02 18:17:06.917881+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">200</idno>
+        <idno type="textcontent">200</idno>
+        <idno type="transcription_textcontentxml">200</idno>
+        <idno type="translation_textcontentxml">201</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/236</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/236</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-03-02T18:17:06.917881+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-03-02T18:17:06.917881+00:00" status="published">transcription moa=200 status=live modified=2017-03-02 18:17:04.298971+00 | translation moa=201 status=live modified=2017-03-02 18:17:06.917881+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">.W. dei gratia Rex Scott’ . Omnibus probis hominibus tocius terre sue Salutem.</cl> <cl type="disposition">Sciatis me concessisse<lb/> abbati ⁊ Conuentui de Sancta cruce ut nullus super eos aut super homines suos
+                     namum capiat<lb/> nisi pro dominicis debitis suis aut pro debitis hominum suorum . Quare prohibeo
+                     firmiter ne quis<lb/> uel in Scotia . uel apud Insulam de May . cum homines predicti Abbatis illuc ad
+                     piscandum uenerint  super<lb/> canonicos de sancta cruce aut super eorum homines namum capiat nisi sit pro
+                     dominicis debi<lb/>tis suis . aut pro debitis hominum suorum . Super meam forisfacturam .</cl> <cl type="witnesses">Test<ex>ibus</ex> . Hug’ . Cancellario<lb/> meo . Ric’ . de Prebenda clerico meo</cl> Apud Hadint’.</p>
+      </div>
+      <div type="translation">
+        <p>W<ex>illiam</ex> by the grace of God king of Scots, to all worthy men of the whole of his land,
+                  Greeting: Know that I have granted to the abbot and convent
+                  of Holyrood that no-one may take poinds from them or from
+                  their men unless for their own debts or for the debts of
+                  their men. Wherefore I firmly forbid that anyone either in
+                  Scotia, or on the Isle of May when the men of the aforesaid
+                  abbot come there to fish, may take poinds from the canons of
+                  Holyrood or from their men unless it be for their demesne
+                  debts, or for the debts of their men, on pain of our
+                  forfeiture. As witnesses, Hugh my chancellor, Richard de
+                  Prebenda my clerk. At Haddington.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

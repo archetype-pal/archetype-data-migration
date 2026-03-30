@@ -1,0 +1,71 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-126">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 81</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:01.700552+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">126</idno>
+        <idno type="textcontent">126</idno>
+        <idno type="transcription_textcontentxml">126</idno>
+        <idno type="translation_textcontentxml">127</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 81</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 81</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:28:01.700552+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:01.700552+00:00" status="published">transcription moa=126 status=live modified=2017-01-30 19:28:01.700552+00 | translation moa=127 status=live modified=2016-06-07 15:11:42.774104+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis sancte matris ecclesie filiis <cl type="intitulatio">Ricardus dei gratia duncheldensis episcopus</cl> <cl type="salutation">salutem ⁊ episcopalem <lb/> benedictionem</cl></cl> . <cl type="arenga">Quoniam ad nostrum spectat officium sancte religionis cultum amplificare</cl>  <lb/> <cl type="notification">noscant tam posteri quam presentes</cl> <cl type="disposition">me concessisse &amp; hac mea carta confirmasse abbati de <lb/> dunf<ex>er</ex>mel’ ⁊ monachis ibidem deo seruientibus donationem regis malcholmi ⁊ an<lb/>dree episcopi katenensis secundum quod eorum carte testantur ecclesiam sancte ∙
+                     trinitatis de dunchelde <lb/> ⁊ omnes terras iuste ad eam pertinentes liberas ⁊ quietas ab omni exactione
+                     \tam/ ecclesiastice quam secularis <lb/> persone saluo episcopali iure . Concedo etiam eis conuersationem in episcopatu
+                     meo . ⁊ ut di<lb/>uinum exerceant officium ⁊ subditorum suorum curam habeant animarum ⁊ ut
+                     conuersan<lb/>tes in diocesi mea a me quod ad christianitatem pertinerit  accipiant .</cl> <cl type="witnesses">Testibus . Matheo archidi<lb/>acono . \sancti . Andree/ Bricio priore de insula Michaele clerico . Magistro
+                     matheo . &amp; Ioh<ex>anne</ex> fra<lb/>tre suo . Roberto dapifero episcopi Radulfo capellano . Thoma presbitero .
+                     Murdac cle<lb/>rico . Abraham paruo .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church <cl type="intitulatio">Richard, by the grace of God bishop of Dunkeld</cl>, <cl type="salutation">sends greeting and episcopal blessing</cl>.</cl> <cl type="arenga">Since to augment the worship of holy religion belongs to our office,</cl> <cl type="notification">let those to come as well as those present know</cl> <cl type="disposition">that I have granted and by this my charter made firm, to the abbot of
+                  Dunfermline and to the monks serving God in that place, the
+                  donation of King Malcolm and of Andrew bishop of Caithness,
+                  according to that which is attested in their charters: the
+                  church of the Holy Trinity at Dunkeld and all the lands
+                  rightfully belonging to it, free and quit from all exaction
+                  of the ecclesiastical as well as of the secular person,
+                  saving episcopal right. I also allow them their mode of
+                  living in my bishopric, and that they may perform their
+                  divine office and have the cure of souls of those under their
+                  authority; and that, living in my diocese, they may receive
+                  from me that which concerns Christianity.</cl> <cl type="witnesses">As witnesses: Matthew, archdeacon of St Andrews; Brice, prior of Inch<ex>colm</ex>; Michael the clerk; Master Matthew; and John, his brother; Robert the bishop’s
+                     steward; Ralph the chaplain; Thomas the presbyter; Murdoch
+                     the clerk; Abraham Small.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

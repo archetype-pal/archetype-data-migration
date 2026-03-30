@@ -1,0 +1,75 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-294">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/36</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-07-20 12:11:18.52272+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">294</idno>
+        <idno type="textcontent">294</idno>
+        <idno type="transcription_textcontentxml">294</idno>
+        <idno type="translation_textcontentxml">295</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/36</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/36</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-07-20T12:11:18.52272+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-07-20T12:11:18.52272+00:00" status="published">transcription moa=294 status=live modified=2021-07-20 12:11:18.52272+00 | translation moa=295 status=live modified=2021-04-06 11:31:18.310406+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte matris Ecclesie filiis presentibus et futuris <cl type="intitulatio"><persName>Raderic</persName> Mac<persName>Gillescop</persName> . et <persName>Cristiana</persName> sponsa eius filia <persName>Rogeri</persName><lb/> de Scalebroc</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis nos</cl> concessisse et hac nostra Carta confirmasse deo et Ecclesie de Melr’ et monachis<lb/> ibidem deo seruientibus in liberam et puram et perpetuam elemosinam donationem <persName>Rogeri</persName> de Scaleb<ex>ro</ex>c quam fecit eidem<lb/> ecclesie et monachis predictis de piscatura de Don super harenam et una salina
+                     cum terris et toftis et Omnibus<lb/> aisiamentis que continentur in Carta predicti <persName>Rogeri</persName> <cl type="holding">tenenda et possidenda in perpetuum ita libere et quiete plenarie<lb/> et honorifice sicut aliqua elemosina liberius et quietius plenius et
+                        honorificentius tenetur uel possidetur et sicut Carta
+                        predicti<lb/> <persName>Rogeri</persName> testatur</cl> .</cl> <cl type="warrandice">Et nos et heredes nostri manutenebimus et warrantizabimus eis omnia predicta et
+                  adquietabimus ea<lb/> erga omnes homines de omni seruitio in perpetuum .</cl> <cl type="disposition">Concessimus etiam eisdem monachis et hac Carta confirmauimus<lb/> totam terram de Drumteisuiene et de Alesburc et de Authenephur . quantum ad nos
+                     pertinet <cl type="holding">tenendam et possi<lb/>dendam in perpetuum ita libere et quiete et honorifice sicut carta predicti <persName>Rogeri</persName> et confirmatio domini nostri <persName>Dun<ex>ecani</ex></persName> . testan<lb/>tur</cl> .</cl> <cl type="witnesses">Teste eodem <persName>Dun<ex>ecano</ex></persName> . <persName>Will<ex>elmo</ex></persName> . vicec<ex>omite</ex> . de nouo Castello super Ar . <persName>Waltero</persName> clerico Regis <persName>Ioh<ex>ann</ex>e</persName> clerico . <persName>Ioh<ex>anne</ex></persName> fratre<lb/> <persName>Vdardi</persName> <persName>Gilleb’</persName> mac <persName>Kenedi</persName> . <persName>Ewein</persName> mac <persName>Alewi<supplied>n</supplied></persName> . <persName>Gillenem</persName> mac<persName>colem’</persName> .</cl> <cl type="sealing">Et quia sigillum proprium non<lb/> habuimus Dominus <persName>Dunec<ex>anus</ex></persName> . rogatu nostro sigillum suum pro nobis huic carte nostre apposuit .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, present and future, <cl type="intitulatio">Rory mac Gillespie and Christiana his spouse, the daughter of Roger of
+                     Skelbrooke</cl>, <cl type="salutation">send Greeting</cl>:</cl> <cl type="disposition"><cl type="notification">Know us</cl> to have granted, and by this our charter to have made firm, to God and to the
+                     Church of Melrose and to the monks serving God in that
+                     place, in free and pure and perpetual alms, the donation
+                     of Roger of Skelbrooke which he made to the same church
+                     and monks aforesaid, of a fishery on the Doon above <ex>Harenam</ex>, and one saltpan, with lands and tofts and all easements that are contained in
+                     the charter of the aforesaid Roger, <cl type="holding">to be held and possessed for all time in this wise freely and quietly, fully and
+                     honourably, just as any alms is freely and quietly, fully
+                     and honourably held possessed, and just as the charter of
+                     the aforesaid Roger bears witness</cl>.</cl> <cl type="warrandice">And we and our heirs shall maintain and warrant all things aforesaid to them and
+                  we shall acquit them in respect of all men from every service
+                  for all time.</cl> <cl type="disposition">We have also granted to the same monks, and by this charter have made firm, the
+                  whole land of <ex>Drumteisuiene</ex> and of <ex>Alesburc</ex> and of <ex>Authenephur</ex>, so much as belongs to us, <cl type="holding">to be held and possessed for all time, in this wise freely and quietly and
+                     honourably, just as the charter of the aforesaid Robert
+                     and the confirmation of our lord Duncan bear witness.</cl></cl> <cl type="witnesses">As witness, the same Duncan, William the sheriff of Newcastle-upon-Ayr, Walter
+                  the king’s clerk, John the clerk, John the brother of Udard,
+                  Gilbert mac Kennedy, Ewen mac Alewine, Gilla na Náem mac
+                  Colmán.</cl> <cl type="sealing">And since we did not have our own seal, the lord Duncan, at our request, has set
+                  his seal to this charter for us.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

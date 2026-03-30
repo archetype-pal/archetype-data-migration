@@ -1,0 +1,59 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-890">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 574</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:12:05.494969+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">890</idno>
+        <idno type="textcontent">914</idno>
+        <idno type="transcription_textcontentxml">890</idno>
+        <idno type="translation_textcontentxml">891</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 574</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 574</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:12:05.494969+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:12:05.494969+00:00" status="approved">transcription moa=890 status=reviewed modified=2022-11-01 16:12:05.485737+00 | translation moa=891 status=reviewed modified=2022-11-01 16:12:05.494969+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">D . Rex Scot’ .</cl> Comitibus . Iustic’ . Baronibus . Vicecomitibus<lb/> Preposotis . Ministris . et Omnibus probis hominibus suis . Francis . et Angli<lb/>cis . totius terrę sue . t<supplied>am f</supplied>uturis . quam presentibus . <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me<lb/> <supplied>con</supplied>cessisse deo et Sancto Cutberto ... monachis de Coldineham .<lb/> ...oft cum domi<supplied>us</supplied>... ... ... ... quod Gilleb’ presbiter<lb/> Stichel de me tenuit ... ... mihi unoquoque anno<lb/> ii solidos . et per hoc scr<supplied>ipt</supplied>um libere ab ... ... alio seruicio . <cl type="holding">Concedo<lb/> etiam eis predictam terram ita ... ... tenere in feudo et in elemosinam</cl> .</cl><lb/> <cl type="witnesses">presentibus testibus hug<ex>one</ex> de Moruill’ . et Rob<ex>erto</ex> filio Widon<ex>is</ex> . et Swe<lb/>ing’ presbitero de fihswic’ .</cl> <cl type="dating">apud Rochesb<ex>urc</ex></cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">D<ex>avid</ex>, king of the Scots,</cl> to earls, justices, barons, sheriffs, provosts, officials, and all his worthy
+                     men, French and English, of his entire land, as much
+                     future as present, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have conceded to God and Saint Cuthbert [and to the monks of Coldingham a
+                     toft] with dwellings ... ... which Gilbert the priest of
+                     Stichill held of me [rendering] to me each year two
+                     shillings, and by this writing free from ... ... any
+                     service. <cl type="holding">I also grant to them the aforesaid land as ... ...to hold in feu and in alms</cl>.</cl> <cl type="witnesses">Present as witnesses: Hugh de Morville, Robert son of Guy, Swain the priest of
+                  Fishwick.</cl> <cl type="dating">At Roxburgh.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

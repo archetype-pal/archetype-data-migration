@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-397">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/120</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 14:56:56.403713+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">397</idno>
+        <idno type="textcontent">401</idno>
+        <idno type="transcription_textcontentxml">397</idno>
+        <idno type="translation_textcontentxml">398</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/120</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/120</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T14:56:56.403713+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T14:56:56.403713+00:00" status="published">transcription moa=397 status=live modified=2021-04-06 14:56:54.578593+00 | translation moa=398 status=live modified=2021-04-06 14:56:56.403713+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-size: 16.0pt; font-family: Junicode;"><cl type="address">Omnibus Sancte Matris Ecclesie filiis tam presentibus quam futuris  <cl type="intitulatio">Comes Patricius</cl> <cl type="salutation">Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciatis</cl> me<lb/> dedisse et hac mea carta confirmasse deo et ecclesie sancte Marie de Melros . et
+                        mona<lb/>chis ibidem deo seruientibus . pro animabus omnium antecessorum et successorum
+                        meorum . in liberam<lb/> et puram et perpetuam elemosinam . duas acras terre et dimidiam apud harecarres
+                        . <cl type="boundaries">scilicet<lb/> sicut fossatum circuit eandem terram</cl> . <cl type="holding">tenendas de me et heredibus meis . ita libere . quiete .<lb/> plenarie . et honorifice sicut ullam elemosinam liberius . quietius . plenius .
+                           et honorificen<lb/>tius in terra Reg<ex>is</ex> tenent et possident . ab omni terreno seruitio . et consuetudine . et exac<lb/>tione seculari omnino liberas et quietas in perpetuum</cl></cl> . <cl type="witnesses">His T . Rolland’ . de Rollan’ . Se<lb/>nesc<ex>allo</ex> . Bernardo . fresel . Gilleb<ex>erto</ex> . de Hom . Nez . Walt’ . Ketello . de letham .<lb/> Oliuero filio kylu . Patricio de fachenus . Gilleb<ex>erto</ex> . clerico meo . Petro de Witingeh’ .</cl></span>
+        </p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church as well present as future <cl type="intitulatio">Earl Patrick</cl> <cl type="salutation">sends greeting</cl></cl>. <cl type="disposition"><cl type="notification">Know</cl> me to have given and by this my charter to have made firm to God and to the
+                     church of St Mary at Melrose and to the monks serving God
+                     in that place, for the souls of all my ancestors and
+                     predecessors, in free and pure and perpetual alms, two and
+                     a half acres of land at Harcarse, that is, <cl type="boundaries">as the ditch encloses the same land</cl>, <cl type="holding">to be held of me and my heirs as freely, quitely, fully, and honourably as they
+                     hold and possess any alms freely, quitely, fully, and
+                     honourably in the king's land, free and quit from every
+                     earthly service and custom and secular exaction for ever</cl>.</cl> <cl type="witnesses">With these witnesses: Roland de Roland, steward; Bernard Fraser; Gilbert of
+                  Home; Ness of Walton; Ketill of Letham; Oliver, son of
+                  Kilvert; Patrick de Fachener; Gilbert, my clerk; Peter of
+                  Whittinghame.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

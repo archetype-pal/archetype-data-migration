@@ -1,0 +1,65 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-274">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/8</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-07-30 04:42:22.768171+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">274</idno>
+        <idno type="textcontent">274</idno>
+        <idno type="transcription_textcontentxml">274</idno>
+        <idno type="translation_textcontentxml">275</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/8</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/8</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2018-07-30T04:42:22.768171+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2018-07-30T04:42:22.768171+00:00" status="published">transcription moa=274 status=live modified=2018-07-30 04:42:22.768171+00 | translation moa=275 status=live modified=2017-03-21 18:18:32.008441+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">M . Rex Scot’</cl> Omnibus hominibus totius terre sue  Clericis et Laicis francis <supplied>et</supplied> anglicis <cl type="salutation">salutem</cl>.</cl> <cl type="notification">Sciatis</cl> <cl type="disposition">me conces<lb/>sisse . et hac mea carta confirmasse Ecclesie de Malros et fratribus ibidem deo
+                     seruientibus donacionem quam Gospatricus Comes fecit<lb/> de terra hertesheued . et de quadam salina pro salute animarum predecessorum
+                     suorum . sicut carta ipsius Gospatric<ex>i</ex> eis testatur.<lb/> Preterea eis confirmo terram quam de Edward<ex>o</ex> . fratre suo in firma tenent saluo seruicio meo <supplied>sicut</supplied> carta Edwardi testatur . et<lb/> omnia aisiamenta de terris suis sicut eorum carte testantur.</cl> <cl type="witnesses">Test<ex>ibus</ex> . Waltero Cancellario . Gospatrico Comite . Hug<ex>one</ex> de Moreuill’ . Ric’<lb/> filio suo . Tom’ de lundon’. Roberto foliot . Will<ex>elm</ex>o . de Sum<ex>er</ex>uill’ . D<ex>aui</ex>d . olifard . <persName>Rob<ex>er</ex>to Auenel</persName> . Henrico de perci<lb/> Nicholao clerico . Rad’ . namo .</cl> Apud Rochisburc</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">M<ex>alcolm</ex> king of Scots</cl> to all worthy men of the whole of his land, clerk and lay, French and English, <cl type="salutation">Greeting</cl>:</cl> <cl type="notification">Know</cl> <cl type="disposition">that I have granted and by this my charter made firm to the Church of Melrose
+                  and the brethren serving God there the donation which Earl
+                  Cospatric made of the land of Hartside, and of a saltpan, for
+                  the salvation of the souls of his ancestors, as the charter
+                  of Cospatric himself to them bears witness. I make firm, in
+                  addition, the land that they hold in ferme of Edward, his own
+                  brother, saving my service, as the charter of Edward bears
+                  witness, and all easements of their own lands as their
+                  charters bear witness.</cl> <cl type="witnesses">As witnesses, Walter the chancellor, Earl Cospatric, Hugh de Morville, Richard
+                  his son, Thomas of London, Robert Foliot, William de
+                  Somerville, David Oliphant, Robert Avenel, Henry de Percy,
+                  Nicholas the clerk, Ralph le Neym.</cl> At Roxburgh.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-23">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 597</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:37:09.668257+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">23</idno>
+        <idno type="textcontent">23</idno>
+        <idno type="transcription_textcontentxml">23</idno>
+        <idno type="translation_textcontentxml">24</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 597</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 597</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T20:37:09.668257+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T20:37:09.668257+00:00" status="approved">transcription moa=23 status=reviewed modified=2022-10-31 20:37:09.648562+00 | translation moa=24 status=reviewed modified=2022-10-31 20:37:09.668257+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">W . Rex Scott<ex>orum</ex> .</cl> Omnibus probis hominibus tocius terre sue <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> me <lb/> Concessisse et hac carta mea Confirmasse Monachis de Goldincham Fiswich cum omni<lb/>bus ad illam iuste pertinentibus in terris et aquis . et dimidiam prendergest .
+                     et terram quam Swein <lb/> presbiter de fiswic habuit in Goldincham . et lummesdene . quas terras Swein
+                     presbiter de fiswic <lb/> in presencia Comitis henrici patris mei reddidit illis et quietas clammauit. <cl type="holding">Quare uolo ut predicti monachi prenominatas terras teneant ita libere et quiete
+                     plenarie et honorifice . sicut <lb/> carta Comitis henrici patris mei testatur et Confirmat.</cl> </cl><cl type="witnesses">Test<ex>ibus</ex> . Eng’ episcopo de Glasgu .<lb/> Ric<ex>ardo</ex> cumi<ex>n</ex> . Dolph’ capell<ex>ano</ex> . Rob<ex>er</ex>to de Sancto Mich<ex>ele</ex> . Walt<ex>er</ex>o de berkel’ . Hug<ex>one</ex> clerico meo . <lb/> Ric<ex>ardo</ex> clerico . </cl><cl type="dating">apud Selesch’.</cl></p>
+      </div>
+      <div type="translation">
+        <p>
+          <cl type="address"><cl type="intitulatio">William, king of the Scots,</cl> to all the worthy men of his entire land, <cl type="salutation">greeting.</cl> </cl>
+          <cl type="disposition"><cl type="notification">Let present future know</cl> me to have conceded, and by this my charter to have made firm, to the monks of
+                     Coldingham, Fishwick with all things justly pertaining to
+                     it in lands and waters, and half of Prenderguest, and the
+                     land which Swain the priest of Fishwick had in Coldingham
+                     and Lumsdaine, those lands which Swain the priest of
+                     Fishwick gave back to them and quitclaimed in the presence
+                     of the Earl Henry my father. <cl type="holding">Wherefore I will that the monks may hold the forenamed lands as freely and
+                     quitly, fully and honourably, as the charter of the Earl
+                     Henry my father bears witness and affirms.</cl> </cl>
+          <cl type="witnesses">As witnesses: Ingram, bishop of Glasgow; Richard Comyn; Dolphin the chaplain;
+                  Robert de Saint-Michel; Walter de Berkeley; Hugh, my clerk;
+                  Richard the clerk. </cl>
+          <cl type="dating">At Selkirk.</cl>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

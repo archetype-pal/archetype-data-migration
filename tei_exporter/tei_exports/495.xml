@@ -1,0 +1,78 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-495">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/223</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:29.00734+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">495</idno>
+        <idno type="textcontent">502</idno>
+        <idno type="transcription_textcontentxml">495</idno>
+        <idno type="translation_textcontentxml">496</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/223</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/223</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:29.00734+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:29.00734+00:00" status="draft">transcription moa=495 status=draft modified=2017-01-30 19:28:29.00734+00 | translation moa=496 status=draft modified=2016-08-10 15:10:12.057623+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;"><cl type="address">Vniuersis christi fidelibus presens scriptum visuris uel audituris . <cl type="intitulatio">Alexander de Setun Miles filius Domini Seyri de Setun</cl> <cl type="salutation">Salutem in domino</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit vniuersitas uestra</cl> . . . <supplied>de</supplied><lb/>disse . concessisse . et hac presenti carta mea confirmasse . Deo et Ecclesie
+                     sancte Marie de Melros et Monachis ibidem deo seruientibus
+                     et inperpetuum seruituris . . .<lb/> omnium antecessorum et successorum meorum . et pro salute mea et vxoris mee . et
+                     heredum meorum . totam terram quam habui in territorio de
+                     Ruchelau iuxta aquam de . . .<lb/> ex utraque parte eiusdem aque . <cl type="boundaries">per has diuisas . Incipiendo ad Beleforde ultra superius stagnum Molendini de
+                     Eddemundistun . et inde ascendendo usque ad Gray<lb/>cragge . et de Graycragge uersus orientem . per pedem condossi . usque ad altam
+                        uiam . et sic per transuersum alte uie descendendo
+                        usque Crokepolhou . . . sic per<lb/> pedem condossi descendendo . usque ad Salwildmuthe . vbi Salwild cadit in Bele</cl> . totam hanc terram . et quicquid infra predictas diuisas . et terram Gran<lb/>gie de Eddemundistun continetur sine aliquo retenemento dedi et concessi pro me
+                     et heredibus meis . eisdem Monachis . <cl type="holding">Tenendam et habendam in liberam .<lb/> puram et perpetuam elemosinam . adeo libere . quiete . plenarie et honorifice .
+                        sicut aliqua elemosina in Regno Scocie . liberius .
+                        quietius . plenius . et honorifi<lb/>cencius tenetur uel possidetur .</cl> Et pro bono pacis habende inter predictos Monachos . conuersos et seruientes
+                     Grangie de Eddemundistun . et me . et heredes .<lb/> ac homines meos de Ruchelau <span style="font-family: Junicode;"></span> volo et concedo . quod racione parcagii utrobique vnus obolus capiatur tantum
+                     pro quolibet grege . et armento singulis<lb/> uicibus . extra segetes et prata . <cl type="warrandice">Et ego et heredes mei omnia promissa dictis Monachis contra omnes homines et
+                     feminas warantizabimus . acquietabimus .<lb/> et inperpetuum defendemus</cl> .</cl> <cl type="sealing">In cuius rei testimonium presenti scripto sigillum meum apposui .</cl> <cl type="witnesses">Hiis testibus . Domino Walleuo persona de Dunbar . Dominis Will<ex>elm</ex>o de<lb/> Sancto Claro tunc vicecomite de Edinburg’ . Will<ex>elm</ex>o de veteri ponte . Hugone Gurlay . Roberto de Kippeh’ militibus . Roberto de
+                     Haukeristo<ex>na</ex> . Gilberto filio<lb/> Andree . et aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p>To all Christ's faithful who shall see or hear the present text, Alexander of
+               Seton, knight, son of Sir Saer of Seton, greeting in the Lord.
+               Let your whole community know [that I] have given, granted, and
+               by this my present charter made firm, to God and to the church
+               of St Mary at Melrose and the monks in that place serving God
+               now and in the future, for ever [for the souls] of all my
+               ancestors and successors, and for my own salvation and my
+               wife's, and my heirs', the whole land that I had in the
+               territory of Ruchlaw near the water of . . . from either side of
+               the same water, by these boundaries: beginning at the Biel ford
+               abover the upper millpond at 'Edmunistoun', and from there going
+               up as far as 'Graycragge', and from 'Graycragge' eastwards, by
+               the foot of the </p>
+      </div>
+    </body>
+  </text>
+</TEI>

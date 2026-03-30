@@ -1,0 +1,79 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-680">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xv.21</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:50:44.667952+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">680</idno>
+        <idno type="textcontent">690</idno>
+        <idno type="transcription_textcontentxml">680</idno>
+        <idno type="translation_textcontentxml">681</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xv.21</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xv.21</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:50:44.667952+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:50:44.667952+00:00" status="published">transcription moa=680 status=live modified=2021-04-05 08:50:42.252786+00 | translation moa=681 status=live modified=2021-04-05 08:50:44.667952+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>M</persName> Rex Scotie</cl> Ep<ex>iscop</ex>is . Abbatibus . Iusticiis . Comitibus . Uicecomitibus . Baronibus . Ministris .<lb/> et omnibus probis hominibus totius regni sui et Honoris de Huntedune Clericis et
+                     laicis .<lb/> <cl type="salutation">Salutem</cl></cl> . <cl type="notification">Sciant tam posteri quam presentes</cl> <cl type="disposition">me dedisse et concessisse . et per hanc meam cartam confir<lb/>masse Deo et Sancte MARIE et monachis ordinis Cistercii qui sunt de domo de
+                     Sartis . inperpetuam<lb/> elemosinam ad abbatiam construendam Pro salute anime mee et antecessorum et
+                     successorum<lb/> meorum totam Saltreiam cum omnibus pertinentiis suis in bosco et in Plano . in
+                     Pratis et aquis .<lb/> et Pasturis et Mariscis . et omnibus aliis rebus sicut eam tenuit bone memorie <persName>d<ex>aui</ex>d</persName> rex a<lb/>uus meus . et sicut iam michi reddidit <persName>Henricus</persName> rex Anglie cum aliis rectis meis de Hunte<lb/>dune . <cl type="holding">Quare uolo et firmiter precipio ut predicti monachi eam habeant et teneant<lb/> de me et de heredibus meis sicut meam propriam elemosinam bene et in pace et
+                        honori<lb/>fice et quiete . et libere ab omni exactione temporali et seruitio sicut alii
+                        monachi eiusdem<lb/> ordinis in regno meo elemosinas suas liberius et quietius habent et tenent</cl> .</cl> <cl type="witnesses">HIS<lb/> testibus <persName>Herberto</persName> episcopo Glasc’ . <persName>Waldeuo</persName> abbate de Malros . <persName>Ernaldo</persName> abbate de Ruch’b’.<lb/> <persName>Osberto</persName> abbate de Ieddewrd’ . <persName>Waltero</persName> cancell<ex>ari</ex>o . <persName>Adam</persName> capellano de Roch’b’ . <persName>Nicholao</persName><lb/> clerico . <persName>Will<ex>elm</ex>o</persName> fratre meo . <persName>Waltero</persName> filio <persName>Alani</persName> . <persName>Ricardo</persName> de Moreuilla . <persName>Rand’</persName> . de<lb/> Sulis . <persName>Will<ex>el</ex>mo</persName> de Moreuilla . <persName>Will<ex>el</ex>mo</persName> de Sumeruilla . <persName>Liolfo</persName> filio <persName>Maccus</persName> . <persName>Or<lb/>mo</persName> filio <persName>Eilaui</persName> . <persName>D<ex>aui</ex>D olifard</persName> . <persName>Roberto Freb<ex>ern</ex></persName> . <persName>Dauid</persName> de Boeuilla . <persName>H .</persName> de perci .</cl><lb/> Apud Rochesburd’;</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">M<ex>alcolm</ex>, king of Scotland,</cl> to bishops, abbots, justices, earls, sheriffs, barons, officials, and all worthy
+                     men of his entire kingdom and of the Honour of Huntingdon,
+                     clerk and lay, <cl type="salutation">greeting.</cl></cl> <cl type="notification">Let those to come after as well as those present know</cl> <cl type="disposition">me to have given, conceded, and by this my charter to have made firm, to God,
+                  Saint Mary, and the monks of the Cistercian Order who are at
+                  the house of Sartis, in everlasting alms for the construction
+                  of an abbey, for the salvation of my own soul and my
+                  predecessors' and successors' [souls], the whole of Sawtry,
+                  with all its pertinents in wood and plain, in meadows and
+                  waters, and pastures and marshes, and all other property,
+                  just as David the king, my grandfather of good memory, held
+                  it, and just as Henry, king of England, has now returned to
+                  me with my other rights of Huntingdon. <cl type="holding">Wherefore I will and firmly command that the aforesaid monks have and hold it of
+                     me and my heirs, just as my own alms; well, in peace,
+                     honourably, quitly, and free from all temporal exaction
+                     and service, just as other monks of the same order in my
+                     kingdom most freely and quitly have and hold their alms.</cl></cl> <cl type="witnesses">With these as witnesses: Herbert, bishop of Glasgow; Waldef, abbot of Melrose;
+                  Arnold, abbot of Roxburgh; Osbert, abbot of Jedburgh; Walter
+                  the chancellor; Adam the chaplain of Roxburgh; Nicholas the
+                  clerk; William my brother; Walter fitz Alan; Richard de
+                  Morville; Ranulf de Soulis; William de Morville; William de
+                  Somerville; Liulf son of Maccus; Orm son of Eilaf; David
+                  Oliphant; Robert Frebern; David de Boeville; H<ex>enry</ex> de Percy.</cl> At Roxburgh.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

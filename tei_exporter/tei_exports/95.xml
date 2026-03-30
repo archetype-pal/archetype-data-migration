@@ -1,0 +1,65 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-95">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 2</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:27:58.705396+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">95</idno>
+        <idno type="textcontent">95</idno>
+        <idno type="transcription_textcontentxml">95</idno>
+        <idno type="translation_textcontentxml">94</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 2</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 2</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:27:58.705396+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:27:58.705396+00:00" status="published">transcription moa=95 status=live modified=2017-01-30 19:27:58.705396+00 | translation moa=94 status=live modified=2016-06-07 09:02:31.620063+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">W'. Dei gr<ex>ati</ex>a Rex Scott'.</cl> Episcopis . Abbatibus . Comitibus . Baronibus <persName><roleName>Iusticiis</roleName></persName> . <persName><roleName>Vicecomitibus</roleName></persName> . Ministris . ⁊ <lb/> Omnibus probis hominibus tocius terre sue . Clericis ⁊ laicis ⁊ <cl type="salutation">Salutem</cl>.</cl> <cl type="disposition"><cl type="notification">Sciant presentes ⁊ futuri</cl> me con<lb/>cessisse . ⁊ hac Carta mea confirmasse Deo . ⁊ Ecclesie Sancti Andree Apostoli ⁊
+                     Canonicis ibidem seruienti<lb/>bus deo ⁊ in perpetuum seruituris terram ad hebrecces . quam Walterus filius
+                     philippi eis in perpetuam elemosi<lb/>am dedit concessit . ⁊ Confirmauit . Cum communi pastura . <cl type="holding">Tenend' perpetualiter Ita libere ⁊ quiete . ab <lb/> omni seruicio ⁊ consuetudino ⁊ exactione . sicut fratres de hospitali ⁊ de
+                        templo vbique tenent . ⁊ sicud<lb/> Carta predicti Walteri filii philippi testatur ⁊ confirmat.</cl></cl> <cl type="witnesses">Test'. Ric' Ep<ex>iscop</ex>o de Dunkeld' . Waltero de Bid'.<lb/> Cancellario . Com<ex>ite</ex> Dunec'. Ric' de Moreuill' const<ex>abulario</ex>. Waltero de Winles'. Galfrido de Maleuill'.</cl> apud Kingor.</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">William by the grace of God King of Scots,</cl> to bishops, abbots, earls, barons, <persName><roleName>justices</roleName></persName>, <persName><roleName>sheriffs</roleName></persName>, officials, and all worthy men of the whole of his land, clerk and lay [-and] <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> that I have granted, and by this my charter made firm to God, and to the Church
+                     of Saint Andrew the Apostle, and to the Canons there
+                     serving God, and who shall serve there in perpetuity, the
+                     land at 'Hebrecces' that Walter son of Philip has given,
+                     granted and made firm in perpetuity to them, with common
+                     pasture, <cl type="holding">to be held perpetually as freely and quietly from every service and custom and
+                     exaction as the brethren of the Hospital of the Temple
+                     ever hold, and just as the charter of the aforesaid Walter
+                     son of Philip bears witness and makes firm.</cl></cl> <cl type="witnesses">As witnesses: Richard Bishop of Dunkeld, Walter de Bidun the Chancellor, Earl
+                  Duncan, Richard de Morville the Constable, Walter of Windsor,
+                  Geoffrey de Malville.</cl> At Kinghorn.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

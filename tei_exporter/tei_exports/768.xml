@@ -1,0 +1,64 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-768">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5964</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 21:10:50.691044+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">768</idno>
+        <idno type="textcontent">782</idno>
+        <idno type="transcription_textcontentxml">768</idno>
+        <idno type="translation_textcontentxml">769</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5964</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5964</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T21:10:50.691044+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T21:10:50.691044+00:00" status="approved">transcription moa=768 status=reviewed modified=2022-10-31 21:10:50.683294+00 | translation moa=769 status=reviewed modified=2022-10-31 21:10:50.691044+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. Omnibus hominibus hoc scriptum visuris uel audituris <cl type="intitulatio">Eustacius de Nubiging</cl> <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerint<lb/> vniuersitas nostra</cl> me Ratam et Gratam habere . Illam vendicionem quam Will<ex>elmu</ex>s de Scremerstona<lb/> fecit Domino . R . Priori et Conuentui de Coldingham de omnibus terriis quas
+                     Idem Will<ex>elmu</ex>s habuit<lb/> ex dono et vendicione Roberti de Prendergest’ in villa et In territorio de
+                     prendergest . Ita videlicet quod nec<lb/> ego nec aliquis per me uel pro me Ius aut clamium nullo tempore seculi in
+                     predictus terris<lb/> possimus vendicare .</cl> <cl type="sealing">In Cuius Rei Testimonium  presenti scripto sigillum meum apposui .</cl> <cl type="witnesses">Hiis Test<lb/>ibus . Domino Will<ex>elm</ex>o de lindesey . Domino Will<ex>elm</ex>o de Moringto<ex>n</ex> . Ada de prendergest . Ada filio Ioh<ex>ann</ex>is de superiori ayto<ex>n</ex> .<lb/> Bertramo de Riston’ . Patricio scotto . Roberto filio Gregorii de Coldingh<ex>am</ex> . Gilberto de lumesden Dauid de lume<lb/>sden . Will<ex>elm</ex>o filio Waldui de Riston’ . Rogero filio prepositi . et Aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all men who shall view or hear this writing, <cl type="intitulatio">Eustace of Newbiggin</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Know me, all of you</cl>, <cl type="disposition">to have ratified the sale which William of Scremerston made to the lord prior, R<ex>ichard</ex>, and the convent of Coldingham, of all the lands which the same William had out
+                     of Robert of Prenderguest's gift and sale, in the toun and
+                     territory of Prenderguest. So that neither I nor anyone
+                     through me or for me in any earthly age should be able to
+                     sell the right or claim.</cl> <cl type="sealing">In testimony of this matter I have applied my seal to the present writing.</cl> <cl type="witnesses">With these witnesses: the lord William of Lindsay, the lord William of
+                  Mordington, Adam of Prenderguest, Adam son of John of Over
+                  Ayton, Bertram of Reston, Patrick Scott, Robert son of
+                  Gregory of Coldingham, Gilbert of Lumsdaine, David of
+                  Lumsdaine, William son of Waldef of Reston, Roger son of the
+                  grieve, and others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

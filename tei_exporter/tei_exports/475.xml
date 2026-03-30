@@ -1,0 +1,83 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-475">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/210</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 16:02:26.968678+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">475</idno>
+        <idno type="textcontent">480</idno>
+        <idno type="transcription_textcontentxml">475</idno>
+        <idno type="translation_textcontentxml">476</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/210</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/210</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T16:02:26.968678+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T16:02:26.968678+00:00" status="published">transcription moa=475 status=live modified=2021-04-06 16:02:26.968678+00 | translation moa=476 status=live modified=2021-04-06 16:02:24.555125+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte Matris Ecclesie filiis presentibus et futuris <cl type="intitulatio">Ioh<ex>ann</ex>es filius Michael<ex>is</ex> de Methkil</cl> . <cl type="salutation">Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Nouerit vniuersitas<lb/> uestra</cl> me dedisse concessisse et Hac Carta me confirmasse Deo et Ecclesie Sancte Marie
+                     de Melros et Monachis ibidem<lb/> Deo seruientibus et seruituris totam terram meam de Panneschelys . <cl type="holding">Tenendam et habendam eisdem Monachis de me<lb/> et heredibus meis in puram et perpetuam Elemosinam in perpetuum . Ita Libere .
+                        quiete . plenarie . et honorifice  sicut<lb/> aliqua Elemosina in Regno Scocie . Liberius . quietius . et plenius . Tenetur
+                        vel possidetur . In Bosco et<lb/> Plano . In terris cultis et incultis . In pratis . et Pascuis . In viis et
+                        Semitis . In Moris . Mosis . et Mare<lb/>siis . In aquis . et stagnis . Viuariis . et Molendinis . et omnibus aliis
+                        asiamentis que infra predictam terram<lb/> inueniri poterunt aut excerceri</cl> . <cl type="warrandice">Ego autem et heredes mei manutebimus et defendemus predictis Monachis<lb/> totam predictam terram cum omnibus Libertatibus et iustis pertinentiis suis
+                        contra omnes homines . Excepta terra quam dedi Monachis
+                        de May . et excepta terra quam concesse Henrico paruo
+                        et heredibus suis per rectas diuisas suas in territorio
+                        de Panneschelys .</cl> <cl type="holding">Totam uero terram predictam sicut dictum est Tenebunt<lb/> et habebunt prefati Monachi de Melros Liberam et quietam ab omni seruitio
+                        consuetudine et exactione<lb/> et demanda de me et heredibus meis in perpetuum</cl></cl> . <cl type="witnesses">Hiis Testibus . Thoma Comite de Æthol’ . Thomas<lb/> de Cantia . Magistro Ioh<ex>ann</ex>e abigensi . Magistro nessio medice domini Regis . Gaufrido de Bosco . Iacobo<lb/> filio Will<ex>elm</ex>i . Andrea de Suintun’ . et Multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church present and to come <cl type="intitulatio">John son of Michael of Methil</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let your whole community know</cl> me to have given, granted, and by this my charter to have made firm to God and
+                     to the church of St Mary at Melrose and to the monks
+                     serving God in that place now and to come, my whole land
+                     at Penshiel; <cl type="holding">for the same monks to hold and to have of me and my heirs in pure and perpetual
+                     alms for ever; as freely, quitely, fully, and honourably
+                     as any alms in the kingdom of Scotland is freely, quitely,
+                     and fully held and possessed; in wood and plain, in lands
+                     cultivated and uncultivated, in meadows and pastures, in
+                     roads and paths, in moors, peat-bogs and marshes, in
+                     running waters and ponds, fish-ponds and mills, and all
+                     other easments that can be found or employed within the
+                     said land.</cl> <cl type="warrandice">And I and my heirs shall maintain and defend to the said monks the whole
+                     aforesaid land with all its liberties and just pertinents
+                     against all men; except for the land that I gave to the
+                     monks of May, and except for the land that I allowed to
+                     Henry Little and his heirs by its correct boundaries in
+                     the territory of Penshiels.</cl> <cl type="holding">The whole aforesaid land, as it is said, the aforementioned monks shall hold and
+                     have free and quit from every service, custom and exaction
+                     and demand of me and my heirs for ever.</cl></cl> <cl type="witnesses">With these witnesses: Thomas, earl of Atholl; Thomas of Kent; Master John the
+                  Albigensian; Master Ness, physician of the lord king;
+                  Geoffrey del Bois; James son of William; Andrew of Swinton;
+                  and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

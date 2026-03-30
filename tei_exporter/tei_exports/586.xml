@@ -1,0 +1,72 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-586">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/130</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:37.090957+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">586</idno>
+        <idno type="textcontent">594</idno>
+        <idno type="transcription_textcontentxml">586</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/130</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/130</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:37.090957+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:37.090957+00:00" status="draft">transcription moa=586 status=draft modified=2017-01-30 19:28:37.090957+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><cl type="address">Omnibus sancte matris ecclesie filii <cl type="intitulatio">Will<ex>elmu</ex>s filius Ioh<ex>ann</ex>is filii Horm</cl> <cl type="salutation">Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciant tam posteri quam presentes</cl> me concessisse et dedisse et hac carta confir<lb/>masse . deo et ecclesie sancte Marie de Melr<ex>os</ex> . et Monachis ibidem deo seruientibus . pro animabus d<ex>aui</ex>d et Melcolmi Regis dominorum meorum et pro anima comitis henr<ex>ici</ex> . et pro salu<lb/>te domini mei Regis Will<ex>elm</ex>i . et d<ex>aui</ex>d fratris eius . et pro salute mea et uxoris mee . et redempcione animarum
+                        nostrarum . et pro animabus et patrum et matrum et
+                        omnium antecessorum et suc<lb/>cessorum nostrorum . in liberam et puram . et perpetuam elemosinam . totam
+                        donationem quam ioh<ex>anne</ex>s pater meus dedit eius de terra de huned’ . <cl type="boundaries">per illas rectas diuisas<lb/> quas ipse eis perambulauit inter terram de huned’ et terram de Wittun . et inter
+                           terram de huned’ et terram de grubeheued . et inter
+                           terram de huned’ et terram de cliftun . et Similiter<lb/> inter terram de huned’ et terram de molle . et sicut diuise perambulate sunt
+                           coram multis probis hominibus inter patrem meum et
+                           ipsos monachis . usque ad illum locum ubi paruus<lb/> riuulus cadit in huned’ burne ex orientali parte de hulkilles croc . et inde
+                           sursum per eundem riuulum usque ad sursum eius . et
+                           inde uersis occidentem usque ad paruum collem<lb/> et ex inde ex transuerso condoso inter brunecnol et helle . et sic descendendo
+                           per diuisas quas pater meus fecit eis usque in
+                           haufurlung dene . et inde sicut burna de<lb/>scendit de haufurung dene usque in kalne .</cl> <cl type="holding">Totam hanc terram et quicquid continetur infra has prenominatas diuisas .
+                        concessi dedi et confirmaui predicte ecclesie sancte<lb/> <supplied>M</supplied>arie de Melr<ex>os</ex> . et Monachis ibidem deo seruientibus liberam . solutam . et quietam ab omnibus
+                           auxiliis placitis geldis assisis et ab omni seruitio
+                           et consuetudine et ex<lb/>accione seculari . ut habeant et possideant in perpetuum libere quiete pacifice
+                           . plenarie . et honorifice . sicut aliqua elemosina
+                           quiecius possidetur a<lb/> Monachis ordinis cisterciensis . Reddendo annuatim mihi et heredibus meis
+                           uiginti solidos de eadem de eadem elemosina .</cl> Et hoc sciendum est quod predicti Monachi illam communi<lb/>onem habebant de me et heredibus meis . extra diuisas suas perambulatas . et
+                        similiter sciendum quod siquis hanc terram infra has
+                        diuisas perambulatas calumpniari uo<lb/>louerit  <cl type="warrandice">ego et heredes mei omni calumpnianti respondebimus . et Monachis predictam
+                        terram warantizabimus per omnia cum predictis diuisis</cl> .</cl> <cl type="witnesses">his T . Iocel<ex>ino</ex> episcopo Glasg’ ...<lb/>... Archidiacono . Ioh<ex>ann</ex>e decano de Rokesb’ . Will<ex>elm</ex>o persona de hun’ . Geruas’ Auenel . Glaio Milite cornario eius . Waltero Corbet
+                        et Roberto filio eius . Rad<ex>u</ex>l<ex>pho</ex><lb/> ... Simone de Grubbeheued . Rob’ de bernulfbi .</cl></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

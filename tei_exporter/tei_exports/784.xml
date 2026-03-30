@@ -1,0 +1,79 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-784">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5956</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.792513+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">784</idno>
+        <idno type="textcontent">798</idno>
+        <idno type="transcription_textcontentxml">784</idno>
+        <idno type="translation_textcontentxml">785</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5956</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5956</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T13:36:57.792513+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:36:57.792513+00:00" status="approved">transcription moa=784 status=reviewed modified=2022-11-01 13:36:57.781324+00 | translation moa=785 status=reviewed modified=2022-11-01 13:36:57.792513+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. Omnibus Christi fidelibus hoc scriptum visuris uel Audituris. <cl type="intitulatio">Bertramus de Ristona</cl> <cl type="salutation">salutem</cl>.</cl> <cl type="notification">Nou[er]it<lb/> vniuersitas uestra</cl> <cl type="disposition">me Concessisse. et hac presenti carta mea Confirmasse vendicionem. quietam
+                  clamacionem.<lb/> et abiuractionem omnium terrarum quam Ricardus filius Henrici Cisoris de Dunelm’
+                     vendidit domino<lb/> Ricardo Priori et Conuentui de Coldingham in villa et in territorio parue
+                     Ristone cum omnibus pertinent<lb/>iis et exactis infra villam et extra sine aliquo Retinemento sicut planius et
+                     plenius continetur<lb/> in carta confecta Quam dicti Prior et Conuentus habent de prefato Ricardo <cl type="holding">Habendam et Tenen<lb/>dam sepedictis priori et Conuentui de Coldingham et eorum successoribus in
+                        perptuum libere. quiete. et honori<lb/>ffice in omnibus faciendo omne forinsecum seruicium pertinens ad dominum Regem
+                        et ad dominum de Col<lb/>dingham quantum pertinet ad dimidiam carucatam terre in eadem villa. Reddendo
+                        inde annuatim mihi<lb/> et heredibus meis duos solidos tantum pro omnibus que de dicta terra exigi
+                        poterunt. ad duos term<lb/>inos anni. silicet duodecim denarios ad festum sancti Iohannis Baptiste. et
+                        duodecim denarios ad festum<lb/> sancti Martini in hyeme.</cl></cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful who shall view or hear this writing, <cl type="intitulatio">Bertram of Reston</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Know me, all of you,</cl> <cl type="disposition">to have granted, and by this my present charter to have made firm, the sale,
+                  quitclaim, and abjuration of all the lands which Richard son
+                  of Henry Scissor of Durham sold to the lord Richard the
+                  Prior, and the Convent of Coldingham, in the toun and in the
+                  territory of Little Reston, with all pertinents and exactions
+                  inside the toun and outside, without any withholding, just as
+                  it is plainly and fully contained in the charter drawn up,
+                  which the said Prior and Convent had from the aforementioned
+                  Richard. <cl type="holding">For the oft-mentioned Prior and Convent of Coldingham, and their successors, to
+                     have and to hold for ever; freely, quitely, and honourably
+                     in all things; performing all forinsec service pertaining
+                     to the lord King and to the lord of Coldingham, as much as
+                     pertains to half a ploughgate of land in the same toun;
+                     rendering thereupon to me and my heirs annually two
+                     shillings only in return for all things which can be
+                     exacted from the said land; at two terms of the year, that
+                     is, twelve pence at the feast of Saint John the Baptist,
+                     and twelve pence at the feast of Saint Martin in the
+                     winter.</cl></cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

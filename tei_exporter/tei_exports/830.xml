@@ -1,0 +1,100 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-830">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 560</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 15:48:09.428846+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">830</idno>
+        <idno type="textcontent">849</idno>
+        <idno type="transcription_textcontentxml">830</idno>
+        <idno type="translation_textcontentxml">831</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 560</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 560</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T15:48:09.428846+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T15:48:09.428846+00:00" status="approved">transcription moa=830 status=reviewed modified=2022-11-01 15:48:09.412114+00 | translation moa=831 status=reviewed modified=2022-11-01 15:48:09.428846+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Edgarus dei gracia Rex Scotorum</cl> Omnibus ad quos presentes littere peruenerint tam Francis et Anglis quam Scotis
+                     . <cl type="salutation">Salutem</cl></cl> . <cl type="notification">Sciatis</cl> <cl type="disposition">nos ex licencia<lb/> Willelmi regis Anglie superioris domini regni Scocie pro animabus Malcolmi
+                     patris nostri et Margarete matris nostre ac pro animabus
+                     edwardi et duncani fratrum nost<lb/>rorum necnon pro salute nostra dedisse et concessisse deo et sancto Cuthberto
+                     confessori Willelmo episcopo Drugeto priori et monachis
+                     dunolmie deo seruientibus<lb/> in perpetuum Baroniam et Manerium de Coldingham cum hiis mansionibus subscriptis
+                     scilicet Berwic Oldcambows Lummesden Reston’ Faudon’
+                     Ayton’ alia Ayton’<lb/> Prendregest Cramesmouth Graiden Leinhale dilchestre Ederham Chirnside Hilton’
+                     Blaketyr Hoton’ Raynton’ Paxton’ Fulden Morthington’<lb/> Lamberton’ alia lamberton’ Edington’ horford Fishewic et vpesetlington cum
+                     omnibus pertinenciis iuribus et decimis garbarum et feni
+                     cum omnibus libertatibus<lb/> et franchesiis regalibus adeo libere et plenarie sicut predictus pater noster et
+                     dominus illa tenuit . <cl type="holding">Habenda et tenenda omnia et singula predicta Baroniam et Mane<lb/>rium mansiones decimas cum omnibus libertatibus Franchesiis regalibus et iuribus
+                        quibuscumque predictis episcopo priori et monachis ac
+                        eorum successoribus<lb/> de nobis et heredibus nostris in puram et perpetuam elemosinam in perpetuum</cl> . <cl type="warrandice">Et nos et heredes nostri omnia et singula predicta Baroniam Manerium mansiones<lb/> decimas cum ominbus libertatibus Franchesiis Regalibus et iuribus quibuscumque
+                        ut predictum est prefatis episcopo priori et monachis
+                        et eorum successoribus contra<lb/> omnes gentes protegemus imperpetuum et defendemus</cl> .</cl> <cl type="salutation">In cuius rei testimonium presentibus litteris nostris sigillum nostrum apponi
+                  fecimus apud Norham</cl> <cl type="witnesses">in presencia<lb/> predicti Regis Willelmi Anglie superioris domini regni Scocie et predictorum
+                     episcopi et prioris Walteri Valonis Odnelli Umfrauile
+                     Rachonis de Loreyns Odnelli<lb/> Heron Roberti de Amundi villa et maximae multitudinis Francorum Anglorum et
+                     Scotorum</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Edgar by the grace of God king of the Scots </cl>to all to whom the present letters shall have come, as much to Frenchmen and
+                     English as Gaelic, <cl type="salutation">greeting</cl>.</cl> <cl type="notification">Know</cl> <cl type="disposition">us, from the licence of William the king of England, overlord of the kingdom of
+                  Scotland, for the sake of the souls of Malcolm our father and
+                  Margaret our mother, and for the souls of Edward and Duncan
+                  our brothers, and also for the sake of our own soul, to have
+                  given and conceded to God and Saint Cuthbert the confessor,
+                  to William the bishop, and Turgot the prior, and to the monks
+                  of Durham serving God in perpetuity, the barony and manor of
+                  Coldingham, with these manors written below, to wit, Berwick,
+                  Old Cambus, Lumsdaine, Reston, 'Faudon', Ayton, the other
+                  Ayton, Prederguest, Cramsmoo, Graden, Lennel, 'Dilchestre',
+                  Edrom, Chirnside, Hilton, Blackadder, Hutton, Renton, Paxton,
+                  'Fulden', Mordington, Lamberton, the other Lamberton,
+                  Edrington, Horford, and Upsettlington, with all pertinents,
+                  rights, and teinds of wheat and grain crops and hay, with all
+                  liberties and royal immunities as freely and fully as our
+                  aforesaid father and lord held it. <cl type="holding">For the aforesaid bishop, prior, and monks and their successors to have and to
+                     hold barony and manor, dwellings and teinds, all in
+                     general and in particular, with all liberties, royal
+                     immunities, and rights whatsoever, of us and our heirs in
+                     pure and perpetual alms for ever.</cl> <cl type="warrandice">And we and our heirs shall protect and defend for the bishop, prior, monks, and
+                     their successors, the aforesaid barony and manor,
+                     dwellings and teinds, all in general and particular, with
+                     all liberties, royal immunities and rights whatsoever, as
+                     it has been said before, against all people.</cl></cl> <cl type="sealing">In testimony of this this matter we have caused our seal to be applied to the
+                  present letters at Norham</cl> <cl type="witnesses">in the presence of the aforesaid King William of England the overlord of the
+                  kingdom of Scotland, and of the aforesaid bishop and prior,
+                  of Walter de Valognes, Odinel de Umfraville, Racho de
+                  Loreyns, Odinel Heron, Robert de Mandeville, and a great
+                  multitude of French, English and Scots.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

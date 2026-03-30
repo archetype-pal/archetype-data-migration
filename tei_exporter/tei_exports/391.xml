@@ -1,0 +1,86 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-391">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/106</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 13:37:00.611595+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">391</idno>
+        <idno type="textcontent">395</idno>
+        <idno type="transcription_textcontentxml">391</idno>
+        <idno type="translation_textcontentxml">392</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/106</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/106</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T13:37:00.611595+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T13:37:00.611595+00:00" status="published">transcription moa=391 status=live modified=2021-04-06 13:36:58.013277+00 | translation moa=392 status=live modified=2021-04-06 13:37:00.611595+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris ecclesie filiis . <cl type="intitulatio">Ricardus de Morauilla constabularius Regis Scotie . et Will<ex>elmu</ex>s filius eius et heres</cl> <cl type="salutation">salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciatis</cl> nos concessisse . et hac presenti carta nostra con<lb/>firmasse deo et ecclesie sancte Marie de Melros . et monachis ibidem deo
+                     seruientibus pro animabus nostris et omnium antecessorum
+                     et successorum nostrorum . locum in Witelei infra marginem
+                     fo<lb/>reste ad vaccariam faciendam centum uaccarum scilicet sexies uiginti . siue
+                     berchariam . quecumque eis et domui ipsorum melior et
+                     utilior uisa fuerit . <cl type="holding">libere et quiete te<lb/>nendam et possidendam ab eis in perpetuum . sine omni disturbatione nostra et
+                        omnium nostrorum</cl> . <cl type="warrandice">et omnium contra quos eos manutenere et eandem possessionem eis wa<lb/>rantizare potuerimus</cl> . et unam domum in qua focum faciant fratribus et pastoribus suis . et unam
+                     etiam domum in qua fenum suum ponant . Has tres domos in
+                     pu<lb/>ram et perpetuam elemosinam eisdem monachis concessimus faciendas in prefato
+                     loco de Witelei et possidendas in perpetuum . <cl type="notification">Et sciendum quod</cl> nullas alias logias facient per forestam  sed pastores eorum habebunt claias
+                     wiscatas . sub quibus custodientes aueria sua iaceant cum
+                     opus fuerit</cl> . <cl type="witnesses">Hiis testibus Ioceli<lb/>no episcopo Glasguensi . herberto decano de Glasgu . Thoma clerico . Godefrido
+                     de Ros . Rad' Makerel . Ricardo filio Sewar . Alano filio
+                     elzi . Gilleberto de lancas<supplied>tro</supplied><lb/> Ricardo filio Gilleberti . Ricardo filio Gaufridi . Will<ex>elm</ex>o dapifero episcopi Glasguensis . Magistro Rogero de neuport</cl> .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church <cl type="intitulatio">Richard de Morville constable of the King of Scotland and William his son and
+                     heir </cl><cl type="salutation">send greeting</cl></cl>. <cl type="disposition"><cl type="notification">Know</cl> us to have granted and by this our present charter to have made firm to God and
+                     to the church of St Mary at Melrose and to the monks
+                     serving God in that place, for our souls and of all our
+                     ancestors' and successors' souls, a place in Whitelee
+                     inside the limits of the forest for making a vaccary, that
+                     is, for a hundred and twenty-six cows, or a sheep-fold,
+                     whatever seems better and more useful to them and their
+                     house; <cl type="holding">to be held and possessed freely and quitely by them for ever without any
+                     disturbance from us and of all our men </cl><cl type="warrandice">and of all men against whom we shall have been able to maintain them and warrant
+                     the same possession to them</cl>; and one building in which they may make a dwelling for the brethren and their
+                     shepherds and one building also in which they may put
+                     their hay. We have granted these three buildings in pure
+                     and everlasting alms to the same monks to be built in the
+                     forementioned place at Whitelee and to be possessed for
+                     ever. <cl type="notification">And it is to be known that</cl> they shall build no other dwellings in the forest, but their shepherds shall
+                     have wattled huts under which the livestock being guarded
+                     shall lie when the need arises</cl>. <cl type="witnesses">With these witnesses: Jocelin bishop of Glasgow; Herbert dean of Glasgow;
+                  Thomas, clerk; Godfrey de Ros; Ralph Mackerel; Richard son of
+                  Sewar; Alan son of Aelsi; Gilbert of Lancaster; Richard son
+                  of Gilbert; Richard son of Geoffrey; William the bishop of
+                  Glasgow's steward; Master Roger of Newport.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-27">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 612</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-29 15:57:28.214691+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">27</idno>
+        <idno type="textcontent">27</idno>
+        <idno type="transcription_textcontentxml">27</idno>
+        <idno type="translation_textcontentxml">28</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 612 </idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 612</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-29T15:57:28.214691+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-29T15:57:28.214691+00:00" status="approved">transcription moa=27 status=reviewed modified=2023-06-29 15:57:28.214691+00 | translation moa=28 status=reviewed modified=2023-06-29 15:57:28.202624+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">W. Rex Scott<ex>orum</ex></cl> Omnibus probis hominibus tocius terre sue clericis ⁊ laicis <cl type="salutation">salutem</cl>.</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> <lb/> quod controuersia que fuit inter ecclesiam dunhelmensem ⁊ ecclesiam
+                     croilandensem de uilla <lb/> de ederham ⁊ ecclesia eiusdem uille inpresencia mea ⁊ episcoporum ⁊ proborum
+                     hominum meorum <lb/> in curia mea terminata est. ita quod ecclesia de ederham cum omnibus suis <lb/> appenticiis ecclesie dunhelmensi cessit in perpetuum.</cl> <cl type="witnesses">Test<ex>ibus</ex> Ric<ex>ardo</ex> episcopo sancti andr’. <lb/> Eng’ episcopo de glasgu. Nichol’ cancell<ex>ario</ex>. Joh<ex>ann</ex>e abbate de Kelchov. Comite Wald’. <lb/> Ric<ex>ardo</ex> de Moruill’ constabulario. W. filio alani dapifero . DD’. olifard. </cl><cl type="dating">Apud pert</cl>.</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">William king of Scots</cl> to all worthy men of the whole of his land, clerk and lay, <cl type="salutation">greeting</cl>: </cl><cl type="disposition"><cl type="notification">Know that</cl> the dispute which was between the church of Durham and the church of Crowland
+                     about the toun of Edrom and the church of the same toun
+                     has been concluded in my court in the presence of me and
+                     of my bishops and worthy men, so that the church of Edrom
+                     with all its appurtenances passes to the church of Durham
+                     in perpetuity.</cl> <cl type="witnesses">As witnesses: Richard the bishop of St Andrews, Ingram the bishop of Glasgow,
+                  Nicholas the chancellor, John the abbot of Kelso, the Earl
+                  Waldef, Richard de Morville the constable, Walter son of
+                  Alan, Dapifer [Steward], David Olifard [Oliphant]. </cl><cl type="dating">At Perth</cl>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

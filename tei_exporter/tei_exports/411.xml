@@ -1,0 +1,80 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-411">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/139</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:05:47.106739+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">411</idno>
+        <idno type="textcontent">415</idno>
+        <idno type="transcription_textcontentxml">411</idno>
+        <idno type="translation_textcontentxml">412</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/139</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/139</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:05:47.106739+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:05:47.106739+00:00" status="published">transcription moa=411 status=live modified=2021-04-06 15:05:45.34229+00 | translation moa=412 status=live modified=2021-04-06 15:05:47.106739+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="disposition"><cl type="notification">Sciant omnes</cl> hanc Cartam visuri vel audituri quod <cl type="intitulatio">ego Symon de lyndesie</cl> dedi et concessi et presenti<lb/> Carta mea confirmaui Helene filie mee terram meam de hungerigge quam teneo In
+                     territorio de Molle<lb/> de Roberto de polloch et vxore eius ysabell’ . Et quoddam pratum sub Ederedesete
+                     . quod vocatur holemede .<lb/> quod teneo de Domina Eschyna et heredibus suis . <cl type="holding">Tenendam et habendam sibi et heredibus suis de dicto Roberto et<lb/> heredibus suis . et de Domina Eschyna et heredibus suis . libere et quiete ab
+                        omni seruicio et auxilio et exaccione .<lb/> Reddendo inde annuatim dicto Roberto et heredibus suis decem sol<ex>idos</ex> . scilicet quinque sol<ex>idos</ex> . ad pentecost<ex>es</ex>  et quinque sol<ex>idos</ex> .<lb/> ad festum sancti Martini . Et Domine eschyne et heredibus suis vnum Nysum sor ad
+                        Nundinas Rokeburgie .</cl><lb/> Si uero contingat quod dicta Helena sine liberis in fata decesserit  volo quod
+                     Eschyna filia mea<lb/> soror eius et heredes eius ei in dicta terra succedant . Hanc uero terram dicte
+                     helene et heredibus eius contuli<lb/> et assignaui adeo libere et quiete in omnibus et per omnia  sicut Carta dicti
+                     Roberti et uxoris eius ysabell’ . et<lb/> confirmatio heredum Domine eschyne de Moll’ inde confecta  donant et testantur
+                     .</cl> <cl type="witnesses">Hiis testibus . Symone<lb/> Mauleuerer . Giliberto auenel . Ricardo de lincoln’ . Rad’ le Neym . Symone de
+                     grubbeheued . Ada de<lb/> yetham . Ada filio Nicholai . et Multis aliis :</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="disposition"><cl type="notification">Let all who shall see or hear this charter know</cl> that <cl type="intitulatio">I, Simon of Lindsay,</cl> have given and granted and by my present charter made firm to Helen my daughter
+                     my land at ‘Hungerigge’ that I hold in the territory of
+                     Mow of Robert of Pollok and his wife Isabel, and a certain
+                     meadow within ‘Ederedesete’ that is called ‘Holemede’,
+                     which I hold of the lady Eschyna and her heirs; <cl type="holding">for her and her heirs to hold and to have of the said Robert and his heirs, and
+                     of the lady Eschyna and her heirs, free and quit of every
+                     service and aid and exaction; by annually returning
+                     thereupon to the said Robert and his heirs ten shillings,
+                     that is five shillings at Pentecost and five shillings at
+                     the feast of St Martin; and to the lady Eschyna and her
+                     heirs one red <ex>not moulted</ex> hawk at the Roxburgh Fair.</cl> And if it should happen that the said Helen has died by ill fortune without
+                     issue, I will that my daughter Eschina, her sister and
+                     heir, succeed her in the said land. And I have bestowed
+                     and entrusted the said land to Helen and her heirs as
+                     freely and quitely in all things and through all things as
+                     the charter of the said Robert and his wife Isabel, and
+                     the confirmation of the heirs of the lady Eschina of Mow
+                     composed thereupon, confer and bear witness.</cl> <cl type="witnesses">With these witnesses: Simon Mauleverer; Gilbert Avenel; Richard of Lincoln;
+                  Ralph le Nain; Simon of Grubbit; Adam of Yetholm; Adam son of
+                  Nicholas; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

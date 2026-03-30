@@ -1,0 +1,73 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-906">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 7162</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:22:01.895383+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">906</idno>
+        <idno type="textcontent">930</idno>
+        <idno type="transcription_textcontentxml">906</idno>
+        <idno type="translation_textcontentxml">907</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 7162</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 7162</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:22:01.895383+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:22:01.895383+00:00" status="approved">transcription moa=906 status=reviewed modified=2022-11-01 16:22:01.879386+00 | translation moa=907 status=reviewed modified=2022-11-01 16:22:01.895383+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. M . Rex Scott’ .</cl> Episcopis . Abbatibus . Comit<ex>ibus</ex> . et Baronibus . Iustic<ex>iis</ex> . Vicecom<ex>itibus</ex> . Preposit<ex>is</ex> . et Ministris . Francis et Anglicis . Scottis et Galwethiensibus .<lb/> Clericis . et Laicis . et Omnibus hominibus Tocius terre sue <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis quod</cl> postquam arma suscepi Dedi . Concessi . et hac Carta mea Confirmavi <lb/> Waltero filio Alani . Meo Senescallo  Birchinside . et leggardeswde per Rectas
+                     Diuisas Suas . Scilicet Ita plenarie et Integre Sicut Rex<lb/> D<ex>aui</ex>d . Auus meus predictas Terras In Dominico Tenuit . Dedi etiam predicto Waltero
+                      Molle per Rectas Diuisas suas . et cum Omnibus Iustis
+                     Suis<lb/> pertinentiis . <cl type="holding">Tenend’ . et habend’ . sibi et heredibus suis De me et heredibus meis In Feodo
+                     et hereditate . Ita libere et quiete .<lb/> plenarie et honorifice  Sicut Aliquis Comes uel Baro In Regno Scotie Terram
+                        aliquam de me liberius . quietius . plenius . et<lb/> honorificentius Tenet et possidet .</cl> faciendo de predictis Terris mihi et heredibus meis Seruitium vnius Militis .</cl> <cl type="witnesses">Hiis Testibus .<lb/> Ernald<ex>o</ex> . Episcopo Sancti Andr<ex>ee</ex> . Herbert<ex>o</ex> . Episcopo de Glasgu . Ioh<ex>ann</ex>e Abbate de kelchou . Willelmo Abbate de Melros . Osbert<ex>o</ex> . Abbate de Iedd<ex>ewrde</ex> . Waltero<lb/> Cancellario . Will<ex>elm</ex>o fratre Regis . Ric<ex>ardo</ex> de Moreuill<ex>a</ex> . Gilbert<ex>o</ex> . de Vmframauill<ex>a</ex> . Waldeuo filio . Com<ex>itis</ex> . Cospatr<ex>icii</ex> . Iordan<ex>o</ex> . Ridel .</cl> <cl type="dating">Apud . Rokesb<ex>urc</ex>.</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">M<ex>alcolm</ex> king of the Scots,</cl> to bishops, abbots, earls and barons, justices, sheriffs, provosts and
+                     officials, French and English, Gaelic and Galwegian, clerk
+                     and lay, and all men of his entire land, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know that</cl> after I assumed knighthood, I gave, granted, and by this my charter made firm,
+                     to Walter son of Alan, my steward, Birkenside and
+                     Legerwood by their correct boundaries, that is to say,
+                     fully and entirely, just as King David, my grandfather
+                     held the said lands in demesne. I have also given Mow to
+                     the said Walter by its correct boundaries, and with all
+                     its lawful pertinents, <cl type="holding">for him and his heirs to hold and to have of me and my heirs in feu and
+                     heritage, as freely and quitly, fully and honourably, as
+                     any earl or baron holds and possesses any land of me
+                     freely, fully, and honourably,</cl> performing for the said lands to me and my heirs the service of one knight.</cl> <cl type="witnesses">With these witnesses, Arnold the bishop of St Andrews, Herbert the bishop of
+                  Glasgow, John the abbot of Kelso, William the abbot of
+                  Melrose, Obser the abbot of Jedburgh, Walter the chancellor,
+                  William the king's brother, Richard de Morville, Gilbert de
+                  Umfraville, Waldeve the brother of Earl Cospatric, Jordan
+                  Ridel.</cl> <cl type="dating">At Roxburgh.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

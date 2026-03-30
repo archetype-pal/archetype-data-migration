@@ -1,0 +1,79 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-764">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5966</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 21:10:50.656884+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">764</idno>
+        <idno type="textcontent">777</idno>
+        <idno type="transcription_textcontentxml">764</idno>
+        <idno type="translation_textcontentxml">765</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5966</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5966</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T21:10:50.656884+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T21:10:50.656884+00:00" status="approved">transcription moa=764 status=reviewed modified=2022-10-31 21:10:50.648533+00 | translation moa=765 status=reviewed modified=2022-10-31 21:10:50.656884+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. Vniuersis sancte Matris Ecclesie filiis ad quos presens scriptum peruenerit  <cl type="intitulatio">laurencius filius Will<ex>elm</ex>i filii Gocelini<lb/> de Berewic</cl> <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Nouerit vniuersitas uestra</cl> <cl type="disposition">me pro salute anime mee . antecessorum . et successorum meorum<lb/> Dedisse . Concessisse . et hac carta mea Confirmasse deo et Ecclesie Sancte Ebbe
+                     de Coldingham . Ricardo Priori<lb/> et Monachis ibidem deo seruientibus et Inperpetuum seruituris vnuam Bouatam
+                     terre In territorio de Prendergest’<lb/> de terra defensibili . illam silicet Bouatam terre uersus orientem quam aldanus
+                     filius Waldeui tenuit . et<lb/> Quindecim accras terre que erant quondam de dominico Iohannis de Neuill’ .
+                     silicet ad thornedales <lb/> sex accras terre . ad Backestanesrig  duas accras terre et dimidiam . Ad
+                     Crumbedales tres accras terre et dimidiam<lb/> ad Scortlandes  vnam accram terre et dimidiam . ad lillesaccre  vnam accram
+                     terre . et ad Crumbedales  vnam<lb/> dimidiam accram terre . Quas quidem terras habui de dono Roberti fratris mei qui
+                     eas libere adquisiuit<lb/> de Iohanne de neuill’ . <cl type="holding">Tenend’ et Habend’ dictis Priori et monachis de Coldingham et eorum
+                     successoribus cum<lb/> omnibus libertatibus et assiamentis . ad dictas terras pertinentibus in liberam
+                        . puram. et perpetuam elemosinam<lb/> adeo libere et quiete In omnibus  sicut aliqua elemosina infra Regnum Scocie
+                        liberius et quiecius tenetur<lb/> uel possidetur</cl> .</cl> <cl type="witnesses">Testibus . Domino Willelmo de mordingto<ex>na</ex> . domino dauid de Haddingtona . Domino Radful<ex>o</ex> nobili .<lb/> Domino Will<ex>elm</ex>o de scremersto<ex>na</ex> . Adam de Prendergest’ . Adam filio Iohannis de Superyoryeyto<ex>na</ex> . Thom<ex>a</ex> de Nesbyt . Ber<lb/>tramo de Risto<ex>na</ex> . Patricio Scotto . Gilberto de Lumesden . Ioh<ex>ann</ex>e filio Ingerami . Gregorio de Betyoc . et ALIIS .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of holy Mother Church to whom the present writing shall have come, <cl type="intitulatio">Laurence, son of William son of Gocelin of Berwick</cl>, <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Know me, all of you,</cl> <cl type="disposition">for the salvation of my soul, my ancestors' and successors', to have given,
+                  granted, and by this my charter to have made firm, to God and
+                  the Church of St Æbbe at Coldingham, to Richard the Prior,
+                  and to the monks serving God in that place now and for ever
+                  in the future, one oxgang of land in the territory of
+                  Prenderguest of fortified land, namely, that oxgang of land
+                  towards the east which Haldane son of Waldef held, and
+                  fifteen acres of land which once belonged to the demesne of
+                  John of Neville, that is, six acres of land at <ex>Thornedales,</ex> two and a half acres of land at <ex>Backestanesrig,</ex> three and a half acres of land at <ex>Crumbedales,</ex> one and a half acres of land at <ex>Scortlandes</ex>, one acre of land at <ex>Lilliesaccre</ex>, and a half acre of land at <ex>Crumbedales</ex>; and these lands I had from the gift of my brother, Robert, who freely acquired
+                     them from John of Neville; <cl type="holding">for the said prior and monks of Coldingham and their successors to hold and to
+                     have, with all liberties and easements pertaining to the
+                     said lands, in free, pure, and perpetual alms, as freely
+                     and quitely in all things as any alms within the kingdom
+                     of Scotland is freely and quitely held or possessed.</cl></cl> <cl type="witnesses">As witnesses, the lord William of Mordington, the lord David of Haddington, the
+                  lord Ralph Noble, the lord William of Scremerston, Adam of
+                  Prenderguest, Adam son of John of Over Ayton, Thomas of
+                  Nisbet, Bertram of Reston, Patrick Scott, Gilbert of
+                  Lumsdaine, John son of Ingram, Gregory of Beoch, and others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

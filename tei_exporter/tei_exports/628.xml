@@ -1,0 +1,59 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-628">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.37</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:09:42.834437+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">628</idno>
+        <idno type="textcontent">638</idno>
+        <idno type="transcription_textcontentxml">628</idno>
+        <idno type="translation_textcontentxml">629</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.37</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.37</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2022-11-01T13:09:42.834437+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:09:42.834437+00:00" status="published">transcription moa=628 status=live modified=2022-11-01 13:09:42.834437+00 | translation moa=629 status=live modified=2022-11-01 13:09:41.930636+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. <persName>W.</persName> Permissione Diuina Ecclesie Sancti Andr<ex>ee</ex> Minister Humil<ex>is</ex></cl> Dilectis Suis . R . Decano de Liston’. et Magistro . <persName>R .</persName><lb/> De Doure Rectori ecclesie de Tinigham . et domino . <persName>I .</persName> de Penthcadland’ . <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition">Mandamus uobis Quatinus in uigilia<lb/> sancti Mathei apostoli apud Hadington<ex>a</ex> in propriis personis accedatis ad taxandum uicariam de Hadington<ex>a</ex> auctoritate nostra ad<lb/> ualenciam . XL . marcarum . Et si Senescallus noster dictis die et Loco ad hoc
+                     faciend<ex>um</ex> una uobiscum interesse non potuerit  ad<lb/> gerendum uices dicti senescalli nostri  mittemus ad uos prenominato die domini
+                     . <persName>R .</persName> de Methfen capellanum nostrum . Hoc autem<lb/> mandatum nostrum nullo modo facere omitteritis .</cl> <cl type="salutation">Valete .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex> by divine permission humble servant of the church of St Andrews</cl> to his well beloved R<ex>alph</ex>, dean of Liston, and Master R<ex>ichard</ex> of Dover, rector of the church of Tyninghame, and the lord J<ex>ohn</ex> of Pencaitland, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition">We command you that on the vigil of Saint Matthew the apostle, at Haddington,
+                  you undertake an assessment of the vicarage of Haddington by
+                  our authority to the value of forty marks. And if our steward
+                  cannot be present on the said day and place to do this with
+                  you, I shall send you on the aforenamed day the lord R<ex>obert</ex> of Methven, our chaplain, to act as the said steward’s deputy. By no means fail
+                     to carry out this our mandate.</cl> <cl type="salutation">Farewell.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,115 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-834">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/69</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.150772+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">834</idno>
+        <idno type="textcontent">853</idno>
+        <idno type="transcription_textcontentxml">834</idno>
+        <idno type="translation_textcontentxml">835</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/69</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/69</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-03-13T15:02:37.150772+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-03-13T15:02:37.150772+00:00" status="approved">transcription moa=834 status=reviewed modified=2023-03-13 15:02:37.150772+00 | translation moa=835 status=reviewed modified=2023-03-13 15:02:37.136271+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte matris ecclesie filiis . tam presentibus quam futuris . <cl type="intitulatio">Ric<ex>ardus</ex> le Walais</cl> . <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis me</cl> dedisse . et hac mea carta confirmasse deo et ecclesie Sancte marie de<lb/> Meylr<ex>os</ex> . et monachis ibidem deo seruientibus pro animabus d<ex>aui</ex>d et Melcolmi . Regum Scott<ex>orum</ex> . et Comitis Henr<ex>ici</ex> . et Walteri filii Alani domini mei . et omnium antecessorum . et successorum
+                     eorum<lb/> et pro animabus patris et matris mee . et omnium parentum . et antecessorum et
+                     successorum meorum . et pro salute domini mei . W . Reg<ex>is</ex> Scott<ex>orum</ex> . et comitis d<ex>aui</ex>d fratris eius . et alani filii Walteri domini<lb/> mei . et omnium antecessorum et successorum eius . et pro salute mea . et uxoris
+                     mee . et omnium heredum nostrorum . illam terra in
+                     Galwedia que uocatur Godenehc . <cl type="boundaries">per has diuisas . scilicet a capite<lb/> burne que uocatur polncarn . usque ad quercum in qua crux facta est . et sic
+                        sursum uersus septentrionem per quendam sicum . qui est
+                        iuxta predictum quercum . uersus orientem . usque ad
+                        loudonetha<lb/> et sic in transuersum musse uersus occidentem . per quendam sicum . usque . ad
+                        caput burne que cadit in saxnoc ad clonsangan</cl> . Dedi etiam predicte ecclesie illam terram que uocatur baremor . <cl type="boundaries">per<lb/> has diuisas . scilicet ab hostio burne de hactenewetne sursum usque ad caput
+                        eiusdem burne . et sic a capite burne sursum per
+                        quoddam uetus fossatum . usque . ad bog sub<lb/> hactnedonan . et sic deorsum sicut cruces facte sunt in quercus usque . ad
+                        louteuenan . et sic sursum uersus septemtrionem per
+                        uetus fossatum . usque . ad polnecreihs . et sic
+                        deorsum<lb/> sicut polnecreihs descendit in fale . et sic deorsum per fale . usque . ad
+                        hostium burne de hactnewetne .</cl> <cl type="holding">Totas has terras . et quicquid continetur infra prescriptas diuisas dedi<lb/> ecclesie de Meylr<ex>os</ex> . in liberam . et puram . et perpetuam elemosinam in perpetuum tenendas de me et
+                        heredibus meis . pro . ii . Marcis argenti ad duos
+                        terminos . mihi et heredibus meis<lb/> annuatim redendis . scilicet ad penthec<ex>osten</ex> . i . marcam . et unam ad festum sancti Martini . ita libere . quiete . plene .
+                        et honorifice . sicut ullam elemosinam liberius .
+                        quietius . plenius<lb/> et honorificentius tenent et possident . sine omni terreno seruitio . et
+                        consuetudine . et exactione seculari . salua mihi et
+                        heredibus meis prefata pensione .</cl> <cl type="warrandice">Et ego et<lb/> heredes mei manutenebimus . et warantizabimus eis prefatas terras . contra omnes
+                        homines in perpetuum . et adquietabimus . de forensi .
+                        et omni terreno seruitio uersus dominum regem et<lb/> omnes dominos nostros . saluis cartis eorum de Machel . quas habent de Waltero
+                        filio alani . et Alano filio Walteri dominis meis . et
+                        quietis clamatis de me et heredibus meis in perpetuum</cl></cl> .<lb/> <cl type="witnesses">His . T<ex>estibus</ex> . I . Glasg’ episcopo . E . Abbate de dunfermel<ex>ino</ex> . R . abbate de kinlos . A . abbate de cupro . Will<ex>elmo</ex> maluaisin archid<ex>icaono</ex> de laod<ex>onie</ex> . Hug<ex>one</ex> capellano regis . Rob<ex>erto</ex> filio Rob<ex>erti</ex> . Werneb’</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, as well present as to come, <cl type="intitulatio">Richard Wallace</cl> sends <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know me</cl> to have given, and by this my charter to have made firm, to God and to the
+                     church of Saint Mary at Melrose, and to the monks there
+                     serving God, for the souls of David and Malcolm, kings of
+                     the Scots, and of Earl Henry, and of Walter fitz Alan, my
+                     lord, and of all their ancestors and successors; and for
+                     the souls of my father and my mother, and of all my
+                     forefathers, and my ancestors and successors; and for the
+                     salvation of my lord, W<ex>illiam</ex>, king of the Scots, and of Earl David his brother, and of Alan fitz Walter my
+                     lord, and of all his ancestors and successors, and for my
+                     own salvation, and my wife's, and all our heirs'; that
+                     land in Galloway which is called 'Godenehc'; <cl type="boundaries">by these boundaries, to wit, from the head of the burn which is called
+                     'Polncarn', as far as the oak tree on which a cross has
+                     been made, and so up, northwards by a syke which is near
+                     the said oak tree, towards the east, as far as
+                     'Loudonetha', and so across the bog towards the west along
+                     a syke, as far as the head of the burn which falls into
+                     the 'Saxnoc' at 'Clonsangan'.</cl> I have also given to the said church the land which is called Barmuir, <cl type="boundaries">by these boundaries, to wit, from the mouth of the burne at 'Hactenewetne'
+                     upwards as fas as the head of the same burn, and so from
+                     the head of the burn upwards along an old ditch as far as
+                     the bog below 'Hactnedonan', and so downwards as the
+                     crosses have been made on the oak trees, as far as
+                     'Louteuenan, and so up, northwards by the old ditch as far
+                     as 'Polnecreihs', and so downwards as 'Polnecreihs'
+                     descends into the 'Fale', and so downwards along the
+                     'Fale', as far as the mouth of the burn at 'Hactnewetne'.</cl> <cl type="holding">All these lands and whatever is contained within the afore-written bounds have I
+                     given to the church of Melrose, in free, pure, and
+                     perpetual alms for ever, to be held of me and my heirs in
+                     return for 2 merks of silver to be rendered to me and my
+                     heirs at two terms, to wit, one merk at Pentecost and one
+                     at the feast of Saint Martin; so freely, quitly, fully,
+                     and honourably as hey hold and possess any alms freely,
+                     quitly, fully, and honourably, without every earthly
+                     service, custom and secular exaction; reserving to myself
+                     and my heirs the aforementioned pension.</cl> <cl type="warrandice">And I and my heirs shall maintain and warrant to them the aforementioned lands
+                     against all men for ever, and acquit from forinsec and
+                     every earthly service towards the lord king and all our
+                     lords, except for their charters concerning Mauchline
+                     which they have from Walter fitz Alan and Alan fitz Walter
+                     my lords, and quitclaimed for me and my heirs for ever</cl>.</cl> <cl type="witnesses">With these witnesses, J<ex>ocelin</ex>, bishop of Glasgow, A<ex>rchibald</ex> abbot of Dunfermline, R<ex>alph</ex> abbot of Kinloss, A<ex>dam</ex> abbot of Cupar, William Malveisin, archdeacon of Lothian, Hugh the king's
+                     chaplain, Robert son of Robert Warnebald.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

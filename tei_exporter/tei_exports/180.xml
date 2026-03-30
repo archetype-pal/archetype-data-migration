@@ -1,0 +1,66 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-180">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/226</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 09:09:17.413724+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">180</idno>
+        <idno type="textcontent">180</idno>
+        <idno type="transcription_textcontentxml">180</idno>
+        <idno type="translation_textcontentxml">181</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/226</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/226</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T09:09:17.413724+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T09:09:17.413724+00:00" status="published">transcription moa=180 status=live modified=2021-04-05 09:09:15.819731+00 | translation moa=181 status=live modified=2021-04-05 09:09:17.413724+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Herb’ . <persName><roleName>Camerarius</roleName></persName> Regis Scot’</cl> . Vniuersis catholice Matris Ecclesie filiis <cl type="salutation">salutem</cl>.</cl> <cl type="disposition"><cl type="notification">Notum sit<lb/> uobis</cl> me concessisse ⁊ mea carta confirmasse Ecclesie sancte crucis de castro
+                     puellarum ⁊ Cano<lb/>nicis ibidem deo seruientibus Ecclesiam de Kinel cum omnibus rectitudinibus suis
+                     . in decimis .<lb/> in terris . in bosco ⁊ plano . in pascuis ⁊ pratis . in perpetuam Elemosinam .
+                     consensu ⁊ consilio filiorum meorum<lb/> Stephani ⁊ Will<ex>elm</ex>i . <cl type="holding">Volo igitur ut predicti Canonici prenominatam Ecclesiam ita libere ⁊ quiete<lb/> possideant  sicut aliqua Ecclesia in tota Lodonia liberius ⁊ quietius
+                        possidetur . Salua tenore<lb/> domini Will<ex>elm</ex>i Nepotis mei  quam diu prenominatam Ecclesiam tenere uoluerit .</cl></cl> <cl type="witnesses">Testibus<lb/> ... Hugone Giffard . Terrico Nepote meo ⁊ Petro . ⁊ Ric’ Clerico .</cl> Apud Kinel .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Herbert, Chamberlain of the king of Scots,</cl> to all sons of Catholic Mother Church, <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition"><cl type="notification">Be it known to you</cl> that I have granted and by my charter made firm to the church of Holyrood at
+                     Maidens’ Castle and to the canons serving God there the
+                     church of Kinneil with all its rights, in teinds, in
+                     lands, in wood and plain, in pastures and meadows, in
+                     perpetual alms, by the consent and counsel of my sons
+                     Stephen and William. <cl type="holding">I therefore will that the aforesaid canons possess the aforenamed church as
+                     freely and quietly as any church in the whole of Lothian
+                     is freely and quietly possessed. Reserving the tenure of
+                     William my nephew, for as long as he should wish to hold
+                     the aforenamed church</cl>.</cl> <cl type="witnesses">As witnesses ... Hugh Giffard, Terry my nephew, and Peter, and Richard the
+                  clerk.</cl> At Kinneil.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

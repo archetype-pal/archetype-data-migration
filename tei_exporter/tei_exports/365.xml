@@ -1,0 +1,96 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-365">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/163</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-24 14:07:36.64375+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">365</idno>
+        <idno type="textcontent">369</idno>
+        <idno type="transcription_textcontentxml">365</idno>
+        <idno type="translation_textcontentxml">366</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/163</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/163</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-02-24T14:07:36.64375+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-02-24T14:07:36.64375+00:00" status="published">transcription moa=365 status=live modified=2017-02-24 14:07:33.764542+00 | translation moa=366 status=live modified=2017-02-24 14:07:36.64375+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">UNIUERSIS sancte matris ecclesie filiis presentibus et futuris . <cl type="intitulatio">Ysabel uxor Will<ex>el</ex>mi de Ridale</cl> <cl type="salutation">salutem</cl></cl>  <cl type="disposition"><cl type="notification">Sciatis me</cl> dedisse et concessisse<lb/> et hac mea carta confirmasse deo et ecclesie sancte . M<ex>ari</ex>e . de melros . et monachis ibidem deo seruientibus . pro salute domini patricii
+                     de Rid<ex>ale</ex> . et Walteri filii eius . et Will<ex>el</ex>mi<lb/> sponsi mei . et pro salute mea . et pro animabus omnium antecessorum et
+                     successorum nostrorum . illam bouatam terre in territorio
+                     de Whittun . quam pater meus Will<ex>elmu</ex>s persona de<lb/> Hunum emit a Gaufrido coco . et mihi donauit cum carta predicti . G. et
+                     confirmatione domini . P . de Rid<ex>ale</ex> . simul . <cl type="boundaries">per has diuisas sicut eadem bouata terre iacet inter<lb/> Hordlawe et tockesheles . et inter fossatum de Harhov et dotem matildis corbeth
+                        . et sicut tractus sulci circuit eam per predictas
+                        diuisas .</cl> <cl type="holding">Totam<lb/> hanc terram et quicquid continetur infra predictas diuisas dedi eisdem monachis
+                        . in liberam . puram . et perpetuam elemosinam et
+                        solutam ab omni terreno serui<lb/>cio . et consuetudine . et exactione seculari . ut ea habeant . teneant . et
+                        possideant inperpetuum . ita libere . quiete . plene .
+                        et honorifice . sicut aliquam elemo<lb/>sinam . liberius . quietius . plenius . et honorificentius . tenent uel
+                        possident</cl> . <cl type="warrandice">Et ego et heredes mei manutenebimus . et warantizabimus . predictis mona<lb/>chis hanc elemosinam contra omnes homines . et adquietabimus de omni seruicio
+                        inperpetuum</cl> . Et ut hec mea donatio firma sit et stabile . ego iuraui tactis<lb/> sacrosanctis ewangeliis in facie ecclesie . coram probis hominibus . que nec ego
+                     . nec aliquis heredum meorum . artem uel ingenium queremus
+                     . unde domus de melros<lb/> in posterum de eadem terra . aliquod dampnum incurrere possit uel grauamen</cl> . <cl type="witnesses">Test<ex>ibus</ex> . Domino patricio de Rid<ex>ale</ex> . Waltero filio eius de Rid<ex>ale</ex> . Will<ex>elm</ex>o<lb/> sponso meo . Will<ex>el</ex>mo filio nostro . Patricio filio Walt<ex>eri</ex> . de Rid<ex>ale</ex> . Rad<ex>ulfo</ex> de Rid<ex>ale</ex> . Roberto de bernoldebi . Alexandro clerico . Reginaldo homine persone .<lb/> Adam de hunteley . Henrico de heriz . Waltero filio . G . coc' . Gaufrido filio
+                     henric<ex>i</ex> de neuhbotle . Will<ex>el</ex>mo filio mabile . Will<ex>elm</ex>o<lb/> nep<ex>ote</ex> . d<ex>omi</ex>ni . P . de Rid<ex>ale</ex> . et multis . Aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">TO ALL sons of Holy Mother Church present and future <cl type="intitulatio">Isabel wife of William of Ryedale</cl> <cl type="salutation">sends greeting</cl></cl>. <cl type="disposition"><cl type="notification">Know me</cl> to have given and granted and by this my charter to have made firm to God and to
+                     the church of St Mary at Melrose and the monks serving God
+                     in that place, for the salvation of the lord Patrick of
+                     Ryedale, and Walter his son, and William my spouse, and
+                     for my own salvation, and for the souls of all our
+                     ancestors and successors, the oxgang of land in the
+                     territory of Whitton that my father William, the parson of
+                     Hownam, bought from Geoffrey the cook, and donated to me
+                     along with the charter of the foresaid G<ex>eoffrey</ex> and the confirmation of P<ex>atrick</ex> of Ryedale together, <cl type="boundaries">by these boundaries, as the same oxgang of land falls between Hardlaw and
+                     Shielstockbraes, and between the fosse of Harrow and the
+                     dower-land of Matilda Corbet, and as the course of the
+                     ditch goes around it by the foresaid boundaries.</cl> <cl type="holding">I have given this whole land and whatever is contained within the foresaid
+                     boundaries to the same monks in free, pure, and perpetual
+                     alms and released from every earthly service, custom, and
+                     secular exaction, that they may have, hold and possess it
+                     for ever, as freely, quitely, fully, and honourably as
+                     they hold or possess any alms freely, quitely, fully, and
+                     honourably.</cl> <cl type="warrandice">And I and my heirs shall maintain and warrant this alms to the foresaid monks
+                     against all men, and acquit it of every service for ever.</cl> And that this my donation should be firm and fixed I have sworn by holding the
+                     holy gospels in the presence of the church before worthy
+                     men; and neither I, nor any of my heirs, shall seek to
+                     challenge it by art or cunning from which the house of
+                     Melrose could in future incur any loss or injury in
+                     respect of the same land.</cl> <cl type="witnesses">As witnesses, the lord Patrick of Ryedale; Walter of Ryedale, his son; William
+                  my spouse; William our son; Patrick son of Walter of Ryedale;
+                  Ralph of Ryedale; Robert of Barnoldby; Alexander the clerk;
+                  Reginald the parson's man; Adam of Huntly; Henry de Heriz;
+                  Walter son of Geoffrey Cook; Geoffrey son of Henry of
+                  Newbattle; William son of Mabilla; William nephew of the lord
+                  P<ex>atrick</ex> of Ryedale; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

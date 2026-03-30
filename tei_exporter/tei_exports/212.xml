@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-212">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/242</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 09:28:45.860028+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">212</idno>
+        <idno type="textcontent">212</idno>
+        <idno type="transcription_textcontentxml">212</idno>
+        <idno type="translation_textcontentxml">213</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/242</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/242</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T09:28:45.860028+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T09:28:45.860028+00:00" status="published">transcription moa=212 status=live modified=2021-04-05 09:28:44.299643+00 | translation moa=213 status=live modified=2021-04-05 09:28:45.860028+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">.W. dei gratia Rex Scott’.</cl> Omnibus probis hominibus totius terre sue Clericis ⁊ laicis  <cl type="salutation">salutem</cl>.</cl> <cl type="disposition"><cl type="notification">Sciant<lb/> presentes . ⁊ futuri</cl> me concessisse  ⁊ hac carta mea confirmasse deo ⁊ ecclesie sancte crucis de<lb/> Edenburg . ⁊ canonicis ibidem deo seruientibus illam carrucatam terre . ⁊ decem
+                     acras<lb/> in territorio de Trauernent . uersus Phauheside . quam Rob’. de Quinci eis dedit
+                     pro excambio<lb/> illius Carrucata terre de prestune quam idem canonici uersus eundem Rob’. ⁊
+                     monachos<lb/> de Neubothle calumniauerunt . <cl type="holding">Tenend’ . sibi . in liberam . ⁊ puram ⁊ perpetuam elemosinam<lb/> cum libero exitu . ⁊ comuni pastura de Trauernent . quantum ad tantum terre
+                        pertinet . ita libere . ⁊ Quiete . plenarie . ⁊
+                        honorifice  sicut Carta predicti Rob’. testatur 
+                        saluo ser<lb/>uicio meo</cl> .</cl> <cl type="witnesses">Test’. Ric’. de prebend’. clerico meo . Rob’. de Quinci . Philipp’. de Mubrahi .<lb/> Will<ex>elm</ex>o. de lindes’ . Will<ex>elm</ex>o de Vallibus . Herb’. de Camera . philipp<ex>o</ex>. de londin’ . Waltero<lb/> Murdach.</cl> Apud Hadingtun .xix. die Augusti.</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex> by the grace of God king of Scots</cl> to all worthy men of the whole of his land, clerk and lay, <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> that I have granted, and by this my charter made firm, to God and to the church
+                     of Holyrood at Edinburgh, and to the canons serving God
+                     there, the ploughgate of land and ten acres in the
+                     territory of Tranent, towards Falside, that Robert de
+                     Quincy has given to them for the exchange of the
+                     ploughgate of land at Preston that the same canons claimed
+                     against the same Robert and the monks of Newbattle. <cl type="holding">For them to hold in free and pure and perpetual alms with free exit and the
+                     common pasture of Tranent, as much as belongs to such a
+                     land, as freely and quietly, fully and honourably as the
+                     charter of the said Robert bears witness, reserving my
+                     service</cl>.</cl> <cl type="witnesses">As witness, Richard de Prebenda my clerk, Robert de Quincy, Philip de Mowbray,
+                  William of Lindsay, William de Vaux, Herbert de Camera,
+                  Philip of Lundin, Walter Murdoch.</cl> At Haddington on the 19th day of August.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

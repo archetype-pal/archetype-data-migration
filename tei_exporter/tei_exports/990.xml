@@ -1,0 +1,65 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-990">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 778</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 10:59:47.474618+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">990</idno>
+        <idno type="textcontent">1019</idno>
+        <idno type="transcription_textcontentxml">990</idno>
+        <idno type="translation_textcontentxml">991</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 778</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 778</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T10:59:47.474618+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T10:59:47.474618+00:00" status="approved">transcription moa=990 status=reviewed modified=2022-11-01 10:59:47.474618+00 | translation moa=991 status=reviewed modified=2022-11-01 10:59:47.464123+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte ecclesie dei filiis sublimioribus et inferioribus ordinatis et
+                  laicis . <cl type="intitulatio">Gospatricus comes frater<lb/> Dolfini</cl> <cl type="salutation">salutem</cl> </cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me concessisse et dedisse deo et sancto Cuthberto . et monachis eius in
+                     elemosinam .<lb/> uillam de ederham et ecclesiam eiusdem uille cum omnibus capellis suis . et
+                     aliam uillam que dicitur nesebite . liberas et quietas<lb/> <cl type="holding">in perpetuum possidendas . cum omnibus que ad easdem uillas pertinent . in
+                     terris et aquis . et pratis . et pascuis .</cl> pro<lb/> anima Malcolmi regis . et filiorum eius regum Ædgari . Alexandri . et pro rege d<ex>aui</ex>d et filio eius henrico . et pro me ipso .<lb/> et uxore mea . et filiis meis et pro animabus omnium parentum meorum . <cl type="malediction">Et si aliquis huic elemo<lb/>sine mee uult contradicere . inter eum et Deum sit .</cl></cl> <cl type="witnesses">Testibus Will<ex>elm</ex>o filio dun' . Gosp<ex>atrico</ex> filio eius . Vlkil<lb/> filio Meld' . Rand' de lind' . S . presbitero . Ioh<ex>ann</ex>e capellano . Gosp<ex>atrico</ex> . filio crin . et Aldan fratre eius . et lambert dap<ex>ifero</ex> .</cl><lb/> <cl type="salutation">valete</cl> . <cl type="malediction">Quicumque hoc abstulerit . deus sibi et hanc uitam et regnum celorum auferat .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of the holy Church of God, eminent and lowly, ordained and lay, <cl type="intitulatio">Cospatric the earl, brother of Dolfin</cl>, <cl type="salutation">greeting</cl>.</cl> <cl type="notification">Know that</cl> <cl type="disposition">I have granted and given in alms to God and to Saint Cuthbert and to his monks
+                  the <ex>uilla</ex> of Edrom and the church of the same <ex>uilla</ex> with all its chapels, and another <ex>uilla</ex> which is called Nisbet, <cl type="holding">to be possessed freely and quietly in perpetuity with everything that pertains
+                     to the same <ex>uillae</ex> in lands and waters and meadows and pastures,</cl> for the soul of King Malcolm and of his sons the kings Edgar and Alexander, and
+                     for King David and his son Henry, and for me myself and my
+                     wife and my sons, and for the souls of all my forebears; <cl type="malediction">and if anyone should wish to object to this charitable gift, let it be between
+                     him and God</cl>.</cl> <cl type="witnesses">As witnesses: William son of Duncan; Cospatric his son; Ulfkil son of Maldred;
+                  Ranulf of Lindsay; S. the priest; John the chaplain;
+                  Cospatric son of Crin, and Haldane his brother; and Lambert
+                  the steward.</cl> <cl type="salutation">Farewell</cl>. <cl type="malediction">Whosoever take this away, let God take away from him both this life and the
+                  kingdom of heaven.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,96 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-692">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/73 (2)</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-24 13:35:08.738133+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">692</idno>
+        <idno type="textcontent">703</idno>
+        <idno type="transcription_textcontentxml">692</idno>
+        <idno type="translation_textcontentxml">693</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/73 (2)</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/73 (2)</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-02-24T13:35:08.738133+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-02-24T13:35:08.738133+00:00" status="published">transcription moa=692 status=live modified=2017-02-24 13:35:06.099155+00 | translation moa=693 status=live modified=2017-02-24 13:35:08.738133+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis Christi fidelibus hoc scriptum uisuris uel audituris <cl type="intitulatio">Walterus filius Alani domini Regis dapifer</cl> <cl type="salutation">Salutem in<lb/> domino</cl> .</cl> <cl type="notification">Nouerit uniuersitas uestra</cl> <cl type="disposition">me ad honorem dei . et pro animabus dominorum meorum regum Scotie et pro salute<lb/> mea et . B . uxoris mee et omnium antecessorum et heredum meorum dedisse
+                     concessisse et hac presenti carta<lb/> mea confirmasse deo et Monasterio de Melros et Monachis ibidem deo seruientibus
+                     et imperpetuum serui<lb/>turis territorium de Mauchelin et ecclesiam Sancti Michaelis in eo sitam .
+                     Concessi quidem eis . et hac mea<lb/> carta confirmaui totum prefatum territorium per suas diuisas contentas Scilicet
+                     in carta mea quam inde habent<lb/> Monachi . vt habeant omnia contenta intra predictas diuisas cum omnibus
+                     liberatatibus et pertinentiis<lb/> ad idem tenementum de iure uel longa consuetudine spectantibus . <cl type="warrandice">Ego quidem et heredes mei waran<lb/>tizabimus et defendemus predictis Monachis contra omnes homines . et eos in pace
+                        possidere faciemus omnia<lb/> supradicta cum suis pertinentiis .</cl> <cl type="holding">Tenenda et habenda libera penitus et quieta ab omni terreno seruitio<lb/> et omni consuetidine et exactione et demanda .</cl> Insuper quinque Marcas annuas ad quas mihi et heredibus meis<lb/> soluendas predicti Monachi pro eadem terra singulis annis secundum tenorem carte
+                     mee . et carte patris mei<lb/> tenebantur eisdem Monachis in perpetuum caritatiue remisi et eos ab illarum
+                     solutione pro me et om<lb/>nibus heredibus et successoribus meis liberos feci et inperpetuum inmunes . A
+                     uenatione etiam et auium cap<lb/>tione quas ego et antecessores mei in libera terra dicte ecclesie de Mauchelin
+                     consueuimus excercere et ab omni<lb/> usu cuiuslibet artis et negotii secularis eandem terram ecclesie cum suis
+                     pertinentiis liberam feci et pe<lb/>nitus exhoneraui .</cl> <cl type="sealing">Et ut hec mea donatio et confirmatio sine omni impedimento firmatur et stabiles<lb/> fiant presens scriptum Sigilli mei appositione roboraui .</cl> <cl type="witnesses">Hiis testibus Domino Iohanne de Mackuswel<lb/> Bernardo fraser . Adam filio Gilberti . Reynaldo de crauford . Rogero filio
+                     Glaii . Roberto logan .<lb/> Roberto de crauford . Nigello de heriz . Roberto clerico et Multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful who shall view or hear this writing, <cl type="intitulatio">Walter son of Alan, steward of the lord king,</cl> <cl type="salutation">sends greeting in the Lord</cl>.</cl> <cl type="notification">Know me, all of you,</cl> <cl type="disposition">to the honour of God, and for the souls of my lords the kings of Scotland, and
+                  for my own soul, and the soul of my wife and of all my
+                  ancestors and heirs, to have given, granted, and by this my
+                  present charter to have made firm, to God and the monastery
+                  at Melrose, and to the monks in that place serving God now
+                  and for ever in the future, the territory of Mauchline, and
+                  the church of St Michael to be found there. I have indeed
+                  granted to them, and have made firm by this my charter, the
+                  whole territory, mentioned before, by its own boundaries,
+                  that is, as they are contained in my charter which the monks
+                  have concerning it, so that they should have everything
+                  contained within the boundaries already said, with all
+                  liberties and pertinents that belong to the same holding by
+                  right or long-standing custom. <cl type="warrandice">I and my heirs shall warrant and defend the said monks against all men, and make
+                     them possess in peace all the things said above, with
+                     their pertinents.</cl> <cl type="holding">To be held and had entirely free and quit from every earthly service and every
+                     custom and exaction and demand.</cl> In addition, the five merks which the aforesaid monks were bound to have to pay
+                     to me and and my heirs in return for the same land each
+                     year according to the words of my charter and the charter
+                     of my father, to the same monks, in the spirit affection
+                     and charity, I have, for my part and for all my heirs and
+                     successors, perpetually remitted and made them free and
+                     immune for ever from the payment of them. I have also
+                     freed and entirely released the same land and its
+                     pertinents from hunting and the capture of birds which I
+                     and my ancestors were accustomed to excercise in the free
+                     land of the said church of Mauchline and from the practice
+                     of any art and business whatever.</cl> <cl type="sealing">And so that my donation and confirmation should be made firm and become lasting,
+                  without any impediment, I have strengthened the present
+                  writing by the application of my seal.</cl> <cl type="witnesses">With these witnesses: the lord John of Maxwell, Berhard Fraser, Adam son of
+                  Gilbert, Reginald of Crawford, Roger son of Glay, Robert
+                  Logan, Robert of Crawford, Nigel de Heriz, Robert the clerk,
+                  and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

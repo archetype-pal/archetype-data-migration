@@ -1,0 +1,76 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-403">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/134</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:02:32.291977+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">403</idno>
+        <idno type="textcontent">407</idno>
+        <idno type="transcription_textcontentxml">403</idno>
+        <idno type="translation_textcontentxml">404</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/134</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/134</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:02:32.291977+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:02:32.291977+00:00" status="published">transcription moa=403 status=live modified=2021-04-06 15:02:30.839706+00 | translation moa=404 status=live modified=2021-04-06 15:02:32.291977+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-size: 16.0pt; font-family: Junicode;"><cl type="address"><cl type="intitulatio">Ansel’ de Wittune</cl> vniuersis sancte Matris ecclesie filiis tam presentibus quam futuris <cl type="salutation">Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciant tam presentes<lb/> quam posteris</cl> me dedisse et hac mea carta confirmasse deo et domui de Melr<ex>os</ex> . et monachis ibidem deo seruientibus<lb/> in perpetuam elemosinam totam illam meam peteriam que est Molope et berope et
+                        herdstrete que diuidit terram<lb/> de Molle et de hunum pro anima d<ex>aui</ex>d . Regis . et henrici comitis . et Malcolmi Regis . et pro salute Will<ex>elm</ex>i Regis et d<ex>aui</ex>d<lb/> fratris eius . et pro anima mea et vxoris mee et liberorum meorum . Itaque
+                        monachi de Melr<ex>os</ex> tenebunt predictam petariam in pu<lb/>ram et perpetuam elemosinam quietam et liberam ab omnibus auxiliis et omnibus
+                        consuetudinibus . <cl type="warrandice">Et ego et heredes<lb/> mei warantizabimus predictis monachis eandem peteriam erga omnes homines
+                           imperpetuum</cl> . Preterea dedi eis in perpetuam<lb/> elemosinam in Bosco meo de Molope buschiam quantum unus equus potest portare ad
+                        grangiam suam de hunedun<lb/> singulis annis a pascha usque ad Natiuitatem sancte Marie eadem libertate qua
+                        peteriam eis dedi</cl> .<lb/> <cl type="witnesses">Hiis Testibus . Simone archidiacono Glasguensi . Ric’ Decano de hastenesd<ex>en</ex>e . Petro persona de Morebotle .<lb/> Will<ex>elm</ex>o persona de hunum . Ioh<ex>ann</ex>e filio orm . et Will<ex>elm</ex>o filio eius . Will<ex>elm</ex>o de Sumeruilla . Rogero de<lb/> Wiltuna . Will<ex>elm</ex>o de Lund’</cl>.</span>
+        </p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Anselm of Whitton</cl> <cl type="salutation">sends greeting</cl> to all sons of Holy Mother Church both present as well as to come.</cl> <cl type="disposition"><cl type="notification">Let present as well as future know</cl> me to have given and by this my charter to have made firm to God and to the <ex>monastic</ex> house of Melrose, and to the monks serving God in that place, in perpetual alms
+                     my whole peatery which is [between] Mowhope and Berhope
+                     and ‘Herdstrete’ which divides the land of Mow and Hownam,
+                     for the soul of King David, and Earl Henry, and King
+                     Malcolm, and for the salvation of King William, and David
+                     his brother, and for my own soul and my wife’s and my
+                     childrens’ <ex>souls</ex>. And so the monks of Melrose shall hold the said peatery in pure and
+                     everlasting alms, quit and free from all aids and all
+                     customs. <cl type="warrandice">And I and my heirs shall warrant to the said monks the same peatery in respect
+                     of all men for ever.</cl> In addition I have given to them in everlasting alms in my wood of Mowhope as
+                     much firewood as one horse can carry to their grange of
+                     Hownam each year from Easter to the Nativity of Saint
+                     Mary, by the same liberty by which I gave them the
+                     peatery.</cl> <cl type="witnesses">With these witnesses: Simon archdeacon of Glasgow; Richard dean of Hassendean;
+                  Peter the parson of Morebattle; William the parson of Hownam;
+                  John son of Orm, and William his son; William de Somerville;
+                  Roger of Wilton; William of London.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

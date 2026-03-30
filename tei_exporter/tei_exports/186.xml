@@ -1,0 +1,69 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-186">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/229</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-09-14 01:23:16.151699+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">186</idno>
+        <idno type="textcontent">186</idno>
+        <idno type="transcription_textcontentxml">186</idno>
+        <idno type="translation_textcontentxml">187</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/229</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/229</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2022-09-14T01:23:16.151699+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2022-09-14T01:23:16.151699+00:00" status="published">transcription moa=186 status=live modified=2022-09-01 10:12:45.403489+00 | translation moa=187 status=live modified=2022-09-14 01:23:16.151699+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">M . Dei gratia Rex Scot’ . Episcopis . Abbatibus . Comitibus . Baronibus . <persName><roleName>Iust<ex>iciis</ex></roleName></persName> . <persName><roleName>Vicecomit<ex>ibus</ex></roleName></persName> <lb/> ⁊ Omnibus fidelibus suis  <cl type="salutation">salutem</cl>.</cl> <cl type="disposition">Sciant tam posteri quam presentes me dedisse ⁊ Concessisse<lb/> inperpetuam elemosinam . deo ⁊ Ecclesie sancte crucis de edeneburc ⁊ Canonicis
+                     deo ibi seruientibus<lb/> pro salute antecessorum ⁊ successorum meorum ecclesiam de trauernant cum omnibus
+                     Iuste ad eam<lb/> pertinentibus sicut Walerannus Capellanus unquam melius eam habuit ⁊ tenuit .
+                     salua tenura<lb/> ipsius Waleranni Capellani quandiu in conuersatione seculari manserit . Volo
+                     itaque<lb/> ut predicti Canonici ecclesiam illam in perpetuis temporibus post Waleranni
+                     dicessum ita libere<lb/> ⁊ quiete obtineant sicut alias suas habent ⁊ tenent elemosinas ⁊ possessiones</cl> . <cl type="witnesses">Test<ex>ibus</ex><lb/> <persName>Ada</persName> Comitissa matre mea . Hug<ex>one</ex> De Moreuill’ . Waltero Cancellario . Waltero filio alani<lb/> Nicolao clerico ipso Waleranno presente ⁊ hoc postulante</cl> <cl type="dating">apud EdeneBVRG</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">M<ex>alcolm</ex> by the grace of God king of Scots to the Bishops, Abbots, Earls, Barons, <persName><roleName>Justices</roleName></persName>, <persName><roleName>Sheriffs</roleName></persName>, and all his sworn men, <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition">Let those to come as well as those present know that I have given and granted in
+                  perpetual alms, to God and the church of Holyrood at
+                  Edinburgh and to the canons serving God there, for the
+                  salvation of my ancestors and successors, the church of
+                  Tranent with everything rightfully belonging to it, just as
+                  Waleran the chaplain ever had and held it well, reserving the
+                  tenure of Waleran the chaplain himself for as long as he
+                  remains in secular life. I therefore will that the aforesaid
+                  Canons hold that church in perpetuity after Walter’s
+                  departure, as freely and quietly as they have and hold their
+                  other alms and possessions.</cl> <cl type="witnesses">As witnesses, Countess Ada my mother, Hugh de Morville, Walter the chancellor,
+                  Walter son of Alan, Nicholas the clerk, Waleran himself being
+                  present and suggesting it.</cl> <cl type="dating">At Edinburgh.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

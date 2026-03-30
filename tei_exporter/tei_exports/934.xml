@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-934">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 592</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:51:20.453865+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">934</idno>
+        <idno type="textcontent">961</idno>
+        <idno type="transcription_textcontentxml">934</idno>
+        <idno type="translation_textcontentxml">935</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 592</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 592</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:51:20.453865+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:51:20.453865+00:00" status="approved">transcription moa=934 status=reviewed modified=2022-11-01 16:51:20.44021+00 | translation moa=935 status=reviewed modified=2022-11-01 16:51:20.453865+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. W . dei Gr<ex>ati</ex>a Rex Scott’ .</cl> Omnibus probis Hominibus Tocius Terre Sue . Clericis et laicis  <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant<lb/> presentes et futuri</cl> . me Concessisse . et Hac Carta mea Confirmasse . donationem illam quam . D<ex>aui</ex>d . de Quiches<lb/>wde . fecit Hospitali de AldeCambus . et leprosis ibi manentibus . de illa
+                     dimidia Carrucata terre in<lb/> Aldecambus . quam Radulfus . pelliparius tenuit . <cl type="holding">Tenend<ex>am</ex> . in liberam et puram . et perpetuam Elemosinam .<lb/> Cum Omnibus libertatibus . et aisiamentis ad predictam terram iuste
+                        pertinentibus . ita libere et Quiete  sicut<lb/> Carta predicti . D<ex>aui</ex>d . testatur . Saluo Seruitio meo</cl> .</cl> <cl type="witnesses">Test<ex>ibus</ex> . Will<ex>elmo</ex> . de Bosch<ex>o</ex> . Cancellario . meo . Walter<ex>o</ex> . de Lindes’ .<lb/> Ioh<ex>ann</ex>e . de Maccuswel’ . Walter<ex>o</ex> . Cumin’ . D<ex>aui</ex>d . de Hastings .</cl> <cl type="dating">Apud Ieddewrth’ . xvi . die . Maii .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam,</ex> by the grace of God king of the Scots,</cl> to all worthy men of his entire land, clerk and lay, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have approved, and by this my charter to have made firm, the donation
+                     which David of Quixwood made to the hospital of Old Cambus
+                     and the lepers dwelling there of the half ploughgate of
+                     land in Old Cambus which Ralph the tanner held. <cl type="holding">To be held in free, pure, and perpetual alms, with all liberties and easements
+                     pertaining to the said land, as freely and quitly as the
+                     charter of the said David bears witness. Saving my
+                     service.</cl></cl> <cl type="witnesses">As witnesses: William del Bois, my chancellor; Walter of Lindsay; John of
+                  Maxwell; Walter Comyn; David of Hastings.</cl> <cl type="dating">At Jedburgh on the 16th day of May.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

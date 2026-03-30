@@ -1,0 +1,96 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-622">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL L.F.C. Ch. xxx.5</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:22:00.551018+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">622</idno>
+        <idno type="textcontent">632</idno>
+        <idno type="transcription_textcontentxml">622</idno>
+        <idno type="translation_textcontentxml">623</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>L.F.C. Ch. xxx.5</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL L.F.C. Ch. xxx.5</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:22:00.551018+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:22:00.551018+00:00" status="published">transcription moa=622 status=live modified=2021-04-05 08:21:58.484687+00 | translation moa=623 status=live modified=2021-04-05 08:22:00.551018+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. W’. dei gr<ex>ati</ex>a Rex Scott’ .</cl> Ep<ex>iscop</ex>is . Abbatibus . Com<ex>itibus</ex> . Baronibus . Iustic<ex>iis</ex> . Vice<ex>comitibus</ex> . Prepositis . Ministris . et Omnibus probis Hominibus Tocius<lb/> terre sue Clericis et Laicis  <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Sciant presentes et futuri .</cl> <cl type="disposition">Me dedisse et Concessisse . et Hac Carta mea Confirmasse .<lb/> Ioh<ex>ann</ex>i Waler’ . Pro Homagio et seruicio suo totam terram illam quam Will<ex>elmu</ex>s Carpentarius tenuit in Ballebotl<ex>ia</ex> . Scilicet Quintam<lb/> Reiam . tocius medietatis de Ballebotlia . Et in Campis de Dreinin  illam
+                     terram quam Hug<ex>o</ex> Giffard’ . et Alex<ex>ander</ex> . de S<ex>an</ex>c<ex>to</ex><lb/> Martin<ex>o</ex> . et Godefridus <persName><roleName>Maresc<ex>allus</ex></roleName></persName> . et Winemerus . et alii probi Homines precepto <persName>Ade</persName> Comitisse Matris mee Roger<ex>o</ex> . de Camera perambula<lb/>uerunt . Et preterea totam terram in Ardarie quam Will<ex>elmus</ex> . de Beauuer tenuit . Scilicet . terram illam que est ex orientali parte<lb/> Riuuli qui currit iuxta terram Galfr<ex>idi</ex> . Capellani . usque ad fontem illum uersus Karel  qui Scottice Tolari
+                     nuncupatur . Et totam<lb/> terram illam per easdem diuisas quas Galfridus de Maleuille . et Hug<ex>o</ex> . Giffard’ . et Godefr<ex>idus</ex> . <persName><roleName>Maresc<ex>allus</ex> .</roleName></persName> et Winemerus et alii pro<lb/>bi homines predicto Will<ex>elm</ex>o ex omni parte uersus moram et alibi perambulauerunt . Et communem pasturam de
+                     Karel . Et<lb/> unum Toftum in Karel . illud Scilicet <supplied>quod</supplied> . <persName>A .</persName> Comitissa mater mea predicto Will<ex>elm</ex>o dedit . <cl type="holding">Quare uolo et firmiter precipio ut<lb/> predictus Ioh<ex>anne</ex>s et heredes sui . omnes prescriptas Tenuras habeant et teneant de me et
+                        heredibus meis in feudo et hereditate . in<lb/> pratis et Pascuis . in Moris et Marresiis . et in Omnibus aliis aisiamentis que
+                        ad predictas terras iuste pertinent  Libere et Quiete
+                        . Ple<lb/>narie et Honorifice . per seruicium unius seruientis in equo cum Halbergello .
+                        et faciendo in auxiliis et forinsecis seruiciis<lb/> pro tota terra quam habet in Ardarie . tantum seruicii  quantum pertinet ad
+                        dimid<ex>iam</ex> . Carrucatam terre scotticam in Karelis<lb/>schire .</cl> Concessi etiam predicto Ioh<ex>ann</ex>i et heredibus suis . ut Quieti sint de Multura de propria domo sua ad Molendin<ex>um</ex> meum . Set<lb/> ut homines sui dent multuram . Et quod Bladus ipsius Ioh<ex>ann</ex>is et heredum suorum molatur ad molendinum meum primo post Bladum qui in<lb/> tremello fuerit . nisi Bladus meus ibi sit aut superueniat .</cl> <cl type="witnesses">Test<ex>ibus</ex> . Philipp<ex>o</ex> . de Valon<ex>iis</ex> . <persName><roleName>Camerario</roleName></persName> . meo . Will<ex>elm</ex>o Capellan<ex>o</ex> . meo . Will<ex>elm</ex>o<lb/> Cumin . Hug<ex>one</ex> . et Will<ex>elm</ex>o et Adam Clericis meis . Magistro Nichol<ex>ao</ex> . et Magistro Martin<ex>o</ex> Clericis meis . Alex<ex>andro</ex> . Vic<ex>ecomite</ex> . de Striuel<ex>in</ex><lb/> Will<ex>elm</ex>o de Valon<ex>iis</ex> . Alex<ex>andro</ex> . filio . <persName>Thore</persName> . Ioh<ex>anne</ex> . de Striuel<ex>in</ex> . Rob<ex>erto</ex> . Quarrantel’ .</cl> Apud Clacm<ex>anan</ex> . xiii . die Octobris .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">William, by the grace of God king of the Scots,</cl> to bishops, abbots, earls, barons, justices, sheriffs, provosts, officials, and
+                     all the worthy men of the whole of his land, clerk and
+                     lay, <cl type="salutation">greeting</cl>.</cl> <cl type="notification">Let present and future know</cl> <cl type="disposition">me to have given and conceded, and by this my charter to have made firm, to John
+                  Waleram, in return for his homage and service, the whole land
+                  which William Carpenter held in Babbet, that is, every fifth
+                  rig of the whole half of Babbet, and in the fields of Drony,
+                  the land which Hugh Gifford, Alexander de St-Martin, Godfrey
+                  the marischal, Winemar, and other worthy men perambulated for
+                  Roger de Camera at the instruction of the Countess Ada, my
+                  mother; and in addition, the whole land in Airdrie [in Crail]
+                  that William de Beauver held, that is, the land which is on
+                  the east side of the burn that runs beside the land of
+                  Geoffrey the chaplain, as far as the well at Crail which in
+                  Gaelic is called 'Tolari' [Toldrie, in Crail]; and the whole
+                  land by the same boundaries which Geoffrey de Malville, Hugh
+                  Gifford, Godfre the marischal, Winemar and other worthy men
+                  perambulated for the aforesaid William on every side towards
+                  the moor and elsewhere; and common pasture at Crail; and one
+                  toft in Crail, that is, the one which the Countess A<ex>da</ex>, my mother, gave to the aforesaid William. <cl type="holding">Wherefore I will and firmly enjoin that the aforesaid John and his heirs have
+                     and hold all the aforewritten holdings of me and my heirs
+                     in feu and heritage, in meadows and pastures, in moors and
+                     marshes, and in all other easements that belong by right
+                     to the aforesaid lands, freely and quitly, fully and
+                     honourably, by the service of one sergeand on a horse with
+                     a haubergel, and performing in aids and forinsec services
+                     in return for the whole land that he has in Airdrie as
+                     much service as pertains to half a Scottish ploughgate in
+                     Crailshire.</cl> I have also granted to the aforesaid John and his heirs that they be quit of
+                     multure for their own house at my mill, but that his men
+                     should give multure; and that the corn of John and his
+                     heirs be milled at my mill first after the corn that is in
+                     already in the hopper, unless my corn already be there or
+                     arrive in the meantime.</cl> <cl type="witnesses">As witnesses: Philip de Valognes, my chamberlain; William, my chaplain; William
+                  Comyn; Hugh and William and Adam, my clerks; Master Nicholas
+                  and Master Martin, my clerks; Alexander, sheriff of Stirling;
+                  William de Valognes; Alexander, son of Thor; John of
+                  Stirling; Robert Quarrantilly.</cl> At Clackmannan, on the 13th day of October.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

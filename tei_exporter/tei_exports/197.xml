@@ -1,0 +1,76 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-197">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/234</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 09:26:02.113494+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">197</idno>
+        <idno type="textcontent">196</idno>
+        <idno type="transcription_textcontentxml">197</idno>
+        <idno type="translation_textcontentxml">196</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/234</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/234</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T09:26:02.113494+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T09:26:02.113494+00:00" status="published">transcription moa=197 status=live modified=2021-04-05 09:26:00.45545+00 | translation moa=196 status=live modified=2021-04-05 09:26:02.113494+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Christianus dei gratia candide case episcopus</cl> uniuersis sacro sancte matris ecclesie filiis clericis  laicis presen<lb/>tibus  futuris <cl type="salutation">salutem</cl></cl> . <cl type="disposition"><cl type="notification">Vniuersitati uestre notificetur</cl> me concessisse .  hac carta mea confirmas<lb/>se . deo  ecclesie sancte crucis de edenb’ .  canonicis ibidem deo
+                     seruientibus . ecclesiam sancte marie  sancti bruoc de
+                     dunrod . in liberam  perpetuam elemosinam cum omnibus
+                     rectitudinibus  pertinenciis<lb/> suis saluo iure episcopali .  ecclesiam de tuignam cum omnibus rectitudinibus 
+                     pertinenciis suis . hac<lb/> eadem etiam karta confirmo donationem fergussi  huct’ filii eius de tota uilla
+                     de dun<lb/>rodde . per recctas diuisas suas cum omnibus iustis pertinentiis 
+                     rectitudinibus suis .  ut melius  plenarius karte
+                     ipsorum testantur .</cl> <cl type="witnesses">Teste W<ex>i</ex>ll<ex>elm</ex>o abbate de dundrainan . Io<lb/>hanne archidiacono . Gilleberto capellano . Iacobo persona de creuecoer Roberto
+                     pres<lb/>bitero filio dolfin . Macraith . de ospitali . Malbet nepote episcopi . Valtero
+                     fratre eius .<lb/> Nicholao . Iacobo nepotibus episcopi . W<ex>i</ex>ll<ex>elm</ex>o de kertmel . Gilleberto dapifero episcopi .<lb/> Bran . filio macgillegunnin . Arnaldo hostiario . Adam de ele .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Christian, by the grace of God bishop of Candida Casa [Whithorn],</cl> to all sons of the most holy Mother Church, clerk and lay, present and future, <cl type="salutation">Greeting:</cl></cl> <cl type="disposition"><cl type="notification">You should all be notified that</cl> I have granted, and by this my charter have made firm, to God and to the church
+                     of Holyrood in Edinburgh, and to the canons serving God
+                     there, the church of St Mary and St Bruoc of Dunrod, in
+                     free and perpetual alms with all its revenues and
+                     pertinents, reserving episcopal right, and the church of
+                     Twynholm, with all its revenues and pertinents. I also
+                     confirm by this same charter the donation of Fergus and
+                     his son Uhtred of the whole toun of Dunrod by its correct
+                     bounds, with all its rightful pertinents and revenues, and
+                     as their own charters the better and more fully bear
+                     witness.</cl> <cl type="witnesses">As witness, William abbot of Dundrennan, John the archdeacon, Gilbert the
+                  chaplain, James the parson of Troqueer, Robert the priest,
+                  son of Dolfin, Mac Raith of Spittal, Máel Bethad the bishop’s
+                  nephew, Walter his brother, Nicholas [and] James the bishop’s
+                  nephews, William of Cartmel, Gilbert the bishop’s steward,
+                  Bran son of Macgillegunnin, Arnold the doorward, Adam de Ele.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-214">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/243</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-07-01 17:16:19.34438+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">214</idno>
+        <idno type="textcontent">214</idno>
+        <idno type="transcription_textcontentxml">214</idno>
+        <idno type="translation_textcontentxml">215</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/243</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/243</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-07-01T17:16:19.34438+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-07-01T17:16:19.34438+00:00" status="published">transcription moa=214 status=live modified=2017-03-14 17:47:59.671794+00 | translation moa=215 status=live modified=2017-07-01 17:16:19.34438+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi fidelibus . presens scriptum visuris vel audituris . <cl type="intitulatio">W . de veteri ponte primogenitus trium filiorum<lb/> Domine Emme de sancto hylario</cl> <cl type="salutation">Salutem</cl>.</cl> <cl type="disposition"><cl type="notification">Nouerit uniuersitas vestra</cl> me caritatis Intuitu dedisse concessis<lb/>se et hac presenti carta confirmasse ecclesie sancte crucis de Edenesburg et
+                     canonicis ibidem deo seruientibus<lb/> totam decimam de carbonario meo de kareddin . et decimum denarium de omnibus
+                     nauibus et batellis<lb/> oneratis et exoneratis In terra mea de blackenis In puram et perpetuam
+                     Elemosinam.</cl> <cl type="sealing">Quod<lb/> vt firmum perseueret In posterum presens scriptum sigillo meo coroboraui .</cl> <cl type="witnesses">Hiis Testibus Will<ex>elm</ex>o Medio . et W . Iuniore fratribus meis . Rog<ex>er</ex>o de la crai . Radulfo bret’ . et multis aliis.</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ’s faithful who shall view or hear the present writing <cl type="intitulatio">W<ex>illiam</ex> de Vieuxpont first-born of the three sons of the lady Emma de Saint-Hilaire</cl> <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know all of you that</cl> moved by charity I have given, granted, and by this present charter made firm to
+                     the church of Holyrood in Edinburgh and to the canons in
+                     that place serving God the whole teind of my charcoal at
+                     Carriden and the teind of the money from all ships and
+                     boats laden or unladen in my land of Blackness in pure and
+                     perpetual alms.</cl> <cl type="sealing">So that it may be strictly adhered to in the future I have corroborated the
+                  present deed with my seal.</cl> <cl type="witnesses">With these as witnesses: William the middle, and W. the youngest, my brothers;
+                  Roger de la Cray; Ralph Bret<ex>on</ex>; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

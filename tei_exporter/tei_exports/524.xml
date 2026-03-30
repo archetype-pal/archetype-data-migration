@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-524">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/58</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:31.640915+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">524</idno>
+        <idno type="textcontent">531</idno>
+        <idno type="transcription_textcontentxml">524</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/58</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/58</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:31.640915+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:31.640915+00:00" status="draft">transcription moa=524 status=draft modified=2017-01-30 19:28:31.640915+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris Ecclesie filii presentibus et futuris <cl type="intitulatio">Patricius de Withichun</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sci<lb/>atis</cl> me concessisse et dedisse et hac mea carta confirmasse Deo et ecclesie Sancte
+                     Marie de<lb/> Melros . et Monachi Ibidem deo seruientibus pro animabus patris mei et matris
+                     mee et omnium<lb/> antecessorum meorum . et pro salute Domini Patricii Comitis . et heredum suorum
+                     . et pro salute anime mee<lb/> et vxoris mee et Omnium successorum meorum . In liberam puram et perpetuam
+                     Elemosinam<lb/> quandam partem terre mee In territorio de Spot . scilicet Lochaneshalech <cl type="boundaries">per has diui<lb/>sas . A capite fossati ipsorum monachorum quod inchoatur a Caldebec et tendit
+                        sursum usque<lb/> ad viridem uiam que descendit de Lambermor . et sic per eandem uiam usque ad
+                        Akiside . et<lb/> sic Deorsum subtus Akiside per fossatum usque ad Akisideseneb . et sic deorsum
+                        tam prope eundem<lb/> Akiside quanto propius meatus antedicti Riuuli poterit fieri . usque ad
+                        Carlehalech<lb/> et in transuersum Karlehalech usque In Presmuneburne .</cl> <cl type="holding">Hanc terram et quicquid continetur infra<lb/> prenominatas diuisas uersus eosdem monachos dedi eis . tenendam et possidendam
+                        In perpetuum<lb/> Ita libere et quiete . Plenarie et honorifice sicut aliqua Elemosina liberius et
+                        quietius plenius et hono<lb/>rificencius teneri potest uel possideri .</cl> <cl type="warrandice">Et ego et heredes mei manutenebimus et warantizabimus<lb/> predictis monachis hanc Elemosinam contra omnes homines et adquietabimus eam de
+                        omni forensi et terre<lb/>no seruitio erga omnes homines et de omni exactione et consuetudine seculari in
+                        perpetuum .</cl><lb/> Et Idem Monachi utentur omni hac terra pro libitu et uoluntate sua modis omnibus
+                     sicut me<lb/>lius sibi et suis uisum fuerit .</cl> <cl type="witnesses">Hiis test<ex>ibus</ex> . Domino Patricio Comite . Geruasio Auenel . Nesio de<lb/> Walect’ . Rob<ex>erto</ex> . de Burneuill’ . Ioh<ex>ann</ex>e de Mackeswel tunc temporis vicec<ex>omite</ex> . de Theuid’ . Will<ex>elm</ex>o de<lb/> Cresswuil’ . Rogero de Merlai . Will<ex>elm</ex>o de cracri . Adam de Paulewrthe .</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

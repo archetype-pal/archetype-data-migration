@@ -1,0 +1,83 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-644">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.18</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:30:27.695953+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">644</idno>
+        <idno type="textcontent">654</idno>
+        <idno type="transcription_textcontentxml">644</idno>
+        <idno type="translation_textcontentxml">645</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.18</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.18</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:30:27.695953+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:30:27.695953+00:00" status="published">transcription moa=644 status=live modified=2021-04-05 08:30:27.695953+00 | translation moa=645 status=live modified=2021-04-05 08:30:25.769453+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>Willelmus</persName> dei gr<ex>ati</ex>a Rex scottorum</cl> . omnibus probis hominibus tocius terre sue <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Sciatis quod</cl> <cl type="narration">me presente . et presentibus episcopis .<lb/> baronibus . et pluribus aliis probis hominibus Regni mei . die Sancti Luce
+                     Euuangeliste . inter monachos de Meylros et homines de
+                     Wedal’<lb/> super pastura foreste mee quam antecessores mei et ego . dictis monachis de
+                     Meylros in puram et perpetuam elemosinam<lb/> dedimus . per iuramenta fidelium uirorum facta fuit perambulacio et certa finium
+                     limitacio . <cl type="boundaries">Iurauerunt siquidem coram me et<lb/> probis hominibus meis predicti fideles . quod foresta mea que est pastura
+                        dictorum monachorum de Meylros . tendit usque ad<lb/> uiam que uadit ad occidentem parte ecclesie de Wedale et usque ad Riuulum qui
+                        uocatur fasseburne</cl> .</cl> <cl type="disposition"><cl type="holding">Quare uolo .<lb/> concedo et precipio . quod dicti monachi totam prefatam pasturam cum omnibus
+                        aisiamentis et libertatibus suis . pacifice teneant et
+                        possideant . usque ad prefatas diuisas . in puram .
+                        liberam et perpetuam elemosinam . proprie sibi et suis
+                        successoribus . Ita quod<lb/> nulli communiam habeant inter ipsos aut cum ipsis infra prefatas diuisas
+                        predicte pasture . saluis mihi et heredibus<lb/> meis . feris et auibus et uenacione infra dictam forestam</cl> .</cl> <cl type="witnesses">Test’ <persName>Ricardo</persName> Episcopo Sancti Andr<ex>ee</ex> . <persName>Iocelino</persName> Episcopo Glasg’.<lb/> <persName>Ioh<ex>ann</ex>e</persName> de kalchou . <persName>Osberto</persName> abbate de Iedword’ . Comite . <persName>d<ex>aui</ex>d</persName> . <persName>Ricado</persName> de Moruyll’ constabulario et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">William, by the grace of God king of the Scots,</cl> to all worthy men of his entire land <cl type="salutation">[sends] greeting</cl>.</cl> <cl type="notification">Know that</cl> <cl type="narration">in my presence, and with bishops, barons, and many other worthy men of my realm
+                  being present, on the Day of Saint Luke the Evangelist, by
+                  the oaths of sworn men, perambulation was made and the
+                  limitation of the boundaries fixed between the monks of
+                  Melrose and the men of Wedale concerning the pasture of my
+                  forest that my ancestors and I gave to the said monks of
+                  Melrose in pure and everlasting alms. <cl type="boundaries">The aforesaid sworn men indeed swore an oath in front of me and my worthy men,
+                     that my forest, which is the pasture of the aforesaid
+                     monks of Melrose, extends to the road that leads to the
+                     western side of the church of Wedale and as far as the
+                     stream which is called Fasseburn</cl>.</cl> <cl type="disposition"><cl type="holding">Wherefore I will, grant and instruct that the said monks peaceably hold and
+                     possess the whole pasture aforementioned with all its
+                     easements and liberties as far as the boundaries
+                     aforementioned in pure, free and everlasting alms, as
+                     their own property and their successors', so that none
+                     shall have common between them or with them within the
+                     aforementioned boundaries of the said pasture, saving to
+                     myself and my heirs wild beasts, birds and game within the
+                     said forest</cl>.</cl> <cl type="witnesses">As witnesses Richard bishop of St Andrews, Jocelin bishop of Glasgow, John of
+                  Kelso, Osbert abbot of Jedburgh, Earl David, Richard de
+                  Morville the constable and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

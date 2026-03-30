@@ -1,0 +1,53 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-700">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/81</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:46.84252+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">700</idno>
+        <idno type="textcontent">711</idno>
+        <idno type="transcription_textcontentxml">700</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/81</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/81</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:46.84252+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:46.84252+00:00" status="draft">transcription moa=700 status=draft modified=2017-01-30 19:28:46.84252+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis Christi fidelibus Hoc scriptum uisuris uel audituris <cl type="intitulatio">Walter filius Alani domini Reg<ex>is</ex> dapifer</cl><lb/> <cl type="salutation">Salutem in domino</cl></cl> . <cl type="notification">Nouerit vniuersitas nostra</cl> <cl type="disposition">me dedisse et concessisse et hac mea carta confirmasse<lb/> In liberam puram et perpetuam elemosinam deo et ecclesie sancte Marie de Melros
+                     pro salute a<lb/>nime mee et pro animabus antecessorum et successorum meorum . vnam carucatam
+                     terre et<lb/> dim<supplied>idia</supplied>m carucatam terre quam domina Emma de Edenham tenuit . per suas Rectas diuisas<lb/> cum com<supplied>mune pastura et</supplied> a<supplied>isi</supplied>a<supplied>mento</supplied> ... ... ... nemoris de Burkenside et nemoris de Liggardewde<lb/> ... ... ... <supplied>molend</supplied>inum meum sine moltura . <cl type="holding">Tenend<ex>as</ex> et habend<ex>as</ex> sibi<lb/> ... ... ... plene et honorifice  sicut aliqua elemosina in<lb/> regno . scot ... ... ... honorificentius de comite uel barone<lb/> ... ... ... possideri .</cl> <cl type="warrandice">Et ego et heredes mei Manutenebimus et wara<supplied>nt</supplied>izabi<lb/>mus prenominatis Monachis omnia prenominata . et defendemus erga dominum regem
+                        et om<lb/>nes alios i... ... ...um de omni terreno seruitio et consuetudine . et exactione
+                        . et<lb/> demanda ...</cl></cl> <cl type="witnesses">Testibus Adam filio Gilberti . Reynaldo de crauford . Rogero<lb/> filio Glaii . Roberto de logan . Roberto de Crauford . Nigello de Heriz . Ro<lb/> ... ... ... cler ... ... ... aliis .</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

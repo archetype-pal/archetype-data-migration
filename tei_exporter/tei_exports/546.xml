@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-546">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/262</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:33.53673+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">546</idno>
+        <idno type="textcontent">553</idno>
+        <idno type="transcription_textcontentxml">546</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/262</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/262</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:33.53673+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:33.53673+00:00" status="draft">transcription moa=546 status=draft modified=2017-01-30 19:28:33.53673+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><cl type="address">Omnibus presentes literas uisuris uel audituris <cl type="intitulatio">Agnes filia Iohannis vxor laurencii de Ylifistun’</cl> <cl type="salutation">eternam in domino salutem</cl></cl> . <cl type="disposition"><cl type="notification">Nouerit vniuersitas uestra<lb/></cl> marito meo laurentio consenciente me omnes conuenciones quas pater meus et mater
+                        mea fecerunt cum Abbate et conuentu de Melros . et<lb/> concessiones quas fecerunt eisdem super omnia que habebant infra villam de
+                        Ylifistun’ siue extra prout in carta eorum ubi sigillum
+                        meum et sigillum dicti<lb/> laurentii mariti mei sunt appensa plenius continetur  ratas habere et firmas .
+                        Promisi eciam sub iuramento prestito tactis
+                        sacrosanctis ewangeliis<lb/> pro me et heredibus meis . quod nec per nos nec per alium contra ea que in dicta
+                        carta continentur aliquo modo ueniemus . nec aliquid de
+                        cetero in eisdem reclama<lb/>bimus . Immo omnia illa dictis Abbati et conuentui in perpetuum quieta
+                        clamauimus . nichil omnino in eisdem nobis uel
+                        heredibus nostris retinendo .</cl> <cl type="sealing">Et<lb/> ad maiorem horum securitatem  tales inueni fideiussores . Scilicet . Iohannem
+                        de Sancto Michaele . Willelmum de Sancto Michaele .
+                        Andream chamois et Walterum<lb/> chamois . qui ad horum roboracionem una cum sigillo meo et sigillo dicti
+                        Laurencii mariti mei sigilla sua presenti scripto
+                        apposuerunt .</cl> <cl type="witnesses">Hiis<lb/> Testibus . Domino Thoma viacario de Neutun’ . fratre Roberto de Wittun’ . Adam
+                        hoppere et filio eius . Iohanne huseband’ . Willelmo
+                        filio Walteri et aliis .</cl> Actum anno gracie millesimo . ducentesimo . quadragesimo . nono . tercio . Idus
+                     Aprilis .</span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

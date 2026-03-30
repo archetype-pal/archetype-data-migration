@@ -1,0 +1,74 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-395">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/119</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 14:55:24.158837+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">395</idno>
+        <idno type="textcontent">399</idno>
+        <idno type="transcription_textcontentxml">395</idno>
+        <idno type="translation_textcontentxml">396</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/119</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/119</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T14:55:24.158837+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T14:55:24.158837+00:00" status="published">transcription moa=395 status=live modified=2021-04-06 14:55:21.052738+00 | translation moa=396 status=live modified=2021-04-06 14:55:24.158837+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="margin-bottom: 15.0pt; background: white;">
+          <span style="font-size: 17.0pt; font-family: Junicode; color: #050505;"><cl type="address">Omnibus Sancte Matris Ecclesie filiis . tam presentibus quam futuris  <cl type="intitulatio">huctredus de Grubheued . et symon filius eius et heres</cl>  <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> nos<lb/> dedisse et hac carta nostra confirmasse . deo et ecclesie Sancte Marie de Melr<ex>os</ex> . et monachis ibidem deo seruientibus . pro animabus omnium<lb/> dominorum nostrorum . et pro animabus nostris . et patrum et matrum nostrarum .
+                        et omnium antecessorum et successorum nostrorum . et
+                        maxime comitis henrici .<lb/> illam partem terre in Elstaneshalche . <cl type="boundaries">que iacet ex occidentali parte ueteris aque . uersus terram eorundem monachorum
+                        quam habent de<lb/> feudo de Wittun . ad orientem terre eorum</cl> . in liberam . et puram . et perpetuam elemosinam . <cl type="holding">ut eam habeant . et teneant . et possideant . libere<lb/> et quiete . et honorifice . sicut ullam elemosinam . liberius . et quietius . et
+                           honorificentius tenent . supra omni terreno seruitio
+                           et consuetudine<lb/> . et exactione seculari</cl> . <cl type="warrandice">et nos et heredes nostri warantizabimus eis eandem terram contra omnes homines</cl> . et adquietabimus uersus<lb/> dominum regem . et omnes dominos nostros . de forensi seruitio . et omni terreno
+                        seruicio in perpetuum . hanc donationem fecimus<lb/> eis pro fraternitate . et orationibus . et participatione omnium bonorum eiusdem
+                        ecclesie . in sempiternum</cl> . <cl type="witnesses">his . T . Godardo Capellano .<lb/> Adam persona de Maccustun . Roberto . de Bernoluebi</cl> .</span>
+        </p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, both present as well as to come, <cl type="intitulatio">Uhtred of Grubbit, and Simon his son and heir</cl>, <cl type="salutation">send greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> us to have given and by this our charter to have made firm, to God and to the
+                     church of St Mary at Melrose, and to the monks serving God
+                     in that place, for the souls of all our lords, and for our
+                     own souls, and of our fathers' and mothers' <ex>souls</ex>, and of all our ancestors' and successors' <ex>souls</ex>, and especially of Earl Henry's <ex>soul</ex>, that pat of the land in 'Elstaneshalche', <cl type="boundaries">which lies on the western side of the old river, towards the land of the same
+                     monks which they have of the feu of Whitton, to the east
+                     of their land,</cl> in free, and pure, and perpetual alms, <cl type="holding">that they may have it, and hold it, and possess it, freely and quitely, and
+                     honourably, just as freely, and quitely, and honourably as
+                     they hold any alms, moreover from all earthly service and
+                     custom, and secular exaction,</cl> <cl type="warrandice">and we and our heirs shall warrant to them the same land against all men</cl>, and we shall discharge towards the lord king, and all our lords in respect of
+                     forinsec service, and all earthly service for ever. We
+                     have made this donation to them for the sake of
+                     fraternity, and for prayers, and for the participation in
+                     all the benefits of the same church for ever.</cl> <cl type="witnesses">With these witnesses: Godard the chaplain; Adam the parson of Maxton; Robert of
+                  Barnoldby</cl>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

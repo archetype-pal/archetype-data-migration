@@ -1,0 +1,89 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-516">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/48</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-07-30 05:36:10.497061+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">516</idno>
+        <idno type="textcontent">523</idno>
+        <idno type="transcription_textcontentxml">516</idno>
+        <idno type="translation_textcontentxml">517</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/48</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/48</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2018-07-30T05:36:10.497061+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2018-07-30T05:36:10.497061+00:00" status="draft">transcription moa=516 status=draft modified=2018-07-30 05:36:10.497061+00 | translation moa=517 status=draft modified=2017-08-23 15:15:49.708666+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte Matris ecclesie filiis presentibus et futuris <cl type="intitulatio">Patricius Comes de dumbar</cl> <cl type="salutation">Salutem</cl>.</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me dedisse et concessisse et hac mea carta confir<lb/>masse deo et ecclesie Sancte Marie de Melros et Monachis ibidem deo seruientibus
+                     pro animabus d<ex>aui</ex>d et malcolmi regum scotie et comitis<lb/> henrici et pro animabus patris mei et matris mee et <persName>ade</persName> comitisse quondam uxoris mee . et pro salute domini will<ex>el</ex>mi regis et regine<lb/> et alexandri filii eorum . et pro salute mea et cristine comitisse uxoris mee et
+                     pro salute patricii filii mei et omnium filiorum meorum<lb/> et filiarum unam carucatam terre sicut ego ipse eam perambulaui predictis
+                     monachis cum adam abbate de Melros et cum probis hominibus
+                     meis <cl type="boundaries">que continentur infra has diuisas . Scilicet ab illo loco qui dicitur Munekedic
+                     ascendendo per sicum qui<lb/> uocatur luggild usque contra grenelawe et inde uersus aquilonem per lapides qui
+                        positi sunt per diuisas a me factis usque ad<lb/> predictum grenelawe et inde uersus aquilonem per easdem diuisas usque ad
+                        crumbestan qui translatus de loco ubi prius steterat<lb/> positus est ad predictas diuisas . et inde uersus aquilonem per lapides positos
+                        per diuisas usque in tympanelecche et inde uersus<lb/> aquilonem per easdem diuisas usque in tacwith et inde descendendo per eundem
+                        tacwith usque ad orientalem partem de<lb/> cruc et inde uersus aquilone per transuersum witerig per lapides positos per
+                        diuisas usque in cakkewellelecche et inde<lb/> descendendo per eundem cakkewellelecche usque ad fontem sancti cuthberti et inde
+                        descendendo per riuulum qui exit de predicto<lb/> fonte usque ad nesefflat .</cl> Totam hanc terram et quicquid continentur infra prescriptas diuisas uersus
+                     edmundestun grangiam<lb/> eorundem Monachorum dedi eis in liberam . puram . et perpetuam elemosinam <cl type="holding">ut ea habeant . teneant et possideant in<lb/> perpetuum ita libere et quiete plene et honorifice absque omni terreno seruitio
+                        et consuetudine et exactione seculari sicut<lb/> aliqua elemosina liberius . quietius . plenius et honorficentius teneri potest
+                        uel possideri .</cl> <cl type="warrandice">Et ego et heredes emi manute<lb/>nebimus et warantizabimus eandem elemosinam predictis Monachis contra omnes
+                        homines in perpetuum et acquietabimus<lb/> eam erga dominum regem de omni forensi seruitio</cl> .</cl> <cl type="witnesses">Testibus Domino Raduffo dunensi episcopo . Patricio filio meo . Lauren<lb/>tio de abernithi’ . Will<ex>elm</ex>o patric . Patricio filio Ade . Neso filio nes . Rogero de merlei . Ric’ nano .
+                     Rolando . Waltero<lb/> filio edgar et alano fratre eius . Waldeuo persona de Witigham . Nigello fratre
+                     eius . Thoma Fraser . et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p>To all sons of holy Mother Church, present and future, Patrick earl of Dunbar
+               sends greeting. Know me to have given and granted, and by this
+               my charter to have made firm, to God and to the church of St
+               Mary at Melrose, and to the monks serving God in that place, for
+               the souls of David and Malcolm, kings of the Scots, and of Earl
+               Henry, and for the souls of my father and my mother, and of Ada
+               the countess, my late wife, and for the salvation of the lord
+               William the king, and the queen, and of Alexander their son, and
+               for my own salvation and of Christina the countess, my wife, and
+               for the salvation of Patrick my son and of all my sons and
+               daughters, one ploughgate of land, just as I myself perambulated
+               it for the aforesaid monks, with Adam, abbot of Melrose, and
+               with my worthy men, which are contained within these limits,
+               that is, from the place which is called <ex>Munkedic</ex>, going upwards by the syke which is called <ex>Luggild</ex>, until you are opposite Greenlaw; and from there northwards by the stones which
+                  are placed along the boundaries, done by me, as far as the
+                  aforesaid Greenlaw; and from there northwards by the same
+                  boundaries, as far as the <ex>Crumbestan</ex>, which was moved from the place where it had first stood and was placed at the
+                  aforesaid boundaries; and from there northwards by the stones
+                  places along the boundaries as far as <ex>Tympanelecche</ex>; and from there northwards by the same boundaires as far as the <ex>Tacwith</ex>; and from there, going down by the same <ex>Tacwith</ex>, as far as the eastern side of the <ex>Cruc</ex>; and from there, northwards across Whiterigg, by the stones place along the
+                  boundaries, as far as the <ex>Cakkewellelecche</ex>; and from there, going down by the same <ex>Cakkewellelecche</ex> as far as St Cuthbert's Spring; and from there going down by the stream which
+                  comes out from the aforesaid spring, as far as <ex>Nesefflat</ex>. </p>
+      </div>
+    </body>
+  </text>
+</TEI>

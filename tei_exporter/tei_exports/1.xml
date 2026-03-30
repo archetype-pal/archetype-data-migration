@@ -1,0 +1,75 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-1">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 628</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-29 15:57:28.291812+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">1</idno>
+        <idno type="textcontent">1</idno>
+        <idno type="transcription_textcontentxml">1</idno>
+        <idno type="translation_textcontentxml">2</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 628</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 628</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-29T15:57:28.291812+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-29T15:57:28.291812+00:00" status="approved">transcription moa=1 status=reviewed modified=2023-06-29 15:57:28.291812+00 | translation moa=2 status=reviewed modified=2023-06-29 15:57:28.277371+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Alexander Dei Gratia Rex Scott<ex>orum</ex></cl> Omnibus Probis Hominibus Tocius Terre Sue Clericis Et Laycis <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> <lb/> nos concessisse et hac carta nostra confirmasse illam quietam clamationem et
+                     abiurationem . quam Patricius filius Comitis Patric<ex>ii</ex> <lb/> fecit pro se et Heredibus suis deo et sancto Cuthberto et sancte Ebbe et priori
+                     et Monachis Dunnelmens<ex>ibus</ex> apud Coldingham’ . deo <lb/> seruientibus et in perpetuum seruituris de uilla de Swinewd’ et toto dominico
+                     eiusdem uille cum omnibus pertinentiis suis et toto <lb/> iure et omni genere iuris et clamio . si quod habuit uel habere potuit in eadem
+                     uilla . tam in dominicis quam hominibus . seruitiis <lb/> et homagiis . boscis et planis . terris cultis et incultis . et omnibus aliis ad
+                     dictam uillam et dictum dominicum pertinentibus . Ita <lb/> Libere et Quiete . Plenarie et honorifice . sicut carta eiusdem Patric<ex>ii</ex> dictis Priori et Monachis Dunnelmens<ex>ibus</ex> apud <lb/> Coldingham’ plenius confecta  iuste testatur. Saluo seruitio nostro.</cl> <cl type="witnesses">Test<ex>ibus</ex> Walt<ex>er</ex>o Olifard’ Iusticiar<ex>io</ex> Laodon<ex>ie</ex> . Ioh<ex>ann</ex>e <lb/> deMaccuswel Camerar<ex>io</ex> . Dauid Marscall<ex>o</ex> . <persName>Roger<ex>o</ex> Auenel</persName> . Ranulf<ex>o</ex> de Bonekyl Radulf<ex>o</ex> de Campania . Thom<ex>a</ex> <lb/> filio Ranulf<ex>i</ex> . Bernardo Fraser’ . Thom<ex>a</ex> de Haya . Will<ex>elm</ex>o de Bonekyl .</cl> <cl type="dating">apud Rokysburc’ Vicesimo Nono die <lb/> Marcij . Anno regni domini regis Septimo decimo</cl>.</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander by the grace of God king of Scots</cl> to all worthy men of his whole land, clerk and lay, <cl type="salutation">greeting</cl></cl>: <cl type="disposition"><cl type="notification">Know that</cl> we have granted and confirmed by this our charter the quitclaim and abjuration
+                     that Patrick son of Earl Patrick has made for himself and
+                     his own heirs to God, Saint Cuthbert, Saint Æbbe, and to
+                     the prior and monks of Durham at Coldingham who are
+                     serving God and, in perpetuity, those who will serve God,
+                     of the toun of Swinwood and the whole demesne of that same
+                     toun with all its pertinents and whole right, and every
+                     kind of right and claim, if he has had or was able to have
+                     such in the same toun, in demesnes as well as in men,
+                     services and homages, woods and plains, lands cultivated
+                     and uncultivated, and all other things pertaining to the
+                     said toun and the said demesne. As freely and quietly,
+                     fully and honourably, as the charter of the same Patrick
+                     made more fully for the said prior and monks of Durham at
+                     Coldingham justly declares. Saving our service.</cl> <cl type="witnesses">As witnesses: Walter Oliphant, justiciar of Lothian; John of Maxwell,
+                  chamberlain; David the marischal; Roger Avenel; Ranulf of
+                  Bunkle; Ralph de Champagne; Thomas son of Ranulf; Bernard
+                  Fraser; Thomas de la Haye; William of Bunkle. </cl><cl type="dating">At Roxburgh, on the twenty-ninth day of March, in the seventeenth year of the
+                  reign of the Lord king</cl>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

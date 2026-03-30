@@ -1,0 +1,71 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-818">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 618</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.738801+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">818</idno>
+        <idno type="textcontent">833</idno>
+        <idno type="transcription_textcontentxml">818</idno>
+        <idno type="translation_textcontentxml">819</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 618</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 618</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T14:52:15.738801+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T14:52:15.738801+00:00" status="approved">transcription moa=818 status=reviewed modified=2022-11-01 14:52:15.728949+00 | translation moa=819 status=reviewed modified=2022-11-01 14:52:15.738801+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Alex’ Dei Gr<ex>ati</ex>a Rex Scott’</cl>. Episcopis . Abbatibus . Comitibus . Baronibus . Iusticiariis . vicecomitibus .
+                     prepositis .<lb/> Ministris . et omnibus aliis probis hominibus tocius terre sue <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> nos diuine pie<lb/>tatis Intuitu dedisse . concessisse . et hac carta nostra confirmasse deo et
+                     Beate Marie et sancto Chutberto et<lb/> Thom<ex>e</ex> priori de Coldingham’ . et Monachis Ibidem deo seruientibus et in perpetuum
+                     seruituris illas viginti<lb/> Marchas annuas quas nos et antecessores nostri percipere consueuimus de
+                     Coldinghamsshyre nomine waytinge. <cl type="holding">Tenend<ex>as</ex><lb/> percipiend<ex>as</ex> . et habend<ex>as</ex> . eisdem Monachis et successoribus suis in perpetuum . In liberam puram et
+                        perpetuam elemosinam<lb/> adeo libere . quiete . plenarie . et honorifice . sicut Idem Monachi aliquas
+                        elemosinas . liberius . quietius . plenius . et<lb/> honorificentius . tenent et possident</cl> .</cl> <cl type="witnesses">Test<ex>ibus</ex> . A . abbate de Melros . W. de Bondingt<ex>on</ex> Cancellar<ex>io</ex> . Walter<ex>o</ex><lb/> filio Alan<ex>i</ex> Senescallo Iusticiar<ex>io</ex> scoc’ . Patricio filio Comitis Patric<ex>ii</ex> . Iohann<ex>e</ex> de Maccuswel Camerario . <persName>Roger<ex>o</ex><lb/> Avenel</persName> . Dauid Marscallo . Eymer’ de Maccuswel . Iohanne de Striuelin’</cl> . <cl type="dating">apud Berwyk’ Sexto<lb/>decimo die Maii . Anno regni domini Regis octauodecimo .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander by the grace of God</cl>, to bishops, abbots, earls, barons, justiciars, sheriffs, provosts, officials,
+                     and all other worthy men of the whole of his land sends <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> us, moved by God's love, to have given, granted, and by this our charter to have
+                     made firm to God and Blessed Mary and Saint Cuthbert and
+                     Thomas the prior of Coldingham, and to the monks in that
+                     place serving God now and for ever in the future, the
+                     twenty annual merks which we and our ancestors were
+                     accustomed to receive from Coldinghamshire as waiting. <cl type="holding">For the same monks and their successors for ever to have, receive, and hold, in
+                     free, pure and perpetual alms, as freely, quitely, fully,
+                     and honourably as the same monks freely, quitely, fully,
+                     and honourably hold and possess any alms</cl>.</cl> <cl type="witnesses">As witnesses, A<ex>dam</ex>, abbot of Melrose, W<ex>illiam</ex> of Bondington, chancellor, Walter son of Alan, steward, justiciar of Scotia,
+                     Patrick son of Earl Patrick, John of Maxwell, chamberlain,
+                     Roger Avenel, David Marshall, Eymer of Maxwell, John of
+                     Stirling,</cl> <cl type="dating">at Berwick on the sixteenth day of May, in the eighteenth year of the lord
+                  king's reign [1232].</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

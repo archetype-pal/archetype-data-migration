@@ -1,0 +1,58 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-926">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 604</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:47:55.66599+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">926</idno>
+        <idno type="textcontent">951</idno>
+        <idno type="transcription_textcontentxml">926</idno>
+        <idno type="translation_textcontentxml">927</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 604</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 604</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:47:55.66599+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:47:55.66599+00:00" status="approved">transcription moa=926 status=reviewed modified=2022-11-01 16:47:55.658313+00 | translation moa=927 status=reviewed modified=2022-11-01 16:47:55.66599+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. W . dei gratia Rex Scott’ .</cl> Iusticiis Uicecomitibus . Ministris et Omnibus probis Hominibus totius terre sue
+                     . <cl type="salutation">Salutem</cl> .</cl><lb/> <cl type="injunction">Mando et firmiter precipio . Ne quis uestrum aliquem de hominibus prioris de
+                  Coldingham contra ipsum priorem siue<lb/> contra domum suam iniuste manuteneat  quin quod de ratione facere debeat ei
+                     faciat .</cl> <cl type="witnesses">Test<ex>ibus</ex> Com’. D<ex>aui</ex>d<lb/> fratre meo . Hug’. Cancellario meo . Com<ex>ite</ex> . Dunec<ex>ano</ex> .</cl> <cl type="dating">Apud Castellum puellarum .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex>, by the grace of God king of the Scots</cl>, to justices, sheriffs, officials, and all worthy men of his entire land, <cl type="salutation">greeting</cl>.</cl> <cl type="injunction">I command and resolutely instruct that none of you unlawfully maintain any of
+                  the tenants of the prior of Coldingham in opposition to the
+                  prior himself or in opposition to his house; but that he do
+                  to him that which by reason he ought to do.</cl> <cl type="witnesses">As witnesses: Earl David, my brother; Hugh, my chancellor; Earl David.</cl> <cl type="dating">At Maiden's Castle [Edinburgh].</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

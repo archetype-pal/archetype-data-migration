@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-642">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.16</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:29:53.141758+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">642</idno>
+        <idno type="textcontent">652</idno>
+        <idno type="transcription_textcontentxml">642</idno>
+        <idno type="translation_textcontentxml">643</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.16</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.16</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:29:53.141758+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:29:53.141758+00:00" status="published">transcription moa=642 status=live modified=2021-04-05 08:29:49.840055+00 | translation moa=643 status=live modified=2021-04-05 08:29:53.141758+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>W .</persName> dei gr<ex>aci</ex>a Rex Scot’.</cl> Omnibus probis Hominibus Totus terre sue Clericis et laicis <cl type="salutation">Salutem</cl></cl> . <cl type="notification">Sci<lb/>ant presentes et futuri</cl> <cl type="disposition">me dedisse et concessisse et Hac carta mea confirmasse deo et Ecclesie<lb/> Sancte Marie de Melros . et Monachis ibidem deo seruientibus unum plenarium
+                     Toftum<lb/> in Burgo meo de lanarc . <cl type="holding">Tenend’ in liberam et puram et perpetuam Elemosinam . ita libere<lb/> Quiete Plenarie et Honorifice  Sicut alias Elemosinas suas . liberius .
+                        Quietius . Plenius et Hono<lb/>rificentius  tenent . et possident</cl> .</cl> <cl type="witnesses">Test’ . <persName>Hug’</persName> Cancell<ex>ario</ex> . meo . <persName>Philippo</persName> de valoin’ Cam<ex>erario</ex> . <persName>Ric’</persName><lb/> de prebenda . <persName>Will<ex>elm</ex>o</persName> de Haia . <persName>Will<ex>elm</ex>o Giffard’</persName> . <persName>Dunec’</persName>. de Laceles .</cl> Apud pert Primo die Iunii .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam,</ex> by the grace of God king of the Scots,</cl> to all worthy men of the whole of his land, clerk and lay, <cl type="salutation">greeting</cl>.</cl> <cl type="notification">Let present and future know</cl> <cl type="disposition">me to have given, conceded, and by this my charter to have made firm, to God,
+                  the church of St Mary at Melrose, and to the monks serving
+                  God in that place, one full toft in my burgh of Lanark, <cl type="holding">to be held in free, pure, and everlasting alms, as freely, quitly, fully, and
+                     honourably as they freely, quitly, fully and honourably
+                     hold and possess their other alms</cl>.</cl> <cl type="witnesses">As witness: Hugh my chancellor; Philip de Valognes the chamberlain; Richard de
+                  Prebenda; William de la Haye; William Gifford; Duncan de
+                  Lascelles.</cl> At Perth on the first day of June.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,121 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-788">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5954</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.837177+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">788</idno>
+        <idno type="textcontent">802</idno>
+        <idno type="transcription_textcontentxml">788</idno>
+        <idno type="translation_textcontentxml">789</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5954</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5954</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T13:36:57.837177+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:36:57.837177+00:00" status="approved">transcription moa=788 status=reviewed modified=2022-11-01 13:36:57.825856+00 | translation moa=789 status=reviewed modified=2022-11-01 13:36:57.837177+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi fidelibus Has literas visuris uel Audituris <cl type="intitulatio">Bertramus de parua Ristona</cl> <cl type="salutation">salutem</cl>.</cl> <cl type="notification">Nouerit vniueritas uestra</cl> <cl type="disposition">me intuitu caritatis et pro salute anime mee Antece<lb/>ssorum et successorum meorum Dedisse. et Concesisse . et hac presenti carta mea
+                     Confirmasse Deo et sancto Cvhtberto priori et monachis de
+                     Coldingh<ex>am</ex> ibidem deo seruientibus et in<lb/>perpetuum seruituris vnam dimidiam carucatam terre In Campo et Territorio parue
+                     Ristone in liberam. puram. et perpetuam elemosinam silicet
+                     Duas accras terre et dimidiam In Tofto et Crofto in quo
+                     sedi Aliquando tempore patris mei. et Totam terram meam ad
+                     Ralfesaccres et Thorn. et vnam accram terre propinquiorem
+                     prati Rogeri<lb/> et Ricardi fili Iosep Hunderhecsyde extendentem se uersus occidentem. et Totam
+                     terram meam iacentem in mora ad australi parte de
+                     Blackechest’. et Totam<lb/> terram meam ad Blakechloeshefed excepta terra tantum Dauid de Drilton’. et Totam
+                     terram meam in Blackelawesflat. et omnem terram meam in
+                     Wilkedenflat<lb/> excepta terra tantum Dauid de Drilton’. et Totam terram meam in orientali parte
+                     de Stublisyde . et Totum Dominicum meum iacens in Duabus
+                     partibus in Hebr<lb/>andes castel. et vnam accram terre ad Grengate uersus occidentem. et Totam
+                     terram meam in Thyrstlislad quam Patricius filius Wtredi
+                     de me quondam tenuit. et<lb/> omnem friscam meam desuper iacentem. et Totam terram meam quam Ada Cocus quondam
+                     de me tenuit exceptis quatuor accriis terre quas Prior
+                     Dunelmensis<lb/> habet de Eadem terra in Eadem villa. et Totam terram meam in Tepermer. et
+                     quatuor accras terre et dimidiam in occidentali parte ad
+                     Morcroc. Omnes<lb/> istas terras superecriptas Dedi et hac presenti carta mea Confirmaui prefatis
+                     priori et monachis de Coldingh<ex>am</ex> pro vna dimidia carucata terre in liberam. puram.<lb/> et perpetuam elemosinam. Renuncians in hoc facto pro me et heredibus meiis omni
+                     Iuris Ausilio canonici et ciuilis quod Dicti prior et
+                     monachi de Coldingh<ex>am</ex><lb/> nullo tempore pro hac pura. et perpetua elemosina in foro laicali trahantur nec
+                     vexentur. In moris et maricis. In pratis et pasturis. In
+                     petariis et turbariis. In<lb/> viis et semitis. et In omnibus aliis assiamentis ad Eandem pertinentibus terram
+                     infra villam et extra. <cl type="holding">Habend<ex>as</ex> et Tenend<ex>as</ex> Dictis priori et monachis de Coldin<lb/>gh<ex>am</ex> de me et heredibus meiis inperpetuum adeo libere. quiete. et honorifice In
+                        omnibus sicut aliqua elemosina infra Regnum Scocie
+                        liberius aut quiecius tenetur<lb/> uel possidetur.</cl> <cl type="warrandice">Ego uero Bertramus et heredes mei predictam dimidiam carucatam terre cum Dicto
+                     tofto et Crofto et cum omnibus supradictis particulis
+                     terre<lb/> et cum omnibus suis pertinenciis infra villam et extra sepedictis priori et
+                        monachis de Coldingham contra omnes homines et feminas
+                        in perpetuum warantizabimus. adquie<lb/>tabimus. et deffendemus.</cl></cl> <cl type="sealing">In Cuius Rei Testimonium huic scripto sigillum meum appossui.</cl> <cl type="witnesses">Hiis Testibus Domino Will<ex>elm</ex>o de Mordington<ex>a</ex>. Domino Alano de<lb/> Swyntona. Thoma de Nesbyt. Dauid de Lumesden. Roberto filio Gregorii de Coldingh<ex>am</ex>. Ada de Prendergest’. Patricio Scoto. Ada filio Iohannis de Super<lb/>ioriaytona. Gregorio de Bethyoc. Gilberto de Lumesden. Roberto filio Reginaldi.
+                     Rogero filio Ade de magna Ristona et ALIIS.</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful who shall view or hear these letters, <cl type="intitulatio">Bertram of Little Reston</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Know me, all of you,</cl> <cl type="disposition">out of charity and for the salvation of my own soul, and of my ancestors' and
+                  successors' <ex>souls</ex>, to have given, and granted, and to have made firm by this my present charter,
+                     to God and to St Cuthbert, to the prior, and to the monks
+                     of Coldingham serving God in that place now and in the
+                     future, for ever, a half-ploughgate of land in the
+                     cultivated fields and territory of Little Reston, in pure
+                     and everlasting alms; that is, two-and-a-half acres of
+                     land in the toft and croft in which I settled at some time
+                     in my father's day; and all my land at <ex>Ralfesaccres</ex> and <ex>Thorn</ex>; and one acre of land nearest the meadow belonging to Roger and Richard, sons
+                     of Joseph Hunderhecsyde, extending westwards; and all my
+                     land lying in the moor, from the south side of <ex>Blackechest'</ex>; and all my land at <ex>Blackechloeshefed</ex>, saving only the land of David of Drilton; and all my land in <ex>Blackelawesflat</ex>; and all my land in <ex>Wilkedenflat</ex>, saving only that of David of Drilton; and all my land on the eastern side of <ex>Stublisyde</ex>; and my whole demesne lying on the two sides of <ex>Hebrandes Castle</ex>; and one acre of land at <ex>Grengate</ex> towards the west; and my whole land in <ex>Thyrslislad</ex> which Patrick son of Uhtred once held of me, and all my uncultivated <ex>land</ex> lying thereon; and my whole land which Adam Cook once held of me, except for
+                     four acres of land which the Prior of Durham had of the
+                     same in the same toun; and all my land in <ex>Tepermer</ex>; and four-and-a-half acres of land on the western side at Morcroc. All these
+                     lands written above I have given and made firm by this, my
+                     present charter, to the aforementioned prior and monks of
+                     Coldingham, in return for a half-ploughgate of land, in
+                     free, pure, and everlasting alms, renouncing by this
+                     action, for my own part and for my heirs, every aid of
+                     canon and civil law, in order that the said prior and
+                     monks of Coldingham at no time for this pure and
+                     everlasting alms may be brought to a lay court nor be
+                     harassed; in moors and marshes, in meadows and pastures,
+                     in peataries and turbaries, in roads and paths, and in all
+                     other easements pertaining to the same land, within the
+                     toun and outside it; <cl type="holding">for the said prior and monks of Coldingham to have and to hold of me and my
+                     heirs for ever, as freely, quitely, and honourably in all
+                     things as any alms within the kingdom of Scotland is
+                     freely or quitely held or possessed.</cl> <cl type="warrandice">And I, Bertram, and my heirs, the aforesaid half-ploughgate of land, with the
+                     said toft and croft, and with all the above-said portions
+                     of land, and with all their pertinents within the toun and
+                     outside it, to the oft-mentioned prior and monks of
+                     Coldingham shall warrant, acquiet, and defend against all
+                     men and women for ever.</cl></cl> <cl type="sealing">In testimony of this matter, I have applied my seal to this writing.</cl> <cl type="witnesses">With these witnesses: the lord William of Mordington; the lord Alan of Swinton;
+                  Thomas of Nisbet; David of Lumsdaine; Robert son of Gregory
+                  of Coldingham; Adam of Prenderguest; Patrick Scot; Adam son
+                  of John of Over Ayton; Gregory of Beoch; Gilbert of
+                  Lumsdaine; Robert son of Reginald; Roger son of Adam of Great
+                  Reston; and others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

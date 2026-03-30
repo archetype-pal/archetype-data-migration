@@ -1,0 +1,88 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-772">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5962</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 21:10:50.728229+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">772</idno>
+        <idno type="textcontent">786</idno>
+        <idno type="transcription_textcontentxml">772</idno>
+        <idno type="translation_textcontentxml">773</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5962</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5962</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T21:10:50.728229+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T21:10:50.728229+00:00" status="approved">transcription moa=772 status=reviewed modified=2022-10-31 21:10:50.719598+00 | translation moa=773 status=reviewed modified=2022-10-31 21:10:50.728229+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus has literas visuris uel audituris . <cl type="intitulatio">Robertus de Prenderghest</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Noueritis</cl> <cl type="disposition">me dedisse concessisse et hac presenti carta confirmas<lb/>se Will<ex>elm</ex>o de Scremerston’ et heredibus suis pro homagio et seruicio suo et pro viginti
+                     quatuor Marcas argenti . sex . bouatas terre cum
+                     pertinenciis<lb/> in territorio de Prenderghest . scilicet illas duas bouatas cum tofto et crofto
+                     quas Robertus Wynd tenuit . et illas duas bouatas quas
+                     Will<ex>el</ex>m<ex>u</ex>s<lb/> filius Galfr<ex>idi</ex> tenuit . et illas duas bouatas quas Galfridus filius Waldeui tenuit . et toftum
+                     et croftum quod Aldanus filius Waldeui tenuit<lb/> et toftum et croftum quod Ricardus filius agnetis tenuit . <cl type="holding">Tenend’ et habend’ dicto Will<ex>elm</ex>o et heredibus suis de me et heredibus meis in feodo<lb/> et hereditate libere . quiete . et honorifice . Reddendo inde annuatim ipse et
+                        heredes sui mihi et heredibus meis septem solidos et
+                        nouem denarios<lb/> pro omni seruicio ad me uel heredes meos pertinente . Et faciendo forinsecum
+                        seruicium quantum pertinet ad sex bouatas terre de
+                        eodem<lb/> tenemento .</cl> Et sciendum est quod hec est prima terra quam dedi uel alienaui postquam terra
+                     mea de Prenderghest mihi data fuit . Et<lb/> si forte dictus Will<ex>elmu</ex>s uel heredes sui uersus me uel heredes meos in forisfactum inciderint . dabunt
+                     pro forisfacto duodecim denarios . et<lb/> dabunt de releuamine duodecim denarios . <cl type="warrandice">Et ego Robertus et heredes mei omnes prenominatas terras cum pertinenciis
+                     predicto Will<ex>elm</ex>o et<lb/> heredibus suis contra omnes homines et feminas warantizabimus et defendemus in
+                        perpetuum .</cl></cl> <cl type="sealing">In cuius rei testimonium presenti scripto<lb/> sigillum meum apposui .</cl> <cl type="witnesses">Hiis testibus Domino Anketino priore de Coldingham . Domino Laur<ex>encio</ex> terrario . Domino Will<ex>elm</ex>o de Lind<ex>eseia</ex> . Thom<ex>a</ex> de<lb/> Nesbite . Ada de Prenderghest . Ioh<ex>ann</ex>e filio Elie . Bertramo de Riston<ex>a</ex> . Ric<ex>ardo</ex> filio Elie . Alano Ridel . Roberto filio Mauricii . et aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall view or hear these letters, <cl type="intitulatio">Robert of Prenderguest</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Know</cl> <cl type="disposition">me to have given and to have made firm by this present charter, to William of
+                  Scremerston and his heirs, in return for their homage and
+                  service, and for twenty-four merks of silver, six oxgangs of
+                  land with pertinents in the territory of Prenderguest; that
+                  is, the two oxgangs with toft and croft which Robert Wynd
+                  held; and the two oxgangs which William son of Geoffrey held;
+                  and the two oxgangs which Geoffrey son of Waldef held; and
+                  the toft and croft which Haldan son of Waldef held; and the
+                  toft and croft which Richard son of Agnes held. <cl type="holding">For the said William and his heirs to hold and to have of me and my heirs in feu
+                     and heritage, freely, quitely, and honourably; he and his
+                     heirs yearly returning thereupon to me and my heirs seven
+                     shillings and nine pence in return for every service
+                     pertaining to me or my heirs; and performing such forinsec
+                     service for the same holding as pertains to six oxgangs.</cl> And it is to be known that this is the first land which I have given or
+                     alienated after my land of Prenderguest was given to me.
+                     And if by chance William or his heirs incur a fine against
+                     me or my heirs, they shall give twelve pence for the fine,
+                     and give twelve pence for the relief. <cl type="warrandice">And I, Robert, and all my heirs, shall warrant and defend for ever the
+                     aforenamed lands with pertinents to the aforesaid William
+                     and his heirs against all men and women.</cl></cl> <cl type="sealing">In testimony of this matter, I have applied my seal to the present writing.</cl> <cl type="witnesses">With these witnesses: the lord Anketin, prior of Coldingham; the lord Laurence,
+                  terrar; the lord William of Lindsay; Thomas of Nisbet; Adam
+                  of Prenderguest; John son of Elias; Bertram of Reston;
+                  Richard son of Elias; Alan Ridel; Robert son of Maurice; and
+                  others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

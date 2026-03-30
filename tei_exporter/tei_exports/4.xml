@@ -1,0 +1,89 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-4">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 10</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-02-15 08:50:19.330973+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">4</idno>
+        <idno type="textcontent">4</idno>
+        <idno type="transcription_textcontentxml">4</idno>
+        <idno type="translation_textcontentxml">3</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 10</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 10</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2022-02-15T08:50:19.330973+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2022-02-15T08:50:19.330973+00:00" status="published">transcription moa=4 status=live modified=2021-01-26 06:57:39.563409+00 | translation moa=3 status=live modified=2022-02-15 08:50:19.330973+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte matris ecclesie filiis . <cl type="intitulatio">Arnald<ex>us</ex> . dei gratia ecclesie Sancti Andree apostoli humilis minister</cl> . <cl type="salutation">salutem</cl> . </cl><cl type="arenga">Ad pontificalem <lb/> spectat sollicitudinem paci prouidere religiosorum . ut qui intus deo uacant 
+                     exterioribus uexationibus non premantur .</cl> <cl type="notification">Hac consideratione <lb/> ducti  quieci canonicorum in ecclesia beati Andree apostoli deo seruientium in
+                     posterum consulentes  omnem oblationem altaris sui quam <lb/> in septem partes diuisam persone septem non communiter uiuentes quondam
+                     tenuerint  predictis canonicis regularem uitam professis
+                     ⁊ in commune <lb/> degentibus  totam integram illibatamque rationabili prouisione ⁊ neccessaria 
+                     concedendam . esse . decreuimus . Quoniam qui altari
+                     deseruiunt  de alta<lb/>rio uiuere debent . neque secundum regulas decretales ibi oblationum portiones
+                     fieri debent . ubi communitas uiuentium  unum <lb/> facit quodammodo omne quod possidetur .</cl> <cl type="disposition">Itaque prenominatis canonicis omnem oblationem altaris cui deseruiunt  quietam
+                  ⁊ liberam ⁊ sine <lb/> partium distributione concedimus . ⁊ presentis scripti pagina perpetuo iure
+                     tenendam confirmamus .</cl> <cl type="witnesses">T . his . W . morau<ex>iensi <lb/></ex> episcopo sedis apostolice legato . Greg<ex>orio</ex> Duncheld<ex>ensi</ex> episcopo . Andrea cathen<ex>ensi</ex> . Sa<ex>m</ex>sone Brechens<ex>i</ex> . episcopis . Gauf<ex>rido</ex> . Abbate de Du<ex>n</ex>f’. W . abbate de mailr’. Al<lb/>uredo abbate de Striuel’ . Ysaac priore de scon’ . W . priore de chelh’ . Math<ex>e</ex>o archidiacono . Tor’ archidiacono . laodon’ . Magistro Andr<ex>ea</ex> . Magistro <lb/> H<ex>er</ex>b<ex>er</ex>to . Rob<ex>erto</ex> Cancellario episcopi filio Seulf’ . Rog<ex>er</ex>o capellano de p<ex>er</ex>t . Nicholao <persName><roleName>camerario</roleName></persName> regis . Ric<ex>ardo</ex> . capellano regis . Serl<ex>one</ex> clerico . Dauid <lb/> olif’ . ferthet comite de St<ex>rat</ex>hern . Malcolmo comite de hathoth’ . Gillebrid’ Comite de hanag<ex>us</ex> . Dunecano comite de fif . Merle<lb/>Swano . Neis filio Will<ex>elm</ex>i . Stephano clerico .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, <cl type="intitulatio">Arnald by the grace of God humble servant of the church of Saint Andrew the
+                     apostle</cl>, <cl type="salutation">sends greeting. </cl></cl><cl type="arenga">It belongs to a bishop’s duty to have a care for the peace of those who live
+                  according to a monastic rule, so that those who rest in God
+                  within are not burdened by troubles without.</cl> <cl type="narration">Guided by this consideration, and having regard for the peace of the canons who
+                  will in the future serve God in the church of blessed Andrew
+                  the apostle, we have decreed that every offering of their
+                  altar which the seven parsons not living in community
+                  formerly held, which is divided into seven parts, is to be
+                  granted to the aforesaid canons who have professed a regular
+                  life and live in community, whole, entire and complete, with
+                  reasonable and necessary provision. For, those who serve at
+                  the altar ought to live of the altar, and according to the
+                  rules of the decretals, portions ought not to be made of the
+                  offerings where the community of the living makes a unity of
+                  all that is possessed.</cl> <cl type="disposition">And so we grant to the aforenamed canons every offering of the altar at which
+                  they serve, quit and free and without disbursement of parts.
+                  And by the writing of the present page we confirm what is to
+                  be held by perpetual right. </cl><cl type="witnesses">With these witnesses: William bishop of Moray, legate of the Apostolic See;
+                  Gregory, bishop of Dunkeld; Andrew of Caithness, Samson of
+                  Brechin, bishops; Geoffrey, abbot of Dunfermline; William,
+                  abbot of Melrose; Alured, abbot of Stirling; Isaac, prior of
+                  Scone; Walter, prior of Kelso; Matthew the archdeacon;
+                  Thorald, archdeacon of Lothian; Master Andrew; Master
+                  Herbert; Robert son of Sæwulf, the bishop’s chancellor; Roger
+                  the chaplain of Perth; Nicholas the king’s chancellor;
+                  Richard the king’s chaplain; Serlo the clerk; David Oliphant;
+                  Ferteth, earl of Strathearn; Malcolm, earl of Atholl; Gille
+                  Brigte, earl of Angus; Duncan, earl of Fife; Merleswain; Ness
+                  son of William; Stephen the clerk.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,63 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-190">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/231</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-07-30 05:30:03.060227+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">190</idno>
+        <idno type="textcontent">190</idno>
+        <idno type="transcription_textcontentxml">190</idno>
+        <idno type="translation_textcontentxml">191</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/231</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/231</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2018-07-30T05:30:03.060227+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2018-07-30T05:30:03.060227+00:00" status="published">transcription moa=190 status=live modified=2018-07-30 05:30:03.060227+00 | translation moa=191 status=live modified=2017-08-23 15:15:01.33183+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p>. <cl type="intitulatio">M Rex Scott’</cl> Omnibus probis hominibus tocius terre sue <cl type="salutation">salutem</cl>. <cl type="disposition"><cl type="notification">Sciant Clerici et laici</cl> me Concessisse<lb/> et hac presenti Carta confirmasse deo et ecclesie sancte crucis de edenesb’ et
+                     Canonicis ibidem deo seruientibus donacionem<lb/> illam quam . <persName>A .</persName> Comitissa mater mea eis fecit de uno tofto in karel et de redditu dimidiam marce
+                     de firma eiusdem uille annuatim<lb/> percipiendo . et de uno tofto in hadint’ Cum decima cum lucrorum et placidorum
+                     que proueniunt de hadint’scire . <cl type="holding">Tenend’ sibi et habend’<lb/> in liberam et perpetuam elemosinam . sicut carta . <persName>A .</persName> comitisse matris mee testatur</cl> .</cl> <cl type="witnesses">T<ex>estibus</ex> . Eng’ Cancellario . Walter filio alani Dapifero . Rob’<lb/> Auenel .</cl> Apud striuelyN</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">M<ex>alcolm</ex> king of Scots</cl> to all worthy men of the whole of his land <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let the clerks and laymen</cl> know that I have granted and by this present charter made firm to God and to the
+                     church of Holyrood in Edinburgh and to the canons serving
+                     God there the donation that Countess Ada my mother has
+                     made to them of one toft in Crail and of the rent of half
+                     a merk from the ferm of the same toun to be received
+                     yearly and of one toft in Haddington with the teind of the
+                     monies and pleas that come from the shire of Haddington. <cl type="holding">For them to hold and have in free and perpetual alms as the charter of Countess
+                     Ada my mother bears witness.</cl></cl> <cl type="witnesses">As witnesses: Ingram the chancellor; Walter the steward son of Alan; Robert
+                  Avenel.</cl> At Stirling.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,97 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-978">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 734</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 10:59:47.571081+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">978</idno>
+        <idno type="textcontent">1006</idno>
+        <idno type="transcription_textcontentxml">978</idno>
+        <idno type="translation_textcontentxml">979</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 734</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 734</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T10:59:47.571081+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T10:59:47.571081+00:00" status="approved">transcription moa=978 status=reviewed modified=2022-11-01 10:59:47.571081+00 | translation moa=979 status=reviewed modified=2022-11-01 10:59:47.561398+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><supplied>Omnibus</supplied> has litteras visuris uel audituris . <cl type="intitulatio">Patricius filius Patricii Comitis de Dunbar’</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Noueritis</cl> <supplied>me ue</supplied>raciter intellexisse per<lb/> cartam regis Eadgari . et per plura alia inditia et recognouisse in curia domini
+                     regis Alexandr<ex>i</ex> plenum ius Prioris et monachorum Dunelmens<ex>ium</ex><lb/> apud Coldingham’ deo seruientium de uilla et dominico de Swynefaud’ cum eorum
+                     pertinentiis . de quibus eos aliquin iniuste uexauit .
+                     Hinc est quod<lb/> notum facio vniuersitati uestre me deo et sancto Cuthberto et sancte Ebbe et
+                     Priori et monachis Dunelmens<ex>ibus</ex> apud Coldingham deo serui<lb/>entibus et in perpetuum ibidem seruituris uillam de Swinefuud et totum dominicum
+                     eiusdem uille cum omnibus pertinentiis suis . et totum ius<lb/> et omne genus iuris . et clamium si quod habui uel habere potui  in eadem uilla
+                     . tam in dominicis quam hominibus seruitiis . et homagiis
+                     . boscis<lb/> et planis . terris cultis et incultis . et omnibus aliis ad dictam uillam et
+                     dictum dominicum pertinentibus  quieta clamasse et
+                     abiurasse in perpetu<lb/><supplied>um pro me et heredibus meis</supplied> sine aliquo retinemento et per fustum et baculum in curia domini regis  eisdem
+                     reddidisse <supplied>. que</supplied> antecessores mei iniuste<lb/> <supplied>occup</supplied>auerunt et d<supplied>etinu</supplied>erunt . ita quod nec ego nec heredes mei nec aliquis ex parte nostra de cetero
+                     ius aut clamium in prenominati<supplied>s</supplied> uilla et dominico <supplied>cum pertinen</supplied><lb/>tiis habere poterimus .</cl> <cl type="dating">Dicta autem quieta clamatio facta fuit in curia domini regis Alexandri illustris
+                  regis Scottorum apud Rok<supplied>isburk’ tercio kalend’</supplied><lb/> April<ex>is</ex> . Anno regni eiusdem regis . Decimo septimo .</cl> <cl type="sealing">vt autem omnia predicta rata et inconcussa permaneant  presens scriptum sigilli<lb/> mei appositione roboraui .</cl> <cl type="witnesses">Hiis Testibus . Domino Waltero Olifard’ Iusticiario Laodonie . Domino Willelmo
+                  domini regis cancellario . Domino<lb/> Iohanne de Maccuswel domini regis Camerario . Domino Roberto de Ros’ . Domino
+                     Rannulfo de Bonekil . Domino Bernardo fraser . Domino<lb/> Thom<ex>(</ex>a) filio Ran’ . Domino Thom<ex>a</ex> de Haya . Dauid Clerico domini Walteri olifard’ . et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall view or hear these letters, <cl type="intitulatio">Patrick, son of Patrick earl of Dunbar</cl>, <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me faithfully to have understood and recognised through the charter of King
+                     Edgar, and by many other proofs, in the court of the lord
+                     king, Alexander, the full right of the prior and monks of
+                     Durham serving God at Coldingham in respect of the toun
+                     and demesne of Swinewood with its pertinents concerning
+                     which I have at some time disturbed them. Hence it is that
+                     I make known to you all that I, for myself and my heirs,
+                     have quitclaimed and renounced for ever, to God, Saint
+                     Cuthbert, Saint Ebbe, and the prior and monks of Durham
+                     serving God at Coldingham, and who will in perpetuity
+                     serve there, the toun of Swinewood and the entire demesne
+                     of the same toun, with all its pertinents, and the whole
+                     right and every kind of right and claim, if I had or could
+                     have had it in the same toun, as well in demesnes as in
+                     men, services and homages, woods and plains, lands
+                     cultivated and uncultivated, and all other things
+                     belonging to the said toun and the said demesne, without
+                     any withholding; and I returned by rod and staff in the
+                     king's court what my ancestors unawfully appropriated and
+                     withheld, so that neither I nor my heirs nor any on our
+                     side could have in the future right or claim in the
+                     aforementioned toun and demesne with its pertinents.</cl> <cl type="dating">The said quitclaim was made in the court of the lord king, Alexander,
+                  illustrious king of the Scots, at Roxburgh on the third
+                  kalends of April [30 March] in the seventeenth year of reign
+                  of the same king.</cl> <cl type="sealing">So that everything aforesaid should remain valid and undisputed, I have
+                  authenticated the present writing by the application of my
+                  seal.</cl> <cl type="witnesses">With these witnesses: the lord Walter Oliphant, justice of Lothian; the lord
+                  William, chancellor of the lord king; the lord John of
+                  Maxwell, chamberlain of the lord king; the lord Robert of
+                  Roos; the lord Ranulf of Bunckle; the lord Bernard Fraser;
+                  the lord Thomas son of Ranulf; the lord Thomas de la Haye;
+                  David, clerk of Walter Oliphant; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

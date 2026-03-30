@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-473">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/208</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 16:00:33.518659+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">473</idno>
+        <idno type="textcontent">478</idno>
+        <idno type="transcription_textcontentxml">473</idno>
+        <idno type="translation_textcontentxml">474</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/208</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/208</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T16:00:33.518659+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T16:00:33.518659+00:00" status="published">transcription moa=473 status=live modified=2021-04-06 16:00:33.518659+00 | translation moa=474 status=live modified=2021-04-06 16:00:31.848088+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte Matris Ecclesie filiis presentibus et futuris . <cl type="intitulatio">Will<ex>elmu</ex>s de Lilleselif</cl> <cl type="salutation">salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciatis</cl> me dedisse . concessisse . et hac<lb/> presenti carta mea confirmasse deo et Ecclesie sancte Marie de Melros et
+                     Monachis ibidem deo seruientibus in puram<lb/> et perpetuam Elemosinam duo tophta in occidentali parte de Hadigtun . <cl type="holding">Tenenda . habenda . possidenda . sicut eis<lb/> melius et vtilius uisum fuit . ita libere quiete . plenarie et honorifice sicut
+                        aliquam Elemosinam liberius . quietius . ple<lb/>nius et honorificentius tenent ac possident .</cl> Ita tamen quod de ipsis tophtis dabunt michi et heredibus meis annu<lb/>atim . quatuor denarios in nundinis de hadigtun . <cl type="warrandice">Ego autem et heredes mei manutenebimus et waranti<lb/>zabimus dictis monachis prefata duo tophta contra omnes homines . et
+                        adquietabimus de omni seruitio et de omnibus aliis
+                        rebus in perpetuum .</cl></cl> <cl type="witnesses">His Testibus . Ric<ex>ardo</ex> nano .Waltero de lindesei . Henrico filio Roberti de Ro<lb/>kesburc . Roberto de Bernoldebi . Alexandro de lillesclif . et Gaufrido fratre
+                     suo . Radulfo spendeluue preposito<lb/> de hadigtun . Will<ex>elm</ex>o clerico . Will<ex>elm</ex>o Russel</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church present and to come, <cl type="intitulatio">William of Lilliesleaf</cl> <cl type="salutation">sends greeting</cl></cl>. <cl type="disposition"><cl type="notification">Know me</cl> to have given, granted, and by this my present charter to have made firm to God
+                     and to the church of St Mary at Melrose and to the monks
+                     serving God in that place, in pure and perpetual alms, two
+                     tofts on the western side of Haddington; <cl type="holding">to be held, had, and possessed as seems best and most useful to them, as freely,
+                     quitly, fully and honourably as they hold and possess any
+                     alms freely, quitly, fully and honourably;</cl> so that they shall give me and my heirs four pence at the Haddington fair the
+                     from those tofts annually. <cl type="warrandice">I and my heirs shall maintain and warrant to the said monks the aforementioned
+                     two tofts against all men, and discharge for ever every
+                     service and all other matters in perpetuity</cl>.</cl> <cl type="witnesses">With these witnesses: Richard le Naym; Walter of Lindsay; Henry son of Robert of
+                  Roxburgh; Robert of Barnoldby; Alexander of Lilliesleaf, and
+                  Geoffrey his brother; Ralph Spendlove, provost of Haddington;
+                  William the clerk; William Russell.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

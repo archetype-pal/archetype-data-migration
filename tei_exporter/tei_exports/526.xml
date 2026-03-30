@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-526">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/227</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:31.81059+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">526</idno>
+        <idno type="textcontent">533</idno>
+        <idno type="transcription_textcontentxml">526</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/227</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/227</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:31.81059+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:31.81059+00:00" status="draft">transcription moa=526 status=draft modified=2017-01-30 19:28:31.81059+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><cl type="address">Omnibus christi fidelibus hoc scriptum visuris uel audituris . <cl type="intitulatio">Alanus filius Rollandi Scoctorum constabularius</cl> <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit vniuersitas vestra</cl><lb/> nos dedisse concessisse et hac carta nostra confirmasse deo et ecclesie sancte
+                        Marie de Melros et Monachis ibidem deo seruientibus .
+                        totum vastum nostrum<lb/> de Lambremor in eschambium cuiusdam terre que uocatur keresban quam dicti
+                        Monachi dederunt nobis per cartam suam salua illis
+                        tantum communi pastura in<lb/> dicto vasto . qui ea in tempore antecessorum nostrorum et nostro uti iuste
+                        solebant . Ita tamen quod aueria eorum in dicta pastura
+                        non pernoctabunt  sed ad proprias domos singulis<lb/> diebus remeabunt . <cl type="holding">Tenend’ et habend’ sibi liberum . quietum et solutum ab omni terreno seruicio .
+                        consuetudine et exactione seculari cum omnibus
+                        immunitatibus et liber<lb/>tatibus cum quibus predictam terram de keresban uel aliquam aliam elemosinam
+                           liberius tenuerunt in regno scocie de comite uel
+                           barone .</cl> scilicet ut dictum vastum<lb/> edificent arent fossatas sepes uel muros faciant ad includend’ blada uel prata
+                        que facere uoluerint . et vtantur modis omnibus quibus
+                        eis utilius uisum fuerit . <cl type="warrandice">Et<lb/> nos et heredes nostri manutenebimus warantizabimus dictis monachis predictum
+                           vastum cum omnibus pertinenciis et libertatibus
+                           prenominatis et defendemus contra omnes<lb/> homines ab omni seruicio forensi uel priuato</cl> .</cl> <cl type="witnesses">Hiis Testibus . Thoma de kent . Radulfo de cliftun clericis nostris . Bernardo
+                     de Rippeleye . Ricardo Mau<lb/>talent . Alano de seint cler . Will<ex>elm</ex>o de Hertesheueth . Henrico de la hage . Ingeramo gurle . Gilberto de thirsi .
+                        et Multis aliis .</cl></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

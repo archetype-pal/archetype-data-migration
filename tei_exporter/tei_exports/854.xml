@@ -1,0 +1,73 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-854">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of TNA DL 25/88</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 16:29:49.581153+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">854</idno>
+        <idno type="textcontent">876</idno>
+        <idno type="transcription_textcontentxml">854</idno>
+        <idno type="translation_textcontentxml">855</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/88</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>TNA DL 25/88</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-04T16:29:49.581153+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-04T16:29:49.581153+00:00" status="published">transcription moa=854 status=live modified=2021-04-04 16:29:47.686203+00 | translation moa=855 status=live modified=2021-04-04 16:29:49.581153+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus hoc scriptum visurus uel audituris <cl type="intitulatio">Helena filia Rogeri quondam dicti porter</cl> <cl type="salutation">salutem in domino sempiternam</cl></cl><lb/> <cl type="disposition"><cl type="notification">Noueritis me</cl> in maxima necessitate mea vendidisse et concessisse domino meo domino Roberto de
+                     Brus domino vallis Anan<lb/>die vnam grangiam cum acra super quam fundatur que quidem stat ex opposito
+                     contra domum quondam<lb/> Patricii Scheltun ad capud ville de Anand per quod itur ad furcas pro quadam
+                     summa pecunie quam dictus<lb/> dominus Robertus de Brus michi in maxima necessitate mea premanibus pacauit . de
+                     qua quidem pecunia me teneo<lb/> contentam et pacatam . <cl type="holding">Tenendum et habendum dicto domino . Roberto de Brus et heredibus suis uel suis
+                     assingnatis libere qui<lb/>ete pacifice et honorifice absque ulla calumpnia mei uel heredum meorum</cl> . Reddendo inde annuatim ipse uel here<lb/>des sui Luminari sancte Marie de Anand vnum denarium ad Natale domini pro omni
+                     seruitio et seculari demanda . <cl type="warrandice">Ego<lb/> vero et heredes mei dictam grangiam cum acra super quam fundatur contra
+                        quoscumque warantizabimus in perpetuum<lb/> et defendemus</cl> .</cl> <cl type="sealing">In cuius rei testimonium huic scripto sigillum meum apposui</cl> <cl type="witnesses">hiis testibus . Domino Roberto de Heriz<lb/> Radulfo de camera constabulario et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall view or hear this writing <cl type="intitulatio">Helen the daughter of the late Roger called Porter </cl><cl type="salutation">wishes eternal salvation in the Lord</cl>.</cl> <cl type="disposition">Know me in my great need to have sold and granted to my lord Robert de Brus the
+                  lord of Annandale one grange with the acre upon which it is
+                  built and which stands opposite the dwelling of a certain
+                  Patrick of Shelton at the head of the toun of Annan on the
+                  way to the gallows in return for which the said Robert de
+                  Brus has paid to me a certain amount of money as an advance
+                  in my great need and in respect of which money I remain
+                  satisfied and paid. For the said lord Robert de Brus and his
+                  heirs or his assigns to hold and to have freely, quitly,
+                  peaceably, and honourably, without any claim on me or my
+                  heirs. He or his heirs are annually to render for it one
+                  penny at Christmas for the lighting of St Mary’s at Annan in
+                  return for every service and secular demand. <cl type="warrandice">I and my heirs shall warrant and protect for ever against anyone the same grange
+                     with the acre upon which it is built</cl>.</cl> <cl type="sealing">In testimony of this matter I have applied my seal to this writing.</cl> <cl type="witnesses">With these witnesses, the lord Robert de Heriz, Ralph de Camera the constable,
+                  and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

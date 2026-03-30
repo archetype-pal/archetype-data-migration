@@ -1,0 +1,63 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-846">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of TNA DL 25/84</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.126145+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">846</idno>
+        <idno type="textcontent">868</idno>
+        <idno type="transcription_textcontentxml">846</idno>
+        <idno type="translation_textcontentxml">847</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/84</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>TNA DL 25/84</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-03-13T15:02:37.126145+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-03-13T15:02:37.126145+00:00" status="approved">transcription moa=846 status=reviewed modified=2023-03-13 15:02:37.126145+00 | translation moa=847 status=reviewed modified=2023-03-13 15:02:37.11438+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus hoc scriptum visuris uel audituris <cl type="intitulatio">Ricardus de Bancori</cl> <cl type="salutation">salutem</cl></cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me quietam cla<lb/>masse pro me et heredibus meis Imperpetuum domino meo Roberto de Brus . et
+                     heredibus suis totam terram<lb/> de loyerwode <cl type="boundaries">per has diuisas . videlicet de Polhulin vsque Blakebecke . sicut medietas mos<lb/>se extendit . et de dicta medietate mosse  vsque aquam de loyer</cl> cum Pertinenciis . cum quadam communi<lb/> pastura In feodo de Comlongan quam homines dicti Roberti de Brus de misefaud de
+                     me<lb/> solebant habere ad firmam . pro vna marca annuatim soluenda . saluo cum mihi et
+                     heredibus meis <supplied>in</supplied> <lb/> bosco meo ... gigo . sicut ante diem huius quiete clamacionis ipsum b...uus de<lb/>nui .</cl> <cl type="sealing">In cuius rei testimonium huic scripto sigillum meum apposui .</cl> <cl type="witnesses">Hiis testibus . Dominis .<lb/> Ada de Carnoto . Dauid de Parco . Vmfrido de Kirkepatric . Rogero de Kirkepatric
+                     . Will<ex>elm</ex>o de<lb/> sancto mich’ . Engramo de musseus . Iacobo Clerico . et Aliis .</cl></p>
+      </div>
+      <div type="translation"><p><cl type="address">To all who shall view or hear this writing <cl type="intitulatio">Richard of Banchory</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have quitclaimed for myself and for my heirs for ever to my lord, Robert
+                     de Brus, and his heirs, the entire land of Locharwoods <cl type="boundaries">by these boundaries, namely, from 'Polhulin' to 'Blakebecke', just as it extends
+                     halfway along the mosse, and from the said middle of the
+                     mosse to the Water of Lochar</cl>; with pertinents, with a common pasture in the feu of Comlongon which the men
+                     of the said Robert de Brus of Mouswald used to have at
+                     ferme from me, in return for one merk to be paid yearly,
+                     reserving to myself and my heirs in my wood of ..., just
+                     as before the day of this quitclaim </cl></p> <p><cl type="sealing">In testimony of this matter I have applied my seal to this writing.</cl> <cl type="witnesses">With these witnesses: the lords Adam de Chartres; David Park; Humphrey of
+                  Kirkpatrick; Roger of Kirkpatrick; William de Saint-Michel;
+                  Ingram de Monceus; James the clerk; and others.</cl></p></div>
+    </body>
+  </text>
+</TEI>

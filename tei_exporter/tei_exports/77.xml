@@ -1,0 +1,56 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-77">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Add. Ch. 66570</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-11-28 15:22:14.478925+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">77</idno>
+        <idno type="textcontent">78</idno>
+        <idno type="transcription_textcontentxml">77</idno>
+        <idno type="translation_textcontentxml">78</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 66570</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Add. Ch. 66570</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2018-11-28T15:22:14.478925+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2018-11-28T15:22:14.478925+00:00" status="published">transcription moa=77 status=live modified=2018-11-28 15:20:35.603885+00 | translation moa=78 status=live modified=2018-11-28 15:22:14.478925+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>Alex<ex>ander</ex></persName> Dei gr<ex>ati</ex>a Rex Scott<ex>orum</ex></cl> . Omnibus probis hominibus tocius terre sue <cl type="salutation">salutem</cl>.</cl> <cl type="notification">Sciatis quod</cl> <cl type="disposition">concessimus <lb/> <persName>Galfrido</persName> de Ferseley . militi et fideli nostro . <cl type="holding">ut habeat et teneat terras suas quas de nobis tenet in feodo <lb/> de Carel’  in liberam Warennam</cl> . <cl type="injunction">Quare firmiter prohibemus ne quis infra easdem terras sine Licencia eiusdem <lb/> <persName>Galfridi</persName> . secet aut uenetur . super nostram plenariam forisfacturam decem Libram</cl></cl> . <cl type="witnesses">Testibus <persName>Rob<ex>erto</ex></persName> Abbate de Dum<lb/>fermelyn’ . <persName>Rob<ex>erto</ex></persName> de Meyners et <persName>Will<ex>elm</ex>o Olifard’</persName></cl> apud Dumfermelin .xvi. die Aprilis . Anno regni domini Regis  xxx quinto .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, by the grace of God king of the Scots</cl>, to all worthy men of his entire land <cl type="salutation">greeting.</cl></cl><cl type="notification"> Know that</cl> <cl type="disposition">we have conceded to Geoffrey of Farsley, our knight and sworn man, <cl type="holding">that he shall have and hold his lands that he holds of us in feu at Crail in
+                     free Warren</cl>. <cl type="injunction">Wherefore we strictly forbid that anyone may fell timber or hunt within the same
+                     lands without licence of the same Geoffrey, on pain of our
+                     full forfeiture of ten pounds</cl></cl>. <cl type="witnesses">As witnesses: Robert, abbot of Dunfermline; Robert Menzies and William Oliphant.</cl> At Dunfermline, on the 16th day of April, in the 30th year of the reign of the
+                  lord King.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

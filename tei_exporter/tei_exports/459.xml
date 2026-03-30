@@ -1,0 +1,69 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-459">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/191</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-08-08 11:05:24.663832+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">459</idno>
+        <idno type="textcontent">464</idno>
+        <idno type="transcription_textcontentxml">459</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/191</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/191</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2016-08-08T11:05:24.663832+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2016-08-08T11:05:24.663832+00:00" status="draft">transcription moa=459 status=draft modified=2016-08-08 11:05:24.663832+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p>Sciant omnes tam presentes quam futuri quod ego Walterus champenais de karrig .
+               quietam clamaui pro me et heredibus meis in perpetuum monachis
+               de Melros totam terram illam que iacet uicina terre mee de
+               Dunduf . in qua scilicet terra me et heredes meos ius habere
+               sepius protestatus sum . Concessit etiam pro me et heredibus
+               meis ut idem monachi teneant . habeant et possideant dictam
+               terram libere . quiete . pacifice et plenarie per easdem diuisas
+               per quas dominus meus Dunkanus comes de karrig . fratri matheo
+               de Neutun tunc cellarario de Melros et sociis eius in presencia
+               Gillescop mackenedi tunc senescalli de karrig . Rotheric quapath
+               . Alexandri de Dunynian . et aliorum multorum ipsam perambulauit
+               . renunciando pro me et heredibus meis protestacionei prius a me
+               facte . et omni iuri quod in eadem terra habui uel habere potui
+               pro viginti solidis esterlingorum quos dicti monachi mihi
+               pacauerunt per manum Ricardi de Big’ tunc monachi de mauhelin .
+               Anno gracie . Millesimo . ducentesimo . quadragesimo tertio . In
+               cuius rei testimonium ego pro me et heredibus meis presenti
+               scipto sigillum meum apposui . Hiis test’ . Domino meo dunkano
+               comite de karrig . Domino . D . de Lindesey . tunc Iustic’ .
+               Laodon’ . Alexandro senescallo scotie . Roberto de Curri .
+               Nigello Mackegilduf . Et multis aliis .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

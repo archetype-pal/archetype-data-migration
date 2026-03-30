@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-106">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 22</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:27:59.663979+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">106</idno>
+        <idno type="textcontent">106</idno>
+        <idno type="transcription_textcontentxml">106</idno>
+        <idno type="translation_textcontentxml">107</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 22</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 22</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:27:59.663979+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:27:59.663979+00:00" status="published">transcription moa=106 status=live modified=2017-01-30 19:27:59.663979+00 | translation moa=107 status=live modified=2016-06-07 10:55:21.323394+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte matris ecclesie filijs  <cl type="intitulatio">Ric<ex>ardus</ex> dei gratia episcopus sancti ANDREE apostoli</cl> . <cl type="salutation">salutem ⁊ episcopalem benedictionem</cl></cl> . <cl type="disposition"><cl type="notification">Sciant tam posteri quam presentes</cl> . nos <lb/> dedisse ⁊ concessisse ⁊ presentis scripti pagina confirmasse deo ⁊ ecclesie
+                     beati ANDREE apostoli ⁊ canonicis ibidem deo seruientibus
+                     ⁊ seruituris <lb/> capellam de Inche Ђore cum omnibus eidem capellę iuste pertinentibus inperpetuam
+                     elemosinam pro salute anime méé ⁊ predecessorum ⁊
+                     successorum meorum <lb/> animabus  saluis consuetudinibus episcopalibus .</cl> <cl type="witnesses">Testibus his . Greg<ex>orio</ex> episcopo dunkeld<ex>ensi</ex> . Math<ex>e</ex>o archidiacono . de sancto Andr<ex>ea</ex> . Magistro andrea archidiacono Laodon’. <lb/> Gaufr<ex>ido</ex> abbate dumf’ . Aluredo abbate Striuelin Will<ex>elm</ex>o abbate de Sancta Cruce . Magistro herberto . Magistro Abraham . Alexand<ex>ro</ex> capellano . Rob<ex>er</ex>to filio <lb/> Seulfi de pert . Steph<ex>an</ex>o clerico . Odone fratre Archidiaconi math<ex>e</ex>i .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, <cl type="intitulatio">Richard by the grace of God bishop of St Andrew the apostle,</cl> <cl type="salutation">greeting and episcopal benediction:</cl></cl> <cl type="disposition"><cl type="notification">Let those to come as well as those present know</cl> that we have given and granted and by the present written document made firm, to
+                     God and to the church of blessed Andrew the apostle and to
+                     the canons serving God in that place now and in the
+                     future, the chapel of Inchture, with everything rightfully
+                     pertaining to the same chapel, in perpetual alms, for the
+                     welfare of my soul, and of my predecessors’ and
+                     successors’ souls, saving episcopal customs.</cl> <cl type="witnesses">With these witnesses: Gregory, bishop of Dunkeld; Matthew, archdeacon of St
+                  Andrews; Master Andrew, archdeacon of Lothian; Geoffrey,
+                  abbot of Dunfermline; Alured, abbot of Stirling; William,
+                  abbot of Holyrood; Master Herbert; Master Abraham; Alexander
+                  the chaplain; Robert, son of Seulf of Perth; Stephen the
+                  clerk; Odo, brother of Archdeacon Matthew.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,99 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-92">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 16</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-09-14 01:16:58.08343+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">92</idno>
+        <idno type="textcontent">92</idno>
+        <idno type="transcription_textcontentxml">92</idno>
+        <idno type="translation_textcontentxml">93</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 16</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 16</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2022-09-14T01:16:58.08343+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2022-09-14T01:16:58.08343+00:00" status="published">transcription moa=92 status=live modified=2022-09-14 01:16:22.297472+00 | translation moa=93 status=live modified=2022-09-14 01:16:58.08343+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris ecclesie filiis presens scriptum uisuris . uel audituris . <cl type="intitulatio"><persName>Dauid</persName> . ⁊ <persName>albinus</persName> . dei gratia sancti andr<ex>ee</ex> . ⁊ brechyn’ . Episcopi . Et Magister <persName>abel</persName> . Capellanus domini <lb/> pape . ⁊ archidiaconus sancti andr<ex>ee</ex> .</cl> <cl type="salutation">salutem eternam in domino</cl> .</cl> <cl type="notification">Mandatum Episcoporum regni Scocie in hec uerba inspeximus .</cl> <cl type="narration">Excellentissimo domino suo . A . dei gratia illustri regi <lb/> Scoc’ . Dauid . Will<ex>elmu</ex>s . Petrus . Clemens . Albinus . Robertus . Will<ex>elmu</ex>s . sancti Andr<ex>ee</ex> . <span data-dpt="place" data-dpt-cat="chars" data-dpt-type="name">Glasg’</span> . Aberdon’ . Dunblayn’ . brechyn’ . Rossen’ . Ketenens’ . ecclesiarum ministri .
+                     salutem . <lb/> ⁊ fidelia semper obsequia . ac deuota . Licet ea que in ultimo concilio apud
+                     Eddenburc celebrato . vobis . ac Magnatibus uestris
+                     presentibus ordinata fuerant minime <lb/> fuerint in scriptam redacta  ea tamen a consiliariorum uestrorum memoria
+                     intercidisse non credimus . videlicet quod ecclesie . ⁊
+                     earum prelati omnium Iurium . ⁊ libertatum pacifica <lb/> possessione gauderent . que tempore felicis memorie Regis Alex<ex>and</ex>ri patris uestri optinuerint saluo Iure uestro . ⁊ vestra possessione in omnibus
+                     . verum Iam quiddam nouum <lb/> ⁊ in regno Scoc’ a retro temporibus inauditum . a uestris est consiliariis
+                     introductum . vt uidelicet persone ecclesiastice
+                     possessionibus . Ecclesiasticis eorundem in elemosinas
+                     concessis <lb/> noninterueniente Iudiciali cognicione suorum prelatorum per laicos spolientur .
+                     vt nuper de priore sancti andr<ex>ee</ex> audiuimus contigisse . Cum autem hec ⁊ hiis similia . contra <lb/> deum . ⁊ ecclesiasticam libertatem ... sub dissimulacione transire non debeant 
+                     Excellencie uestre humiliter supplicamus . ac deuote .
+                     Quatinus quod in <lb/> bonis dicti prioris irreuerenter est . ⁊ incaute presumptum . discrecione preuia
+                     reuocationes  consimilia decetero fieri si placet
+                     nullatenus permittatis . Alioquin nos <lb/> pocius quibuscunque periculis exponemus . quam sustinere uelimus in posterum tam
+                     inestimabilem ecclesie lesionem . valeat Excellencia
+                     uestra semper in domino . In cuius rei testi<lb/>monium presenti scripto sigilla nostra apponi fecimus .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church who shall view or hear the present document, <persName>David</persName> and <persName>Albin</persName>, bishops by the grace of God, of St Andrews and of Brechin, and Master <persName>Abel</persName>, chaplain of the lord Pope and archdeacon of St Andrews, <cl type="salutation">wish eternal salvation in the Lord</cl>.</cl> <cl type="notification">We have inspected the mandate of the bishops of the kingdom of Scotland in these
+                  words:</cl> <cl type="narration">To their most excellent lord, A<ex>lexander</ex>, by the grace of God illustrious king of Scot<ex>s</ex>, David, William, Peter, Clement, Albin, Robert, William, servants of the
+                     churches of St Andrews, <span data-dpt="place" data-dpt-cat="chars" data-dpt-type="name">Glasgow</span>, Aberdeen, Dunblane, Brechin, Ross, Caithness, wish health and ever faithful
+                     and devoted allegience. Although those things that had
+                     been appointed during the last council celebrated at
+                     Edinburgh, where you and to your magnates were present,
+                     have hardly been put in writing, we nevertheless do not
+                     believe that they have been forgotten by your counsellors,
+                     namely, that the churches and their prelates might rejoice
+                     in the peaceful possession of all rights and liberties
+                     which they had during the time of King Alexander your
+                     father of happy memory, saving your right and your
+                     possession in all things. Yet now a certain new thing
+                     previously unheard of in the kingdom of Scotland has been
+                     introduced by your counsellors, namely that ecclesiastical
+                     persons may be deprived by laymen of their ecclesiastical
+                     possessions granted in alms without a judicial inquiry of
+                     their prelates taking place, as lately we heard from the
+                     prior of St Andrews to have happened. Since, however,
+                     these things and things like them, against God, and
+                     ecclesiastical liberty ... ought not to pass by
+                     unregarded, we humbly and devotedly entreat your
+                     Excellency, that what among the goods of the said prior
+                     has been irreverently and inconsiderately appropriated,
+                     having first considered our appeals, you would please in
+                     no way permit similar things to be done in future.
+                     Otherwise we shall expose ourselves instead to however
+                     many dangers, a more inestimable injury to the church than
+                     we would wish to sustain in the future. May your
+                     Excellency ever have strength in the Lord. In testimony of
+                     this matter we have caused our seal to be affixed to the
+                     present document.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

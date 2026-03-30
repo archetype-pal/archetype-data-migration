@@ -1,0 +1,83 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-754">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5981</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:57:31.665127+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">754</idno>
+        <idno type="textcontent">767</idno>
+        <idno type="transcription_textcontentxml">754</idno>
+        <idno type="translation_textcontentxml">755</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5981</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5981</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T20:57:31.665127+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T20:57:31.665127+00:00" status="approved">transcription moa=754 status=reviewed modified=2022-10-31 20:57:31.624951+00 | translation moa=755 status=reviewed modified=2022-10-31 20:57:31.665127+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi fidelibus ad quorum noticiam littere iste peruenerint . <cl type="intitulatio">Bertramus filius Robert<lb/> coco</cl> <cl type="salutation">salutem</cl></cl> . <cl type="disposition"><cl type="notification">Nouerit vniuersitas uestra</cl> me dedisse . concesisse . et hac presenti carta<lb/> mea confirmasse deo et beato Cuthberto et sancte Ebbe et priori de Coldingham .
+                     et mona<lb/>chis ibidem deo seruientibus et inperpetuum seruituris . in liberam et perpetuam
+                     elemosinam<lb/> vnam dimidiam carucatam terre cum tofto et crofto in villa et territorio de Re<lb/>ningtona cum omnibus pertinetiis ad tantam terram in eadem villa pertinentibus
+                     infra<lb/> villa et extra sine vllo retinemento . Illo scilicet dimidiam carucatam terre
+                     quam<lb/> Waldeuus filius Cren quondam tenuit in villa de Reningtona . <cl type="holding">Tenend’ et habend’ .<lb/> dictis priori et conuentui et eorum successoribus inperpetuum . adeo libere .
+                        quiete . et honorifice .<lb/> sicut aliqua elemosina forinsecum faciens seruicium infra rengnum Scocie .
+                        liberius . uel<lb/> quietius tenetur . uel possidetur cum omnibus libertatibus et asiamentis suis .</cl> Et sciendum est<lb/> quod ego Bertramus et heredes mei quiti erimus de forinseco seruicio domini
+                     Regis et domus<lb/> de Coldingham quantum pertinet ad tantam terram in eadem uilla .</cl> <cl type="warrandice">Et preterea sciendum<lb/> est quod ego Bertramus et heredes mei predictam terram dictis priori et
+                     conuentui et eorum suc<lb/>cessoribus contra omnes homines et feminas inperpetuum warantizabimus .
+                     adquietabimus<lb/> et defendemus .</cl> <cl type="sealing">Et vt hec mea donacio robur opptineat perpetuum huic scripto<lb/> sigillum meum apposui .</cl> <cl type="witnesses">Hiis testibus . dominus . d<ex>aui</ex>d . de Graham . W . de Mothingt<ex>ona</ex><lb/> . W . de Scremerstona . R . nobili . R . de Mungumery . R . filio senescalli . d<ex>aui</ex>d . de Lu<lb/>mesden’ . Ad<ex>a</ex> filio Ioh<ex>annis</ex> . Ad<ex>a</ex> filio Walteri de Aytun . Patricio Scot . Ioh<ex>anne</ex> filio eius .<lb/> Ioh<ex>ann</ex>e filio ynggram . Patricio filio Coleman . et ALIIS .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful to whose notice these letters shall come, <cl type="intitulatio">Bertram son of Robert Cook</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know me, all of you</cl>, to have given, granted, and by this my present charter to have confirmed to
+                     God, to blessed Cuthbert, St Ebbe, the prior of
+                     Coldingham, and the monks in that place serving God now an
+                     for ever, in free and everlasting alms, one
+                     half-ploughgate of land with toft and croft in the toun
+                     and territory of Renton, with all pertinents belonging to
+                     so much land, inside the same toun as well as outside,
+                     without any withholding; that is, the half-ploughgate of
+                     land which the late Waldef son of Cren held in the toun of
+                     Renton; <cl type="holding">for the said prior and convent and their successors to hold and to have for
+                     ever, as freely, quitely, and honourably as any alms doing
+                     forinsec service within the kingdom of Scotia are freely
+                     or honourably held or possessed, with all their liberties
+                     and easements.</cl> And it should be know that I, Bertram and my heirs, shall be quit of the
+                     forinsec service of the lord king and of the house of
+                     Coldingham, so far as it pertains to so much land in the
+                     same toun.</cl> <cl type="warrandice">In addition, it should be known that I, Bertram, and my heirs shall warrant,
+                  acquit and defend the aforesaid land to the said prior and
+                  convent and their successors against all men and women for
+                  ever.</cl> <cl type="sealing">And that this my donation should have force for ever, I have applied my seal to
+                  this written document.</cl> <cl type="witnesses">With these witnesses, the lord David of Graham, W<ex>illiam</ex> of Mordington, W<ex>illiam</ex> of Scremerston, R<ex>alph</ex> Noble, R<ex>obert</ex> of Montgomery, R<ex>obert</ex> son of the Steward, David of Lumsdaine, Adam son of John, Adam son of Walter of
+                     Ayton, Patrick Scott, John his son, John son of Ingram,
+                     Patrick son of Colman, and others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

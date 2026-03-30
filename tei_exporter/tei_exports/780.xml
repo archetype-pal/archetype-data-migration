@@ -1,0 +1,76 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-780">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5958</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.748234+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">780</idno>
+        <idno type="textcontent">794</idno>
+        <idno type="transcription_textcontentxml">780</idno>
+        <idno type="translation_textcontentxml">781</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5958</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5958</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T13:36:57.748234+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:36:57.748234+00:00" status="approved">transcription moa=780 status=reviewed modified=2022-11-01 13:36:57.738932+00 | translation moa=781 status=reviewed modified=2022-11-01 13:36:57.748234+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus fidelibus has literas uisuris uel audituris  <cl type="intitulatio">Ada filius Cospatricii de parua Riston<ex>a</ex></cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">No<lb/>uerit uniuersitas uestra</cl> <cl type="disposition">me intuitu karitatis et pro salute anime mee et predecessorum et successorum
+                  meorum dedis<lb/>se . concessisse . et presenti carta confirmasse in perpetuum in puram et
+                     perpetuam elemosinam deo et sancte Marie ad sustentationem<lb/> luminaris ubi celebratur missa de sancta Maria in ecclesia de Coldingham 
+                     toftum et croftum quod Huckard tenuit in<lb/> parua Ristona . Scilicet quod iacet inter toftum dominicum et toftum Will<ex>elm</ex>i filii Reginaldi . Libere . quiete . absolute ab omni<lb/> opere et seruicio seculari . et exactione et demanda . cum communi pastura . et
+                     cum omnibus libertatibus . et aysiamentis ad eandem<lb/> uillam pertinentibus . Infra uillam et extra . <cl type="holding">Ita libere et quiete sicut aliqua elemosinam in regno Scotie liberius .
+                     quiescius<lb/> et honorificentius tenetur uel possidetur .</cl> <cl type="warrandice">Ego uero et heredes mei predictum toftum et croftum contra omnes homines<lb/> et feminas warantizabimus</cl> .</cl> <cl type="sealing">Et ut hec mea donatio rata et inconcussa permaneat in perpetuum  presens
+                  scriptum<lb/> sigilli mei appositione roboraui .</cl> <cl type="witnesses">Hiis Testibus . Domino Anketino priore de Coldingham . Iohanne . et Stephano<lb/> tunc Capellanis de Coldingham . Iohanne . filio Elye de Aytona . Roberto filio
+                     Gregor<ex>ii</ex> . Willelmo Clerico . Ada tunc preposito .<lb/> Roberto filio Reginaldi . Rogero filio Radulfi . et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all the faithful who shall view or hear these letters, <cl type="intitulatio">Adam son of Cospatric of Little Reston</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Know me, all of you,</cl> <cl type="disposition">moved by charity and for the salvation of my own soul and of my predecessors'
+                  and successors', to have given, granted, and made firm by the
+                  present charter for ever, in pure and everlasting alms, to
+                  God and Saint Mary, for the maintenance of the light where
+                  the mass of Saint Mary is celebrated in the church of
+                  Coldingham, the toft and croft which Huckard held in in
+                  Little Reston; that is, which lies between the demesne toft
+                  and toft of William son of Reginald; freely, quitely,
+                  released from every work, secular service, exaction and
+                  demand, with common pasture, and with all liberties and
+                  easements pertaining to the same toun, within the toun and
+                  outside; <cl type="holding">so freely and quitely as any alms in the kingdom of Scotland is freely, quitely,
+                     and honourably held and possessed</cl>. <cl type="warrandice">I and my heirs shall warrant the aforesaid toft and croft against all men and
+                     women. So that this my donation should remain valid and
+                     unbroken for ever.</cl> </cl><cl type="sealing">I have authenticated the present writing by the application of my seal.</cl> <cl type="witnesses">With these witnesses: the lord Anketin, prior of Coldingham; John and Stephen,
+                  then chaplain of Coldingham; John, son of Elias of Ayton;
+                  Robert son of Gregory; William the clerk; Adam, then grieve;
+                  Robert son of Reginald; Roger son of Ralph; and many others.</cl> </p>
+      </div>
+    </body>
+  </text>
+</TEI>

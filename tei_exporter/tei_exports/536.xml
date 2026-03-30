@@ -1,0 +1,59 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-536">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/273</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:32.642414+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">536</idno>
+        <idno type="textcontent">543</idno>
+        <idno type="transcription_textcontentxml">536</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/273</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/273</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:32.642414+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:32.642414+00:00" status="draft">transcription moa=536 status=draft modified=2017-01-30 19:28:32.642414+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><cl type="disposition"><cl type="notification">Sciant presentes et futuri . quod</cl> <cl type="intitulatio">Ego Cristina filia Willelmi filii Ade de Astenesdene</cl> . dedi .<lb/> concessi . et hac presenti carta mea confirmaui . Hugoni braciatori de
+                        Astenesden<ex>e</ex> totam illam<lb/> terram quam habui apud Creswell’ in territorio de Astend’ . cum paruo prato que
+                        iacet inter Craswell'<lb/> et Monekesflattes . cum omnibus pertinenciis suis et libertatibus . <cl type="holding">Habendam . et tenendam predicto Hugoni et heredibus<lb/> suis uel assignatis libere . quiete . pacifice . et integre . iure hereditario
+                           inperpetuum . Reddendo inde annu<lb/>atim mihi et heredibus meis ipse et heredes sui uel assignati ad pentecosten .
+                           unum denarium pro omni seruicio seculari<lb/> et demandis .</cl> <cl type="warrandice">Ego uero dicta Cristina et heredes mei predicto Hugoni et heredibus suis uel
+                        assignatis totam<lb/> predictam terram et pratum cum pertinenciis suis . contra omnes homines et
+                           feminas warantizabimus . acquietabimus .<lb/> et defendemus inperpetuum .</cl></cl> <cl type="sealing">In cuius rei testimonium presentem Cartam sigilli mei munimine roboraui .</cl> <cl type="witnesses">Hiis<lb/> testibus . Roberto de Scona . Elia de Haulton’ . Gilberto filio eius . Benedicto
+                        Grundi . Roberto filio eius .<lb/> Rogero preposito de Astend’ . Ada de Lillescliue . Roberto carpentario et multis
+                        aliis .</cl></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

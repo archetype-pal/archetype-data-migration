@@ -1,0 +1,69 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-920">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 593</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:47:55.613148+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">920</idno>
+        <idno type="textcontent">945</idno>
+        <idno type="transcription_textcontentxml">920</idno>
+        <idno type="translation_textcontentxml">921</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 593</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 593</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:47:55.613148+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:47:55.613148+00:00" status="approved">transcription moa=920 status=reviewed modified=2022-11-01 16:47:55.604568+00 | translation moa=921 status=reviewed modified=2022-11-01 16:47:55.613148+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. W . dei gratia Rex Scott’</cl> . Iusticiis . vicecomitibus . Ministris . et Omnibus probis hominibus tocius
+                     terre sue <cl type="salutation">Salutem</cl> .</cl><lb/> <cl type="disposition"><cl type="notification">Sciatis</cl> me quietam clammasse Ecclesiam de Coldingham . et Domnum priorem . et Omnes Mona<lb/>cos eiusdem Ecclesie . Et Omnes homines terre illorum de Coldingham Sirre . de
+                     duobus solidos quos<lb/> Seruientes mei de Berewic ab illis exigere solebant de placitis et querelis quas
+                     inuenire possent .<lb/> Quare uolo et firmiter precipio vt Omnes homines de Coldingham Sirre de predicta
+                     exactione quieti<lb/> sint in perpetuum . pro anima Regis D<ex>aui</ex>d . aui mei et Comitis H . patris mei . et mea . et Omnium Anteces<lb/>sorum meorum .</cl> <cl type="witnesses">Test<ex>ibus</ex> . D<ex>auid</ex> . fratre meo . Waltero de Bid<ex>un</ex> Cancellario . Ri<ex>ardo</ex> de Moreuill<ex>a</ex> <persName><roleName>constabulario</roleName></persName> . Roberto de<lb/> Quinci . Waltero de Berkel’ . Camerario . philippo de vall’ . Roberto de Berkel’
+                     . Ioh<ex>ann</ex>e de londoniis .<lb/> Bernardo filio Briani . Roberto de Beoseuill’ .</cl> <cl type="dating">Apud Selescherche</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex>, by the grace of God king of the Scots,</cl> to justices, sheriffs, officials, and all worthy men of his entire land, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have quitclaimed the church of Coldingham, the lord prior and all the
+                     monks of the same church, and all the men of their land in
+                     Coldinghamshire, in respect of the two shillings which my
+                     sergeands at Berwick used to demand from them from the
+                     pleas and plaints which they could procure there.
+                     Wherefore I will and resolutely instruct that all the men
+                     of Coldinghamshire be quit of the said exaction for ever,
+                     for the soul of King David my grandfather, and Earl Henry
+                     my father, and my own <ex>soul</ex> and all my ancestors' <ex>souls</ex>.</cl> <cl type="witnesses">As witnesses: David my brother; Walter de Bidun, the chancellor; Richard de
+                  Morville, the constable; Robert de Quincy; Walter de
+                  Berkeley, the chamberlain; Philip de Valognes; Robert de
+                  Berkeley; John of London; Bernard son of Brian; Robert of
+                  Boswell.</cl> <cl type="dating">At Selkirk.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

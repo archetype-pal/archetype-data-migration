@@ -1,0 +1,133 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-827">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/283</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 09:10:49.255138+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">827</idno>
+        <idno type="textcontent">843</idno>
+        <idno type="transcription_textcontentxml">827</idno>
+        <idno type="translation_textcontentxml">826</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/283</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/283</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T09:10:49.255138+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T09:10:49.255138+00:00" status="published">transcription moa=827 status=live modified=2021-04-07 09:10:47.797629+00 | translation moa=826 status=live modified=2021-04-07 09:10:49.255138+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription"><p>M V H P A R G O R Y C</p> <p><cl type="narration">Cvm esset controuersia inter priorissam et conuentum monialium de Norberwic ex
+                  vna parte et abbatem et conuentum de sancto seruano ex altera
+                  . super decimis comiti de fif de omnibus firmis suis et
+                  lucris et euen<lb/>tibus et muneribus suis . et super secundis decimis ad domum suam pertinentibus
+                     de frumento farina braseo prebenda et omni genere bladi et
+                     de caseo et de butiro . Tandem procurante nobili viro
+                     malcolmo co<lb/>mite de fif vtriusque domus patrono vt perpetue pacis vtraque pars munimine
+                     roboraretur inter eos amicabilis interuenit compositio .
+                     ex vtraque parte sponte recepta . et per priorissam pro se
+                     et conuentu<lb/> suo de eorundem mandato et per abbatem pro se et conuentu suo de eorum mandato
+                     Iuramento i<supplied>nter</supplied>posito uallata . talis videlicet quod dicte priorissa et moniales singulis annis
+                     in perpetuum pro bono<lb/> pacis dictis abbati et conuentui de sancto seruano uel eorum certo nuntio
+                     litteratorie destinato viginti <supplied>libra</supplied>rum bonorum esterlingorum persoluent apud monasterium de Norberwic medietatem ad
+                     festum sancti<lb/> Andree . et medietatem ad natiuituate sancti Iohannis baptiste . tali conditione
+                     adiecta vt si dicta pecunia ipsis uel eorum certo nuntio
+                     litteratorie destinato loco et terminis supradictis non
+                     fuerit soluta ex tunc<lb/> singulis mensibus nomine pene vna marcham argenti monacho Ianitori de sancto
+                     seruano ad ianua eiusdem monasterii per manum ipsius
+                     pauperibus distribuendam persoluant . quousque dicta pecu<lb/>nia fuerit soluta . Et pro hiis fideliter obseruandis obligauerunt bona sua
+                     mobilia et i<supplied>mm</supplied>obilia. Prefati uero abbas et conuentus propter permissas conuentiones
+                     renunciauerunt omni iuri quod habebant in permissis
+                     decimis et instrumenta que super eisdem habuerant
+                     cancellanda et in perpetuum pro irritis habenda
+                     resignauerunt . et ne contra hanc compositionem aliqua
+                     percium ullo<lb/> vnquam tempore possit reclamare vtraque pars renuntiauit omni actioni exceptioni
+                     cauill<supplied>at</supplied>ioni et impetratis et impetrandis et petitioni restitutionis in integrum et omni
+                     remedio iuris<lb/> ciuilis et canonici supponentes se iurisdictioni episcopi sancti Andree ut ipse
+                     partem resistentem <supplied>ad</supplied> huius compositionis obseruantiam per censuram ecclesiasticam appellatione remota
+                     comppellat</cl> <lb/> <cl type="sealing">vt autem hec conuentio perpetuum robur firmitatis obtineat partes utrique parti
+                  huius scripture <supplied>ad</supplied> modum cyrographi confecte . Sigilla venerabilis patris</cl> . <cl type="witnesses">W . dei gratia episcopi sancti andree et dicti mal<lb/>colmi patroni sui simul cum sigillis suis mutuo appositis procurauerunt apponi .
+                     Hii<supplied>s</supplied> test<ex>ibus</ex> Domino malcolmo comite de fif . Magistro petro de rameysia . Magistro . Henrico
+                     de norham . Rob’<lb/> clerico . domino . Will<ex>elm</ex>o de blar . domino nesso de ramesay . domino . Malcolmo de Manetheth . dunecano
+                     de rameysia . dunec’ de blar . Mauritio seruiente
+                     comitisse de fif . Odin’ . Malcolmo norha<ex>m</ex>i .<lb/> Helya de quilta . et Multis aliis .</cl> Actum Anno gratie . Millesimo . ducentesimo . tricesimo septimo . Infra octabas
+                  apostolorum petri et pauli.</p></div>
+      <div type="translation"><p>C Y R O G R A P H</p> <p><cl type="narration">Inasmuch as there was a dispute between the prioress and convent of the nuns of
+                  North Berwick on the one side, and the abbot and convent of
+                  St Serf on the other, over the teinds of the earl of Fife
+                  from all his ferms and profits and revenues and gifts, and
+                  over the second teinds belonging to the their own house from
+                  the corn, flour, hops, provender and every type of grain,
+                  cheese, and butter; at last, with the noble man, Malcolm earl
+                  of Fife, patron of both houses, acting as procurator, he
+                  interposed an amicable agreement between them, to the end
+                  that either party might be strengthened by the security of
+                  perpetual peace. Willingly received from either side, both by
+                  the prioress for herself and her convent concerning their
+                  said mandate, and by the abbot for himself and his convent
+                  for their mandate, fortified by an interposed oath, such
+                  namely that the said prioress and nuns each year in
+                  perpetuity, for the sake of peace, to the said abbot and
+                  convent of St Serf, or to their authentic representative sent
+                  by letter, shall pay twenty pounds of good sterling at the
+                  monastery of North Berwick, half at the feast of St Andrew,
+                  and half at the Nativity of St John the Baptist, with such a
+                  condition added, that if the said money were not paid to them
+                  or to their authentic representative sent by letter, at the
+                  place and times stated above, from then, each month, by way
+                  of penalty, one merk of silver is paid to the monk who is
+                  gatekeeper of St Serf at the gate of the said monastery, to
+                  be distributed by his own hand to the poor until such time as
+                  the said money has been paid. And for these things faithfully
+                  to be observed they bound their moveable and immoveable
+                  goods. The said abbot and convent, on account of the
+                  aforementioned agreements, renounced every right they used to
+                  have in the aforementioned teinds, and they unsealed the
+                  written instruments which they had held concerning these
+                  matters, to be struck through and considered invalid for
+                  ever. And lest any of the parties could at any time ever
+                  protest against this agreement, either side renounced every
+                  legal action, exception, cavil, both already brought and to
+                  be brought, and petition of restitution in full, and every
+                  remedy of civil and canon law, putting themselves under the
+                  jurisdiction of the bishop of St Andrews, so that he might
+                  compel the opposing party to the observance of this agreement
+                  by ecclesiastical censure with the appeal withdrawn.</cl> <cl type="sealing">And to the end that this agreement should obtain everlasting authority and
+                  strength, the parties took care that the seals of the
+                  venerable father, W<ex>illiam</ex>, by the grace of God bishop of St Andrews, and of the said Malcolm, their
+                     patron, were applied to each part of this written deed,
+                     drawn up in the manner of a cyrograph, with their own seal
+                     having been applied at the same time in like manner.</cl> <cl type="witnesses">With these witnesses, the lord Malcolm Earl of Fife, Master Peter of Ramsay,
+                  Master Henry of Norham, Rober the clerk, the lord William of
+                  Blair, the lord Ness of Ramsay, the lord Malcolm of Menteith,
+                  Duncan of Ramsay, Duncan of Blair, Maurice the sergeand of
+                  the countess of Fife, Odinel, Malcolm of Norham, Elias of
+                  Cults, and many others.</cl> Done in the year of grace 1237, within the octave of the apostles Peter and
+                  Paul.</p></div>
+    </body>
+  </text>
+</TEI>

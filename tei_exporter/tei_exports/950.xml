@@ -1,0 +1,63 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-950">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 719</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 12:40:59.633743+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">950</idno>
+        <idno type="textcontent">978</idno>
+        <idno type="transcription_textcontentxml">950</idno>
+        <idno type="translation_textcontentxml">951</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 719</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 719</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T12:40:59.633743+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T12:40:59.633743+00:00" status="approved">transcription moa=950 status=reviewed modified=2022-11-01 12:40:59.633743+00 | translation moa=951 status=reviewed modified=2022-11-01 12:40:59.619594+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Iohannes Magister Monialium de sancti Boydano . et Priorissa et Conuentus
+                     eiusdem loci</cl> . Omnibus hoc scriptum videntibus<lb/> vel audientibus <cl type="salutation">salutem in domino</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit vniuersitas vestra quod</cl> nos tenemur reddere Priori et Conuentui de Coldingham<lb/> annuatim ad festum sancti Iohannis Baptiste duodecim den<ex>arii</ex> vel vnam libram piperis pro decima feni cuiusdam prati de Bylye<lb/> quod scilicet pratum dicta priorissa et dicte Moniales de sancto Boydano
+                     possident ex donacione Ade filii Ylif de Aldengra<lb/>we . et Roberti lauerd de eadem villa .</cl> <cl type="sealing">et in huius rei testimonium presenti scripto sigillum capituli nostri apposuimus
+                  .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">John, master of the nuns of St Bothan's, and the prioress and convent of the
+                     same place</cl>, to all who view or hear this writing, <cl type="salutation">greeting in the Lord</cl>.</cl> <cl type="disposition"><cl type="notification">Let all of you know that</cl> we are required to render to the prior and convent of Coldingham annually at the
+                     feast of Saint John the Baptist twelve pence or one pound
+                     of pepper in return for the teind of the hay crop from a
+                     certain meadow at Billie, that is, the meadow which the
+                     said prioress and nuns of St Bothan's possess from the
+                     donation of Adam son of Ylif, of Auchencrow, and of Robert
+                     Laverd, of the same toun.</cl> <cl type="sealing">In testimony of this matter we have applied the seal of our chapter to the
+                  present writing.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,159 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-566">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/237</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:04:29.739244+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">566</idno>
+        <idno type="textcontent">574</idno>
+        <idno type="transcription_textcontentxml">566</idno>
+        <idno type="translation_textcontentxml">567</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/237</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/237</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T08:04:29.739244+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T08:04:29.739244+00:00" status="published">transcription moa=566 status=live modified=2021-04-07 08:04:28.302411+00 | translation moa=567 status=live modified=2021-04-07 08:04:29.739244+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Alex’ dei Gr<ex>ati</ex>a Rex scott’</cl> . Omnibus probis hominibus Totius terre sue <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Noueritis</cl> nos inspexisse scriptum conuencionum factarum apud Berewyc in nostra presencia
+                     inter . Pa<lb/>tricium Comitem de Dunbar’ nepotem nostrum ex parte vna et abbatem et conuentum
+                     de Melros ex altera super quadam terra in territorio de
+                     halsington’ quam Magister Willelmus de<lb/> Grenlawe dedit in plena Curia dicti Comitis de Dunbar predictis Abbati et
+                     conuentui tamquam suis assignatis in h<ex>ec</ex> uerba confectum .</cl> <cl type="narration">Omnibus Christi fidelibus hoc scriptum<lb/> uisuris uel audituris . Patricius Comes de Dunbar Salutem eternam in domino .
+                     Sciant omnes tam presentes quam futuri quod cum Magister .
+                     Willelmus . de Grenlawe quandam terram<lb/> quam habuit ex dono Roberti de Muscamp’ tenentis nostri in feodo de halsington’
+                     sibi et suis assignatis donatam  Abbati et conuentui de
+                     Melros tamquam suis assig<lb/>natis dedisset sollempniter in Curia nostra de Eddirham’ . et idem Magister .
+                     Willelmus de eadem terra ibidem se dissaisisset et ipsos
+                     sollempniter saississet in eandem  vt<lb/> ipsorum abbatis et conuentus possessioni pacifice et perpetue futuris temporibus
+                     prouideretur  Ita inter ipsos ex parte vna et nos ex
+                     altera in presencia karissimi domini nostri . Alex<ex>andri</ex> . illustris<lb/> Regis scott’ et baronum suorum conuenit . quod nos promisimus concessimus et hac
+                     presenti carta nostra nos et heredes nostros obligauimus
+                     quod dictum tenementum ipsis Abbati<lb/> et conuentui contra omnes homines adquietabimus . warantizabimus et inperpetuum
+                     defendemus . Tenend’ et habend’ eisdem Abbati et conuentui
+                     in liberam et perpe<lb/>tuam elemosinam per illas diuisas per quas dictus Magister Willelmus eam tenuit
+                     et cum omnibus pertinentiis libertatibus et aisiamentis ad
+                     eam pertinentibus et cum comuni<lb/> pastura ville de halsington’ . et cum libero introitu et exitu ad eandem
+                     pasturam et ad dicta aisiamenta . Adeo integre . libere .
+                     quiete et honorifice ab omni<lb/> seculari seruicio exaccione et demanda  sicut aliqua elemosina in Regno Scocie
+                     . liberius quiecius . plenius et honorificencius tenetur
+                     aut possidetur . Et si forte<lb/> aliquis contra dictos Abbatem et conuentum de Melros . super premissis mouerit
+                     calumpniam  et nos uel heredes nostri eos non
+                     defenderimus  Ita quod oporteat ipsos<lb/> dictam terram amittere  aut de ipsa per iudicium eici  Nos uel heredes nostri
+                     dabimus ipsi calumpniatori rationabilem extentam in
+                     dominicis nostris uel alibi in loco compe<lb/>tenti ad ualorem dicte terre . et ita in omnibus eidem satisfaciemus  quod
+                     dicti Abbas et conuentus de Melros dictam terram quam
+                     Magister Willelmus de Grenlawe eis .<lb/> contulit liberam et quietam pacifice et continue in perpetuum retinebunt ac
+                     possidebunt . Nos autem ad omnia predicta facienda pro
+                     nobis et heredibus nostris <lb/> corporale prestitimus iuramentum . et nosmet ipsos et heredes nostros plenius
+                     obligauimus . Subicientes nos et heredes nostros
+                     iurisdiccioni Episcopi Glasguensis<lb/> qui pro tempore fuerit  vt preter potestatem regiam per quam debemus et uolumus
+                     coherceri  dictus . episcopus . nos et heredes nostros ad
+                     omnium predictorum obseruanciam<lb/> sublato omni iuris remedio et appellacione cessante per censuram ecclesiasticam
+                     ualeat compellere . Et ut hoc scriptum Robur firmitatis
+                     optineat <lb/> illud sigilli nostri apposicione fecimus roborari  Actum apud Berewyc . decimo
+                     quarto . die Aprilis . Anno Regni domini Regis Alex<ex>andri</ex> . Tricesimo quarto . Testibus .<lb/> Magistro . Gamelino . Dominis Roberto de Ros’ . Dauid’ de Graham’ . Roberto de
+                     Meiners . Willelmo filio Comitis . Thom<ex>a</ex> de Normanuill’ . J<supplied>o</supplied>hanne Cumyn . <supplied>Hen</supplied><lb/>rico de Graham’ . Nichol<ex>ao</ex> Corbeth’ . Waltero filio Walteri senescalli . Roberto filio Comitis . Thom<ex>a</ex> de boscho . Bernard<ex>o</ex> de Ryppell’ et multis aliis .</cl> <cl type="disposition">Nos<lb/> igitur ad eorumdem Patricii Comitis . et abbatis et conuentus instanciam
+                     conuenciones predictas concessimus et eas presenti carta
+                     nostra et<lb/> autoritate regia confirmauimus .</cl> <cl type="witnesses">Test<ex>ibus</ex> . Willelmo Comite de Marr’ . Alex<ex>andro</ex> senescallo . Roberto de Ros . Willelmo de Lyndes’ . Willelmo Olifard’ . Nichol<ex>ao</ex><lb/> de Sules . Willelmo capellano nostro . Alex<ex>andro</ex> clerico de Capella . Thom<ex>a</ex> clerico de liberacione et aliis</cl> apud Berewyc . vicesimo die Aprilis Anno Regni domini<lb/> Regis Tricesimo quarto</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, by the grace of God king of the Scots</cl>, to all worthy men of his entire land, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> us to have inspected the writing of agreements made at Berwick in our presence
+                     between Patrick, earl of Dunbar, our nephew, on the one
+                     side, and the abbot and convent of Melrose on the other,
+                     about a land in the territory of Hassington which Master
+                     William of Greenlaw gave in the full court of the said
+                     Earl of Dunbar to the said abbot and convent as well as to
+                     their assigns, drawn up in these words:</cl> <cl type="narration">To all Christ's faithful who shall view or hear this writing, Patrick, earl of
+                  Dunbar, sends greeting. Let everyone present and future know
+                  that, since Master William of Greenlaw had solemnly given in
+                  our court at Edrom, to the abbot and convent of Melrose as
+                  well as to their assigns, a certain land that he had from the
+                  gift of Robert de Muschamp our tenant in the feu of
+                  Hassington, donated to him and his heirs and assigns, and
+                  since the same Master William had put himself out of
+                  possession of the same land in that place and solemnly put
+                  them in possession of the same, so that the possession of the
+                  abbot and convent is peaceably and perpetually established
+                  for future times, between them on the one side and us on the
+                  other, in the presence of our well-beloved lord Alexander,
+                  illustrious king of the Scots, and his barons; it was agreed
+                  that we promise, grant, and by this our present charter bind
+                  ourselves and our heirs, that we would acquit, warrant, and
+                  defend for ever the said holding to the abbot and convent
+                  against all people. For the same abbot and convent to hold
+                  and to have in free and perpetual alms, by the boundaries by
+                  which the said Master William held it and with all
+                  pertinents, liberties, and easements pertaining to it, and
+                  with common pasture of the toun of Hassington, and with free
+                  entry and exit to the same pasture and to the said easments,
+                  as wholly, freely, quitly, and honourably from every secular
+                  service, exaction, and demand, just as any alms in the
+                  kingdom of Scotland is most freely, quitly, fully, and
+                  honourably held and possessed. And if anyone move a claim
+                  against the said Abbot and convent of Melrose concerning the
+                  foregoing, and we or our heirs do not defended them, so that
+                  it becomes necessary for them to lose the said land, or be
+                  ejected from it by judgment; we or our heirs shall give the
+                  reasonable value to the claimant in our demesne or elsewhere
+                  in a suitable place to the value of the said land; and so we
+                  shall make satisfaction to the same in everything, that the
+                  said abbot and convent of Melrose shall retain and possess
+                  the said land which Master William of Greenlaw conveyed to
+                  them free and quit, peaceably and continuously forever. We,
+                  however, in order to do the aforesaid things, for the sake of
+                  ourselves and our heirs have provided a bodily oath, and we
+                  have the more fully obliged ourselves and our heirs,
+                  submitting ourselves and our heirs to the jurisdiction of the
+                  Bishop of Glasgow -- whoever it shall be at the time -- so
+                  that besides the royal power, by which we ought and wish to
+                  be constrained, the said bishop can compel us and our heirs
+                  by ecclesiastical censure, with every legal remedy removed
+                  and without appeal, to the observance of all the aforesaid
+                  things. And so that this writing retain authority and
+                  strength, we have caused it to be authenticated by the
+                  application of our seal. Enacted at Berwick on the fourteenth
+                  day of April in the thirty-fourth year of the reign of the
+                  lord king, Alexander. As witnesses, Master Gamelin, the lords
+                  Robert of Roos, David of Graham, Robert of Menzies, William
+                  fitz Count, Thomas de Normanville, John Comyn, Henry of
+                  Graham, Nicholas Corbet, Walter son of Walter the steward,
+                  Robert fitz Count, Thomas del Bois, Bernard of Ripley, and
+                  many others.</cl> <cl type="disposition">At the request of the same Earl Patrick, the abbot and convent, we have
+                  therefore licensed the aforesaid agreements and made them
+                  firm by our present charter and royal authority.</cl> <cl type="witnesses">As witnesses, William earl of Mar, Alexander the steward, Robert of Roos,
+                  William of Lindsay, William Oliphant, Nicholas de Soulis,
+                  William our chaplain, Alexander the clerk of the chapel,
+                  Thomas the clerk of the livery, and others.</cl> At Berwick on the twentieth day of April in the thirty-fourth year of the reign
+                  of the lord king.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,86 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-124">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 42</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:01.127015+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">124</idno>
+        <idno type="textcontent">124</idno>
+        <idno type="transcription_textcontentxml">124</idno>
+        <idno type="translation_textcontentxml">125</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 42</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 42</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:28:01.127015+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:01.127015+00:00" status="published">transcription moa=124 status=live modified=2017-01-30 19:28:01.127015+00 | translation moa=125 status=live modified=2016-06-07 14:28:26.644818+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte Matris Ecclesie filiis . <cl type="intitulatio">Hugo de Mortuo mari</cl> . <cl type="salutation">Salutem</cl></cl> . <cl type="notification">Sciant tam futuri quam presentes</cl> <cl type="disposition">me concessisse ⁊ hac Carta confirmasse deo ⁊ <lb/> Canonicis Ecclesie Sancti Andr<ex>ee</ex> Capellam de foules cum terra que eidem Capelle competebat  antequam foules data
+                     esset Will<ex>elm</ex>o Masculo auo meo . ⁊ cum decem <lb/> acris terre quas idem Will<ex>elmu</ex>s in incrementum dedit predicte Capelle . ⁊ cum decimis ⁊ oblationibus . ⁊ cum
+                     omnibus eidem Capelle pertinentibus in perpetuam elemo<lb/>sinam pro salute anime mee . ⁊ uxoris mee . ⁊ pro animabus antecessorum ⁊
+                     successorum meorum . <cl type="holding">Quare firmiter uolo ut predicti Canonici prefatam Capellam <lb/> teneant ⁊ possideant liberam ⁊ quietam ab omni seruitio seculari ⁊ exactione . ⁊
+                        absque reclamatione mei heredumque meorum . sicut
+                        liberius ⁊ quiecius <lb/> ceteras elemosinas suas in Scot’ tenent ⁊ possident</cl> . Concessi eciam predictis Canonicis decimam molendini mei ⁊ communem pasturam
+                     secundum aisiamentum <lb/> feudi mei de foules . videlicet ad Octo boues . ⁊ decem vaccas . ⁊ tres equos .
+                     ⁊ Centum oues . Concessi etiam eiusdem Canonicis . ut
+                     nutrimentum predicte pe<lb/>cunie annuatim sit in ipsa pastura per unum annum primum post fetum . sicut in
+                     Carta predicti Will<ex>elm</ex>i plenius continetur</cl> . <cl type="sealing">vt autem hec mea concessio robur <lb/> perpetue firmitatis obtineat  eam presentis scripti munimine cum sigilli mei
+                     appositione duxi roborandam</cl> . <cl type="witnesses">Hiis testibus . Domino Will<ex>elm</ex>o Ep<ex>iscop</ex>o Sancti <lb/> Andr<ex>ee</ex> . Magistro Laur’ Archidiacono Sancti Andr<ex>ee</ex> . Magistro Adam Ouid . Magistro Alex’ de Sancto Mart’ . Magistro D<ex>aui</ex>d de Bernham . Domino Symone de Noys . <lb/> Will<ex>elm</ex>o de Golin . Joh<ex>ann</ex>e de Hadingt’ . ⁊ multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, <cl type="intitulatio">Hugh de Mortimer</cl> <cl type="salutation">sends Greeting</cl>:</cl> <cl type="notification">Let those to come as well as those present know</cl> t<cl type="disposition">hat I have granted and by this my charter made firm, to God and to the Canons of
+                  the Church of St Andrews, the Chapel of Fowlis together with
+                  the land that went with it before Fowlis was given to William
+                  Maule my grandfather, and with ten acres of land which the
+                  same William gave to the said Chapel as an addition, and with
+                  teinds and oblations, and with everything pertaining to the
+                  same Chapel, in perpetual alms, for the welfare of my soul,
+                  and of my wife’s, and for the souls of my ancestors and
+                  successors. <cl type="holding">Wherefore I firmly will that the aforesaid Canons hold and possess the
+                     aforementioned Chapel free and quit from every secular
+                     service and exaction, and without my or my heirs’ claiming
+                     it back, just as freely and quietly as they hold and
+                     possess their other alms in Scot[ia <ex>or</ex> Scotland]</cl>. I have also allowed to the said Canons the teind of my mill and common pasture
+                     according to the easement of my feu at Fowlis, namely, for
+                     eight oxen, and ten cows, and three horses, and 100 sheep.
+                     I have also allowed to the same Canons that there be
+                     support of the said livestock in that pasture for one
+                     year, the first after giving birth, just as it is more
+                     fully set out in the charter of the aforesaid William;</cl> <cl type="sealing">and that this my grant should maintain the force of perpetual endurance, I have
+                  caused it to be confirmed by the reinforcement of the present
+                  written document with the application of my seal.</cl> <cl type="witnesses">With theses witnesses: the lord William, bishop of St Andrews; Master Laurence,
+                  archdeacon of St Andrews; Master Adam Ovid; Master Alexander
+                  de Saint-Martin; Master David of Bernham; the lord Simon de
+                  Noisy; William of Gullen; John of Haddington; and many
+                  others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

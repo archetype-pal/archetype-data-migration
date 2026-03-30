@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-652">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.5</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-08-06 03:31:15.682716+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">652</idno>
+        <idno type="textcontent">662</idno>
+        <idno type="transcription_textcontentxml">652</idno>
+        <idno type="translation_textcontentxml">653</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.5</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.5</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2018-08-06T03:31:15.682716+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2018-08-06T03:31:15.682716+00:00" status="published">transcription moa=652 status=live modified=2018-08-06 03:31:15.682716+00 | translation moa=653 status=live modified=2017-07-18 22:43:41.550698+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>Alex’</persName> . Dei Gratia Rex Scott’</cl> . Omnibus probis hominibus tocius terre sue <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Sciatis quod</cl> <cl type="disposition">concessi<lb/>mus Monachis de Melros’ . vt totam terram suam de Etryk’ . per easdem diuisas
+                     que continentur in<lb/> carta nostra que de eadem terra eis plenius confecta est  in perpetuum habeant
+                     in Liberum forestum .<lb/> <cl type="injunction">Quare firmiter prohibemus . ne quis sine eorum licentia in dicta terra secet aut
+                     uenetur super nostram plena<lb/>riam forisfacturam Decem Librarum</cl> .</cl> <cl type="witnesses">Test<ex>ibus</ex> . <persName>Walter<ex>o</ex> . Olifard</persName> . Iustic’ . Laodon<ex>ie</ex> . <persName>Roger<ex>o</ex> auenel</persName><lb/> <persName>Dauid</persName> Marscallo .</cl> apud Edinburc’ . Vicesimo Octauo die Maii Anno . Regni . domini Regis Vicesimo<lb/> secundo .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, by the grace of God king of the Scots</cl>, to all worthy men of his entire land <cl type="salutation">[sends] greeting</cl>.</cl> <cl type="notification">Know that</cl> <cl type="disposition">we have conceded to the monks of Melrose, that they should have their entire
+                  land of Ettrick for ever in free forest, by the same
+                  boundaries which are more fully specified in our charter
+                  which was drawn up for them concerning the same land. <cl type="prohibition">Wherefore we strictly forbid that anyone without their persmission should cut
+                     wood or hunt in the said land, on pain of our full
+                     forfeiture of ten pounds</cl>.</cl> <cl type="witnesses">As witnesses: Walter Oliphant, justiciar of Lothian; Roger Avenel; David the
+                  marischal.</cl> At Edinburgh on the twenty-eighth day of May in the twenty-second year of the
+                  reign of the lord king.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

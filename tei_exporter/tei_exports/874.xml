@@ -1,0 +1,58 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-874">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 566</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 15:48:09.58958+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">874</idno>
+        <idno type="textcontent">898</idno>
+        <idno type="transcription_textcontentxml">874</idno>
+        <idno type="translation_textcontentxml">875</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 566</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 566</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T15:48:09.58958+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T15:48:09.58958+00:00" status="approved">transcription moa=874 status=reviewed modified=2022-11-01 15:48:09.57781+00 | translation moa=875 status=reviewed modified=2022-11-01 15:48:09.58958+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">DD Rex scotorum</cl> Episcopis Abbatibus . Com<ex>itibus</ex> . Baronibus . Iusticiis . vicecom<ex>itibus</ex> . et Omnibus<lb/> probis hominibus suis scottis et anglis tocius terre sue <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes<lb/> et futuri</cl> me concessisse et hac carta mea confirmasse Diuisas inter Colding<lb/>ham et bonekil quas ego cum probis hominibus meis perambulare feci <cl type="holding">in perpetu<lb/>um tenendas libere et quiete plenarie .</cl> <cl type="boundaries">Scilicet a midlesdene heued per merebur<lb/>nes heued uersus occidentem usque ad crachoctre et Inde per eandem stratam usque
+                        ad Eifo<lb/>rd</cl> .</cl> <cl type="witnesses">Testibus his . Ioh<ex>ann</ex>e Glascuensi episcopo hereberto cancellario . R . de brus . Paga<lb/>no de brausa . Hugone de more villa Berengario engain</cl> <cl type="dating">Apud rokesburc . ,</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">D<ex>avid</ex> king of the Scots</cl> to his bishops, abbots, earls, barons, justices, sheriffs, and all his worthy
+                     men, Gael and English, of his entire land, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have conceded and by this my charter to have made firm the boundaries
+                     between Coldingham and Bunkle which I with my worthy men
+                     perambulated, <cl type="holding">to be held freely, quitly, and fully, in perpetuity</cl>. <cl type="boundaries">That is to say, from Milldown head westwards by Mereburn head as far as
+                     Crachotre, and from there by the same way as far as
+                     Eiford.</cl></cl> <cl type="witnesses">With these witnesses: John, bishop of Glasgow; Herbert the chancellor; R<ex>obert</ex> de Brus; Payn de Briouze; Hugh de Morville; Berengar Engaine.</cl> <cl type="dating">At Roxburgh.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

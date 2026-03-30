@@ -1,0 +1,79 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-198">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/235</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-09 21:24:44.352366+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">198</idno>
+        <idno type="textcontent">198</idno>
+        <idno type="transcription_textcontentxml">198</idno>
+        <idno type="translation_textcontentxml">199</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/235</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/235</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-03-09T21:24:44.352366+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-03-09T21:24:44.352366+00:00" status="published">transcription moa=198 status=live modified=2017-03-09 21:24:41.320571+00 | translation moa=199 status=live modified=2017-03-09 21:24:44.352366+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">M. Rex Scott’. Vhtr’ filio fergus . ⁊ Gileberto fratri eius . ⁊ Rad’ filio
+                  Dunegal . ⁊ Duunenaldo<lb/> fratri eius . vniuersisque aliis probis suis hominibus totius Galweie ⁊
+                     Cludesdalie . salutem.</cl> <cl type="disposition">Sciatis<lb/> me dedisse iuste meam firmam pacem Omnibus illis hominibus qui eunt aut ibunt in
+                     Galweiam<lb/> causa inhospitandi ⁊ inhabitandi Terram de Dunroden  quam fergus Ecclesie
+                     Sancte Crucis de<lb/> Edeneb’. in perpetuam Elemosianm dedit ⁊ carta sua confirmauit . quam etiam
+                     Vhtr’ filius eius<lb/> sua carta confirmauit . Quorum etiam cartas  ego ipse carta mea confirmaui.
+                     Prohibeo itaque<lb/> firmiter . ne quis hominum presumat iniuste uexare aut disturbare quemquam
+                     uersus terram<lb/> prefatam causa in ea manendi tendentem  aut in terra eadem manentem consensu ⁊
+                     uoluntate<lb/> canonicorum predicte Ecclesie  aut de terra illa in fidelitate eorundem
+                     recedentem . Nullusque<lb/> per alicuius aduocationem siue dominium in eadem terra contra uoluntatem
+                     predictorum canonicorum maneat  super meam forisfacturam
+                     .x. librarum.</cl> <cl type="witnesses">T<ex>estibus</ex> Aluredo abbate de Striuel’ . Rob’ Priore<lb/> de Mai . Eng’ Cancell’ . W’ . filio Alani dapifero . Ioh<ex>ann</ex>e de Vallibus .</cl> Apud Clacmanant .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">M<ex>alcolm</ex> king of Scots to Uhtred son of Fergus, and Gilbert his brother, and Ralph son of
+                     Dunegal, and Domnall his brother, and to all his other
+                     worthy men of the whole of Galloway and Clydesdale,
+                     Greeting:</cl> <cl type="disposition">Know that I have justly given my firm peace to all those men who go or shall go
+                  to Galloway to lodge or dwell in the Land of Dunrod, which
+                  Fergus gave to the church of Holyrood in Edinburgh in
+                  perpetual alms and affirmed by his charter, which Uhtred his
+                  son also confirmed by his charter, whose charters I myself
+                  have also confirmed. I therefore firmly forbid that any man
+                  presume unjustly to vex or disturb anyone travelling to the
+                  said land by reason of dwelling in it, or dwelling in the
+                  same land by consent and will of the canons of the aforesaid
+                  church, or departing from that land in the fealty of the same
+                  [canons]. And no-one may remain in the same land by anyone’s
+                  advowson or lordship against the will of the said canons, on
+                  pain of my forfeiture of ten pounds.</cl> <cl type="witnesses">As witnesses, Alured abbot of Stirling, Robert prior of May, Ingram the
+                  chancellor, W<ex>alter</ex> the steward, son of Alan, John de Vaux.</cl> At Clackmannan.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

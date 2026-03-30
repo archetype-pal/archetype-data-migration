@@ -1,0 +1,74 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-824">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 558a</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.803026+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">824</idno>
+        <idno type="textcontent">840</idno>
+        <idno type="transcription_textcontentxml">824</idno>
+        <idno type="translation_textcontentxml">825</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 558a</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 558a</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T14:52:15.803026+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T14:52:15.803026+00:00" status="approved">transcription moa=824 status=reviewed modified=2022-11-01 14:52:15.794277+00 | translation moa=825 status=reviewed modified=2022-11-01 14:52:15.803026+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. <cl type="intitulatio">W . rex anglorum</cl> . Thomę <span data-dpt="place" data-dpt-cat="chars" data-dpt-type="name">eboracensi</span> archiepiscopo . et omnibus suis fidelibus francis et anglis et scottis <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Sciatis</cl> <cl type="disposition">me<lb/> concessisse deo omnipotenti . et ęcclesię dunelmensi . et sancto confessori
+                     Cuthberto . et Willelmo episcopo . et monachis in eadem
+                     ęcclesia<lb/> deo seruientibus et in perpetuum seruituris terras in lodeneio quas Eadgarus rex
+                     filius malcolmi regis scottorum deo et<lb/> supradictę ęcclesię me concedente donauit . mansionem scilicet de berwic . et
+                     has subscriptas mansiones . greidene .<lb/> leinhale . dylsterhale . bricgham ederham . cirneside hyltun . blacedre .
+                     cynebrihtham . hotun . reinintun .<lb/> paxtun . fugeldene . morintun . lambertun . aliam lambertun . hædrintun .
+                     fiscwic . horeford . upsetintun . et man<lb/>sionem de collingaham . et has subscriptas mansiones . adlcambus . lummesdene .
+                     ristun . sumestun . fardun . eitun .<lb/> aliam eitun . prenegest . cramesmue . hædenetun . Has superscriptas mansiones
+                     cum adiacentibus terris et siluis<lb/> et aquis . et omnibus theloneis . et namum fracturis . et aliis consuetudinibus
+                     suis . sicut eas malcolmus rex unquam melius<lb/> habuit deo et sancto Cuthberto inperpetuum concedo .</cl> <cl type="witnesses">t<ex>este</ex> . Willelmo cancellario . et Roberto filio haumonis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex> king of the English</cl>, to Thomas archbishop of <span data-dpt="place" data-dpt-cat="chars" data-dpt-type="name">York</span>, and to all his sworn men, French, English, and Gaelic, <cl type="salutation">greeting</cl>.</cl> <cl type="notification">Know</cl> <cl type="disposition">me to have conceded to God Almighty, and to the church of Durham, and to the
+                  holy confessor Cuthbert, and to Bishop William, and to the
+                  monks there who are serving and in perpetuity will be serving
+                  God, the lands in Lothian which Edgar, son of Malcolm king of
+                  Scots, with my consent, donated to God and the above-said
+                  church; that is, the manor of Berwick; and these manors
+                  written below: Graden, Lennel, <ex>Dylsterhale</ex>, Birgham, Edrom, Chirnside, Hilton, Blackadder, Kimmerghame, Hutton, Renton,
+                     Paxton, Foulden, Mordington, Lamberton, the other
+                     Lamberton, Edrington. Fishwick, <ex>Horeford</ex>, Upsettlington, and the manor of Coldingham; and these manors written below:
+                     Old Cambus, Lumsdaine, Reston, Swinton, <ex>Farndun</ex>, Ayton, the other Ayton, Prenderguest, Cramsmoo, Edington. These manors written
+                     above, with their appurtenant lands, woods, waters, and
+                     all tolls and wrecked ships, and their other customs, just
+                     as King Malcolm ever best had them, I concede for ever to
+                     God and Saint Cuthbert.</cl> <cl type="witnesses">As witness William the chancellor and Robert fitz Hamon.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

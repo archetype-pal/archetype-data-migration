@@ -1,0 +1,98 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-140">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 61</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:03.384072+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">140</idno>
+        <idno type="textcontent">140</idno>
+        <idno type="transcription_textcontentxml">140</idno>
+        <idno type="translation_textcontentxml">141</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 61</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 61</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:28:03.384072+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:03.384072+00:00" status="published">transcription moa=140 status=live modified=2017-01-30 19:28:03.384072+00 | translation moa=141 status=live modified=2016-10-21 00:57:14.451197+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus hoc scriptum visuris uel audituris <cl type="intitulatio">Richenda filia Wynfridi de berkeley</cl> . <cl type="salutation">eternam In domino Salutem</cl></cl> . <cl type="notification">Nouerit vniuersitas uestra</cl> <cl type="disposition">me In <lb/> legitima potestate mea ⁊ In libera voluntate mea . de bona voluntate mea ⁊
+                     concessione dominorum nostrorum abbatis ⁊ conuentus de
+                     abberbro<lb/>th’ . dedisse concessisse ⁊ hac carta me confirmasse Rogero Wyrfaut’ totam
+                     terram illam que fuit hugonis filii Waldeui In territorio
+                     de <lb/> cuneueth’ . <cl type="holding">Tenendam sibi ⁊ attornatis suis de me ⁊ heredibus meis in feodo ⁊ hereditate .
+                     libere ⁊ quiete per rectas diuisas suas cum <lb/> communi pastura de Scotestun’ . cum merchetis ⁊ blodwytis . ⁊ cum omnibus aliis
+                        iustis pertinenciis suis ⁊ aysiamentis . libere ⁊ quie<lb/>te ab omni seruitio ad me uel ad heredes meos pertinente . saluo forinseco
+                        domini Regis . de quo Ipse ⁊ attornati sui respondebunt
+                        . <lb/> videlicet quantum pertinet ad dimidiam dauach . ⁊ salua mihi multura mea de
+                        terra illa que pertinet ad molendinum de cuneveth .
+                        quam <lb/> non faciam te liberior humfrido de mediltun ⁊ Ioh<ex>ann</ex>e Wythard . Reddendo Inde annuatim mihi ⁊ heredibus meis ipse ⁊ attorna<lb/>ti sui  unam libram piperis ad pentecosten quando venient ad predicatm terram .</cl> ⁊ ne ego uel heredes mei contra hanc donationem ve<lb/>nire possimus  Iuramentum pro me ⁊ heredibus meis tactis sacrosanctis
+                     interposui . subponens ego ⁊ heredes mei Iurisdictionem
+                     domini episcopi sancti an<lb/>dree uel archidiaconi eiusdem loci qui per tempore fuerint . vt alter eorum me ⁊
+                     heredes meos ad huius donationis obseruantiam  quacumque
+                     vo<lb/>luerit  censura conpellerat . Non obstante exceptione fori . nec aliqua alia
+                     excepcione nec appellatione . ne aliquo remedo Iuris ci<lb/>uilis uel canonici .</cl> <cl type="witnesses">Test<ex>ibus</ex> domino Sibaldo milite de meornes . Domino Roberto de Rossyn . Iohanne Wyscard .
+                     Wynfrido de middeltun’ . hugone <lb/> de abberbroth’ . hugone scot ⁊ aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all to who shall view or hear this written deed <cl type="intitulatio">Richenda, daughter of Humphrey of Berkeley</cl>, <cl type="salutation">wishes eternal salvation in the Lord</cl>.</cl> <cl type="notification">May you all know</cl> <cl type="disposition">that I, by my own lawful authority, and of my own free will, from my own
+                  goodwill and by the consent of our lords the abbot and
+                  religious community of Arbroath, have given, granted, and by
+                  this my charter made firm, to Roger Wyrfaut the whole land
+                  that belonged to Hugh son of Waldef in the territory of
+                  Conveth; <cl type="holding">For him and his attorneys to hold of me and my heirs in feu and heritage, freely
+                     and quietly by its right marches, with common pasture at
+                     Scotston, with merchets and blodwites, and with all its
+                     other rightful pertinents and easements, free and quit
+                     from all service pertaining to me or my heirs, saving the
+                     forinsec service of the lord King, for which he and his
+                     attorneys shall answer, namely for as much as pertains to
+                     half a davach, and saving to myself my multure from the
+                     land that belongs to the mill of Conveth; which I shall
+                     not make more freely to Humphrey of Middleton and John
+                     Wishart [the ‘te’ which the scribe wrote here does not
+                     appear to make sense: a different version of this charter
+                     was copied into the St Andrews cartulary, St A. Lib.
+                     285-6]; By rendering annually thereupon to me and my
+                     heirs, he and his attorneys, one pound of pepper at
+                     Pentecost when they shall come to the aforesaid land.</cl> And so that I or my heirs are not able to act against this donation, I have
+                     given an oath upon holy relics for myself and my heirs, I
+                     and my heirs submitting to the jurisdiction of the lord
+                     bishop of St Andrews or the archdeacon of the same place,
+                     whoever it should be at the time, so that either of them
+                     might by whatsoever means they may wish compel me and my
+                     heirs by censure to the observance of this donation. Not
+                     withstanding the exception of a court, or any other
+                     exception or appeal, or any remedy of civil or canon law.</cl> <cl type="witnesses">As witnesses: the lord Sibbald, knight of the Mearns; the lord Robert of Rossie;
+                  John Wishart; Humphrey of Middleton; Hugh of Arbroath; Hugh
+                  Scott; and others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

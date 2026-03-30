@@ -1,0 +1,82 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-796">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5947</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.923071+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">796</idno>
+        <idno type="textcontent">811</idno>
+        <idno type="transcription_textcontentxml">796</idno>
+        <idno type="translation_textcontentxml">797</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5947</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5947</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T13:36:57.923071+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:36:57.923071+00:00" status="approved">transcription moa=796 status=reviewed modified=2022-11-01 13:36:57.912263+00 | translation moa=797 status=reviewed modified=2022-11-01 13:36:57.923071+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi fidelibus ad quos presens scriptum peruenerit  <cl type="intitulatio">Robertus filius Reginaldi de Magna Ristona</cl> <cl type="salutation">Salutem</cl></cl> . <cl type="notification">Nouerit vniuersitas<lb/> uestra</cl> <cl type="disposition">me dedisse . concessisse . et hac presenti carta mea confirmasse deo et sancto
+                  Chudhberto et sancte Ebbe et monachis Dunelmen<lb/>sibus apud Coldingham deo seruientibus . et in perpetuum ibidem seruituris in
+                     puram et perpetuam Elemosinam pro salute anime mee<lb/> et antecessorum et successorum meorum triginta acras et dimidiam in territorio
+                     ville Magne Ristone . Scilicet In tofto et crofto vnam
+                     acram<lb/> et dimidiam ex orientali parte tofti mei . In Held’ quinque acras . et tres
+                     rodas . Inter nemora unam acram et dimidiam . In Gorbald
+                     acram<lb/> vnam . In Coleleche et Bilie haluch unam acram . In Hopeland et Smethemedwe unam
+                     acram . In Brere unam acram .<lb/> In Wyterleche duas acras . Subtus Bilielawe unam rodam . In superiori parte de
+                     Laytolf quatuor acras . Ex occidentali parte<lb/> e Wythenehep vndecim acras et dimidiam . Cum communi pastura et communibus
+                     aysiamentis dicte uille de Ristona . <cl type="holding">Quare<lb/> volo quod dicti prior et monachi dunelmenses dictas terras habeant et teneant in
+                        perpetuum Ita Libere . quiete . plenarie et hono<lb/>rifice sicut aliqua Elemosina in regno Scotie . Liberius . quiecius . plenarius
+                        . et honorificencius . tenetur . uel possidetur .</cl><lb/> <cl type="warrandice">Ego autem et heredes mei warantizabimus dictis priori et monachis dictas terras
+                     In perpetuum contra omnes homines</cl> .</cl> <cl type="sealing">Et in huius rei testi<lb/>monium  huic scripto sigillum meum apposui .</cl> <cl type="witnesses">Hiis Testibus Domino Will<ex>elm</ex>o de Morthintona . Domino Alano de Swintona . Domino Ada de<lb/> Prendergest . Waltero . Andrea . Alex<ex>andro</ex> . de Paxtona . Will<ex>elm</ex>o vicario de Aldekambus . Roberto filio Gregorii . Adam de Parua Ristona .<lb/> Bertramo filio eius . Iohanne filio Elye de Superiori Aytona . Mauricio filio
+                     Merlini . Radulfo preposito de Coldingham . et multis
+                     aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful to whom the present writing shall have come, <cl type="intitulatio">Robert son of Reginald of Great Reston</cl> <cl type="salutation">sends greeting.</cl></cl> <cl type="notification">Know me, all of you,</cl> <cl type="disposition">to have given, granted, and made firm by this my present charter, to God, Saint
+                  Cuthbert, Saint Æbbe, and the monks of Durham serving God at
+                  Coldingham now and for ever in the future, in pure and
+                  perpetual alms, for the salvation fo my own soul, and [the
+                  souls] of my ancestors and successors, thirty acres and a
+                  half in the territory of the toun of Great Reston; that is,
+                  one-and-a-half acres in the toft and croft on the eastn side
+                  of my toft; five acres and three roods in <ex>Held' </ex>; one-and-a-half acres between the woods; one acre in <ex>Gorbald</ex>; one acre in <ex>Coleleche</ex> and <ex>Bilie</ex><ex> haluch</ex>; one acre in <ex>Hopeland </ex>and <ex>Smethemedwe</ex>; one acre in <ex>Brere</ex>; two acres in <ex>Wyterleche</ex>; one rood below <ex>Bilielawe</ex>; four acres on the upper side of <ex>Laytolf</ex>; eleven-and-a-half acres on the western side of <ex>Wythenehep</ex>; with the common pasture and common easements of the said toun of Reston. <cl type="holding">Wherefore I will that the said prior and monks of Durham should have and hold
+                     the said lands for ever, as freely, quitely, fully and
+                     honourably as any alms in the kingdom of Scotland is
+                     freely, quitely, fully, and honourably held or possessed.</cl> <cl type="warrandice">And I and my heirs shall warrant to the said prior and monks the said lands in
+                     perpetuity against all men</cl>.</cl> <cl type="sealing">And in testimony of this matter, I have applied my seal to this writing.</cl> <cl type="witnesses">With these witnesses: the lord William of Mordington; the lord Alan of Swinton;
+                  the lord Adam of Prenderguest; Walter, Andrew, Alexander of
+                  Paxton; Welliam, vicar of Oldcambus; Robert, son of Gregory;
+                  Adam of Little Reston; Bertram, his son; John, son of Elias
+                  of Over Ayton; Maurice, son of Merlin; Ralph, grieve of
+                  Coldingham; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

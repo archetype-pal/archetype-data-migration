@@ -1,0 +1,95 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-688">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/72 (2)</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:45.810212+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">688</idno>
+        <idno type="textcontent">699</idno>
+        <idno type="transcription_textcontentxml">688</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/72 (2)</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/72 (2)</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:45.810212+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:45.810212+00:00" status="draft">transcription moa=688 status=draft modified=2017-01-30 19:28:45.810212+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte matris ecclesie filiis presentibus et futuris <cl type="intitulatio">Walterus filius Alani Walteri dapifer Regis scocie</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Sciatis</cl> <cl type="disposition">me concessisse et hac mea carta con<lb/>firmasse deo et ecclesie sancte marie de melros et monachis ibidem deo
+                     seruientibus in liberam . et puram . et perpetuam
+                     elemosinam machelin <cl type="boundaries">per omnes terminos et diuisas<lb/> suas inter terram de machelin et terram Gilleberti filii Richeri. Scilicet ab
+                        illo loco quo milneburne cadit in ar subtus culteicouan
+                        . et ascendendo per eandem burnam<lb/> usque ad fulelecche . et sic ascendendo per eundem sicum extrans<lb/>uerso musso usque ad burnam que descendit de Rederburne . et ascendendo per
+                        burnam extransuerso condoso de Rederburne usque in
+                        burnam que cadit in duueloch . et per burnam que
+                        descendit de duueloch descendendo per eandem burnam
+                        usque in saxnoch et ascendendo per<lb/> saxnoch usque ad polmulin . et sic ascendendo per polmulin usque per medium
+                        achnebron . et inde sursum usque ad condosum . et sic
+                        per condosum sicut aque de<lb/>fluunt uersus eos ex australi parte usque ad capud ned . et deorsum per ned
+                        usque in ar . et per ar deorsum usque lugar . et per
+                        lugar sursum usque ad dufpol .<lb/> Et sic sursum per diuisas quas Walterus filius alani auus meus et alanus pater
+                        meus qui hanc elemosinam ipsis monachis dederunt eis
+                        per douenaldum filium ewin<lb/> et Gillebride perambulare fecerunt  usque econtra monecapel . Et quia ille
+                        diuise in cartis quas habent de antecessoribus meis
+                        minus sufficientem specificantur <lb/> illas per Will<ex>elmu</ex>m de lindeseie tunc temporis senescallum meum . et Robertum logam . et walterum
+                        portarium . et Ric<ex>ardum</ex> filium henrici Walens<ex>is</ex> . et alios probos homines meos plene feci certificari . in presentia domini Will<ex>elm</ex>i tunc temporis abbatis de melros . Scilicet per dufpol maiorem et australem
+                        ascendendo usque ad capud ipsius dufpol .<lb/> et inde ex transuerso uersus orientem usque in matrem situm inter derenechon<ex>er</ex>e et paruum nemus ex parte aquilonali eiusdem siti . et inde ascendendo uersus
+                        orientem<lb/> usque ad curcem que posita est ad capud de drumbuhie . et inde uersus orientem
+                        usque ad aliam crucem super drumbuhie . et ab illa
+                        cruce ad tertiam crucem que posita<lb/> est inter Astinesscauhe et paruum nemus que se extendit usque in capelorum . et
+                        inde ex transuerso musso uersus orientem usque ad
+                        Rederhoue desursum gar<lb/>polhsmuthe usque in ar que est econtra monecapil .</cl> Cum hac terra concessi eis et confirmaui landas et haluues ex aquilonali parte
+                     fluminis<lb/> ar . quas uoluerint excolere . Et piscaturam in hostio fluminis ar cum uno rete
+                     primo scilicet de tribus retibus . ab ipso hostio sursum
+                     ut utantur flu<lb/>mine ar . tam in piscationibus quam in aliis rebus sicut eis placuerit et
+                     utilius uisum fuerit . <cl type="holding">Hanc elemosinam uolo ut predicti monachi de melros<lb/> ita libere et quiete plene et honorifice in perpetuum ab omnibus seruiciis et
+                        omni exaccione seculari et consuetudine teneant et
+                        possideant sicut carta<lb/> Walteri filii Alani aui mei testatur . et confirmation Alani filii Walteri
+                        patris mei confirmat</cl> . Preterea concessi eis et confimaui totam pasturam fo<lb/>reste mee usque ad diuisas de duueglas . et de lesmahagv et de Glengeuil a parte
+                     aquilonali fluminis ar . cum omnibus aisiamentis in nemore
+                     et in<lb/> omnibus aliis rebus eis necessariis . et vnam carucatam terre ad excolendam in
+                     illis locis ubi prouiderint melius et utilius esse ad opus
+                     suum . <cl type="holding">libere et quiete de<lb/> me et heredibus meis ad omnibus seruiciis perpetuo tenore possidendam . excepto
+                        quod quinque marcas argenti mihi et heredibus meis
+                        annuatim persoluent de ipsa<lb/> foresta mea . et salua eadem foresta mea tantum in bestiis et auibus . </cl><cl type="warrandice">Et ego et heredes mei manutenebimus et warantizabimus eisdem mo<lb/>nachis omnia predicta contra omnes homines in perpetuum sicut liberam et puram
+                        et perpetuam elemosinam . et adquietabimus erga dominum
+                        nostrum Regem de omni forensi<lb/> seruitio .</cl> Totam hanc elemosinam concessit dominus meus Rex Will<ex>elmu</ex>s predictis monachis et carta sua confirmauit sicut suam propriam elemosinam .<lb/> <cl type="holding">Insuper ego concessi predictis monachis donationem quam Ricardus Walensis fecit
+                     eisdem monachis et ecclesie de melros de terra de barremor<lb/> et de godeneie cum omnibus pertinentiis suis modis omnibus ita libere et quiete
+                        et honorifice in perpetuam elemosinam tenenda et
+                        possidenda sicut liberius et<lb/> quietius et honorificentius carta ipsius Ricardi Walensis testatur . Et in
+                        confirmatione Alani patris mei quam predicti monachi
+                        habent de eadem elemo<lb/>sina contetur</cl></cl> . T<cl type="witnesses">estibus . Domino patricio comite . et patricio filio eius . Domino Raberto de
+                  brus . et Will<ex>elm</ex>o fratre eius . Reginaldo de craufird tunc temporis uiceomite<lb/> de ar . Thoma de coleuille . Rogero auenel . Rogero filio gleie . Malcol' .
+                     loccard . Ric<ex>ardo</ex> . Walensi . Vmfrido decano . Iordano persona de simundistun .<lb/> Gilberto persona de kilbevhoc . Nichol' . persona de dundouen' . et Will<ex>elm</ex>o fratre eius . Adam del nes . et dunecano filio eius . Alano Walensi . et
+                     stephano fratre eius .</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

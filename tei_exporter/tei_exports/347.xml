@@ -1,0 +1,66 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-347">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/296</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:33:17.655186+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">347</idno>
+        <idno type="textcontent">350</idno>
+        <idno type="transcription_textcontentxml">347</idno>
+        <idno type="translation_textcontentxml">348</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/296</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/296</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T12:33:17.655186+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T12:33:17.655186+00:00" status="published">transcription moa=347 status=live modified=2021-04-06 12:33:17.655186+00 | translation moa=348 status=live modified=2021-04-06 12:33:15.903825+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus hoc scriptum uisuris uel audituris <cl type="intitulatio">Will<ex>el</ex>m<ex>u</ex>s de vesci</cl> <cl type="salutation">salutem in domino</cl> .</cl> <cl type="notification">Noueritis me</cl> <cl type="disposition">concessisse et hac presenti<lb/> carta mea confirmasse donum quod Walterus filius Alani fecit deo et beate Marie
+                     de Melros et monachis ibidem deo<lb/> seruientibus scilicet de tota terra quam idem .W. de me tenuit in Molle cum
+                     omnibus pertinentiis suis sicut carta ipsius<lb/> .W. quam inde habent plenius protestatur  <cl type="holding">habendam et tenendam ipsis monachis in perpetuum . in liberam . puram . et<lb/> perpetuam elemosinam . adeo libere et quiete sicut aliqua elemosina liberius uel
+                        quiecius imfra regionem scocie dari poterit</cl> .</cl><lb/> <cl type="sealing">In cuius rei testimonium presens scriptum sigilli mei apposicione roboraui</cl> . <cl type="witnesses">Hiis testibus . Will<ex>el</ex>mo de vescy fratre meo .<lb/> Ioh<ex>ann</ex>e de lexintun’ . Reynero theutonico militibus . Symone de Horseleye . Roberto de
+                     Ewrth . Roberto de valle .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall view or hear this writing, <cl type="intitulatio">William de Vescy</cl> <cl type="salutation">sends greeting in the Lord</cl>.</cl> <cl type="notification">Know me</cl> <cl type="disposition">to have allowed and by this my present charter to have made firm the gift that
+                  Walter son of Alan has made to God and Blessed Mary at
+                  Melrose and the monks serving God in that place; that is of
+                  the whole land that the same Walter held of me in Mow, with
+                  all its pertinents, as the charter of Walter himself which
+                  they have thereupon more fully bears witness; <cl type="holding">for the same monks to have and to hold for ever, in free, pure, and everlasting
+                     alms, as freely and quitely as one can be given any alms
+                     freely or quitely within the <ex>regio</ex> of Scotia</cl>.</cl> <cl type="sealing">As testimony of this matter I have strengthened the present document by the
+                  application of my seal.</cl> <cl type="witnesses">With these witnesses: William de Vescy my brother, John of Lexington, Rainer the
+                  German, knights; Simon of Horsley, Robert of Airth, Robert de
+                  Valle.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

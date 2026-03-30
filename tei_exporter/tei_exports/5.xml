@@ -1,0 +1,57 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-5">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 565</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:19:35.793515+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">5</idno>
+        <idno type="textcontent">5</idno>
+        <idno type="transcription_textcontentxml">5</idno>
+        <idno type="translation_textcontentxml">6</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 565</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 565</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T20:19:35.793515+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T20:19:35.793515+00:00" status="approved">transcription moa=5 status=reviewed modified=2022-10-31 20:19:35.778742+00 | translation moa=6 status=reviewed modified=2022-10-31 20:19:35.793515+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription"><p><cl type="address"><cl type="intitulatio">. <persName>D<ex>auid</ex> .</persName> Rex Scottorum .</cl> Comitibus . Baronibus . <persName><roleName>Vic</roleName></persName><ex>ecomitibus</ex> . Ministris . et Omnibus fidelibus suis<lb/> clericis . et laicis . totius terre sue  <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me concessisse . et Dedisse Arnolfo isti<lb/> meo militi totam terram de Swinton’ cum pecunia . et hominibus et Omnibus rebus
+                     Iuste ad<lb/> <supplied>ea</supplied>ndem terram pertinentibus I<supplied>n</supplied> feudo . et In Hereditate . <cl type="holding">sibi et heredibus ita libere . et quiete . et<lb/> <supplied>hon</supplied>orifice tenere . et h<supplied>abere</supplied> . sicut Vdardus Vic<ex>ecomes</ex> eam tenuit liberius . et quietius per illud<lb/> seruitium inde facie<supplied>nd</supplied>o monachis Dunhelme quod ipse Vdard<ex>us</ex> eis inde faciebat</cl> .<lb/> </cl><cl type="witnesses">presentibus testibus . W<supplied>i</supplied>ll<ex>elm</ex>o Nepote regis . et Madd’ Comite . et Dunec<ex>ano</ex> Comite . et Hugone<lb/> de Morvill’ . et Walt’&lt;a href="#_ftn1" name="_ftnref1"&gt;&lt;/a&gt; filio Alan<ex>i</ex> .</cl> Apud . Trau<ex>er</ex>coir .</p> <p> </p></div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">David king of the Scots</cl> to earls, barons, <persName><roleName>sheriffs</roleName></persName>, officials and all his sworn men, clerk and lay, of his entire land, <cl type="salutation">greeting.</cl></cl> <cl type="disposition"><cl type="notification">Know</cl> me to have conceded, and given to Arnolf my knight, the whole land of Swinton,
+                     with cattle and men and all things rightfully belonging to
+                     it, in feu and heritage, <cl type="holding">for him and his heirs to hold and to have so freely and quitly and honourably as
+                     Udard the sheriff most freely and quitly held it, by
+                     performing that service upon it to the monks of Durham
+                     which Udard himself performed for them upon it</cl>.</cl> <cl type="witnesses">Present as witnesses: William the king’s nephew; Matad the earl; Duncan the
+                  earl; Hugh de Morville; Walter son of Alan. </cl><cl type="dating">At Traquair.</cl> </p>
+      </div>
+    </body>
+  </text>
+</TEI>

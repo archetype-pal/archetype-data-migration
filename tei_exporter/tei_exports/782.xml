@@ -1,0 +1,81 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-782">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5957</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.769803+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">782</idno>
+        <idno type="textcontent">796</idno>
+        <idno type="transcription_textcontentxml">782</idno>
+        <idno type="translation_textcontentxml">783</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5957</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5957</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T13:36:57.769803+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:36:57.769803+00:00" status="approved">transcription moa=782 status=reviewed modified=2022-11-01 13:36:57.759806+00 | translation moa=783 status=reviewed modified=2022-11-01 13:36:57.769803+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Liolfus filius Elgi et heredes sui . s<ex>cilicet</ex> . Cospatricius et Gamel et <persName>Makebeth</persName> et Reginaldus et Eggard</cl> Omnibus uidentibus uel au<lb/>dientibus has litteras <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Sciatis nos</cl> <cl type="disposition">in curia prioris Coldingh<ex>am</ex> et in presentia illius abiurasse si quid iuris ha<lb/>buimus in parua Ristona et illud quietum clamasse Ade filio Cospatricii et
+                     heredibus suis de nobis uel de successoribus nostris sine<lb/> omni uexatione uel reclamatione pro . septem . marcis et uno equo duarum
+                     marcarum quas nobis in presentia multorum bonorum ui<lb/>rorum dedit . et quia uolumus ut firmum sit ius iurandum fide firmauimus in manu
+                     Walteri Olifard iusticie regis illud sine<lb/> omni fraude uel reclamatione in perpetuum tenendum</cl> . <cl type="witnesses">Hiis testibus . Waltero Olifard iusticie regis . Roberto de Burneuile .<lb/> vicecomite . et Roberto herede suo . Ricardo <persName><roleName>Marescaldo</roleName></persName> . Patricio auunculo comitis . Ada filio Alden . et Patricio herede suo .<lb/> Gilberto Fraser et Iohanne et Bernardo filiis suis . Ricardo de Merleie .
+                     Stephano papedi . Waldeuuo de Prendergest . Edwar<lb/>do de Aldecambus et filiis suis Thoma Willelmo Stephano . Willelmo preposito .
+                     Willelmo de Nesebit . Ada filio Pace . Ada de Pren<lb/>dergest . Elya de Eytona . Ada de Lambertona . Alano de Swintona . Ricardo de
+                     Swintona . Ricardo de Lummesdene .<lb/> Vctredo filio Coleman et filio suo Ada . Waldeuuo filio Uctredi . Rad<ex>ulfo</ex> . filio Godwin . Ada de Bethioc . Thoma filio Si<lb/>wardi et Patricio herede suo . Ada filio Leising . Ilif filio Ogge et herede suo
+                     . Roberto coco . et Philippo del celer . et multis aliis</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Liulf son of Ælsi and his heirs, namely, Cospatric, Gamel, <persName>Macbeth</persName>, Reginald, and Ecgheard,</cl> to all who view or hear these letters <cl type="salutation">send greeting</cl>.</cl> <cl type="notification">Know us,</cl> <cl type="disposition">in the court of the prior of Coldingham, and in his presence, to have abjured
+                  whatever right we have had in Little Reston and to have
+                  quitclaimed it to Adam son of Cospatric and his heirs, in
+                  respect of ourselves or our successors, without any trouble
+                  or counter-claim, in return for seven merks and one horse of
+                  two merks which he has given to us in the presence of many
+                  worthy men. And since we will that it should be firm, we have
+                  affirmed by faith the oath to be sworn, in the hands of
+                  Walter Oliphant, the king's justice, to be held for ever
+                  without any deceit or counter-claim.</cl> <cl type="witnesses">With these witnesses: Walter Oliphant, the king's justice; Robert of Burneville,
+                  sheriff, and his heir, Robert; Richard the marischal;
+                  Patrick, the earl's uncle; Adam son of Aldan, and his heir,
+                  Patrick; Gilbert Fraser, and John and Bernard, his sons;
+                  Richard de Merlay; Stephen Papedy; Waldef of Prenderguest;
+                  Edward of Oldcambus and his sons, Thomas, William, Stephen;
+                  William the grieve; William of Nisbet; Adam son of Pace; Adam
+                  of Prenderguest; Elias of Ayton; Adam of Lamberton; Alan of
+                  Swinton; Richard of Swinton; Richard of Lumsdaine; Uchtred
+                  son of Colman, and Adam his son; Waldef son of Uchtred; Ralph
+                  son of Godwin; Adam of Beoch; Thomas son of Siward, and his
+                  heir, Patrick; Adam son of Leysing; Eilaf son of Oddger, and
+                  his heir; Robert the cook, and Philip of the cellar; and many
+                  others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

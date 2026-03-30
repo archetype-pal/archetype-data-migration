@@ -1,0 +1,120 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-931">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 589</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:47:55.701845+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">931</idno>
+        <idno type="textcontent">957</idno>
+        <idno type="transcription_textcontentxml">931</idno>
+        <idno type="translation_textcontentxml">930</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 589</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 589</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:47:55.701845+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:47:55.701845+00:00" status="approved">transcription moa=931 status=reviewed modified=2022-11-01 16:47:55.701845+00 | translation moa=930 status=reviewed modified=2022-11-01 16:47:55.690284+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. W . dei gr<ex>ati</ex>a Rex Scott’ .</cl> Episcopis . Abbatibus . Com<ex>itibus</ex> . Baron<ex>ibus</ex> . Vicecom<ex>itibus</ex> . Prepositis . Ministris . et Omnibus probis Hominibus totius terre sue Clericis
+                     et Laicis <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes<lb/> et futuri</cl> me concessisse . et hac carta mea confirmasse conuentionem factam inter
+                     Ecclesiam sancti Andr<ex>ee</ex> . et Ecclesiam sancti Cudberti de Dunelmo . et inter Rogerum Electum Sancti<lb/> Andr<ex>ee</ex> . et Bertramum priorem . et conuentum ecclesie Sancti Cudberti de Dunelmo .
+                     Scilicet quod prefatus Electus concessit deo et sancto
+                     Cudberto et prenominato priori et conuentui Dunelm<ex>ensis</ex> ecclesie quod<lb/> Ecclesia de coldingham cum capellis ad eam pertinentibus libera sit et quieta
+                     sit in perpetuum a Cano et Coneuetho . et procurationibus
+                     et hospiciis . et Omnibus aliis exactionibus et<lb/> sinodalibus et auxiliis . et Omnibus aliis tam ab ipso Electo quam a
+                     successoribus suis . et ab Omnibus officialibus
+                     Episcopatus Sancti Andr<ex>ee</ex> Salua tamen ipsi Electo et successoribus suis<lb/> canonica iusticia et odebientia . Et quod omnes alie parrochialies ecclesie quas
+                     prefatus conuentus Dunelm<ex>ensis</ex> ecclesie in Episcopatu Sancti Andr<ex>ee</ex> possidet  libere sint et quiete in perpe<lb/>tuum a cano et Coneuetho . et procurationibus et hospiciis tam a predicto Electo
+                     quam a successoribus suis nisi gratis  huiusmodi facere
+                     uoluerint . Nec aliquid in predictis ec<lb/>clesiis parrochialibus magis exigetur ab officialibus episcopatus Sancti Andr<ex>ee</ex> . quam in Ecclesiis parrochialibus Abbatis Kalcoensis uel alicuius Abbatis qui
+                     liberius et Melius tenet in Epi<lb/>scopatu sancti Andree Et Quando comune auxilium ponetur per totum Episcopatum
+                     sancti Andr<ex>ee</ex>  prior et predictus conuentus ecclesie Dunelm<ex>ensis</ex> . de prescriptis ecclesiis suis parrochialibus pre<lb/>dicto Electo et successoribus suis respondebunt  Sicut Abbates uel Priores qui
+                     liberius tenent in Episcoptu sancti Andr<ex>ee</ex>  faciunt de suis . Prior itaque et antedictus conuentus<lb/> Dunelm<ex>ensis</ex> ecclesie habebunt in perpetuum tantum potestatem . dignitatem et dispositionem
+                     in omnibus ecclesiis suis parrochialibus  quantumcumque
+                     alique abbacie habent in <lb/> ecclesiis suis que liberius et melius tenent in Episcopatu sancti Andr<ex>ee</ex> . Et propter predictas quietantias et libertates . et pro bono pacis predictus
+                     Bertramus prior . et conuentus ecclesie<lb/> Dunelm<ex>ensis</ex> de consilio et Assensu Hug<ex>onis</ex> Dunelm<ex>ensis</ex> Episcopi et totius Capituli sui dederunt et concesserunt Deo et ecclesie sancti
+                     Andr<ex>ee</ex> . et predicto Electo . et successoribus<lb/> eius cappellam de Naithanesthurn’ tenendam et cui uoluerint concedendam in
+                     perpetuum liberam et quietam et absolutam tam ab eis quam
+                     a matrice ecclesia de<lb/> Edenham . Quare uolo ut ista conuentio prescripta  inter prenominatas ecclesias
+                     firmiter et inuiolabiliter obseruetur  sicut scriptum
+                     autenticum inter predictum Electum sancti<lb/> Andr<ex>ee</ex> . et prefatum . B . priorem et conuentum Dunelm<ex>ensis</ex> ecclesie factum  testatur .</cl> <cl type="witnesses">Test<ex>ibus</ex> Hug<ex>one</ex> Cancellario meo . Ærkenbald<ex>o</ex> Abbate de Dunfermel’ . Will<ex>elm</ex>o Abbate de sancta cruce<lb/> Sim<ex>one</ex> Archid<ex>iacono</ex> Glasg’ . Will<ex>elm</ex>o maleuicino Archid<ex>iacono</ex> Laod<ex>onie</ex> . Roll<ex>ando</ex> . filio uchtred<ex>i</ex> Comite Dunec<ex>ano</ex> . Will<ex>elm</ex>o de lindesia . Robert de Lond<ex>oniis</ex> . Rannulf’<lb/> de Sol’ . Will<ex>elm</ex>o de Ramesh’ . Henr<ex>ico</ex> de graham . Will<ex>elm</ex>o de Cunninghesburgh’.</cl> <cl type="dating">Apud Edenebur</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex>, by the grace of God king of the Scots,</cl> to bishops, abbots, earls, barons, sheriffs, provosts, officials, and all worthy
+                     men of his entire land, clerk and lay, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have conceded, and by this my charter to have made firm, the agreement
+                     made between the church of St Andrews and the church of St
+                     Cuthbert at Durham, and between Roger <ex>bishop</ex> elect of St Andrews and Prior Bertram and the convent of St Cuthbert at Durham,
+                     that is to say, that the afore-mentioned <ex>bishop</ex> elect has conceded to God and St Cuthbert and the afornamed prior and convent of
+                     the church of Durham that the church of Coldingham with
+                     the chapels belonging to it be free and be quit for ever
+                     from cain and conveth, procurations and hospitality, and
+                     all other demands and synodal dues and aids, and all other
+                     things, as much from the <ex>bishop</ex> elect himself as from his successors, and from all officials of the bishopric of
+                     St Andrews, save only canonical justice and obedience to
+                     the <ex>bishop</ex> elect and his successors; and that all other parish churches which the
+                     aforementioned convent of the church of Durham possesses
+                     in the bishopric of St Andrews be free and quit for ever
+                     from cain and conveth, procurations and hospitality, as
+                     much from the aforesaid <ex>bishop</ex> elect as from his successors, unless they wish to make it freely. And nothing
+                     more in the aforesaid parish churches shall be demanded by
+                     the officials of the bishopric of St Andrews than in the
+                     parish churches of the abbot of Kelso or of any other
+                     abbot who holds the more feely and better in the bishopric
+                     of St Andrews. And when common aid is levied throughout
+                     the whole bishopric of St Andrews, the prior and aforesaid
+                     convent of the church of Durham shall answer for their
+                     afore-written parish churches to the aforesaid <ex>bishop</ex> elect and his successors, just as the abbots or priors who freely hold in the
+                     bishopric of St Andrews do in respect of their own. The
+                     prior and aforesiad convent of the church of Durham shall
+                     therefore have in perpetuity such authority, dignity and
+                     freedom of disposition in all their parish churches as any
+                     other abbeys have in their own churches which they hold
+                     the better and more freely in the bishopric of St Andrews.
+                     And on account of the aforesaid quittances and liberties,
+                     and for the sake of peace, the said Prior Bertram and
+                     convent of the church of Durham, by the advice and
+                     agreement of Hugh, bishop of Durham, and his whole
+                     chapter, have given and conceded to God and the church of
+                     St Andrwes and the aforesaid <ex>bishop</ex> elect and his successors the chapel of Nenthorn to be held and conceded to whom
+                     they wish in perpetuity, free, quit and released as much
+                     from them as from the mother church of Ednam. Wherefore I
+                     will that this agreement aforewritten between the
+                     aforenamed churches be strictly and inviolably observed,
+                     just as the authentic document produced between the
+                     aforesaid <ex>bishop</ex> elect of St Andrews and the aforementioned Prior B<ex>ertram</ex> and convent of the church of Durham bears witness.</cl> <cl type="witnesses">As witnesses: Hugh my chancellor, Archibald the abbot of Dunfermline, William
+                  the abbot of Holyrood, Simon the archdeacon of Glasgow,
+                  William Malveisin the archdeacon of Lothian, Roland son of
+                  Uhtred, Earl Duncan, William of Lindsay, Robert of London,
+                  Ranulf de Soulis, William of Ramsay, Henry Graham, William of
+                  Conisbrough.</cl> <cl type="dating">At Edinburgh.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-21">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 587</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:19:35.860591+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">21</idno>
+        <idno type="textcontent">21</idno>
+        <idno type="transcription_textcontentxml">21</idno>
+        <idno type="translation_textcontentxml">22</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 587</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 587</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T20:19:35.860591+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T20:19:35.860591+00:00" status="approved">transcription moa=21 status=reviewed modified=2022-10-31 20:19:35.851706+00 | translation moa=22 status=reviewed modified=2022-10-31 20:19:35.860591+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p>
+          <cl type="address"><cl type="intitulatio">W. Rex Scott<ex>orum</ex> .</cl> <persName><roleName>Iusticiis</roleName></persName> <persName><roleName>Vicec<ex>omitibus</ex></roleName></persName> . et Omnibus probis hominibus tocius terre sue <lb/> <cl type="salutation">salutem</cl> . </cl>
+          <cl type="disposition">Mando et firmiter precipio ut ubicumque extra mea dominia prior de <lb/> Coldincham aut seruientes sui inuenerint fugitiuos et natiuos homines <lb/> de terris suis de Coldinch<ex>am</ex> et Coldinchameschire  eos iuste habeant . <cl type="prohibition">et prohibeo <lb/> firmiter ne quis eis quemquam ex hominibus illis iniuste detineat super <lb/> meum forisfactum</cl> .</cl>
+          <cl type="witnesses"> Test<ex>ibus</ex> . Ric<ex>ardo</ex> Cumi<ex>n</ex> . Rob<ex>er</ex>to de Costenti<ex>n</ex> . Ioh<ex>ann</ex>e de Vallibus . hug<ex>one</ex> clerico . Ric<ex>ardo</ex> clerico . </cl>
+          <cl type="dating">apud Berewic .</cl>
+        </p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">William, king of the Scots</cl>, to the <persName><roleName>justices</roleName></persName>, <persName><roleName>sheriffs</roleName></persName>, and all worthy men of his entire land <cl type="salutation">greeting. </cl></cl><cl type="disposition">I command and resolutely instruct that wherever outside my demesne the prior of
+                  Coldingham or his tenants may have found fugitives and neyfs
+                  from their lands of Coldingham and Coldinghamshire, they may
+                  lawfully have them. <cl type="prohibition">And I strictly forbid that anyone unlawfully withhold from them a single one of
+                     those men upon pain of my forfeiture</cl>.</cl> <cl type="witnesses">As witnesses: Richard Comyn; Robert de Côtentin; John de Vaux; Hugh the clerk;
+                  Richard the clerk.</cl> <cl type="dating">At Berwick.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

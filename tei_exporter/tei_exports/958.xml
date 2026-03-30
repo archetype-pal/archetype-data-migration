@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-958">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 723</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:41:10.616602+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">958</idno>
+        <idno type="textcontent">986</idno>
+        <idno type="transcription_textcontentxml">958</idno>
+        <idno type="translation_textcontentxml">959</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 723</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 723</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T11:41:10.616602+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T11:41:10.616602+00:00" status="approved">transcription moa=958 status=reviewed modified=2022-11-01 11:41:10.616602+00 | translation moa=959 status=reviewed modified=2022-11-01 11:41:10.605692+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="disposition"><cl type="notification">Sciant tam presentes quam futuri quod</cl> Eadwardus filius Petri de Lastailrig Baro regis scott' concessit et dedit atque<lb/> hac carta sua confirmauit Rodberto filio Matildis de Berewic et omnibus
+                     heredibus suis duas toftes ad Eie<lb/>muthe . et unam ad leth . honorifice et libere et quiete atque in pace in feudo
+                     et hereditate . ab omni consuetudine et<lb/> seruitio <cl type="holding">tenend<ex>as</ex> de se et omnibus heredibus suis . reddendo singulis annis . iii . teises de laz</cl> .</cl> <cl type="witnesses">Test<ex>es</ex> . Alexand<ex>er</ex> de<lb/> Softe lawe . Will<ex>elmus</ex> filio hugonis de lastailrig . Will<ex>elmus</ex> prepositus de Berewic . Will<ex>elmus</ex> Beniue . Alexand<ex>er</ex><lb/> prepositus de Berewic . Will<ex>elmus</ex> Neue . Rein<ex>er</ex> . Rog<ex>er</ex> de pagraua clericus Walteri filii Alani .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="disposition"><cl type="notification">Let present and future know that</cl> Edward son of Peter of Restalrig, baron of the king of Scots, has granted and
+                     given and by this his charter made firm to Robert son of
+                     Matilda of Berwick and to all his heirs two tofts at
+                     Eyemouth, and one at Leith, honourably, freely, quitly,
+                     and in peace, from every custom and service, in feu and
+                     heritage, <cl type="holding">to be held of him and his heirs, rendering each year three toises of lace</cl>.</cl> <cl type="witnesses">Witness Alexander of Softlaw, William son of Hugh of Restalrig, William provost
+                  of Berwick, William Benive, Alexander provost of Berwick,
+                  William Neve, Rainer, Roger of Palgrave clerk of Walter fitz
+                  Alan.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

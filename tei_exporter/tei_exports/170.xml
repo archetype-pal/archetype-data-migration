@@ -1,0 +1,69 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-170">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/221</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-07-07 10:00:45.19291+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">170</idno>
+        <idno type="textcontent">170</idno>
+        <idno type="transcription_textcontentxml">170</idno>
+        <idno type="translation_textcontentxml">171</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/221</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/221</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-07-07T10:00:45.19291+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-07-07T10:00:45.19291+00:00" status="published">transcription moa=170 status=live modified=2017-07-07 09:45:14.727312+00 | translation moa=171 status=live modified=2017-07-07 10:00:45.19291+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Rodbertus dei gratia humilis minister ecclesie Sancti Andree</cl> . Omnibus sancte matris ecclesie filiis  <cl type="salutation">salutem. et episcopalem benedictionem</cl> .</cl><lb/> <cl type="disposition"><cl type="notification">Sciant omnes tam presentes quam futuri</cl> me dedisse et presentis carte munimine confirmasse ecclesie sancte CRUCIS de
+                     edenesburch<lb/> et canonicis ibidem deo seruientibus ecclesiam de karreden cum duobus carrucatis
+                     terre. et cum omnibus ad eam iuste perti<lb/>nentibus . Scilicet in decimis . in pratis . in pascuis . in molendinis . et in
+                     omnibus aliis rectitudinibus suis . ita liberam<lb/> et ex omni exactione quietam sicut aliquam in tota diocesi nostra ecclesiam
+                     liberius et quietius possident .</cl> <cl type="witnesses">His testibus . Gaufrido<lb/> abbate de dunfermelin . Alwredo abbate de striuelin . Rodberto priore de Sancto
+                     Andrea . Samsone et Alano monachis<lb/> dunelmi . T . Archidiacono . Aiulfo decano . Gaufrido de laswade . Magistro
+                     Andrea . Adam et Ricardo capellanis episcopi . Gaufrido<lb/> clerico . Petro de Striuelin . et plenaria synodo .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Robert, by the grace of God a humble servant of the church of Saint Andrew</cl>, <cl type="salutation">sends greeting and episcopal blessing</cl> to all sons of Holy Mother Church.</cl> <cl type="disposition"><cl type="notification">Let all people, as well present as future, know</cl> me to have given, and by the guarantee of this charter to have made firm, to the
+                     church of the Holyrood in Edinburgh, and to the canons
+                     serving God there, the church of Carriden, with two
+                     ploughgates of land, and with everything rightfully
+                     belonging to it; that is to say, in teinds, in meadows, in
+                     pastures, in mills, and in all its other rights; so free
+                     and quit of all exaction as they freely and quietly
+                     possess any church in the whole diocese .</cl> <cl type="witnesses">With these witnesses: Geoffrey, abbot of Dunfermline; Alured, abbot of Stirling;
+                  Robert, prior of St Andrews; Samson and Alan, monks of
+                  Durham; T<ex>horald</ex>, the archdeacon; Aiulf, the dean; Geoffrey of Lasswade; Master Andrew; Adam and
+                     Richard, the bishop’s chaplains; Geoffrey, the clerk;
+                     Peter of Stirling; and the full synod.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,72 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-310">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/44</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.854776+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">310</idno>
+        <idno type="textcontent">310</idno>
+        <idno type="transcription_textcontentxml">310</idno>
+        <idno type="translation_textcontentxml">311</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/44</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/44</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-06T15:19:33.854776+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-06T15:19:33.854776+00:00" status="approved">transcription moa=310 status=reviewed modified=2023-06-06 15:19:33.854776+00 | translation moa=311 status=reviewed modified=2023-06-06 15:19:33.827713+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Florentius dei gratia Glasguiensis electus</cl> Vniuersis sancte matris ecclesie filiis tam posteris quam presentibus <cl type="salutation">salutem<lb/> in Christo</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> nos dedisse et concessisse et hac karta nostra confirmasse deo et ecclesie
+                     sancte Marie de Melr’<lb/> et monachis ibidem deo seruientibus in liberam et perpetuam elemosinam illud
+                     tophtum in burgo de glas<lb/>gu . quod ranulfus de hadintune edificauit in prima edificatione burgi . ad opus
+                     domus de Melros .<lb/> ita plenarie sicut illud edificauit et tenuit . prout etiam prefatum tophtum
+                     predictis Monachis datum carta pre<lb/>decessoris nostri pie memorie . I . episcopi glasg’ testatur . <cl type="holding">Quare uolumus ut supradicti Monachi de Melr’ teneant<lb/> et possideant predictum tophtum ita libere et quiete sicut ipsi aliquam
+                        elemosinam liberius et quietius tenent et possi<lb/>dent .</cl></cl> <cl type="witnesses">His testibus . Radulfo episcopo de dune . R . abbate de kinlos . Magistro . I .
+                  officiali . Benedicto capel<lb/>lano . Alexandro capellano . Magistro terri . Hugone Luuel . Waltero de paris .
+                     et aliis multis</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Florence, by the grace of God elect of Glasgow</cl>, to all the sons of Holy Mother Church, as well future as present, <cl type="salutation">sends greeting in Christ</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> us to have given and granted, and by this our charter to have made firm, to God
+                     and to the church of Saint Mary at Melrose, and to the
+                     monks in that place serving God, as free and everlasting
+                     alms, the toft in the burgh of Glasgow that Ranulf of
+                     Haddington built at the original construction of the burgh
+                     for the benefit of the monastic house of Melrose, as fully
+                     as he built and held it, just as the charter of our
+                     predecessor of good memory, Jocelin bishop of Glasgow,
+                     also witnesses the aforementioned toft given to the
+                     aforesaid monks. <cl type="holding">Wherefore we will that the monks of Melrose mentioned above shall hold and
+                     possess the aforesaid toft as freely and quietly as they
+                     freely and quietly hold and possess any alms.</cl></cl> <cl type="witnesses">With these witnesses: Ralph, bishop of Down; R<ex>alph</ex>, abbot of Kinloss; Master J. the official; Benedict, chaplain; Alexander,
+                     chaplain; Master Terri [Theodoric], Hugh Lovell; Walter de
+                     Paris; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

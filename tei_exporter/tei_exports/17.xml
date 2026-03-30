@@ -1,0 +1,110 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-17">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL L.F.C. Ch. xxx.6</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:15:12.974993+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">17</idno>
+        <idno type="textcontent">17</idno>
+        <idno type="transcription_textcontentxml">17</idno>
+        <idno type="translation_textcontentxml">18</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>L.F.C. Ch. xxx.6</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL L.F.C. Ch. xxx.6</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:15:12.974993+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:15:12.974993+00:00" status="published">transcription moa=17 status=live modified=2021-04-05 08:15:11.063798+00 | translation moa=18 status=live modified=2021-04-05 08:15:12.974993+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>Alexand<ex>er</ex></persName> Dei Gratia Rex Scott’</cl> . Ep<ex>iscop</ex>iS . Abbatibus . Comitibus . Baronibus . Uicecomi˹t’ . Iustic’ . Prepositis .
+                     Ministris et˺ <lb/> Omnibus probis Hominibus tocius <supplied>ter</supplied>re Sue Clericis et Laicis <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes et ˹futuri</cl> nos ad Honorem Dei et˺ <lb/> Gloroise uirginis Marie . et Sanct<supplied>issimi</supplied> Reg<ex>is</ex> <persName>EDWardi</persName> . et ad exaltationem Sancte Religionis pro Salute nostra et Omnium <lb/> Antecessorum et successorum nostrorum . et pro Animabus Illustris Reg<ex>is</ex> <persName>Willelmi</persName> patris nostri et <persName>ERmegard’</persName> Regine ma<lb/>tris nostre . et Omnium Antecessorum . et successorum nostrorum quandam Abbatiam
+                     Cysterciens<ex>is</ex> Ordinis fundasse Apud <lb/> Balmurinath in fif . nosque m<supplied>onachis</supplied> ipsius ordinis Ibidem deo Seruientibus . et Seruituris dedisse et Concessisse et
+                     Hac Carta <lb/> nostra Confirmasse totam terram de Balmurinath . et De Cultran In fif . per Suas
+                     Rectas Diuisas . Concessimus etiam eisdem <lb/> Ecclesiam matricem de Balmurinath cum Omnibus pertinentiis Suis . et Omnia ad
+                     predictas terras iuste pertinentia. Quas <lb/> etiam <persName>Adam</persName> de Stawell’ frater . et HereS <persName>Ricardi Reuell’</persName> nobis Ad Opus predicte Domine . E . Regine matris nostre <lb/> In Plena Curia nostra Apud fo<supplied>r</supplied>ephar quietas calamauit . et In manu nostra pro se et Heredibus Suis per fustum
+                     et Bacu<lb/>lum Resignauit . Concessimus etiam prefatis monach<ex>is</ex> Cysterciens<ex>is</ex> Ordinis Ad fundationem prenominate Abbatie feuth<lb/>mure In Anegus per Suas rectas diuisaS . et cum Omnibus iustis pertinentiis Suis
+                     . <cl type="warrandice">Et nos et Heredes nostri manutenebimus et <lb/> Warantizabimus predictis monach<ex>is</ex> predictas terras cum Omnibus pertinentiis et Libertatibus Suis inperpetuum
+                        contra omnes <lb/> Homines .</cl> <cl type="holding">Quare uolumus ut predicti monachi omnes predictas terras Habeant . et teneant .
+                     De nobis et Successoribus nostris <lb/> In Liberam . Puram . Quietam . et perpetuam elemosinam . In terris . et Aquis .
+                        In pratis et pascuis . In moris . et maresiis . In
+                        stang<lb/>nis et molendinis . In uiis et Semitis . et Salinis et piscariis . et Omnibus
+                        aliis Aeisiamentis ad predictas terras Iuste
+                        pertinentibus . <lb/> Ita Libere . et Quiete . Plenarie . et Honorifice . Sicut aliqua elemosina .
+                        Liberius . et Quietius . plenius et Honorificentius .
+                        Ab auxi<lb/>Liis . Excercitibus . Talliagiis . Tol<supplied>lenei</supplied>s . et Omnibus exactionibus . Consuetudinibus . et Seruiciis Secularibus in
+                        Regno Scocie tenetur <lb/> aut possidetur . Ita quod nichil Horum Omnino ab eis per totum Regnum Scocie
+                        possit exigi preter solas Orationes</cl> . <lb/></cl> <cl type="witnesses">Test<ex>ibus</ex> . <persName>A.</persName> Episcopo Moraui<supplied>ensi . W.</supplied> Comit<ex>e</ex> De Buwan Iustic’ Scott’ . <persName>W. Olifard</persName> Iustic’ Laodon’ . <persName>W.</persName> fil<ex>io</ex> <persName>Alan’</persName> <lb/> Senescallo . <persName>Patric’</persName> fil<ex>io</ex> Com<ex>itis</ex> <persName>Pat<supplied>ric’</supplied> H.</persName> De Baill’ . <persName>Th’</persName>. De hay . <persName>Ioh’</persName>. et <persName>W.</persName> fratribus Suis . <persName>Th’</persName> fil<ex>io</ex> <persName>Rand’</persName>. <persName>H.</persName> fil<ex>io</ex> . Com<ex>itis</ex> <lb/> <persName>Rob’</persName> De hay . <persName>Gaufrid’</persName> . <persName>W.</persName> <supplied>de</supplied> Nidin . Clericis nostris</cl> Apud Clacmanan . iii. die feb<ex>ruarii</ex> . Anno Regni nostri xvii.</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, by the grace of God king of the Scots,</cl> to bishops, abbots, earls, barons, sheriffs, justiciars, provosts, officials,
+                     and all worthy men of his entire land, clerk and lay, <cl type="salutation">greeting.</cl> </cl><cl type="disposition"><cl type="notification">Let present and future know</cl> that, to the honour of God, the Glorious Virgin Mary, and the most holy King
+                     Edward, for the promotion of the holy life of faith, for
+                     our own salvation and that of all our predecessors and
+                     successors, and for the souls of the illustrious King
+                     William our father, and of Queen Ermengarde our mother,
+                     and of all our predecessors and successors, we have
+                     founded an abbey of the Cistercian Order at Balmerino in
+                     Fife, and that we have given, conceded, and by this our
+                     charter made firm, to the monks of that same Order serving
+                     God there now and in the future the whole land of
+                     Balmerino, and of Coultra in Fife, by their right marches.
+                     We have also conceded to the same the mother church of
+                     Balmerino with all its pertinents, and everything that
+                     lawfully belongs to the aforesaid lands, which Adam of
+                     Stawell, brother and heir of Richard Revel, quitclaimed to
+                     us for the benefit of the lady, Queen Ermengarde, our
+                     mother, in our full court at Forfar, and resigned them in
+                     our hand for himself and his heirs by staff and baton. We
+                     have also conceded to the aforesaid monks of the
+                     Cistercian Order, for the founding of the aforementioned
+                     Abbey, ‘Feuthmure’ [Barry] in Angus by its right marches,
+                     and with all its just pertinents. <cl type="warrandice">And we and our heirs shall maintain and warrant to the aforesaid monks the
+                     aforesaid lands with all their pertinents and liberties in
+                     perpetuity against all men.</cl> <cl type="holding">Wherefore we will that the aforesaid monks shall have and hold all the aforesaid
+                     lands of us and our successors in free, pure, peaceful,
+                     and perpetual alms, in lands, and waters, in meadows and
+                     pastures, in moors and marshes, in ponds and mills, in
+                     roads and paths, and salt-works and fisheries, and all
+                     other easements lawfully belonging to the aforesaid lands,
+                     as freely, and quitly, fully, and honourably, as other
+                     alms are most freely, and quitly, fully and honourably,
+                     from aids, army service, tallage, tolls and all exactions,
+                     customs, and secular services in the kingdom of Scotland,
+                     held or possessed, such that nothing of these whatever can
+                     be required of them throughout the whole kingdom of
+                     Scotland except for prayers.</cl> </cl><cl type="witnesses">As witnesses: Andrew, bishop of Moray; Walter, earl of Buchan, justiciar of the
+                  Scots; Walter Oliphant, justiciar of Lothian; Walter son of
+                  Alan, steward; Patrick, son of Earl Patrick; Henry de
+                  Balliol; Thomas de la Haye; John and William, his brothers;
+                  Thomas son of Ranulf; Henry son of the earl; Robert de la
+                  Haye; Geoffrey, Walter of Nydie, our clerks. </cl>At Clackmannan, on the 3rd day of February, in the 17th year of our reign.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

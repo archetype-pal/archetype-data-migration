@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-538">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/269</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:32.824679+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">538</idno>
+        <idno type="textcontent">545</idno>
+        <idno type="transcription_textcontentxml">538</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/269</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/269</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:32.824679+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:32.824679+00:00" status="draft">transcription moa=538 status=draft modified=2017-01-30 19:28:32.824679+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><cl type="address">Omnibus hoc scriptum visuris uel Audituris <cl type="intitulatio">Rogerus Lardenarius</cl> <cl type="salutation">Eternam in domino salutem</cl></cl> . <cl type="disposition"><cl type="notification">Nouerit vniuersitas vestra</cl> me de<lb/> voluntate et assensu vxoris mee Matildis In plena Cura domini Will<ex>elm</ex>i filii domini patricii comitis de Dunbar Redi<lb/>disse et quietum clamasse pro me et heredibus meis inperpetuum dicto Will<ex>elm</ex>o filio comiti et Cristiane Corbet vx<ex>ori</ex><lb/> eius et heredibus eorum totum Ius et clamium quod habui habere potui in terra de
+                        Cliftuna cum omnibus as dictam terram perti<lb/>nentibus pro tanta summa pecunie . Quam dicti Will<ex>elmi</ex> et Cristiana Corbet mihi per minibus pacauerunt . Qua de causa re<lb/>nunciaui excepcioni non numerate pecunie et omni auxilio et Remedio Iuris quod
+                        obici posit contra factum uel presens instrumentum<lb/> Iurauimus eciam Ego et vxor mea tactis Ewangeliis quod nec nos nec . heredes
+                        nostri nec aliqui per nos aliquod Ius uel clamium
+                        decetero In<lb/> predicta terra uel eius pertinenciis vendicabimus . Et si per nos uel per
+                        heredes nostros uel per aliquem eisdem questionem
+                        Inposterum moueri cont<lb/>igerit supra dicta terra racione proprietatis uel dotalicii uel quo alio modo
+                        nos et heredes nostri dictis Willelmo filio comitis et
+                        vxori eius<lb/> Cristiane Corbet Centum Marcas argenti soluemus ante litis ingressum nomine pene
+                        . Et nichilominus pro ausu nostro<lb/> temerario eisdem uolumus teneri ad plenum interesse . Subicientes personas
+                        nostras . possessiones . et Bona nostra omnia
+                        Iurisdiccioni<lb/> et potestati domini Episcopi Glasguensis vt nos ad obseruandum omnia premissa
+                        per censuram Ecclesiasticam appellacione remota
+                        compellat . Renunciantes in hoc facto priuilegio fori
+                        constitucioni de duabus dietis omnibus Inpetratis et
+                        inpetrandum et omni auxilio<lb/> et beneficio Iuris . <cl type="warrandice">Terram uero predictam cum omnibus pertinenciis suis modo supradicto Ego et
+                        heredes mei dicto Will<ex>elm</ex>o Et Cristiane Cor<lb/>bet vxori sue et heredibus eorum contra omnes homines Warantizabimus Inperpetuum</cl> .</cl> <cl type="witnesses">Hiis testibus . Domino Rogero Hauenel . Domino<lb/> Will<ex>elm</ex>o de Sumeruile . Domino Ioh<ex>ann</ex>e de Makeswel . Domino Alexsandro de striuelin . Domino radulfo Naymin . Domino<lb/> Bernard<ex>o</ex> de Hauden . Domino Waltero de Clapham . Domino Ada de Yatheam . Ioh<ex>ann</ex>e Hauenel . Et Multis aliis .</cl></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

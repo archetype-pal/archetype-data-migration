@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-988">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 1344</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 10:59:47.494623+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">988</idno>
+        <idno type="textcontent">1017</idno>
+        <idno type="transcription_textcontentxml">988</idno>
+        <idno type="translation_textcontentxml">989</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 1344</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 1344</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T10:59:47.494623+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T10:59:47.494623+00:00" status="approved">transcription moa=988 status=reviewed modified=2022-11-01 10:59:47.494623+00 | translation moa=989 status=reviewed modified=2022-11-01 10:59:47.484756+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>Rog<ex>erus</ex></persName> . dei Gr<ex>ati</ex>a Ecclesie Sancti Andr<ex>ee</ex> minister Humilis .</cl> Dilectis et fidelibus suis . Magistro Ranulfo eiusdem<lb/> Ecclesie Archidiacono et Officialibus suis <cl type="salutation">salutem et benedictionem</cl> .</cl> <cl type="disposition">Mandamus uobis . quatinus Cartas ob reuerentiam<lb/> Gloriosi Confessoris Cuthberti Dilectis filiis nostris . Priori et Monachis
+                     Dunelmen' a nobis indultas . in Comuni Ca<lb/>pituli nostri audientia legi et audiri faciatis . Vt si forte aliqua necessitas
+                     processu temporis super hoc emerserit<lb/> uos una cum prefato Capitulo nostro super ipsa concessione nostra testimonium
+                     perhibeatis ueritati .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Roger, by the grace of God humble servant of the church of St Andrews</cl>, to his own beloved and sworn men, Master Ranulf, archdeacon of the same
+                     church, and his officials, <cl type="salutation">greeting and blessing</cl>.</cl> <cl type="disposition">We command you that out of respect for Cuthbert the glorious confessor, the
+                  charters granted to our sons, the prior and monks of Durham,
+                  you cause to be read and heard in the common hearing of our
+                  chapter, so that if by chance any problem about it should
+                  emerge during the passage of time, you with our aformentioned
+                  chapter may bear witness to the truth of this our concession.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

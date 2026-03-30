@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-940">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 605</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 12:40:59.737842+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">940</idno>
+        <idno type="textcontent">967</idno>
+        <idno type="transcription_textcontentxml">940</idno>
+        <idno type="translation_textcontentxml">941</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 605</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 605</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T12:40:59.737842+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T12:40:59.737842+00:00" status="approved">transcription moa=940 status=reviewed modified=2022-11-01 12:40:59.737842+00 | translation moa=941 status=reviewed modified=2022-11-01 12:40:59.72699+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. W . dei gr<ex>ati</ex>a Rex Scott’ .</cl> Omnibus probis Hominibus totius terre sue clericis . et laicis  <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> me concessisse . et<lb/> hac mea carta confirmasse . renunctiationem . et abiurationem . quam Walterus .
+                     de Golin Cum Nichol<ex>ao</ex> et Ioha<ex>n</ex>ne fratribus suis . et cum Emme<lb/> matertera sua pro se et cognatione sua in plena curia prioris de Coldingham
+                     fecit de villa maioris lumesdene cum omnibus ad<lb/> eam spectantibus . et de iure quod in eadem villa habuit . pro una Carrucata
+                     terre quam prior Dunelm<ex>ensis</ex> . predicto Waltero et heredibus suis<lb/> concessit in territorio de Swinton’ . Quare uolo et firmiter precipio quatinus
+                     predicta renunciatio . et abiuratio ita firmiter . et<lb/> inuiolabiliter obseruetur  sicut . Carta predicti Will<ex>elm</ex>i testatur saluo seruicio meo .</cl> <cl type="witnesses">Test<ex>ibus</ex> . Walter<ex>o</ex> . et Will<ex>elm</ex>o Capellanis . meis . Ph<ex>ilippo</ex><lb/> de Valon<ex>iis</ex> . Camerario meo . Will<ex>elmo</ex> . Cumin . Will<ex>elm</ex>o de bosch<ex>o</ex> . et Hug<ex>one</ex> . clericis meis .</cl> <cl type="dating">Apud Hadingtun’ . viii . die Iulii .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex> by the grace of God king of the Scots</cl> to all worthy men of his entire land, clerk and lay, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have granted, and by this my charter to have made firm, the renunciation
+                     and abjuration that Walter of Gullane with Nicholas and
+                     John his brothers, and with Emma his maternal aunt, made
+                     for himself and his kindred in the full court of the prior
+                     of Coldingham, of the toun of greater Lumsdaine with
+                     everything belonging to it, and that which he had by right
+                     in the same toun, in return for one ploughgate of land
+                     which the prior of Durham granted to the said Walter and
+                     his heirs in the territory of Swinton. Wherefore I will
+                     and strictly enjoin that the said renunciation and
+                     abjuration be observed as firmly and inviolably as the
+                     charter of the said William bears witness. Saving my
+                     service.</cl> <cl type="witnesses">As witnesses, Walter and William my chaplains, Philip de Valognes my
+                  chamberlain, William Comyn, William del Bois, and Hugh, my
+                  clerks.</cl> <cl type="dating">At Haddington on the 8th day of July.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

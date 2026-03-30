@@ -1,0 +1,69 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-8">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Add. Ch. 76700</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-02-02 22:04:55.813979+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">8</idno>
+        <idno type="textcontent">8</idno>
+        <idno type="transcription_textcontentxml">8</idno>
+        <idno type="translation_textcontentxml">7</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 76700</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Add. Ch. 76700</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2022-02-02T22:04:55.813979+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2022-02-02T22:04:55.813979+00:00" status="published">transcription moa=8 status=live modified=2022-02-02 22:04:55.813979+00 | translation moa=7 status=live modified=2022-02-02 22:04:34.764905+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>Alex’</persName> . dei gratia Rex Scott’</cl> . Omnibus probis hominibus tocius terre sue . Clericis et laicis . <lb/> <cl type="salutation">Salutem</cl> . </cl><cl type="disposition"><cl type="notification">Sciant pres<supplied>e</supplied>ntes et futuri</cl> nos dedisse . et concessisse . et hac carta nostra confir<lb/>masse <persName>Thome</persName> de Alnot’ . Br<supplied>u</supplied>nschaith’ . et Achhencref’ . et <supplied>D</supplied>ergaual’ . per rectas diui<lb/>sas suas per quas <persName>Will<ex>elmu</ex>s</persName> filius <persName>Derman’</persName> . terras illas tenuit quas scilicet terras <persName>Will<ex>elmu</ex>s</persName> filius <lb/> eiusdem <persName>Will<ex>elm</ex>i</persName> filii . <persName>Derman’</persName> . nobis quietas clamauit per fustum et Baculum in curia <lb/> nostra apud Dunfres’ . pro se et heredibus suis . <cl type="holding">Tenend<ex>as</ex> . predicto <persName>Thom<ex>e</ex></persName> . de Alnot’ . et here<lb/>dibus suis . de nobis et heredibus nostris in feodo et hereditate . in terris et
+                        aquis . in pratis <lb/> et pascuis . in Moris et Maresiis . in stagnis et Molendinis . et cum omnibus
+                        aliis ad predictas <lb/> terras iuste pertinentibus . cum furca et fossa . cum socco et sacca . cum tol .
+                        et Them’ . et <lb/> Infanganethef’ . libere et quiete . plenarie et honorifice per seruicium quarte
+                        partis <lb/> unius Militis</cl> .</cl> <cl type="witnesses">Test<ex>ibus</ex> . <persName>Will<ex>elm</ex>o</persName> de Bosch’ . Cancell<ex>ario</ex> . <persName>Thom<ex>a</ex></persName> . de striuel’ . Archid<ex>iacono</ex> . Glasg<ex>uensi</ex> . Rog’ . Auenel’ <supplied>Ro</supplied>b’ . fil<ex>io</ex> . <persName>Rob’</persName> . de Ros’ . <persName>Joh<ex>ann</ex>e</persName> de Maccuswel’ . <persName>Pe<supplied>t</supplied>r<ex>o</ex></persName> . de Valon’ . <persName>Will<ex>elmo</ex> . Biset’</persName> . <persName>W<supplied>i</supplied>llelmo Auenel’</persName> . </cl>Apud E<supplied>d</supplied>[...] <cl type="dating">xxix . die septemb<ex>ris</ex> anno Regni domini Reg<ex>is</ex> decimo</cl> .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, king of the Scots,</cl> to all worthy men of his entire land, clerk and lay, <cl type="salutation">greeting</cl>.</cl> <cl type="notification">Let present and future know</cl> <cl type="disposition">us to have given, conceded, and by this our charter to have made firm, to Thomas
+                  d'Aunay, Burntscarthgreen, Auchencrieff, and Dargavel, by
+                  their own right boundaries by which William son of Derman
+                  held those lands, that is, the land which William son of the
+                  same William son of Derman has quitclaimed to us by staff and
+                  baton in our court at Dumfries for himself and his heirs. <cl type="holding">For the said Thomas d'Aunay and his own heirs to hold of us and our heirs in feu
+                     and heritage, in lands and waters, in meadows and
+                     pastures, in moors and marshes, in ponds and mills, and
+                     with all other things belonging by right to the foresaid
+                     lands, with gallows and ditch, with soke and sake, with
+                     toll and team, and infangtheif, freely and quitely, fully
+                     and honourably, by a quarter of the service of one knight.</cl></cl> <cl type="witnesses">As witnesses: William del Bois, chancellor; Thomas of Stirling, archdeacon of
+                  Glasgow; Roger Avenel; Robert son of Robert of Roos; John of
+                  Maxwell; Peter de Valognes; William Bisset; William Avenel.</cl> At Ed[inburgh?] on the <cl type="dating">29th day of September, in the tenth year of the lord king's reign</cl>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

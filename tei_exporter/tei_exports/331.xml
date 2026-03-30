@@ -1,0 +1,64 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-331">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/46</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:25:54.2925+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">331</idno>
+        <idno type="textcontent">331</idno>
+        <idno type="transcription_textcontentxml">331</idno>
+        <idno type="translation_textcontentxml">330</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/46</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/46</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T12:25:54.2925+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T12:25:54.2925+00:00" status="published">transcription moa=331 status=live modified=2021-04-06 12:25:54.2925+00 | translation moa=330 status=live modified=2021-04-06 12:25:52.597672+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis sancte Matris Ecclesie filiis presentibus et futuris . <cl type="intitulatio">Walterus filius Alani Dapifer regis scoct’</cl> . <cl type="salutation">salutem</cl> .</cl><lb/> <cl type="disposition"><cl type="notification">Sciatis me</cl> concessisse et hac Carta mea confirmasse deo et Ecclesie sancte Marie de Melros
+                     . et mo<lb/>nachis ibidem deo seruientibus donationem illam quam Walterus filius alani Auus
+                     meus fecit<lb/> illis de quatuor Carucatis terre in edmundest’ . <cl type="holding">habend’ et tenend’ in puram et perpetuam elemo<lb/>sinam adeo libere plenarie et quiete sicut idem monachi eas tenuerunt et tenent
+                        . et sicut Carta quam de eo habent testatur</cl> .</cl> <cl type="witnesses">Hiis Testibus . Will<ex>elm</ex>o de bosco Cancellario regis . Ro<lb/>gero Auenel . Alano de Mundegumeri . D<ex>aui</ex>D de lindesei . Rogero filio Glai . hug<ex>one</ex> Mauleuerer<lb/> Hugone Ridell’ . Radulfo nano . Will<ex>elm</ex>o heris . et Multis Aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church present and to come, <cl type="intitulatio">Walter son of Alan, Steward of the king of the Scots,</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know me</cl> to have granted and by this my charter to have made firm to God and to the
+                     church of Saint Mary at Melrose and to the monks in that
+                     place serving God the donation which Walter son of Alan,
+                     my grandfather, made to them of four ploughgates of land
+                     in 'Edmundestoun', <cl type="holding">to have and to hold in pure and everlasting alms as freely, fully and quitely as
+                     the same monks have held and do hold them, and just as the
+                     charter which they have from him bears witness</cl>.</cl> <cl type="witnesses">With these witnesses: William del Bois, the king's chancellor; Roger Avenel;
+                  Alan of Montgomery; David of Lindsay; Roger son of Glay; Hugh
+                  Mauleverer; Hugh Ridel; Ralph le Nain; William de Heriz; and
+                  many other.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

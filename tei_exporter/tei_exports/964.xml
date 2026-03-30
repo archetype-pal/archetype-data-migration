@@ -1,0 +1,65 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-964">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 726</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:41:10.553095+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">964</idno>
+        <idno type="textcontent">992</idno>
+        <idno type="transcription_textcontentxml">964</idno>
+        <idno type="translation_textcontentxml">965</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 726</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 726</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T11:41:10.553095+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T11:41:10.553095+00:00" status="approved">transcription moa=964 status=reviewed modified=2022-11-01 11:41:10.553095+00 | translation moa=965 status=reviewed modified=2022-11-01 11:41:10.535672+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis fidelibus Sancte ęcclesię <cl type="intitulatio">Gauterius de lyndesey</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerint tam futuri quam<lb/> presentes</cl> me dedisse et concessisse et hac mea carta confirmasse ęcclesię Sancte Marie de<lb/> Kelcho . et monachis ibidem deo seruientibus . ecclesiam de Ercheldune cum una
+                     carrucata<lb/> terrę et ceteris omnibus ad illam ecclesiam pertinentibus  in perpetuam
+                     elemosinam . pro anima<lb/> scilicet Regis d<ex>aui</ex>d . et pro anima Henrici Comitis filii eius . et pro anima Gauterii awunculi<lb/> mei . et pro anima mea et vxoris meę . et pro animabus omnium predecessorum et
+                     successorum<lb/> meorum . Et hospitale in eadem villa quietum erit ab omni reditu decimarum . Con<lb/>cedente et testificante Will<ex>elm</ex>o filio meo .</cl> <cl type="witnesses">Testibus . Hugone clerico . Will<ex>elm</ex>o . Capellano . Ioh<ex>ann</ex>e Capell<ex>an</ex>o de Sprostune . Ricard<ex>o</ex> Sacerdote de bothelden . Roberto Scriptore</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all the faithful of Holy Church, <cl type="intitulatio">Walter of Lindsay</cl> <cl type="salutation">sends greeting.</cl></cl> <cl type="disposition"><cl type="notification">Let those to come as well as those present know</cl> me to have given, granted, and by this my charter to have made firm, to the
+                     church of St Mary at Kelso, and to the monks serving God
+                     there, the church of Earlston with one ploughgate of land
+                     and all the rest belonging to it, in perpetual alms, for
+                     the soul of King David, and for the soul of Earl Henry his
+                     son, and for the soul of Walter my uncle, and for my own
+                     soul and for my wife's, and for the souls of all my
+                     ancestors and successors. And the hospital in the same
+                     toun shall be quit from all rent of teinds. William my son
+                     consents and witnesses.</cl> <cl type="witnesses">As witnesses, Hugh the clerk, William the chaplain, John the chaplain of
+                  Sprouston, Richard the priest of Bowden, Robert the scribe.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,63 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-69">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 676</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:44:43.340057+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">69</idno>
+        <idno type="textcontent">69</idno>
+        <idno type="transcription_textcontentxml">69</idno>
+        <idno type="translation_textcontentxml">70</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 676</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 676</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T20:44:43.340057+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T20:44:43.340057+00:00" status="approved">transcription moa=69 status=reviewed modified=2022-10-31 20:44:43.32557+00 | translation moa=70 status=reviewed modified=2022-10-31 20:44:43.340057+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Will<ex>elmu</ex>s de Lindesey</cl> . Omnibus sancte matris ecclesie filiis <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Notum sit omnibus videntibus uel audientibus <lb/> has literas</cl> me quantum ad me spectat sicut ad dominum fundi . dedisse et hac Carta mea
+                     confirmasse . deo et sancto <lb/> Cuthberto et monachis eiusdem sancti in Dunelmo seruientibus Ecclesiam de
+                     Erceldona cum vna Carucata terre <lb/> et omnibus aliis pertinenciis suis in puram et perpetuam elemosinam . <cl type="holding">Quare volo quod iidem monachi predictam <lb/> ecclesiam et omnia <supplied>a</supplied>diacencia illi libere et quiete et integre possideant in perpetuum . Et multuram
+                        suam <lb/> omnino quietam habeant</cl> . <cl type="warrandice">qui<supplied>cu</supplied>mque predictam ecclesiam de ipsis tenuerit promisi autem quod pro posse meo hanc <lb/> elemosina ad opus et utilitatem eclesie Dunelm’ manutenebo .</cl> </cl><cl type="witnesses">T<supplied>es</supplied>t'</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">William of Lindsay to all sons of Holy Mother Church sends <cl type="salutation">greeting</cl>. </cl><cl type="disposition"><cl type="notification">Let it be known to all who see or hear these letters</cl> that inasmuch as it pertains to me just as to the possessor I have given and by
+                     this my charter made firm, to God, Saint Cuthbert, and to
+                     the monks of the same saint serving God in Durham, the
+                     Church of Earlston with one ploughgate of land and all its
+                     other pertinents in pure and perpetual alms. <cl type="holding">Wherefore I will that the same monks should possess the aforesaid church and all
+                     that belongs to it so freely, quitely and wholly for ever.
+                     And they should have its multure entirely quit.</cl> <cl type="warrandice">And whosoever might hold the aforesaid church of them I have promised however
+                     that according to my ability I shall maintain this alms
+                     for the benefit and use of the church of Durham</cl>.</cl> <cl type="witnesses">As witness<ex>es</ex></cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

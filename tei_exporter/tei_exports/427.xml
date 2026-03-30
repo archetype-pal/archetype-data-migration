@@ -1,0 +1,81 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-427">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/153</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:16:01.555211+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">427</idno>
+        <idno type="textcontent">432</idno>
+        <idno type="transcription_textcontentxml">427</idno>
+        <idno type="translation_textcontentxml">428</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/153</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/153</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:16:01.555211+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:16:01.555211+00:00" status="published">transcription moa=427 status=live modified=2021-04-06 15:16:00.11029+00 | translation moa=428 status=live modified=2021-04-06 15:16:01.555211+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte Matris ecclesie filiis <cl type="intitulatio">Patricius de Ridale</cl> <cl type="salutation">Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciant presentes et posteri</cl> me concessisse et hac mea<lb/> carta confirmasse deo et ecclesie Sancte Marie de Meylros et Monachis ibidem deo
+                     seruientibus pro anima mea et animabus<lb/> omnium antecessorum et successorum meorum donationem Roberti de Bernoldebi de
+                     uiginti acris terre scilicet Rauenesfen quam<lb/> fecit predicte ecclesie in liberam elemosinam de illis duabus carrucatis terre
+                     quas ipse Robertus et heredes sui tenent de me<lb/> et heredibus meis in territorio de Wittun que date ei fuerunt pro seruicio suo
+                     in feudo et hereditate . <cl type="holding">Quare uolo<lb/> ut predicti monachi predictas . uiginti . acras teneant et possideant per easdem
+                        diuisas que continentur in carta ipsius<lb/> Roberti quam habent monachi de easdem terra cum omnibus libertatibus et
+                        pertinenciis suis ita libere quiete plenarie<lb/> et honorifice sicut carta ipsius Roberti testatur et confirmat . et sicut .
+                        aliquam aliam elemosinam liberius et quiecius<lb/> <supplied>tene</supplied>nt et possident . Saluo seruicio meo quod mihi et heredibus meis ipse Robertus
+                        et heredes sui pro eadem terra facient</cl> .</cl> <cl type="witnesses">His Test<ex>ibus</ex> . scilicet domino . I . Glasg<ex>uensi</ex> Episcopo . Ernaldo abbate Rieuall<ex>ensi</ex> . Symon<ex>e</ex> glasg<ex>uensi</ex> archidiac<ex>ono</ex> . Ioh<ex>ann</ex>e de hunted’<lb/> Will<ex>el</ex>mo filio ioh<ex>ann</ex>is . Rog<ex>ero</ex> de Berkelei . Ric<ex>ardo</ex> naim . Henr<ex>ico</ex> de molle . adam de chathou . Rad<ex>ulfo</ex> Ridale . Adam<lb/> . . . Alexandro filio Walleui de lillesclif . et aliis multis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, <cl type="intitulatio">Patrick of Ryedale</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have licensed and by this my charter made firm to God and to the church of
+                     St Mary at Melrose and to the monks serving God in that
+                     place for my soul and the souls of all my ancestors and
+                     successors the donation of Robert of Barnoldby in respect
+                     of twenty acres of land, namely ‘Raven’s Fen’, which he
+                     made to the said church in free alms from the two
+                     ploughgates of land that Robert himself and his heirs hold
+                     of me and my heirs in the territory of Whitton which were
+                     given to him in return for his service in feu and
+                     heritage. <cl type="holding">Wherefore I will that the said monks should hold and possess the said twenty
+                     acres by the same boundaries which are contained in
+                     Robert’s own charter which the monks have concerning the
+                     same land, with all its liberties and pertinents, as
+                     freely, quitely, fully and honourably as Robert’s own
+                     charter bears witness and affirms, and just as they freely
+                     and quitely hold and possess any other alms. Saving my
+                     service which Robert himself and his heirs shall do for me
+                     and my heirs in return for the same land.</cl></cl> <cl type="witnesses">With these witnesses: namely, the lord J(ocelin) bishop of Glasgow; Arnold abbot
+                  of Rievaulx; Simon archdeacon of Glasgow; John of Huntingdon;
+                  William son of John; Roger of Berkeley; Richard le Neym;
+                  Henry of Mow; Adam of Chatto; Ralph of Ryedale; Adam . . .
+                  Alexander son of Waldef of Lilliesleaf; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

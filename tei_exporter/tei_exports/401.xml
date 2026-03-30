@@ -1,0 +1,73 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-401">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/140</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:01:51.697184+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">401</idno>
+        <idno type="textcontent">405</idno>
+        <idno type="transcription_textcontentxml">401</idno>
+        <idno type="translation_textcontentxml">402</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/140</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/140</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:01:51.697184+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:01:51.697184+00:00" status="published">transcription moa=401 status=live modified=2021-04-06 15:01:50.196722+00 | translation moa=402 status=live modified=2021-04-06 15:01:51.697184+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-size: 16.0pt; font-family: Junicode;"><cl type="address">Omnibus hanc Cartam visuris vel audituris . <cl type="intitulatio">Symon Mauleuerer et Gilibertus Auenel</cl> <cl type="salutation">salutem</cl></cl> .<lb/> <cl type="disposition"><cl type="notification">Nouerit vniuersitas uestra</cl> nos concessisse et presenti Carta nostra confirmasse Helene filie Symonis de<lb/> lindesie terram de hungerigge In territorio de Molle . quam scilicet dictas
+                        Helena tenet In feudo nostro<lb/> de Molle de Roberto de polloch . et ysabell<ex>a</ex> uxore eius . Et Insuper quoddam partum sub hederedesete In ter<lb/>ra nostra . quod vocatur holemede . <cl type="holding">Habend’ et tenend’ dicte helene et heredibus suis de nobis et<lb/> heredibus nostris . In perpetuum Iure hereditario . libere . quiete . plenarie
+                           et honorifice . eodem modo in omnibus<lb/> et per omnia  sicut Carta Symonis de lindesie patris sui proportat . testatur .
+                           et confirmat</cl> .<lb/> <cl type="sealing">Et vt hec concessio nostra et confirmatio eidem helene et heredibus suis rata et
+                        inconcussa in posterum<lb/> permaneat  ego Symon mauleuerer huic Carte sigillum meum apposui . Ego uero
+                           Gilibertus a<lb/>uenel quia sigillum proprium non habuit  eam sigillo Will<ex>elm</ex>i auenel patris mei confirmaui .</cl></cl> <cl type="witnesses">Hiis testibus<lb/> Ricardo de Lincoln<ex>ia</ex> . Rad’ Le Neym . Symone de grubbeheued . Ada de yetham . Ioh<ex>ann</ex>e de Munford .<lb/> Ada filio Nicholai . Henr<ex>rico</ex> filio vlf . et multis aliis :</cl></span>
+        </p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall see or hear this charter, <cl type="intitulatio">Simon Mauleverer and Gilbert Avenel</cl> <cl type="salutation">send greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let your whole community know</cl> us to have granted and by our present charter to have made firm to Helen
+                     daughter of Simon of Lindsay the land of ‘Hungerigge’ in
+                     the territory of Mow, that is, which the said Helen holds
+                     in our feu of Mow of Robert of Pollok and Isabel his wife.
+                     And in addition a portion <ex>of land</ex> near ‘Hederedesete’ in our land, which is called ‘Holemede’. <cl type="holding">For the said Helen and her heirs to have and to hold of us and our heirs for
+                     ever by right of heritage, freely, quitely, fully and
+                     honourably, in the same way in all things and through all
+                     things, just as the charter of Simon of Lindsay, her
+                     father, shows, bears witness and confirms</cl>. <cl type="sealing">And that this our grant and confirmation to the same Helen and her heirs should
+                     endure established and undisputed into the future, I Simon
+                     Mauleverer apply my seal to this charter. And I Gilbert
+                     Avenel, since I do not have my own seal, have confirmed it
+                     with the seal of my father, William Avenel</cl>.</cl> <cl type="witnesses">With these witnesses: Richard of Lincoln; Ralph le Nain; Simon of Grubbit; Adam
+                  of Yetholm; John of Munford; Adam son of Nicholas; Henry son
+                  of Ulf; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,58 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-816">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 619</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.718447+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">816</idno>
+        <idno type="textcontent">831</idno>
+        <idno type="transcription_textcontentxml">816</idno>
+        <idno type="translation_textcontentxml">817</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 619</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 619</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T14:52:15.718447+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T14:52:15.718447+00:00" status="approved">transcription moa=816 status=reviewed modified=2022-11-01 14:52:15.708456+00 | translation moa=817 status=reviewed modified=2022-11-01 14:52:15.718447+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. <cl type="intitulatio">A . dei Gr<ex>ati</ex>a Rex Scott’</cl> . R . de Bernham’ maiori et prepositis suis de Berwic’ <cl type="salutation">salutem</cl></cl> . <cl type="disposition">Mandamus uobis<lb/> et precipimus . quatinus extraneos mercatores qui uenient usque prioratum de
+                     Coldingham’ ad lanam et alias merca<lb/>turas prioris et conuentus de Coldingham emend<ex>as</ex> . nullo modo inpediatis  quin dictas mercaturas emere<lb/> et abducere possint . saluis nobis antiquis consuetudinibus nostris .</cl> <cl type="witnesses">Test<ex>ibus</ex> . P . Com<ex>ite</ex> . de Dunbar’ . Walter<ex>o</ex> .<lb/> Olif<ex>ard</ex> . Iustic’ . Laodon<ex>ie</ex> .</cl> <cl type="dating">apud Edinburc . xii . die Aprilis . Anno Regni . domini Reg<ex>is</ex> . Vicesimo . quarto .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">A<ex>lexander</ex> by the grace of God king of the Scots</cl> to R<ex>obert</ex> of Bernham his mayor and provost of Berwick <cl type="salutation">greeting</cl>.</cl> <cl type="disposition">We command you and enjoin, that you by no means hinder foreign merchants who
+                  come to the priory of Coldingham for buying the wool and
+                  other merchandise of the prior and convent of Coldingham, but
+                  that they should be able to buy and transport the said
+                  merchandise, reserving to ourselves our ancient customs.</cl> <cl type="witnesses">As witnesses, P<ex>atrick</ex> earl of Dunbar, Walter Oliphant, justiciar of Lothian,</cl> <cl type="dating">at Edinburgh, the 12th day of April, in the year of the reign of the lord king,
+                  the twenty-fourth [1238].</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

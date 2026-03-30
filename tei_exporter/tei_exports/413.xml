@@ -1,0 +1,77 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-413">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/141</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:06:37.856219+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">413</idno>
+        <idno type="textcontent">418</idno>
+        <idno type="transcription_textcontentxml">413</idno>
+        <idno type="translation_textcontentxml">414</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/141</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/141</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:06:37.856219+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:06:37.856219+00:00" status="published">transcription moa=413 status=live modified=2021-04-06 15:06:35.762427+00 | translation moa=414 status=live modified=2021-04-06 15:06:37.856219+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-family: Junicode;"><supplied>Sciant prese</supplied><cl type="disposition"><cl type="notification">ntes quam futuri quod</cl> <cl type="intitulatio">Ego Simon de Lindess’</cl> dedi . Concessi . et hac Carta mea confirmaui Patricio homini meo et<lb/> . . . <supplied>pro</supplied> homagio . et seruicio suo in terra mea de Molle quam ex dono matris mee habui .
+                        sex acras terre . et unam acram prati<lb/> <supplied>et unam</supplied> acram et dimid<ex>iam</ex> terre in tofto et crofto et unam acram prati illi terre proximam iuxta
+                        Erdeburesburne . et subchest<ex>re</ex>s<lb/> . . . ras . et super Selestede ade . duas acras et dimid<ex>iam</ex> . <cl type="holding">Tenend’ . sibi et heredibus suis de me et heredibus meis in feodo et hereditate<lb/> <supplied>libere</supplied> et quiete . plenarie et honorifice cum omnibus etiam communibus a[i]siamentis
+                           terre mee et communibus aisiamentis que homines mei
+                           in <supplied>terr</supplied>a matris mee<lb/> <supplied>possu</supplied>nt et habere debent . Reddendo mihi et heredibus meis . unam libram Cimini . uel
+                           tres denarios ad festum sancti . Iacobi . pro
+                           omnibus serui<lb/><supplied>ciis</supplied> ad me uel ad heredes meos pertinentibus . et faciendo forinsecum seruicium
+                           quantum pertinet ad tantum terre in terra mea</cl> . volo itaque<lb/> . . . <supplied>ut mihi et</supplied> heredibus meis pro forisfactio suo det quatuor denarios . et pro auxilio suo
+                        mihi et heredibus meis . sex denarios .</cl><lb/> <cl type="witnesses"><supplied>His testibus Pe</supplied>tro de valoniis . Roberto de Rap<ex>er</ex>l’ . Ada de waleuhop’ . Ada de whitton’ . et Gileberto filio suo . Waltero de<lb/> . . . Ric’ Scoto . M<ex>er</ex>uino de Molle . Ric’ . clerico . et multis aliis .</cl></span>
+        </p>
+      </div>
+      <div type="translation">
+        <p><cl type="disposition"><cl type="notification">Let present and future know that</cl> <cl type="intitulatio">I, Simon of Lindsay,</cl> have given, granted, and by this my charter made firm to Patrick my man and [in
+                     return for] his homage and service in my land at Mow,
+                     which he has had from the gift of my mother, six acres of
+                     land, and one acre of meadow, and one and a half acres of
+                     land in toft and croft, and one acre of meadow of the the
+                     land nearest ‘Erdeburesburne’, and ‘Subchestres[?burne]’ . <supplied>?two acres</supplied> . and upon ‘Selestede Adam’ two and a half acres; <cl type="holding">for him and his heirs to hold of me and my heirs in feu and heritage freely and
+                     quitely, fully and honourably, also with all common
+                     easements of my land and common easements which my men in
+                     my mother’s land [can] and ought to have; by paying me and
+                     my heirs one pound of cumin or three pence at the feast of
+                     St James in return for all services pertaining to me or my
+                     heirs, and by doing such forinsec service on my land as
+                     pertains to such an amount of land;</cl> I therefore will that he should give four pence [to me and] my heirs for his
+                     fine, and six pence for his aid.</cl> <cl type="witnesses">[With these witnesses: Peter] de Valognes; Robert of Rapelaw; Adam of Wauchope;
+                  Adam of Whitton, and Gilbert his son; Walter de . . . Richard
+                  Scott; Mervyn of Mow; Richard the clerk; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

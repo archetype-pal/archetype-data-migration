@@ -1,0 +1,114 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-284">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/29</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 09:53:25.590212+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">284</idno>
+        <idno type="textcontent">284</idno>
+        <idno type="transcription_textcontentxml">284</idno>
+        <idno type="translation_textcontentxml">285</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/29</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/29</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T09:53:25.590212+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T09:53:25.590212+00:00" status="published">transcription moa=284 status=live modified=2021-04-06 09:53:25.590212+00 | translation moa=285 status=live modified=2021-04-06 09:53:21.896797+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris Ecclesie filiis presentibus et futuris <cl type="intitulatio"><persName>Dunecanus</persName> filius <persName>Gilleberti</persName> filii <persName>Fergus</persName></cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis me</cl> concessisse et dedisse<lb/> et hac mea Carta confirmasse deo et Ecclesie sancte Marie de Melr’ et monachis
+                     ibidem deo seuientibus pro animabus <persName>d<ex>aui</ex>d</persName> et <persName>Melcolmi</persName><lb/> Regum dominorum meorum . et Comitis . <persName>Henr<ex>ici</ex></persName> . et pro salute domini mei <persName>Will<ex>elm</ex>i</persName> Regis . et Comitis . <persName>d<ex>aui</ex>d</persName> . fratris eius . et Comitis . <persName>Dun’ec’</persName> . et pro salute mea et<lb/> animabus patris mei et matris mee . et omnium antecessorum et successorum meorum
+                     in liberam et puram et perpetuam Elemosinam totam terram<lb/> de Moybothelbeg per has diuisas . <cl type="boundaries">Scilicet a capite burne que descendit de Crumder deorsum usque in Culelu<ex>n</ex>gford et sicut<lb/> eadem burna descendit de Culelu<ex>n</ex>gford in polnetib’ . et sicut polnetib’ cadit in Don . et per Don sursum usque
+                        ubi polgarroh<lb/> cadit in Don . et sic sursum per polnegarrah usque ad paruuam mussam . et inde
+                        usque sicum quendam qui descendit ex australi par<lb/>te eiusdem musse in polnegarrah . et per eundem sicum sursum usque ubi idem
+                        sicus ascendit in polnecogi . et polnecogi ascendit in<lb/> Duuah . et inde per sicum sursum usque ad uiam que uocatur Enahconecal . et per
+                        eandem uiam deorsum usque ad burnam que descendit<lb/> de predicto Crumder .</cl> Preterea concessi et dedi et hac mea Carta confirmaui predictis monachis et
+                     Ecclesie de Melr’ totam terram de Be<lb/>thoc in liberam et puram et perpetuam Elemosinam per has diuisas . <cl type="boundaries">Scilicet a Lemenelung uersus orientem per uiam usque ad Neskecoke<lb/>ri . et inde uersus orientem usque ad magnam massam de salicibus . et inde
+                        deorsum ex aquilonali parte Croah parui usque ad Gallan
+                        .<lb/> et inde uersus orientem usque ad sicum qui uadit ex aquilonali parte nigre rupis
+                        . et per eundem sicum usque ad locum qui uocatur
+                        Tunregaith .<lb/> ubi de ipso sico exit Riuulus quidam qui dicitur Polnesalahari . et inde usque
+                        ubi idem Riuulus cadit in polnetyberes .</cl> Totam<lb/> hanc terram tam illam de Moybothelbeg quam istam de Bethoc cum omnibus
+                     pertinentiis suis . et quicquid continetur infra prenomina<lb/>tas diuisas in bosco et plano . in pratis et pasturis . in uiis et semitis . in
+                     moris et mariscis . in terris et aquis et piscariis<lb/> et in Omnibus aliis rebus et aisiamentis <cl type="holding">dedi predictis monachis et Ecclesie de Melr’ tenenda et possidenda in perpetuum
+                     ita libere<lb/> et quiete plenarie et honorifice et absolute ab omni terreno seruitio et
+                        consuetudine et exactione seculari sicut aliquam Elemo<lb/>sinam liberius et quietius plenius et honorificentius tenent uel possident . ita
+                        tamen quod annis singulis dabunt mihi et heredibus meis
+                        tantum<lb/> duas Marcas argenti ad recognitionem pro terra de Bethoc . unam scilicet Marcam
+                        . ad pentecosten . et unam ad festum sancti martini .</cl><lb/> Et ipsi monachi utentur omnibus prenominatis ad libitum suum modis omnibus sicut
+                     melius et utilius sibi et suis uisum fuerit .</cl> <cl type="warrandice">et ego<lb/> et heredes mei manutenebimus et warantizabimus eis hec omnia contra omnes
+                     homines inperpetuum et adquietabimus de omni seruitio .</cl><lb/> Et quia uolui ut hec mea Elemosina firma esset et stabilis et nullo modo posset
+                  in irritum duci horum omnium testes et fideiussores posu<lb/>i Episcopum et Ecclesiam Glasguen<ex>sem</ex> . ut si aliquando ego uel heredes mei a tenore huius Carte deuiauerimus . ipsa
+                  Ecclesia et eius pontifi<lb/>ces per ecclesiasticam censuram ad correctionem nos reuocent . <cl type="witnesses">Hiis test<ex>ibus</ex> . Domino <persName>Iocel<ex>ino</ex></persName> . Glasguen<ex>si</ex> . Episcopo . <persName>Will<ex>elm</ex>o</persName> Abbate de<lb/> sancta cruce . <persName>Simone</persName> archidiacono . Comite . <persName>Dunec<ex>ano</ex></persName> . <persName>Malcolmo</persName> filio eius . Comite . <persName>Gilleb’</persName> . <persName>Eth</persName> filio Comite . de Leuen’ . <persName>Rog’</persName> . de<lb/> Scalebroc . <persName>Gilleasald</persName> mac <persName>Gilleandres</persName> . <persName>Gillenem</persName> mac <persName>Coleman</persName> . <persName>Edgaro</persName> Camerario meo . <persName>Gillecrist Bretnach</persName> .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, present and future, <cl type="intitulatio">Duncan son of Gilbert son of Fergus</cl>, <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition"><cl type="notification">Know that</cl> I have granted and given and by this my charter made firm to God and to the
+                     church of St Mary at Melrose and to the monks serving God
+                     there, for the souls of my lords, the kings David and
+                     Malcolm, and of Earl Henry, and for the salvation of my
+                     lord, King William, and of Earl David his brother, and of
+                     Earl Duncan, and for my own salvation and the souls of my
+                     father and my mother, and of all my ancestors and
+                     successors, in free and pure and perpetual alms, the whole
+                     land of Maybole-beg by these boundaries: <cl type="boundaries">That is, from the head of the burn that descends from <ex>Crumder</ex> downwards as far as <ex>Culelungford</ex> and as the same burn descends from <ex>Culelungford</ex> to <ex>Polnetib’</ex>, and as <ex>Polnetib’</ex> falls into the Doon, and by the Doon upwards as far as where <ex>Polgarroh</ex> falls into the Doon, and so upwards by the <ex>Polnegarrah</ex> as far as the small peat bog, and thence as far as a syke which goes down from
+                        the south side of the same peat bog to <ex>Polnegarrah</ex>, and by the same syke upwards as far as where the same syke goes up to <ex>Polnecogi</ex>, and <ex>Polnecogi</ex> ascends to <ex>Duuah</ex>, and thence by the syke upwards as far as the road which is called <ex>Enahconecal</ex>, and by the same road downwards as far as the burn that descends from the said <ex>Crumder</ex>.</cl> In addition, I have granted and given and by this my charter made firm to the
+                     said monks and church of Melrose the whole land of Beoch
+                     in free and pure and perpetual alms by these boundaries,
+                     that is, <cl type="boundaries">from <ex>Lemenelung</ex> eastwards by the road as far as <ex>Neskecokeri</ex> and from there eastwards as far as a great spread of willows, and thence
+                        downwards from the northern side of <ex>Croah</ex> <ex>paruus</ex> to <ex>Gallan</ex>, and from there eastwards as far as a syke which goes from the northern side of
+                        the black rock, and from the same syke as far the place
+                        which is called <ex>Tundregaith</ex>, where from this syke a certain stream, which is called <ex>Polnesalahart</ex>, comes out, and from there as far as where the same stream falls into the <ex>Polnetyberes</ex>.</cl> This whole land as well that of Maybole-beg as that of Beoch, with all their
+                     pertinents, and whatever is contained within the said
+                     boundaries in wood and plain, in meadows and pastures, in
+                     roads and paths, in moors and marshes, in lands and waters
+                     and fisheries, and in all other things and easements, <cl type="holding">I have given to the said monks and the church of Melrose to be held and
+                     possessed in perpetuity as freely and quietly, fully and
+                     honourably, and loosed from every earthly service and
+                     custom and secular exaction as they hold or possess any
+                     alms freely and quietly, fully and honourably, provided
+                     that they shall give to me and my heirs each year no more
+                     than two merks of silver as a recognition in return for
+                     the land of Beoch, that is, one merk at Pentecost, and one
+                     at the feast of St Martin.</cl> And the monks shall make use of all the aforementioned at their pleasure, by all
+                     means, just as it seems good and useful to them and their
+                     men.</cl> <cl type="warrandice">And I and my heirs shall maintain and warrant these things to them against all
+                  men for ever and we shall discharge them from all service.</cl> And because I have willed that this my alms be firm and secure and that it could
+                  by no means be brought to nought, I have placed the bishop
+                  and church of Glasgow as witnesses and sureties of these
+                  things, so that if at any time I or my heirs stray from the
+                  purport of this charter, that church and its bishop may call
+                  us back to correction by ecclesiastical censure. <cl type="witnesses">With these witnesses, the lord Jocelin, bishop of Glasgow, William abbot of
+                  Holyrood, Simon the archdeacon, Earl Duncan, Malcolm his son,
+                  Earl Gilbert, Aed the son of the earl of Lennox, Roger of
+                  Skelbrooke, Gilla Asaild mac Gillanders, Gilla na Naem mac
+                  Colman, Edgar my chamberlain, Gilchrist Bretnach.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

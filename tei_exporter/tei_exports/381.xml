@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-381">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/88</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 13:20:42.48686+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">381</idno>
+        <idno type="textcontent">385</idno>
+        <idno type="transcription_textcontentxml">381</idno>
+        <idno type="translation_textcontentxml">382</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/88</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/88</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T13:20:42.48686+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T13:20:42.48686+00:00" status="published">transcription moa=381 status=live modified=2021-04-06 13:20:42.48686+00 | translation moa=382 status=live modified=2021-04-06 13:20:40.864506+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Robertus de londoniis</cl> Omnibus filiis eccleise tam clericis quam laicis <cl type="salutation">salutem</cl></cl><lb/> <cl type="disposition"><cl type="notification">Notum sit uobis</cl> me hac mea presenti carta comfirmasse cartam<lb/> patris mei qua dedit et comfirmauit deo et sancte Marie et monachis de<lb/> melros dimidiam carrucatam terre . sed et ego ipsi dimidie carrucate<lb/> appossui et adieci reliquum terre <cl type="boundaries">quod adiacet usque ad derestredt et<lb/> sicut uia descendit in oblico apud orientem usque intorrentem</cl> . Hec omnia concessi . et dedi pro salute anime mee . et pro anima thome patrui
+                     mei .<lb/> et pro animabus patris et matris mee et omnium parentum meorum .</cl> <cl type="witnesses">His<lb/> test<ex>ibus</ex> . Will<ex>elm</ex>o filio odardi . et henrico filio iordani . Will<ex>elm</ex>o cle<lb/>rico . de chausi . Rog<ex>er</ex>o clerico . qui hanc cartam scripsit . Ricardo de<lb/> cameis . et Macho preposito . et Osmundo famulo meo</cl> .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Robert of London</cl> <cl type="salutation">sends greeting</cl> to all sons of the Church, both clergy as well as laity.</cl> <cl type="disposition"><cl type="notification">Be it known to you</cl> that by this my present charter I have confirmed my father's charter by which he
+                     gave and confirmed to God and to St Mary at Melrose half a
+                     ploughgate of land. I have added and applied to that half
+                     ploughgate of land the rest of the land <cl type="boundaries">which lies contiguous as far as 'Derestredt' and as the road descends in a
+                     slanting direction on the east down to the stream</cl>. All these things I have granted and given for the salvation of my soul, and
+                     for the soul of Thomas my father's brother, and for the
+                     souls of my father and mother, and of all my ancestors.</cl> <cl type="witnesses">With these witnesses: William son of Odard, and Henry son of Jordan; William the
+                  clerk, of Chausi; Roger the clerk, who wrote this charter;
+                  Richard de Cameis, and Machus the provost; and Osmund my
+                  servant. </cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

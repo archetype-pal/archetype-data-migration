@@ -1,0 +1,69 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-142">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 60</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-01-31 16:29:10.868826+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">142</idno>
+        <idno type="textcontent">142</idno>
+        <idno type="transcription_textcontentxml">142</idno>
+        <idno type="translation_textcontentxml">143</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 60</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 60</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2018-01-31T16:29:10.868826+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2018-01-31T16:29:10.868826+00:00" status="published">transcription moa=142 status=live modified=2018-01-31 16:29:10.868826+00 | translation moa=143 status=live modified=2016-06-07 14:48:57.105673+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris Ecclesie filiis . <cl type="intitulatio">Henricus Comes de hathodl</cl>’ <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Sciant omnes tam presentes quam futuri</cl> <lb/> <cl type="disposition">me concessisse . ⁊ hac mea Carta confirmasse deo ⁊ Ecclesie sancti andree
+                  apostoli ⁊ Canonicis ibidem deo ser<lb/>uientibus ⁊ seruituris . Ecclesiam de Dul cum capella . et terris . ⁊ cum
+                     omnibus ad eam iuste pertinenetibus . in liberam <lb/> ⁊ perpetuam elemosinam . pro salute anime mee . ⁊ commitisse sponse mee . ⁊ pro
+                     animabus antecessorum ⁊ successorum <lb/> meorum . <cl type="holding">Quare uolo ut predicti Canonici predictam ecclesiam ⁊ omnia ad eam pertinentia
+                     ita libere <lb/> ⁊ quiete teneant ⁊ possideant . sicut liberius ⁊ quietius aliqua elemosina
+                        tenetur ⁊ possidetur intoto regno <lb/> scotorum . Sicut in carta Malcolmi commitis patris mei continetur</cl> .</cl> <cl type="witnesses">Testibus . Comitissa Magareta sponsa mea <lb/> Alexandro de Setona . Malisio Iudice . Colino nepote meo . Michaele <persName><roleName>camerario</roleName></persName> meo . Anegus clerico meo <lb/> Ricardo clerico domini Electi sancti Andree .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, <cl type="intitulatio">Henry Earl of Atholl</cl> <cl type="salutation">sends greeting</cl>:</cl> <cl type="notification">Let all people, present as well as future, know</cl> <cl type="disposition">that I have granted, and by this my charter made firm, to God and the church of
+                  St Andrew the apostle, and to the canons serving God in that
+                  place now and in the future, the church of Dul, with chapel,
+                  and lands, and with all things rightfully pertaining to it,
+                  in free and perpetual alms, for my own soul, and of my spouse
+                  the countess, and for the souls of my ancestors and
+                  successors. <cl type="holding">Wherefore I will that the aforesaid canons should hold and possess the aforesaid
+                     church and everything that pertains to it, as freely and
+                     quietly as any alms is freely and quietly held and
+                     possessed in the whole kingdom of the Scots, just as it is
+                     contained in the charter of Earl Malcolm my father</cl>.</cl> <cl type="witnesses">As witnesses: Countess Margaret, my spouse; Alexander of Seton; Malise the
+                  judex; Colin my nephew; Michael my chamberlain; Angus my
+                  clerk; Richard, clerk of the lord <ex>bishop</ex> elect of St Andrews.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

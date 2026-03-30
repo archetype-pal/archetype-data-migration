@@ -1,0 +1,69 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-231">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/250</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-24 13:33:18.901534+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">231</idno>
+        <idno type="textcontent">230</idno>
+        <idno type="transcription_textcontentxml">231</idno>
+        <idno type="translation_textcontentxml">230</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/250</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/250</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-02-24T13:33:18.901534+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-02-24T13:33:18.901534+00:00" status="published">transcription moa=231 status=live modified=2017-02-24 13:33:16.425651+00 | translation moa=230 status=live modified=2017-02-24 13:33:18.901534+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. W . dei Gratia Rex Scott’ : Omnibus probis Hominibus Tocius Terre Sue .
+                  Clericis<lb/> ⁊ laicis  Salutem.</cl> <cl type="disposition">Sciant presentes ⁊ futuri . me Concessisse . ⁊ Hac Carta mea<lb/> Confirmasse . Deo ⁊ Ecclesie Sancte crucis de Edenburg : ⁊ Canonicis ibidem deo<lb/> seruientibus ⁊ seruituris  Ecclesias illas in Galweia . quas fergus . ⁊
+                     Vchtredus filius eius .<lb/> ⁊ D<ex>aui</ex>D . filius Terri . eis dederunt. Quas Ecclesias . Ioh<ex>anne</ex>s Candide Case Episcopus eisdem<lb/> Canonicis Carta sua Confirmauit . ⁊ in proprios usus Conuertendas . concessit.
+                     Tenend’ . in liberam ⁊ puram ⁊ perpetuam Elemosinam . cum
+                     Omnibus iustis perti<lb/>nentiis suis . ita libere ⁊ Quiete . plenarie ⁊ Honorifice . sicut Carta
+                     predicti<lb/> Ioh<ex>annis</ex> . Episcopi testatur.</cl> <cl type="witnesses">Test<ex>ibus</ex> Walter<ex>o</ex> . Episcopo Glasguense . Hug’ . abbate de Iedd’ . Oliuer . Capel<lb/>lano meo . Philipp’ . de Valon’ . Camerario . meo . Will<ex>elmo</ex> . Cumin . <persName><roleName>Iustic’ . Scott’</roleName></persName> : Will<ex>elmo</ex> de Bosch’ .<lb/> Clerico meo . Will<ex>elmo</ex> . de Valon’ . Ric’ . Reuel.</cl> Apud Ieddewrth . xviii . die Aprilis.</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">William by the grace of God king of Scots to all worthy men of the whole of his
+                  land, clerk and lay, Greeting:</cl> <cl type="disposition">Let present and future know that I have granted and by this my charter made firm
+                  to God and to the church of Holyrood in Edinburgh and to the
+                  canons serving God there now and to come those churches in
+                  Galloway that Fergus and Uhtred his son and David son of
+                  Terrus gave to them. These churches John the bishop of
+                  Whithorn confirmed to the same canons by his charter, and
+                  granted, to be converted to their own benefit. To be held in
+                  free and pure and perpetual alms, with all their just
+                  pertinents, as freely and quietly, fully and honourably, as
+                  the charter of the aforesaid Bishop John bears witness.</cl> <cl type="witnesses">As witnesses, Walter the bishop of Glasgow, Hugh the abbot of Jedburgh, Oliver
+                  my chaplain, Philip de Valognes my chamberlain, William
+                  Comyn, <persName><roleName>justice of the Scots</roleName></persName>, William del Bois my clerk, William de Valognes, Richard Revel.</cl> At Jedburgh on the 18th day of April.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

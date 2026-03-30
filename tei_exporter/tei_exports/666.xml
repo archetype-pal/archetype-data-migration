@@ -1,0 +1,110 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-666">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.14</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:40:02.415608+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">666</idno>
+        <idno type="textcontent">676</idno>
+        <idno type="transcription_textcontentxml">666</idno>
+        <idno type="translation_textcontentxml">667</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.14</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.14</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:40:02.415608+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:40:02.415608+00:00" status="published">transcription moa=666 status=live modified=2021-04-05 08:40:02.415608+00 | translation moa=667 status=live modified=2021-04-05 08:40:00.688555+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. <persName>W .</persName> dei gr<ex>ati</ex>a Rex scott’</cl> . Ep<ex>iscop</ex>is . Abbatibus . Comitibus . Baronibus . Iusticiis . Ministris . et Omnibus
+                     probis hominibus totius terr<supplied>e</supplied> s<supplied>u</supplied>e . Clericis et Laicis . <cl type="salutation">Salutem</cl> .</cl><lb/> <cl type="notification">Sciatis</cl> <cl type="disposition">me pro anima mea et pro animabus patris et matris mee et Aui mei regis <persName>dauid</persName> . et fratrum et Sororum et Antecessorum et successorum meorum Concessisse<lb/> et dedisse deo et ęcclesię Sancte Marie de Melr’ et monachis ibidem deo
+                     seruientibus de Rieuall<ex>e</ex> . in liberam et perpetuam elemosinam terram de Melros .<lb/> et terram de Heldune . et terram de Dernewic . libere et honorifice perpetuo
+                     tenore possidere . Insuper sciatis me dedisse et
+                     concessisse eis per totum forestum<lb/> meum de Seleschirche et de treuequair aisiamenta sua . scilicet ligna . materiem
+                     et pasnagium ad suos proprios usus ubicumque sibi melius
+                     et utilius poterunt inuenire . In<lb/>super do eis et confirmo totam pasturam per fluuium Galghe uersus eos . <cl type="boundaries">scilicet ab orientali parte . sicut idem fluuius currit usque ad terminos de
+                     Wedale . et inde per<lb/> rectas diuisas terre <persName>Ric<ex>ardi</ex></persName> de Moreuill<ex>a</ex> . scilicet de Galghe usque ad leddre</cl> . et totum usagium nemoris infra prenominatas diuisas ad suos proprios usus .
+                     sicut eis opus fuerit .<lb/> Preterea et in aquis de Tweda infra terminos eorum piscaturam tam ex mea parte
+                     fluminis quam ex eorum parte ubique . Et preter supradicta
+                     dedi et concessi eis<lb/> ad incrementum . Galtune side <cl type="boundaries">per has diuisas . scilicet sicut leder fluuius cadit in Tweda . et ita sursum
+                     usque ad Burnam de fauchope que cadit in le<lb/>ddre . et ita sursum per eandem Burnam . et sic per transuersum more usque ad
+                        Raburne que cadit in Aloent . et sic per eundem fluuium
+                        Aloent usque<lb/> in Twedam</cl> . Preter omnia prenominata dedi et concessie eis in inferiori parte de
+                     Cumbesleia locum ad edificandam unam uaccariam cen<lb/>tum uaccarum . et unam faldam . Dedi et concessi eis piscariam de Seleschirche .
+                     et unum rete in Berewichstrem . de duobus retibus meis que
+                     habui<lb/> in Berewichstrem . ita libere et quiete sicut ipse melius tenui ad opus meum .
+                     Hec autem omnia predictis monachis de Melr’ do et concedo
+                     et hac Carta mea con<lb/>firmo . in perpetuam et liberam elemosinam <cl type="holding">et uolo et precipio . ut omnia supradicta ita libere et quiete . plenarie et
+                     honorifice teneant sicut carta regis <persName>Malcolmi</persName><lb/> fratris mei testatur et confirmat</cl> .</cl> <cl type="witnesses">His testibus . <persName>Waltero Bidun</persName> Cancell<ex>ario</ex> . Comite <persName>Dunecano</persName> . <persName>Ric<ex>ardo</ex></persName> de Morevuill<ex>a</ex> constab<ex>ulario</ex> . <persName>Ricardo Cumin</persName> . Iust<ex>icia</ex> . <persName>Roberto Auenel</persName> .<lb/> <persName>W.</persName> de Berchelai Cam<ex>erario</ex> . <persName>W .</persName> de Sumeruille . <persName>Walt<ex>er</ex>o de Rid<ex>ale</ex></persName> . <persName>Hug<ex>one</ex></persName> clerico regis . <persName>Will<ex>elmo</ex></persName> capell<ex>ano</ex> . <persName>Roberto</persName> Capell<ex>ano</ex> . <persName>Hug<ex>one</ex></persName> clerico Cancell<ex>arii</ex> . Magistro <persName>Ioh<ex>ann</ex>e</persName> .<lb/> Com<ex>ite</ex> . <persName>Waldeuo</persName> <persName>Walt<ex>er</ex>o</persName> filio <persName>Alani</persName> dapifero . <persName>Alano</persName> filio eius <persName>Tom<ex>a</ex></persName> de Muscamp . <persName>Will<ex>elmo</ex></persName> de la haie . <persName>Rad’ rufo</persName> .</cl><lb/> Apud Rokesburc .</p>
+      </div>
+      <div type="translation"><p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex>, by the grace of God king of the Scots</cl>, to bishops, abbots, earls, barons, justices, officials, and all worthy men of
+                     his entire land, clerk and lay, <cl type="salutation">greeting</cl>.</cl> <cl type="notification">Know</cl> <cl type="disposition">me, for the sake of my soul and for the souls of my father and my mother, and of
+                  my grandfather King David, and of my brothers and sisters,
+                  and of my predecessors and successors, to have conceded and
+                  given to God, to the church of St Mary at Melrose, and to the
+                  monks of Rievaulx serving God in that same place, in free and
+                  everlasting alms, the land of Melrose, and the land of
+                  Eildon, and the land of Darnick, freely and honourably, to
+                  hold in perpetual tenure. In addition, know me to have given
+                  and conceded to them their easements throughout my whole
+                  forest of Selkirk and of Traquhair, that is to say, firewood,
+                  timber, and pannage, for their own use wherever they will the
+                  better and more usefully be able to find for themselves. In
+                  addition I give and make firm the entire pasture by the River
+                  Gala towards them, <cl type="boundaries">that is, from the eastern side, as the same river flows, as far as the limits of
+                     Wedale, and from there by the right marches of Richard de
+                     Morville's land, that is, from the Gala as far as the
+                     Leader</cl>, and the whole usage of the wood within the aforenamed boundaries for their own
+                     employment as might be necessary for them. Furthermore,
+                     fishing also in the waters of the Tweed, anywhere inside
+                     their boundaries, as much on my side of the river as on
+                     their side. And in addition to the things mentioned above
+                     I have given and conceded to them, as an augmentation, <cl type="boundaries">Gattonside by these boundaries, namely, as the River Leader fall into the Tweed,
+                     and so upwards to the Fauhope burn which falls into the
+                     Leader, and so upwards by the same burn and thus across
+                     the moor as far as the Rae burn which falls into the
+                     Allan, and so following the same river Allan as far as the
+                     Tweed.</cl> Besides all the aforenamed things I have given and conceded to them on the lower
+                     side of Colmslie a place for building one cow-shed for one
+                     hundred cows, and one cattle-fold. I have given and
+                     conceded to them the fishery of Selkirk, and one net in
+                     Berwick Stream from my two nets which I have in Berwick
+                     Stream, so freely and quitly as I myself held for my own
+                     use. All these aforementioned things I give and concede to
+                     the monks of Melrose, and make firm by this my charter, in
+                     everlasting and free alms, <cl type="holding">and I will and instruct that they may hold all the things mentioned above as
+                     freely and quitly, fully and honourably as the charter of
+                     my brother King Malcolm bears witness and affirms</cl>.</cl> <cl type="witnesses">With these as witnesses: Walter Bidun, chancellor; Earl Duncan; Richard de
+                  Morville, constable; Richard Comyn, justice; Robert Avenel; W<ex>alter</ex> of Berkeley, chamberlain; W<ex>illiam</ex> de Somerville; Walter Ryedale; Hugh the king's clerk; William the chaplain;
+                     Robert the chaplain; Hugh the chancellor's clerk; Master
+                     John; Earl Waldef; Walter son of Alan, steward; Alan his
+                     son; Thomas de Muschamp; William de la Haye; Ralph Ruffus.</cl> At Roxburgh.</p> <p> </p></div>
+    </body>
+  </text>
+</TEI>

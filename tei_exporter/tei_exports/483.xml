@@ -1,0 +1,82 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-483">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/215</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 16:06:17.621389+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">483</idno>
+        <idno type="textcontent">489</idno>
+        <idno type="transcription_textcontentxml">483</idno>
+        <idno type="translation_textcontentxml">484</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/215</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/215</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T16:06:17.621389+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T16:06:17.621389+00:00" status="published">transcription moa=483 status=live modified=2021-04-06 16:06:17.621389+00 | translation moa=484 status=live modified=2021-04-06 16:06:15.856821+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris Ecclesie filiis tam presentibus quam futuris <cl type="intitulatio">Ioh<ex>annes</ex> filius Mich<ex>aelis</ex></cl> <cl type="salutation">salutem</cl></cl>. <cl type="disposition"><cl type="notification">Sciatis me</cl> dcdisse concessisse et hac presenti carta<lb/> mea confirmasse deo et Ecclesie sancte Marie de Melros et Monachis ibidem deo
+                     seruientibus totam terram illam quam Aldredus faber et
+                     Oliuer<lb/> filius suus tenuerunt in terra mea de Pannecheles . Totam scilicet terram illam
+                     que est in orientali parte de Fastenei <cl type="boundaries">Infra has diui<lb/>sas a uado scilicet de Fastenei per uiam que dicitur Ricardisrode usque ad capud
+                        de Kelnemade . et inde per Riuulum qui currit in Kel<lb/>nemade usque in Ywitedre</cl> in puram et perpetuam elemosinam <cl type="holding">tenendam et possidendam de me et heredibus meis in perpetuum adeo<lb/> libere et quiete plenarie et honorifice sicut aliquam elemosinam liberius et
+                        quietius . plenarius et honorificentius tenent aut
+                        possident<lb/> in toto regno scotie.</cl> Totam igitur terram hanc et quiqquid continetur infra predictas diuisas cum
+                     omnibus aisiamentis ad totam terram<lb/> meam de pannechel<ex>es</ex> iuste pertinentibus tenebunt predicti Monachi de Me et heredibus meis libere et
+                     quiete ab omni terreno seruitio con<lb/>suetudine et exactione seculari . <cl type="warrandice">et ego et heredes mei manutenebimus et warentizabimus prefatis Monachis totam
+                     predictam terram<lb/> cum omnibus predictis aisiamentis et adquietabimus ab omni terreno seruitio erga
+                        omnes homines</cl> .</cl> <cl type="witnesses">Hiis Test<ex>ibus</ex> . Magistro . M .<lb/> Cancellario . Magistro . P . de Rames’ . G . et . I . capellanis meis . Bernardo
+                     freser . Ada de Powl<ex>ewurth</ex> . Henr<ex>ico</ex> de Abernidi .<lb/> Ricardo Monipeni . Mauritio filio Roberti . et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all the sons of holy mother Church, as well present as to come, <cl type="intitulatio">John son of Michael</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know me</cl> to have given and granted, and by this my present charter to have made firm, to
+                     God and the church of St Mary at Melrose and the monks in
+                     that place serving God, all that land which Uhtred the
+                     smith and Oliver his son held in my land of Penshiel, all
+                     that land, that is, which is on the eastern side of the
+                     Faseny <cl type="boundaries">within these bounds: From the ford, that is, of Faseny, by the path which is
+                     called Richard's road, as far as the head of Killmad, and
+                     thence by the stream which runs into Killmad, as far as
+                     the Whiteadder</cl>; in pure and perpetual alms; <cl type="holding">to be held and possessed of me and my heirs for ever, as freely and quitely,
+                     fully and honourably, as they hold or possess any alms in
+                     the whole realm of Scotland;</cl> therefore this whole land, and whatever is contained within the foresaid bounds,
+                     with all easements justly pertaining to my whole land of
+                     Penshiel, the foresaid monks shall hold of me and my
+                     heirs, free and quit from all service pertaining to the
+                     land, custom, or secular exaction. <cl type="warrandice">And I and my heirs shall maintain and warrant to the foresaid monks all the
+                     foresaid land, with all the foresaid easements, and
+                     discharge them from all service pertaining to the lands
+                     against all men</cl>.</cl> <cl type="witnesses">With these witnesses: Master M<ex>atthew</ex>, chancellor; Master P. of Ramesay; G. and J., my chaplains; Bernard Fraser;
+                     Adam of Polwarth; Henry of Abernethy; Richard Moneypenny;
+                     Maurice son of Robert; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

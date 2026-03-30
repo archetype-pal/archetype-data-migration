@@ -1,0 +1,74 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-339">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/342</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.783738+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">339</idno>
+        <idno type="textcontent">342</idno>
+        <idno type="transcription_textcontentxml">339</idno>
+        <idno type="translation_textcontentxml">340</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/342</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/342</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-06T15:19:33.783738+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-06T15:19:33.783738+00:00" status="approved">transcription moa=339 status=reviewed modified=2023-06-06 15:19:33.783738+00 | translation moa=340 status=reviewed modified=2023-06-06 15:19:33.759042+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="notification">Sciant omnes tam presentes quam futuri quod</cl> <cl type="intitulatio">ego Wydo de Normanuill’</cl> <cl type="disposition">concessi et hac<lb/> mea carta confirmaui Abbati et conuentui de Melr<ex>os</ex> donacionem illam quam dominus Thomas de<lb/> Normanuill’ frater meus fecit eisdem caritatiue super terram de Mackistun’. Quam
+                     quid terram<lb/> dictus dominus Thomas de Normanuill’ frater meus de me tenet in escambium terre
+                     sue de Ane<lb/>gus . Vnde uolo et concedo quod dicti abbas et conuentus de Melros dictam terram
+                     de Mackistun’ cum<lb/> mesuagio . tofto . crofto . libertatibus et asiamentis . prout in carta quam
+                     dicti abbas et conuen<lb/>tus habent de dicto domino Thoma de Normanuill’ fratre meo continetur  integre
+                     . quiete et honori<lb/>fice imperpetuum teneant et possideant .</cl> <cl type="sealing">In cuius rei testimonium presenti scripto sigillum meum ap<lb/>poni feci .</cl> <cl type="witnesses">Testibus . Dompno Radulfo abbate de Balmorinauch . domino Willelmo filio .P.
+                  comitis<lb/> de Dunbar . Domino Nichol’ Corbeth filio eiusdem .W. domino Will<ex>elm</ex>o de Normanuill’ rectore ecclesie de<lb/> Mackist’ fratre meo . domino Leone nepote meo et multis aliis .</cl> <cl type="dating">Actum anno gr<ex>aci</ex>e . m . cc .<lb/> Quinquagesimo . mense Iulio.</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="notification">Let all, both present and future, know that <cl type="intitulatio">I, Guy de Normanville,</cl></cl> <cl type="disposition">have granted, and by this my charter made firm, to the abbot and convent of
+                  Melrose the donation which the lord Thomas de Normanville, my
+                  brother, charitably made to the same in respect of the land
+                  of Maxton. The said lord Thomas de Normanville, my brother,
+                  holds this land of me in exchange for his land of Angus.
+                  Wherefore I will and allow that the said abbot and convent of
+                  Melrose may hold and possess of the said lord Thomas de
+                  Normanville, my brother, the said land of Maxton with
+                  messuage, toft, croft, liberties and easements, as it is set
+                  out in the charter that the said abbot and convent have from
+                  the said lord Thomas de Normanville my brother, fully,
+                  quitely and honourably for ever.</cl> <cl type="sealing">In testimony of this matter I have caused my seal to be applied to this
+                  document.</cl> <cl type="witnesses">As witnesses, Dom Ralph the abbot of Balmerino, the lord William son of Patrick
+                  the earl of Dunbar, the lord Nicholas Corbet, son of the same
+                  William, the lord William de Normanville the rector of the
+                  church of Maxton, my brother, the lord Leo my nephew, and
+                  many others.</cl> <cl type="dating">Enacted in the year of grace 1240 in the month of July.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,79 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-81">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Add. Ch. 76697</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 14:26:58.109502+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">81</idno>
+        <idno type="textcontent">81</idno>
+        <idno type="transcription_textcontentxml">81</idno>
+        <idno type="translation_textcontentxml">82</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 76697</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Add. Ch. 76697</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-04T14:26:58.109502+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-04T14:26:58.109502+00:00" status="published">transcription moa=81 status=live modified=2021-04-04 14:26:54.679332+00 | translation moa=82 status=live modified=2021-04-04 14:26:58.109502+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>W.</persName> dei gr<ex>ati</ex>a Rex Scott<ex>orum</ex></cl> Episcopis . abbatibus . Comit<ex>ibus</ex> . Baronibus . Iustic<ex>iis</ex> . Vicec<ex>omitibus</ex> prepositis <lb/> Ministris . Ceterisque probis hominibus tocius terre sue <cl type="salutation">salutem</cl>.</cl> <cl type="notification">Sciant presentes et futuri</cl> <cl type="disposition">me concessisse et hac carta mea confirmasse <persName>Orm</persName> filio <persName>Hugonis</persName> et heredibus suis <lb/> abbaciam de Abernithi cum omnibus iustis pertinentiis suis et rectitudinibus
+                     eidem <lb/> abbacie iuste pertinentibus sic fuit anno et die quo Rex <persName>D<ex>aui</ex>d</persName> auus meus fuit uiuus <lb/> et mortuus in bosco et plano in pratis et pascuis Moris et aquis . Viis et
+                     Semitis . Sta<lb/>gnis et molendinis . exceptis .x. libratis terre quas dedi <persName>Henrico Reuel</persName> cum fi<lb/>lia predicti <persName>Orm</persName>. <cl type="holding">Tenend’ sibi et heredibus suis de me et de heredibus meis <lb/> in feudo et hereditate libere et quiete ab omnibus seruiciis et consuetudinibus
+                        excep<lb/>to comuni auxilio . Comuni exercitu . Comuni operatione . Cum Socca et <lb/> Sacca . Cum tol et them et infangenthef . ita tamen quod non habeat furcam neque
+                        fos<lb/>sam nisi in duobus locis . scilicet apud Abernithi . et apud Inuerarecthin</cl> . Reddendo <lb/> mihi inde et heredibus meis singulis annis .xx. libras argenti . Scilicet .x.
+                     libras <lb/> ad festum Sancti Iohannis baptiste . et x. libras ad festum Sancte Brigide. Volo
+                     etiam ut <lb/> homines sui de Fif et de Goueri<ex>n</ex> ueniant ad fossam de Abernithi. De aliis uero terris <lb/> suis ueniant ad fossam de Inuerarecthin.</cl> <cl type="witnesses">Test<ex>ibus</ex> <persName>Math<ex>e</ex>o</persName> episcopo de Aberdeon . <persName>Andr<ex>ea</ex></persName> <lb/> episcopo de Caten’. <persName>Hug<ex>one</ex></persName> capellano meo . Com<ex>ite</ex> <persName>Dunec<ex>ano</ex></persName> . Com<ex>ite</ex> <persName>Gileb<ex>erto</ex></persName> . <persName>Hug<ex>one</ex> Giff<ex>ard</ex></persName> . <lb/> <persName>Nesso</persName> filio <persName>Will<ex>elm</ex>i</persName> . <persName>Galfr<ex>ido</ex></persName> de Maleuill’ . <persName>Waltero</persName> de Berkel’. Will<ex>elm</ex>o de Mor<lb/>temer . <persName>Will<ex>elm</ex>o</persName> de Lindesia.</cl> Apud Pert.</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">William, by the grace of God king of the Scots,</cl> to bishops, abbots, earls, barons, justices, sheriffs, provosts, officials, and
+                     other worthy men of his entire land <cl type="salutation">greeting. </cl></cl><cl type="notification">Let present and future know</cl> <cl type="disposition">me to have conceded, and by this my charter to have made firm, to Orm son of
+                  Hugh and his heirs the abbey of Abernethy with all its just
+                  pertinents and rights justly pertaining to the same abbey of
+                  Abernethy as it was in the year and on the day that King
+                  David my grandfather was alive and dead; in wood and plain,
+                  in meadows and pastures, moors and waters, roads and paths,
+                  millponds and mills; except for 10 pounds’ worth of land that
+                  I gave to Henry Revel with the daughter of the foresaid Orm. <cl type="holding">For him and his heirs to hold of me and my heirs in feu and heritage, free and
+                     quit from all services and customs except for common aid,
+                     common army, and common work; with soke and sake, with
+                     toll and team and infangthief, yet so that he shall not
+                     have gallows nor pit except in two places, that is, at
+                     Abernethy, and at Inverarity.</cl> With 20 pounds of silver to be rendered to me and my heirs from there, that is,
+                     10 pounds at the feast of Saint John the Baptist, and 10
+                     pounds at the feast of Saint Brigid. I also will that his
+                     own men of Fife and Gowrie come to the pit at Abernethy;
+                     for his other lands, however, let them come to the pit at
+                     Inverarity</cl>. <cl type="witnesses">As witnesses: Matthew bishop of Aberdeen; Andrew bishop of Caithness; Hugh my
+                  chaplain; Earl Duncan; Earl Gilbert; Hugh Giffard; Ness son
+                  of William; Geoffrey de Malville; Walter of Berkeley; William
+                  de Mortimer; William of Lindsay.</cl> At Perth.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

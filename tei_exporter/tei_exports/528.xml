@@ -1,0 +1,58 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-528">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/279</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:31.976799+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">528</idno>
+        <idno type="textcontent">535</idno>
+        <idno type="transcription_textcontentxml">528</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/279</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/279</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:31.976799+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:31.976799+00:00" status="draft">transcription moa=528 status=draft modified=2017-01-30 19:28:31.976799+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><cl type="address">Omnibus presens scriptum uisuris uel audituris <cl type="intitulatio">Ioh<ex>anne</ex>s de Landeles successor et heres Will<ex>elm</ex>i filii Iohannis filii<lb/> Orm</cl> <cl type="salutation">Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Nouerit uniuersitas uestra</cl> me concessisse et hac mea carta confirmasse deo et Monachis de<lb/> Melros totam donationem quam Will<ex>elmu</ex>s filius Iohannis auunculus meus fecit eis in feudo et territorio de hunum<lb/> scilicet terram loco qui dicitur Rachawes adiacentem . per certas diuisas
+                        contentas in Carta predicti Will<ex>elm</ex>i<lb/> quam inde habent idem Monachi . Totam quidem terram illam cum omnibus
+                        libertatibus et aisiamentis ad eam pertinentibus<lb/> secundum tenorem predicte Carte . <cl type="warrandice">Ego et heredes mei defendemus . warantizabimus . prefatis Monachis et<lb/> eos in plena pace possidere faciemus eandem .</cl> Insuper concessi eis et omnibus suis scilicet . hominibus et Aue<lb/>riis et Carris et vecturis liberum iter eundi et redeundi . uehendi necessaria
+                        sua et reuehen<lb/>di in perpetuum per terram meam inter grangiam suam de hunedun’ et terram suam
+                        de Rachawes . <cl type="warrandice">Omnia igi<lb/>tur supradicta ego heredes mei defendemus et warantizabimus Monachis
+                           prenominatis in puram<lb/> et pereptuam elemosinam tenenda et habenda</cl> .</cl> <cl type="sealing">Et ad huius rei plenam securitatem dictis Monachis<lb/> presens scriptum sigillo meo dedi roboratum .</cl> Actum anno gracie . Millesimo . ducentesimo . vicesimo septimo . <cl type="witnesses">Hiis testibus . Domino Roberto de muschans . Bernardo de haudene . Thoma
+                     Mautalent . Iacobo de hou . . .<lb/> Gilleberto de Witthun’ . Aymero de Landel’ . Edger’ de land’ . Radulfo de Plesit
+                        .</cl> Et<lb/> Multis Aliis .</span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

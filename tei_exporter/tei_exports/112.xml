@@ -1,0 +1,85 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-112">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 31</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:00.170097+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">112</idno>
+        <idno type="textcontent">112</idno>
+        <idno type="transcription_textcontentxml">112</idno>
+        <idno type="translation_textcontentxml">113</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 31</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 31</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:28:00.170097+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:00.170097+00:00" status="published">transcription moa=112 status=live modified=2017-01-30 19:28:00.170097+00 | translation moa=113 status=live modified=2016-06-06 15:37:23.25589+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="notification">Anno ab Incarnationem domini . Millesimo . Centesimo Tricesimo quarto ad pascha
+                  . facta est hec conuencio <lb/> Inter Will<ex>elmu</ex>m Cumin Clericus ex una parte . ⁊ priorem ⁊ conuentum sancti Andree ex altera .</cl> <cl type="narration">videlicet quod dictus <lb/> Will<ex>elmus</ex> dimisit eis ad firmam ecclesiam de dul . cum capellis terris . decimis .
+                     obuentionibus ⁊ omnibus <lb/> aliis rebus ad dictam ecclesiam pertinentibus in tota uita sua reddento eidem
+                     singulis annis <lb/> sexaginta ⁊ octo marcas . Scilicet . viginti ⁊ duas marcas ad festum sancti
+                     martini . ⁊ viginti <lb/> ⁊ duas marcas . ad purificationem beate marie . ⁊ viginti ⁊ vnam marcas . ad
+                     pascha . ⁊ respon<lb/>dendo de episcopalibus ⁊ sinodalibus . Et sciendum quod dicti Prior ⁊ conuentus
+                     tres marcas . <lb/> residuas sibi quolibet anno retinebunt pro tribus marcis nomine pensionis eisdem <lb/> debitis a dicto Will<ex>elmo</ex> . de dicta ecclesia de dul . Si uero contigerit quod dicti Prior ⁊ conuentus a
+                     solucione <lb/> predicte pecunie ad terminos statutos destiterint  per singulas ebdomadas a
+                     sinulis terminis <lb/> computatas nomine pene dimidiam . marcam . quousque predicta pecunia fuerit
+                     soluta propter solucio<lb/>nis dilationem persoluent .</cl> <cl type="sealing">vt autem hec conuencio robor optineat firmitatis parti huius cirographi <lb/> penes priorem ⁊ conuentum residenti apponitum est sigillum dicti . W . Parti
+                     uero penes . W. residenti <lb/> apponitum est sigillum Capituli sancti andr<ex>ee</ex> .</cl> <cl type="witnesses">Hiis testibus . Capitulo sancti andr<ex>ee</ex> . Domino . M . archid<ex>iacono</ex> <lb/> Aberdon’ . Gerardo decano de fif . W . de nidi<ex>n</ex> . Clerico domini regis. Et multis aliis</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="notification">In the 1234th year since the Incarnation of the Lord, at Easter, this agreement
+                  was made between William Comyn the Clerk on the one side, and
+                  the prior and religious community of St Andrews on the other,</cl> <cl type="narration">namely that the said William has handed over to them to ferm the church of Dul,
+                  with chapels, lands, teinds, obventions, and all other things
+                  pertaining to the said church by rendering to him each year
+                  for the whole of his life sixty-seven merks, that is,
+                  twenty-two merks at the feast of Saint Martin, and twenty-two
+                  merks at the Purification of Blessed Mary, and twenty-one
+                  merks at Easter, and by answering for episcopal and synodal
+                  dues. And it is to be known that the said Prior and community
+                  shall retain for themselves the remainder each year in return
+                  for three merks as a pension owed to the said William from
+                  the said church of Dul. If, however, it should happen that
+                  the said Prior and community should cease the payment of the
+                  said money at the stated terms, by every week counted from
+                  each term, they shall pay out as a penalty half a merk until
+                  the aforesaid money has been paid according to the delay of
+                  the payment.</cl> <cl type="sealing">And that this agreement might have enduring strength and durability, to the part
+                  of this cyrograph remaining in the possession of the prior
+                  and community has been affixed the seal of the said William.
+                  And to the part remaining in the possession of William has
+                  been affixed the seal of the chapter of St Andrews.</cl> <cl type="witnesses">With these witnesses: the Chapter of St Andrews; the lord M(alcolm), archdeacon
+                  of Aberdeen; Gerard, dean of Fife; W(illiam) of Nydie, clerk
+                  of the lord king; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

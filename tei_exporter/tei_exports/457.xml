@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-457">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/192</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-08-08 11:05:00.055491+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">457</idno>
+        <idno type="textcontent">462</idno>
+        <idno type="transcription_textcontentxml">457</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/192</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/192</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2016-08-08T11:05:00.055491+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2016-08-08T11:05:00.055491+00:00" status="draft">transcription moa=457 status=draft modified=2016-08-08 11:05:00.055491+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p>Sciant omnes presentes et futuri . quod ego Thomas de Colevilla cognomento Scot<ex>us</ex> dedi et concessi et hac presenti Carta me confirmaui . pro salute anime mee et
+                  omnium antecessorum morum Deo et Beate Marie et Abbatie de
+                  valle dei et Monachis ibidem deo seruientibus quartam partem
+                  de Almelidun . quod uocatur Keresban . scilicet quicquid
+                  habui inter Polleneshan . et Pollenescunt usque ad aquam de
+                  Don . ut habeant et teneant libere et quiete . reddento inde
+                  annuatim mihi et heredibus meis . uel cui assignatio sex
+                  Marcas argenti ad duos terminos . pro omni seruicio
+                  consuetudine et exaccione . videlicet tres Marcas ad festum
+                  Sancti Martini . et tres Marcas ad Pentecost<ex>en</ex> . Et ego et heredes mei . warantizabimus totam predictam terram . ad opus
+                  predictorum Monachorum in omnibus et contra omnes homines
+                  inperpetuum . Et si contigerit . quod dominus Rex Scotie hanc
+                  predictam firmam prefatis Monachis relaxare et condonare
+                  uoluerit pro salute anime et antecessorum suorum . ego et
+                  heredes mei libenter illud concedimus ita quod nichil umquam
+                  de eadem firma exigemus ab isdem Monach’ . Hiis Testibus .
+                  Domino Will<ex>elm</ex>o Abbate de Melros . Alano filio Rolandi de Galewai . fergus filio vctredi .
+                  Edgaro filio Douenad’ . Dunkano filio Gilberti . Comite de
+                  Carric . Gileskop macihacain . Gilanuenan filio Duuegal .
+                  Gillecrist filio kenedi . Iwano filio Alewain . Gillenef .
+                  Okeueltal . Gilleroth filio Gillemartin . Makeg filio Kyin .
+                  Gillefakeneshi . filio Gillin .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

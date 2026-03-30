@@ -1,0 +1,79 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-174">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/223</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-15 19:15:46.374368+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">174</idno>
+        <idno type="textcontent">174</idno>
+        <idno type="transcription_textcontentxml">174</idno>
+        <idno type="translation_textcontentxml">175</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/223</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/223</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-02-15T19:15:46.374368+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-02-15T19:15:46.374368+00:00" status="published">transcription moa=174 status=live modified=2017-02-15 19:15:43.717584+00 | translation moa=175 status=live modified=2017-02-15 19:15:46.374368+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Thor’ filius Swani . Omnibus amicis suis &amp; dominis <cl type="salutation">salutem</cl>.</cl> <cl type="disposition">Sciant tam posteri quam presentes me consilio &amp; concessu heredum meorum dedisse
+                  &amp; concessisse pro<lb/> salute anime mee &amp; antecessorum meorum in perpetuam elemosinam deo &amp; ęcclesię
+                     sancte crucis de Edenesburc &amp; fratribus ibidem deo
+                     seruientibus . totum illud<lb/> donationis quod uidebar habere in ęcclesia de Treuernent in terris . &amp; pascuis .
+                     &amp; decimis . libere &amp; quiete ab omni seculari dominatione &amp;
+                     exactione .<lb/> &amp; preter illa quę antecessores mei predicte ęcclesię de Treuernent contulerunt 
+                     do &amp; concedo . &amp; per presentem cartam confirmo predicte
+                     ęcclesię duas<lb/> domos cum duabus toftis . predictis canonicis cum prefata ęcclesia in perpetuam
+                     elemosinam confirmatas . filiis meis mecum predicta omnia
+                     conce<lb/>dentibus &amp; confirmantibus</cl> . <cl type="witnesses">His testibus Will<ex>elm</ex>o Morauiensi episcopo . Osb<ex>er</ex>no abbate de Eaddeuurd’ . Thor’ archidiacono . Aiolf decano . Nicholao cler’
+                     regis .<lb/> Neis filio Chili<ex>er</ex>i . Ædmund’ filio forn . Bernardo filio Tocce . Gilandrea eius dapifero .
+                     Ædmundo de fageside . Alden</cl></p>
+      </div>
+      <div type="translation">
+        <p>Thor son of Swain to all his friends and lords, Greeting: Let those to come as
+               well as those present know that I, by the counsel and consent of
+               my heirs, have given and granted, for the salvation of my soul
+               and my ancestors’, in perpetual alms to God and the church of
+               Holyrood in Edinburgh and the brethren serving God there, the
+               whole of the donation that I was seen to have in the church of
+               Tranent in lands and pastures and teinds, free and quit from
+               every secular dominion and exaction. And besides those things
+               that my ancestors bestowed to the aforesaid church of Tranent, I
+               give and grant, and by the present charter make firm, to the
+               said church two dwellings with two tofts to the aforesaid canons
+               with the aforementioned church confirmed in perpetual alms, my
+               sons granting and confirming all things aforesaid with me. With
+               these witnesses, William bishop of Moray, Osbern abbot of
+               Jedburgh, Thorald the archdeacon, Aiulf the dean, Nicholas the
+               king’s clerk, Ness son of Chilierus, Edmund son of Forn, Bernard
+               son of Tóki, Gillanders his steward, Edmund of Fazeside, Aldan.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

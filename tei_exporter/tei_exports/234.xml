@@ -1,0 +1,83 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-234">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/252</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:18:19.816552+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">234</idno>
+        <idno type="textcontent">234</idno>
+        <idno type="transcription_textcontentxml">234</idno>
+        <idno type="translation_textcontentxml">235</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/252</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/252</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T08:18:19.816552+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T08:18:19.816552+00:00" status="published">transcription moa=234 status=live modified=2021-04-06 08:18:19.816552+00 | translation moa=235 status=live modified=2021-04-06 08:18:18.00307+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte Matris Ecclesie filiis et fidelibus <cl type="intitulatio">Edgarus filius Dofnaldi .</cl> <cl type="salutation">Salutem</cl>.</cl> <cl type="disposition"><cl type="notification">Sciant omnes tam presentes quam futuri</cl> me Consensu filii ⁊ heredis mei<lb/> fergus dedisse ⁊ concessisse et hac presenti mea Carta confirmasse deo ⁊
+                     ecclesie Sancte crucis de Edenburc ⁊ Canonicis ibidem deo
+                     ser<lb/>uientibus et seruituris ecclesiam de Dalgarenoc cum tota terra ad eandem
+                     ecclesiam pertinente ⁊ cum communi pastura predicte uille
+                     ⁊ omnibus<lb/> aliis rectitudinibus ⁊ pertinenciis suis tam in decimis quam in aliis
+                     ouencionibus ad eandem ecclesiam iuste pertinentibus
+                     tenendum sibi in liberam puram<lb/> ⁊ perpetuam elemosinam pro salute animarum dominorum meorum Regum Scott’ ⁊ pro
+                     animabus patris mei ⁊ matris mee ⁊ omnium antecessorum ⁊
+                     suc<lb/>cessorum meorum. <cl type="holding">Quare volo ut predicti Canonici prefatam ecclesiam cum terra ⁊ omnibus
+                     libertatibus suis ita libere quiete plenarie ⁊ honorifice<lb/> in perpetuum teneant ⁊ possideant Sicut aliqua ecclesia in toto regno scott’
+                        liberius datur quiecius ⁊ plenius tenetur ⁊ possidetur
+                        saluo personatu .G.<lb/> persone ⁊ perpetua uicaria Enoc</cl>.</cl> <cl type="witnesses">Hiis test<ex>ibus</ex> fergus filio domini edgari . Martino persona de Du<ex>m</ex>f’ . Enoc clerico . Ioh<ex>ann</ex>e filio Radulfi decani<lb/> de Du<ex>m</ex>fr’ . Gillec<ex>ris</ex>t Iudice . Gille conel ⁊ Dofnalt fili<ex>is</ex> edgari ⁊ multis aliis boni testimonii viris</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons and faithful people of Holy Mother Church, <cl type="intitulatio">Edgar son of Donald</cl> <cl type="salutation">sends Greeting:</cl></cl> <cl type="disposition"><cl type="notification">Let all people, both present and future, know</cl> that, with the consent of my son and heir, Fergus, I have given and granted, and
+                     by this present charter made firm, to God and to the
+                     church of Holyrood in Edinburgh, and to the canons serving
+                     God there now and in the future, the church of Dalgarnock
+                     with all the land pertaining to the same church, and with
+                     common pasture of the foresaid toun, and all its other
+                     revenues and pertinents, in teinds as well as in other
+                     obventions, justly belonging to the same church, for them
+                     to hold in free, pure and perpetual alms, for the
+                     salvation of the souls of my lords the kings of Scots, and
+                     for the souls of my father and my mother and of all my
+                     ancestors and successors. <cl type="holding">Wherefore I will that the foresaid canons hold and possess the forementioned
+                     church with its land and all its liberties so freely,
+                     quietly, fully and honourably in perpetuity as any church
+                     in the whole of the kingdom of the Scots is freely given,
+                     is quietly and fully held and possessed, reserving the
+                     parsonage of G. the parson, and the perpetual vicarage of
+                     Enoch</cl>.</cl> <cl type="witnesses">With these witnesses, Fergus son of the lord Edgar, Martin the parson of
+                  Dumfries, Enoch the clerk, John son of Ralph the dean of
+                  Dumfries, Gilchrist the judex, Gilla Conaill and Donald sons
+                  of Edgar, and many other men of good testimony.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

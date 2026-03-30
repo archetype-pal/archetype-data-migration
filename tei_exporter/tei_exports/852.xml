@@ -1,0 +1,76 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-852">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of TNA DL 25/87</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.103141+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">852</idno>
+        <idno type="textcontent">874</idno>
+        <idno type="transcription_textcontentxml">852</idno>
+        <idno type="translation_textcontentxml">853</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/87</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>TNA DL 25/87</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-03-13T15:02:37.103141+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-03-13T15:02:37.103141+00:00" status="approved">transcription moa=852 status=reviewed modified=2023-03-13 15:02:37.103141+00 | translation moa=853 status=reviewed modified=2023-03-13 15:02:37.090431+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="notification">. Sciant omnes presentes et futuri quod</cl> <cl type="intitulatio">Ego Will<ex>elmus</ex> . filius Radulfi Lardenarii et frater d<ex>aui</ex>d . filii eius et heres eorum </cl> <cl type="disposition">quietam clamaui<lb/> et abiuraui de me et de heredibus meis et resignaui per fustum et baculum
+                     Roberto de brus et heredibus suis uel quibus assig<lb/>nare voluerint totam terram quam predictas Radul<ex>fus</ex> et dictus d<ex>aui</ex>d et predecessores mei et ego tenuimus de predicto Roberto<lb/> de brus et de predecessoribus suis . et omne ius quod nobis competebat infra
+                     uillam de Anant et infra pertinentias . Pro compoto<lb/> scilicet . d<ex>aui</ex>d . fratris mei qui illo tempore fuit seruiens domini Roberti de brus in
+                     herteruilla . quod inde licet compotum  ego Will<ex>elmus</ex><lb/> suscepi ad soluendum pro predicto d<ex>aui</ex>d . fratre meo et non potui persoluere . et pro . c<ex>entum</ex> . solidis . quos predictus dominus Rob<ex>ertus</ex> . de brus<lb/> mihi prebuit .</cl> <cl type="sealing">In huius etiam quiete clamationis et abiurationis testimonio  sigillum meum
+                  huic scripto apposui .</cl> <cl type="witnesses">Hiis test<ex>ibus</ex> .<lb/> Domino Ric<ex>ardo</ex> de Leuinent . Domino Rog<ex>ero</ex> auenel . Will<ex>elmo</ex> de brus . Ioh<ex>ann</ex>e de brus . Will<ex>elmo</ex> de heriz . vmfrido de gardin .<lb/> Hug<ex>one</ex> de Corri . Rob<ex>erto</ex> de Crossebi . Gilleb<ex>erto</ex> . filio Ioh<ex>ann</ex>is . Rog<ex>ero</ex> de Kirkepatric . Rob<ex>erto</ex> de tramor . Ric<ex>ardo</ex> . de<lb/> bosco . Ric<ex>ardo</ex> de Humez . hug<ex>one</ex> Mauleuerer . Hug<ex>one</ex> filio Hamelin . Will<ex>elmo</ex> franceis . Eng<ex>el</ex>ram . Thom<ex>a</ex><lb/> clerico . et curia predcti domini Roberti de brus de Anant .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="notification">Let all present and future know that</cl> <cl type="intitulatio">I, William, son of Ralph the Lardener, and brother David, his sons, and their
+                  heir</cl>, <cl type="disposition">have quiclaimed and abjured for myself and for my heirs, and resigned by rod and
+                  staff, to Robert de Brus and his heirs, or those to whom they
+                  may have wished to assign, the whole land which the aforesaid
+                  Ralph and the said David and my predecessors and I have held
+                  of the aforesaid Robert de Brus and his predecessors, and
+                  every right which belonged to us within the toun of Annan and
+                  within the dependent area; in return for the account, that is
+                  to say, of David my brother, who at that time was the
+                  sergeand of the lord Robert de Brus in 'Herterville'; the
+                  account which although I, William, undertook to settle on
+                  behalf the said David my brother, I was not able to pay off;
+                  and in return for the hundred shillings which the aforesaid
+                  lord Robert de Brus proffered to me.</cl> <cl type="sealing">In testimony of this quitclaim and abjuration I have applied my seal to this
+                  writing.</cl> <cl type="witnesses">With these witnesses: the lord Richard of Levington; the lord Roger Avenel;
+                  William de Brus; John de Brus; William de Heriz; Humphrey de
+                  Jardin; Hugh of Corrie; Robert of Crosby; Gilbert son of
+                  John; Roger of Kirkpatrick; Robert of Tremore; Richard de
+                  Bosco; Richard de Humez; Hugh Mauleverer; Hugh fitz Hamelin;
+                  William Francis; Ingram; Thomas, clerk; and the court of the
+                  aforesaid Robert de Brus of Annant.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

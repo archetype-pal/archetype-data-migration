@@ -1,0 +1,90 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-650">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.4</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:33:03.580369+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">650</idno>
+        <idno type="textcontent">660</idno>
+        <idno type="transcription_textcontentxml">650</idno>
+        <idno type="translation_textcontentxml">651</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.4</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.4</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:33:03.580369+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:33:03.580369+00:00" status="published">transcription moa=650 status=live modified=2021-04-05 08:33:01.041421+00 | translation moa=651 status=live modified=2021-04-05 08:33:03.580369+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>ALex’</persName> Dei Gr<ex>ati</ex>a Rex Scott’ .</cl> Omnibus Vicecomitibus totius terre sue . <cl type="salutation">Salutem</cl></cl> . <cl type="disposition">Mandamus Vobis firmiter<lb/> precipientes . quatinus cum Monachi uel fratres de Melros’ ad vos accesserint de
+                     aliquibus malefactoribus conque<lb/>rentes . qui aueria sua uel pecuniam suam furtim abduxerint uel subtraxerint 
+                     causas dictorum monachorum<lb/> et fratrum de Melros’ . tamquam causam nostram propriam  prosequamini .
+                     appellationes et responsiones contra ipsorum malefac<lb/>tores secundum genus cause sue facientes . et pugnatorem si forte opus fuerit .
+                     ex parte nostra eisdem monachis<lb/> et fratribus inuenientes . donec causa eorumdem . consideratione virorum
+                     discretorum . uel compositione mediante <lb/> fine debito terminetur . Cum autem causa sepedictorum Monachoru<supplied>m</supplied> uel fratrum . fine debito sicut dictum est .<lb/> fuerit terminata  et malefactores eorum in sua fuerint conuic<supplied>t</supplied>i uel quasi conuicti malitia . volumus ut<lb/> dictis Monachis uel fratribus . aueria sua uel pecunia que eisdem fuerint
+                     sublata . de catallis malefactorum<lb/> suorum plene sint restituta . Forisfacta uero et amissiones in quas dicti
+                     malefactores uel eorum plegii per delicta<lb/> sua inciderint  ad nostram potestatem secundum quod Ius decreuerit . omnino
+                     deuoluantur . Fratres autem de Melros .<lb/> et eorumdem homines Latores presentium sub firma pace nostra et protectione
+                     iuste suscepimus . firmiter<lb/> prohibentes . ne quis Iniuriam . molestiam . uel grauamen aliquod eisdem iniuste
+                     inferat . uel inferre<lb/> presumat super nostram plenariam forisfacturam .</cl> <cl type="witnesses">Test<ex>ibus</ex> . <persName>Thom<ex>a</ex></persName> Comite Athol’ . <persName>Ioh<ex>ann</ex>e</persName> de Maccuswell’ . <persName><roleName>Camerario</roleName></persName> .<lb/> <persName>Ingeramo</persName> de Baill’ . <persName>Roberto</persName> capellano . <persName>Dauid</persName> Mariscallo . <persName>Douenaldo</persName> de Mar’ . <persName>Thoma</persName> de Normanuill’ .<lb/> <persName>Willelmo</persName> de Bonekil’ .</cl> apud Melros’ nonodecimo die Marcii . anno regni domini Regis Septimodecimo .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, by the grace of God king of the Scots</cl>, to all sheriffs of his entire land <cl type="salutation">[sends] greeting</cl></cl>. <cl type="disposition">We command you, strictly ordering that, when the monks or brethren of Melrose
+                  approach you complaining about any malefactors, who have by
+                  stealth stolen or led away their work animals or livestock,
+                  you should prosecute the pleas of the monks and brethren as
+                  though it were our own plea, making the appeals and answers
+                  against their malefactors according to the nature of their
+                  plea, and on our behalf finding, if by chance there shall be
+                  need, a champion for the same monks and brethren, until the
+                  plea of the same be certainly concluded, by the scrutiny of
+                  discerning men, or by mediating an agreement. When the plea
+                  of the oft-mentioned monks or brethren shall have been
+                  concluded, as it has already been said, and their malefactors
+                  have been convicted or as good as convicted in their own
+                  wickedness; we will that their working animals or livestock
+                  which have been removed from the same shall fully be restored
+                  to the monks or brethren from the property of their
+                  malefactors. And the forfeitures and losses into which the
+                  said malefactors or their pledges shall by their their
+                  offences have fallen, are entirely devolved to our authority
+                  according to what the law shall have decreed. We have
+                  rightfully taken the brethren of Melrose, and the men of the
+                  same, bearers of the presents, under our firm peace and
+                  protection, strictly forbidding that anyone shall unlawfully
+                  cause or attempt to cause them any injury, annoyance or harm,
+                  on pain of our full forfeiture.</cl> <cl type="witnesses">As witnesses: Thomas, earl of Atholl; John of Maxwell, chancellor; Ingram de
+                  Balliol; Robert the chaplain; David the marischal; Donald of
+                  Mar; Thomas de Normanville; William of Bunkle. At Melrose on
+                  the nineteenth day of March, in the seventeenth year of the
+                  reign of the lord king.</cl> </p>
+      </div>
+    </body>
+  </text>
+</TEI>

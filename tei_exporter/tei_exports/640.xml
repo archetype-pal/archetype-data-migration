@@ -1,0 +1,64 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-640">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.24</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 16:24:06.699768+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">640</idno>
+        <idno type="textcontent">650</idno>
+        <idno type="transcription_textcontentxml">640</idno>
+        <idno type="translation_textcontentxml">641</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.24</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.24</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-04T16:24:06.699768+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-04T16:24:06.699768+00:00" status="published">transcription moa=640 status=live modified=2021-04-04 16:24:06.699768+00 | translation moa=641 status=live modified=2021-04-04 16:24:04.941082+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis sancte matris ecclesie filiis <cl type="intitulatio"><persName>Alanus</persName> filius <persName>Walteri</persName> dapifer Regis Scott’</cl> .<lb/> <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Sciant presentes et futuri</cl> <cl type="disposition">me dedisse et concessisse et hac mea carta<lb/> confirmasse deo et Sancte MARIE et Sancto Benedicto et monachis de CUPRE .<lb/> unum plenum toftum in burgo meo de REINFRIV iuxta cimeterium . et<lb/> unum rethe ad Salmonem in clud <cl type="holding">habendum et possidendum in perpetuam he<lb/>lemosinam . sicut liberius . quietius . et honorificentius aliquam elemosinam
+                        pos<lb/>sident monachi ordinis cisternensis .</cl> pro anima regis <persName>D<ex>aui</ex>d</persName> . et REGIS <persName>Malcol<lb/>mi</persName> . et comitis <persName>Henrici</persName> . et pro anima patris mei et matris mee . et pro salute ani<lb/>me mee et antecessorum meorum .</cl> <cl type="warrandice">Hanc autem elemosinam ego <persName>Alanus</persName> et here<lb/>des mei monachis et ab eis tenentibus in perpetuum warantizabimus .</cl> <cl type="witnesses">His<lb/> Testibus . Episcopo de Glasgv . Priore <persName>Osberto</persName> de Passel’ et conuentu . <persName>Willelmo</persName> de fonte<lb/> capellano . <persName>Ricardo</persName> persona de Dvndov . <persName>Will<ex>elm</ex>o</persName> de Passel’ . fulcone clerico . <persName>Roberto croc</persName> .<lb/> <persName>Gilleberto</persName> filio <persName>Swein</persName> . <persName>Ric’ Ruhefd</persName> . <persName>Wlbrano</persName> . <persName>Reginaldo mod<ex>e</ex>sune</persName> . <persName>Edulfo Waite</persName> .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Holy Mother Church's sons</cl>, <cl type="intitulatio">Alan son of Walter, steward of the king of Scots,</cl> <cl type="salutation">[sends] greeting.</cl> <cl type="notification">Let present and future know</cl> <cl type="disposition">me to have given, conceded, and by this my charter to have made firm, to God, St
+                  Mary and St Benedict, and to the monks of Coupar, one full
+                  toft in my burgh of Renfrew beside the churchyard, and one
+                  net for salmon in the Clyde; <cl type="holding">to have and possess in everlasting alms just as the monks of the Cistercian
+                     Order freely, quitly, and honourably possess any alms;</cl> for the soul of King David, and of King Malcolm, and of Earl Henry, and for the
+                     soul of my father and of my mother, and for the salvation
+                     of my own soul and of my predecessors'. <cl type="warrandice">This alms I, Alan, and my heirs, shall warrant for ever to the monks and to
+                     those holding of them</cl>.</cl> <cl type="witnesses">With these as witnesses: the bishop of Glasgow; Prior Osbert of Paisley and the
+                  convent; William of Wells, chaplain; Richard, parson of
+                  Dundov; William of Paisley; Fulk, clerk; Robert Crock;
+                  Gilbert son of Swein; Richard Ruhefd; Wulfbrand; Reginald
+                  Mothsune; Eadwulf Waite.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

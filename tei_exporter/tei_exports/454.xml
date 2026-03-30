@@ -1,0 +1,73 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-454">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/194</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-08-08 11:04:00.876036+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">454</idno>
+        <idno type="textcontent">458</idno>
+        <idno type="transcription_textcontentxml">454</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/194</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/194</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2016-08-08T11:04:00.876036+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2016-08-08T11:04:00.876036+00:00" status="draft">transcription moa=454 status=draft modified=2016-08-08 11:04:00.876036+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p>Omnibus christi fidelibus presentibus et futuris  Will<ex>elmu</ex>s de Colevill<ex>a</ex> filio Thome de Colvill<ex>a</ex> salutem . Noueritis me pro salute anime mee . et dicti . T . patris mei . et Ade
+                  uxoris mee . et omnium meorum . concesisse . et presenti
+                  carta mea confirmasse . Abbatie de valle dei . et monachis
+                  ibidem deo seruientibus . In liberam et perpetuam elemosinam
+                   QUartam parte Almelidon . quod vocatur keresban . vidit
+                  quicquid habuit predictus T . pater meus . Inter polleneshan
+                  . et Pollenescunt . usque ad aquam de Don . Quod scilicet
+                  totum tenent ipsi monachi de dono ipsius . T . patris mei .
+                  Hanc supradictam cum omnibus vbique pertinenciis suis .
+                  libertatibus . et aisiamentis . tenebunt . et habebunt . idem
+                  monachi . libere . quiete . et pacifice . Reddendo inde
+                  annuatim mihi et heredibus meis  quinque Marcas argenti ad
+                  duos terminos . pro omni seruitio . consuetudine . et
+                  exaccione seculari . videlicet Duas Marcas . et dimidiam  ad
+                  festum sancti Martini . et duas Marcas et dimidiam ad
+                  Pentecosten . Et ego et heredes mei warantizabimus . et
+                  defensabimus totum predictum tenementum prenominatis monachis
+                  . et eorum assignatis . in omnibus . et contra omnes homines
+                  inperpetuum . Et si contigerit quod Dominus Rex scotie
+                  prefatam firmam . sepedictis monachis relaxare . et condonare
+                  uoluerit . ego illud liberetissime concedam . et ratum habebo
+                  . Ita quod nunquam aliquid deinceps de eadem firma  ego uel
+                  heredes mei ab ipsis monachis exigemus . Hiis testibus .
+                  Domino Duncano de Charik . Reginald<ex>o</ex> de Crauford’ . fergus de Glencarn . Rob’ de Bigr’ . Hug<ex>one</ex> . filio Reginald<ex>o</ex> de Crauford’ . Edwardo . Donaldo Mac Edi . Gillecrist Mac haued’ . Quos omnes
+                  precor ut huius rei sint testes .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

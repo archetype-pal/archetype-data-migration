@@ -1,0 +1,80 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-870">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of TNA DL 41/104</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 14:51:18.988047+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">870</idno>
+        <idno type="textcontent">893</idno>
+        <idno type="transcription_textcontentxml">870</idno>
+        <idno type="translation_textcontentxml">871</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 41/104</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>TNA DL 41/104</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T14:51:18.988047+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T14:51:18.988047+00:00" status="published">transcription moa=870 status=live modified=2021-04-07 09:25:03.429098+00 | translation moa=871 status=live modified=2021-04-07 14:51:18.988047+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription"><p><cl type="address">Omnibus ad quos presens Scriptum peruenerit <cl type="intitulatio">Rob’ de brus</cl> <cl type="salutation">Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciatis</cl> me dedisse et concessisse et hac presenti carta mea<lb/> confirmasse<lb/> Rogero Crispin terram de Cnocculeran in excambium terre sue de Kinemund et
+                     dimidie carucate terre<lb/> quam tenuit in feodo de Moffet illam scilicet que est iuxta Elrebec <cl type="boundaries">per has diuisas nominatas scilicet de blake<lb/>bec sub thornthuait usque ad mussam que est sursum blakebec et sic iuxta mussam
+                        illam usque ad blindthuait<lb/> et sic de blindthuait usque ad Malroser et sic per riuulam de Malroser usque in
+                        polraban et sic de Polraban<lb/> iuxta viridem uiam usque ad sepem de Holthuait et sic per sepem illum usque ad
+                        threpland et sic usque ad diuisas<lb/> terre Hugonis Hendeman . et sicut diuise ille cadunt in blakebec</cl> <cl type="holding">tenendam de me et heredibus meis sibi et heredibus<lb/> suis in feodo et hereditate libere et quiete plene et honorifice cum communi
+                        pastura daltone et parue daltone<lb/> et Musefald et omnibus aliis aisiamentis ad predictam terram pertinentibus</cl> Predictus uero Roger et heredes sui edificabunt<lb/> et sartabunt infra diuisas prescripte terre . et omnibus modis quibus poterunt
+                     terram illam infra diuisas suas ad opus suum<lb/> appropriabunt . <cl type="holding">Hanc predictam terram tenebunt Sepedictus Roger et heredes sui de me et
+                     heredibus meis quiete et ho<lb/>norifice ab omni consuetudine et ab omni demanda faciendo vicesimam partem
+                        seruicii vnius Militis</cl></cl> <cl type="witnesses">hiis Test’<lb/> Ric’ Cumin . Henrico filio Comitis Dauit . Will<ex>elm</ex>o de H[er]ice . Rob<ex>erto</ex> de Crossebi . Hug<ex>one</ex> de Corri . Ric<ex>ardo</ex> de Houmet .<lb/> Ioh<ex>ann</ex> de sancto Ioh<ex>ann</ex>e Laurencio de berkelai . Rob' Capellano et Multis aliis .<lb/></cl></p> <p><cl type="address">Omnibus ad Quos presens scriptum peruenerit <cl type="intitulatio">Rob' de brus</cl> <cl type="salutation">Salutem</cl></cl></p></div>
+      <div type="translation"><p><cl type="address">To all to whom the present writing shall have come <cl type="intitulatio">Robert de Brus</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have given and granted and by this my present charter to have made firm to
+                     Roger Crispin the land of 'Cnocculeran' in exchange for
+                     his land of Kinmount and half a ploughgate of land which
+                     he held in the feu of Moffat, that is to say, that which
+                     is near Elrebec, <cl type="boundaries">by these named boundaries, that is, from Blakebec below Thornthwaite up to the
+                     moss which is above Blakebec, and thus near that moss up
+                     to Blindthwaite, and thus from Blindthwaite up to
+                     Malroser, and thus along the stream from Malroser to the
+                     Polraban, and thus from Polraban near the green road as
+                     far as the hedge of Holthwaite, and thus by that hedge as
+                     far as Threpland, and thus as far as the boundary of the
+                     land of Hugh Hendeman, ans as those boundaries fall into
+                     Blakebec</cl>; <cl type="holding">to be held of me and my heirs by him and his heirs in feu and heritage freely
+                     and quitly, fully and honourably, with common pasture of
+                     Dalton, Little Dalton and Mouswald, and all other
+                     easements pertaining to the aforesaid land.</cl> The aforesaid Roger and his heirs shall build and plough within the aforewritten
+                     boundaries of the land, and by all means by which they are
+                     able they shall assign the land within their own
+                     boundaries for their own use. <cl type="holding">This aforesaid land shall the oft-mentioned Roger and his heirs hold of me and
+                     my heirs quitly and honourably from every custom and from
+                     every demand performing the twentieth part of the service
+                     of one knight.</cl></cl> <cl type="witnesses">With these witnesses: Richard Comyn, Henry son of Earl David; William de Heriz;
+                  Robert of Crosbie; Hugh of Corrie; Richard de Houmet; John of
+                  St John; Laurence of Berkeley; Robert the chaplain; and many
+                  others.<lb/></cl></p> <p><cl type="address">To all to whom the present writing shall have come <cl type="intitulatio">Robert de Brus</cl> <cl type="salutation">sends greeting</cl>.</cl></p></div>
+    </body>
+  </text>
+</TEI>

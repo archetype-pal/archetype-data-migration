@@ -1,0 +1,66 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-281">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/21</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-09-12 15:00:01.917278+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">281</idno>
+        <idno type="textcontent">281</idno>
+        <idno type="transcription_textcontentxml">281</idno>
+        <idno type="translation_textcontentxml">280</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/21</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/21</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-09-12T15:00:01.917278+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-09-12T15:00:01.917278+00:00" status="published">transcription moa=281 status=live modified=2017-09-12 15:00:01.917278+00 | translation moa=280 status=live modified=2017-03-24 15:55:11.251913+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus presens scriptum uisuris uel audituris  <cl type="intitulatio">dauid <persName><roleName>Marescallus</roleName></persName> domini regis scott<ex>orum</ex> .</cl> <cl type="salutation">salutem .</cl></cl> <cl type="disposition">Nouerit<lb/> vniuersitas uestra me dedisse et concessisse . et hac mea carta confirmasse Will<ex>elm</ex>o Lunnoc et heredibus<lb/> suis piscarias meas de Thueda . scilicet totam piscariam meam de holdema’ . et
+                     vnum rethe<lb/> super schipwel . quas Iocelinus lunnoc pater predicti Will<ex>elm</ex>i tenuit . <cl type="holding">Tenendas de me . et de heredibus meis<lb/> sibi et heredibus suis libere et quiete ab omni seruitio . et consuetudine . et
+                        exactione . reddendo singulis<lb/> annis viginti solidos . scilicet . vnam medietatem ad pentecosten . et aliam
+                        medietatem ad festum sancti mar<lb/>tini</cl></cl> . <cl type="witnesses">Hiis testibus . Com<ex>ite</ex> patricio . Will<ex>elm</ex>o cvmin . Waltero de lindes’ . Rog<ex>ero</ex> fili<ex>o</ex> henr<ex>ici</ex> . Will<ex>elmo</ex> de B<ex>er</ex>nham . Will<lb/><ex>elmo</ex> de fifle . Will<ex>elmo</ex> de salle . Alexand<ex>er</ex> de fifle . Will<ex>elmo</ex> miriild . patricio fil<ex>io</ex> W<ex>i</ex>ll<ex>elmi</ex> de fifle . Ric<ex>ardo</ex> luuedar . Ric<ex>ardo</ex><lb/> fil<ex>io</ex> Anke . b<ex>er</ex>tolfo de hilton . Ric<ex>ardo</ex> b<ex>er</ex>nake . W<ex>i</ex>ll<ex>elm</ex>o guth<ex>er</ex>ed . Waltero b<ex>ra</ex>nd . Ric<ex>ardo</ex> clerico . et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall view or hear the present deed, <cl type="intitulatio">David, marischal of the lord king of Scots</cl>, <cl type="salutation">sends Greeting:</cl></cl> <cl type="notification">Let your community know that</cl> <cl type="disposition">I have given and granted and by this my charter made firm to Willliam Lunnock
+                  and his heirs my fisheries on the Tweed, that is, my whole
+                  fishery at ‘Holdema’, and one net on the Shipwell, which
+                  Jocelin Lunnock, the father of the aforesaid William, held. <cl type="holding">For him and his heirs to hold of me and my heirs free and quit from all service
+                     and custom and exaction by rendering 20 shillings each
+                     year, that is, a half at Pentecost and the other half at
+                     the feast of Saint Martin</cl></cl>. <cl type="witnesses">With these witnesses, Earl Patrick, William Comyn, Walter of Lindsay, Roger son
+                  of Henry, William of Bernham, William of Fishley, William de
+                  Salle, Alexander of Fishley, William Miriild, Patrick son of
+                  William of Fishley, Richard Lauder, Richard son of Anke,
+                  Bertolf of Hilton, Richard Bernake, William Guthred, Walter
+                  Brand, Richard the clerk, and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

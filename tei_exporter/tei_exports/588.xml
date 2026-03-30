@@ -1,0 +1,72 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-588">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/127</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2020-12-18 12:51:19.813405+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">588</idno>
+        <idno type="textcontent">596</idno>
+        <idno type="transcription_textcontentxml">588</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/127</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/127</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2020-12-18T12:51:19.813405+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2020-12-18T12:51:19.813405+00:00" status="draft">transcription moa=588 status=draft modified=2020-12-18 12:51:19.813405+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><cl type="address">Omnibus sancte matris ecclesie filiis tam presentibus quam futuris . <cl type="intitulatio">Ioh<ex>annes</ex> filius orm</cl> <cl type="salutation">salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciant tam futuri quam presentes</cl> me dedisse consensu et bona uoluntate domini mei Will<ex>elm</ex>i Regis et concessisse et hac mea carta confirmasse deo et ecclesie sancte marie
+                        de melros . et monachis ibidem deo<lb/> seuientibus pro animabus d<ex>aui</ex>d et melcolmi regum dominorum meorum et pro anima comitis Henrici et pro salute
+                        domini mei regis Will<ex>elm</ex>i et d<ex>aui</ex>d fratris eius et<lb/> pro salute mea et uxoris mee et redemptione animarum nostrarum et pro animabus
+                        patris mei et matris mee et animabus omnium
+                        antecessorum et he<lb/>redum meorum in liberam et puram et perpetuam elemosinam terram de hunedun <cl type="boundaries">per illas rectas diuisas quas ego perambulaui inter terram<lb/> meam et terram de witun et inter terram meam et terram de grubheued . et inter
+                           terram meam et terram de cliftun . et similiter
+                           inter<lb/> terram meam et terram de molle et sicut diuise perambulate sunt inter me et
+                           ipsos monachos coram multis probis hominibus usque
+                           ad locum<lb/> illum ubi paruus riuulus cadit in huneduneburne exorientali parte de
+                           hulkilescroc . et inde sursum per eundem riuulum
+                           usque ad sur<lb/>sam eius . et inde uersus occidentem usque ad paruum collem . et exinder extrans
+                           uerso condoso inter brunecnolh . et helle . et inde
+                           descendendo<lb/> per diuisas quas feci eis usque in haufurlang dene . et inde sicut burna
+                           descendit in kalna</cl> . <cl type="holding">Totam hanc terram et quicquid continetur infra<lb/> prenominatas diuisas dedi predicte ecclesie sancte marie de melros et monachis
+                           ibidem deo seruientibus liberam . solutam . et
+                           quietam . ab omnibus<lb/> auxiliis placitis geldis . assisis . et ab omni seruitio et consuetudine et
+                           exactione seculari . ut ea habeant teneant . et
+                           possideant in<lb/> perpetuum . libere . quiete . pacifice . plenarie . et honorifice sicut aliqua
+                           elemosina liberius tenetur et possidetur a monachis
+                           ordinis cistercien<lb/>sis reddendo annuatim mihi et heredibus meis . viginti . solidos de eadem
+                           elemosina</cl> . Et hoc sciendum est quod predicti monachi nullam com<lb/>munionem habebunt de me et heredibus meis extra diuisas suas perambulatas et
+                        similiter sciendum quod siquis hanc terram infra has<lb/> diuisas permabulatas calumpniari uoluerit <cl type="warrandice">ego et heredes mei omni calumpnianti respondebimus et monachis predictam<lb/> terram cum prenominatis diuisis per omnia warantizabimus .</cl></cl> <cl type="witnesses">His Test’ . Ingeramno episcopo glasg’ . Dauid frater regis . Ric’ . et Will<ex>elm</ex>o capellanis .<lb/> regis . d<ex>aui</ex>d olifar’ . Rob’ auenel . Gaufr’ de maleuuile . Alexa’ de S’ Mart’ . d<ex>aui</ex>d de boiu’ . Hug’ giffard’ . Ric’ clerico . de S’ Albano . hug’<lb/> clerico regis et alio Hug’ clerico regis . Magistro ioh<ex>ann</ex>e de rochesb’ . Archil de witt’ . Vctred de grubeued .</cl></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

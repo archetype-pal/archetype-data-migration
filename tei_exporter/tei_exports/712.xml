@@ -1,0 +1,55 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-712">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/97</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:47.875389+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">712</idno>
+        <idno type="textcontent">723</idno>
+        <idno type="transcription_textcontentxml">712</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/97</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/97</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:47.875389+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:47.875389+00:00" status="draft">transcription moa=712 status=draft modified=2017-01-30 19:28:47.875389+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte matris ecclesie filius tam presentibus quam futuris  <cl type="intitulatio">Alanus filius Walteri Dapifer Reg<ex>is</ex> Scot’</cl><lb/> <cl type="salutation">salutem</cl></cl> . <cl type="undefined">Sciatis</cl> <cl type="disposition">me quieta clamasse totam calupniam meam et quicquid iuris habui . uel unquam
+                  habere po<lb/>tero . uel ego uel heredes mei in pastura ex parte occidentali ledre . et hac
+                     carta mea confirmas<lb/>se in curia domini mei Regis Scott<ex>orum</ex> . Will<ex>elm</ex>i et in presentia ipsius deo et ecclesie Sancte Marie de Melros et mo<lb/>noachis ibidem deo seruientibus in liberam et puram et perpetuam elemosinam .
+                     pro animabus dominorum meorum D<ex>aui</ex>D<lb/> et Malcolmi regum Scott<ex>orum</ex> . et comitis henrici . et omnium antecessorum et successorum eorum . et pro
+                     salute domini<lb/> mei Will<ex>elm</ex>i Reg<ex>is</ex> Scott<ex>orum</ex> . et mea et uxoris mee . et pro anima Walteri . filii alani patris mei . Hanc
+                     quietam<lb/> clamationem . feci pro me et heredibus meis ita libere et quiete in perpetuum .
+                     sicut ipsius pasture et terre donatio<lb/> in cartis domini mei Will<ex>elm</ex>i . Reg<ex>is</ex> Scott<ex>orum</ex> . et antecessorum eius liberius et quicius continetur .</cl> <cl type="sealing">Et quam hanc cartam meam<lb/> firmam et stabilem in perpetuum uolui permanere  Rogatu meo dominus Ioc<ex>elinus</ex> . Glasg’. episcopus . et dominus D<ex>aui</ex>D . Frater Re<lb/>g<ex>is</ex> Scott<ex>orum</ex> . sigilla eidem carte mee in testimonium appendi fecerunt .</cl> <cl type="witnesses">His test<ex>ibus</ex> . Iocel<ex>ino</ex> . Glasg’ . eipscopo .<lb/> Ioh<ex>ann</ex>e . Dunkeld’. episcopo . D<ex>aui</ex>D comite . Fratre Reg<ex>is</ex> . Dunec<ex>ano</ex> . comite . de Fif . Gilleb<ex>erto</ex> . Com<ex>ite</ex> . de Strathern . Will<ex>elm</ex>o . de<lb/> Morev’ . constabular<ex>io</ex> . Reg<ex>is</ex> . Will<ex>elm</ex>o de lindessay . E abbate Rieuall<ex>is</ex> . Hug<ex>one</ex> . abbate de neubole . Mal<lb/>colmo . filio comitis Dunec<ex>ani</ex> . Ioc’ filio Walt<supplied>eri</supplied> de Berkeley . Rob<ex>erto</ex> de Berkeley . Hug<ex>one</ex> . de Northma<lb/>nev’ . Alano . de Thyrlest’ . <supplied>Petro</supplied> de la Haga . Henr<ex>ico</ex> de Sancto Cler; . Rob<ex>erto . Croc . Hug(one</ex> . de ...</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

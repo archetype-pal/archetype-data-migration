@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-862">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of TNA DL 36/3/12</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-02-02 18:06:26.421363+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">862</idno>
+        <idno type="textcontent">885</idno>
+        <idno type="transcription_textcontentxml">862</idno>
+        <idno type="translation_textcontentxml">863</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 36/3/12</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>TNA DL 36/3/12</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-02-02T18:06:26.421363+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-02-02T18:06:26.421363+00:00" status="published">transcription moa=862 status=live modified=2021-02-02 18:06:26.421363+00 | translation moa=863 status=live modified=2017-07-05 08:53:00.769776+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus hominibus Has Litteras visuris uel audituris . <cl type="intitulatio">Robertus de Brus</cl> <cl type="salutation">salutem</cl></cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me dedisse. et Concessisse et<lb/> hac presenti carta mea confirmasse vmfrido filio Simonis et heredibus suis pro
+                     Homagio et seruitio suo Hunnelve<lb/>croft \per rectas diuisas/ Libere et quiete. Honorifice et pacifice. <cl type="holding">Hunc et predictum Croftum  tenebunt ipse predictus Vmfridus et here<lb/>di sui de me et Heredibus meis. Reddendo mihi et heredibus meis annuatim duo
+                        calcaria deaurata. Infra nun<lb/>dinas Karlioli.</cl></cl> <cl type="witnesses">Hiis Testibus Hug<ex>one</ex> de Corri. Will<ex>elmo</ex> de Heri<supplied>z</supplied>. Ricardo de Bosco. Roberto de Crossebi. Ric’.<lb/> de Humeth . Laurencio de berkelai. Will<ex>elmo</ex> franceis. Hug<ex>one</ex> filio hamelin. Iuone filio hamelin</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all people who shall view or hear these letters <cl type="intitulatio">Robert de Brus</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let them know</cl> me to have given, and granted, and made firm by this present charter, to
+                     Humphrey fitz Simon and his heirs in return for his homage
+                     and service 'Hunnelvecroft' \by the correct boundaries/
+                     freely and quitly, honourably and peaceably. <cl type="holding">This and the aforesaid croft the aforesaid Humphrey and his heirs shall hold of
+                     me and my heirs, rendering to me and my heirs annually two
+                     golden spurs at the time of the Carlisle fair.</cl></cl> <cl type="witnesses">With these witnesses: Hugh of Corrie; Williem de Heriz; Richard del Bois; Robert
+                  of Crosby; Richard de Humez; Laurence of Berkeley; William
+                  Francis; Hugh fitz Hamelin; Ivo fitz Hamelin.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

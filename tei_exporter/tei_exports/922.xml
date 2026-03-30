@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-922">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 595</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:47:55.632005+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">922</idno>
+        <idno type="textcontent">947</idno>
+        <idno type="transcription_textcontentxml">922</idno>
+        <idno type="translation_textcontentxml">923</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 595</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 595</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:47:55.632005+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:47:55.632005+00:00" status="approved">transcription moa=922 status=reviewed modified=2022-11-01 16:47:55.622636+00 | translation moa=923 status=reviewed modified=2022-11-01 16:47:55.632005+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">W . dei gr<ex>aci</ex>a Rex Scott’ .</cl> Episcopis . Abbatibus . Com<ex>itibus</ex> . Baronibus . Iusticiis . Vicecom<ex>itibus</ex> . Ministris et Omnibus probis<lb/> hominibus tocius terre sue . <cl type="salutation">salutem</cl> .</cl><lb/> <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> me concessisse et Hac Carta mea confirmasse . Diui<lb/>sas inter Coldinghamsire . et Bonekillesire . <cl type="holding">Tenend’ ita libere et quiete plenarie et honorifice . Sicut Carta<lb/> Regis D<ex>aui</ex>d . aui mei testatur et Confirmat .</cl> <cl type="boundaries">scilicet a Midlesdene heued per Mereburnes heued . uersus Occiden<lb/>tem usque ad Crhac hoctrestrete . et Inde per Eandem stratam usque ad Eiford .</cl></cl> <cl type="witnesses">Testibus his . Watero<lb/> de Bid<ex>un</ex> Cancellario . Com<ex>ite</ex> . Waldeuo . Ricardo de Moreuill<ex>a</ex> <persName><roleName>const<ex>abulario</ex></roleName></persName> . Roberto de Quinci . Waltero de Winlesor’ .<lb/> Waltero Camer<ex>ario</ex> . philippo de Valloniis . Will<ex>elm</ex>o de Veteri ponte . Iohanne de Lond’</cl> <cl type="dating">Apud Ieddewurch’</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex>, by the grace of God king of the Scots,</cl> to bishops, abbots, earls, barons, justices, sheriffs, officials, and all worthy
+                     men of his entire land, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have approved, and by this my charter to have made firm, the boundaries
+                     between Coldinghamshire and Bunkleshire, <cl type="holding">to be held as freely and quitly, fully and honourably, as the charter of King
+                     David my grandfather bears witness and affirms</cl>, <cl type="boundaries">that is from 'Midlesdene' Head by 'Mereburne' Head towards the west as far as
+                     'Crhac Hoctrestrete', and thence by the same road as far
+                     as Eiford.</cl></cl> <cl type="witnesses">With these witnesses: Walter de Bidun, the chancellor; Earl Waldeve; Richard de
+                  Morville, the constable; Robert de Quincy; Walter of Windsor;
+                  Walter the chamberlain; Philip de Valognes; William de
+                  Vieuxpont; John of London.</cl> <cl type="dating">At Jedburgh.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

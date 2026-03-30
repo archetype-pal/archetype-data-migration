@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-560">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/249</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:34.721701+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">560</idno>
+        <idno type="textcontent">568</idno>
+        <idno type="transcription_textcontentxml">560</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/249</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/249</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:34.721701+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:34.721701+00:00" status="draft">transcription moa=560 status=draft modified=2017-01-30 19:28:34.721701+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><cl type="address">Omnibus sancte Matris Ecclesie filiis Presentibus et futuris <cl type="intitulatio">Ioh<ex>ann</ex>es de Normanuill'</cl> <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit vniuersitas<lb/> uestra</cl> me caritatis intuitu dedisse et concessisse . et hac mea carta confirmasse Deo
+                        et ecclesie sancte Marie de Melr<ex>os</ex><lb/> et Monachis ibidem deo seruientibus . pro animabus patris mei et matris mee et
+                        omnium antecessorum meorum . et pro salu<lb/>te domini mei Alex’ Regis Scot’ . et pro salute mea et omnium successorum meorum
+                        . In liberam puram et perpetuam ele<lb/>mosinam quondam partem terre mee de Makerstun’ . uersus occidentem ex oppositio
+                        domorum de Morhuses que sunt<lb/> in terra Monachorum predictorum de Melr<ex>os</ex> . sicut ego ipse cum priore et cellerariis de Melr<ex>os</ex> dictam terram eis peram<lb/>bulaui . <cl type="holding">Totam hanc terram et quicquid in ea continetur dedi et concessi prefatis
+                        Monachis vt eam habeant<lb/> teneant et possideant et vtantur modis omnibus quibus eis melius et utilius
+                           uisum fuerit . Ita libere . quiete . ple<lb/>ne . . et honorifice  sicut aliquam elemosinam in regno scocie liberius .
+                           quiecius . plenius . et honorificencius<lb/> tenent vel possident</cl> <cl type="warrandice">Et ego et heredes mei Manutenebimus . et warantizabimus prefatis Monachis
+                        prefatam<lb/> terram <supplied>et ac</supplied>quietab<supplied>imus</supplied> de <supplied>omni ser</supplied>uicio et consuetudine et exactione seculari uel demanda erga omnes<lb/> homines in perpetuum</cl> .</cl> <cl type="witnesses">Hiis Testibus . Waltero de fontibus . Thoma fratre meo . Magistro Adam de
+                     Makustun’ . Will<ex>elm</ex>o<lb/> franco Et multis aliis .</cl></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

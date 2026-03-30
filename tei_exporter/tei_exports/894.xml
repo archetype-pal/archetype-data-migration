@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-894">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 576</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:12:05.534811+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">894</idno>
+        <idno type="textcontent">918</idno>
+        <idno type="transcription_textcontentxml">894</idno>
+        <idno type="translation_textcontentxml">895</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 576</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 576</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:12:05.534811+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:12:05.534811+00:00" status="approved">transcription moa=894 status=reviewed modified=2022-11-01 16:12:05.52597+00 | translation moa=895 status=reviewed modified=2022-11-01 16:12:05.534811+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">M . Rex scottorum</cl> vicecomiti de berewic et omnibus suis probis hominibus et<lb/> ministris <cl type="salutation">salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciatis me</cl> ecclesiam de collingaham et homines et terras et quic<lb/>quid ad eandem ecclesiam pertinet in mea protectione suscepisse . <cl type="undefined">Quare<lb/> prohibeo ne aliquis eis iniuriam uel contumeliam iniuste faciat . et<lb/> ... placitent aut respondeant de placitis que ad regiam meam potestatem
+                        pertinent . nisi in presentia mea . uel in presentia
+                        sup<lb/>preme iustitie mee . et ne ministri mei de beruvich homines eorum in pla<lb/>citent</cl></cl> <cl type="witnesses">Test<ex>ibus</ex> . Walter . filio Alani . senescallo . Ric<ex>ardo</ex> de Morwill<ex>a</ex> . Conest<ex>abulario</ex><lb/> d<ex>aui</ex>d olifard .</cl> <cl type="dating">Apud Collingaham .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">M<ex>alcolm</ex>, king of the Scots,</cl> to the sheriff of Berwick and all worthy men and officials, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have received the church of Coldingham and the men and lands and whatever
+                     belongs to the same church under my protection. <cl type="injunction">Wherefore I forbid that anyone unlawfully do injustice or harm to them; and they
+                     may [not] plead or answer pleas which pertain to my royal
+                     authority, unless they are in my presence, or in the
+                     presence of my supreme justice, and my officials of
+                     Beriwck are not to implead their men.</cl></cl> <cl type="witnesses">As witnesses: Walter son of Alan, steward; Richard de Morville, constable; David
+                  Oliphant.</cl> <cl type="dating">At Coldingham.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

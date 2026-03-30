@@ -1,0 +1,83 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-738">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/287</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:24:16.076054+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">738</idno>
+        <idno type="textcontent">750</idno>
+        <idno type="transcription_textcontentxml">738</idno>
+        <idno type="translation_textcontentxml">739</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/287</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/287</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T08:24:16.076054+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T08:24:16.076054+00:00" status="published">transcription moa=738 status=live modified=2021-04-07 08:24:16.076054+00 | translation moa=739 status=live modified=2021-04-07 08:24:14.846613+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte matris ecclesie filiis et fidelibus presentibus et futuris
+                  litteras istas uisuris uel audituris <cl type="intitulatio">Walterus de<lb/> Ridal’ filius patricii de Ridal’</cl> <cl type="salutation">salutem in domino</cl> .</cl> <cl type="notification">Nouerit vniuersitas uestra</cl> <cl type="disposition">me dedisse concessisse et hac mea presenti carta<lb/> confirmasse deo et ecclesie beate Marie de melros et Monachis ibidem deo
+                     seruientibus in liberam . puram . et perpetuam elemosi<lb/>nam quandam partem terre mee in territorio de lilliscliue cum Toftis et Croftis
+                     que sunt inter terram Rogeri de Neu<lb/>botl’ et terram quam dedi Alexandro de Askirke scilicet totam terram quam matild<ex>is</ex> chorbeth tenuit in duarium in lintedikes<lb/> et benelandes et brunerig  in duobus locis . et in kaueres . et ch<ex>e</ex>ngisflat . Et pratum quod dicitur stobimedue . et quinque acras<lb/> et unam percatam de dominico meo subtus harekamb ex australi parte . scilicet de
+                     terra quam alexander filius thoc de me tenuit<lb/> ad firmam . Terras istas et quicquid in eis continetur dedi predictis monachis . <cl type="holding">Et uolo ut eas cum predicto prato et cum omnibus commu<lb/>nibus aisiamentis eiusdem uille habeant teneant et possideant in perpetuum ita
+                        libere quiete plene et honorifice  sicut ali<lb/>quam elemosinam liberius quiecius plenius et honorificencius tenent uel
+                        possident .</cl> <cl type="warrandice">Et ego et heredes mei manutenebimus et warantizabimus predictas terras cum
+                     predicto prato et adquietabimus ab omni terreno seruicio
+                     et consuetudine et exaccione se<lb/>culari et demanda erga dominum Regem et omnes alios in perpetuum</cl> .</cl> <cl type="witnesses">Hiis testibus . Domino meo Will<ex>elm</ex>o de Vesci . Ricardo ger<lb/>nun . Roberto de Euurth . Ricardo de Nichol’ . Hugone de reuedene . Gileberto de
+                     Wittune . Will<ex>elm</ex>o filio alexanderi de<lb/> lilliscliue et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons and faithful men of Holy Mother Church present and future who shall
+                  view or hear these letters <cl type="intitulatio">Walter of Ryedale son of Patrick of Ryedale</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Know me all of you</cl> <cl type="disposition">to have given, granted, and by this my charter to have made firm to God and to
+                  the church of blessed Mary at Melrose and to the monks in
+                  that place serving God, in free, pure, and perpetual alms, a
+                  portion of my land in the territory of Lilliesleaf with the
+                  tofts and crofts which are between Roger of Newbattle's land
+                  and the land that I gave to Alexander of Ashkirk, that is,
+                  the whole land that Matilda Corbett held in dower in
+                  'Lintedikes' and 'Benelandes' and 'Brunerig', in two places,
+                  both in 'Kaueres' and 'Chengisflat', and the meadow which is
+                  called 'Stobimedue', and five acres and one perch from my
+                  demesne below 'Harekamb' on the southern side, that is, from
+                  the land which Alexander son of Thoc held from me at ferme.
+                  These lands and whatever is contained in them I have given to
+                  the aforesaid monks. <cl type="holding">And I will that they have, hold and possess them with the aforesaid meadow and
+                     with all common easements of the same toun for ever, as
+                     freely, quitly, fully, and honourably as they hold or
+                     possess any alms freely, quitly, fully, and honourably.</cl> <cl type="warrandice">And I and my heirs shall maintain and warrant the aforesaid lands with the
+                     aforesaid meadow, and we shall acquit from every earthly
+                     service and custom and secular exaction and demand towards
+                     the lord King and everyone else for ever.</cl></cl> <cl type="witnesses">With these witnesses, my lord William de Vescy, Richard Gernun, Robert of Airth,
+                  Richar de Nichol', Hugh of Redden, Gilbert of Whitton,
+                  William son of Alexander of Lilliesleaf, and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

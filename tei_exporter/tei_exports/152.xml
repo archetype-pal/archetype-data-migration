@@ -1,0 +1,59 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-152">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 44</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:04.228171+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">152</idno>
+        <idno type="textcontent">152</idno>
+        <idno type="transcription_textcontentxml">152</idno>
+        <idno type="translation_textcontentxml">153</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 44</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 44</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:28:04.228171+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:04.228171+00:00" status="published">transcription moa=152 status=live modified=2017-01-30 19:28:04.228171+00 | translation moa=153 status=live modified=2016-06-07 14:30:42.891832+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte Matris ecclesie filiis . <cl type="intitulatio">Adam filius Abrahae . de Lura .</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Sciant <lb/> omnes tam presentes quam futuri .</cl> <cl type="disposition">me dedisse ⁊ concessisse ⁊ hac mea carta con<lb/>firmasse deo ⁊ ecclesie Sancti Andree ⁊ Canonicis ibidem deo seruientibus ⁊
+                     serui<lb/>turis . tres acras terre in lura . cum tofto uno . in perpetuam elemosinam  ⁊
+                     cum <lb/> omni libertate . sine omni seruitio seculari . ⁊ exactione . Cum communi pastura
+                     quattuor <lb/> bobus . ⁊ totidem uaccis . ⁊ duobus equis . ⁊ quadraginta ouibus .</cl> <cl type="witnesses">Test<ex>ibus</ex> . Michaele <lb/> filio Symonis . Radulfo Capellano . D<ex>aui</ex>d ruffo . Rob<ex>er</ex>to filio Ederardi . ⁊ Gi<lb/>leb<ex>er</ex>to fratre eius .</cl></p>
+      </div>
+      <div type="translation"><p><cl type="address">To all sons of Holy Mother Church, <cl type="intitulatio">Adam son of Abraham of Lour</cl>, <cl type="salutation">Greeting</cl></cl>: <cl type="notification">Let all men know, present as well as to come,</cl> t<cl type="disposition">hat I have given and have granted and by this my charter have made firm, to God
+                  and to the church of St Andrews and to the Canons in that
+                  place serving God now and in the future, three acres of land
+                  in Lour, with one toft, in perpetual alms, and with every
+                  liberty, without any secular service and exaction.</cl> <cl type="witnesses">With common pasture for four oxen, as many cows, two horses, and forty sheep. As
+                  witnesses: Michael son of Simon; Ralph the Chaplain; David
+                  Ruff; Robert son of Adelard, and Gilbert his brother.</cl></p> <p> </p></div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-676">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Add. Ch. 76748</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:48:49.231109+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">676</idno>
+        <idno type="textcontent">686</idno>
+        <idno type="transcription_textcontentxml">676</idno>
+        <idno type="translation_textcontentxml">677</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 76748</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Add. Ch. 76748</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:48:49.231109+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:48:49.231109+00:00" status="published">transcription moa=676 status=live modified=2021-04-05 08:48:47.27971+00 | translation moa=677 status=live modified=2021-04-05 08:48:49.231109+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus has literas visuris uel audituris <cl type="intitulatio"><persName>Alwinus</persName> filius <persName>Duncani</persName> de fofrekin</cl> <cl type="salutation">Salutem</cl></cl> <cl type="notification">Sciatis</cl> <cl type="disposition">me dedisse et concessisse et hac<lb/> carta mea confirmasse <persName>Malbrido Marrenah</persName> et heredibus suis terram illam que fuit in lite inter me et dominum <persName>laurentium</persName> filium <persName>orm</persName><lb/> per rectas diuisas <cl type="boundaries">ab illi mec ewin usque ad modlahin et ex alia parte inter Gahnakarbet et aldi
+                     nalar</cl> <cl type="holding">ad tenendum<lb/> de me et heredibus meis ille et heredes sui libere et quiete ab omni seruicio et
+                        consuetudine et exactione et forinseco et ab aliquo<lb/> ausilio</cl> . et predictus <persName>Malbrid</persName> habebit comunam pasturam et multuram suam liberam eundo ubicumque . uoluerit et
+                     predictus <persName>Malbrid</persName><lb/> habebit merchet et blodwit et vnlah libere quantum ad terram illam pertinet . et
+                     predictus malbrid reddet annuatim<lb/> et heredes sui mihi et heredibus meis octo solidos argenti . quatuor solidos .
+                     ad pentecosten et quatuor solidos ad festum sancti Martini</cl><lb/> <cl type="witnesses">Test<ex>ibus</ex> <persName>Waldeuo</persName> filio <persName>merleswain</persName> et herede suo . <persName>Duncano</persName> filio <persName>ade</persName> et herede suo <persName>Will<ex>elm</ex>o</persName> persona de Kilconcat . <persName>Toma</persName> de<lb/> lundin et herede suo . <persName>Malcolmo</persName> Iudice . et Multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all intending to view or hear these letters, <cl type="intitulatio">Alwin son of Duncan of Foffarty</cl> <cl type="salutation">[sends] greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have given, conceded, and by this my charter to have made firm, to
+                     Maelbrigte Marrenah and his heirs that land which is in
+                     dispute between me and the lord Laurence son of Orm, by
+                     the right marches, <cl type="boundaries">from 'Illi mec Ewin' to 'Modlahin' and, from the other side, between
+                     'Gahnakarbet' and 'Aldi Nalar';</cl> <cl type="holding">to be held of me and my heirs by him and his heirs free and quit from all
+                     service, custom, exaction, forinsec, and from any aid;</cl> and the aforesaid Maelbrigte shall have his own free common pasture and multure
+                     going wherever he wishes, and the aforesaid Maelbrigte
+                     will have merchet, blodwite, and unlaw, freely, as much as
+                     pertains to that land; and the aforesaid Maelbrigte and
+                     his heirs shall annually render to me and my heirs eight
+                     shillings of silver, four shillings at Pentecost and four
+                     shillings at Martinmas.</cl> <cl type="witnesses">As witnesses: Waldef son of Merlswain, and his heir; Duncan son of Adam, and his
+                  heir; William the parson of Kilconquhar; Thomas of Lundin,
+                  and his heir; Malcolm the judex; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

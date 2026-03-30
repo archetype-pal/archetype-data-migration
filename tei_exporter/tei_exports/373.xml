@@ -1,0 +1,77 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-373">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/170</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:44:28.191303+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">373</idno>
+        <idno type="textcontent">377</idno>
+        <idno type="transcription_textcontentxml">373</idno>
+        <idno type="translation_textcontentxml">374</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/170</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/170</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T12:44:28.191303+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T12:44:28.191303+00:00" status="published">transcription moa=373 status=live modified=2021-04-06 12:44:23.300853+00 | translation moa=374 status=live modified=2021-04-06 12:44:28.191303+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. W . d<ex>e</ex>i gr<ex>ati</ex>a Rex Scott'</cl> Ep<ex>iscop</ex>is . Comitibus . Baronibus . Iustic' . Vicecomitibus . Ministris . et Omnibus
+                     probis hominibus tocius terre sue<lb/> Clericis et laicis <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes et posteri</cl> . me concessisse et dedisse et hac Carta mea confirmasse deo et ecclesie sancte
+                     marie de Mel<lb/>ros . et monachis ibidem deo seruientibus terram illam quam habent de patricio
+                     de Ridale in territorio de Wittun . per ipsas diuisas que
+                     conti<lb/>nentur in carta patricii de Ridale quam habent de eo de eadem terra . <cl type="holding">ita ut quicquid infra diuisas fuerit habeant et possideant imperpe<lb/>tuum . ita libere et quiete . honorifice et pacifice . sicut aliqua elemosina
+                        liberius et quietius et honorificentius in regno meo
+                        possidetur .</cl> Dedi enim<lb/> eis et confirmaui terram illam liberam ab omnibus auxiliis placitis . Geldis .
+                     et ab omni seruicio et consuetudine et exactione seculari
+                     . <cl type="warrandice">ita quod ego<lb/> et heredes mei manutenebimus et warantizabimus eam illis contra omnes homines in
+                        perpetuum . saluo seruitio meo de patricio et here<lb/>dibus suis</cl> .</cl> <cl type="witnesses">Test' Iocelino episcopo Glasg' . Dauid fratre meo . Walter Olifard Iustic'.
+                  Alano filio Walteri . Hug' clerico de sigillo . Hug' Ridel .
+                  Walter<lb/> de Windeshoure . Walter de berkel' cam' . Will<ex>elm</ex>o de Mortimer . Rob' de berkel' . Ioh<ex>ann</ex>e de london' .</cl> Apud lanarch.</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex> by the grace of God king of the Scots</cl> to Bishops, Earls, Barons, Justices, Sheriffs, Officials, and all worthy men of
+                     the whole of his land, clerk and lay, <cl type="salutation">Greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have granted and given and by this my charter to have made firm to God and
+                     to the church of St Mary at Melrose, and to the monks
+                     serving God in that place, the land that they have from
+                     Patrick of Ryedale in the territory of Whitton, by those
+                     bounds that are contained in the charter of Patrick of
+                     Ryedale which they have from him concerning the same land; <cl type="holding">so that they have and possess whatever is within the bounds for ever, as freely
+                     and quitely, honourably and peaceably, as any alms is
+                     freely and quitely and honourably possessed in my kingdom.</cl> For I have given to them and confirmed that land free from all aids, pleas,
+                     gelds, and from every service and custom and secular
+                     exaction; <cl type="warrandice">so that I and my heirs shall maintain and warrant it for them against all men
+                     for ever, saving my service from Patrick and his heirs</cl></cl>. <cl type="witnesses">As witnesses, Jocelin, bishop of Glasgow; David my brother; Walter Oliphant,
+                  justice; Alan son of Walter; Hugh, clerk of the seal; Hugh
+                  Ridel; Walter of Windsor; Walter of Berkeley, chamberlain;
+                  William de Mortimer; Robert of Berkeley; John of London.</cl> At Lanark.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

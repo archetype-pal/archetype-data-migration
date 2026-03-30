@@ -1,0 +1,98 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-523">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/57</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 07:59:04.59717+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">523</idno>
+        <idno type="textcontent">530</idno>
+        <idno type="transcription_textcontentxml">523</idno>
+        <idno type="translation_textcontentxml">522</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/57</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/57</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T07:59:04.59717+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T07:59:04.59717+00:00" status="published">transcription moa=523 status=live modified=2021-04-07 07:59:04.59717+00 | translation moa=522 status=live modified=2021-04-07 07:58:49.192881+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">W. d<ex>e</ex>i gr<ex>aci</ex>a Rex Scott’ .</cl> Omnibus probis hominibus Tocius terre sue clericis et laicis <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> me concessisse et Hac Carta mea<lb/> confirmasse deo et ecclesie Sancte Marie . de Melros . et monachis ibidem deo
+                     seruientibus donacionem illam quam auus et pater . Comitis
+                     patric<ex>ii</ex> .<lb/> et Comes Patricius eis fecerint . de hertesheued . et de Spot . per rectas
+                     diuisas predictarum terrarum . inter predictos monachos et
+                     steintun . quas habue<lb/>runt temporibus aui et patris predicti comitis . Patr<ex>icii</ex> . et que nominantur in confirmacionem prefati Comitis . patric<ex>ii</ex> . in Boscho . et plano . in pratis . et pascuis . et omnibus aliis ad predictas
+                     terras iuste pertinentibus . et preterea cum communi
+                     pastura de Mora . ad tres greges arietum . ita ut
+                     unusquisque<lb/> Grex contineat . Quingentos arietes . cum aisiamentis eiusdem more . Preterea .
+                     concedo et hac Carta mea confirmo . prefatis monachis<lb/> illas Quinque acras terre . quas prefatus Comes . Patricius . eis dedit in
+                     incrementum in australi parte de Mosiburnerig . ut
+                     includant eas fossato<lb/> ad faciendum Berkariam ad prefatos tres greges . arietum . et illis Quinque
+                     acris terre utentur sicut melius eis uisum fuerit . ita
+                     tamen ut<lb/> eas non colant . Et preterea . quicquid iuris prefatus comes . patricius . uel
+                     heredes sui uel homines sui habebant uel habere poterant
+                     de communi<lb/> in prato illo quod prefati Monachi tenent . de Militibus Alan<ex>i</ex> . filio Walteri in feudo de Inuerwic’ . subtus Brunrig . que prefatus . co<lb/>mes Patric<ex>ius</ex> . prefatis monachis concessit . et carta sua confirmauit . <cl type="holding">Tenend’ . in liberam et puram et perpetuam elemosinam ita li<lb/>bere . et Quiete . plenarie et honorifice . sicut Carta prefati Comitis . Patr<ex>icii</ex> . Testatur . Saluo seruicio meo .</cl></cl> <cl type="witnesses">Test’ . Hug’.<lb/> Cancellario . meo . Will<ex>elm</ex>o . de Moruill’ . const<ex>abulario</ex> . philipp<ex>o</ex> . de valon’ . <persName><roleName>Cam<ex>erario</ex></roleName></persName> . Will<ex>elmo</ex> . Cumin . Ioh<ex>anne</ex> . de hasting’ . Ric<ex>ardo</ex> . <persName><roleName>Marescall<ex>o</ex> .</roleName></persName><lb/> Rob<ex>erto</ex> de Burneuill’ . d<ex>aui</ex>d de Haia . Rob’ . de Moruill’ .</cl> Apud . Berewic’ . xvi . die April .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex> by the grace of God king of Scots</cl> to all worthy men of the whole of his land clerk and lay <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have granted and by this my charter to have made firm to God and to the
+                     church of St Mary at Melrose and to the monks in that
+                     place serving God the donation which the grandfather and
+                     father of Earl Patrick as well as Earl Patrick made to
+                     them at Hartside and at Spott by the aforesaid correct
+                     bounds of the lands between the aforesaid monks and
+                     Stenton which they had in the time of the grandfather and
+                     father of the aforesaid Earl Patrick and which are named
+                     in the confirmation of the aforementioned Earl Patrick, in
+                     wood and plain, in meadows and pastures, and in all other
+                     things justly pertaining to the aforesaid lands; and in
+                     addition with common pasture of the moor for three flocks
+                     of rams, so that each flock should contain five hundred
+                     rams, with easements of the same moor; in addition I grant
+                     and by this my charter make firm to the aforementioned
+                     monks the five acres of land which the aforementioned Earl
+                     Patrick gave to them as an enlargement on the south side
+                     of 'Mosiburnerig' that they enclose them by ditch and bank
+                     to make a sheepfold for the aforementioned three flocks of
+                     rams; and the five acres of land may be used just as it
+                     seems best to them, yet so that they should not till them;
+                     and in addition whatever right of common the
+                     aforementioned Earl Patrick, or his heirs or his vassals,
+                     used to have or could have in the meadowland which the
+                     aforementioned monks hold of the knights of Alan fitz
+                     Walter in the feu of Innerwick, below Brunrig, which the
+                     aforementioned Earl Patrick granted to the aforementioned
+                     monks and made firm by his charter; <cl type="holding">to be held in free and pure and everlasting alms as freely and quitely, fully
+                     and honourably, as the charter of the aforementioned Earl
+                     Patrick bears witness; saving my service</cl></cl>. <cl type="witnesses">As witnesses: Hugh my Chancellor; William de Morville, Constable; Philip de
+                  Valognes, Chamberlain; William Comyn; John of Hastings;
+                  Richard Marshall; Robert de Bourneville; David de la Haye;
+                  Robert de Morville.</cl> At Berwick on the sixteenth day of April.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

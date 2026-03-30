@@ -1,0 +1,56 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-168">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/220</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-25 23:57:18.781864+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">168</idno>
+        <idno type="textcontent">168</idno>
+        <idno type="transcription_textcontentxml">168</idno>
+        <idno type="translation_textcontentxml">169</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/220</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/220</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-02-25T23:57:18.781864+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-02-25T23:57:18.781864+00:00" status="published">transcription moa=168 status=live modified=2017-02-25 23:57:15.288796+00 | translation moa=169 status=live modified=2017-02-25 23:57:18.781864+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Norm’ <persName><roleName>vicecomes</roleName></persName> de Berewic . Omnibus hominibus suis de Crostorfin  <cl type="salutation">salutem</cl>.</cl><lb/> <cl type="disposition">Sciatis me concessisse . ⁊ in perpetuam elemosinam dedisse . Sancte cruci de<lb/> Edeneb’ . ⁊ abbati . ⁊ fratribus ibidem deo seruientibus . Capellam meam de Cros<lb/>torfin cum omnibus rectitudinibus capelle eidem pertinentibus.</cl> <cl type="witnesses">T<ex>estibus</ex> . He[n]rico Comite<lb/> ⁊ Edwardo Cancellario . ⁊ Turoldo archidiacono Lodonie . ⁊ Ricardo Cle<lb/>rico de Edeneb’.</cl> Apud Berewic</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">Norman, sheriff of Berwick, to all his men of Corstorphine, <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition">Know that I have granted and given in perpetual alms to Holyrood in Edinburgh
+                  and to the abbot, and to the brethren serving God there, my
+                  Chapel at Corstorphine with all revenues belonging to the
+                  same chapel.</cl> <cl type="witnesses">As witnesses, Henry the Earl, and Edward the Chancellor, and Thurald the
+                  Archdeacon of Lothian, and Richard the Clerk of Edinburgh.</cl> At Berwick.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

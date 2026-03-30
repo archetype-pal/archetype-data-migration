@@ -1,0 +1,64 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-100">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 14</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-01-31 16:28:02.466357+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">100</idno>
+        <idno type="textcontent">100</idno>
+        <idno type="transcription_textcontentxml">100</idno>
+        <idno type="translation_textcontentxml">101</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 14</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 14</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2018-01-31T16:28:02.466357+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2018-01-31T16:28:02.466357+00:00" status="published">transcription moa=100 status=live modified=2018-01-31 16:28:02.466357+00 | translation moa=101 status=live modified=2016-06-06 15:29:49.154796+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Will<ex>elmus</ex> . miseratione diuina Ecclesie Sancti Andr<ex>ee</ex> . minister humilis .</cl> vniuersis sancte matris Ecclesie filiis <cl type="salutation">eternam in domino <lb/> Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Ad uniuersitatis uestre noticiam uolumus deuenire</cl> nos de assensu prioris ⁊ Capituli sancti Andr<ex>ee</ex> . ad incre<lb/>mentum archidiaconatus sancti Andr<ex>ee</ex> . dedisse ⁊ concessisse Magistro Laur<ex>encio</ex> . Archidiacono sancti Andr<ex>ee</ex> . et eius successoribus in perpetuum Ecclesiam de Teruet cum omnibus iustis
+                     pertinentiis suis . liberam ⁊ Quietam a <lb/> sinodalibus ⁊ omnibus episcopalibus ⁊ exactionibus . <cl type="sealing">Et ut hec nostra donatio robur perpetue firmitatis optineat  eam <lb/> sigilli nostri appositione ⁊ presentis pagine testimonio duximus coroborandam</cl> .</cl> <cl type="witnesses">Hiis Test<ex>ibus</ex> . Andr<ex>ea</ex> . Decano <lb/> Laodonie . Andr<ex>ea</ex> . de morauia . Geruasio de Neafla . Petro ⁊ Edwardo Capellanis . Magistro
+                     Michaele . <lb/> Magistro Steph<ex>an</ex>o . Ric<ex>ardo</ex> . Capellano . Ric<ex>ardo</ex> . <persName><roleName>Camerario</roleName></persName> . Nicholao de Coldingham . ⁊ multis aliis ;</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">William, by divine mercy humble servant of the Church of St Andrews</cl>, wishes to all sons of Holy Mother Church <cl type="salutation">eternal salvation in the Lord</cl>:</cl> <cl type="disposition"><cl type="notification">We wish it to come to the attention of you all</cl> that we, with the assent of the prior and the chapter of St Andrews, for the
+                     improvement of the archdeaconry of St Andrews, have given
+                     and granted to Master Laurence, archdeacon of St Andrews,
+                     and to his successors for ever, the church of Tarvit with
+                     all its rightful pertinents, free and quit from synodal
+                     dues and all episcopal dues and exactions. <cl type="sealing">And that this our donation should remain secure for ever, we have caused it to
+                     be confirmed by the application of our seal and the
+                     witness of the present document</cl>.</cl> <cl type="witnesses">With theses witnesses: Andrew, dean of Lothian; Andrew of Moray; Gervase de
+                  Neaufles; Peter and Edward, chaplains; Master Michael; Master
+                  Stephen; Richard the chaplain; Richard the chamberlain;
+                  Nicholas of Coldingham; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

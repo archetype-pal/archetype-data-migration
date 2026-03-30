@@ -1,0 +1,79 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-800">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5945</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.964856+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">800</idno>
+        <idno type="textcontent">815</idno>
+        <idno type="transcription_textcontentxml">800</idno>
+        <idno type="translation_textcontentxml">801</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5945</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5945</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T13:36:57.964856+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:36:57.964856+00:00" status="approved">transcription moa=800 status=reviewed modified=2022-11-01 13:36:57.954653+00 | translation moa=801 status=reviewed modified=2022-11-01 13:36:57.964856+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi fidelibus ad quos presens scriptum peruenerit  <cl type="intitulatio">Robertus filius Reginaldi</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Nouerit vniuersitas uestra</cl><lb/> <cl type="disposition">me diuine pietatis intuitu et pro anima patris mei et omnium antecessorum meorum
+                  . et pro salute anime mee et preci<lb/>pue pro anima Nicholay filii Ade cuius mors michi imponebatur  dedise .
+                     concessisse . et hac carta mea confirmasse . In<lb/> puram . liberam . et pereptuam elemosinam . deo et sancte Marie et priori et
+                     monachis de Coldingham ibidem deo ser<lb/>uientibus et in perpetuum seruituris . tresdecim acras et unam Rodam in
+                     territorio Magne Ristone in tribus locis .<lb/> scilicet in Bilyeside et Sonƿiwesacre et in Holewaye . <cl type="holding">habendas et tenendas in perpetuam adeo libere . quiete .<lb/> plenarie . et honorifice sicut aliqua elemosina in regno Scotie . liberius .
+                        quietius . plenarius et honorificentius<lb/> tenetur uel possidetur .</cl> <cl type="warrandice">Ego autem Robertus et heredes mei dictas tresdecim acras et vnam rodam dictis
+                     priori et mo<lb/>nachis contra omnes homines et feminas warantizabimus . Et in omnibus seruiciis
+                        et auxiliis tam uersus dominum<lb/> regem quam domum de Coldingham defendemus et acquietabimus .</cl></cl> <cl type="witnesses">Hiis testibus . Domino Willelmo de Lindeseia . Domino<lb/> Willelmo de Morthint<ex>ona</ex> . Domino Alano de Swintona . Domino Ada de Prendergest . Roberto . Alex<ex>andro</ex> . Will<ex>elmo</ex> de Paxt<ex>ona</ex> . Will<ex>elmo</ex><lb/> clerico domini prioris . Iohanne filio Elye de Aytona . Mauricio de Aytona .
+                     Bertramo de Restona . Roberto filio Gregor<ex>ii</ex><lb/> Radulfo preposito . Rogero filio eius . Et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful to whom the present writing shall have come, <cl type="intitulatio">Robert son of Reginald</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Know me, all of you,</cl> <cl type="disposition">moved by divine love and for the soul of my father and of all my ancestors, and
+                  for the salvation of my own soul, and especially for the soul
+                  of Nicholas, son of Adam, whose death has been attributed to
+                  me, to have given, granted, and made firm by this my charter,
+                  in pure, free, and everlasting alms, to God, Saint Mary, to
+                  the prior, and to the monks of Coldingham serving God in that
+                  place now and for ever in the future, thirteen acres and one
+                  rood in the territory of Great Reston in three places; that
+                  is, in Billieside and <ex>Sonƿiwesacre</ex> and in <ex>Holewaye</ex>; <cl type="holding">to have and to hold for ever, as freely, quitely, fully, and honourably as any
+                     alms in the kingdom of Scotland is freely, quitely, fully,
+                     and honourably held or possessed</cl>. <cl type="warrandice">And I, Robert, and my heir, shall warrant the said thirteen acres and one rood
+                     to the said prior and monks against all men and women; and
+                     we shall defend and acquit them in all services and aids,
+                     both towards the lord king and also the house of
+                     Coldingham.</cl></cl> <cl type="witnesses">With these witnesses: the lord William of Lindsay; the lord William of
+                  Mordington; the lord Alan of Swinton; the lord Adam of
+                  Prenderguest; Robert, Alexander, William of Paxton; William,
+                  clerk of the lord prior; John son of Elias of Ayton; Maurice
+                  of Ayton; Bertram of Reston; Robert son of Gregory; Ralph the
+                  grieve; Roger his son; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

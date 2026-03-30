@@ -1,0 +1,116 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-226">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/249 (1)</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:07:10.539386+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">226</idno>
+        <idno type="textcontent">226</idno>
+        <idno type="transcription_textcontentxml">226</idno>
+        <idno type="translation_textcontentxml">227</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/249 (1)</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/249 (1)</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T08:07:10.539386+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T08:07:10.539386+00:00" status="published">transcription moa=226 status=live modified=2021-04-06 08:07:10.539386+00 | translation moa=227 status=live modified=2021-04-06 08:07:08.558844+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Ioh<ex>ann</ex>es Dei gratia Candide case Episcopus</cl> Omnibus sancte matris Ecclesie filiis  fidelibus <cl type="salutation">salutem</cl>.</cl> <cl type="disposition"><cl type="notification">Nouerint presentes  futuri .</cl> nos tocius capituli nostri assensu pro salute anime nostre Omniumque
+                     predecessorum nostrorum successorumque<lb/> Animarum . salute  concessisse  Episcopali auctoritate presentisque scripti
+                     testimonio confirmasse Deo  Ecclesie Sancte crucis de
+                     edenb<ex>ur</ex>g .  Canonicis ibidem Deo Seruientibus  seruituris in liberam  puram 
+                     perpetuam<lb/> Elemosinam . Omnes Ecclesias quas bone memorie Fergus  filius eius Huctredus .
+                     &amp; D<ex>aui</ex>D filius Terri cum terris eisdem Canonicis diuine remuneracionis intuitu assensu
+                     diocesani Episcopi contulerunt   Cartis suis confir<lb/>mauerunt. Ex donacione Scilicet fergus  Ecclesiam de Dunroden cum tota uilla de
+                     Dunroden  Omnibus pertinenciis suis .  Insulam de Trahil
+                     .  Galtweith cum Ecclesia eiusdem uille  Omnibus
+                     pertinenciis<lb/> Suis . Ex donacione uero huctredi filii eius  Ecclesiam Sancti Cuthb<ex>er</ex>ti de Desnesmor .  Ecclesiam de Tuncgeland .  Ecclesiam de Twenham . 
+                     Ecclesiam sancti Andree .  Ecclesiam de lockelletun . 
+                     Ecclesiam<lb/> de kyrkecormac cum Capella de Balnecros . Et ex donacione D<ex>aui</ex>D filii Terri  Ecclesiam de Anewith cum Capella de Culenes   omnibus
+                     pertinenciis suis . <cl type="holding">Quare uolumus  Episcopali auctoritate concedimus  ut predicti ca<lb/>nonici Omnes prenominatas Ecclesias cum Capellis  Omnibus obuencionibus suis .
+                         cum terris  Omnibus pertinenciis suis  prout sibi
+                        placuerit in usus proprios totaliter conuertant .  eas
+                        libere  quiete  solute ab omni procuracione 
+                        consuetudine<lb/>  exactione inperpetuum teneant  possideant </cl> Easdemque Ecclesias per Capellanos sibi congruos nobis uel successoribus nostris
+                     presentatos . uel per semet ipsos prout sibi expedire
+                     uiderint  deseruiri faciant . minusque<lb/> idoneos consulto tamen Episcopo  amoueant . Saluis nobis  successoribus
+                     nostris tantum sinodalibus .  communibus auxiliis
+                     racionabilibus de predictis Ecclesiis . exceptis de
+                     kyrkecormac cum Capella de Balnescors .  lockelletun
+                     Ecclesiis <lb/> que per predecessorem nostrum bone memorie christianum Episcopum  per nos a
+                     sinodalibus  ceteris episcopalibus penitus sunt exempte.</cl> <cl type="witnesses">Hiis testibus . mich’ priore de Wytherne  eiusdem loci capitulo . Domino Alano
+                  filio Rolandi .<lb/> Constabulario Domini Regis Scottorum . Ioh<ex>ann</ex>e Archidiacono . Matheo decano de Desnes . Will<ex>elm</ex>o decano de farenes . Gilb<ex>er</ex>to decano de Rennes . Walt<ex>er</ex>o persona . Durando persona de Magof . Martino<lb/> clerico de kyrkecuthb<ex>er</ex>t  Aliis quam pluribus.</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">John by the grace of God Bishop of Whithorn</cl> to all sons and faithful of Holy Mother Church, <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition"><cl type="notification">Let present and future come to know that</cl> with the agreement of the whole of our chapter in return for the salvation of
+                     our soul and the salvation of the souls of all our
+                     predecessors and successors, we have granted and by
+                     episcopal authority confirmed by the testimony of the
+                     present document, to God and to the church of Holyrood at
+                     Edinburgh, and to the canons serving God there now and in
+                     the future, in free and pure and perpetual alms, all the
+                     churches with their lands that Fergus of good memory, and
+                     his son Uhtred, and David son of Terrus, inspired by
+                     divine reward, bestowed to the same canons by the
+                     agreement of the diocesan bishop, and made firm by their
+                     own charters. That is, from the donation of Fergus, the
+                     church of Dunrod with the whole toun of Dunrod and all its
+                     pertinents; and the isle of Trail; and Galtway with the
+                     church of that toun and all its pertinents. From the
+                     donation of Uhtred, the church of St Cuthbert of
+                     Desnesmor; and the church of Tongland; and the church of
+                     Twynholm; and the church of St Andrew; and the church of
+                     Kelton; and the church of Kirkcormack with the chapel of
+                     Barncrosh. And from the donation of David son of Terrus,
+                     the church of Anwoth with the chapel of Culenes and all
+                     its pertinents. <cl type="holding">Wherefore we will and grant by episcopal authority that the aforesaid canons may
+                     completely convert to their own benefit all the aforenamed
+                     churches with the chapels and all their revenues, and with
+                     lands and all their pertinents as they please, and hold
+                     and possess them freely and quietly and released from all
+                     procuration and custom and exaction in perpetuity,</cl> and they shall cause those churches to be served by chaplains agreeable to
+                     themselves, presented by us or our successors, or by
+                     themselves if it seems expedient to them, and may remove
+                     those less suitable, in consultation with the bishop.
+                     Reserving to ourself and our successors only reasonable
+                     synodals and common aids from the aforesaid churches,
+                     except the churches of Kirkcormack, with the chapel of
+                     Barncrosh, and Kelton, which were entirely exempted from
+                     synodals and the rest of the episcopal dues by our
+                     predecessor of good memory, Bishop Christian, and by us.</cl> <cl type="witnesses">With these witnesses, Michael the prior of Whithorn, and the chapter of the same
+                  place, the lord Alan son of Roland, constable of the lord
+                  King of Scots, John the archdeacon, Matthew the dean of
+                  Desnes, William the dean of Farines, Gilbert the dean of
+                  Rhinns, Walter the parson, Durand the parson of Minnigaff,
+                  Martin the clerk of Kirkcudbright, and very many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

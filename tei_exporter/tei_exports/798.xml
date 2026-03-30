@@ -1,0 +1,80 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-798">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5946</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.944158+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">798</idno>
+        <idno type="textcontent">813</idno>
+        <idno type="transcription_textcontentxml">798</idno>
+        <idno type="translation_textcontentxml">799</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5946</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5946</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T13:36:57.944158+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:36:57.944158+00:00" status="approved">transcription moa=798 status=reviewed modified=2022-11-01 13:36:57.933879+00 | translation moa=799 status=reviewed modified=2022-11-01 13:36:57.944158+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="notification">Sciant omnes tam presentes quam futuri quod</cl> <cl type="intitulatio">ego Robertus filius Reginaldi de Ristona</cl> <cl type="disposition">de<lb/>di et concessi et hac presenti carta mea confirmaui deo et sancto Cuthberto et
+                     sancte Ebbe et<lb/> Priori et Monachis de Coldingham in puram et perpetuam elemosinam humagium et
+                     seruicium<lb/> quod Patricius Scotus de Ristona mihi et heredibus meis debebat pro terra quam
+                     eidem . P . et<lb/> heredibus suis dedi pro humagio et seruicio suo de terra mea in campo de Ristona
+                     cum omnibus es<lb/>chaetis sine aliquo retinemento que in mihi uel heredibus meis accidere poterunt
+                     de dicta<lb/> terra . Et ego Robertus et heredes mei aquietabimus dictum . P . et heredes suos
+                     uel suos assigna<lb/>tos de omni forinseco seruicio dicte terre pertinenti . tam uersus dominum Regem
+                     quam uersus<lb/> domum de Codlginham . excepto quod dictus . P . et heredes sui uel sui assignati
+                     reddent<lb/> annuatim domui de Coldingham . vi . denarios ad festum sancti Iohannis Baptiste
+                     nomine firme .</cl><lb/> <cl type="sealing">Et ut hec mea donatio inperpetuum firma permaneat presenti scripto sigillum meum
+                  apposui .</cl><lb/> <cl type="witnesses">Hiis Testibus . Domino . W . de Morthingtona . Domino Alano de Swintona . Ada de
+                  Prender<lb/>gest . Galfrido Ridel . Ada de Rist<ex>ona</ex> . Bertramo filio eius . Mauricio de Aytona . Ioh<ex>anne</ex> filio<lb/> Helye . Ada clerico de Prendergest . Rad<ex>ulfo</ex> preposito . Rad<ex>ulfo</ex> seruiente . et multis Aliis</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="notification">Let all men present as well as future know that</cl> <cl type="intitulatio">I, Robert son of Reginald of Reston</cl>, <cl type="disposition">have given and made firm by this my present charter, to God, Saint Cuthbert,
+                  Saint Æbbe, and the prior and monks of Coldingham, in pure
+                  and perpetual alms, the homage and service that Patrick Scott
+                  of Reston used to owe to me and my heirs for the land which
+                  the same Patrick and his heirs gave for his homage and
+                  service from my land in the grassland of Reston with all
+                  escheats, without any withholding, which could fall to me or
+                  my heirs from the said land. And I, Robert, and my heirs,
+                  shall acquit the said Patrick and his heirs or assigns of all
+                  forinsec service belonging to the said land, as well towards
+                  the lord king as towards the house of Coldingham, except what
+                  the said Patrick and his heirs or assigns return annually to
+                  the house of Coldingham, 6 pence at the feast of St John the
+                  Baptist as ferme.</cl> <cl type="sealing">And that this my donation should remain firm, I have applied my seal to the
+                  present writing.</cl> <cl type="witnesses">With these witnesses: the lord W<ex>illiam</ex> of Mordington; the lord Alan of Swinton; Adam of Prenderguest; Geoffrey Ridel;
+                     Adam of Reston; Bertram his son; Maurice of Ayton; John
+                     son of Elias; Adam, clerk of Prenderguest; Ralph the
+                     grieve; Ralph the sergeant; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

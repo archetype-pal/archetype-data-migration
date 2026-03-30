@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-626">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.45</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:23:30.860623+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">626</idno>
+        <idno type="textcontent">636</idno>
+        <idno type="transcription_textcontentxml">626</idno>
+        <idno type="translation_textcontentxml">627</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.45</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.45</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:23:30.860623+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:23:30.860623+00:00" status="published">transcription moa=626 status=live modified=2021-04-05 08:23:30.860623+00 | translation moa=627 status=live modified=2021-04-05 08:23:28.891853+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. <persName>D’.</persName> dei gr<ex>ati</ex>a Rex Scott’</cl> Omnibus Baronibus suis . et hominibus . et Amicis <lb/> francis . et Angl’  <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Sciatis me</cl> <cl type="disposition">dedisse . et concessisse <persName>Robert<ex>o</ex></persName> de<lb/> Brus Estrahanent . et totam terram a diuisa <persName>Dunegal</persName> de Stranit<lb/> usque ad Diuisam <persName>Rand’</persName> Meschin’ . <cl type="holding">Et uolo et concedo . ut illam<lb/> terram . et suum castell<ex>um</ex> bene . et honorifice  cum omnibus consuetudinibus<lb/> suis teneat . et habeat . videlicet cum omnibus illis consuetudinibus quas Rand’
+                        Meschin unquam habuit In Carduill’ . et In terra sua de
+                        Cumber<lb/>land’ illo die in quo unquam meliores . et liberiores habuit</cl> .</cl> <cl type="witnesses">T’ . <persName>Eusat’</persName> fil’<lb/> <persName>Ioh<ex>annis</ex></persName> . et <persName>Hug’</persName> de Morvill’ . et <persName>Alan’</persName> de P<ex>er</ex>ci et <persName>Will’</persName> de Sumervill’ . et <persName>Bereng’<lb/> Inganio</persName> . et <persName>Rand’</persName> . de Sules . et <persName>Walt’</persName> de Morvill’ . et <persName>Herui</persName> fil’ <persName>Warin<ex>i</ex><lb/></persName> et <persName>Edmund’</persName> Camer’ .</cl> Apud Sconam .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">D<ex>avid</ex> by the grace of God king of the Scots</cl> to all his barons, and men, and friends, French and English, <cl type="salutation">greeting</cl>.</cl> <cl type="notification">Know me</cl> <cl type="disposition">to have given and conceded Annandale [Estrahanent] to Robert de Brus, and the
+                  whole land from the boundary of Dunegal of Nithsdale
+                  [Stranit] as far as the boundary of Ranulf le Meschin. <cl type="holding">And I will and concede that he hold and have the land and its castle well and
+                     honourably with all its customs, namely, with all those
+                     customs which Ranulf le Meschin ever had in Carlisle and
+                     his land of Cumberland on that day in which he ever had
+                     them best and most freely</cl></cl>. <cl type="witnesses">As witness: Eustace fitz John; Hugh de Morville; Alan de Percy; William de
+                  Somerville; Berengar Engaine; Ranulf de Soules; Walter de
+                  Morville; Hervey fitz Warin; Edmund the chamberlain.</cl> At Scone.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

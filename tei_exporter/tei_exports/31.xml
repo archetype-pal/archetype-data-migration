@@ -1,0 +1,72 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-31">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/248</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-29 15:57:28.188408+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">31</idno>
+        <idno type="textcontent">31</idno>
+        <idno type="transcription_textcontentxml">31</idno>
+        <idno type="translation_textcontentxml">32</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/248</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/248</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-29T15:57:28.188408+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-29T15:57:28.188408+00:00" status="approved">transcription moa=31 status=reviewed modified=2023-06-29 15:57:28.188408+00 | translation moa=32 status=reviewed modified=2023-06-29 15:57:28.175141+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Alex’ Dei Gratia Rex scott’ .</cl> Omnibus Probis Hominibus tocius terre sue <cl type="salutation">salutem .</cl></cl> <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> nos <lb/> concessisse et hac carta nostra confirmasse donationem illam quam Iohannes de
+                     Normanuill’ fecit deo et ecclesie sancte <lb/> Marie de Melros’ . et Monachis ibidem deo seruientibus et in perpetuum
+                     seruituris de quadam parte terre sue <lb/> in territorio de Mackestun’ . <cl type="holding">Tenend’ et Habend’ dictis Monachis de Melros et suis successoribus de predicto <lb/> Johanne de Normanuill’ et Heredibus suis . in puram et perpetuam elemosinam per
+                        easdem rectas diuisas que <lb/> continentur in carta eiusdem Johann<ex>is</ex> de Normanuill’ . Libere . Qviete . Plenarie . et honorifice  sicut Carta
+                        predicti <lb/> Johann<ex>is</ex> inde Plenius confecta predictis Monachis de Melros’  iuste testatur . saluo
+                        seruitio nostro .</cl></cl> <cl type="witnesses">Test<ex>ibus</ex> . W . <lb/> de Bond’ . Cancellar<ex>io</ex> . Walt<ex>er</ex> Olifard’ Justic’ Laodon’ . Rob<ex>erto</ex> de Ros’ . Walt<ex>er</ex> Cumyn’ . Johanne de <lb/> Maccuswel Camer<ex>ario</ex> . Bernard’ Fraser’ . Rad’ de Campan’ . Eymer’ de Maccuswel .</cl> <cl type="dating">apud Traueqr’ . quarto die <lb/> Februarii . Anno regni . domini regis Nonodecimo</cl> .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, by the grace of God king of Scots</cl>, to all worthy men of his whole land, <cl type="salutation">greeting</cl>: </cl><cl type="disposition"><cl type="notification">Let present and future know</cl> that we have granted and made firm by this our charter the donation of a share
+                     of his own land in the territory of Maxton that John de
+                     Normanville made to God and to the church of St Mary at
+                     Melrose and to the monks who are serving God there now and
+                     in perpetuity; <cl type="holding">for the said monks of Melrose and their successors to hold and to have from the
+                     aforesaid John de Normanville and his heirs in pure and
+                     perpetual alms by the same correct boundaries that are
+                     contained in the same John de Normanville’s charter;
+                     freely, quietly, fully, and honourably, just as the
+                     aforesaid John’s charter to the aforesaid monks of Melrose
+                     more fully drawn up on the matter justly bears witness;
+                     with the exception of our service.</cl></cl> <cl type="witnesses">As witnesses: William of Bondington, chancellor; Walter Oliphant, justiciar of
+                  Lothian; Robert of Roos; Walter Comyn; John of Maxwell,
+                  chamberlain; Bernard Fraser; Ralph de Champagne; Aymer of
+                  Maxwell. </cl><cl type="dating">At Traquair, on the fourth day of February, in the nineteenth year of the reign
+                  of the lord king</cl>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

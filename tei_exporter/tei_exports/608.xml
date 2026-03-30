@@ -1,0 +1,138 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-608">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/66</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-27 14:56:23.837372+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">608</idno>
+        <idno type="textcontent">617</idno>
+        <idno type="transcription_textcontentxml">608</idno>
+        <idno type="translation_textcontentxml">609</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/66</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/66</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2023-03-27T14:56:23.837372+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2023-03-27T14:56:23.837372+00:00" status="draft">transcription moa=608 status=draft modified=2017-01-30 19:28:39.043988+00 | translation moa=609 status=draft modified=2023-03-27 14:56:23.837372+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris ecclesie filiis tam presentibus quam futuris <cl type="intitulatio">Walter filius Alani dapifer Regis Scott’</cl> <cl type="salutation">salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciant tam presentes quam futuri</cl> me dedisse et hac mea carta confirmasse deo et ecclesie sancte Marie<lb/> de Melr<ex>os</ex> . et Monachis ibidem deo seruientibus . pro animabus d<ex>aui</ex>d et Melcolmi Regum dominorum meorum et Comitis henrici et patris mei et Matris
+                     mee et omnium antecessorum et successorum meorum . et pro
+                     salute Will<ex>elm</ex>i Regis Scott’<lb/> et d<ex>aui</ex>d fratris eius . et pro salute mea et omnium heredum meorum . in liberam et
+                     puram et perpetuam elemosinam totam terram de Makelin <cl type="boundaries">per diuisas quas Duuenald et Gillebride meo precepto perambulauerunt inter
+                     terram de<lb/> makelin et terram Gilberti filii Richeri . scilicet ab illo loco quo Mulneburne
+                        cadit in ar’ subtus culteicouan et ascendendo per
+                        eandem burnam usque ad fulelech . et sic ascendendo per
+                        eundem sicum ex transuerso mus<lb/>so . usque ad burnam que descendit de rederburne . et ascendendo per burnam ex
+                        transuerso condoso de rederburne usque in burnam que
+                        cadit in duueloch . et per burnam que descendit de
+                        duueloch descendendo per eandem burnam<lb/> usque in saxnoc et ascendendo per saxnoc usque ad polmulin et sic ascendendo per
+                        polmulin usque per medium acthenebron . et inde sursum
+                        usque ad condosum et sic per condosum sicut aqua
+                        defluunt uersus eos<lb/> ex australi parte ad caput Ned . et sic deorsum per ned usque in ar’ . et per
+                        ar’ deorsum usque lugar’ . et per lugar’ sursum usque
+                        ad dufpol . et per Dufpol sursum per diuisas quas feci
+                        perambulare eis<lb/> usque econtra monecapel .</cl> Cum hac terra dedi eis landas et halghes ex aquilonali parte fluminis ar’ quas
+                     uoluerint excolere et piscaturam in ostio fluminis ar’ cum
+                     uno rete pri<lb/>mo scilicet de tribus retibus . et desuper ut utantur ipso flumine ar’ tam in
+                     piscationibus quam in aliis rebus sicut eis placuere et
+                     utilius fuerit . et sicut ego ipse ad meum proprium opus
+                     melius habui . <cl type="holding">Hanc elemo<lb/>sinam . uolo ut predicti Monachi de Melr<ex>os</ex> . ita libere et quiete et honorifice perpetuo tenore ab omnibus seruitiis et
+                        placitis asisis quoque et auxiliis et omni exactione
+                        seculari . et consuetudine in perpetu<lb/>um [<ex>mis-written</ex> perpetutim] teneant et possideant . sicut liberius et quietius et
+                        honorificentius aliqua elemosina teneri potest et
+                        possideri</cl> . Preterea . dedi et concessi eis totam pasturam foreste mee usque ad diuisas de
+                     Doueglas<lb/> et de lesmagu et de Glengeuel a parte . aquilonali fluminis ar’ cum omnibus
+                     asiamentis . in nemore et in omnibus eis necessariis et
+                     unam carrucatam terre ad excolendam in illis locis ubi
+                     prouiderint<lb/> melius et utilius esse ad opus suum libere et quiete de me et heredibus meis ab
+                     omnibus seruitiis perpetuo tenore possidendam excepto quod
+                     quinque marcas argenti mihi et heredibus meis annuatim
+                     persoluent . salua<lb/> tamen foresta mea tantum in bestiis et auibus . <cl type="notification">et hoc sciendum quod</cl> ego et heredes mei faciemus forense seruitium apud dominum nostrum regem de
+                     omnibus predictis <cl type="warrandice">et warantizabimus eis predictas diui<lb/>sas et quicquid in eis est in bosco et in plano et in omnibus aliis rebus contra
+                        omnes homines in perpetuum . sicut liberam et puram et
+                        perpetuam elemosinam</cl> . et quia uolui ut hec mea elemosina firma esset<lb/> et stabilis nec aliquo modo posset infringi dominus meus Will<ex>elmus</ex> rex prece mea omnia predicta carta sua confirmauit . sicut suam propriam
+                     elemosinam .</cl> <cl type="witnesses">Teste alano filio meo . liulfo filio Ma’<lb/> Rob<ex>erto</ex> de Constetin . Rob<ex>erto</ex> de Monte Gumeri . Rob<ex>erto</ex> filio fulberti . Rob<ex>erto</ex> filio Maias . Radulfo de kent . Walter Constentin . Ric<ex>ardo</ex> clerico . Ric<ex>ardo</ex> Wallensi . Ada de Neutuna .</cl></p>
+      </div>
+      <div type="translation"><p><cl type="address">To all sons of Holy Mother Church, as well present as future, <cl type="intitulatio">Walter son of Alan, steward of the king of the Scots</cl>, <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Let present and future know</cl> me to have given and by this my charter to have made firm to God and to the
+                  church of Saint Mary at Melrose, and to the monks serving God
+                  in that place, for the sake of the souls of my lords, David
+                  and Malcolm the kings, and of Earl Henry, and of my father
+                  and mother, and of all my ancestors and successors, and for
+                  the salvation of William king of Scots and David his brother,
+                  and for the salvation of my own soul and of my heirs' souls,
+                  in free and pure and everlasting alms, the whole land of
+                  Mauchline by the boundaries which Donald and Gilla Brigte at
+                  my instruction perambulated between the land of Mauchline and
+                  the land of Gilbert son of Richer, to wit, from the place
+                  where 'Mulneburne' falls into the Ayr below 'Culteicouan',
+                  and going up by the same burn as far as 'Fulelech', and so
+                  going upwards by the same syke, and across the bog as far as
+                  the burn which descends from 'Rederburne' to the burn which
+                  falls into 'Duueloch', and by the burn which comes down from
+                  'Duueloch', descending by the same burn into 'Saxnoc', and
+                  going up by 'Saxnoc' to 'Polmulin', and thus ascending by
+                  'Polmulin' up to the midst of 'Acthenebron', and from there
+                  upwards as far as the ridge and so by the ridge as the water
+                  flows across them from the south side to the head of the
+                  Nith, and thus downwards by the Nith as far as the Ayr, and
+                  by the Ayr downwards to the Lugar, and by the Lugar upwards
+                  to the 'Dufpol', and by the 'Dufpol' upwards by the
+                  boundaries which I caused them to perambulate, as far as the
+                  other side of 'Monecapel'. With this land I have given to
+                  them the open lands and haughs on the north side of the river
+                  Ayr which they might want to cultivate, and a fishery at the
+                  mouth of the river Ayr, with one net at first, to wit, of the
+                  three nets; and in addition that they may use the river Ayr
+                  as well for fishing as for other things as might please and
+                  benefit them; and just as I myself have well had this alms
+                  for my own use, I will that the aforesaid monks of Melrose as
+                  freely, quitly and honourably should hold and possess as a
+                  perpetual holding from all services and pleas of assize also
+                  and aids and every secular exaction and custom for ever, just
+                  as freely and quitly and honourably as any alms can be held
+                  and possessed. In addition, I have given and granted to them
+                  the whole pasture of my forest up to the boundaries of
+                  Douglas and Lesmahagow and Glengavel on the north side of the
+                  river Ayr, with all easements, in wood and in all things
+                  necessary for them, and one ploughgate of land for
+                  cultivating in those places where</p> <p>And be it known that I and my heirs shall do forinsec service for our lord the
+               king for all the aforesaid, and we shall warrant to them the
+               aforesaid boundaries and whatever is in them, in wood and in
+               plain, and in all other things, against all men for ever, as
+               free and pure and perpetual alms. And because I have willed that
+               this my alms should be strong and established nor by any means
+               infringed, my lord King William has at my request confirmed all
+               the things aforesaid by his charter, just as his own alms. <cl type="witnesses">Witness Alan my son, Liulf son of Master Robert of Côtentin, Robert of
+                  Montgomery, Robert son of Fulbert, Robert son of Maias, Ralph
+                  of Kent, Walter Côtentin, Richard the clerk, Richard Wallce,
+                  Adam of Newton.</cl></p></div>
+    </body>
+  </text>
+</TEI>

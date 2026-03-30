@@ -1,0 +1,75 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-658">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.9</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:35:36.428615+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">658</idno>
+        <idno type="textcontent">668</idno>
+        <idno type="transcription_textcontentxml">658</idno>
+        <idno type="translation_textcontentxml">659</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.9</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.9</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:35:36.428615+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:35:36.428615+00:00" status="published">transcription moa=658 status=live modified=2021-04-05 08:35:34.704811+00 | translation moa=659 status=live modified=2021-04-05 08:35:36.428615+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>Alex’</persName> . Dei Gratia Rex Scott’ .</cl> Omnibus probis hominibus tocius terre sue <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Sciatis nos</cl> <cl type="disposition">concessisse et<lb/> hac presenti Carta nostra confirmasse in puram et perpetuam elemosinam abbati et
+                     conuentui de Melros ut<lb/> omnes terras inter Galwhe et Ledyr quas tenuerunt uel in quarum possessione
+                     fuerunt . et etiam omnes alias<lb/> terras quas tenuerunt uel in quarum possessione fuerunt ex parte australi de
+                     Twed que sunt contigue terris<lb/> de Lessedewin’ et terris Monachorum de kalkou et quicquid continetur infra omnes
+                     predictas terras quas eis<lb/> deforestauimus tam sub terra quam supra teneant et habeant in perpetuum in
+                     Liberum forestum . <cl type="prohibition">firmiter<lb/> prohibentes ne quis sine speciali licentia ipsorum Abbatis et conuentus . in
+                        dictis terris . Secare . venari . piscari .<lb/> aut aucupari . aut aliquid aliud contra uoluntatem ipsorum facere presumat .
+                        super nostram plenariam<lb/> forisfacturam . Decem Librarum</cl> .</cl> <cl type="witnesses">Test<ex>ibus</ex> . <persName>G .</persName> electo Dunkeldensi . <persName>Laur<ex>entio</ex></persName> . de Abbirnith’ . <persName>Bernardo fraser’</persName> .<lb/> <persName>Thom<ex>a</ex></persName> filio . <persName>Ranulf<ex>i</ex></persName> . <persName>Willelmo</persName> de Lindeseia . <persName>Dauid</persName> de Lindeseia . <persName>Alexandr<ex>o</ex></persName> . de Striuelin’ .</cl> Apud Al<lb/>necr<ex>um</ex>b . tercio die Decembris . Anno Regni domini Regis vicesimo Secundo .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, by the grace of God king of the Scots</cl>, to all worthy men of his entire land <cl type="salutation">[sends] greeting</cl>.</cl> <cl type="notification">Know us</cl> <cl type="disposition">to have conceded, and by this our charter to have made firm, in pure and
+                  everlasting alms, to the abbot and convent of Melrose, that
+                  all lands between Gala and Leader which they have held or in
+                  possession of which they have been, and also all other lands
+                  which they have held or in possession of which they have been
+                  on the south side of the Tweed, which adjoin the lands of
+                  Lessudden and the lands of the monks of Kelso, and whatever
+                  is contained within the said lands which we have deforested
+                  for them, as much below ground as above, they may hold and
+                  have for ever in free forest, <cl type="prohibition">strictly forbidding anyone, without the express permission of the abbot and
+                     convent themselves, to cut wood, hunt, fish, or go
+                     fowling, or attempt to do any other thing against the will
+                     of same in the said lands, on pain of our full forefeiture
+                     of ten pounds.</cl></cl> <cl type="witnesses">As witnesses: G<ex>eoffrey</ex>, elect of Dunkeld; Laurence of Abernethy; Bernard Fraser; Thomas son of Ranulf;
+                     William of Lindsay; David of Lindsay; Alexander of
+                     Stirling.</cl> At Ancrum, on the third day of December in the twenty-second year of the reign
+                  of the lord king. </p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-47">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/185</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-12 13:45:36.123684+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">47</idno>
+        <idno type="textcontent">47</idno>
+        <idno type="transcription_textcontentxml">47</idno>
+        <idno type="translation_textcontentxml">48</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/185</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/185</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-12T13:45:36.123684+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-12T13:45:36.123684+00:00" status="approved">transcription moa=47 status=reviewed modified=2023-06-12 13:45:36.123684+00 | translation moa=48 status=reviewed modified=2023-06-12 13:45:36.104592+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Alex<ex>ander</ex> . dei gr<ex>ati</ex>a rex Scott<ex>orum</ex></cl> . omnibus probis hominibus tocius terre sue . clericis ⁊ <lb/> laicis  <cl type="salutation">salutem</cl> . </cl><cl type="disposition"><cl type="notification">Sciant presentes ⁊ futuri me</cl> dedisse . ⁊ concessisse . ⁊ hac carta mea <lb/> confirmasse deo ⁊ ecclesie sancte Marie de Melros’ . ⁊ monachis ibidem deo
+                     seruientibus <lb/> totam terram de Drumteihsuiene . ⁊ de Alesburc’ . ⁊ de Auchnephur’ . quam <persName>Rogerus</persName> . <lb/> de Scalebroc’ . eis dedit per rectas diuisas suas contentas in carta ipsius <persName>Rog<ex>eri</ex></persName> . ⁊ cum omnibus <lb/> ad predictas terras iuste pertinentibus . Tenend’ in liberam ⁊ puram ⁊ perpetuam
+                     elemosinam cum omnibus aisiamentis ⁊ iustis pertinentijs
+                     suis . Ita libere ⁊ quiete . plenarie ⁊ honorifice . <lb/> Sicut carta predicti <persName>Rog<ex>eri</ex></persName> . ⁊ confirmatio <persName>Dunecan<ex>i</ex></persName> . filii <persName>Gilleb<ex>erti</ex></persName> . inde facte predictis mo<lb/>nachis  testantur . saluo seruitio meo . </cl><cl type="witnesses">Test<ex>ibus</ex> . <persName>Will<ex>elmo</ex></persName> . episcopo sancti Andr<ex>ee</ex> . <persName>Will<ex>elmo</ex></persName> . de Bosc<ex>o</ex> . <lb/> cancellario . comite . <persName>Patric<ex>io</ex></persName> . comite . <persName>Malc<ex>olmo</ex></persName> . de fif’ . <persName>Will<ex>elmo</ex> . Cumin’</persName> . comite . de Buchan’ . <persName>Alan<ex>o</ex></persName> . filio <persName>Roll<ex>andi</ex></persName> . Constabulario . <persName>Ph<ex>ilippo</ex></persName> . de Mubray . <persName>Walt<ex>ero</ex> . Olifard’</persName> . <persName>Ad<ex>am</ex></persName> . filio . <persName>Gilleb<ex>erti</ex></persName> . <lb/> <persName>Ingelram<ex>o</ex></persName> . de Baillol’ . <persName>Alex<ex>andro</ex></persName> . uicecomite . de Striuel<ex>in</ex> . <persName>Walt<ex>ero</ex></persName> . de Lindes’ . <persName>Joh<ex>anne</ex></persName> . <lb/> de Maccuswel’ . </cl><cl type="dating">Apud Edenb’ . secundo die Octobris</cl> .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, by the grace of God king of Scots</cl>, to all worthy men of the whole of his land, clerk and lay, <cl type="salutation">greeting:</cl> </cl><cl type="disposition"><cl type="notification">Let present and future know</cl> that I have given, granted, and by this my charter confirmed to God and to the
+                     church of St Mary at Melrose, and to the monks serving God
+                     there, the whole land of 'Drumteihsuiene', and of
+                     'Alesburc', and of 'Auchnephur', which Roger of Skelbrooke
+                     gave to them by their correct boundaries contained in the
+                     charter of that same Roger, and with everything justly
+                     pertaining to the aforesaid lands, to be held in free and
+                     pure and perpetual alms with all their easements and just
+                     pertinents, as freely and quietly, fully and honourably,
+                     as the charter of the aforesaid Roger, and the
+                     confirmation of Duncan son of Gilbert made thereupon for
+                     the aforesaid monks bear witness, saving my service. </cl><cl type="witnesses">As witnesses: William, bishop of St Andrews; William del Bois, chancellor; Earl
+                  Patrick; Earl Malcolm of Fife; William Comyn, earl of Buchan;
+                  Alan son of Roland, constable; Philip de Mowbray; Walter
+                  Oliphant; Adam son of Gilbert; Ingram de Balliol; Alexander,
+                  sheriff of Stirling; Walter of Lindsay; John of Maxwell. </cl><cl type="dating">At Edinburgh, on the second day of October</cl>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

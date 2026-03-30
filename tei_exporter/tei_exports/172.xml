@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-172">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/222</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:06:59.137129+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">172</idno>
+        <idno type="textcontent">172</idno>
+        <idno type="transcription_textcontentxml">172</idno>
+        <idno type="translation_textcontentxml">173</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/222</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/222</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2022-11-01T13:06:59.137129+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:06:59.137129+00:00" status="published">transcription moa=172 status=live modified=2022-11-01 13:06:58.07031+00 | translation moa=173 status=live modified=2022-11-01 13:06:59.137129+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">.R. dei gratia sancti andree humilis minister  Omnibus sancte matris ęcclesie
+                  filiis  salutem .  benedictionem.</cl><lb/> <cl type="disposition">Innotescat tam presentibus quam futuris nos concessisse  dedisse ecclesiam de
+                  uilla leuing sicut<lb/> ipse concessit Abbati  canonicis de sancta cruce . salua reuerentia ęcclesie
+                     sancti andreę   episcopali dignitate .<lb/> cum omnibus rebus eidem ęcclesie iuste pertinentibus .</cl> <cl type="witnesses">His presentibus testibus . T. archidiacono . A. decano . M. Thoma . W.<lb/> capellano . Magistro . H. R. de boilestunea.</cl> <cl type="salutation">Valete.</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">R<ex>obert</ex> by the grace of God humble servant of Saint Andrew to all sons of Holy Mother
+                     Church, Greeting and blessing:</cl> <cl type="disposition">Let it be known by those present as well as those to come that we have granted
+                  and given the church in the toun of Living [Livingston] as he
+                  [Living] himself granted to the abbot and canons of Holyrood,
+                  reserving reverence to the church of St Andrews and the
+                  episcopal dignity, with all things justly belonging to the
+                  same church.</cl> <cl type="witnesses">With these witnesses present, T<ex>horald</ex> the archdeacon, A<ex>iulf</ex> the dean, Master Thomas, W<ex>illiam</ex> the chaplain, Master H<ex>erbert</ex>, R<ex>alph</ex> de Boileston.</cl> <cl type="salutation">Farewell.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

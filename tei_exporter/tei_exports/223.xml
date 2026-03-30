@@ -1,0 +1,78 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-223">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/247</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 09:35:37.563782+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">223</idno>
+        <idno type="textcontent">223</idno>
+        <idno type="transcription_textcontentxml">223</idno>
+        <idno type="translation_textcontentxml">222</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/247</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/247</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T09:35:37.563782+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T09:35:37.563782+00:00" status="published">transcription moa=223 status=live modified=2021-04-05 09:35:37.563782+00 | translation moa=222 status=live modified=2021-04-05 09:35:34.111333+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription"><p>C Y R O G R A P H U M</p> <p><cl type="narration">Hec est conuentio facta Inter Dominum . W . abatem ⁊ conuentum sancte crucis de
+                  Edinburg ex una parte ⁊ Walterum<lb/> Magistrum ⁊ fratres de Torphean . ex altera parte de contouersia que uertebatur
+                     inter eos ⁊ coram iudicibus delegatis diu<lb/> uentilabatur super decimis ⁊ ouentionibus de Ogilfas . quod predicti abbas ⁊
+                     conuentus consensu ⁊ autoritate iudicum<lb/> delegatorum in presencia domini . W . de Bosch’ . domini regis cancellarii ⁊
+                     aliorum prudentum uiros . pro bono pacis concesserunt<lb/> predictis fratribus omnes decimationes ⁊ ouentiones ecclesiasticas quas ipsi
+                     habebant ⁊ percipere solebant de terra de Ogilfas .<lb/> Predicti uero fratres tenebunt ⁊ inperpetuum possidebunt prenominatas decimas
+                     libere ⁊ quiete plenarie ⁊ honorifice reddendo inde<lb/> abbati ⁊ conuentui sancte crucis de Edenburg singulis annis quatuor Marcas
+                     argenti . duas ad pentecost’ ⁊ duas ad festum<lb/> sancti martini.</cl> <cl type="sealing">Ut autem hec conuentio rata ⁊ inconcussa permaneat in perpetuum signa iudicum de
+                  predicta causa delegatorum<lb/> ⁊ capituli conuentus sancti andree ⁊ capituli domus hospitalis lundon’ .
+                     presenti scripto in testimonium ⁊ confirmationem<lb/> huius conuentionis apponuntur ne in irritum possit reuocari.</cl></p></div>
+      <div type="translation"><p>C Y R O G R A P H</p> <p><cl type="narration">This is the agreement made between the lord abbot, W., and the convent of
+                  Holyrood in Edinburgh on the one side and Walter the Master,
+                  and the brethren of Torphichen on the other side, concerning
+                  the dispute which arose between them and was aired for a long
+                  while before judges delegate, over the teinds and revenues
+                  from Ogilface, that the aforesaid abbot and convent, with the
+                  consent and authority of the judges delegate, in the presence
+                  of the lord William del Bois, chancellor of the lord king,
+                  and other judicious men, for the sake of good peace, granted
+                  to the aforesaid brethen all the teinds and ecclesiastical
+                  revenues that they themselves used to have and were
+                  accustomed to receive from the land of Ogilface. The
+                  aforesaid brethren, however, shall hold and in perpetuity
+                  possess the aforenamed teinds freely and quietly, fully and
+                  honourably, by rendering thereupon to the abbot and convent
+                  of Holyrood in Edinburgh each year four merks of silver, two
+                  at Pentecost and two at the feast of Saint Martin.</cl> <cl type="sealing">In order that this agreement remain sure and unbroken in perpetuity the seals of
+                  the judges delegate of the aforesaid case and the chapter of
+                  the convent of St Andrews and the chapter of the hospital of
+                  London [Clerkenwell?] are set to the present document in
+                  testimony and confirmation of this agreement lest it could be
+                  revoked as being invalid.</cl></p></div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,73 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-756">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5975</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:57:31.728212+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">756</idno>
+        <idno type="textcontent">769</idno>
+        <idno type="transcription_textcontentxml">756</idno>
+        <idno type="translation_textcontentxml">757</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5975</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5975</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T20:57:31.728212+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T20:57:31.728212+00:00" status="approved">transcription moa=756 status=reviewed modified=2022-10-31 20:57:31.697944+00 | translation moa=757 status=reviewed modified=2022-10-31 20:57:31.728212+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Patricius Dreng de Reiningt<ex>ona</ex> .</cl> Omnibus Hanc cartam uisuris uel audituris  <cl type="salutation">salutem</cl> .</cl><lb/> <cl type="disposition"><cl type="notification">Sciatis me</cl> de consensu heredis mei uendidisse et quietam omnino clamasse de me et he<lb/>redibus meis et presenti carta mea confirmasse Iohanni de Hunsinghowre
+                     medietatem tocius<lb/> terre mee In Reningt<ex>ona</ex> per totum sine aliquo retinemento pro duodecim Marcis argenti quas<lb/> assingnare uoluerit In feodum et hereditate de Priore et Conuentu de Coldingham
+                     . Fa<lb/>ciendo eis seruitium quod pertinet ad medietatem terre mee . <cl type="holding">Quare uolo quod predictus Iohannes et<lb/> heredes sui uel eius assignati predictam terram habeant et Iure hereditario
+                        teneant de<lb/> predicto Priore et Conuentu cum omnibus Libertatibus et aisiamentis ad illam
+                        terram pertinentibus .<lb/> Ita libere et quiete sicut ego eam tenui . faciendo eis predictam seruicium
+                        sicut prenominatum est</cl> .</cl> <cl type="witnesses">Hiis testi<lb/>bus Walter de Lindes’ vicecom<ex>ite</ex> . Patricio filio Ade . Henr<ex>ico</ex> de Prendergest . Will<ex>elm</ex>o de Wideslate . Will<ex>elmo</ex> de Lumesden’ . [<ex>transposed</ex>] Ioh<ex>ann</ex>e de Lu<lb/>mesdene . Ada de Rist<ex>onta</ex> Regin<ex>aldo</ex> de Rist<ex>ona</ex> Helia de Prendergest . Ada<lb/> filio suo . Morice de Æit<ex>ona</ex> . Thoma de Aldecambus . d<ex>auid</ex> . de Quicheswde . et Multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Patrick Dreng of Renton</cl>, to all who shall view or hear this charter, <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know me</cl>, with the consent of my heirs, to have sold and entirely quitclaimed for myself
+                     and my heirs, and by this my present charter to have made
+                     firm, to John of Hunsingore half of my whole land in
+                     Renton, without any withholding throughout the whole, in
+                     return for twelve merks of silver which he willed to
+                     assign in feu and heritage of the prior and convent of
+                     Coldingham, performing for them the service which pertains
+                     to half of my land. <cl type="holding">Wherefore I will that the said John and his heirs or his assigns shall have the
+                     said land and hold by hereditary right of the aforesaid
+                     prior and convent with all liberties and easements
+                     pertaining to that land, so freely and quitely as I held
+                     it, performing for them the aforesaid service just as it
+                     has been enumerated before</cl>.</cl> <cl type="witnesses">With these witnesses: Walter of Lindsay the sheriff, Patrick son of Adam, Henry
+                  of Prenderguest, William of Wideslade, William of Lumsdaine,
+                  John of Lumsdaine, Adam of Reston, Reginald of Reston, Elias
+                  of Prenderguest, Adam his son, Maurice of Ayton, Thomas of
+                  Oldcambus, David of Quixwood, and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

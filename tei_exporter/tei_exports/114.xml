@@ -1,0 +1,96 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-114">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 32</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:00.327985+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">114</idno>
+        <idno type="textcontent">114</idno>
+        <idno type="transcription_textcontentxml">114</idno>
+        <idno type="translation_textcontentxml">115</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 32</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 32</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:28:00.327985+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:00.327985+00:00" status="published">transcription moa=114 status=live modified=2017-01-30 19:28:00.327985+00 | translation moa=115 status=live modified=2016-06-07 11:08:39.630801+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus presentes litteras inspecturis <cl type="intitulatio">Magister Guill<ex>elmu</ex>s Parmen<ex>sis</ex> domini pape Capellanus ec eiusdem contradictarum auditor</cl> <cl type="salutation">Salutem in domino</cl> .</cl> <lb/> <cl type="notification">Noueritis quod</cl> <cl type="narration">cum Radulfus de helig’ clericus procurator amissus de speciali domini pape .
+                  mandato . pro . . preposito et Capitulo ecclesie sancte <lb/> Marie sancti ndree in Scotia impetrasset litteras apostolicas sub hac forma .
+                     Innoc<ex>entius</ex> episcopus etc. Dilectis filiis . . Preposito ⁊ Capitulo <lb/> ecclesie sancte Marie Sancti Andree in Scotia Salutem etc. Cum a nobis petitur
+                     quod iustum est ⁊ honestum tam uigor equitatis <lb/> quam ordo exigit rationis . ut id per sollicitudinem officij nostri ad debitum
+                     perducatur effectum . Eapropter dilecti in domino filij <lb/> uestris iustis postulationibus grato concurrentes assensu ecclesias .
+                     possessiones ⁊ alia bona uestra que in presentiarum
+                     rationabiliter <lb/> possidetis aut in futurum iustis modis prestante domino poteritis adipisci sub
+                     beati petri ⁊ nostra protectione suscipimus <lb/> ⁊ ea uobis ⁊ ecclesie uestre auctoritate apostolica confirmamus ⁊ presentis
+                     scripti patrocinio communimus . Nulli ergo etc. Si quis
+                     autem <lb/> etc. Datum lugdun’ xii kaldendas . Septembris pontificatus nostri anno Septimo .
+                     Eisdem litteris petrus de Vercell’ procurator prioris <lb/> ⁊ Capituli sancti andree cathedralis ecclesie in Scotia . pro ipsis in audientia
+                     publica con<supplied>tradixit quas tande</supplied>m ea <supplied>conditione</supplied> <lb/> absoluit quo per predictas litteras nullum priuillegiis . predictorum prioris ⁊
+                     Capituli sancti andree ecclesie cathedralis <supplied>prejudicium generetur <lb/> nec ad iurisdictionem executorum eorundem priuilegiorum impediendam aliquatenus
+                        intendatur . Quod pars &lt;altera promisit firmiter&lt;/span&gt; <lb/> coram nobis</supplied> . <cl type="sealing">In Cujus rei testimonium presentes litteras fieri fecimus ⁊ nostro <supplied>muniri</supplied> sigillo .</cl> Datum lugduni .ij. idus <supplied>Septembris</supplied> <lb/> pontificatus domini Innocentii pape iiij an<supplied>no</supplied> Septimo .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall view the present letters, Master William of Parma, Chaplain of
+                  the Lord Pope and <ex>auditor contradictarum</ex> of the same, Greeting in the Lord:</cl> <cl type="notification">You should know that</cl> <cl type="narration">when Ralph de Helig’, clerk, procurator admitted by special mandate of the the
+                  lord pope, on behalf of the provost and chapter of the church
+                  of St Mary, of St Andrews in Scotia, petitioned for apostolic
+                  letters under this form: Innocent the bishop, etc., To his
+                  beloved sons, the Provost and Chapter of the church of St
+                  Mary, of St Andrews in Scotia, Greeting etc. When what is
+                  requested from us is just and worthy, the force of equity as
+                  well as the order of reason require that it should be carried
+                  through to its due effect by the consideration of our office.
+                  Therefore, beloved sons in the Lord, we gladly approve and
+                  consent to your just requests, and we take under the
+                  protection of St Peter and ourselves the churches,
+                  possessions, and your other goods which you reasonbly possess
+                  now or which by just means and God’s gift you will be able to
+                  acquire in the future, and we confirm them to you and your
+                  church by apostolic authority and defend them by the
+                  protection of the present document. Therefore let no one etc.
+                  If, however, anyone etc. Given at Lyons on 12 Kalends of
+                  September [21 August], in the seventh year of our
+                  pontificate. Peter de Vercelli, procurator of the prior and
+                  chapter of the cathedral church of St Andrews in Scotia,
+                  objected to the same letter on their behalf in public
+                  audience, but in the end withdrew on the condition that any
+                  prejudice should not be generated by the aforesaid letters to
+                  the privileges of the aforesaid prior and chapter of the
+                  catehdral church of St Andrews, nor be used in any way to
+                  impede the jusrisdiction of the executors of the same
+                  priviliges, which the other party firmly promised in our
+                  sight</cl>. <cl type="sealing">In testimony of this matter we have caused the present letters to be made and
+                  protected by our seal.</cl> Given at Lyons on the 2 Ides of of September [12 September] in the seventh year
+                  of the pontificate of the lord pope, Innocent IV.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

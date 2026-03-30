@@ -1,0 +1,71 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-335">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/53</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:26:30.846821+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">335</idno>
+        <idno type="textcontent">336</idno>
+        <idno type="transcription_textcontentxml">335</idno>
+        <idno type="translation_textcontentxml">336</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/53</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/53</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T12:26:30.846821+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T12:26:30.846821+00:00" status="published">transcription moa=335 status=live modified=2021-04-06 12:26:29.01456+00 | translation moa=336 status=live modified=2021-04-06 12:26:30.846821+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">.W. Rex scott<ex>orum</ex> .</cl> Omnibus probis hominibus terre sue . Clericis et laicis . francis . Angl<ex>is</ex> . et Scottis . <cl type="salutation">sal</cl><ex>utem</ex></cl> . <cl type="disposition"><cl type="notification">Sciant tam posteri quam pre</cl><supplied>sentes</supplied><lb/> me concessisse et hac mea carta confirmasse Ecclesie Sancte Marie de Maylros et
+                     monachis ibidem deo seruientibus dona<supplied>tionem</supplied><lb/> quam Gospatricus comes fecit eidem ecclesie et monachis consensu et concessu
+                     heredis sui de terra hertesheued et spo<supplied>t et de quadam salina</supplied><lb/> pro salute anime sue et animarum predecessorum suorum . in omnibus ita libere et
+                     quiete in elemosina perpetua  sicut liberius et quietius
+                     carta <supplied>ipsius Gospa</supplied><lb/>trici eis testatur  et carta regis Malcolmi fratris mei concedit et confirmat .</cl> <cl type="witnesses">Teste Ricardo episcopo Sancti Andree . Engelram<supplied>o Episcopo</supplied><lb/> Glasguensi . Ioh<ex>ann</ex>e abbas de kelchou . Osberto abbate de Gedewrde . Nicholao cancellario . Math<ex>e</ex>o Archidiacono .S. An<supplied>dree</supplied><lb/> Ric<ex>ardo</ex>. De Morauilla . Waltero filio alani . Waltero Corbet . Rob<ex>er</ex>to Auenel . Gilleb<ex>er</ex>to filio Richerii . Philippo de Valu<supplied>nnes</supplied><lb/> Bernard[o] fili[o] [<ex>written</ex> Bernardꝰo filiꝰ] Breani . Rob<ex>er</ex>to filio Guidonis . Radulfo de Cler . Will<ex>elm</ex>o de Mortemer . Ricardo Capellano . Imero <supplied>cleri</supplied><lb/>co . Will<ex>elm</ex>o de haia . Radulfo namo . Waltero de berchelai .</cl> Apud Lannarc .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex> by the grace of God king of the Scots</cl> <cl type="salutation">sends greeting</cl> to all worthy men of his land, French, English and Scots.</cl> <cl type="disposition"><cl type="notification">Let both those to come as well as those present know</cl> me to have granted and by this my charter to have made firm to the church of St
+                     Mary at Melrose and to the monks serving God in that place
+                     the donation that Earl Cospatric has made to the same
+                     church and monks by the agreement and permission of his
+                     heir in respect of the land Hartside and Spot, and of a
+                     saltpan, for the salvation of his soul and the souls of
+                     his predecessors, in all things so freely and quietly in
+                     everlasting alms, as freely and quietly the charter of
+                     Cospatric himself for them bears witness.</cl> <cl type="witnesses">Witness Richard bishop of St Andrews, Ingram bishop of Glasgow, John abbot of
+                  Kelso, Osbert abbot of Jedburgh, Nicholas the chancellor,
+                  Matthew the archdeacon of St Andrews, Richard de Morville,
+                  Walter son of Alan, Walter Corbet, Robert Avenel, Gilbert son
+                  of Richer, Philip de Volognes, Bernard son of Brian, Robert
+                  son of Guy, Ralph de Clare, William de Mortimer, Richard the
+                  chaplain, Imer the clerk, William de la Haye, Ralph le Nain,
+                  Walter of Barclay.</cl> At Lanark.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

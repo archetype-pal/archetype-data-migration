@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-202">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/237</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-14 18:43:24.496271+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">202</idno>
+        <idno type="textcontent">202</idno>
+        <idno type="transcription_textcontentxml">202</idno>
+        <idno type="translation_textcontentxml">203</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/237</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/237</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-03-14T18:43:24.496271+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-03-14T18:43:24.496271+00:00" status="published">transcription moa=202 status=live modified=2017-03-14 18:43:21.995354+00 | translation moa=203 status=live modified=2017-03-14 18:43:24.496271+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">.V. dei gratia Rex Scott’. Omnibus probis hominibus totius terre sue <cl type="salutation">salutem</cl>.</cl> <cl type="disposition">Sciant presentes ⁊ posteri me dedisse<lb/> ⁊ concessisse . ⁊ hac mea carta confirmasse . deo ⁊ ecclesie sancte crucis de
+                     edenburc . ⁊ canonicis ibidem<lb/> deo seruientibus . in exscambio elemosinarum quas per castellanos amiserunt 
+                     iiii. marcas de molendino meo de<lb/> Karramunt . ⁊ .xxxiii. solidos de molendino de Libertun’ . ⁊ de firma de
+                     Merihennest’ .xx. solidos . ⁊ de terra<lb/> furbarii .viii. solidos . ⁊ de firma clerenbaud .v. solidos . ⁊ .viii. denarios
+                     . Tenendum sibi in liberam ⁊ quietam elemosinam<lb/> ita libere ⁊ quiete . sicut alias elemosinas suas liberius ⁊ quietius tenent ⁊
+                     possident . donec predictas elemosinas<lb/> quas per castellanos de Edenburc amiserunt  eis warrantizare potero . uel alibi
+                     redditum .ix. marcarum assigna<lb/>uero.</cl> <cl type="witnesses">Test<ex>ibus</ex> Hug’ Episcopo Sancti Andr<ex>ee</ex> . Waltero olifart <persName><roleName>Iustic<ex>ia</ex></roleName></persName> . Hug’ Giffart . Waltero de Berchelei . Will<ex>el</ex>mo de Haia .<lb/> Roberto de Berchelei.</cl> Apud Adingtun’.</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">W<ex>illiam</ex> by the grace of God king of Scots to all worthy men of the whole of his land, <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition">Let present and future know that I have given and granted, and by this my
+                  charter made firm, to God and to the church of Holyrood in
+                  Edinburgh, and to the canons serving God there, in exchange
+                  for the alms that they lost through the garrison, 4 merks
+                  from my mill of Cramond, and 33 shillings from the mill of
+                  Liberton, and from the ferm of Merchiston 20 shillings, and
+                  from the land of the furbisher 8 shillings, and from the ferm
+                  of Clermiston 5 shillings and 8 pence. For them to hold in
+                  free and quiet alms as freely and quietly as they hold and
+                  possess their other alms freely and quietly, until I shall be
+                  able to warrant to them the said alms which they lost through
+                  the garrison of Edinburgh, or until I shall have assigned an
+                  income of 9 merks elsewhere.</cl> <cl type="witnesses">As witnesses, Hugh bishop of St Andrews, Walter Oliphant the <persName><roleName>justice</roleName></persName>, Hugh Gifford, Walter of Berkeley, William de la Haye, Robert of Berkeley.</cl> At Haddington.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,75 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-41">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 623</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-13 14:14:00.663353+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">41</idno>
+        <idno type="textcontent">41</idno>
+        <idno type="transcription_textcontentxml">41</idno>
+        <idno type="translation_textcontentxml">42</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 623</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 623</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-13T14:14:00.663353+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-13T14:14:00.663353+00:00" status="approved">transcription moa=41 status=reviewed modified=2023-06-13 14:14:00.663353+00 | translation moa=42 status=reviewed modified=2023-06-13 14:14:00.620743+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Alex’ . dei gr<ex>ati</ex>a Rex Scott’</cl> . Omnibus probis hominibus Tocius terre sue Clericis et Laicis  <cl type="salutation">Salutem</cl> .</cl> <lb/> <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> nos concessisse et hac Carta nostra confirmasse Donationem illam quam <lb/> Dauid de Quikeswude fecit deo et sancto Cuthberto et sancte Ebbe . et Monachis
+                     Dunolmensibus apud Col<lb/>dingham’ . seruientibus et in perpetuum seruituris de tota terra sua quam habuit
+                     in uilla de Alde<lb/>cambus et extra . pro Excambio Sexaginta acrarum in territorio de Coldingham’ .
+                     et uno Tofto et Crofto <lb/> que Waldeuus pethun tenuit et decem Acris in Cultura de Floris . et uno Mesuagio
+                     iuxta Fabricam <lb/> Benedicti Fabri . Quare volumus . vt predicti Monachi prenominatam terram
+                     habeant et teneant . ita <lb/> libere et quiete  sicut Carta predicti Dauid et Confirmatio Thome filij eiusdem
+                     d<ex>aui</ex>d . inde facte predictis <lb/> Monachis testantur . saluo seruicio nostro . </cl><cl type="witnesses">Test<ex>ibus</ex> . Henric<ex>o</ex> . de Balliol’ . Camerario . Patric<ex>io</ex> . filio . Comitis Patr<ex>icii</ex> . <lb/> Rad<ex>ulfo</ex> . Capellano . Thom<ex>a</ex> . de Striuel<ex>in</ex> . Clerico . Henric<ex>o</ex> . de Striuel<ex>in</ex> . filio . Comitis . d<ex>aui</ex>d . Johanne de Maccuswel’ . Walt<ex>ero</ex> . <lb/> Cumin’ .</cl> <cl type="dating">Apud Seleschr’ . ix . die Decembr<ex>is</ex> . Anno Regni domini Regis . decimo</cl>.</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, by the grace of God king of Scots,</cl> to all worthy men of his whole land, clerk and lay, <cl type="salutation">greeting</cl>: </cl><cl type="disposition"><cl type="notification">Let present and future know</cl> that we have granted and by this our charter to have made firm the donation
+                     which David of Quixwood made to God and to Saint Cuthbert
+                     and to Saint Æbbe, and to the monks of Durham at
+                     Coldingham, to those serving now and in perpetuity to
+                     those who shall serve in future, of his whole land which
+                     he had within and outwith the toun of Aldcambus, for the
+                     exchange of sixty acres in the territory of Coldingham,
+                     and one toft and croft which Waldef Pethun held and ten
+                     acres of arable land at Fleurs, and one messuage near the
+                     smiddy of Benedict the Smith. Wherefore we will, that the
+                     aforesaid monks aforementioned have and hold the land, as
+                     freely and quietly, as the charter of the aforesaid David
+                     and the confirmation of Thomas the son of the same David,
+                     made thereupon for the aforesaid monks declares, saving
+                     our service. </cl><cl type="witnesses">As witnesses, Henry de Balliol, Chamberlain, Patrick son of Earl Patrick, Ralph
+                  the Chaplain, Thomas of Stirling the Clerk, Henry of
+                  Stirling, son of Earl David, John of Maxwell, Walter Comyn.</cl> <cl type="dating">At Selkirk, on the 9th day of December, in the Year of the Reign of the lord
+                  King, the Tenth</cl>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

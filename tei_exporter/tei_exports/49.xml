@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-49">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/184</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:34.077121+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">49</idno>
+        <idno type="textcontent">49</idno>
+        <idno type="transcription_textcontentxml">49</idno>
+        <idno type="translation_textcontentxml">50</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/184</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/184</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-06T15:19:34.077121+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-06T15:19:34.077121+00:00" status="approved">transcription moa=49 status=reviewed modified=2023-06-06 15:19:34.077121+00 | translation moa=50 status=reviewed modified=2023-06-06 15:19:34.062219+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Alex<ex>ander</ex> . dei gr<ex>ati</ex>a rex Scott<ex>orum</ex> . omnibus probis hominibus tocius terre sue . <lb/> clericis ⁊ laicis  <cl type="salutation">salutem</cl> . </cl><cl type="disposition"><cl type="notification">Sciant presentes ⁊ futuri</cl> . me dedisse . ⁊ concessisse . <lb/> ⁊ hac carta mea confirmasse . deo ⁊ ecclesie sancte Marie de Melros’ . ⁊
+                     monachis ibidem <lb/> deo seruientibus totam terram de Moybothelbeg’ . quam Dunecan<ex>us</ex> . filius Gilleb<ex>erti</ex> . <lb/> eis dedit . per rectas diuisas contentas in carta ipsius Dunecan<ex>i</ex> . ⁊ totam terram de <lb/> Bethoc’ . quam idem Dunec<ex>anus</ex> . eis dedit . per rectas diuisas suas similiter contentas <lb/> in carta ipsius Dunec<ex>ani</ex> . Tenend’ in liberam ⁊ puram ⁊ perpetuam elemosinam cum <lb/> omnibus aisiamentis . ⁊ aliis ad predictas terras iuste pertinentibus . ita
+                     libere <lb/> ⁊ quiete . plenarie ⁊ honorifice . sicut carta predicti Dunec<ex>ani</ex> . inde facta predictis <lb/> monachis  testatur . saluo seruitio meo . </cl><cl type="witnesses">Test<ex>ibus</ex> . Will<ex>elmo</ex> . episcopo Sancti Andree . Will<ex>elmo</ex> . de Bosch<ex>o</ex> . cancellario . comite . Patric<ex>io</ex> . comite . Malc<ex>olmo</ex> . de fif’ . Will<ex>elmo</ex> . Cumin’ . com<ex>ite</ex> . <lb/> de Buchan’ . Alan<ex>o</ex> . fil<ex>io</ex> . Roll<ex>andi</ex> . constab<ex>ulario</ex> . Ph<ex>ilippo</ex> . de Mubray . Walt<ex>ero</ex> . Olifard’ . Ad<ex>am</ex> . <lb/> fil<ex>io</ex> Gilleb<ex>erti</ex> . Ingelram<ex>o</ex> . de Baillol’ . Alex<ex>andro</ex> . uicecomite . de Striuel<ex>in</ex> . Walt<ex>ero</ex> . de <lb/> Lindes’ . Joh<ex>anne</ex> . de Maccuswel’ .</cl> <cl type="dating">Apud Edenb’ . secundo die Octobris .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">Alexander, by the grace of God king of Scots, to all worthy men of the whole of
+                  his land, clerk and lay, <cl type="salutation">greeting</cl>:</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> that I have given, granted, and by this my charter made firm, to God and to the
+                     church of St Mary at Melrose, and to the monks serving God
+                     there, the whole land of Maybole, which Duncan son of
+                     Gilbert gave to them, by the correct boundaries contained
+                     in the charter of the same Duncan; to be held in pure and
+                     pertpetual alms with all easements, and other things
+                     justly pertaining to the aforesaid lands, as freely and
+                     quietly, fully and honourably, as the charter of the
+                     aforesaid Dunca made thereupon for the aforesaid monks
+                     bears witness, saving our service.</cl> <cl type="witnesses">As witnesses: William, bishop of St Andrews; William del Bois, chancellor; Earl
+                  Patrick; Earl Malcolm of Fife; William Comyn, earl of Buchan;
+                  Aland son of Roland, constable; Philip de Mowbray; Walter
+                  Oliphant; Adam son of Gilbert; Ingram de Balliol; Alexander,
+                  sheriff of Stirling; Walter of Lindsay; John of Maxwell. </cl><cl type="dating">At Edinburgh, on the second day of October.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

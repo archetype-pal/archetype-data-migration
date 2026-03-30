@@ -1,0 +1,81 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-636">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.32</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:27:42.509664+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">636</idno>
+        <idno type="textcontent">646</idno>
+        <idno type="transcription_textcontentxml">636</idno>
+        <idno type="translation_textcontentxml">637</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.32</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.32</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:27:42.509664+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:27:42.509664+00:00" status="published">transcription moa=636 status=live modified=2021-04-05 08:27:40.534581+00 | translation moa=637 status=live modified=2021-04-05 08:27:42.509664+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>Ric<ex>ardus</ex></persName> dei gr<ex>ati</ex>a ecclesie beati Andr<ex>ee</ex> humilis minister</cl> vniuersis sancte matris ecclesie filiis  <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Sciatis tam posteri quam presentes</cl> <cl type="disposition">nos dedisse et concessisse et presentis scripti mu<lb/>nimine confirmasse deo et ecclesie Sancti Andree et canonicis ibidem deo
+                     seruientibus et seruituris . ecclesiam de hadintunia cum
+                     terra de Clerckintune per rectas di<lb/>uisas suas . et cum ceteris omnibus eidem ecclesie iuste pertinentibus . in
+                     liberam et perpetuam elemosinam tenendam libere et quiete
+                     et honorifice  ab omni exactione et consuetu<lb/>dine . salua tenura monialium quam eis dedimus et carta nostra confirmauimus . <cl type="holding">Quare uolumus et auctoritate episcopali mandamus ut predicti canonici
+                     prenominatam<lb/> ecclesiam adeo libere teneant . quiete et honorifice possideant . sicut aliqua
+                        ecclesia in tota diocesi nostra liberius tenetur .
+                        quiecius et honorificentius possidetur . saluis syno<lb/>dalibus et auxiliis episcopalibus</cl> .</cl> <cl type="witnesses">Hiis testibus . <persName>Ioh<ex>ann</ex>e</persName> abbate de Sancta Cruce . <persName>A</persName> . archidiacono Laod’ . <persName>Waltero</persName> archidiacono de Sancto Andr<ex>ea</ex> . <persName>I</persName> . priore de hadingt’. <persName>Will<ex>elmo</ex></persName> priore de Gal<lb/>weia . <persName>Will<ex>elm</ex>o</persName> priore de Sancta cruce . <persName>Roberto</persName> fratre episcopi . <persName>Ioh<ex>ann</ex>e de Sancto Andrea</persName> . <persName>Rogero</persName> de Listune . <persName>Roberto</persName> de pert . <persName>Alexandro</persName> et <persName>Will<ex>elm</ex>o</persName> capellanis episcopi . <persName>Galfr<ex>ido</ex> </persName><lb/> dapifero episcopi . Magistro <persName>Abraham</persName> . <persName>Stephano</persName> clerico . <persName>Will<ex>elm</ex>o</persName> filio <persName>Roberti</persName> filii <persName>Gvidonis</persName> . <persName>Adam</persName> fratre Comitis Dunk’ . <persName>Merlesuano</persName> filio <persName>merlesuani</persName> . <persName>Odone</persName> Senes<lb/>caldo . <persName>Gospatricio</persName> de Rerais . <persName>hugone</persName> pincerna . <persName>Waltero</persName> nepote episcopi . <persName>Will<ex>elm</ex>o</persName> camerario . <persName>Gvidone</persName> <persName><roleName>marescaldo</roleName></persName> . <persName>Gamel</persName> ostiario . et aliis quam pluribus boni testi<lb/>monii uiris</cl> ;</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Richard, by the grace of God a humble servant of blessed Andrew</cl> to all sons of Holy Mother Church <cl type="salutation">[sends] greeting</cl>.</cl> <cl type="notification">Know us, as much those to come after as those present,</cl> <cl type="disposition">to have given, conceded, and by the guarantee of the present writing to have
+                  made firm, to God, the church of St Andrew, and to the canons
+                  serving God in that same place now and in the future, the
+                  church of Haddington with the land of Clerkington by its
+                  right marches, and with everything else rightfully pertaining
+                  to the same church, in free and everlasting alms, to be held
+                  freely and quitly and honourably from every exaction and
+                  custom, saving the tenure of the nuns which we gave to them
+                  and affirmed by our charter. <cl type="holding">Wherefore we will and by episcopal authority command that the aforesaid canons
+                     hold the aforenamed church as freely, and quitly and
+                     honourably possess, just as any church in our whole
+                     diocese is held most freely, and quitly and honourably
+                     possessed, saving synodal dues and episcopal aids.</cl></cl> <cl type="witnesses">With these witnesses: John, abbot of Holyrood; A<ex>ndrew</ex>, archdeacon of St Andrews; Ilbert, prior of Haddington; William, prior of
+                     Galloway; William, prior of Holyrood; Robert, the bishop's
+                     brother; John of St Andrews; Roger of Liston; Robert of
+                     Perth; Alexander and William, the bishop's chaplains;
+                     Geoffrey, the bishop's steward; Master Abraham; Stephen
+                     the clerk; William, son of Robert son of Guy; Adam,
+                     brother of Earl Duncan; Merlswain son of Merlswain; Odo
+                     the steward; Cospatric of Rires; Hugh the butler; Walter
+                     the bishop's nephew; William the chamberlain; Guy the
+                     marischal; Gamel the doorward; and very many other men of
+                     good character.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

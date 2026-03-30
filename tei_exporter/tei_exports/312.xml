@@ -1,0 +1,71 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-312">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/45</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.81291+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">312</idno>
+        <idno type="textcontent">312</idno>
+        <idno type="transcription_textcontentxml">312</idno>
+        <idno type="translation_textcontentxml">313</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/45</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/45</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-06T15:19:33.81291+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-06T15:19:33.81291+00:00" status="approved">transcription moa=312 status=reviewed modified=2023-06-06 15:19:33.81291+00 | translation moa=313 status=reviewed modified=2023-06-06 15:19:33.797628+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Walterus dei Gratia Episcopus Glasguiensis</cl> vniuersis sancte matris ecclesie filiis tam posteris quam presentibus <cl type="salutation">salutem in Christo</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl><lb/> nos dedisse et concessisse [<ex>written </ex>concesseisse] et hac carta nostra confirmasse deo et ecclesie sancte marie de
+                     Melros et Monachis ibidem deo<lb/> seruientibus in liberam et perpetuam elemosinam illud tophtum in Burgo de Glasgu
+                     . quod Ra[d]ulfus [<ex>written </ex>Rarulfus] de hadintune<lb/> edificauit in prima edificatione Burgi ad opus de Monachis de Melros . ita
+                     plenarie sicut illud edificauit et tenuit .<lb/> pro ut etiam prefatum tophtum predictis monachis datum carta predecessoris
+                     nostri pie memorie . I . episcopi Glasg<ex>uensis</ex> testatur<lb/> <cl type="holding">Quare uolumus ut supradicti Monachi de Melr<ex>os</ex> teneant et possideant predictum tophtum ita libere et quiete<lb/> sicut ipsi aliquam elemosinam liberius et quietius tenent et possident .</cl></cl> <cl type="witnesses">His testibus . Magistro . Will<ex>el</ex>mo de blais archi<lb/>diacono de bukigham . Magistro Will<ex>el</ex>mo de Grenlau . et Magistro Will<ex>el</ex>mo de hedeham . et Magistro Adam de<lb/> Walepol . et Magistro Theoderico . clericis nostris Thoma et Waltero capellanis
+                     nostris . et Will<ex>el</ex>mo de hanesley<lb/> Warino nepote nostro et Radulfo clerico et multis aliis</cl> <cl type="dating">apud Melros</cl> .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Walter by the grace of God bishop of Glasgow</cl> <cl type="salutation">sends greeting in Christ</cl> to all sons of Holy Mother Church, both those to come as well as those present.</cl> <cl type="disposition"><cl type="notification">Know</cl> us to have given and granted and by this our charter to have made firm to God
+                     and to the church of St Mary at Melrose and to the monks
+                     serving God in that place, in free and everlasting alms,
+                     the toft in the burgh of Glasgow that Ralph of Haddington
+                     built at the first erection of the burgh, for the benefit
+                     of the monks of Melrose, as fully as he built it and held
+                     it, and just as the charter of our predecessor of good
+                     memory, J<ex>ocelin</ex> bishop of Glasgow, bears witness to the aforementioned toft given to the
+                     aforesaid monks. <cl type="holding">Wherefore we will that the abovesaid monks of Melrose hold and possess the
+                     aforesaid toft as freely and quietly as they freely and
+                     quietly hold and possess any alms.</cl></cl> <cl type="witnesses">With these witnesses: Master William de Blois, archdeacon of Buckingham; Master
+                  William of Greenlaw, Master William of Ednam, Master Adam of
+                  Walpole, Master Theodoric, our clerks; Thomas and Walter our
+                  chaplains; William of Ainslie; Warin our nephew; Ralph our
+                  clerk; and many others. <cl type="dating">At Melrose.</cl><br/></cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

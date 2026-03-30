@@ -1,0 +1,72 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-387">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/117</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 13:35:14.700958+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">387</idno>
+        <idno type="textcontent">391</idno>
+        <idno type="transcription_textcontentxml">387</idno>
+        <idno type="translation_textcontentxml">388</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/117</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/117</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T13:35:14.700958+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T13:35:14.700958+00:00" status="published">transcription moa=387 status=live modified=2021-04-06 13:35:10.310206+00 | translation moa=388 status=live modified=2021-04-06 13:35:14.700958+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">W. dei gr<ex>ati</ex>a Rex Scott<ex>orum</ex> .</cl> Episcopis . Abbatibus . Comitibus . Baronibus . Iusticiis . Vicecomit<ex>ibus</ex> . Prepositis . Mi<lb/>nistris . et omnibus probis hominibus totius terre sue . <cl type="salutation">Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciant presentes et posteri</cl> me dedisse . et<lb/> hac mea carta confirmasse Deo et Ecclesie Sancte Marie de Melros et Monachos
+                     ibidem deo seruien<lb/>tibus illam terram quam tenent in territorio de Cliftuna per ipsas diuisas que
+                     continentur in<lb/> carta Walteri de Windlesoure . quam habent de eo de Eadem terra . <cl type="holding">ita ut quicquid infra eas<lb/>dem diuisas fuerit . habeant et possideant in perpetuum . ita libere et quiete .
+                        honorifice et pacifi<lb/>ce  sicut aliqua elemosina liberius . quietius . et honorificentius in regno
+                        meo possident</cl> . Dedi enim<lb/> eis et confirmaui eam liberam ab omnibus auxiliis . placitis . Geldis .
+                     Scutagiis . Cornagiis . et ab omni seruitio et
+                     Consuetudine et Exactione seculari . <cl type="warrandice">ita quod ego et heredes mei manutenebimus et<lb/> Warantizabimus eam illis Contra omnes homines in perpetuum</cl> . saluo seruitio meo de Waltero et her<lb/>edibus suis .</cl> <cl type="witnesses">Teste d<ex>aui</ex>d fratre meo . Comite Dunecano . Comite Gilberto . Will<ex>el</ex>mo de lindesaie . Rogero<lb/> et Philippo de Valoniis .Waltero de Berchel' . Ioh<ex>ann</ex>e de londoniis .</cl> APVD . PERT</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex> by the grace of God king of the Scots</cl> to the Bishops, Abbots, Earls, Barons, Iustices, Sheriffs, Provosts, Officials,
+                     and all the worthy men of the whole of his land <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have given and by this my charter to have made firm to God and to the
+                     Church of St Mary at Melrose and to the monks serving God
+                     in that place the land they hold in the territory of
+                     Clifton by the same boundaries contained in Walter of
+                     Windsor's charter which they have from him about the same
+                     land; <cl type="holding"> so that they should have and possess for ever whatever is within the same
+                     boundaries just as freely and quitely, honourably and
+                     peaceably as they possess any alms in my kingdom freely,
+                     quitely and honourably</cl>. I have indeed given and confirmed it to them free from all aids, pleas, gelds,
+                     scutages, cornages, and from every secular service,
+                     custom, and exaction, <cl type="warrandice">so that I and my heirs shall maintain and warrant it to them against all men for
+                     ever;</cl> except for my service from Walter and his heirs.</cl> <cl type="witnesses">As witness: David, my brother; Earl Duncan; Earl Gilbert; William of Lindsay;
+                  Roger and Philip de Valognes; Walter of Berkeley; John of
+                  London.</cl> AT PERTH.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

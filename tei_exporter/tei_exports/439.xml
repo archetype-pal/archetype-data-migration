@@ -1,0 +1,87 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-439">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/204</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:22:05.375858+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">439</idno>
+        <idno type="textcontent">444</idno>
+        <idno type="transcription_textcontentxml">439</idno>
+        <idno type="translation_textcontentxml">440</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/204</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/204</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:22:05.375858+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:22:05.375858+00:00" status="published">transcription moa=439 status=live modified=2021-04-06 15:22:05.375858+00 | translation moa=440 status=live modified=2021-04-06 15:22:03.776274+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="notification">Sciant omnes tam presentes quam futuri quod</cl> <cl type="disposition"><cl type="intitulatio">Ego Ioh<ex>ann</ex>es Auenel filius Geruasii Auenel</cl> dedi . concessi . et hac presenti carta mea confirmaui . deo et sancte Marie .
+                     et porte<lb/> de Melros . ad usus pauperum ibidem aduenientium . pro salute anime mee . et
+                     omnium antecessorum et successorum meorum in puram et
+                     pereptuam elemosinam . illam dimidiam<lb/> carucatam terre in territorio de Torthorald . quam Will<ex>elmu</ex>s filius Glay . mihi pro homagio et seruicio meo dedit . <cl type="holding">Tenendam et habendam predicte porte de Melros in<lb/> perpetuum . adeo libere . quiete et honorifice . In bosco . in plano . in pratis
+                        et pascuis . in viis et semitis . in stagnis et
+                        molendinis . in moris et marisis . in aquis et omnibus<lb/> libertatibus et aisiamentis ad illam terram pertinentibus . sicut aliqua
+                        elemosina liberius . quiecius . et honorificencius in
+                        toto regno Scotie tenetur aut possidetur .<lb/> Reddendo inde annuatim domino feodi pro omni seruicio . consuetudine . exaccione
+                        et demanda . vnam libram piperis ad natale domini . et
+                        faciendo forinsecum seruicium Domini<lb/> Regis . quantum pertinet ad dimidiam carucatam terre</cl> . <cl type="warrandice">Ego uero et heredes mei supradictam dimidiam carucatam terre supradicte porte de
+                     melros cum omnibus pertinenciis<lb/> suis ac libertatibus contra omnes homines et feminas in perpetuum warentizabimus
+                        . manutenebimus ac defendemus</cl> .</cl> <cl type="sealing">In cuius rei testimonium presenti scripto sigillum meum feci apponi .</cl><lb/> <cl type="witnesses">Hiis Test’ . Domino Ricardo Cumyn . Domino Thom<ex>a</ex> de Normanill<ex>a</ex> . Domino Aymero de Makeswele . Domino Thoma filio . Ranulfi . Domino Thom<ex>a</ex> de chartris .<lb/> Helya de Dundas . Domino Hug<ex>one</ex> . Mauleuerer . Roberto filio helye . Roberto Poydras . Et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="notification">Let all men as well present as future know that</cl> <cl type="disposition"><cl type="intitulatio">I, John Avenel, son of Gervase Avenel,</cl> have given, granted, and by this my present charter have made firm, to God and
+                     Saint Mary, and the gate of Melrose, for the benefit of
+                     the poor who come there, for the salvation of my soul, and
+                     of all my ancestors and successors, in pure and perpetual
+                     alms, the half-ploughgate of land in the territory of
+                     Torthorwald, which William son of Glay gave me in return
+                     for my homage and service; <cl type="holding">for the aforesaid gate of Melrose to have and to hold for ever, as freely,
+                     quitely and honourably, in wood, in plain, in meadows and
+                     pastures, in roads and paths, in pools and mills, in moors
+                     and marshes, in waters and all liberties and easements
+                     that belong to that land, just as any alms is freely,
+                     quitely, and honourably held and possessed in the whole
+                     rekingdom of Scotland; by returning from it to the lord of
+                     the feu for every service, custom, exaction and demand,
+                     one pound of pepper and the Lord's Nativity, and
+                     performing the forinsec service of the lord king, as much
+                     as belongs to half a ploughgate of land.</cl> <cl type="warrandice">And I and my heirs shall warrant, maintain and defend the above-said half
+                     ploughgate of land to the above-said gate of Melrose, with
+                     all its pertinents and liberties, against all men and
+                     women for ever</cl>.</cl> <cl type="sealing">In testimony of this matter, I have cause my seal to be fixed to the present
+                  writing.</cl> <cl type="witnesses">With these witnesses: the lord Richard Comyn, the lord Thomas de Normanville,
+                  the lord Eymer of Maxwell, the lord Thomas son of Ranulf, the
+                  lord Thomas de Chartres, Elias of Dundas, the lord Hugh
+                  Mauleverer, Robert son of Elias, Robert Poydras, and many
+                  others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

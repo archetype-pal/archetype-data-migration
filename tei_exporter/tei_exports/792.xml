@@ -1,0 +1,84 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-792">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5952</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.879556+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">792</idno>
+        <idno type="textcontent">807</idno>
+        <idno type="transcription_textcontentxml">792</idno>
+        <idno type="translation_textcontentxml">793</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5952</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5952</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T13:36:57.879556+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:36:57.879556+00:00" status="approved">transcription moa=792 status=reviewed modified=2022-11-01 13:36:57.870229+00 | translation moa=793 status=reviewed modified=2022-11-01 13:36:57.879556+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi fidelibus has litteras uisuris vel audituris . <cl type="intitulatio">Bertramus filius Ade filii Cospatricii de Parua Ristona</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Nouerit vniuersitas vestra</cl> <lb/> <cl type="disposition">me intuitu caritatis et pro salute anime mee . et Margarete vxoris mee . et pro
+                  salute patris mei et matris mee . et Roberti filii mei . et<lb/> predeceossorum et successorum meorum . dedisse . concessisse . et presenti hac
+                     carta confirmasse deo et sancte Marie . et promocioni
+                     Ecclesie de Codlginham<lb/> in puram et perpetuam elemosinam . nouem acras terre in Territorio parue Ristone
+                     Scilicet . quatuor acras in Blackechet’ . iuxta<lb/> Farnebed . et quinque acras in Goselauflat . <cl type="holding">tenendas et habendas de me et heredibus meis in puram et perpetuam elemosina
+                     inperpetuum . cum communi pastura<lb/> et omnibus libertatibus et aysiamentis ad tantam terram infra uillam et extra
+                        pertinentibus . Quare uolo et concedo ut predicta
+                        Ecclesia . prefatas nouem acras<lb/> terre habeat et inperpetuum possideat libere . quiete . et absolute ab omnibus
+                        operibus seruiciis secualribus auxilius exactionibus et
+                        demandis . Salua multura<lb/> et decima domui de Coldginham .</cl> <cl type="warrandice">Ego uero et heredes mei prefatas nouem acras terre sepedicte ecclesie contra
+                     omnes homines et feminas warantizabimus</cl></cl><lb/> <cl type="sealing">Et ut hec mea donacion rata et onconcussa semper permaneat  huic scripto
+                  sigillum meum apposui .</cl> <cl type="witnesses">Hiis Testibus . Domino . A . Priore tunc temporis de Coldingham<lb/> Domino Will<ex>elm</ex>o de Mordingtona . Domino Alano de Suintona . Alano filio eius . Ada de
+                     Prenderguest . Will<ex>elm</ex>o de Scremerstona . Will<ex>elm</ex>o vicario de Aldecambus<lb/> Iohanne filio helie . Ada tunc <persName><roleName>marescallo</roleName></persName> . Roberto filio Gregorii Senescald<ex>i</ex> . et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful who shall view or hear these letters, <cl type="intitulatio">Bertram, son of Adam son of Cospatric of Little Reston</cl>, <cl type="salutation">sends Greeting</cl>. </cl><cl type="notification">Know me, all of you,</cl> <cl type="disposition">moved by charity and for the salvation of my own soul, and of my wife
+                  Margaret's, and for the salvation of my father and my mother,
+                  and of Robert my son, and my predecessors and successors, to
+                  have given, granted, and to have made firm by this present
+                  charter, to God and to Saint Mary, and for the improvement of
+                  the church of Coldingham, in pure and perpetual alms, nine
+                  acres of land in the territory of Little Reston, that is,
+                  four acres in <ex>Blackechet'</ex> near <ex>Farnebed</ex>, and five acres in <ex>Goselauflat</ex>, <cl type="holding">to be held and had of me and my heirs in pure and everlasting alms for ever,
+                     with common pasture and all liberties and easements
+                     pertaining to so much land inside and outside the toun.
+                     Wherefore I will and grant that the aforesaid church
+                     should have and possess the aforementioned nine acres of
+                     land for ever, free, quit, and released from all works,
+                     secular services, aids, exactions and demands; saving
+                     multure and the teinds of the house of Coldingham.</cl> <cl type="warrandice">And I and my heirs shall warrant the aforementioned nine acres of land to the
+                     oft-mentioned church against all men and women.</cl></cl> <cl type="sealing">And so that my donation should ever remain valid and undisputed, I have applied
+                  my seal to this writing.</cl> <cl type="witnesses">With these witnesses: the lord A(nketin), then prior of Coldingham; the lord
+                  William of Mordington; the lord Alan of Swinton; Alan his
+                  son; Adam of Prenderguest; William of Scremerston; William,
+                  vicar of Oldcambus; John son of Elias; Adam, then marischal;
+                  Robert, son of Gregory the Steward; and many others. </cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

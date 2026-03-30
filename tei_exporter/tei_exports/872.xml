@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-872">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 564</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 15:48:09.565817+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">872</idno>
+        <idno type="textcontent">895</idno>
+        <idno type="transcription_textcontentxml">872</idno>
+        <idno type="translation_textcontentxml">873</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 564</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 564</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T15:48:09.565817+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T15:48:09.565817+00:00" status="approved">transcription moa=872 status=reviewed modified=2022-11-01 15:48:09.555167+00 | translation moa=873 status=reviewed modified=2022-11-01 15:48:09.565817+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">D Rex Scot’ . et H suus filius</cl> . omnibus vicecomitibus suis cunctisque baronibus francis et angl<ex>icis</ex> . <cl type="salutation">salutem</cl></cl> .<lb/> <cl type="disposition"><cl type="notification">Sciatis quod</cl> dedi et concessi hvic meo militi hernulfo . Swintun . in fevdam sibi et heredi<lb/> suo cum omnibus hominibus suisque pecuniis <cl type="holding">tenere bene et libere et honorifice . sicut vllus<lb/> ex meis baronibus melius ac liberius tenet . et quicquid ad eam pertinet . per
+                        easdem consuetudines per quas<lb/> Liulfus filius edulfi . et vdardus filius suus tenuerunt . tenere de sancto
+                        cuthberto et de me<lb/> . xl . solidos reddente monachis de dunelmia sine omnibus aliis seruiciis</cl> .</cl> <cl type="witnesses">T<ex>estibus</ex> Will<ex>elmo</ex> . filio<lb/> dunecan . et Maduc consule . et comite dunecan . et Radulfo Nuuel . et Marsel
+                     Marmiun . et<lb/> Walter filio alani . et herb<ex>erto</ex> . Cha<ex>m</ex>b<ex>er</ex>lein . et adam filio edwardi . et Will<ex>elmo</ex> . de lindesi .</cl> <cl type="dating">ad hadintunia .</cl> <cl type="salutation">Valete .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">D<ex>avid</ex> king of the Scot<ex>s</ex>, and H<ex>enry</ex> his son</cl>, to all his sheriffs and each of his barons, French and English, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know that</cl> I have given and conceded herein Swinton in feu to my knight Arnulf, to him and
+                     his heir with all his men and livestock, <cl type="holding">to hold well, freely and honourably, just any of my barons best and most freely
+                     holds, and whatever pertains to it, by the same customs by
+                     which Liulf son of Edulf and Udard his son held, to hold
+                     of Saint Cutherbert and of me by rendering 40 shillings to
+                     the monks of Durham without any other services.</cl></cl> <cl type="witnesses">As witnesses: William son of Duncan; Maduc the earl; Earl Duncan; Ralph Lovell;
+                  Marcel Marmion; Walter son of Alan; Herbert Chamberlain; Adam
+                  son of Edward; William of Lindsay.</cl> <cl type="dating">At Haddington.</cl> <cl type="salutation">Farewell.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

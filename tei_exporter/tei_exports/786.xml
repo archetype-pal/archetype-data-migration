@@ -1,0 +1,82 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-786">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5955</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.813496+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">786</idno>
+        <idno type="textcontent">800</idno>
+        <idno type="transcription_textcontentxml">786</idno>
+        <idno type="translation_textcontentxml">787</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5955</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5955</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T13:36:57.813496+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:36:57.813496+00:00" status="approved">transcription moa=786 status=reviewed modified=2022-11-01 13:36:57.803383+00 | translation moa=787 status=reviewed modified=2022-11-01 13:36:57.813496+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi fidelibus ad quos presens scriptum peruenerit  <cl type="intitulatio">Bertramus de parua Ristona</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Nouerit uniuersitas uestra</cl> <cl type="disposition">me dedisse . concessisse . et hac<lb/> mea presenti carta confirmasse deo et sancto Cudberto et Anketino Prior et
+                     Conuentui de Coldingham homagium et seruicum Patricii
+                     filii Vtredi<lb/> cum omnibus terris et possessionibus quas habuit ex donacionem Ade patris mei in
+                     uilla et in teritorio parue Ristone . scilicet . Toftum et
+                     croftum que<lb/> iacent iuxta terram Henrici uersus orientem et quatuor decim acras iuxta
+                     Wambenese crosse . et tres rodas in Blakeclou . et duas
+                     acras et<lb/> dimidiam iuxta Blakeclou uersus orientem . et octo acras iuxta Faules . <cl type="holding">habendas et tenendas dictis Priori et Conuentui et eorum succes<lb/>soribus in perpetuum . quietas de me et heredibus meis absque omni consuetudine
+                        et exaccione seculari et demanda sicut aliqua elemosina
+                        infra regnum<lb/> Scocie melius uel liberius tenetur uel possidetur .</cl> <cl type="warrandice">Ego uero Bertramus et heredes mei predictum homagium et seruicium cum omnibus
+                     terris et posses<lb/>sionibus prescriptis Priori et Conuentui et eorum successoribus contra omnes
+                        homines et feminas warantizabimus et defendemus
+                        inperpetuum</cl></cl> .<lb/> <cl type="sealing">in cuius rei testimonium presenti scripto sigillum meum apposui</cl> . <cl type="witnesses">Hiis testibus domino Willelmo de Lindesey . domino Willelmo de Morginton<ex>a</ex> .<lb/> domino Alano de Swinton<ex>a</ex> . Thomas de Nesebite . Willelmo de Scremerstona . Ada de Prenderghest . D<ex>aui</ex>d . de Lummesdene . Roberto<lb/> filio Gregorii . Gilberto de Lummesdene . Ada filio Iohannis de Aytona . Ada
+                     Franzais . Iohanne filio Ingerani et aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful to whom the present writing shall come, <cl type="intitulatio">Bertram of Little Reston</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Know me, all of you,</cl> <cl type="disposition">to have given, granted, and by this my present charter to have made firm, to God
+                  and to Saint Cuthbert, and to Anketin the Prior, and the
+                  Convent of Coldingham, the homage and service of Patrick son
+                  of Uhtred, with all lands and possessions which he had out of
+                  the donation of Adam, my father, in the toun and territory of
+                  Little Reston; that is, the toft and croft which lies near
+                  the land of Henry towards the east, and fourteen acres of
+                  land near <ex>Wambenese Cross</ex>, and three roods in <ex>Blakeclou,</ex> and two acres and a half near <ex>Blakeclou</ex> towards the east, and eight acres near <ex>Faules</ex>; <cl type="holding">for the Prior and Convent and their successors to have and to hold for ever,
+                     quit in respect of me and my heirs, without any custom and
+                     secular exaction and demand, just as any alms within the
+                     kingdom of Scotland is well and freely held and possessed.</cl> <cl type="warrandice">I, Bertram, and my heirs, shall warrant and defend for ever the aforesaid homage
+                     and service for the Prior and Convent and their
+                     successors, with all the lands and possessions written
+                     before, against all men and women.</cl></cl> <cl type="sealing">In testimony of this matter, I have applied my seal to the present writing.</cl> <cl type="witnesses">With these witnesses: the lord William of Lindsay; the lord William of
+                  Mordington; the lord Alan of Swinton; Thomas of Nisbet;
+                  William of Scremerston; Adam of Prenderguest; David of
+                  Lumsdaine; Robert son of Gregory; Gilbert of Lumsdaine; Adam
+                  son of John of Ayton; Adam Francis; John son of Ingram; and
+                  others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

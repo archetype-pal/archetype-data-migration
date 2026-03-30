@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-65">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD 4.3.Sacr.2 (previously, Misc. Ch. 716)</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-02 13:02:56.824381+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">65</idno>
+        <idno type="textcontent">65</idno>
+        <idno type="transcription_textcontentxml">65</idno>
+        <idno type="translation_textcontentxml">66</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD 4.3.Sacr.2 (previously, Misc. Ch. 716)</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD 4.3.Sacr.2 (previously, Misc. Ch. 716)</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-02T13:02:56.824381+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-02T13:02:56.824381+00:00" status="approved">transcription moa=65 status=reviewed modified=2023-06-02 13:02:56.824381+00 | translation moa=66 status=reviewed modified=2023-06-02 13:02:56.812419+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte matris ecclesie filiis Joh<ex>anne</ex>s de Vallibus <cl type="salutation">salutem</cl>.</cl> <cl type="disposition">Sciant presentes ⁊ futuri . me con<lb/>cessisse ⁊ hac carta mea confirmasse deo ⁊ sancte Marie ⁊ sancto Cuthberto . ⁊
+                     monachis de <lb/> Dunelm<ex>o</ex> . terram illam in territorio de Golin’ . quam Will<ex>elmus</ex> de Vallibus pater meus eis dedit <lb/> in puram ⁊ perpetuam elemosinam. Et uolo . ut Lucas filius Osmund’ . ⁊ heredes
+                     sui terram illam te<lb/>neant de eisdem monachis per easdem diuisas per quas idem Osmund . terram illam
+                     tenuit eo die quo <lb/> ipse fuit uiuus ⁊ mortuus . ⁊ cum omnibus aisiamentis ⁊ iustis pertinentiis suis
+                     . libere quiete plenarie <lb/> ⁊ honorifice sicut carta dicti Will<ex>elmi</ex> patris mei dictis monachis . ⁊ Osmund . ⁊ heredibus eius inde facta <lb/> testatur . reddendo inde annuatim dictis monachis septem Solidos . ad festum
+                     sancti Michaelis .</cl> <cl type="witnesses">Hiis testibus . <lb/> Rob<ex>erto</ex> de Vallibus de Ellbotl’ . Will<ex>elmo</ex> de Munfichet’ . Walter de Lindes’ . Walter<ex>o</ex> de Fentun’ . Regi<lb/>nald<ex>o</ex> de Hotot’</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all the sons of Holy Mother Church John de Vaux sends <cl type="salutation">greeting</cl>. </cl><cl type="disposition">Let present and future know that I have granted and by this my charter made firm
+                  to God and to Saint Mary and to Saint Cuthbert, and to the
+                  monks of Durham, that land in the territory of Gullane, which
+                  William de Vaux my father gave to them in pure and perpetual
+                  alms. And I will, that Luke the son of Osmund and his own
+                  heirs should hold that land of the same monks by the same
+                  boundaries by which the same Osmund held that land on that
+                  day in which he was alive and dead, and with all its
+                  easements and just pertinents, freely, quietly, fully, and
+                  honourably, just as the charter of the said William my
+                  father, made thereupon for the said monks, and Osmund and his
+                  heirs, bears witness, rendering thereupon annually to the
+                  said monks seven shillings at the feast of Saint Michael.</cl> <cl type="witnesses">With these witnesses : Robert de Vaux of Elbottle, William of Munfichet, Walter
+                  of Lindsay, Walter of Fenton, Reginald of Hoton. </cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

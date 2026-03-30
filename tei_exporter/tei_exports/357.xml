@@ -1,0 +1,83 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-357">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/76</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:41:32.707682+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">357</idno>
+        <idno type="textcontent">361</idno>
+        <idno type="transcription_textcontentxml">357</idno>
+        <idno type="translation_textcontentxml">358</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/76</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/76</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T12:41:32.707682+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T12:41:32.707682+00:00" status="published">transcription moa=357 status=live modified=2021-04-06 12:41:30.179232+00 | translation moa=358 status=live modified=2021-04-06 12:41:32.707682+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Comes Waldeuus</cl> Omnibus fidelibus et amicis francis et anglis <cl type="salutation">salutem</cl></cl> . <cl type="notification">Sciant tam futuri quam presentes</cl>  <cl type="disposition">me dedisse et confir<lb/>asse hac mea carta concessione heredis mei deo et sancte marie de Melros . et
+                     monachis ibidem deo seruientibus<lb/> communem pasturam super lambermoram mecum et cum hominibus meis per has diuisas
+                     scilicet de baldredestan per al<lb/>tam uiam usque ad eslingcloh et inde deorsum sicut heslingcloh cadit in bothkyl
+                     et inde usque in diuisas de Inuer<lb/>wic pro salute anime mee et antecessorum meorum et successorum meorum in
+                     perpetuam elemosinam ita libere et quiete et honorifice ab
+                     omnibus secularibus seruiciis et consuetudinibus sicut
+                     aliqua elemosina liberius et quietius et honorificentius
+                     datur uel<lb/> tenetur. Si autem dimiserint pasturam de Inuerwic caule eorum sequentur pecora
+                     sua cum logiis suis que pertinent ad ipsas<lb/> caulas infra has prenominatas diuisas sine manuali opere et meis propriis logiis
+                     de beltun.</cl> <cl type="warrandice">Hanc donationem ego<lb/> et heredes mei warantizabimus predictis monachis contra omnes homines
+                     inperpetuum</cl> . <cl type="witnesses">His testibus . Aelina Com<ex>itissa</ex> . Radul<lb/>fo capellano . Ioh<ex>ann</ex>e cap<ex>el</ex>l<ex>ano</ex> . Waltero . cap<ex>el</ex>l<ex>ano</ex> . Hugone de duns . Patricio fratre com<ex>itis</ex> . Edwardo auunculo com<ex>itis</ex> . Gilbert<lb/> fraser , Adam filio alden . Alden senescaldo . Gamello de pethcox . Adam de
+                     Foghou . Gilberto filio Walteri .<lb/> Steph<ex>an</ex>o papedi . Warino lemalla . Adam filio eggari . Adam de edintun .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Earl Waldef</cl> <cl type="salutation">sends greeting</cl> to all sworn men and friends, French and English.</cl> <cl type="notification">Let those to come as well as those present know</cl> <cl type="disposition">me to have given, and made firm by this my charter, with the agreement of my
+                  heir, to God and St Mary at Melrose, and to the monks serving
+                  God in that place, common pasture upon Lammermuir, with me
+                  and my men, by these boundaries, that is: from Baldred’s
+                  Stane by the highway as far as the Hazliecleugh and thence
+                  downwards as the Hazliecleugh falls into the Bothwell and
+                  thence as far as the boundaries of Innerwick; for the
+                  salvation of my soul and my ancestors’ and successors’; in
+                  everlasting alms, as freely and quitely and honourably from
+                  all secular services and customs as any alms is freely,
+                  quitely and honourably given or held. And if they shall quit
+                  the pasture of Innerwick, their sheep-folds shall follow
+                  their flocks, with their bothies that belong to the said
+                  sheep-folds within the marches named before, without manual
+                  labour, and with my own bothies at Belton.</cl> <cl type="warrandice">This donation I and my heirs shall warrant to the foresaid monks against all men
+                  for ever.</cl> <cl type="witnesses">With these witnesses, Aelina, countess; Ralph, chaplain; John, chaplain; Walter,
+                  chaplain; Hugh of Duns; Patrick the earl’s brother; Edward
+                  the earl’s uncle; Gilbert Fraser; Adam son of Aldan; Aldan
+                  the seneschal; Gamel of Pitcox; Adam of Fogo; Gilbert son of
+                  Walter; Stephen Papedy; Warin le Malle; Adam son of Edgar;
+                  Adam of Edington.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

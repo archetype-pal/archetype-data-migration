@@ -1,0 +1,89 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-15">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.22</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:14:07.310177+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">15</idno>
+        <idno type="textcontent">15</idno>
+        <idno type="transcription_textcontentxml">15</idno>
+        <idno type="translation_textcontentxml">16</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.22</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.22</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:14:07.310177+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:14:07.310177+00:00" status="published">transcription moa=15 status=live modified=2021-04-05 08:14:07.310177+00 | translation moa=16 status=live modified=2021-04-05 08:14:05.226954+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. <persName>H .</persName> Com<ex>es</ex> . filius Reg<ex>is</ex> Scot’.</cl> Ep<ex>iscop</ex>is . Abbatibus . Comitibus . Iust’ . Baronibus . Vicecomitibus . Ministris . et
+                     omnibus fidelibus suis . francis et anglicis . clericis et
+                     laicis tam futu<lb/>ris quam presentibus tocius terre sue <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Sciatis me</cl> <cl type="disposition">concessisse deo et Ecclesie sancte Marie de hadintune . Clerchetune in perpetuam
+                  Elemosinam cum suis <lb/> rectis diuisis ex utraque parte aque sicut <persName>Will<ex>elmu</ex>s</persName> de Graham et Durandus vicec<ex>omes</ex> . et <persName>Rich<ex>ardus</ex></persName> . clericus et Osbertus prior de Edeneburc . et Malbeht de <lb/> lib<ex>er</ex>tona et Gillandres filius Oggu preierunt et Circuierunt . postquam Thoroldus
+                     Archidiaconus mecum finiuit apud pebles . et sicut antea
+                     mensurata <lb/> fuit . Concedo etiam predicte ecclesie unum plenarium Thoft iuxta ecclesiam in
+                     uilla de hadintona. et omnes decimas et rectitudines
+                     ecclesiasticas <lb/> de tota hadintunsira tam de Molendinis quam de aliis rebus . <cl type="holding">Volo itaque et firmiter precipio quod predicta ecclesia teneat et habeat
+                     prenominatam <lb/> terram clerchetune solam et quietam de me et de Thein et de omnibus aliis qui
+                        terram predictam tenuerint . de hadintune . de me et
+                        heredibus <lb/> <supplied>m</supplied>eis et et de eredibus eorum . et omnes aliis rectitudines et consuetudines in
+                        decimis et Elemosinis ita libere et honorifice et
+                        quiete et plenarie sicut <lb/> <supplied>a</supplied>liqua Elemosina in tota terra mea melius et plenius et honorificencius et
+                        quietius potest dari et Concedi .</cl> Has autem prenominatas elemosinas do et <lb/> Carta mea Confirmo pro anima mea et patris matrisque mee et animabus
+                     antecessorum et successorum meorum .</cl> <cl type="witnesses">Testibus . <persName>Eng’</persName>. Cancellario . et <persName>Will<ex>elm</ex>o Mas<lb/>culo</persName> . et <persName>Edmundo</persName> filio <persName>Eimer</persName> . et <persName>Anselmo</persName> Nepote <persName>Ioh<ex>ann</ex>is</persName> ep<ex>iscop</ex>i .</cl> apud hadintonam .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Henry the earl, son of the king of Scots</cl>, to bishops, abbots, earls, justiciars, barons, sheriffs, officials, and all
+                     his sworn men, French and English, clerk and lay, future
+                     as well as present, of his whole land, <cl type="salutation">greeting.</cl></cl> <cl type="disposition"><cl type="notification">Know</cl> that I have conceded Clerkington to God and to the church of St Mary at
+                     Haddington in perpetual alms with its right marches on
+                     either side of the the river just as William of Graham and
+                     Durand the sheriff, and Richard the clerk and Osbert the
+                     prior of Edinburgh [Holyrood], and Malbeth of Liberton and
+                     Gillanders son of Oggu led the way and went around, after
+                     Thorald the archdeacon determined the bounds with me at
+                     Peebles, and just as it was previously measured. I also
+                     concede to the aforesaid church one full toft next to the
+                     church in the toun of Haddington, and all teinds and
+                     ecclesiastical revenues from the whole of Haddingtonshire
+                     from mills as well as other things. <cl type="holding">I therefore will and firmly enjoin that the aforesaid church hold and have the
+                     aforenamed land, Clerkington, alone, and quit in relation
+                     to me and the thane and all others who shall have held the
+                     aforesaid land of Haddington of me and my heirs and of
+                     their heirs, and all other revenues and customs in teinds
+                     and alms as freely and honourably and quietly and fully as
+                     other alms in my whole land are well and fully and
+                     honourably and quietly able to be given and granted.</cl> These aforenamed alms I give and confirm by my charter for the sake of my own
+                     soul and of my father’s and mother’s, and the souls of my
+                     ancestors and successors. </cl><cl type="witnesses">As witnesses: Engelram [Ingram] the chancellor, and William Maule, and Edmund
+                  son of Aimar, and Anselm nephew of Bishop John.</cl> At Haddington.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

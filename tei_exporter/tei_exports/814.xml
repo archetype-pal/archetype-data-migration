@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-814">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 620</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.697066+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">814</idno>
+        <idno type="textcontent">829</idno>
+        <idno type="transcription_textcontentxml">814</idno>
+        <idno type="translation_textcontentxml">815</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 620</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 620</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T14:52:15.697066+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T14:52:15.697066+00:00" status="approved">transcription moa=814 status=reviewed modified=2022-11-01 14:52:15.68676+00 | translation moa=815 status=reviewed modified=2022-11-01 14:52:15.697066+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Alex<ex>ander</ex> dei gr<ex>ati</ex>a Rex Scott<ex>orum</ex></cl> . Omnibus probis Hominibus tocius terre sue <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis nos</cl> monasterium de<lb/> Coldingham’ . Priorem et Conuentum eiusdem Monasterii . Homines et terras suas .
+                     ac vniuersas eorundem possessiones .<lb/> sub firma pace et protectione nostra iuste suscepisse . <cl type="injunction">Quare firmiter prohibemus ne quis eis malum . iniu<lb/>riam . molestiam aut grauamen aliquod iniuste presumat inferre  Super nostram
+                        plenariam forisfacturam</cl></cl> .<lb/> <cl type="witnesses">Test<ex>ibus</ex> . Magistro Ric<ex>ardo</ex> de Inuirkethyn’ . Cam<ex>erario</ex> . Rob<ex>erto</ex> de Meyners’ . Willelmo de Haya . et Galfrid<ex>o</ex> de Boscho .</cl> <cl type="dating">apud<lb/> Tynigham’ . viij . die Aprilis . Anno regni domini Regis  xxx Quinto .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander by the grace of God king of the Scots</cl>, to all worthy men of the whole of his land <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> us in accordance with law to have received the monastery of Coldingham, the
+                     prior and convent of the same monastery, their men and
+                     lands, and all the possessions of the same, under our firm
+                     peace and protection. <cl type="injunction">Wherefore do we strictly forbid that anyone should venture to bring about any
+                     evil, injury, annoyance or grievance to them, on pain of
+                     our full forfeiture</cl>.</cl> <cl type="witnesses">As witnesses, Master Richard of Inverkeithing, chamberlain, Robert of Menzies,
+                  William de la Haye, and Geoffrey del Bois,</cl> <cl type="dating">at Tynninghame, the 8th day of April, in the year of the reign of the lord king,
+                  the thirty-fifth [1249].</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

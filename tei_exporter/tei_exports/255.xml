@@ -1,0 +1,71 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-255">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/278</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:39:47.499965+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">255</idno>
+        <idno type="textcontent">254</idno>
+        <idno type="transcription_textcontentxml">255</idno>
+        <idno type="translation_textcontentxml">254</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/278</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/278</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T08:39:47.499965+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T08:39:47.499965+00:00" status="published">transcription moa=255 status=live modified=2021-04-06 08:39:41.84292+00 | translation moa=254 status=live modified=2021-04-06 08:39:47.499965+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Iocel<ex>inus</ex> dei gratia Glasguen<ex>sis</ex> Episcopus .</cl> Omnibus Sancte matris ecclesie filiis tam presentibus quam futuris . <cl type="salutation">Salutem in<lb/> domino.</cl></cl> <cl type="disposition"><cl type="notification">Nouerit uniuersitas uestra</cl> nos ad peticionem  per consensum <persName>Rogeri</persName> de Scalebroc . dedisse <lb/> concessisse .  Hac carta nostra confirmasse . deo  ecclesie Sancte Marie de
+                     Nordberewic .  monialibus<lb/> ibidem deo seruientibus In liberam  perpetuam elemosinam . Ecclesiam de
+                     kirkebride de Larges . cum dimidia<lb/> carucata terre .  cum una salina .  cum duabus acris ad croftum .  cum
+                     decimis  oblacionibus  omnibus<lb/> aliis ad ipsam ecclesiam iuste pertinentibus . <cl type="holding">Tenendam ita libere quiete plenarie  honorifice  Sicut<lb/> aliqua domus religiosa aliquam ecclesiam in episcopatu nostro Liberius .
+                        Quietius . Plenius  honorificentius tenet<lb/>  possidet</cl> . Concessimus etiam prefatis monialibus ut omnes redditus  prouentus prescripte
+                     ecclesie in usus pro<lb/>prios . pro uoluntate sua in perpetuum conuertant . Saluis Episcopalibus .</cl> <cl type="witnesses">Hiis Testibus . <persName>Rad’</persName> . Abbate de melr’ .<lb/> <persName>Sim’</persName> . Archidiacono . nostro . <persName>Herb’</persName> . decano Glasguensi . <persName>Cristino</persName> decano de Karreic . <persName>Helya</persName> . <persName>Will<ex>elm</ex>o</persName><lb/> Canonicis Glasg’ . <persName>Ric’</persName> . clerico de Dundouenald’ . <persName>Ioh<ex>ann</ex>e</persName> . <persName>Waltero</persName> . <persName>Geru’</persName> Clericis nostris . <persName>Alex’</persName> . de kuningham . Capellano .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Jocelin, by the grace of God bishop of Glasgow,</cl> to all sons of Holy Mother Church, both present and future, <cl type="salutation">Greeting in the Lord</cl>:</cl> <cl type="disposition"><cl type="notification">You should all know</cl> that, at the request and by the consent of Roger de Skelbrooke, we have given,
+                     granted, and by this our charter made firm, to God and to
+                     the church of St Mary at North Berwick, and to the nuns
+                     serving God there, in free and perpetual alms, the church
+                     of Kirkbride in Largs, with half a ploughgate of land, and
+                     with one saltpan, and with two acres at the croft, and
+                     with teinds and oblations and all other things rightfully
+                     belonging to that church, <cl type="holding">to be held as freely, quietly, fully and honourably as any religious house holds
+                     aand possesses any church in our bishopric.</cl> We have also granted to the forementioned nuns that may at will convert all
+                     revenues and profits of that church to their own use in
+                     perpetuity, saving the episcopal dues.</cl> <cl type="witnesses">With these witnesses, Ralph the abbot of Melrose, Simon our archdeacon, Herbert
+                  the dean of Glasgow, Christian the dean of Carrick, Elias,
+                  William, canons of Glasgow, Richard, clerk of Dundonald,
+                  John, Walter, Gervase, our clerks, Alexander of Cunningham,
+                  chaplain.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

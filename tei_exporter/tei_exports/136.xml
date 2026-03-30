@@ -1,0 +1,63 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-136">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 65</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:03.085245+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">136</idno>
+        <idno type="textcontent">136</idno>
+        <idno type="transcription_textcontentxml">136</idno>
+        <idno type="translation_textcontentxml">137</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 65</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 65</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:28:03.085245+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:03.085245+00:00" status="published">transcription moa=136 status=live modified=2017-01-30 19:28:03.085245+00 | translation moa=137 status=live modified=2016-10-21 01:08:26.656265+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi fidelibus presens Scriptum visuris vel audituris <cl type="intitulatio">Marioria Cumin . Comitissa de Buchan</cl> <cl type="salutation">eternam in domino <lb/> Salutem</cl> .</cl> <cl type="notification">Nouerit vniuersitas uestra</cl> <cl type="disposition">me concessisse ⁊ hac carta mea confirmasse deo ⁊ ecclesie sancti Andree <lb/> Apostoli in Scocia ⁊ canonicis ibidem deo seruientibus ⁊ Seruituris ecclesiam De
+                     Kennauchyn cum decimis ⁊ <lb/> oblacionibus ⁊ terris ⁊ cum omnibus eidem ecclesie iuste pertinentibus Sicut
+                     carta Merleswayn filii Colbani ⁊ <lb/> confirmaciones heredum suorum testantur</cl> <cl type="sealing">Et in huius rei testimonium presens Scriptum Sigillo meo roboraui</cl> <cl type="witnesses">Hiis test<ex>ibus</ex><lb/> Domino Germano priore ⁊ conuentu De Rustinoth . Rann’ De Bonekill’ . Rob<ex>erto</ex> de Mohauth . Michaele de Moha<lb/>uth . Philippo de feodarg . Helia Capellano . Ad<ex>am</ex> de Teket ⁊ Ad<ex>am</ex> de Rule Clericis ⁊ aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ’s faithful who shall view or hear the present written deed, <cl type="intitulatio">Marjory Comyn, Countess of Buchan,</cl> <cl type="salutation">wishes eternal salvation in the Lord</cl>.</cl> <cl type="notification">May you all know</cl> <cl type="disposition">that I have granted, and by this my charter made firm, to God and to the church
+                  of St Andrew the apostle in Scotia and to the canons serving
+                  God in that place now and in the future, the church of
+                  Kennoway, with teinds, and oblations, and lands, and with all
+                  things rightfully belonging to the same church, just as the
+                  charter of Merleswain son of Colban and the confirmations of
+                  his heirs bear witness.</cl> <cl type="sealing">And in testimony of this matter I have confirmed the present deed with my seal.</cl> <cl type="witnesses">With these witnesses: the lord German the prior, and the convent of Restenneth;
+                  Ranulf of Bunkle; Robert Mowat; Michael Mowat; Philip of
+                  Feodarg; Elias the chaplain; Adam of Theket and Adam of Rule,
+                  clerks; and others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

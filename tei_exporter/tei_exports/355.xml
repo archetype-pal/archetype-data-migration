@@ -1,0 +1,80 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-355">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/231</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:40:45.914978+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">355</idno>
+        <idno type="textcontent">359</idno>
+        <idno type="transcription_textcontentxml">355</idno>
+        <idno type="translation_textcontentxml">356</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/231</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/231</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T12:40:45.914978+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T12:40:45.914978+00:00" status="published">transcription moa=355 status=live modified=2021-04-06 12:40:44.427656+00 | translation moa=356 status=live modified=2021-04-06 12:40:45.914978+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. A . Dei Gratia Rex scott’ .</cl> Omnibus probis hominibus tocius terre sue <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Sciatis</cl> <cl type="disposition">nos concessisse et hac carta nostra confirmasse uendi<lb/>tionem illam quam . P . Comes de Dunbar’ de consensu Patr<ex>icii</ex> . filii et heredis sui fecit abbati et Conuentuj de Melros’ de toto equitio<lb/> suo quod habuit in feodo de Lauhedir’ . Ann<ex>o</ex> gr<ex>atie</ex> Mill<ex>esimo</ex> . Ducentes<ex>imo</ex> . Quadrages<ex>imo</ex> septimo in festo decollationis sancti Iohannis Baptiste . Et<lb/> similiter concessimus et hac carta nostra confirmauimus concessionem et quietam
+                     clamationem quam Idem Comes de consensu dicti . P . filii
+                     et heredis sui<lb/> fecit eisdem abbati et Conuentui de communa quam habuit ad equitium uel ad
+                     aliqua alia animalia nutrienda uel pascenda infra terras
+                     et pastu<lb/>ras quas dicti abbas et Conuentus in feodo de Lauhedir’ dicto die tenuerunt et
+                     possederunt<ex>e</ex> . Ita scilicet quod dictus Comes aut heredes sui uel Aliquis<lb/> alius nomine eorum nullum clamium aut calumpniam in dictis terris aut pasturis
+                     decetero exigent aut habebunt . quam quidem uenditionem et
+                     quietam<lb/> clamationem ita uolumus in perpetuum obseruari : sicut carta predicti Patr<ex>icii</ex> Com<ex>itis</ex> . de Dunbar’ . quam dicti abbas et Conuentus inde habent . iuste testatur .</cl><lb/> <cl type="witnesses">Test<ex>ibus</ex> . W . Cumin Com<ex>ite</ex> . de Meneteth’ . Alan<ex>o</ex> hostiar<ex>io</ex> . Iustic’ . scoc<ex>ie</ex> . Rob<ex>erto</ex> . de Ros’ . Dauid de Lindes’ . Thom<ex>a</ex> de Normanuill’ . Thom<ex>a</ex><lb/> filio Ranulf<ex>i</ex> . Robert<ex>o</ex> . de Meiners’ .</cl> apud sanctam crucem Vicesim<ex>o</ex> Octauo die Nouembr<ex>is</ex> . ann<ex>o</ex> regni domini reg<ex>is</ex> . Tricesimo tertio .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">A<ex>lexander</ex> by the grace of God king of the Scots</cl> <cl type="salutation">sends greeting</cl> to all worthy men of the whole of his land.</cl> <cl type="notification">Know us</cl> <cl type="disposition">to have allowed, and by this our charter to have made firm, the sale that P<ex>atrick</ex> earl of Dunbar, by the agreement of Patrick his son and heir, made to the abbot
+                     and convent of Melrose of his whole horse-stud that he had
+                     in the feu of Lauder in the Year of Grace One Thousand Two
+                     Hundred and Forty-Seven on the feast of the Beheading of
+                     John the Baptist. And we have likewise allowed, and by
+                     this our charter made firm, the concession and quitclaim
+                     that the same earl, with the agreement of the said Patrick
+                     his son and heir, made to the same abbot and convent for
+                     the common that he had for feeding or pasturing the
+                     horse-stud or any other animals within the lands and
+                     pastures which the said abbot and convent held and
+                     possessed on the said day in the said feu of Lauder, that
+                     is, so the said earl or his heirs or anyone else in their
+                     name shall in future instigate or have no claim or
+                     complaint in the said lands or pastures; which very sale
+                     and quitclaim we will to be observed for ever, just as the
+                     charter of the foresaid Patrick earl of Dunbar which the
+                     said abbot and convent have thereupon rightly bears
+                     witness.</cl> <cl type="witnesses">As witnesses, W<ex>illiam</ex> Comyn, earl of Menteith; Alan Durward, justiciar of Scotia; Robert of Roos;
+                     David of Lindsay; Thomas de Normanville; Thomas son of
+                     Ranulph; Robert Menzies.</cl> At Holyrood on the twenty-eighth day of November, in the thirty-third year of
+                  the reign of the lord King. [1247]</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,71 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-119">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 34</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:00.648873+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">119</idno>
+        <idno type="textcontent">119</idno>
+        <idno type="transcription_textcontentxml">119</idno>
+        <idno type="translation_textcontentxml">118</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 34</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 34</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:28:00.648873+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:00.648873+00:00" status="published">transcription moa=119 status=live modified=2017-01-30 19:28:00.648873+00 | translation moa=118 status=live modified=2016-06-07 13:02:49.269447+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus hoc scriptum uisuris uel audituris <cl type="intitulatio">Rad<ex>ulfus</ex> permissione diuina ecclesie Aberd<ex>onie</ex> minister humilis</cl> <cl type="salutation">eternam in domino salutem</cl></cl> . <cl type="notification">Nouerit vniuer<lb/>sitas uestra</cl> <cl type="disposition">nos ad presentacionem prioris et conuentus de sancto andr<ex>ee</ex> caritatis intuitu dedisse concessisse et hac carta nostra confir<lb/>masse Rob<ex>erto</ex> de La Runce capellano nostro vicariam ecclesie de Bourdin . et eum in eadem
+                     canonice instituisse cum terra ipsius <lb/> ecclesie et decima eiusdem terre . et cum omnibus obuencionibus et pertinenciis
+                     suis . salua prefatis canonicis terra assingnata ad lu<lb/>minare ecclesie . <cl type="holding">Quare volumus ut prefatus Rob<ex>ertus</ex> prefatam vicariam ita libere quiete teneat et possideat . sicut aliquis uicarius <lb/> aliquam vicariam in diocesa nostra liberius quietius tenet et possidet . saluis
+                        episcopalibus</cl> .</cl> <cl type="sealing">In huius rei testimonium  presenti scripto sigillum <lb/> nostrum apposuimus</cl> . <cl type="witnesses">Testibus magistro hug<ex>one</ex> de bosch<ex>o</ex> . magistro Rad<ex>ulfo</ex> de bosch<ex>o</ex> . magistro Ric<ex>ardo</ex> offic<ex>iario</ex> Aberd<ex>onie</ex> . domino steph<ex>an</ex>o senescall<ex>o</ex> <lb/> nostro . domino Joh<ex>ann</ex>e de solt<ex>re</ex> capellano nostro . and<ex>rea</ex> . henr<ex>ico</ex> . Will<ex>elm</ex>o . et Rogero clericis nostris et aliis</cl> .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall view or hear this written deed, Ralph, by divine permission
+                  humble servant of the church of Aberdeen, wishes eternal
+                  salvation in the lord.</cl> <cl type="notification">You should all know that</cl> <cl type="disposition">we, moved by charitable love, and at the presentation of the prior and religious
+                  community of St Andrews, have given, granted, and by this our
+                  charter made firm to Robert de la Runce, our chaplain, the
+                  vicarage of the church of Bourtie, and have canonically
+                  instituted him in the same with the land of that church and
+                  the teind of the same land, and with all its obventions and
+                  pertinents, saving to the aforementioned canons the land
+                  assigned for the lighting of the church. <cl type="holding">Wherefore we will that the aforementioned Robert should hold and possess the
+                     aforementioned vicarage as freely and quietly as any vicar
+                     freely and quietly holds and possesses any vicarage in our
+                     diocese, saving episcopal dues</cl>.</cl> <cl type="witnesses">In testimony whereof we have affixed our seal to the present deed. As witnesses:
+                  Master Hugh del Bois; Master Ralph del Bois; Master Richard,
+                  our official of Aberdeen; the lord Stephen, our steward; the
+                  lord John de Soutra, our chaplain; Andrew, Henry, William,
+                  and Roger, our clerks; and others</cl>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

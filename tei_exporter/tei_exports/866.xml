@@ -1,0 +1,73 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-866">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of TNA DL 36/1/240</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 09:22:03.14279+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">866</idno>
+        <idno type="textcontent">889</idno>
+        <idno type="transcription_textcontentxml">866</idno>
+        <idno type="translation_textcontentxml">867</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 36/1/240</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>TNA DL 36/1/240</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T09:22:03.14279+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T09:22:03.14279+00:00" status="published">transcription moa=866 status=live modified=2021-04-07 09:22:01.815219+00 | translation moa=867 status=live modified=2021-04-07 09:22:03.14279+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis Christi fidelibus presentes literas visuris uel audituris <cl type="intitulatio">Humfr<ex>idu</ex>s de Boys filius domini Thom’ de Boys</cl> <cl type="salutation">salutem in d<ex>omino</ex></cl></cl> <cl type="disposition"><cl type="notification"><supplied>N</supplied>o<lb/>ueritis</cl> me dedisse concessisse et hac presenti carta mea confirmasse et pro me et
+                     heredibus meis imperpetuum quietumclamasse<lb/> domino meo domino Roberto de Brus domino uallis Anand’ . Elsystales cum omnibus
+                     suis pertinetiis sine ullo retinemento prout di<lb/>uiditur a terra mea de Eskeby per fossatum quod dictus dominus meus Ibidem fieri
+                     fecit in omnibus locis prout longe lateque uersus meridi<lb/>em . austrem . boriam . et orientem se extendit . <cl type="holding">Tenendum et habendum dicto domino meo et heredibus suis uel suis assignatis
+                     libere . quiete . Integre<lb/> et pacifice . in boscis . planis . moris . mariscis et locis aliis cum omnibus
+                        libertatibus liberis consuetudinibus et asiamentibus ad<lb/> Idem locum interius et exterius qualiscumque pertinentibus .</cl> <cl type="warrandice">Et ego Humfr<ex>idu</ex>s et heredes mei predictam terram cum suis pertinenciis ut pre<lb/>dictum est predicto domino meo domino Robeto de Brus et heredibus suis contra
+                        omnes gentes warantizabimus aquietabimus et inperpetuum<lb/> defendemus</cl> .</cl> <cl type="sealing">In cuius rei testimonium <supplied>p</supplied>resentibus sigillum meum apposui .</cl> <cl type="witnesses">Testibus . dominis Will<ex>elm</ex>o de brus . Humfr<ex>id</ex>o de kirkepatric . Da<lb/>uid de Torthorald’ . Roberto de heriz . Rog<ex>ero</ex> de kirkepatric . Iohanne de Seton’ . Militibus . Ad<ex>a</ex> de hodolm’ . Hug<ex>one</ex> Mauleuerer<lb/> et aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful who shall view or hear the present letters, <cl type="intitulatio">Humphrey del Bois son of the lord Thomas del Bois</cl> <cl type="salutation">sends greeting in the Lord.</cl></cl> <cl type="disposition"><cl type="notification">Know</cl> me to have given, granted, and by this my present charter to have made firm, and
+                     for myself and my heirs to have quitclaimed to my lord,
+                     the lord Robert de Brus the lord of Annandale,
+                     Elshieshiels with all its pertinents, without any
+                     withholding, as it is divided by my land of Eskby by the
+                     ditch which my said lord had made there, in all places as
+                     long and as wide as it extends towards the south, the
+                     north, and east. <cl type="holding">For my said lord and his heirs or assigns to hold and to have freely, quitly,
+                     wholly and peaceably, in woods, plains, moors, marshes,
+                     and other places, with all liberties, free customs and
+                     easements of whatever kind pertaining to the same place
+                     within and without.</cl> <cl type="warrandice">And I Humphrey and my heirs shall warrant, acquit, and protect the aforesaid
+                     land for ever, for my aforesaid lord, with its pertinents
+                     as said before</cl>.</cl> <cl type="sealing">In testimony of this matter I have applied my seal to the presents.</cl> <cl type="witnesses">As witnesses, the lords William de Brus, Humphrey of Kirkpatrick, David of
+                  Torthorwald, Robert de Heriz, Roger of Kirkpatrick, John of
+                  Seton, knights, Adam of Hoddom, Hugh Mauleverer, and others. </cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

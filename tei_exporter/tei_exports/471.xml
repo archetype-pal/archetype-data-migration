@@ -1,0 +1,71 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-471">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/206</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:49:07.563746+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">471</idno>
+        <idno type="textcontent">476</idno>
+        <idno type="transcription_textcontentxml">471</idno>
+        <idno type="translation_textcontentxml">472</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/206</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/206</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:49:07.563746+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:49:07.563746+00:00" status="published">transcription moa=471 status=live modified=2021-04-06 15:49:07.563746+00 | translation moa=472 status=live modified=2021-04-06 15:49:05.195772+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Uniuersis christi fidelibus hoc scriptum uisuris uel audituris <cl type="intitulatio">Thomas de Alneto Miles</cl> <cl type="salutation">eternam salutem in domino</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit vniuersitas uestra</cl><lb/> me dedisse . concessisse et hac presenti carta mea confirmasse deo et beate
+                     Marie de Melros et Monachis ibidem deo seruientibus et in<lb/> perpetuum seruituris in liberam et perpetuam elemosinam terras de Brunsceth . de
+                     hauthyncref et de Dergauel per suas rectas diui<lb/>sas cum omnibus pertinenciis suis et quicquid imfra easdem diuisas continetur
+                     tam in hominibus quam pasturis . domibus . pratis . moris
+                     .<lb/> mariscis . aquis . molendinis . nemoribus et omnibus aliis . <cl type="holding">ita ut ipsi omnia premissa cum suis pertinentiis ita libere in perpetuum<lb/> teneant et habeant prout ea tenui . et in omnibus premissis nichil michi retinui
+                        .</cl> <cl type="warrandice">Immo Ego et successores mei omnia premissa eisdem<lb/> monachis in perpetuum warantizabimus .</cl></cl> <cl type="sealing">In cuius rei testimonium presenti scripto sigillum meum apposui .</cl> <cl type="witnesses">Hiis testibus . Ioh<ex>ann</ex>e de<lb/> Makuswell’ . Thomas filio Ranulfi vicecomite de Dunfres . Ion<ex>ann</ex>e de Mundeuil’ . Waltero Croc . et Thoma Mautalent  militibus .<lb/> Laurencio de braccheley . Thoma de Cantia . et multis aliis .</cl> Datum Anno domini millesimo ducentesimo tricesimo septimo .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful who shall see or hear this written deed, <cl type="intitulatio">Thomas de Aunay, knight,</cl> <cl type="salutation">wishes eternal salvation in the Lord.</cl></cl> <cl type="disposition"><cl type="notification">Let your whole community know</cl> me to have given, granted and by this my present charter to have made firm to
+                     God and to Blessed Mary at Melrose and to the monks
+                     serving God in that place now and to come, for ever, in
+                     free and everlasting almsthe lands of ‘Brunsceth’,
+                     Auchencrieff, and Dargavel, by their correct boundaries,
+                     with all their pertinents and whatever is comprised within
+                     the same bounds as well in men as in pastures, buildings,
+                     meadows, moors, marshes, waters, mills, woods and all
+                     other things, <cl type="holding">so that they hold and have all the foregoing things with their pertinents so
+                     freely in perpetuity as I held them, and in all the
+                     foregoing things I have withheld nothing to myself.</cl> <cl type="warrandice">Indeed, I and my successors shall warrant all the foregoing to the same monks
+                     for ever.</cl></cl> <cl type="sealing">In testimony of this matter I have applied my seal to the present written deed.</cl> <cl type="witnesses">With these witnesses: John of Maxwell; Thomas son of Ranulf, sheriff of
+                  Dumfries; John of Mandeville, Walter Crook, and Thomas
+                  Maitland, knights; Laurence of Brackley; Thomas of Kent; and
+                  many others.</cl> Given in the year of the Lord 1237.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

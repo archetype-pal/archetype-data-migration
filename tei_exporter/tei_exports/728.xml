@@ -1,0 +1,69 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-728">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/292</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:51.554028+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">728</idno>
+        <idno type="textcontent">740</idno>
+        <idno type="transcription_textcontentxml">728</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/292</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/292</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:51.554028+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:51.554028+00:00" status="draft">transcription moa=728 status=draft modified=2017-01-30 19:28:51.554028+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: Junicode;"><cl type="address">Omnibus sancte matris Ecclesie filiis presentibus et futuris litteras istas
+                     uisuris uel audituris <cl type="intitulatio">Adam de Hetune et<lb/> Helena uxor eius</cl> <cl type="salutation">salutem in domino</cl> .</cl> <cl type="notification">Nouerit vniuersitas uestra</cl> <cl type="disposition">nos de mera uoluntate nostra uendidisse domui de Melros<lb/> pro decem libris esterlingorum terram nostram de Hungerig’ quam tenuimus in
+                        territorio de Molle de Roberto de pollehoc et Ysabel
+                        uxore eius . et<lb/> quoddam pratum sub hedredissete quod uocatur holemede quod tenuimus de Domina
+                        Elchina et heredibus suis et omne ius quod in eisdem
+                        habuimus<lb/> uel habere potuimus . Has predictas terras cum omnibus libertatibus et
+                        aisiamentis ad easdem terras pertinentibus uendidimus
+                        predicte domui de<lb/> Melros pro decem libris esterlingorum sicut prenotatum est  tenendas sibi et
+                        possidendas in perpetuum libere . quiete . plene et
+                        pacifice . Redden<lb/>do inde annuatum decem solidos ysabel’ filie Roberti Croc uel heredibus suis
+                        scilicet quinque solidos ad pentecosten . et quinque
+                        solidos ad festum<lb/> Sancti Martini . Nos uero et heredes nostri easdem terras cum omnibus ad easdem
+                        terras pertinentibus predicte domui de Melr<ex>os</ex> contra omnes homines waran<lb/>tizabimus . Si uero aliquot casu contingente uel nos uel heredes nostri easdem
+                        terras predicte domui de Melr<ex>os</ex> warantizare non poterimus  <lb/> pecuniam in integrum quam ab eadem domo recepimus eidem domui absque omni
+                        contradiccione restituemus . Et eandem domum indempnem<lb/> conseruabimus ab omnibus que uel eisdem terris competere poterant uel ab eisdem
+                        terries exigi poterant usque ad diem illum quo eadem
+                        domus<lb/> de predictis terris plenariam saysinam recepit .</cl> <cl type="sealing">Et ad maiorem huius rei securitatem ego Adam presenti scripto sigillum meum<lb/> apposui .</cl> <cl type="witnesses">Hiis testibus . Magistro Hugone Archidiacono Glasguensi . Magistro Waltero
+                     Decano de Teuidal’ . Domino Ada<lb/> de bagath’ . Gileberto de Wittun’ et Waltero . Michaele . Iohanne de Hetun’ .
+                        fratribus . et multis aliis .</cl></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

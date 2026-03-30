@@ -1,0 +1,57 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-160">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/217</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-17 01:41:32.898959+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">160</idno>
+        <idno type="textcontent">160</idno>
+        <idno type="transcription_textcontentxml">160</idno>
+        <idno type="translation_textcontentxml">161</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/217</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/217</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-02-17T01:41:32.898959+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-02-17T01:41:32.898959+00:00" status="published">transcription moa=160 status=live modified=2017-02-17 01:41:32.898959+00 | translation moa=161 status=live modified=2017-02-17 01:41:29.078484+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">D<ex>auid</ex> rex Scottorum</cl> . Omnibus probis hominibus suis de Edenesburc Sira .<lb/> <cl type="salutation">salutem</cl> .</cl> <cl type="prohibition">prohibeo ne aliquis super terram aliquid accipiat quam dedi in elemosina<lb/> ecclesie sancte Crucis de edenesburc  nisi per licentiam ⁊ concessum
+                     canonicorum<lb/> ibidem deo ⁊ sancte Cruci seruientium . scilicet nec in herba . nec in cespiti<lb/>bus . siue aliis rebus nisi per concessum canonicorum predictorum .</cl> <cl type="witnesses">T<ex>este</ex> Ioh<ex>ann</ex>e episcopo</cl> .<lb/> Apud Edenesburc .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">David king of Scots</cl> to all his worthy men in the shire of Edinburgh, <cl type="salutation">Greeting</cl>:</cl> <cl type="prohibition">I forbid that anyone should take anything from the land that I have given in
+                  alms to the church of Holyrood in Edinburgh, unless by
+                  licence and consent of the canons serving God and Holyrood
+                  there, that is, neither in grass nor in peats or other
+                  things, unless by the consent of the aforesaid canons.</cl> <cl type="witnesses">As witness, John the bishop.</cl> At Edinburgh.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

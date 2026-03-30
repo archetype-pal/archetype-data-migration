@@ -1,0 +1,126 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-597">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/123</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:09:43.617663+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">597</idno>
+        <idno type="textcontent">606</idno>
+        <idno type="transcription_textcontentxml">597</idno>
+        <idno type="translation_textcontentxml">596</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/123</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/123</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T08:09:43.617663+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T08:09:43.617663+00:00" status="published">transcription moa=597 status=live modified=2021-04-07 08:09:40.302875+00 | translation moa=596 status=live modified=2021-04-07 08:09:43.617663+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">WILLELMUS dei gratia Rex Scott’</cl> . Episcopis . Abbatibus . Comit’ . Baron’ . Iust’ . Uicecom’ . Prepo<ex>s</ex>itis . Ministris . et Omnibus probis Hominibus<lb/> totius terre sue clericis et laicis  <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> nos concessisse et Hac carta nostra confimasse deo et Sancte Marie et ecclesie
+                     de<lb/> Melros et monachis ibidem deo seruientibus In liberam et quietam et perpetuam
+                     elemosinam . ecclesiam de Hatstanesden’ . cum terris et
+                     decimis et omnibus<lb/> ad ipsam ecclesiam pertinentibus . ad susceptionem et sustentationem pauperum et
+                     peregrinorum ad domum de Melros uenientum  a Ioc’ .
+                     Glasguen’ . episcopo per consilium<lb/> nostrum assignatam . De qua ecclesia cum esset inter nos et eundem episcopum
+                     controuersia . ad quem nostram donatio ipsius ecclesie
+                     pertineret  ius nostrum quod in ea ha<lb/>buimus . uel habere potuimus  eidem episcopo concessimus . ad ipsam ecclesiam
+                     secundum deum ordinandam . Et ipse episcopus ut prouentus
+                     ipsius ecclesie in caritatis operibus expendantur  et in
+                     bonos usus perpetuo conuertantur  ipsam ecclesiam cum
+                     omnibus pertinentiis suis pro animabus omnium
+                     predecessorum nostrorum et suorum . et salute et anima
+                     nostra et sua . et omnium<lb/> heredum nostrorum . et successorum suorum . per consilium et concessionem
+                     nostram ad perpetuos usus pauperum et peregrinorum .
+                     ecclesie et conuentui de Melros pia consideratione contu<lb/>lit et confirmauit . Ut autem hoc pium factum et rationabile perpetuam et
+                     illibatam habeat firmitatem  predictam ecclesiam de
+                     Hatstanesden’ cum omnibus perti<lb/>nenciis suis . deo et Sancte Marie et ecclesie de Melros . In liberam et
+                     pereptuam elemosinam ad Sanctos usus prenominatos
+                     concedimus et Hac carta nostra confirmamus . <cl type="holding">Tenendam In<lb/> perpetuum ita libere . Quiete plenarie et Honorifice  Sicut aliqua parrochialis
+                        ecclesia in regno nostro liberius . Quietius . Plenius
+                        . et Honorificentius . ab aliqua conuen<lb/>tuali ecclesia tenetur et possidetur . Salua pensione viginti solidorum ecclesie
+                        Glasguen’ de Ipsa ecclesia de Hatstanesd’ ab ipsis
+                        monachis singulis annis persoluenda . Sicut<lb/> carta eiusdem Ioc’ . Glasguen’ episcopi testatur .</cl> Et ne inter nos uel heredes nostros uel ipsos qui de manerium predictum
+                     tenuerint . et ipsos monachos aliqua in posterum<lb/> super pastura predicte uille possit esse controuersia  per preceptum nostrum et
+                     per considerationem proborum Hominum nostrorum prouisum
+                     est . quantum predictum Monachi in pastura predicte<lb/> uille habere debeant . Scilicet ducentas matrices oues . et sexdecim boues . et
+                     quatuor uaccas . quod illis in pastura illa perpetuo
+                     Habend’  concessimus . et hac carta nostra<lb/> confirmauimus . <cl type="injunction">firmiter prohibentes nequis eis super Hoc  iniuriam aut uexationem aliquam
+                     inferat . Super nostram plenariam forisfacturam</cl> .</cl> <cl type="witnesses">Test’ . Ioc’ . Glasg’ .<lb/> episcopo . Ric’ . Episcopo Morauen’ . Æ . abbate de Dunferm’ . Com’ . Dauid
+                     fratre nostro . Hug’ . Cancellario nostro . Will<ex>elm</ex>o de Lind’ . Iust’ . Phil de valon’ . Dauid de Lindes’ .<lb/> Hugone de Normanuill’ . Waltero de Berkel’ <persName><roleName>camerario</roleName></persName> nostro Herb’ . de Camera</cl> ___ Apud ___Melros</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">William by the grace of God king of the Scots</cl> to the bishops, abbots, earls, barons, justices, sheriffs, provosts, officials,
+                     and all worthy men of all his land clerk and lay <cl type="salutation">sends greeting.</cl></cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> us to have granted and by this our charter to have made firm to God and St Mary
+                     and the church of Melrose and the monks serving God in
+                     that place, in free and quit and perpetual alms, the
+                     church of Hassendean with lands and teinds and all that
+                     pertains to the church itself, assigned by Jocelin bishop
+                     of Glasgow by our advice for the reception and support of
+                     the poor and of pilgrims coming to the church of Melrose.
+                     Since there was a dispute about this church between us and
+                     the same bishop, to which our donation of this church
+                     pertains, we have granted our right which we had or could
+                     have had in it to the same bishop to be disposed to that
+                     church according to God. And the bishop himself, so that
+                     church’s harvest in the works of charity should be
+                     distributed and perpetually be converted to good uses has
+                     by pious regard conveyed and affirmed that same church
+                     with all that belongs to it, for the sake of the souls of
+                     all our predecessors and his own, both for the salvation
+                     and also the souls of us and him, and of all our heirs and
+                     his successors, by our advice and consent, for the
+                     perpetual use of the poor and of pilgrims, to the church
+                     and convent of Melrose. In order that this pious action,
+                     both reasonable and complete, should endure for ever we
+                     have granted and by this our charter affirmed the
+                     aforesaid church of Hassendean with all its pertinents to
+                     God and St Mary and the church of Melrose in free and
+                     everlasting alms for the afore-named holy uses; <cl type="holding">to be held for ever as freely, quitely, fully and honourably as any parish
+                     church in our kingdom is as freely, quitely, fully, and
+                     honourably held and possessed by any conventual church;
+                     saving a pension of twenty shillings to be paid each year
+                     by the monks to the church of Glasgow in respect of the
+                     church of Hassendean, just as the charter of Jocelin
+                     bishop of Glasgow bears witness</cl>; and lest there could be any dispute in the future between us or our heirs or
+                     those who shall have held of the aforesaid manor and those
+                     monks over the pasture of the aforesaid toun, it is
+                     provided by our command and by the consideration of our
+                     worthy men, we have granted and by this our charter
+                     affirmed that the aforesaid monks ought to have for ever
+                     in the pasture of the aforesaid toun, to wit, two hundred
+                     ewes, sixteen oxen, and four cows, <cl type="injunction">firmly forbidding that anyone commit any injury or vexation to them over this,
+                     on pain of our full forfeiture.</cl></cl> <cl type="witnesses">As witnesses: Jocelin, bishop of Glasgow; Richard, bishop of Moray; Archibald,
+                  abbot of Dunfermline; Earl David our brother; Hugh our
+                  chancellor; William of Lindsay, justice; Philip de Valognes;
+                  David of Lindsay; Hugh de Normanville; Walter of Berkeley our
+                  chamberlain; Herbert Chalmers.</cl> At Melrose.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

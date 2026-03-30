@@ -1,0 +1,63 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-968">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 728</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:12:46.055464+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">968</idno>
+        <idno type="textcontent">996</idno>
+        <idno type="transcription_textcontentxml">968</idno>
+        <idno type="translation_textcontentxml">969</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 728</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 728</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T11:12:46.055464+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T11:12:46.055464+00:00" status="approved">transcription moa=968 status=reviewed modified=2022-11-01 11:12:46.055464+00 | translation moa=969 status=reviewed modified=2022-11-01 11:12:46.046075+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus fidelibus <cl type="intitulatio">Will<ex>elm</ex>o de ueteri ponte</cl> <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis quod</cl> penitentia ductus reddo deo et sancto<lb/> cuthberto et monachis eius de coldingham terram illam de qua contentio fuerat
+                     inter me<lb/> et eosdem monachos tempore dauid Regis . quam ego iniuste super eos occupauream
+                     . ab omni<lb/> calumpnia liberam et quietam in perpetuum <cl type="boundaries">per antiquum diuisam scilicet a cilio montis contra<lb/> horuordresdene usque in uallem sicut riuulus decurrit in thwedam</cl> . ita tamen ut uia<lb/> pateat libera pergentibus de horuerdresdene ad eandem Thwedam .</cl> <cl type="witnesses">His testibus .<lb/> Ernaldo abbate de Chelchehou . Ric<ex>ardo</ex> . Ioh<ex>ann</ex>e . Rainaldo . monachis eius . Rabel del<lb/> chene . Toma abbet . Ioh<ex>ann</ex>e de baiols . Ric<ex>ardo</ex> de Aldre Vlkil de Haudene . Will<ex>elm</ex>o<lb/> filio <persName>thor</persName> . Alano filio . Gospatrici .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all faithful men <cl type="intitulatio">William de Vieuxpont</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know that</cl>, guided by repentence, I return to God, and Saint Cuthbert and his monks of
+                     Coldingham, the land about which there had been a dispute
+                     between me and the same monks in the time of King David;
+                     [land] which I had unlawfully appropriated from them; free
+                     and quit from every claim for ever; <cl type="boundaries">by the time-honoured boundary, that is, from the brow of the hill opposite
+                     Horndean, up to the valley as the burn runs down into the
+                     Tweed;</cl> so that there should be a free road open for travelling from Horndean to the
+                     same Tweed.</cl> <cl type="witnesses">With these as witnesses: Arnold the abbot of Kelso; Richard, John, Ranald, his
+                  monks; Rabel de Cheyne; Thomas Abbet; John de Baiols; Richard
+                  de Aldre; Ulfkil of Hadden; William son of <persName>Thor</persName>; Alan son of Cospatric.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

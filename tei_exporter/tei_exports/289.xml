@@ -1,0 +1,119 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-289">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/31</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-07-20 11:22:27.420741+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">289</idno>
+        <idno type="textcontent">288</idno>
+        <idno type="transcription_textcontentxml">289</idno>
+        <idno type="translation_textcontentxml">288</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/31</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/31</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-07-20T11:22:27.420741+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-07-20T11:22:27.420741+00:00" status="published">transcription moa=289 status=live modified=2021-07-20 11:22:27.420741+00 | translation moa=288 status=live modified=2021-04-06 10:04:06.456414+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus matris Ecclesie filiis presentibus et futuris . <cl type="intitulatio"><persName>Rogerus</persName> de Scalebroc</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis me</cl> concessisse et dedisse<lb/> et hac mea Carta confirmasse deo et Ecclesie sancte marie de Melr’ et monachis
+                     ibidem deo seruientibus pro animabus <persName>D<ex>aui</ex>D</persName> . et<lb/> <persName>Malcolmi</persName> Regum scotie et Comitis . <persName>Henr<ex>ici</ex></persName> . et pro anima <persName>Gilleberti</persName> filii <persName>Ferg<ex>us</ex></persName> domini mei . et uxoris eius . et pro animabus patris mei et<lb/> matris mee et omnium parentum meorum . et pro salute domini mei Regis <persName>Willelmi</persName> et Comitis . <persName>d<ex>aui</ex>d</persName> . fratris eius . et Comitis . <persName>Dunecani</persName> et <persName>Du<lb/>necani</persName> filii <persName>Gilleb’</persName> . domini mei et pro salute mea et omnium successorum meorum in liberam et puram
+                     et perpetuam Elemosinam totam ter<lb/>ram de Drumeteisuiene . et de Alesburc . et de Authnephur per has diuisas . <cl type="boundaries">Scilicet sicut una burna descendit de mussa<lb/> que est inter Largas et Bethoc . et diuidit inter Dunduf et Dru<ex>m</ex>teisuiene et per eandem burnam usque ad illum locum ubi eadem burna<lb/> cadit in mare <supplied>et</supplied> inde per litus maris usque ad Alesburc . et de Alesburc usque ad sicum qui
+                        descendit de nemore ex orientali parte<lb/> uie quadrigarum ascendentis ad Authnephur . et per eundem sicum ascendendo per
+                        quandam profundam uallem usque ad quoddam uetus<lb/> Castellum . et ex orientali parte eiusdem ueteris Castelli per sicum sursum
+                        usque ad Tilliforde . ex aquilonali parte fontis . et
+                        inde sursum<lb/> in transuersum usque ad sicum qui uadit ex aquiloni parte de Farnileie . et inde
+                        sursum per sicum usque ad semitam . et per semitam
+                        sursum<lb/> usque ad capud sici qui cadit in polnesalahari ad Thauenegaith</cl> . <cl type="holding">Totam hanc terram et quicquid continetur infra prenominatas diui<lb/>sas in bosco et plano in pratis et pasturis . in moris et mariscis . in mineriis
+                        et salinis . et in omnibus aliis aisiamentis dedi pre<lb/>dictis monachis et Ecclesie de Melr’ tenenda et possidenda in perpetuum ita
+                        libere et quiete plenarie et honorifice soluta ab omni
+                        terre<lb/>no seruitio et consuetudine et exactione seculari  sicut aliqua elemosina
+                        liberius et quietius . plenius et honorificntius
+                        tenetur et possidetur a<lb/> monachis ordinis Cistercien<ex>sis</ex> . ita tamen quod dabunt mihi et heredibus meis unam marcam argenti tantum
+                        singulis annis ad recognitionem de<lb/> elemosina de Authnephur . dimidiam . scilicet marcam ad pentecosten . et
+                        dimidiam marcam ad festum sancti martini . et ipsi
+                        utentur omni<lb/> hoc tenemento pro libitu et uoluntate sua modis omnibus sicut melius et utilius
+                        sibi et suis uisum fuerit</cl> .</cl> Et quia uolui ut hec mea elemosi<lb/>na firma esset et stabilis et nullo modo posset in irritum duci . horum omnium
+                  testes et fideiussores posui Episcopum et Ecclesiam Glas<lb/>guen<ex>sem</ex> . et Com<ex>item</ex> . Dunec<ex>anum</ex> . et heredes eius . ut si aliquando ego uel heredes mei a tenore huius Carte
+                  deuiauerimus . ipsa Ecclesia et eius pontifici<lb/>ces per censuram ecclesiasticam ad corectionem nos reuocent . Hec autem omnia
+                  propria manu affidaui in manu domini <persName>Iocel<ex>ini</ex></persName> . Glasg<ex>uensis</ex> . episcopi<lb/> pro me et pro heredibus meis sine malo ingenio tenenda et obseruanda . <cl type="warrandice">Et ego heredes mei manutenebimus et Warantizabimus<lb/> ipsis monachis eandem Elemosinam cum omnibus libertatibus et pertinentiis suis
+                     contra omnes homines . et adquietabimus de omni seruitio<lb/> erga dominos nostros in perpetuum annuente et testificante domino meo <persName>Dunec<ex>ano</ex></persName> . filio <persName>Gilleberti</persName></cl> . <cl type="witnesses">Hiis test<ex>ibus</ex> . Domino <persName>Iocel<ex>ino</ex></persName> . Glasguen<ex>si</ex> .<lb/> episcopo . <persName>Simone</persName> archidiacono . <persName>Hereberto</persName> Decano Glasg’ . <persName>Gillenem Accoueltan</persName> . <persName>Gilledoueng’</persName> . fratre eius . <persName>Gillecrist</persName> mac <persName>makin</persName> .<lb/> <persName>Murdac</persName> mac <persName>Gillemartin</persName> . <persName>Gilleasald</persName> mac <persName>Gilleandris</persName> . <persName>Gillemernoch</persName> fratre eius .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Mother Church present and future, <cl type="intitulatio">Roger of Skelbrooke</cl> <cl type="salutation">sends Greeting</cl></cl>: <cl type="disposition"><cl type="notification">Know that</cl> I have granted and given, and by this my charter made firm, to God and to the
+                     church of St Mary at Melrose and to the monks there
+                     serving God, for the souls of the kings of Scotland, David
+                     and Malcolm, and Earl Henry, and for the soul of GIlbert
+                     son of Fergus, my lord, and of his wife, and for the soul
+                     of my father and my mother and of all my ancestors, and
+                     for the salvation of my lord, King William, and of Earl
+                     David his brother, and of Earl Duncan, and Duncan son of
+                     Gilbert, my lord, and for my own salvation and of all my
+                     successors, in free and pure and perpetual alms, the whole
+                     land of <ex>Drumeteisuiene</ex>, and of <ex>Alesburc</ex>, and of <ex>Authnephur</ex>, <cl type="boundaries">by these boundaries, that is, as one burn descends from the moss that is between <ex>Largas</ex> and Beoch, and divides between Dunduff and <ex>Drumeteisuiene</ex> and by the same burn as far as the place where the same burn falls into the sea,
+                        and thence by the sea shore as far as <ex>Alesburc</ex>, and from <ex>Alesburc</ex> as far as the syke that descends from the wood on the eastern side of the wagon
+                        road that ascends to <ex>Authnephur</ex>, and by the same syke ascending by a deep valley as far as an old castle, and
+                        on the eastern side of the same old castle by the syke
+                        upwards as far as <ex>Tilliforde</ex>, from the northern side of the spring, and thence upwards and across as far as
+                        the syke which runs from the north side of <ex>Farnileie</ex>, and thence upwards by the syke as far as the path, and by the path upwards as
+                        far as the head of the syke that falls into the <ex>Polnesalahari</ex> to <ex>Thauenegaith</ex>;</cl> <cl type="holding">this whole land and whatsoever is contained within the aforenamed boundaries in
+                     wood and plain, in meadows and pastures, in moors and
+                     marshes, in mines and saltpans, and in all other easements
+                     I have given to the said monks and church of Melros, to be
+                     held and possessed in perpetuuity as freely and quietly,
+                     fully and honourably, loosed from all tenurial service and
+                     custom and secular exaction, just as any alms is freely
+                     and quietly, fully and honourably held and possessed by
+                     monks of the Cistercian Order, provided that they shall
+                     give me and my heirs one merk of silver only each year for
+                     recognition in respect of the alms of <ex>Authnephur</ex>, that is, half a merk at Pentecost, and half a merk at the feast of St Martin,
+                        and they shall make use of this tenement at their
+                        pleasure and will, by all means, as it might seem good
+                        and profitable to them and their men.</cl></cl> And since I have willed that this my alms be firm and established and by no
+                  means able to be brought to nought, I have placed the bishop
+                  and church of Glasgow, and Earl Duncan and his heirs, as
+                  witnesses and sureties of all these things, so that if I or
+                  my heirs at any time deviate from the terms of this charter,
+                  this church and its bishops should recall us by
+                  ecclesiastical censure to correction. I have sworn all these
+                  things with my own hand in the hand of the lord Jocelin,
+                  bishop of Glasgow, for myself and for my heirs, without evil
+                  intention to be held and observed. <cl type="warrandice">And I and my heirs shall maintain and warrant this same alms to the monks
+                  against all men, with all its liberties and pertinents, and
+                  we shall discharge every service in respect of our lords in
+                  perpetuity, with my lord, Duncan son of Gilbert, assenting
+                  and bearing witness.</cl> <cl type="witnesses">With these witnesses, the lord Jocelin, bishop of Glasgow, Simon the archdeacon,
+                  Herbert the dean of Glasgow, Gilla na Náem Accoueltan,
+                  Gilledoueng’ his brother, Gilchrist mac Maken, Murdoch mac
+                  Gilla Martain, Gilla Asaild mac Gillanders, Gilla M’Ernóic
+                  his brother.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

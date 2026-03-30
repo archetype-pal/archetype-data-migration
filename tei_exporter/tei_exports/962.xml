@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-962">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 725</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:41:10.574784+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">962</idno>
+        <idno type="textcontent">990</idno>
+        <idno type="transcription_textcontentxml">962</idno>
+        <idno type="translation_textcontentxml">963</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 725</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 725</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T11:41:10.574784+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T11:41:10.574784+00:00" status="approved">transcription moa=962 status=reviewed modified=2022-11-01 11:41:10.574784+00 | translation moa=963 status=reviewed modified=2022-11-01 11:41:10.563588+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Eadwardus de lastalrich</cl> omnibus ad quos presentes litere peruenerint <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me dedisse et concessisse et presenti carta confirmasse deo et sancte Marie et
+                     sancte ebbe et herberto priori et monachis de col<lb/>dingham  duos toftos in eiemuthe . et unum toftum in terra mea de leth  in
+                     liberam et perpetuam ele<lb/>mosinam . <cl type="holding">tenendos in perpetuum de me et heredibus meis . reddento mihi et heredibus meis
+                     annuatim pro recog<lb/>nitione tres teisas de lacio serico . ad penthecosten . Quare uolo quod predicti
+                        monachi habeant et pos<lb/>sideant predictos toftos libere et quiete ab omni alio seruicio et consuetudine
+                        et exactione</cl> .</cl> <cl type="witnesses">hiis testibus . Romf'<lb/> et hervaio capallanis . Waldevo et adam et helya de prendregest . Gileberto
+                     presbitero . Will<ex>elm</ex>o filio hugonis .<lb/> Roberto et Waldeuo filiis Will<ex>elm</ex>i . Turstino tricotin et aliis Multis ;</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Edward of Restalrig,</cl> to all to whom the present letters come, <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have given, granted, and by the present charter to have made firm, to God,
+                     Saint Mary, Saint Ebbe, and Herbert the prior and the
+                     monks of Coldingham, two tofts in Eyemouth, and one toft
+                     in my land of Leith, in free and everlasting alms; <cl type="holding">to be held of me and my heirs for ever, rendering to me and my heirs annually as
+                     recognition three taises of silk lace at Pentecost.
+                     Wherefore I will that the aforesaid monks have and possess
+                     the aforesaid tofts free and quit from all service,
+                     custom, and exaction</cl>.</cl> <cl type="witnesses">With these witnesses, Romfar and Hervey chaplains, Waldef, Adam, Elias of
+                  Prenderguest, Gilbert the priest, William son of Hugh, Robert
+                  and Waldef son of William, Thurstin Tricotin, and many
+                  others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,88 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-668">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.15</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:41:40.572986+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">668</idno>
+        <idno type="textcontent">678</idno>
+        <idno type="transcription_textcontentxml">668</idno>
+        <idno type="translation_textcontentxml">669</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.15</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.15</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:41:40.572986+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:41:40.572986+00:00" status="published">transcription moa=668 status=live modified=2021-04-05 08:41:40.572986+00 | translation moa=669 status=live modified=2021-04-05 08:41:38.776452+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>Will<ex>elmu</ex>s</persName> dei gr<ex>ati</ex>a Rex scottorum</cl> . Ep<ex>iscop</ex>is . Abbatibus . Comitibus . Baron<ex>ibus</ex> . Iusticiis . Ministris . et Omnibus probis hominibus totius terre sue .
+                     Clericis et laicis <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Sciatis</cl> <cl type="disposition">me dedisse<lb/> et hac mea carta confirmasse deo et sancte Marie . et ecclesie de MailR’ . et
+                     Monachis ibidem deo seruientibus . pro anima Reg <persName>d<ex>aui</ex>d</persName> aui mei . et p[ro] anima <persName>henrici</persName> comitis patris<lb/> mei . et Matris mee . et pro anima <persName>Malcolmi</persName> regis . et pro salute mea . et omnium antecessorum et successorum meorum . illam
+                     partem terre de lemeslei . quam Rex <persName>d<ex>aui</ex>d</persName> concesserat<lb/> forestariis suis . et Ego postea <persName>Will<ex>elm</ex>o</persName> filio Oein concesseram . Scilicet illum toftum et Masagium quod predictus <persName>Will<ex>elmu</ex>s</persName> tenuit et possedit . Vt edificent illud . sicut eis<lb/> utilius uisum fuerit pro libitu suo . Et liceat eis arare et colere totam terram
+                     illam tantum . que ante fracta fuerat et arata . cum
+                     omnibus libertatibus foreste inter Galeghe<lb/> et Ledre . sicut continetur in cartis Antecessorum meorum . et meis . Hanc ergo
+                     terram concedo eis . et presenti carta confirmo in
+                     perpetuam Elemosinam . <cl type="holding">Vt eam habeant . et possi<lb/>deant predicti Monachi . Libere et quiete . plenarie et honorifice . sicut
+                        aliqua Elemosina quietius et liberius teneri potest .
+                        Solutam ab omni terreno seruicio . et seculari<lb/> exaccione .</cl> <cl type="warrandice">Ita quod Ego et heredes mei warantizabimus eis hanc terram . contra omnes
+                     homines</cl> .</cl> <cl type="witnesses">His testibus . <persName>Osberto</persName> abbate de kelcho . <persName>Hug<ex>one</ex></persName> abbate de Nevbotle<lb/> <persName>Will<ex>elm</ex>o malueisin</persName> . <persName>Ricardo</persName> de la prouende . <persName>Hug<ex>one</ex></persName> . del seel . <persName>Dauid</persName> comit<ex>e</ex> fratre Reg<ex>is</ex> . <persName>Roberto</persName> de quinci . <persName>Hug<ex>one</ex> . ridel</persName> . <persName>Ricardo</persName> de munfichet . <persName>Philippo</persName> de<lb/> valuin . <persName>Rogero</persName> de valuin . <persName>Waldeuo</persName> filio <persName>baldewin</persName> . <persName>Alexandro</persName> de sent Martin . <persName>Herueio</persName> le mareschal . <persName>Ricardo</persName> de marescal . <persName>Roberto</persName> de seint<lb/> Michel . <persName>Alano</persName> filio <persName>Hug<ex>onis</ex></persName> senescallo com<ex>itis</ex> . <persName>d<ex>aui</ex>d</persName> . <persName>Ricardo</persName> filio <persName>Eissun</persName> . <persName>Adam</persName> de stanford .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">William, by the grace of God king of the Scots,</cl> to bishops, abbots, earls, barons, justices, officials, and all worthy men of
+                     his entire land, clerk and lay, <cl type="salutation">greeting</cl>.</cl> <cl type="notification">Know me</cl> <cl type="disposition">to have given, and by this my charter to have made firm, to God, St Mary, the
+                  church of Melrose, and the monks serving God in that place,
+                  for the soul of King David my grandfather, and for the soul
+                  of Earl Henry my father, and of my mother, and for the soul
+                  of King Malcolm, and for my own salvation, and of all my
+                  predecessors' and successors' [salvation], that piece of land
+                  at Blainslie which King David conceded to his foresters, and
+                  I afterwards had conceded to William son of Oein, that is to
+                  say, the toft and messuage that the aforesaid William held
+                  and possessed, so that they may build it just as it shall
+                  seem most beneficial to them at their own will. And it is
+                  permitted to them to plough and cultivate that entire land
+                  only which had beforehand been broken and ploughed, with all
+                  the liberties of the forest between Gala and Leader, as it is
+                  specified in the charters of my predecessors, and my own. <cl type="holding">This land I therefore concede to them, and by the present charter make firm in
+                     everlasting alms, so that the aforesaid monks may have and
+                     possess it freely and quitly, fully and honourably, just
+                     as any alms can most quitly and freely be held, released
+                     from every earthly service and secular exaction,</cl> <cl type="warrandice">so that I and my heirs shall warrant this land to them against all men.</cl></cl> <cl type="witnesses">With these witnesses: Osbert abbot of Kelso; Hugh abbot of Newbattle; William
+                  Malveisin; Richard de Prebenda; Hugh de Sigillo; Earl David,
+                  the king's brother; Robert de Quincy; Hugh Ridel; Richard de
+                  Munfichet; Philip de Valognes; Roger de Valognes; Waldef son
+                  of Baldwin; Alexander de Saint-Martin; Hervey the marischal;
+                  Richard [the] marischal; Robert de Saint-Michel; Alan son of
+                  Hugh, Earl David's steward; Richard son of Eissun; Adam of
+                  Standford.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

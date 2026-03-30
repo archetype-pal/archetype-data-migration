@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-485">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/217</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 07:53:00.107609+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">485</idno>
+        <idno type="textcontent">491</idno>
+        <idno type="transcription_textcontentxml">485</idno>
+        <idno type="translation_textcontentxml">486</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/217</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/217</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T07:53:00.107609+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T07:53:00.107609+00:00" status="published">transcription moa=485 status=live modified=2021-04-07 07:53:00.107609+00 | translation moa=486 status=live modified=2021-04-07 07:52:57.409275+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris ecclesie filiis presentibus et futuris <cl type="intitulatio">Henricus de beletun</cl> <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit uniuersitas uestra</cl> me dedisse concessis<lb/>se et hac carta mea confirmasse monachis de Melros totam terram meam de
+                     kingissete in territorio de panneselis sicut iacet<lb/> inter calueburne et ki<supplied>ngeburn’ et witedd</supplied>re <cl type="holding">tenendam et habendam de me et heredibus meis ad feudam firmam in perpetuum .
+                     Reddendo<lb/> inde michi et heredibus m<supplied>eis singulis annis duas</supplied> marcas argenti . vnam scilicet ad festum sancti Michaelis . et alteram ad
+                        pentecosten</cl> .<lb/> <cl type="warrandice">Ego quidem et herede<supplied>s mei manutenebimus</supplied> et warantizabimus et defendemus predictis Monachis totam predictam terram cum
+                        omnibus<lb/> libertatibus et pertinenciis suis et adquietabimus erga omnes homines ab omni
+                        seruicio . consuetudine . exactione et demanda .</cl> <cl type="holding">Ita quod predicti<lb/> Monachi predictam terram libere et quiete tenebunt et habebunt in perpetuum per
+                        predictum redditum duarum Marcarum</cl> .</cl> Actum anno gracie<lb/> millesimo . ducentesimo . tricesimo primo . <cl type="witnesses">Hiis Testibus . Domino Ioh<ex>ann</ex>e de <supplied>Maccu</supplied>swell’ <persName><roleName>Camerario</roleName></persName> Regis . Domino Thom<ex>a</ex> filio Ranulfi . Domino . Bern’ de<lb/> haudene . Domino Ioh<ex>ann</ex>e de Metkil . Philippo de pethcox . Et Multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, present and to come, <cl type="intitulatio">Henry of Belton</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let your whole community know</cl> me to have given, granted, and by this my charter to have made firm, to the
+                     monks of Melrose my whole land of Kingside in the
+                     territory of Penshiel, as it lies between Kell Burn and
+                     King Burn and Whiteadder; <cl type="holding">to be held and had of me and my heirs at feu ferme for ever; by paying from it
+                     to me and my heirs each year two merks of silver, that is
+                     one at the feast of St Michael, and the other on
+                     Whitsunday.</cl> <cl type="warrandice">I and my heirs shall assuredly maintain and warrant and defend to the said monks
+                     the whole aforesaid land with all its liberties and
+                     pertinents and we shall discharge claims towards all men
+                     from every service, custom, exaction and demand;</cl> <cl type="holding">so that the said monks shall hold and have the said land freely and quitely for
+                     ever by the siad rent of two merks.</cl></cl> Enacted in the year of grace 1231. <cl type="witnesses">With these witnesses: the lord Joh of Maxwell, king's chamberlain; the lord
+                  Thomas son of Ranulf; the lord Bernard of Howden; the lord
+                  John of Methkil; Philip of Pitcox; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

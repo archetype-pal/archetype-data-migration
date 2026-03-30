@@ -1,0 +1,75 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-760">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5968</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 21:10:50.61726+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">760</idno>
+        <idno type="textcontent">773</idno>
+        <idno type="transcription_textcontentxml">760</idno>
+        <idno type="translation_textcontentxml">761</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5968</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5968</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T21:10:50.61726+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T21:10:50.61726+00:00" status="approved">transcription moa=760 status=reviewed modified=2022-10-31 21:10:50.607747+00 | translation moa=761 status=reviewed modified=2022-10-31 21:10:50.61726+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi fidelibus ad quod presens scriptum peruenerint  <cl type="intitulatio">Hugo leuedyman de lagehpe et<lb/> Eua vxor sua soror laurenci fili Will<ex>elm</ex>i fil<ex>ii</ex> Gocelini de Berewic</cl> <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit vniuersitas uestra</cl><lb/> nos ad instanciam dicti laurenci concessisse . et hac presenti carta nostra
+                     Confirmasse . quietam<lb/> clamasse . et de nobis et heredibus nostris Inperpetuum omnino abiurasse
+                     Donacionem et Concessionem<lb/> Tocius terre sine aliquo Retinemento interritorio de Prendergest’ . quam
+                     laurencius filius<lb/> Will<ex>elm</ex>i filii Gocelini de Berewic habuit de dono Roberti fratris sui . Quam idem
+                     lauren<lb/>cius Dedit et Concessit domino Ricardo Priori et Conuentui de coldingh<ex>am</ex> pro quadam suma pecu<lb/>nie sibi premanibus in magna necessitate sua pacata .</cl> Afidauimus eciam et Tactis sacrosanctis<lb/> Iurauimus pro nobis et heredibus nostris . quod nullo tempore seculi contra
+                  donacionem et Concessionem pred<lb/>ictam  venire presumemus . <cl type="sealing">In Cuius Rei Testimonium  presenti scripto sigilla nostra appos<lb/>uimus .</cl> <cl type="witnesses">Hiis Testibus . Domino Will<ex>elm</ex>o de Mordingtona . Domino Dauid de Haddingtona . Domino Radulfo nob<lb/>il<ex>i</ex> . Domino Will<ex>elm</ex>o de scremerstona . Ada de Prendergest’ . Ada filio Iohannis de s<ex>upe</ex>ryory eytona . Thom<ex>a</ex> de Nesbyt .<lb/> Bertramo de Risto<ex>na</ex> . Patricio scotto . Gilberto de lumesden’ . Ioh<ex>ann</ex>e filio Ingerami . Gregorio de Betyoc . et Aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful to whom the present written document shall come, <cl type="intitulatio">Hugh Levedyman of Langehope, and Eve his wife, sister of Laurence son of William
+                     son of Gocelin of Berwick,</cl> <cl type="salutation">send greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know us, all of you,</cl> at the urging of the said Laurence, to have granted, and by this our present
+                     charter to have made firm, quitclaimed, and for ourselves
+                     and our heirs entirely to have abjured for ever the
+                     donation and grant of the whole land without any
+                     withholding in the territory of Prenderguest which
+                     Laurence, son of William son of Gocelin of Berwick, had
+                     from the gift of Robert his brother, which the same
+                     Laurence gave and granted to the lord Richard the prior,
+                     and the convent of Coldingham, in return for a certain sum
+                     of money paid to him in advance on account of his great
+                     need.</cl> We have pledged and sworn, touching holy relics, for ourselves and our heirs,
+                  that we shall in no era of the world seek to move against the
+                  aforesaid donation and grant. <cl type="sealing">As witness of this matter, we have applied our seals to the present document.</cl> <cl type="witnesses">As witnesses, the lord William of Mordington, the lord David of Haddington, the
+                  lord Ralph Noble, the lord William of Scremerston, Adam of
+                  Prenderguest, Adam son of John of Over Ayton, Thomas of
+                  Nisbet, Bertram of Reston, Patrick Scott, Gilbert of
+                  Lumsdaine, John son of Ingram, Gregory of Bethock, and
+                  others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,69 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-491">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/220</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 07:54:23.087785+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">491</idno>
+        <idno type="textcontent">498</idno>
+        <idno type="transcription_textcontentxml">491</idno>
+        <idno type="translation_textcontentxml">492</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/220</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/220</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T07:54:23.087785+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T07:54:23.087785+00:00" status="published">transcription moa=491 status=live modified=2021-04-07 07:54:21.533754+00 | translation moa=492 status=live modified=2021-04-07 07:54:23.087785+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Hoc scriptum visuris uel Audituris . <cl type="intitulatio">Philippus De Pethcox</cl> <cl type="salutation">salutem</cl></cl> . <cl type="disposition"><cl type="notification">Nouerit vniuersitas uestra quod</cl> quia<lb/> Decem Acras terre In Beleside quas Dedi Monachis De Melros . et Ph’ . filius
+                     meus Eisdem Confirmauit . In longum<lb/> iuxta terram suam De Edmundist’ a bele . usque in Drituede . impediente quadam
+                     Conuentione Inter me et Rog<ex>erum</ex> .<lb/> de Merlay facta tempore Donationis extendere non potui  ego et Ph. filius meus
+                     pro nobis et heredibus nostris fide inter<lb/>posita votum vouimus . quod finito termino Decem annorum si ante facere non
+                     possumus . eisdem Monachis . predictas<lb/> decem acras terre sicut iacet propinquius terre de Edmundist’ in longitudinem de
+                     Drituede usque in Bele . sine omni dubitacione extendi
+                     faciemus .</cl> <cl type="sealing">Et vt hoc presens votum nostrum firmum sit et stabile  hoc scriptum sigilli<lb/> mei et sigilli filii mei apposicione et Roborauimus .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all that shall see or hear this text, <cl type="intitulatio">Philip of Pitcox</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let your whole community know that</cl> because I could not extend the ten acres of land in Bielside which I have given
+                     to the monks of Melrose, and Philip my son has confirmed
+                     to the same, in length near their own land of Edmunistoun
+                     from Biel as far as Drituede, a certain agreement made at
+                     the time of the donation between me and Roger de Merlay
+                     being in the way: I and Philip my son for ourselves and
+                     our heirs have made with faith the vow, that if we have
+                     not been able do it after a period of ten years, we shall
+                     without any doubt cause the aforesaid ten acres of land,
+                     as it lies close to the land of Edmundistoun alongside the
+                     Drituede as fas as the Biel, to be extended to the monks.</cl> <cl type="sealing">And that this our present vow be firm and established, we have reinforced this
+                  text by the application of my seal and the seal of my son.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

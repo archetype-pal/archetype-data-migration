@@ -1,0 +1,59 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-896">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 577</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:12:05.554094+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">896</idno>
+        <idno type="textcontent">920</idno>
+        <idno type="transcription_textcontentxml">896</idno>
+        <idno type="translation_textcontentxml">897</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 577</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 577</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:12:05.554094+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:12:05.554094+00:00" status="approved">transcription moa=896 status=reviewed modified=2022-11-01 16:12:05.544527+00 | translation moa=897 status=reviewed modified=2022-11-01 16:12:05.554094+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. M . Rex . Scott’ .</cl> priori de Collingham et toti Conuentui loci eiusdem<lb/> et omnibus probis hominibus tocius terre sue <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me concessisse et firmiter<lb/> precepisse ut prior et monachi de collingham secundum uoluntatem sua adducant
+                     suos pro<lb/>prios homines ubicumque maneant in terra sua  ad herbergandum uillam de<lb/> Collingham . <cl type="injunction">et prohibeo super meam plenariam foris facturam ut nemo eos super<lb/> negotio predicto disturbet</cl> .</cl> <cl type="witnesses">T<ex>estibus</ex> . Waltero Cancellario . hereberto <persName><roleName>Camerario</roleName></persName> . Ricardo Capel<lb/>lano . Nicolao clerico .</cl> <cl type="dating">Apud collingham .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">M<ex>alcolm</ex>, king of the Scots</cl>, to the prior of Coldingham and the whole community of that same place, and to
+                     all worthy men of his entire land, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have allowed and resolutely instructed that the prior and monks of
+                     Coldingham may employ their own men according to their
+                     will, wherever they abide within their land, for the
+                     building of the toun of Coldingham, <cl type="injunction">and I forbid on pain of my full forfeiture that anyone disturb them in respect
+                     of the said business.</cl></cl> <cl type="witnesses">As witnesses: Walter the chancellor, Herbert the chamberlain, Richard the
+                  chaplain, Nicholas the clerk.</cl> <cl type="dating">At Coldingham. </cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

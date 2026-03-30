@@ -1,0 +1,90 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-770">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5963</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 21:10:50.709885+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">770</idno>
+        <idno type="textcontent">784</idno>
+        <idno type="transcription_textcontentxml">770</idno>
+        <idno type="translation_textcontentxml">771</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5963</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5963</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T21:10:50.709885+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T21:10:50.709885+00:00" status="approved">transcription moa=770 status=reviewed modified=2022-10-31 21:10:50.701297+00 | translation moa=771 status=reviewed modified=2022-10-31 21:10:50.709885+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. Omnibus hoc scriptum visuris uel Audituris <cl type="intitulatio">Will<ex>elmu</ex>s filius Will<ex>elm</ex>i de scremerstona</cl><lb/> <cl type="salutation">salutem</cl>.</cl> <cl type="notification">Nouerit vniuersitas vestra</cl> <cl type="disposition">me ratum et gratum habuisse et hac presenti car<lb/>ta mea confirmasse Deo et sancto Cvhtberto priori et monachiis de Coldingham<lb/> Ibidem deo seruientibus et in perpetuum seruituris Donacionem et concessionem
+                     Totius<lb/> terre quam Will<ex>elmu</ex>s de scremerstona pater meus habuit In villa et territorio de pren<lb/>dergest’ ex dono Roberti fili Roberti de prendergest sine alico retinemento<lb/> videlicet sex bouatas terre cum pertinentiis In territorio de prendergest illas
+                     sili<lb/>cet Duas bouatas terre cum Tofto et Crofto quas Robertus Wynd tenuit. et illas<lb/> Duas bouatas terre quas Will<ex>elmu</ex>s filius Galfridi tenuit. et Illas Duas bouatas<lb/> terre quas Galfridus filius Waldeui tenuit. et Toftum et Croftum que aldanus<lb/> filius Waldeui tenuit. et Toftum et Croftum que Ricardus filius angnetis<lb/> tenuit. Quas dictas terras cum Domibus. Toftis et Croftis et cum omnibus suis<lb/> pertinentiis habuit ex dono Roberti fili Roberti de prendergest In villa et<lb/> territorio de prendergest’. <cl type="holding">Habendum et Tenendum dictis priori et conuentui de<lb/> Coldingham et eorum successoribus inperpetuum adeo libere. quiete et honorifice
+                        In<lb/> omnibus sicut carta predicti Willelmi patris mei prefatis priori et Conuentui
+                        de<lb/> Coldingham de prioratis terris cum omnibus pertinentiis confecta plenius<lb/> et melius testatur.</cl> <cl type="warrandice">Et ego Will<ex>elmu</ex>s filius Will<ex>elm</ex>i de scremerstona et heredes mei<lb/> prescriptam donacionem et Concessionem omnium predictarum terrarum de
+                        prendergest’<lb/> cum omnibus suis pertinentiis infra villam et extra sepedictis priori et
+                        monachis<lb/> de Coldingham et eorum successoribus contra omnes homines et feminas in
+                        perpetuum<lb/> warantizabimus. adquietabimus. et defendemus</cl>.</cl> <cl type="sealing">In Cuius rei Testimonium<lb/> huic scripto sigillum meum appossui.</cl> <cl type="witnesses">Hiis Testibus domino Will<ex>elm</ex>o de lindesei<lb/> domino Will<ex>elm</ex>o de Mordingtona . domino Alano de swintona. alano filio suo. Thom<ex>a</ex><lb/> de Nesbyt<lb/> Ada filio suo. Roberto filio Gregorii de Coldingh<ex>am</ex>. Dauid de lumes<lb/>den. Gilberto de lumesden. Ada filio Ioh<ex>ann</ex>is de Eytona. Bertramo de Ristona. Ioh<ex>ann</ex>e<lb/> filio Ingerami. Roberto filio Reginaldi. patricio scoto. et ALIIS.</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall view or hear this writing, <cl type="intitulatio">William, son of William of Scremerston,</cl> <cl type="salutation">sends greeting.</cl></cl> <cl type="notification">Know me, all of you</cl>, <cl type="disposition">to have ratified and made firm by this my present charter, to God and to Saint
+                  Cuthbert, to the prior and monks of Coldingham serving God in
+                  that place now and in the future, for ever, the donation and
+                  grant of the whole of the land which my father, William of
+                  Scremerston, had in the toun and territory of Prenderguest
+                  out of the gift of Robert son of Robert of Prenderguest,
+                  without any withholding; namely, six oxgangs of land with
+                  pertinents in the territory of Prenderguest; that is, two
+                  oxgangs of land with the toft and croft which Robert Wynd
+                  held; and the two oxgangs which William son of Geoffrey held;
+                  and the two oxgangs of land which Geoffrey son of Waldef
+                  held; and the toft and croft which Haldan son of Waldef held;
+                  and the toft and croft which Richard son of Agnes held. These
+                  said lands, with dwellings, tofts, and crofts, and with all
+                  their pertinents, I had out of the gift of Robert, son of
+                  Robert of Prenderguest, in the toun and territory of
+                  Prenderguest. <cl type="holding">For the said prior and convent of Coldingham and their successors to hold and to
+                     have for ever, as freely, quitely, and honourably in all
+                     things as the charter of the aforesaid William, my father,
+                     drawn up for the prior and convent of Coldingham
+                     concerning the lands of the priory with all pertinents,
+                     fully and well bears witness.</cl> <cl type="warrandice">And I, William, son of William of Scremerston, and my heirs, shall warrant,
+                     acquit, and defend the aforewritten donation and grant of
+                     all the aforesaid lands of Prenderguest with all their
+                     pertinents, within the toun and outside, for the
+                     oft-mentioned prior and monks of Coldingham and their
+                     successors against all men and women for ever.</cl></cl> <cl type="sealing">In testimony of this matter, I have applied my seal to this writing.</cl> <cl type="witnesses">With these witnesses: the lord William of Lindsay, the lord William of
+                  Mordington, the lord Alan of Swinton, Alan his son, Thomas of
+                  Nisbet, Adam his son, Robert son of Gregory of Coldingham,
+                  David of Lumesden, Gilbert of Lumesden, Adam son of John of
+                  Ayton, Bertram of Reston, John son of Ingram, Robert son of
+                  Reginald, Patrick Scott, and others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,96 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-794">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5948</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:36:57.900658+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">794</idno>
+        <idno type="textcontent">809</idno>
+        <idno type="transcription_textcontentxml">794</idno>
+        <idno type="translation_textcontentxml">795</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5948</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5948</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T13:36:57.900658+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:36:57.900658+00:00" status="approved">transcription moa=794 status=reviewed modified=2022-11-01 13:36:57.890857+00 | translation moa=795 status=reviewed modified=2022-11-01 13:36:57.900658+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi fidelibus ad quos presens scriptum peruenerit <cl type="intitulatio">Robertus filius Reginaldi de Magna Ristona</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Nouerit vniuersitas uestra</cl><lb/> <cl type="disposition">me veraciter intellexisse per multa Indicia quod nec ego nec antecessores mei
+                  habere debuimus in territorio uille Magne Ristone nisi unam<lb/> carucatam terre tantum scilicet . Quinquies viginti acras . et quinque . Hinc
+                     est quod notum facio vniuersitati uestre me resignasse .
+                     et quietas clamasse<lb/> pro me et heredibus meis . et per fustum et Baculum reddidisse in curia domini
+                     mei prioris de Coldingham . Priori et monachis
+                     dunelmensibus<lb/> apud Coldingham deo seruientibus et In perpetuum ibidem seruituris omnes terras
+                     quas uel ego uel predecessores mei ultra unam carucatam
+                     terre iniuste<lb/> occupauimus et detinuimus in territorio uille de Magna Ristona . scilicet In
+                     Ilvingishope septem acras . In Langelandis decem et octo
+                     acras .<lb/> et dimidiam . In Mers  duodecim acras et dimidiam . Totam terram In
+                     Alaynescastel pro duabus acris . In Bilielawe . duas acras
+                     . In campo<lb/> qui vocatur Swinewde ex australi parte de Aye . octo acras . Ita quod nec ego
+                     nec successores mei in dictis terris aliquod ius aut
+                     clamium<lb/> de cetero habere poterimus . Hanc autem resignationem et quietam clamcionem feci
+                     dictis monachis pro salute anime mee et omnium
+                     antecessorum<lb/> meorum et successorum .</cl> <cl type="sealing">Et ut hec resignacion et quieta clamacio in perpetuum Robur firmitatis optineant
+                  presenti scripto sigillum meum apposui .</cl><lb/> <cl type="witnesses">Hiis Testibus . Domino Will<ex>elm</ex>o de Morthintona . Domino Alano de Swintona . Domino Ada de Prendergest .
+                     Waltero . Andrea . Alex<ex>andro</ex> . de Paxtona . Will<ex>elm</ex>o<lb/> vicaria de Aldekambus . Roberto filio Gregorii . Ada de Parua Ristona . Bertramo
+                     filio eius . Iohanne filio Elye de superiori Aytona .
+                     Mauricio<lb/> filio Merlini . Radulfo preposito de Coldingham . Rogero filio eius . Ada filio
+                     Ylif de Aldenegrawe . Dauid de Quiqwiswde et Multis Aliis
+                     .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful to whom the present writing shall have come, <cl type="intitulatio">Robert son of Reginald of Great Reston</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Know me, all of you,</cl> <cl type="disposition">truly to have come to know, by many proofs, that I and my ancestors ought to
+                  have in the territory of the town of Great Riston but one
+                  ploughgate of land only, that is, one-hundred-and-five acres.
+                  Hence it is that I make known to you all that I have
+                  resigned, and have quitclaimed for myself and my heirs, and
+                  by rod and staff returned in the court of my lord, the prior
+                  of Coldingham, to the prior and monks of Durham at Coldingham
+                  serving God in that place now and for ever in the future, all
+                  the lands which I or my predecessors unjustly occupied and
+                  withheld above one ploughate of land in the territory of the
+                  toun of Great Reston; that is, in seven acres in <ex>Ilvingishope</ex>, eighteen-and-a-half acres in <ex>Langelandis</ex>, twelve-and-a-half acres in <ex>Mers</ex>, the whole land in <ex>Alaynescastel</ex> in return for two acres, two acres in Bilielawe, eight acres in the grassland
+                     which is called Swinwood, on the south side of the Eye
+                     [Water]; so that neither I nor my successors shall in the
+                     future be able to have any right or claim in the said
+                     lands. And this resignation and quitclaim I have made to
+                     the said monks for the salvation of my own soul and of all
+                     my ancestors' and successors' [souls].</cl> <cl type="sealing">And so that this resignation and quitclaim should have validity and strength I
+                  have applied my seal to the present writing.</cl> <cl type="witnesses">With these witnesses: the lord William of Mordington; the lord Alan of Swinton;
+                  the lord Adam of Prenderguest; Walter, Andrew, Alexander of
+                  Paxton; William, vicar of Oldcambus; Robert son of Gregory;
+                  Ada of Little Reston; Bertram his son; John, son of Elias of
+                  Over Ayton; Maurice son of Merlin; Ralph, grieve of
+                  Coldingham; Roger, his son; Adam son of Eilaf of Auchencrow;
+                  David of Quixwood; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

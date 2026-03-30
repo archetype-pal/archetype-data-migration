@@ -1,0 +1,76 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-148">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 46</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:03.893222+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">148</idno>
+        <idno type="textcontent">148</idno>
+        <idno type="transcription_textcontentxml">148</idno>
+        <idno type="translation_textcontentxml">149</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 46</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 46</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:28:03.893222+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:03.893222+00:00" status="published">transcription moa=148 status=live modified=2017-01-30 19:28:03.893222+00 | translation moa=149 status=live modified=2016-06-07 14:44:15.970612+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis Sancte Matris Ecclesie filiis ad quos presens scriptum peruenerit . <cl type="intitulatio">Henr<ex>icus</ex> . Reuel ⁊ Margareta <lb/> sponsa eius</cl> . <cl type="salutation">Salutem . In domino</cl> .</cl> <cl type="notification">Nouerit uniuersitas vestra</cl> <cl type="disposition">nos dedisse ⁊ concessisse ⁊ hac nostra presenti <lb/> Carta confirmasse deo ⁊ Ecclesie Sancti Andree apostoli in Scotia . ⁊ Canonicis
+                     ibidem deo <lb/> seruientibus ⁊ seruituris in puram ⁊ perpetuam elemosinam terram que iacet a
+                     Cultrath <lb/> uersus aquilonem . ⁊ a via qua itur a Balmurinach ad Cultrath versus Occidentem
+                     . Sicut <lb/> ego predictus Henricus Reuel . ⁊ Ricardus Reuel nepos meus ⁊ Math<ex>eu</ex>s Canonicus cum probis <lb/> hominibus meis eam perambulauimus pro Quindecim acris cum communi pastura ad
+                     tantam terram <lb/> pertinente pro anima mea ⁊ anima margarete sponse mee . ⁊ pro animabus
+                     antecessorum ⁊ succes<lb/>sorum nostrorum . <cl type="holding">Qvare volumus ut predicti Canonici predictam terram habeant ⁊ possideant ita <lb/> libere ⁊ quiete ab omni seruitio ⁊ exactione seculari  sicut aliquam terram
+                        liberius ⁊ quietius tenent <lb/> ⁊ possident in toto regno Scotie</cl> .</cl> <cl type="witnesses">Hiis test<ex>ibus</ex> . Ricardo Reuel . Iocio de Balendart . Rad<ex>u</ex>lfo <lb/> cap<ex>e</ex>llo . Adam de Ardift . Rob<ex>er</ex>to filio Arnaldi . Rob<ex>er</ex>to fili<ex>o</ex> Galfridi . Odone de Corbri . Mau<lb/>ricio Clerico . Adam Bruneie . ⁊ multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church to whom the present written deed shall come,
+                  Henry Revel and Margaret his spouse send Greeting in the
+                  Lord:</cl> <cl type="notification">You should all know that</cl> <cl type="disposition">we have given, and granted, and by this our present charter made firm, to God
+                  and to the Church of St Andrew the apostle in Scotia, and to
+                  the Canons in that place serving God now and in the future,
+                  in pure and perpetual alms, the land that lies from Coultra
+                  northwards, and from the the road that goes from Balmerino to
+                  Coultra westwards, just as I, the aforesaid Henry Revel, and
+                  Rcihard Revel my nephew, and Matthew the Canon, with my
+                  worthy men, perambulated for fifteen acres, with the common
+                  pasture that belongs to so much land, for my soul and the
+                  soul of Margaret my spouse, and for the souls of our
+                  ancestors and successors. <cl type="holding">Wherefore we will that the aforesaid Canons have and possess the aforesaid land
+                     as free and quit from every secular service and exaction,
+                     just as they hold and possess any land free and quit in
+                     the whole of the kingdom of Scotland</cl>.</cl> <cl type="witnesses">With these witnesses: Richard Revel; Josse of Ballindard; Ralph the chaplain;
+                  Adam of Airdit; Robert son of Arnold; Robert son of Geoffrey;
+                  Odo of Corbrig; Maurice the clerk; Adam de Bruneie; and many
+                  others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

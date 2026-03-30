@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-455">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/193</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-08-08 11:04:24.099648+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">455</idno>
+        <idno type="textcontent">460</idno>
+        <idno type="transcription_textcontentxml">455</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/193</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/193</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2016-08-08T11:04:24.099648+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2016-08-08T11:04:24.099648+00:00" status="draft">transcription moa=455 status=draft modified=2016-08-08 11:04:24.099648+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p>Sciant omnes presentes et futuri quod Ego Thomas de Coleuilla concessi . dedi .
+               et hac presenti carta mea confirmaui . deo . et ecclesie sancte
+               Marie de valle dei et Monachis ibidem deo seruientibus . pro
+               salute anime mee . et pro animabus dauid . Maucolmi . Will<ex>elm</ex>i Regum Scocie . et omnium antecessorum meorum . quantam partem Almelidon quod
+                  vocatur Keresban . scilicet quicquit habui inter polleneshan
+                  et polnescunt . usque ad aquam de don . libere et quiete .
+                  reddendo inde annuatim mihi et heredibus meis uel cui
+                  asingnauero quinque Marcas argenti ad duos terminos pro omni
+                  seruicio et consuetudine et exaccione seculari . videlicet
+                  duas marcas et dimidiam ad festum sancti Martini . et duas et
+                  dimidiam ad pentecosten . Et ego et heredes mei
+                  warantizabimus totam predictam terram ad opus predictorum
+                  Monachorum In omnibus et contra homines . Et si contigerit
+                  quod dominus Rex scocie hanc prefatam firmam prefatis
+                  Monachis relaxare . et condonare voluerit pro salute anime
+                  sue et antecessorum suorum  ego et heredes mei libenter
+                  illud concedimus ita quod nichil umquam de eadem firma
+                  exigemus ab eisdem Monachis . Hiis testibus Domino Alano de
+                  Gallewei . Comiti Patricio . Waltero filio alan<ex>i</ex> . Roberto de Brus . Dunec<ex>ano</ex> de Carric . Edgaro filio douenald<ex>o</ex> . Fergus de glencar’. gillauenam filio dunegal’. Reginaldo de Crauford .
+                  Gillemor Magdunegal . et aliis multis .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

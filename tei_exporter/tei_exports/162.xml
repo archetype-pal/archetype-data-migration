@@ -1,0 +1,63 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-162">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/216</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 09:01:59.433809+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">162</idno>
+        <idno type="textcontent">162</idno>
+        <idno type="transcription_textcontentxml">162</idno>
+        <idno type="translation_textcontentxml">163</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/216</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/216</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T09:01:59.433809+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T09:01:59.433809+00:00" status="published">transcription moa=162 status=live modified=2021-04-05 09:01:57.775452+00 | translation moa=163 status=live modified=2021-04-05 09:01:59.433809+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">D<ex>auid</ex> Rex Scot’ . Omnibus Probis Hominibus suis totius Lodon’ . Clericis . ⁊ laicis
+                     franc<ex>is</ex> ⁊ anglic<ex>icis</ex> sal<ex>utem</ex></cl><lb/> <cl type="disposition">Sciatis me dedisse . ⁊ Concessisse . Ecclesie Sancti Cudberti Iuxta castellum
+                  totam terram sub eodem castello<lb/> videlicet . a fonte qui oritur Iuxta angulum Gardini regis . per viam qua itur
+                     ad eandem ecclesiam . Et<lb/> ex altera parte sub castellum vsque peruenitur ad vnam viam . que est sub eodem
+                     castello uersus orientem<lb/></cl> <cl type="witnesses">T<ex>estibus</ex> Henr’ filio Regis . Et Will<ex>elm</ex>o de Graham . Et Thor’ de Trauernent . Et Malbead de Libertona ...</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">David king of Scots to all worthy men of the whole of Lothian, clerk and lay,
+                  French and English, Greeting:</cl> <cl type="disposition">Know that I have given and granted to the church of St Cuthbert beside the
+                  castle the whole land beneath the same castle, namely, from
+                  the spring that rises beside the corner of the king’s garden,
+                  along the road that runs to the same church, and from the
+                  other side beneath the castle until a road is reached which
+                  is beneath the same castle towards the east.</cl> <cl type="witnesses">As witnesses, Henry the king’s son, and William de Graham, and Thor of Tranent,
+                  and Malbeth of Liberton ...</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

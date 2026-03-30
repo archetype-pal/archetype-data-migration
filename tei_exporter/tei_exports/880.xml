@@ -1,0 +1,66 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-880">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 569</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:12:05.378375+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">880</idno>
+        <idno type="textcontent">904</idno>
+        <idno type="transcription_textcontentxml">880</idno>
+        <idno type="translation_textcontentxml">881</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 569</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 569</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:12:05.378375+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:12:05.378375+00:00" status="approved">transcription moa=880 status=reviewed modified=2022-11-01 16:12:05.361026+00 | translation moa=881 status=reviewed modified=2022-11-01 16:12:05.378375+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>DD</persName> dei gratia Rex scottorum .</cl> Omnibus Sancte ecclesie fidelibus presentibus et futuris <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Notum sit uobis omnibus quod</cl> <persName>Robertus</persName><lb/> episcopus Sancti Andree inpresentia mea apud Rokesb’ conuocauit <persName>Alg’</persName> priorem dunelm’ et <persName>Rog’</persName> suppriorem ante hostium<lb/> ecclesie Sancti Iohannis euangeliste dicens et contestans se nullam
+                     consuetudinem nichil iuris clamare super ecclesiam<lb/> de Coldingham . sed uelle et concedere ut ipsa ecclesia libera et quieta esset .
+                     ab omni consuetudine et seruitio salua episcopali
+                     obedientia . <cl type="injunction">Uol<supplied>o it</supplied>aque et firmiter precipio ut ipsa mea elemosina scilicet ecclesia de Coldingham<lb/> libera et quieta ab o<supplied>mni consue</supplied>tudine et seruitio et exactione in perpetuum remaneat monachis Sancti<lb/> Cuthberti</cl> .</cl> <cl type="witnesses">Testibus his . <persName>I<supplied>ohanne</supplied></persName> <supplied>e</supplied>piscopo . <persName>Rob<ex>erto</ex></persName> de brus . <persName>hereb<ex>erto</ex></persName> cancellario <persName>Ascelino</persName> archidiacono <persName>Hugone</persName> de moreuill<ex>a</ex> .<lb/> <persName>Pagano</persName> de braiosa . <persName>Hug<ex>one</ex> brett</persName> . <persName>Berneg<ex>ar</ex> ingania</persName> . <persName>Aimaro</persName> . et aliis multis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">D<ex>avid</ex> by the grace of God king of the Scots</cl>, to all Holy Church's faithful, present and to come, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let is be known to you all that</cl> Robert, bishop of St Andrews, did at Roxburgh in my presence summon Algar, prior
+                     of Durham, and Roger, the subprior, before the gate of the
+                     church of St John the Evangelist, declaring and bearing
+                     witness that he claims no custom and nothing in law
+                     against the church of Coldingham, but wills and concedes
+                     that the same church be free and quit from every custom
+                     and service, except for obedience to the bishop. <cl type="injunction">I therefore will and strictly enjoin that my alms, that is to say, the church of
+                     Coldingham, remain to the monks of Saint Cuthbert free and
+                     quit in perpetuity from every custom, service, and
+                     exaction</cl>.</cl> <cl type="witnesses">With these witnesses: John the bisho, Robert de Brus, Hertbert the chancellor,
+                  Ascelin the archdeacon, Hugh de Morville, Payn de Briouze,
+                  Hugh Brett, Berengar Engaine, Aimer, and many others. </cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

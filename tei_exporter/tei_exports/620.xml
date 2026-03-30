@@ -1,0 +1,95 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-620">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL L.F.C. Ch. xxx.1</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:21:14.85271+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">620</idno>
+        <idno type="textcontent">630</idno>
+        <idno type="transcription_textcontentxml">620</idno>
+        <idno type="translation_textcontentxml">621</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>L.F.C. Ch. xxx.1</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL L.F.C. Ch. xxx.1</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:21:14.85271+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:21:14.85271+00:00" status="published">transcription moa=620 status=live modified=2021-04-05 08:21:14.85271+00 | translation moa=621 status=live modified=2021-04-05 08:21:13.323557+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>D’</persName> dei gr<ex>ati</ex>a Rex Scot’ .</cl> Ep<ex>iscop</ex>is . Abbatibus . Comitibus . Iustic<ex>iis</ex> . Baronibus . vicec<ex>comitibus</ex> . Prepositis . Ministris . et Omnibus Fidelibus suis. Francis . et Anglicis .
+                     Clericis . et Laicis .<lb/> tam futuris . quam presentibus totius terre sue . <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Sciatis</cl> <cl type="disposition">me dedisse . et concessisse . deo . et Ecclesię Sanctę Marię de Hadintune . et
+                  Ecclesię Sancti Andreę . Clerchetune . Inperpetuam<lb/> Elemosinam . cum suis rectis diuisis ex utraque parte aquę . sicut <persName>Will<ex>elmus</ex></persName> de Graham . et <persName>Durandus</persName> vic<ex>ecomes</ex> . et <persName>Ric’</persName> clericus . et <persName>Osbertus</persName> prior De Edeneb’ . et <persName>Malbet</persName> de Libertune . et <persName>Gillandr’</persName> filius<lb/> <persName>Oggu</persName> . et <persName>Gill’</persName> filius <persName>Merchev</persName> . et <persName>Vlfchil</persName> fil<ex>ius</ex> <persName>Merewin</persName> . et <persName>Sewal’</persName> miles . preierunt . et Circuierunt . postquam <persName>Thoraldus</persName> archid<ex>iaconus</ex> mecum finiuit apud Pebles . et etiam sicut mensurata<lb/> fuit . Concedo etiam predictę ęcclesię . unum plenarium . Toft . iuxta ęcclesiam
+                     . in villa de Hadintvn’ . Et Omnes decimas . et
+                     rectidudines Ecclesiasticas de Tota Hadintun’schire .<lb/> tam de Molendinis quam de aliis Rebus . <cl type="holding">Volo itaque et firmiter precipio quod predicta ęcclesia teneat  et habeat .
+                     prenominatam terram . clerchetun’ . solam . et quietam .
+                     de me .<lb/> et de Theino . et de omnibus aliis qui terram predictam Tenuerint . de Hadint’ .
+                        de me . et de heredibus meis . et etiam de heredibus
+                        eorum . Et etiam omnes alias Rectitudines . et Con<lb/>suetudines . In decimis . et Elemosinis . ita Libere . et honorifice . et qviete
+                        . et plenarie . sicut aliqua Elemosina In tota Terra
+                        mea . melius . et Plenius . et honorificencius . et
+                        quiecius .<lb/> potest dari . et Concedi .</cl> Has autem omnes prenominatas Elemosinas . Do . et Cartha mea confirmo . Pro
+                     anima mea . et Patris . matrisque meę . Et animabus
+                     antecessorum .<lb/> et successorum meorum .</cl> Annuente et concedente hoc . <persName>Henr<ex>ico</ex></persName> filio meo . <cl type="witnesses">et hoc idem Testante . <persName>Rodberto</persName> Episcopo Sancti Andreę . et <persName>Ioh<ex>ann</ex>e</persName> Episcopo de Glesgv . et <persName>Gregorio</persName> episcopo<lb/> de Duncheldin’. et <persName>Galfrido</persName> abbate de Dunfermel’ . et <persName>dionisio</persName> Priore de Scon’. et <persName>Rogero</persName> Priore de Dunef’. et <persName>RodBErTo</persName> De SiGiLLo . et <persName>Dunec’</persName><lb/> Comite . et <persName>Hug’</persName> de Morevill’. et <persName>Malise</persName> Comite . et <persName>Edward<ex>o</ex></persName> Cunestab<ex>ulario</ex> . et <persName>Leod</persName> . de Brechin . et <persName>Rannulfo</persName> de Svles . et <persName>Rogero</persName> Nepote Episcopi <persName>Rodb’</persName> Sancti And<ex>ree</ex><lb/></cl> apud PERT . xviii . Kl . Ivlii ;</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">D<ex>avid</ex>, by the grace of God king of the Scots,</cl> to bishops, abbots, earls, justices, barons, sheriffs, provosts, officials, and
+                     all his sworn men, French and English, clerk and lay, of
+                     his entire land, as much those to come after as those
+                     present, <cl type="salutation">greeting</cl>.</cl> <cl type="notification">Know</cl> <cl type="disposition">me to have given and conceded Clerkington in everlasting alms to God, to the
+                  church of St Mary at Haddington, and the church of St
+                  Andrews, with its correct boundaries on either side of the
+                  river, just as William of Graham, Durand the sheriff, Richard
+                  the clerk, Osbert the prior of Edinburgh, Malbeth of
+                  Liberton, Gillanders son of Oggu, Gill' son of Merchev,
+                  Ulfkil son of Merwin, and Sewal the knight led the way and
+                  went around after Thorald the archdeacon reached a settlement
+                  with me at Peebles, and also just as it was measured. I also
+                  grant to the aforesaid church one full toft next to the
+                  church in the toun of Haddington, and all teinds and
+                  ecclesiastical revenues from the whole of Haddingtonshire,
+                  both from mills and from other things. <cl type="holding">I therefore will and firmly enjoin that the aforesaid church hold and have the
+                     aforenamed land, Clerkington, free and quit of me and of
+                     the thane and of all others who may hold the land of
+                     Haddington of me and my heirs and also of their heirs, and
+                     also all other revenues and customs, in teinds and alms,
+                     so freely, honourably, quitely and fully as any alms in my
+                     whole land can well, fully, honourably and quitely be
+                     given and granted. All these aforenamed alms I give and
+                     make firm by my charter, for the sake of my soul, and my
+                     father's and my mother's, and the souls of my ancestors
+                     and successors.</cl></cl> This is approved and allowed by Henry my son, <cl type="witnesses">and it is witnessed by Robert, bishop of St Andrews; John, bishop of Glasgow;
+                  Gregory, bishop of Dunkeld; Geoffrey, abbot of Dunfermline;
+                  Denis, prior of Scone; Roger, prior of Dunfermline; Robert de
+                  Sigillo; Duncan the Earl; Hugh de Morville; Malise the Earl;
+                  Edward the Constable; Leod of Brechin; Ranulf de Soules;
+                  Robert the nephew of Bishop Robert of St Andrews.</cl> At Perth, 18th Kalends of July [14th June].</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,96 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-135">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 66</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:02.920351+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">135</idno>
+        <idno type="textcontent">135</idno>
+        <idno type="transcription_textcontentxml">135</idno>
+        <idno type="translation_textcontentxml">134</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 66</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 66</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:28:02.920351+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:02.920351+00:00" status="published">transcription moa=135 status=live modified=2017-01-30 19:28:02.920351+00 | translation moa=134 status=live modified=2016-06-07 15:00:51.783125+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Malcolmus filius Moregrundi Comitis de Mar</cl> . Omnibus Has Literas visuris uel audituris <cl type="salutation">Salutem</cl></cl> . <cl type="notification">Sciatis me</cl> <cl type="disposition">Concessisse et Hac Carta mea <lb/> confirmasse deo ⁊ ecclesie sancti Andr<ex>ee</ex> apostoli de Scotia ⁊ Canonicis ibidem deo seruientibus ⁊ seruituris Ecclesiam
+                     sancti Muluoch de Taruelund quam pater <lb/> meus eis dedit cum decimis ⁊ oblationibus ⁊ omnibus Rectitudinibus eidem
+                     ecclesie pertinentibus . ⁊ terram que eidem ecclesie
+                     pertinet cum molendino in eadem <lb/> terra fundato . ⁊ unam carrucatam terre que dicitur Hachadgouan per rectas
+                     diuisas suas . In pascuis . in pratis . in boscho ⁊ plano
+                     cum Omnibus aisia<lb/>mentis ad illas terras pertinentibus  tenendum de me ⁊ de heredibus meis in
+                     perpetuam elemosinam pro salute anime mee ⁊ animabus
+                     predecessorum <lb/> et successorum meorum . Concedo etiam eis in elemosinam perpetuo decimam totius
+                     Redditus mei de tota terra mea . videlicet de Coriis . de
+                     blado <lb/> de caseo . de farina . de brais . de martis . de multonibus . de porcis . ⁊ de
+                     meis venationibus cum carne ⁊ Coriis . ⁊ decimam de
+                     placitis ⁊ de <lb/> Releuiis meis tam in denariis quam in ceteris adquisitionibus . Concedo etiam
+                     eis ut accipiant in nemoribus meis materiem ad edificia
+                     sua quantum <lb/> eis necesse fuerit . ⁊ ut habeant communem pasturam ad pecunias suas cum
+                     pecuniis meis ⁊ cum pecuniis hominum meorum in terris meis
+                     sine omni <lb/> disturbatione ⁊ inquietatione . <cl type="holding">Quare volo vt predicti Canonici predictas Elemosinas habeant ⁊ teneant plenarie
+                     de me ⁊ heredibus meis . ita Libere ⁊ quiete  sicut
+                     aliquam elemosinam liberius ⁊ quietius in Scotia habent ⁊
+                     possident</cl> .</cl> <cl type="witnesses">Hiis Testibus . Adam Episcopo Abb<ex>ir</ex>d<ex>on</ex>en<ex>si</ex> .<lb/> Omero Archidiacono . Alex<ex>andro</ex> Decano . Malcolmo . Will<ex>elm</ex>o . Edwardo Alano . Canonicis . Magistro Will<ex>elm</ex>o . Joh<ex>ann</ex>e de caledoure clericis . Jacobo filio Moregrundi <lb/> Duncane fratre ipsius . ⁊ multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Malcolm, son of Morgan Earl of Mar,</cl> To all who shall view or hear these letters, <cl type="salutation">Greeting</cl></cl>: <cl type="notification">Know that</cl> <cl type="disposition">I have granted, and by his my charter made firm, to God and to the church of St
+                  Andrew the apostle in Scotia and the canons serving God in
+                  that place now and in the future, the church of St Moluoc at
+                  Tarland, which my father gave them, with teinds, and
+                  oblations, and all revenues pertaining to the same church,
+                  and the land which belongs to the said church, with a mill
+                  built on the same land, and a ploughgate of land which is
+                  called ‘Hachadgouan’ by its right marches; in pastures, in
+                  meadows, in wood and plain, with all easements pertaining to
+                  those lands, to be held of me and my heirs in perpetual alms,
+                  for the welfare of my soul, and the souls of my ancestors and
+                  successors. I also grant in perpetual alms the teind of my
+                  whole render from my whole land, namely, of hides, grain,
+                  cheese, flour, malt, fatted cattle, muttons, pigs, and of my
+                  game, with meat and hides, and the teind of my pleas and
+                  reliefs, in cash as well as other income. I also allow to
+                  them that they may receive material from my woods for their
+                  buildings, as much as they might need, and and that they
+                  should have common pasture for their livestock with my own
+                  livestock and the livestock of my own men on my lands without
+                  any disturbance and annoyance. <cl type="holding">Wherefore I will that the aforesaid canons should fully have and hold the
+                     aforesaid alms of me and my heirs as freely and quietly as
+                     they freely and quietly have and possess any alms in
+                     Scotia</cl>.</cl> <cl type="witnesses">With these witnesses : Adam, bishop of Aberdeen; Omer the archdeacon; Alexander
+                  the dean; Malcolm, William, Edward, Alan, canons; Master
+                  William, John of Calder, clerks; James son of Morgan, Duncan
+                  his brother, and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

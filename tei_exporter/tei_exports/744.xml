@@ -1,0 +1,99 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-744">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/284</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 09:08:09.564699+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">744</idno>
+        <idno type="textcontent">756</idno>
+        <idno type="transcription_textcontentxml">744</idno>
+        <idno type="translation_textcontentxml">745</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/284</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/284</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T09:08:09.564699+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T09:08:09.564699+00:00" status="published">transcription moa=744 status=live modified=2021-04-07 09:08:09.564699+00 | translation moa=745 status=live modified=2021-04-07 09:08:06.271238+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris Ecclesie filiis presentibus et futuris . <cl type="intitulatio">Walterus De Ridale filius patricii De Ridale</cl> . <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis me</cl> concessisse et hac<lb/> mea Carta confirmasse Deo . et Ecclesie Sancte Marie De Melros et Monachis
+                     ibidem deo seruientibus pro animabus dominorum meorum<lb/> Dauid . Melcolmi . et Will<ex>el</ex>mi Regum scott<ex>orum</ex> et pro anima patris mei et Omnium antecessorum meorum et pro Salute Domini mei
+                     Alex<ex>andri</ex> Regis scott<ex>orum</ex> pro<lb/> salute mea et Omnium successorum meorum donationem . P . patris mei quam eisdem
+                     monachis fecit de quadam parte terre sue in territorio De
+                     Lil<lb/>lisclyue In Liberam . puram . et perpetuam elemosinam que continetur <cl type="boundaries">infra has diuisas . Scilicet a uado Cu<supplied>rl</supplied>ewudeburne ex occidentali<lb/> parte De Caldelawe . per uiam que uadit De Selekirk’ uersus Iedewurth usque in
+                        alne . et sic descendendo per eandem aquam que est
+                        diuisa inter<lb/> terram de lilliesclyue . et terram episcopi de Glasgu . usque in sicum qui est
+                        diuisa inter prefatam terram de lillesclyue et abbatem
+                        de kelkov . et sic per di<lb/>uisas inter prenominatam terram de lillisclyue et eundem abbatem usque in
+                        Curlewudeburne et sic sursum per eandem burnam usque ad
+                        pre<lb/>dictum vadum de Curlewudeburne .</cl> Totam hanc terram et quicquid continetur infra has diuisas excepta terra quam
+                     Will<ex>el</ex>mus filius<lb/> Alex<ex>andri</ex> tenet in eodem territorio . concessi predictis Monachis de Melros . <cl type="holding">Et uolo et concedo ut ea habeant teneant et possideant inperpetuum . Ita libere
+                     .<lb/> quiete . plene . et honorifice sicut aliquam elemosinam Liberius . Quiecius .
+                        plenius . et honorificencius tenent . et possident .</cl> Insuper concessi eisdem Monachis pasturam ad duodecim boues . et decem vaccas et
+                     quinque equos . et centum oues . cum omnibus aliis
+                     communibus aesiamentis eiusdem<lb/> uille . Sicut Carta donacionis patris mei plenius proportat et testatur . <cl type="warrandice">Et ego et heredes mei manutenebimus et warantizabimus predictis<lb/> Monachis omnia predicta erga omnes homines et adquietabimus erga dominum regem
+                        et <supplied>omnes</supplied> alios de omni terreno seruicio et consuetudine et exac<lb/>tione seculari Inperpetuum .</cl></cl> <cl type="witnesses">Test’ . Comite patric<ex>io</ex> . Patricio filio eius . Rob<ex>erto</ex> de Ros . Rob<ex>erto</ex> de Muskam . Will<ex>el</ex>mo filio ioh<ex>annis</ex> . Ioh<ex>anne</ex> . de Mackesw’ . Ber<lb/>nard<ex>o</ex> de hawed’ . Will<ex>el</ex>mo filio meo et herede . Will<ex>elm</ex>o de Ritun cognato meo . Will<ex>elm</ex>o filio Alex<ex>andri</ex> . Et Multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church present and future <cl type="intitulatio">Walter of Ryedale son of Patrick of Ryedale</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know me</cl> to have granted and by this my charter to have confirmed to God and to the
+                     church of St Mary at Melrose and the monks serving God in
+                     that place for the souls of my lords, David, Malcolm, and
+                     William, kings of the Scots, and for the soul of my father
+                     and of all my ancestors and for the salvation of my lord,
+                     Alexander king of the Scots, for my own salvation and of
+                     all my successors, the donation of P<ex>atrick</ex> my father which he made to the same monks of a portion of his own land in the
+                     territory of Lilliesleaf, in free, pure, and everlasting
+                     alms, <cl type="boundaries">and is contained within these boundaries; that is, from the ford of Clarilawburn
+                     on the western side of 'Caldelawe', by the road that goes
+                     from Selkirk towards Jedburgh up to the Ale, and so
+                     descending by the same river which is the boundary between
+                     the land of Lilliesleaf and the bishop of Glasgow's land
+                     as far as the syke that is the boundary between the
+                     aforementioned land of Lilliesleaf and the abbot of Kelso,
+                     and so by the boundaries between the aforenamed land of
+                     Lilliesleaf and the same abbot as far as Clarilawburn and
+                     so upwards by the same burn as far as the aforesaid ford
+                     of Clarilawburn.</cl> This whole land and whatever is contained within these boundaries, except for
+                     the land that William son of Alexander holds in the same
+                     territory, I have granted to the said monks of Melrose; <cl type="holding">and I will and grant that they have, hold, and possess these things for ever, as
+                     freely, quitely, fully, and honourably as any alms freely,
+                     quitely, fully, and honourbaly hold and possess</cl>. In addition I have granted to the same monks pasture for twelve oxen, ten
+                     cows, fifteen horses and a hundred sheep, with all other
+                     common easements of the same toun, just as my father's
+                     charter of donation more fully shows and bears witness. <cl type="warrandice">And I and my heirs shall maintain and warrant to the aforesaid monks all things
+                     aforesaid in relation to all men and we shall discharge
+                     every earthly service, custom and secular exaction for
+                     ever in relation to the king and all others.</cl></cl> <cl type="witnesses">As witness, Earl Patrick, Patrick his son, Robert of Roos, Robert de Muschamp,
+                  William son of John, John ofMaxwell, Bernard of Howden,
+                  William my son and heir, my cousin William de Ritun, William
+                  son of Alexander, and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

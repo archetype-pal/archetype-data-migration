@@ -1,0 +1,56 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-61">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD 4.1.Sacr.8</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-09-14 02:05:17.782716+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">61</idno>
+        <idno type="textcontent">61</idno>
+        <idno type="transcription_textcontentxml">61</idno>
+        <idno type="translation_textcontentxml">62</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD 4.1.Sacr.8</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD 4.1.Sacr.8</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2022-09-14T02:05:17.782716+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2022-09-14T02:05:17.782716+00:00" status="published">transcription moa=61 status=live modified=2022-09-14 02:05:17.782716+00 | translation moa=62 status=live modified=2022-09-14 01:40:43.403657+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="notification">Notum sit Omnibus presens scriptum inspecturis</cl> <cl type="disposition">. quod Ego <cl type="intitulatio"><persName>Willelmus Cumin .</persName> et heredes</cl> <lb/> mei dedimus . et concessimus . deo . et sancto cuthberto . ad lum<ex>en</ex> ecclesie sancti cuthberti .<lb/> in perpetuam elemosinam . unam petram cere reddundam annuatim ad festum <lb/> sancti cuthberti . in septembri .</cl> <cl type="sealing">Et ut donacio ista rata . et inconcussa perma<lb/>neat  ego <persName>Will<ex>elmus</ex> Cum<ex>in</ex> .</persName> sigilli mei apposicione corroboraui</cl> . <cl type="witnesses">his testibus . <lb/> <persName>Ric<ex>ardo</ex></persName> filio . et herede meo . <persName>d<ex>aui</ex>d de graham</persName> . <persName>Rog<ex>er</ex>o</persName> persona de Rule . et aliis pluribus</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="notification">Let it be known to all who shall inspect the present written deed</cl> <cl type="disposition">that I, <cl type="intitulatio"><persName>William Comyn</persName>, and my heirs</cl>, have given and conceded to God and to Saint Cuthbert, for the light of the
+                     church of Saint Cuthbert, in perpetual alms, one stone of
+                     wax to be rendered annually at the feast of Saint Cuthbert
+                     in September.</cl> <cl type="sealing">And so that this donation remain established and steadfast, I, <persName>William Comyn</persName>, have strengthened it by the application of my seal</cl>. <cl type="witnesses">With these witnesses: Richard my son and heir, David Graham, Roger the parson of
+                  Rule, and many others. </cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

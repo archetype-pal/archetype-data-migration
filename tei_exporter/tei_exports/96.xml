@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-96">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 11</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:27:58.891687+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">96</idno>
+        <idno type="textcontent">96</idno>
+        <idno type="transcription_textcontentxml">96</idno>
+        <idno type="translation_textcontentxml">97</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 11</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 11</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:27:58.891687+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:27:58.891687+00:00" status="published">transcription moa=96 status=live modified=2017-01-30 19:27:58.891687+00 | translation moa=97 status=live modified=2016-06-07 09:13:32.100401+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">R . dei gr<ex>ati</ex>a Sancti Andree episcopus</cl>  Omnibus Sancte matris ecclesie filiis  Salutem ∙</cl> <cl type="disposition"><cl type="notification">Sciant <lb/> omnes tam posteri quam presentes</cl>  nos concessisse ⁊ episcopali autoritate confirm<lb/>asse  Priori Sancti Andree ∙ fratribus que ibidem deo seruientibus . omnes
+                     partes oblacionum altaris <lb/> excepta septima . que de iure conpetit episcopo . liberas ⁊ quietas . ⁊ ab omni
+                     exactione <lb/> inmunes .</cl> <cl type="witnesses">His testibus . Will<ex>elmo</ex> episcopo morauie . Osb<ex>er</ex>to abbate de Gedd’ . Aiulfo decano . <lb/> Magistro Andrea . Magistro herberto . Ioh<ex>ann</ex>e nepote episcopi . Magistro Thoma . Adam capellano</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Robert, by the grace of God bishop of St Andrews,</cl> to all sons of holy mother Church, <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition"><cl type="notification">Let all people know, future as well as present,</cl> that we have granted and by episcopal authority made firm to the prior St
+                     Andrews, and to the brethren serving God there, all parts
+                     of the offerings of the altar, except the seventh, which
+                     by right belongs to the bishop, free and quit, and exempt
+                     from every exaction</cl>. <cl type="witnesses">With these witnesses: William the bishop of Moray, Osbert the abbot of Jedburgh,
+                  Aiulf the dean, Master Andrew, Master Herbert, John the
+                  bishop's nephew, Mater Thomas, Adam the chaplain.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

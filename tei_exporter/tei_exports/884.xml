@@ -1,0 +1,63 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-884">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 571</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:12:05.427184+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">884</idno>
+        <idno type="textcontent">908</idno>
+        <idno type="transcription_textcontentxml">884</idno>
+        <idno type="translation_textcontentxml">885</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 571</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 571</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:12:05.427184+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:12:05.427184+00:00" status="approved">transcription moa=884 status=reviewed modified=2022-11-01 16:12:05.414606+00 | translation moa=885 status=reviewed modified=2022-11-01 16:12:05.427184+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">David dei gratia Rex Scot<supplied>torum</supplied></cl> Omnibus Sanctę ęcclesię fidelibus pręsentibus et futuris<lb/> <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me dedis<supplied>sse et co</supplied>ncessisse ęcclesię sanctę Marie . et Sancti Cuthberti de<lb/> Coldingaham . et C<supplied>onuentui</supplied> ibidem deseruienti  Ederham . et Nesebitam . in perpetuam elemosi<supplied>nam si</supplied>cut Cospatricus frater Dalfini eas tenuit<lb/> die qua fuit uiuus et mortuus cum suis rectis diuisis . ita liberas et<lb/> quietas sicut alias terras tenent quę ad Coldingaham Pertinent . in ęcclesiis<lb/> et aquis et pratis .</cl> <cl type="witnesses">Presentibus testibus . Hereberto abbate . de Rochesburc .<lb/> Daniele priore de Ged<supplied>wrda</supplied> Ascelino archidiacono de Glasgv . Will<ex>elmo</ex> filio<lb/> Dvnecan . Dv<supplied>necano</supplied> Co<supplied>mite</supplied> Hvg<ex>one</ex> de Moreuill<ex>a</ex> . Geruasio R<supplied>i</supplied>del . Alano filio<lb/> Waldeof . et Cospatric fratre <supplied>su</supplied>o . Will<ex>elm</ex>o de Sumeruilla . Will<ex>elm</ex>o de Graham</cl> .<lb/> <cl type="dating">Aput Rochesb<supplied>urc</supplied> . xvii . kl . Septembris . Anno . M . C . <supplied>xx</supplied>x . ix .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">David, by the grace of God king of the Scots</cl>, to all Holy Church's faithful, present and to come, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have given and conceded to the church of St Mary and St Cuthbert at
+                     Coldingham, and to the monastic community serving there,
+                     Edrom and Nisbet in perpetual alms, just as Cospatric the
+                     brother of Dolphin held them on the day he was alive and
+                     dead, with their correct boundaries, as free and quit as
+                     they hold other lands which belong to Coldingham, in
+                     churches, waters, and meadows.</cl> <cl type="witnesses">Present as witnesses: Herbert the abbot of Roxburgh, Daniel the prior of
+                  Jedburgh, Ascelin the archdeacon of Glasgow, William the son
+                  of Duncan, Duncan the earl, Hugh de Morville, Gervase Ridel,
+                  Alan son of Waldeve, and Cospatric his own brother, William
+                  de Somerville, William of Graham.</cl> <cl type="dating">At Roxburgh on the 17th day before the kalends of September [16th August] in the
+                  year 1139.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

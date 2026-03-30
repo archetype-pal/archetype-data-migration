@@ -1,0 +1,69 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-932">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 590</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:47:55.721817+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">932</idno>
+        <idno type="textcontent">959</idno>
+        <idno type="transcription_textcontentxml">932</idno>
+        <idno type="translation_textcontentxml">933</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 590</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 590</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:47:55.721817+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:47:55.721817+00:00" status="approved">transcription moa=932 status=reviewed modified=2022-11-01 16:47:55.713299+00 | translation moa=933 status=reviewed modified=2022-11-01 16:47:55.721817+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. W . dei gr<ex>ati</ex>a rex Scott’ .</cl> Omnibus probis Hominibus Totius terre sue Clericis et Laicis <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant pre<lb/>sentes et futuri</cl> me concessisse et Hac Carta mea confirmasse renuntiationem et abiurationem quam
+                     . Will<ex>elmus</ex> . de golin<lb/> cum Nich<ex>olao</ex> . et Ioh<ex>ann</ex>e fratribus suis et Emme matertera sua pro se et tota cognatione sua fecit de
+                     uilla ma<lb/>ioris lumesdene cum omnibus ad eam spectantibus . et de iure quod in eadem uilla
+                     habuit . pro una Carucata ter<lb/>re ei et Heredibus suis in territorio de Swintun a Priore et Conuentui Dunelmen<ex>si</ex> . concessa . Quare<lb/> uolo et firmiter precipio . ut renuntiatio et abiuratio illa facta firmiter in
+                     posterum obseruetur . sicut Car<lb/>ta ipsius Will<ex>elmi</ex> . testatur . saluo seruitio meo de predictis terris .</cl> <cl type="witnesses">Test<ex>ibus</ex> . Will<ex>elmo</ex> . Episcopo Sancti . Andr<ex>ee</ex> . Ph<ex>ilippo</ex><lb/> de Valon<ex>iis</ex> . Camerario . meo . Rob<ex>erto</ex> . de London<ex>iis</ex> . filio . meo . Will<ex>elmo</ex> . Cumin . Alex<ex>andro</ex> vicecomite de striuel<ex>in</ex> .</cl> <cl type="dating">apud Wedale . xvi . die<lb/> Maii ;</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex>, by the grace of God king of the Scots,</cl> to all worthy men of his entire land, clerk and lay, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have allowed, and by this my charter to have made firm, the renuntiation
+                     and abjuration which William of Gullane with Nicholas and
+                     John his brothers and Emma his maternal aunt made for
+                     himself and his entire kindred of the toun of greater
+                     Lumsdaine with everything belonging to it, and that which
+                     he lawfully held in the same toun, in return for one
+                     ploughgate of land granted to him and his heirs in the
+                     territory of Swinton by the prior and convent of Durham.
+                     Wherefore I will and resolutely instruct that the
+                     renuntiation and abjuration made by him be strictly
+                     obeserved in future, just as William's own charter bears
+                     witness, saving my service from the aforesaid lands.</cl> <cl type="witnesses">As witnesses: William bishop of St Andrews, Philip de Valognes my chamberlain,
+                  Robert of London my son, William Comyn, Alexander the sheriff
+                  of Stirling.</cl> <cl type="dating">At Wedale on the 16th day of May.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

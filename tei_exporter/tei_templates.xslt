@@ -32,9 +32,8 @@
   </xsl:template>
 
   <xsl:template match="span[@data-dpt='clause']">
-    <xsl:element name="seg">
-      <xsl:attribute name="type">diplomatic</xsl:attribute>
-      <xsl:attribute name="subtype">
+    <xsl:element name="cl">
+      <xsl:attribute name="type">
         <xsl:value-of select="@data-dpt-type" />
       </xsl:attribute>
       <xsl:apply-templates/>

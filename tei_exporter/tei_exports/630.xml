@@ -1,0 +1,81 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-630">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.36</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:09:07.122634+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">630</idno>
+        <idno type="textcontent">640</idno>
+        <idno type="transcription_textcontentxml">630</idno>
+        <idno type="translation_textcontentxml">631</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.36</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.36</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2022-11-01T13:09:07.122634+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:09:07.122634+00:00" status="published">transcription moa=630 status=live modified=2022-11-01 13:09:07.122634+00 | translation moa=631 status=live modified=2022-11-01 13:09:06.18635+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi Fidelibus presentes Litteras visuris vel audituris . <cl type="intitulatio"><persName>Ranulfus</persName> decanus Laudon<ex>ie</ex><lb/> <persName>Ioh<ex>anne</ex>s</persName> . persona . de Pentkatland . <persName>Robertus</persName> . persona . de Methfen et <persName>Ricardus</persName> de Kelchov rector ecclesie de Kin<lb/>gor</cl> . <cl type="salutation">eternam in domino Salutem</cl> .</cl> <cl type="narration">Cum auctoritate venerabilis patris nostri <persName>Will<ex>elm</ex>i</persName> dei gratia Episcopi sancti<lb/> Andr<ex>ee</ex> taxatio vicarie de Hadinton<ex>a</ex> nobis esset commissa . secundum estimationem virorum fide dignorum<lb/> qui iuramento interposito super hoc deposuerunt uisis et inspectis
+                     attestationibus in subscriptis portio<lb/>nibus duximus taxandam . presente et consentiente <persName>dauid</persName> de Berwyc tunc vicario . Scilicet in oblatio<lb/>nibus . Ouentionibus . tocius parochie de uiuis et mortuis . tam de capellis
+                     quam de matrici ecclesia . et omnibus<lb/> decimis negotiationis burgensium et aliorum negotiatorum omnium . et conductorum
+                     et omnibus decimis<lb/> curtilagiorum et pomeriorum . infra burgum cum medietate decime feni . Easdem
+                     portiones Sibi et<lb/> successoribus suis . nomine perpetue vicarie percipiendas auctoritate dicti
+                     domini <persName>Will<ex>elm</ex>i</persName> et patris nostri assignantes<lb/> ad sustinendum omnia honera Episcopalia et sinodalia dictam ecclesiam
+                     contingentia . Saluis Dominis priori<lb/> et conventui sancti Andree omnibus aliis minutis decimis et rebus ad dictam
+                     ecclesiam peruenientibus cum<lb/> decima bladi</cl> . <cl type="sealing">Et in huius rei testimonium presentes Litteras sigillorum nostrorum
+                  appositionibus duximus<lb/> roborandas.</cl> <cl type="salutation">Valete.</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ’s faithful people who shall view or hear the present letters, <cl type="intitulatio">Ranulf the dean of Lothian, John the parson of Pencaitland, Robert of Methven,
+                     and Richard of Kelso the rector of the church of Kinghorn,</cl> <cl type="salutation">wish eternal salvation in the Lord.</cl></cl> <cl type="narration">Since by authority of our venerable father William by God’s grace bishop of St
+                  Andrews the valuation of the vicarage of Haddington was
+                  committed to us, according to the assessment of trustworthy
+                  men, who, having taken an oath, testified as far as this is
+                  concerned; having viewed and inspected the sworn testimonies,
+                  we have ordered the assessment be valued in the below-written
+                  portions, David of Berwick, then vicar, being present and
+                  consenting; that is in oblations and obventions of the whole
+                  parish in respect of the living and the dead as well from
+                  chapels as from the mother church, and all teinds of the
+                  business of burgesses and of all other merchants and
+                  conveyors, and all teinds of curtilages and orchards within
+                  the burgh with half of the teind of hay; assigning the same
+                  portions to him and his successors, by way of a perpetual
+                  vicarage, by the authority of our said lord and father,
+                  William, to support all episcopal burdens and synodal dues
+                  attached to the said church; all other lesser teinds and
+                  things coming to the said church, together with the teind of
+                  corn, being reserved to the lords prior and convent of St
+                  Andrews.</cl> <cl type="sealing">And in testimony of this matter we have caused the present letters to be
+                  verified by the application of our seals.</cl> <cl type="salutation">Farewell. </cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

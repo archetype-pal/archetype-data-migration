@@ -1,0 +1,80 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-210">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/241</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-02 13:02:56.701546+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">210</idno>
+        <idno type="textcontent">210</idno>
+        <idno type="transcription_textcontentxml">210</idno>
+        <idno type="translation_textcontentxml">211</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/241</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/241</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-02T13:02:56.701546+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-02T13:02:56.701546+00:00" status="approved">transcription moa=210 status=reviewed modified=2023-06-02 13:02:56.701546+00 | translation moa=211 status=reviewed modified=2023-06-02 13:02:56.671561+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte martris Ecclesie filiis ⁊ fidelibus . Seier de Quinci Comes .
+                  Winton’ . Salutem.</cl> <cl type="disposition">Nouerit uniuersitas uestra me in<lb/> presentia domini regis Scott’ ⁊ optimatum suorum in plenaria Curia sua apud
+                     forfar quietum clamasse pro me omnibus<lb/> heredibus meis abbati Ecclesie sancte crucis de Edenburc ⁊ Conuentu eiusdem
+                     domus in perpetuum quicquid iuris habere uidebar in<lb/> Ecclesia de Trauernent ⁊ eius pertinentiis diuine remunerationis intuitu ⁊ pro
+                     salute dominorum meorum Regum Scott’ ⁊ pre<lb/>decessorum ⁊ successorum meorum . Preterea confirmo eis unam Carucatam terre ⁊
+                     decem acras in territorio de Trauernent<lb/> apud faueside cum libero exitu ⁊ communi pastura quam pater meus eis in liberam
+                     ⁊ perpetuam Elemosinam dedit<lb/> sicut Carta sua eis testatur . Confirmo Etiam Eis totam illam terram in nodrif
+                     quam pater meus eis dedit ad<lb/> seruiendum Capelle eiusdem uille . Tenend’ sibi in liberam ⁊ puram Elemosinam
+                     per easdem diuisas per quas pater meus in<lb/> presentia proborum uirorum ipsos Canonicos inde saisiauit.</cl> <cl type="witnesses">Teste Domino Rege . Comite D<ex>aui</ex>d . fratre domini Regis . Rob’<lb/> de London’ . Will<ex>elm</ex>o Cumin . Florent’ . Cancell’ . Will<ex>elm</ex>o de Bosco . Will<ex>elm</ex>o ⁊ Oliuero . Capellanis domini regis . Hugone<lb/> de prebenda . Herberto de Camera . A . persona de Kingor . A . de Hasteng’ ⁊
+                     aliis quam pluribus</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons and faithful of Holy Mother Church, Saer de Qunicy, earl of
+                  Winchester, Greeting:</cl> T<cl type="disposition">he whole body of you should know that in the presence of the lord king of Scots
+                  and his magnates in his full court at Forfar I quitclaimed
+                  for myself and all my heirs to the abbot of the church of
+                  Holyrood in Edinburgh and the convent of that house in
+                  perpetuity whatever right I am considered to have in the
+                  church of Tranent and its pertinents, moved by divine reward
+                  and for the welfare of the soul of my lords the kings of
+                  Scots and my predecessors and successors. Moreover, I confirm
+                  to them one ploughgate of land and ten acres in the territory
+                  of Tranent at Falside, with free exit and common pasture,
+                  which my father gave them in free and perpetual alms, as his
+                  charter to them attests. I also confirm to them the whole
+                  land in Niddrie which my father gave them to serve the chapel
+                  of the same toun. For them to hold in free and perpetual
+                  alms, by the same bounds with which my father saised the
+                  canons themselves in the presence of worthy men.</cl> <cl type="witnesses">Witness the Lord King, Earl David the brother of the lord King, Robert of
+                  London, Wiliam Comyn, Florence the chancellor, William del
+                  Bois, William and Oliver the king’s chaplains, Hugh de
+                  Prebenda, Herbert de Camera, A<ex>dam</ex> the parson of Kinghorn, Adam of Hastings, and very many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

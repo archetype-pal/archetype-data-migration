@@ -1,0 +1,133 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-351">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/198</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:38:54.978807+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">351</idno>
+        <idno type="textcontent">355</idno>
+        <idno type="transcription_textcontentxml">351</idno>
+        <idno type="translation_textcontentxml">352</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/198</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/198</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T12:38:54.978807+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T12:38:54.978807+00:00" status="published">transcription moa=351 status=live modified=2021-04-06 12:38:54.978807+00 | translation moa=352 status=live modified=2021-04-06 12:38:52.766267+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Alex’ . Dei gratia Rex Scott’</cl> . Omnibus probis hominibus totius terre sue tam clericis quam laicis <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Nouerit vniuersitas uestra</cl> <cl type="narration">quod<lb/> in presentia nostra et Baronum nostrorum . ad colloquium apud Listun’ Anno gr<ex>ati</ex>e Millesimo . ducentesimo . tricesimo quinto .<lb/> facta est hec amicabilis compositio inter Abbatem et Monachos de Melros ex una
+                     parte . et Roger<ex>um</ex> . Auenel ex altera . super<lb/> contentionibus motis inter eosdem . super eo scilicet quod idem . R. contra
+                     tenorem carte sue . et predecessorum suorum . posuit
+                     equicium .<lb/> aueria sua et hominum suorum . in terra ipsorum Monachorum in Eskedal’ infra
+                     diuisas contentas in carta sua . et super eo<lb/> quod dictus . R. et sui quasdam domos per dictos Monachos erectas diruerunt . et
+                     fossata et alia clausa eorundem Mona<lb/>chorum prostrauerunt . et alias eis iniurias intulerunt ut dicebant . Videlicet
+                     quod dictus . R. concessit . quod nec ipse<lb/> nec heredes sui . nec homines eorum habebunt equicium . aueria . porcos . oues .
+                     nec aliqua alia aueria domestica uel Sil<lb/>uestria infra diuisas contentas in Carta dicti . R. nisi de licentia ipsorum
+                     Monachorum . Salua dicto Rogero saluagina .<lb/> eo modo quo continetur in Carta sua . Quem modum nos et Barones nostri taliter
+                     explanauimus . Scilicet . quod idem . R. et<lb/> heredes sui habebunt tantum ceruum et ceruam . Aprum . et Apram . capreolum . et
+                     capreolam . Preterea . aerium . accipitrum .<lb/> et Sperueriorum . ita quod Monachi maliciose non impediant quin eo loco quo
+                     aeriant possint aeriare quamdiu habu<lb/>erint consuetudinem ibidem aeriandi . Neque accipitrum aut Sperueriorum capiant
+                     nidos infra dictas diuisas . Nec ar<lb/>bores in quibus aeriant uno anno secentur donec in anno proximo sequenti
+                     perpendatur si in illis arboribus uelint aeriare .<lb/> uel non . Et si tunc non aeriauerint . Licite de arboribus commodum suum facient
+                     Monachi  modis omnibus quibus uo<lb/>luerint . In aliis uero locis infra diuisas contentas in Carta dicti . R.
+                     facient logias et edificia ubicumque uoluerint pro libito<lb/> et uoluntate sua . et vtentur tenemento contento infra dictas diuisas prout
+                     melius et utilius sibi . fratribus suis . seruientibus .
+                     et<lb/> aueriis suis proficere  eis uisum fuerit . Preterea . de Latronibus et
+                     forisuiis sic determinauimus . quod non dicuntur forisuie
+                     quo<lb/>ad ius monachorum et usum eorundem . seruientium . et fratrum . et hominum
+                     suorum . ubi eunt pascendo animalia sua . uel<lb/> custodiendo . uel querendo . uel alia eorum negocia gerendo . siue de die . siue
+                     de nocte . nisi in manifesto facinore<lb/> fuerint deprehensi . Et si de nocte fuerint taliter deprehensi custodiantur
+                     usque in crastinum . qui si fuerint seruientes Mo<lb/>nachorum  ipsis statim libere tradantur ad parendum iuri ubi parere debent . De
+                     die uero capti . statim reddantur eisdem .<lb/> Dicti etiam Monachi non uenabuntur ibi cum Moetis . et cordis . nec alios ibidem
+                     ducent ad uenandum . nec pedicas<lb/> ibi ponent nisi ad capiendos lupos . Dicta siquidem Saluagina utentur dictus Rog<ex>erus</ex> . et heredes sui sicut pretaxa<lb/>tum est sine fraude et malo ingenio . absque dampno et lesione . Segetum .
+                     Sepium . Pratorum . Pecudum . Animalium . et omnium
+                     aliarum possessionum eorundem Monachorum .</cl> <cl type="witnesses">Test<ex>ibus</ex> . A. de Moreuia . et C. de Dunblain Episcopis . W. Comi<lb/>te de Menethet . W. filio Alani Senescall<ex>o</ex> Scotie . W. Olifard Iust’ Laodonie . Henrico de Baylloll’<lb/> Dauid Mariscallo . Gaufrido clerico de Liberatione .</cl> Octauo die Aprilis . Anno Regni domini Regis vicesimo<lb/> secundo .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, by the grace of God king of the Scots</cl>, to all worthy men of the whole of his land, clerk as well as lay, <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">May you all know that</cl> <cl type="narration">in our presence and of our barons at the colloquium at Liston in the Year of
+                  Grace 1235 an amicable agreement was made between the Abbot
+                  and Monks of Melrose on the one side, and Roger Avenel on the
+                  other, over the disputes instigated between them, that is,
+                  how Roger, contrary to the tenor of his charter and those of
+                  his predecessors, put a horse-stud and his own animals and
+                  men into the Monks’ land in Eskdale within the boundaries set
+                  out in his charter, and how the said Roger and his men
+                  destroyed some houses built by the said monks, and levelled
+                  their dykes and other enclosures of theirs, and brought other
+                  injuries upon them, as they said. To wit that Roger has
+                  allowed that neither he himself nor his heirs nor their men
+                  shall have a horse-stud, cattle, pigs, sheep or any other
+                  live-stock within the boundaries specified in the said
+                  Roger’s charter, unless by the monks’ permission, saving to
+                  the said Roger the beasts of the chase in the manner stated
+                  in his charter, which we and our barons have explained in
+                  this way; to wit, that Roger and his heirs shall have so many
+                  stag and hind, boar and sow, and roe-bucks and roe-does; in
+                  addition, the eyries of hawks and sparrow-hawks, provided
+                  that the monks do not maliciously cause hindrance so that
+                  they can nest in the place where they nest as long as they
+                  have the habit of nesting there; they should not remove the
+                  nests of hawks or sparrow-hawks within the said boundaries,
+                  nor should they fell the trees in which they nest in one year
+                  until it is determined whether they wish to nest in those
+                  trees in the following year or not; and if then they have not
+                  nested, let the monks make use of the trees by all means that
+                  they wish. In other places within the boundaries set out in
+                  the charter of the said R<ex>oger</ex>, they may build lodges and buildings wherever they wish, according to their
+                     pleasure and intent, and make use of the tenement
+                     contained within the said boundaries as shall seem to them
+                     best and most usefully profitable to themselves, their
+                     brethren, servants, and livestock. In addition, thus have
+                     we determined about thieves and trespassers: that they are
+                     not deemed trespassers in respect of the right of the
+                     monks and the use of the same, of their tenants, brethren,
+                     and men, whenever they go for grazing their own animals,
+                     or keeping watch, or searching, or carrying out their
+                     other business, whether by day or by night, unless they
+                     have been caught in clear wrongdoing. And if they have
+                     been discovered in such a way at night, they should be
+                     guarded until the next day; and if they are tenants of the
+                     monks, they should straightaway freely be given up in
+                     order to obey the law where they ought to obey. When
+                     captured by day, they should be returned immediately to
+                     them. Also the said monks shall not hunt there with packs
+                     of hounds and ropes, nor lead others to that place for
+                     hunting, nor set traps there except for catching wolves.
+                     Accordingly the said Roger and his heirs shall enjoy the
+                     wild game as was agreed before, without deceit and bad
+                     intention, without loss and injury of crops, hedges,
+                     meadows, livestock, animals and all the other possessions
+                     of the same monks.</cl> <cl type="witnesses">As witnesses, A<ex>ndrew</ex> of Moray, and C<ex>lement</ex> of Dunblane, bishops; W<ex>alter</ex>, earl of Menteith; W<ex>alter</ex> son of Alan, steward of Scotland; W<ex>alter</ex> Oliphant, justiciar of Lothian; Henry de Balliol; David the Marischal; Geoffrey
+                     the clerk of the Liverance.</cl> On the eighth day of April in the twenty-second year of the reign of our lord
+                  the king [1236].</p>
+      </div>
+    </body>
+  </text>
+</TEI>

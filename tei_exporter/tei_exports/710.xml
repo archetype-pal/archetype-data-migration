@@ -1,0 +1,104 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-710">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/96</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:16:49.070754+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">710</idno>
+        <idno type="textcontent">721</idno>
+        <idno type="transcription_textcontentxml">710</idno>
+        <idno type="translation_textcontentxml">711</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/96</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/96</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T08:16:49.070754+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T08:16:49.070754+00:00" status="published">transcription moa=710 status=live modified=2021-04-07 08:16:46.702094+00 | translation moa=711 status=live modified=2021-04-07 08:16:49.070754+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. W’ . dei gr<ex>ati</ex>a Rex scott’ .</cl> Episcopus . abbatibus . comitibus . baronibus . Iusticiis . vicecomitibus .
+                     prepositis . et Omnibus probis hominibus tocius terre sue
+                     . clericis<lb/> et laicis <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> me dedisse et hac presenti carta mea confirmasse deo et ecclesie sancte Marie de
+                     Melros . et monachis de<lb/> Rieualle ibidem deo seruientibus pro animabus patris mei et matris mee . et
+                     Regis d<ex>aui</ex>d aui mei et pro salute anime mee . et omnium fratrum et sororum et antecessorum
+                     et suc<lb/>cessorum meorum in liberam et puram et perpetuam elemosinam totam landam de
+                     blemeslei per diuisas nominatas in carta Ric<ex>ardi</ex> de Moreuilla . ad aran<lb/>dam et colendam sicut eis melius et utilius uisum fuerit . sine sarto faciendo .
+                     et licentiam faciendi edificia sua ubi uoluerint super
+                     riuulum qui est<lb/> inter blaineslei et Milcheside . et totam terram de Milcheside quam Ricard<ex>us</ex> de Moreuill<ex>a</ex> et heres eius eis dederunt et cartis suis confirmauerunt per<lb/> easdem diuisas que in cartis eorum continentur . et capellam de parco sicut in
+                     cartis eisdem continetur . et edificia de cumbesleia et de
+                     buchelm et de<lb/> Witheleia sicut fuerunt ad festum sancti Michaelis proximum post primam
+                     coronationem Ric<ex>ardi</ex> filii Henrici regis anglie . ita quod non ampliora<lb/> aut plura edificia ibi faciant quam tunc temporis ibi fuerunt nisi per licentiam
+                     meam . Et ut nullus forestariorum meorum det uel uendat <supplied>boscum</supplied><lb/> infra diuisas eorum que in mea carta continentur . <cl type="holding">Hec autem omnia do et concedo eis perpetuo tenore possidere . et hac carta mea
+                     confirmo<lb/> in liberam et perpetuam elemosinam . et uolo et precipio ut omnia supradicta
+                        habeant et possideant ita libere et quiete plenarie et
+                        honori<lb/>fice sicut ulla elemosina liberius et quietius . plenius et honorificentius
+                        haberi potest et possideri a monachis ordinis
+                        cisterciensis</cl> .</cl> <cl type="witnesses">Test<ex>ibus</ex> Iocel<ex>ino</ex> episcopo Glasguen<ex>si</ex> . Arnaldo abbate de Rieu<ex>alle</ex> . hug<ex>one</ex> cancell<ex>ario</ex> meo . Roberto capell<ex>ano</ex> . meo . Phillippo de Vallon<ex>iis</ex> . Rob<ex>erto</ex> de lond<ex>oniis</ex><lb/> Will<ex>elm</ex>o de lindesei . Malcolm<ex>o</ex> filio Comitis Dunec<ex>ani</ex> . Will<ex>elmo</ex> Cumin Geruas<ex>io</ex> auenel . Will<ex>elmo</ex> de haia . Adam filio Gill’ . Adam de sireis . Adam<lb/> de stanfort . Herberto <persName><roleName>Marescallo</roleName></persName> .</cl> apud trauerquer .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex>, by the grace of God king of the Scots</cl>, to bishops, abbots, earls, barons, justices, sheriffs, provosts, and all
+                     worthy men of his entire land, clerk and lay, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have given and by this my present charter to have made firm to God and to
+                     the church of St Mary at Melrose, and to the monks of
+                     Rievaulx serving God there, for the souls of my father and
+                     my mother, and of King David my grandfather, and for my
+                     own soul, and of all my brothers and sisters, my ancestors
+                     and successors, in free, pure, and perpetual alms, the
+                     enitre land of Blainslie, by the boundaries named in the
+                     charter of Richard de Morville, for ploughing and
+                     cultivating just as it shall seem best and most useful to
+                     them, without performing assart, and permission for
+                     constructing their own buildings wherever they wish on the
+                     burn which is between Blainslie and Milsie, and the entire
+                     land of Milsie which Richard de Morville and his heir gave
+                     to them, and made firm by their charters, by the same
+                     boundaries which are contained in their charters, and the
+                     chapel of Park just as it is contained in their charters,
+                     and the building at Colmslie and at Buckholm and at
+                     Whitelee, just as they were at the feast of Saint Michael
+                     next after the first coronation of Richard, son of Henry
+                     king of England, provided no enlargement or more buildings
+                     are built there than were theere at that time unless by my
+                     permission. <cl type="holding">And so that none of my foresters give or sell wood within their boundaries
+                     specified in my charter, I give and grant all these things
+                     to them to possess in everlasting tenure, and by this my
+                     charter make firm in free and everlasting alm, and I will
+                     and instruct that they have and possess all things
+                     mentioned above as freely and quitly, fully and
+                     honourably, as any alms can most freely and quitly, fully
+                     and honourably be had and possessed by monks of the
+                     Cistercian order</cl>.</cl> <cl type="witnesses">As witnesses, Jocelin bishop of Glasgow, Arnold abbot of Rievaulx, Hugh my
+                  chancellor, Robert my chaplain, Philip de Valognes, Robert of
+                  London, William of Lindsay, Malcolm son of Earl Duncan,
+                  William Comyn, Gervase Avenel, William de la Hay, Adam son of
+                  Gilbert, Adam of Ceres, Adam of Stanford, Herbert the
+                  marischal.</cl> At Traqhuair.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

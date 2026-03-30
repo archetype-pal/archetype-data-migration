@@ -1,0 +1,57 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-986">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 987b</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 10:59:47.513205+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">986</idno>
+        <idno type="textcontent">1015</idno>
+        <idno type="transcription_textcontentxml">986</idno>
+        <idno type="translation_textcontentxml">987</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 987b</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 987b</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T10:59:47.513205+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T10:59:47.513205+00:00" status="approved">transcription moa=986 status=reviewed modified=2022-11-01 10:59:47.513205+00 | translation moa=987 status=reviewed modified=2022-11-01 10:59:47.503593+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Ricardus dei gr<ex>aci</ex>a humilis minister ęcclesie sancti andree</cl> vniuersis filiis ma<lb/>tris ecclesie <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant tam posteri quam presentes</cl> nos concessisse et dedisse ec<lb/>clesie beate marie de celchou ecclesiam sancti laurentii de berewic liberam et<lb/> quietam ab omni exactione et sinodalibus in perpetuam elemosinam .</cl> <cl type="witnesses">hiis testibus<lb/> andrea archidiacono . Galfrido abbate de dunefermelin . Ioh<ex>ann</ex>e nepote<lb/> Rodberti episcopi . Robert canonico sancti And<ex>ree</ex> . Roberto filio sewlfi .<lb/> Magistro herberto alexandro capellano . Magistro abraham .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Richard, by the grace of God a humble servant of the church of St Andrew,</cl> to all sons of Mother Church <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let those to come as well as those present know</cl> me to have granted and given, to the church of blessed Mary at Kelso, the church
+                     of St Laurence at Berwick, free and quit from every demand
+                     and synodal due, in everlasting alms.</cl> <cl type="witnesses">With these witnesses: Andrew, archdeacon; Geoffrey, abbot of Dunfermline; John,
+                  nephew of Robert the bishop; Robert, canon of St Andrews;
+                  Robert, son of Seolf; Master Herbert; Alexander, chaplain;
+                  Master Abraham.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

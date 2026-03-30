@@ -1,0 +1,59 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-704">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/87</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:47.201783+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">704</idno>
+        <idno type="textcontent">715</idno>
+        <idno type="transcription_textcontentxml">704</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/87</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/87</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:47.201783+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:47.201783+00:00" status="draft">transcription moa=704 status=draft modified=2017-01-30 19:28:47.201783+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris Ecclesie filiis presentibus et futuris . <cl type="intitulatio">Rogerus Burnard</cl> <cl type="salutation">Salutem</cl></cl> . <cl type="notification">Sciatis</cl> <cl type="disposition">me dedisse et Concessisse et hac mea Carta<lb/> confirmasse Deo et Ecclesie Sancte Marie de Melros . et Monachis ibidem deo
+                     seruientibus pro salute animarum dominorum meorum Regum<lb/> Scotie . Scilicet . Regis dauid . et Regis Malcolmi . et Regis Will<ex>el</ex>mi . et pro Salute anime mee . et pro Animabus Omnium antecessorum . et<lb/> successorum meorum in liberam . Puram . et perpetuam elemosinam quandam partem
+                     petarie mee interritorio De farnigdun . quam ego cum aliis<lb/> multis probis hominibus perambulaui per easdem diuisas . et eosdem terminos .
+                     Scilicet . per Lapides grandes quos tunc perambulando<lb/> posui per circuitum . Concessi etiam eisdem Monachis ut extra easdem diuisas
+                     Fossatum faciant per circuitum Sex pedum Latitudinis . et
+                     tantum terre mee et More de iuxta dedi eis et concessi ubi
+                     sufficienter possint exsiccare petas suas . et ineundo et
+                     Redeundo Liberum<lb/> transsitum sine disturbatione . ad ipsas petas abducendas . <cl type="holding">Hec omnia tenebunt et habebunt ipsi Monachi de me et heredibus meis<lb/> Libere . et Quiete . plene . et honorifice sicut aliquam elemosinam . Liberius .
+                        et Quietius . plenius et honorificentius tenent et
+                        possident</cl> . <cl type="warrandice">Et<lb/> ego et heredes mei manutenebimus . et warantizabimus ipsis Monachis totam
+                        petariam predictam contra omnes homines .</cl></cl> <cl type="witnesses">Hiis<lb/> Test<ex>ibus</ex> Ric<ex>ardo</ex> decano . Walter Olifard . Thom<ex>a</ex> de Colleuill<ex>a</ex> . Bernard<ex>o</ex> De Hawed’ . G<ex>re</ex>G<ex>orio</ex> De Rutheford . Alex<ex>andro</ex> de Suintun .<lb/> Roberto filio Maccus . Et Multis Aliis .</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

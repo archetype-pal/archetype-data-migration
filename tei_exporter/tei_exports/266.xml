@@ -1,0 +1,87 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-266">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/291</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:43:44.574843+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">266</idno>
+        <idno type="textcontent">266</idno>
+        <idno type="transcription_textcontentxml">266</idno>
+        <idno type="translation_textcontentxml">267</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/291</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/291</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T08:43:44.574843+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T08:43:44.574843+00:00" status="published">transcription moa=266 status=live modified=2021-04-06 08:43:41.174899+00 | translation moa=267 status=live modified=2021-04-06 08:43:44.574843+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Ricardus dei gratia Dunkeld<ex>ensis</ex> Episcopus</cl>  vniuersis sancte matris Ecclesie filiis <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> . Nos concessisse et hac carta<lb/> nostra confirmasse . deo et Ecclesie sancti I<ex>o</ex>h<ex>ann</ex>is apostoli de Incheaffran et fratribus ibidem deo seruientibus et seruiturtis
+                     terram nostram Im mader<lb/>nin . que terra uocatur abthen . per suas rectas diuisas . cum omnibus Iustis
+                     pertinenciis suis . ad peticionem Comitis . Gileberti de
+                     strath<lb/>erne  et fratris eius . M . in redemptionem anime \nostre/ et antecessorum
+                     nostrorum et predicti Comitis . G . et suorum . Tenendam
+                     predictis fratribus et eorum suc<lb/>cessoribus In liberam et perpetuam Elemosinam reddendo nobis et successoribus
+                     nostris annuatim unam marcam argenti . scilicet Dimidiam<lb/> ad Pentecosten . et Dimidiam ad festum sancti Martini . <cl type="holding">Volumus itaque et precipimus ut hiidem fratres predicti et eorum successores
+                     predictam terram<lb/> teneant et possideant de nobis et successoribus nostris . ita libere et quiete
+                        plenarie et honorifice ab omni exactione et
+                        consuetudine et ser<lb/>uitio seculari ad nos pertinente . In boscho . et plano . In pratis et pascuis .
+                        In aquis et molendinis . et omnibus aliis aisiamentis
+                        ad<lb/> eandem terram pertinentibus . sicut aliqua terra in Episcopatu nostro liberius
+                        plenius et honorificentius tenetur et possidetur . et
+                        sicut carta Ioh<ex>ann</ex>is Episcopi<lb/> predecessoris nostri testatur . salua tamen predicta pensione .</cl></cl> <cl type="witnesses">Hiis T<ex>estibus</ex> . Henrico archidiacono nostro . Radulfo . Berndardo . et Thom<ex>a</ex><lb/> Capellanis nostris . Ludouico et Ioh<ex>ann</ex>e clericis nostris . Bricio persona de chref . Roberto capellano de Tubermora .
+                     Gileberto filio archidiaconi de Strahern .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Richard, by the grace of God Bishop of Dunkeld,</cl> to all sons of Holy Mother Church, <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> that we have granted, and by this our charter made firm, to God and to the
+                     church of St John the Apostle at Inchaffray, and to the
+                     brethren serving God there now and in the future, our land
+                     in Madderty, the land that is called ‘apdaine’, by its
+                     correct bounds, with all is just pertinents, at the
+                     request of Earl Gilbert of Strathearn and his brother M<ex>alise</ex>, for the redemption of our soul and of our ancestors’, and of the the foresaid
+                     Earl G<ex>ilbert</ex> and his own people. For the foresaid brethren and their successors to hold in
+                     free and perpetual alms, by rendering to us and our
+                     successors annually one merk of silver, that is, half at
+                     Pentecost and half at the feast of St Martin. <cl type="holding">We therefore will and enjoin that the same foresaid brethren and their
+                     successors hold and possess the foresaid land of us and
+                     our successors, as freely and quietly, fully and
+                     honourably, from every exaction and custom and secular
+                     service pertaining to us, in wood and plain, in meadows
+                     and pastures, in waters and mills, and all other easements
+                     pertaining to the same land, just as any land in our
+                     bishopric is freely and honourably held and possessed, and
+                     just as the charter of Bishop John, our predecessor, bears
+                     witness, but saving the foresaid pension.</cl></cl> <cl type="witnesses">With these witnesses, Henry our archdeacon, Ralph, Bernard, and Thomas, our
+                  chaplains, Louis and John our clerks, Brice the parson of
+                  Crieff, Robert the chaplain of Tibbermore, Gilbert the son of
+                  the archdeacon of Strathearn.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

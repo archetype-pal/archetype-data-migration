@@ -1,0 +1,161 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-305">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/41</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.934399+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">305</idno>
+        <idno type="textcontent">304</idno>
+        <idno type="transcription_textcontentxml">305</idno>
+        <idno type="translation_textcontentxml">304</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/41</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/41</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-06T15:19:33.934399+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-06T15:19:33.934399+00:00" status="approved">transcription moa=305 status=reviewed modified=2023-06-06 15:19:33.919857+00 | translation moa=304 status=reviewed modified=2023-06-06 15:19:33.934399+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte matris ecclesie filiis . <cl type="intitulatio">Geruasius Auenel . filius Roberti Auenel</cl> <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis me</cl> concessisse . et hac mea carta confirmasse deo et ecclesie sancte Marie de
+                     meylros . et monachis ibidem deo serui<lb/>entibus . donationem patris mei . scilicet terram de Eschedale . quam idem pater
+                     meus illis donauit in perpetuam elemosinam . et carta sua
+                     confirmauit . annuente piissimo Rege Melcolmo prius . et
+                     postea<lb/> illustri Rege Will<ex>elm</ex>o fratre eius . scilicet Tumloher et Weidkerroc . in liberam et puram et
+                     perpetuam elemosinam . pro anima gloriosi Regis D<ex>aui</ex>d . qui eandem terram donauerat eidem patri meo pro seruicio suo . et pro<lb/> anima comitis . Henr<ex>ici</ex> . et predicti Melcolmi Regis . et pro anima predicti Will<ex>elm</ex>i Regis . scott’ . domini mei . et omnium antecessorum et successorum eius . et
+                     pro anima mea . et uxoris mee et omnium successorum meorum
+                     . Hanc<lb/> itaque terram . scilicet Thumloher et Weidkerroc . concessi predictis monachis .
+                     et dedi et confirmaui . et hac mea carta incartaui . <cl type="boundaries">per has diuisas . uidelicet sicut duo esches conueniunt . et ita sursum<lb/> per blac esche . usque ad primum torrentem qui descendit de Hertesheued . et de
+                        illo torrente sursum per medium cundos montium . inter
+                        ipsos et Robertum de brus . sicut aque descendunt
+                        uersus ipsos<lb/> monachos . Et ita inter forestam de thimei et ipsos . per medium cundos montium
+                        sicut descendunt uersus ipsos . Similiter inter terram
+                        de bordewich et ipsos monachos per medium cundos<lb/> montium . sicut aque descendunt uersus ipsos . Et ita usque ad terram de Hawich
+                        . et inde in transuersam per medium cundos montium .
+                        quod est inter meipsum et predictos monachos . sicut
+                        aque<lb/> descendunt uersus ipsos . Quod cundos se extendit per desursum Harewude . et sic
+                        descendit usque ubi duo esches conueniunt .</cl> Totam autem hanc prenominatam terram et possessionem . et quicquid continetur<lb/> infra has predictas diuisas . in bosco et plano . in pratis et pasturis . in
+                     aquis et mariscis . et in omnibus utilitatibus et
+                     aisiamentis . concessi et dedi et confirmaui antedictis
+                     monachis in puram<lb/> et perpetuam elemosinam . <cl type="holding">perpetuo iure tenendam et possidendam . liberam et quietam a me et heredibus
+                     meis . et solutam ab omnibus seruitiis . et ab omni
+                     consuetudine et exactione seculari .<lb/> sicut liberius et quietius . plenius et honorificentius aliqua elemosina teneri
+                        et possideri potest .</cl> <cl type="warrandice">Et siquis forte aliquando hanc predictam terram calumpniari uoluerit . ego et
+                     heredes mei<lb/> omni calumpnianti respondebimus et sufficienter defendemus eam predictis
+                        monachis et warantizabimus .</cl> Hoc autem <cl type="notification">sciendum est quod</cl> mihi et heredibus meis retineo tantummodo ceruum<lb/> et ceruam . porcum et capreolum infra prenominatas diuisas absque dampno tamen
+                     et lesione segetum . pratorum . sepium . pecudum .
+                     animalium . et omnium aliarum possessionum eorundem<lb/> monachos . Ita tamen quod ego et heredes mei forestarium non habebimus infra
+                     prescriptas diuisas . Verumptamen habebimus infra easdem
+                     diuisas . latrones . et accipitrum et sparueriorum nidos .
+                     et<lb/> custodes ad illos custodiendos . et forsueias . et <cl type="notification">sciendum quod</cl> <cl type="holding">monachi predicti habebunt et possidebunt totam predictam terram . liberam et
+                     quietam a me et heredibus meis . salua<lb/> predicta saluagine mea . et nidis accipitrum et sparueriorum .</cl> et ipsi monachi utentur omni hoc tenemento pro libitu et uoluntate sua . sicut
+                     melius et utilius . sibi et fratribus suis . seruientibus
+                     et<lb/> aueriis suis proficere uisum fuerit . Excepto quod non uenabuntur ibi cum motis
+                     et cordis . nec alios ibi ducent ad uenandum . nec peditas
+                     ibi ponent nisi ad capiendos lupos .<lb/> neque accipient infra has diuisas accipitrum et sparueriorum nidos . Preterea <cl type="notification">sciendum quod</cl> quinque marcas quas aliquando pater meus in firmam accepit ab eis . quasque ipse
+                     et mater<lb/> mea illis ante mortem suam quietas clamauerunt . Has ego similiter quietas
+                     clamaui . et eis in elemosinam dedi . et imperpetuum
+                     remisi . et hoc idem presenti carta confirmaui<lb/> Et ut hec elemosina stabilis et firma sit in perpetuum nec ullo modo possit in
+                     irritum duci . dominus meus Willelmus rex scott’ .
+                     petitione et rogatu meo . eandem elemosi<lb/>nam eis concessit et dedit . et carta sua confirmauit.</cl> <cl type="witnesses">Test’ Iocel’ episcopus Glasg’ . Symeon episcopus de Dunbl’ . Erchembaldus abbas
+                  de Dunferm’ . Osbertus abbas de Kelcho’ . Ric’ abbas de Ied<lb/>dewurde . Symon archidiaconus . Wido prior de Kelcho’ . Ric’ decanus de
+                     Hastenesd’ . Magister Rog’ de neuport . Magister ioh<ex>anne</ex>s de Rokesb’ . Magister Adam de Heresh’ . Will<ex>elmu</ex>s seneschallus<lb/> … persona de lilescliu . Walterus clericus . Hugo clericus … Walter Olif’ .
+                     Walter corb’ . Will<ex>elmu</ex>s de la haia . Geruasius nepos Rob’ Auen’ Glaius nepos eius . Rob’ filius Rob’
+                     auen’<lb/> … Regis Scot’ .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, <cl type="intitulatio">Gervase Avenel, son of Robert Avenel</cl>, <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know me to have</cl> granted, and by this my charter to have made firm, to God and to the church of
+                     St Mary at Melrose, and to the monks in that place serving
+                     God, the donation of my father, to wit, the land of
+                     Eskdale, which my father donated to them as everlasting
+                     alms, and by his charter made firm, first by the agreement
+                     of the most pious King Malcolm, and afterwards by the
+                     noble King William, his brother; to wit, <ex>Tumloher </ex>and <ex>Weidkerroc</ex>, as free and pure and perpetual alms, for the soul of the glorious King David,
+                     who donated the same land to my father in return for his
+                     service, and for the soul of Earl Henry, and of the
+                     aforesaid King Malcolm, and for the soul of the aforesaid
+                     William, king of Scots, my lord, and of all their
+                     ancestors and successors, and for my own soul, and of my
+                     wife and all my successors. This land therefore, to wit, <ex>Thumloher</ex> and <ex>Weidkerroc</ex>, I granted to the aforesaid monks, and gave and made firm, and embodied in this
+                     my charter, <cl type="boundaries">by these boundaries: namely, as the two Esks meet, so upwards by the Black Esk
+                     as far as the first stream that descends from Hartside;
+                     and from that stream, upwards through the middle ridge of
+                     the mountains, between themselves and Robert de Brus, as
+                     the waters descend towards the monks themselves; and so
+                     between the forest of <ex>Thimeus</ex> and themselves, by the middle ridge of the mountains, as they descend towards
+                        themselves; similarly between the land of <ex>Bordewich</ex> and the monks themselves, by the middle ridge of the mountains, as the waters
+                        descend towards them; and so as far as the land of <ex>Hawich</ex>, and thence across by the middle ridge of the mountains, that is, between
+                        myself and the aforesaid monks, as the waters descend
+                        towards them; this ridge extends from above <ex>Harewude</ex>, and so descends to where the two Esks meet.</cl> This whole land and possession, just enumerated, and whatever is contained
+                     within these aforesaid boundaries, in wood and plain, in
+                     meadows and pastures, in waters and marshes, and in all
+                     usages and easements, I have granted and given and made
+                     firm to the aforesaid monks as pure and everlasting alms, <cl type="holding">to be held and possessed by everlasting right, free and quit from me and my
+                     heirs, and released from all services, and from every
+                     custom and secular exaction, just as freely and quietly,
+                     fully and honourably as any alms can be held and
+                     possessed.</cl> <cl type="warrandice">And if anyone should at any time wish to claim this aforesaid land, I and my
+                     heirs shall answer every claimant and sufficiently defend
+                     and warrant it for the aforesaid monks.</cl> <cl type="notification">This is also to be known:</cl> that I retain for myself and my heirs only deer and hind, swine and roebuck,
+                     within the aforenamed boundaries, without harm and injury
+                     of crops, meadows, hedges, livestock, animals, and all the
+                     other possessions of the same monks. Provided however that
+                     I and my heirs shall not have a forester within the
+                     described boundaries, nevertheless we shall have within
+                     the same boundaries robbers, and eyries of hawks and
+                     sparrow-hawks, and the guards to guard them, and
+                     trespassers, <cl type="notification">and it should be known that</cl> <cl type="holding">the aforesaid monks shall have and possess the whole aforesaid land, free and
+                     quit from me and my heirs, saving my aforesaid wild game,
+                     and the eyries of hawks and sparrow-hawks;</cl> and the monks shall make use of all this tenement according to their will and
+                     pleasure, just as it shall seem to them best and most
+                     useful to be of use to themselves, their brethren, their
+                     servants and livestock. With the exception that they shall
+                     not hunt there with packs of hounds and ropes, nor bring
+                     others there for hunting, nor set traps there, unless for
+                     catching wolves; and they shall not take the eyries of
+                     hawks and sparrow-hawks within these boundaries. <cl type="notification">It should be known in addition that</cl> the five merks that my father at one time received from them as ferm, and which
+                     he and my mother quit claimed before their death, these I
+                     likewise have quitclaimed and given to them in alms, and
+                     remitted for ever, and this same I have made firm by the
+                     present charter. And that this alms may be established and
+                     firm for ever and not able to be brought by any means to
+                     nought, my lord William, king of Scots, at my entreaty and
+                     request, has conceded and given the same alms, and made it
+                     firm by his own charter.</cl> <cl type="witnesses">Witnesses: Jocelin, bishop of Glasgow; Symeon, bishop of Dunblane; Archibald,
+                  abbot of Dunfermline; Osbert, abbot of Kelso; Richard, abbot
+                  of Jedburgh; Simon, archdeacon; Guy, prior of Kelso; Richard,
+                  dean Hassendean; Master Roger of Newport; Master John of
+                  Roxburgh; Master Adam of Hirsel; William the steward; … the
+                  parson of Lilliesleaf; Walter, clerk; Hugh, clerk; Walter
+                  Olifard; Walter Corbet; William de la Haye; Gervase, nephew
+                  of Robert Avenel; Glay his nephew; Robert son of Robert
+                  Avenel; … of the king of Scots.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

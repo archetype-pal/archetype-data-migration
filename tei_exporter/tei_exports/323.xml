@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-323">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/47</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 11:36:46.446055+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">323</idno>
+        <idno type="textcontent">323</idno>
+        <idno type="transcription_textcontentxml">323</idno>
+        <idno type="translation_textcontentxml">318</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/47</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/47</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T11:36:46.446055+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T11:36:46.446055+00:00" status="published">transcription moa=323 status=live modified=2021-04-06 11:36:46.446055+00 | translation moa=318 status=live modified=2021-04-06 11:36:44.982131+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. W . Rex Scott’ .</cl> Omnibus probis hominibus totius terre sue . francis et Angl<ex>icis</ex> . et Scottis  <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant tam po<lb/>steri quam presentes</cl> me concessisse et hac mea carta confirmasse ecclesie Sancte Marie de Maylros et
+                     monachis<lb/> ibidem deo seruientibus donationem quam Walterus filius Alani fecit eidem
+                     ecclesie et monachis de terra Ed<lb/>mundestun . in omnibus ita libere et quiete in elemosina perpetua  sicut
+                     liberius et quietius carta ipsius Walteri eis testatur .</cl><lb/> <cl type="witnesses">Teste Ric’ . episcopo Sancti Andree . Engelramo Episcopo Glasguensi . Ioh<ex>ann</ex>e Abbate de kelchou . Osberto abbate de<lb/> Gedewrde . Nicholao Cancellario . Ric’ . Capellano . Ric’ . de Morauilla .
+                     Waltero filio alani . Philippo de<lb/> Valunnes . Roberto Auenel . Waltero Corbet . Gilleb’ filio Richerii . Will<ex>elm</ex>o de haia . Will<ex>elm</ex>o de Morte<lb/>mer . Radulfo namo . Imero Clerico . Waltero de berchelai .</cl> Apud lannarc .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex> king of the Scots</cl> to all worthy men of the whole of his land, French and English and Scots, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let those to come as well as those present know</cl> me to have licensed and by this my charter to have made firm to the church of
+                     Saint Mary at Melrose and the monks in that place serving
+                     God the donation that Walter son of Alan made, to the same
+                     church and to the monks, in respect of the land of
+                     'Edmundestoun'; in all things so freely and quitely in
+                     everlasting alms, as freely and quitely the charter of
+                     Walter himself to them bears witness.</cl> <cl type="witnesses">Witness Richard, Bishop of St Andrews; Ingram, bishop of Glasgow; John, abbot of
+                  Kelso; Osbert, abbot of Jedburgh; Nicholas the chancellor;
+                  Richard the chaplain; Richard de Morville; Walter son of
+                  Alan; Philip de Valognes; Robert Avenel; Walter Corbet;
+                  Gilbert son of Richer; William de la Haye; William de
+                  Mortimer; Ralph le Nain; Imer the clerk; Walter of Berkeley.
+                  At Lanark.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

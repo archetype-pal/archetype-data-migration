@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-262">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/282</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-30 13:23:39.733748+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">262</idno>
+        <idno type="textcontent">262</idno>
+        <idno type="transcription_textcontentxml">262</idno>
+        <idno type="translation_textcontentxml">263</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/282</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/282</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-03-30T13:23:39.733748+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-03-30T13:23:39.733748+00:00" status="published">transcription moa=262 status=live modified=2017-03-30 13:23:37.653482+00 | translation moa=263 status=live modified=2017-03-30 13:23:39.733748+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis Sancte matris Ecclesie filiis . Comes . Dunecanus de Carric . Salutem
+                  .</cl> <cl type="disposition">Nouerit vniuersitas uestra me<lb/> diuine Pietatis Intuitu dedisse ⁊ concessisse ⁊ hac mea carta confirmasse Deo ⁊
+                     ecclesie beate Marie de<lb/> Nortberwic ⁊ sanctimonialibus ibidem deo seruientibus ⁊ seruituris inperpetuum
+                     Ecclesiam de Maybothel<lb/> cum terris eiusdem ecclesie ⁊ cum Decimis et oblacionibus ⁊ omnibus
+                     rectitudinibus ⁊ Iustis pertinenciis suis<lb/> tenendam De me ⁊ heredibus meis in puram ⁊ perpetuam elemosinam adeo Libere et
+                     quiete plenarie<lb/> et honorifice sicut aliquis comes uel Baro in Regno Scocie potest dare aliquam
+                     ecclesiam abbacie Liberius<lb/> quiecius plenius ⁊ honorifiencius .</cl> <cl type="witnesses">Hiis Testibus Hectore ⁊ Alano militibus Et Gillascop senescallo de<lb/> carric . Ioh<ex>ann</ex>e Decano  Magistro Hugone Sum<ex>er</ex>leht . Nigillo macgilwyni . Dauid Sibaldo Magistro Alano<lb/> Alexandro ⁊ Alano filiis comitis . Et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, Earl Duncan of Carrick sends Greeting:</cl> Y<cl type="disposition">ou all should know that, moved by divine goodness, I have given, and granted,
+                  and by this my charter made firm, to God and to the church of
+                  Blessed Mary in North Berwick, and in perpetuity to the nuns
+                  serving God there now and in the future, the church of
+                  Maybole, with the lands of the same church, and with the
+                  teinds and oblations and all revenues rightly belionging to
+                  it, to be held of me and my heirs in pure and perpetual alms,
+                  as freely and quietly, fully and honourably, as any earl or
+                  baron in the Kingdom of Scotland is able to give any church
+                  to an abbey freely, quietly, fully and honourably.</cl> <cl type="witnesses">With these witness, Hector and Alan, knights, and Gillespie the steward of
+                  Carrick, John the dean, Master Hugh, Somerled, Niall mac
+                  Gilla Winnin, David Sibbald, Master Alan, Alexander and Alan
+                  the earl’s sons, and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

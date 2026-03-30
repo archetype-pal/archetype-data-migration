@@ -1,0 +1,81 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-68">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 675</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-02 13:02:56.801876+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">68</idno>
+        <idno type="textcontent">68</idno>
+        <idno type="transcription_textcontentxml">68</idno>
+        <idno type="translation_textcontentxml">67</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 675</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 675</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-02T13:02:56.801876+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-02T13:02:56.801876+00:00" status="approved">transcription moa=68 status=reviewed modified=2023-06-02 13:02:56.779574+00 | translation moa=67 status=reviewed modified=2023-06-02 13:02:56.801876+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Th<ex>omas</ex> Prior et Conuentus dunelm<ex>ensis</ex> Ecclesie</cl> . omnibus ad quos presens scriptum peruenerit  <cl type="salutation">salutem in domino.</cl></cl> <cl type="disposition"><cl type="notification">Sciatis quod</cl> <cl type="narration">cum inspexissem Cartas domine Ede de paxtona <lb/> et Roberti primogeniti sui et Roberti et Willelmi filiorum suorum clericorum et
+                        filiarum suarum Cecilie et Matildis et Ogeri de Tyeys
+                        clerici nostri in modum Cyrographi confectas <lb/> et sigillorum suorum apposicione confirmatas per quas concesserunt et
+                        tradiderunt eidem clerico nostro Ogero de Tyeys . omnes
+                        piscarias suas de paxtona super twede cum <lb/> omnibus libertatibus . asiamentis et omnibus aliis sine aliquo retinemento ad
+                        easdem piscarias pertinentibus habend’ et tenend’ eidem
+                        ogero et heredibus suis uel <lb/> assignatis . a festo sancti martini in hyeme . anno domini . m . cc . tricesimo
+                        sexto usque ad terminum nouem annorum subsequentum
+                        completum.</cl> Nos donacionem et con<lb/>cessionem inter prefatas Edam et Rob<ex>ertu</ex>m primogenitum . et Rob<ex>ertu</ex>m et Will<ex>elmu</ex>m filios suos clericos . et Ceciliam et matildam filias suas et dictum ogerum de
+                     tyeys <lb/> factas super prescriptis piscariis de paxtona plurimum approbantes  <cl type="sealing">eas prout in cartis suprascriptis plenius contintetur duximus confirmandas et
+                     presentis scripti <lb/> cui est nostrum sigillum appensum patrocinio fecimus communiri .</cl> Saluis custodiis ecclesiis dunelm<ex>i</ex> et de Coldingh<ex>am</ex>i contingentibus .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Thomas the Prior, and the Convent of the church of Durham</cl>, to all to whom the present written deed shall come : <cl type="salutation">greeting in the Lord.</cl></cl> <cl type="disposition"><cl type="notification">Know that</cl> <cl type="narration">since I have examined the Charters of the lady Ada of Paxton, Robert her own
+                     first-born, Robert and William her sons, clerks, her own
+                     daughters, Cecilia and Matilda, and of Ogier of Tyas our
+                     clerk, prepared in the form of a Cyrograph, and confirmed
+                     by the application of their seals, by which they had
+                     granted and handed over to our same clerk, Ogier of Tyas,
+                     all their fisheries in Paxton upon the Tweed with all
+                     liberties, easements, and all other things pertaining to
+                     the same fisheries, without any withholding, for the same
+                     Ogier and his heirs or assignees to have and to hold, from
+                     the feast of Saint Martin in the winter, in the 1236th
+                     year of the Lord, until the term of nine years following
+                     is completed</cl> : We, very much approving the donation and grant between the aforementioned Ada,
+                     Robert the first-born, Robert and William her sons, the
+                     clerks, Cecilia and Matilda her daughters, and the said
+                     Ogier de Tyas, made concerning the fisheries of Paxton
+                     described before, have considered them to be confirmed
+                     exactly as it is the more fully contained in the charters
+                     described above; <cl type="sealing">and we have caused them to be reinforced by the protection of the present
+                     written deed to which is appended our seal.</cl> Saving the wardships contingent on the churches of Durham and of Coldingham.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

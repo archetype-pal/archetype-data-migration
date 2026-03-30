@@ -1,0 +1,76 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-108">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 27</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:27:59.847898+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">108</idno>
+        <idno type="textcontent">108</idno>
+        <idno type="transcription_textcontentxml">108</idno>
+        <idno type="translation_textcontentxml">109</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 27</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 27</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:27:59.847898+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:27:59.847898+00:00" status="published">transcription moa=108 status=live modified=2017-01-30 19:27:59.847898+00 | translation moa=109 status=live modified=2016-06-07 10:59:52.971677+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="narration">Anno ab incarnatione domini . m° . cc° . xxii° . facta est hec conuentio inter
+                  dominum . S . priore sancti An<lb/>dR<ex>ei</ex> ⁊ Conuentum eiusdem loci ex parte una . ⁊ Gillemor scoloc de Tarualont ho<lb/>minem eorum ligium ⁊ natiuum ex altera . videlicet quod idem .G. tanquam eorum
+                     natiuus ⁊ ligius <lb/> homo de eorum licentia erit cum domino . J . filio bone memorie . M . quondam
+                     comitis de Mar<lb/> quam diu ipsi priori ⁊ conuentui placuerit . ita quod idem . G . et eius liberi
+                     cum tota eorum sub<lb/>stantia sine alicuius contradictione uel aliquo impedimento cum dictis priori et
+                     conuentui placuerit <lb/> ad ipsos tanquam natiui homines sui reuertentur . quibus locum congruum ad
+                     habitandum bona fide <lb/> assignabunt . ⁊ si idem . G . uel eius liberi per annum uel amplius cum dicto
+                     domino . J . moram fecerint  an<lb/>nuatim soluent idem . G . uel eius liberi in recognitionem homagii sui memoratis
+                     priori et <lb/> conuentui . unam libram cere in assumptione beate Marie .</cl> <cl type="sealing">⁊ quia idem . G . sigillum proprium <lb/> non habuit conuencionem istam sigillo dicti domini . J . filii . M . comitis de
+                     Mar fecit sig<lb/>nari .</cl> ad maiorem etiam securitatem prefatus . G . tactis sacrosanctis iurauit se
+                  conuentionem <lb/> istam bona fide ⁊ sine contradictione aliqua fideliter seruaturum . <cl type="witnesses">hiis testibus . Domino . D . filio . M . <lb/> quondam comitis de <br/>Mar . Domino . J . fratre eius . domino . P . de Maleuill' . uicecomite Abirdon<ex>ensi</ex> . domino . R . <lb/> de Stradhehin . Beldin iudice de ferne . Will<ex>elmo</ex> capell<ex>ano</ex> de Tarualont . Adam de Cus<lb/>senin . Maldouenin mac kelledered . killeserf de Rotheuen .</cl></p>
+      </div>
+      <div type="translation">
+        <p>I<cl type="narration">n the 1222nd year since the Incarnation of the Lord this agreement was made
+                  between the lord S<ex>imon</ex>, prior of St Andrews and the religious community of the same place on the one
+                     side, and on the other, Gillemuire the scoloc of Tarland,
+                     their liegeman and neyf: namely that the same G<ex>illemuire</ex>, as their neyf and liegeman shall have permission to be with the lord J<ex>ames</ex>, son of M<ex>organ</ex> of good memory, late earl of Mar, for as long as it pleases the prior and
+                     community, so that G<ex>illemuire</ex> and his children, with all their belongings, without any objection or any
+                     impediment, should be returned to the said prior and
+                     convent as their neyfs when it shall pease the said prior
+                     and community; and they shall assign to them a suitable
+                     dwelling place in good faith. And if G<ex>illemuire</ex> or his children should remain for a year or more with the said lord J<ex>ames</ex>, the same G<ex>illemuire</ex> or his children shall pay one pound of wax annually on the Assumption of Blessed
+                     Mary in recognition of their homage to the said prior and
+                     community.</cl> <cl type="sealing">And because the same G<ex>illemuire</ex> does not have his own seal, he has caused this agreement to be sealed with the
+                     seal of the said lord J<ex>ames</ex> son of M<ex>organ</ex> the earl of Mar.</cl> And for greater security, the aforementioned G<ex>illemuire</ex>, touching holy relics, swore that he would faithfully uphold this agreement in
+                  good faith without any objection. <cl type="witnesses">With these witnesses: the lord D<ex>uncan</ex>, son of M<ex>organ</ex>, late earl of Mar; the lord J<ex>ames</ex>, his brother; the lord P<ex>hilip</ex> de Malville, sheriff of Aberdeen; the lord R<ex>obert</ex> of Strathearn; Beldin, judex of Fern; William, chaplain of Tarland; Adam of
+                     Cushnie; Mael Domnaig mac Gilla Doraid; Gilleserf of
+                     Ruthven.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

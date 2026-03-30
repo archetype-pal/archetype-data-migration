@@ -1,0 +1,82 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-258">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/280</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-02-27 19:27:43.844111+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">258</idno>
+        <idno type="textcontent">258</idno>
+        <idno type="transcription_textcontentxml">258</idno>
+        <idno type="translation_textcontentxml">259</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/280</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/280</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-02-27T19:27:43.844111+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-02-27T19:27:43.844111+00:00" status="published">transcription moa=258 status=live modified=2017-02-27 19:27:39.785882+00 | translation moa=259 status=live modified=2017-02-27 19:27:43.844111+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Will<ex>elmu</ex>s diuina permissione Ecclesie sancti Andr’ Humilis Minister . Omnibus hoc
+                     scriptum visuris uel audituris . Eternam in domino Salutem
+                     .</cl> <cl type="disposition">Nouerit vniuersitas<lb/> uestra nos concessisse ⁊ hac carta nostra confirmasse Conuentui Monialium deo
+                     famulancium apud Nordberwic’ donationem quam eis fecit
+                     Comes Duncanus .<lb/> de fif . per cartam suam de ecclesia de Largav . Concessionem etiam de eadem
+                     ecclesia eisdem Moniablibus factam a Comite Malcolmo de
+                     fif . per cartam suam .<lb/> Concedimus etiam ⁊ confirmamus eidem conuentui prelibatam ecclesiam de Largav .
+                     cum omnibus iustis pertinenciis suis habendam in usus
+                     proprios suos ad suam ⁊ pau<lb/>perum sustentationem salua eiusdem ecclesie vicaria . Magistro Hug<ex>oni</ex> medico in tota vita sua . quo cedente uel decedente predicte moniales nobis uel
+                     suc<lb/>cessoribus nostris ad predictam vicariam ydoneum uicarium presentare tenebuntur
+                     .</cl> <cl type="witnesses">Teste fratre Iacob’ canonico de Edeneburc . Andrea Decano de tining<lb/>ham . Magistro Martin’ Medico domini Regis . Geruasio de Neafle . Andr’ de
+                     Morauia . Will<ex>elm</ex>o de Golin’ ⁊ Nich’ clericis nostris . Hug’ capellano vicario<lb/> de Nordberwic’ . Petro Capellano nostro . Ric’ . Capellano . Rob<ex>ert</ex>o de vpsetlintun’ . Ric’ de Lidel . Ric’ de tyford . Joh<ex>ann</ex>e Marcaldo seruientibus nostris .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">William, by divine permission humble servant of the church of St Andrews, to all
+                  who shall view or hear this document, eternal salvation in
+                  the Lord:</cl> <cl type="disposition">You all should know that we have granted, and by this our charter made firm, to
+                  the convent of nuns serving God at North Berwick, the
+                  donation that Earl Duncan of Fife made to them by his own
+                  charter in respect of the church of Largo; the grant also of
+                  the same church to the same nuns made by Earl Malcolm of Fife
+                  by his own charter; we also grant and confirm to the same
+                  convent the church of Largo mentioned before, with all its
+                  just pertinents for their own use for their own support and
+                  the support of paupers, reserving the vicarage of the same
+                  church to Master Hugh the physician for the whole of his
+                  life; and in granting or yielding this, the foresaid nuns
+                  shall be bound to present to us or our successors for the
+                  foresaid vicarage a suitable vicar.</cl> <cl type="witnesses">Witness Brother James, canon of Edinburgh, Andrew the dean of Tyninghame, Master
+                  Martin the king’s physician, Gervase de Néauflé, Andrew of
+                  Moray, William of Gullane and Nicholas, our clerks, Hugh the
+                  chaplain, vicar of North Berwick, Peter our chaplain, Richard
+                  the chaplain, Robert of Upsettlington, Richard of Liddell,
+                  Richard of Twyford, John Marcaldus, our sergeands.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

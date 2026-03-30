@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-334">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD 1.4.Ebor.10</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:44:43.39763+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">334</idno>
+        <idno type="textcontent">334</idno>
+        <idno type="transcription_textcontentxml">334</idno>
+        <idno type="translation_textcontentxml">325</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD 1.4.Ebor.10</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD 1.4.Ebor.10</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T20:44:43.39763+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T20:44:43.39763+00:00" status="approved">transcription moa=334 status=reviewed modified=2022-10-31 20:44:43.39763+00 | translation moa=325 status=reviewed modified=2022-10-31 20:44:43.387483+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. <cl type="intitulatio">Ric’ dei gratia ecclesie sancti Andr’ humilis minister</cl>  omnibus sancte matris ecclesie filiis tocius<lb/> sue diocesis . <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Notum sit dilectioni uestre</cl> controuersiam que fuit inter ecclesiam<lb/> Dunolmensem et ecclesiam croilandensem terminatam esse apud striuelin in
+                     presencia<lb/> Will<ex>elm</ex>i Regis Scott<ex>orum</ex> et nostra et multorum aliorum proborum uirorum tam clericorum<lb/> quam laicorum . ita scilicet  quod villa de ederham et ecclesia eiusdem ville<lb/> cum omnibus capellis et pertinenciis suis cessit in perpetuum ecclesie
+                     dunolmensi  ces<lb/>sante omni reclamatione croilandensis ecclesie de prenominata possessione .</cl> <cl type="witnesses">T<ex>estibus</ex>. Engelramo episcopo Glasguensi . Gaufrido abbate dunfermeliensi . Will<ex>elm</ex>o abbate<lb/> de sancta cruce . aluredo abbate de striuelin . Waltero priore de sancto andr<ex>ea</ex> . Nicolao<lb/> cancell<ex>ario</ex> . And<ex>rea</ex> et Matheo archidiaconis . Aiulfo et Iocio decanis . Roberto fratre episcopi .
+                     Nigello<lb/> capellannus . Roberto canonico de sancto Andr<ex>ea</ex> . Roberto filio Saulfi . Mag<ex>istro</ex> H<ex>er</ex>b<ex>er</ex>to . Alexandro capell<ex>ano</ex> </cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Richard by the grace of God humble servant of the church of St Andrews</cl> to all sons of holy Mother Church of his entire diocese <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Be it known to your love that</cl> the dispute which existed between the church of Durham and the church of
+                     Croyland has been concluded at Stirling in the presence of
+                     William king of the Scots and our own and of many other
+                     worthy men as well cleric as lay, so that the toun of
+                     Edrom and the church of the same toun with all its chapels
+                     and pertinents falls in perpetuity to the church of
+                     Durham, with all counter-claiming in respect of the
+                     aforenamed property by the church of Croyland ceasing.</cl> <cl type="witnesses">As witnesses: Ingram, bishop of Glasgow; Geoffrey, abbot of Dunfermline;
+                  William, abbot of Holyrood; Ailred, abbot of Stirling;
+                  Walter, prior of St Andrews; Nicholas, chancellor; Andrew and
+                  Matthew, archdeacons; Aiulf and Iocius, deans; Robert the
+                  bishop's brother; Nigel the chaplain; Robert, canon of St
+                  Andrews; Robert son of Saulf; Master Herbert; Alexander the
+                  chaplain.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

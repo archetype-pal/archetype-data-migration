@@ -1,0 +1,116 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-242">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/256</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:35:40.220262+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">242</idno>
+        <idno type="textcontent">242</idno>
+        <idno type="transcription_textcontentxml">242</idno>
+        <idno type="translation_textcontentxml">243</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/256</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/256</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T08:35:40.220262+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T08:35:40.220262+00:00" status="published">transcription moa=242 status=live modified=2021-04-06 08:35:36.242606+00 | translation moa=243 status=live modified=2021-04-06 08:35:40.220262+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis sancte Matris Ecclesie filiis presentibus ⁊ futuris . <cl type="intitulatio">Walter . miseratione diuina ecclesie Glasg’ minister</cl> <cl type="salutation">eternam in domino . salutem.</cl></cl> <cl type="disposition"><cl type="notification">Nouerit uniuersitas uestra</cl> nos de consensu decani et<lb/> capituli Glasguensis . caritatis intuitu dedisse et concessisse . et hac
+                     presenti carta nostra confirmasse . deo et Ecclesie Sancte
+                     Crucis de Edinburc . et Canonicis ibidem deo seruientibus
+                     et seruituris<lb/> Quod de quatuor ecclesiis quas habent in diocesi nostra sub hanc forma
+                     imperpetuum taxentur uicarie . scilicet . de ecclesia de
+                     kyrkecok  percipiat uicarius decem marcas in altaragio
+                     eiusdem<lb/> ecclesie sibi assignandas per visum magistri . H . Archidiaconi . Glasg’. et
+                     Magistrorum . Ricardi de Brade . et Ricardi de Harhall’ .
+                     clericorum nostrorum . De ecclesia uero de Crauford
+                     percipiat uicarius centum<lb/> solidos in altaragio eiusdum ecclesie . sibi assignandos per eosdem . De
+                     ecclesia uero de dalgernoc  percipiat uicarius decem
+                     marcas in bonis altaragii eiusdem ecclesie sibi
+                     assignandas per eosdem . In ecclesia<lb/> uero sancte Brigide de Loublaket  percipiat uicarius centum solidos  in
+                     altaragio eiusdem ecclesie sibi assignandos per eosdem .
+                     vicarii uero dictarum ecclesiarum de Episcopalibus et
+                     honoribus ordinariis et consue<lb/>tis dictas ecclesias contingentibus respondeant . De extra ordinariis autem
+                     abbas et conuentus dicte ecclesie sancte Crucis de
+                     Edenburc . Et dictarum ecclesiarum uicarii pro porcionibus
+                     in suprascriptis<lb/> ecclesiis se contingentibus  equaliter respondeant . Et cum aliqua dictarum
+                     ecclesiarum uacauerit  concessimus supra dictis Canonicis
+                     ut eam sine aliqua contradiccione et difficultate
+                     ingrediantur .<lb/> eamque in usus proprios  pro uoluntate sua conuertant . salua nobis et
+                     successoribus custodia uicariarum cum uacauerint donec
+                     cappellanum ydoneum uel canonicum si maluerint Iuxta
+                     canonicas sanc<lb/>ciones nobis ad easdem presentauerint Qui dictam uicariam dum caste et honeste
+                     se habuerit  tempore suo possideat</cl> <cl type="sealing">IN huius autem rei testimonium et ut ista concessio rata et<lb/> firma maneat inperpetuum presens scriptum sigillo nostro signamus.</cl> <cl type="witnesses">Hiis Testibus Magistro . H . Archidiacono Glasg’ . Magistris R . et R . de Brade
+                  ⁊ de Harhall’<lb/> Magistro symon medico de Bygre . Domino . Ric’ . cappellano ⁊ uicario de Galsg’
+                     . Domino . Ric . vicario de Dunoglas . Domino Waltero
+                     clerico de Ledemere . Et aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, present and future, <cl type="intitulatio">Walter, by divine mercy, servant of the church of Glasgow,</cl> <cl type="salutation">wishes eternal salvation in the Lord</cl>:</cl> <cl type="disposition"><cl type="notification">May you all be aware</cl> that we, with the agreement of the dean and chapter of Glasgow, and moved by
+                     charity, have given and granted, and by this present
+                     charter made firm, to God and to the church of Holyrood in
+                     Edinburgh, and to the canons serving God there now and in
+                     the future, that in respect of the four churches that they
+                     have in our diocese, the vicarages should be valued
+                     according to this pattern in perpetuity, that is, for the
+                     church of <ex>Kyrkecok </ex>[Urr], the vicar should receive ten merks as the altarage of the said church,
+                     assigned to him by the inspection of Master H<ex>ugh</ex>, archdeacon of Glasgow, and Masters Richard of Braid and Richard of Arnhall,
+                     our clerks; for the church of Crawford, the vicar should
+                     receive a hundred shillings as the altarge of the said
+                     church, assigned to him by the same men; for the church of
+                     Dalgarnock, the vicar should receive ten merks as goods of
+                     the altarge of the same church, assigned to him by the
+                     same men; in the church of St Bride at Blaiket
+                     [Kirkbride], the vicar should receive a hundred shillings
+                     as altarage of the same church, assigned to him by the
+                     same men; the vicars of the said churches should answer
+                     for episcopal dues, ordinary fees and customs relating to
+                     the said churches, but for extraordinary dues, the abbot
+                     and convent of the said church of Holyrood in Edinburgh;
+                     and the vicars of the said churches should answer equally
+                     for the portions relating to them in the churches
+                     mentioned above. And when any of the said churches is
+                     vacant, we have granted to the said canons that they
+                     should enter it without any objection and difficulty, and
+                     turn it to their use as they please, reserving to ourself
+                     and our successors the wardship of the vicarages when they
+                     become vacant until they have presented us with a suitable
+                     chaplain to the same, or a canon if they prefer, according
+                     to the canonical precepts; and while he possesses the said
+                     vicarage, he should during his time keep himself chaste
+                     and honest.</cl> <cl type="sealing">In testimony of this matter and that this grant remain certain and stable in
+                  perpetuity, we have sealed the present document with out
+                  seal.</cl> <cl type="witnesses">With these witnesses, Master H<ex>ugh</ex>, archdeacon of Glasgow; Masters R<ex>ichard</ex> and R<ex>ichard</ex> of Braid and of Arnhall; Master Simon the physician of Biggar; the lord Richard,
+                     chaplain and vicar of Glasgow; the lord Richard, vicar of
+                     Douglas; the lord Walter, clerk of Ledemere; and others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

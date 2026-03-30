@@ -1,0 +1,72 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-423">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/151</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:12:51.703621+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">423</idno>
+        <idno type="textcontent">428</idno>
+        <idno type="transcription_textcontentxml">423</idno>
+        <idno type="translation_textcontentxml">424</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/151</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/151</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:12:51.703621+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:12:51.703621+00:00" status="published">transcription moa=423 status=live modified=2021-04-06 15:12:50.211159+00 | translation moa=424 status=live modified=2021-04-06 15:12:51.703621+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-family: Junicode;"><cl type="address"><cl type="intitulatio">. W . rex Scott’ .</cl> Omnibus probis hominibus terre sue . Clericis et laicis . francis . Angl<ex>icis</ex> . et Scottis . <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant tam posteri quam presentes</cl> .<lb/> me concessisse et hac mea carta confirmasse ecclesie Sancte Marie de Mailros et
+                        monachis ibidem deo seruientibus donationem quam<lb/> Osulfus filius Vctredi et Vctredus filius eius contulerunt eidem Ecclesie de
+                        terra Ringwde . in omnibus ita libere et quiete . in
+                        elemosi<lb/>na perpetua  sicut liberius et quietius cartæ eorum eis testantur  et carta
+                        regis Malcolmi fratris mei concedit et affirmat .</cl> <cl type="witnesses">Teste<lb/> <supplied>Ricardo</supplied> Episcopo Sancti Andree . Engelramo episcopo Glasguesnsi . Ioh<ex>ann</ex>e abbate de kelchou . Osberto Abbate de Gedewrde . Nicholao Cancellario<lb/> <supplied>M</supplied>atheo Archidiacono . Ric<ex>ardo</ex> . Capellano . Ric<ex>ardo</ex> de Morauilla . Waltero filio Alani . Philippo de Valunnes . Valtero Corbet .<lb/> Roberto Auenel . Gilleberto filio Richerii . Bernardo filio breani . Roberto
+                        filio Guidonis . Will<ex>elm</ex>o de haia . Will<ex>elm</ex>o de Mor<lb/>temer . Radulfo namo . Imero clerico . Waltero de berchelai .</cl> Apud Lannarc . </span>
+        </p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex> king of Scots</cl> to all worthy men of his land, clerk and lay, French, English, and Scots, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let those to come as well as those present know</cl> me to have allowed and by this my charter made firm to the church of St Mary at
+                     Melrose and to the monks in that place serving God the
+                     donation that Osulf son of Uhtred and Uhtred his son
+                     conveyed to the same church in respect of the land of
+                     Ringwood, in all things so freely and quitely in
+                     everlasting alms as freely and quietly as their charters
+                     to them bear witness, and the charter of King Malcolm my
+                     brother has allowed and affirmed.</cl> <cl type="witnesses">As witness: <supplied>Richard</supplied> bishop of St Andrews; Ingram, bishop of Glasgow; John, abbot of Kelso; Osbert,
+                     abbot of Jedburgh; Nicholas, chancellor; Matthew,
+                     archdeacon; Richard, chaplain; Richard de Morville; Walter
+                     son of Alan; Philip de Valognes; Walter Corbet; Robert
+                     Avenel; Gilbert son of Richer; Bernard son of Brian;
+                     Robert son of Guy; William de la Haye; William de
+                     Mortimer; Ralph le Naym; Imer, clerk; Walter of Berkeley.</cl> At Lanark.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

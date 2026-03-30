@@ -1,0 +1,75 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-662">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.11</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:37:31.399267+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">662</idno>
+        <idno type="textcontent">672</idno>
+        <idno type="transcription_textcontentxml">662</idno>
+        <idno type="translation_textcontentxml">663</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.11</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.11</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:37:31.399267+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:37:31.399267+00:00" status="published">transcription moa=662 status=live modified=2021-04-05 08:37:31.399267+00 | translation moa=663 status=live modified=2021-04-05 08:37:29.468545+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>A .</persName> dei Gr<ex>ati</ex>a Rex Scott’ .</cl> omnibus probis Hominibus tocius terre Sue <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Sciant presentes et futuri</cl> <cl type="disposition">nos dedisse . concessisse . et hac carta nostra confirmasse deo et beate<lb/> Marie de Melros . et monachis ibidem deo seruientibus et inperpetuum seruituris
+                      Brunschet’ . Hauchycref’ . et Dergauel . <cl type="holding">Tenend<ex>as</ex> . et habend<ex>as</ex> . eisdem monachis<lb/> inperpetuum de nobis et heredibus nostris per rectas diuisas suas et cum omnibus
+                        iustis pertinentiis suis . in Boscho et plano . in
+                        terris et aquis . in pratis et pas<lb/>cuis . in moris et maresiis . in Stagnis et molendinis . et cum omnibus aliis ad
+                        dictas terras iuste pertinentibus . libere . quiete .
+                        plenarie . et honorifice<lb/> faciendo forinsecum seruitium in auxiliis tam quantum pertinet ad quartam partem
+                        vnius militis . De exercitu uero et omni alio forinseco
+                        seruitio ipsos omnino quietos clama<lb/>mus .</cl> <cl type="warrandice">Predictas autem terras contra omnes homines predictis monachis de Melros in
+                     perpetuum warentizabimus .</cl></cl> <cl type="witnesses">Test<ex>ibus</ex> . <persName>P .</persName> Comite de Dunbar’ . <persName>Walter<ex>o</ex> .<lb/> Olifard’</persName> . Iusticiar<ex>io</ex> . Laodon<ex>ie</ex> . <persName>Walter<ex>o</ex> . Byset’</persName> . <persName>Bernard<ex>o</ex> . Fraser’</persName> . <persName>Dauid</persName> Marscallo . <persName>Will<ex>elm</ex>o</persName> de Breychin’ . <persName>Thom<ex>a</ex></persName> . de Normanuill’ .</cl> apud Selechirk’ .<lb/> Sextodecimo die Iulii . Anno . Regni . Domini Regis vicesimo tercio .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">A(lexander), by the grace of God king of the Scots</cl>, to all worthy men of his entire land <cl type="salutation">[sends] greeting.</cl></cl> <cl type="notification">Let present and future know us</cl> <cl type="disposition">to have given, conceded, and by this our charter to have made firm, to God,
+                  blessed Mary at Melrose, and to the monks serving God in that
+                  place now and for ever in the future, Burntscarthgreen,
+                  Auchencrieff, and Dargavel; <cl type="holding">for the same monks to hold and to have for ever, of us and our heirs, by their
+                     right marches and with all things rightfully belonging to
+                     them, in wood and plain, in lands and waters, in meadows
+                     and pastures, in moors and marshes, in ponds and mills,
+                     and with all other things rightfully belonging to the said
+                     lands, freely, quitly, fully, and honourably, performing
+                     as much forinsec service in aids as pertains to the
+                     quarter of one knight. From army service, however, and all
+                     other forinsec service we entirely quitclaim them.</cl> <cl type="warrandice">We shall warrant the aforesaid lands to the aforesaid monks of Melrose for ever
+                     against all men.</cl></cl> <cl type="witnesses">As witnesses: P(atrick), earl of Dunbar; Walter Oliphant, justiciar of Lothian;
+                  Walter Bisset; Bernard Fraser; David the marischal; William
+                  of Brechin; Thomas de Normanville.</cl> At Selkirk on the sixteenth day of July, in the twenty-third year of the reign
+                  of the lord king.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

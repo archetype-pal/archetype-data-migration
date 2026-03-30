@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-80">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Add. Ch. 76696</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 14:25:36.268958+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">80</idno>
+        <idno type="textcontent">80</idno>
+        <idno type="transcription_textcontentxml">80</idno>
+        <idno type="translation_textcontentxml">79</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 76696</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Add. Ch. 76696</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-04T14:25:36.268958+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-04T14:25:36.268958+00:00" status="published">transcription moa=80 status=live modified=2021-04-04 14:25:36.268958+00 | translation moa=79 status=live modified=2021-04-04 14:25:33.248029+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>W.</persName> Rex Scott<ex>orum</ex></cl> Omnibus probis hominibus tocius terre sue presentibus et futuris <cl type="salutation">salutem</cl></cl>. <cl type="notification">Sciatis me</cl> <cl type="disposition">dedisse <lb/> et concessisse <persName>Orm</persName> filio <persName>Hug<ex>onis</ex> </persName>Inueraricthin per suas rectas diuisas <cl type="holding">Tenend’ sibi et heredibus <lb/> suis de me et heredibus meis in feudo et hereditate libere et quiete saluo mihi
+                        seruicio meo <lb/> quod ad terram illam pertinet</cl> . <cl type="injunction">precipio etiam firmiter ut ubicumque inuenerit natiuos homines et fugitiuos <lb/> ad terram illam pertinentes eos iuste habeat . et prohibeo firmiter ne quis ei
+                        quemquam ex illis iniuste <lb/> detineat super meam defensionem.</cl></cl> <cl type="witnesses">Test<ex>ibus</ex> . <persName>Nic’</persName> cancellario . Com<ex>ite</ex> <persName>Wald<ex>euo</ex> </persName>. <persName>Waltero</persName> filio <lb/> <persName>Alani</persName> dap<ex>ifer</ex>o . <persName>Nesso</persName> filio <persName>Will<ex>elm</ex>i</persName> . <persName>Ric<ex>ardo</ex> Cumin</persName> . <persName>Gileberto</persName> filio <persName>Rich<ex>erii</ex> </persName>. <persName>Will<ex>elm</ex>o</persName> de Haia . <persName>Wal<lb/>tero</persName> de Berkelai .</cl> apud Forfar.</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">William, king of the Scots,</cl> to all worthy men of his enitre land, present and future, <cl type="salutation">greeting.</cl></cl> <cl type="notification">Know that</cl> <cl type="disposition">I have given and conceded Inverarity to Orm son of Hugh by its correct
+                  boundaries, <cl type="holding">for him and his heirs to hold of me and my heirs in feu and heritage, freely and
+                     quitly, saving to me my service that pertains to that land</cl>. <cl type="injunction">I also strictly enjoin that wherever he may find neyfs and fugitives beloning to
+                     that land he may justly have them, and I strictly forbid
+                     that anyone should unjustly withhold any of these from
+                     him, upon my prohibition</cl>.</cl> <cl type="witnesses">As witnesses: Nicholas the chancellor; Earl Waldef; Walter son of Alan, the
+                  steward; Ness son of Williaml; Richard Comyn; Gilbert son of
+                  Richer; William de la Haye; Walter Berkeley.</cl> At Forfar.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

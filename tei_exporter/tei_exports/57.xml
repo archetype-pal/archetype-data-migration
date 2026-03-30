@@ -1,0 +1,75 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-57">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 616</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.995842+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">57</idno>
+        <idno type="textcontent">56</idno>
+        <idno type="transcription_textcontentxml">57</idno>
+        <idno type="translation_textcontentxml">60</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 616</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 616</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-06T15:19:33.995842+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-06T15:19:33.995842+00:00" status="approved">transcription moa=57 status=reviewed modified=2023-06-06 15:19:33.995842+00 | translation moa=60 status=reviewed modified=2023-06-06 15:19:33.971737+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Alex<ex>ander</ex> dei Gr<ex>ati</ex>a Rex Scott<ex>orum</ex> . Omnibus probis hominibus tocius terre sue . Clericis et laicis  <cl type="salutation">Salutem</cl>.</cl> <cl type="disposition"><cl type="notification">Sciant presentes et futuri me concessisse</cl> . ⁊ <lb/> hac Carta mea confirmasse Robert<ex>o</ex> . de Aubein’ . ⁊ heredibus suis . illas uiginti marcas que mihi debentur
+                     annuatim de waitinga quam <lb/> Prior ⁊ Conuentus de Coldingham’ . mihi debent de terris suis de Coldingham’ .
+                     donec Ego uel heredes mei eidem Robert<ex>o</ex> . uel here<lb/>dibus suis dederimus . uiginti marcatas terre ex australi parte Maris Scocie .
+                     uel inter le Muneth . ⁊ Mare Scocie. Quare volo . ut <lb/> predictus Robert<ex>us</ex> . de Aubein’ . ⁊ heredes sui illas uiginti marcas percipiant singulis annis ad
+                     pascha. Et precipio Priori de <lb/> Coldingham’ . ⁊ Balliuis eius . quatinus annuatim sine impedimento illas uiginti
+                     marcas eis reddant ad pascha . donec Ego uel <lb/> heredes mei eis dederimus predictas uiginti marcatas terre. Sicut Carta domini
+                     Regis . Willelmi patris mei inde facta predicto Robert<ex>o</ex> . <lb/> testatur. </cl><cl type="witnesses">Testibus . Willelmo de Bosch<ex>o</ex> . Cancellario meo . Willelmo de Valon<ex>iis</ex> . Camerario meo . Philipp<ex>o</ex> . de Mubray . Galfr<ex>ido</ex> . filio . Ric<ex>ardi</ex> . <persName><roleName>vic<ex>ecomite</ex></roleName></persName> . de Pert’ . <lb/> Philipp<ex>o</ex> . de Lundin’. </cl><cl type="dating">Apud Pert’ . tercio die Marcii.</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">Alexander, by the Grace of God King of the Scots, To all worthy men of his whole
+                  land, Clerk and lay : <cl type="salutation">Greeting</cl>. </cl><cl type="disposition"><cl type="notification">Let present and future know that</cl> I have granted, and by this my charter made firm to Robert de Aubein, and to his
+                     heirs, those twenty merks which is owed annually as
+                     waiting which the Prior and Convent of Coldingham owe to
+                     me for their lands at Coldingham, until I or my heirs
+                     shall have given to Robert, or to his heirs, twenty merks’
+                     worth of land on the south side of the Sea of Scotia, or
+                     between the Mounth and the Sea of Scotia. Wherefore I
+                     will, that the aforesaid Robert de Aubein, and his heirs,
+                     should receive those twenty merks each year at Easter. And
+                     I command the Prior of Coldingham, and his Baillies, that
+                     they should pay those twenty merks to them at Easter,
+                     without hindrance until I or my heirs shall have given to
+                     them the aforesaid twenty merks’ worth of land, just as
+                     the Charter of the lord King, William my father, produced
+                     on the matter for the aforesaid Robert, bears witness. </cl><cl type="witnesses">As witnesses : William del Bois, my Chancellor; William de Valognes, my
+                  Chamberlain; Philip de Mowbray; Geoffrey son of Richard,
+                  sheriff of Perth; Philip of Lundin.</cl> <cl type="dating">At Perth, on the third day of March.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

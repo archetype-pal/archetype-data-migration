@@ -1,0 +1,69 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-308">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/43</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.879119+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">308</idno>
+        <idno type="textcontent">308</idno>
+        <idno type="transcription_textcontentxml">308</idno>
+        <idno type="translation_textcontentxml">309</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/43</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/43</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-06T15:19:33.879119+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-06T15:19:33.879119+00:00" status="approved">transcription moa=308 status=reviewed modified=2023-06-06 15:19:33.879119+00 | translation moa=309 status=reviewed modified=2023-06-06 15:19:33.86739+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Ioc<ex>elinus</ex> . dei gratia glasg<ex>uensis</ex></cl> episcopus . vniuersis sancte matris ecclesie filiis tam posteris quam
+                     presentibus <cl type="salutation">salutem in christo</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> nos dedisse<lb/> et concessisse . et hac carta nostra confirmasse deo et ecclesie Sancte Marie de
+                     maylros et monachis ibidem deo seruientibus<lb/> in liberam et perpetuam elemosinam . illud toftum in burgo de glasgu . quod
+                     Rannulfus de hadintun edifica<supplied>uit</supplied><lb/> in prima edificatione burgi ad opus domus de maylros . ita plenarie sicut illud
+                     edificauit et tenuit . <cl type="holding">Quare<lb/> uolumus ut predicti monachi de maylros teneant et possideant predictum toftum
+                        ita libere et quiete sicut ipsi ali<supplied>quam</supplied><lb/> elemosinam liberius et quietius tenent et possident .</cl></cl> <cl type="witnesses">His test<ex>ibus</ex> . Hug<ex>one</ex> abbate de Neubot’ . Symo<ex>ne</ex> a<supplied>rchi</supplied>diacono glasg<ex>uensi</ex> . Helia .<lb/> Magistro Ioh<ex>ann</ex>e . Helia Philippo . Beda . Eng’. Herb<ex>erto</ex> . canonicis de glasg’ . Will<ex>elm</ex>o et Walt<ex>er</ex>o <supplied>clericis</supplied> episcopi . Ala<supplied>no<lb/> dapifero</supplied> regis . Erkembaldo de Duueglas . Roberto de mungumbri . Hug<ex>one</ex> de paduin’. Alexandro . senescaldo episcopi .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="notification"><cl type="intitulatio">Jocelin, by the grace of God bishop of Glasgow</cl>,</cl> to all of the sons of Holy Mother Church, as well future as present, <cl type="salutation">sends greetings in Christ</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> us to have given and granted, and by this our charter to have made firm, to God
+                     and the church of St Mary at Melrose and the monks in that
+                     place serving God, as free and everlasting alms, the toft
+                     in the burgh of Glasgow that Ranulf of Haddington built
+                     during the original construction of the burgh for the
+                     benefit of the monastic house of Melrose, as fully as he
+                     built and held it. <cl type="holding">Wherefore we will that the aforesaid monks of Melrose shall hold and possess the
+                     aforesaid toft as freely and quietly as they freely and
+                     quietly hold and possess any alms</cl>.</cl> <cl type="witnesses">With these witnesses: Hugh, abbot of Newbattle; Simon, archdeacon of Glasgow;
+                  Elias, Master John, Elias, Philip, Bede, Ingram, Herbert,
+                  canons of Glasgow; Archibald of Douglas; Robert of
+                  Montgomery; Hugh of Pettinain; Alexander, the bishop’s
+                  steward.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,87 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-489">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/219</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-12 13:45:36.048048+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">489</idno>
+        <idno type="textcontent">495</idno>
+        <idno type="transcription_textcontentxml">489</idno>
+        <idno type="translation_textcontentxml">490</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/219</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/219</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-12T13:45:36.048048+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-12T13:45:36.048048+00:00" status="approved">transcription moa=489 status=reviewed modified=2023-06-12 13:45:36.048048+00 | translation moa=490 status=reviewed modified=2023-06-12 13:45:36.028862+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte Matris Ecclesie filiis presentibus et futuris . <cl type="intitulatio">Philippus filius Ph’ . De Pethcox</cl> <cl type="salutation">Salutem</cl></cl> <cl type="disposition"><cl type="notification">Sciatis me</cl> concessisse et hac mea Carta<lb/> Confirmasse Deo et Ecclesie Sancte Marie de Melros . et Monachis ibidem Deo
+                     seruientibus . pro animabus Dominorum meorum Cospatric<ex>i</ex> .<lb/> et Waldeui . Comitum De Dunbar et pro animabus patris et Matris mee . et Omnium
+                     antecessorum meorum . et Pro salute domini mei Comitis<lb/> Patricii . et pro salute mea . et omnium successorum meorum terras illas in
+                     territorio De Pethcox . quas pater meus eisdem Monach’
+                     dedit . scilicet .<lb/> terram illam que Iacet inter diuisas terre Monachorum de Hertesheuede . et
+                     Riuulum qui nominatur prestmunethburne . quam<lb/> predicti Monachi ex donatione . et precepti patris mei per predictum Riuulum .
+                     terre sue De Hertesh<ex>euede</ex> . incluserunt . et Decem acras In<lb/> Cultura De Beleside . terre sue de Edmunest’ propinquius adiacentes . In liberam
+                     . puram . et perpetuam Elemosinam .<lb/> <cl type="holding">Quare uolo . et concedo ut predicti Monachi De Melros prenominatas terras .
+                     habeant . teneant . et possideant . Ita libere . et quie<lb/>te . Plene et Honorifice . sicut aliquam Elemosinam liberius . Quietius Plenius
+                        et honorificentius . tenent et possident</cl> .<lb/> <cl type="warrandice">Et ego et heredes mei Manutenebimus et warantizabimus predictas terras prefatis
+                     Monachis contra omnes homines inperpetuum .<lb/> et adquietabimus de omni terreno seruicio et consuetudine . et exactione
+                        seculari .</cl></cl> <cl type="witnesses">Test’ . Comiti Patric<ex>io</ex> Domino meo . Patric<ex>io</ex> filio eius<lb/> Bernardo fraser . Rog<ex>ero</ex> . De Merlay . Adam de Paulew’ . Adam De Gord’ . Thom’ De Neseb’. [Ph<ex>ilippo</ex> filio meo et <ex>struck through</ex>] Waldeuo<lb/> persona . de withnham . Magistro Will<ex>elm</ex>o de hercheld’. Magistro Ioh<ex>ann</ex>e persona . Et Multis Aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, present and future, <cl type="intitulatio">Philip son of Philip of Pitcox</cl> <cl type="salutation">sends greeting</cl></cl>. <cl type="undefined"><cl type="notification">Know</cl> me to have allowed, and by this my charter to have made firm, to God and the
+                     church of St Mary at Melrose, and to the monks in that
+                     place serving God, for the souls of my lords, Cospatric
+                     and Waldef, earls of Dunbar, and for the souls of my
+                     father and mother, and of all my ancestors, and for the
+                     salvation of my lord, Earl Patrick, and for my own
+                     salvation, and of all my successors, the lands in the
+                     territory of Pitcox which my father has given to the same
+                     monks, that is, the land which lies between the boundaries
+                     of the monks' land at Hartside and the little stream which
+                     is called Pressmennan Burn, which the aforesaid monks have
+                     annexed along the aforesaid stream to their own land at
+                     Hartside by reason of the donation and instruction of my
+                     father, and ten acres in ploughland at 'Beleside' most
+                     closely adjacent to their land at Edmundstoun; in free,
+                     pure, and perpetual alms. <cl type="holding">Wherefore I will and allow that the aforesaid monks of Melrose should have,
+                     hold, and possess the aforenamed lands, as freely,
+                     quitely, fully and honourably, as they freely, quitely,
+                     fully and honourably hold and possess any alms.</cl> <cl type="warrandice">And I and my heirs shall maintain and warrant the aforesaid lands to the
+                     aforementioned monks against all men for ever, and we
+                     shall discharge all earthly service and custom, and
+                     secular exaction.</cl></cl> <cl type="witnesses">As witnesses: Earl Patrick, my lord; Patrick his son; Bernard Fraser; Roger de
+                  Merlay; Adam of Palworth; Adam of Gordon; Thomas of Nisbet
+                  [Philip my son and <ex>struck through</ex>] Waldef parson of Whittinghame; Master William of Earlston; Master John the
+                     parson; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

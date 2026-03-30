@@ -1,0 +1,74 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-246">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/259</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 14:41:10.56136+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">246</idno>
+        <idno type="textcontent">246</idno>
+        <idno type="transcription_textcontentxml">246</idno>
+        <idno type="translation_textcontentxml">247</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/259</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/259</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-04T14:41:10.56136+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-04T14:41:10.56136+00:00" status="published">transcription moa=246 status=live modified=2021-04-04 14:41:07.881388+00 | translation moa=247 status=live modified=2021-04-04 14:41:10.56136+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">A . dei gratia . Rex Scott’ . vicecom<ex>iti</ex> suo ⁊ balliuis suis de Dumfres’ salutem.</cl> <cl type="disposition">Sciatis quod inspeximus cartas illustrium Regum<lb/> Dauid ⁊ Malcolm<ex>i</ex> antecessorum nostrorum . ⁊ domini Willelmi regis patris nostri . in quibus
+                     continetur . quod abbas ⁊ Conuentus de Sancta<lb/> <supplied>C</supplied>ruce curiam liberam habere deb<supplied>en</supplied>t tam in terra de Dunrod’ quam tenent in Galuuath’ de dono Fergus ⁊ heredum
+                     suorum .<lb/> quam in aliis terris quas habent de dono antecessorum nostrorum . scilicet in
+                     Brochtun’ ⁊ hameram . vnde uobis mandamus ⁊<lb/> firmiter precipimus . quatinus nullo modo permittatis ut aliquis heredum
+                     Galuuath’ . aut eorum balliui . dictos abbatem ⁊ conuentum<lb/> impediant . quin Curiam suam liberam habeant in dicta terra de Dunrod’ de
+                     omnibus que ad ipsos iuste debent pertinere .<lb/> Tantum facientes . ne pro defectu vestri  oporteat dictos abbatem et conuentum
+                     . ad nos super hoc amplius recurrere conquerendo.</cl><lb/> <cl type="witnesses">Test<ex>ibus</ex> Henr<ex>ico</ex> . de Balliol’ Camerario . Iohanne de Vall<ex>ibus</ex> . Nichol<ex>ao</ex> de Sulis’</cl> apud Edinb<ex>urc</ex> xvi . die febr<ex>uarii</ex> . Anno regni domini regis . xxx . secundo .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">A<ex>lexander</ex> by the grace of God king of Scots to his sheriff and bailies of Dumfries
+                     Greeting</cl>: <cl type="disposition">Know that we have inspected the charters of the renowned kings David and Malcolm
+                  our ancestors, and of the lord King William our father, in
+                  which it is contained that the abbot and covnent of Holyrood
+                  ought so to have free court in the land of Dunrod – which
+                  they hold in Galloway of the gift of Fergus and his heirs –
+                  as in the other lands that they have of the gift of our
+                  ancestors, that is, in Broughton and Hamera [now Whitekirk].
+                  Wherefore we command you and firmly enjoin, that you should
+                  by no means permit that any of the heirs of Galloway, or
+                  their bailies, obstruct the said abbot and convent, that they
+                  may rather have their free court in the said land of Dunrod
+                  respecting everything that ought justly to pertain to them;
+                  doing as much lest because of your failure it be necessary
+                  for the said abbot and convent to return to us once more to
+                  complain about this matter.</cl> <cl type="witnesses">As witnesses, Henry de Balliol, chamberlain, John de Vaux, Nicholas de Soulis,</cl> at Edinburgh on the 16th day of February, in the thirty-second year of the reign
+                  of the lord king.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

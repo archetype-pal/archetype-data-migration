@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-966">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 727</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 11:12:46.07386+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">966</idno>
+        <idno type="textcontent">994</idno>
+        <idno type="transcription_textcontentxml">966</idno>
+        <idno type="translation_textcontentxml">967</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 727</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 727</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T11:12:46.07386+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T11:12:46.07386+00:00" status="approved">transcription moa=966 status=reviewed modified=2022-11-01 11:12:46.07386+00 | translation moa=967 status=reviewed modified=2022-11-01 11:12:46.064282+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Walterus del bois</cl> vniuersis sancte matris ecclesie filiis clericis et laicis <cl type="salutation">salutes in Christo</cl> .</cl><lb/> <cl type="disposition"><cl type="notification">Sciant tam posteri quam presentes</cl> me dedisse et concessisse et hac mea carta confirmasse<lb/> deo et sancto cuhtberto et monachis eius de dunelmo pro salute anime mee et
+                     vxoris mee<lb/> et antecessorum et successorum meorum tres acras terre in campo de karruderes ad
+                     taue<lb/>naus in puram et perpetuam elemosinam liberam et quietam ab omni seculari ser<lb/>uicio et consuetudine et exactione . ita libere et quiete sicuti ulla elemosina
+                     liberius<lb/> et quiecius ab aliquibus de meis paribus infra regionem scotie alicui sancto
+                     datur .</cl> <cl type="witnesses">His<lb/> Testibus . Ricardo filio meo . Alano nepote meo . Radulfo de Wausant . Roberto
+                     de<lb/> lithum . Padino preposito . Waltero nepote Will<ex>elm</ex>i de Spaine . Vhtredo de Neutona . et<lb/> multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Walter del Bois</cl>, to all sons of Holy Mother Church, clerk and lay, <cl type="salutation">greeting in Christ</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have given, granted, and by this my charter to have made firm, to God and
+                     Saint Cuthbert, and to his monks of Durham, for the
+                     salvation of my soul and of my wife's, and of my
+                     ancestors' and successors', three acres of land in the
+                     field of Carruthers at 'Tavenaus', in pure and everlasting
+                     alms, free and quit from all secular service, custom, and
+                     demand, as freely and quitly as any alms is most freely
+                     and quitly given to any saint by anyone from my
+                     territories within the region of Scotland.</cl> <cl type="witnesses">With these witnesses, Richard my son, Alan my nephew, Ralph of Wassand, Robert
+                  de Lithum, Paitin the provost, Walter the nephew of William
+                  of Spain, Uhtred of Newton, and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

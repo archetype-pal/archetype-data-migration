@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-864">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of TNA DL 36/3/219</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 09:22:37.005404+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">864</idno>
+        <idno type="textcontent">887</idno>
+        <idno type="transcription_textcontentxml">864</idno>
+        <idno type="translation_textcontentxml">865</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 36/3/219</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>TNA DL 36/3/219</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T09:22:37.005404+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T09:22:37.005404+00:00" status="published">transcription moa=864 status=live modified=2021-04-07 09:22:37.005404+00 | translation moa=865 status=live modified=2021-04-07 09:22:35.790463+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. <cl type="intitulatio">Rob’ de brus</cl> omnibus hominibus suis de valle <supplied>de Anand’</supplied> <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me reddidisse et concessisse Hug<ex>oni</ex> filio Ingenbaldi et<lb/> heredibus suis tenendum de me et heredibus meis totam terram quam pater suus
+                     tenuit in driuesdale . eadem seruitio et eisdem
+                     Libertatibus quibus pater suus Ingenbaldus eam ante ipsum
+                     tenuit . faciendo . s . mihi pro ea seruitium duarum
+                     villarum . et<lb/> in exercitu Regis  seruitium vnius Militis . <cl type="holding">Hanc terram predictam tenebit Hugo et heredes sui in nemore et plano .<lb/> in terra et aqua . In Monasteria et Molynd<supplied>in</supplied>o . et in omnibus Libertatibus quibus pater suus eam melius et Liberius et
+                        quietius<lb/> tenuit ante ipsum</cl> .</cl> <cl type="witnesses">Hiis T<ex>estibus</ex> . Domino Waldevo . Henrico murdac . Iuone de Sot’ . Will<ex>elm</ex>o de Gardino . Iuone de Crosobi .<lb/> Hadardo filio odonis . Rob<ex>erto</ex> de Hodolm’ . Hug<ex>one</ex> Mauleuer’ . Hug<ex>one</ex> de Corri . Ric’ de Crossebi . Radulfo<lb/> de Grenesbi . Hamelino . T . clerico .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Robert de Brus</cl> to all his men of Annandale <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have given again and granted to Hugh son of Ingenbald and his heirs to be
+                     held of me and my heirs the entire land which his father
+                     held in Dyfesdale, by the same service and the same
+                     liberties which his father Ingenbald held it before him,
+                     that is to say, by performing for it the service of two
+                     touns, and in the king's army the service of one knight. <cl type="holding">This aforesaid land shall Hugh hold, and his heirs, in wood and plain, in land
+                     and water, in monastery and mill, and in all liberties
+                     which his father well, freely, and quitly held it before
+                     him.</cl></cl> <cl type="witnesses">With these witnesses: the lord Waldeve, Henry Murdoch, Ivo de Sot', William de
+                  Jardin, Ivo of Crosbie, Udard son of Odo, Robert of Hoddom,
+                  Hugh Mauleverer, Hugh of Corrie, Richard of Crosbie, Ralph of
+                  Grainsby, Hamelin, T. the clerk.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

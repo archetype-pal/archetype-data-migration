@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-716">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/103</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:19:38.19818+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">716</idno>
+        <idno type="textcontent">727</idno>
+        <idno type="transcription_textcontentxml">716</idno>
+        <idno type="translation_textcontentxml">717</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/103</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/103</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T08:19:38.19818+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T08:19:38.19818+00:00" status="published">transcription moa=716 status=live modified=2021-04-07 08:19:38.19818+00 | translation moa=717 status=live modified=2021-04-07 08:19:33.840398+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. W. dei Gr<ex>ati</ex>a Rex Scott<ex>orum</ex> .</cl> Episcopis . Abbatibus . Comitis . Baron<ex>ibus</ex> . Iustic<ex>iis</ex> . vicecom<ex>itibus</ex> . Prepositis . Ministris .<lb/> et Omnibus probis Hominibus Tocius Terre Sue . Clericis et laicis . <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes<lb/> et futuri</cl> . me Concessisse . et Hac Carta mea Confirmasse . amicabilem compositionem
+                     factam .<lb/> apud Seleschr’ . in presentia mea . et in plena curia mea . ex una parte inter
+                     Com<ex>item</ex> . Patric<ex>ium</ex> . de Dunbar’ . consentitiente . Patric<ex>io</ex> . filio . et herede eius . et domum de Melros . ex altera parte .<lb/> super controuersia que uertebatur inter eos de pastura uersus occidentem a ledre
+                     . <cl type="holding">Quare uolo et<lb/> firmiter precipio . quatinus predicta compositio inter eos inde facta
+                        inuiolabiliter et inconcusse te<lb/>neatur  sicut Cyrographum inter eos inde factum  testatur . saluo seruicio meo</cl> .</cl> <cl type="witnesses">Test<ex>ibus</ex> . B . episcopo Mora<lb/>uien<ex>si</ex> . Rad’ . episcopo de Duhn’ . Will<ex>elmo</ex> . et Oliuer’ . Capellanis meis . Rob<ex>erto</ex> de london’ . filio . meo . D<ex>aui</ex>D . de lindes’ . et Geruas<ex>io</ex> . Auenel . Iustic’ . Will<ex>elmo</ex> de Bosch’ . et Hugon<ex>e</ex> . de sigill’ . Clericis meis . Roger<ex>o</ex> .<lb/> de mortem<ex>ar</ex> . Ad<ex>am</ex> . de Kingor . Ioh<ex>ann</ex>e de Maccuswel’ . Alex<ex>andro</ex> . de Sint’ .</cl> Apud Selesch’ . vi . die<lb/> Nouembris .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex>, by the grace of God king of the Scots,</cl> to bishops, abbots, earls, barons, justices, sheriffs, provosts, officials, and
+                     all worthy men of his entire land, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have granted, and by this my charter to have made firm, the friendly
+                     agreement made at Selkirk in my presence and in my full
+                     court, on the one side between Earl Patrick of Dunbar,
+                     with his son and heir, Patrick, consenting, and the house
+                     of Melrose on the other side, about the disagreement which
+                     arose between them concerning the pasture towards the west
+                     of Leader. <cl type="holding">Wherefore I will and firmly instruct that the said agreement between them made
+                     thereupon be inviolably and constantly held fast, just as
+                     the cyrograph made between them bears witness. Saving my
+                     service</cl>.</cl> <cl type="witnesses">As witnesses, B<ex>rice</ex> bishop of Moray, Ralph bishop of Down, William and Oliver my chaplains, Robert
+                     of London my son, David of Lindsay and Gervase Avenel,
+                     justices, William del Bois and Hugh de Sigillo my clerks,
+                     Roger de Mortimer, Adam of Kinghorn, John of Maxwell,
+                     Alexander of Synton.</cl> At Selkirk on the 6th day of November.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

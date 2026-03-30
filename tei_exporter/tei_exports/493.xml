@@ -1,0 +1,84 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-493">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/221</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 07:55:07.132242+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">493</idno>
+        <idno type="textcontent">500</idno>
+        <idno type="transcription_textcontentxml">493</idno>
+        <idno type="translation_textcontentxml">494</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/221</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/221</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T07:55:07.132242+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T07:55:07.132242+00:00" status="published">transcription moa=493 status=live modified=2021-04-07 07:55:07.132242+00 | translation moa=494 status=live modified=2021-04-07 07:55:03.22692+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus presentes litteras uisuris . uel audituris . <cl type="intitulatio">Philippus de Pethcox</cl> . <cl type="salutation">Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciatis</cl> me bono animo<lb/> concessisse monachis de Melr<ex>os</ex> . vt transferrent riuulum illum qui dicitur Presmunesburne . qui est diuisa<lb/> inter me et eosdem monachos . eo quod frequenter dampnum inferret pratis et
+                     segitibus eorum . <cl type="boundaries">Cuius riuuli<lb/> translatio incipit a Suineburne . et tendit uersus austrum sicut terra
+                        antiquitus culta et pratum<lb/> in simul conueniunt . usque ad uado ubi uia de lunkepeth descendit in
+                        Presmuneburne et a predicto uado usque ad Thorneburht
+                        et ita subtus Thorneburht usque in Broc .</cl> Totam uero<lb/> hanc terram et pratum que continentur infra prefatam translationem uersus ipsos
+                     Monachos<lb/> dedi et concessi . et hac mea Carta confirmaui deo et Ecclesie Sancte Marie de
+                     Melros et antedictis<lb/> Monach<ex>is</ex> ibidem deo seruientibus in liberam . puram . et perpetuam Elemosinam pro salute<lb/> domini mei Comitis . Patricii . et heredum eius . et pro salute anime mee . et
+                     vxoris mee . et omnium<lb/> Parentum nostrorum . quietam . et solutam . ab omni terreno seruicio . et
+                     Consuetudine et<lb/> exactione . seculari . <cl type="warrandice">Et ego et heredes mei manutenebimus predictis monachis hanc Elemo<lb/>sinam . et warantizabimus contra omnes homines et adquietabimus eam de omni
+                        seruicio<lb/> inperpetuum</cl> .</cl> <cl type="witnesses">Hiis Testibus . Simone et hug<ex>one</ex> Capellanis de Dunbar . Ric<ex>ardo</ex><lb/> Capellano de Stauntun . Patricio filio Adam de Witthusme . Rogero de<lb/> Merlay Berthin de Ruthelau . Adam eodem tempore Cellarario de Melros .<lb/> Waltero et Albino conuersis de Melros . et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall see or hear the present letters, <cl type="intitulatio">Philip of Pitcox</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me in good will to have allowed to the monks of Melrose that they may cross the
+                     stream called the Pressmennan Burn, which is the boundary
+                     between me and the monks, because frequently damage was
+                     occurring to their meadows and crops. <cl type="boundaries">The crossing of this stream begins at Swine Burn, and extends southwards in the
+                     same way as the land cultivated of old and the meadow come
+                     together, as far as the ford where the road from
+                     'Lunkepeth' descends into the Pressmennan Burn and from
+                     the siad ford as far as 'Thorneburht' and so below
+                     'Thorneburht' as far as the 'Broc'.</cl> This whole land and meadow indeed which is contained within the aforementioned
+                     crossing towards the monks themsleves I have given and
+                     granted, and by this my charter mande firm, to God and the
+                     church of St Mary at Melrose, and to the aforesaid monks
+                     in that place serving God, in free, pure, and perpetual
+                     alms, for the salvation of my lord, Earl Patrick, and his
+                     heirs, and for the salvation of my own soul, and of my
+                     wife's, and of all our forefathers', quit and released
+                     from every earthly service and custom and secular
+                     exaction. <cl type="warrandice">And I and my heirs shall maintain to the said monks this alms, and warrant
+                     against all men, and acquit it from every service for
+                     every.</cl></cl> <cl type="witnesses">With these witnesses: Simon and Hugh, chaplains of Dunbar; Richard the chaplain
+                  of Stenton; Patrick son of Adam of Whitehouse; Roger de
+                  Merlay; Bertin of Ruchlaw; Adam, at that time cellarer of
+                  Melrose; Walter and Albin, lay-brethren of Melrose; and many
+                  others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

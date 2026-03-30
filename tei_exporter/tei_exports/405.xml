@@ -1,0 +1,82 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-405">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/135</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:03:04.489623+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">405</idno>
+        <idno type="textcontent">409</idno>
+        <idno type="transcription_textcontentxml">405</idno>
+        <idno type="translation_textcontentxml">406</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/135</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/135</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:03:04.489623+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:03:04.489623+00:00" status="published">transcription moa=405 status=live modified=2021-04-06 15:03:02.617855+00 | translation moa=406 status=live modified=2021-04-06 15:03:04.489623+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-family: Junicode;"><cl type="address"><cl type="intitulatio">Ansel’ . de Wichetune</cl> . Uniuersis Sancte matris ecclesie filiis . tam laicis quam litteratis <cl type="salutation">Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciant tam posteri quam presentes</cl> me dedisse<lb/> et hac mea carta confirmasse deo et domui de melros et monachis ibidem deo
+                        seruientibus in perpetuam elemosinam . terram cum
+                        pratis<lb/> . . . perambulauimus . ego et Glai nepos Rob<ex>ert</ex>i Auenel . cum cell<ex>er</ex>ario et fratribus eiusdem loci . <cl type="boundaries">uidelicet sicut sulcus aratri ex parte aquilonali<lb/> <supplied>?tend</supplied>it de uia que iacet de hunedune uersus molle et uadit usque ad rupem . et de
+                           rupe usque ad fontem . et sicut idem sulcus uadit de
+                           fon<lb/><supplied>te</supplied> . . . et inde usque in burnam</cl> . et hanc elemosinam dedi eis pro anima D<ex>aui</ex>d regis . et Henrici comitis et Malcolmi regis . et pro salute<lb/> Will<ex>elm</ex>i Regis et D<ex>aui</ex>d fratis sui . et pro anima mea et uxoris mee et liberorum meorum . Preterea
+                        dedi eis in perpetuam elemosinam totam illam meam
+                        petariam<lb/> que est inter molope et berope et herdstrete que diuidit terram de molle et de
+                        hunum . Insuper dedi predictis monachis in perpetuam
+                        ele<lb/>mosinam in bosco meo de molope bushciam quantum potest unus equus portare
+                        singulis annis a pascha usque ad natiuitatem<lb/> <supplied>sancte Marie . Et</supplied> <cl type="holding">monachi de melros habebunt hanc meam elemosinam . et ceteras predictas et
+                        tenebunt de me et de heredibus meis quietas et<lb/> . . . seruitiis et omnibus consuetudinibus</cl> . <cl type="warrandice">et ego et heredes mei warantizabimus illas monachis erga omnes homines</cl> .</cl> <cl type="witnesses">His test<lb/> . . . abbate de neubotle . Rob<ex>erto</ex> auenel . et Geruasio filio . eius . Will<ex>elm</ex>o de Sumeruilla . Ioh<ex>ann</ex>e filio Horm . Will<ex>elm</ex>o filio eius . Glai nepote Rob<ex>ert</ex>i auenel .<lb/> Gernun . Nicol’ filio ade . Petro persona de Morbotle . W . . . de Hunum .</cl></span>
+        </p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Anselm of Whitton</cl> <cl type="salutation">sends greeting</cl> to all sons of Holy Mother Church, both lay and learned.</cl> <cl type="disposition"><cl type="notification">Let future and present know</cl> me to have given and by this my charter to have made firm to God and to the <ex>monastic</ex> house of Melrose, and to the monks serving God in that place, in everlasting
+                     alms the land with meadows <supplied>which</supplied> I and Glay nephew of Robert Avenel perambulated with the cellarer and brethren
+                     of the same place, <cl type="boundaries">namely, as the furrow of the plough extends on the north side from the road that
+                     lies from ‘Hunedune’ towards Mow and runs down to the
+                     rock, and from the rock down to the spring, and as the
+                     same trench runs from the spring . . . and from there as
+                     far as the burn</cl>; and this alms I have given to them for the soul of King David, and of Earl
+                     Henry and King Malcolm, and for the salvation of King
+                     William and David his brother, and for my own soul and my
+                     wife’s and my childrens’ <ex>souls</ex>. In addition I have given to them in everlasting alms my whole peatery that is
+                     between Mowhope and Berhope and ‘Herdstrete’ which divides
+                     the land of Mow and of Hownam. In addition I have given to
+                     the said monks in everlasting alms in my wood of Mowhope
+                     as much firewood as one horse can carry, each year from
+                     Ester until the Nativity <supplied>of Saint Mary. And</supplied> <cl type="holding">the monks of Melrose shall have this my alms, and the rest aforesaid, and they
+                     shall hold of me and of my heirs quit and <supplied>free from all</supplied> services and all customs;</cl> <cl type="warrandice">and I and my heirs shall warrant those to the monks in respect of all men.</cl></cl> <cl type="witnesses">With these witnesses . . . abbot of Newbattle; Robert Avenel, and Gervase his
+                  son; William de Somerville; John son of Orm, William his son;
+                  Glai nephew of Robert Avenel; Gernun; Nicholas son of Adam;
+                  Peter, parson of Morebattle; W . . . of Hownam.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

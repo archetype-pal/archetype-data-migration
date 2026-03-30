@@ -1,0 +1,88 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-146">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 47</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:03.719339+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">146</idno>
+        <idno type="textcontent">146</idno>
+        <idno type="transcription_textcontentxml">146</idno>
+        <idno type="translation_textcontentxml">147</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 47</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 47</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:28:03.719339+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:03.719339+00:00" status="published">transcription moa=146 status=live modified=2017-01-30 19:28:03.719339+00 | translation moa=147 status=live modified=2016-06-07 14:47:47.651369+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis sancte matris ecclesie filiis <cl type="intitulatio">Walterus iuuenis de Rokesburg’</cl> . <cl type="salutation">salutem in domino</cl></cl> . <cl type="notification">Nouerit uniueritas uestra</cl> <cl type="disposition">me concessisse ⁊ quietas clamasse Rannulfo archidiacono de sancto andrea ⁊
+                  successoribus <lb/> eius inperpetuum . sconin . ⁊ balekathelin . ⁊ terram quam iacet ex australi
+                     parte urbis sancti andree . inter torrentes quas terras
+                     pie memorie Walterus archidiaconus eiusdem loci auunculus
+                     meus tenuit ⁊ possedit in uita sua . <lb/> quas etiam post eius tempora ego ipse habui ⁊ possedi . Resignaui etiam predicto
+                     . R . archidiacono totum ius quod in predictis terris
+                     habui . siue ex dono . siue ex concessione . siue ex
+                     confirmatione pie recordationis episcopi <lb/> hugonis . siue auunculi mei Walteri archidiaconi . ⁊ cartas quas de terris illis
+                     habui  eidem prenominato . R . reddidi cum scirem illas
+                     ad archidiaconatum sancti andree pertinere .</cl> <cl type="sealing">⁊ ut hec concessio ⁊ resignatio <lb/> rata sit ⁊ inconcussa infuturum  illas corroboraui appositione sigillorum
+                     domini . R . Brethinensis episcopi . ⁊ H . abbatis de
+                     aberbruthot . ⁊ mei . dependentium a presenti pagina .
+                     volens tenori eius ⁊ continentie <lb/> fidem haberi in posterum .</cl> <cl type="witnesses">his testibus . R . episcopo brethinensi . H . abbati de aberbruthot . ⁊ conuentu
+                  eiusdem loci . ... archidiacono brethinensi . Will<ex>elm</ex>o ⁊ petro capellanis domini brethinensi . H<ex>e</ex>nrico ca<lb/>pellano de munros . Hervico persona de insula brioci . Alano clerico de munros .
+                     Rogero de Inuerkethin . Herb<ex>er</ex>to de munros . Willelmo filio Ede . Sthephano le mare. Rob<ex>er</ex>to de <lb/> Hales . ⁊ multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, <cl type="intitulatio">Walter Young of Roxburgh</cl> <cl type="salutation">sends greeting in the Lord</cl>:</cl> <cl type="notification">You should all know</cl> t<cl type="disposition">hat I have granted and quitclaimed to Ranulf, archdeacon of St Andrews, and to
+                  his successors in perpetuity, Scoonie, and Balkaithley, and
+                  the land that lies on the south side of the city of St
+                  Andrews, between the burns, the lands which Walter of blessed
+                  memory, archdeacon of the same place, my uncle, held and
+                  possessed during his lifetime, which after his time I myself
+                  also had and possessed. I have also resigned to the aforesaid
+                  archdeacon, Ranulf, the whole right that I had in the
+                  aforesaid lands, either from gift, or from grant, or else
+                  from confirmation of Bishop Hugh of blessed memory, or my
+                  uncle Archdeacon Walter; and I returned the charters which I
+                  had concerning those lands to the same aforenamed Ranulf when
+                  I knew them to belong to the archdeaconry of St Andrews;</cl> <cl type="sealing">and so that this grant and resignation be established and firm for the future, I
+                  have reinforced them by the application of the seals of the
+                  lord R(alph), bishop of Brechin, and H(enry), abbot of
+                  Arbroath, and mine, hanging from the present page, wishing
+                  faith to be had in its wording and content in the future.</cl> <cl type="witnesses">With these witnesses: R(alph), bishop of Brechin; H(enry), abbot of Arbroath,
+                  and the religious community of the same place; ... archdeacon
+                  of Brechin; William and Peter, chaplain of the lord [bishop]
+                  of Brechin; Henry, chaplain of Montrose; Hervey, parson of
+                  Inchbraoch; Alan, clerk of Montrose; Roger of Inverkeithing;
+                  Herbert of Montrose; William son of Áed; Stephen the Mair;
+                  Robert of Hailes; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

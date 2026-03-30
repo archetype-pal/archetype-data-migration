@@ -1,0 +1,86 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-762">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 5967</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 21:10:50.635281+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">762</idno>
+        <idno type="textcontent">775</idno>
+        <idno type="transcription_textcontentxml">762</idno>
+        <idno type="translation_textcontentxml">763</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 5967</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 5967</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T21:10:50.635281+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T21:10:50.635281+00:00" status="approved">transcription moa=762 status=reviewed modified=2022-10-31 21:10:50.627161+00 | translation moa=763 status=reviewed modified=2022-10-31 21:10:50.635281+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi fidelibus hoc scriptum visuris uel Audituris  <cl type="intitulatio">laurencius filius Will<ex>elm</ex>i filius Gocelini de Berewic</cl> <cl type="salutation">salutem</cl></cl> .<lb/> <cl type="disposition"><cl type="notification">Nouerit vniuersitas uestra</cl> me dedisse . Concessisse . et hac presenti carta mea Confirmasse Domino Ricardo
+                     Priori et Conuentui<lb/> de Coldingh’ et eorum successoribus Inperpetuum vnam Bouatam terre Interritorio
+                     de Prendergest’ de terra defensabili . illam silicet<lb/> Bouatam terre uersus orientem  quam aldanus filius Waldeui tenuit . et
+                     Quindecim acras terre que erant quondam de domin<lb/>ico Ioh<ex>ann</ex>is de Neuill<ex>a</ex> . silicet ad thornedales sex acras terre . ad Backestanesrig  duas acras terre
+                     et dimidiam . ad Crumbedales<lb/> tres acras terre et dimidiam . ad schortelandes  vnam acram terre et dimidiam .
+                     ad lillesaccre  vnam accram . et ad crumbedales<lb/> vnam dimidiam accram terre . quas habui de dono Roberti fratris mei pro quadam
+                     suma pecunie quam dictus Prior mihi In ma<lb/>gna necessitate permanibus pacauit . <cl type="holding">Habendas et Tenendas dictis priori et Conuentui de coldingh’ et eorum
+                     successoribus libere .<lb/> et quiete In omnibus  sicud plenius et melius Continetur In carta quam dictus
+                        Robertus frater meus habuit ex collacione<lb/> Ioh<ex>ann</ex>is de Neuill’ congnati nostri de Eodem tenemento confecta .</cl> <cl type="warrandice">Ego uero et heredes mei dictam donacionem et concessionem dictis<lb/> priori et Conuentui et eorum successoribus Inperpetuum Warantizabimus .
+                        adquietabimus . et defendemus contra omnes homines et
+                        fem<lb/>inas</cl> .</cl> <cl type="sealing">In Cuius Rei Testimonium  presenti scripto sigillum meum apposui .</cl> <cl type="witnesses">Testibus . Domino Will<ex>elm</ex>o de Mordingtona . Domino dauid de<lb/> Haddingtona . Domino Radulfo nobil<ex>i</ex> . Domino Willelmo de scremerstona . Ada de prendergest’ . Ada filio Ioh<ex>ann</ex>is de superyoryeytona . Thom<ex>a</ex> de Nesb<lb/>yt . Bertramo de Riston . Patricio scotto . Gilberto de Lumesden . Ioh<ex>ann</ex>e filio Ingerami . Gregorio de Betyoc . et ALIIS .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful who shall view or hear this written document, <cl type="intitulatio">Laurence, son of William son of Gocelin of Berwick,</cl> <cl type="salutation">sends greeting.</cl></cl> <cl type="disposition"><cl type="notification">Know me, all of you,</cl> to have given, granted, and by this my present charter to have made firm, to the
+                     lord prior, Richard, and the convent of Coldingham and
+                     their successors for ever, one oxgang of land in the
+                     territory of Prenderguest from the fortified land; namely
+                     that oxgang towards the east which Haldan son of Waldef
+                     held; and fifteen acres of land that were once in the
+                     demesne of John of Neville, that is, six acres of land at
+                     Thornedales, two and a half acres of land at
+                     Backestanesrig, three and a half acres at Crumbedales, one
+                     and a half acres at Schortelandes, one acre at Lillesacre,
+                     and a half-acre at Crumbedales, which I had from the gift
+                     of Robert my brother in return for a certain sum of money
+                     which the said Prior paid me in great necessity; <cl type="holding">for the said prior and convent of Coldingham and their successors to have and to
+                     hold freely and quitely in all things, just as it is the
+                     more fully and better contained in the charter which the
+                     said Robert my brother had from the conferment of John of
+                     Neville, our cousin, drawn up in respect of the same
+                     holding.</cl> <cl type="warrandice">And I and my heirs shall warrant, acquit, and defend the said donation and grant
+                     to the said prior and convent and their successors for
+                     ever against all men and women.</cl></cl> <cl type="sealing">As witness of this matter I have applied my seal to the present document.</cl> <cl type="witnesses">As witnesses, the lord William of Mordington, the lord David of Haddington, the
+                  lord Ralph Noble, the lord William of Scremerston, Adam of
+                  Prenderguest, Adam son of John of Over Ayton, Thomas of
+                  Nisbet, Bertram of Reston, Patrick Scott, Gilbert of
+                  Lumsdaine, John son of Ingram, Gregory of Bethock, and
+                  others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,71 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-122">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 41</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:00.955657+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">122</idno>
+        <idno type="textcontent">122</idno>
+        <idno type="transcription_textcontentxml">122</idno>
+        <idno type="translation_textcontentxml">123</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 41</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 41</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:28:00.955657+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:00.955657+00:00" status="published">transcription moa=122 status=live modified=2017-01-30 19:28:00.955657+00 | translation moa=123 status=live modified=2016-06-07 13:04:55.077741+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte matris ecclesie filiis . <cl type="intitulatio">Saerus de quinci</cl> . <cl type="salutation">Salutem</cl></cl> . <cl type="notification">Sciant omnes tam presentes quam futuri</cl> . <cl type="disposition">me concessisse ⁊ hac mea Carta confir<lb/>masse deo ⁊ ecclesie Sancti Andree apostoli de Scotia . ⁊ Canonicis ibidem deo
+                     seruientibus ⁊ seruituris Dauac Icthar Hathyn per <lb/> rectas diuisas suas . quam mater mea dedit eis . In pascuis . in pratis . in
+                     bosco . in plano . in moris . in aquis . cum omnibus
+                     aisiamentis ad <lb/> terram illam pertinentibus . Tenendam de me ⁊ de heredibus meis . in perpetuam
+                     elemosinam . Pro Salute anime mee ⁊ predecessorum <lb/> ⁊ Successorum meorum . Concedo etiam eis commune pasturam per totam Hathyn . <cl type="holding">Quare uolo ut predicti Canonici predictam elemo<lb/>sinam habeat teneant ⁊ Possideant ita libere quiete ⁊ honorifice  sicut aliquam
+                        elemosinam liberius quietius ⁊ honorificentius te<lb/>nent ⁊ Possident . Sicut Carta Matris mee testatur</cl> .</cl> <cl type="witnesses">His testibus . Roberto de quinci patre meo . Stephano persona de locres . <lb/> Alano Capellano . Joh<ex>ann</ex>e senescaldo . Will<ex>elm</ex>o Capellano Vthing’ . fratre eius . Constant’ . ⁊ Patricio . filiis Nesii aui
+                     mei . Dunc’ filio Emel’ . Sywardo .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, Saer de Quincy sends greeting:</cl> <cl type="notification">Let all people know, present as well as future,</cl> <cl type="disposition">that I have granted and by this my charter made firm, to God and to the church
+                  of St Andrew the apostle in Scotia, and to the canons serving
+                  God there now and in the future, the davoch of lower Ethie by
+                  its right marches, which my mother gave to them, in pastures,
+                  in meadows, in wood, in plain, in moors, in waters, with all
+                  easements pertaining to that land; to be held of me and my
+                  heirs in perpetual alms, for the salvation of my soul and my
+                  ancestors’ and successors’ souls. I also allow them common
+                  pasture throughout the whole of Ethie. <cl type="holding">Wherefore I will that the aforesaid canons shall have, hold and possess the
+                     aforesaid alms as freely, quietly and honourably as they
+                     freely, quietly and honourably hold and possess any alms,
+                     just as the charter of my mother bears witness</cl>.</cl> <cl type="witnesses">With these witnesses: Robert de Quincy, my father; Stephen, parson of Leuchars;
+                  Alan the chaplain; John the steward; William the chaplain;
+                  Uhting his brother; Constant<ex>ine</ex> and Patrick, sons of my grandfather, Ness; Duncan, son of Hamelin; Siward.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-552">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/256</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:34.037508+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">552</idno>
+        <idno type="textcontent">560</idno>
+        <idno type="transcription_textcontentxml">552</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/256</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/256</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:34.037508+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:34.037508+00:00" status="draft">transcription moa=552 status=draft modified=2017-01-30 19:28:34.037508+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><cl type="address">Omnibus sancte matris ecclesie filiis presentibus et futuris . <cl type="intitulatio">Robertus de Ver’ Comes Oxonie</cl> <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me dedisse . et concessisse . et hac presenti car<lb/>ta mea confirmasse . deo et ecclesie sancte Marie de Melros . et monachis ibidem
+                        deo seruientibus . pro animabus patris . et matris mee
+                        . et omnium antecessorum<lb/> meorum . et successorum  et pro salute mea . in liberam . et puram . et
+                        perpetuam elemosinam . quatuor acras terre arabilis in
+                        territorio veteris Roxburg’<lb/> super Twedeflat sicut iacent in vno tenemento per petras ad diuisas positas . et
+                        a me et probis hominibus meis deambulatas . Hanc autem
+                        dona<lb/>cionem feci ego R . apud Melros in presencia conuentus . et multorum hominum
+                        meorum . et aliorum . et per vnam virgam super magnum
+                        altare Monasterii ibi<lb/>dem optuli . <cl type="holding">Quare uolo et concede ut predicti Monachi hanc elemosinam teneant . et perpetuo
+                        tempore possideant absque omni terreno seruicio et
+                        consu<lb/>etudine . et exaccione seculari . ita libere et quiete . plenarie et honorifice
+                            sicut aliquam aliam elemosinam liberius quiecius .
+                           plenius et honorificencius<lb/> tenent et possident .</cl> <cl type="warrandice">Et ego et heredes mei warantizabimus eis eandem elemosinam contra omnes homines
+                        inperpetuum</cl> .</cl> <cl type="witnesses">Hiis testibus . domino . W .<lb/> Glasguensi episcopo . R . decano de Alnecrom . Radulpho constabulario de
+                        Roxburg’ . Iohanne capellano de Bonkil . Gregorio de
+                        Ruthirfurd . Helia<lb/> persona de veteri Roxburg’ . Ricardo de hetoun . Bernardo de Hawden . et multis
+                        aliis .</cl></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

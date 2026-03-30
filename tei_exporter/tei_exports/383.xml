@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-383">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/89</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 13:21:55.614293+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">383</idno>
+        <idno type="textcontent">387</idno>
+        <idno type="transcription_textcontentxml">383</idno>
+        <idno type="translation_textcontentxml">384</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/89</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/89</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T13:21:55.614293+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T13:21:55.614293+00:00" status="published">transcription moa=383 status=live modified=2021-04-06 13:21:15.579599+00 | translation moa=384 status=live modified=2021-04-06 13:21:55.614293+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">W. Rex Scott'</cl> . Omnibus probis hominibus tocius terre sue . clericis . et laicis . <cl type="salutation">salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciant presentes . et futuri</cl> . me concessisse . et hac carta<lb/> mea confirmasse . deo . et ecclesie Sancte Marie de Mailros . et Monachis ibidem
+                     deo seruientibus . dimidiam carucatam terre quam Ric'.<lb/> de london' eis dedit in lessedwin . <cl type="holding">tenendam in liberam . et perpetuam elemosinam . ita bene . et plenarie . quiete
+                     . et honorifice <lb/> sicut carta ipsius Ricardi eis testatur</cl> .</cl> <cl type="witnesses">t<ex>estibus</ex> D<ex>aui</ex>D . fratre meo . Nichol<ex>ao</ex> cancellario . Alano filio dapiferi . Will<ex>elm</ex>o de haia .<lb/> hugone de exart<ex>is</ex> . Will<ex>elm</ex>o de Mortem<ex>er</ex> . Rob<ex>erto</ex> filio Iordani .</cl> Apvd Seleschirche .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex>, king of the Scots,</cl> to all the worthy men of the whole of his land, clerk and lay, <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have granted, and by this my charter to have made firm, to God, and to the
+                     church of St Mary at Melrose, and to the monks serving God
+                     in that place, the half ploughgate of land which Richard
+                     of London has given to them in Lessudden, <cl type="holding">to be held in free and everlasting alms, as well and fully, quitely and
+                     honourably, as the charter of Richard himself to them
+                     bears witness</cl>.</cl> <cl type="witnesses">As witnesses, David my brother, Nicholas the chancellor, Alan son of the
+                  Steward, William de la Haye, Hugh de Essarts, William de
+                  Mortimer, Robert son of Jordan.</cl> At Selkirk.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,209 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-515">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/39</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2024-03-05 14:35:59.762473+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">515</idno>
+        <idno type="textcontent">522</idno>
+        <idno type="transcription_textcontentxml">515</idno>
+        <idno type="translation_textcontentxml">328</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/39</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/39</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2024-03-05T14:35:59.762473+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2024-03-05T14:35:59.762473+00:00" status="published">transcription moa=515 status=live modified=2021-04-06 11:28:22.649595+00 | translation moa=328 status=live modified=2024-03-05 14:35:59.762473+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte matris ecclesie filiis . tam presentibus quam futuris . <cl type="intitulatio">Rob’ Auenel</cl> <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant omnes quod</cl> ego Rob’ Auenel . annuente domino meo Will<ex>elm</ex>o Rege Scott’ . per concessum et assensum Geruasii heredis mei<lb/> concessi et dedi . et hac mea carta confirmaui deo et ecclesie sancte Marie de
+                     Meylros . et Monachis ibidem deo seruientibus . terram
+                     meam de Erchedale . scilicet Tumloher . et Weidkerroc . in
+                     puram et liberam<lb/> et perpetuam elemosinam . pro anima domini mei Regis D<ex>aui</ex>d . qui eandem terram dedit mihi pro seruicio meo . et pro anima comitis Hen<ex>rici</ex> . et Malcolmi Regis . et pro anima domini mei Willelmi Regis Scott’ . et omnium<lb/> antecessorum et successorum suorum . et pro anima mea . et Sibbille uxoris mee .
+                     et pro animabus omnium heredum et parentum meorum . Hanc
+                     terram . scilicet Tumloher et Weidkerroc . dedi predictis<lb/> monachis . et incartaui . <cl type="boundaries">per has diuisas . videlicet sicut duo esches conueniunt . et ita sursum per blac
+                     esch . usque ad primum torrentem qui descendit de
+                     hertesheued . et de illo torrente sursum per<lb/> medium cundos montium . inter ipsos et Rob<ex>ertum</ex> de brus . sicut aque descendunt uersus ipsos monachos . Et ita inter forestam de
+                        Thimei et ipsos . per medium cundos montium . sicut
+                        aque descendunt<lb/> uersus ipsos . Similiter inter terram de bordewich et ipsos monachos . per
+                        medium cundos montium . sicut aque descendunt uersus
+                        ipsos . Et ita usque ad terram de hawic . et inde in
+                        transuersum per medium<lb/> cundos montium quod est inter meipsum et predictos monachos . sicut aque
+                        descendunt uersus ipsos . Quod cundos se extendit per
+                        desursum harewude . et sic descendit uesque ubi duo
+                        esches conueiunt .</cl> <cl type="holding">Totam autem hanc prenominatam terram . et possessionem . et quicquid continetur
+                     infra has prescriptas diuisas . in bosco et plano . in
+                     pratis et pasturis . in aquis et mariscis . et in omnibus
+                     utilitatibus . et<lb/> aisiamentis . concessi et dedi . et confirmaui antedictis monachis . in puram et
+                        perpetuam elemosinam . tenore perpetuo tenendam et
+                        possidendam de me et heredibus meis . Liberam et
+                        quietam<lb/> ab omnibus seruiciis . et ab omni exactione seculari . sicut liberius et
+                        quietius . plenius et honorificentius . aliqua
+                        elemosina teneri et possideri potest .</cl> <cl type="warrandice">Et si forte predictam elemosinam calumpniari aliquis<lb/> uoluerit . ego et heredes mei omni calumpnianti respondebimus . et sufficienter
+                        defendemus eam predictis monachis . et warantizabimus .</cl> Hoc autem sciendum quod mihi et heredibus meis retinui tantum<lb/> ceruum et ceruam . porcum et capriolum, infra has prescriptas diuisas . absque
+                     dampno tamen et lesione segetum . pratorum . sepium .
+                     pecudum . animalium . et omnium aliarum possessioneum .
+                     eorundem monachorum .<lb/> Ita tamen . quod ego et heredes mei forestarium non habebimus infra has prefatas
+                     diuisas . verumptamen habebimus infra easdem diuisas
+                     latrones . et accipitrum et sparueriorum nidos . et
+                     custodes ad illos<lb/> custodiendos . et forseueras . Sciendum etiam quod predicti monachi habebunt et
+                     possidebunt totam predictam terram liberam et quietam a me
+                     et heredibus meis . salua predicta saluagina mea . et<lb/> nidis accipitrum et sparueriorum . Et utentur omni hoc tenemento pro libitum et
+                     uoluntate sua . sicut melius et utilius . sibi et
+                     fratribus suis . et seruientibus et aueriis suis .
+                     proficere uisum fuerit . Excepto<lb/> quod non uenabuntur ibi cum motis et cordis . nec alios ducet ad uenandum . nec
+                     pedicas ibi ponent . nisi ad capiendos lupos . neque
+                     accipient infra has diuisas . accipitrum et sparueriorum
+                     nidos .<lb/> Preterea sciendum quod monachi prenominati solebant reddere mihi annuatim
+                     quinque marcas . quando dedi eis primo hanc terram . sed
+                     post aliquot annos . ad honorem dei et pro salute anime
+                     mee remisi<lb/> et dedi eis quintam marcam in elemosinam . ad procurandum lumen ante altare
+                     sancte Marie . imperpetuum . Deinde post obitum sibille
+                     uxoris mee . per assensum et concessum Geruasii heredis
+                     mei . et per consilium<lb/> amicorum meorum . ex toto remisi et dedi deo et ecclesie sancte Marie de meylros
+                     et monachis ibidem deo seruientibus in puram et perpetuam
+                     elemosinam . et quietas clamaui ipsas quatuor marcas .
+                     quas<lb/> pluribus annis mihi reddere solebant . Hanc igitur pensionem . et totam
+                     prescriptam possessionem . assentiente et concedente
+                     Geruasio herede meo . dedi deo et predictis monachis . in
+                     liberam et puram . et<lb/> perpetuam elemosinam . quietam et solutam ab omni seruicio et exactione seculari
+                     . Et ut hec mea elemosina stabiles et firma sit
+                     imperpetuum . nec ullo modo possit in irritum duci .
+                     renouaui<lb/> et feci eisdem monachis hanc meam cartam . in tempore domini mei Will<ex>elm</ex>i Regis scott<ex>orum</ex> . et dominus meus Will<ex>elmu</ex>s rex . petitione et rogatu meo . hanc meam donationem et elemosinam carta<lb/> sua confirmauit . sicut dominus meus Rex Malcolmus . rogatu meo illam priorem
+                     concessit . et carta sua confirmauit . Prioris ante
+                     donationis mee et carte quam feci eis tempore domini mei
+                     Malcol<ex>mi</ex><lb/> regis .</cl> <cl type="witnesses">hi sunt testes . Ric . episcopus sancti And’ . Engelr’ episcopus de Glasg’ .
+                  Greg’ . episcopus de Dunkel’ . Gaufridus abbas de dunferm’ .
+                  Ioh<ex>anne</ex>s abbas de Kelcho’ . Aluredus abbas de striuel’ . Nicholaus<lb/> cancellarius . Math<ex>eu</ex>s archidiaconus . Walleuus comes . Dunec’ . comes . Ferted comes . Malcomus
+                     comes . Ric’ de morauill’ . Walterus filius Alani . D<ex>aui</ex>d olifard . Rob’ de quinci . Ric’ cumin .<lb/> Bernardus filius brie’ . Rob’ de berkel’ . Walterus clericus . Ric’ clericus .
+                     Walterus de berkel’ . Sed post ea tempore domini mei Will<ex>elm</ex>i Regis . quando hec donatio renouata est . et firma predicta<lb/> ex toto remissa est . isti etiam testes sunt . Iocelinus episcopus Glasg’ .
+                     Symon archidiac’ . hugo paruus clericus regis . Will<ex>elmu</ex>s senescallus episcopi . Walterus clericus episcopi . Dauid comes . frater Regis
+                     . Scot’ . Alanus<lb/> senescallus Regis Scot’ . Robertus le croc miles ipsius . Alanus filius hug<ex>onis</ex> . senescallus comitis . D<ex>aui</ex>d . Herbertus de arches . Will<ex>elmu</ex>s de aldri . Geruasius de eincurt . nepos domini Rob<ex>er</ex>ti . Glai nepos ipsius .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of holy Mother Church, as well present as future, <cl type="intitulatio">Robert Avenel</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let all people know that</cl> I, Robert Avenel, with my lord William king of the Scots approving, by the
+                     consent and agreement of my heir, Gervase, have granted
+                     and given, and by this my charter made firm, to God and to
+                     the church of St Mary at Melrose, and to the monks in that
+                     place serving God, my land of Eskdale, that is,
+                     Tomleuchar, and Watcarrick, in pure and free and
+                     everlasting alms, for the soul of my lord, King David, who
+                     gave the same land to me in return for my service, and for
+                     the soul of Earl Henry, and of King Malcolm, and for the
+                     soul of my lord William, king of the Scots, and of all
+                     their predecessors and successors, and for my own soul,
+                     and of Sibyl my wife, and for the souls of all my heirs
+                     and ancestors. This land, that is Tomleuchar and
+                     Watcarrick, I have given to the aforesaid monks and
+                     written in a charter, <cl type="boundaries">by these boundaries, namely, as the two Esks meet, so upwards by the Black Esk
+                     as far as the first stream that descends from Hartside;
+                     and from that stream, upwards through the middle ridge of
+                     the mountains, between them and Robert de Brus, as the
+                     waters descend towards the monks themselves; and so
+                     between the forest of <ex>Thimeus</ex> and themselves, by the middle ridge of the mountains, as they descend towards
+                        themselves; similarly between the land of <ex>Bordewich</ex> and the monks themselves, by the middle ridge of the mountains, as the waters
+                        descend towards them; and so as far as the land of <ex>Hawich</ex>, and thence across by the middle ridge of the mountains, that is, between
+                        myself and the aforesaid monks, as the waters descend
+                        towards them; this ridge extends from above <ex>Harewude</ex>, and so descends to where the two Esks meet.</cl> <cl type="holding">And this whole aforenamed land, possession, and whatever is contained within
+                     these aforewritten boundaries, in wood and plain, in
+                     meadows and pastures, in waters and marshes, and in all
+                     benefits and easements, I have granted and given, and made
+                     firm to the aforesaid monks, in pure and everlasting alms,
+                     as a perpetual holding to be held and possessed of me and
+                     my heirs, free and quit from all services, and from every
+                     secular exaction, as freely and quitely, fully and
+                     honourably, as any alms is able to be held and possessed.</cl> <cl type="warrandice">And if by chance anyone should wish to claim the aforesaid alms, I and my heirs
+                     shall answer all claimants, and sufficiently protect and
+                     warrant it for the aforesaid monks. </cl>This is also to be known: that I have retained for myself and my heirs only deer
+                     and hind, swine and roebuck, within the aforenamed
+                     boundaries, without harm and injury of crops, meadows,
+                     hedges, livestock, animals, and all the other possessions
+                     of the same monks; provided, however, that I and my heirs
+                     shall not have a forester within the described boundaries,
+                     nevertheless we shall have within the same boundaries
+                     robbers, and eyries of hawks and sparrow-hawks, and the
+                     guards to guard them, and trespassers; and it should be
+                     known that the aforesaid monks shall have and possess the
+                     whole aforesaid land, free and quit from me and my heirs,
+                     saving my aforesaid wild game, and the eyries of hawks and
+                     sparrow-hawks; and the monks shall make use of all this
+                     tenement according to their will and pleasure, just as it
+                     shall seem to them best and most useful to be of use to
+                     themselves, their brethren, their servants and livestock.
+                     With the exception that they shall not hunt there with
+                     packs of hounds and ropes, nor bring others there for
+                     hunting, nor set traps there, unless for catching wolves;
+                     and they shall not take the eyries of hawks and
+                     sparrow-hawks within these boundaries. It should be known
+                     in addition that the aforenamed monks were accustomed to
+                     render to me yearly five merks when I first gave them this
+                     land; but after some years, for the honour of God and for
+                     the salvation of my soul, I have remitted and given them
+                     the five merks in alms to provide for the light before the
+                     altar of Saint Mary, for ever; and by the advice of my
+                     friends, I have entirely remitted and given to God and the
+                     church of St Mary at Melrose, and to the monks serving God
+                     in that place, in pure and everlasting alms, and
+                     quitclaimed the four merks which for many years they were
+                     accustomed to render to me. Therefore this payment, and
+                     the whole aforewritten possession, being agreed and
+                     allowed by my heir, Gervase, I have given to God and the
+                     aforesaid monks, in free and pure and everlasting alms,
+                     quit and released from every service and secular exaction.
+                     And that this my alms be established and firm for ever and
+                     not able to be brought by any means to nought, I have
+                     renewed and made for the same monks this my charter in the
+                     time of my lord William, king of the Scots, and my lord
+                     William the king, at my petition and request, has
+                     confirmed this my donation and alms by his own charter,
+                     just as my lord, King Malcolm, previously granted it at my
+                     request, and confirmed by his own charter.</cl> <cl type="witnesses">These are the witnesses of my first donation and charter which I made for them
+                  in the time of King Malcolm: Richard, bishop of St Andrews;
+                  Ingram, bishop of Glasgow; Gregory, bishop of Dunkeld;
+                  Geoffrey, abbot of Dunfermline; John, abbot of Kelso; Aelred,
+                  abbot of Stirling; Nicholas the chancellor; Matthew the
+                  archdeacon; Waldef the earl; Duncan the earl; Ferteth the
+                  earl; Malcolm the earl; Richard de Morville; Walter son of
+                  Alan; David Oliphant; Robert de Quincey; Richard Comyn;
+                  Bernard son of Brian; Robert of Berkeley; Walter the clerk;
+                  Richard the clerk; Walter of Berkeley. But after that, in the
+                  time of my lord William the king, when this donation was
+                  renewed, and the aforesaid ferm was remitted in full, these
+                  are also the witnesses: Jocelin, bishop of Glasgow; Simon,
+                  archdeacon; Hugh Small, clerk of the king; William, steward
+                  of the bishop; Walter, clerk of the bishop; David the earl,
+                  brother of the king of the Scots; Alan, steward of the king
+                  of the Scots; Robert le Croc, my knight; Alan son of Hugh,
+                  the earl's steward; David, Herbert d'Arches; William de
+                  Aldri; Gervase de Eincurt, nephew of the lord Robert; Glay,
+                  nephew of the same.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

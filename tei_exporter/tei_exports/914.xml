@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-914">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 607</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:22:01.995695+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">914</idno>
+        <idno type="textcontent">939</idno>
+        <idno type="transcription_textcontentxml">914</idno>
+        <idno type="translation_textcontentxml">915</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 607</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 607</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:22:01.995695+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:22:01.995695+00:00" status="approved">transcription moa=914 status=reviewed modified=2022-11-01 16:22:01.984796+00 | translation moa=915 status=reviewed modified=2022-11-01 16:22:01.995695+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">W . dei gratia</cl> . Rex Scott’ . Iusticiis suis et vicecomiti suo de Berewic’ . <cl type="salutation">Salutem</cl> .</cl> <cl type="injunction">Prohibeo<lb/> firmiter . Ne Seruientes uicecomitatus mei de Berewic . Alias habeant
+                     Consuetudines<lb/> aut alias faciant exactiones In Elemosina mea de Coldingham . et Coldingham .
+                     sire  de<lb/> Placitis et querelis quas ipsi mouent  quam seruientes mei aliorum
+                     vicecomitatuum meorum<lb/> Habent in aliis elemosinas meis in terra mea .</cl> <cl type="witnesses">Test<ex>ibus</ex> Engalramus . Episcopo de Glasg’ . Nicolao Can<lb/>cellario . D<ex>aui</ex>d olifard’ . Iustic<ex>io</ex> . Hug<ex>one</ex> . Ridel . Roberto Auenel .</cl> <cl type="dating">Apud Rokesburg’ .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex> by the grace of God king of the Scots</cl> to his justices and sheriff of Berwick <cl type="salutation">greeting</cl>.</cl> <cl type="injunction">I firmly forbid that the sergeands of my sheriffdom of Berwick should have any
+                  customs or make any demands in my alms at Coldingham and
+                  Coldinghamshire from the pleas and plaints which they move,
+                  which my sergeands of my other sheriffdoms have in my other
+                  alms in my land.</cl> <cl type="witnesses">As witnesses, Ingram bishop of Glasgow, Nicholas chancellor, David Oliphant
+                  justice, Hugh Ridel, Robert Avenel.</cl> <cl type="dating">At Roxburgh. </cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

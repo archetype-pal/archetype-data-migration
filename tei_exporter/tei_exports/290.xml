@@ -1,0 +1,84 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-290">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/32</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-07-20 11:52:24.465795+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">290</idno>
+        <idno type="textcontent">290</idno>
+        <idno type="transcription_textcontentxml">290</idno>
+        <idno type="translation_textcontentxml">291</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/32</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/32</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-07-20T11:52:24.465795+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-07-20T11:52:24.465795+00:00" status="published">transcription moa=290 status=live modified=2021-07-20 11:52:24.465795+00 | translation moa=291 status=live modified=2021-04-06 10:06:03.155095+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>Dunekanus</persName> filius <persName>Gilleberti</persName> filii <persName>Fergus</persName> . Comes de Karic </cl> Omnibus probis hominibus Regni Scotie  Clericis . et Laicis .<lb/> <cl type="salutation">Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Sciant tam posteri quam presentes</cl>  me concessisse et dedisse . et hac mea Carta confirmasse deo . et ecclesie<lb/> de Melros . et monachis ibidem deo seruientibus . totam donationem . quam ego .
+                     et <persName>Rog<ex>er</ex></persName> de Scalebroc miles meus eis<lb/> concessimus . et dedimus . scilicet totam terram de Drumentheisuiene et de Aleb<ex>ur</ex>c . et de Althefur . per easdem diuisas que<lb/> in Carta ipsius <persName>Rog<ex>er</ex>i</persName> continentur . cum Omnibus aisiamentis eiusdem terre . in liberam . et puram . et
+                     perpetuam elemosinam .<lb/> ita libere . et quiete . plenarie . et honorifice sicut aliqua elemosina in toto
+                     ordine cisterciensi liberius . quietius . et tenetur . et
+                     possidetur .<lb/> et prout carta eiusdem <persName>rog<ex>er</ex>i</persName> melius protestatur . saluo seruicio domini Regis . de me . et <persName>Rog<ex>er</ex>o</persName> . et heredibus nostris . <cl type="holding">Quare volo<lb/> firmiterque precipio . vt pretaxata . ecclesia . de Melros . [<ex>ms. </ex>de Melros . ecclesia . <ex>marked for transposition</ex>] et eiusdem loci monachi pretaxati hanc donationem de me<lb/> et <persName>rog<ex>er</ex>o</persName> de Scalebroc milite meo . et heredibus nostris eis concessam . datam . et hac
+                        Carta mea confirmatam . ita libere<lb/> et quiete . et honorificentie . habeant . teneant . et imperpetuum possideant 
+                        prout aliquis Comes . uel alicuius feoudi aliquis<lb/> aduocatus  liberius . quietius . honorificentius alicui matri ecclesie
+                        conuentuali  concedere . dare . confirmare . et
+                        potuerit . et<lb/> debuerit</cl></cl> . <cl type="witnesses">His Testibus  <persName>Iocelino</persName> Episcopo Glasgcuensi . et Ecclesia Glascuensi . Comite <persName>DunecaN</persName> . et<lb/> <persName>Malcholmo</persName> filio eius . et herede . Comite <persName>Gill<ex>ebert</ex>o</persName> . <persName>W’</persName> . <persName>Alano</persName> Dapifero domini Regis . <persName>Will<ex>elm</ex>o</persName> de Morevilla . Con<lb/>stabulario domini Regis . <persName>Gillecrist</persName> Mec<persName>achin</persName> . <persName>Ewine</persName> Mac<persName>alewin</persName> . <persName>Iohanne</persName> filio <persName>Will<ex>elm</ex>i</persName> . <persName>Retheri</persName> . Mec<persName>mac<lb/>charil</persName> . <persName>Edgaro</persName> Mac<persName>murtha<supplied>r</supplied>i</persName> <persName><roleName>Camerario</roleName></persName> meo . <persName>Gilleb<ex>ri</ex>de</persName> . Mac<persName>mehin</persName> . <persName>Achostduf</persName> . et <persName>Can</persName> fratre suo</cl> ;</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Duncan son of Gilbert son of Fergus, Earl of Carrick</cl>, to all worthy men of the kingdom of Scotland, clerk and lay, <cl type="salutation">Greeting</cl></cl>: <cl type="disposition"><cl type="notification">Let those as well future as present know</cl> that I have granted and given, and by this my charter made firm, to God and to
+                     the church of Melrose and to the monks there serving God,
+                     the whole donation that I and Roger of Skelbrooke my
+                     knight have granted and given to them, that is, the whole
+                     land of <ex>Drumentheisuiene</ex> and of <ex>Aleburc</ex>, and of <ex>Althefur</ex>, by the same boundaries that are described in the charter of Roger himself,
+                     with all easements of the same land, in free and pure and
+                     perpetual alms, as freely and quietly, fully and
+                     honourably, as any alms in the whole Cistercian Order is
+                     freely (and) quietly both held and possessed, and as the
+                     charter of the same Roger well bears witness, reserving
+                     the service of the lord king from me and Roger and our
+                     heirs. <cl type="holding">Wherefore I will and firmly enjoin that the aforenamed church of Melrose, and
+                     the aforenamed monks of the same place, should have and
+                     hold this donation, and possess in perpetuity, of me and
+                     Roger of Skelbrooke my knight, and our heirs, as granted,
+                     given, and made firm to them by this my charter, as freely
+                     and quietly and honourably as any earl or any patron of
+                     any feu both might be able and ought to grant, give, and
+                     confirm to any conventual mother church</cl>.</cl> <cl type="witnesses">With these witnesses, Jocelin bishop of Glasgow, and the Church of Glasgow, Earl
+                  Duncan and Malcolm his son and heir, Earl Gilbert, W., Alan
+                  the steward of the lord king, William de Morville the
+                  constable of the lord king, Gilchrist mac Eachann, Ewen mac
+                  Alwine, John son of William, Rether mac Coirill, Edgar mac
+                  Murthar my chamberlain, Gilla Brigte mac Mehin, Achostduf,
+                  and Cane his brother.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

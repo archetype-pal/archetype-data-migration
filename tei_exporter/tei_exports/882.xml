@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-882">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 570</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:12:05.403032+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">882</idno>
+        <idno type="textcontent">906</idno>
+        <idno type="transcription_textcontentxml">882</idno>
+        <idno type="translation_textcontentxml">883</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 570</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 570</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:12:05.403032+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:12:05.403032+00:00" status="approved">transcription moa=882 status=reviewed modified=2022-11-01 16:12:05.392093+00 | translation moa=883 status=reviewed modified=2022-11-01 16:12:05.403032+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. <cl type="intitulatio">DD . dei gratia Rex Scottorum</cl> . Omnibus episcopis suis . et Com<ex>itibus</ex> . et Baronibus . Simulque omnibus<lb/> probis hominibus suis totius terre sue . <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Scitote</cl> me dedisse et concessisse deo et sancto Chvthberto<lb/> et monachis eiusdem sancti . Ecclesiam Sanctę Marię de Berewic . cum terra . et
+                     decimis . et omnibus<lb/> rectitdinibus predicte ecclesie . terra . et aqua pertinentibus . et hoc in
+                     excambio pro ecclesia de<lb/> Malros . et pro rectitudinibus quas ibi habuerunt . Ita libere . et quiete . et
+                     honorifice . sicut<lb/> umquam liberius . et quietius . et honorabilius . tenuerunt ecclesiam . et Res
+                     suas de Melros . Concedente . et<lb/> confirmante hoc Henr<ex>ico</ex> filio meo .</cl> <cl type="witnesses">Testibus Iohanne episcopo . et Herb<ex>erto</ex> Abb<ex>ate</ex> de Rochesburc .<lb/> et Will<ex>elm</ex>o nepote Reg<ex>is</ex> . et Acelino arch<ex>idiacono</ex> . et Rob<ex>erto</ex> de humframwilla . et estmund<ex>o</ex> clerico<lb/> et Berenger hengaine . et Gualeran capel<ex>lano</ex> . et Rob<ex>erto</ex> Grimbal . et Norman<ex>o</ex> vic<ex>ecomite</ex> . et Will<ex>elm</ex>o<lb/> de sumerewilla . et Rob<ex>erto</ex> de Burnovilla .</cl> <cl type="dating">Aput Berewic .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">D<ex>avid</ex> by the grace of God king of the Scots,</cl> to all his bishops, earls, barons, as well as all worthy men of his entire land, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have given and conceded to God, Saint Cuthbert, and the monks of the same
+                     saint, the church of St Mary at Berwick, with land,
+                     teinds, and all the revenues pertaining to the aforesaid
+                     church on land and water, and this in exchange for the
+                     church of Melrose and for the revenues which they had
+                     there, so freely, quitly, and honourably as they ever most
+                     freely, quitly and honourably held their church and
+                     property at Melrose. Henry my son allows and affirms this.</cl> <cl type="witnesses">As witnesses: John the bishop, Herbert the abbot of Roxburgh, William the king's
+                  nephew, Ascelin the archdeacon, Robert d'Umfraville, Eastmund
+                  the clerk, Berengar Engaine, Waleran the chaplain, Robert
+                  Grimbal, Norman the sheriff, William de Sumerville, and
+                  Robert de Bournville.</cl> <cl type="dating">At Berwick.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

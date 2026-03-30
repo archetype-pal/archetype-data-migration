@@ -1,0 +1,56 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-702">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/86</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:47.006835+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">702</idno>
+        <idno type="textcontent">713</idno>
+        <idno type="transcription_textcontentxml">702</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/86</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/86</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:47.006835+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:47.006835+00:00" status="draft">transcription moa=702 status=draft modified=2017-01-30 19:28:47.006835+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="notification">Sciant presentes et futuri</cl> <cl type="disposition">quod ego <cl type="intitulatio">Rogerus</cl> dedi et concessi et hac mea carta confir<lb/>maui deo et beate Marie et Monachis de Melros deo seruientibus tresdecim acras
+                     terre mee et<lb/> vnam percatam in territorio de farnigdun . illas scilicet que iacent et
+                     propinquiores sunt terre Simonis<lb/> de farburne scilicet ex orientali parte subtus regiam uiam qua itur ad Rokesburc
+                     . In puram et liberam<lb/> et perpetuam elemosinam . <cl type="holding">Tenendas et habendas Liberas et Quietas ab omni exactione consuetudine et<lb/> demanda .</cl> <cl type="warrandice">Et ego et Heredes mei warantizabimus et in plena pace possideri faciemus ab
+                     isdem Mo<lb/>nachis predictam terram perpetuo contra omnes homines et quietam faciemus ab
+                        omni seruicio et que<lb/>rela .</cl> Hanc quidem donationem feci prefatis Monachis in libera potestate mea et plena
+                     possessione terre<lb/> mee de farnigdun existens .</cl> <cl type="witnesses">Hiis Testibus . Ioh<ex>ann</ex>e de Mackuswel et Ailmero fratre eius . Gaufrido Rad<ex>ulfo</ex><lb/> Waltero Ric<ex>ardo</ex> filiis meis . Gregorio de Rutherford . Waltero filio Thom<ex>a</ex> . Alano caellano de farnig<lb/>dun . Simone Seruiente meo et Multis aliis .</cl> a quibus predicta terra perambulata fuit per preceptum<lb/> meum secundum prefatas diuisas et fossatum coram ipsis testibus a Monachis
+                  ibidem factum .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

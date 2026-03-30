@@ -1,0 +1,58 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-696">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/75</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:46.51883+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">696</idno>
+        <idno type="textcontent">707</idno>
+        <idno type="transcription_textcontentxml">696</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/75</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/75</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:46.51883+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:46.51883+00:00" status="draft">transcription moa=696 status=draft modified=2017-01-30 19:28:46.51883+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus hoc scriptum uisuris uel audituris . <cl type="intitulatio">Petrus de curri</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Sciatis quod</cl> <cl type="disposition">ego in bona deuotione nutu diuino me reddidi fratrem domui de Melros . ab abbate
+                  et conuentui eiusdem Domus benigne sus<lb/>ceptus . Ita quod ego pro domo de Melros in omnibus ubique stabo sicut frater et
+                     particeps omnium bonorum eiusdem domus<lb/> in his quibus potero consulendo et auxiliando ualere . nec ullatenus eidem domui
+                     uel fratribus seu hominibus predictorum mona<lb/>corum decetero aduersabor . Insuper sopita controuersia inter nos habita . anno
+                     domini Millesimo ducentesimo quinto super terris illis
+                     scilicet<lb/> Dalhengan et Bargouer que iacent inter riuulum cadentem de Duueloc . et saxenoc
+                     . Ego quicquid iuris habui<lb/> uel habere potui pro me et heredibus meis deo et sancte Marie et conuentui de
+                     Melros quietum clamaui . Huius<lb/> igitur rei deum et fidem meam . nec non et me ipsum testes constitui . et hanc
+                     presentem cartam meam . quam super mag<lb/>num altare coram conuentu de Melros fratribus meis optuli . Igitur terciam
+                     partem substantie mee domui de<lb/> Melros assignaui siue uiuus siue mortuus ad eandem domum uenero .</cl> <cl type="witnesses">His Testibus . Reginaldo de crau<lb/>ford . Will<ex>elm</ex>o de lindeseia . Ioh<ex>ann</ex>e hesse et aliis</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,122 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-682">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.30</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:51:51.62806+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">682</idno>
+        <idno type="textcontent">692</idno>
+        <idno type="transcription_textcontentxml">682</idno>
+        <idno type="translation_textcontentxml">683</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.30</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.30</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:51:51.62806+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:51:51.62806+00:00" status="published">transcription moa=682 status=live modified=2021-04-05 08:51:49.690324+00 | translation moa=683 status=live modified=2021-04-05 08:51:51.62806+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p>
+          <cl type="narration">Dicit et in iure proponit coram vobis domine abbas de balmurinath’ unice iudex a
+                  sede apostolica delegate procurator prioris et conuentus
+                  cathedralis<lb/> ecclesie sancti andr<ex>ee</ex> contra magistrum priorissam . et moniales de Hadigton . quod cum ipsi prior et
+                     conuentus sint veri rectores ecclesie de Hadigton ̷
+                     magister moni<lb/>alium de Hadigton priorissa et moniales predicte . quasdam decimas infra dictam
+                     paroch<ex>iam</ex> de Hadigton . ad ipsos priorem et conuentum de Iure com<lb/>muni spectantes . videlicet . dec<ex>imam</ex> vnius carucate terre in territorio de Helfstanford’ . que quondam spectabat ad
+                     territoriam de drem . et decimas<lb/> duarum bouatarum terre contentarum in veteri gardine de steueniston . et decimas
+                     illius terre que iacet inter vetus gardinum et villam de
+                     Hadigton . et<lb/> decimas dimidie acre terre iuxta molendinum de steueniston . et decimas
+                     croftorum quorundam burgensium de Hadigton . et minutas
+                     decimas de byris<lb/> et cottariorum de byris et de bernis . per aliqua tempora occupauerunt et in
+                     usus suos conuerterunt in preiudicium et dampnum non
+                     modicum ipsorum<lb/> prioris et conuentus necnon lesionem monasterii sui enormem . et adhuc ocupare
+                     non formidant quare petit procurator predictorum prioris
+                     et conuentus<lb/> predictas decimas ad ius et proprietatem predicte ecclesie sue de Hadigton . et
+                     sic ad monasterium sancti Andr<ex>ee</ex> per uos pertinere declarari . non obstantibus<lb/> literis instrumentis iuramentis penis renunciacionibus et confirmacionibus in
+                     communi forma a sede apostolica impetratis . per
+                     quemcumque seu<lb/> quoscumque priorem seu priores supradicti monasterium sancti Andr<ex>ee</ex> forsitas interpositis . ac <supplied>pre</supplied>dictos magistrum prioressam et moniales ab ocupacione dictarum<lb/> decimarum in futurum per uos compelli desistere sentencialiter et diffinitiue .
+                     petit etiam dictos magistrum priorissam et moniales in
+                     decimis predictis me<lb/>dio tempore perceptis quas estimant centum libras sterlingorum sibi condempnari
+                     et condempnatos ad solucionem compelli . petit etiam
+                     expensas circa in<lb/>gressum litis factas quas estimat decem libras sterlingorum et protestatur de
+                     faciendis in processu pro loco et tempore petendis vestrum
+                     implorans<lb/> officium in omnibus in quibus fuerit de Iure implorand<ex>um</ex> . non artans se ad omnia et singula prescise probanda . set eatenus optineat in
+                     premissis<lb/> quatenus probauerit .</cl>
+        </p>
+      </div>
+      <div type="translation">
+        <p>
+          <cl type="narration">The agent of the prior and community of St Andrews cathedral church says and
+                  argues in law before you, Lord Abbot of Balmerino, the only
+                  judge assigned by the Apostolic See, against the master,
+                  prioress, and the nuns of Haddington, that although they
+                  themselves – the prior and community – are the true rectors
+                  of the church of Haddington, the master of the nuns of
+                  Haddington, the prioress, and nuns aforesaid, have
+                  appropriated for some time certain teinds within the said
+                  parish of Haddington belonging to the prior and community by
+                  common right, namely, the teind of one ploughgate of land in
+                  the territory of Athelstaneford, which once belonged to the
+                  territory of Drem, and the teinds of two oxgangs of land
+                  contained in the old garden of Stevenson, and the teinds of
+                  the land that lies between the old garden and the toun of
+                  Haddington, and the teinds of half an acre of land between
+                  the mill of Stevenson and the teinds of the crofts of certain
+                  burgessses of Haddington, and the small teinds of Byres, and
+                  of the cottaries of Byres and of Barney, and they have turned
+                  them over to their own use to the no-small detriment and
+                  damage of the prior and community as well as the grave injury
+                  of their monastery, and until now have not been afraid to
+                  appropriate [them]; wherefore the agent of the aforesaid
+                  prior and convent seeks the aforesaid teinds as the right and
+                  property of his aforesaid church of Haddingotn, and thus by
+                  you to be declared to belong to the monastery of St Andrews,
+                  not withstanding the letters, instruments, judgments,
+                  penalties, renunciations, and confirmations obtained from the
+                  Apostolic See in the common form, interposed perchance
+                  through whichsoever prior or priors of the monastery of St
+                  Andrews; and the aforesaid master, prioress, and nuns be
+                  compelled by you to cease from the appropriation of the said
+                  teinds in future by definitive judicial sentence; he also
+                  seeks the said master, prioress, and nuns to be condemned in
+                  the aforesaid teinds received in the meantime which they
+                  assess as a hundred pounds sterling, and the condemned to be
+                  compelled to pay; and he also seeks costs incurred for entry
+                  of the lawsuit, which he assesses as ten pounds sterling; and
+                  he bears witness in respect of the things to be done in the
+                  legal proceedings for the place and time of asking, invoking
+                  your service in all things in which it was invoked by law,
+                  not constraining yourself to a categorical proving of all
+                  things in general and particular, but only so far as he may
+                  obtain so much as he may have proved in the foregoing.</cl>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,66 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-98">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 12</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-01-30 04:44:24.040697+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">98</idno>
+        <idno type="textcontent">98</idno>
+        <idno type="transcription_textcontentxml">98</idno>
+        <idno type="translation_textcontentxml">99</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 12</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 12</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2022-01-30T04:44:24.040697+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2022-01-30T04:44:24.040697+00:00" status="published">transcription moa=98 status=live modified=2022-01-30 04:44:05.635123+00 | translation moa=99 status=live modified=2022-01-30 04:44:24.040697+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Robertus dei gr<ex>ati</ex>a humilis minister ecclesie sancti Andree</cl> . uniuersis sancte matris ecclesie filiis <cl type="salutation">salutem</cl></cl> <cl type="disposition"><cl type="notification">Innotescat tam posteris quam presentibus</cl> <lb/> nos dedisse &amp; in liberam elemosinam concessisse deo &amp; ecclesie sancti Andree &amp;
+                     canonicis ibi deo seruientibus kininmuned cum toft de <lb/> Kilrimund &amp; cum omnibus aliis appendiciis suis . <cl type="holding"><cl type="injunction">Quapropter uolumus &amp; precipimus quatinus ipsi hanc elemosinam ita <lb/> libere . &amp; honorifice teneant ut decet elemosinam teneri</cl> .</cl></cl> <cl type="malediction">Et si quis de hac elemosina iniuriam ecclesie sancti ANDREE &amp; pre<lb/>dictis fratribus intulerit  uinculo anathematis constringatur . nisi digne
+                     satis fecerit .</cl> <cl type="witnesses">T . Herb<ex>er</ex>to episcopo <span data-dpt="place" data-dpt-cat="chars" data-dpt-type="name">Glasguensi</span> . Will<ex>e</ex>l<ex>m</ex>o <lb/> episcopo MVR’ . Arnaldo abbate de Chelc’ . Gaufrido abbate . de Dunf’ . Will<ex>elm</ex>o Abbate de Sancta Cruce . Ysaac abbate de striuel’ . Matheo archidiacono . <persName>Thor</persName> archidiacono . Aiulfo decano . Nich<ex>olai</ex>o clerico regis . Will<ex>elm</ex>o capellano episcopi Magistro ANDREA . Magistro herb<ex>er</ex>to . Ioh<ex>ann</ex>e nepote episcopi . Radulfo nepote episcopi .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Robert, by the grace of God humble servant of the church of St Andrews</cl>, to the sons of holy mother Church everywhere, <cl type="salutation">Greeting</cl></cl>: <cl type="disposition"><cl type="notification">Let it be known both to those to come as well as to those present</cl> that we have given, and granted in free alms to God and to the church of St
+                     Andrews and to the canons serving God there, Kinninmonth
+                     with the toft of Kilrymont and with all its other
+                     appurtenances. <cl type="holding"><cl type="injunction">Wherefore we will and enjoin that they shall hold this alms as freely and
+                        honourably as alms ought to be held</cl></cl>.</cl> <cl type="malediction">And if anyone should bring injury to the church of St Andews and to the
+                  aforesaid brethren, let him be bound with the bond of
+                  anathema, unless he makes proper satisfaction.</cl> <cl type="witnesses">As witnesses: Herbert the bishop of <span data-dpt="place" data-dpt-cat="chars" data-dpt-type="name">Glasgow</span>, William the bishop of Moray, Arnold the abbot of Kelso, Geoffrey the abbot of
+                     Dunfermline, William the abbot of Holyrood, Isaac the
+                     abbot of Stirling, Matthew the archdeacon, Thor the
+                     archdeacon, Aiulf the dean, Nicholas the king's clerk,
+                     William the bishop's chaplain, Master Andrew, Master
+                     Herbert, John the bishop's nephew, Ralph the bishop's
+                     nephew.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

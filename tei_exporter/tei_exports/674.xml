@@ -1,0 +1,74 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-674">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Add. Ch. 76747</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:45:10.219649+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">674</idno>
+        <idno type="textcontent">684</idno>
+        <idno type="transcription_textcontentxml">674</idno>
+        <idno type="translation_textcontentxml">675</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 76747</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Add. Ch. 76747</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:45:10.219649+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:45:10.219649+00:00" status="published">transcription moa=674 status=live modified=2021-04-05 08:45:10.219649+00 | translation moa=675 status=live modified=2021-04-05 08:45:08.001957+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte Matris Ecclesie filiis . Tam presentibus quam futuris  <cl type="intitulatio"><persName>Alanus</persName> filius <persName>Elti</persName></cl> . <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant omnes ad quorum noticiam<lb/> litere iste peruenirent</cl>  me concessisse et dedisse . et hac mea presenti carta confirmasse deo et
+                     Ecclesie Sancte<lb/> Marie de Melros . et <supplied>m</supplied>onachis ibidem deo seruientibus pro anima patris mei et Matris mee . et pro
+                     animabus omnium<lb/> antecessorum et successorum meorum et pro salute anime mee et omnium heredum et
+                     parentum meorum  in puram et perpe<lb/>tuam elemosinam <supplied>u</supplied>nam petram de cera ad procurandum lumen ante altare sancte Marie imperpetuum
+                     Hanc<lb/> autem petram cere Ego et heredes mei singulis annis ad pentecosten dabimus deo
+                     et domui de Melros <lb/> scilicet nominatim de redditu illius terre . quam <persName>Howein</persName> filius <persName>Gillemihchel</persName> et heredes eius tenent de me et here<lb/>dibus meis tenore perp<supplied>et</supplied>uo in uilla de Thirlestan ... quicumque post ... ram tenuerint .</cl> <cl type="witnesses">His Test<ex>ibus</ex> .<lb/> <persName>Iocel<ex>ino</ex></persName> Glesg<ex>uensi</ex> Episcopo . <persName>S<supplied>imone</supplied></persName> Glesg<ex>uensi</ex> Archid<ex>iacono</ex> . <persName>Aldred</persName> p<supplied>ersona de La</supplied>weder . <persName>Rog</persName>’ lecras . <persName>Radulf</persName> lecras . <persName>Petro</persName> de la Hag . <persName>Thom<ex>a</ex></persName> de Wa<lb/>rewic . <persName>Will<ex>elm</ex>o</persName> ... <persName>T</persName> pincerna . <persName>Will<ex>elm</ex>o</persName> filio pagani <persName>Henrico</persName> filio <persName>Baldewini</persName><lb/> <persName>Will<ex>elmo</ex></persName> clerico .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Holy Mother Church's sons, those present as well as those to come after, <cl type="intitulatio">Alan son of Ælfsige</cl> <cl type="salutation">[sends] greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let all those to whose notice these letters might come know</cl> me to have conceded and to have given, and by this my present charter to have
+                     made firm, to God and to the church of St Mary at Melrose,
+                     and to the monks serving God in that same place, for the
+                     sake of my father's soul and my mother's, and for the sake
+                     of the souls of all my predecessors and successors, and
+                     for the salvation of my own soul and of all my heirs' and
+                     ancestors' [souls], in pure and everlasting alms one stone
+                     of wax to provide light in front of the altar of St Mary
+                     for ever. This stone of wax I and my heirs shall each year
+                     give at Pentecost to God and the house of Melrose, that is
+                     to say, namely in respect of the rent of that land which
+                     Owen son of Gillemichael and his heirs hold of me and my
+                     heirs in perpetual tenure in the toun of Thirlestane ...
+                     whosoever afterwards ... shall have held.</cl> <cl type="witnesses">With these as witnesses: Jocelin, bishop of Glasgow; Simon, archdeacon of
+                  Glasgow; Aldred, parson of Lauder; Roger le Cras; Ralph le
+                  Cras; Peter de la Haig; Thomas of Warwick; William ... T. the
+                  butler; William fitz Payn; Henry fitz Baldwin; William the
+                  clerk.</cl> </p>
+      </div>
+    </body>
+  </text>
+</TEI>

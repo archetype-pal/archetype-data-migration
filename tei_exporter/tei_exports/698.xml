@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-698">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/77</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:46.688483+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">698</idno>
+        <idno type="textcontent">709</idno>
+        <idno type="transcription_textcontentxml">698</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/77</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/77</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:46.688483+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:46.688483+00:00" status="draft">transcription moa=698 status=draft modified=2017-01-30 19:28:46.688483+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte Matris ecclesie filiis presentibus et futuris  <cl type="intitulatio">Comes Patricius</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Sciant presen<lb/>tes et futuri</cl> <cl type="disposition">Me dedisse et concessisse et hac carta mea confirmasse deo et ecclesie Sancte<lb/> Marie de Melros . et Monachis ibidem deo seruientibus in liberam et perpetuam
+                     elemosinam .<lb/> pro animabus d<ex>aui</ex>d . et Malcolmi Regum Scott<ex>orum</ex> . et Comit<ex>is</ex> Henrici dominorum meorum . et Pro salute domini<lb/> mei . W . Regis et Alexandri filii eius . et Pro salute mea . et Coniugis mee et
+                     liberorum nostrorum . et PRO<lb/> Animabus Patris mei . et Matris mee . et omni antecessorum . et successorum
+                     meorum  Quinquaginta unam<lb/> acras terre in lambermore in proprietatem ad incrementum in australi parte de
+                     Moliburnerig sicut<lb/> mensurate fuerunt a probis hominibus meis per fossata . et iacent in uno
+                     tenemento propinquiores illis<lb/> quinque acris quas eisdem monachis prius contuleram  et Carta mea confirmaueram
+                     . ut eas sicut simul<lb/> iacent includant prout uoluerint . ad faciendum pratum . et ortum et bercariam .
+                     et ad utendum<lb/> omnibus modis sicut eis melius et utilius fuerit sine aratione . <cl type="holding">Totam hanc terram et quicquid infra continetur  dedi predictis Monachis et eam
+                     habeant et possideant de me et heredibus meis solutam et
+                     quietam ab omni<lb/> terreno seruitio et consuetudine et exactione seculari . ita libere . et quiete
+                        . plene . et honorifice . sicut<lb/> aliquam Elemosinam liberius . quitius plenius . et honorificentius  tenent et
+                        possdent .</cl> <cl type="warrandice">Ego autem et heredes<lb/> mei manutenebimus et warantizabimus eis totam terram predictam contra omnes
+                        homines imperpetuum</cl></cl> .<lb/> <cl type="witnesses">His Testibus . Patricio filio meo et herede . Will<ex>elm</ex>o Patric . Nesio de Walctun . Patricio filio Ade .<lb/> Rogero de Merlei tunc senescaldo . Adam de paulewrhe . Waltero filio edgari . et
+                     Alano fratre suo.<lb/> Rad<ex>ulfo</ex> de Aplindene . Rob<ex>erto</ex> de anishei . Thom<ex>a</ex> freser . Thom<ex>a</ex> de staflei . Henr<ex>ico</ex> de Merlei .<lb/> Roger pincerna . Michaele de Malkarwest’ . Maccus Marschaldo . et Multis aliis .</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

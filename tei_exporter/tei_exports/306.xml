@@ -1,0 +1,75 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-306">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/42</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-06 15:19:33.904905+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">306</idno>
+        <idno type="textcontent">306</idno>
+        <idno type="transcription_textcontentxml">306</idno>
+        <idno type="translation_textcontentxml">307</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/42</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/42</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-06T15:19:33.904905+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-06T15:19:33.904905+00:00" status="approved">transcription moa=306 status=reviewed modified=2023-06-06 15:19:33.904905+00 | translation moa=307 status=reviewed modified=2023-06-06 15:19:33.891465+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Will<ex>elmu</ex>s dei gratia rex scot’ .</cl> Episcopis . Abbatibus . Comit<ex>ibus</ex> . Baron<ex>ibus</ex> . Iustic<ex>iis</ex> . Viceom<ex>itibus</ex> . preposit<ex>is</ex> . ministris . et omnibus probis hominibus totius terre sue <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant<lb/> presentes et posteri</cl> me concessisse et hac mea carta confirmasse deo et ecclesie sancte Marie de
+                     Meylros . et monachis ibidem deo seruientibus<lb/> totam illam terram de eschedale . <cl type="boundaries">per easdem diuisas que nominantur et continentur in cartis Domini Roberti Auenel
+                     et Geruasii heredis ipsius .<lb/> quas habent de eis de eadem terra .</cl> <cl type="holding">Ita ut quicquid infra easdem diuisas fuerit . habeant et possideant imperpetuum
+                     . ita libere et quiete .<lb/> integre et pacifice . sicut aliqua elemosina liberius et quietius in regno meo
+                        possidetur .</cl> <cl type="holding">Confirmaui enim et concessi eis eandem terram<lb/> imperpetuum liberam . et solutam ab omnibus auxiliis . et omni seruitio et
+                        consuetudine et exactione seculari . saluo seruitio meo<lb/> de geruasio et heredibus eius .</cl></cl> <cl type="witnesses">His testibus . Osberto abbate de kelcho . Hug<ex>one</ex> abbate de Nevbotle . Will<ex>elm</ex>o malueisin . Ricardo<lb/> de la prouende . Hug<ex>one</ex> del seel . Dauid comite fratre Regis . Roberto de quinci . Hug<ex>one</ex> ridel . Ricardo de munfichet . Philippo<lb/> de valuines . Rogero de valuines . Waldeuo filio baldewini . Alexandro de seint
+                     martin . Herueio le marescal . Ricard<lb/> le marescal . Roberto de seint michel . Adam de stanford .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">William, by the grace of God king of Scots</cl>, to Bishops, Abbots, Earls, Barons, Justices, Sheriffs, Provosts, Officials,
+                     and all worthy men of the whole of his land, <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have granted and by this my charter to have made firm, to God and the
+                     church of St Mary at Melrose, and to the monks in that
+                     place serving God, the whole land of Eskdale, <cl type="boundaries">by the same boundaries which are named and contained in the charters of the lord
+                     Robert Avenel and Gervase his heir, which they have from
+                     them in respect of the same land;</cl> <cl type="holding">so that whatever is within the same boundaries, they shall have and possess for
+                     ever, as freely and quietly, fully and peacefully, as any
+                     alms is freely and quietly possessed in my kingdom; I
+                     have, then, confirmed and granted to them the same land
+                     for ever, released also from all aids, and from all
+                     service and custom and secular exaction, reserving my
+                     service from Gervase and his heirs.</cl></cl> <cl type="witnesses">With these witnesses: Osbert, abbot of Kelso; Hugh, abbot of Newbattle; William
+                  Malveisin; Richard de Prebenda; Hugh de Sigillo; Earl David,
+                  the king’s brother; Robert de Quincy; Hugh Ridel; Richard de
+                  Muschet; Philip de Valognes; Roger de Valognes; Waldef son of
+                  Baldwin; Alexander de Saint-Martin; Hervé the marischal;
+                  Richard the marischal; Robert de Saint-Michel; Adam of
+                  Stanford.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

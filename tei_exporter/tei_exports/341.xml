@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-341">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/301</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:28:21.288289+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">341</idno>
+        <idno type="textcontent">344</idno>
+        <idno type="transcription_textcontentxml">341</idno>
+        <idno type="translation_textcontentxml">342</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/301</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/301</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T12:28:21.288289+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T12:28:21.288289+00:00" status="published">transcription moa=341 status=live modified=2021-04-06 12:27:55.180503+00 | translation moa=342 status=live modified=2021-04-06 12:28:21.288289+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus hoc scriptum visuris uel audituris <cl type="intitulatio">Robertus filius Alexandri de Lundr’</cl><lb/> <cl type="salutation">salutem in domino</cl></cl> . <cl type="disposition"><cl type="notification">Noueritis me</cl> concessisse et hac presenti carta me confirmasse<lb/> deo et ecclesie beate Marie de Melros et monachis ibidem deo seruientibus . in
+                     liberam<lb/> puram et perpetuam elemosinam  illam donacionem quam pater meus eis fecit de<lb/> terra sua sita in Lekehalu que ei data fuit a Waltero de Burdun et Mabilla<lb/> uxore eius in eschambium . prout carta patris mei testatur .</cl> <cl type="warrandice">Ego uero et here<lb/>des mei totam predictam terram cum omnibus libertatibus et asiamentis suis .
+                     dictis monachis<lb/> contra omnes homines ac feminas warentizabimus ac defendemus</cl> . <cl type="sealing">In cuius rei<lb/> testimonium presenti scripto sigillum meum apposui</cl> . <cl type="witnesses">Testibus . domino Nicholao Corbeth<lb/> domino Roberto de Nesbithe . domino Nicholao de Ruthirforde . et aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall see or listen to this writing <cl type="intitulatio">Robert son of Alexander of London</cl> <cl type="salutation">sends greeting in the Lord</cl>.</cl> <cl type="disposition"><cl type="notification">Know me</cl> to have allowed and by this my present charter to have made firm to God and to
+                     the church of blessed Mary at Melrose and to the monks
+                     serving God in that place, in free, pure and perpetual
+                     alms, the donation that my father made of his land
+                     situated in ‘Lekehalu’, which was given to him by Walter
+                     de Burdon and Mabel, his wife, as an exchange, just as my
+                     father’s charter bears witness.</cl> <cl type="warrandice">I and my heirs shall warrant and defend the whole of the said land, with all its
+                  liberties and easements, against all men and women.</cl> <cl type="sealing">In testimony of this matter I have applied my seal to this document.</cl> <cl type="witnesses">As witnesses, the lord Nicholas Corbet, the lord Robert of Nisbet, the lord
+                  Nicholas of Rutherford, and others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

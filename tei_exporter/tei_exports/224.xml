@@ -1,0 +1,77 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-224">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/248</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:09:54.987278+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">224</idno>
+        <idno type="textcontent">224</idno>
+        <idno type="transcription_textcontentxml">224</idno>
+        <idno type="translation_textcontentxml">225</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/248</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/248</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T08:09:54.987278+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T08:09:54.987278+00:00" status="published">transcription moa=224 status=live modified=2021-04-06 08:09:48.673133+00 | translation moa=225 status=live modified=2021-04-06 08:09:54.987278+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">W. miseratione diuina Ecclesie . Sancti Andree minister Humilis</cl> omnibus has litteras uisuris uel audituris<lb/> <cl type="salutation">eternam in domino Salutem</cl></cl>. <cl type="disposition"><cl type="notification">Ad uniuersitatis uestre noticiam uolumus deuenire</cl> . nos de communi assensu ⁊ uolun<lb/>tate Capituli nostri . ⁊ archidiaconorum nostrorum . dedisse . ⁊ concessisse .
+                     abbati . ⁊ canonicis de Sancta cruce<lb/> et eorum successoribus in perpetuum in puram ⁊ perpetuam elemosinam . totam
+                     medietatem . Decime Bladi pertinentis ad<lb/> ecclesiam de Kyngor ad sustentationem predictorum canonicorum et pauperum . et
+                     peregrinorum. <cl type="holding">Quare uo<lb/>lumus ut predicti canonici et eorum successores easdem decimas teneant et
+                        possideant in perpetuum nomine sim<lb/>plicis beneficii . adeo Libere . integre . et honorifice . sicut aliquod simplex
+                        benefitium in toto regno Scotie . liberius<lb/> quietius ⁊ honorificentius tenetur et possidetur</cl>.</cl> <cl type="sealing">Et ut hec nostra concessio rata ⁊ inconcussa perseueret [ms. pererseueret]  eam<lb/> presentis pagine testimonio . ⁊ sigilli nostri ⁊ sigillorum Capituli ⁊
+                     archidiaconorum nostrorum appositione corrobora<lb/>uimus</cl>. <cl type="witnesses">Hiis testibus . magistro Laurentio Archidiacono . Sancti Andree . W . de Bosco .
+                  Archidiacono . Laodon’ . Rad’ nig<ex>ero</ex> . decano<lb/> Laodon’ . Rad’. decano de Karel . Magistro . alexandro de Sancto martino .
+                     Magistro . Dauid de Bernham . Symone de<lb/> Noisi . Will<ex>elmo</ex> . de Golin . Symone capellano domini episcopi . Ricardo de Kalcou . clerico .
+                     Ioh<ex>ann</ex>e clerico domini episcopi . ⁊ multis aliis</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex> by divince mercy humble servant of the church of St Andrews</cl> to all who shall view or hear these letters, <cl type="salutation">Eternal Salvation in the Lord:</cl></cl> <cl type="disposition"><cl type="notification">We wish to bring to your attention of you all that</cl> we have, by the common agreement and will of our chapter and of our archdeacons,
+                     given and granted to the abbot and canons of Holyrodd and
+                     their successors in perpetuity, in pure and perpetual
+                     alms, the whole moiety of the teind of corn pertaining to
+                     the church of Kinghorn for the support of the aforesaid
+                     canons, paupers and pilgrims. <cl type="holding">Wherefore we will that the aforesaid canons and their successors should hold and
+                     possess the same teinds in perpetuity as a simple
+                     benefice, as freely, wholly, and honourably as any simple
+                     benefice in the whold kingdom of Scotia is freely, quietly
+                     and honourably held and possessed</cl>.</cl> <cl type="sealing">And that this our grant might endure sure and unbroken, we have secured it by
+                  the testimony of this document, and by the application of our
+                  own seal and the seals of the Chapter and our archdeacons.</cl> <cl type="witnesses">With these witnesses, Master Laurence the archdeacon of St Andrews, W<ex>illiam</ex> del Bois the archdeacon of Lothian, Ralph Niger the dean of Lothian, Ralph the
+                     dean of Crail, Master Alexander de Saint-Martin, Master
+                     David of Bernham, Simon de Noisy, William of Gullane,
+                     Simon the chaplain of the lord bishop, Richard of Kelso
+                     the clerk, John the clerk of the lord Bishop, and many
+                     others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,59 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-832">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 561</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 15:48:09.450249+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">832</idno>
+        <idno type="textcontent">851</idno>
+        <idno type="transcription_textcontentxml">832</idno>
+        <idno type="translation_textcontentxml">833</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 561</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 561</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T15:48:09.450249+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T15:48:09.450249+00:00" status="approved">transcription moa=832 status=reviewed modified=2022-11-01 15:48:09.440395+00 | translation moa=833 status=reviewed modified=2022-11-01 15:48:09.450249+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">A . dei gratia rex scottorum .</cl> Omnibus per regnum suum scottis et anglis  <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis quod</cl><lb/> ego dono deo et Sancto Cuthberto domino meo et Monachis eius omnia que habebant<lb/> tam in terris quam in aquis die qua frater meus rex Eadgarus uiuus et mortuus
+                     fuit .<lb/> ita ... <cl type="holding">cum omnibus consuetudinibus sicut Monachi predicti illo eodem<lb/> die melius et quieti<supplied>us</supplied> habuerunt illam eandem terram</cl> . Et nominatim illam terram quę iacet inter Horeuoredane et Cnapedane sicut
+                     breue fratris mei Eadgari eis<lb/> testatur .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">A<ex>lexander</ex>, by the grace of God king of the Scots,</cl> to all throughout his kingdom, Gaelic and English, <cl type="salutation">greeting</cl>.</cl> <cl type="notification">Know that</cl> <cl type="disposition">I present as a gift to God, and to Saint Cuthbert my lord, and to his monks,
+                  everything which they had, as much in lands as in waters, on
+                  the day in which my brother, King Edgar, was alive and dead,
+                  so ... <cl type="holding">with all customs, just as the aforesaid monks best and most quitly had that same
+                     land on that same day</cl>; specifically the land which lies between Horndean and Nabdean, just as the
+                     brieve of my brother Edgar bears witness.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

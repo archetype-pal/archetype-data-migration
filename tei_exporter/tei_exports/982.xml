@@ -1,0 +1,73 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-982">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 736</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-09-07 14:04:19.327748+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">982</idno>
+        <idno type="textcontent">1010</idno>
+        <idno type="transcription_textcontentxml">982</idno>
+        <idno type="translation_textcontentxml">983</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 736</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 736</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-09-07T14:04:19.327748+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2022-09-07T14:04:19.327748+00:00" status="draft">transcription moa=982 status=draft modified=2022-01-20 17:35:55.822284+00 | translation moa=983 status=draft modified=2022-09-07 14:04:19.327748+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription"><p>Reuerendo domino . A . Dei gratia Illustri Regi scottorum . P . filio . Domini .
+               P . Comitis de dunbar suus fidelis et<lb/> deuotus . Salutem . et debitum in omnibus famulatum . Regie excellentie uestre
+                  significo me resignasse et omnino quietam<lb/> clamasse deo et beato Cuthberto et Monachis Dunelmensibus apud coldingham deo et
+                  sancte Marie et beato Cuthberto<lb/> et sancte Ebbe seruientibus villulam quandam que uocatur Suinewde quam
+                  antecessores mei </p> <p><supplied>in</supplied>iuste quam debuerant detinuerunt et ocuparuerunt sicut per cartam illustris
+                  regis Edgari perpendi quam . T . prior<lb/> de <span data-dpt="place" data-dpt-cat="chars" data-dpt-type="name">Coldingham</span> mihi ostendit et fideliter perlegit et ius beati Cuthberti super eadem uillula
+                  plenarie de<lb/>monstrauit . Hinc est quod regiam Excellentiam uestram attentius deprecor
+                  quatenus diuine pietatis intuitu<lb/> et ob amorem et reuerentiam gloriosi confessoris Cuthberti quem antecessores
+                  uestri semper speciali amore di<lb/>lexerunt . illam dicto et beato Cuthberto et predictis monachis confirmare
+                  uelitis . valeat et vigeat excellentia<lb/> uestra in domino</p></div>
+      <div type="translation"><p>To the respected A(lexander) by the grace of God king of the Scots, P(atrick),
+               son of the lord P(atrick) earl of Dunbar, his sworn and loyal
+               man, sends greeting, and duty and service in all things. I
+               indicate to your royal excellency that I have resigned and
+               entirely quitclaimed to God, blessed Cuthbert, and the monks of
+               Durham serving God, Saint Mary, blessed Cuthbert and Saint Ebbe,
+               at Coldingham, a small estate which is called Swinwood, which my
+               ancestors </p> <p>which they had owed, they withheld and appropriated, as it is to be examined
+               through the charter of the illustrious King Edgar which
+               T(homas), prior of <span data-dpt="place" data-dpt-cat="chars" data-dpt-type="name">Coldingham</span>, showed to me and faithfully read through, and fully demonstrated the right of
+                  blessed Cuthbert over the same estate . Hence it is that I
+                  earnestly pray your royal excellency that moved by godly love
+                  and on account of love and reverence for the glorious
+                  confessor, Cuthbert, whom your ancestors ever loved with a
+                  special love, you be minded to confirm that (charter) to God
+                  and blessed Cuthbert and the aforesaid monks. Health and life
+                  in the Lord to your excellency!</p></div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,82 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-19">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 556</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:19:35.841127+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">19</idno>
+        <idno type="textcontent">19</idno>
+        <idno type="transcription_textcontentxml">19</idno>
+        <idno type="translation_textcontentxml">20</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 556</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 556</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T20:19:35.841127+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T20:19:35.841127+00:00" status="approved">transcription moa=19 status=reviewed modified=2022-10-31 20:19:35.822744+00 | translation moa=20 status=reviewed modified=2022-10-31 20:19:35.841127+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Eadger . rex scottorum </cl> Omnibus per regnum suum scottis &amp; anglis  <cl type="salutation">salutem .</cl></cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me ad dedicationem uenisse ęcclesię Sanctę Marię apud <lb/> Coldingaham . quę quidem dedicatio ad dei laudem &amp; ad meum placitum grata
+                     omnibus &amp; accepta honorabiliter est adimpleta . &amp; ego <lb/> eidem ęcclesię super altare obtuli in dotem . &amp; donaui uillam totam Swintun cum
+                     diuisis sicut liulf habuit  liberam &amp; quietam inperpetuum <lb/> habendam ab omni calumpnia . &amp; ad uoluntatem Monachorum Sancti CVThBERTI
+                     dispondendam . pro animabus patris &amp; matris meę <lb/> &amp; pro salute animę meę &amp; fratrum &amp; sororum mearum . Donaui etiam monachis .
+                     xxiiii . animalia ad restaurandam illam eandem <lb/> terram . &amp; constitui eandem pacem in Coldingaham eundo &amp; redeundo &amp; ibidem
+                     manendo . quę seruatur in Eilande . ⁊ in Norcham . Insuper <lb/> etiam statui hominibus in Coldingamscire sicut ipsi elegerunt &amp; in manu mea
+                     firmauerunt . ut unoquoque anno de unaquaque car<lb/>ruca . dimidaim marcam argenti monachis persoluant .</cl><cl type="witnesses">T. Ælfw’. oter . ⁊ <persName>Thor long’</persName> . ⁊ Ælfric’ pincerna . ⁊ Algaro presbitero <lb/> ⁊ Osb<ex>er</ex>no presbitero . ⁊ Cnut carl<ex>es</ex> s<ex>une</ex> . ⁊ Ogga ⁊ Lesing . ⁊ Swein ulfkill<ex>es</ex> s<ex>une</ex> . ⁊ Ligulf de bebbanburch . ⁊ Vhtred Eilaues sune <lb/> Uuiæt hwite . ⁊ Tigerne .</cl></p>
+      </div>
+      <div type="translation">
+        <p>
+          <cl type="address"><cl type="intitulatio">Edgar king of the Scots</cl> to all Scots and English throughout his kingdom <cl type="salutation">greeting.</cl> </cl>
+          <cl type="disposition"><cl type="notification">Know</cl> me to have come to the consecration of the church of St Mary at Coldingham. This
+                     dedication was fulfilled to the glory of God and to my
+                     pleasing, was acceptable to all and honourably received.
+                     And I have offered to the same church upon the altar as an
+                     endowment and have donated the whole toun of Swinton with
+                     the boundaries just as Liulf had, to be had in perpetuity
+                     free and quit from every claim, and to be disposed at the
+                     will of the monks of Saint Cuthbert; for the souls of my
+                     father and mother, and for the salvation of my own soul
+                     and my brothers’ and sisters’. I have also donated to the
+                     monks 24 beasts to re-stock that same land. And I have
+                     established the same peace in Coldingham, to those going
+                     and returning and abiding there, which is preserved in
+                     Island and in Norham. I have moreover also established
+                     with the men in Coldinghamshire, just as they themselves
+                     have chosen and have confirmed in my hand, that they they
+                     should pay every year for each plough half a merk of
+                     silver to the monks. </cl>
+          <cl type="witnesses">As witnesses: Ælfwine, Óttar, and Thor Long, and Ælfric the butler, and Algar
+                  the priest, and Osbern the priest, and Cnut Carl’s son, and
+                  Oggu and Leising, and Swain Ulfkill’s son, and Liulf of
+                  Bamburgh, and Uhtred Eilaf’s son, Uviet White, and Tigerna.</cl>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

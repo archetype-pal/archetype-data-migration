@@ -1,0 +1,97 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-690">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/73 (1)</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:14:16.161409+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">690</idno>
+        <idno type="textcontent">701</idno>
+        <idno type="transcription_textcontentxml">690</idno>
+        <idno type="translation_textcontentxml">691</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/73 (1)</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/73 (1)</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T08:14:16.161409+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T08:14:16.161409+00:00" status="published">transcription moa=690 status=live modified=2021-04-07 08:14:10.666384+00 | translation moa=691 status=live modified=2021-04-07 08:14:16.161409+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis ecclesie filiis presens scriptum uisuris uel audituris <cl type="intitulatio">Walterus filius Alani Senescaldus domini Regis Scocie</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Nouerit<lb/> uniuersitas uestra quod</cl> <cl type="narration">ego honori dei et paci ecclesie . et maxime quieti de Melros uolens prouidere 
+                  dubia quondam contenta in<lb/> Carta Walteri aui mei data Monachis de Melros duxi declaranda . In illa parte
+                     scilicet ipsius Carte ubi dictus auus meus loquitur<lb/> de landis et de halches et de pastura foreste . volo etiam hoc quod ibi minus
+                     caritatis et securitatis continetur  In hoc instrv<lb/>mento clarius exprimere . et dictis Monachis plenius prouidere .</cl> <cl type="disposition">Concessi igitur prefatis Monachis omnes landas et halches tam in fo<lb/>resta mea quam extra ex aquilonari parte fluminis de Ar et totam forestam meam
+                     ad utend<ex>um</ex> secundum quod eis utiliuis uisum fuerit . scilicet<lb/> ad arandum et seminandum ubicumque sibi uiderint expedire  tam in foresta quam
+                     extra . et ad nutriendum et pascendum et<lb/> habendum in eadem foresta assidue pecora sua quotquot uoluerint secundum quod
+                     territorium eiusdem foreste poterit continere . et hoc<lb/> erit in arbitrio Monachorum estimare quantum idem territorium poterit sustinere
+                     . Concessi etiam eis usum eiusdem foreste in<lb/> omnibus aisiamentis et utilitatibus ipsius habendum et possidendum plene et
+                     pacifice ad omnes necessitates suas hoc solo excepto<lb/> quod Monachi nec conuersi nec aliqui alii illorum auctoritate  uenabuntur nec
+                     accipitres capient in eadem foresta hoc<lb/> enim illorum ordini non conuenit nec illis credimus expedire . Hec omnia deo et
+                     prefatis Monachis in perpetuum dedi con<lb/>cessi et hac mea carta confirmaui . <cl type="warrandice">Ego quidem et heredes et successores mei uniuersi warantizabimus et defendemus<lb/> predictis Monachis omnia supradicta</cl> <cl type="holding">et eos illa faciemus in pace possidere libere et quiete ab omni seruitio et
+                     exactione et con<lb/>suetudine seculari .</cl></cl> <cl type="sealing">Et ut hec mea concessio firma sit et inperpetuum illesa presens scriptum
+                  prefatis Monachis Sigillo<lb/> meo presenti tradidi roboratum</cl> . <cl type="witnesses">Hiis testibus . Will<ex>elm</ex>o capellano meo . Malcolmo filio comitis de leuenaus nepo<lb/>te meo . Ioh<ex>ann</ex>e de mundegumeri . Roger filio Glay . Will<ex>elm</ex>o de hauekerest’ . Alano Wallensi . Vmfirdo de Bosco .<lb/> Ioh<ex>ann</ex>e de lindesey . Hug<ex>one</ex> filio Sim<ex>onis</ex> filii Bertini . et Multis Aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of the Church who shall view or hear the present writing, <cl type="intitulatio">Walter son of Alan, steward of the king of Scotland,</cl> <cl type="salutation">sends greeting.</cl></cl> <cl type="notification">Know, all of you, that</cl> <cl type="narration">I, in honour of God and for the peace of the Church, and mainly wishing to
+                  provide tranquility at Melrose, have thought fit to clarify
+                  doubts once contained in the charter of Walter my grandfather
+                  given to the monks of Melrose, in that part of the charter,
+                  that is, where my said grandfather spoke of untilled lands
+                  and haughs and of forest pasture. This I also will, that
+                  where there is contained less of charity and security, in
+                  this instrument to describe more clearly, and to provide for
+                  the monks more fully.</cl> <cl type="disposition">I have therefore granted to the aforementioned monks all untilled lands and
+                  haughs, as well in my forests as outside, on the northern
+                  side of the River Ayr, and my whole forest to be used
+                  according to what should seem the more useful to them, that
+                  is, to be tilled and sown wherever it should seem to them to
+                  be suitable, as well within the forest as outside, and for
+                  the feeding and pasturing and constantly keeping their flocks
+                  within the same forest, as many as they wish, according to
+                  what the territory of the same forest is able to contain; and
+                  it shall be in the judgment of the monks to calculate how
+                  much the same land is able to support. I have also granted to
+                  them the use of the same forest in all its easements and
+                  benefits; to be had and possessed fully and peaceably for all
+                  their own needs; this alone excepted, that [neither] the
+                  monks nor the lay-brothers nor any other of their men under
+                  authority shall hunt or catch sparrow-hawks in the same
+                  forest; for this is not appropriate to their order, not do we
+                  believe it to be beneficial for them. All these things have I
+                  given, granted, and made firm by this my charter, to God and
+                  the aforementioned monks. <cl type="warrandice">And I, and my heirs and successors all, shall warrant and defend for the
+                     aforesaid monks all the above-said things</cl> <cl type="holding">and we shall cause them to possess them in peace, free and quit from every
+                     service and exaction and secular custom</cl>.</cl> <cl type="sealing">And so that my grant should be firm and unimpaired, I have handed over the
+                  present writing confirmed with my own present seal.</cl> <cl type="witnesses">With these witnesses: William, my chaplain; Malcolm, son of the earl of Lennox,
+                  my nephew; John of Montgomery; Roger son of Glay; William of
+                  Halkerston; Alan Wallace; Humphrey del Bois; John of Lindsay;
+                  Hugh, son of Simon son of Bertin; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-265">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/292</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:13.275236+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">265</idno>
+        <idno type="textcontent">264</idno>
+        <idno type="transcription_textcontentxml">265</idno>
+        <idno type="translation_textcontentxml">264</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/292</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/292</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:28:13.275236+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:13.275236+00:00" status="published">transcription moa=265 status=live modified=2017-01-30 19:28:13.275236+00 | translation moa=264 status=live modified=2017-01-20 11:57:30.329213+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Hugo dei gratia Dunkeld<ex>ensis</ex> Episcopus . Omnibus presens scriptum uisuris uel audituris eternam in domino
+                     Salutem .</cl><lb/> <cl type="disposition">Nouerit uniuersitas uestra nos gratis et diuine pietatis intuitu remisisse et
+                  inperpetuum quietum clamasse<lb/> Abbati et Canonicis de insula missarum Canum et Coneuetum . quod Clerici
+                     Ecclesie Dunkeld’ percipere con<lb/>sueuerunt apud Madernin de terra que Scotice dicitur Abtheyn .</cl> Ad huius autem quiete clamationis<lb/> Robur perpetuum Huic Scripto Sigillum notrum Apposuiumus . <cl type="witnesses">Teste Capitulo Dunkeld’.</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">Hugh by the grace of God Bishop of Dunkeld, to all who shall view or hear the
+                  present document, wishes eternal salvation in the Lord.</cl> <cl type="disposition">You all should know that, out of grace and godly piety, we have remitted and
+                  quitclaimed in perpetuity to the abbot and canons of
+                  Inchaffray the cain and conveth that the clergy of the church
+                  of Dunkeld were accustomed to receive at Madderty from the
+                  land which in Gaelic is called ‘apdaine’.</cl> For the perpetual strength of this quitclaim, we have affixed our seal to this
+                  document. <cl type="witnesses">As witness, the Chapter of Dunkeld.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

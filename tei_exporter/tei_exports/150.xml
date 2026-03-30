@@ -1,0 +1,87 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-150">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 45</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:04.071366+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">150</idno>
+        <idno type="textcontent">150</idno>
+        <idno type="transcription_textcontentxml">150</idno>
+        <idno type="translation_textcontentxml">151</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 45</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 45</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:28:04.071366+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:04.071366+00:00" status="published">transcription moa=150 status=live modified=2017-01-30 19:28:04.071366+00 | translation moa=151 status=live modified=2016-06-07 08:55:36.837967+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus has litteras visuris uel audituris . <cl type="intitulatio">Joh<ex>ann</ex>es de Inchesirith’ filius ⁊ heredes Duncani de Inchesirith’</cl> <cl type="salutation">Salutem . <lb/> in domino</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit vniuersitas vestra</cl> me dedisse . concessisse . ⁊ hac carta mea confirmasse deo ⁊ ecclesie sancti
+                     andree <lb/> ⁊ canonicis ibidem deo seruientibus ⁊ seruituris piscariam me contingentem ex
+                     aduerso piscarie prioris ⁊ conuentus <lb/> de May . videlicet illam que vocatur brekeles cum omnibus asyamentis ⁊ iuribus
+                     ad dictam piscariam spectantibus <lb/> uel de iure spectare valentibus in puram ⁊ perpetuam elemosinam . Ita libere .
+                     quiete . ⁊ honorifice . sicut aliqua elemo<lb/>sina aliquibus viris religiosis liberius . quiecius . ⁊ honorificencius in regno
+                     scocie potest dari aut concedi . Concedo eciam dictis
+                     canonicis ⁊ quibuscunque nomine ipsorum dictam piscariam
+                     piscantibus liberum transitum per ter<lb/>ram meam sine aliqua inquietacione . aut exaccione aliqua seculari . seu
+                     molestia . Et potestatem <lb/> trahendi cobellum suum ⁊ recia sua in terram siccam quociens sibi viderint
+                     expedire . ac dicta recia ibi<lb/>dem ordinare . ⁊ reficere . ⁊ desiccare . ac omnia alia faciendi que ad
+                     commoditatem ⁊ profectum <lb/> dicte piscarie poterunt proficere . sicut ego aut heredes mei aliquo tempore de
+                     dicta piscaria liberius . <lb/> ⁊ commodius ad vltilitatem nostram ordinare aut facere deberemus uel possemus .</cl> <cl type="sealing">In cuius rei testi<lb/>monium hinc scripto sigillum meum apposui .</cl> <cl type="witnesses">Testibus . Dauid fratre dicti Joh<ex>ann</ex>is . Domino Laurencio Muf<lb/>fechet . rectore ecclesie sancti Mathoci . Domino alexandro filio comitis de
+                     fyf’ rectore ecclesie de Ky<lb/>nule . ⁊ aliis .</cl> Datum apud Inchefyrith’ die sanctorum Nerei ⁊ achillei . Anno gracie . Mo . CCo
+                  . octogesimo tercio .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall view or hear these letters, <cl type="intitulatio">John of Inchyra, son and heir of Duncan of Inchyra,</cl> s<cl type="salutation">ends Greeting in the Lord</cl>:</cl> <cl type="disposition"><cl type="notification">You should all know</cl> that I have given, granted, and by this my charter made firm, to God and to the
+                     church of St Andrews, and to the the canons in that place
+                     serving God now and in the future, the fishery belonging
+                     to me opposite the fishery of the prior and convent of
+                     May, namely, that which is called ‘Brekeles’, with all
+                     easements and rights pertaining to the said fishery, or by
+                     right could pertain, in pure and perpetual alms; as
+                     freely, quietly, and honourably as any alms are able to be
+                     given or granted to any religious men freely, quietly, and
+                     honourably in the kingdom of Scotland. I also allow to the
+                     said canons, and to whomsoever is fishing the said fishery
+                     in their name, free pasage throughout my land without any
+                     discturbance, or any secular exaction or interference; and
+                     the authority to pull their boat and nets onto dry land as
+                     often as they shall see fit; and to arrange the said nets
+                     there, and to repair, and dry out, and do all the other
+                     things which they are able to do for the convenience and
+                     benefit of the said fishery, just as freely and
+                     conveniently as I or my heirs ought or could at any time
+                     arrange or do for our own benefit for the said fishery.</cl> <cl type="sealing">In testimony of this matter I have therefore applied my own seal to the deed.</cl> <cl type="witnesses">As witnesses: David, brother of the said John; the lord Laurence Muschet, rector
+                  of the church of St Madoes; the lord Alexander, son of the
+                  Earl of Fife, rector of the church of Kinnoull; and others.</cl> Given at Inchyra, on the day of SS. Nereus and Achilleus, in the Year of Grace
+                  the twelve hundred and eighty-third.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

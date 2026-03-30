@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-948">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 718</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 12:40:59.653805+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">948</idno>
+        <idno type="textcontent">976</idno>
+        <idno type="transcription_textcontentxml">948</idno>
+        <idno type="translation_textcontentxml">949</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 718</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 718</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T12:40:59.653805+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T12:40:59.653805+00:00" status="approved">transcription moa=948 status=reviewed modified=2022-11-01 12:40:59.653805+00 | translation moa=949 status=reviewed modified=2022-11-01 12:40:59.643199+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus fidelibus . <cl type="intitulatio">Willelmus de ueteri ponte</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis quod</cl> penitentia<lb/> ductus . reddo deo et sancto Cuthberto et monachis eius de coldigham terram<lb/> illam de qua contentio fuerat inter me et eosdem monachos tempore<lb/> d<ex>aui</ex>d regis . quam ego iniuste super eos occupaueram . ab omni calumpnia<lb/> liberam et quietam inperpetuum per antiquam diuisam <cl type="boundaries">scilicet sicut riuulus decurrit<lb/> in tvedam</cl> . ita tamen ut uia pateat libera pergentibus de horuuorresdene<lb/> ad amnem .</cl> <cl type="witnesses">His testibus . Ernaldus abbate de Calchou . Ric<ex>ardo</ex> . Ioh<ex>ann</ex>e . Ramald’<lb/> monachis eius . Rabel del chene . Tomas abet . Ioh<ex>ann</ex>e de biliols . Ric’ .<lb/> de aldre . Vlkil de havdene . Vill<ex>elmo</ex> filio <persName>Thor</persName> . Alano filio Gospatric .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all the faithful <cl type="intitulatio">William de Vieuxpont</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know that,</cl> guided by repentance, I return to God, and Saint Cuthbert and his monks at
+                     Coldingham, the land about which there had been a dispute
+                     between me and the same monks in the time of King David;
+                     [land] which I had unlawfully seized from them; free and
+                     quit from every claim for ever; by the time-honoured
+                     boundary, <cl type="boundaries">that is, as the burn flows into the Tweed;</cl> so that there should be a free road open for travelling from Horndean to the
+                     river.</cl> <cl type="witnesses">With these as witnesses: Arnold abbot of Kelso; Richard, John, Romwald his
+                  monks; Rabel le Cheyne; Thomas Abbet; John de Biliols;
+                  Richard de Aldre; Ulfkil of Howden; William son of <persName>Thor</persName>; Alan son of Cospatric.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

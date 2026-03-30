@@ -1,0 +1,65 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-672">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Add. Ch. 76699</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:44:27.209917+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">672</idno>
+        <idno type="textcontent">682</idno>
+        <idno type="transcription_textcontentxml">672</idno>
+        <idno type="translation_textcontentxml">673</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 76699</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Add. Ch. 76699</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:44:27.209917+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:44:27.209917+00:00" status="published">transcription moa=672 status=live modified=2021-04-05 08:44:27.209917+00 | translation moa=673 status=live modified=2021-04-05 08:44:23.549325+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Sancte matris Ecclesie filiis presens scriptum inspecturis <cl type="intitulatio"><persName>Rog<ex>erus</ex></persName> dei gr<ex>ati</ex>a Ecclesie Sancti Andr<ex>ee</ex><lb/> Humilis minister</cl> <cl type="salutation">Salutem in Domino</cl> .</cl> <cl type="notification">Nouerit uniuersitas uestra</cl> <cl type="disposition">Nos dedisse et concessisse et presenti<lb/> Carta confirmasse <persName>Will<ex>elm</ex>o</persName> filio <persName>Ade</persName> de Neuihn ad presentationem eiusdem . <persName>A .</persName> Ecclesiam de lure cum<lb/> omnibus iustis pertinentiis suis in liberam puram et perpetuam Elemosinam . <cl type="holding">Quare uolumus et firmiter<lb/> precipimus ut idem . <persName>W .</persName> prenominatam Ecclesiam libere . Quiete et Honorifice teneat et possideat . Sicut<lb/> aliqua persona Ecclesiam suam liberius . Quiecius et honorificencius in Diocesi
+                        nostra tenet et possidet .<lb/> Saluis Episcopalibus</cl> .</cl> <cl type="witnesses">Testibus . <persName>Henrico</persName> abbate de Aberbruth’ . <persName>Thoma</persName> priore de Sancto Andr<ex>ea</ex> .<lb/> <persName>Arche<ex>n</ex>b<ex>aldo</ex></persName> abbate de Scon’ . <persName>Hug<ex>one</ex></persName> priore de Rostinoh’t . Magistro <persName>Ran<ex>ulfo</ex></persName> officiali . Magistro <persName>ysaac</persName><lb/> Magistro <persName>Will<ex>elmo</ex></persName> de Lina . <persName>Ric<ex>ardo</ex></persName> et <persName>Ric<ex>ardo</ex> </persName>Capellanis . <persName>Ioh<ex>anne</ex></persName> de Lond’ . <persName>Ric<ex>ardo</ex></persName> Macro . <persName>Will<ex>elmo</ex></persName> de Wiuilla .<lb/> <persName>Ioh<ex>ann</ex>e</persName> de Bereford’ . <persName>Hug<ex>one</ex></persName> Senescaldo . <persName>Ran<ex>ulfo</ex></persName> Sacerdote de Glamnes . <persName>Baldewino</persName> Scotto .<lb/> <persName>Ioh<ex>ann</ex>e</persName> decano de Anegus . <persName>Sim<ex>one</ex></persName> decano de Perht . <persName>Ioh<ex>ann</ex>e</persName> decano de Kingor et pluribus aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Holy Mother Church's sons intending to examine the present writing, <cl type="intitulatio">Roger, by the grace of God a humble servant of the church of St Andrew,</cl> <cl type="salutation">[sends] greeting in the Lord</cl>.</cl> <cl type="notification">Know us, all of you,</cl> <cl type="disposition">to have given and granted and by the present charter to have made firm to
+                  William son of Adam of Nevay, at the presentation of the same
+                  A<ex>dam</ex>, the church of [Meathie] Lour with all its just pertinents in free, pure, and
+                     perpetual alms. <cl type="holding">Wherefore I will and firmly instruct that the same William hold and possess the
+                     aforenamed church freely, quitly, and honourably, just as
+                     any parson most freely, quitly, and honourably holds and
+                     possesses his church in our diocese.</cl> Reserving episcopal rights.</cl> <cl type="witnesses">As witnesses: Henry, abbot of Arbroath; Thomas, prior of St Andrews; Archibald,
+                  abbot of Scone; Hugh, prior of Restenneth; Master Ranulf,
+                  official; Master Isaac; Master William of Lyne; Richard and
+                  Richard, chaplains; John of London; Richard le Megre; William
+                  Wyville; John of Bearford; Hugh the steward; Ralph, priest of
+                  Glamis; Baldwin the Scot; John, dean of Angus; Simon, dean of
+                  Perth; John, dean of Kinghorn; and a great many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

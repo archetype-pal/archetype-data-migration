@@ -1,0 +1,192 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-29">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/174</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-29 15:38:41.470387+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">29</idno>
+        <idno type="textcontent">29</idno>
+        <idno type="transcription_textcontentxml">29</idno>
+        <idno type="translation_textcontentxml">30</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/174</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/174</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2023-06-29T15:38:41.470387+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-29T15:38:41.470387+00:00" status="draft">transcription moa=29 status=draft modified=2023-06-29 15:38:40.255091+00 | translation moa=30 status=draft modified=2023-06-29 15:38:41.470387+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><persName>Alexander</persName> . dei Gratia Rex Scott’ . Episcopis . Abbatibus . Comitis . Baronibus . Iustic’
+                  . Vicecomitibus . Prepositis . Ministris . et Omnibus probis
+                  hominibus tocius terre sue . Clericis et laicis  <lb/> <cl type="salutation">Salutem</cl> . <cl type="disposition">S<cl type="notification">ciant presentes et Futuri</cl> Me concessisse . et hac carta mea confirmasse Ecclesie sancte Marie de Melros .
+                     et Monachis ibidem deo seruientibus . Donationem quam
+                     Walterus . <lb/> filius Alani . fecit eidem Ecclesie et Monachis . de terra de Mauhelin’ . et de
+                     pastura in Foresto eius . Et de una Carrucata terre uersus
+                     terram de Duueglas . Et de <lb/> piscatura in hostio fluminis . AR . Et de terra de Ædmundestun’ . Et de viginti
+                     acris terre cum Tofto de Berewic’ . Item . totam terram
+                     illam de Eskedale . per diuisas <lb/> que nominantur et continentur in Cartis Roberti . Auenel’ . et Geruasii heredis
+                     ipsius . Item . totam terram illam quam Iohnannes filius
+                     Orm’ . eis dedit in Territorio de Hunedun’ . <lb/> per ipsas Rectas diuisas que continentur in Carta predicti Iohannis quam habent
+                     de eo de eadem terra . Item . totam terram infra Feodum de
+                     Hunum a Riuulo de Quindenhope <lb/> sursum per semitam illam usque ad fossatum inter Raschawe et Cudhbrichteshope .
+                     et abinde per easdem Rectas diuisas que continentur in
+                     Carta Willelmi filii Iohannis . quam <lb/> habent de eo . Item . Donationem quam Osulfus filius vctredi . et vctredus
+                     filius eius contulerunt eis de terra de Rigwude . Item .
+                     Donationem quam Cospatricius <lb/> Comes fecit eisdem Monachis de terra de Hertesheued . et spot . et de quadam
+                     salina . Item . Donationem quam Willelmus de Bruis . eis
+                     fecit de quadam piscaria iuxta <lb/> Ecclesiam de Reinpatric’ . cum una acra terre et pastura quatuor vaccarum . et
+                     sex Boum . et aliis aisiamentis uille de Reinpatric’ .
+                     Item . Duas Bouatas terre . et Duas <lb/> acras Prati . cum pastura ad quadringentas oues que Abbas et Conuentus de
+                     Calchou . eis dederunt nomine pacis inter eos facte . Item
+                     . totam terram illam quam habent <lb/> de Patricio . de Ridale in territorio de Whittun’ . per illas diuisas que
+                     continentur in carta Patricii . de Ridale . quam habent de
+                     eo de eadem terra . Item . Donationem quam Ricardus . <lb/> de Moreuill’ . et Auicia uxor eius fecerunt ipsis Monachis de Capella de Parco .
+                     cum terra ei adiacente . Et preterea de tota terra de
+                     Milkenesside . per illas Rectas diuisas que in <lb/> Carta predicti Ricardi . et Auicie uxoris eius continentur . Item . totam terram
+                     et pasturam quam Willelmus de Moruill’ . eis dedit in
+                     augmentum predicte terre de Milkenesside per Rectas di<lb/>uisas nominatas in Carta eiusdem Willelmi . Item . totam illam partem terre in
+                     territorio de kilbewocistun’ . quam Alanus filius Rollandi
+                     . eis dedit per Rectas diuisas nominatas in Carta ipsius
+                     Alani . <lb/> in excambium terre quam Willelmus de Moreuill’ . eis diuisit in Cunigham’ . cum
+                     communi pastura et aliis aisiamentis predicte uille .
+                     sicut in carta ipsius Alani . continetur . Item . Terram <lb/> quam Walterus . Corbet’ . filius Walteri . Corbet’ . eis dedit in territorio de
+                     Cliftun’ . per Rectas diuisas nominatas in carta eiusdem
+                     Walteri . Corbet’ . quam habent de eo de eadem terra .
+                     Item . illam <lb/> dimidiam Carrucatam terre . in terra et prato . quam Anselmus de Wichetun’ . eis
+                     dedit de feodo suo de Molle . per easdem Rectas diuisas
+                     que continentur in carta ipsius anselmi . quam ipsi Mona<lb/>chi habent de eo . Item . Donationem illam quam Comes Patricius . eis fecit de
+                     tota terra arabili que uocatur Sorwelesfeld’ . ultra Ledre
+                     ex occidentali parte uersus Grangiam predictorum
+                     Monachorum <lb/> sicut Willelmus Sorweles eam plenius tenuit . Item . dimidiam Carrucatam terre
+                     quam Ricardus . de Londoniis . eis dedit in lessedwin’ .
+                     sicut Carta ipsius Ricardi . eis testatur . Concessi etiam
+                     eis <lb/> quietam clamantiam quam Dauid . Olifard’ . et Walterus . filius . et heres eius
+                     fecerunt deo . et Ecclesie de Melros et predictis Monachis
+                     de Hertesheued . et de spot . sicut in Carta domini Regis
+                     . Willelmi <lb/> patris mei continetur . Concessi etiam amicabilem compositionem factam inter
+                     Comitem . Patricium . de Dunbar’ . et predictos Monachos
+                     super controuersia que [ue]rtebatur inter eos de pastura
+                     uersus occiden<lb/>tem de ledre . sicut scripta inde facta testantur . Concessi etiam eis .
+                     [q]uietam clamantiam quam Alanus filius Walteri . eis
+                     fecit de calumpnia que fuit inter eos . de pastura ex
+                     occidentali parte de ledre . Quare volo et precipio . vt
+                     predicti Monachi omnes has predictas possessiones habeant
+                     et teneant in liberam et perpetuam elemosinam . Ita libere
+                     et quiete . <lb/> plenarie et honorifice  sicut Carte donatorum et confirmationes predecessorum
+                     meorum testantur . saluo seruicio meo .</cl> Testibus . Willelmo de Boscho Cancellario . meo . Seihero . <lb/> de Quinci . Comite . Wintonie . Comite . Malcolmo . de Fif’ . Philippo . de
+                  Valoniis . <persName><roleName>Camerario</roleName></persName> . meo . Willelmo de Valoniis . filio . eius . Roberto . Capellano meo . Iohanne
+                  de Maccuswel’ . Dauid . <persName><roleName>Ma<lb/>rescallo</roleName></persName> . Thoma . de Lundin’ . hostiario . meo . Heruico . <persName><roleName>Marescallo</roleName></persName> . Iordano . Cumin’ . <cl type="dating">Apud Edenburg’ . iii . die Aprilis</cl> . * * * * * * * * * * * * * * * * * * *</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">Alexander by the grace of God king of Scots to the bishops, abbots, earls,
+                  barons, justices, sheriffs, provosts, officials, and all
+                  worthy men of his whole land, clerk and lay, greeting:</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> that I have granted, and by this my charter confirmed, to the church of St Mary
+                     at Melrose, and to the monks serving God there, the
+                     donation that Walter son of Alan made to the same church
+                     and monks, of the land of Mauchline, and of pasture in his
+                     forest; and of one ploughgate of land towards the land of
+                     Douglas, and of a fishery at the mouth of the River Ayr,
+                     and of the land of Edmonston, and of twenty acres of land
+                     with a toft at Berwick. Also, the whole of the land that
+                     John son of Orm gave to them in the territory of Hownam,
+                     by those right bounds that are contained in the charter of
+                     the aforesaid John that they have of him from the same
+                     land. Also, the whole land within the feu of Hownam, from
+                     the Capehope Burn upwards by that pathway to the boundary
+                     between Raeshaw and Cuthberthope, and from there by the
+                     same right bounds that are described in the charter of
+                     William the son of John, which they have from him. Also,
+                     the donation of the land of Ringwood that Osulf the son of
+                     Uhtred, and Uhtred his son, bestowed to them. Also, the
+                     donation that Cosptric made the same monks of the land of
+                     Hartside, and Spott, and a saltpan. Also, the donation
+                     that William de Bruce made to them of a fishery near the
+                     church of Rainpatrick, with one acre of land and pasture
+                     for four cows, and six oxen, and other easements of the
+                     toun of Rainpatrick. Also, two oxgangs of land, and two
+                     acres of meadow, with pasture for four hundred ewes that
+                     the abbot and convent of Kelso gave to them as a token of
+                     the peace made between them. Also, the whole land that
+                     they have from Patrick of Ryedale in the territory of
+                     Whitton, by those bounds that are contained in the charter
+                     of Patrick of Ryedale, which they have from him concerning
+                     the same land. Also, the donation that Richard de Morville
+                     and Avicia his wife made of the chapel of Park to the same
+                     monks, with the land belonging to it; and in addition, of
+                     the land of Milkenesside, by its right bounds, which are
+                     contained in the charter of the aforesaid Richard and
+                     Avicia his wife. Also, the whole land and pasture that
+                     William de Morville gave to them to enlarge the aforesaid
+                     land of Milkenesside by the right bounds described in
+                     Williams’s charter. Also, the whole portion of land in the
+                     territory of Kilbewocistun, which Alan son of Roland gave
+                     them, by the right bounds described in Alan’s charter, in
+                     exchange for the land that William de Morville apportioned
+                     to them in Cunningham, with common pasture and other
+                     easements of the aforesaid toun, just as it is contained
+                     in Alan’s charter. Also, the land that Walter Corbet, son
+                     of Walter Corbet, gave them in the territory of Clifton,
+                     by the right bounds described in the charter of the same
+                     Walter Corbet that they have from him concerning the same
+                     land. Also, that half-ploughgate of land, in land and
+                     meadow, which Anselm of Whitton gave them from his feu of
+                     Mow, by the same rights bounds that are contained in
+                     Anslem’s charter that the monks have from him. Also, the
+                     donation that Earl Patrick made to them of the whole
+                     arable land called Sorrowlessfield beyond Leader from the
+                     western side towards the grange of the aforesaid monks,
+                     just as William Sorrowless fully held it. Also, a
+                     half-ploughgate of the land that Richard of London gave
+                     them in Lessudden, just as Richard’s charter to them bears
+                     witness. I have also granted to them the quit claim that
+                     David Oliphant and Walter his son and heir made to God and
+                     the church of Melrose and the aforesaid monks, of
+                     Hartside, and of Spott, just as it is contained in the
+                     charter of the lord king, William my father. I have also
+                     granted the friendly agreement made between Earl Patrick
+                     of Dunbar and the aforesaid monks over the controversy
+                     that arose between them concerning the pasture to the west
+                     of the Leader, just as the writing made on the matter
+                     bears witness. I have also granted them the quit claim
+                     that Alan son of Walter made to them for the claim there
+                     was between them on the pasture on the west side of the
+                     Leader. For this reason I will and command that the
+                     aforesaid monks shall have and hold all these aforesaid
+                     possessions in free and perpetual alms, as freely and
+                     quietly, fully and honourably, as the charters of the
+                     donors and the confirmations of my predecessors bear
+                     witness, saving my service.</cl> <cl type="witnesses">As witnesses: William del Bois my chancellor, Saer de Quincy earl of Winchester,
+                  Earl Malcolm of Fife, Philip de Valgones my chamberlain,
+                  William de Valognes his son, Robert my chaplain, John of
+                  Maxwell, David the marischal, Thomas of Lundie my doorward,
+                  Hervey the marischal, Jordan Comyn.</cl> <cl type="dating">At Edinburgh on the third day of April.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

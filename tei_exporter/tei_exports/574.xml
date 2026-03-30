@@ -1,0 +1,75 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-574">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/232</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:35.961189+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">574</idno>
+        <idno type="textcontent">582</idno>
+        <idno type="transcription_textcontentxml">574</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/232</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/232</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:35.961189+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:35.961189+00:00" status="draft">transcription moa=574 status=draft modified=2017-01-30 19:28:35.961189+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus christi fidelibus has litteras visuris uel audituris <cl type="intitulatio">Robertus de muscampo</cl> <cl type="salutation">Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Nouerit vniuersitas vestra</cl> me<lb/> dedisse concessisse et hac presenti carta mea confirmasse . Magistro Will<ex>elm</ex>o de Grenlaw pro homagio et seruicio suo<lb/> totam terram quam ei per probos homines meos perambulari feci in terra que fuit
+                     Nicholay de Egketofft et Gilie<lb/> quondam sororis mee in territorio ville de halsinton contenta infra diuisas
+                     subsequentes in excambium terre quam ei<lb/> prius dederam in territorio predicte ville . <cl type="boundaries">Iacentem per partes inter terras hominum meorum de halsinton . videlicet<lb/> de riuolo de Lambeden ex parte orientali ascendendo vsque ad congeriem lapidum
+                        positam pro diuisa ex eadem<lb/> parte prope domos sitas in eadem terra que fuerunt quondam Nichol’ de Egketofft
+                        et Gilie sororis mee . Et per<lb/> congeriem lapidum versus austrum de congerie in congeriem linialiter tenendo et
+                        decendendo . vsque in lepricg’<lb/> et per lepricg' semper ascendendo uersus occidentem vsque ad diuisam quam mater
+                        mea fieri fecit inter terram suam de hal<lb/>sinton  et terram quam dedit domino Will<ex>elmo</ex> filio Ioh<ex>annis</ex> cum dicta . G . sorore mea in liberum maritagium . et per illam diuisam ascen<lb/>dendo uersus boream . vsque in vacellum iuxta cambes . et de illo vacello per
+                        congeries lapidum uersus orientem vsque ad<lb/> vltimam congeriem lapidum ibi positam pro diuisa . Et de illa congerie
+                        decendendo vsque in dictum riuulum de lambe<lb/>dene .</cl> <cl type="holding">Tenendam et habendam dicto Magistro . W . et heredibus suis uel suis assignatis
+                     et eorum heredibus . de me et heredibus<lb/> meis in feodo et hereditate cum omnibus libertatibus et communibus et cum libero
+                        exitu ad communas illas . et cum omnibus<lb/> aliis asiamentis ad predictam villam de halsinton interius et exterius
+                        pertinentibus . adeo libere . quiete . plenarie . et
+                        hono<lb/>rifice  sicut aliquis miles in regno scocie aliquam terram liberius . quietius
+                        . plenius . et honorificentius  tenet aut possidet .<lb/> faciendo inde ipse et heredes sui uel sui assignati et eorum heredes mihi et
+                        heredibus meis seruicium tricesime partis<lb/> vnius Militis in forinseco seruicio domini Regis cum illud acciderit . et me et
+                        heredes meos pro predicta villa de halsinton<lb/> seruicium forinsecum facere contigerit . et erunt dictus magister . W . et
+                        heredes sui uel sui assignati et eorum heredes quieti
+                        et immu<lb/>nes ab omni alio seruicio et a multura et a varda castelli . et a sequela omnium
+                        placitorum et ab omni alio seculari serui<lb/>cio auxilio et demanda pro seruicio supradicto . Et libere molent bladum dicte
+                        terre si voluerint ad molendinum predicte ville<lb/> de halsinton ita quod sint propinquiores ad molendum prout bladum meum proprium
+                        inuentum in dicto molendino ad molendum . uel si ma<lb/>gis voluerint . bladum predictum libere portent ad molendum ubicumque eis
+                        placuerit sine omni impedimento mei et heredum meorum</cl><lb/> Preter hec autem dedi et concessi dicto Magistro . W . et heredibus suis uel
+                     suis assignatis et eorum heredibus omnes domos<lb/> cum pertinenciis earum sitas in predicta terra Infra predictas diuisas . et
+                     omnia prata tocius terre date dicto . W. filio Ioh<ex>annis</ex> cum dicta <lb/> G . quondam sorore mea in territorio de halsinton . et omnes moras et vacellos
+                     contentos Infra diuisas supradictas . <cl type="warrandice">Ego<lb/> uero et heredes mei omnia predicta dicto Magistro . W . et heredibus suis uel
+                        suis assignatis et eorum heredibus contra omnes<lb/> homines varantizabimus inperpetuum</cl></cl> . <cl type="sealing">In cuius rei testimonium presenti carte sigillum meum duxi apponendum</cl> . <cl type="witnesses">Hiis<lb/> testibus . dominis . P . comite de dunbar . et . W . fratre suo . Roberto filio
+                     comitis . Alano de harecarr’ . Will<ex>elm</ex>o de haliburton . Rob<ex>erto</ex><lb/> de Wlecet’ . d<ex>aui</ex>d . de Graham . Ioh<ex>anne</ex> . de lambeden’ . Will<ex>elm</ex>o de Alington . Will<ex>elm</ex>o de Muscampo . Rad<ex>ulfo</ex> de Mulinaws .<lb/> Rog<ex>ero</ex> de home . Ioh<ex>ann</ex>e de blacethten . et aliis .</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

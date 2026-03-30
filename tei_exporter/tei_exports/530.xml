@@ -1,0 +1,57 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-530">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/277</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:32.151345+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">530</idno>
+        <idno type="textcontent">537</idno>
+        <idno type="transcription_textcontentxml">530</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/277</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/277</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:32.151345+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:32.151345+00:00" status="draft">transcription moa=530 status=draft modified=2017-01-30 19:28:32.151345+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis Christi fidelibus Hoc scriptum uisuris uel audituris <cl type="intitulatio">Will<ex>elmu</ex>s filius iohannis</cl> <cl type="salutation">salutem in domino</cl></cl><lb/> <cl type="disposition"><cl type="notification">Nouerit uniuersitas uestra</cl> me confessum esse et recognouisse deo . et monachis de Melros ius<lb/> suum et possessionem de terra de Rasawe quam dedi eis elapsis viginti a<supplied>cris</supplied> et<lb/> amplius per certas diuisas contentas in carta mea quam inde habent monac<supplied>hi</supplied> . . . Ego<lb/> etiam quicquid usus et aisiamenti habueram in prenominata terra  totum tenui a
+                     tempore dicte<lb/> donationis mee per concessionem monachorum . et nomine illorum et nullo alio
+                     iure hereditatis uel<lb/> alterius tituli . Feci etiam predictam terram liberam et uacuam a me et aueriis
+                     meis et omnibus aliis rebus<lb/> ad me pertinentibus et resignaui dictam terram prenominatis monachis . <cl type="holding">habendam in perpetuum et pro<lb/> uoluntate sua utend’ .</cl> Ego uero concessi et statui ut celebratio misse que fieri deb . . . in capella<lb/> sita in predicta terra secundum tenorem carte mee prenominate fiat in perpetuum
+                     in Monast<supplied>erio de M</supplied>elros per disposicionem abbatis et conuentus eiusdem loci . Hanc quidem
+                     confessionem recognitionem et resig<lb/>nationem dicte terre que fuit propria et pura elemosina monachorum a tempore
+                     donacionis mee pretaxate<lb/> feci dictis monachis existens in plena et libera potestate terrarum mearum et
+                     omnium mearum mobilium<lb/> et inmobilium</cl> Anno gracie . Millesimo . ducentesimo . vicesimo quinto . <cl type="witnesses">Testibus domino . I . de Mackuswel . Bernardo de Hauden .<lb/> Waltero de Ridale . Alex’ de chattou . Qui omnes huic scripto sua sigilla
+                     apposuerunt .</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

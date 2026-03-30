@@ -1,0 +1,82 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-369">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/167</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:41:57.231279+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">369</idno>
+        <idno type="textcontent">373</idno>
+        <idno type="transcription_textcontentxml">369</idno>
+        <idno type="translation_textcontentxml">370</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/167</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/167</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T12:41:57.231279+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T12:41:57.231279+00:00" status="published">transcription moa=369 status=live modified=2021-04-06 12:41:55.206279+00 | translation moa=370 status=live modified=2021-04-06 12:41:57.231279+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris Ecclesie filiis presentibus et futuris <cl type="intitulatio">Walterus de Ridale filius et heres Patricii de Ridale</cl> <cl type="salutation">Salutem</cl></cl> .<lb/> <cl type="disposition"><cl type="notification">Sciatis me</cl> concessisse et hac carta mea confirmasse deo et Ecclesie sancte Marie de Melr<ex>os</ex> . et monachis ibidem deo seruientibus pro<lb/> salute anime mee et anime patris mei et pro animabus omnium antecessorum meorum
+                     et successorum omnes donaciones quas pater meus<lb/> dedit eisdem monachis in territorio de Wittun' . in perpetuam elemosinam . per
+                     terminos et diuisas in Cartis patris mei nominatas . ita<lb/> libere et quiete plene et honorifice sicut cart<supplied>e</supplied> patris mei plenius testantur . Concessi etiam eis et hac carta mea confirmaui
+                     omnes confirmaciones<lb/> patris mei et omnes terras quas habent de Roberto de Bernolfebi et de Gaufrido
+                     Coco . sicut carte ipsius Roberti et eiusdem Gaufridi et<lb/> confirmaciones patris mei testantur . <cl type="holding">Quare uolo ut predicti monachi totas terras prenominatas teneant et possideant
+                     in bene et pace<lb/> cum omnibus terminis et pertinenciis suis sicut puram elemosinam . quietas et
+                        solutas ab omni tereno seruicio et consuetudine et
+                        exactione<lb/> seculari secundum tenorem cartarum prenominatarum . saluo seruicio de eodem
+                        Roberto et Gaufrido coco</cl></cl> . <cl type="witnesses">Hiis Testibus . Ricard<ex>o</ex> Decan<ex>o</ex> de Te<lb/>vidale et Officiali . Will<ex>elmo</ex> filio Ioh<ex>ann</ex>is . Thom<ex>a</ex> de Coleuill' . Ricard<ex>o</ex> Nano . Sym<ex>one</ex> . de Grubheued . Rad<ex>ulfo</ex> de Ridale . Ioh<ex>ann</ex>e de mac<lb/>keswell' Ada de Chathov . Ada de Wittun' . Ric<ex>ardo</ex> de Hetun' . Hugon<ex>e</ex> de Neubotl' . Will<ex>elmo</ex> nep<ex>ote</ex> meo . et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To All sons of Holy Mother Church present and future <cl type="intitulatio">Walter of Ryedale son and heir of Patrick of Ryedale</cl> <cl type="salutation">sends greeting</cl></cl><cl type="disposition">. <cl type="notification">Know me</cl> to have granted and by this my charter to have made firm to God and to the
+                     Church of St Mary at Melrose, and to the monks serving God
+                     in that place, for the salvation of my soul and the soul
+                     of my father and for the souls of all my ancestors and
+                     successors all the donations that my father gave to the
+                     same monks in the territory of Whitton, in perpetual alms,
+                     by the borders and boundaries named in the charters of my
+                     father, as freely and quitely, fully and honourably, as
+                     the charters of my father more fully bear witness. I have
+                     also granted to them and by this my charter have made firm
+                     all the confirmations of my father and all the lands that
+                     they have from Robert of Barnoldby and of Geoffrey the
+                     cook, as the charters of Robert and of the same Geoffrey
+                     and the confirmations of my father bear witness. <cl type="holding">Wherefore I will that the foresaid monks hold and possess the whole lands
+                     forenamed well and in peace with all their borders and
+                     boundaries as pure alms, quit and released from every
+                     earthly service and custom and secular exaction according
+                     to the terms of the forenamed charters, saving the service
+                     of the same Robert and Geoffrey the cook.</cl></cl> <cl type="witnesses">With these witnesses: Richard, dean of Teviotdale and official; William son of
+                  John; Thomas de Colville; Richard le Nain; Simon of Grubbit;
+                  Ralph of Ryedale; John of Maxwell; Adam of Chatto; Adam of
+                  Whitton; Richard of Heton; Hugh of Newbattle; William my
+                  nephew; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

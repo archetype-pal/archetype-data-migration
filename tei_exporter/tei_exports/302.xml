@@ -1,0 +1,74 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-302">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/40</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 11:35:12.787402+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">302</idno>
+        <idno type="textcontent">303</idno>
+        <idno type="transcription_textcontentxml">302</idno>
+        <idno type="translation_textcontentxml">303</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/40</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/40</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T11:35:12.787402+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T11:35:12.787402+00:00" status="published">transcription moa=302 status=live modified=2021-04-06 11:35:12.787402+00 | translation moa=303 status=live modified=2021-04-06 11:35:09.155114+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription"><p>C Y R O G R P H V S <lb/></p> <p><cl type="notification">Sciant tam presentes quam futurus . quod</cl> <cl type="narration"><persName>Robertus Auenel</persName> et <persName>geruasius</persName> heres eius . pro salute animarum suarum . et antecessorum et successorum<lb/> suorum . quietas clamauerunt in perpetuum illas quatuor marchas . quas monachi
+                     de meylros aliquando annuatim solebant illis reddere .<lb/> in firmam pro terra de eschedale . ad quatuor pitantias faciendum conuentui
+                     eiusdem loci per annum .</cl> <cl type="notification">Sciendum etiam quod</cl> <cl type="narration">abbas et totus<lb/> predictus conuentus . concesserunt fideliter eidem <persName>Roberto</persName> et <persName>geruasio</persName> heredi eius . et omnibus heredibus eorum . quod iste prefate pitantie in perpetu<lb/>um dabuntur eidem conuentui quatuor per annum . his scilicet diebus . Die quo
+                     ipse dominus <persName>Robertus</persName> seculum relinquens . se ex toto reddidit<lb/> domui illi . Et iterum die illo quo idem ipse domini <persName>Robertus</persName> defunctus est . Et iterum die sexta ante die natiuitatis dominice . in comemora<lb/>tionem anime domine <persName>Sibille</persName> uxoris eiusdem domni <persName>roberti</persName> . Dies autem quartus . est dies obitus ipsius <persName>geruasii</persName> . Quandiu uero uixit ipse geruasius . in po<lb/>testate eius fuit . quo die uoluit ipsam pitantiam conuentui dari</cl> . <cl type="notification">Et sciendum quod</cl> <cl type="narration">in istis prenominatis diebus . in capitulo eiusdem domus .<lb/> comemoratio animarum eorum . et absolutio inperpetuum fiet</cl> . <cl type="witnesses">Hi sunt testes . <persName>Iocelinus</persName> episcopus glascuensis . <persName>Symeon</persName> episcopus de dunblain . <persName>Osbertus</persName><lb/> abbas de kelcou <persName>Erkenbaldus</persName> abbas de dunfermelin . <persName>Ricardus</persName> abbas de ieddewrth . <persName>Dauid</persName> comes frater regis scotie . <persName>Symon</persName> ar<lb/>chidiaconus <persName>Glai</persName> nepos domni <persName>Roberti auenel</persName> <persName>Robertus</persName> clericus filius <persName>roberti</persName> . Magister <persName>rogerus</persName> de neuporth .</cl></p></div>
+      <div type="translation"><p>C Y R O G R A P H <lb/></p> <p><cl type="notification">Let present as well as future know that</cl> <cl type="narration">Robert Avenel and Gervase his heir, for the salvation of their souls, and their
+                  ancestors' and successors', quitclaimed for ever the four
+                  merks which the monks of Melrose at one time were accustomed
+                  to render to them annually in ferme in return for the land of
+                  Eskdale, to make four pittances to the convent of the same
+                  place every year.</cl> <cl type="notification">It is also to be known that</cl> <cl type="narration">the abbot and the whole aforesaid convent have faithfully conceded to the same
+                  Robert and Gervase his heir and to all their heirs that these
+                  aforesaid pittances shall be given to the same convent four
+                  times every year, on these days: that is, on the day that the
+                  lord Robert himself, giving up the secular life, wholly gave
+                  himself up to that haouse; and again on the day in which the
+                  same lord Robert himself died; and again on the Friday before
+                  the Nativity of the Lord [Christmas Day], in commemoration of
+                  the soul of the lady Sibyl, wife of the same lord Robert; the
+                  fourth day, then, is the day of the death of Gervase; as long
+                  as Gervase survived, indeed, he was in his right mind; he
+                  willed the same pittance to be given to the convent on this
+                  day.</cl> <cl type="notification">And it is to be known that</cl> <cl type="narration">on these aforenamed days, in the chapterhouse of the same house, commemoration
+                  and absolution of their souls shall be made in perpetuity.</cl> <cl type="witnesses">These are the witnesses, Jocelin the bishop of Glasgow, Simon the bishop of
+                  Dunblane, Osbert the abbot of Kelso, Archibald the abbot of
+                  Dunfermline, Richard the abbot of Jedburgh, Earl David the
+                  brother of the king of Scotland, Simon the archdeacon of
+                  Glasgow, Glay the nephew of the lord Robert Avenel, Robert
+                  the clerk, son of Robert, Master Roger of Newport.</cl></p></div>
+    </body>
+  </text>
+</TEI>

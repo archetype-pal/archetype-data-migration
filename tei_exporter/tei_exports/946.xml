@@ -1,0 +1,80 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-946">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 714</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 12:40:59.67492+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">946</idno>
+        <idno type="textcontent">973</idno>
+        <idno type="transcription_textcontentxml">946</idno>
+        <idno type="translation_textcontentxml">947</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 714</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 714</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T12:40:59.67492+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T12:40:59.67492+00:00" status="approved">transcription moa=946 status=reviewed modified=2022-11-01 12:40:59.67492+00 | translation moa=947 status=reviewed modified=2022-11-01 12:40:59.663423+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="disposition"><cl type="notification">Sciant presentes et futuri quod</cl> <cl type="intitulatio">ego Will<ex>elmu</ex>s de vallibus</cl> dedi . et concessi . et hac presenti mea carta con<lb/>firmaui deo et Sancto Cutberto de Dunolmo et Sanctis Monachis ibidem deo et
+                     Sancto Cutberto seruientibus unum<lb/> toftum in golin <cl type="boundaries">Scilicet illum toftum quod iacet propinquius crofto Sancti Ioh<ex>ann</ex>is hospital<ex>is</ex> Ierosolime erga<lb/> meridiem . tam in longo quam predictum croftum Sancti Iohannis est latum . et
+                        unam percatam terre quam Vdardus pisca<lb/>tor tenuit in prefata uilla . Scilicet illam percatam terre que iacet
+                        propinquius crofto Will<ex>elm</ex>i Smalware erga<lb/> septemtrionem . et Costeram aquilonis de Swindgthates sicut exitus est de golin
+                        usque ad illam magnam petram<lb/> que iacet extra Windgthates . erga septemtrionem . et sic sursum sicut terra
+                        Sancti Cutberti est perambulata et<lb/> mensurata .</cl> <cl type="holding">Volo eciam quod Osmundus de golin et sui heredes teneant illum predictum toftum
+                     . et illam<lb/> prefatam percatam terre . et costeram prenominatam libere et quiete et
+                        honorifice sicut aliqua elemosina liberius et qui<lb/>cius tenetur uel prossidetur in toto regno Scocie . reddendo annuatim predictis
+                        monachis . quatuor den<ex>arii</ex> .<lb/> ad festum Sancti Michaelis pro omni seruicio</cl> .</cl> <cl type="witnesses">His Test<ex>ibus</ex> . Roberto de Hotoft . Gregorio de<lb/> fentun . Waltero de Lind’ . Ric<ex>ardo</ex> Senz aueir . Ric<ex>ardo</ex> filio Seleburg . Godardo capellano . Gumero capel<ex>lano</ex> .<lb/> Symone clerico . Gilberto pincerna de golin . Roberto filio Ade de Driltun .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="disposition"><cl type="notification">Let present and future know that</cl> <cl type="intitulatio">I, William de Vaux,</cl> have given, and granted, and by this my present charter have made firm to God
+                     and Saint Cuthbert of Durham and the holy monks serving
+                     God and Saint Cuthbert there, one toft in Gullane, <cl type="boundaries">that is the toft which lies nearest the croft of the hospital of St John of
+                     Jerusalem towards the south, as long as the aforesaid
+                     croft of Saint John is broad; and one perch of land which
+                     Udard the fisherman held in the aforementioned toun, that
+                     is the perch of land which lies nearest the croft of
+                     William Smallware towards the north, and the northern edge
+                     of Swindgthates, as it has gone out from Gullane towards
+                     the large stone which lies outside Windgthates, towards
+                     the north, and so upwards as the land of Saint Cuthbert
+                     was perambulated and measured.</cl> <cl type="holding">I also will that Osmund of Gullane and his heirs should hold the aforesaid toft,
+                     and the aforementioned perch of land, and the
+                     aforementioned edge, as freely, quitly, and honourably as
+                     any alms is most freely and quitly held or possessed in
+                     the whole kindgom of Scotland, by rendering annually to
+                     the aforesaid monks four pence at the feast of Saint
+                     Michael in return for every service</cl></cl>. <cl type="witnesses">With these witnesses, Robert Hotoft, Gregory of Fenton, Walter of Lindsay,
+                  Richard Sans Avoir, Richard son of Seleburh, Godard the
+                  chaplain, Gummer the chaplain, Simon the clerk, Gilbert the
+                  butler of Gullane, Robert son of Adam of Dirleton.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

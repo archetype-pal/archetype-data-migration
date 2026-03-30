@@ -1,0 +1,57 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-542">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/267</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:33.20187+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">542</idno>
+        <idno type="textcontent">549</idno>
+        <idno type="transcription_textcontentxml">542</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/267</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/267</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:33.20187+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:33.20187+00:00" status="draft">transcription moa=542 status=draft modified=2017-01-30 19:28:33.20187+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><cl type="address">Vniuersis has litteras visuris uel audituris <cl type="intitulatio">petronilla filia ade harand de meinithoch</cl> . <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit uniuersitas uestra<lb/></cl> me concessisse . et hac presenti carta mea confirmasse . deo . et sancte Marie .
+                        et sancto Benedicto . et porte de Melros ad susten<lb/>tacionem pauperum ibidem adueniencium . illud toftum in villa de Bortwic’ iuxta
+                        domum hugonis selech . et illas<lb/> duas acras terre . et illam dimidiam acram prati in territorio de Bortwic’ que
+                        ego in uiduitate mea Rob’<lb/> poydras pro homagio et seruicio suo dedi . et insuper illum redditum quem idem
+                        Rob’ mihi reddere annuatim consue<lb/>uerat . scilicet unum par cerotecarum albarum eidem Rob’ et heredibus suis
+                        condonaui . <cl type="sealing">In cuius rei testimonium huic<lb/> scripto sigillum meum apposui</cl></cl> <cl type="witnesses">Hiis test’ . Domino philippo de la leya . Domino serlone persona de Meinithoch .
+                     Thoma<lb/> de Rule . Ioh<ex>ann</ex>e Anglico . Rob’ de lundon’ . Will<ex>elm</ex>o uiuene . Cospatricio . Will<ex>elm</ex>o de Merbotle . et Gilberto filio suo . et Aliis .</cl></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

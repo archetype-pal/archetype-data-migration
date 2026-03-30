@@ -1,0 +1,59 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-840">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 588</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 15:48:09.522075+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">840</idno>
+        <idno type="textcontent">861</idno>
+        <idno type="transcription_textcontentxml">840</idno>
+        <idno type="translation_textcontentxml">841</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 588</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 588</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T15:48:09.522075+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T15:48:09.522075+00:00" status="approved">transcription moa=840 status=reviewed modified=2022-11-01 15:48:09.509896+00 | translation moa=841 status=reviewed modified=2022-11-01 15:48:09.522075+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">. <cl type="intitulatio">W . dei gratia Rex Scott’</cl> vic<ex>ecomiti</ex> suo de Berewic et omnibus probis hominibus<lb/> suis de Laodonia et de Merkes . <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Sciatis me</cl> <cl type="disposition">concessisse . [left blank] . Prior de<lb/> Coldingham quod remoueat homines suos de Coldinghamschiria ad uillam de
+                     Coldingham<lb/> hospitandam quos de iure remouere poterit . <cl type="prohibition">Quare prohibeo firmiter nequis predictum<lb/> priorem iniuste disturbet omnes illos remouere ad prefatam uillam hospitandam 
+                        quos<lb/> de iure remouere poterit et debebit</cl> .</cl> <cl type="witnesses">T<ex>estibus</ex> Hug<ex>one</ex> Cancellario meo . Ric<ex>ardo</ex> de Prebenda<lb/> clerico meo</cl> <cl type="dating">Apud Selechirch’ . xvii . die Iulii</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex>, by the grace of God king of the Scots,</cl> to his sheriff of Berwick and all his worthy men of Lothian and of the Merse, <cl type="salutation">greeting</cl>.</cl> <cl type="notification">Know</cl> <cl type="disposition">me to have conceded to [blank] Prior of Coldingham that he may remove his men of
+                  Coldinghamshire to inhabit the toun of Coldingham, whom in
+                  law he shall be able to remove. <cl type="prohibition">Wherefore I strictly forbid that anyone unlawfully hinder the aforesaid prior
+                     from removing all those whom in law he shall be able and
+                     is entitled to remove in order to inhabit the
+                     aforementioned toun.</cl></cl> <cl type="witnesses">As witnesses: Hugh, my chancellor; Richard de Prebenda, my clerk.</cl> <cl type="dating">At Selkirk, on the 17th day of July. </cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

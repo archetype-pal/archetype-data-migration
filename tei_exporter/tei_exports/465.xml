@@ -1,0 +1,70 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-465">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/178</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:46:55.519153+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">465</idno>
+        <idno type="textcontent">470</idno>
+        <idno type="transcription_textcontentxml">465</idno>
+        <idno type="translation_textcontentxml">466</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/178</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/178</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:46:55.519153+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:46:55.519153+00:00" status="published">transcription moa=465 status=live modified=2021-04-06 15:46:54.03281+00 | translation moa=466 status=live modified=2021-04-06 15:46:55.519153+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="disposition"><cl type="notification">Sciant presentes et futuri quod</cl> <cl type="intitulatio">ego Robertus de Bernam</cl> dedi . concessi et Hac pre<lb/>senti carta mea confirmaui deo et beate Marie de Melr<ex>os</ex> et monachis ibidem deo<lb/> seruientibus in liberam et perpetuam elemosinam illud Rete in Berwyc<ex>es</ex>trem' super twed’<lb/> quod Magister Dauid frater meus tunc camerarius domini Regis emit de Radulfo de
+                     Hauuill’<lb/> falconario domini Regis . et dedit illud Rogero fratri meo et heredibus suis .
+                     uel suis assig<lb/>natis De quo quidem reti idem Rogerus dotauit christianam filiam Ade marescalli
+                     uxo<lb/>rem suam in uita sua . post cuius decessum idem rete iure hereditario me con<lb/>tingit . <cl type="holding">Tenendum et habendum dictis monachis inperpetuum adeo libere et quiete . plene<lb/> et honorifice  sicut carta predicti Radulfi de Hauuil' dicto magistro dauid
+                        inde ple<lb/>nius confecta  testatur .</cl> <cl type="warrandice">Ego uero et heredes mei dictum rete dictis monachis omnino<lb/> ut dictum est contra omnes warantizabimus ac defendemus</cl> .</cl> <cl type="sealing">In cuius rei testi<lb/>monium ego pro me et heredibus meis huic scripto sigillum meum apponi fe<lb/>ci .</cl> <cl type="witnesses">Teste communia de Berwyc’ .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="disposition"><cl type="notification">Let present and future know that</cl> <cl type="intitulatio">I, Robert de Bernham</cl>, have given, granted and by this my present charter made firm to God and
+                     Blessed Mary at Melrose and to the monks serving God in
+                     that place, in free and everlasting alms, the net in
+                     Berwickstream upon the Tweed, which Master David my
+                     brother, then chamberlain of the lord king, purchased from
+                     Ralph de Hauville, falconer of the lord king, and gave it
+                     to Roger my brother and to his heirs or his assignees.
+                     From this net the same Roger endowed Christiana daughter
+                     of Adam the Marshal, his wife, for her lifetime, after
+                     whose death the net shall belong to me by reight of
+                     heritage. <cl type="holding">For the said monks to hold and have as freely and quitely, fully and honourably,
+                     as the charter of the said Ralph de Hauville, made more
+                     fully thereupon for the said Master David, bears witness.</cl> <cl type="warrandice">I and my heirs shall entirely warrant and defend the said net to the said monks
+                     against all people.</cl></cl> <cl type="sealing">In testimony of this matter I, for myself and for my heirs, have applied my seal
+                  to this written deed.</cl> <cl type="witnesses">As witness, the community of Berwick.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

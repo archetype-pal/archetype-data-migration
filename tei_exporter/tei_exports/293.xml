@@ -1,0 +1,93 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-293">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/34</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 11:29:50.487119+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">293</idno>
+        <idno type="textcontent">293</idno>
+        <idno type="transcription_textcontentxml">293</idno>
+        <idno type="translation_textcontentxml">292</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/34</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/34</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T11:29:50.487119+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T11:29:50.487119+00:00" status="published">transcription moa=293 status=live modified=2021-04-06 11:29:50.487119+00 | translation moa=292 status=live modified=2021-04-06 11:29:48.642851+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte matris Ecclesie filiis presentibus et futuris <cl type="intitulatio"><persName>Rogerus</persName> de Scalebroc</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis me</cl> concessisse et dedisse<lb/> et hac mea Carta confirmasse deo et Ecclesie Sancte Marie de Melros et monachis
+                     ibidem deo seruientibus pro salute et anima<lb/> domini mei <persName>Dunecani</persName> filii <persName>Gilleberti</persName> filii <persName>Fergus</persName> . et pro animabus omnium antecessorum et successorum eius . et pro salute anime
+                     mee et omnium<lb/> parentum et heredum meorum in liberam et puram et perpetuam Elemosinam
+                     piscaturam meam in Ostio fluminis de Don super<lb/> harenam . et unam salinam . et unam patellam ubicumque uoluerint in tota terra
+                     mea de Grenan . et ligna de proximo bosco meo<lb/> predicte piscature et saline et usibus fratrum et hominum suorum ibidem
+                     manentium modis omnibus sufficientia . Concessi etiam eis
+                     unum<lb/> Toftum ad inhabitandum iuxta litus maris ubi uoluerint . et alium Toftum subtus
+                     Castellum meum de Grenan ubi possint res<lb/> suas et Catalla reponere . et illam particulam terre arabilis que est ad
+                     occidentalem partem ueteris ulmi uersus antiquam<lb/> salinam . et pasturam sex bobus . et decem vaccis sufficientem . Hec omnia
+                     concessi et dedi predictis monachi libera et quieta et<lb/> soluta ab omni terreno seruitio et consuetudine et exactionem seculari . et uolo
+                     ut ea habeant teneant et possideant in perpetuum<lb/> ita libere et quiete plenarie et honorifice sicut aliquam Elemosinam liberius et
+                     quietius . plenius et honorificentius tenent uel<lb/> possident . Et ipsi monachi utentur omnibus prescriptis ad libitum suum modis
+                     omnibus sicut melius et utilius sibi uisum fuerit et<lb/> fratribus et hominibus suis .</cl> <cl type="warrandice">et ego et heredes mei warantizabimus eis hec omnia contra omnes homines et
+                  adquietabimus de omni<lb/> seruitio quod pro aliqua Elemosina exigi possit .</cl> <cl type="witnesses">Test<ex>ibus</ex> . domino <persName>Iocel<ex>ino</ex></persName> . Glasg<ex>uesni</ex> . episcopo . <persName>Symone</persName> archidiacono . <persName>Dunec<ex>ano</ex></persName> . domino meo . <persName>Walt<ex>er</ex> . Corbet</persName></cl> .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, present and future, <cl type="intitulatio">Roger of Skelbrooke</cl> <cl type="salutation">sends Greeting</cl></cl>: <cl type="disposition"><cl type="notification">Know me</cl> to have granted, and to have given, and by this my charter to have made firm, to
+                     God and to the church of St Mary at Melrose and to the
+                     monks serving God in that place, for the salvation and the
+                     soul of my lord Duncan son of Gilbert son of Fergus, and
+                     for the souls of all his ancestors and successors, and for
+                     the salvation of my own soul and of all my kindred and
+                     heirs, in free and pure and perpetual alms, my fishery in
+                     the mouth of the River Doon above <ex>Harenam</ex>, and one saltpan, and one pan, wheresoever they might wish in the whole of my
+                     land of Greenan, and sufficient timber from my wood near
+                     the said fishery and saltpan and for the enjoyment in all
+                     ways of the brethren and their own men abiding there. I
+                     have also granted to them one toft to inhabit where they
+                     will near the sea shore, and another toft below my castle
+                     at Greenan where they can keep their moveable goods and
+                     cattle, and the parcel of arable land that is to the west
+                     side of the old elm towards the former saltpan, and
+                     pasture sufficient for six oxen and ten cows. All these
+                     things have I granted and given to the said monks free and
+                     quit and released from all earthly service, custom and
+                     secular exaction. And I will that they have, hold and
+                     possess them for all time in this wise freely and quietly,
+                     fully and honourably, just as freely and quietly, fully
+                     and honourably as they hold or possess any alms. And the
+                     monks shall make use of all things described before as it
+                     pleases them, and by all means, just as it might seem good
+                     and useful to them and to their brethren and their men.</cl> <cl type="warrandice">And I and my heirs shall warrant to them all these things against all men and we
+                  shall acquit every service which could be exacted in return
+                  for any alms</cl>. <cl type="witnesses">As witnesses, the lord Jocelin, bishop of Glasgow, Simon the archdeacon, Duncan
+                  my lord, Walter Corbet.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

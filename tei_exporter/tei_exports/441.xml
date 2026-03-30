@@ -1,0 +1,85 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-441">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/201</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-08-08 11:00:38.37295+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">441</idno>
+        <idno type="textcontent">446</idno>
+        <idno type="transcription_textcontentxml">441</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/201</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/201</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2016-08-08T11:00:38.37295+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2016-08-08T11:00:38.37295+00:00" status="draft">transcription moa=441 status=draft modified=2016-08-08 11:00:38.37295+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p>Vniuersis christi fidelibus Hoc scriptum uisuris uel audituris Aufrica filia
+               Edgari salutem in domino . Nouerit vniuersitas uestra me pro
+               anima domini . W . regis scotie . et pro animabus patris mei et
+               matris mee et omnium antecessorum meorum . et pro salute domini
+               mei Alex’ regis Scotie et domine . I . Regine . et pro salute
+               mea et omnium successorum meorum . dedisse . et concessisse . et
+               hac mea carta confirmasse deo et ecclesie sancte marie de Melros
+               et Monachis ibidem deo seruientibus . in liberam puram et
+               perpetuam elemosinam quandam partem terre mee . in territorio de
+               dunscor que continetur infra has diuisas . scilicet a cruce que
+               dicitur crosgarriauch que est meta inter terram canonicorum de
+               dercongal et derrengorran ascendendo per uiam usque durreswen .
+               et inde descendendo per cumulum lapideum usque quendam sicum et
+               ab illo fieo fere directe descendendo usque in quendam riuulum
+               qui dicitur pollelogan et per pollelogan ascendendo usque ad
+               regiam uiam qua itur de dercongal usque ad glencarn . et per
+               eandem uiam usque ad uadum cuiusdam sici quod dicitur athenweran
+               . et sicut idem sicus descendit usque ad quandam semitam que
+               ducit ad uadum de Carn . et per fluuium de carn ascendendo usque
+               ad quendam riuulum qui dicitur pollechoustergan . et per eundem
+               riuulum ascendendo usque ad prenominatam crucem que dicitur
+               crossengarriauch . Totam hanc terram et quicumque continetur
+               infra prenominatas diuisas dedi et concessi prenominatis
+               monachis de Melros . ut habeant teneant et possideant in
+               perpetuum . libere . quiete . plene . et honorifice . et utantur
+               modis omnibus quibus eis uisum fuerit melius et utilius .
+               Concessi etiam dictis monachis liberum egressum et regressum per
+               totam terram meam et hominum meorum cum queriis suis . Et uolo
+               ut hec omnia in perpetuum habeant ita libere quiete plene et
+               honorifice  sicut aliqua elemosina in regno scocie liberius .
+               quitius . plenius et honorificentius teneri potest et possideri
+               . Et ego et heredes mei Manutenebimus et warantizabimus
+               prenominatis Monachis hec omnia contra omnes homines et
+               adquietabimus de omni seruicio consuetudine seculari et demanda
+               in perpetuum . Hiis Testibus . Domino Ric<ex>ardo</ex> Cumin . Thom<ex>a</ex> de chartre . Iohanne de Mundeuill<ex>a</ex> . Laurentio de bercelai . Martino persona de dunfres . Thomas de treueq’r . G .
+                  persona de kirkebride . Enoch rectore ecclesie de dalgernoc .
+                  Ioh<ex>ann</ex>e filio dufthauc de bar . . dunan . et Multis aliis .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

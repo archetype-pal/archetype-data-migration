@@ -1,0 +1,63 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-505">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/282</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 17:01:18.156941+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">505</idno>
+        <idno type="textcontent">512</idno>
+        <idno type="transcription_textcontentxml">505</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/282</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/282</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-11-01T17:01:18.156941+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T17:01:18.156941+00:00" status="draft">transcription moa=505 status=draft modified=2022-11-01 17:01:18.156941+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;">
+          <span style="font-family: Junicode;"><cl type="address">Omnibus hoc scriptum uisuris uel audituris <cl type="intitulatio">Matildis Corb<ex>et</ex></cl> <cl type="salutation">Eternam In domino salutem</cl></cl> <cl type="disposition"><cl type="notification">Nouerit uniuersitas vestra</cl> me re<lb/> . . . et fide media quietam clamasse in perpetuum Domino meo Patricio de Ridale
+                        et heredibus suis quamdam partem<lb/> terre mee de lilliecliue . per has diuisas . scilicet a uado de Curlewudeburne
+                        ex occidentali parte de Caldelawe per<lb/> uiam que uadit de Selekirke uersus Iedewurth . usque in alne . et sic
+                        descendendo per eandem aquam que est diuisa in<lb/>ter t<supplied>erram episco</supplied>pi Glasguensis et terram meam . usque in sicum qui est diuisa inter me et
+                        abbatem de kelcov et sic per diui<supplied>sas in</supplied>ter me et eundem abbatem usque in Curlewudeburne . et sic sursum per eandem
+                        burnam usque ad prenominatum<lb/> uadum de Curlewudeburne . Totam hanc terram et quicquid continetur infra has
+                        diuisas excepta terra Will<ex>elm</ex>i<lb/> filii Alex’ . predicto . P . resignaui et quietam clamaui In super resignaui et
+                        quietam clamaui pasturam ad . duodecim<lb/> <supplied>boues et decem</supplied> uaccas . et . quinque . equos . et centum oues ubicumque aueria mea . uel aueria
+                        hominum meorum eisdem uille pascunt .<lb/> . . . communibus aesiamentis eiusdem uille .</cl> <cl type="sealing">et ut hec resignacio quieta sit . firma et stabilis in<lb/> perpetuum in testimonium hoc presens scriptum Sigillo meo roboraui et hos
+                        pleggios inueni . Magistrum . A . de<lb/> . . . Alex’ de setun filium meum . A . de Paulewurth .</cl> <cl type="disposition"><cl type="notification">Et Sciendum quod</cl> totam hanc predictam<lb/> resignacionem et quietam clamationem tali conditione feci . ut Scilicet predicta
+                        terra tam pro me et antecessoribus<lb/> <supplied>et suc</supplied>cessoribus meis . quam pro donatore et eius predecessoribus et successoribus in
+                        puram elemosinam Deo et Ecclesie Sancte<lb/> <supplied>Marie de</supplied> Melros et Monach’ ibidem deo seruientibus daretur .</cl> <cl type="witnesses">Hiis Test<ex>ibus</ex> . R . et A . abbatibus de Nuebotill<lb/> . . . Cup’ . Rad<ex>ulfo</ex> de Campania Constabulario de Rokesburg’ . Petro de hawe . Alex’ de Sintun .
+                        Walter<lb/> . . . Rob<ex>erto</ex> de bernolbi . Rad<ex>ulfo</ex> de Ridale . Thom<ex>a</ex> . fleming’ . et Multis aliis .</cl></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

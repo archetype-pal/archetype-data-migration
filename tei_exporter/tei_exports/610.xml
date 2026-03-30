@@ -1,0 +1,50 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-610">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/67</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-10-21 12:56:19.263417+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">610</idno>
+        <idno type="textcontent">619</idno>
+        <idno type="transcription_textcontentxml">610</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/67</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/67</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2016-10-21T12:56:19.263417+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2016-10-21T12:56:19.263417+00:00" status="draft">transcription moa=610 status=draft modified=2016-10-21 12:56:19.263417+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p>Omnibus sancte Matris ecclesie filiis tam presentibus quam futuris Alanus filius
+               Wal'</p>
+      </div>
+    </body>
+  </text>
+</TEI>

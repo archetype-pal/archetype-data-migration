@@ -1,0 +1,59 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-176">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/224</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-01-17 01:10:07.490749+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">176</idno>
+        <idno type="textcontent">176</idno>
+        <idno type="transcription_textcontentxml">176</idno>
+        <idno type="translation_textcontentxml">177</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/224</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/224</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2018-01-17T01:10:07.490749+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2018-01-17T01:10:07.490749+00:00" status="published">transcription moa=176 status=live modified=2018-01-17 01:10:07.490749+00 | translation moa=177 status=live modified=2017-01-27 09:40:06.824685+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">M. Rex Scott’. <persName><roleName>Iusticiis</roleName></persName> suis . <persName><roleName>Vicecomitibus</roleName></persName> . Prepositis . Ministris . Cunctisque<lb/> aliis probis hominibus totius terre sue . salutem</cl> . <cl type="disposition">Mando ⁊ firmiter precipio ut in cuiuscumque terra aut potestate Abbas de Sancta
+                  Cruce inuenire poterit Natiuos<lb/> homines terre sue aut fugitiuos suos  eos iuste habeat . Nullusque ei aut ser<lb/>uienti suo quemquam ex illis iniuste detineat  super meam plenariam
+                     forisfacturam .</cl> <cl type="witnesses">T<ex>estibus</ex> Ern’ Episcopo de Sancto Andr<ex>ea</ex> . Ioh<ex>ann</ex>e abbate de Calchou . Galfr’ abbate de Dunferml’</cl> .<lb/> Apud Castellum puellarum.</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">M<ex>alcolm</ex> king of Scots to his <persName><roleName>Justices</roleName></persName>, Sheriffs, Provosts, <persName><roleName>Officials</roleName></persName>, and all other worthy men of the whole of his land, Greeting:</cl> <cl type="disposition">I command and firmly enjoin that in whosesoever land or power the abbot of
+                  Holyrood is able to find neyfs of his own land or his own
+                  fugitives, he should rightly have them. And no one may
+                  withhold any of them from him or his servant, on pain of my
+                  full forfeiture.</cl> <cl type="witnesses">As witnesses, Arnold bishop of St Andrews, John abbot of Kelso, Geoffrey abbot
+                  of Dunfermline.</cl> At Maidens’ Castle.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

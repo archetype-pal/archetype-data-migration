@@ -1,0 +1,63 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-722">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/99</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:49.900623+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">722</idno>
+        <idno type="textcontent">733</idno>
+        <idno type="transcription_textcontentxml">722</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/99</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/99</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:49.900623+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:49.900623+00:00" status="draft">transcription moa=722 status=draft modified=2017-01-30 19:28:49.900623+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte Matris Ecclesie filiis tam presentibus quam futuris . <cl type="intitulatio">W . de Morevill’ constabularius Regis . Scott’ .</cl> <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Sciatis me</cl> <cl type="disposition">concessisse et hac presenti<lb/> mea carta confirmasse deo et ecclesie sancte Marie de Melros . et monachis .
+                     ibidem deo seruientibus in augmentum terre de Milchesid’ .
+                     quam<lb/> habent de patre meo et de me . pro animabus eiusdem patris mei et Matris mee .
+                     et omnium parentum et amicorum meorum . et pro salute<lb/> mea <supplied>et</supplied> uxoris mee . et omnium antecessorum nostrorum et successorum . totam terram et
+                     pasturam . <cl type="boundaries">ab orientali capite fossati . quod<lb/> monachi fecerunt . quod caput pertingit usque ad magnam stratam que uadit de
+                        laweder . uersus birchineside’  per eandem<lb/> magnam stratam ex occidentali parte eiusdem strate . uersus austrum . quicquid
+                        continetur inter diuisas nominatas in cartis patris<lb/> mei et mea quam monachi habent de Milesid’ et predictam stratam  usque in
+                        mereburna . que burna est diuisa inter terram<lb/> de bleinesley . et terram de Milchesid’ .</cl> <cl type="holding">hoc dedi eis super donum patris mei in incrementum elemosine patris mei et mee
+                     in<lb/> liberam . et puram . et perpetuam elemosinam ut illud habeant . teneant . et
+                        possideant . ubique et in omnibus ita libere . quiete .
+                        plenarie .<lb/> et honorifice . sine omni terreno seruicio . et consuetudine . et exactione
+                        seculari  sicut aliam terram de Michesid' uel ullam
+                        elemosinam<lb/> liberius quietius . plenius . et honorificentius in tota terra Regis Scotie
+                        tenent et possident</cl> .</cl> <cl type="witnesses">His T<ex>estibus</ex> . Dunec<ex>ano</ex> . filio . Com<ex>itis</ex> Dunec<ex>ani</ex> .<lb/> Alano de Thirlestain . Petro de la haghe . Ricar<ex>do</ex> . filio . Gilleb’ . Will<ex>elm</ex>o de hellebec . Fergus . filio . huctr<ex>edi</ex> . Ioh<ex>ann</ex>e . clerico .<lb/> Will<ex>elm</ex>o clerico . Ric<ex>ardo</ex> . de Morevill’ . Ricardo . de Wincestre . Roberto filio line . Thoma . le
+                     butilher .</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

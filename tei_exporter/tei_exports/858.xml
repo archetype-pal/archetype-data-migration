@@ -1,0 +1,73 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-858">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of TNA DL 25/90</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-03-13 15:02:37.081433+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">858</idno>
+        <idno type="textcontent">881</idno>
+        <idno type="transcription_textcontentxml">858</idno>
+        <idno type="translation_textcontentxml">859</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>The National Archives</repository>
+            <idno>DL 25/90</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>TNA DL 25/90</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-03-13T15:02:37.081433+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-03-13T15:02:37.081433+00:00" status="approved">transcription moa=858 status=reviewed modified=2023-03-13 15:02:37.081433+00 | translation moa=859 status=reviewed modified=2023-03-13 15:02:37.068457+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="disposition"><cl type="notification">Sciant presentes et futuri quod</cl> Hec conuencio inter Will<ex>elmu</ex>m de Brus dominum . et Will<ex>elmu</ex>m de Heiueuill’ . silicet quod<lb/> ego Will<ex>elmus</ex> de <supplied>Brus</supplied> ...Will<ex>elm</ex>o de Heynevill’ et heredibus suis <supplied>i</supplied>llam terram que est uersus logan ultra Blakebec et illam<lb/> terram que <supplied>est</supplied> inter aybeg’ bec et logan . <supplied>?sicut</supplied> Aybegbec ca<supplied>?dit i</supplied>n Serke . et ... vallem ...serke .. usque Raburn<lb/> et a parte ... de serke quantum diuise ... ...d’ prout ei placuere concedo etiam
+                     ei et heredibus<lb/> suis illas ... ... <supplied>patris</supplied> mei et fratris mei Roberti de Brus . concedo<lb/> .etiam . ill... <supplied>t</supplied>erram inter Blabeok... ... patris mei . et fratris mei excole... ...<lb/> . etiam . ei con... ... pasturam in bosco in p... ...tuti ... habuit in tempore
+                     patris mei et fratris mei ... tempore ... ...ill’<lb/> de he... ... remittit in commune pasturam mihi . illas terras que de nouo
+                     fuerunt culte et edificate sicut <lb/> terras in quibus Ius non habebat nisi per mandatum meum . volo etiam . et
+                     precipio ut homines mei habeant communionem<lb/> de bosco et de pastura inter ipsum et illos . sicut habuerunt tempore patris mei
+                     .</cl> <cl type="witnesses">testis Hudard de Hodolm et c.</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="disposition"><cl type="notification">Let present and future know that</cl> this agreement between William de Brus, lord, and William de Heineville, that
+                     is, which I, William de Brus ... to William de Heineville
+                     and his heirs that land which is towards Logan above
+                     Blakebec and that land which is between Aybeg bec and
+                     Logan just as Aybegbec falls into the Serk, and ... the
+                     valley ... Serk ... as far as the Raeburn, and from the
+                     side ... from Serke as the boundaries ... so as to please
+                     him I grant to him and his heirs those ... ... of my
+                     father and my brother Robert de Brus; I also grant that
+                     land between Blabeok ... ... of my father and my brother
+                     ... ... also, I grant to him ... ... pasture in wood, in
+                     meadow ... ... he remits in common pasture to me those
+                     lands which were ploughed and settled from new just as the
+                     lands in which he had no right unless by my mandate. I
+                     also will and enjoin that my men have common right of the
+                     wood and of the pasture between him and them, just as they
+                     had in the time of my father.</cl> <cl type="witnesses">Witness Udard of Hoddom etc.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

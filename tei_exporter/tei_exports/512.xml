@@ -1,0 +1,74 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-512">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/317</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 17:01:18.109263+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">512</idno>
+        <idno type="textcontent">519</idno>
+        <idno type="transcription_textcontentxml">512</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/317</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/317</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-11-01T17:01:18.109263+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T17:01:18.109263+00:00" status="draft">transcription moa=512 status=draft modified=2022-11-01 17:01:18.109263+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis Christi fidelibus ad quos presens scriptum peruenerit . <cl type="intitulatio">Mag<ex>iste</ex>r . Adam perpetuis vicarius de Dunfres qui habitus est pro rectore . tam a
+                        domino papa quam Episcopo Glasguens<ex>i</ex><lb/></cl> <cl type="salutation">eternam in domino . Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit vniuersitas uestra quod</cl> <cl type="narration">cum litteras apostolicas contra . Abbatem et conuentum de Melros super decimis
+                     de brunscayt ad Abbatem de sacro<lb/> nemore et archidiaconum teuidalie . quas quidem decimas ad ecclesiam de Dunfres
+                        pertinere de iure communi dicebam . inpetrassem . et
+                        eadem auctoritate prefatus abbatem<lb/> et conuentum coram predictis iudicibus super predictis decimis apud Dunfres . in
+                        camera uocassem .</cl> Ego de iure predicte ecclesie de Dunfres dissidens propter perroga<lb/>tiuam priuilegiorum ordini cisterciensis eisdem de decimis non soluendis . a .
+                     sede apostolica concessorum  predictis litteris et
+                     commodo earundem nomine ecclesie de Dunfres<lb/> renunciaui . Insuper specialiter reninciaui . pro me et successoribus meis .
+                     nomine ecclesie de Dunfres omni actioni et omni iuris
+                     beneficio quod habebam uel<lb/> habere poteram . nomine predicte ecclesie . in predictis decimis . necno et
+                     aliis litteris a sede apostolica siue a quocunque iudeice
+                     ordinario siue delegato in prauamen predictorum<lb/> religiosorum in posterum inpetrandis . Verum facta predicta rununciacione de
+                     consilio prudentum uirorum et iurisperitorum ita inter
+                     prefatos Abbatem et conuentum de Melros<lb/> ex una parte et me ex altera nomine predicatrum ecclesiarum de Melr<ex>os</ex> et de Dunfres super predictis decimis . de brunescayt pro bono pacis
+                     amicabiliter conuenit videlicet quod<lb/> considerato quando dictus abbas et conuentus et eorum antecessores dederunt
+                     dictam uillam de brunescayt ad firmam nunquam receperunt
+                     ex eadem uilla quoniam plus<lb/> habuerunt ultra ualoruem viginti Marcharum . semel multociens multo minus .
+                     Quare cum tempore istius compositionis decime dicte uille
+                     non ualuerunt ultra decem solidos .<lb/> pensata utilitate ecclesie de Dunfres . Abbas et conuentus de Melr<ex>os</ex> pro omnimodis decimis gardarum cum ipsi predictas terras in mannu sua tenuerint
+                     . uel etiam . cum easdem<lb/> terras aliis tenendas tradiderint  pro omnimodis decimis tam garbarum quam
+                     nutrimentorum animalium trans marchas tantum annuatim in
+                     festo apostolorum petri et pauli apud Melr<ex>os</ex> predicto<lb/> Magistro . A . et eius successoribus nomine ecclesie de Dun<lb/>fres quicquid de iure siue de facto que in omnimodis decimis dicte uille de
+                     brunescayt . quocunque casu contingente eadem ecclesia de
+                     Dunfres habuit habet<lb/> uel habere poterit  eisdem abbat et conuentui  quietum clamaui .</cl> <cl type="sealing">In cuius rei testimonium . sigillum meum unacum sigillis dictorum Iudicum
+                  presenti scripto</cl> . . .<lb/> <cl type="dating">Actum Anno Gracie . Millesimo . ducentesimo . quinquagesimo .</cl> <cl type="witnesses">Hiis T . Magistro W . de Iarn’ . Thom’ Decano de Desnes . Rob’ filio helye de .
+                  . .</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

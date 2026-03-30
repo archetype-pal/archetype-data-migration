@@ -1,0 +1,81 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-888">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 573</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:12:05.474939+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">888</idno>
+        <idno type="textcontent">912</idno>
+        <idno type="transcription_textcontentxml">888</idno>
+        <idno type="translation_textcontentxml">889</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 573</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 573</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:12:05.474939+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:12:05.474939+00:00" status="approved">transcription moa=888 status=reviewed modified=2022-11-01 16:12:05.464527+00 | translation moa=889 status=reviewed modified=2022-11-01 16:12:05.474939+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">D . dei gratia Rex Scottorum</cl> . Omnibus Sanctę ęcclesię fidelibus presentibus et futuris  <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me concessisse Eccelsię Sancte Marię . et sancti<lb/> Cuthberti de Coldingham . et Monachis ibidem deo seruientibus Donum quod
+                     Gospatricus frater Dolfini dedit predictę ęcclesię<lb/> et monachis . scilicet Ederham . et Nesbitam in perpetuam elemosinam . cum
+                     ecclesiis . et aquis . et pratis . et pascuis . et molen<lb/>dinis . et omnibus aliis locis . et cum eisdem Rectis diuisis . quibus eas
+                     tenuit die qua fuit uiuus et mortuus . liberas et<lb/> quietas . ab omni seruitio . et omni consuetudine . exceptis triginta solidos .
+                     quos prefati monachi dabunt filio eius<lb/> Gospatrico . et heredibus suis post eum pro conredio Regis . unoquoque anno ad
+                     festum sancti Martini . et excepto exer<lb/>citu Regis . unde monachi erunt attendentes ipsi Regi . et ipse Gospatricus de
+                     exercitu erit quietus inper<lb/>petuum .</cl> <cl type="witnesses">Presentibus testibus . Roberto episcopo Sancti Andree . Iohanne Glas<ex>guen</ex>s<ex>i</ex> episcopo . herb<ex>erto</ex> abbate de Rochesb<ex>urc</ex> . Ricard<ex>o</ex> abb<ex>ate</ex><lb/> de Mailros . Ædward<ex>o</ex> Cancellario . <persName>Thor</persName> archidiacono . Hugone <persName><roleName>constabulario</roleName></persName> . Herb<ex>erto</ex> <persName><roleName>Camerario</roleName></persName> . Randulf’ de Sules . Valter de Rid’<lb/> Rob<ex>erto</ex> de Burneuill’ . Horm filio Malcolm . Normann<ex>o</ex> vic<ex>ecomite</ex> de Berwic . Rob<ex>erto</ex> filio Widon<ex>is</ex> vic<ex>ecomite</ex> de Rochesb<ex>urc</ex> Sain<lb/> sacerdot<ex>e</ex> de fiswic’ . Will<ex>elmo</ex> de Lambertun . aldan<ex>o</ex> de prenregest’ .</cl> <cl type="dating">Apud Coldingham . In Die inuentionis sancte<lb/> crucis . anno . m . c . xlvii [<ex>written </ex>lxvii] . ab in Carnatione domini . videlicet illo anno in quo Rex francie et
+                     multi christiani per<lb/>rexerunt ierusalem .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">D(avid), by the grace of God king of the Scots,</cl> to all Holy Church's faithful, present and to come, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have allowed to the church of St Mary and St Cuthbert at Coldingham and to
+                     the monks serving God there the gift which Cospatric
+                     brother of Dolphin gave to the aforesaid church and monks,
+                     that is to say, Edrom and Nisbet in perpetual alms, with
+                     churches, waters, meadows, pastures, mills, and all other
+                     places, and with the same correct boundaries by which he
+                     held them on the day on which he was alive and dead, free
+                     and quit from every service, and every custom, except for
+                     thirty shillings which the said monks shall give to his
+                     son Cospatric and his heirs after him in return for the
+                     king's corrody each year at the feast of St Martin, and
+                     excepting the king's army service, for which the monks
+                     shall be responsible to the king himself; and Cospatric
+                     shall be quit in respect of army service for ever.</cl> <cl type="witnesses">Present as witnesses: Robert the bishop of St Andrews, John the bishop of
+                  Glasgow, Herbert the abbot of Roxburgh, Richard the abbot of
+                  Melrose, Edward the chancellor, <persName>Thor</persName> the archdeacon, Hugh the constable, Herbert the chamberlain, Ralf de Soules,
+                     Walter of Ryedale, Robert of Bournville, Orm son of
+                     Malcolm, Norman sheriff of Berwick, Robert son of Guy, the
+                     sheriff of Roxburgh, Swain the priest of Fishwick, William
+                     of Lamberton, Haldane of Prenderguest.</cl> <cl type="dating">At Coldingham on the day of the Invention of the Holy Cross, in the year 1147
+                  since the incarnation of the Lord, that is, the year in which
+                  the king of France and many Christiants made their way to
+                  Jerusalem. </cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

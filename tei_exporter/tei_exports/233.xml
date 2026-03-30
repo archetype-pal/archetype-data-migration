@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-233">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/251</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 08:14:40.583404+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">233</idno>
+        <idno type="textcontent">233</idno>
+        <idno type="transcription_textcontentxml">233</idno>
+        <idno type="translation_textcontentxml">232</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/251</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/251</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T08:14:40.583404+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T08:14:40.583404+00:00" status="published">transcription moa=233 status=live modified=2021-04-06 08:13:59.183344+00 | translation moa=232 status=live modified=2021-04-06 08:14:40.583404+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="disposition"><cl type="notification">Notum sit Omnibus tam presentibus quam futuris</cl> quod <cl type="intitulatio">Ego frater Alanus prior fratrum Hospitalis Ier<ex>usa</ex>l<ex>e</ex>m in<lb/> Angl<ex>ia</ex> .</cl> de communi consilio ⁊ assensu fratrum capituli nostri concessi ⁊ presenti carta
+                     confirmaui<lb/> Canonicis sancte Crucis de Edenesburg’ terras nostras quas in Galeweia habemus
+                     scilicet artun ⁊ hirtun<lb/> cum suis rectis diuisis . ⁊ cum omnibus ad predictas terras pertinentibus <cl type="holding">habendas ⁊ tenendas de domo nostra<lb/> sibi in perpetuum libere ⁊ quiete ab omni seruitio . ⁊ consuetudine ad nos inde
+                        pertinente .</cl> eadem scilicet<lb/> libertate ⁊ dignitate quam Rollandus nobis illas donauit ⁊ confirmauit .
+                     reddendo singulis annis<lb/> domui nostre quadraginta solidos . ad duos terminos . medietatem scilicet ad
+                     letare Ier<ex>usa</ex>l<ex>e</ex>m . et medietatem ad<lb/> assumptionem beate Marie .</cl> <cl type="witnesses">Hiis test<ex>ibus</ex> . fratre Math<ex>e</ex>o . fratre Will<ex>elm</ex>o . fratre Rob’ de lindes’ . fratre Rob’ percio<lb/> capellanis . fratre Gillib<ex>er</ex>to de ver . fratre Rob<ex>er</ex>to filii Ric’ . fratre Rob’ pi ... fratre Simone Scotie per quem hec<lb/> carta facta fuit . fratre Samsone . Simone clerico</cl> ad capitulum sancti Michael<ex>is</ex> anno Incarn<ex>ationis</ex> . m . c .<lb/> xcii .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="disposition"><cl type="notification">Let it be known to all people, both present and to come,</cl> that <cl type="intitulatio">I, Brother Alan, prior of the Brethren of the Hospital of Jerusalem in England,</cl> with the advice and agreement of the brethren of our chapter, have granted, and
+                     by the present charter made firm, to the canons of
+                     Holyrood in Edinburgh, our lands that we have in Galloway,
+                     that is, <ex>Artun</ex> and <ex>Hirtun</ex>, with their correct bounds, and with all that belongs to the afroesaid lands, <cl type="holding">for them to have and to hold of our house in perpetuity, free and quit from all
+                     service and custom pertaining to us from there,</cl> that is, the same liberty and dignity as Roland donated them to us and
+                     confirmed, by rendering forty shillings each year to our
+                     house at two terms, that is, half at <ex>Laetare Ierusalem</ex> [the third Sunday of Advent], and half at the Assumption of Blessed Mary [15
+                     August].</cl> <cl type="witnesses">With these witnesses, Brother William, Brother Robert of Lindsay, Brother Robert
+                  Park, chaplains; Brother Gilbert de Vere, Brother Robert son
+                  of Richard, Brother Robert Pi..., Brother Simon of Scotia, by
+                  whom this charter was produced, Brother Samson, Simon the
+                  clerk,</cl> at the chapterhouse of St Michael, in the year of the Incarnation, 1192.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

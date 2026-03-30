@@ -1,0 +1,72 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-481">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/213</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 16:05:11.350344+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">481</idno>
+        <idno type="textcontent">487</idno>
+        <idno type="transcription_textcontentxml">481</idno>
+        <idno type="translation_textcontentxml">482</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/213</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/213</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T16:05:11.350344+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T16:05:11.350344+00:00" status="published">transcription moa=481 status=live modified=2021-04-06 16:05:11.350344+00 | translation moa=482 status=live modified=2021-04-06 16:05:09.761278+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Has Litteras uisuris uel Audituris Tam Presentibus quam futuris <cl type="intitulatio">Iohannes filius Waldeui .</cl> <cl type="salutation">Salutem</cl></cl><lb/> <cl type="disposition"><cl type="notification">Noueritis me</cl> Concessisse et Hac presenti Carta mea Confirmasse deo et Ecclesie sancte Marie
+                     De Melros<lb/> et Monachis ibidem deo seruientibus Omnes Donationes et Conuentiones . et
+                     Concessiones quas Iohannes de Methkill’ ipsis fecit De
+                     terra de Pannesceles Cum Omnibus pertinenciis suis et
+                     Libertatibus<lb/> et Aeisiamentis Eidem terre de Pannesceles pertinentibus <cl type="holding">tenendas et habendas ipsis inperpetuum . de Dicto<lb/> Iohanne De Methkil et Heredibus suis secundum tenorem cartarum quas ipsi Monachi
+                        Habent de dicto Ioh<ex>ann</ex>e<lb/> super dicta terra</cl> . saluo seruicio michi et Heredibus meis de dicto Iohanne De Methkil et
+                     Heredibus suis<lb/> Contento In Carta mea et Cartis Antecessorum meorum quas dictus Iohannes Habet
+                     de eadem terra .</cl><lb/> <cl type="witnesses">Hiis Testibus Domino Comite Patricio de Dunbar . Patricio filio eius . Will<ex>el</ex>mo filio eius . Walt’ Olifard . Bernardo<lb/> Fraser . Adam de Paulewurth . Rogero de Merlay . Will<ex>el</ex>mo De Bolteby . Alano filio Alan<ex>i</ex> filii Edgari .<lb/> Iohanne filio meo .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall see or hear these letters, as well present and to come, <cl type="intitulatio">John son of Waldef</cl> <cl type="salutation">sends greeting.</cl></cl> <cl type="disposition"><cl type="notification">Know me</cl> to have granted and by this my charter to have made firm, to God and the church
+                     of St Mary at Melrose, and the monks in that place serving
+                     God, all donations, agreements, and grants which John of
+                     Methil has made to them regarding the land of Penshiel,
+                     with all its pertinents, and liberties and easements
+                     pertaining to the said land of Penshiel; <cl type="holding">for them to have and to hold for ever, of the said John of Metliil and his
+                     heirs, according to the tenor of the charters which the
+                     said monks have of the said John over the said land;</cl> saving the service to me and my heirs of the said John of Methil and his heirs,
+                     contained in my charter and the charters of my
+                     predecessors, which the said John has in respect of the
+                     said land.</cl> <cl type="witnesses">With these witnesses: the lord earl, Patrick of Dunbar; Patrick, his son;
+                  William, his son; Walter Oliohant; Bernard Fraser; Adam of
+                  Polwarth; Roger of Merlay; William of Boltby; Alan, son of
+                  Alan son of Edgar; John, my son.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

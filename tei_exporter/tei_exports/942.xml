@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-942">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 611</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 12:40:59.717249+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">942</idno>
+        <idno type="textcontent">969</idno>
+        <idno type="transcription_textcontentxml">942</idno>
+        <idno type="translation_textcontentxml">943</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 611</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 611</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T12:40:59.717249+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T12:40:59.717249+00:00" status="approved">transcription moa=942 status=reviewed modified=2022-11-01 12:40:59.717249+00 | translation moa=943 status=reviewed modified=2022-11-01 12:40:59.706443+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. W . dei gr<ex>ati</ex>a Rex Scott’ .</cl> Omnibus probis Hominibus totius terre sue clericis et laicis  <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> . me concessisse .<lb/> et hac carta ma confirmasse . Ricard’ . nepoti simonis quondam prioris de
+                     Coldingham . uenditionem quam Radulfus<lb/> filius Elwald’ . ei fecit de uno tofto . in Coldingham . et de viginti acris
+                     terre . <cl type="holding">Tenend<ex>am</ex> . sibi . et heredibus suis de predicto<lb/> Radulf<ex>o</ex> . et heredibus suis . ita libere . et quiete sicut Carta eiusdem Radulf<ex>i</ex> . iuste testatur saluo seruicio meo</cl> .</cl><lb/> <cl type="witnesses">Test<ex>ibus</ex> . Walter . et Will<ex>em</ex>o Capell<ex>anis</ex> . meis . Philipp<ex>o</ex> . de Valon<ex>iis</ex> . <persName><roleName>Camerario</roleName></persName> . meo . Will<ex>elm</ex>o . de bosch<ex>o</ex> . Philipp<ex>o</ex> . de lundin’ . Ricard<ex>o</ex> .<lb/> Reuel</cl> . <cl type="dating">apud Ieddewrd’ . secundo die Augusti</cl> .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex> by the grace of God king of the Scots</cl> to all worthy men of his entire land, clerk and lay, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have granted, and by this my charter to have made firm, to Richard, nephew
+                     of Simon formerly prior of Coldingham, the sale which
+                     Ralph son of Elwald made to him of one toft in Coldingham,
+                     and of twenty acres of land; <cl type="holding">for him and his heirs to hold of the said Ralph and his heirs, as freely and
+                     quitly as the charter of the same Ralph lawfully bears
+                     witness. Saving my service</cl>.</cl> <cl type="witnesses">As witnesses, Walter and William my chaplains, Philip de Valognes my
+                  chamberlain, William del Bois, Philip of London, Richard
+                  Revel.</cl> <cl type="dating">At Jedburgh on the second day of August.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

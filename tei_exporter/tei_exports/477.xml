@@ -1,0 +1,90 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-477">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/211</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 16:03:24.841386+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">477</idno>
+        <idno type="textcontent">482</idno>
+        <idno type="transcription_textcontentxml">477</idno>
+        <idno type="translation_textcontentxml">478</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/211</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/211</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T16:03:24.841386+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T16:03:24.841386+00:00" status="published">transcription moa=477 status=live modified=2021-04-06 16:03:24.841386+00 | translation moa=478 status=live modified=2021-04-06 16:03:23.22088+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte matris ecclesie filiis presentibus et futuris <cl type="intitulatio">Ioh<ex>ann</ex>es filius Michael<ex>is</ex> de Methkil</cl> <cl type="salutation">Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Nouerit vniuersitas uestra</cl> me<lb/> dedisse concessisse et hac Carta mea confirmasse Deo et Ecclesie Sancte Marie de
+                     Melros et Monachis ibidem deo seruientibus et ser<lb/>uituris totam terram meam de Panneschelys . <cl type="holding">Tenendam et habendam eisdem monachis de me et heredibus meis in puram et<lb/> perpetuam Elemosinam inperpetuum . Ita libere . quiete . plenarie . et
+                        honorifice  sicut aliqua e<supplied>lemosina in regno</supplied> Scotie . Liberius<lb/> quietius . et plenius . Tenetur uel possidetur . In Bosco . et plano . In terris
+                        cultis et incultis . In . . . in viis et se<lb/>mitis . In moris . Mossis . et Maresiis . In aquis . et stagnis . viuariis . et
+                        Molendinis . et . . . <supplied>ai</supplied>siamentis . que<lb/> infra predictam terram inueniri poterunt aut excerceri .</cl> Reddendo inde annuatim priori de Melros qui pro tempore fuerit tres<lb/> marcas argenti ad pentecostcn . quas pro salute anime mee et heredum meorum
+                     assignaui ad emendum pitantiam conueutui de<lb/> Melros In die Sancte trinitatis per manum eiusdem prioris annuatim procurandam . <cl type="warrandice">Ego autem et heredes mei manutenebimus et defende<lb/>mus predictis monachis totam predictam terram cum omnibus libertatibus et iustis
+                        pertinenciis suis contra omnes homines .</cl> excepta terra quam<lb/> dedi Monachis de May . et excepta terra quam concessi Henrico paruo et heredibus
+                     suis per rectas diuisas suas in territorio de <supplied>Panne</supplied>schelys . <cl type="holding">Totam uero terram predictam sicut dictum est tenebunt et habebunt prefati
+                     Monachi de Melros . . . et quiete<lb/> ab omni seruicio consuetudine et exactione et demanda de me et heredibus meis in
+                        perpet . . . acien . . .<lb/> prenominatum</cl></cl> . <cl type="witnesses">Hiis testibus . Domino Alano abbate sancti Ewardi de Balmurinach . Thoma Comite
+                  de Athol<ex>ia</ex> . W. <supplied>filio</supplied> Alani . domini<lb/> Regis dapifero . W. Capellano ipsius . Thoma de Cantia . Magistro ioh<ex>ann</ex>e Abigensi . Magistro nessio medico domini Regis . Malco<lb/>mo filio Comitis de Leuenaus . Gaufrido de Boso . Iacobo filio Will<ex>el</ex>mi . Ioh<ex>ann</ex>e Cumin . Andrea de Suitun’ . et Multi</cl><supplied>s aliis .</supplied></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all the sons of holy mother Church present and to come, <cl type="intitulatio">John, son of Michael of Methil</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let your whole community know</cl> me to have given, granted, and by this my charter to have made firm, to God and
+                     the church of St Mary at Melrose, and the monks in that
+                     place who serve God now and in the future, my whole land
+                     at Penshiels; <cl type="holding">for the said monks to have and to hold of me and my heirs in pure and
+                     everlasting alms for ever, as freely, quitely, fully and
+                     honourably as any <supplied>alms in the kingdom</supplied> of Scotland are freely, quitely and fully held and possessed; in wood and plain,
+                        in lands cultivated and uncultivated, in . . . , in
+                        roads and paths, in moors, peat-bogs, and marshes, in
+                        running waters and pools, fish-ponds and mills, and . .
+                        . easements which can be found or exercised within the
+                        foresaid land; </cl> by paying thereupon yearly at Whitsunday to the the one who is prior of Melrose
+                     at the time three merks of silver, which for the salvation
+                     of my soul and the souls of my heirs I have assigned for
+                     purchasing a pittance annually on the day of the Holy
+                     Trinity, to the monastic community of Melrose, to be
+                     dispensed by the hands of the said prior. <cl type="warrandice">And I and my heirs shall maintain and defend to the foresaid monks the whole
+                     land aforesaid, with all its liberties and just
+                     pertinents, against all men;</cl> excepting the lands which I have given to the monks of May, and excepting the
+                     land which I have allowed to Henry Little and his heirs,
+                     by their correct boundaries, in the territory of
+                     [Pen]shiels. <cl type="holding">But the whole land aforesaid, as it is said, the said monks of Melrose shall
+                     hold and have . . . and quit from all service, custom,
+                     exaction and demand of me and my heirs for ever, doing as
+                     aforesaid.</cl></cl> <cl type="witnesses">With these witnesses: the lord Alan, abbot of St Edward's at Balmerino; Thomas,
+                  earl of Atholl; Walter, son of Alan, steward of the lord
+                  king, W., his chaplain; Thomas of Kent; Master John
+                  'Abigensi'; Mastcr Ness, physician of the lord king; Malcolm,
+                  son of the earl of Lennox; Geoffrey del Bois; James, son of
+                  William; John Comyn; Andrew of Swinton; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

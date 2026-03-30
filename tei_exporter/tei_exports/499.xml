@@ -1,0 +1,83 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-499">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/234</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-12 13:45:36.011+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">499</idno>
+        <idno type="textcontent">506</idno>
+        <idno type="transcription_textcontentxml">499</idno>
+        <idno type="translation_textcontentxml">500</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/234</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/234</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-12T13:45:36.011+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-12T13:45:36.011+00:00" status="approved">transcription moa=499 status=reviewed modified=2023-06-12 13:45:36.011+00 | translation moa=500 status=reviewed modified=2023-06-12 13:45:35.983215+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi fidelibus tam presentibus quam futuris ad quos presens Scriptum
+                  peruenerit <cl type="intitulatio">Magister Willelmus de Grenelau filius Rolandi<lb/> filius Willelmi</cl> <cl type="salutation">salutem in domino</cl> .</cl> <cl type="disposition"><cl type="notification">vniuersitati vestre notum facio</cl> me diuine pietatis intuitu et pro salute anime mee et pro salute<lb/> animarum omnium predecessorum et successorum meorum dedisse et concessisse et
+                     hac carta mea confirmasse deo et ecclesie beate Marie de<lb/> Melros et monachis ibidem deo et matri sue seruientibus et inperpetuum
+                     seruituris tres carucatas terre quas habui in territorio<lb/> ville de halsingtun cum omnibus pertinenciis suis illas scilicet quas domina
+                     Matildis mater Domini Roberti de Muscampo dedit<lb/> Willelmo filio Iohannis de honum cum Gilia filia dicte Matildis in liberum
+                     Maritagium <cl type="holding">Tenendas et habendas dictis Monachis<lb/> de Melros cum omnibus libertatibus aisiamentis et Iuribus ad eas pertinentibus
+                        inperpetuum in liberam puram et perpetuam elemosinam<lb/> nullum omnino seculare seruicium pro eis alicui faciendo preter oraciones et
+                        suffragia et alia beneficia deo placentia que<lb/> dicti monachi promiserunt in fide quam deo debent et ordini suo se facturos pro
+                        me inperpetuum</cl></cl> <cl type="warrandice">Et ego et heredes mei<lb/> manutenebimus predictis Monachis hanc elemosinam et warantizabimus contra omnes
+                     homines et adquietabimus eam de omni<lb/> seruicio inperpetuum</cl> <cl type="sealing">In cuius Rei testimonium sigillum meum presentibus est appensum</cl> <cl type="witnesses">hiis testibus Radulpho de Bonekil<lb/> Iohanne de letham Iohanne pepedi Dauid de Buredon halano de harcar’ Iohanne
+                     filio Simonis Iohanne de lembeden’<lb/> Roberto filio suo . Rolando filio Iohannis . et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful as well present as future to whom the present writing
+                  shall come, <cl type="intitulatio">Master William of Greenlaw son of Roland</cl> <cl type="salutation">sends greeting in the Lord</cl>.</cl> <cl type="disposition"><cl type="notification">I make known to your whole community that</cl> moved by divine love and for the salvation of my soul and for the salvation of
+                     the souls of all my predecessors and successors I have
+                     given and granted and by this my charter made firm to God
+                     and to the church of Blessed Mary at Melrose and to the
+                     monks in that place serving God and their Mother and who
+                     in perpetuity will serve there three ploughgates of land
+                     that I had in the territory of the toun of Hassington with
+                     all its pertinents; that is, those that the lady Matilda,
+                     mother of the lord Robert de Muschamp, gave to William,
+                     son of John of Hownam, with Gilia, daughter of the said
+                     Matilda, in free marriage; <cl type="holding">for the said monks to hold and have with all liberties, easements, and rights
+                     belonging to it for ever, in free, pure, and everlasting
+                     alms; by performing no secular service whatever for them
+                     to anyone, except for prayers and sugffrages and other
+                     spiritual goods which the said monks promised in faith, as
+                     much as they owe to God and their own Order, that they
+                     would perform for me for ever.</cl></cl> <cl type="warrandice">And I and my heirs shall maintain to the said monks this alms, and we shall
+                  warrant it against all men, and we shall acquit it in respect
+                  of every service for ever.</cl> <cl type="sealing">In testimony of this thing my seal has been applied to these presents.</cl> <cl type="witnesses">With these witnesses: Ralph of Bunkle; John of Latham; John of Papedy; David of
+                  Burradon; Alan of Harcarse; John son of Simon; John of
+                  Lambden; Robert his son; Roland son of John; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-39">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/245</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-13 14:14:00.719839+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">39</idno>
+        <idno type="textcontent">39</idno>
+        <idno type="transcription_textcontentxml">39</idno>
+        <idno type="translation_textcontentxml">40</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/245</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/245</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-13T14:14:00.719839+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-13T14:14:00.719839+00:00" status="approved">transcription moa=39 status=reviewed modified=2023-06-13 14:14:00.719839+00 | translation moa=40 status=reviewed modified=2023-06-13 14:14:00.698654+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Alex’ . dei gratia Rex scott’ .</cl> Omnibus probis hom<supplied>i</supplied>nibus tocius terre sue Clericis ⁊ Laicis  <cl type="salutation">Salutem</cl> . </cl><cl type="disposition"><cl type="notification">Sciant <lb/> presentes ⁊ futuri</cl> nos concessisse et hac carta nostra confirmasse donationem illam quam I<supplied>o</supplied>h<ex>ann</ex>es de <lb/> Normanuill’ . fecit deo ⁊ Monachis de Melros’ de illa parte terre in territorio
+                     de Makeston’ . que <lb/> continetur infra Rectas d<supplied>i</supplied>uisas conte<supplied>ntas in</supplied> ca<supplied>rta</supplied> ipsius Ioh<ex>ann</ex>is de Normanuill’ . <cl type="holding">Tenend<ex>am</ex> . et habend<ex>am</ex> . <lb/> predictis Monachis de Melros’ . in liberam <supplied>et pu</supplied>ram et perpetuam elemosin<supplied>am c</supplied>um libero ingressu ⁊ <lb/> egressu et transitu ipsis Monachis et Auerii<supplied>s</supplied> et vecturis suis et familie sue ad predictam terram <lb/> per terram predicti Ioh<ex>ann</ex>is de Makeston’ . Ita libere et quiete . plenarie et honorifice  sicut Car<lb/>ta predicti Ioh<ex>ann</ex>is inde facta predictis Monachis iuste testatur  saluo seruicio nostro .</cl> </cl><cl type="witnesses">Test<ex>ibus</ex> . Thom<ex>a</ex> . de <lb/> striuelin’ . Cancellario . Walter<ex>o</ex> . Olifard’ . Iustic’ . Laodon’ . Henric<ex>o</ex> . de Balliol’ . Camerar<ex>io</ex> . Robert<ex>o</ex> . filio . <lb/> Rob<ex>erti</ex> . de Ros’ . Ioh<ex>ann</ex>e de Maccuswel’ . Ioh<ex>ann</ex>e de vallibus . Will<ex>elm</ex>o de vet<ex>er</ex>i ponte . Bernard<ex>o</ex> de Hauden’ . Alex<ex>andro</ex> <lb/> . de Synton’ . </cl><cl type="dating">Apud Seleschr’ . xxij . die Iulii Anno Regni nostri duodecimo</cl> .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander by the grace of God king of Scots</cl> to all worthy men of his whole land, clerk and lay, <cl type="salutation">greeting:</cl> </cl><cl type="disposition"><cl type="notification">Let present and future know</cl> that we have granted and by this our charter have made firm the donation that
+                     John de Normanville made to God and to the monks of
+                     Melrose of that part of the land in the territory of
+                     Maxton which is contained within the correct boundaries
+                     described in John de Normanville’s own charter. <cl type="holding">For the aforesaid monks of Melrose to hold and have in free and pure and
+                     perpetual alms with free entrance and exit and transit for
+                     the monks themselves and for their work animals and wagons
+                     and household to the aforesaid land through the land of
+                     the aforesaid John at Maxton, as freely and quietly, fully
+                     and honourably, as the charter of the aforesaid John made
+                     for the monks thereupon justly declares, saving our
+                     service.</cl></cl> <cl type="witnesses">As witnesses: Thomas of Stirling, chancellor, Walter Oliphant, justiciar of
+                  Lothian, Henry de Balliol, chamberlain, Robert son of Robert
+                  de Roos, John of Maxwell, John de Vaux, William de Vieuxpont,
+                  Bernard of Howden, Alexander of Synton.</cl> <cl type="dating">At Selkirk, on the 22nd day of July in the twelfth year of our reign</cl>.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

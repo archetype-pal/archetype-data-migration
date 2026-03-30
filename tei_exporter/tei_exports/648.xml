@@ -1,0 +1,73 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-648">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.2</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:32:22.168825+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">648</idno>
+        <idno type="textcontent">658</idno>
+        <idno type="transcription_textcontentxml">648</idno>
+        <idno type="translation_textcontentxml">649</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.2</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.2</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:32:22.168825+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:32:22.168825+00:00" status="published">transcription moa=648 status=live modified=2021-04-05 08:32:22.168825+00 | translation moa=649 status=live modified=2021-04-05 08:32:20.26286+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>ALex’</persName> dei Gr<ex>ati</ex>a Rex Scott’</cl> . Omnibus probis Hominibus Totius terre sue Clericis et Laicis <cl type="salutation">Salutem</cl> .</cl> <cl type="notification">Sciant<lb/> presentes et futuri</cl> <cl type="disposition">nos diuine pietatis intuitu dedisse et concessisse et hac Carta nostra
+                  confirmasse . deo et Ecclesie sancte<lb/> marie de Melros’ . Et Abbati et monachis ibidem deo seruientibus Quartam partem
+                     de Dunscor’ . in valle<lb/> de Nyth’ . scilicet illam Quartam partem . que propinquior est terre Canonicorum
+                     de Dercungall’ . per rectas diuisas suas<lb/> et cum omnibus iustis pertinentiis suis . <cl type="holding">Tenend<ex>am</ex> eisdem monachis in Liberam . puram . et perpetuam elemosi<lb/>nam . adeo Libere et Quiete . plenarie et honorifice . sicut aliqua elemosina in
+                        regno nostro . ex dono nostro uel<lb/> alicuius antecessorum nostrorum Liberius et Quietius . plenius et
+                        honorificentius tenetur . et possidetur . Ita ut
+                        predicti<lb/> Monachi quolibet anno vigilia Sancti Bartholom<ex>ei</ex> apostoli pitantiam habeant . de redditu predicte terre</cl> .</cl> <cl type="witnesses">Test<ex>ibus</ex> .<lb/> Magistro <persName>Math’</persName> Cancellario . <persName>Walt’ OLifard’</persName> . Iust’ Laod<ex>onie</ex> . <persName>Walt’</persName> filio <persName>Alan<ex>i</ex></persName> Senescallo . <persName>Patricio</persName> filio Comitis . <persName>Walt’ Cum<ex>in</ex></persName> .<lb/> <persName>IngeR’</persName> de Baill’ . <persName>HenR<ex>ico</ex></persName> filio Comitis . <persName>d<ex>aui</ex>d</persName> . Marscallo . <persName>Thom<ex>a</ex></persName> filio <persName>Rand<ex>ulfi</ex></persName> . <persName>d<ex>aui</ex>d Cum<ex>in</ex> .</persName></cl> Apud Belford’ . decimo<lb/> octauo die Marcii . Anno regni domini Regis Quintodecimo .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, by the grace of God king of the Scots,</cl> to all worthy men of his entire land, clerk and lay, <cl type="salutation">[sends] greeting</cl>.</cl> <cl type="notification">Let present and future know</cl> <cl type="disposition">us, for the sake of divine love, to have given, conceded, and by our charter to
+                  have made firm, to God, the church of St Mary at Melrose, and
+                  to the abbot and monks serving God in that same place, a
+                  quarter of Dunscore in Nithsdale, that is to say, that
+                  quarter which is nearest the land of the canons of Dercongal,
+                  by its right marches and with all its just pertinents; <cl type="holding">for the same monks to hold in free, pure, and perpetual alms, as freely and
+                     quitly, fully and honourably, as any alms in our kingdom
+                     from our own gift or of any of our ancestors is held and
+                     possessed most freely and quitly, fully and honourably; so
+                     that the aforesaid monks should have a pittance every year
+                     on the eve of St Bartholomew the apostle from the rent of
+                     the said land</cl>.</cl> <cl type="witnesses">As witnesses: Master Matthew the chancellor; Walter Oliphant, justiciar of
+                  Lothian; Walter fitz Alan, the steward; Patrick son of the
+                  earl; Walter Comyn; Ingram de Balliol; Henry son of the Earl;
+                  David the marischal; Thomas son of Ranulf; David Comyn.</cl> At Belford on the eighteenth day of March in the fifteenth year of the reign of
+                  the lord king.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

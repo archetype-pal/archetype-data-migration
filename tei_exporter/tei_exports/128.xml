@@ -1,0 +1,94 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-128">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 71</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-01 18:52:48.838147+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">128</idno>
+        <idno type="textcontent">128</idno>
+        <idno type="transcription_textcontentxml">128</idno>
+        <idno type="translation_textcontentxml">129</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 71</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 71</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-01T18:52:48.838147+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-01T18:52:48.838147+00:00" status="published">transcription moa=128 status=live modified=2021-04-01 18:52:48.838147+00 | translation moa=129 status=live modified=2016-06-07 15:09:36.753586+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Ric<ex>ardus</ex> . dei gr<ex>ati</ex>a ecclesie sancti Andree humilis minister</cl> . uniuersis sancte matris ecclesię filiis clericis ⁊ laicis . <cl type="salutation">salutem</cl></cl> . <cl type="arenga">Quoniam ad officium nostrum nouimus spectare in ęcclesia dei edi<lb/>ficare . &amp; que edificata sunt in melius emendare . dignumduximus . ea que in
+                     ecclesia Dunfermelinensi confirmanda erant . sub pacis
+                     nostre tranquillitate suscipere <lb/> &amp; carta nostra confirmare</cl> . <cl type="disposition">Dominica igitur moniti &amp; freti auctoritate <cl type="notification">tam absentibus quam presentibus notificamus</cl> nos concessisse ⁊ carta nostra confirmasse ut prefata <lb/> ęcclesia ęcclesias &amp; earum possessiones ⁊ omnia ecclesiastica beneficia que
+                     eidem largitione regum pontificum ⁊ aliorum fidelium in
+                     elemosinam largita fuerint  ita <lb/> libere ⁊ honorifice ⁊ quiete ab omni seruitio &amp; exactione possideat . sicuti
+                     aliqua ęcclesia melius ⁊ honorificentius ⁊ liberius ⁊
+                     quietius possessiones suas in toto episcopatu <lb/> nostro tenet &amp; possidet . uidelicet ęcclesiam de pert . ⁊ scolam eiusdem uillę .
+                     ⁊ capellam de castello . ⁊ ecclesiam sancti leonardi . ⁊
+                     ecclesiam de uilla Glinen . ⁊ ecclesiam <lb/> de Striuelin . ⁊ scolam eiusdem uillę . ⁊ capellam de castello ⁊ cetera que
+                     iuste ad eas pertinent . ⁊ ecclesiam de kellin . ⁊
+                     ecclesiam de Abercrumbi . ⁊ ecclesiam de Nithbren <lb/> ⁊ ecclesiam de kilglessin . ⁊ capellam de inuerchethin . ⁊ ecclesiam de
+                     inueresck . ⁊ capellam de covslande . ⁊ decimas de keth .
+                     ⁊ ecclesiam de Wimet . ⁊ ecclesiam <lb/> de hala cum omnibus apendiciis suis . ⁊ ecclesiam de Neutune . ⁊ ecclesiam de
+                     Wehtercaledoure . saluo iure episcopali . ⁊ consuetudine .</cl> <cl type="witnesses">Testibus his . G . episcopo de <lb/> Dunkelde . W . abbate . de sancta cruce . W . priore de sancto Andrea . M .
+                     archidiacono . A . archidiacono . laud’ . Aiulfo decano .
+                     Ioh<ex>anne</ex> nepote R<ex>oberti</ex> . episcopi . Rob<ex>erto</ex> . filio Sevl<ex>fi</ex> <lb/> magistro hereb<ex>erto</ex> . A . capellano . magistro Barthol<ex>omeo</ex> . magistro Turp<ex>in</ex> . magistro Abraa<ex>m</ex> . Symone capellano . archidiaconi .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">Richard, by the grace of God humble servant of the church of St Andrews, to all
+                  sons of Holy Mother Church, clerk and lay, Greeting:</cl> <cl type="arenga">Since we know that it is our responsibility to build up the Church of God, and
+                  to change for the better those things that have been built,</cl> <cl type="disposition">we have judged worthy to be confirmed those things that belong to the church of
+                  Dunfermline, to take them under the tranquillity of our peace
+                  and to confirm them by our charter. Instructed and supported
+                  by the Lord’s authority, we have notified those absent as
+                  well as those present that we have granted, and by our
+                  charter made firm, that the aforementioned church should
+                  possess the churches and their possessions, and all
+                  ecclesiastical benefices that have been bestowed in alms to
+                  the same by the generosity of kings, prelates, and other
+                  faithful people, as freely and honourably and quit from every
+                  service and exaction as any church well and honourably and
+                  freely and quietly holds and possesses its possessions in the
+                  whole of our bishopric, namely, the church of Perth, and the
+                  school of the same toun, the castle chapel, and the church of
+                  St Leonard, the church of Friarton, the church of Stirling,
+                  the school of the same toun, and castle chapel, and the rest
+                  of the things rightfully belonging to them, the church of
+                  Kellie, and the church of Crombie, and the church of Newburn,
+                  and the church of Kinglassie, and the chapel of
+                  Inverkeithing, and the church of Inveresk, and the chapel of
+                  Cousland, and the teinds of Keith, the church of Woolmet, and
+                  the church of Hailes with all its belongings, and the church
+                  of Newton, and the church of West Calder, saving episcopal
+                  right and custom.</cl> <cl type="witnesses">With these witnesses: G<ex>regory</ex>, bishop of Dunkeld; W<ex>illiam</ex>, abbot of Holyrood; W<ex>alter</ex>, prior of St Andrews; M<ex>atthew</ex>, archdeacon; A<ex>ndrew</ex>, archdeacon of Lothian; Aiulfo, dean; John, nephew of Bishop Robert; Roberto,
+                     son of Seolf; Master Herbert; A<ex>lexander</ex>, chaplain; Master Bartholomew; Master Turpin; Master Abraham; Simon, the
+                     archdeacon’s chaplain.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

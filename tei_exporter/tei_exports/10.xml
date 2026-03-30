@@ -1,0 +1,74 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-10">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD 1.1.Sacr.12</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-01-27 15:59:13.83033+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">10</idno>
+        <idno type="textcontent">9</idno>
+        <idno type="transcription_textcontentxml">10</idno>
+        <idno type="translation_textcontentxml">9</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD 1.1.Sacr.12</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD 1.1.Sacr.12</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2023-01-27T15:59:13.83033+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2023-01-27T15:59:13.83033+00:00" status="published">transcription moa=10 status=live modified=2022-10-06 22:26:42.989673+00 | translation moa=9 status=live modified=2023-01-27 15:59:13.83033+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio"><persName>Walt<ex>eru</ex>s</persName> del Bois</cl> Omnibus sancte matris Ecclesie filiis uidentibus uel audientibus has litteras <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition">Sciatis me pro salute anime mee. ⁊ <lb/> Patris mei. ⁊ Matris mee. &amp; Galiene sponse mee. ⁊ Ricardi heredis mei. ⁊
+                     antecessorum meorum. ⁊ successorum meorum. dedisse. ⁊
+                     conces<lb/>sisse. ⁊ et hac presenti Carta confirmasse deo et sancto Cuthberto et monachis <span data-dpt="place" data-dpt-cat="chars" data-dpt-type="name">Dunelmensibus</span> in puram ⁊ perpetuam elemosinam terram illam <lb/> apud Tauenaus per istas diuisa. <cl type="boundaries">Scilicet. del Redehow super kircelesbanc usque ad uiam que tendit apud Rob<ex>er</ex>desbi. ⁊ per illam uiam <lb/> uersus aquilonem usque ad primum sich quod uenit de petera. ⁊ cadit in kirtel. ⁊
+                        descendendo usque ad redebanc.</cl> <cl type="holding">Quare uolo. ⁊ pre<lb/>cipio. quod predicti monachi habeant. ⁊ possidant totam terram predictam infra
+                        prenominatas diuisas. in bosco ⁊ plano. cum communi <lb/> pastura uille de Carruderes ad Centum bidentes. ⁊ Qu<supplied>a</supplied>draginta aueria. ⁊ ad Quinquaginta capras. ⁊ viginti porcos. ⁊ ad <lb/> tres equos. libere. quiete ⁊ honorifice. ab omni consuetudine uel auxilio. ⁊
+                        exactione. sicut aliqua Elemosina in toto Regno <lb/> liberius uel quietius habetur. uel possidetur.</cl></cl> <cl type="witnesses">Hiis testibus. Ricardo filio meo . Galiena sponsa mea. Radulfo de Wansa<ex>n</ex>t. Padino pre<lb/>posito. Will<ex>elm</ex>o de Ispania. Rob<ex>er</ex>to de Lithum. Adam filio Ric<ex>ardi</ex>. Steph<ex>an</ex>o clerico. Hamone. Gaufrido filio albelot. ⁊ multis aliis.</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio"><persName>Walter</persName> del Bois</cl> to all sons of holy mother Church who see or hear these letters :</cl> <cl type="salutation">Greeting</cl>. <cl type="disposition">Let them know that, for the health of my own soul, and of my father’s, and of my
+                  mother’s, and of Galiena my spouse’s, and of Richard my
+                  son’s, and of my ancestors’, and successors’, I have given,
+                  and granted, and by this present Charter have made firm to
+                  God and to Saint Cuthbert and the monks of <span data-dpt="place" data-dpt-cat="chars" data-dpt-type="name">Durham</span> in pure and perpetual alms the land at ‘Tavenaus’ by these boundaries: <cl type="boundaries">that is, from the ‘Redehow’ on the ‘Kircelesbanc’ to the road that leads to
+                     ‘Roberdesbi’, and by that road northwards to the first
+                     syke that comes from the peat bog, and falls into the
+                     Kirtle, and by descending as far as ‘Redebanc’.</cl> <cl type="holding">Wherefore I will, and enjoin, that the aforesaid monks should have, and possess
+                     the whole land aforesaid within the aforenamed boundaries,
+                     in wood and plain, with common pasture of the toun of
+                     Carruthers for a hundred sheep, forty cattle, fifty goats,
+                     twenty pigs, and three horses, freely, quietly and
+                     honourably, from all custom or aid, and exaction, just as
+                     any Alms in the whole Kingdom is freely or quietly had, or
+                     possessed</cl>. </cl><cl type="witnesses">With these witnesses : Richard my son; Galiena my spouse; Ralph of Wassand;
+                  Páitín the grieve; William d'Epaignes; Robert de Lithum; Adam
+                  son of Richard; Stephen the clerk; Hamo; Geoffrey son of
+                  Albelot; and many others. </cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

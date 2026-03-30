@@ -1,0 +1,54 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-520">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/54</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:31.338894+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">520</idno>
+        <idno type="textcontent">527</idno>
+        <idno type="transcription_textcontentxml">520</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/54</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/54</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:31.338894+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:31.338894+00:00" status="draft">transcription moa=520 status=draft modified=2017-01-30 19:28:31.338894+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription"><p>C Y R O G R A P H V M</p> <p><cl type="disposition"><cl type="notification">Sciant presentes et posteri quod</cl> <cl type="narration">lis et controuersia diutina . que fuit inter monachos de melros .<lb/> et Rob<ex>er</ex>tum de steint’ . de diuisis inter steint’ et grangiam de hertesheued .
+                        consideratione<lb/> proborum hominum vtriusque partis consensu et assensu . ita est terminata .</cl> <cl type="boundaries">Scilicet . vt iste sint di<lb/>uise de vado staincheles b<ex>ur</ex>n  pertransuersam moram versus aquilonem vsque ad quendam hogum . et de<lb/> illo hogo vsque ad alterum hogum . et de illo secundo hogo per transuersam moram
+                         vsque ad quendam<lb/> paruum Gile . et per illum Gile deorsum vltra quendam sicum vsque stanchestre .
+                        et de stanchestre<lb/> vsque ad quendam alterum sicum qui descendit in presmunet b<ex>ur</ex>ne</cl> . Ita autem constitute sunt iste diuise .<lb/> quod predictis Rob<ex>er</ex>tus pro se et heredibus suis quietus clamauit imperpetuum . quiquid iuris habuit
+                     .<lb/> vel habere potuit . vultra istas diuisas versus hertesheued . Et ipsi monachi
+                     omnino quietum<lb/> clamauerunt ius omne quod habuerunt vel potuerunt vltra easdem diuisas versus<lb/> steint’ . Et tam ipsi monachi quam predictus Rob<ex>er</ex>tus pro se et heredibus suis firmiter et fideliter<lb/> promiserunt . quod nulla in posterum aliquo tempore ab alterutra parte versus
+                     alteram vltra<lb/> predictis diuisas questio mouebitur . vel contencio orietur .</cl> <cl type="witnesses">His Testibus . helia de perthi fratre<lb/> ipsius Rob<ex>er</ex>ti et Can’ de Glasg’ . Rolando senesc’ Comitis patricii . petro Clerico de<lb/> Witingeham . Aldredo de Windicheles . Edulfo fabro de Witingeham . Edwino<lb/> forestario . Rob<ex>er</ex>to . Waltero le burgulum . hugone monacho de Kelchov . Nesio de<lb/> Walct’ . philippo de petcox . Nigello filio Walteri de pinchebec et herede .
+                     Alexandro<lb/> cognato ipsius Walteri de pinchebec . Witeclino britone .</cl></p></div>
+    </body>
+  </text>
+</TEI>

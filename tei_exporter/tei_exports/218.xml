@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-218">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/245</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 13:07:38.025367+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">218</idno>
+        <idno type="textcontent">218</idno>
+        <idno type="transcription_textcontentxml">218</idno>
+        <idno type="translation_textcontentxml">219</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/245</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/245</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2022-11-01T13:07:38.025367+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T13:07:38.025367+00:00" status="published">transcription moa=218 status=live modified=2022-11-01 13:07:36.847303+00 | translation moa=219 status=live modified=2022-11-01 13:07:38.025367+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Willelmus de Veteri ponte omnibus hominibus &amp; amicis suis . &amp; omnibus sancte
+                  matris ecclesie filiis clericis &amp; laicis . <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition">Sciant presentes .<lb/> &amp; futuri  me in liberam &amp; perpetuam elemosinam dedisse &amp; hac carta confirmasse
+                     decimas meas de terra mea de Oggel<lb/>fast . &amp; de venatione mea . &amp; decimas hominum illorum qui super terram illam
+                     habitauerint deo &amp; ecclesie sancte crucis de<lb/> edenesburc . &amp; canonicis ibidem deo seruientibus ita liberas &amp; quietas sicut
+                     aliqua elemosina liberior in tota terra<lb/> regis Scocie tenetur uel habetur .</cl> <cl type="witnesses">T . Forno capellano . Radulfo capellano . Ricardo de veteri ponte . Rogero
+                  quirem . Reginaldo<lb/> de puntiv . Rogero de Careden . Godwino de careden . Adam de hele . Teobaldo
+                     pistore . Will<ex>elm</ex>o de butemund .</cl> <cl type="salutation">valete</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">William de Vieuxpont to all men and freinds of his own, and to all sons of Holy
+                  Mother Church, to clerks and laymen, <cl type="salutation">Greeting</cl>:</cl> <cl type="disposition">Let those present and those to come know me in free and perpetual alms to have
+                  given and by this charter to have confirmed my own teinds
+                  from my own land of Ogilface, and of my game, and the teinds
+                  of those men who might reside upon that land, to God and to
+                  the church of Holyrood of Edinburgh, and to the canons there
+                  serving God, so free and quit as any alms is in the whole
+                  land of the king of Scotland freely held or had.</cl> <cl type="witnesses">Witness Forn the chaplain, Ralph the chaplain, Richard de Vieuxpont, Roger
+                  Quirem, Reginald de Poinz, Roger of Carriden, Godwin of
+                  Carriden, Adam of Elie, Theobald Fisher, William Buteman.</cl> <cl type="salutation">Farewell.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

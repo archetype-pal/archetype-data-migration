@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-71">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 679</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-02 13:02:56.769436+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">71</idno>
+        <idno type="textcontent">71</idno>
+        <idno type="transcription_textcontentxml">71</idno>
+        <idno type="translation_textcontentxml">72</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 679</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 679</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-02T13:02:56.769436+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-02T13:02:56.769436+00:00" status="approved">transcription moa=71 status=reviewed modified=2023-06-02 13:02:56.769436+00 | translation moa=72 status=reviewed modified=2023-06-02 13:02:56.759571+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus x͞pi fidelibus has literas videntibus vel audientibus . Rad’ Prior ⁊
+                  conuentus Dunelm’ ecclesie <lb/> Salutem In domino.</cl> <cl type="disposition">Noueritis nos con<supplied>cess</supplied>isse ⁊ hac presenti carta nostra confirmasse dilecto amico nostro . Domino . W . <lb/> De Bondington’ . Cancellario . Scott’ . maritagium heredis Galfrid<ex>i</ex> Ridel . ⁊ custodiam terre eiusdem <lb/> heredis In uilla de Flamington’ . donec dictus . heres ad legitomam peruenerit
+                     etatem</cl> <cl type="sealing">⁊ In huius rei <lb/> testimonium sigill<supplied>um capi</supplied>tuli nostri huic script<supplied>o</supplied> appossuimus</cl> .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ’s faithful who see or hear these letters, Ralph the Prior, and the
+                  convent of the church of Durham, send greeting in the Lord.</cl> <cl type="disposition">Know that we have granted and by this our present charter have made firm to our
+                  beloved friend, the lord W(illiam) of Bondington, Chancellor
+                  of the Scots, the marriage of the heir of Geoffrey Ridel, and
+                  the guardianship of the land of the same heir in the toun of
+                  Flemington, until the said heir shall have reached the legal
+                  age. </cl><cl type="sealing">And in testimony of this matter we have applied the seal of our chapter to this
+                  written deed.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,71 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-614">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Add. Ch. 66569</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-08-23 15:26:07.906463+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">614</idno>
+        <idno type="textcontent">624</idno>
+        <idno type="transcription_textcontentxml">614</idno>
+        <idno type="translation_textcontentxml">615</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 66569</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Add. Ch. 66569</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-08-23T15:26:07.906463+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-08-23T15:26:07.906463+00:00" status="published">transcription moa=614 status=live modified=2017-08-23 15:26:07.906463+00 | translation moa=615 status=live modified=2017-07-20 09:56:38.271015+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi fidelibus hoc scriptum visuris vel audituris . <persName>Patricius</persName> filius <persName>Will<ex>elm</ex>i</persName> <cl type="salutation">eternam in domino salutem</cl> .</cl> <cl type="notification">Nouerit<lb/> vniuersitas vestra</cl> <cl type="disposition">dominum abbatem et Conuentum de Scon’ michi de omnimodis debitis satisfecisse .
+                  in quibus mihi tam per<lb/> scripta quam per aliquem alium contractum super instauramento et firmis de Blar’
+                     . et omnibus aliis conuencionibus . accomo<lb/>dacionibus . seu quibuscumque aliis contractibus erant obligati . Et omnibus
+                     accom<ex>odacion</ex>ibus quas erga eos habui vel habere po<lb/>tui pro me et heredibus meis Super aliquo predictorum contractu renunciasse .
+                     Quare uolo . quod si aliquod instrument<lb/>tum super aliquo contractu inter nos inito et maxime de Blar’ inueniatur .
+                     nullius sit valoris aut vigoris .</cl> <cl type="sealing">In cuius<lb/> rei testimonium huic scripto vna cum sigillo venerabilis patris <persName>Galfr<ex>idi</ex></persName> Dunkeld<ex>ensi</ex> Ep<ex>iscop</ex>i sigillum meum apposui .</cl> Datum<lb/> apud Kergill’ die Sancti Augustini Anglorum Episcopi . Anno gr<ex>ati</ex>e Mill<ex>esimo</ex> . Ducentes<ex>imo</ex> . Quadrag<ex>esimo</ex> Sexto . <cl type="witnesses">T<ex>estibus</ex> . Domino <persName>Malc’</persName>.<lb/> precentore Dunkeld<ex>ensi</ex> . Magistro <persName>Ioh<ex>anne</ex></persName> . de Evirlay Canonico Dunkeld’ Domino <persName>Petro</persName> de Kergill’ . <persName>Will<ex>elmo</ex></persName> de Clouni’ . <persName>Simone</persName><lb/> clerico et multis aliis</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ’s faithful people who shall view or hear this writing, <cl type="intitulatio">Patrick son of William</cl> <cl type="salutation">wishes everlasting salvation in the Lord</cl>.</cl> <cl type="notification">May you all know</cl> <cl type="disposition">the lord abbot and convent of Scone to have made satisfaction to me in respect
+                  of all manner of debts in which they were obliged to me, by
+                  written deeds as well as by any other contract, in respect of
+                  the livestock and fermes of Blair, and all other agreements,
+                  loans, or any other contracts; and to have renounced for
+                  myself and my heirs all loans which I have or could have in
+                  relation to them, in respect of any contract of the
+                  aforesaid. Wherefore I will that if any instrument be found
+                  concerning any contract entered into between us, and
+                  especially in respect of Blair, it be of no value or force.</cl> <cl type="sealing">In testimony of this matter I have applied my seal to this writing together with
+                  the seal of the venerable father, Geoffrey, bishop of
+                  Dunkeld.</cl> Given at Cargill on the Day of Saint Augustine, bishop of the English, in the
+                  Year of Grace 1246. <cl type="witnesses">As witnesses: the lord Malcolm, precentor of Dunkeld; Master John of Everley,
+                  canon of Dunkeld; the lord Peter of Cargill; William of
+                  Clunie; Simon the clerk, and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

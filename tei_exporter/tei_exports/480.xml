@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-480">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/212</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2023-06-12 13:45:36.086754+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">480</idno>
+        <idno type="textcontent">484</idno>
+        <idno type="transcription_textcontentxml">480</idno>
+        <idno type="translation_textcontentxml">479</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/212</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/212</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2023-06-12T13:45:36.086754+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2023-06-12T13:45:36.086754+00:00" status="approved">transcription moa=480 status=reviewed modified=2023-06-12 13:45:36.068657+00 | translation moa=479 status=reviewed modified=2023-06-12 13:45:36.086754+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Has Litteras usiuris uel Audituris Tam presentibus quam futuris . <cl type="intitulatio">Patric<ex>ius</ex> Comes de Dunbar</cl> <cl type="salutation">Salutem</cl></cl> . <cl type="disposition"><cl type="notification">Noueritis<lb/> nos</cl> Concessisse et Hac presenti Carta nostra Confirmasse Deo et Ecclesie Sancte
+                     Marie De Melros et Monachis<lb/> ibidem Deo Seriuentibus omnes Donationes et Conuentiones et Concessiones quas
+                     Ioh<ex>ann</ex>es De Methkil ipsis fecit<lb/> De terra De Pannesceles cum Omnibus pertinentiis suis et Libertatibus et
+                     Aesimentis Eidem terre De Pannesceles<lb/> interius et exterius iuste pertinentibus <cl type="holding">Tenendas et Habendas ipsis in perpetuum . de Dicto Ioh<ex>ann</ex>e De Methkil et Heredibus<lb/> suis secundum Tenorem Cartarum quas ipsi Monachi Habent de Dicto Ioh<ex>ann</ex>e super dicta terra saluo seruicio nostro<lb/> de Ioh<ex>ann</ex>e filio Walleui</cl> .</cl> <cl type="witnesses">Hiis Test<ex>ibus</ex> . Patric<ex>io</ex> filio nostro . Will<ex>el</ex>mo filio nostro . Walter . Olifard . Iustic<ex>iario</ex> Laodon<ex>ie</ex> . Bernard<ex>o</ex><lb/> Fras<ex>er</ex> . Adam de Paulewurth . Rog<ex>ero</ex> de Merlay . Will<ex>el</ex>mo de Bolteby Alan<ex>o</ex> filio Alan<ex>i</ex> filio Edgari et Patric<ex>io</ex><lb/> fratre eius Tunc temporis clerico Comitis</cl>.</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall see or hear these letters, as well present as to come, <cl type="intitulatio">Patrick Earl of Dunbar</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know us</cl> to have granted and by this our present charter to have made firm to God and the
+                     church of St Mary of Melrose and the monks in that place
+                     serving God, all gifts, agreements, and grants, which John
+                     of Methil made to them respecting the land of Penshiel,
+                     with all its pertinents, liberties, and easements justly
+                     pertaining to the said land of Penshiel, within and
+                     without. <cl type="holding">For them to be held and possessed for ever of the said John of Methil and his
+                     heirs according to the tenor of the charters which the
+                     monks have from the said John over the said land, saving
+                     our service from John son of Waldef.</cl></cl> <cl type="witnesses">With these witnesses: Patrick our son; William our son; Walter Oliphant,
+                  justiciar of Lothian; Bernard Fraser; Adam of Polwarth; Roger
+                  of Merlay; William of Boltby; Alan, son of Alan son of Edgar,
+                  and Patrick his brother, at that time the earl's clerk.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

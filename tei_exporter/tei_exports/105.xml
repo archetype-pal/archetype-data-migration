@@ -1,0 +1,68 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-105">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 21</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:27:59.50703+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">105</idno>
+        <idno type="textcontent">105</idno>
+        <idno type="transcription_textcontentxml">105</idno>
+        <idno type="translation_textcontentxml">104</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 21</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 21</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:27:59.50703+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:27:59.50703+00:00" status="published">transcription moa=105 status=live modified=2017-01-30 19:27:59.50703+00 | translation moa=104 status=live modified=2016-06-07 10:53:15.450407+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. R . d<ex>e</ex>i gr<ex>ati</ex>a sancti Andree episcopus .</cl> omnibus sancte matris ecclesie filijs  <cl type="salutation">salutem . &amp; episcopalem benedictionem</cl> .</cl> <cl type="disposition"><cl type="notification">Noscant tam posteri <lb/> quam presentes</cl> me concessisse . ⁊ presentis scripti munimine confirmasse . Domno Rodb<ex>ert</ex>o primo priori ecclesie sancti <lb/> Andree eiusque successoribus . prioratum canonicorum in ecclesia beati Andree
+                     deo seruientium . eorumque benedictionem .<lb/> ⁊ debite obedientie professionem . Nichilominus etiam eiusdem loci fratribus
+                     liberam prioris electionem  concedimus . ut <lb/> cuicumque totum consenserit capitulum . uel eius pars sanior . ipse in eorum
+                     regimen sullimetur . eique debite professio<lb/>nis obedientiam obseruent subiecti</cl> . <cl type="witnesses">His assistentibus testibus . Will<ex>elm</ex>o episcopo Morauie . Osberto abbate de Gedd’ . Math' <lb/> archidiacono . Thuraldo archidiacono . Rod’b<ex>er</ex>to priore de Rostinot . Aiuffo decano . Magistro andrea . Joh<ex>ann</ex>e cancellario <lb/> episcopi . Magistro Thoma . Magistro h<ex>er</ex>b<ex>er</ex>to .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Robert, by the grace of God bishop of St Andrews,</cl> to all sons of holy mother Church, <cl type="salutation">Greeting and Episcopal Blessing</cl>:</cl> <cl type="disposition"><cl type="notification">Let those who are to come as well as those who are present know</cl> that I have granted, and made firm by the protecion of the present written deed,
+                     to Dom Robert, the first prior of the church of St Andrews
+                     and to his successors, the office of prior of the canons
+                     serving God in the church of the blessed Andrew, and their
+                     blessing, and their due profession of obedience.
+                     Nevertheless we have also granted to the brethren of the
+                     same place the free election of a prior, so that whomever
+                     the whole chapter, or its wiser part, agrees upon, shall
+                     be raised to rule them, and as subjects they should
+                     observe due profession of obedience to him.</cl> <cl type="witnesses">With these assisting as witnesses: William the bishop of Moray, Osbert the abbot
+                  of Jedburgh, Matthew the archdeacon, Thorald the archdeacon,
+                  Robert the prior of Restenneth, Aiulf the dean, Master
+                  Andrew, John the bishop's chancellor, Master Thomas, Master
+                  Herbert.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,73 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-936">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 599</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:51:20.473907+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">936</idno>
+        <idno type="textcontent">963</idno>
+        <idno type="transcription_textcontentxml">936</idno>
+        <idno type="translation_textcontentxml">937</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 599</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 599</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:51:20.473907+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:51:20.473907+00:00" status="approved">transcription moa=936 status=reviewed modified=2022-11-01 16:51:20.464272+00 | translation moa=937 status=reviewed modified=2022-11-01 16:51:20.473907+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. W . dei gr<ex>ati</ex>a Rex Scott’ .</cl> Omnibus probis Hominibus Totius terre sue Clericis et laicis  <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> . me Concessisse . et hac Carta mea Confirmasse . Conuentionem factam inter
+                     Bertramum Priorem et Conuentum Dunel<lb/>men<ex>sem</ex> . et Ædwardum de Aldecambus . et filios suos de abiuratione et Quieta Clamatione
+                     quam idem Edwardus et filii<lb/> sui fecerunt predicto priori et monachis . de uilla de Adecambus . et de
+                     Molendino . et Omnibus aliis ad uillam de Alde<lb/>Cambus pertinentibus  pro maiorem lummesden’ . quam predictus Prior et monachi
+                     eis in excambium dederunt . et pro pecunia<lb/> quam predictus prior et monachi pro predicto Ædwardo erga me adquietauerunt .
+                     Quare uolo et precipio . ut predicta<lb/> Conuentio de prefata abiuratione et Quieta clamatione firmiter teneatur . sicut
+                     Cyrographum inter eos inde factum .<lb/> et Carta predicti Ædwardi testantur . Saluo seruicio meo .</cl> <cl type="witnesses">Test<ex>ibus</ex> . Will<ex>elm</ex>o et Walter<ex>o</ex> . Capllanis meis . Philipp<ex>o</ex> .<lb/> de Valon<ex>iis</ex> . Camerario . meo . Will<ex>elm</ex>o Cumin’ . Will<ex>elm</ex>o de Boscho et Gilleb<ex>erto</ex> . clericis meis</cl> <cl type="dating">apud Hadint’ . viii . die<lb/> Iulii .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex>, by the grace of God king of the Scots,</cl> to all worthy men of his entire land, clerk and lay, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Let present and future know</cl> me to have approved, and by this my charter to have made firm, the agreement
+                     between Prior Bertram and the convent of Durham, and
+                     Edward of Old Cambus and his sons, about the abjuration
+                     and quitclaim which Edward and his sons made to the said
+                     prior and monks of the toun of Old Cambus, and of the
+                     mill, and all other things belonging to the toun of Old
+                     Cambus, in return for greater Lumsdaine, which the said
+                     prior and monks gave to them as an exchange, and in return
+                     for money which the said prior and monks acquitted to me
+                     for the said Edward. Wherefore I will and instruct that
+                     the said agreement about the said abjuration and quiclaim
+                     be steadfastly maintained, just as the cyrograph made
+                     thereupon between them, and the charter of the said
+                     Edward, bear witness. Saving my service.</cl> <cl type="witnesses">As witnesses: William and Walter, my chaplains; Philip de Valognes, my
+                  chamberlain; William Comyn, William del Bois, and Gilbert, my
+                  clerks.</cl> <cl type="dating">At Haddington on the 8th day of July.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

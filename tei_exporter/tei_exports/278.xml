@@ -1,0 +1,69 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-278">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/14</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-04 14:54:07.472476+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">278</idno>
+        <idno type="textcontent">278</idno>
+        <idno type="transcription_textcontentxml">278</idno>
+        <idno type="translation_textcontentxml">279</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/14</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/14</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-04T14:54:07.472476+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-04T14:54:07.472476+00:00" status="published">transcription moa=278 status=live modified=2021-04-04 14:54:05.258176+00 | translation moa=279 status=live modified=2021-04-04 14:54:07.472476+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="intitulatio">Ego Philippus Fland<ex>rensis</ex> et Viromand<ex>ensis</ex> comes .</cl> <cl type="notification">Notum esse uolo tam futuris quam presentibus</cl> . <cl type="disposition">me<lb/> concessisse pro salute anime mee et predecessorum meorum . fratribus de Mailros
+                     et de domibus eorum omnimodam<lb/> libertatem transeundi per totam terram meam secure</cl> . <cl type="injunction">Vnde mando et firmiter precipio omnibus hominibus et<lb/> seruientibus meis ad quos littere iste peruenerint . ut sicut me et honorem meum
+                     diligunt  nullum omnino<lb/> theloneum . nullam penitus exactionem in terra uel in portu a predictis
+                     fratribus audeant extorquere . Prete<lb/>rea si qua forte dissensio inter anglie et fland<ex>rie</ex> mercatores pro qualibet causa oriatur  nullus accepta<lb/> occasione in predictos fratres audeat manum mittere . nec de rebus eorum
+                     quicquam in uadimonium auferre .<lb/> Quicunque igitur in terra mea predictis fratribus iniuriam fecerit . uel dampnum
+                     intulerit  sciat se iram meam<lb/> incurrere . et me uindicaturum esse</cl> .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="intitulatio">I Philip count of Flanders and Vermandois</cl> <cl type="notification">wish it to be known both by those to come as well as those present</cl> <cl type="disposition">that I have granted to the brethren of Melrose and of their houses, for the
+                  salvation of my soul and of my ancestors’ souls, every manner
+                  of freedom to cross the whole of my land in safety.</cl> <cl type="injunction">Wherefore I command and firmly enjoin all men and my own sergeands to whom these
+                  letters might come, that as they have respect to me and my
+                  dignity, they dare to wrest no toll whatever, no tax at all,
+                  on land or in port, from the aforesaid brethren. In addition,
+                  if it should happen that a disagreement arise between the
+                  merchants of England and Flanders for whatever reason, no one
+                  should dare take occasion to lay hands on the aforesaid
+                  brethren, nor to take away anything of theirs as surety.
+                  Whosoever therefore within my own land should cause injury to
+                  the said brethren or inflict harm, let him know that he shall
+                  bring my wrath upon himself and I shall be avenged.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

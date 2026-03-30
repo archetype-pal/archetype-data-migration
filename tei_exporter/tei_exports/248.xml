@@ -1,0 +1,67 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-248">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/262</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-07-31 01:59:31.512532+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">248</idno>
+        <idno type="textcontent">248</idno>
+        <idno type="transcription_textcontentxml">248</idno>
+        <idno type="translation_textcontentxml">249</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/262</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/262</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2018-07-31T01:59:31.512532+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2018-07-31T01:59:31.512532+00:00" status="published">transcription moa=248 status=live modified=2018-07-31 01:59:31.512532+00 | translation moa=249 status=live modified=2017-02-17 01:44:37.072284+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Uniuersis Christi fidelibus Presentem Cartam Visuris uel Audituris . <persName>Rogerus</persName> de Qvenc’ Comes Wynton<ex>ie</ex> Constabularius Scoc<ex>ie</ex><lb/> Salutem.</cl> <cl type="disposition">Vniuersitati uestre notum facio me dedisse Concessisse . ⁊ presenti Carta mea
+                  confirmasse Pro salute anime mee<lb/> ⁊ predecessorum meorum Abbati ⁊ conuentus De sancta Cruce de Edenburg’ . ⁊
+                     tenentibus eorum in prestona quod quieti sint In<lb/> perpetuum de sequela molendini mei de Tauernent . Et de multura omnimodi Bladi
+                     tocius terre de prestun<ex>a</ex> ad ecclesiam<lb/> suam de Trauernent spectantis.</cl> Qvod  ut perpetue firmitatis robur optineat  presentem cartam sigilli mei<lb/> munimine Roborandam Dignumduxi. Datum apud Trauernent . die Lune proxima ante
+                  festum apostolorum<lb/> Symonis ⁊ Iude . Anno Gracie . Millesimo . Ducentesimo . Quinquagesimo.</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To the whole body of Christ’s faithful who shall view or hear the present
+                  charter, Roger de Quincy, earl of Winchester, constable of
+                  Scotland, sends Greeting:</cl> <cl type="disposition">I make known to you all that I have given, granted, and by my present charter
+                  made firm, for the salvation of my own soul and my
+                  predecessors’, to the abbot and convent of Holyrood in
+                  Edinburgh, and to their tenants in Preston, that they be quit
+                  in perpetuity of suit of my mill of Tranent, and of multure
+                  of all manner of grain of the whole land of Preston
+                  pertaining to their church of Tranent.</cl> That this may obtain the strength of endurance, I have duly caused the present
+                  charter to be strengthened with the defence of my seal. Given
+                  at Tranent, on the Monday next before the feast of the
+                  apostles Simon and Jude, in the year of grace 1250.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

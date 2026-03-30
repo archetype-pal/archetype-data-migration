@@ -1,0 +1,61 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-1000">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of DCA DCD Misc. Ch. 1341</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-07-07 15:29:43.492868+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">1000</idno>
+        <idno type="textcontent">1033</idno>
+        <idno type="transcription_textcontentxml">1000</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 1341</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 1341</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-07-07T15:29:43.492868+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-07-07T15:29:43.492868+00:00" status="draft">transcription moa=1000 status=draft modified=2017-07-07 15:29:43.492868+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Rog<ex>er</ex>us dei gratia Ecclesie Sancti Andr<ex>ee </ex>Minister humilis</cl> . Abbatibus Prioribus . Archidiacon<ex>is</ex> . Decanis . Personis . Vicariis . et<lb/> omni clero totius Episcopatus sancti Andr<ex>ee</ex> <cl type="salutation">Salutem et benedictionem</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit vniuersitas uestra</cl> nos diuine caritatis intuitu dilectorum<lb/> filiorum nostrorum . B . Prioris et Monachorum Dun<ex>e</ex>lmen’ piis postulationibus inclinantes . eis carta nostra presenti confirmasse .
+                     Ecclesias<lb/> illas quas in episcopatu sancti Andr<ex>ee</ex> in usus proprios habuerunt . antequam ad ipsum episcopatum gratia dei
+                     promoueremur . Et preterea ob reueren<lb/>tiam et amorem preciosissimi Confessoris Cuthb<ex>er</ex>ti . et pro salute anime Domini nostri . W . Illustris Scottorum Regis . et
+                     omnium heredum<lb/> et antecessorum suorum . et pro salute animarum omnium predecessorum et
+                     successorum nostrorum . et nostre . concessisse et
+                     presentis scripti munimine<lb/> confirmasse . vt ipsi monachi alias Ecclesias quas in memorato Episcopatu nostro
+                     habent decedentibus personis sine alicuius alterius<lb/> persone presentatione ad christi pauperum et hospitum sustentationem . in usus
+                     proprios pro uoluntate sua conuertant <lb/> et in manu propria pacifice possideant . Saluis Episcopalibus . Hanc igitur
+                     concessionem et confirmationem nostram anno incarnatio<lb/>nis Dominice . m<ex>illesimo</ex> . c<ex>entesimo</ex> . <ex>nonagesimo</ex> . <ex>nono</ex> . ad Pentecosten post coronationem Domini Ioh<ex>ann</ex>is illustris Anglorum Regis proximum factam  Ratam firmam .<lb/> et perpetuis temporibus inuiolabiliter obseruandam esse statuentes . sub
+                     anathematis interminatione autoritate Episcopali<lb/> inhibemus . Ne quis in posterum huic confirmationi nostre contraire . uel eam in
+                     aliquo ledere presumat . <cl type="malediction">Si uero eam aliquis<lb/> quod absit infirmare . siue aliquatenus infringere attemptauerit  indignationem
+                        omnipotentis dei et iram beati Andr<ex>ee</ex> precio<lb/>si apostoli . et Reuerendi confessoris Cuthb<ex>er</ex>ti una cum nostra maledictione nisi forte resipuerit incurrat .</cl></cl> <cl type="witnesses">Hiis . T<ex>estibus</ex> . Osb<ex>er</ex>to . Abbate de Kelchov . Rob<ex>erto</ex> . Abbate de Dunfermelin . Will<ex>elm</ex>o . Abbate de Edenburc . Thom<ex>a</ex> priore de sancto Andr<ex>ea</ex> .<lb/> Magistro Ranulfo Archidiacono . Will<ex>elm</ex>o Malueisin . Archidiacono . Andr<ex>ea</ex> . et Ioh<ex>ann</ex>E decanis . Magistro Rob<ex>er</ex>to de Sancto Andr<ex>ea</ex><ex> </ex>.<lb/> Magistro Ioh<ex>ann</ex>e de leicester . Magistro Waltero de Driffeld . Markiso de Albeni . Magistro
+                     Isaac . Magistro Will<ex>elm</ex>o de line .<lb/> Magistro Angero . Ric<ex>ardo</ex> capellano . Gaufr<ex>ido</ex> de Cranford . Magistro Alano de Richem’ . Magistro Abraham . Will<ex>elm</ex>o de Alnow .<lb/> Radulfo clerico . Ric<ex>ardo</ex> le megre . Rob<ex>er</ex>to de sancto Germano . Pagan’ filio magistri Gileb<ex>er</ex>ti . et aliis multis .</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

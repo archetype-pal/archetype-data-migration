@@ -1,0 +1,71 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-250">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/276</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-14 19:36:44.398406+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">250</idno>
+        <idno type="textcontent">250</idno>
+        <idno type="transcription_textcontentxml">250</idno>
+        <idno type="translation_textcontentxml">251</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/276</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/276</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-03-14T19:36:44.398406+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-03-14T19:36:44.398406+00:00" status="published">transcription moa=250 status=live modified=2017-03-14 19:36:40.810026+00 | translation moa=251 status=live modified=2017-03-14 19:36:44.398406+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Edgarus filius dofnaldi omnibus in Christo fidelibus tam presentibus  quam
+                  futuris eternam in domino salutem.<lb/></cl> <cl type="disposition">Nouerit uniuersitas uestra me dedisse ⁊ concessisse ⁊ hac presenti carta mea
+                  confirmasse Gill<ex>e</ex>b<ex>er</ex>to<lb/> nepoti meo ecclesiam sancti micael<ex>is</ex> de dalgarnoc in liberam ⁊ puram quietam ⁊ perpetuam elemosinam<lb/> cum terris ⁊ capellis cum decimis ⁊ oblationibus cum obuentionibus ⁊ ceteris
+                     omnibus ad eandem ecclesiam pertinen<lb/>tibus. Tenendam de me ⁊ heredibus meis adeo libere ⁊ quiete pure ⁊ perpetue
+                     plenarie ⁊ honorifice . sicut<lb/> aliis in episcopatu Glasgcuensi liberius ⁊ quietius plenarius ⁊ honorificencius
+                     aliquam ecclesiam tenet ⁊<lb/> possidet.</cl> <cl type="witnesses">Testibus hiis  Waltero de Wellam . Radulfo decano de d<ex>um</ex>fres . Ada filio hawis Gill<ex>e</ex><lb/>coneill filio meo dofnaldo filio meo . Matheo clerico Gill<ex>e</ex>crist iudice . patin mac gill<ex>e</ex>nef . Aliuegan capellano de Killosbern . Murchereach presbitero S. Carpre de
+                     Dunescor .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">Edgar son of Donald, to all the faithful in Christ both present and to come,
+                  wishes eternal salvation in the Lord:</cl> <cl type="disposition">You should all know that I have given, and granted, and by this present charter
+                  made firm, to Gilbert my nephew, the church of St Michael in
+                  Dalgarnock, in free and pure, quiet and perpetual alms, with
+                  lands and chapels, with teinds and oblations, with obventions
+                  and all the rest pertaining to the same church. To be held of
+                  me and my heirs as freely and quietly, purely and
+                  perpetually, fully and honourably, as other in the bishopric
+                  of Glasgow hold and possess any church freely and quietly,
+                  fully and honourably.</cl> <cl type="witnesses">With these witnesses, Walter de Wellam, Ralph, dean of Dumfries, Adam son of
+                  Hawise, Gilla Conaill my son, Donald my son, Matthew the
+                  clerk, Gilchrist the judex, Patrick mac Gilla na Náem,
+                  Aliugan, chaplain of Closeburn, Muirchertach, priest of St
+                  Cairpre of Dunscore.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

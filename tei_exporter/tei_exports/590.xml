@@ -1,0 +1,63 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-590">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/126</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:37.446119+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">590</idno>
+        <idno type="textcontent">598</idno>
+        <idno type="transcription_textcontentxml">590</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/126</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/126</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:37.446119+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:37.446119+00:00" status="draft">transcription moa=590 status=draft modified=2017-01-30 19:28:37.446119+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-family: 'Junicode','serif';"><cl type="address"><cl type="intitulatio">Florentius dei gratia Glasguensis . Electus .</cl> Omnibus sancte Matris ecclesie filiis presentibus et futuris<lb/> <cl type="salutation">Salutem in domino</cl></cl> . <cl type="disposition"><cl type="notification">Sciatis</cl> nos per consilium et consensum capituli Glasguensis . et cleri diocesis nostre
+                        conces<lb/>sisse et hac carta nostra confirmasse deo et Sancte Marie et ecclesie de Melros
+                        et monachis ibidem<lb/> deo seruientibus in liberam et quietam et perpetuam Elemosinam . Ecclesiam de
+                        Hastenesdene<lb/> cum terris . et decimis . et omnibus ad ipsam pertinentibus . ad perpetuam
+                        susceptionem pauperum et peregrino<lb/>rum ad domum de Melros uenientium . Quam Ecclesiam cum omnibus pertinentiis suis
+                        . vt uniuersi prouen<lb/>tus ipsius caritatis operibus expendentur . et in bonos usus perpetuo
+                        conuerterentur . pie memorie Ioce<lb/>linus Episcopus predecessor noster per consilium et concessum domini nostri Will<ex>elm</ex>i Regis Scoct’. et capituli glasg’ . ad perpetuos<lb/> usus pauperum et peregrinorum predictis Monachis pia deuotione contulit et
+                        confirmauit . Sicut in<lb/> eorum autenticis continetur . Cuius factum rationabile approbatione debita
+                        commendantes . et ipsis Mona<lb/>chis ius suum illibatum conseruare uoluntes . de plurimorum prudentum et
+                        peritorum consilio predictam ecclesiam<lb/> de hastenesdene cum omnibus ad ipsam pertinentibus . Ecclesie et conentui de
+                        Melros ad pios usus prenominatos<lb/> perpetuo concessimus . et hac carta nostra confirmauimus . <cl type="holding">Tenendam in perpetuum et possidendam . Ita libere et quiete<lb/> plenarie et honorifice . sicut aliqua conuentualis ecclsesia in regno scoct’ .
+                           aliquam parochialem ecclesiam liberius<lb/> quietius plenius et honorificentius tenet et possidet</cl> . Salua pensione viginti solidorum de ipsa ecclesia de hastenesdene<lb/> ab ipsis Monachis singulis annis ad festum Sancti Martini Ecclesie de Glasg’ .
+                        et nobis . nostrisque successoribus presoluen<lb/>da . et saluis Episcopalibus</cl> . <cl type="witnesses">His Testibus . H . Decano glasg’ . R . Archidiacono . Will<ex>elm</ex>o capellano . Will<ex>elm</ex>o<lb/> de bosco . Beda . helia . Ioc’ . canonicis de glasg’ . Hug’ capellano . Ioh<ex>ann</ex>e officiali nostro . I . decano de Teuidale<lb/> Ric’ persona de alnecrum . Simone persona de lillescl[i]ue . et Ioh<ex>ann</ex>e fratre suo . Adam de Macchest’ . Will<ex>elm</ex>o de hassechirke .<lb/> ¶ et multis aliis .</cl></span>
+        </p>
+      </div>
+    </body>
+  </text>
+</TEI>

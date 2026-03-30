@@ -1,0 +1,71 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-35">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/257</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 09:01:37.162891+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">35</idno>
+        <idno type="textcontent">35</idno>
+        <idno type="transcription_textcontentxml">35</idno>
+        <idno type="translation_textcontentxml">36</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/257</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/257</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T09:01:37.162891+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T09:01:37.162891+00:00" status="published">transcription moa=35 status=live modified=2021-04-05 09:01:35.158013+00 | translation moa=36 status=live modified=2021-04-05 09:01:37.162891+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Alex’ dei Gratia Rex Scott’</cl> Omnibus probis Hominibus totius terre sue Clericis et Laicis <cl type="salutation">Salutem</cl></cl><lb/> <cl type="disposition"><cl type="notification">Sciant presentes et futuri</cl> nos concessisse et Hac Carta nostra confirmasse finalem concordiam . factam<lb/> inter Abbatem et conuentum Sancte crucis de Edneburg’ ex una parte et Inger’ de
+                     Baill’ ex alia .<lb/> super diuisis terraRum ecclesiaRum eiusdem abbatis et Conuentus scilicet de
+                     Kircost’ et de Kirkebrid’<lb/> <cl type="holding">tenend’ et Habend’ dictis Abbati et Conuentui de predicto Inger’ et heredibus
+                     suis . per rectas di<lb/>uisas contentas in carta ipsius Inger’ et cum omnibus rectitudinibus et
+                        pertinentiis suis . ita<lb/> Libere et Quiete . plenarie et honorifice sicut Carta eiusdem Inger’ de Baill’
+                        dictis Abbati<lb/> et conuentui confecta plennius iuste testatur . Saluo seruitio nostro .</cl></cl> <cl type="witnesses">Test<ex>ibus</ex> . Magistro Math’ cancellario .<lb/> Will<ex>elmo</ex> Cum’ Comite de Buch’ . Iust’ Scott’ . Inger’ de Baill’ . Iohanne de haya . Walt’
+                     Cum’ . d<ex>aui</ex>d Cum’<lb/> Will<ex>elmo</ex> de Munfichet’ . Alex<ex>andro</ex> de Seton’ . Ph’ de Maleuill’ vicecomite de Aberden’ . d<ex>aui</ex>d de Lindes’ .</cl><lb/> Apud Aberden’ Octauo die Iulij . Anno Regni nostri Quartodecimo</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander by the grace of God king of Scots</cl> to all worthy men of his whole land, clerk and lay, <cl type="salutation">greeting.</cl> </cl><cl type="disposition"><cl type="notification">Let present and future know</cl> that we have granted and by this our charter made firm the final agreement made
+                     between the aboot and convent of Holyrood in Edinburgh on
+                     the one side and Ingram de Balliol on the other, over the
+                     marches of the lands of the churches of the same abbot and
+                     convent, that is, at Kirkconstantine and at Kirkbride, <cl type="holding">for the said abbot and convent to hold and to have of the aforesaid Ingram and
+                     his heirs by the correct bounds described in Ingram’s own
+                     charter and with all their revenues and pertinents, as
+                     freely and quietly, fully and honourably as the charter of
+                     the same Ingram de Balliol drawn up for the said abbot and
+                     convent the more fully declares. Saving our service.</cl> </cl><cl type="witnesses">As witnesses, Master Matthew, chancellor, William Comyn, earl of Buchan,
+                  justiciar of Scotland, Ingram de Balliol, John de la Haye,
+                  Walter Comyn, David Comyn, William de Munfichet [Muschet],
+                  Alexander of Seton, Philip de Malville, sheriff of Aberdeen,
+                  David of Lindsay.</cl> At Aberdeen on the eighth day of July, in the fourteenth year of our reign.</p>
+      </div>
+    </body>
+  </text>
+</TEI>

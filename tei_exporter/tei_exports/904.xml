@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-904">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 581</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 16:12:05.652949+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">904</idno>
+        <idno type="textcontent">928</idno>
+        <idno type="transcription_textcontentxml">904</idno>
+        <idno type="translation_textcontentxml">905</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 581</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 581</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T16:12:05.652949+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T16:12:05.652949+00:00" status="approved">transcription moa=904 status=reviewed modified=2022-11-01 16:12:05.641928+00 | translation moa=905 status=reviewed modified=2022-11-01 16:12:05.652949+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">M Rex Scott</cl>’ . Iusticiis . Vicecomitibus . Prepositis . Ministris . Cunctisque aliis probis
+                     hominibus totius terre sue<lb/> tam futuris quam presentibus <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me concessisse deo et Sancto Cuthberto De Collingham et Monachis<lb/> ibidem deo seruientibus  ut ipsi et eorum seruientibus per totam terram meam
+                     sint liberi et quieti ab omni te<lb/>loneo de propriis catallis et mercaturis eorum . <cl type="injunction">Prohibeo itaque ut nemo contra hanc libertatem eis infra<lb/> terram meam uim aut iniuriam faciat super forisfacturam meam</cl> .</cl> <cl type="witnesses">T<ex>estibus</ex> . Nich’ Camerario . Ric<ex>ardo</ex> Capellano . Regis .<lb/> Ric<ex>ardo</ex> de Sancto Albano clerico Regis .</cl> <cl type="dating">Apud Goldingham .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">M<ex>alcolm</ex>, king of the Scots,</cl> to justices, sheriffs, provosts, officials, and all other worthy men of his
+                     entire land, as much future as present, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition"><cl type="notification">Know</cl> me to have conceded to God, to Saint Cuthbert of Coldingham, and to the monks
+                     serving God there, that they and their tenants throughout
+                     my entire land be free and quit from all toll on their own
+                     cattle and merchandise. <cl type="injunction">I therefore forbid that anyone do violence or injury to them within my land
+                     contrary to this liberty on pain of my forfeiture</cl>.</cl> <cl type="witnesses">As witnesses: Nicholas the chamberlain, Richard the king's chaplain, Richard of
+                  St Albans the king's clerk.</cl> <cl type="dating">At Coldingham.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

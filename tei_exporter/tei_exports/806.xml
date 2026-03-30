@@ -1,0 +1,60 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-806">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 629*</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.616379+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">806</idno>
+        <idno type="textcontent">821</idno>
+        <idno type="transcription_textcontentxml">806</idno>
+        <idno type="translation_textcontentxml">807</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 629*</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 629*</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T14:52:15.616379+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T14:52:15.616379+00:00" status="approved">transcription moa=806 status=reviewed modified=2022-11-01 14:52:15.607604+00 | translation moa=807 status=reviewed modified=2022-11-01 14:52:15.616379+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Alex<ex>ander</ex> dei gratia Rex scott<ex>orum</ex></cl> omnibus probis Hominibus Totius terre sue <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Sciatis quod</cl> <cl type="disposition">concessimus<lb/> priori et Monachis de Coldingham dilectis et fidelibus nostris . vt nullus
+                     capiat namos suos<lb/> uel hominum suorum quos habent in dominico in Baronia de Coldingham pro alicuius
+                     debito uel forisfacto<lb/> nisi pro eorundem proprio debito uel forisfacto .</cl> <cl type="injunction">Quare firmiter prohibemus ne quis dictos Monachos et homines<lb/> suos contra hanc concessionem nostram iniuste uexare presumat super nostram
+                     plenariam forisfacturam .</cl> <cl type="witnesses">Testibus<lb/> W . Comite de Marr’ . Alex<ex>andro</ex> . senescallo . Dauid de Graham . Nichol<ex>ao</ex> de sules’ . vicecomite de Rok<ex>is</ex>burc’ . Thom<ex>a</ex><lb/> filio Ranul<ex>i</ex> .</cl> <cl type="dating">apud Coldingham . xxj . aprilis anno regni domini regis xxx . quarto .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">Alexander, by the grace of God king of the Scots</cl>, to all worthy men of the whole of his land <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Know that</cl> <cl type="disposition">I have granted to the prior and monks of Coldingham, our well-beloved and sworn
+                  men, that no one may take poinds from them, or from their men
+                  on the demesne of the barony of Coldingham, for any debt or
+                  forfeit save for their own debt or forfeit.</cl> <cl type="injunction">Wherefore we forbid that anyone unjustly seek to trouble the said monks and
+                  their men against this our grant, on pain of our full
+                  forfeiture.</cl> <cl type="witnesses">As witnesses: W<ex>illiam</ex>, earl of Mar; Alex<ex>ander</ex>, steward; David of Graham; Nichol<ex>as</ex> de Soules, sheriff of Roxburgh; Thom<ex>as</ex> son of Ranulf.</cl> <cl type="dating">At Coldingham, 21 April, in the 34th year of the king's reign [1248].</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

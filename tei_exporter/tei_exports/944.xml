@@ -1,0 +1,62 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-944">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 562</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 12:40:59.696449+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">944</idno>
+        <idno type="textcontent">971</idno>
+        <idno type="transcription_textcontentxml">944</idno>
+        <idno type="translation_textcontentxml">945</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 562</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 562</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T12:40:59.696449+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T12:40:59.696449+00:00" status="approved">transcription moa=944 status=reviewed modified=2022-11-01 12:40:59.696449+00 | translation moa=945 status=reviewed modified=2022-11-01 12:40:59.685584+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">A . dei gr<ex>ati</ex>a rex scottorum .</cl> A . priori omnique congregationem S . Cuthberti . <cl type="salutation">salutem</cl> .</cl> <cl type="notification">Sciatis quod</cl> <cl type="disposition">ego dono<lb/> et concedo ex mea parte Deo et Sancto Cuthberto et uobis suis monachis Swintunam
+                     totam liberam et<lb/> quietam <cl type="holding">tenendam et om[n]ino habendam sicut fratris mei Eadgari regis uobis testatur </cl></cl> . <cl type="injunction">Et<lb/> preterea precipio et defendo ne aliquis uestrum ullo de modo de eadem Swintuna
+                     placitet aut<lb/> respondeat ulli homini nisi ego ipse ore ad os uel meis litteris precepero .
+                     Quia ego et frater<lb/> meus Dauid elemosinam fratris nostri Eadgari . et nostram similiter . S .
+                     predicto et uobis<lb/> Monachis acquietabimus .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">A<ex>lexander</ex> by the grace of God king of the Scots</cl> to A<ex>lgar</ex> the prior and all the community of Saint Cuthbert <cl type="salutation">greeting</cl>.</cl> <cl type="notification">Know that</cl> <cl type="disposition">I donate and concede for my part to God and Saint Cuthbert and to you his monks
+                  Swinton, entire, free and quit, <cl type="holding">to be held and entirely had just as my brother King Edgar bears witness for you</cl>.</cl> <cl type="injunction">In addition I instruct and forbid that any of you by any means plead or respond
+                  to any man concerning the same Swinton unless I myself shall
+                  have given instruction in person or by my letters, since I
+                  and my brother David shall acquiet the alms of our brother,
+                  and our own likewise, to the aforesaid saint and to you
+                  monks.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

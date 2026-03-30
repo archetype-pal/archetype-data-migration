@@ -1,0 +1,59 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-497">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/225</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 17:01:18.16893+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">497</idno>
+        <idno type="textcontent">504</idno>
+        <idno type="transcription_textcontentxml">497</idno>
+        <idno type="translation_textcontentxml">498</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/225</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/225</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2022-11-01T17:01:18.16893+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T17:01:18.16893+00:00" status="draft">transcription moa=497 status=draft modified=2022-11-01 17:01:18.16893+00 | translation moa=498 status=draft modified=2016-08-10 15:30:30.933654+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="text-align: justify; background: white;"><cl type="address">Vniuersis christi fidelibus hoc scriptum uisuris uel audituris . <cl type="intitulatio">A . rector ecclesie de Balinclog</cl> <cl type="salutation">salutem</cl></cl> . <cl type="disposition"><cl type="notification">Nouerit<lb/> uniuersitas uestra quod</cl> cum Monachi de Melros terram suam de Barmor secularibus ad firmam tradiderint<lb/> usque ad finem decem annorum et ecclesie mee de Balinclog decime eiusdem
+                     territorii tempore firme con<lb/>petant de iure communi <span style="font-family: Junicode;"></span> ego ob causam legittimam et dicte ecclesie mee necessariam uendidi prefatis<lb/> monachis omnes decimas ex predicto territorio prouenientes usque ad finem decem
+                     annorum pro certa summa<lb/> pecunie quam mihi idem Monachi simul et semel soluerunt . Conuenit etiam inter
+                     nos quod post fi<lb/>nem dictorum decem annorum quotiens dictam terram . . . ad firmam dabunt idem
+                     Monachi unam<lb/> marcam argenti mihi et ecclesie mee singuli annis . . . percipient integre omnes
+                     de<lb/>cimas meas prouenientes tantum .</cl> <cl type="dating">Actum anno gracie milesimo . ducentesimo . viginti sexto .</cl></p>
+      </div>
+      <div type="translation">
+        <p>To all Christ's faithful who shall see or hear this text, A., rector of the
+               church of Balinclog sends greeting. Let you whole community know
+               that since the monks of Melrose </p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,120 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-268">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/293</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-04-03 14:59:33.618019+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">268</idno>
+        <idno type="textcontent">268</idno>
+        <idno type="transcription_textcontentxml">268</idno>
+        <idno type="translation_textcontentxml">269</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/293</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/293</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-04-03T14:59:33.618019+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-04-03T14:59:33.618019+00:00" status="published">transcription moa=268 status=live modified=2017-04-03 14:59:29.902934+00 | translation moa=269 status=live modified=2017-04-03 14:59:33.618019+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription"><p>C Y R O G R P H V M</p> <p>Omnibus sancte Matris ecclesie filiis presens scriptum uisuris uel audituris . G
+               . dei gratia Dunkeld<ex>ensis</ex> . episcopus . et . I . et Ph . eadem gratia de Lundors<lb/> et de Scon abbates humiles eternam in Christo Salutem . Cum mota esset
+                  controuersia inter uenerabilem patrem dominum . Clementem
+                  Dunblan<ex>ensem</ex> .<lb/> episcopum ex una parte . et dominum Innocentium abbatem et conuentum de Insula
+                  missarum ex altera super ecclesiis de Aberrotheuen . et de<lb/> Thullieden . et super decimis prouenientibus de redditibus et omnimodis
+                  perquisitis domini comitis de Stradhern que secunde decime
+                  appellan<lb/>tur . Que omnia idem episcopus petebat . dicens ea nomine ecclesie sue ad mensam
+                  suam pertinere . Tandem per consilium proborum uirorum<lb/> idem episcopus pro se et successoribus suis de consensu et assensu totius cleri
+                  Dunblan<ex>ensis</ex> . ad quem episcopi pertinet electio . necnon et assensu<lb/> domini Roberti comitis de Stradhern eiusdem sedis patroni . Et dicti abbas et
+                  conventus pro se et successoribus suis in nos compro<lb/>miserunt super dictis articulis . necnon et super omnibus aliis ecclesiis et
+                  possessionibus tunc temporis eis collatis et concessis . Tali
+                  pena<lb/> adiecta . quod si idem episcopus uel aliquis successorum suorum ab arbitrio
+                  nostro uellet resilire  In primis si quod commodum ecclesie
+                  sue per atrbi<lb/>trium nostrum proueniret  illud parti aduerse restitueret . et nihilominus ad
+                  fabricam pontis de Pert nomine pene ducentas libras<lb/> sterlingorum ante litis ingressum persolueret. Etsi abbas et conuentus uel
+                  successores sui a nostro arbitrio uellet resilire <lb/> eidem ponti nomine pene trecentas libras ante litis ingressum persoluerent . Nos
+                  igitur partibus in nostra presentia constitutis . et auditis<lb/> huic inde propositis . et habito super propositis diligenti tractatu  Tandem de
+                  uirorum prudentum consilio ita ordinauimus . uidelicet .<lb/> quod idem episcopus pro se suis que successoribus nomine ecclesie sue remitteret
+                  omnem actionem quam intendebat . et renuntiaret omni<lb/> iuri quod petebat uel credebat se habere super predictis . Et quod dicti abbas
+                  et conventus dicto episcopo et successoribus suis nomine
+                  ecclesie<lb/> Dunblan<ex>ensis</ex> annuum redditum sexdecim librarum sterlingorum arbitrio bonorum uirorum taxatum
+                  certis locis assignarent . Partes<lb/> uero istud nostrum arbitrium acceptantes . ut robur perpetue firmitatis
+                  obtineret  illud in scriptum modo cyrographi confectum<lb/> redigi petierunt . Cuius altera pars sigillis nostris vna cum sigillo dicti
+                  episcopi penes supradictum monasterium de Insula missarum .<lb/> Altera uero similiter sigillis nostris et sigillo capituli eiusdem monasterii
+                  signata  penes dictum episcopum resideret . Datum . anno<lb/> ab incarnatione domini .m°. .cco. xxx°.iiiio. Mense Augusti .</p></div>
+      <div type="translation"><p>C Y R O G R A P H</p> <p>To all the sons of holy Mother Church who shall see or hear the present
+               document, G<ex>ilbert</ex>, by the grace of God, bishop of Dunkeld, and J<ex>ohn</ex> and P<ex>hilip</ex>, by the same grace, humble abbots of Lindores and Scone, wish eternal salvation
+                  in Christ. Inasmuch as a dispute was moved between the
+                  venerable father, the lord Clement bishop of Dunblane, on the
+                  one side, and the lord abbot Innocent, and the convent of
+                  Inchaffray, on the other side, over the churches of
+                  Aberuthven and Tullichettle, and over the teinds coming from
+                  rents and all manner of perquisites of the lord earl of
+                  Strathearn, which are called second teinds, all which the
+                  said bishop claimed, saying that they pertained to his table
+                  by reason of his church; at length, on the advice of worthy
+                  men, the said bishop, for himself and his successors (with
+                  the consent and assent of the whole clergy of Dunblane, to
+                  whom the election of the bishop belongs, also with the assent
+                  of the lord Robert, earl of Strathern, patron of the same
+                  see), and the said abbot and convent, for themselves and
+                  their successors, agreed to submit to our arbitration on the
+                  aforesaid articles, as also on all other churches and
+                  possessions at that time conferred and granted to them, with
+                  the addition of the following penalty, that if the same
+                  bishop or any of his successors desired to withdraw from our
+                  decision, in the first place, if any advantage should come to
+                  his church through our decision, he should restore it to the
+                  opposite party, and also pay to the fabric of the bridge of
+                  Perth two hundred pounds sterling by way of penalty before
+                  entering on litigation. And if the abbot and convent or their
+                  successors should wish to withdraw from our decision, they
+                  shall pay to the same bridge, by way of penalty, before
+                  entering on litigation three hundred pounds. The parties,
+                  therefore, having appeared in our presence, and the pleadings
+                  of each party having been heard and carefully considered, at
+                  length, on the advice of those learned in the law, we made
+                  the following ordinance, namely, that the said bishop was to
+                  abandon the whole action which he was raising, and renounce
+                  all right which he sought, or believed that he had, in
+                  respect to the matters aforesaid; and that the said abbot and
+                  convent was to assign from certain places to the said bishop
+                  and his successors, in the name of the church of Dunblane, an
+                  annual payment of sixteen pounds sterling, as reckoned by the
+                  judgment of worthy men. The parties accepting this our award,
+                  to the end that it might obtain the strength of perpetual
+                  validity, asked that it might be reduced to writing in the
+                  manner of a cyrograph, of which one part sealed with our
+                  seals, together with the seal of the said bishop, should
+                  remain at the aforesaid monastery of Inchaffray; and the
+                  other part sealed similarly with our seals and the seal of
+                  the chapter of the same monastery, should remain with the
+                  said bishop. Given in the 1234th year since the Incarnation
+                  of the Lord, in the month of August.</p></div>
+    </body>
+  </text>
+</TEI>

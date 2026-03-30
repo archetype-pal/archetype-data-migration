@@ -1,0 +1,58 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-810">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 625</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.657219+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">810</idno>
+        <idno type="textcontent">825</idno>
+        <idno type="transcription_textcontentxml">810</idno>
+        <idno type="translation_textcontentxml">811</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 625</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 625</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T14:52:15.657219+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T14:52:15.657219+00:00" status="approved">transcription moa=810 status=reviewed modified=2022-11-01 14:52:15.648591+00 | translation moa=811 status=reviewed modified=2022-11-01 14:52:15.657219+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">. A . dei gr<ex>ati</ex>a Rex scott<ex>orum</ex> .</cl> Th<ex>ome</ex> . Priori Dunelm<ex>ensi</ex> . dilecto amico suo . <cl type="salutation">salutem</cl> .</cl> <cl type="disposition">Mandamus vobis .<lb/> precantes quatinus quadraginta Libras quas per monachos de Coldingham’ anno
+                     preterito misi<lb/>mus vsque Dunelm<ex>um</ex> . Hugolin<ex>o</ex> nuntio et famulo domini Reiner<ex>i</ex> Cardinal<ex>is</ex> . habere<lb/> faciatis . In cuius rei testimonium  has Litteras nostras patentes vobis
+                     transmittimus</cl> .<lb/> <cl type="witnesses">Test<ex>ibus</ex> . E. Abbate de sancta Cruce . W. Olif<ex>ard</ex> . Iust’ Laod<ex>onie</ex> .</cl> <cl type="dating">apud castr<ex>um</ex> puellar<ex>um</ex> . xxix . die<lb/> Maii . Anno regni domini regis vicesimo secundo .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">A<ex>lexander</ex>, by the grace of God king of the Scots,</cl> to Thomas, prior of Durham, our well-beloved friend, <cl type="salutation">greeting</cl>.</cl> <cl type="disposition">We command you that you cause Hugolin, the envoy and servant of the lord
+                  cardinal, Rainer, to have the forty pounds which we sent last
+                  year to Durham by the monks of Coldingham. As witness of this
+                  matter we have sent you these our letters patent.</cl> <cl type="witnesses">As witnesses: Elias, abbot of Holyrood; W<ex>alter</ex> Oliphant, justiciar of Lothian.</cl> <cl type="dating">At Maidens' Castle [Edinburgh] on 29th day of May, in the twenty-second year of
+                  the lord king's reign [1236]</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

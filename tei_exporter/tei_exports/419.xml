@@ -1,0 +1,81 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-419">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/144</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:11:34.801786+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">419</idno>
+        <idno type="textcontent">424</idno>
+        <idno type="transcription_textcontentxml">419</idno>
+        <idno type="translation_textcontentxml">420</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/144</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/144</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:11:34.801786+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:11:34.801786+00:00" status="published">transcription moa=419 status=live modified=2021-04-06 15:11:34.801786+00 | translation moa=420 status=live modified=2021-04-06 15:11:33.107085+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p  style="margin-bottom: 15.0pt; text-align: justify; background: white;">
+          <span style="font-family: Junicode;"><cl type="address">Omnibus hoc scriptum uisuris uel audituris <cl type="intitulatio">Walterus filius Alani Domini Regis Scocie senescallus</cl> <cl type="salutation">salutem in domino</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerit<lb/> vniuersitas uestra</cl> me dedisse et concessisse deo et beate Marie de Melros et Monachis ibidem deo
+                        seruientibus totam terram de<lb/> Molle per rectas diuisas suas et quicquid continetur imfra easdem diuisas cum
+                        omnibus pertinenciis suis . quam tenui in feodo de
+                        domino<lb/> Will<ex>el</ex>mo de vesci et omnia iura et actiones que mihi competebant uel conpetere
+                        poterant racione eorundem siue in eisdem . in liberam .<lb/> puram . et perpetuam elemosinam <cl type="holding">ad habendam . possidendam et tenendam in perpetuum . adeo libere . quiete .
+                        plenarie et honorifice  sicut aliqua<lb/> elemosina in regno scocie liberius . quiecius plenius et honorificencius tenetur
+                           et possidetur</cl> . Nec ego nec heredes mei in eadem terra<lb/> siue in rebus contentis imfra diuisas eiusdem terre decetero in perpetuum
+                        aliquid iuris reclamabimus . <cl type="warrandice">Immo liberam ab omni exaccione . seruicio .<lb/> consuetudine et qualibet alia seruitute contra omnes in perpetuum eisdem
+                           monachis cum omnibus premissis warantizabimus
+                           defendemus et ma<lb/>nutenebimus</cl></cl> . <cl type="sealing">In cuius rei testimonium presens scriptum sigilli mei apposicione roboraui</cl> . <cl type="witnesses">Hiis testibus . Thoma Croc . Symone<lb/> filio bertulf<ex>i</ex> . Ada le Waleys . Will<ex>elm</ex>o de hauekerest<ex>un</ex> . et Roberto de Kiphau militibus . Will<ex>elm</ex>o brun Magistro Monialium de suber<lb/>wic . Will<ex>elm</ex>o et Roberto capellanis nostris . Leonio de Normannvil’ . Ricardo de muschelb<ex>urc</ex> . et Ioh<ex>ann</ex>e de leycest’ . Monachis de Melr<ex>os</ex> . et multis<lb/> aliis .</cl></span>
+        </p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall see or hear this written deed, <cl type="intitulatio">Walter son of Alan, steward of the lord King of Scotland</cl>, <cl type="salutation">sends greeting in the Lord</cl>.</cl> <cl type="disposition"><cl type="notification">Let your whole community know</cl> me to have given and granted to God and to blessed Mary at Melrose and to the
+                     monks serving God in that place the whole land of Mow by
+                     its correct boundaries and whatever is contained within
+                     the same boundaries with all its pertinents which I held
+                     in feu of the lord William de Vescy and all rights and
+                     public functions which applied to me or could apply by
+                     reason of the same or in the same, in free, pure, and
+                     perpetual alms <cl type="holding">to have, possess and hold for ever, as freely, quitely, fully and honourably as
+                     any alms in the kingdom of Scotland is freely, quitely,
+                     fully and honourably held and possessed.</cl> Neither I nor my heirs shall in the future claim back any right in the same land
+                     or in the things contained within the boundaires of the
+                     same land for ever; <cl type="warrandice">but we shall warrant, defend, and maintain against all people for ever to the
+                     same monks with everything mentioned before, free from
+                     every exaction, service, custom and whatever other service</cl>.</cl> <cl type="sealing">As witness of this matter I have secured the present written deed by the
+                  application of my seal</cl>. <cl type="witnesses">With these witnesses: Thomas Crook, Simon son of Bertolf, Adam Wallace, William
+                  of Halkerston, Robert of Kippo, knights; William Broun,
+                  master of the nuns of South Berwick; William and Robert our
+                  chaplains; Leon de Normanville, Richard of Musselburgh, and
+                  John of Leicester, monks of Melrose; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

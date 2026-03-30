@@ -1,0 +1,58 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-602">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/62</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:28:38.456985+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">602</idno>
+        <idno type="textcontent">611</idno>
+        <idno type="transcription_textcontentxml">602</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/62</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/62</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2017-01-30T19:28:38.456985+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:28:38.456985+00:00" status="draft">transcription moa=602 status=draft modified=2017-01-30 19:28:38.456985+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus sancte matris ecclesie filiis presentibus et futuris <cl type="intitulatio">Walterus filii Alani dapifer Regis scottorum</cl> . <cl type="salutation">Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me concessisse . et hac<lb/> carta mea confirmasse deo et ecclesie sancte Marie de Melros . et Monachis
+                     ibidem deo seruientibus donationem illam quam Roge<lb/>rus filius Glay . et Will<ex>elmu</ex>s de hafkerrestun . et Ricardus de hafkerrestun frater eius . et Ioh<ex>anne</ex>s filius alani de mundegumeri .<lb/> et vincencius filius Roberti Auenel . et Nicholaus filius Rollandi fecerunt eis
+                     de quadam parte terre in territorio de Inuer<lb/>wic . sicut fossatam circuit eandem terram a fratribus eorum factum . et de
+                     communi pastura eiusdem uille de Inuerwich <cl type="boundaries">per<lb/> has diuisas . Scilicet . de profunda uia ad capud de manineth ad diuisas illas
+                        que inter nos . et Monachos de kalchou .<lb/> scilicet ex transuerso de Monesclath . usque in Wiþsclad . et de Wiþsclad usque
+                        in Edwardescloth . et de edwardescloth usque in<lb/> Bothkil . et sic sursum per eandem aquam . scilicet Botkil per rectas diuisas de
+                        Inuerwic . usque ad bercariam predictorum Monachorum<lb/> et de illa bercaria usque ad ad profundam uiam prenominatam</cl> . <cl type="holding">Totas has terras . in petariis . in turbariis . in bruariis . in pas<lb/>turis . et omnibus aliis aisiamentis concessis eisdem Monachis tenere in puram
+                        et perpetuam elemosinam libere quiete<lb/> et solute ad omnibus seruiciis . exactionibus . et demandis . sicut liberius
+                        quietius et plenius aliquam elemosinam tenent<lb/> in regno scott’ . et carte eorundem quas idem Monachi habent testantur</cl> .</cl> <cl type="witnesses">Hiis testibus . Will<ex>elm</ex>o de bosco cancell<ex>ario</ex> Regis .<lb/> Rogero Auenel . Alano de Mundegumeri . Dauid de lindeseie . Rogero filio Glay .
+                     Hugone Mauleuerer . Hugone Ridel .<lb/> ... Will<ex>elm</ex>o heriz . et Multis aliis .</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

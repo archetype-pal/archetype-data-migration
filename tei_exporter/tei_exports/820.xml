@@ -1,0 +1,59 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-820">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 591</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 14:52:15.761233+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">820</idno>
+        <idno type="textcontent">836</idno>
+        <idno type="transcription_textcontentxml">820</idno>
+        <idno type="translation_textcontentxml">821</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 591</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 591</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T14:52:15.761233+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T14:52:15.761233+00:00" status="approved">transcription moa=820 status=reviewed modified=2022-11-01 14:52:15.761233+00 | translation moa=821 status=reviewed modified=2022-11-01 14:52:15.749652+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">W Rex Scott’</cl> . Iusticiis . vicecomitibus . et Omnibus probis hominibus tocius terre sue  <cl type="salutation">salutem</cl></cl> . <cl type="disposition">preceipio fir<lb/>miter . ut ubique seruiens Monachorum de Goldingham inuenire poterit fugitiuos .
+                     et natiuos eorum . de<lb/> Goldinghamshire . siue aliarum terrarum suarum  eos iuste habeat cum omnibus
+                     rebus . et catallis eorum . et prohibeo . ne quis illos
+                     iniuste detineat  super meam forisfacturam</cl> <cl type="witnesses">T’ Nichol<ex>ao</ex> Canecellario . Math<ex>eo</ex><lb/> archid<ex>iacono</ex> .</cl> <cl type="dating">apud Forfare</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">W<ex>illiam</ex>, king of the Scots,</cl> to justices, sheriffs, and all worthy men of the whole of his land, <cl type="salutation">greeting.</cl></cl> <cl type="disposition">I resolutely instruct that wherever a tenant of the monks of Coldingham may
+                  discover fugitives and neyfs of Coldinghamshire or of their
+                  other lands, he is legitimately to have them, with all
+                  things, and their chattels, and I forbid that anyone
+                  unlawfully detain them, on pain of my forefeiture.</cl> <cl type="witnesses">As witnesses: Nicholas the Chancellor, Matthew the Archdeacon.</cl> <cl type="dating">At Forfar.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

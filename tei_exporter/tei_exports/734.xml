@@ -1,0 +1,78 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-734">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/290</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-07 08:22:45.973624+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">734</idno>
+        <idno type="textcontent">746</idno>
+        <idno type="transcription_textcontentxml">734</idno>
+        <idno type="translation_textcontentxml">735</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/290</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/290</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-07T08:22:45.973624+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-07T08:22:45.973624+00:00" status="published">transcription moa=734 status=live modified=2021-04-07 08:22:45.973624+00 | translation moa=735 status=live modified=2021-04-07 08:22:42.600214+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Omnibus Christi fidelibus presens scriptum uisuris uel audituris <cl type="intitulatio">Adam filius Ade de Dunelmo</cl> <cl type="salutation">salutem in domino</cl></cl> ;<lb/> <cl type="notification">Nouerit uniuersitas uestra</cl> <cl type="disposition">me pro necessitate mea . uxoris mee et liberorum meorum uendidisse monachis<lb/> de Melr<ex>os</ex> totam terram meam quam habui in Thodholesid’ et Standestanerig<ex>is</ex> . quam quidem tenui<lb/> de domino Will<ex>elm</ex>o de Ridal’ et heredibus suis in Westlilliscliue . sitam inter terram eorundem
+                     monachorum que<lb/> uocatur Clerkisland’ et terram Will<ex>elm</ex>i filii Alexandri . pro viginti solid<ex>os</ex> sterlingorum super quibus nobis<lb/> est plenarie satisfactum . <cl type="holding">Dicti uero monachi tenebunt et possidebunt inperpetuum totam dictam terram<lb/> <supplied>adeo</supplied> libere et quiete sicut aliquam terram in regno Scocie liberius et quietius
+                        tenent aut possident .<lb/> <supplied>c</supplied>um communibus asiamentis dicte uille  ad tantam terram pertinentibus . et ipsi
+                        monachi liberi e<lb/>runt et immunes ab omni seruicio priuato et forensi . ab omni consuetudine .
+                        exaccione et demanda que euenire poterunt in terra .</cl> <cl type="warrandice">Et ego et heredes mei dictam terram cum omnibus suis pertinenciis et cum<lb/> omnibus que premissa sunt dictis monachis contra omnes imperpetuum
+                        warantizabimus ac defendemus .<lb/> Ita quod nec ego nec heredes mei alienabimus residuum terre nostre quam habemus
+                        in Westlilliscliu’ ut per eam<lb/> possimus dictam terram dictis monachis si casus contigerit warentizare .</cl></cl> <cl type="sealing">In cuius rei testimonium ego<lb/> pro me et heredibus meis huic scripto sigillum meum apponi feci</cl> . <cl type="witnesses">Testibus . Will<ex>elm</ex>o filio Alex<ex>andri</ex> . Alano<lb/> Spens’ . Alex<ex>andro</ex> de Hirmannist’ . Symone braciatore . Will<ex>elm</ex>o filio Hugonis et multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all Christ's faithful people who shall view or hear the present writing <cl type="intitulatio">Adam son of Adam of Durham</cl> <cl type="salutation">sends greeting</cl>.</cl> <cl type="notification">Your whole community should know</cl> <cl type="disposition">me to have sold, for my own, my wife's and my childens' needs, to the monks of
+                  Melrose my whole land that I have in 'Thodholeside' and
+                  'Standestanerigis', which I held of the lord William of
+                  Ryedale and his heirs in West Lilliesleaf, situated between
+                  the land of the same monks which is called 'Clerk's Land' and
+                  the land of William son of Alexander, in respect of which
+                  payment has been fully made to us for twenty shillings. <cl type="holding">The said monks shall hold and possess for ever the whole said land as freely and
+                     quitely as they freely and quitely hold and possess any
+                     land in the kingdom of Scotland, with common easements of
+                     the said toun as they pertain to so much land, and the
+                     monks shall be free and immune from every private and
+                     external service, from every custom, exaction and demand
+                     which can occur in the land.</cl> <cl type="warrandice">And I and my heirs shall warrant and defend the said land with all its
+                     pertinents with everything that was mentioned before to
+                     the said monks against all people for ever, so that
+                     neither I nor my heirs shall alienate the residue of our
+                     land that we have in West Lilliesleaf, in order that
+                     through it we should be able to warrant the said land to
+                     the said monks if a cause arises.</cl></cl> <cl type="sealing">In testimony of this matter I have caused my seal for myself and my heirs to be
+                  applied to this writing.</cl> <cl type="witnesses">As witnesses William son of Alexander, Alan Spenser, Alexander of Herdmanston,
+                  Simon the brewer, William son of Hugh, and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

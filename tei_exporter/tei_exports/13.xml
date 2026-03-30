@@ -1,0 +1,66 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-13">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 554</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-10-31 20:19:35.812898+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">13</idno>
+        <idno type="textcontent">13</idno>
+        <idno type="transcription_textcontentxml">13</idno>
+        <idno type="translation_textcontentxml">14</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 554</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 554</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-10-31T20:19:35.812898+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-10-31T20:19:35.812898+00:00" status="approved">transcription moa=13 status=reviewed modified=2022-10-31 20:19:35.804054+00 | translation moa=14 status=reviewed modified=2022-10-31 20:19:35.812898+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="intitulatio">Ego dunecanus filius regis Malcolumb constans hereditarię <lb/> rex scotię</cl>  <cl type="disposition">dedi in elemosina Sancto Cuthberto &amp; suis seruitoribus Tininge<lb/>ham . Aldeham . Scuchale . Cnolle . Hatheruuich . &amp; de Broccesmuthe <lb/> omne seruitium quod inde habuit Fodanus episcopus . &amp; hęc dedi in tali quitan<lb/>tia cum saca &amp; soca . qualem unquam meliorem habuit sanctus Cuthbertus . <lb/> ab illis de quibus tenet suas elemosinas . Et hoc dedi pro me ipso . &amp; <lb/> pro anima patris mei . &amp; pro fratribus meis . &amp; pro uxore mea . &amp; pro infan<lb/>tibus meis . Et quoniam uolui quod istud donum stabile esset . sancto cuthberto
+                      <lb/> feci quod fratres mei concesserunt . </cl><cl type="malediction">Qui autem istud uoluerit destruere . <lb/> uel ministris sancti cuthberti aliquid inde auferre  maledictionem dei . <lb/> et sancti Cuthberti . &amp; meam  habeat . amen.</cl> <cl type="subscription">Crux dun+ecani regis scribtoris gr+entonis <lb/> ace+ard ul+f malcolumb + eadgari + <lb/> her+mer aelf+ric vui+get <lb/> hem+ming teo+dbold ea+rnulf</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="intitulatio">I, Duncan, son of King Malcolm, by inheritance undoubted king of Scotland,</cl> <cl type="disposition">have given in alms to Saint Cuthbert and his own servants, Tyninghame, Auldhame,
+                  Scoughall, Knowes, Hedderwick, and at Broxmouth all the
+                  service that Bishop Fothad had from that place, and I have
+                  given these in such quittance with sake and soke, as better
+                  than Saint Cuthbert ever had from those of whom he holds his
+                  own alms. And I have given this for myself and for my
+                  father's soul, and for my brothers, and for my wife, and for
+                  my children. And since I have willed that this gift should
+                  permanently belong to Saint Cuthbert, I have done what my
+                  brothers have allowed. </cl><cl type="malediction">But let the one who would destroy this thing, or take anything of it away from
+                  the servants of Saint Cuthbert, have God’s curse, and Saint
+                  Cuthbert’s, and mine. Amen.</cl> <cl type="subscription">The cross of King Dun+can. Of the scribe, Gr+ent. Ach+ard. Ul+f. Malcolm+.
+                  Edgar+. Her+mer. Ælf+ric. Uv+iet. Hem+ming. Theo+bald.
+                  E+rnulf</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,83 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-878">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of DCA DCD Misc. Ch. 568</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2022-11-01 15:48:09.636229+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">878</idno>
+        <idno type="textcontent">902</idno>
+        <idno type="transcription_textcontentxml">878</idno>
+        <idno type="translation_textcontentxml">879</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Durham</settlement>
+            <repository>Durham Cathedral Archives</repository>
+            <idno>DCD Misc. Ch. 568</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>DCA DCD Misc. Ch. 568</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="approved">
+      <change when="2022-11-01T15:48:09.636229+00:00" status="approved">Exported by standalone tei_exporter.</change>
+      <change when="2022-11-01T15:48:09.636229+00:00" status="approved">transcription moa=878 status=reviewed modified=2022-11-01 15:48:09.62284+00 | translation moa=879 status=reviewed modified=2022-11-01 15:48:09.636229+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Dauid dei gratia Rex Scottorum</cl> . Omnibus per regnum suum in scotia et lodoneio constitutis scottis et anglis  <cl type="salutation">salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Sciatis</cl> me concessisse et dedisse deo et sancto<lb/> Cvthberto et monachis eius de dunelmo in elemosinam has terras in lodoneio .
+                     scilicet Coldingeham . Aldecambes . Lumesdene . Ristun .
+                     Renintune . Swinewde .<lb/> Prenegest . Eitun . et aliam Eitun . et Crammesmutham . Lambertun . et aliam
+                     Lambertun . Paxtun . Fiswic . et Swintun . Omnes has
+                     superscriptas terras . ego do et<lb/> concedo deo et Sancto predicto et Monachis eius de Dunelmo . Cum saca et Socna .
+                     et toll . et team . et Infangethef . et cum omnibus terris
+                     . et siluis . et aquis . et frac<lb/>turis nauuium . et cum omnibus consuetudinibus liberas et quietas ab omni opere
+                     et seruitio . pro salute animę meę . et filii mei Henrici
+                     . et pro animabus patris et matris meę .<lb/> et fratrum et sororum mearum . <cl type="injunction">Precipio etiam et defendo ne aliquis de hac mea donatione aliquam iniuriam uel
+                     molestiam aut calumpniam monachis sancti Cuth<lb/>berti de Dunelmo amodo faciat . quia uolo ut hęc mea Elemosina libera et quieta
+                        ab omni calumpnia in perpetuum remaneat</cl> .</cl> <cl type="dating">Hec carta firmata est anno<lb/> ab incarnatione domini . m . c . xxvi . tercio anno regni mei . apud pebles .</cl> <cl type="witnesses">teste . et concessu Henrici filii mei . et isti alii sunt inde testes . Ioh<ex>anne</ex>s episcopus . Robertus<lb/> de brus . Herebertus cancellarius . Ascelinus archidiaconus . Paganus de Braiosa
+                     . Hugo brito . Berengarius ingania . Gospatricus uicecomes
+                     . Aimarvs .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">D<ex>avid</ex> by the grace of God king of the Scots</cl>, to all throughout his kingdom settled in Scotia and Lothian, Gael and English, <cl type="salutation">greeting.</cl></cl> <cl type="disposition"><cl type="notification">Know</cl> me to have conceded, and given in alms, to God, Saint Cuthbert and his monks of
+                     Durham, these lands in Lothian, that is to say,
+                     Coldingham, Old Cambus, Lumsdaine, Reston, Renton,
+                     Swinewood, Prenderguest, Ayton and the other Ayton, and
+                     Cramsmoo, Lamberton and the other Lamberton, Paxton,
+                     Fishwick, and Swinton. All these lands written above I
+                     give and concede to God, and to the aforesaid saint and to
+                     his monks of Durham, with sake and soke, toll and team,
+                     and infangtheif, and with all lands, woods, waters, and
+                     shipwrecks, and with all customs, free and quit from every
+                     work and service, for the salvation of my own soul and of
+                     my son Henry, and for the souls of my father and mother,
+                     and my brothers and sisters. <cl type="injunction">I also enjoin and forbid that anyone cause any injustice, trouble, or challenge
+                     in respect of this my donation to the monks of Saint
+                     Cuthbert of Durham henceforward, since I will that this my
+                     alms remain free and quit from every claim for ever.</cl></cl> <cl type="dating">This charter has been made firm in the year 1126 after the Lord's incarnation,
+                  in the third year of my reign, at Peebles,</cl> <cl type="witnesses">by the witness and consent of Henry my son. And these others are witnesses of
+                  it: John the bishop, Robert de Brus, Herbert the chancellor,
+                  Ascelin the archdeacon, Payn de Briouze, Hugh Brett, Berengar
+                  Engaine, Cospatric the sheriff, Aimer.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

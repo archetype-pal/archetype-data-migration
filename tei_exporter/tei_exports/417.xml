@@ -1,0 +1,86 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-417">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/143</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 15:08:19.869488+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">417</idno>
+        <idno type="textcontent">422</idno>
+        <idno type="transcription_textcontentxml">417</idno>
+        <idno type="translation_textcontentxml">418</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/143</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/143</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T15:08:19.869488+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T15:08:19.869488+00:00" status="published">transcription moa=417 status=live modified=2021-04-06 15:08:16.372253+00 | translation moa=418 status=live modified=2021-04-06 15:08:19.869488+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Vniuersis has Litteras uisuris uel audituris <cl type="intitulatio">Magister . W . de Lindesei Decanus Glasguensis</cl> <cl type="salutation">Eternam in domino Salutem</cl> .</cl> <cl type="disposition"><cl type="notification">Nouerint uni<lb/>uersi quod</cl> . . Abbas et conuentus de kelkou coram nobis quicquid iuris habebant in terris
+                     et pasturis de Molle inf<supplied>ra</supplied><lb/> partem domini Walteri filii Alani Senscalli Scot’ . et etiam communiam quam
+                     habebant in Mora de Inuerwic eidem<lb/> Waltero et heredibus suis et suis attornatis resignauerunt et inperpetuum quieta
+                     clamauerunt . nichil iuris in<lb/> eisdem decetero reclamaturi pro quadam parte dicte More de Inuerwic ab eodem . W
+                     . eis in escambium collata<lb/> <cl type="boundaries">per has diuisas . Videlicet a Bothkyl ascendendo per Riuulum qui cadit a
+                     scoulande usque ad scoulandesheued ubi<lb/> sulcus trahitur . et per illum sulcum usque ad uiam que tendit de Risibrigg’
+                        uersus Inuerwich et sic ab<lb/> illa uia ascendendo per sulcum uersus orientem usque ad quandam fossam . et sic
+                        ab illa fossa descendendo per sul<lb/>cum usque ad Meldrescloesheued . et sic per Riuulum de Meldrescloesheued semper
+                        descendendo per maninet . usque<lb/> per buccam de Estfulhope . et sic ascendendo per Estfulhope uersus occidentem
+                        iuxta diuisas de ellum et de Ri<lb/>sibrigg’ usque in Westfulhope . et de Westfulhope usque in Withedre . et de
+                        Withedre usque in Bothkil .<lb/> et sic semper ascendendo per Bothkil usque in predictam riuulum qui cadit de
+                        Scouland’</cl> .</cl> <cl type="witnesses">Hiis testibus . Domino<lb/> . W . dei gratia Glasguens<ex>i</ex> Episcopo . Scot’ Cancell<ex>ario</ex> . Domino . W . Abbate de Passeleth . Magistro . H . Archidiacono glas<lb/>guens<ex>i</ex> . et multis aliis . e quibus fuerunt . Magister . W . de Grenlau . Magister Abel
+                     . et Magister Petrus de Alinton’</cl><lb/> <cl type="sealing">qui ad ma<supplied>iorem</supplied> huius rei s<supplied>ecuritatem</supplied> una nobiscum presenti scripto Sigilla sua apposuerunt</cl> . Actum apud kelkou<lb/> a<supplied>n</supplied>no g<supplied>racie</supplied> . . .</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all who shall see or hear these letters, <cl type="intitulatio">Master W<ex>illiam</ex> of Lindsay, dean of Glasgow,</cl> <cl type="salutation">wishes eternal salvation in the Lord.</cl></cl> <cl type="disposition"><cl type="notification">Let all people know</cl> that Abbot [Herbert] and the <ex>monastic</ex> community of Kelso have in our presence resigned and quitclaimed for ever any
+                     right they used to have in the lands and pastures of Mow
+                     within the portion belonging to the lord Walter son of
+                     Alan, Steward of Scotland, and also the right of common
+                     that they used to have in the moor of Innerwick to the
+                     same Walter and his heirs and their attorneys; no right in
+                     the same is to be reclaimed in return for a portion of the
+                     said moor of Innerwick from the same W<ex>illiam</ex> in the exchange bestowed <cl type="boundaries">by these boundaries, namely, from Birk Cleugh <ex>Bothwell</ex> going up by the small stream which falls from Scullins as far as Scullins Head
+                        where the ditch is drawn, and by that ditch as far as
+                        the road which stretches from Rise Lea towards
+                        Innerwick, and so from that road going up by the ditch
+                        eastwards as far as a certain furrow, and so from the
+                        furrow going down by the ditch as far as
+                        ‘Meldrescloesheued’, and so by the little stream of
+                        ‘Meldrescloesheued’ continually going down by Monynut,
+                        as far as the edge of Easter Wide Hope, and so going up
+                        by Easter Wide Hope westwards next to the bounds of
+                        ‘Ellum’ and of Rise Lea, as far as Wester Wide Hope,
+                        and from Wester Wide Hope as far as Whiteadder, and
+                        from Whiteadder far as Birk Cleugh, and so continually
+                        going down by Birk Cleugh as far as the said little
+                        stream which falls from Scullins</cl>.</cl> <cl type="witnesses">With these witnesses: the lord W<ex>illiam</ex>, by the grace of God, bishop of Glasgow, Chancellor of Scotland; the lord W<ex>illiam</ex>, abbot of Paisley; Master H<ex>ugh</ex>, archdeacon of Glasgow; and many others, among whom there were Master W<ex>illiam</ex> of Greenlaw, Master Abel, and Master Peter of Alinton,</cl> <cl type="sealing">who for the greater security of thie matter together with us have applied their
+                  own seal to the present written deed.</cl> Done at Kelso in the year of grace . . .</p>
+      </div>
+    </body>
+  </text>
+</TEI>

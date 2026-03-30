@@ -1,0 +1,83 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-463">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription of NRS GD55/186</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2016-08-08 11:06:30.856126+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">463</idno>
+        <idno type="textcontent">468</idno>
+        <idno type="transcription_textcontentxml">463</idno>
+        <idno type="translation_textcontentxml"/>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/186</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/186</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <change when="2016-08-08T11:06:30.856126+00:00" status="draft">Exported by standalone tei_exporter.</change>
+      <change when="2016-08-08T11:06:30.856126+00:00" status="draft">transcription moa=463 status=draft modified=2016-08-08 11:06:30.856126+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription"><p>C Y R O G R A P H V M</p> <p>Omnibus Sancte Matris Ecclesie filiis litteras istas uisuris uel audituris . H .
+               de Mortuo mari Canonicus Glasguen<ex>sis</ex> . W . et . I . de Cuningham et de killebride Decani Glasguen’ dioc’  Salutem in
+                  domino . Mandatum domini pape . in hec uerba suscepimus .
+                  Innocencius Episcopus’ seruus seruorum dei Dilectis filiis .
+                  H . de mortuo mari Canonico Glasguen’ . et de Cunigham . et
+                  de killebride decanis Glasguen’ Dioc’ salutem et apostolicam
+                  benedictionem . G. persona de Maybothel nostro apostolatui
+                  est conquestus quod Abbas . et Monachi de Melros Cist’
+                  ordinis et quidem alii Glasguen’ Dioc’ super decimis . terris
+                  . et Rebus aliis iniuriantur eidem . Ideoque discrecioni
+                  uestre per alostolica scripta mandamus quatinus partibus
+                  conuocatis audiatis causam . et appellacione remota saluis
+                  priuilegiis Pontificum Romanorum sine debito terminetis .
+                  facientes quod statueritis per censuram ecclesiasticam
+                  firmiter obseruari . Testes autem qui fuerint nominati si se
+                  gratia . odio . uel timore subtraxerint  per censuram eandem
+                  appellatione cessante  cogatis ueritati testimonium
+                  perhibere . Quod si non omnes hiis exequendis poteritis
+                  interesse  duo uestrum ea nichilominus exequantur . Datum .
+                  Lat’ . v. kl’. Marcii . Pontificatus nostri anno xiiii . Cum
+                  igitur huius actoritate mandati a nobis in hac cause
+                  processum fuisset  tandem consentientibus partibus ad
+                  conniuentiam et assensum Monialium de Norhberwich sub hac
+                  forma sopita est . Uidelicet quod Ecclesia conuentualis de
+                  Melros persoluet annuatim Ecclesie de Maybothel nomine
+                  composicioneis pro omnibus Decimis tam de Maybothelbech quam
+                  pro Decimis de larghis decem sol’ argenti ad festum Sancti
+                  quam diu a persona de decimarum exactione ad plenum erga
+                  omnes fuerint defensi . Hec autem composicio perpetuam
+                  firmitatem inter predictas ecclesias obtinebit . Ita quidem
+                  quod si aliquin contigerit dictos Monachos de Melros super
+                  predictarum Decimarum exactione vexari  liceat eis a
+                  predicta decem soldorum solucione cessare quam diu a
+                  rectoribus ecclesie de Meybothel cum effectu non fuerint
+                  defensi . Et ad huius composicionis corroboracionem perpetuam
+                  sigilla nostra cum sigillis partium pariter et monailium
+                  apponi fecimus .</p></div>
+    </body>
+  </text>
+</TEI>

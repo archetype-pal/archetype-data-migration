@@ -1,0 +1,78 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-613">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Add. Ch. 66568</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2018-11-28 15:17:26.344022+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">613</idno>
+        <idno type="textcontent">621</idno>
+        <idno type="transcription_textcontentxml">613</idno>
+        <idno type="translation_textcontentxml">612</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Add. Ch. 66568</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Add. Ch. 66568</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2018-11-28T15:17:26.344022+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2018-11-28T15:17:26.344022+00:00" status="published">transcription moa=613 status=live modified=2018-11-28 15:17:26.344022+00 | translation moa=612 status=live modified=2018-11-28 15:14:42.386752+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Uniuersis Sancte matris ecclesie filiis .</cl> <cl type="intitulatio"><persName>Svanus</persName> filius <persName>thorii</persName></cl> <cl type="salutation">salutem</cl> . <cl type="notification">Sciatis me</cl> <cl type="disposition">dedisse et concessisse . et hac mea carta con<lb/>firmasse . Deo et Sancto Michaeli de Scone et canonicis ibidem deo seruientibus
+                     et seruituris  Ahednepobbel . per easdem diuisas cum<lb/> quibus <persName>Robertus</persName> capellanus illam tenuit . Et toftum unum in tuberm<ex>ur</ex>e . illum scilicet quem aurifaber tenuit . <cl type="boundaries">Pratum quoque<lb/> quod est super Lochethin ex australi parte . a loco quo in oriente contiguum est
+                        terre rusticorum . quantumcumque extenditur per latum<lb/> et longum uersus occidentem</cl> cum communi pastura et aisiamento nemoris mei ad quecumque necesse habuerint .
+                     in liberam et perpetu<lb/>am elemosinam  pro anima comitis <persName>henrici</persName> . et omnium antecessorum necnon et successorum meorum . et pro anima mea . <cl type="holding">Quare uolo . ut prefati canonici prenominatam terram cum omnibus supradictis
+                     teneant et possideant iure perpetuo de me et heredibus
+                     meis mihi in per<lb/>petuum successuris . Ita libere et quiete . plenarie et honorifice  sicut
+                        aliqua domus religionis in toto Regno . ab aliquo baro<lb/>ne liberius tenet et quietius . plenarius et honorificentius</cl></cl> . <cl type="witnesses">Hiis testibus . <persName>Ioh<ex>ann</ex>e</persName> episcopo Dunkeld<ex>ensi</ex> . <persName>Roberto</persName> de b<ex>er</ex>kelei . <persName>Hugone</persName> de kaled’ . <persName>Macbeth</persName><lb/> iudice de gourin . <persName>Galfrido</persName> capellano de pert . <persName>Will<ex>elm</ex>o</persName> clerico de forf<ex>ar</ex> . <persName>henrico</persName> capellano . <persName>Philippo vuieth</persName> . <persName>Iacob</persName> de pert <persName>Andr’</persName>. et <persName>Will<ex>elmo</ex></persName> fratribus<lb/> eiusdem . <persName>Galfrido</persName> filio <persName>martini</persName> . <persName>Dauid</persName> et <persName>henrico</persName> filiis eius . <persName>Waltero</persName> de sancto eadmundo . et Multis Aliis</cl> ;</p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">To all sons of Holy Mother Church, <cl type="intitulatio">Swain son of Thor</cl> <cl type="salutation">[sends] greeting</cl>.</cl> <cl type="notification">Know me</cl> <cl type="disposition">to have given, conceded, and by this my charter to have made firm, to God, to
+                  Saint Michael at Scone, and to the canons serving God in that
+                  place now and in the future, ‘Ahednepobbel’, by the same
+                  boundaries that Robert the chaplain held it; and one toft in
+                  Tibbermore, that is, the one that the goldsmith held. Also a
+                  meadow that is above the Lochty on the southern side, <cl type="boundaries">from the point where to the east it adjoins the land of the peasants, as far as
+                     it stretches through its breadth and length towards the
+                     west,</cl> with common pasture and easement of the wood for what things so ever they shall
+                     have need, in free and everlasting alms, for the soul of
+                     Earl Henry, and of all my ancestors as well as my
+                     successors, and for my own soul. <cl type="holding">Wherefore I will that the aforementioned canons hold and possess the aforenamed
+                     land with everything written above by everlasting right of
+                     me and my heirs who shall succeed me in perpetuity, so
+                     freely and quitly, fully, and honourably as any religious
+                     house in the whole kingdom most freely and quitely, fully
+                     and honourably, holds from any baron</cl>.</cl> <cl type="witnesses">With these witnesses: John, bishop of Dunkeld; Robert of Berkeley; Hugh of
+                  Calder; Macbeth, judex of Gowrie; Geoffrey, chaplain of
+                  Perth; William, clerk of Forfar; Henry the chaplain; Philip
+                  Uvieth; James of Perth, Andrew and William, brothers of the
+                  same; Geoffrey fitz Martin, David and Henry his sons; Walter
+                  of St Edmunds; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

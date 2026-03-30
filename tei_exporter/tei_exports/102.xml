@@ -1,0 +1,75 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-102">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NLS Adv. MS 15.1.18, no. 20</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-01-30 19:27:59.361805+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">102</idno>
+        <idno type="textcontent">102</idno>
+        <idno type="transcription_textcontentxml">102</idno>
+        <idno type="translation_textcontentxml">103</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Library of Scotland</repository>
+            <idno>Adv. MS 15.1.18, no. 20</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NLS Adv. MS 15.1.18, no. 20</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-01-30T19:27:59.361805+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-01-30T19:27:59.361805+00:00" status="published">transcription moa=102 status=live modified=2017-01-30 19:27:59.361805+00 | translation moa=103 status=live modified=2016-12-20 15:32:42.542833+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address"><cl type="intitulatio">Will<ex>elmus</ex> . dei gratia Episcopus Sancti Andr<ex>ee</ex> .</cl> Omnibus has litteras uisuris uel audituris <cl type="salutation">eternam in domino Salutem .</cl></cl> <cl type="disposition"><cl type="notification">Nouerit <lb/> uniuersitas uestra</cl> nos ad petitionem Adam de Kinigmund concessisse . ⁊ Hac karta nostra confirmasse
+                     Will<ex>elm</ex>o . filio . Lambini <lb/> ⁊ heredibus suis illam Carucatam terre Scilicet Balrimund quam prenominatus adam
+                     tenet in uita sua de Priore ⁊ Con<lb/>uentu sancti Andr<ex>ee</ex> . Tenend’ sibi ⁊ Heredibus suis de predicto Adam quam diu idem adam de kinigm<ex>un</ex>d uixerit . red<lb/>dendo inde annuatim prenominato adam unam marcam argenti medietatem ad Festum
+                     sancti martini ⁊ medietatem ad <lb/> Pentecosten . <cl type="holding">Quare uolumus ut predictus Will<ex>elmus</ex> . filius . Lambini ⁊ heredes sui habeant teneant ⁊ possideant predictam <lb/> terram de Balrimund cum omnibus ad predictam terram iuste pertinentibus quamdiu
+                        prenominatus adam de kinigmund uixerit . <lb/> ita libere ⁊ Quiete . plenarie ⁊ honorifice sicut karta adam de kinigmund
+                        testatur</cl> .</cl> <cl type="witnesses">Hiis Tes<ex>tibus</ex> . Magistro Laur’ . <lb/> Archidiacono sancti andr<ex>ee</ex> . Petro ⁊ Edwardo Capallanis nostris . Joh<ex>ann</ex>e de Hautewise . Geruasio de Neafle . Magistro <lb/> Steph<ex>an</ex>o . Magistro Michaele . Galfrido de Neafle . Petro de Driburc . Clericis nostris
+                     . Will<ex>elmo</ex> de Wiuile Malc' iudice . ⁊ multis aliis .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address"><cl type="intitulatio">William, by the grace of God Bishop of St Andrews,</cl> to all who shall view or hear these letters, wishes <cl type="salutation">eternal salvation in the Lord</cl>:</cl> <cl type="notification">Know us all of you</cl>,<cl type="disposition"> at the request of Adam of Kinninmonth, to have granted and by this our charter
+                  to have made firm to William son of Lambin and his heirs, the
+                  ploughgate of land, that is, Balrymont, which the
+                  aforementioned Adam holds for his lifetime of the Prior and
+                  religious community of St Andrews; for him and his heirs to
+                  hold of the said Adam for as long as Adam of Kinninmonth
+                  shall live; by rendering thereupon annually to the aforenamed
+                  Adam one merk of silver, half at the feast of St Martin and
+                  half at Pentecost. <cl type="holding">Wherefore we will that the aforesaid William son of Lambin and his heirs shall
+                     have, hold and possess the aforesaid land of Balrymont
+                     with everything rightly pertaining to the aforesaid land,
+                     as long as the aforenamed Adam of Kinninmonth shall live;
+                     as freely and quietly, fully and honourably as the charter
+                     of Adam of Kinninmonth bears witness.</cl></cl> <cl type="witnesses">With these witnesses: Master Laurence, archdeacon of St Andrews; Peter and
+                  Edward, our chaplains; John of Haltwhistle, Gervase de
+                  Neaufles, Master Stephen, Master Michael, Geoffrey de
+                  Neaufles, Peter of Dryburgh, our clerks; William of Wyville;
+                  Malcolm the judex; and many others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

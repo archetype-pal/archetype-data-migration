@@ -1,0 +1,64 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-634">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of BL Cotton Ch. xviii.33</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-05 08:26:45.90752+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">634</idno>
+        <idno type="textcontent">644</idno>
+        <idno type="transcription_textcontentxml">634</idno>
+        <idno type="translation_textcontentxml">635</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>London</settlement>
+            <repository>British Library</repository>
+            <idno>Cotton Ch. xviii.33</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>BL Cotton Ch. xviii.33</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-05T08:26:45.90752+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-05T08:26:45.90752+00:00" status="published">transcription moa=634 status=live modified=2021-04-05 08:26:43.811493+00 | translation moa=635 status=live modified=2021-04-05 08:26:45.90752+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription"><p>C Y R O G R A P H V M</p> <p><cl type="narration">Hec est compositio facta inter ecclesiam de cupro et ecclesiam de blare in
+                  presencia magistrorum <persName>Ranulfi</persName> archidiaconi . et<lb/> <persName>laurencii</persName> officialis de Sancto andrea tociusque synodi apud perth. Scilicet quod monachi
+                     de cupro persoluent ecclesie de<lb/> blare unam petram cere pro omnibus decimis pertinentibus ad terras de lethcassi
+                     et de parthesin . quas habent<lb/> idem monachi . persoluetur autem predicta cera prefate ecclesie de blare ad
+                     lumen eiusdem ecclesie . singulis annis ad<lb/> festum Sancti Martini . <cl type="sealing">Et ut hec composicio rata et inconcussa permaneat in posterum  prenominatus <persName>Ran’</persName> archidiaconus et supradictus<lb/> <persName>laurencius</persName> officialis quibus uices suas commisit dominus <persName>Will<ex>elmu</ex>s</persName> episcopus de Sancto andrea  illam sigillorum suorum munimine ro<lb/>borauerunt .</cl></cl> <cl type="witnesses">Teste synodo</cl> apud perth  Kalendis . Maii .</p></div>
+      <div type="translation"><p>C Y R O G R A P H</p> <p><cl type="narration">This is the agreement made between the church of Cupar and the church of Blair
+                  in the presence of Masters Ranulf the archdeacon and Laurence
+                  the official of St Andrews and the whole synod at Perth. That
+                  is, that the monks of Cupar should pay to the church of Blair
+                  one stone of wax in return for all the teinds belonging to
+                  the lands of ‘Lethcassi’ and of Persey, which the same monks
+                  have. The aforesaid wax should be paid, however, to the
+                  church of Blair for the light of the same church, each year
+                  at the feast of Saint Martin.</cl> <cl type="sealing">And so that this agreement remain firm and unshaken in the future, the
+                  aforenamed Ranulf the archdeacon and the above-said Laurence
+                  the official, to whom the the lord William, bishop of St
+                  Andrews, has entrusted his duties, have validated it with the
+                  corroboration of their own seals.</cl> <cl type="witnesses">Witnessed by the synod</cl> at Perth on the kalends of May. </p></div>
+    </body>
+  </text>
+</TEI>

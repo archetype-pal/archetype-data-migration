@@ -1,0 +1,72 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-207">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD45/13/239</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2017-03-08 13:29:22.92396+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">207</idno>
+        <idno type="textcontent">207</idno>
+        <idno type="transcription_textcontentxml">207</idno>
+        <idno type="translation_textcontentxml">206</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD45/13/239</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD45/13/239</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2017-03-08T13:29:22.92396+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2017-03-08T13:29:22.92396+00:00" status="published">transcription moa=207 status=live modified=2017-03-08 13:29:22.92396+00 | translation moa=206 status=live modified=2017-03-08 13:29:20.175074+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="address">Ric’ dei gratia Ecclesie Sancti Andree humilis minister . vniuersis sancte
+                  matris ecclesie filiis  Salutem.</cl> <cl type="disposition">Sciant tam<lb/> posteri quam presentes nos dedisse  concessisse  hac carta nostra confirmasse
+                     Ecclesie Sancte Crucis de<lb/> Edenburg .  canonicis ibidem deo seruientibus Ecclesiam de Botheltune tenendam
+                     in liberam  per<lb/>petuam elemosinam . Quare uolumus  auctoritate episcopali mandamus ut predicti
+                     canonici prenominatam<lb/> ecclesiam libere teneant . quiete  honorifice possideant cum omnibus ad eam
+                     iuste pertinentibus . Saluo<lb/> iure episcopali .  Salua tenura Radulfi de Sancto martino.</cl> <cl type="witnesses">Hiis testibus . Magistro . A archidiacono Laodonie .<lb/> Waltero archidiacono de Sancto Andr’ . Ioh<ex>ann</ex>e nepote Roberti episcopi . A . decano Laodonie . Alexandro  Willelmo
+                     capellanis<lb/> Ricardi episcopi . Galfrido dapifero episcopi . Magistro Abraham . Roberto
+                     capellano . Godwino capellano . Dauid<lb/> capellano . Hugone pincerna episcopi .  aliis quam pluribus boni testimonii
+                     uiris .</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="address">Richard by the grace of God humble servant of the church of St Andrews to all
+                  sons of Holy Mother Church, Greeting:</cl> <cl type="disposition">Let those to come as well as those present know that we have given and granted
+                  and by this our charter made firm to the church of Holyrood
+                  in Edinburgh, and to the canons serving God there, the church
+                  of Bolton, to be held in free and perpetual alms. Wherefore I
+                  will and by episcopal authority command that the said canons
+                  should hold that church freely, quietly and honourably with
+                  everything rightfully belonging to it. Reserving episcopal
+                  right, and reserving the tenure of Ralph de St-Martin.</cl> <cl type="witnesses">With these witnesses, Master A<ex>ndrew</ex> archdeacon of Lothian, Walter archdeacon of St Andrews, John the Bishop Robert’s
+                     nephew, A<ex>iulf</ex> dean of Lothian, Alexander and William chaplains of Bishop Richard, Geoffrey the
+                     bishop’s steward, Master Abraham, Robert the chaplain,
+                     Godwin the chaplain, David the chaplain, Hugh the bishop’s
+                     butler, and very many other men of good testimony.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>

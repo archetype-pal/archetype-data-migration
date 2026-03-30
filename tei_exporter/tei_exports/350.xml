@@ -1,0 +1,80 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="moa-350">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Transcription and Translation of NRS GD55/295</title>
+        <respStmt>
+          <resp>Exported from Models of Authority data</resp>
+          <name>tei_exporter</name>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Models of Authority edition, <date>2021-04-06 12:35:03.477248+00</date></edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Models of Authority</publisher>
+        <idno type="textcontentxml">350</idno>
+        <idno type="textcontent">352</idno>
+        <idno type="transcription_textcontentxml">350</idno>
+        <idno type="translation_textcontentxml">349</idno>
+        <availability>
+          <p>Status unknown. Exported for research and migration workflows.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <msDesc>
+          <msIdentifier>
+            <settlement>Edinburgh</settlement>
+            <repository>National Records of Scotland</repository>
+            <idno>GD55/295</idno>
+          </msIdentifier>
+          <msContents>
+            <summary>NRS GD55/295</summary>
+          </msContents>
+        </msDesc>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="published">
+      <change when="2021-04-06T12:35:03.477248+00:00" status="published">Exported by standalone tei_exporter.</change>
+      <change when="2021-04-06T12:35:03.477248+00:00" status="published">transcription moa=350 status=live modified=2021-04-06 12:35:03.477248+00 | translation moa=349 status=live modified=2021-04-06 12:34:59.504385+00</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="transcription">
+        <p><cl type="notification">Sciant omnes qui hoc scriptum viderint uel audierunt quod</cl> <cl type="intitulatio">ego isabel sponsa roberti . de . polloc</cl> <cl type="narration">In propria uoluntate constituta . de consensu eiusdem . R . uiri<lb/> mei et consilio patris mei Roberti croc . <cl type="disposition">dedi et concessi simoni de Lindesey ad perpetuam firmam maritagium meum que
+                     habeo in territorio de . Molle . scilicet<lb/> <supplied>Hun</supplied>gerig cum omnibus pertinenciis suis . et libertatibus et aisiamentis sicut eadem
+                        terra data fuit patri meo a domina chine . de molle . <cl type="holding">tenendum sibi et here<lb/><supplied>dibus</supplied> suis uel quibus eam assignare uoluerit . de me et heredibus meis libere et
+                           quiete . ab omni seruitio et exactione Reddendo inde
+                           annuatim decem<lb/> <supplied>soli</supplied>dos quinque silicet ad pentecosten et quinque ad festum sancti martini . et
+                           domine chine et heredibus suis pro me et heredibus
+                           meis unum nisum sor annuatim ad nun<lb/><supplied>dinas R</supplied>okesb’</cl>.</cl> et ad hanc conuentionem firmiter et fideliter tenendam pro me et heredibus meis
+                     ego isabel coram viris discretis tactis sacrosanctis
+                     iuraui quod si<lb/> <supplied>ego</supplied> et heredes mei . aliquo tempore contra scriptam conuencionem ire uoluerimus .
+                     nomine pene centum solidos . dicto . S . uel eius
+                     atornatis persoluemus . prescripta conuentione in sua<lb/> ... manente</cl> . <cl type="sealing">et quia sigillum meum proprium non habui ad roborationem huius scriptum sigillum
+                  uiri mei et sigillum patris mei huic scripto apposui</cl><lb/> <cl type="witnesses">... <supplied>te</supplied>stibus Ioh<ex>ann</ex>e decano de Walle cluid . ph’. de perthet . alano . de nes . Will<ex>el</ex>mo filio . thoraldi . hug<ex>one</ex> Lurgot ada iuuene et aliis</cl></p>
+      </div>
+      <div type="translation">
+        <p><cl type="notification">Let everyone who shall have seen or heard this document know that</cl> <cl type="intitulatio">I, Isabella the spouse of Robert of Pollok</cl>, <cl type="narration">being determined in my own will, by the consent of Robert [my] husband and the
+                  advice of Robert Crock my father, <cl type="disposition">have given and granted to Simon of Lindsay at perpetual ferme my marriage dowry
+                     which I have in the territory of Mow, that is ‘Hungerig’
+                     with all its pertinents, freedoms, and easements, just as
+                     the same land was given to my father by the Lady Eschina
+                     of Mow; for him and his heirs or those to whom they might
+                     wish to assign it, <cl type="holding">to hold of me and my heirs free and quit from all service and exaction, by
+                        rendering thereupon ten shillings yearly, that is, five
+                        at Pentecost and five at the feast of Saint Martin, and
+                        to the Lady Eschina and her heirs for me and my heirs
+                        one sore sparrow-hawk yearly at the Roxburgh fair</cl>;</cl> and for this agreement firmly and faithfully to be held, for me and my heirs, I,
+                     Isabella, having held sacred relics, have sworn before men
+                     of discretion that if [I] and my heirs at any time wish to
+                     go against the written agreement, we should pay by way of
+                     a penalty one hundred shillings to the said S<ex>imon</ex> or his attorneys, the forewritten agreement remaining in his ...</cl> <cl type="sealing">and since I do not have my own seal for the corroboration of this document, I
+                  have applied the seal of my husband and the seal of my father
+                  to this document.</cl> <cl type="witnesses">As witnesses, John the dean of Clydesdale, Philip of Partick, Alan of Ness,
+                  William son of Thorald, Hugh Lurgot, Adam Young, and others.</cl></p>
+      </div>
+    </body>
+  </text>
+</TEI>
