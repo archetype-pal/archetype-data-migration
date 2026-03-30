@@ -1,0 +1,288 @@
+= public.digipal_character (old) → public.symbols_structure_character (new)
+
+== Summary
+* Rows: 103 → 103 (complete transfer; IDs preserved)
+* 1:1 migration by `id` (no missing old IDs; no extra new IDs)
+* `name` is an exact carry-over (103/103)
+* `name` length reduced from varchar(128) to varchar(100) with no overflow/truncation blockers
+* New `type` column is a fully populated semantic category (5 values) introduced in the new model
+* `type` was explicitly verified as an exact carry-over of the legacy ontograph type label via:
+  `digipal_character.ontograph_id -> digipal_ontograph.ontograph_type_id -> digipal_ontographtype.name`
+* Major schema simplification: legacy FKs, unicode metadata, and audit fields removed
+
+== Counts
+|===
+|DB |Table |Rows
+
+|old
+|public.digipal_character
+|103
+
+|new
+|public.symbols_structure_character
+|103
+|===
+
+== Direct row identity preservation
+|===
+|Check |Result
+
+|Old IDs missing in new
+|0
+
+|New IDs not in old
+|0
+
+|Old `(id,name)` pairs missing in new
+|0
+
+|New `(id,name)` pairs not in old
+|0
+
+|Conclusion
+|Complete 1:1 migration by `id`, with exact `name` preservation
+|===
+
+== Column model comparison
+
+=== Common columns
+|===
+|Column |Old |New |Notes
+
+|id
+|int4 NOT NULL
+|int8 NOT NULL
+|type widened
+
+|name
+|varchar(128) NOT NULL
+|varchar(100) NOT NULL
+|exactly preserved; length narrowed safely
+|===
+
+=== Old-only columns (removed in new model)
+* `unicode_point`
+* `ontograph_id` (FK to `digipal_ontograph`)
+* `form_id` (FK to `digipal_characterform`)
+* `created`
+* `modified`
+
+=== New-only columns
+* `type` (varchar(128), nullable in schema; fully populated in data)
+
+== Constraints and indexes
+
+=== Constraints
+Old:
+
+* Primary key on `id`
+* Unique constraint on `name`
+* FK `ontograph_id` → `digipal_ontograph(id)`
+* FK `form_id` → `digipal_characterform(id)`
+
+New:
+
+* Primary key on `id`
+
+Observation:
+
+* Legacy relational dependencies (`ontograph_id`, `form_id`) and `UNIQUE(name)` constraint were removed from the new schema.
+* Despite removal of the unique constraint, migrated data still has unique names (103 distinct names / 103 rows).
+
+=== Indexes
+Old:
+
+* PK index
+* Unique index on `name`
+* pattern index on `name`
+* index on `ontograph_id`
+* pattern index on `unicode_point`
+* index on `form_id`
+
+New:
+
+* PK index only
+
+== Data quality / blocker checks (generic same-column checks)
+|===
+|Check |Result
+
+|Old NULLs in common new NOT NULL column `id`
+|0
+
+|Old NULLs in common new NOT NULL column `name`
+|0
+
+|Old values exceeding new varchar length for `name` (100)
+|0
+|===
+
+Interpretation:
+
+* No blockers for direct transfer of shared columns (`id`, `name`).
+
+== Semantic migration verification
+
+=== `name` exact carry-over
+Verified by joining old/new rows on `id`.
+
+|===
+|Check |Result
+
+|Total rows compared
+|103
+
+|Rows where `new.name = old.name`
+|103
+
+|Rows where `new.name` differs
+|0
+
+|Trimmed-name matches
+|103
+
+|Case-folded matches
+|103
+|===
+
+Conclusion:
+
+* `symbols_structure_character.name` is an exact semantic carry-over of `digipal_character.name`.
+
+=== New `type` population profile
+|===
+|Check |Result
+
+|Total rows
+|103
+
+|`type` NULLs
+|0
+
+|`type` blank-or-null
+|0
+
+|Distinct `type` values
+|5
+|===
+
+Distribution:
+
+* `letter` = 56
+* `abbreviation` = 25
+* `character-sequence` = 15
+* `punctuation` = 6
+* `accent` = 1
+
+Conclusion:
+
+* `type` is a fully populated semantic classification introduced in the new schema.
+
+=== Exact proof of `type` derivation
+The new `symbols_structure_character.type` value was explicitly verified as the legacy ontograph-type label, using the join path:
+
+`digipal_character.ontograph_id -> digipal_ontograph.ontograph_type_id -> digipal_ontographtype.name`
+
+Verification results (103 rows):
+|===
+|Check |Result
+
+|Total rows compared
+|103
+
+|`new.type = old digipal_ontographtype.name` (exact)
+|103
+
+|`new.type` differs from ontograph type name
+|0
+
+|Trimmed matches
+|103
+
+|Case-folded matches
+|103
+|===
+
+Mismatch sample query:
+
+* Empty result (no mismatches)
+
+Distribution cross-check:
+|===
+|Legacy ontograph type (`digipal_ontographtype.name`) |New `type` |Rows
+
+|letter
+|letter
+|56
+
+|abbreviation
+|abbreviation
+|25
+
+|character-sequence
+|character-sequence
+|15
+
+|punctuation
+|punctuation
+|6
+
+|accent
+|accent
+|1
+|===
+
+Conclusion:
+
+* `symbols_structure_character.type` is an exact semantic carry-over of the legacy ontograph-type label (not inferred from `digipal_ontograph.name` or `digipal_characterform.name`).
+
+=== Legacy dropped field profile (old table)
+Old profiling (103 rows):
+|===
+|Field |Observation
+
+|`unicode_point` NULLs
+|0
+
+|`unicode_point` blank-or-null
+|44
+
+|`unicode_point = name` (exact)
+|54
+
+|`ontograph_id` NULLs
+|0
+
+|`form_id` NULLs
+|0
+|===
+
+Interpretation:
+
+* `unicode_point` was fully present but mixed in quality/semantics (many blank values; many values equal to `name`).
+* In the new model, this field is intentionally dropped in favor of a simplified structure (`id`, `name`, `type`).
+* Former relational detail (`ontograph_id`, `form_id`) is flattened into an in-row semantic category (`type`).
+
+== Reference tables used for proof
+* `digipal_ontograph(id, name, ontograph_type_id, created, modified, nesting_level, sort_order)`
+* `digipal_ontographtype(id, name, created, modified)`
+* `digipal_characterform(id, name)`
+
+== Example evidence (sample-based)
+Sample rows demonstrate the new categorical abstraction:
+
+* `new.name='.'`, old ontograph `"punctus"` → `new.type='punctuation'`
+* `new.name='?'`, old ontograph `"punctus interrogativus"` → `new.type='punctuation'`
+* `new.name='a'`, old form `"minuscule"` / ontograph `"A"` → `new.type='letter'`
+* `new.name='A'`, old form `"majuscule"` / ontograph `"A"` → `new.type='letter'`
+* `new.name='et (&)'` → `new.type='character-sequence'`
+* `new.name='7'` (tironian et abbreviation context) → `new.type='abbreviation'`
+* `new.name='accent'` → `new.type='accent'` (the one row where `new.type` equals `ontograph.name`)
+
+== Conclusion
+This table is a complete 1:1 entity migration with exact identity/name preservation and a clear schema redesign:
+
+* `id` and `name` are preserved exactly
+* legacy ontograph/form relationships and unicode metadata are removed from the table structure
+* the ontograph type classification is flattened/materialized directly as `type`
+* `type` is explicitly proven to equal the legacy ontograph-type label (`digipal_ontographtype.name`)

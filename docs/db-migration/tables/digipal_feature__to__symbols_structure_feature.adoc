@@ -1,0 +1,181 @@
+= public.digipal_feature (old) → public.symbols_structure_feature (new)
+
+== Summary
+* Rows: 54 → 54 (complete transfer; IDs preserved)
+* 1:1 migration by `id` (no missing old IDs; no extra new IDs)
+* `name` is an exact carry-over (54/54)
+* `id` widened from `int4` to `int8`
+* `name` length expanded from `varchar(32)` to `varchar(100)` (no truncation risk)
+* Schema simplified: legacy audit fields (`created`, `modified`) removed
+* Semantic integrity preserved via bridge-table usage checks (`component_features` references match exactly for all used feature IDs)
+* Unique-name constraint preserved in both old and new schemas
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.digipal_feature|54
+|new|public.symbols_structure_feature|54
+|===
+
+== Direct row identity preservation
+|===
+|Check|Result
+|Old IDs missing in new|0
+|New IDs not in old|0
+|Conclusion|Complete 1:1 migration by `id`
+|===
+
+== Business-key preservation (`name`)
+|===
+|Check|Result
+|Old duplicate `name` rows|0
+|New duplicate `name` rows|0
+|Old names missing in new|0
+|New names not in old|0
+|Conclusion|Exact same `name` set preserved across tables
+|===
+
+== Column model comparison
+
+=== Common columns
+|===
+|Column|Old|New|Notes
+|id|int4 NOT NULL|int8 NOT NULL|type widened
+|name|varchar(32) NOT NULL|varchar(100) NOT NULL|exactly preserved; length expanded
+|===
+
+=== Old-only columns (removed in new model)
+* `created`
+* `modified`
+
+=== New-only columns
+* None
+
+== Constraints and indexes
+
+=== Constraints
+Old:
+
+* Primary key on `id`
+* Unique constraint on `name`
+
+New:
+
+* Primary key on `id`
+* Unique constraint on `name`
+
+Observation:
+
+* The logical constraint model is preserved (`PK(id)`, `UNIQUE(name)`).
+* Constraint names differ, but semantics are equivalent.
+
+=== Indexes
+Old:
+
+* PK index on `id`
+* Unique index on `name`
+* pattern index on `name` (`varchar_pattern_ops`)
+
+New:
+
+* PK index on `id`
+* Unique index on `name`
+* pattern index on `name` (`varchar_pattern_ops`)
+
+Observation:
+
+* Index coverage for `name` lookups/pattern matching is preserved in the new schema.
+
+== Data quality / blocker checks (generic same-column checks)
+|===
+|Check|Result
+|Old NULLs in common new NOT NULL column `id`|0
+|Old NULLs in common new NOT NULL column `name`|0
+|Old values exceeding new varchar length for `name` (100)|0
+|===
+
+Interpretation:
+
+* No blockers for direct transfer of shared columns (`id`, `name`).
+* New `name` capacity is larger than old, so truncation risk is eliminated.
+
+== Semantic migration verification
+
+=== `name` exact carry-over by `id`
+Verified by joining old/new rows on `id`.
+
+|===
+|Check|Result
+|Total rows compared|54
+|Rows where `new.name = old.name`|54
+|Rows where `new.name` differs|0
+|Trimmed-name matches|54
+|Case-folded matches|54
+|===
+
+Conclusion:
+
+* `symbols_structure_feature.name` is an exact semantic carry-over of `digipal_feature.name`.
+
+== Referential usage preservation (incoming references via bridge table)
+
+This table is a lookup/entity table referenced by the component-feature bridge:
+
+* Old bridge: `public.digipal_component_features.feature_id`
+* New bridge: `public.symbols_structure_component_features.feature_id`
+
+=== FK integrity checks (bridge → feature)
+|===
+|Check|Result
+|Old bridge FK orphans (`digipal_component_features.feature_id` → `digipal_feature.id`)|0
+|New bridge FK orphans (`symbols_structure_component_features.feature_id` → `symbols_structure_feature.id`)|0
+|===
+
+Conclusion:
+
+* Feature references are valid in both old and new schemas (no orphaned bridge rows).
+
+=== Per-feature usage-count preservation
+Compared grouped bridge usage counts by `feature_id` in old vs new.
+
+|===
+|Check|Result
+|Feature IDs compared (used in bridge)|48
+|Feature IDs with same usage count|48
+|Feature IDs with different usage count|0
+|===
+
+Conclusion:
+
+* All used feature IDs retained exactly the same number of bridge references after migration.
+
+=== Used vs unused feature profile
+|===
+|Profile|Old|New
+|Total features|54|54
+|Used features (referenced in bridge)|48|48
+|Unused features (not referenced in bridge)|6|6
+|===
+
+Interpretation:
+
+* The migration preserved not only rows and names, but also the operational/reference footprint of the feature vocabulary.
+
+== Schema evolution interpretation
+This is a straightforward lookup-table migration with structural cleanup and no semantic drift:
+
+* Exact preservation of the feature vocabulary (`id`, `name`)
+* Identifier widening (`int4` → `int8`) for consistency with the new schema
+* Removal of legacy audit metadata (`created`, `modified`)
+* Preservation of uniqueness and query-support indexes on `name`
+* Referential usage preserved exactly in the component-feature bridge table
+
+== Conclusion
+`public.digipal_feature` → `public.symbols_structure_feature` is a complete and clean 1:1 migration:
+
+* all 54 rows migrated
+* IDs preserved exactly
+* `name` preserved exactly
+* no data-quality blockers
+* constraint/index intent preserved
+* downstream bridge-table usage preserved exactly (including used/unused feature distribution)

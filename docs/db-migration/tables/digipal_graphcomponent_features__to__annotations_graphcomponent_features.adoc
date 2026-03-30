@@ -1,0 +1,217 @@
+= public.digipal_graphcomponent_features (old) → public.annotations_graphcomponent_features (new)
+
+== Summary
+* Rows: 3367 → 2694 (*not* a complete transfer; new table is a strict subset of old by 673 rows)
+* New table preserves a subset of old rows exactly by `id` (no extra new IDs; all retained rows keep identical `(graphcomponent_id, feature_id)`)
+* Pair set comparison confirms: `old_pairs_missing_in_new = 673`, `new_pairs_not_in_old = 0`
+* Schema is structurally equivalent for shared data model (same 3 columns), with integer widening only (`int4` → `int8`)
+* FK integrity is clean in new table (0 orphans for both `graphcomponent_id` and `feature_id`)
+* Missing rows are explained by reduced `graphcomponent` population in the new model (parent subset), not by pair rewrites on retained rows
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.digipal_graphcomponent_features|3367
+|new|public.annotations_graphcomponent_features|2694
+|===
+
+== Migration shape (important)
+This is *not* a 1:1 full-table migration.
+
+The evidence shows a *subset migration*:
+
+* New has 673 fewer rows than old
+* New contains no extra rows (`new_ids_not_in_old = 0`)
+* Every new `(graphcomponent_id, feature_id)` pair exists in old (`new_pairs_not_in_old = 0`)
+* All retained rows preserve pair values exactly when joined by `id` (2694/2694 exact)
+
+Conclusion:
+
+* `annotations_graphcomponent_features` is an exact retained subset of `digipal_graphcomponent_features`, not a transformed superset/rewrite.
+
+== Direct row identity preservation (retained subset)
+|===
+|Check|Result
+|Old IDs missing in new|673
+|New IDs not in old|0
+|Joined rows by `id` (old↔new)|2694
+|`graphcomponent_id` exact matches on joined rows|2694
+|`feature_id` exact matches on joined rows|2694
+|===
+
+Interpretation:
+
+* For rows that exist in the new table, identity and payload are preserved exactly.
+* The migration excluded a subset of old rows rather than changing retained rows.
+
+== Column model comparison
+
+=== Common columns
+|===
+|Column|Old|New|Notes
+|id|int4 NOT NULL|int8 NOT NULL|type widened
+|graphcomponent_id|int4 NOT NULL|int8 NOT NULL|type widened
+|feature_id|int4 NOT NULL|int8 NOT NULL|type widened
+|===
+
+=== Old-only columns
+* None
+
+=== New-only columns
+* None
+
+Observation:
+
+* This bridge table keeps the same logical structure across old and new schemas.
+
+== Constraints and indexes
+
+=== Constraints
+Old:
+
+* Primary key on `id`
+* Unique constraint on `(graphcomponent_id, feature_id)`
+* FK `graphcomponent_id` → `digipal_graphcomponent(id)`
+* FK `feature_id` → `digipal_feature(id)`
+
+New:
+
+* Primary key on `id`
+* Unique constraint on `(graphcomponent_id, feature_id)`
+* FK `graphcomponent_id` → `annotations_graphcomponent(id)`
+* FK `feature_id` → `symbols_structure_feature(id)`
+
+Observation:
+
+* Constraint semantics are preserved, with parent tables renamed/mapped to new schema equivalents.
+
+=== Indexes
+Both old and new have equivalent index strategy:
+
+* PK index on `id`
+* unique composite index on `(graphcomponent_id, feature_id)`
+* single-column indexes on `graphcomponent_id` and `feature_id`
+
+Only index names differ.
+
+== Data quality / blocker checks (generic same-column checks)
+|===
+|Check|Result
+|Old NULLs in common new NOT NULL column `id`|0
+|Old NULLs in common new NOT NULL column `graphcomponent_id`|0
+|Old NULLs in common new NOT NULL column `feature_id`|0
+|Varchar overflow blockers|N/A (numeric-only table)
+|===
+
+Interpretation:
+
+* No datatype/nullability blockers for direct transfer of the shared columns.
+
+== Pair uniqueness and set equality
+
+=== Duplicate pair checks
+|===
+|Side|Duplicate `(graphcomponent_id, feature_id)` rows
+|Old|0
+|New|0
+|===
+
+=== Pair-set comparison
+|===
+|Check|Result
+|Old pairs missing in new|673
+|New pairs not in old|0
+|===
+
+Interpretation:
+
+* New pair set is a strict subset of old pair set.
+* No newly introduced bridge associations exist in the new table.
+
+== Referential integrity in new table
+|===
+|Check|Result
+|`graphcomponent_id` FK orphans (new)|0
+|`feature_id` FK orphans (new)|0
+|===
+
+Conclusion:
+
+* All migrated bridge rows in `annotations_graphcomponent_features` reference valid parent rows.
+
+== Usage-count preservation analysis
+
+=== By `graphcomponent_id`
+|===
+|Check|Result
+|Graphcomponent IDs compared (present in both bridge tables)|2444
+|Usage count same|2444
+|Usage count different|0
+|===
+
+Interpretation:
+
+* For every `graphcomponent_id` that exists in both bridge tables, the number of associated features is preserved exactly.
+* The mismatch samples are old-only graphcomponents (their `new_rows` were NULL), i.e. missing because the parent graphcomponent itself is absent in the new bridge population.
+
+=== By `feature_id`
+|===
+|Check|Result
+|Feature IDs compared|43
+|Usage count same|6
+|Usage count different|37
+|===
+
+Interpretation:
+
+* Feature associations are reduced for many features because some graphcomponent-feature links were excluded.
+* This is consistent with subset migration (missing graphcomponents), not per-row rewrites of retained pairs.
+
+=== Parent population context (supports subset explanation)
+|===
+|Metric|Old|New
+|Total graphcomponents|3103|2461
+|Used graphcomponents in bridge|3056|2444
+|Unused graphcomponents|47|17
+|===
+
+|===
+|Metric|Old|New
+|Total features|54|54
+|Used features in bridge|43|43
+|Unused features|11|11
+|===
+
+Interpretation:
+
+* New graphcomponent population is smaller overall, and the bridge table correspondingly covers fewer graphcomponents.
+* Feature universe is preserved (`54 → 54`), and the set of used features is also preserved in size (`43 → 43`), but many feature usage counts drop because fewer graphcomponents are linked.
+
+== What the 673 missing bridge rows represent
+Evidence strongly indicates the 673 missing rows are not random data loss within retained graphcomponents:
+
+* Pair values are exact on all retained rows (13)
+* Comparable graphcomponent usage counts are exact (14c)
+* `new_pairs_not_in_old = 0` (12)
+* Missing pair samples are all old-only rows (12, 14c)
+* New parent graphcomponent table is smaller than old (14e)
+
+Therefore:
+
+* The bridge-table delta is explained by omission/filtering of a subset of graphcomponents (and their feature links), not corruption of retained bridge relationships.
+
+== Conclusion
+`annotations_graphcomponent_features` is a structurally equivalent bridge table that preserves the old bridge semantics for the rows it includes, but it is **not a complete migration** of `digipal_graphcomponent_features`.
+
+What is preserved exactly:
+
+* schema shape (same logical columns)
+* pair uniqueness semantics
+* retained row identities by `id`
+* retained `(graphcomponent_id, feature_id)` values
+* FK validity in the new schema
+
+What changed:
+
+* the new table contains a strict subset of the old bridge rows (2694 of 3367; 673 missing)
+* the missing rows are consistent with a reduced migrated graphcomponent population, which in turn lowers feature usage counts for many features

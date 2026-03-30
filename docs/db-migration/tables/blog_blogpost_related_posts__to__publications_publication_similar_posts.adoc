@@ -1,0 +1,34 @@
+= public.blog_blogpost_related_posts (old) → public.publications_publication_similar_posts (new)
+
+== Summary
+* Rows: 0 → 0
+* No relationship data existed in the old table, and none exists in the new table
+* This is best classified as: **table present, feature unused** (no migrated data required)
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.blog_blogpost_related_posts|0
+|new|public.publications_publication_similar_posts|0
+|===
+
+== Schema notes (conceptual)
+Old (blog):
+
+* Bridge-like table representing “related posts”
+* Columns: `from_blogpost_id`, `to_blogpost_id` (both FKs to `blog_blogpost`)
+
+New (publications):
+
+* Bridge-like table representing “similar posts”
+* Columns: `from_publication_id`, `to_publication_id` (both FKs to `publications_publication`)
+* Expected uniqueness: `UNIQUE (from_publication_id, to_publication_id)`
+
+== Interpretation
+Because the source relationship table contained no rows, the new table being empty is expected and indicates:
+
+* no legacy relationship data to migrate
+* the application can support the feature going forward without historical backfill
+
+== Conclusion
+No action required. If similar-post functionality is introduced later, it can be populated natively within the new system.

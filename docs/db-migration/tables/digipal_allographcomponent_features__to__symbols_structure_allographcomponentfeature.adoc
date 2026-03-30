@@ -1,0 +1,226 @@
+= public.digipal_allographcomponent_features (old) → public.symbols_structure_allographcomponentfeature (new)
+
+== Summary
+* Rows: 69 → 68 (1 row not carried over)
+* Retained rows preserve `id` exactly for 68/68 joined rows (no changed values on comparable fields)
+* One old row missing by `id`: `127`; no extra new IDs
+* Bridge FK column was renamed: old `allographcomponent_id` → new `allograph_component_id`
+* New schema introduces `set_by_default` (boolean, NOT NULL) with no direct legacy counterpart
+* Pair uniqueness is clean on both sides (no duplicate `(allographcomponent_id, feature_id)` / `(allograph_component_id, feature_id)` rows)
+* Distinct pair-set comparison shows exactly 1 missing pair in new: `(allographcomponent_id=46, feature_id=32)`
+* FK integrity is clean on both sides (0 orphans)
+* Strong evidence the single missing child row is caused by the previously observed parent-table dedup/drop of `allographcomponent` id `46`
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.digipal_allographcomponent_features|69
+|new|public.symbols_structure_allographcomponentfeature|68
+|===
+
+== Direct row identity preservation
+|===
+|Check|Result
+|Old IDs missing in new|1
+|Missing old ID(s)|127
+|New IDs not in old|0
+|Retained rows joined by `id`|68
+|Joined rows with mapped FK preserved (`allographcomponent_id` ↔ `allograph_component_id`)|68/68
+|Joined rows with `feature_id` preserved|68/68
+|Conclusion|Near-1:1 migration by `id`, with one dropped row
+|===
+
+== Column model comparison
+
+=== Comparable / shared columns (including semantic rename)
+|===
+|Column role|Old|New|Notes
+|id|int4 NOT NULL|int8 NOT NULL|type widened
+|allographcomponent FK|`allographcomponent_id` int4 NOT NULL|`allograph_component_id` int8 NOT NULL|renamed + type widened
+|feature FK|`feature_id` int4 NOT NULL|`feature_id` int8 NOT NULL|type widened
+|===
+
+=== Old-only columns
+* None (aside from the naming style of `allographcomponent_id` before rename)
+
+=== New-only columns
+* `set_by_default` (boolean, NOT NULL)
+
+Observation:
+
+* This is structurally the same bridge table concept, with one FK column renamed to Django-style snake naming and one new boolean attribute added.
+
+== Constraints and indexes
+
+=== Constraints
+Old:
+
+* Primary key on `id`
+* Unique constraint on `(allographcomponent_id, feature_id)`
+* FK `allographcomponent_id` → `digipal_allographcomponent(id)`
+* FK `feature_id` → `digipal_feature(id)`
+
+New:
+
+* Primary key on `id`
+* Unique constraint on `(allograph_component_id, feature_id)`
+* FK `allograph_component_id` → `symbols_structure_allographcomponent(id)`
+* FK `feature_id` → `symbols_structure_feature(id)`
+
+Observation:
+
+* The bridge-table uniqueness rule is preserved.
+* FK targets are migrated equivalents of the legacy parent tables.
+
+=== Indexes
+Old:
+
+* PK index
+* Unique composite index on `(allographcomponent_id, feature_id)`
+* index on `allographcomponent_id`
+* index on `feature_id`
+
+New:
+
+* PK index
+* Unique composite index on `(allograph_component_id, feature_id)`
+* index on `allograph_component_id`
+* index on `feature_id`
+
+Observation:
+
+* Indexing strategy is preserved semantically.
+
+== Data quality / blocker checks
+|===
+|Check|Result
+|Old NULLs in `id`|0
+|Old NULLs in `allographcomponent_id`|0
+|Old NULLs in `feature_id`|0
+|Varchar length blockers|N/A (no comparable varchar payload columns)
+|===
+
+Interpretation:
+
+* No generic NULL blockers for core bridge fields.
+* The migration difference is not caused by bad data in these core columns.
+
+== Duplicate and pair-set checks
+
+=== Duplicate raw pairs
+Results:
+
+* Old duplicate raw pairs: none
+* New duplicate raw pairs: none
+
+Summary:
+|===
+|Side|Duplicate pair rows
+|old|0
+|new|0
+|===
+
+Conclusion:
+
+* Both datasets are unique on the bridge business key (as expected from constraints).
+
+=== Distinct pair-set comparison (ignoring row `id`)
+|===
+|Check|Result
+|Old pairs missing in new|1
+|New pairs not in old|0
+|Missing old pair in new|`(allographcomponent_id=46, feature_id=32)`
+|===
+
+Interpretation:
+
+* The new table is a strict subset of the old bridge-pair set by exactly one relationship.
+* No novel bridge pairs were introduced.
+
+== Value preservation on retained rows (joined by `id`)
+Joined comparison across the 68 retained rows shows exact preservation of comparable values after FK-column rename mapping.
+
+|===
+|Check|Result
+|Total joined rows|68
+|`allographcomponent_id` same (mapped to `allograph_component_id`)|68
+|`allographcomponent_id` changed|0
+|`feature_id` same|68
+|`feature_id` changed|0
+|===
+
+Conclusion:
+
+* For all retained rows, the migration is exact on the bridge payload.
+
+== FK integrity checks
+
+=== Orphan checks (old and new)
+|===
+|Check|Result
+|Old `allographcomponent_id` FK orphans|0
+|Old `feature_id` FK orphans|0
+|New `allograph_component_id` FK orphans|0
+|New `feature_id` FK orphans|0
+|===
+
+Conclusion:
+
+* Both old and new bridge rows reference valid parents/features.
+
+== Usage-count comparison by dimension
+
+=== By `allographcomponent_id` / `allograph_component_id`
+|===
+|Check|Result
+|IDs compared|21
+|Usage count same|20
+|Usage count different|1
+|Mismatch|`allographcomponent_id=46` old=1, new=NULL
+|===
+
+=== By `feature_id`
+|===
+|Check|Result
+|IDs compared|25
+|Usage count same|24
+|Usage count different|1
+|Mismatch|`feature_id=32` old=1, new=NULL
+|===
+
+Interpretation:
+
+* The only usage-count mismatches are exactly those explained by the single missing bridge row `(46,32)`.
+
+== Migration behavior interpretation (important)
+This table’s single-row loss is strongly consistent with the prior parent-table results for:
+
+* `digipal_allographcomponent` → `symbols_structure_allographcomponent`
+
+From that earlier analysis:
+
+* old rows = 81, new rows = 80
+* one old parent ID missing in new: `46`
+* pair-set (`allograph_id`,`component_id`) was still preserved (no missing/extra distinct pairs)
+* old had one duplicate pair (same logical allograph-component relationship represented twice), which was normalized/deduplicated in new
+
+Here, the missing child bridge pair is:
+
+* `(allographcomponent_id=46, feature_id=32)`
+
+This indicates:
+
+* the child row referencing the dropped duplicate parent `allographcomponent` row (`id=46`) was not remapped to the surviving equivalent parent row, and therefore is absent in the new child table.
+
+== Conclusion
+This is a **near-exact bridge migration** with one explainable omission:
+
+* 68 rows migrated exactly by `id`
+* comparable FK values are preserved perfectly on retained rows
+* uniqueness and FK integrity are intact
+* one old row (`id=127`) / one bridge pair (`46,32`) is missing in new
+* that omission aligns with the upstream deduplication/removal of old parent `allographcomponent` id `46`
+
+In short:
+
+*the new table is a normalized version of the old bridge, with one child row dropped as a consequence of parent deduplication, not random corruption or schema incompatibility.*

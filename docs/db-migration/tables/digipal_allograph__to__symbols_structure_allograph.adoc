@@ -1,0 +1,186 @@
+= public.digipal_allograph (old) → public.symbols_structure_allograph (new)
+
+== Summary
+* Rows: 102 → 103 (complete transfer of legacy rows + 1 intentional extra sentinel row in new table)
+* All 102 legacy rows migrated with ID preservation (`old_ids_missing_in_new = 0`)
+* Shared fields `id`, `name`, and `character_id` are exact carry-overs for migrated rows (102/102)
+* `name` length reduced from varchar(128) to varchar(100) with no overflow/truncation blockers
+* New table includes sentinel row `id = -1`, `name = unmapped_allographs`, `character_id = 109`
+* Sentinel row has valid FK target (`symbols_structure_character.id = 109`, name `stroke`, type `abbreviation`)
+* Sentinel row is actively used downstream (`public.annotations_graph.allograph_id = -1` appears 1047 times)
+* Legacy metadata/audit fields removed (`default`, `hidden`, `illustration`, `created`, `modified`)
+* Legacy unique constraint `(name, character_id)` is not present in the new schema, but uniqueness is preserved in data (`0` duplicate pairs)
+
+== Counts
+|===
+|DB|Table|Rows
+|old|public.digipal_allograph|102
+|new|public.symbols_structure_allograph|103
+|===
+
+== Direct row identity preservation (legacy rows)
+|===
+|Check|Result
+|Old IDs missing in new|0
+|New IDs not in old|1 (`-1`)
+|Old `(id,name)` pairs missing in new|0
+|New `(id,name)` pairs not in old|1 (sentinel row)
+|Conclusion|All legacy rows migrated 1:1 by `id`; one intentional extra row exists in new
+|===
+
+== Column model comparison
+
+=== Common columns
+|===
+|Column|Old|New|Notes
+|id|int4 NOT NULL|int8 NOT NULL|type widened
+|name|varchar(128) NOT NULL|varchar(100) NOT NULL|exactly preserved for legacy rows; length narrowed safely
+|character_id|int4 NOT NULL|int8 NOT NULL|type widened; FK retargeted to new character table
+|===
+
+=== Old-only columns (removed in new model)
+* `default` (boolean)
+* `hidden` (boolean)
+* `illustration` (varchar(100))
+* `created` (timestamp with time zone)
+* `modified` (timestamp with time zone)
+
+=== New-only columns
+* none (new model is structurally simplified to `id`, `name`, `character_id`)
+
+== Constraints and indexes
+
+=== Constraints
+Old:
+
+* Primary key on `id`
+* Unique constraint on `(name, character_id)`
+* FK `character_id` → `digipal_character(id)`
+
+New:
+
+* Primary key on `id`
+* FK `character_id` → `symbols_structure_character(id)`
+
+Observation:
+
+* The legacy uniqueness constraint `(name, character_id)` is not present as a DB constraint in the new schema.
+* Despite this, the new data still respects uniqueness (`0` duplicate `(name, character_id)` pairs).
+
+=== Indexes
+Old:
+
+* PK index
+* index on `character_id`
+* unique index on `(name, character_id)`
+
+New:
+
+* PK index
+* index on `character_id`
+
+== Data quality / blocker checks (generic same-column checks)
+|===
+|Check|Result
+|Old NULLs in common new NOT NULL column `id`|0
+|Old NULLs in common new NOT NULL column `name`|0
+|Old NULLs in common new NOT NULL column `character_id`|0
+|Old values exceeding new varchar length for `name` (100)|0
+|===
+
+Interpretation:
+
+* No blockers for direct transfer of shared columns (`id`, `name`, `character_id`).
+
+== Semantic migration verification
+
+=== Exact preservation of shared values for legacy rows
+Verified by joining old/new on `id` for rows present in old.
+
+|===
+|Check|Result
+|Total legacy rows compared|102
+|Rows where `new.name = old.name`|102
+|Rows where `new.name` differs|0
+|Trimmed-name matches|102
+|Case-folded-name matches|102
+|Rows where `new.character_id = old.character_id`|102
+|Rows where `new.character_id` differs|0
+|===
+
+Conclusion:
+
+* `symbols_structure_allograph.name` and `symbols_structure_allograph.character_id` are exact semantic carry-overs of the legacy table for all migrated rows.
+
+=== Pair-level preservation checks
+|===
+|Check|Result
+|Old `(name, character_id)` pairs missing in new|0
+|New `(name, character_id)` pairs not in old|1 (sentinel row)
+|Duplicate `(name, character_id)` pairs in new|0
+|===
+
+Interpretation:
+
+* The migrated legacy data is preserved exactly at pair level.
+* The only pair-level difference is the additional sentinel tuple introduced in the new table.
+
+== Sentinel row introduced in new model
+
+=== Sentinel row identity
+|===
+|id|name|character_id
+|-1|unmapped_allographs|109
+|===
+
+=== Sentinel FK validation
+Resolved target in `public.symbols_structure_character`:
+|===
+|allograph_id|allograph_name|character_id|character_name|character_type
+|-1|unmapped_allographs|109|stroke|abbreviation
+|===
+
+=== FK integrity check
+|===
+|Check|Result
+|Allograph FK orphans in new table|0
+|===
+
+Interpretation:
+
+* The extra row is not an error or orphan.
+* It is an intentional sentinel/fallback allograph record anchored to an existing character (`stroke`).
+
+== Operational usage evidence (downstream references)
+The sentinel row is actively used in downstream data:
+
+|===
+|Referencing table|FK column|Rows referencing `allograph_id = -1`
+|public.annotations_graph|allograph_id|1047
+|public.symbols_structure_allographcomponent|allograph_id|0
+|===
+
+Interpretation:
+
+* `allograph_id = -1` is an operational fallback bucket used by annotation records.
+* This explains the extra row in the new table and supports an intentional migration/modeling decision rather than incomplete transfer.
+
+== Example evidence (sample-based)
+Sample new rows show the expected carry-over pattern for migrated legacy rows:
+
+* `id=1`, `name='stroke'`, `character_id=109` (present in legacy and preserved)
+* `id=3`, `name='punctus elevatus'`, `character_id=3` (preserved)
+* `id=14`, `name='et (&)'`, `character_id=12` (preserved)
+* `id=39`, `name='long'`, `character_id=29` (preserved)
+
+Additional new-only row:
+
+* `id=-1`, `name='unmapped_allographs'`, `character_id=109` (sentinel)
+
+== Conclusion
+This table is a near-1:1 migration with exact preservation of all legacy allograph rows and core relationships:
+
+* all 102 legacy rows migrated
+* `id`, `name`, and `character_id` preserved exactly for migrated rows
+* legacy metadata fields were removed as part of schema simplification
+* one intentional new sentinel row (`id = -1`, `unmapped_allographs`) was added to support unmapped/fallback references in downstream annotation data
