@@ -48,8 +48,8 @@ From `digipal_text_textcontentxml`:
 
 From merged group:
 
-- transcription tcx id -> `<idno type="transcription_textcontentxml">...`
-- translation tcx id -> `<idno type="translation_textcontentxml">...`
+- transcription moa id -> `<idno type="transcription_textcontentxml">...`
+- translation moa id -> `<idno type="translation_textcontentxml">...`
 
 From `digipal_text_textcontent`:
 
