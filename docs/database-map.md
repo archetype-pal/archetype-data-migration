@@ -6,7 +6,7 @@ migrations.
 
 Snapshot details:
 
-- Verified against the inspected target database on 2026-05-29.
+- Verified against the inspected target database on 2026-06-09.
 - PostgreSQL is running from the Compose `postgres` service.
 - The inspected target database has 52 public tables.
 

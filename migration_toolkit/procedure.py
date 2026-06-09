@@ -6,7 +6,7 @@ from typing import Any
 
 from migration_toolkit.audit import AuditReport, report_to_dict
 
-PROCEDURE_VERSION = "2026-05-29"
+PROCEDURE_VERSION = "2026-06-09"
 
 
 @dataclass(frozen=True)

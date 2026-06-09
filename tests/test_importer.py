@@ -60,8 +60,8 @@ def test_migrate_legacy_data_cli_renders_report(monkeypatch, capsys):
                 PhaseResult(
                     key="manuscripts",
                     status="ok",
-                    started_at="2026-05-29T00:00:00+00:00",
-                    finished_at="2026-05-29T00:00:01+00:00",
+                    started_at="2026-06-09T00:00:00+00:00",
+                    finished_at="2026-06-09T00:00:01+00:00",
                     rows_planned={"manuscripts_itemimage": 2},
                     rows_imported={},
                 )

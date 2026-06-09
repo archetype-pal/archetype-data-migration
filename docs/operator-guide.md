@@ -1,6 +1,6 @@
 # Legacy Migration Operator Guide
 
-Procedure version: `2026-05-29`
+Procedure version: `2026-06-09`
 
 This is the operational wrapper around the database map, migration plan, and read-only audit. It is designed for deployment runbooks, safe trial imports, and final migration evidence.
 

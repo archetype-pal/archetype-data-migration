@@ -35,7 +35,7 @@ just procedure-live
 
 ## Current Comparison Summary
 
-Snapshot: 2026-05-29.
+Snapshot: 2026-06-09.
 
 | Database | Public tables | Shape |
 | --- | ---: | --- |
