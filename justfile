@@ -13,6 +13,13 @@ test:
 test-compose:
     BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh env PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest
 
+# Check CLI entry points without requiring live databases.
+cli-check:
+    python -m commands.audit_legacy_migration --help
+    python -m commands.migrate_legacy_data --help
+    python -m commands.legacy_migration_procedure --help
+    python -m commands.legacy_migration_procedure --output /tmp/operator-guide.md --manifest-template /tmp/legacy-migration-manifest-template.json
+
 # Render the static operator guide and manifest template.
 procedure:
     BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.legacy_migration_procedure --output docs/operator-guide.md --manifest-template manifests/legacy-migration-manifest-template.json

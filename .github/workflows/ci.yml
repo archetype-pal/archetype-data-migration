@@ -33,3 +33,12 @@ jobs:
         run: python -m pytest
         env:
           PYTEST_DISABLE_PLUGIN_AUTOLOAD: "1"
+
+      - name: Check CLI entry points
+        run: |
+          python -m commands.audit_legacy_migration --help
+          python -m commands.migrate_legacy_data --help
+          python -m commands.legacy_migration_procedure --help
+          python -m commands.legacy_migration_procedure \
+            --output /tmp/operator-guide.md \
+            --manifest-template /tmp/legacy-migration-manifest-template.json

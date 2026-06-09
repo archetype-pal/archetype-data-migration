@@ -74,6 +74,8 @@ Equivalent direct Compose commands:
 
 Write imports require `--execute` and should only run after backups, audit review, and manifest sign-off.
 
+For a disposable local execute test, follow [local-smoke-test.md](docs/local-smoke-test.md). Do not commit local database dumps or generated run reports unless the team explicitly wants them preserved as reviewed evidence.
+
 ## Backend Version Contract
 
 Every trial or production run should record:
