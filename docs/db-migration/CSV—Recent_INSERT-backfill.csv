@@ -1,6 +1,0 @@
-"source_table","target_table","old_count","new_count","notes"
-"public.digipal_aspect","public.symbols_structure_position","17","17","Backfill executed; IDs+names preserved 1:1."
-"public.digipal_graph_aspects","public.annotations_graph_positions","1491","1485","Backfill executed; 6 old rows unmappable; pair-set preserved for mappable rows; FK orphans in new = 0."
-"public.blog_blogcategory","public.publications_tagulous_publication_keywords","3","3","Backfill executed; tag counts verified to match actual link counts."
-"public.blog_blogpost_categories","public.publications_publication_keywords","67","67","Backfill executed; distinct pair-set identical; publication/tag FK orphans = 0."
-"public.blog_blogpost_related_posts","public.publications_publication_similar_posts","0","0","No-op (both sides empty); documented."

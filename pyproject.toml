@@ -1,0 +1,33 @@
+[project]
+name = "archetype-data-migration"
+version = "0.1.0"
+description = "Operational tooling for migrating legacy Archetype data into the current schema."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "psycopg[binary]>=3.3.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0.0",
+    "ruff>=0.15.0",
+]
+
+[tool.ruff]
+line-length = 120
+exclude = [
+    "tei_exporter/*",
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "E501"]
+
+[tool.ruff.lint.isort]
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
+force-sort-within-sections = true
+combine-as-imports = true
+
+[tool.pytest.ini_options]
+python_files = ["test_*.py", "*_test.py", "tests.py"]
+addopts = "-q"

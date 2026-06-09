@@ -1,0 +1,40 @@
+set dotenv-load := true
+
+backend_repo := env_var_or_default("BACKEND_REPO", "../archetype-clean/backend")
+
+_default:
+    just --list
+
+# Run unit tests directly in this repo.
+test:
+    PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest
+
+# Run unit tests in the backend API container.
+test-compose:
+    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh env PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest
+
+# Render the static operator guide and manifest template.
+procedure:
+    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.legacy_migration_procedure --output docs/operator-guide.md --manifest-template manifests/legacy-migration-manifest-template.json
+
+# Render the operator guide with a live read-only audit summary.
+procedure-live:
+    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.legacy_migration_procedure --with-live-audit --output docs/operator-guide.md --manifest-template manifests/legacy-migration-manifest-template.json
+
+# Run the read-only migration audit and write a markdown report.
+audit:
+    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --format markdown --output reports/legacy-migration-audit.md
+
+# Run the importer in dry-run mode only. This should be the default trial command.
+dry-run-import:
+    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --manifest reports/legacy-migration-import-dry-run.json
+
+# Execute the importer. Requires an explicit target publication author username.
+execute-import AUTHOR:
+    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute --publication-author-username "{{AUTHOR}}" --allow-warnings --manifest reports/legacy-migration-import-run.json
+
+# Show CLI help for all toolkit commands.
+help-commands:
+    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --help
+    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.legacy_migration_procedure --help
+    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --help

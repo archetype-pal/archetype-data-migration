@@ -1,4 +1,0 @@
-"src_table","src_column","ref_table","ref_column"
-"manuscripts_historicalitem","date_id","common_date","id"
-"scribes_hand","date_id","common_date","id"
-"scribes_scribe","period_id","common_date","id"

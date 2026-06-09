@@ -9,9 +9,25 @@ Thumbs.db
 # Env / secrets
 .env
 .env.*
+!.env.example
 *.secret
 *.key
 *.pem
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+
+# Generated migration evidence
+reports/*
+!reports/.gitkeep
+manifests/*.local.json
+manifests/*-run.json
+manifests/*-dry-run.json
 
 # Temporary exports and local scratch
 tmp/
