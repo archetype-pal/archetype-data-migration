@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "archetype-data-migration"
 version = "0.1.0"
@@ -12,6 +16,22 @@ dependencies = [
 dev = [
     "pytest>=9.0.0",
     "ruff>=0.15.0",
+]
+
+[tool.setuptools.packages.find]
+include = [
+    "commands",
+    "commands.*",
+    "migration_toolkit",
+    "migration_toolkit.*",
+]
+exclude = [
+    "tei_exporter*",
+    "reports*",
+    "manifests*",
+    "mappings*",
+    "docs*",
+    "tests*",
 ]
 
 [tool.ruff]
