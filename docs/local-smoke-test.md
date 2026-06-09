@@ -17,7 +17,7 @@ files are ignored by default.
 ## Example Variables
 
 ```bash
-export BACKEND_REPO=../archetype-clean/backend
+export BACKEND_REPO=../backend
 export DOCKER_BIN=/Applications/Docker.app/Contents/Resources/bin/docker
 export LEGACY_DATABASE_NAME=<legacy_source_database>
 export SMOKE_DB=legacy_import_toolkit_smoke_$(date +%Y%m%d_%H%M)

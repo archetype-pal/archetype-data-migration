@@ -3,7 +3,7 @@ set -euo pipefail
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 migration_repo="$(cd "$script_dir/.." && pwd)"
-backend_repo="${BACKEND_REPO:-../archetype-clean/backend}"
+backend_repo="${BACKEND_REPO:-../backend}"
 backend_repo="$(cd "$backend_repo" && pwd)"
 docker_bin="${DOCKER_BIN:-docker}"
 

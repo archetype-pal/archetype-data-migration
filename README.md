@@ -23,7 +23,7 @@ It keeps the migration process outside the backend application while still runni
 For real database work, run the toolkit inside the backend API container:
 
 ```bash
-BACKEND_REPO=../archetype-clean/backend ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --help
+BACKEND_REPO=../backend ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --help
 ```
 
 The backend checkout supplies the current Django environment, Postgres network, and dependency set. This repo supplies the migration code and reports.

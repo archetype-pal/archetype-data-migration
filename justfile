@@ -1,6 +1,6 @@
 set dotenv-load := true
 
-backend_repo := env_var_or_default("BACKEND_REPO", "../archetype-clean/backend")
+backend_repo := env_var_or_default("BACKEND_REPO", "../backend")
 
 _default:
     just --list

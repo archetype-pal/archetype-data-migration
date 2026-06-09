@@ -13,7 +13,7 @@ if [[ ! "$db_name" =~ ^[a-zA-Z_][a-zA-Z0-9_]*$ ]]; then
 fi
 
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-backend_repo="${BACKEND_REPO:-../archetype-clean/backend}"
+backend_repo="${BACKEND_REPO:-../backend}"
 backend_repo="$(cd "$backend_repo" && pwd)"
 docker_bin="${DOCKER_BIN:-docker}"
 compose=("$docker_bin" compose --project-directory "$backend_repo" -f "$backend_repo/compose.yaml")
