@@ -206,7 +206,15 @@ against host Python.
 
 3. Run the read-only audit.
    - Use `audit_legacy_migration`.
-   - Treat `fail` as a blocker.
+   - Against a fresh empty target, expect `fail` because the audit compares
+     source and target contents and the target does not contain the source rows
+     yet. Preserve this report as the baseline; do not treat the expected
+     missing-target results as proof that the source is invalid.
+   - The baseline command can exit non-zero after successfully writing its
+     report because audit status `fail` is represented as a failed process.
+   - Investigate structural errors, missing required tables, connection errors,
+     and unexpected source conditions before proceeding.
+   - After an import, treat `fail` as a blocker.
    - Treat `warn` as requiring sign-off, because warnings identify intentional
      loss, placeholders, or transformed semantics.
 
@@ -252,6 +260,35 @@ against host Python.
    - Any accepted warnings.
    - Any rows intentionally skipped.
 
+## Source Variability And Unsupported Rows
+
+DigiPal databases can share a schema without sharing the same identifiers or
+data profile. The checked-in map and audit describe the source snapshot that
+was inspected during toolkit development; they are not universal constants.
+Every new source must be profiled independently.
+
+In particular, the legacy `digipal_description` model permits a description to
+refer to either a historical item (`historical_item_id`) or a text (`text_id`).
+The current target mapping and importer support historical-item descriptions.
+Text-only descriptions and rows linked to neither entity require an explicit
+policy before execution. They must not be silently discarded merely to satisfy
+target constraints.
+
+Use this source-side query during preflight:
+
+```sql
+SELECT
+  count(*) FILTER (WHERE historical_item_id IS NOT NULL AND text_id IS NULL) AS historical_only,
+  count(*) FILTER (WHERE historical_item_id IS NULL AND text_id IS NOT NULL) AS text_only,
+  count(*) FILTER (WHERE historical_item_id IS NOT NULL AND text_id IS NOT NULL) AS both_links,
+  count(*) FILTER (WHERE historical_item_id IS NULL AND text_id IS NULL) AS neither_link
+FROM digipal_description;
+```
+
+Interpret `text_only` as a valid legacy relationship needing a target mapping,
+not automatically as orphaned data. Treat `neither_link` as a data-quality case
+requiring source investigation or an approved quarantine/exclusion decision.
+
 ## Commands
 
 Read-only audit to Markdown:
@@ -290,6 +327,10 @@ Plan the write import without writing data:
   --manifest reports/legacy-migration-import-dry-run.json
 ```
 
+This dry run validates the read/query and planning path only. Phase status
+`ok` means the phase could be planned; it does not prove that inserts, foreign
+keys, unique constraints, or the post-import audit will pass.
+
 Execute against a freshly migrated, backed-up target database:
 
 ```bash
@@ -298,6 +339,10 @@ Execute against a freshly migrated, backed-up target database:
   --allow-warnings \
   --manifest reports/legacy-migration-import-run.json
 ```
+
+`<target-author-username>` must identify an existing target `auth_user`. The
+command does not create that user. `--allow-warnings` permits reviewed audit
+warnings but never permits a final `fail` status.
 
 For partial trial runs, repeat `--phase`, for example:
 
@@ -323,8 +368,10 @@ For partial trial runs, repeat `--phase`, for example:
 - Refuse to run if `legacy_url` and `target_url` point at the same database.
 
 The importer has been smoke-tested against a disposable, freshly migrated
-target database. The successful trial imported all supported phases and ended
+target database using the specific inspected legacy snapshot. The successful
+trial imported all supported phases for that snapshot and ended
 with audit status `warn`, not `fail`; the remaining warnings match documented
 policy decisions: placeholder rows, filtered duplicate graph details, fallback
 publication author mapping, and target-only data skipped from the legacy source
-database.
+database. Other DigiPal sources may expose additional valid relationships or
+data-quality cases that require new mappings or explicit migration policy.
