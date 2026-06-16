@@ -13,7 +13,9 @@ from psycopg import Connection
 from psycopg.rows import dict_row
 
 from migration_toolkit.audit import (
+    PUBLICATION_AUTHOR_POLICY_FALLBACK,
     LegacyMigrationAuditError,
+    PublicationAuthorPolicy,
     configure_read_only_session,
     database_name,
     legacy_url_from_env,
@@ -730,6 +732,13 @@ def resolve_publication_author_id(conn: Connection[Any], *, author_id: int | Non
     if row_id is None:
         raise LegacyMigrationImportError(f'No target auth_user found for username "{username}"')
     return int(row_id)
+
+
+def target_author_username(conn: Connection[Any], author_id: int) -> str:
+    username = optional_scalar(conn, "SELECT username FROM auth_user WHERE id = %s", (author_id,))
+    if username is None:
+        raise LegacyMigrationImportError(f"No target auth_user found for id {author_id}")
+    return str(username)
 
 
 def reset_sequences(conn: Connection[Any], tables: tuple[str, ...] = SEQUENCE_TABLES) -> int:
@@ -1769,15 +1778,37 @@ def run_import(options: ImportOptions) -> ImportReport:
             phases,
             unsupported_description_policy=options.unsupported_description_policy,
         )
-        if options.execute and "publications" in phases:
+        publication_author_policy: PublicationAuthorPolicy | None = None
+        publication_author_policy_report: dict[str, Any] = {"mode": "not-applicable"}
+        if "publications" in phases:
+            publication_author_policy_report = {
+                "mode": PUBLICATION_AUTHOR_POLICY_FALLBACK,
+                "target_author_id": options.publication_author_id,
+                "target_author_username": options.publication_author_username,
+                "status": "unresolved",
+            }
             try:
-                resolve_publication_author_id(
+                resolved_author_id = resolve_publication_author_id(
                     target_conn,
                     author_id=options.publication_author_id,
                     username=options.publication_author_username,
                 )
+                resolved_author_username = target_author_username(target_conn, resolved_author_id)
+                publication_author_policy = PublicationAuthorPolicy(
+                    mode=PUBLICATION_AUTHOR_POLICY_FALLBACK,
+                    fallback_author_id=resolved_author_id,
+                    fallback_author_username=resolved_author_username,
+                )
+                publication_author_policy_report = {
+                    "mode": PUBLICATION_AUTHOR_POLICY_FALLBACK,
+                    "target_author_id": resolved_author_id,
+                    "target_author_username": resolved_author_username,
+                    "status": "resolved",
+                }
             except LegacyMigrationImportError as exc:
-                execute_blockers.append(str(exc))
+                publication_author_policy_report["message"] = str(exc)
+                if options.execute:
+                    execute_blockers.append(str(exc))
         if options.execute and execute_blockers:
             formatted = "\n- ".join(execute_blockers)
             raise LegacyMigrationImportError(
@@ -1854,7 +1885,11 @@ def run_import(options: ImportOptions) -> ImportReport:
     audit_dict = None
     if options.execute and not options.skip_post_audit:
         try:
-            audit_report = run_audit(legacy_url=legacy_url, target_url=target_url)
+            audit_report = run_audit(
+                legacy_url=legacy_url,
+                target_url=target_url,
+                publication_author_policy=publication_author_policy,
+            )
         except LegacyMigrationAuditError as exc:
             raise LegacyMigrationImportError(f"Post-import audit failed to run: {exc}") from exc
         audit_dict = report_to_dict(audit_report)
@@ -1866,7 +1901,10 @@ def run_import(options: ImportOptions) -> ImportReport:
         phases=phase_results,
         target_row_counts_before=before_counts,
         target_row_counts_after=after_counts,
-        import_policies={"unsupported_description_policy": options.unsupported_description_policy},
+        import_policies={
+            "unsupported_description_policy": options.unsupported_description_policy,
+            "publication_author_policy": publication_author_policy_report,
+        },
         source_profile=source_profile,
         source_warnings=source_warnings,
         audit=audit_dict,

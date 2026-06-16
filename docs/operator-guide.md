@@ -29,6 +29,7 @@ This migration should be a manual deployment lane, not an automatic step on ever
 - A post-import `fail` is a blocker. `--allow-warnings` accepts reviewed warnings only and never accepts `fail`.
 - `--unsupported-description-policy fail` is the default. Use `skip` only when text-only, unattached, or dangling `digipal_description` rows have been reviewed and accepted as excluded.
 - `--publication-author-username` must name an existing target `auth_user`; the importer does not create that user.
+- If the publications phase uses a fallback author, post-import audit should use `--publication-author-policy fallback` with the same target user so the manifest records the decision explicitly.
 
 ## Source Database Variability
 
@@ -114,6 +115,7 @@ Importer contract:
 - Map legacy users by username/email, or select one explicit fallback author.
 - Do not rely on numeric legacy auth_user ids in a fresh target.
 - Record original legacy username/email where the fallback author is used.
+- Run post-import audit with the same fallback-author policy when a fallback author is selected.
 
 Validation:
 - Publication author audit warning is either eliminated or explicitly accepted.
@@ -306,6 +308,12 @@ Rollback: Restore the pre-cutover target dump and return traffic to the previous
 
 ```bash
 ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --format markdown --output reports/legacy-migration-audit.md
+```
+
+### Write the post-import audit with fallback publication author policy
+
+```bash
+./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --format markdown --publication-author-policy fallback --publication-author-username <target-author-username> --output reports/legacy-migration-post-audit.md
 ```
 
 ### Plan the legacy import without writing data

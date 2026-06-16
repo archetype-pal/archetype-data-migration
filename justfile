@@ -33,6 +33,10 @@ procedure-live:
 audit:
     BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --format markdown --output reports/legacy-migration-audit.md
 
+# Run a read-only post-import audit for a fallback publication author policy.
+audit-fallback AUTHOR:
+    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --format markdown --publication-author-policy fallback --publication-author-username "{{AUTHOR}}" --output reports/legacy-migration-post-audit.md
+
 # Run the importer in dry-run mode only. This should be the default trial command.
 dry-run-import:
     BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --manifest reports/legacy-migration-import-dry-run.json

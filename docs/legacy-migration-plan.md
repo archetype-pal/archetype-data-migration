@@ -324,6 +324,20 @@ Machine-readable audit:
   --output reports/legacy-migration-audit.json
 ```
 
+Post-import audit for an approved fallback publication author:
+
+```bash
+./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration \
+  --format json \
+  --publication-author-policy fallback \
+  --publication-author-username <target-author-username> \
+  --output reports/legacy-migration-post-audit.json
+```
+
+This does not hide the author decision. It reports `publication_author_mapping`
+as an explicit fallback-author warning with the legacy author breakdown attached
+for sign-off.
+
 CI-style strict audit:
 
 ```bash

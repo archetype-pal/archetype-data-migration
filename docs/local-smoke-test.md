@@ -142,6 +142,8 @@ LEGACY_DATABASE_NAME="$LEGACY_DATABASE_NAME" \
 DOCKER_BIN="$DOCKER_BIN" \
 ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration \
   --format json \
+  --publication-author-policy fallback \
+  --publication-author-username legacy-import-author \
   --output reports/local-smoke-post-audit.json
 ```
 

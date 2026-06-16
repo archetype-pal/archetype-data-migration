@@ -99,6 +99,16 @@ fields before executing; execution is blocked before any writes when the current
 source contains unsupported description relationships, broken allograph-character
 links, or a missing publication author policy.
 
+If the publications phase intentionally uses one fallback author, run post-import
+audit with the same policy so the warning records the decision instead of only
+showing a legacy numeric-ID mismatch:
+
+```bash
+./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration \
+  --publication-author-policy fallback \
+  --publication-author-username <target-author-username>
+```
+
 Unsupported description relationships default to `fail`. If text-only,
 unattached, or dangling `digipal_description` rows have been reviewed and the
 approved decision is to exclude them from `manuscripts_historicalitemdescription`,
