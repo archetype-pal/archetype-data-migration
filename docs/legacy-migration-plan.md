@@ -54,8 +54,9 @@ The current target is clearly a selective migration, not a full clone:
   revisions, South migration history, old page/forms/twitter/gallery tables,
   permissions, ratings, and empty legacy vocabularies.
 - Most domain entity ids were preserved.
-- A few target placeholder rows were introduced with negative ids, notably
-  `-1` item part, scribe, and allograph.
+- A few target placeholder rows can be introduced with negative ids, notably
+  `-1` item part and scribe. Symbol placeholders must be source-policy driven;
+  the importer no longer assumes a hard-coded allograph character id.
 - `common_date` keeps legacy ids but also has target-only seed rows `1` to
   `16`.
 - Some join tables were re-keyed in the target because they became explicit
@@ -84,7 +85,7 @@ The current target is clearly a selective migration, not a full clone:
 | `digipal_hand` | `scribes_hand` | Id-preserved; legacy display fields collapse into target name/place/description. Current `num`, `priority`, and `is_default` drive ordering/default selection. |
 | `digipal_hand_images` | `scribes_hand_item_part_images` | Direct/id-preserved. |
 | `digipal_character` | `symbols_structure_character` | Id-preserved; ontograph/form data flattened into type. |
-| `digipal_allograph` | `symbols_structure_allograph` | Id-preserved; target has synthetic `-1`. |
+| `digipal_allograph` | `symbols_structure_allograph` | Id-preserved. Synthetic placeholders require an explicit source policy. |
 | `digipal_component` | `symbols_structure_component` | Direct/id-preserved. |
 | `digipal_feature` | `symbols_structure_feature` | Direct/id-preserved. |
 | `digipal_component_features` | `symbols_structure_component_features` | Direct/id-preserved. |
@@ -330,6 +331,11 @@ Plan the write import without writing data:
 This dry run validates the read/query and planning path only. Phase status
 `ok` means the phase could be planned; it does not prove that inserts, foreign
 keys, unique constraints, or the post-import audit will pass.
+
+The dry-run manifest includes `source_profile` and `source_warnings`. Review
+description relationship counts, allograph-character integrity, and legacy
+publication authors before execution. Execute mode blocks before any writes when
+these profile checks expose unsupported source shapes without an agreed policy.
 
 Execute against a freshly migrated, backed-up target database:
 

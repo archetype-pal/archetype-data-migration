@@ -76,7 +76,7 @@ The commands have different purposes:
 | --- | --- | --- |
 | `just procedure` | Generate the operator guide and manifest template. | Documentation rendered; no migration was tested or executed. |
 | `just audit` | Compare the current source and target contents without writing. | The audit completed and produced evidence. An empty target normally produces `fail` and a non-zero command exit because source rows are missing from the target. |
-| `just dry-run-import` | Check connections, required tables, planning queries, phase order, and expected row counts. | Planning completed. Inserts, foreign keys, target constraints, and post-import equality were not tested. |
+| `just dry-run-import` | Check connections, required tables, planning queries, phase order, source-profile warnings, and expected row counts. | Planning completed. Inserts, foreign keys, target constraints, and post-import equality were not tested. |
 | `just execute-import USERNAME` | Write supported mappings into a fresh target and run the post-import audit. | All write phases completed and the post-import audit returned `ok` or an explicitly accepted `warn`. |
 
 `USERNAME` must already exist in the target database as an `auth_user.username`.
@@ -92,6 +92,11 @@ Audit status must be interpreted in context:
   invalid annotation shape, or another failed audit check.
 - `warn` requires review and sign-off. `--allow-warnings` accepts reviewed
   warnings only; it never accepts `fail`.
+
+Dry-run reports include `source_profile` and `source_warnings`. Review those
+fields before executing; execution is blocked before any writes when the current
+source contains unsupported description relationships, broken allograph-character
+links, or a missing publication author policy.
 
 Equivalent direct Compose commands:
 

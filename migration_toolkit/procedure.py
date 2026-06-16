@@ -6,7 +6,7 @@ from typing import Any
 
 from migration_toolkit.audit import AuditReport, report_to_dict
 
-PROCEDURE_VERSION = "2026-06-15"
+PROCEDURE_VERSION = "2026-06-16"
 
 
 @dataclass(frozen=True)
@@ -190,7 +190,7 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         ),
         importer_contract=(
             "Preserve ids for direct vocabularies.",
-            "Keep documented placeholder ids such as allograph -1 explicit.",
+            "Create symbol placeholder rows only when a source-specific policy requires them.",
             "Skip known stale/duplicate rows only when listed in the accepted audit warnings.",
         ),
         validation=(

@@ -1,6 +1,6 @@
 # Legacy Migration Operator Guide
 
-Procedure version: `2026-06-15`
+Procedure version: `2026-06-16`
 
 This is the operational wrapper around the database map, migration plan, and read-only audit. It is designed for deployment runbooks, safe trial imports, and final migration evidence.
 
@@ -137,7 +137,7 @@ Import characters, allographs, components, features, and positions before graph 
 
 Importer contract:
 - Preserve ids for direct vocabularies.
-- Keep documented placeholder ids such as allograph -1 explicit.
+- Create symbol placeholder rows only when a source-specific policy requires them.
 - Skip known stale/duplicate rows only when listed in the accepted audit warnings.
 
 Validation:

@@ -76,6 +76,11 @@ phase order, and expected counts were resolved. It does not exercise inserts,
 foreign keys, unique constraints, or the post-import audit. Review the planned
 counts against the source before execution.
 
+Also review `source_profile` and `source_warnings` in the dry-run report. If
+the source contains text-only descriptions, unattached descriptions, or broken
+allograph-character links, execute mode will stop before writing until there is
+an explicit migration policy for those rows.
+
 ## Execute
 
 ```bash
