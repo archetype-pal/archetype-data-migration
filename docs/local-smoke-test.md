@@ -81,6 +81,10 @@ the source contains text-only descriptions, unattached descriptions, or broken
 allograph-character links, execute mode will stop before writing until there is
 an explicit migration policy for those rows.
 
+For a source where unsupported description rows have been reviewed and approved
+for exclusion, add `--unsupported-description-policy skip` to both dry-run and
+execute commands. The report will record skipped `digipal_description` rows.
+
 ## Execute
 
 ```bash

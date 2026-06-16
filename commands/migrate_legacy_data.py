@@ -5,6 +5,8 @@ from pathlib import Path
 import sys
 
 from migration_toolkit.importer import (
+    DESCRIPTION_POLICIES,
+    DESCRIPTION_POLICY_FAIL,
     PHASE_ORDER,
     ImportOptions,
     LegacyMigrationImportError,
@@ -56,6 +58,15 @@ def build_parser() -> argparse.ArgumentParser:
         help="Allow post-import audit warnings after they have been recorded in the manifest.",
     )
     parser.add_argument(
+        "--unsupported-description-policy",
+        choices=DESCRIPTION_POLICIES,
+        default=DESCRIPTION_POLICY_FAIL,
+        help=(
+            "How to handle legacy digipal_description rows that cannot become historical-item descriptions. "
+            "Default: fail before writing. Use skip only after reviewing and recording those rows."
+        ),
+    )
+    parser.add_argument(
         "--skip-post-audit",
         action="store_true",
         help="Skip the post-import audit. Intended only for partial phase testing.",
@@ -80,6 +91,7 @@ def main(argv: list[str] | None = None) -> int:
         execute=options.execute,
         allow_non_empty_target=options.allow_non_empty_target,
         allow_warnings=options.allow_warnings,
+        unsupported_description_policy=options.unsupported_description_policy,
         publication_author_id=options.publication_author_id,
         publication_author_username=options.publication_author_username,
         skip_post_audit=options.skip_post_audit,

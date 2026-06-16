@@ -4,16 +4,19 @@ import pytest
 
 from commands.migrate_legacy_data import main as migrate_main
 from migration_toolkit.importer import (
+    DESCRIPTION_POLICY_SKIP,
     ImportReport,
     LegacyMigrationImportError,
     PhaseResult,
     audit_failure_summary,
     expand_phases,
+    import_report_to_dict,
     legacy_image_path,
     parse_annotation,
     parse_date_weights,
     source_profile_blockers,
     source_profile_warnings,
+    unsupported_description_count,
 )
 
 
@@ -55,6 +58,7 @@ def test_migrate_legacy_data_cli_renders_report(monkeypatch, capsys):
     def fake_run_import(options):
         assert options.execute is False
         assert options.phases == ("manuscripts",)
+        assert options.unsupported_description_policy == DESCRIPTION_POLICY_SKIP
         return ImportReport(
             dry_run=True,
             legacy_database="legacy_source",
@@ -75,7 +79,7 @@ def test_migrate_legacy_data_cli_renders_report(monkeypatch, capsys):
 
     monkeypatch.setattr("commands.migrate_legacy_data.run_import", fake_run_import)
 
-    assert migrate_main(["--phase", "manuscripts"]) == 0
+    assert migrate_main(["--phase", "manuscripts", "--unsupported-description-policy", "skip"]) == 0
     output = capsys.readouterr().out
     data = json.loads(output)
 
@@ -123,8 +127,43 @@ def test_source_profile_blockers_apply_to_selected_phases():
 
     assert source_profile_blockers(profile, ("image_text",)) == []
     assert len(source_profile_blockers(profile, ("manuscripts",))) == 1
+    assert (
+        source_profile_blockers(
+            profile,
+            ("manuscripts",),
+            unsupported_description_policy=DESCRIPTION_POLICY_SKIP,
+        )
+        == []
+    )
     assert len(source_profile_blockers(profile, ("symbols",))) == 1
     assert len(source_profile_blockers(profile, ("symbols", "manuscripts"))) == 2
+    assert (
+        len(
+            source_profile_blockers(
+                profile,
+                ("symbols", "manuscripts"),
+                unsupported_description_policy=DESCRIPTION_POLICY_SKIP,
+            )
+        )
+        == 1
+    )
+
+
+def test_unsupported_description_count_excludes_both_link_rows():
+    profile = {
+        "description_relationships": {
+            "counts": {
+                "historical_only": 10,
+                "text_only": 2,
+                "both_links": 99,
+                "neither_link": 3,
+                "dangling_historical_item": 4,
+            },
+            "samples": {},
+        }
+    }
+
+    assert unsupported_description_count(profile) == 9
 
 
 def test_import_report_status_warns_on_source_warnings():
@@ -139,6 +178,35 @@ def test_import_report_status_warns_on_source_warnings():
     )
 
     assert report.status == "warn"
+
+
+def test_import_report_records_policies_and_skipped_rows():
+    report = ImportReport(
+        dry_run=False,
+        legacy_database="legacy_source",
+        target_database="new_target",
+        phases=[
+            PhaseResult(
+                key="manuscripts",
+                status="warn",
+                started_at="2026-06-09T00:00:00+00:00",
+                finished_at="2026-06-09T00:00:01+00:00",
+                rows_planned={"manuscripts_historicalitemdescription": 10},
+                rows_imported={"manuscripts_historicalitemdescription": 8},
+                rows_skipped={"digipal_description": 2},
+                warnings=["Skipped unsupported digipal_description rows by explicit policy."],
+            )
+        ],
+        target_row_counts_before={},
+        target_row_counts_after={},
+        import_policies={"unsupported_description_policy": DESCRIPTION_POLICY_SKIP},
+    )
+
+    data = import_report_to_dict(report)
+
+    assert data["status"] == "warn"
+    assert data["import_policies"]["unsupported_description_policy"] == "skip"
+    assert data["phases"][0]["rows_skipped"] == {"digipal_description": 2}
 
 
 def test_audit_failure_summary_includes_failed_mapping_counts():

@@ -275,6 +275,14 @@ Text-only descriptions and rows linked to neither entity require an explicit
 policy before execution. They must not be silently discarded merely to satisfy
 target constraints.
 
+The importer default is `--unsupported-description-policy fail`, which stops an
+execute run before any write if text-only, unattached, or dangling description
+rows are present. If the project decides those rows should be excluded from the
+target historical-item description table, rerun with
+`--unsupported-description-policy skip`. That policy imports only descriptions
+linked to an existing historical item and records skipped row counts in the
+manifest/import report.
+
 Use this source-side query during preflight:
 
 ```sql
@@ -349,6 +357,10 @@ Execute against a freshly migrated, backed-up target database:
 `<target-author-username>` must identify an existing target `auth_user`. The
 command does not create that user. `--allow-warnings` permits reviewed audit
 warnings but never permits a final `fail` status.
+
+When unsupported description rows have an approved exclusion policy, add
+`--unsupported-description-policy skip` to both dry-run and execute commands so
+the planned/imported row counts match the intended migration scope.
 
 For partial trial runs, repeat `--phase`, for example:
 

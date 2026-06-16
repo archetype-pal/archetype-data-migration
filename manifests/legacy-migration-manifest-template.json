@@ -4,7 +4,8 @@
     "allow_non_empty_target": false,
     "approved_at": "",
     "approved_by": "",
-    "author_policy": ""
+    "author_policy": "",
+    "unsupported_description_policy": "fail"
   },
   "audit": {
     "legacy_database": "",
