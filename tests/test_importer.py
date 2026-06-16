@@ -370,4 +370,3 @@ def test_validate_import_options_rejects_unknown_publication_author_policy():
 
 def test_validate_import_options_accepts_legacy_publication_author_policy():
     validate_import_options(ImportOptions(publication_author_policy=PUBLICATION_AUTHOR_POLICY_LEGACY_ID))
-

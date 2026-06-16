@@ -1714,9 +1714,7 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
                 "slug": truncate(row["slug"] or f"legacy-publication-{row['id']}", 150),
                 "content": text_or_blank(row["content"]),
                 "preview": text_or_blank(row["description"]),
-                "author_id": fallback_author_id
-                if fallback_author_id is not None
-                else int(row["legacy_author_id"]),
+                "author_id": fallback_author_id if fallback_author_id is not None else int(row["legacy_author_id"]),
                 "is_blog_post": row["is_blog_post"],
                 "is_news": row["is_news"],
                 "is_featured": row["is_featured"],
