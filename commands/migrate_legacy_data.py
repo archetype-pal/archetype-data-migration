@@ -67,6 +67,15 @@ def build_parser() -> argparse.ArgumentParser:
         ),
     )
     parser.add_argument(
+        "--unsupported-description-output",
+        type=Path,
+        default=None,
+        help=(
+            "Optional JSON quarantine output for unsupported digipal_description rows when policy is skip. "
+            "Defaults to a sibling *-skipped-descriptions.json file when --manifest is provided."
+        ),
+    )
+    parser.add_argument(
         "--skip-post-audit",
         action="store_true",
         help="Skip the post-import audit. Intended only for partial phase testing.",
@@ -92,6 +101,7 @@ def main(argv: list[str] | None = None) -> int:
         allow_non_empty_target=options.allow_non_empty_target,
         allow_warnings=options.allow_warnings,
         unsupported_description_policy=options.unsupported_description_policy,
+        unsupported_description_output_path=options.unsupported_description_output,
         publication_author_id=options.publication_author_id,
         publication_author_username=options.publication_author_username,
         skip_post_audit=options.skip_post_audit,

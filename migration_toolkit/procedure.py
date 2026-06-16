@@ -488,6 +488,9 @@ def build_manifest_template(audit_report: AuditReport | None = None) -> dict[str
             "target_database": audit_report.target_database if audit_report else "",
             "report_path": "",
         },
+        "quarantine_artifacts": {
+            "unsupported_descriptions": "",
+        },
         "phases": [
             {
                 "key": phase.key,
@@ -621,6 +624,8 @@ def render_procedure_markdown(audit_report: AuditReport | None = None) -> str:
             "accepts `fail`.",
             "- `--unsupported-description-policy fail` is the default. Use `skip` only when text-only, "
             "unattached, or dangling `digipal_description` rows have been reviewed and accepted as excluded.",
+            "- When unsupported descriptions are skipped and `--manifest` is provided, the importer writes a "
+            "sibling `*-skipped-descriptions.json` quarantine artifact with every skipped row.",
             "- `--publication-author-username` must name an existing target `auth_user`; the importer does not "
             "create that user.",
             "- If the publications phase uses a fallback author, post-import audit should use "
@@ -638,7 +643,7 @@ def render_procedure_markdown(audit_report: AuditReport | None = None) -> str:
             "supports historical-item descriptions. Text-only descriptions and rows linked to neither entity "
             "require an explicit mapping, quarantine, or approved exclusion policy before execution. When the "
             "approved decision is exclusion, run with `--unsupported-description-policy skip`; the report records "
-            "the selected policy and skipped row counts.",
+            "the selected policy, skipped row counts, and a quarantine artifact when `--manifest` is provided.",
             "",
             "## Safety Gates",
             "",
@@ -741,7 +746,8 @@ def render_procedure_markdown(audit_report: AuditReport | None = None) -> str:
             "If the source profile reports text-only, unattached, or dangling `digipal_description` rows, the "
             "default execute mode stops before writing. To run after an approved exclusion decision, add "
             "`--unsupported-description-policy skip`; the command then imports only descriptions linked to an "
-            "existing historical item and records skipped rows in the manifest.",
+            "existing historical item and records skipped rows in the manifest. With `--manifest`, the command "
+            "also writes a sibling `*-skipped-descriptions.json` quarantine artifact.",
             "",
             "The command refuses same-database URLs, missing tables, and non-empty import targets by default. "
             "Use `--allow-non-empty-target` only for an approved recovery or incremental trial.",

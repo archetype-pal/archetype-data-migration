@@ -102,7 +102,9 @@ an explicit migration policy for those rows.
 
 For a source where unsupported description rows have been reviewed and approved
 for exclusion, add `--unsupported-description-policy skip` to both dry-run and
-execute commands. The report will record skipped `digipal_description` rows.
+execute commands. The report will record skipped `digipal_description` rows and
+write a sibling `*-skipped-descriptions.json` quarantine artifact when
+`--manifest` is provided.
 
 ## Execute
 

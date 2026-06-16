@@ -113,8 +113,11 @@ Unsupported description relationships default to `fail`. If text-only,
 unattached, or dangling `digipal_description` rows have been reviewed and the
 approved decision is to exclude them from `manuscripts_historicalitemdescription`,
 run the importer with `--unsupported-description-policy skip`. The import report
-then records the selected policy and skipped row counts. Do not use this flag
-until those rows are listed in the run manifest.
+then records the selected policy and skipped row counts. When `--manifest` is
+provided, the importer also writes a sibling
+`*-skipped-descriptions.json` quarantine artifact containing every skipped row
+and its reason. Do not use this flag until those rows are reviewed and the
+artifact is listed in the run manifest.
 
 Equivalent direct Compose commands:
 

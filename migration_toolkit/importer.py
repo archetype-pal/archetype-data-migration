@@ -312,6 +312,7 @@ class ImportOptions:
     allow_non_empty_target: bool = False
     allow_warnings: bool = False
     unsupported_description_policy: str = DESCRIPTION_POLICY_FAIL
+    unsupported_description_output_path: Path | None = None
     publication_author_id: int | None = None
     publication_author_username: str | None = None
     skip_post_audit: bool = False
@@ -339,6 +340,7 @@ class ImportReport:
     target_row_counts_before: dict[str, int]
     target_row_counts_after: dict[str, int]
     import_policies: dict[str, Any] = field(default_factory=dict)
+    generated_artifacts: list[dict[str, Any]] = field(default_factory=list)
     source_profile: dict[str, Any] = field(default_factory=dict)
     source_warnings: list[str] = field(default_factory=list)
     audit: dict[str, Any] | None = None
@@ -503,6 +505,82 @@ def supported_historical_description_count(legacy_conn: Connection[Any]) -> int:
 def unsupported_description_count(profile: dict[str, Any]) -> int:
     counts = profile["description_relationships"]["counts"]
     return int(counts["text_only"] + counts["neither_link"] + counts["dangling_historical_item"])
+
+
+def unsupported_description_rows(legacy_conn: Connection[Any]) -> list[dict[str, Any]]:
+    return fetch_rows(
+        legacy_conn,
+        """
+        SELECT
+          d.id,
+          d.historical_item_id,
+          d.text_id,
+          d.source_id,
+          s.name AS source_name,
+          d.description AS content,
+          CASE
+            WHEN d.historical_item_id IS NULL AND d.text_id IS NOT NULL THEN 'text_only'
+            WHEN d.historical_item_id IS NULL AND d.text_id IS NULL THEN 'neither_link'
+            WHEN d.historical_item_id IS NOT NULL AND h.id IS NULL THEN 'dangling_historical_item'
+          END AS reason
+        FROM digipal_description d
+        LEFT JOIN digipal_historicalitem h ON h.id = d.historical_item_id
+        LEFT JOIN digipal_source s ON s.id = d.source_id
+        WHERE (d.historical_item_id IS NULL AND d.text_id IS NOT NULL)
+           OR (d.historical_item_id IS NULL AND d.text_id IS NULL)
+           OR (d.historical_item_id IS NOT NULL AND h.id IS NULL)
+        ORDER BY d.id
+        """,
+    )
+
+
+def default_unsupported_description_output_path(manifest_path: Path | None) -> Path | None:
+    if manifest_path is None:
+        return None
+    return manifest_path.with_name(f"{manifest_path.stem}-skipped-descriptions.json")
+
+
+def unsupported_description_export_to_dict(
+    *,
+    legacy_database: str,
+    target_database: str,
+    generated_at: str,
+    rows: list[dict[str, Any]],
+) -> dict[str, Any]:
+    reason_counts: dict[str, int] = {}
+    for row in rows:
+        reason = str(row["reason"])
+        reason_counts[reason] = reason_counts.get(reason, 0) + 1
+    return {
+        "artifact_type": "unsupported_digipal_descriptions",
+        "generated_at": generated_at,
+        "legacy_database": legacy_database,
+        "target_database": target_database,
+        "source_table": "digipal_description",
+        "target_table": "manuscripts_historicalitemdescription",
+        "policy": DESCRIPTION_POLICY_SKIP,
+        "row_count": len(rows),
+        "reason_counts": reason_counts,
+        "rows": rows,
+    }
+
+
+def write_unsupported_description_export(
+    path: Path,
+    *,
+    legacy_database: str,
+    target_database: str,
+    rows: list[dict[str, Any]],
+) -> dict[str, Any]:
+    artifact = unsupported_description_export_to_dict(
+        legacy_database=legacy_database,
+        target_database=target_database,
+        generated_at=utc_now_iso(),
+        rows=rows,
+    )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(artifact, indent=2, sort_keys=True, default=str) + "\n", encoding="utf-8")
+    return artifact
 
 
 def phase_plan_counts(
@@ -1690,6 +1768,7 @@ def import_report_to_dict(report: ImportReport) -> dict[str, Any]:
         "legacy_database": report.legacy_database,
         "target_database": report.target_database,
         "import_policies": report.import_policies,
+        "generated_artifacts": report.generated_artifacts,
         "source_profile": report.source_profile,
         "source_warnings": report.source_warnings,
         "target_row_counts_before": report.target_row_counts_before,
@@ -1778,6 +1857,17 @@ def run_import(options: ImportOptions) -> ImportReport:
             phases,
             unsupported_description_policy=options.unsupported_description_policy,
         )
+        skipped_description_rows: list[dict[str, Any]] = []
+        unsupported_description_artifact_path = default_unsupported_description_output_path(options.manifest_path)
+        if options.unsupported_description_output_path:
+            unsupported_description_artifact_path = options.unsupported_description_output_path
+        if "manuscripts" in phases and options.unsupported_description_policy == DESCRIPTION_POLICY_SKIP:
+            skipped_description_rows = unsupported_description_rows(legacy_conn)
+            if skipped_description_rows and unsupported_description_artifact_path is None and options.execute:
+                execute_blockers.append(
+                    "Skipping unsupported digipal_description rows in execute mode requires --manifest or "
+                    "--unsupported-description-output so the excluded rows are preserved as a quarantine artifact."
+                )
         publication_author_policy: PublicationAuthorPolicy | None = None
         publication_author_policy_report: dict[str, Any] = {"mode": "not-applicable"}
         if "publications" in phases:
@@ -1838,12 +1928,17 @@ def run_import(options: ImportOptions) -> ImportReport:
             if phase == "target_only":
                 warnings.append("No target-only data is imported from the legacy source database by design.")
             if phase == "manuscripts" and options.unsupported_description_policy == DESCRIPTION_POLICY_SKIP:
-                skipped_description_rows = unsupported_description_count(source_profile)
                 if skipped_description_rows:
-                    skipped["digipal_description"] = skipped_description_rows
+                    skipped["digipal_description"] = len(skipped_description_rows)
+                    artifact_message = (
+                        f" Quarantine export: {unsupported_description_artifact_path}"
+                        if unsupported_description_artifact_path
+                        else " No quarantine export path was provided."
+                    )
                     warnings.append(
                         "Skipped unsupported digipal_description rows by explicit policy. "
                         "Review source_profile.description_relationships and record this in the manifest."
+                        f"{artifact_message}"
                     )
 
             if options.execute and phase != "target_only":
@@ -1881,6 +1976,22 @@ def run_import(options: ImportOptions) -> ImportReport:
             )
 
         after_counts = target_domain_counts(target_conn)
+        generated_artifacts: list[dict[str, Any]] = []
+        if skipped_description_rows and unsupported_description_artifact_path:
+            artifact = write_unsupported_description_export(
+                unsupported_description_artifact_path,
+                legacy_database=legacy_db,
+                target_database=target_db,
+                rows=skipped_description_rows,
+            )
+            generated_artifacts.append(
+                {
+                    "type": artifact["artifact_type"],
+                    "path": str(unsupported_description_artifact_path),
+                    "row_count": artifact["row_count"],
+                    "reason_counts": artifact["reason_counts"],
+                }
+            )
 
     audit_dict = None
     if options.execute and not options.skip_post_audit:
@@ -1905,6 +2016,7 @@ def run_import(options: ImportOptions) -> ImportReport:
             "unsupported_description_policy": options.unsupported_description_policy,
             "publication_author_policy": publication_author_policy_report,
         },
+        generated_artifacts=generated_artifacts,
         source_profile=source_profile,
         source_warnings=source_warnings,
         audit=audit_dict,

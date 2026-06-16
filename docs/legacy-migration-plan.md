@@ -283,7 +283,9 @@ rows are present. If the project decides those rows should be excluded from the
 target historical-item description table, rerun with
 `--unsupported-description-policy skip`. That policy imports only descriptions
 linked to an existing historical item and records skipped row counts in the
-manifest/import report.
+manifest/import report. When `--manifest` is provided, the importer also writes
+a sibling `*-skipped-descriptions.json` quarantine artifact containing every
+skipped row and the reason it was excluded.
 
 Use this source-side query during preflight:
 
@@ -376,7 +378,9 @@ warnings but never permits a final `fail` status.
 
 When unsupported description rows have an approved exclusion policy, add
 `--unsupported-description-policy skip` to both dry-run and execute commands so
-the planned/imported row counts match the intended migration scope.
+the planned/imported row counts match the intended migration scope. Keep the
+generated `*-skipped-descriptions.json` quarantine artifact with the run
+evidence.
 
 For partial trial runs, repeat `--phase`, for example:
 
