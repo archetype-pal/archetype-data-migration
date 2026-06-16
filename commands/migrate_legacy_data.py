@@ -8,6 +8,8 @@ from migration_toolkit.importer import (
     DESCRIPTION_POLICIES,
     DESCRIPTION_POLICY_FAIL,
     PHASE_ORDER,
+    PUBLICATION_AUTHOR_POLICIES,
+    PUBLICATION_AUTHOR_POLICY_LEGACY_ID,
     ImportOptions,
     LegacyMigrationImportError,
     render_import_report_json,
@@ -76,15 +78,29 @@ def build_parser() -> argparse.ArgumentParser:
         ),
     )
     parser.add_argument(
+        "--publication-author-policy",
+        choices=PUBLICATION_AUTHOR_POLICIES,
+        default=PUBLICATION_AUTHOR_POLICY_LEGACY_ID,
+        help=(
+            "How to set publication authors during import. "
+            "legacy-id preserves each blog_blogpost.user_id; fallback assigns one target author."
+        ),
+    )
+    parser.add_argument(
         "--skip-post-audit",
         action="store_true",
         help="Skip the post-import audit. Intended only for partial phase testing.",
     )
-    parser.add_argument("--publication-author-id", type=int, default=None, help="Target auth_user.id for publications.")
+    parser.add_argument(
+        "--publication-author-id",
+        type=int,
+        default=None,
+        help="Target auth_user.id when --publication-author-policy fallback is selected.",
+    )
     parser.add_argument(
         "--publication-author-username",
         default=None,
-        help="Target auth_user.username to assign to imported publications.",
+        help="Target auth_user.username when --publication-author-policy fallback is selected.",
     )
     parser.add_argument("--manifest", type=Path, default=None, help="Optional JSON output path for the import report.")
     return parser
@@ -102,6 +118,7 @@ def main(argv: list[str] | None = None) -> int:
         allow_warnings=options.allow_warnings,
         unsupported_description_policy=options.unsupported_description_policy,
         unsupported_description_output_path=options.unsupported_description_output,
+        publication_author_policy=options.publication_author_policy,
         publication_author_id=options.publication_author_id,
         publication_author_username=options.publication_author_username,
         skip_post_audit=options.skip_post_audit,

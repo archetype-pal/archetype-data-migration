@@ -6,8 +6,11 @@ from commands.migrate_legacy_data import main as migrate_main
 from migration_toolkit.importer import (
     DESCRIPTION_POLICY_SKIP,
     ImportReport,
+    ImportOptions,
     LegacyMigrationImportError,
     PhaseResult,
+    PUBLICATION_AUTHOR_POLICY_FALLBACK,
+    PUBLICATION_AUTHOR_POLICY_LEGACY_ID,
     audit_failure_summary,
     default_unsupported_description_output_path,
     expand_phases,
@@ -19,6 +22,7 @@ from migration_toolkit.importer import (
     source_profile_warnings,
     unsupported_description_count,
     unsupported_description_export_to_dict,
+    validate_import_options,
     write_unsupported_description_export,
 )
 
@@ -102,6 +106,36 @@ def test_migrate_legacy_data_cli_renders_report(monkeypatch, capsys):
     assert data["dry_run"] is True
     assert data["phases"][0]["rows_planned"] == {"manuscripts_itemimage": 2}
     assert data["source_profile"] == {}
+
+
+def test_migrate_legacy_data_cli_passes_publication_author_policy(monkeypatch):
+    def fake_run_import(options):
+        assert options.publication_author_policy == PUBLICATION_AUTHOR_POLICY_FALLBACK
+        assert options.publication_author_username == "import-bot"
+        return ImportReport(
+            dry_run=True,
+            legacy_database="legacy_source",
+            target_database="new_target",
+            phases=[],
+            target_row_counts_before={},
+            target_row_counts_after={},
+        )
+
+    monkeypatch.setattr("commands.migrate_legacy_data.run_import", fake_run_import)
+
+    assert (
+        migrate_main(
+            [
+                "--phase",
+                "publications",
+                "--publication-author-policy",
+                "fallback",
+                "--publication-author-username",
+                "import-bot",
+            ]
+        )
+        == 0
+    )
 
 
 def test_source_profile_warnings_describe_unsupported_source_shapes():
@@ -327,3 +361,13 @@ def test_audit_failure_summary_includes_failed_mapping_counts():
     assert "historical_item_descriptions" in summary
     assert "unexpected missing: 356" in summary
     assert "annotation_shape" in summary
+
+
+def test_validate_import_options_rejects_unknown_publication_author_policy():
+    with pytest.raises(LegacyMigrationImportError, match="Publication author policy"):
+        validate_import_options(ImportOptions(publication_author_policy="invalid"))
+
+
+def test_validate_import_options_accepts_legacy_publication_author_policy():
+    validate_import_options(ImportOptions(publication_author_policy=PUBLICATION_AUTHOR_POLICY_LEGACY_ID))
+

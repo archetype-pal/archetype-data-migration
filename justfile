@@ -43,7 +43,7 @@ dry-run-import:
 
 # Execute the importer. Requires an explicit target publication author username.
 execute-import AUTHOR:
-    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute --publication-author-username "{{AUTHOR}}" --allow-warnings --manifest reports/legacy-migration-import-run.json
+    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute --publication-author-policy legacy-id --publication-author-username "{{AUTHOR}}" --allow-warnings --manifest reports/legacy-migration-import-run.json
 
 # Drop and recreate a disposable target database. Refuses normal DB names by default.
 recreate-disposable-target DB:
