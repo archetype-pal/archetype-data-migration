@@ -58,6 +58,25 @@ Create a fallback publication author in the disposable target:
   api python manage.py shell -c "from django.contrib.auth import get_user_model; User = get_user_model(); User.objects.get_or_create(username='legacy-import-author', defaults={'email': 'legacy-import-author@example.invalid', 'is_staff': True})"
 ```
 
+## Recreate A Disposable Target
+
+For repeat trials, recreate the disposable database instead of deleting target
+table rows by hand:
+
+```bash
+TARGET_DATABASE_URL="$TARGET_DATABASE_URL" \
+DOCKER_BIN="$DOCKER_BIN" \
+./scripts/backend-compose-run.sh python -m commands.recreate_disposable_target \
+  --database-name "$SMOKE_DB" \
+  --confirm-name "$SMOKE_DB" \
+  --execute \
+  --manifest "reports/${SMOKE_DB}-recreate.json"
+```
+
+The command refuses normal database names by default. After it recreates the
+empty database, rerun backend migrations and recreate/verify the fallback
+publication author before starting the next dry run.
+
 ## Dry Run
 
 ```bash

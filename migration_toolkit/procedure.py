@@ -64,6 +64,12 @@ SAFETY_GATES: tuple[SafetyGate, ...] = (
         evidence="Preflight row-count report is attached to the manifest.",
     ),
     SafetyGate(
+        key="disposable_reset_only",
+        title="Guarded disposable reset",
+        rule="Recreate whole disposable trial databases instead of deleting target tables by hand.",
+        evidence="Reset report records the disposable database name, confirmation, and follow-up migration steps.",
+    ),
+    SafetyGate(
         key="author_policy",
         title="Publication author policy",
         rule="Do not map publication authors by legacy numeric id. Use username/email mapping or a fallback author.",
@@ -118,6 +124,7 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "Profile source-specific optional relationships and data-quality cases before execution.",
             "Collect target migration state and current domain row counts.",
             "Stop if the target is non-empty unless an explicit audit/update mode is approved.",
+            "For repeat trials, recreate only explicitly named disposable target databases.",
         ),
         validation=(
             "audit_legacy_migration completes and its expected empty-target failures are understood.",
@@ -424,6 +431,13 @@ COMMANDS: tuple[tuple[str, str], ...] = (
         "--allow-warnings --manifest reports/legacy-migration-import-run.json",
     ),
     (
+        "Recreate a disposable target between trials",
+        "./scripts/backend-compose-run.sh python -m commands.recreate_disposable_target "
+        "--database-name legacy_import_trial_YYYYMMDD "
+        "--confirm-name legacy_import_trial_YYYYMMDD "
+        "--execute --manifest reports/legacy_import_trial_YYYYMMDD-recreate.json",
+    ),
+    (
         "Run strict audit in CI or pre-cutover",
         "./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --fail-on-warning",
     ),
@@ -593,6 +607,8 @@ def render_procedure_markdown(audit_report: AuditReport | None = None) -> str:
             "- `migrate_legacy_data` without `--execute` validates connections, tables, planning queries, phase "
             "order, and planned counts. It does not test inserts or target constraints.",
             "- `migrate_legacy_data --execute` writes supported mappings and then runs the post-import audit.",
+            "- `recreate_disposable_target` drops and recreates only explicitly named disposable trial databases; "
+            "it is not a generic target-table cleanup command.",
             "- A post-import `fail` is a blocker. `--allow-warnings` accepts reviewed warnings only and never "
             "accepts `fail`.",
             "- `--unsupported-description-policy fail` is the default. Use `skip` only when text-only, "
@@ -665,6 +681,7 @@ def render_procedure_markdown(audit_report: AuditReport | None = None) -> str:
             "- `migrate_legacy_data` plans by default and writes only with `--execute`.",
             "- The write import should run against a freshly migrated target unless "
             "`--allow-non-empty-target` is explicitly approved.",
+            "- Trial resets should recreate a disposable target database and then rerun backend migrations.",
             "- Post-cutover should run sequence sync, focused tests, smoke checks, and search rebuild.",
             "",
             "## Command Reference",
@@ -717,6 +734,9 @@ def render_procedure_markdown(audit_report: AuditReport | None = None) -> str:
             "",
             "The command refuses same-database URLs, missing tables, and non-empty import targets by default. "
             "Use `--allow-non-empty-target` only for an approved recovery or incremental trial.",
+            "",
+            "For repeat trials, use `recreate_disposable_target` on an explicitly named disposable database. "
+            "After recreating it, apply backend migrations and recreate/verify the target publication author.",
         ]
     )
 

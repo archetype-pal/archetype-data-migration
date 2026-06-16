@@ -246,6 +246,8 @@ against host Python.
    - Check FK integrity.
    - Check target constraints.
    - Run focused application tests.
+   - Between full trials, recreate the disposable target database rather than
+     deleting target table rows by hand.
 
 7. Rebuild derived systems.
    - Run migrations.
@@ -372,6 +374,19 @@ For partial trial runs, repeat `--phase`, for example:
   --skip-post-audit
 ```
 
+Recreate a disposable target between full trials:
+
+```bash
+./scripts/backend-compose-run.sh python -m commands.recreate_disposable_target \
+  --database-name legacy_import_trial_YYYYMMDD \
+  --confirm-name legacy_import_trial_YYYYMMDD \
+  --execute \
+  --manifest reports/legacy_import_trial_YYYYMMDD-recreate.json
+```
+
+After this command, run backend migrations and recreate/verify the target
+publication author before importing again.
+
 ## Implementation Notes
 
 `audit_legacy_migration` remains the read-only validation layer.
@@ -384,6 +399,13 @@ For partial trial runs, repeat `--phase`, for example:
 - Require an explicit publication author policy.
 - Save an import report/manifest and final audit output.
 - Refuse to run if `legacy_url` and `target_url` point at the same database.
+
+`recreate_disposable_target` is the guarded trial reset helper. It:
+
+- Refuses protected or normal database names by default.
+- Requires `--execute` and an exact `--confirm-name` before dropping anything.
+- Drops and recreates the entire disposable database; it does not delete rows
+  from a populated target in place.
 
 The importer has been smoke-tested against a disposable, freshly migrated
 target database using the specific inspected legacy snapshot. The successful

@@ -18,6 +18,7 @@ cli-check:
     python -m commands.audit_legacy_migration --help
     python -m commands.migrate_legacy_data --help
     python -m commands.legacy_migration_procedure --help
+    python -m commands.recreate_disposable_target --help
     python -m commands.legacy_migration_procedure --output /tmp/operator-guide.md --manifest-template /tmp/legacy-migration-manifest-template.json
 
 # Render the static operator guide and manifest template.
@@ -40,8 +41,13 @@ dry-run-import:
 execute-import AUTHOR:
     BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute --publication-author-username "{{AUTHOR}}" --allow-warnings --manifest reports/legacy-migration-import-run.json
 
+# Drop and recreate a disposable target database. Refuses normal DB names by default.
+recreate-disposable-target DB:
+    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.recreate_disposable_target --database-name "{{DB}}" --confirm-name "{{DB}}" --execute --manifest "reports/{{DB}}-recreate.json"
+
 # Show CLI help for all toolkit commands.
 help-commands:
     BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --help
     BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.legacy_migration_procedure --help
     BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --help
+    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.recreate_disposable_target --help
