@@ -1,11 +1,13 @@
 from commands.audit_legacy_migration import main as audit_main
 from migration_toolkit.audit import (
+    ENTITY_MAPPINGS,
     PUBLICATION_AUTHOR_POLICY_FALLBACK,
     AuditReport,
     CheckResult,
     IdComparison,
     MappingResult,
     PublicationAuthorPolicy,
+    check_legacy_description_relationships,
     check_publication_author_mapping,
     compare_id_sets,
     legacy_url_from_env,
@@ -233,6 +235,57 @@ def test_publication_author_fallback_policy_fails_on_mixed_target_authors(monkey
 
     assert result.status == "fail"
     assert "other target authors are present" in result.summary
+
+
+def test_historical_description_mapping_counts_only_supported_rows():
+    mapping = next(mapping for mapping in ENTITY_MAPPINGS if mapping.key == "historical_item_descriptions")
+
+    assert mapping.legacy_count_sql is not None
+    assert mapping.legacy_ids_sql is not None
+    assert "historical_item_id IS NOT NULL" in mapping.legacy_count_sql
+    assert "digipal_historicalitem" in mapping.legacy_ids_sql
+
+
+def test_legacy_description_relationship_check_warns_on_unsupported_rows(monkeypatch):
+    def fake_dict_rows(conn, query, params=None):
+        return [
+            {
+                "historical_only": 701,
+                "text_only": 1,
+                "both_links": 0,
+                "neither_link": 1,
+                "dangling_historical_item": 0,
+            }
+        ]
+
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", fake_dict_rows)
+
+    result = check_legacy_description_relationships(object())
+
+    assert result.status == "warn"
+    assert "701 legacy descriptions are supported" in result.summary
+    assert "2 text-only, unattached, or dangling descriptions" in result.summary
+    assert result.details[0]["unsupported_descriptions"] == 2
+
+
+def test_legacy_description_relationship_check_ok_when_all_supported(monkeypatch):
+    def fake_dict_rows(conn, query, params=None):
+        return [
+            {
+                "historical_only": 703,
+                "text_only": 0,
+                "both_links": 0,
+                "neither_link": 0,
+                "dangling_historical_item": 0,
+            }
+        ]
+
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", fake_dict_rows)
+
+    result = check_legacy_description_relationships(object())
+
+    assert result.status == "ok"
+    assert result.details[0]["supported_historical_descriptions"] == 703
 
 
 def test_audit_cli_accepts_publication_author_fallback_policy(monkeypatch, tmp_path):

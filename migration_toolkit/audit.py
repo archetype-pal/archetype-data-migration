@@ -31,6 +31,25 @@ PUBLICATION_AUTHOR_POLICIES: tuple[str, ...] = (
     PUBLICATION_AUTHOR_POLICY_FALLBACK,
 )
 
+SUPPORTED_HISTORICAL_DESCRIPTION_COUNT_SQL = """
+SELECT count(*)
+FROM digipal_description d
+WHERE d.historical_item_id IS NOT NULL
+  AND EXISTS (
+    SELECT 1 FROM digipal_historicalitem h WHERE h.id = d.historical_item_id
+  )
+"""
+
+SUPPORTED_HISTORICAL_DESCRIPTION_IDS_SQL = """
+SELECT d.id
+FROM digipal_description d
+WHERE d.historical_item_id IS NOT NULL
+  AND EXISTS (
+    SELECT 1 FROM digipal_historicalitem h WHERE h.id = d.historical_item_id
+  )
+ORDER BY d.id
+"""
+
 
 @dataclass(frozen=True)
 class PublicationAuthorPolicy:
@@ -184,8 +203,13 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         legacy_table="digipal_description",
         target_table="manuscripts_historicalitemdescription",
         category="manuscripts",
-        strategy="id-preserved transformed fields",
-        notes="Legacy description.description maps to target content.",
+        strategy="id-preserved supported historical-item descriptions",
+        notes=(
+            "Only descriptions linked to an existing historical item can become target HistoricalItemDescription "
+            "rows. Text-only, unattached, or dangling source descriptions require explicit review."
+        ),
+        legacy_count_sql=SUPPORTED_HISTORICAL_DESCRIPTION_COUNT_SQL,
+        legacy_ids_sql=SUPPORTED_HISTORICAL_DESCRIPTION_IDS_SQL,
     ),
     EntityMapping(
         key="catalogue_numbers",
@@ -834,6 +858,50 @@ def check_publication_author_mapping(
     )
 
 
+def check_legacy_description_relationships(legacy_conn: Connection[Any]) -> CheckResult:
+    rows = _dict_rows(
+        legacy_conn,
+        """
+        SELECT
+          count(*) FILTER (WHERE historical_item_id IS NOT NULL AND text_id IS NULL) AS historical_only,
+          count(*) FILTER (WHERE historical_item_id IS NULL AND text_id IS NOT NULL) AS text_only,
+          count(*) FILTER (WHERE historical_item_id IS NOT NULL AND text_id IS NOT NULL) AS both_links,
+          count(*) FILTER (WHERE historical_item_id IS NULL AND text_id IS NULL) AS neither_link,
+          count(*) FILTER (
+            WHERE historical_item_id IS NOT NULL
+              AND NOT EXISTS (
+                SELECT 1 FROM digipal_historicalitem h WHERE h.id = digipal_description.historical_item_id
+              )
+          ) AS dangling_historical_item
+        FROM digipal_description
+        """,
+    )
+    counts = {key: int(value or 0) for key, value in rows[0].items()}
+    unsupported = counts["text_only"] + counts["neither_link"] + counts["dangling_historical_item"]
+    supported = counts["historical_only"] + counts["both_links"] - counts["dangling_historical_item"]
+    details = [{"supported_historical_descriptions": supported, "unsupported_descriptions": unsupported, **counts}]
+
+    if unsupported:
+        return CheckResult(
+            key="legacy_description_relationships",
+            title="Legacy description relationships",
+            status="warn",
+            summary=(
+                f"{supported} legacy descriptions are supported historical-item descriptions; "
+                f"{unsupported} text-only, unattached, or dangling descriptions require review/quarantine."
+            ),
+            details=details,
+        )
+
+    return CheckResult(
+        key="legacy_description_relationships",
+        title="Legacy description relationships",
+        status="ok",
+        summary=f"{supported} legacy descriptions are supported historical-item descriptions.",
+        details=details,
+    )
+
+
 def check_annotation_shape(legacy_conn: Connection[Any], target_conn: Connection[Any]) -> CheckResult:
     rows = _dict_rows(
         legacy_conn,
@@ -962,6 +1030,7 @@ def run_audit(
 
         mappings = [audit_mapping(legacy_conn, target_conn, mapping) for mapping in ENTITY_MAPPINGS]
         checks = [
+            check_legacy_description_relationships(legacy_conn),
             check_publication_author_mapping(legacy_conn, target_conn, publication_author_policy),
             check_annotation_shape(legacy_conn, target_conn),
             check_legacy_text_exclusions(legacy_conn, target_conn),
