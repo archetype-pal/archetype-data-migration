@@ -5,12 +5,12 @@ import pytest
 from commands.migrate_legacy_data import main as migrate_main
 from migration_toolkit.importer import (
     DESCRIPTION_POLICY_SKIP,
-    ImportReport,
-    ImportOptions,
-    LegacyMigrationImportError,
-    PhaseResult,
     PUBLICATION_AUTHOR_POLICY_FALLBACK,
     PUBLICATION_AUTHOR_POLICY_LEGACY_ID,
+    ImportOptions,
+    ImportReport,
+    LegacyMigrationImportError,
+    PhaseResult,
     audit_failure_summary,
     default_unsupported_description_output_path,
     expand_phases,
