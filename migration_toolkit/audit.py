@@ -357,9 +357,8 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         legacy_table="digipal_allograph",
         target_table="symbols_structure_allograph",
         category="symbols",
-        strategy="id-preserved with placeholder",
-        notes="The target has a synthetic -1 allograph for text/unmapped annotations.",
-        allowed_extra_target_ids=frozenset({-1}),
+        strategy="id-preserved",
+        notes="Synthetic allograph placeholders require an explicit source-specific policy.",
     ),
     EntityMapping(
         key="components",

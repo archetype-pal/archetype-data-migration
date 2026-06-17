@@ -30,7 +30,7 @@ Status: `warn`
 | `ok` | Hands | 696 | 696 | id-preserved transformed fields |
 | `ok` | Hand image links | 715 | 715 | id-preserved |
 | `ok` | Characters | 103 | 103 | id-preserved transformed type |
-| `warn` | Allographs | 102 | 103 | id-preserved with placeholder |
+| `warn` | Allographs | 102 | 103 | id-preserved; historical target has extra placeholder |
 | `ok` | Components | 15 | 15 | id-preserved |
 | `ok` | Features | 54 | 54 | id-preserved |
 | `ok` | Component feature links | 76 | 76 | id-preserved |
@@ -96,8 +96,8 @@ Status: `warn`
 ### Allographs
 
 - Status: `warn`
-- Strategy: id-preserved with placeholder
-- Notes: The target has a synthetic -1 allograph for text/unmapped annotations.
+- Strategy: id-preserved; historical target has extra placeholder
+- Notes: This older audit captured a target-side `-1` allograph from a source-specific policy. Current imports require an explicit source policy for allograph placeholders.
 - Missing in target: 0; sample: `[]`
 - Extra in target: 1; sample: `[-1]`
 

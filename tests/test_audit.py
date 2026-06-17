@@ -120,6 +120,14 @@ def test_render_json_is_machine_readable():
     assert '"status": "ok"' in rendered
 
 
+def test_allograph_mapping_does_not_allow_synthetic_placeholder_by_default():
+    mapping = next(mapping for mapping in ENTITY_MAPPINGS if mapping.key == "allographs")
+
+    assert mapping.strategy == "id-preserved"
+    assert mapping.allowed_extra_target_ids == frozenset()
+    assert "explicit source-specific policy" in mapping.notes
+
+
 def test_database_urls_default_from_environment(monkeypatch):
     monkeypatch.delenv("LEGACY_DATABASE_URL", raising=False)
     monkeypatch.delenv("TARGET_DATABASE_URL", raising=False)
