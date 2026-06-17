@@ -88,6 +88,18 @@ SAFETY_GATES: tuple[SafetyGate, ...] = (
         ),
     ),
     SafetyGate(
+        key="catalogue_number_policy",
+        title="Unsupported catalogue number policy",
+        rule=(
+            "Treat catalogue numbers without an existing historical item as unmappable to target CatalogueNumber. "
+            "Do not lose them silently."
+        ),
+        evidence=(
+            "Import report records source_profile counts and skipped catalogue rows; with --manifest, a "
+            "*-skipped-catalogue-numbers.json quarantine artifact is written."
+        ),
+    ),
+    SafetyGate(
         key="phase_transactions",
         title="Transaction per phase",
         rule="Each import phase must be atomic and independently auditable.",
@@ -626,6 +638,9 @@ def render_procedure_markdown(audit_report: AuditReport | None = None) -> str:
             "unattached, or dangling `digipal_description` rows have been reviewed and accepted as excluded.",
             "- When unsupported descriptions are skipped and `--manifest` is provided, the importer writes a "
             "sibling `*-skipped-descriptions.json` quarantine artifact with every skipped row.",
+            "- Legacy catalogue numbers without an existing historical item are skipped from target "
+            "`CatalogueNumber`; with `--manifest`, the importer writes a sibling "
+            "`*-skipped-catalogue-numbers.json` quarantine artifact.",
             "- `--publication-author-username` must name an existing target `auth_user`; the importer does not "
             "create that user.",
             "- If the publications phase uses a fallback author, post-import audit should use "
@@ -644,6 +659,11 @@ def render_procedure_markdown(audit_report: AuditReport | None = None) -> str:
             "require an explicit mapping, quarantine, or approved exclusion policy before execution. When the "
             "approved decision is exclusion, run with `--unsupported-description-policy skip`; the report records "
             "the selected policy, skipped row counts, and a quarantine artifact when `--manifest` is provided.",
+            "",
+            "Legacy `digipal_cataloguenumber` rows must point at an existing historical item to become target "
+            "`CatalogueNumber` rows. Rows with no historical item or a dangling historical item are reported in "
+            "the source profile, skipped from the target table, and exported to "
+            "`*-skipped-catalogue-numbers.json` when `--manifest` is provided.",
             "",
             "## Safety Gates",
             "",

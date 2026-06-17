@@ -35,6 +35,7 @@ YEAR_RE = re.compile(r"(?<!\d)([1-2]\d{3}|[5-9]\d{2})(?!\d)")
 DESCRIPTION_POLICY_FAIL = "fail"
 DESCRIPTION_POLICY_SKIP = "skip"
 DESCRIPTION_POLICIES: tuple[str, ...] = (DESCRIPTION_POLICY_FAIL, DESCRIPTION_POLICY_SKIP)
+CATALOGUE_NUMBER_POLICY_SKIP_UNSUPPORTED = "skip-unsupported"
 
 PHASE_ORDER: tuple[str, ...] = (
     "core_vocabularies",
@@ -247,7 +248,9 @@ SOURCE_COUNT_SQL: dict[str, dict[str, str]] = {
         "manuscripts_historicalitem": "SELECT count(*) FROM digipal_historicalitem",
         "manuscripts_historicalitemdescription": "SELECT count(*) FROM digipal_description",
         "manuscripts_cataloguenumber": (
-            "SELECT count(*) FROM digipal_cataloguenumber WHERE historical_item_id IS NOT NULL"
+            "SELECT count(*) FROM digipal_cataloguenumber c "
+            "WHERE c.historical_item_id IS NOT NULL "
+            "AND EXISTS (SELECT 1 FROM digipal_historicalitem h WHERE h.id = c.historical_item_id)"
         ),
         "manuscripts_itempart": (
             "SELECT count(*) + CASE WHEN EXISTS (SELECT 1 FROM digipal_image WHERE item_part_id IS NULL) "
@@ -507,6 +510,27 @@ def unsupported_description_count(profile: dict[str, Any]) -> int:
     return int(counts["text_only"] + counts["neither_link"] + counts["dangling_historical_item"])
 
 
+def supported_catalogue_number_count(legacy_conn: Connection[Any]) -> int:
+    return int(
+        scalar(
+            legacy_conn,
+            """
+            SELECT count(*)
+            FROM digipal_cataloguenumber c
+            WHERE c.historical_item_id IS NOT NULL
+              AND EXISTS (
+                SELECT 1 FROM digipal_historicalitem h WHERE h.id = c.historical_item_id
+              )
+            """,
+        )
+    )
+
+
+def unsupported_catalogue_number_count(profile: dict[str, Any]) -> int:
+    counts = profile["catalogue_number_relationships"]["counts"]
+    return int(counts["missing_historical_item"] + counts["dangling_historical_item"])
+
+
 def unsupported_description_rows(legacy_conn: Connection[Any]) -> list[dict[str, Any]]:
     return fetch_rows(
         legacy_conn,
@@ -534,10 +558,41 @@ def unsupported_description_rows(legacy_conn: Connection[Any]) -> list[dict[str,
     )
 
 
+def unsupported_catalogue_number_rows(legacy_conn: Connection[Any]) -> list[dict[str, Any]]:
+    return fetch_rows(
+        legacy_conn,
+        """
+        SELECT
+          c.id,
+          c.historical_item_id,
+          c.source_id AS catalogue_id,
+          s.name AS catalogue_name,
+          c.number,
+          c.url,
+          CASE
+            WHEN c.historical_item_id IS NULL THEN 'missing_historical_item'
+            WHEN c.historical_item_id IS NOT NULL AND h.id IS NULL THEN 'dangling_historical_item'
+          END AS reason
+        FROM digipal_cataloguenumber c
+        LEFT JOIN digipal_historicalitem h ON h.id = c.historical_item_id
+        LEFT JOIN digipal_source s ON s.id = c.source_id
+        WHERE c.historical_item_id IS NULL
+           OR (c.historical_item_id IS NOT NULL AND h.id IS NULL)
+        ORDER BY c.id
+        """,
+    )
+
+
 def default_unsupported_description_output_path(manifest_path: Path | None) -> Path | None:
     if manifest_path is None:
         return None
     return manifest_path.with_name(f"{manifest_path.stem}-skipped-descriptions.json")
+
+
+def default_unsupported_catalogue_number_output_path(manifest_path: Path | None) -> Path | None:
+    if manifest_path is None:
+        return None
+    return manifest_path.with_name(f"{manifest_path.stem}-skipped-catalogue-numbers.json")
 
 
 def unsupported_description_export_to_dict(
@@ -565,6 +620,31 @@ def unsupported_description_export_to_dict(
     }
 
 
+def unsupported_catalogue_number_export_to_dict(
+    *,
+    legacy_database: str,
+    target_database: str,
+    generated_at: str,
+    rows: list[dict[str, Any]],
+) -> dict[str, Any]:
+    reason_counts: dict[str, int] = {}
+    for row in rows:
+        reason = str(row["reason"])
+        reason_counts[reason] = reason_counts.get(reason, 0) + 1
+    return {
+        "artifact_type": "unsupported_digipal_catalogue_numbers",
+        "generated_at": generated_at,
+        "legacy_database": legacy_database,
+        "target_database": target_database,
+        "source_table": "digipal_cataloguenumber",
+        "target_table": "manuscripts_cataloguenumber",
+        "policy": CATALOGUE_NUMBER_POLICY_SKIP_UNSUPPORTED,
+        "row_count": len(rows),
+        "reason_counts": reason_counts,
+        "rows": rows,
+    }
+
+
 def write_unsupported_description_export(
     path: Path,
     *,
@@ -573,6 +653,24 @@ def write_unsupported_description_export(
     rows: list[dict[str, Any]],
 ) -> dict[str, Any]:
     artifact = unsupported_description_export_to_dict(
+        legacy_database=legacy_database,
+        target_database=target_database,
+        generated_at=utc_now_iso(),
+        rows=rows,
+    )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(artifact, indent=2, sort_keys=True, default=str) + "\n", encoding="utf-8")
+    return artifact
+
+
+def write_unsupported_catalogue_number_export(
+    path: Path,
+    *,
+    legacy_database: str,
+    target_database: str,
+    rows: list[dict[str, Any]],
+) -> dict[str, Any]:
+    artifact = unsupported_catalogue_number_export_to_dict(
         legacy_database=legacy_database,
         target_database=target_database,
         generated_at=utc_now_iso(),
@@ -592,6 +690,8 @@ def phase_plan_counts(
     planned = {table: int(scalar(legacy_conn, query)) for table, query in SOURCE_COUNT_SQL[phase].items()}
     if phase == "manuscripts" and unsupported_description_policy == DESCRIPTION_POLICY_SKIP:
         planned["manuscripts_historicalitemdescription"] = supported_historical_description_count(legacy_conn)
+    if phase == "manuscripts":
+        planned["manuscripts_cataloguenumber"] = supported_catalogue_number_count(legacy_conn)
     return planned
 
 
@@ -674,6 +774,53 @@ def description_relationship_profile(legacy_conn: Connection[Any]) -> dict[str, 
     }
 
 
+def catalogue_number_relationship_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
+    counts = fetch_rows(
+        legacy_conn,
+        """
+        SELECT
+          count(*) FILTER (WHERE c.historical_item_id IS NOT NULL AND h.id IS NOT NULL) AS supported,
+          count(*) FILTER (WHERE c.historical_item_id IS NULL) AS missing_historical_item,
+          count(*) FILTER (WHERE c.historical_item_id IS NOT NULL AND h.id IS NULL) AS dangling_historical_item
+        FROM digipal_cataloguenumber c
+        LEFT JOIN digipal_historicalitem h ON h.id = c.historical_item_id
+        """,
+    )[0]
+    samples = {
+        "missing_historical_item": [
+            row["id"]
+            for row in fetch_rows(
+                legacy_conn,
+                """
+                SELECT id
+                FROM digipal_cataloguenumber
+                WHERE historical_item_id IS NULL
+                ORDER BY id
+                LIMIT 10
+                """,
+            )
+        ],
+        "dangling_historical_item": [
+            row["id"]
+            for row in fetch_rows(
+                legacy_conn,
+                """
+                SELECT c.id
+                FROM digipal_cataloguenumber c
+                LEFT JOIN digipal_historicalitem h ON h.id = c.historical_item_id
+                WHERE c.historical_item_id IS NOT NULL AND h.id IS NULL
+                ORDER BY c.id
+                LIMIT 10
+                """,
+            )
+        ],
+    }
+    return {
+        "counts": {key: int(value or 0) for key, value in counts.items()},
+        "samples": samples,
+    }
+
+
 def allograph_character_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
     rows = fetch_rows(
         legacy_conn,
@@ -717,6 +864,7 @@ def legacy_publication_author_profile(legacy_conn: Connection[Any]) -> dict[str,
 def build_source_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
     return {
         "description_relationships": description_relationship_profile(legacy_conn),
+        "catalogue_number_relationships": catalogue_number_relationship_profile(legacy_conn),
         "allograph_character_integrity": allograph_character_profile(legacy_conn),
         "legacy_publication_authors": legacy_publication_author_profile(legacy_conn),
     }
@@ -744,6 +892,21 @@ def source_profile_warnings(profile: dict[str, Any]) -> list[str]:
         warnings.append(
             "Legacy digipal_description contains rows whose historical_item_id does not exist: "
             f"{description_counts['dangling_historical_item']}"
+        )
+
+    catalogue_counts = profile.get("catalogue_number_relationships", {}).get(
+        "counts",
+        {"missing_historical_item": 0, "dangling_historical_item": 0},
+    )
+    if catalogue_counts["missing_historical_item"]:
+        warnings.append(
+            "Legacy digipal_cataloguenumber contains rows without historical_item_id that are not imported as "
+            f"target catalogue numbers: {catalogue_counts['missing_historical_item']}"
+        )
+    if catalogue_counts["dangling_historical_item"]:
+        warnings.append(
+            "Legacy digipal_cataloguenumber contains rows whose historical_item_id does not exist: "
+            f"{catalogue_counts['dangling_historical_item']}"
         )
 
     missing_allograph_characters = profile["allograph_character_integrity"]["missing_character_count"]
@@ -1185,10 +1348,13 @@ def import_manuscripts(ctx: ImportContext) -> dict[str, int]:
     catalogue_rows = fetch_rows(
         legacy_conn,
         """
-        SELECT id, historical_item_id, source_id AS catalogue_id, number, url
-        FROM digipal_cataloguenumber
-        WHERE historical_item_id IS NOT NULL
-        ORDER BY id
+        SELECT c.id, c.historical_item_id, c.source_id AS catalogue_id, c.number, c.url
+        FROM digipal_cataloguenumber c
+        WHERE c.historical_item_id IS NOT NULL
+          AND EXISTS (
+            SELECT 1 FROM digipal_historicalitem h WHERE h.id = c.historical_item_id
+          )
+        ORDER BY c.id
         """,
     )
     rows_imported["manuscripts_cataloguenumber"] = insert_rows(
@@ -1868,6 +2034,17 @@ def run_import(options: ImportOptions) -> ImportReport:
                     "Skipping unsupported digipal_description rows in execute mode requires --manifest or "
                     "--unsupported-description-output so the excluded rows are preserved as a quarantine artifact."
                 )
+        skipped_catalogue_number_rows: list[dict[str, Any]] = []
+        unsupported_catalogue_number_artifact_path = default_unsupported_catalogue_number_output_path(
+            options.manifest_path
+        )
+        if "manuscripts" in phases:
+            skipped_catalogue_number_rows = unsupported_catalogue_number_rows(legacy_conn)
+            if skipped_catalogue_number_rows and unsupported_catalogue_number_artifact_path is None and options.execute:
+                execute_blockers.append(
+                    "Skipping unsupported digipal_cataloguenumber rows in execute mode requires --manifest so the "
+                    "excluded rows are preserved as a quarantine artifact."
+                )
         publication_author_policy: PublicationAuthorPolicy | None = None
         publication_author_policy_report: dict[str, Any] = {"mode": "not-applicable"}
         if "publications" in phases:
@@ -1927,18 +2104,31 @@ def run_import(options: ImportOptions) -> ImportReport:
 
             if phase == "target_only":
                 warnings.append("No target-only data is imported from the legacy source database by design.")
-            if phase == "manuscripts" and options.unsupported_description_policy == DESCRIPTION_POLICY_SKIP:
-                if skipped_description_rows:
-                    skipped["digipal_description"] = len(skipped_description_rows)
+            if phase == "manuscripts":
+                if options.unsupported_description_policy == DESCRIPTION_POLICY_SKIP:
+                    if skipped_description_rows:
+                        skipped["digipal_description"] = len(skipped_description_rows)
+                        artifact_message = (
+                            f" Quarantine export: {unsupported_description_artifact_path}"
+                            if unsupported_description_artifact_path
+                            else " No quarantine export path was provided."
+                        )
+                        warnings.append(
+                            "Skipped unsupported digipal_description rows by explicit policy. "
+                            "Review source_profile.description_relationships and record this in the manifest."
+                            f"{artifact_message}"
+                        )
+                if skipped_catalogue_number_rows:
+                    skipped["digipal_cataloguenumber"] = len(skipped_catalogue_number_rows)
                     artifact_message = (
-                        f" Quarantine export: {unsupported_description_artifact_path}"
-                        if unsupported_description_artifact_path
+                        f" Quarantine export: {unsupported_catalogue_number_artifact_path}"
+                        if unsupported_catalogue_number_artifact_path
                         else " No quarantine export path was provided."
                     )
                     warnings.append(
-                        "Skipped unsupported digipal_description rows by explicit policy. "
-                        "Review source_profile.description_relationships and record this in the manifest."
-                        f"{artifact_message}"
+                        "Skipped unsupported digipal_cataloguenumber rows because they are not linked to an "
+                        "existing historical item. Review source_profile.catalogue_number_relationships and record "
+                        f"this in the manifest.{artifact_message}"
                     )
 
             if options.execute and phase != "target_only":
@@ -1992,6 +2182,21 @@ def run_import(options: ImportOptions) -> ImportReport:
                     "reason_counts": artifact["reason_counts"],
                 }
             )
+        if skipped_catalogue_number_rows and unsupported_catalogue_number_artifact_path:
+            artifact = write_unsupported_catalogue_number_export(
+                unsupported_catalogue_number_artifact_path,
+                legacy_database=legacy_db,
+                target_database=target_db,
+                rows=skipped_catalogue_number_rows,
+            )
+            generated_artifacts.append(
+                {
+                    "type": artifact["artifact_type"],
+                    "path": str(unsupported_catalogue_number_artifact_path),
+                    "row_count": artifact["row_count"],
+                    "reason_counts": artifact["reason_counts"],
+                }
+            )
 
     audit_dict = None
     if options.execute and not options.skip_post_audit:
@@ -2014,6 +2219,7 @@ def run_import(options: ImportOptions) -> ImportReport:
         target_row_counts_after=after_counts,
         import_policies={
             "unsupported_description_policy": options.unsupported_description_policy,
+            "unsupported_catalogue_number_policy": CATALOGUE_NUMBER_POLICY_SKIP_UNSUPPORTED,
             "publication_author_policy": publication_author_policy_report,
         },
         generated_artifacts=generated_artifacts,

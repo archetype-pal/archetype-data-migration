@@ -96,8 +96,9 @@ Audit status must be interpreted in context:
 
 Dry-run reports include `source_profile` and `source_warnings`. Review those
 fields before executing; execution is blocked before any writes when the current
-source contains unsupported description relationships, broken allograph-character
-links, or a missing publication author policy.
+source contains unsupported description relationships, unsupported catalogue
+number relationships, broken allograph-character links, or a missing publication
+author policy.
 
 If the publications phase intentionally uses one fallback author, run post-import
 audit with the same policy so the warning records the decision instead of only
@@ -118,6 +119,13 @@ provided, the importer also writes a sibling
 `*-skipped-descriptions.json` quarantine artifact containing every skipped row
 and its reason. Do not use this flag until those rows are reviewed and the
 artifact is listed in the run manifest.
+
+Catalogue numbers are imported only when they point at an existing historical
+item. Rows without a historical item, or with a dangling historical item, are
+reported in `source_profile.catalogue_number_relationships`, skipped from the
+target `CatalogueNumber` table, and written to a sibling
+`*-skipped-catalogue-numbers.json` quarantine artifact when `--manifest` is
+provided.
 
 Equivalent direct Compose commands:
 

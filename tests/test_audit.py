@@ -7,6 +7,7 @@ from migration_toolkit.audit import (
     IdComparison,
     MappingResult,
     PublicationAuthorPolicy,
+    check_legacy_catalogue_number_relationships,
     check_legacy_description_relationships,
     check_publication_author_mapping,
     compare_id_sets,
@@ -246,6 +247,15 @@ def test_historical_description_mapping_counts_only_supported_rows():
     assert "digipal_historicalitem" in mapping.legacy_ids_sql
 
 
+def test_catalogue_number_mapping_counts_only_supported_rows():
+    mapping = next(mapping for mapping in ENTITY_MAPPINGS if mapping.key == "catalogue_numbers")
+
+    assert mapping.legacy_count_sql is not None
+    assert mapping.legacy_ids_sql is not None
+    assert "historical_item_id IS NOT NULL" in mapping.legacy_count_sql
+    assert "digipal_historicalitem" in mapping.legacy_ids_sql
+
+
 def test_legacy_description_relationship_check_warns_on_unsupported_rows(monkeypatch):
     def fake_dict_rows(conn, query, params=None):
         return [
@@ -286,6 +296,44 @@ def test_legacy_description_relationship_check_ok_when_all_supported(monkeypatch
 
     assert result.status == "ok"
     assert result.details[0]["supported_historical_descriptions"] == 703
+
+
+def test_legacy_catalogue_number_relationship_check_warns_on_unsupported_rows(monkeypatch):
+    def fake_dict_rows(conn, query, params=None):
+        return [
+            {
+                "supported": 2052,
+                "missing_historical_item": 385,
+                "dangling_historical_item": 0,
+            }
+        ]
+
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", fake_dict_rows)
+
+    result = check_legacy_catalogue_number_relationships(object())
+
+    assert result.status == "warn"
+    assert "2052 legacy catalogue numbers are supported" in result.summary
+    assert "385 unattached or dangling catalogue numbers" in result.summary
+    assert result.details[0]["unsupported_catalogue_numbers"] == 385
+
+
+def test_legacy_catalogue_number_relationship_check_ok_when_all_supported(monkeypatch):
+    def fake_dict_rows(conn, query, params=None):
+        return [
+            {
+                "supported": 1414,
+                "missing_historical_item": 0,
+                "dangling_historical_item": 0,
+            }
+        ]
+
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", fake_dict_rows)
+
+    result = check_legacy_catalogue_number_relationships(object())
+
+    assert result.status == "ok"
+    assert result.details[0]["supported_catalogue_numbers"] == 1414
 
 
 def test_audit_cli_accepts_publication_author_fallback_policy(monkeypatch, tmp_path):

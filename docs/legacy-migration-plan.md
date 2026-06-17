@@ -287,6 +287,14 @@ manifest/import report. When `--manifest` is provided, the importer also writes
 a sibling `*-skipped-descriptions.json` quarantine artifact containing every
 skipped row and the reason it was excluded.
 
+Legacy `digipal_cataloguenumber` rows are imported only when they point at an
+existing historical item. Rows with no historical item, or with a dangling
+historical item reference, cannot become target `CatalogueNumber` rows. The
+importer records them in `source_profile.catalogue_number_relationships`, skips
+them from the target table, and writes a sibling
+`*-skipped-catalogue-numbers.json` quarantine artifact when `--manifest` is
+provided.
+
 Use this source-side query during preflight:
 
 ```sql
@@ -380,6 +388,10 @@ When unsupported description rows have an approved exclusion policy, add
 `--unsupported-description-policy skip` to both dry-run and execute commands so
 the planned/imported row counts match the intended migration scope. Keep the
 generated `*-skipped-descriptions.json` quarantine artifact with the run
+evidence.
+
+If the source profile reports skipped catalogue numbers, keep the generated
+`*-skipped-catalogue-numbers.json` quarantine artifact with the same run
 evidence.
 
 For partial trial runs, repeat `--phase`, for example:

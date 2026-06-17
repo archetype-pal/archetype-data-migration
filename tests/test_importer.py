@@ -9,6 +9,7 @@ from migration_toolkit.importer import (
     LegacyMigrationImportError,
     PhaseResult,
     audit_failure_summary,
+    default_unsupported_catalogue_number_output_path,
     default_unsupported_description_output_path,
     expand_phases,
     import_report_to_dict,
@@ -17,8 +18,11 @@ from migration_toolkit.importer import (
     parse_date_weights,
     source_profile_blockers,
     source_profile_warnings,
+    unsupported_catalogue_number_count,
+    unsupported_catalogue_number_export_to_dict,
     unsupported_description_count,
     unsupported_description_export_to_dict,
+    write_unsupported_catalogue_number_export,
     write_unsupported_description_export,
 )
 
@@ -116,12 +120,20 @@ def test_source_profile_warnings_describe_unsupported_source_shapes():
             },
             "samples": {},
         },
+        "catalogue_number_relationships": {
+            "counts": {
+                "supported": 8,
+                "missing_historical_item": 6,
+                "dangling_historical_item": 7,
+            },
+            "samples": {},
+        },
         "allograph_character_integrity": {"missing_character_count": 5, "sample": []},
     }
 
     warnings = source_profile_warnings(profile)
 
-    assert len(warnings) == 5
+    assert len(warnings) == 7
     assert "text-only rows" in warnings[0]
     assert "missing character links" in warnings[-1]
 
@@ -180,6 +192,21 @@ def test_unsupported_description_count_excludes_both_link_rows():
     }
 
     assert unsupported_description_count(profile) == 9
+
+
+def test_unsupported_catalogue_number_count_reports_unmappable_rows():
+    profile = {
+        "catalogue_number_relationships": {
+            "counts": {
+                "supported": 10,
+                "missing_historical_item": 2,
+                "dangling_historical_item": 3,
+            },
+            "samples": {},
+        }
+    }
+
+    assert unsupported_catalogue_number_count(profile) == 5
 
 
 def test_import_report_status_warns_on_source_warnings():
@@ -242,6 +269,15 @@ def test_default_unsupported_description_output_path_uses_manifest_stem(tmp_path
     assert default_unsupported_description_output_path(None) is None
 
 
+def test_default_unsupported_catalogue_number_output_path_uses_manifest_stem(tmp_path):
+    manifest_path = tmp_path / "legacy-migration-import-dry-run.json"
+
+    assert default_unsupported_catalogue_number_output_path(manifest_path) == (
+        tmp_path / "legacy-migration-import-dry-run-skipped-catalogue-numbers.json"
+    )
+    assert default_unsupported_catalogue_number_output_path(None) is None
+
+
 def test_unsupported_description_export_groups_reason_counts():
     rows = [
         {
@@ -276,6 +312,41 @@ def test_unsupported_description_export_groups_reason_counts():
     assert data["rows"][0]["content"] == "Text-linked description"
 
 
+def test_unsupported_catalogue_number_export_groups_reason_counts():
+    rows = [
+        {
+            "id": 1,
+            "historical_item_id": None,
+            "catalogue_id": 6,
+            "catalogue_name": "Catalogue",
+            "number": "A.1",
+            "url": "",
+            "reason": "missing_historical_item",
+        },
+        {
+            "id": 2,
+            "historical_item_id": 999,
+            "catalogue_id": 6,
+            "catalogue_name": "Catalogue",
+            "number": "A.2",
+            "url": "",
+            "reason": "dangling_historical_item",
+        },
+    ]
+
+    data = unsupported_catalogue_number_export_to_dict(
+        legacy_database="legacy_source",
+        target_database="target_current",
+        generated_at="2026-06-17T00:00:00+00:00",
+        rows=rows,
+    )
+
+    assert data["artifact_type"] == "unsupported_digipal_catalogue_numbers"
+    assert data["row_count"] == 2
+    assert data["reason_counts"] == {"missing_historical_item": 1, "dangling_historical_item": 1}
+    assert data["rows"][0]["number"] == "A.1"
+
+
 def test_write_unsupported_description_export_writes_json(tmp_path):
     output_path = tmp_path / "skipped.json"
 
@@ -298,6 +369,31 @@ def test_write_unsupported_description_export_writes_json(tmp_path):
 
     data = json.loads(output_path.read_text(encoding="utf-8"))
     assert data["artifact_type"] == "unsupported_digipal_descriptions"
+    assert data["row_count"] == 1
+
+
+def test_write_unsupported_catalogue_number_export_writes_json(tmp_path):
+    output_path = tmp_path / "skipped-catalogue-numbers.json"
+
+    write_unsupported_catalogue_number_export(
+        output_path,
+        legacy_database="legacy_source",
+        target_database="target_current",
+        rows=[
+            {
+                "id": 1,
+                "historical_item_id": None,
+                "catalogue_id": 6,
+                "catalogue_name": "Catalogue",
+                "number": "A.1",
+                "url": "",
+                "reason": "missing_historical_item",
+            }
+        ],
+    )
+
+    data = json.loads(output_path.read_text(encoding="utf-8"))
+    assert data["artifact_type"] == "unsupported_digipal_catalogue_numbers"
     assert data["row_count"] == 1
 
 

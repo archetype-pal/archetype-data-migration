@@ -106,6 +106,11 @@ execute commands. The report will record skipped `digipal_description` rows and
 write a sibling `*-skipped-descriptions.json` quarantine artifact when
 `--manifest` is provided.
 
+Also review `source_profile.catalogue_number_relationships`. Catalogue numbers
+without an existing historical item are skipped from the target table and, when
+`--manifest` is provided, written to a sibling
+`*-skipped-catalogue-numbers.json` quarantine artifact.
+
 ## Execute
 
 ```bash

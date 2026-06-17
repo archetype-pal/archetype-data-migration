@@ -50,6 +50,25 @@ WHERE d.historical_item_id IS NOT NULL
 ORDER BY d.id
 """
 
+SUPPORTED_CATALOGUE_NUMBER_COUNT_SQL = """
+SELECT count(*)
+FROM digipal_cataloguenumber c
+WHERE c.historical_item_id IS NOT NULL
+  AND EXISTS (
+    SELECT 1 FROM digipal_historicalitem h WHERE h.id = c.historical_item_id
+  )
+"""
+
+SUPPORTED_CATALOGUE_NUMBER_IDS_SQL = """
+SELECT c.id
+FROM digipal_cataloguenumber c
+WHERE c.historical_item_id IS NOT NULL
+  AND EXISTS (
+    SELECT 1 FROM digipal_historicalitem h WHERE h.id = c.historical_item_id
+  )
+ORDER BY c.id
+"""
+
 
 @dataclass(frozen=True)
 class PublicationAuthorPolicy:
@@ -217,8 +236,13 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         legacy_table="digipal_cataloguenumber",
         target_table="manuscripts_cataloguenumber",
         category="manuscripts",
-        strategy="id-preserved transformed fields",
-        notes="Legacy source_id maps to catalogue_id.",
+        strategy="id-preserved supported historical-item catalogue numbers",
+        notes=(
+            "Only catalogue numbers linked to an existing historical item can become target CatalogueNumber rows. "
+            "Unattached or dangling source catalogue numbers require explicit review."
+        ),
+        legacy_count_sql=SUPPORTED_CATALOGUE_NUMBER_COUNT_SQL,
+        legacy_ids_sql=SUPPORTED_CATALOGUE_NUMBER_IDS_SQL,
     ),
     EntityMapping(
         key="item_parts",
@@ -902,6 +926,49 @@ def check_legacy_description_relationships(legacy_conn: Connection[Any]) -> Chec
     )
 
 
+def check_legacy_catalogue_number_relationships(legacy_conn: Connection[Any]) -> CheckResult:
+    rows = _dict_rows(
+        legacy_conn,
+        """
+        SELECT
+          count(*) FILTER (WHERE c.historical_item_id IS NOT NULL AND h.id IS NOT NULL) AS supported,
+          count(*) FILTER (WHERE c.historical_item_id IS NULL) AS missing_historical_item,
+          count(*) FILTER (WHERE c.historical_item_id IS NOT NULL AND h.id IS NULL) AS dangling_historical_item
+        FROM digipal_cataloguenumber c
+        LEFT JOIN digipal_historicalitem h ON h.id = c.historical_item_id
+        """,
+    )
+    counts = {key: int(value or 0) for key, value in rows[0].items()}
+    unsupported = counts["missing_historical_item"] + counts["dangling_historical_item"]
+    details = [
+        {
+            "supported_catalogue_numbers": counts["supported"],
+            "unsupported_catalogue_numbers": unsupported,
+            **counts,
+        }
+    ]
+
+    if unsupported:
+        return CheckResult(
+            key="legacy_catalogue_number_relationships",
+            title="Legacy catalogue number relationships",
+            status="warn",
+            summary=(
+                f"{counts['supported']} legacy catalogue numbers are supported historical-item catalogue numbers; "
+                f"{unsupported} unattached or dangling catalogue numbers require review/quarantine."
+            ),
+            details=details,
+        )
+
+    return CheckResult(
+        key="legacy_catalogue_number_relationships",
+        title="Legacy catalogue number relationships",
+        status="ok",
+        summary=f"{counts['supported']} legacy catalogue numbers are supported historical-item catalogue numbers.",
+        details=details,
+    )
+
+
 def check_annotation_shape(legacy_conn: Connection[Any], target_conn: Connection[Any]) -> CheckResult:
     rows = _dict_rows(
         legacy_conn,
@@ -1031,6 +1098,7 @@ def run_audit(
         mappings = [audit_mapping(legacy_conn, target_conn, mapping) for mapping in ENTITY_MAPPINGS]
         checks = [
             check_legacy_description_relationships(legacy_conn),
+            check_legacy_catalogue_number_relationships(legacy_conn),
             check_publication_author_mapping(legacy_conn, target_conn, publication_author_policy),
             check_annotation_shape(legacy_conn, target_conn),
             check_legacy_text_exclusions(legacy_conn, target_conn),

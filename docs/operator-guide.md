@@ -29,6 +29,7 @@ This migration should be a manual deployment lane, not an automatic step on ever
 - A post-import `fail` is a blocker. `--allow-warnings` accepts reviewed warnings only and never accepts `fail`.
 - `--unsupported-description-policy fail` is the default. Use `skip` only when text-only, unattached, or dangling `digipal_description` rows have been reviewed and accepted as excluded.
 - When unsupported descriptions are skipped and `--manifest` is provided, the importer writes a sibling `*-skipped-descriptions.json` quarantine artifact with every skipped row.
+- Legacy catalogue numbers without an existing historical item are skipped from target `CatalogueNumber`; with `--manifest`, the importer writes a sibling `*-skipped-catalogue-numbers.json` quarantine artifact.
 - `--publication-author-username` must name an existing target `auth_user`; the importer does not create that user.
 - If the publications phase uses a fallback author, post-import audit should use `--publication-author-policy fallback` with the same target user so the manifest records the decision explicitly.
 
@@ -37,6 +38,8 @@ This migration should be a manual deployment lane, not an automatic step on ever
 DigiPal databases can share a schema while containing different identifiers, optional relationships, vocabularies, and data-quality cases. The checked-in audit describes one inspected source snapshot, not every DigiPal installation. Review every new source independently and do not silently remove rows to make an import pass.
 
 Legacy `digipal_description` rows may refer to a historical item or to a text. The current importer supports historical-item descriptions. Text-only descriptions and rows linked to neither entity require an explicit mapping, quarantine, or approved exclusion policy before execution. When the approved decision is exclusion, run with `--unsupported-description-policy skip`; the report records the selected policy, skipped row counts, and a quarantine artifact when `--manifest` is provided.
+
+Legacy `digipal_cataloguenumber` rows must point at an existing historical item to become target `CatalogueNumber` rows. Rows with no historical item or a dangling historical item are reported in the source profile, skipped from the target table, and exported to `*-skipped-catalogue-numbers.json` when `--manifest` is provided.
 
 ## Safety Gates
 
@@ -50,6 +53,7 @@ Legacy `digipal_description` rows may refer to a historical item or to a text. T
 | Guarded disposable reset | Recreate whole disposable trial databases instead of deleting target tables by hand. | Reset report records the disposable database name, confirmation, and follow-up migration steps. |
 | Publication author policy | Do not map publication authors by legacy numeric id. Use username/email mapping or a fallback author. | Manifest records the chosen author policy and sample resolved posts. |
 | Unsupported description policy | Treat text-only, unattached, or dangling legacy descriptions as explicit migration policy decisions. Do not skip them unless the skipped rows are reviewed and recorded. | Import report records source_profile counts, the selected unsupported-description policy, and skipped rows. |
+| Unsupported catalogue number policy | Treat catalogue numbers without an existing historical item as unmappable to target CatalogueNumber. Do not lose them silently. | Import report records source_profile counts and skipped catalogue rows; with --manifest, a *-skipped-catalogue-numbers.json quarantine artifact is written. |
 | Transaction per phase | Each import phase must be atomic and independently auditable. | Manifest records phase start/end time, status, row counts, and rollback reference. |
 | Reset sequences after explicit ids | Run sequence synchronization after id-preserving imports and before application writes resume. | Manifest records just sync-sequences output or equivalent SQL result. |
 | Target-only data is not legacy data | Create current-only workflow/product rows only from current-system sources, never by guessing legacy source data. | Manifest records skipped target-only tables or the approved current-system source for each. |
