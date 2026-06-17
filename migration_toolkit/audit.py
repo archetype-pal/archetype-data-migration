@@ -25,9 +25,13 @@ class LegacyMigrationAuditError(RuntimeError):
 
 
 PUBLICATION_AUTHOR_POLICY_LEGACY_ID = "legacy-id"
+PUBLICATION_AUTHOR_POLICY_USERNAME = "username"
+PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK = "username-fallback"
 PUBLICATION_AUTHOR_POLICY_FALLBACK = "fallback"
 PUBLICATION_AUTHOR_POLICIES: tuple[str, ...] = (
     PUBLICATION_AUTHOR_POLICY_LEGACY_ID,
+    PUBLICATION_AUTHOR_POLICY_USERNAME,
+    PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK,
     PUBLICATION_AUTHOR_POLICY_FALLBACK,
 )
 
@@ -825,6 +829,135 @@ def check_publication_fallback_author_policy(
     )
 
 
+def target_users_for_legacy_publication_authors(
+    target_conn: Connection[Any],
+    legacy_rows: list[dict[str, Any]],
+) -> dict[str, dict[str, Any]]:
+    usernames = sorted({str(row["username"]) for row in legacy_rows if row.get("username")})
+    if not usernames:
+        return {}
+    rows = _dict_rows(
+        target_conn,
+        "SELECT id, username FROM auth_user WHERE username = ANY(%s) ORDER BY username",
+        (usernames,),
+    )
+    return {str(row["username"]): row for row in rows}
+
+
+def check_publication_username_policy(
+    legacy_conn: Connection[Any],
+    target_conn: Connection[Any],
+    policy: PublicationAuthorPolicy,
+) -> CheckResult:
+    legacy_rows = legacy_publication_authors(legacy_conn)
+    target_rows = target_publication_authors(target_conn)
+    target_users = target_users_for_legacy_publication_authors(target_conn, legacy_rows)
+    fallback_author = (
+        target_author_row(target_conn, policy) if policy.mode == PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK else None
+    )
+    expected_counts: dict[str, int] = {}
+    missing_legacy_authors: list[dict[str, Any]] = []
+
+    for legacy_row in legacy_rows:
+        legacy_username = str(legacy_row["username"])
+        post_count = int(legacy_row["post_count"] or 0)
+        if legacy_username in target_users:
+            expected_username = legacy_username
+        elif fallback_author:
+            expected_username = str(fallback_author["username"])
+            missing_legacy_authors.append(legacy_row)
+        else:
+            missing_legacy_authors.append(legacy_row)
+            continue
+        expected_counts[expected_username] = expected_counts.get(expected_username, 0) + post_count
+
+    target_counts = {str(row["username"]): int(row["post_count"] or 0) for row in target_rows}
+    mismatches: list[dict[str, Any]] = []
+    for username, expected_count in sorted(expected_counts.items()):
+        actual_count = target_counts.get(username, 0)
+        if actual_count != expected_count:
+            mismatches.append(
+                {
+                    "username": username,
+                    "expected_post_count": expected_count,
+                    "target_post_count": actual_count,
+                }
+            )
+    for username, actual_count in sorted(target_counts.items()):
+        if username not in expected_counts:
+            mismatches.append(
+                {
+                    "username": username,
+                    "expected_post_count": 0,
+                    "target_post_count": actual_count,
+                }
+            )
+
+    details = [
+        {
+            "policy": {
+                "mode": policy.mode,
+                "fallback_author_id": policy.fallback_author_id,
+                "fallback_author_username": policy.fallback_author_username,
+            },
+            "fallback_author": fallback_author,
+            "legacy_authors": legacy_rows,
+            "target_users_by_username": list(target_users.values()),
+            "missing_legacy_authors": missing_legacy_authors,
+            "expected_target_author_counts": expected_counts,
+            "target_authors": target_rows,
+            "mismatches": mismatches,
+        }
+    ]
+
+    if policy.mode == PUBLICATION_AUTHOR_POLICY_USERNAME and missing_legacy_authors:
+        return CheckResult(
+            key="publication_author_mapping",
+            title="Publication author mapping",
+            status="fail",
+            summary=(
+                "Publication username policy requires every legacy publication author username to exist in the "
+                f"target. Missing target users: {len(missing_legacy_authors)}."
+            ),
+            details=details,
+        )
+    if policy.mode == PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK and missing_legacy_authors and not fallback_author:
+        return CheckResult(
+            key="publication_author_mapping",
+            title="Publication author mapping",
+            status="fail",
+            summary="Publication username-fallback policy is selected, but the fallback target author was not found.",
+            details=details,
+        )
+    if mismatches:
+        return CheckResult(
+            key="publication_author_mapping",
+            title="Publication author mapping",
+            status="fail",
+            summary="Publication author counts do not match the selected username mapping policy.",
+            details=details,
+        )
+    if missing_legacy_authors:
+        fallback_username = fallback_author["username"] if fallback_author else "<missing>"
+        return CheckResult(
+            key="publication_author_mapping",
+            title="Publication author mapping",
+            status="warn",
+            summary=(
+                "Publication username-fallback policy applied: "
+                f"{len(missing_legacy_authors)} legacy authors were assigned to fallback user {fallback_username}."
+            ),
+            details=details,
+        )
+    return CheckResult(
+        key="publication_author_mapping",
+        title="Publication author mapping",
+        status="ok",
+        summary="Publication authors map by matching legacy usernames to target usernames.",
+        details=details,
+    )
+
+
 def check_publication_author_mapping(
     legacy_conn: Connection[Any],
     target_conn: Connection[Any],
@@ -833,6 +966,8 @@ def check_publication_author_mapping(
     policy = policy or PublicationAuthorPolicy()
     if policy.mode == PUBLICATION_AUTHOR_POLICY_FALLBACK:
         return check_publication_fallback_author_policy(legacy_conn, target_conn, policy)
+    if policy.mode in (PUBLICATION_AUTHOR_POLICY_USERNAME, PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK):
+        return check_publication_username_policy(legacy_conn, target_conn, policy)
     if policy.mode != PUBLICATION_AUTHOR_POLICY_LEGACY_ID:
         raise LegacyMigrationAuditError(f"Unsupported publication author policy: {policy.mode}")
 

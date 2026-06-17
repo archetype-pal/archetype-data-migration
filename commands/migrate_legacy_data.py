@@ -8,6 +8,8 @@ from migration_toolkit.importer import (
     DESCRIPTION_POLICIES,
     DESCRIPTION_POLICY_FAIL,
     PHASE_ORDER,
+    PUBLICATION_AUTHOR_POLICIES,
+    PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK,
     ImportOptions,
     LegacyMigrationImportError,
     render_import_report_json,
@@ -80,11 +82,28 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Skip the post-import audit. Intended only for partial phase testing.",
     )
-    parser.add_argument("--publication-author-id", type=int, default=None, help="Target auth_user.id for publications.")
+    parser.add_argument(
+        "--publication-author-policy",
+        choices=PUBLICATION_AUTHOR_POLICIES,
+        default=PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK,
+        help=(
+            "How to set publication authors during import. "
+            "Default username-fallback maps by username and assigns missing authors to the fallback; "
+            "username maps by target username and fails on missing users; "
+            "fallback assigns every publication to one target author; "
+            "legacy-id preserves numeric auth_user ids only when target ids intentionally match."
+        ),
+    )
+    parser.add_argument(
+        "--publication-author-id",
+        type=int,
+        default=None,
+        help="Target auth_user.id for fallback or username-fallback publication author policies.",
+    )
     parser.add_argument(
         "--publication-author-username",
         default=None,
-        help="Target auth_user.username to assign to imported publications.",
+        help="Target auth_user.username for fallback or username-fallback publication author policies.",
     )
     parser.add_argument("--manifest", type=Path, default=None, help="Optional JSON output path for the import report.")
     return parser
@@ -102,6 +121,7 @@ def main(argv: list[str] | None = None) -> int:
         allow_warnings=options.allow_warnings,
         unsupported_description_policy=options.unsupported_description_policy,
         unsupported_description_output_path=options.unsupported_description_output,
+        publication_author_policy=options.publication_author_policy,
         publication_author_id=options.publication_author_id,
         publication_author_username=options.publication_author_username,
         skip_post_audit=options.skip_post_audit,

@@ -5,6 +5,9 @@ import pytest
 from commands.migrate_legacy_data import main as migrate_main
 from migration_toolkit.importer import (
     DESCRIPTION_POLICY_SKIP,
+    PUBLICATION_AUTHOR_POLICY_USERNAME,
+    PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK,
+    ImportOptions,
     ImportReport,
     LegacyMigrationImportError,
     PhaseResult,
@@ -16,12 +19,14 @@ from migration_toolkit.importer import (
     legacy_image_path,
     parse_annotation,
     parse_date_weights,
+    resolve_publication_author_assignments,
     source_profile_blockers,
     source_profile_warnings,
     unsupported_catalogue_number_count,
     unsupported_catalogue_number_export_to_dict,
     unsupported_description_count,
     unsupported_description_export_to_dict,
+    validate_import_options,
     write_unsupported_catalogue_number_export,
     write_unsupported_description_export,
 )
@@ -106,6 +111,130 @@ def test_migrate_legacy_data_cli_renders_report(monkeypatch, capsys):
     assert data["dry_run"] is True
     assert data["phases"][0]["rows_planned"] == {"manuscripts_itemimage": 2}
     assert data["source_profile"] == {}
+
+
+def test_migrate_legacy_data_cli_passes_publication_author_policy(monkeypatch):
+    def fake_run_import(options):
+        assert options.publication_author_policy == PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK
+        assert options.publication_author_username == "anthony"
+        return ImportReport(
+            dry_run=True,
+            legacy_database="legacy_source",
+            target_database="new_target",
+            phases=[],
+            target_row_counts_before={},
+            target_row_counts_after={},
+        )
+
+    monkeypatch.setattr("commands.migrate_legacy_data.run_import", fake_run_import)
+
+    assert (
+        migrate_main(
+            [
+                "--phase",
+                "publications",
+                "--publication-author-policy",
+                "username-fallback",
+                "--publication-author-username",
+                "anthony",
+            ]
+        )
+        == 0
+    )
+
+
+def test_migrate_legacy_data_cli_defaults_to_username_fallback_author_policy(monkeypatch):
+    def fake_run_import(options):
+        assert options.publication_author_policy == PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK
+        assert options.publication_author_username == "anthony"
+        return ImportReport(
+            dry_run=True,
+            legacy_database="legacy_source",
+            target_database="new_target",
+            phases=[],
+            target_row_counts_before={},
+            target_row_counts_after={},
+        )
+
+    monkeypatch.setattr("commands.migrate_legacy_data.run_import", fake_run_import)
+
+    assert (
+        migrate_main(
+            [
+                "--phase",
+                "publications",
+                "--publication-author-username",
+                "anthony",
+            ]
+        )
+        == 0
+    )
+
+
+def test_resolve_publication_author_assignments_maps_by_username(monkeypatch):
+    def fake_fetch_rows(conn, query, params=None):
+        query_text = str(query)
+        if "FROM blog_blogpost" in query_text:
+            return [{"id": 2, "username": "sbrookes", "post_count": 51}]
+        if "FROM auth_user WHERE username = ANY" in query_text:
+            return [{"id": 8, "username": "sbrookes"}]
+        raise AssertionError(f"Unexpected query: {query_text}")
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+
+    assignments, policy, report = resolve_publication_author_assignments(
+        object(),
+        object(),
+        ImportOptions(publication_author_policy=PUBLICATION_AUTHOR_POLICY_USERNAME),
+    )
+
+    assert assignments == {2: 8}
+    assert policy.mode == PUBLICATION_AUTHOR_POLICY_USERNAME
+    assert report["mapped_legacy_author_count"] == 1
+    assert report["fallback_legacy_author_count"] == 0
+
+
+def test_resolve_publication_author_assignments_uses_fallback_for_missing_username(monkeypatch):
+    def fake_fetch_rows(conn, query, params=None):
+        query_text = str(query)
+        if "FROM blog_blogpost" in query_text:
+            return [
+                {"id": 2, "username": "sbrookes", "post_count": 51},
+                {"id": 19, "username": "gnoel", "post_count": 1},
+            ]
+        if "FROM auth_user WHERE username = ANY" in query_text:
+            return [{"id": 8, "username": "sbrookes"}]
+        raise AssertionError(f"Unexpected query: {query_text}")
+
+    def fake_optional_scalar(conn, query, params=None):
+        query_text = str(query)
+        if "SELECT id FROM auth_user WHERE username" in query_text:
+            return 10
+        if "SELECT username FROM auth_user WHERE id" in query_text:
+            return "anthony"
+        raise AssertionError(f"Unexpected query: {query_text}")
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.optional_scalar", fake_optional_scalar)
+
+    assignments, policy, report = resolve_publication_author_assignments(
+        object(),
+        object(),
+        ImportOptions(
+            publication_author_policy=PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK,
+            publication_author_username="anthony",
+        ),
+    )
+
+    assert assignments == {2: 8, 19: 10}
+    assert policy.mode == PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK
+    assert policy.fallback_author_username == "anthony"
+    assert report["fallback_legacy_author_count"] == 1
+
+
+def test_validate_import_options_rejects_unknown_publication_author_policy():
+    with pytest.raises(LegacyMigrationImportError, match="Publication author policy"):
+        validate_import_options(ImportOptions(publication_author_policy="unknown"))
 
 
 def test_source_profile_warnings_describe_unsupported_source_shapes():

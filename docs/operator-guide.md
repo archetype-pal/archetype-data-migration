@@ -30,8 +30,12 @@ This migration should be a manual deployment lane, not an automatic step on ever
 - `--unsupported-description-policy fail` is the default. Use `skip` only when text-only, unattached, or dangling `digipal_description` rows have been reviewed and accepted as excluded.
 - When unsupported descriptions are skipped and `--manifest` is provided, the importer writes a sibling `*-skipped-descriptions.json` quarantine artifact with every skipped row.
 - Legacy catalogue numbers without an existing historical item are skipped from target `CatalogueNumber`; with `--manifest`, the importer writes a sibling `*-skipped-catalogue-numbers.json` quarantine artifact.
-- `--publication-author-username` must name an existing target `auth_user`; the importer does not create that user.
-- If the publications phase uses a fallback author, post-import audit should use `--publication-author-policy fallback` with the same target user so the manifest records the decision explicitly.
+- `--publication-author-policy username` maps legacy authors to target users with the same username.
+- `--publication-author-policy username-fallback` maps by username and assigns missing legacy authors to one explicit fallback target user.
+- `--publication-author-policy fallback` assigns every imported publication to one explicit fallback target user.
+- `--publication-author-policy legacy-id` preserves numeric author ids only when target `auth_user.id` values intentionally match the legacy database.
+- `--publication-author-username` must name an existing target `auth_user` when the selected policy needs a fallback user; the importer does not create that user.
+- Post-import audit should use the same publication author policy as the import so the manifest records the decision explicitly.
 
 ## Source Database Variability
 
@@ -51,7 +55,7 @@ Legacy `digipal_cataloguenumber` rows must point at an existing historical item 
 | Read-only audit gate | Run audit_legacy_migration before and after import. An empty-target baseline normally fails for missing target rows; after import, fail is a blocker and warnings require sign-off. | Manifest stores baseline and post-import audit paths, statuses, and accepted warnings. |
 | Empty target by default | Run the write importer only against a freshly migrated target DB unless explicitly approved. | Preflight row-count report is attached to the manifest. |
 | Guarded disposable reset | Recreate whole disposable trial databases instead of deleting target tables by hand. | Reset report records the disposable database name, confirmation, and follow-up migration steps. |
-| Publication author policy | Do not map publication authors by legacy numeric id. Use username/email mapping or a fallback author. | Manifest records the chosen author policy and sample resolved posts. |
+| Publication author policy | Prefer username mapping. Use a fallback author only for legacy authors missing in the target, or explicitly choose fallback when all publications must use one author. Do not use legacy numeric ids unless target ids intentionally match. | Manifest records the chosen author policy and sample resolved posts. |
 | Unsupported description policy | Treat text-only, unattached, or dangling legacy descriptions as explicit migration policy decisions. Do not skip them unless the skipped rows are reviewed and recorded. | Import report records source_profile counts, the selected unsupported-description policy, and skipped rows. |
 | Unsupported catalogue number policy | Treat catalogue numbers without an existing historical item as unmappable to target CatalogueNumber. Do not lose them silently. | Import report records source_profile counts and skipped catalogue rows; with --manifest, a *-skipped-catalogue-numbers.json quarantine artifact is written. |
 | Transaction per phase | Each import phase must be atomic and independently auditable. | Manifest records phase start/end time, status, row counts, and rollback reference. |
@@ -117,10 +121,11 @@ Rollback: Restore the target dump with pg_restore after dropping/recreating the 
 Define the identity policy required before publication rows can be imported safely.
 
 Importer contract:
-- Map legacy users by username/email, or select one explicit fallback author.
-- Do not rely on numeric legacy auth_user ids in a fresh target.
-- Record original legacy username/email where the fallback author is used.
-- Run post-import audit with the same fallback-author policy when a fallback author is selected.
+- Map legacy users by username first.
+- Use one explicit fallback target author only for missing usernames, unless the migration owner approves assigning every publication to one fallback author.
+- Do not rely on numeric legacy auth_user ids in a fresh target unless target ids intentionally match.
+- Record original legacy usernames where the fallback author is used.
+- Run post-import audit with the same publication author policy selected for import.
 
 Validation:
 - Publication author audit warning is either eliminated or explicitly accepted.
@@ -315,10 +320,10 @@ Rollback: Restore the pre-cutover target dump and return traffic to the previous
 ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --format markdown --output reports/legacy-migration-audit.md
 ```
 
-### Write the post-import audit with fallback publication author policy
+### Write the post-import audit with username fallback publication author policy
 
 ```bash
-./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --format markdown --publication-author-policy fallback --publication-author-username <target-author-username> --output reports/legacy-migration-post-audit.md
+./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --format markdown --publication-author-policy username-fallback --publication-author-username <target-author-username> --output reports/legacy-migration-post-audit.md
 ```
 
 ### Plan the legacy import without writing data
@@ -330,7 +335,7 @@ Rollback: Restore the pre-cutover target dump and return traffic to the previous
 ### Run the legacy import against a fresh target database
 
 ```bash
-./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute --publication-author-username <target-author-username> --allow-warnings --manifest reports/legacy-migration-import-run.json
+./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute --publication-author-policy username-fallback --publication-author-username <target-author-username> --allow-warnings --manifest reports/legacy-migration-import-run.json
 ```
 
 ### Recreate a disposable target between trials
@@ -380,15 +385,16 @@ Execute only against a backed-up, freshly migrated target database:
 ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute \
   --legacy-url "$LEGACY_DATABASE_URL" \
   --target-url "$TARGET_DATABASE_URL" \
+  --publication-author-policy username-fallback \
   --publication-author-username <target-author-username> \
   --allow-warnings \
   --manifest reports/legacy-migration-import-run.json
 ```
 
-The publication author username must already exist in the target database. `--allow-warnings` permits reviewed warning status but never permits fail status.
+The publication author username must already exist in the target database when the selected policy needs a fallback user. `--allow-warnings` permits reviewed warning status but never permits fail status.
 
 If the source profile reports text-only, unattached, or dangling `digipal_description` rows, the default execute mode stops before writing. To run after an approved exclusion decision, add `--unsupported-description-policy skip`; the command then imports only descriptions linked to an existing historical item and records skipped rows in the manifest. With `--manifest`, the command also writes a sibling `*-skipped-descriptions.json` quarantine artifact.
 
 The command refuses same-database URLs, missing tables, and non-empty import targets by default. Use `--allow-non-empty-target` only for an approved recovery or incremental trial.
 
-For repeat trials, use `recreate_disposable_target` on an explicitly named disposable database. After recreating it, apply backend migrations and recreate/verify the target publication author.
+For repeat trials, use `recreate_disposable_target` on an explicitly named disposable database. After recreating it, apply backend migrations and recreate/verify any target publication author needed by the selected policy.

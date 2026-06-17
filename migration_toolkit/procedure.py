@@ -72,7 +72,10 @@ SAFETY_GATES: tuple[SafetyGate, ...] = (
     SafetyGate(
         key="author_policy",
         title="Publication author policy",
-        rule="Do not map publication authors by legacy numeric id. Use username/email mapping or a fallback author.",
+        rule=(
+            "Do not map publication authors by legacy numeric id unless target ids intentionally match. "
+            "Prefer username mapping or username mapping with explicit fallback."
+        ),
         evidence="Manifest records the chosen author policy and sample resolved posts.",
     ),
     SafetyGate(
@@ -169,10 +172,12 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         source_tables=("auth_user", "blog_blogpost"),
         target_tables=("auth_user", "publications_publication"),
         importer_contract=(
-            "Map legacy users by username/email, or select one explicit fallback author.",
-            "Do not rely on numeric legacy auth_user ids in a fresh target.",
-            "Record original legacy username/email where the fallback author is used.",
-            "Run post-import audit with the same fallback-author policy when a fallback author is selected.",
+            "Map legacy users by username first.",
+            "Use one explicit fallback target author only for missing usernames, unless the migration owner approves "
+            "assigning every publication to one fallback author.",
+            "Do not rely on numeric legacy auth_user ids in a fresh target unless target ids intentionally match.",
+            "Record original legacy usernames where the fallback author is used.",
+            "Run post-import audit with the same publication author policy selected for import.",
         ),
         validation=(
             "Publication author audit warning is either eliminated or explicitly accepted.",
@@ -433,9 +438,9 @@ COMMANDS: tuple[tuple[str, str], ...] = (
         "--format markdown --output reports/legacy-migration-audit.md",
     ),
     (
-        "Write the post-import audit with fallback publication author policy",
+        "Write the post-import audit with username fallback publication author policy",
         "./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration "
-        "--format markdown --publication-author-policy fallback "
+        "--format markdown --publication-author-policy username-fallback "
         "--publication-author-username <target-author-username> "
         "--output reports/legacy-migration-post-audit.md",
     ),
@@ -447,6 +452,7 @@ COMMANDS: tuple[tuple[str, str], ...] = (
     (
         "Run the legacy import against a fresh target database",
         "./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute "
+        "--publication-author-policy username-fallback "
         "--publication-author-username <target-author-username> "
         "--allow-warnings --manifest reports/legacy-migration-import-run.json",
     ),
@@ -641,11 +647,17 @@ def render_procedure_markdown(audit_report: AuditReport | None = None) -> str:
             "- Legacy catalogue numbers without an existing historical item are skipped from target "
             "`CatalogueNumber`; with `--manifest`, the importer writes a sibling "
             "`*-skipped-catalogue-numbers.json` quarantine artifact.",
-            "- `--publication-author-username` must name an existing target `auth_user`; the importer does not "
-            "create that user.",
-            "- If the publications phase uses a fallback author, post-import audit should use "
-            "`--publication-author-policy fallback` with the same target user so the manifest records the "
-            "decision explicitly.",
+            "- `--publication-author-policy username` maps legacy authors to target users with the same username.",
+            "- `--publication-author-policy username-fallback` maps by username and assigns missing legacy authors "
+            "to one explicit fallback target user.",
+            "- `--publication-author-policy fallback` assigns every imported publication to one explicit fallback "
+            "target user.",
+            "- `--publication-author-policy legacy-id` preserves numeric author ids only when target `auth_user.id` "
+            "values intentionally match the legacy database.",
+            "- `--publication-author-username` must name an existing target `auth_user` when the selected policy "
+            "needs a fallback user; the importer does not create that user.",
+            "- Post-import audit should use the same publication author policy as the import so the manifest "
+            "records the decision explicitly.",
             "",
             "## Source Database Variability",
             "",
@@ -755,13 +767,15 @@ def render_procedure_markdown(audit_report: AuditReport | None = None) -> str:
             "./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute \\",
             '  --legacy-url "$LEGACY_DATABASE_URL" \\',
             '  --target-url "$TARGET_DATABASE_URL" \\',
+            "  --publication-author-policy username-fallback \\",
             "  --publication-author-username <target-author-username> \\",
             "  --allow-warnings \\",
             "  --manifest reports/legacy-migration-import-run.json",
             "```",
             "",
-            "The publication author username must already exist in the target database. `--allow-warnings` permits "
-            "reviewed warning status but never permits fail status.",
+            "The publication author username must already exist in the target database when the selected policy "
+            "needs a fallback user. `--allow-warnings` permits reviewed warning status but never permits fail "
+            "status.",
             "",
             "If the source profile reports text-only, unattached, or dangling `digipal_description` rows, the "
             "default execute mode stops before writing. To run after an approved exclusion decision, add "

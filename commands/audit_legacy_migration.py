@@ -8,6 +8,7 @@ from migration_toolkit.audit import (
     PUBLICATION_AUTHOR_POLICIES,
     PUBLICATION_AUTHOR_POLICY_FALLBACK,
     PUBLICATION_AUTHOR_POLICY_LEGACY_ID,
+    PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK,
     LegacyMigrationAuditError,
     PublicationAuthorPolicy,
     legacy_url_from_env,
@@ -51,6 +52,7 @@ def build_parser() -> argparse.ArgumentParser:
         default=PUBLICATION_AUTHOR_POLICY_LEGACY_ID,
         help=(
             "How to audit publication authors. Default legacy-id compares legacy numeric user IDs. "
+            "Use username/username-fallback after an import that mapped legacy authors by target username. "
             "Use fallback after an import that intentionally assigned publications to one target author."
         ),
     )
@@ -58,12 +60,12 @@ def build_parser() -> argparse.ArgumentParser:
         "--publication-author-id",
         type=int,
         default=None,
-        help="Expected fallback target auth_user.id when --publication-author-policy fallback is used.",
+        help="Expected fallback target auth_user.id when fallback or username-fallback is used.",
     )
     parser.add_argument(
         "--publication-author-username",
         default=None,
-        help="Expected fallback target auth_user.username when --publication-author-policy fallback is used.",
+        help="Expected fallback target auth_user.username when fallback or username-fallback is used.",
     )
     return parser
 
@@ -76,12 +78,14 @@ def main(argv: list[str] | None = None) -> int:
     if options.publication_author_id is not None and options.publication_author_username:
         parser.error("Use either --publication-author-id or --publication-author-username, not both.")
     if (
-        options.publication_author_policy == PUBLICATION_AUTHOR_POLICY_FALLBACK
+        options.publication_author_policy
+        in (PUBLICATION_AUTHOR_POLICY_FALLBACK, PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK)
         and options.publication_author_id is None
         and not options.publication_author_username
     ):
         parser.error(
-            "--publication-author-policy fallback requires --publication-author-id or --publication-author-username."
+            "--publication-author-policy fallback/username-fallback requires --publication-author-id or "
+            "--publication-author-username."
         )
 
     try:

@@ -67,7 +67,8 @@ just test
 just procedure
 just audit
 just dry-run-import
-just execute-import <target-author-username>
+just execute-import-username-fallback <target-author-username>
+just execute-import <fallback-author-username>
 just recreate-disposable-target <disposable-db-name>
 ```
 
@@ -78,11 +79,12 @@ The commands have different purposes:
 | `just procedure` | Generate the operator guide and manifest template. | Documentation rendered; no migration was tested or executed. |
 | `just audit` | Compare the current source and target contents without writing. | The audit completed and produced evidence. An empty target normally produces `fail` and a non-zero command exit because source rows are missing from the target. |
 | `just dry-run-import` | Check connections, required tables, planning queries, phase order, source-profile warnings, and expected row counts. | Planning completed. Inserts, foreign keys, target constraints, and post-import equality were not tested. |
-| `just execute-import USERNAME` | Write supported mappings into a fresh target and run the post-import audit. | All write phases completed and the post-import audit returned `ok` or an explicitly accepted `warn`. |
+| `just execute-import-username-fallback USERNAME` | Write supported mappings into a fresh target, mapping publication authors by username and using `USERNAME` only for missing target users. | All write phases completed and the post-import audit returned `ok` or an explicitly accepted `warn`. |
+| `just execute-import USERNAME` | Write supported mappings into a fresh target and intentionally assign every imported publication to one fallback author. | All write phases completed and the post-import audit returned the expected fallback-author warning. |
 
 `USERNAME` must already exist in the target database as an `auth_user.username`.
-It is used as the publication author or fallback author; it is not a new user
-created by the migration command.
+It is used only when the selected publication author policy needs a fallback
+target user; it is not a new user created by the migration command.
 
 Audit status must be interpreted in context:
 
@@ -100,13 +102,23 @@ source contains unsupported description relationships, unsupported catalogue
 number relationships, broken allograph-character links, or a missing publication
 author policy.
 
-If the publications phase intentionally uses one fallback author, run post-import
+Publication author import supports explicit policies:
+
+- `username`: map each legacy author to a target user with the same username.
+- `username-fallback`: map by username and assign missing legacy authors to one
+  approved fallback target user.
+- `fallback`: assign every imported publication to one approved fallback target
+  user.
+- `legacy-id`: preserve numeric author IDs only when target `auth_user.id`
+  values intentionally match the legacy database.
+
+If the publications phase intentionally uses a fallback user, run post-import
 audit with the same policy so the warning records the decision instead of only
 showing a legacy numeric-ID mismatch:
 
 ```bash
 ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration \
-  --publication-author-policy fallback \
+  --publication-author-policy username-fallback \
   --publication-author-username <target-author-username>
 ```
 

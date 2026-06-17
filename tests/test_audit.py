@@ -2,6 +2,8 @@ from commands.audit_legacy_migration import main as audit_main
 from migration_toolkit.audit import (
     ENTITY_MAPPINGS,
     PUBLICATION_AUTHOR_POLICY_FALLBACK,
+    PUBLICATION_AUTHOR_POLICY_USERNAME,
+    PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK,
     AuditReport,
     CheckResult,
     IdComparison,
@@ -236,6 +238,70 @@ def test_publication_author_fallback_policy_fails_on_mixed_target_authors(monkey
 
     assert result.status == "fail"
     assert "other target authors are present" in result.summary
+
+
+def test_publication_author_username_policy_ok_when_counts_match(monkeypatch):
+    def fake_dict_rows(conn, query, params=None):
+        query_text = str(query)
+        if "FROM blog_blogpost" in query_text:
+            return [
+                {"id": 2, "username": "sbrookes", "post_count": 51},
+                {"id": 3, "username": "pstokes", "post_count": 127},
+            ]
+        if "FROM auth_user WHERE username = ANY" in query_text:
+            return [{"id": 8, "username": "sbrookes"}, {"id": 9, "username": "pstokes"}]
+        if "FROM publications_publication" in query_text:
+            return [
+                {"id": 8, "username": "sbrookes", "post_count": 51},
+                {"id": 9, "username": "pstokes", "post_count": 127},
+            ]
+        raise AssertionError(f"Unexpected query: {query_text}")
+
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", fake_dict_rows)
+
+    result = check_publication_author_mapping(
+        object(),
+        object(),
+        PublicationAuthorPolicy(mode=PUBLICATION_AUTHOR_POLICY_USERNAME),
+    )
+
+    assert result.status == "ok"
+    assert "map by matching legacy usernames" in result.summary
+
+
+def test_publication_author_username_fallback_policy_warns_when_fallback_used(monkeypatch):
+    def fake_dict_rows(conn, query, params=None):
+        query_text = str(query)
+        if "FROM auth_user WHERE username = %s" in query_text:
+            return [{"id": 10, "username": "anthony"}]
+        if "FROM blog_blogpost" in query_text:
+            return [
+                {"id": 2, "username": "sbrookes", "post_count": 51},
+                {"id": 19, "username": "gnoel", "post_count": 1},
+            ]
+        if "FROM auth_user WHERE username = ANY" in query_text:
+            return [{"id": 8, "username": "sbrookes"}]
+        if "FROM publications_publication" in query_text:
+            return [
+                {"id": 8, "username": "sbrookes", "post_count": 51},
+                {"id": 10, "username": "anthony", "post_count": 1},
+            ]
+        raise AssertionError(f"Unexpected query: {query_text}")
+
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", fake_dict_rows)
+
+    result = check_publication_author_mapping(
+        object(),
+        object(),
+        PublicationAuthorPolicy(
+            mode=PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK,
+            fallback_author_username="anthony",
+        ),
+    )
+
+    assert result.status == "warn"
+    assert "username-fallback policy applied" in result.summary
+    assert result.details[0]["missing_legacy_authors"] == [{"id": 19, "username": "gnoel", "post_count": 1}]
 
 
 def test_historical_description_mapping_counts_only_supported_rows():

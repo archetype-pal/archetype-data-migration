@@ -13,7 +13,11 @@ from psycopg import Connection
 from psycopg.rows import dict_row
 
 from migration_toolkit.audit import (
+    PUBLICATION_AUTHOR_POLICIES,
     PUBLICATION_AUTHOR_POLICY_FALLBACK,
+    PUBLICATION_AUTHOR_POLICY_LEGACY_ID,
+    PUBLICATION_AUTHOR_POLICY_USERNAME,
+    PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK,
     LegacyMigrationAuditError,
     PublicationAuthorPolicy,
     configure_read_only_session,
@@ -316,6 +320,7 @@ class ImportOptions:
     allow_warnings: bool = False
     unsupported_description_policy: str = DESCRIPTION_POLICY_FAIL
     unsupported_description_output_path: Path | None = None
+    publication_author_policy: str = PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK
     publication_author_id: int | None = None
     publication_author_username: str | None = None
     skip_post_audit: bool = False
@@ -364,10 +369,17 @@ class ImportReport:
 
 
 class ImportContext:
-    def __init__(self, legacy_conn: Connection[Any], target_conn: Connection[Any], options: ImportOptions) -> None:
+    def __init__(
+        self,
+        legacy_conn: Connection[Any],
+        target_conn: Connection[Any],
+        options: ImportOptions,
+        publication_author_assignments: dict[int, int] | None = None,
+    ) -> None:
         self.legacy_conn = legacy_conn
         self.target_conn = target_conn
         self.options = options
+        self.publication_author_assignments = publication_author_assignments or {}
 
 
 def utc_now_iso() -> str:
@@ -861,6 +873,30 @@ def legacy_publication_author_profile(legacy_conn: Connection[Any]) -> dict[str,
     return {"authors": rows}
 
 
+def legacy_publication_author_ids(legacy_conn: Connection[Any]) -> list[int]:
+    return [int(row["id"]) for row in legacy_publication_author_profile(legacy_conn)["authors"]]
+
+
+def missing_target_publication_author_ids(legacy_conn: Connection[Any], target_conn: Connection[Any]) -> list[int]:
+    legacy_author_ids = legacy_publication_author_ids(legacy_conn)
+    if not legacy_author_ids:
+        return []
+    rows = fetch_rows(target_conn, "SELECT id FROM auth_user WHERE id = ANY(%s)", (legacy_author_ids,))
+    target_author_ids = {int(row["id"]) for row in rows}
+    return sorted(author_id for author_id in legacy_author_ids if author_id not in target_author_ids)
+
+
+def target_users_by_username(target_conn: Connection[Any], usernames: list[str]) -> dict[str, dict[str, Any]]:
+    if not usernames:
+        return {}
+    rows = fetch_rows(
+        target_conn,
+        "SELECT id, username FROM auth_user WHERE username = ANY(%s) ORDER BY username",
+        (sorted(set(usernames)),),
+    )
+    return {str(row["username"]): row for row in rows}
+
+
 def build_source_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
     return {
         "description_relationships": description_relationship_profile(legacy_conn),
@@ -980,6 +1016,119 @@ def target_author_username(conn: Connection[Any], author_id: int) -> str:
     if username is None:
         raise LegacyMigrationImportError(f"No target auth_user found for id {author_id}")
     return str(username)
+
+
+def resolve_publication_author_assignments(
+    legacy_conn: Connection[Any],
+    target_conn: Connection[Any],
+    options: ImportOptions,
+) -> tuple[dict[int, int], PublicationAuthorPolicy, dict[str, Any]]:
+    legacy_authors = legacy_publication_author_profile(legacy_conn)["authors"]
+
+    if options.publication_author_policy == PUBLICATION_AUTHOR_POLICY_FALLBACK:
+        resolved_author_id = resolve_publication_author_id(
+            target_conn,
+            author_id=options.publication_author_id,
+            username=options.publication_author_username,
+        )
+        resolved_author_username = target_author_username(target_conn, resolved_author_id)
+        return (
+            {int(row["id"]): resolved_author_id for row in legacy_authors},
+            PublicationAuthorPolicy(
+                mode=PUBLICATION_AUTHOR_POLICY_FALLBACK,
+                fallback_author_id=resolved_author_id,
+                fallback_author_username=resolved_author_username,
+            ),
+            {
+                "mode": PUBLICATION_AUTHOR_POLICY_FALLBACK,
+                "target_author_id": resolved_author_id,
+                "target_author_username": resolved_author_username,
+                "status": "resolved",
+            },
+        )
+
+    if options.publication_author_policy == PUBLICATION_AUTHOR_POLICY_LEGACY_ID:
+        missing_ids = missing_target_publication_author_ids(legacy_conn, target_conn)
+        if missing_ids:
+            sample_ids = missing_ids[:10]
+            raise LegacyMigrationImportError(
+                "Legacy publication author id preservation requires matching target auth_user ids. "
+                f"Missing target auth_user ids (sample): {', '.join(str(value) for value in sample_ids)}"
+            )
+        return (
+            {int(row["id"]): int(row["id"]) for row in legacy_authors},
+            PublicationAuthorPolicy(mode=PUBLICATION_AUTHOR_POLICY_LEGACY_ID),
+            {
+                "mode": PUBLICATION_AUTHOR_POLICY_LEGACY_ID,
+                "status": "resolved",
+                "mapped_legacy_author_count": len(legacy_authors),
+            },
+        )
+
+    if options.publication_author_policy in (
+        PUBLICATION_AUTHOR_POLICY_USERNAME,
+        PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK,
+    ):
+        usernames = [str(row["username"]) for row in legacy_authors if row.get("username")]
+        target_users = target_users_by_username(target_conn, usernames)
+        fallback_author_id = None
+        fallback_author_username = None
+        if options.publication_author_policy == PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK:
+            fallback_author_id = resolve_publication_author_id(
+                target_conn,
+                author_id=options.publication_author_id,
+                username=options.publication_author_username,
+            )
+            fallback_author_username = target_author_username(target_conn, fallback_author_id)
+
+        assignments: dict[int, int] = {}
+        missing_authors: list[dict[str, Any]] = []
+        for legacy_author in legacy_authors:
+            legacy_id = int(legacy_author["id"])
+            legacy_username = str(legacy_author["username"])
+            target_user = target_users.get(legacy_username)
+            if target_user:
+                assignments[legacy_id] = int(target_user["id"])
+                continue
+            missing_authors.append(legacy_author)
+            if fallback_author_id is not None:
+                assignments[legacy_id] = fallback_author_id
+
+        if missing_authors and fallback_author_id is None:
+            sample = ", ".join(str(row["username"]) for row in missing_authors[:10])
+            raise LegacyMigrationImportError(
+                "Publication username policy requires matching target users for every legacy author. "
+                f"Missing target usernames (sample): {sample}"
+            )
+
+        report: dict[str, Any] = {
+            "mode": options.publication_author_policy,
+            "status": "resolved",
+            "mapped_legacy_author_count": len(legacy_authors) - len(missing_authors),
+            "fallback_legacy_author_count": len(missing_authors),
+        }
+        if fallback_author_id is not None:
+            report["fallback_author_id"] = fallback_author_id
+            report["fallback_author_username"] = fallback_author_username
+        if missing_authors:
+            report["fallback_legacy_author_sample"] = [
+                {"id": row["id"], "username": row["username"], "post_count": row["post_count"]}
+                for row in missing_authors[:10]
+            ]
+        return (
+            assignments,
+            PublicationAuthorPolicy(
+                mode=options.publication_author_policy,
+                fallback_author_id=fallback_author_id,
+                fallback_author_username=fallback_author_username,
+            ),
+            report,
+        )
+
+    formatted = ", ".join(PUBLICATION_AUTHOR_POLICIES)
+    raise LegacyMigrationImportError(
+        f"Publication author policy must be one of: {formatted}. Got: {options.publication_author_policy}"
+    )
 
 
 def reset_sequences(conn: Connection[Any], tables: tuple[str, ...] = SEQUENCE_TABLES) -> int:
@@ -1761,11 +1910,6 @@ def import_annotations(ctx: ImportContext) -> dict[str, int]:
 
 
 def import_publications(ctx: ImportContext) -> dict[str, int]:
-    author_id = resolve_publication_author_id(
-        ctx.target_conn,
-        author_id=ctx.options.publication_author_id,
-        username=ctx.options.publication_author_username,
-    )
     legacy_conn = ctx.legacy_conn
     target_conn = ctx.target_conn
     rows_imported: dict[str, int] = {}
@@ -1806,6 +1950,7 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
         """
         SELECT
           b.id,
+          b.user_id AS legacy_author_id,
           b.title,
           b.slug,
           b.content,
@@ -1853,7 +1998,7 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
                 "slug": truncate(row["slug"] or f"legacy-publication-{row['id']}", 150),
                 "content": text_or_blank(row["content"]),
                 "preview": text_or_blank(row["description"]),
-                "author_id": author_id,
+                "author_id": ctx.publication_author_assignments[int(row["legacy_author_id"])],
                 "is_blog_post": row["is_blog_post"],
                 "is_news": row["is_news"],
                 "is_featured": row["is_featured"],
@@ -1987,6 +2132,15 @@ def validate_import_options(options: ImportOptions) -> None:
         raise LegacyMigrationImportError(
             f"Unsupported description policy must be one of: {formatted}. Got: {options.unsupported_description_policy}"
         )
+    if options.publication_author_policy not in PUBLICATION_AUTHOR_POLICIES:
+        formatted = ", ".join(PUBLICATION_AUTHOR_POLICIES)
+        raise LegacyMigrationImportError(
+            f"Publication author policy must be one of: {formatted}. Got: {options.publication_author_policy}"
+        )
+    if options.publication_author_id is not None and options.publication_author_username:
+        raise LegacyMigrationImportError(
+            "Use either --publication-author-id or --publication-author-username, not both"
+        )
 
 
 def run_import(options: ImportOptions) -> ImportReport:
@@ -2047,31 +2201,24 @@ def run_import(options: ImportOptions) -> ImportReport:
                 )
         publication_author_policy: PublicationAuthorPolicy | None = None
         publication_author_policy_report: dict[str, Any] = {"mode": "not-applicable"}
+        publication_author_assignments: dict[int, int] = {}
         if "publications" in phases:
             publication_author_policy_report = {
-                "mode": PUBLICATION_AUTHOR_POLICY_FALLBACK,
+                "mode": options.publication_author_policy,
                 "target_author_id": options.publication_author_id,
                 "target_author_username": options.publication_author_username,
                 "status": "unresolved",
             }
             try:
-                resolved_author_id = resolve_publication_author_id(
+                (
+                    publication_author_assignments,
+                    publication_author_policy,
+                    publication_author_policy_report,
+                ) = resolve_publication_author_assignments(
+                    legacy_conn,
                     target_conn,
-                    author_id=options.publication_author_id,
-                    username=options.publication_author_username,
+                    options,
                 )
-                resolved_author_username = target_author_username(target_conn, resolved_author_id)
-                publication_author_policy = PublicationAuthorPolicy(
-                    mode=PUBLICATION_AUTHOR_POLICY_FALLBACK,
-                    fallback_author_id=resolved_author_id,
-                    fallback_author_username=resolved_author_username,
-                )
-                publication_author_policy_report = {
-                    "mode": PUBLICATION_AUTHOR_POLICY_FALLBACK,
-                    "target_author_id": resolved_author_id,
-                    "target_author_username": resolved_author_username,
-                    "status": "resolved",
-                }
             except LegacyMigrationImportError as exc:
                 publication_author_policy_report["message"] = str(exc)
                 if options.execute:
@@ -2088,7 +2235,12 @@ def run_import(options: ImportOptions) -> ImportReport:
         if options.execute:
             assert_target_ready(before_counts, phases, allow_non_empty_target=options.allow_non_empty_target)
 
-        context = ImportContext(legacy_conn, target_conn, options)
+        context = ImportContext(
+            legacy_conn,
+            target_conn,
+            options,
+            publication_author_assignments=publication_author_assignments,
+        )
         phase_results: list[PhaseResult] = []
 
         for phase in phases:

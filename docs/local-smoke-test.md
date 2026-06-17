@@ -47,7 +47,9 @@ export TARGET_DATABASE_URL="postgresql://postgres:${POSTGRES_PASSWORD}@postgres:
   api python manage.py migrate --noinput
 ```
 
-Create a fallback publication author in the disposable target:
+Create a fallback target publication author in the disposable target. The
+`username-fallback` policy uses this user only for legacy authors whose username
+does not exist in the target:
 
 ```bash
 "$DOCKER_BIN" compose \
@@ -74,8 +76,9 @@ DOCKER_BIN="$DOCKER_BIN" \
 ```
 
 The command refuses normal database names by default. After it recreates the
-empty database, rerun backend migrations and recreate/verify the fallback
-publication author before starting the next dry run.
+empty database, rerun backend migrations and recreate/verify any fallback target
+publication author needed by the selected policy before starting the next dry
+run.
 
 ## Dry Run
 
@@ -119,6 +122,7 @@ LEGACY_DATABASE_NAME="$LEGACY_DATABASE_NAME" \
 DOCKER_BIN="$DOCKER_BIN" \
 ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data \
   --execute \
+  --publication-author-policy username-fallback \
   --publication-author-username legacy-import-author \
   --allow-warnings \
   --manifest reports/local-smoke-import-run.json
@@ -149,7 +153,7 @@ LEGACY_DATABASE_NAME="$LEGACY_DATABASE_NAME" \
 DOCKER_BIN="$DOCKER_BIN" \
 ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration \
   --format json \
-  --publication-author-policy fallback \
+  --publication-author-policy username-fallback \
   --publication-author-username legacy-import-author \
   --output reports/local-smoke-post-audit.json
 ```

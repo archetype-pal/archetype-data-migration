@@ -334,19 +334,20 @@ Machine-readable audit:
   --output reports/legacy-migration-audit.json
 ```
 
-Post-import audit for an approved fallback publication author:
+Post-import audit for username mapping with fallback for missing target users:
 
 ```bash
 ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration \
   --format json \
-  --publication-author-policy fallback \
+  --publication-author-policy username-fallback \
   --publication-author-username <target-author-username> \
   --output reports/legacy-migration-post-audit.json
 ```
 
 This does not hide the author decision. It reports `publication_author_mapping`
-as an explicit fallback-author warning with the legacy author breakdown attached
-for sign-off.
+with the legacy author breakdown, target username matches, and any fallback
+assignments attached for sign-off. Use `--publication-author-policy fallback`
+only when every publication should deliberately be assigned to one target user.
 
 CI-style strict audit:
 
@@ -375,14 +376,16 @@ Execute against a freshly migrated, backed-up target database:
 
 ```bash
 ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute \
+  --publication-author-policy username-fallback \
   --publication-author-username <target-author-username> \
   --allow-warnings \
   --manifest reports/legacy-migration-import-run.json
 ```
 
-`<target-author-username>` must identify an existing target `auth_user`. The
-command does not create that user. `--allow-warnings` permits reviewed audit
-warnings but never permits a final `fail` status.
+`<target-author-username>` must identify an existing target `auth_user` when
+the selected policy needs a fallback user. The command does not create that
+user. `--allow-warnings` permits reviewed audit warnings but never permits a
+final `fail` status.
 
 When unsupported description rows have an approved exclusion policy, add
 `--unsupported-description-policy skip` to both dry-run and execute commands so
@@ -400,7 +403,6 @@ For partial trial runs, repeat `--phase`, for example:
 ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute \
   --phase core_vocabularies \
   --phase symbols \
-  --publication-author-username <target-author-username> \
   --skip-post-audit
 ```
 

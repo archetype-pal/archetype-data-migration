@@ -37,13 +37,21 @@ audit:
 audit-fallback AUTHOR:
     BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --format markdown --publication-author-policy fallback --publication-author-username "{{AUTHOR}}" --output reports/legacy-migration-post-audit.md
 
+# Run a read-only post-import audit for username mapping with fallback for missing target users.
+audit-username-fallback AUTHOR:
+    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --format markdown --publication-author-policy username-fallback --publication-author-username "{{AUTHOR}}" --output reports/legacy-migration-post-audit.md
+
 # Run the importer in dry-run mode only. This should be the default trial command.
 dry-run-import:
     BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --manifest reports/legacy-migration-import-dry-run.json
 
-# Execute the importer. Requires an explicit target publication author username.
+# Execute the importer by assigning every publication to one explicit fallback author.
 execute-import AUTHOR:
-    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute --publication-author-username "{{AUTHOR}}" --allow-warnings --manifest reports/legacy-migration-import-run.json
+    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute --publication-author-policy fallback --publication-author-username "{{AUTHOR}}" --allow-warnings --manifest reports/legacy-migration-import-run.json
+
+# Execute the importer by matching legacy author usernames and falling back only for missing target users.
+execute-import-username-fallback AUTHOR:
+    BACKEND_REPO="{{backend_repo}}" ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute --publication-author-policy username-fallback --publication-author-username "{{AUTHOR}}" --allow-warnings --manifest reports/legacy-migration-import-run.json
 
 # Drop and recreate a disposable target database. Refuses normal DB names by default.
 recreate-disposable-target DB:
