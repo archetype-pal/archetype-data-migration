@@ -43,6 +43,8 @@ DigiPal databases can share a schema while containing different identifiers, opt
 
 Legacy `digipal_description` rows may refer to a historical item or to a text. The current importer supports historical-item descriptions. Text-only descriptions and rows linked to neither entity require an explicit mapping, quarantine, or approved exclusion policy before execution. When the approved decision is exclusion, run with `--unsupported-description-policy skip`; the report records the selected policy, skipped row counts, and a quarantine artifact when `--manifest` is provided.
 
+The current backend also has `manuscripts_msdescarea` for TEI msDesc area fragments attached to item parts. The importer treats it as target-only schema tracking; it is not populated from `digipal_description` or generated TEI exports unless an explicit seed policy is approved.
+
 Legacy `digipal_cataloguenumber` rows must point at an existing historical item to become target `CatalogueNumber` rows. Rows with no historical item or a dangling historical item are reported in the source profile, skipped from the target table, and exported to `*-skipped-catalogue-numbers.json` when `--manifest` is provided.
 
 ## Safety Gates
@@ -55,7 +57,7 @@ Legacy `digipal_cataloguenumber` rows must point at an existing historical item 
 | Read-only audit gate | Run audit_legacy_migration before and after import. An empty-target baseline normally fails for missing target rows; after import, fail is a blocker and warnings require sign-off. | Manifest stores baseline and post-import audit paths, statuses, and accepted warnings. |
 | Empty target by default | Run the write importer only against a freshly migrated target DB unless explicitly approved. | Preflight row-count report is attached to the manifest. |
 | Guarded disposable reset | Recreate whole disposable trial databases instead of deleting target tables by hand. | Reset report records the disposable database name, confirmation, and follow-up migration steps. |
-| Publication author policy | Prefer username mapping. Use a fallback author only for legacy authors missing in the target, or explicitly choose fallback when all publications must use one author. Do not use legacy numeric ids unless target ids intentionally match. | Manifest records the chosen author policy and sample resolved posts. |
+| Publication author policy | Do not map publication authors by legacy numeric id unless target ids intentionally match. Prefer username mapping or username mapping with explicit fallback. | Manifest records the chosen author policy and sample resolved posts. |
 | Unsupported description policy | Treat text-only, unattached, or dangling legacy descriptions as explicit migration policy decisions. Do not skip them unless the skipped rows are reviewed and recorded. | Import report records source_profile counts, the selected unsupported-description policy, and skipped rows. |
 | Unsupported catalogue number policy | Treat catalogue numbers without an existing historical item as unmappable to target CatalogueNumber. Do not lose them silently. | Import report records source_profile counts and skipped catalogue rows; with --manifest, a *-skipped-catalogue-numbers.json quarantine artifact is written. |
 | Transaction per phase | Each import phase must be atomic and independently auditable. | Manifest records phase start/end time, status, row counts, and rollback reference. |
@@ -71,7 +73,7 @@ Legacy `digipal_cataloguenumber` rows must point at an existing historical item 
 | `02_users_authors` Users And Publication Authors | Define the identity policy required before publication rows can be imported safely. | auth_user, blog_blogpost | auth_user, publications_publication |
 | `03_core_vocabularies` Core Vocabularies | Import stable shared vocabularies before dependent manuscript rows. | digipal_date, digipal_format, digipal_source, digipal_repository | common_date, manuscripts_itemformat, manuscripts_bibliographicsource, manuscripts_repository |
 | `04_symbols` Symbol Structure | Import characters, allographs, components, features, and positions before graph annotations. | digipal_character, digipal_allograph, digipal_component, digipal_feature, digipal_aspect | symbols_structure_character, symbols_structure_allograph, symbols_structure_component, symbols_structure_feature, symbols_structure_position |
-| `05_manuscripts` Manuscripts And Images | Import manuscript hierarchy and IIIF-backed item images. | digipal_currentitem, digipal_historicalitem, digipal_description, digipal_cataloguenumber, digipal_itempart, digipal_itempartitem, digipal_image | manuscripts_currentitem, manuscripts_historicalitem, manuscripts_historicalitemdescription, manuscripts_cataloguenumber, manuscripts_itempart, manuscripts_itemimage |
+| `05_manuscripts` Manuscripts And Images | Import manuscript hierarchy and IIIF-backed item images. | digipal_currentitem, digipal_historicalitem, digipal_description, digipal_cataloguenumber, digipal_itempart, digipal_itempartitem, digipal_image | manuscripts_currentitem, manuscripts_historicalitem, manuscripts_historicalitemdescription, manuscripts_cataloguenumber, manuscripts_itempart, manuscripts_msdescarea, manuscripts_itemimage |
 | `06_scribes_hands` Scribes And Hands | Import scribes, hands, and image-hand links after item parts and images exist. | digipal_scribe, digipal_script, digipal_hand, digipal_hand_images | scribes_scribe, scribes_script, scribes_hand, scribes_hand_item_part_images |
 | `07_image_text` Image Text | Import non-empty transcription/translation XML as target image text rows. | digipal_text_textcontentxml | manuscripts_imagetext |
 | `08_annotations` Annotations And Graph Details | Import image/text/editorial annotations and graph through tables after symbols, hands, and images. | digipal_annotation, digipal_graph, digipal_idiograph, digipal_graphcomponent, digipal_graphcomponent_features, digipal_graph_aspects | annotations_graph, annotations_graphcomponent, annotations_graphcomponent_features, annotations_graph_positions |
@@ -170,6 +172,7 @@ Import manuscript hierarchy and IIIF-backed item images.
 Importer contract:
 - Preserve ids for current items, historical items, descriptions, catalogue numbers, item parts, and images.
 - Fail on unsupported digipal_description relationships unless an explicit skip policy is approved.
+- Treat manuscripts_msdescarea as target-only schema tracking unless an explicit msDesc seed policy is approved.
 - Create the documented -1 item-part placeholder only if needed.
 - Validate shortened shelfmark/current locus fields before insert.
 
@@ -397,4 +400,4 @@ If the source profile reports text-only, unattached, or dangling `digipal_descri
 
 The command refuses same-database URLs, missing tables, and non-empty import targets by default. Use `--allow-non-empty-target` only for an approved recovery or incremental trial.
 
-For repeat trials, use `recreate_disposable_target` on an explicitly named disposable database. After recreating it, apply backend migrations and recreate/verify any target publication author needed by the selected policy.
+For repeat trials, use `recreate_disposable_target` on an explicitly named disposable database. After recreating it, apply backend migrations and recreate/verify the target publication author.

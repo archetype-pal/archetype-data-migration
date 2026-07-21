@@ -77,6 +77,7 @@ The current target is clearly a selective migration, not a full clone:
 | `digipal_description` | `manuscripts_historicalitemdescription` | Id-preserved; `description` becomes `content`. |
 | `digipal_cataloguenumber` | `manuscripts_cataloguenumber` | Id-preserved; `source_id` becomes `catalogue_id`. |
 | `digipal_itempart` plus `digipal_itempartitem` | `manuscripts_itempart` | Id-preserved from item part; target has synthetic `-1`. Historical link comes from `digipal_itempartitem`. |
+| none | `manuscripts_msdescarea` | Target-side TEI msDesc area fragments; no legacy source mapping is currently approved. Keep empty unless an explicit seed policy is defined. |
 | `digipal_image` | `manuscripts_itemimage` | Id-preserved; image path/IIIF fields transformed. |
 | Non-empty `digipal_text_textcontentxml` | `manuscripts_imagetext` | Content-preserved; ids not preserved. Empty XML rows are excluded. Current review fields and `content_dpt_legacy` are target-side additions. |
 | none | `manuscripts_statustransition` | Target-only image-text review workflow log; do not import from legacy. |
@@ -286,6 +287,12 @@ linked to an existing historical item and records skipped row counts in the
 manifest/import report. When `--manifest` is provided, the importer also writes
 a sibling `*-skipped-descriptions.json` quarantine artifact containing every
 skipped row and the reason it was excluded.
+
+The current backend also has `manuscripts_msdescarea`, a target-side table for
+TEI msDesc area fragments attached to item parts. The inspected legacy source
+does not provide a verified row-level mapping into this table. Do not populate it
+from `digipal_description` or generated TEI exports unless a separate, reviewed
+seed policy is approved.
 
 Legacy `digipal_cataloguenumber` rows are imported only when they point at an
 existing historical item. Rows with no historical item, or with a dangling

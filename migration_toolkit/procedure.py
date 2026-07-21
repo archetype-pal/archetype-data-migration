@@ -255,12 +255,15 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "manuscripts_historicalitemdescription",
             "manuscripts_cataloguenumber",
             "manuscripts_itempart",
+            "manuscripts_msdescarea",
             "manuscripts_itemimage",
         ),
         importer_contract=(
             "Preserve ids for current items, historical items, descriptions, catalogue numbers, "
             "item parts, and images.",
             "Fail on unsupported digipal_description relationships unless an explicit skip policy is approved.",
+            "Treat manuscripts_msdescarea as target-only schema tracking unless an explicit msDesc seed policy is "
+            "approved.",
             "Create the documented -1 item-part placeholder only if needed.",
             "Validate shortened shelfmark/current locus fields before insert.",
         ),
@@ -671,6 +674,10 @@ def render_procedure_markdown(audit_report: AuditReport | None = None) -> str:
             "require an explicit mapping, quarantine, or approved exclusion policy before execution. When the "
             "approved decision is exclusion, run with `--unsupported-description-policy skip`; the report records "
             "the selected policy, skipped row counts, and a quarantine artifact when `--manifest` is provided.",
+            "",
+            "The current backend also has `manuscripts_msdescarea` for TEI msDesc area fragments attached to "
+            "item parts. The importer treats it as target-only schema tracking; it is not populated from "
+            "`digipal_description` or generated TEI exports unless an explicit seed policy is approved.",
             "",
             "Legacy `digipal_cataloguenumber` rows must point at an existing historical item to become target "
             "`CatalogueNumber` rows. Rows with no historical item or a dangling historical item are reported in "

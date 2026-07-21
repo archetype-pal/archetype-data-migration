@@ -17,6 +17,7 @@ def test_render_procedure_markdown_contains_safety_gates_and_phases():
     assert "Read-only audit gate" in rendered
     assert "`00_preflight` Preflight" in rendered
     assert "`08_annotations` Annotations And Graph Details" in rendered
+    assert "manuscripts_msdescarea" in rendered
     assert "Target-Only Current Data" in rendered
     assert "migrate_legacy_data" in rendered
 
@@ -27,6 +28,8 @@ def test_render_procedure_json_is_machine_readable():
 
     assert data["procedure_version"] == "2026-06-16"
     assert data["phases"][0]["key"] == "00_preflight"
+    manuscripts_phase = next(phase for phase in data["phases"] if phase["key"] == "05_manuscripts")
+    assert "manuscripts_msdescarea" in manuscripts_phase["target_tables"]
     assert any(gate["key"] == "audit_gate" for gate in data["safety_gates"])
 
 

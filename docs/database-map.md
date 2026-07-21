@@ -6,16 +6,16 @@ migrations.
 
 Snapshot details:
 
-- Verified against the inspected target database on 2026-06-09.
+- Verified against the inspected target database on 2026-07-21.
 - PostgreSQL is running from the Compose `postgres` service.
-- The inspected target database has 52 public tables.
+- The inspected target database has 53 public tables.
 
 ## Practical Overview
 
 The domain data hangs off seven main areas:
 
 - `manuscripts`: physical/current items, historical items, item parts, images,
-  transcriptions/translations, catalogue references.
+  transcriptions/translations, catalogue references, and TEI msDesc area fragments.
 - `scribes`: scribes, scripts, hands, and the item images a hand appears on.
 - `symbols_structure`: reusable palaeographic structure: characters,
   allographs, components, features, and positions.
@@ -41,16 +41,16 @@ These are exact counts from the inspected target database at inspection time.
 | `annotations_graphcomponent_features` | 3304 |
 | `auth_group` | 2 |
 | `auth_group_permissions` | 0 |
-| `auth_permission` | 172 |
+| `auth_permission` | 176 |
 | `auth_user` | 14 |
 | `auth_user_groups` | 0 |
 | `auth_user_user_permissions` | 0 |
 | `authtoken_token` | 1 |
 | `common_date` | 610 |
-| `common_editevent` | 22 |
+| `common_editevent` | 44 |
 | `django_admin_log` | 0 |
-| `django_content_type` | 43 |
-| `django_migrations` | 82 |
+| `django_content_type` | 44 |
+| `django_migrations` | 87 |
 | `django_session` | 5 |
 | `manuscripts_bibliographicsource` | 40 |
 | `manuscripts_cataloguenumber` | 1414 |
@@ -63,6 +63,7 @@ These are exact counts from the inspected target database at inspection time.
 | `manuscripts_itemimage` | 3277 |
 | `manuscripts_itemimage_tags` | 0 |
 | `manuscripts_itempart` | 713 |
+| `manuscripts_msdescarea` | 0 |
 | `manuscripts_repository` | 9 |
 | `manuscripts_statustransition` | 0 |
 | `manuscripts_tagulous_itemimage_tags` | 0 |
@@ -86,7 +87,7 @@ These are exact counts from the inspected target database at inspection time.
 | `symbols_structure_component_features` | 76 |
 | `symbols_structure_feature` | 54 |
 | `symbols_structure_position` | 17 |
-| `worksets_workset` | 0 |
+| `worksets_workset` | 5 |
 
 ## ER Map
 
@@ -108,6 +109,7 @@ erDiagram
   manuscripts_historicalitem ||--o{ manuscripts_itempart : parts
   manuscripts_currentitem ||--o{ manuscripts_itempart : current_location
   manuscripts_itempart ||--o{ manuscripts_itemimage : images
+  manuscripts_itempart ||--o{ manuscripts_msdescarea : msdesc_areas
   manuscripts_itemimage ||--o{ manuscripts_imagetext : text_layers
   manuscripts_imagetext ||--o{ manuscripts_statustransition : transitions
   auth_user ||--o{ manuscripts_imagetext : review_assignee
@@ -164,6 +166,7 @@ erDiagram
 | `manuscripts_historicalitemdescription` | Source-backed description of a historical item. | `historical_item_id`, `source_id`, `content` |
 | `manuscripts_itempart` | Part of a historical item, optionally located in a current item. | `historical_item_id`, `current_item_id`, `current_item_locus`, `custom_label` |
 | `manuscripts_cataloguenumber` | Catalogue identifier for a historical item. | `historical_item_id`, `catalogue_id`, `number`, `url` |
+| `manuscripts_msdescarea` | Target-side TEI msDesc area fragment for an item part; one row per `(item_part_id, area)`, public only when published. | `item_part_id`, `area`, `content`, `is_published`, `created`, `modified` |
 | `manuscripts_itemimage` | IIIF-backed image for an item part. | `item_part_id`, `image`, `locus`, `tags` |
 | `manuscripts_imagetext` | Transcription/translation layer for an image. | `item_image_id`, `content`, `content_dpt_legacy`, `type`, `status`, `review_assignee_id`, `language`, `created`, `modified` |
 | `manuscripts_statustransition` | Review workflow status-change log for image text. | `image_text_id`, `actor_id`, `from_status`, `to_status`, `note`, `created` |

@@ -5,8 +5,12 @@ import pytest
 from commands.migrate_legacy_data import main as migrate_main
 from migration_toolkit.importer import (
     DESCRIPTION_POLICY_SKIP,
+    PHASE_TARGET_TABLES,
     PUBLICATION_AUTHOR_POLICY_USERNAME,
     PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK,
+    REQUIRED_TARGET_TABLES,
+    SOURCE_COUNT_SQL,
+    TARGET_DOMAIN_TABLES,
     ImportOptions,
     ImportReport,
     LegacyMigrationImportError,
@@ -43,6 +47,13 @@ def test_expand_phases_defaults_to_full_order():
 def test_expand_phases_rejects_mixed_all():
     with pytest.raises(LegacyMigrationImportError):
         expand_phases(("all", "manuscripts"))
+
+
+def test_msdescarea_is_tracked_as_target_schema_not_legacy_source():
+    assert "manuscripts_msdescarea" in REQUIRED_TARGET_TABLES
+    assert "manuscripts_msdescarea" in TARGET_DOMAIN_TABLES
+    assert "manuscripts_msdescarea" in PHASE_TARGET_TABLES["manuscripts"]
+    assert "manuscripts_msdescarea" not in SOURCE_COUNT_SQL["manuscripts"]
 
 
 def test_parse_date_weights_prefers_years_from_date_text():

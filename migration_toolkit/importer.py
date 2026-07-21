@@ -116,6 +116,7 @@ REQUIRED_TARGET_TABLES: set[str] = {
     "manuscripts_itemformat",
     "manuscripts_itemimage",
     "manuscripts_itempart",
+    "manuscripts_msdescarea",
     "manuscripts_repository",
     "publications_carouselitem",
     "publications_publication",
@@ -146,6 +147,7 @@ TARGET_DOMAIN_TABLES: tuple[str, ...] = (
     "manuscripts_historicalitemdescription",
     "manuscripts_cataloguenumber",
     "manuscripts_itempart",
+    "manuscripts_msdescarea",
     "manuscripts_itemimage",
     "manuscripts_imagetext",
     "scribes_scribe",
@@ -203,6 +205,7 @@ PHASE_TARGET_TABLES: dict[str, tuple[str, ...]] = {
         "manuscripts_historicalitemdescription",
         "manuscripts_cataloguenumber",
         "manuscripts_itempart",
+        "manuscripts_msdescarea",
         "manuscripts_itemimage",
     ),
     "scribes_hands": (
