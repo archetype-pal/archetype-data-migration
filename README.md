@@ -112,6 +112,11 @@ Publication author import supports explicit policies:
 - `legacy-id`: preserve numeric author IDs only when target `auth_user.id`
   values intentionally match the legacy database.
 
+For final full migrations, prefer `legacy-id` only after an explicit auth-user
+reconciliation step has moved colliding current users to unused ids and updated
+their target-only references. Use `username-fallback` when preserving legacy
+user ids is not approved.
+
 If the publications phase intentionally uses a fallback user, run post-import
 audit with the same policy so the warning records the decision instead of only
 showing a legacy numeric-ID mismatch:

@@ -34,6 +34,7 @@ This migration should be a manual deployment lane, not an automatic step on ever
 - `--publication-author-policy username-fallback` maps by username and assigns missing legacy authors to one explicit fallback target user.
 - `--publication-author-policy fallback` assigns every imported publication to one explicit fallback target user.
 - `--publication-author-policy legacy-id` preserves numeric author ids only when target `auth_user.id` values intentionally match the legacy database.
+- For final full migrations, prefer `legacy-id` only after an explicit auth-user reconciliation step has moved colliding current users to unused ids and updated their target-only references.
 - `--publication-author-username` must name an existing target `auth_user` when the selected policy needs a fallback user; the importer does not create that user.
 - Post-import audit should use the same publication author policy as the import so the manifest records the decision explicitly.
 
@@ -125,6 +126,7 @@ Define the identity policy required before publication rows can be imported safe
 Importer contract:
 - Map legacy users by username first.
 - Use one explicit fallback target author only for missing usernames, unless the migration owner approves assigning every publication to one fallback author.
+- Prefer legacy-id publication author mapping after an explicit auth_user id reconciliation: move colliding current/seeded users to unused ids, update their current target foreign keys, then restore legacy auth_user ids before importing publication rows.
 - Do not rely on numeric legacy auth_user ids in a fresh target unless target ids intentionally match.
 - Record original legacy usernames where the fallback author is used.
 - Run post-import audit with the same publication author policy selected for import.
@@ -132,6 +134,7 @@ Importer contract:
 Validation:
 - Publication author audit warning is either eliminated or explicitly accepted.
 - Sample migrated publication authors resolve to expected target users.
+- When current users are moved aside, their target-only references such as auth tokens and worksets still point to the moved current user ids.
 
 Rollback: Delete imported publications for the phase or restore the target backup.
 
@@ -330,10 +333,10 @@ Rollback: Restore the pre-cutover target dump and return traffic to the previous
 ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --format markdown --output reports/legacy-migration-audit.md
 ```
 
-### Write the post-import audit with username fallback publication author policy
+### Write the post-import audit with legacy-id publication author policy
 
 ```bash
-./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --format markdown --publication-author-policy username-fallback --publication-author-username <target-author-username> --output reports/legacy-migration-post-audit.md
+./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration --format markdown --publication-author-policy legacy-id --output reports/legacy-migration-post-audit.md
 ```
 
 ### Plan the legacy import without writing data
@@ -342,10 +345,10 @@ Rollback: Restore the pre-cutover target dump and return traffic to the previous
 ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --manifest reports/legacy-migration-import-dry-run.json
 ```
 
-### Run the legacy import against a fresh target database
+### Run the legacy import against a reconciled fresh target database
 
 ```bash
-./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute --publication-author-policy username-fallback --publication-author-username <target-author-username> --allow-warnings --manifest reports/legacy-migration-import-run.json
+./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute --publication-author-policy legacy-id --allow-warnings --manifest reports/legacy-migration-import-run.json
 ```
 
 ### Recreate a disposable target between trials
@@ -395,13 +398,12 @@ Execute only against a backed-up, freshly migrated target database:
 ./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute \
   --legacy-url "$LEGACY_DATABASE_URL" \
   --target-url "$TARGET_DATABASE_URL" \
-  --publication-author-policy username-fallback \
-  --publication-author-username <target-author-username> \
+  --publication-author-policy legacy-id \
   --allow-warnings \
   --manifest reports/legacy-migration-import-run.json
 ```
 
-The publication author username must already exist in the target database when the selected policy needs a fallback user. `--allow-warnings` permits reviewed warning status but never permits fail status.
+Use `--publication-author-policy legacy-id` only after the target has been reconciled so legacy `auth_user.id` values intentionally match. If preserving ids is not approved, use `username-fallback` with an explicit existing fallback username. `--allow-warnings` permits reviewed warning status but never permits fail status.
 
 If the source profile reports text-only, unattached, or dangling `digipal_description` rows, the default execute mode stops before writing. To run after an approved exclusion decision, add `--unsupported-description-policy skip`; the command then imports only descriptions linked to an existing historical item and records skipped rows in the manifest. With `--manifest`, the command also writes a sibling `*-skipped-descriptions.json` quarantine artifact.
 

@@ -6,9 +6,11 @@ migrations.
 
 Snapshot details:
 
-- Verified against the inspected target database on 2026-07-21.
+- Verified against the inspected target database on 2026-07-28 after local
+  publication-link, allograph-placeholder, and auth-user-id reconciliation.
 - PostgreSQL is running from the Compose `postgres` service.
-- The inspected target database has 53 public tables.
+- The inspected target database has 53 application public tables. Local backup
+  tables created during reconciliation are excluded from this schema map.
 
 ## Practical Overview
 
@@ -42,7 +44,7 @@ These are exact counts from the inspected target database at inspection time.
 | `auth_group` | 2 |
 | `auth_group_permissions` | 0 |
 | `auth_permission` | 176 |
-| `auth_user` | 14 |
+| `auth_user` | 23 |
 | `auth_user_groups` | 0 |
 | `auth_user_user_permissions` | 0 |
 | `authtoken_token` | 1 |
@@ -50,7 +52,7 @@ These are exact counts from the inspected target database at inspection time.
 | `common_editevent` | 44 |
 | `django_admin_log` | 0 |
 | `django_content_type` | 44 |
-| `django_migrations` | 87 |
+| `django_migrations` | 88 |
 | `django_session` | 5 |
 | `manuscripts_bibliographicsource` | 40 |
 | `manuscripts_cataloguenumber` | 1414 |
@@ -78,7 +80,7 @@ These are exact counts from the inspected target database at inspection time.
 | `scribes_hand_item_part_images` | 715 |
 | `scribes_scribe` | 3 |
 | `scribes_script` | 0 |
-| `symbols_structure_allograph` | 103 |
+| `symbols_structure_allograph` | 102 |
 | `symbols_structure_allographcomponent` | 80 |
 | `symbols_structure_allographcomponentfeature` | 68 |
 | `symbols_structure_allographposition` | 337 |

@@ -175,6 +175,9 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "Map legacy users by username first.",
             "Use one explicit fallback target author only for missing usernames, unless the migration owner approves "
             "assigning every publication to one fallback author.",
+            "Prefer legacy-id publication author mapping after an explicit auth_user id reconciliation: move "
+            "colliding current/seeded users to unused ids, update their current target foreign keys, then restore "
+            "legacy auth_user ids before importing publication rows.",
             "Do not rely on numeric legacy auth_user ids in a fresh target unless target ids intentionally match.",
             "Record original legacy usernames where the fallback author is used.",
             "Run post-import audit with the same publication author policy selected for import.",
@@ -182,6 +185,8 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         validation=(
             "Publication author audit warning is either eliminated or explicitly accepted.",
             "Sample migrated publication authors resolve to expected target users.",
+            "When current users are moved aside, their target-only references such as auth tokens and worksets "
+            "still point to the moved current user ids.",
         ),
         rollback="Delete imported publications for the phase or restore the target backup.",
     ),
@@ -448,11 +453,9 @@ COMMANDS: tuple[tuple[str, str], ...] = (
         "--format markdown --output reports/legacy-migration-audit.md",
     ),
     (
-        "Write the post-import audit with username fallback publication author policy",
+        "Write the post-import audit with legacy-id publication author policy",
         "./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration "
-        "--format markdown --publication-author-policy username-fallback "
-        "--publication-author-username <target-author-username> "
-        "--output reports/legacy-migration-post-audit.md",
+        "--format markdown --publication-author-policy legacy-id --output reports/legacy-migration-post-audit.md",
     ),
     (
         "Plan the legacy import without writing data",
@@ -460,10 +463,9 @@ COMMANDS: tuple[tuple[str, str], ...] = (
         "--manifest reports/legacy-migration-import-dry-run.json",
     ),
     (
-        "Run the legacy import against a fresh target database",
+        "Run the legacy import against a reconciled fresh target database",
         "./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute "
-        "--publication-author-policy username-fallback "
-        "--publication-author-username <target-author-username> "
+        "--publication-author-policy legacy-id "
         "--allow-warnings --manifest reports/legacy-migration-import-run.json",
     ),
     (
@@ -664,6 +666,8 @@ def render_procedure_markdown(audit_report: AuditReport | None = None) -> str:
             "target user.",
             "- `--publication-author-policy legacy-id` preserves numeric author ids only when target `auth_user.id` "
             "values intentionally match the legacy database.",
+            "- For final full migrations, prefer `legacy-id` only after an explicit auth-user reconciliation step "
+            "has moved colliding current users to unused ids and updated their target-only references.",
             "- `--publication-author-username` must name an existing target `auth_user` when the selected policy "
             "needs a fallback user; the importer does not create that user.",
             "- Post-import audit should use the same publication author policy as the import so the manifest "
@@ -781,15 +785,15 @@ def render_procedure_markdown(audit_report: AuditReport | None = None) -> str:
             "./scripts/backend-compose-run.sh python -m commands.migrate_legacy_data --execute \\",
             '  --legacy-url "$LEGACY_DATABASE_URL" \\',
             '  --target-url "$TARGET_DATABASE_URL" \\',
-            "  --publication-author-policy username-fallback \\",
-            "  --publication-author-username <target-author-username> \\",
+            "  --publication-author-policy legacy-id \\",
             "  --allow-warnings \\",
             "  --manifest reports/legacy-migration-import-run.json",
             "```",
             "",
-            "The publication author username must already exist in the target database when the selected policy "
-            "needs a fallback user. `--allow-warnings` permits reviewed warning status but never permits fail "
-            "status.",
+            "Use `--publication-author-policy legacy-id` only after the target has been reconciled so legacy "
+            "`auth_user.id` values intentionally match. If preserving ids is not approved, use "
+            "`username-fallback` with an explicit existing fallback username. `--allow-warnings` permits reviewed "
+            "warning status but never permits fail status.",
             "",
             "If the source profile reports text-only, unattached, or dangling `digipal_description` rows, the "
             "default execute mode stops before writing. To run after an approved exclusion decision, add "

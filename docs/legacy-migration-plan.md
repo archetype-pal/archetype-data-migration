@@ -101,22 +101,31 @@ The current target is clearly a selective migration, not a full clone:
 | `blog_blogpost` | `publications_publication` | Id-preserved; author ids need special handling. |
 | `blog_blogpost_categories` | `publications_publication_keywords` | Re-keyed through tagulous keywords. |
 | `digipal_carouselitem` | `publications_carouselitem` | Id-preserved; field names transformed. |
-| none | `worksets_workset` | Target-only user-saved lightbox/citable collection feature; currently empty. |
+| none | `worksets_workset` | Target-only user-saved lightbox/citable collection feature; currently five local rows. |
 
 ## Key Differences And Risks
 
 ### Publication Authors
 
-Do not use legacy `auth_user.id` as the publication author key in a fresh
-migration. The current target has seeded users in ids `1` to `5`, so migrated
-publication rows that kept old author ids now resolve to different usernames
-for several authors.
+For a full migration, preserve legacy `auth_user.id` values when user-linked
+legacy relations are in scope. The local target originally had seeded/current
+users in ids `1` to `6`; imported publication rows therefore resolved to the
+wrong usernames. The reconciled local target now moves those current users to
+ids `21` to `26`, restores legacy users at ids `1` to `6`, and leaves imported
+publication `author_id` values id-preserved.
 
-Safe future options:
+Use this policy only as an explicit backed-up reconciliation step:
 
-- Create/map legacy users by username or email before importing publications.
-- Or choose one explicit fallback author and record the original legacy author
-  username in publication metadata or migration logs.
+- Move colliding current/seeded users to unused ids.
+- Update their current target references such as auth tokens and worksets.
+- Rename any colliding current username, for example local `admin` became
+  `admin_current`, so legacy `admin` can occupy id `1`.
+- Insert or import legacy `auth_user` rows at their original ids.
+- Reset the `auth_user` sequence and run the default legacy-id audit.
+
+Username and username-fallback publication author policies remain supported
+when preserving legacy user ids is not approved, but they should be recorded as
+an explicit migration policy decision.
 
 ### Publication Content Links
 
@@ -358,6 +367,15 @@ Machine-readable audit:
 ./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration \
   --format json \
   --output reports/legacy-migration-audit.json
+```
+
+Post-import audit after preserving legacy author ids:
+
+```bash
+./scripts/backend-compose-run.sh python -m commands.audit_legacy_migration \
+  --format json \
+  --publication-author-policy legacy-id \
+  --output reports/legacy-migration-post-audit.json
 ```
 
 Post-import audit for username mapping with fallback for missing target users:

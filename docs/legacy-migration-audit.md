@@ -4,22 +4,26 @@ Status: `warn`
 
 | Database | Public tables |
 | --- | ---: |
-| Legacy source database | 142 |
-| Target database | 52 |
+| `old_arch` | 142 |
+| `test_db` | 67 |
+
+The target table count includes local backup tables created during
+publication-link, allograph-placeholder, and auth-user-id reconciliation. Entity
+mapping counts below are for application tables.
 
 ## Entity Mappings
 
 | Status | Entity | Legacy rows | Target rows | Strategy |
 | --- | --- | ---: | ---: | --- |
 | `warn` | Dates | 594 | 610 | id-preserved with target-only date seeds |
-| `warn` | Edit events | 0 | 22 | target-only workflow table |
+| `warn` | Edit events | 0 | 44 | target-only workflow table |
 | `ok` | Item formats | 20 | 20 | id-preserved |
 | `ok` | Bibliographic sources | 40 | 40 | id-preserved |
 | `ok` | Repositories | 9 | 9 | id-preserved transformed fields |
 | `ok` | Current items | 718 | 718 | id-preserved transformed fields |
 | `ok` | Historical items | 713 | 713 | id-preserved transformed lookups |
-| `ok` | Historical item descriptions | 703 | 703 | id-preserved transformed fields |
-| `ok` | Catalogue numbers | 1414 | 1414 | id-preserved transformed fields |
+| `ok` | Historical item descriptions | 703 | 703 | id-preserved supported historical-item descriptions |
+| `ok` | Catalogue numbers | 1414 | 1414 | id-preserved supported historical-item catalogue numbers |
 | `warn` | Item parts | 712 | 713 | id-preserved with placeholder |
 | `ok` | Item images | 3277 | 3277 | id-preserved transformed fields |
 | `ok` | Image texts | 899 | 899 | content-preserved, ids not preserved |
@@ -30,7 +34,7 @@ Status: `warn`
 | `ok` | Hands | 696 | 696 | id-preserved transformed fields |
 | `ok` | Hand image links | 715 | 715 | id-preserved |
 | `ok` | Characters | 103 | 103 | id-preserved transformed type |
-| `warn` | Allographs | 102 | 103 | id-preserved; historical target has extra placeholder |
+| `ok` | Allographs | 102 | 102 | id-preserved |
 | `ok` | Components | 15 | 15 | id-preserved |
 | `ok` | Features | 54 | 54 | id-preserved |
 | `ok` | Component feature links | 76 | 76 | id-preserved |
@@ -45,13 +49,15 @@ Status: `warn`
 | `ok` | Publications | 61 | 61 | id-preserved transformed fields |
 | `ok` | Publication keyword links | 67 | 67 | ids not preserved |
 | `ok` | Carousel items | 8 | 8 | id-preserved transformed fields |
-| `ok` | Worksets | 0 | 0 | target-only feature table |
+| `warn` | Worksets | 0 | 5 | target-only feature table |
 
 ## Checks
 
 | Status | Check | Summary |
 | --- | --- | --- |
-| `warn` | Publication author mapping | Publication author ids are not a safe migration key because target users were seeded before legacy users. Map authors by username/email or choose an explicit fallback author. |
+| `ok` | Legacy description relationships | 703 legacy descriptions are supported historical-item descriptions. |
+| `ok` | Legacy catalogue number relationships | 1414 legacy catalogue numbers are supported historical-item catalogue numbers. |
+| `ok` | Publication author mapping | Publication author ids resolve to matching usernames. |
 | `warn` | Annotation shape | Target text/editorial annotations retain allograph/hand values. This is valid under the current database constraint but differs from the model comment that treats those links as optional. |
 | `ok` | Legacy text exclusions | Non-empty legacy text XML rows: 899; target ImageText rows: 899. |
 
@@ -90,14 +96,6 @@ Status: `warn`
 - Status: `warn`
 - Strategy: id-preserved with placeholder
 - Notes: The target has a synthetic -1 scribe for unmapped/unknown data.
-- Missing in target: 0; sample: `[]`
-- Extra in target: 1; sample: `[-1]`
-
-### Allographs
-
-- Status: `warn`
-- Strategy: id-preserved; historical target has extra placeholder
-- Notes: This older audit captured a target-side `-1` allograph from a source-specific policy. Current imports require an explicit source policy for allograph placeholders.
 - Missing in target: 0; sample: `[]`
 - Extra in target: 1; sample: `[-1]`
 
@@ -143,47 +141,14 @@ Status: `warn`
 - Strategy: ids not preserved, filtered
 - Notes: Legacy graph aspects become target graph positions, are re-keyed, and are filtered with graph rows.
 
+### Worksets
+
+- Status: `warn`
+- Strategy: target-only feature table
+- Notes: Current user-saved/citable workset feature; not imported from the legacy source database.
+
 
 ## Check Details
-
-### Publication author mapping
-
-Publication author ids are not a safe migration key because target users were seeded before legacy users. Map authors by username/email or choose an explicit fallback author.
-
-```json
-[
-  {
-    "legacy_id": 2,
-    "legacy_username": "sbrookes",
-    "post_count": 36,
-    "target_username": "ali"
-  },
-  {
-    "legacy_id": 3,
-    "legacy_username": "pstokes",
-    "post_count": 13,
-    "target_username": "faidon"
-  },
-  {
-    "legacy_id": 4,
-    "legacy_username": "jdavies",
-    "post_count": 2,
-    "target_username": "luca"
-  },
-  {
-    "legacy_id": 5,
-    "legacy_username": "dbroun",
-    "post_count": 3,
-    "target_username": "stewart"
-  },
-  {
-    "legacy_id": 6,
-    "legacy_username": "twebber",
-    "post_count": 1,
-    "target_username": "admin"
-  }
-]
-```
 
 ### Annotation shape
 
@@ -199,7 +164,7 @@ Target text/editorial annotations retain allograph/hand values. This is valid un
     "image_graphs": 20537,
     "image_graphs_missing_required_fk": 0,
     "image_like_annotations": 20535,
-    "non_image_graphs_with_legacy_fk": 4049,
+    "non_image_graphs_with_legacy_fk": 3002,
     "text_annotations": 4048,
     "text_graphs": 4048
   }
