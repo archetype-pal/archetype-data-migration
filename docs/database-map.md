@@ -7,7 +7,8 @@ migrations.
 Snapshot details:
 
 - Verified against the inspected target database on 2026-07-28 after local
-  publication-link, allograph-placeholder, and auth-user-id reconciliation.
+  publication-link, extended publication-link, allograph-placeholder, and
+  auth-user-id reconciliation, including unreferenced `admin_current` cleanup.
 - PostgreSQL is running from the Compose `postgres` service.
 - The inspected target database has 53 application public tables. Local backup
   tables created during reconciliation are excluded from this schema map.
@@ -44,7 +45,7 @@ These are exact counts from the inspected target database at inspection time.
 | `auth_group` | 2 |
 | `auth_group_permissions` | 0 |
 | `auth_permission` | 176 |
-| `auth_user` | 23 |
+| `auth_user` | 22 |
 | `auth_user_groups` | 0 |
 | `auth_user_user_permissions` | 0 |
 | `authtoken_token` | 1 |

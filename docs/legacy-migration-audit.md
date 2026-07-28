@@ -5,10 +5,11 @@ Status: `warn`
 | Database | Public tables |
 | --- | ---: |
 | `old_arch` | 142 |
-| `test_db` | 67 |
+| `test_db` | 69 |
 
 The target table count includes local backup tables created during
-publication-link, allograph-placeholder, and auth-user-id reconciliation. Entity
+publication-link, extended publication-link, allograph-placeholder,
+auth-user-id reconciliation, and unreferenced `admin_current` cleanup. Entity
 mapping counts below are for application tables.
 
 ## Entity Mappings

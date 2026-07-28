@@ -111,15 +111,18 @@ For a full migration, preserve legacy `auth_user.id` values when user-linked
 legacy relations are in scope. The local target originally had seeded/current
 users in ids `1` to `6`; imported publication rows therefore resolved to the
 wrong usernames. The reconciled local target now moves those current users to
-ids `21` to `26`, restores legacy users at ids `1` to `6`, and leaves imported
-publication `author_id` values id-preserved.
+ids `21` to `25`, restores legacy users at ids `1` to `6`, removes the
+unreferenced moved `admin_current` row, and leaves imported publication
+`author_id` values id-preserved.
 
 Use this policy only as an explicit backed-up reconciliation step:
 
 - Move colliding current/seeded users to unused ids.
 - Update their current target references such as auth tokens and worksets.
-- Rename any colliding current username, for example local `admin` became
-  `admin_current`, so legacy `admin` can occupy id `1`.
+- Rename or remove any colliding current username after reference checks; in
+  the inspected local target, local `admin` was first moved to `admin_current`
+  so legacy `admin` could occupy id `1`, then removed after confirming it had
+  no foreign-key references and other active superusers existed.
 - Insert or import legacy `auth_user` rows at their original ids.
 - Reset the `auth_user` sequence and run the default legacy-id audit.
 
