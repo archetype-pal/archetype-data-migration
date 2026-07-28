@@ -1964,12 +1964,10 @@ def import_image_text(ctx: ImportContext) -> dict[str, int]:
             ctx.target_conn,
             """
             INSERT INTO manuscripts_imagetext (
-              item_image_id, content, type, status, language, created, modified, content_dpt_legacy,
-              review_assignee_id
+              item_image_id, content, type, status, language, created, modified, review_assignee_id
             )
             VALUES (
-              %(item_image_id)s, %(content)s, %(type)s, %(status)s, %(language)s, %(created)s, %(modified)s,
-              NULL, NULL
+              %(item_image_id)s, %(content)s, %(type)s, %(status)s, %(language)s, %(created)s, %(modified)s, NULL
             )
             """,
             values,

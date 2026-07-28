@@ -205,7 +205,8 @@ Import non-empty transcription/translation XML as target image text rows.
 Importer contract:
 - Import only rows with non-empty content.
 - Do not preserve legacy XML ids unless a later importer design explicitly requires it.
-- Leave review_assignee_id, status transitions, and content_dpt_legacy to current workflows.
+- Leave review_assignee_id and status transitions to current workflows.
+- Backend migration 0024 removed the temporary content_dpt_legacy retention column; do not import it.
 
 Validation:
 - Legacy text exclusions check reports matching non-empty XML and ImageText counts.

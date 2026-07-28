@@ -20,6 +20,7 @@ from migration_toolkit.importer import (
     default_unsupported_catalogue_number_output_path,
     default_unsupported_description_output_path,
     expand_phases,
+    import_image_text,
     import_report_to_dict,
     legacy_image_path,
     parse_annotation,
@@ -57,6 +58,16 @@ def test_msdescarea_is_tracked_as_target_schema_not_legacy_source():
     assert "manuscripts_msdescarea" in TARGET_DOMAIN_TABLES
     assert "manuscripts_msdescarea" in PHASE_TARGET_TABLES["manuscripts"]
     assert "manuscripts_msdescarea" not in SOURCE_COUNT_SQL["manuscripts"]
+
+
+def test_image_text_import_sql_matches_backend_0024_schema():
+    source = import_image_text.__code__.co_consts
+    insert_sql = next(
+        value for value in source if isinstance(value, str) and "INSERT INTO manuscripts_imagetext" in value
+    )
+
+    assert "content_dpt_legacy" not in insert_sql
+    assert "review_assignee_id" in insert_sql
 
 
 def test_parse_date_weights_prefers_years_from_date_text():

@@ -168,7 +168,7 @@ erDiagram
 | `manuscripts_cataloguenumber` | Catalogue identifier for a historical item. | `historical_item_id`, `catalogue_id`, `number`, `url` |
 | `manuscripts_msdescarea` | Target-side TEI msDesc area fragment for an item part; one row per `(item_part_id, area)`, public only when published. | `item_part_id`, `area`, `content`, `is_published`, `created`, `modified` |
 | `manuscripts_itemimage` | IIIF-backed image for an item part. | `item_part_id`, `image`, `locus`, `tags` |
-| `manuscripts_imagetext` | Transcription/translation layer for an image. | `item_image_id`, `content`, `content_dpt_legacy`, `type`, `status`, `review_assignee_id`, `language`, `created`, `modified` |
+| `manuscripts_imagetext` | Transcription/translation layer for an image. | `item_image_id`, `content`, `type`, `status`, `review_assignee_id`, `language`, `created`, `modified` |
 | `manuscripts_statustransition` | Review workflow status-change log for image text. | `image_text_id`, `actor_id`, `from_status`, `to_status`, `note`, `created` |
 | `manuscripts_tagulous_itemimage_tags` | Tagulous tag vocabulary for image tags. | `name`, `slug`, `count`, `protected` |
 | `manuscripts_itemimage_tags` | Implicit tag join table. | `itemimage_id`, `tagulous_itemimage_tags_id` |

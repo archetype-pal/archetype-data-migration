@@ -79,7 +79,7 @@ The current target is clearly a selective migration, not a full clone:
 | `digipal_itempart` plus `digipal_itempartitem` | `manuscripts_itempart` | Id-preserved from item part; target has synthetic `-1`. Historical link comes from `digipal_itempartitem`. |
 | none | `manuscripts_msdescarea` | Target-side TEI msDesc area fragments; no legacy source mapping is currently approved. Keep empty unless an explicit seed policy is defined. |
 | `digipal_image` | `manuscripts_itemimage` | Id-preserved; image path/IIIF fields transformed. |
-| Non-empty `digipal_text_textcontentxml` | `manuscripts_imagetext` | Content-preserved; ids not preserved. Empty XML rows are excluded. Current review fields and `content_dpt_legacy` are target-side additions. |
+| Non-empty `digipal_text_textcontentxml` | `manuscripts_imagetext` | Content-preserved; ids not preserved. Empty XML rows are excluded. Current review fields are target-side additions. Backend migration `0024_remove_imagetext_content_dpt_legacy` removed the temporary retention column. |
 | none | `manuscripts_statustransition` | Target-only image-text review workflow log; do not import from legacy. |
 | `digipal_scribe` | `scribes_scribe` | Id-preserved; target has synthetic `-1`. |
 | `digipal_script` | `scribes_script` | Direct/id-preserved; currently zero rows. |
@@ -171,8 +171,10 @@ Current counts:
 - Legacy non-empty XML rows: 899.
 - Target `manuscripts_imagetext` rows: 899.
 - Empty draft rows are intentionally excluded.
-- `review_assignee_id`, `StatusTransition`, and `content_dpt_legacy` are
-  current workflow/TEI migration fields, not legacy source data.
+- `review_assignee_id` and `StatusTransition` are current workflow fields, not
+  legacy source data.
+- Backend migration `0024_remove_imagetext_content_dpt_legacy` removed the
+  temporary `content_dpt_legacy` retention column after TEI cutover.
 
 ### Current-Only Tables And Metadata
 
@@ -270,8 +272,9 @@ against host Python.
    - Run migrations.
    - Run `just sync-sequences`.
    - Rebuild Meilisearch indexes with `just sync-all-search-indexes`.
-   - For image text TEI work, keep `content_dpt_legacy` as the reversible
-     source during the retention window.
+   - For image text TEI work, verify the cutover before applying backend
+     migration `0024_remove_imagetext_content_dpt_legacy`; after it is applied,
+     `content_dpt_legacy` is no longer part of the import target schema.
 
 8. Record an import manifest.
    - Legacy dump filename and checksum.
