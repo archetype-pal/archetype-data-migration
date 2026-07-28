@@ -6,7 +6,7 @@ from typing import Any
 
 from migration_toolkit.audit import AuditReport, report_to_dict
 
-PROCEDURE_VERSION = "2026-06-16"
+PROCEDURE_VERSION = "2026-07-28"
 
 
 @dataclass(frozen=True)
@@ -352,10 +352,16 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "Use the approved author policy from phase 02.",
             "Preserve publication and carousel ids where the audit says ids are preserved.",
             "Re-key keyword/category joins through current tagulous tables.",
+            "Rewrite legacy /digipal/page/... publication hrefs to /manuscripts/{item_part_id}/images/{image_id}.",
+            "Map legacy graph query values through digipal_annotation.graph_id to annotations_graph.id.",
+            "Keep static /media/uploads/... publication asset paths unless a verified replacement asset path exists.",
         ),
         validation=(
             "Publication counts match the audit.",
             "Sample slugs, statuses, publication dates, and author displays are correct.",
+            "Publication HTML has no remaining legacy /digipal/page/... hrefs after import.",
+            "Sample rewritten manuscript image links resolve, and graph query parameters open existing annotations.",
+            "Publication /media/uploads/... references have restored assets or an explicitly accepted asset plan.",
         ),
         rollback="Delete publication keyword links, publications, and carousel rows for the phase or restore backup.",
     ),

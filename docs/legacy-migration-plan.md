@@ -118,6 +118,22 @@ Safe future options:
 - Or choose one explicit fallback author and record the original legacy author
   username in publication metadata or migration logs.
 
+### Publication Content Links
+
+Legacy publication HTML is preserved as HTML, but internal DigiPal image-viewer
+links need a current-route rewrite during import. Rewrite `/digipal/page/{image_id}`
+hrefs to `/manuscripts/{item_part_id}/images/{image_id}` using
+`manuscripts_itemimage.item_part_id`. When the old link has
+`?graph={digipal_graph.id}`, map the graph through
+`digipal_annotation.graph_id` to the preserved `annotations_graph.id`; if that
+legacy graph id cannot be resolved, omit the graph query and keep the image
+route.
+
+Only rewrite URL-bearing publication links. Do not rewrite arbitrary prose, and
+do not rewrite `/media/uploads/...` image sources unless a replacement asset
+location has been verified. Legacy upload assets should be restored/deployed as
+static media and recorded in the run evidence.
+
 ### Annotations
 
 Legacy annotations are split across:

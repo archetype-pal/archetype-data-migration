@@ -26,6 +26,7 @@ __pycache__/
 # Generated migration evidence
 reports/*
 !reports/.gitkeep
+!reports/issue-4-publication-link-rewrite-local-validation-20260728.json
 manifests/*.local.json
 manifests/*-run.json
 manifests/*-dry-run.json

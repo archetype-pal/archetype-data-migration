@@ -26,7 +26,7 @@ def test_render_procedure_json_is_machine_readable():
     rendered = render_procedure_json()
     data = json.loads(rendered)
 
-    assert data["procedure_version"] == "2026-06-16"
+    assert data["procedure_version"] == "2026-07-28"
     assert data["phases"][0]["key"] == "00_preflight"
     manuscripts_phase = next(phase for phase in data["phases"] if phase["key"] == "05_manuscripts")
     assert "manuscripts_msdescarea" in manuscripts_phase["target_tables"]

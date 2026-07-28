@@ -15,6 +15,7 @@ from migration_toolkit.importer import (
     ImportReport,
     LegacyMigrationImportError,
     PhaseResult,
+    PublicationGraphLinkTarget,
     audit_failure_summary,
     default_unsupported_catalogue_number_output_path,
     default_unsupported_description_output_path,
@@ -23,7 +24,9 @@ from migration_toolkit.importer import (
     legacy_image_path,
     parse_annotation,
     parse_date_weights,
+    publication_link_rewrite_warnings,
     resolve_publication_author_assignments,
+    rewrite_legacy_publication_links,
     source_profile_blockers,
     source_profile_warnings,
     unsupported_catalogue_number_count,
@@ -75,6 +78,87 @@ def test_legacy_image_path_converts_iip_tif_paths():
 def test_parse_annotation_accepts_legacy_python_dict_strings():
     assert parse_annotation("{'shapes': [{'type': 'rect'}]}") == {"shapes": [{"type": "rect"}]}
     assert parse_annotation("not parseable") == {"legacy_raw": "not parseable"}
+
+
+def test_rewrite_legacy_publication_links_maps_image_href_to_current_route():
+    html, stats = rewrite_legacy_publication_links(
+        '<p><a href="/digipal/page/91/">image</a></p>',
+        {91: 259},
+        {},
+    )
+
+    assert html == '<p><a href="/manuscripts/259/images/91">image</a></p>'
+    assert stats.legacy_href_count == 1
+    assert stats.rewritten_href_count == 1
+    assert stats.graph_href_count == 0
+    assert stats.unresolved_graph_ids == set()
+
+
+def test_rewrite_legacy_publication_links_maps_legacy_graph_id_to_annotation_graph_id():
+    html, stats = rewrite_legacy_publication_links(
+        '<a href="/digipal/page/98/?graph=348&amp;display=default">graph</a>',
+        {98: 220},
+        {348: PublicationGraphLinkTarget(graph_id=349, image_id=98)},
+    )
+
+    assert html == '<a href="/manuscripts/220/images/98?graph=349">graph</a>'
+    assert stats.graph_href_count == 1
+    assert stats.resolved_graph_href_count == 1
+    assert stats.unresolved_graph_ids == set()
+
+
+def test_rewrite_legacy_publication_links_uses_graph_target_image_for_route():
+    html, stats = rewrite_legacy_publication_links(
+        '<a href="/digipal/page/91/?graph=348">graph</a>',
+        {91: 259, 98: 220},
+        {348: PublicationGraphLinkTarget(graph_id=349, image_id=98)},
+    )
+
+    assert html == '<a href="/manuscripts/220/images/98?graph=349">graph</a>'
+    assert stats.resolved_graph_href_count == 1
+
+
+def test_rewrite_legacy_publication_links_omits_unresolved_graph_param():
+    html, stats = rewrite_legacy_publication_links(
+        '<a href="/digipal/page/91/?graph=375">graph</a>',
+        {91: 259},
+        {},
+    )
+
+    assert html == '<a href="/manuscripts/259/images/91">graph</a>'
+    assert stats.graph_href_count == 1
+    assert stats.resolved_graph_href_count == 0
+    assert stats.unresolved_graph_ids == {375}
+    assert publication_link_rewrite_warnings(stats) == [
+        "Publication link rewrite omitted unresolved legacy graph ids from rewritten image links: 375."
+    ]
+
+
+def test_rewrite_legacy_publication_links_rewrites_exact_visible_legacy_url_text_only():
+    html, stats = rewrite_legacy_publication_links(
+        '<a href="/digipal/page/91/"> http://www.modelsofauthority.ac.uk/digipal/page/91/</a>'
+        '<p>http://www.modelsofauthority.ac.uk/digipal/page/91/</p>',
+        {91: 259},
+        {},
+    )
+
+    assert html == (
+        '<a href="/manuscripts/259/images/91"> /manuscripts/259/images/91</a>'
+        '<p>http://www.modelsofauthority.ac.uk/digipal/page/91/</p>'
+    )
+    assert stats.visible_text_rewrite_count == 1
+
+
+def test_rewrite_legacy_publication_links_leaves_missing_image_href_unchanged():
+    html, stats = rewrite_legacy_publication_links(
+        '<a href="http://www.modelsofauthority.ac.uk/digipal/page/999/">missing</a>',
+        {},
+        {},
+    )
+
+    assert html == '<a href="http://www.modelsofauthority.ac.uk/digipal/page/999/">missing</a>'
+    assert stats.rewritten_href_count == 0
+    assert stats.unresolved_image_ids == {999}
 
 
 def test_migrate_legacy_data_cli_renders_report(monkeypatch, capsys):

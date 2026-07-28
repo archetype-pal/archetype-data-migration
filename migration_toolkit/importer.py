@@ -3,10 +3,12 @@ from __future__ import annotations
 import ast
 from dataclasses import dataclass, field
 from datetime import UTC, datetime
+from html import unescape as html_unescape
 import json
 from pathlib import Path
 import re
 from typing import Any
+from urllib.parse import parse_qs
 
 import psycopg
 from psycopg import Connection
@@ -35,6 +37,17 @@ class LegacyMigrationImportError(RuntimeError):
 
 
 YEAR_RE = re.compile(r"(?<!\d)([1-2]\d{3}|[5-9]\d{2})(?!\d)")
+PUBLICATION_DIGIPAL_HREF_RE = re.compile(
+    r"(?P<prefix>\bhref\s*=\s*)(?P<quote>[\"'])"
+    r"(?P<url>(?:https?://[^\"']+?)?/digipal/page/(?P<image_id>\d+)/?(?:\?(?P<query>[^\"']*))?)"
+    r"(?P=quote)",
+    re.IGNORECASE,
+)
+PUBLICATION_DIGIPAL_URL_RE = re.compile(r"/digipal/page/\d+/?(?:\?[^#\s<]*)?", re.IGNORECASE)
+PUBLICATION_LEGACY_HOSTS = (
+    "http://www.modelsofauthority.ac.uk",
+    "https://www.modelsofauthority.ac.uk",
+)
 
 DESCRIPTION_POLICY_FAIL = "fail"
 DESCRIPTION_POLICY_SKIP = "skip"
@@ -383,6 +396,33 @@ class ImportContext:
         self.target_conn = target_conn
         self.options = options
         self.publication_author_assignments = publication_author_assignments or {}
+        self.phase_warnings: list[str] = []
+
+
+@dataclass(frozen=True)
+class PublicationGraphLinkTarget:
+    graph_id: int
+    image_id: int
+
+
+@dataclass
+class PublicationLinkRewriteStats:
+    legacy_href_count: int = 0
+    rewritten_href_count: int = 0
+    graph_href_count: int = 0
+    resolved_graph_href_count: int = 0
+    visible_text_rewrite_count: int = 0
+    unresolved_graph_ids: set[int] = field(default_factory=set)
+    unresolved_image_ids: set[int] = field(default_factory=set)
+
+    def merge(self, other: PublicationLinkRewriteStats) -> None:
+        self.legacy_href_count += other.legacy_href_count
+        self.rewritten_href_count += other.rewritten_href_count
+        self.graph_href_count += other.graph_href_count
+        self.resolved_graph_href_count += other.resolved_graph_href_count
+        self.visible_text_rewrite_count += other.visible_text_rewrite_count
+        self.unresolved_graph_ids.update(other.unresolved_graph_ids)
+        self.unresolved_image_ids.update(other.unresolved_image_ids)
 
 
 def utc_now_iso() -> str:
@@ -452,6 +492,167 @@ def truncate(value: Any, max_length: int, default: str = "") -> str:
 
 def text_or_blank(value: Any) -> str:
     return "" if value is None else str(value)
+
+
+def publication_link_rewrite_maps(
+    legacy_conn: Connection[Any], target_conn: Connection[Any]
+) -> tuple[dict[int, int], dict[int, PublicationGraphLinkTarget]]:
+    image_item_part_by_id = {
+        int(row["id"]): int(row["item_part_id"])
+        for row in fetch_rows(
+            target_conn,
+            """
+            SELECT id, item_part_id
+            FROM manuscripts_itemimage
+            ORDER BY id
+            """,
+        )
+        if row["item_part_id"] is not None
+    }
+    target_graph_image_by_id = {
+        int(row["id"]): int(row["item_image_id"])
+        for row in fetch_rows(
+            target_conn,
+            """
+            SELECT id, item_image_id
+            FROM annotations_graph
+            ORDER BY id
+            """,
+        )
+        if row["item_image_id"] is not None
+    }
+
+    graph_targets: dict[int, PublicationGraphLinkTarget] = {}
+    for row in fetch_rows(
+        legacy_conn,
+        """
+        SELECT id AS annotation_id, graph_id AS legacy_graph_id
+        FROM digipal_annotation
+        WHERE graph_id IS NOT NULL
+        ORDER BY graph_id
+        """,
+    ):
+        target_graph_id = int(row["annotation_id"])
+        target_image_id = target_graph_image_by_id.get(target_graph_id)
+        if target_image_id is not None:
+            graph_targets[int(row["legacy_graph_id"])] = PublicationGraphLinkTarget(
+                graph_id=target_graph_id,
+                image_id=target_image_id,
+            )
+
+    return image_item_part_by_id, graph_targets
+
+
+def _publication_legacy_graph_id(query: str | None) -> int | None:
+    values = parse_qs(html_unescape(query or ""), keep_blank_values=True).get("graph", [])
+    if not values or not values[0].isdigit():
+        return None
+    return int(values[0])
+
+
+def _publication_route(item_part_id: int, image_id: int, graph_id: int | None = None) -> str:
+    route = f"/manuscripts/{item_part_id}/images/{image_id}"
+    if graph_id is not None:
+        route = f"{route}?graph={graph_id}"
+    return route
+
+
+def _legacy_publication_visible_text_candidates(old_url: str) -> set[str]:
+    candidates = {old_url, html_unescape(old_url)}
+    for value in list(candidates):
+        match = PUBLICATION_DIGIPAL_URL_RE.search(value)
+        if match is None:
+            continue
+        relative_url = match.group(0)
+        candidates.add(relative_url)
+        candidates.update(f"{host}{relative_url}" for host in PUBLICATION_LEGACY_HOSTS)
+    return candidates
+
+
+def _rewrite_exact_visible_publication_link_text(html: str, old_url: str, new_url: str) -> tuple[str, int]:
+    candidates = _legacy_publication_visible_text_candidates(old_url)
+    anchor_re = re.compile(
+        r"(?P<start><a\b(?=[^>]*\bhref\s*=\s*[\"']"
+        + re.escape(new_url)
+        + r"[\"'])[^>]*>)(?P<body>[^<>]*)(?P<end></a>)",
+        re.IGNORECASE,
+    )
+    rewrite_count = 0
+
+    def replace_anchor(match: re.Match[str]) -> str:
+        nonlocal rewrite_count
+        body = match.group("body")
+        if body.strip() not in candidates:
+            return match.group(0)
+        leading = body[: len(body) - len(body.lstrip())]
+        trailing = body[len(body.rstrip()) :]
+        rewrite_count += 1
+        return f"{match.group('start')}{leading}{new_url}{trailing}{match.group('end')}"
+
+    return anchor_re.sub(replace_anchor, html), rewrite_count
+
+
+def rewrite_legacy_publication_links(
+    html: str,
+    image_item_part_by_id: dict[int, int],
+    graph_targets: dict[int, PublicationGraphLinkTarget],
+) -> tuple[str, PublicationLinkRewriteStats]:
+    stats = PublicationLinkRewriteStats()
+    visible_text_rewrites: list[tuple[str, str]] = []
+
+    def replace_href(match: re.Match[str]) -> str:
+        stats.legacy_href_count += 1
+        old_url = match.group("url")
+        old_image_id = int(match.group("image_id"))
+        old_graph_id = _publication_legacy_graph_id(match.group("query"))
+        new_image_id = old_image_id
+        new_graph_id: int | None = None
+
+        if old_graph_id is not None:
+            stats.graph_href_count += 1
+            graph_target = graph_targets.get(old_graph_id)
+            if graph_target is None:
+                stats.unresolved_graph_ids.add(old_graph_id)
+            elif graph_target.image_id in image_item_part_by_id:
+                new_image_id = graph_target.image_id
+                new_graph_id = graph_target.graph_id
+                stats.resolved_graph_href_count += 1
+            else:
+                stats.unresolved_image_ids.add(graph_target.image_id)
+
+        item_part_id = image_item_part_by_id.get(new_image_id)
+        if item_part_id is None:
+            stats.unresolved_image_ids.add(new_image_id)
+            return match.group(0)
+
+        new_url = _publication_route(item_part_id, new_image_id, new_graph_id)
+        stats.rewritten_href_count += 1
+        visible_text_rewrites.append((old_url, new_url))
+        return f"{match.group('prefix')}{match.group('quote')}{new_url}{match.group('quote')}"
+
+    rewritten_html = PUBLICATION_DIGIPAL_HREF_RE.sub(replace_href, html)
+    for old_url, new_url in visible_text_rewrites:
+        rewritten_html, rewrite_count = _rewrite_exact_visible_publication_link_text(rewritten_html, old_url, new_url)
+        stats.visible_text_rewrite_count += rewrite_count
+
+    return rewritten_html, stats
+
+
+def publication_link_rewrite_warnings(stats: PublicationLinkRewriteStats) -> list[str]:
+    warnings: list[str] = []
+    if stats.unresolved_graph_ids:
+        graph_ids = ", ".join(str(graph_id) for graph_id in sorted(stats.unresolved_graph_ids))
+        warnings.append(
+            "Publication link rewrite omitted unresolved legacy graph ids from rewritten image links: "
+            f"{graph_ids}."
+        )
+    if stats.unresolved_image_ids:
+        image_ids = ", ".join(str(image_id) for image_id in sorted(stats.unresolved_image_ids))
+        warnings.append(
+            "Publication link rewrite left legacy DigiPal hrefs unchanged for missing target image ids: "
+            f"{image_ids}."
+        )
+    return warnings
 
 
 def choice_value(value: Any, *, max_length: int | None = None) -> str | None:
@@ -1916,6 +2117,8 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
     legacy_conn = ctx.legacy_conn
     target_conn = ctx.target_conn
     rows_imported: dict[str, int] = {}
+    image_item_part_by_id, graph_targets = publication_link_rewrite_maps(legacy_conn, target_conn)
+    link_rewrite_stats = PublicationLinkRewriteStats()
 
     category_rows = fetch_rows(
         legacy_conn,
@@ -1981,6 +2184,38 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
         ORDER BY b.id
         """,
     )
+    publication_insert_rows = []
+    for row in publication_rows:
+        content, content_stats = rewrite_legacy_publication_links(
+            text_or_blank(row["content"]),
+            image_item_part_by_id,
+            graph_targets,
+        )
+        preview, preview_stats = rewrite_legacy_publication_links(
+            text_or_blank(row["description"]),
+            image_item_part_by_id,
+            graph_targets,
+        )
+        link_rewrite_stats.merge(content_stats)
+        link_rewrite_stats.merge(preview_stats)
+        publication_insert_rows.append(
+            {
+                "id": row["id"],
+                "title": truncate(row["title"] or f"Legacy publication {row['id']}", 350),
+                "slug": truncate(row["slug"] or f"legacy-publication-{row['id']}", 150),
+                "content": content,
+                "preview": preview,
+                "author_id": ctx.publication_author_assignments[int(row["legacy_author_id"])],
+                "is_blog_post": row["is_blog_post"],
+                "is_news": row["is_news"],
+                "is_featured": row["is_featured"],
+                "allow_comments": bool(row["allow_comments"]),
+                "published_at": row["publish_date"],
+                "created_at": row["created"] or row["publish_date"],
+                "updated_at": row["updated"] or row["publish_date"],
+            }
+        )
+
     rows_imported["publications_publication"] = insert_rows(
         target_conn,
         """
@@ -1994,25 +2229,9 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
           %(created_at)s, %(updated_at)s
         )
         """,
-        [
-            {
-                "id": row["id"],
-                "title": truncate(row["title"] or f"Legacy publication {row['id']}", 350),
-                "slug": truncate(row["slug"] or f"legacy-publication-{row['id']}", 150),
-                "content": text_or_blank(row["content"]),
-                "preview": text_or_blank(row["description"]),
-                "author_id": ctx.publication_author_assignments[int(row["legacy_author_id"])],
-                "is_blog_post": row["is_blog_post"],
-                "is_news": row["is_news"],
-                "is_featured": row["is_featured"],
-                "allow_comments": bool(row["allow_comments"]),
-                "published_at": row["publish_date"],
-                "created_at": row["created"] or row["publish_date"],
-                "updated_at": row["updated"] or row["publish_date"],
-            }
-            for row in publication_rows
-        ],
+        publication_insert_rows,
     )
+    ctx.phase_warnings.extend(publication_link_rewrite_warnings(link_rewrite_stats))
 
     publication_keyword_rows = fetch_rows(
         legacy_conn,
@@ -2256,6 +2475,7 @@ def run_import(options: ImportOptions) -> ImportReport:
             imported: dict[str, int] = {}
             skipped: dict[str, int] = {}
             warnings: list[str] = []
+            context.phase_warnings = warnings
 
             if phase == "target_only":
                 warnings.append("No target-only data is imported from the legacy source database by design.")
