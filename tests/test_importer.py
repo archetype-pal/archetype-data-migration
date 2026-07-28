@@ -172,6 +172,71 @@ def test_rewrite_legacy_publication_links_leaves_missing_image_href_unchanged():
     assert stats.unresolved_image_ids == {999}
 
 
+def test_rewrite_legacy_publication_links_maps_manuscript_href_to_item_part_route():
+    html, stats = rewrite_legacy_publication_links(
+        '<a href="/digipal/manuscripts/237/">local</a>'
+        '<a href="http://www.digipal.eu/digipal/manuscripts/497/">absolute</a>',
+        {},
+        {},
+        {237, 497},
+        {},
+    )
+
+    assert html == '<a href="/manuscripts/237">local</a><a href="/manuscripts/497">absolute</a>'
+    assert stats.manuscript_href_count == 2
+    assert stats.rewritten_manuscript_href_count == 2
+
+
+def test_rewrite_legacy_publication_links_maps_text_view_href_to_image_text_route():
+    html, stats = rewrite_legacy_publication_links(
+        '<a href="/digipal/manuscripts/644/texts/view/?east=translation/whole//;'
+        "&amp;north=image/locus/r/;olv:1,931,-521,0;&amp;center=transcription/whole//;"
+        '&amp;#text-viewer">text</a>',
+        {},
+        {},
+        {644},
+        {644: {"face": 7170, "dorse": 7171}},
+    )
+
+    assert html == '<a href="/manuscripts/644/images/7170/texts">text</a>'
+    assert stats.manuscript_href_count == 1
+    assert stats.rewritten_manuscript_href_count == 1
+
+
+def test_rewrite_legacy_publication_links_leaves_ambiguous_text_view_href_unchanged():
+    html, stats = rewrite_legacy_publication_links(
+        '<a href="/digipal/manuscripts/644/texts/view/?center=transcription/whole//;">text</a>',
+        {},
+        {},
+        {644},
+        {644: {"face": 7170, "dorse": 7171}},
+    )
+
+    assert html == '<a href="/digipal/manuscripts/644/texts/view/?center=transcription/whole//;">text</a>'
+    assert stats.rewritten_manuscript_href_count == 0
+    assert stats.unresolved_text_view_item_part_ids == {644}
+    assert publication_link_rewrite_warnings(stats) == [
+        "Publication link rewrite left legacy DigiPal text-view hrefs unchanged for ambiguous target "
+        "item part ids: 644."
+    ]
+
+
+def test_rewrite_legacy_publication_links_maps_verified_short_image_href():
+    html, stats = rewrite_legacy_publication_links(
+        '<a href="http://goo.gl/75DkRk"><img src="/media/uploads/FOM/August_2015/nrs_gd90:1:5a.jpg"></a>',
+        {5483: 667},
+        {},
+        {667},
+        {667: {"face": 5483}},
+    )
+
+    assert html == (
+        '<a href="/manuscripts/667/images/5483"><img src="/media/uploads/FOM/August_2015/nrs_gd90:1:5a.jpg"></a>'
+    )
+    assert stats.short_href_count == 1
+    assert stats.rewritten_short_href_count == 1
+
+
 def test_migrate_legacy_data_cli_renders_report(monkeypatch, capsys):
     def fake_run_import(options):
         assert options.execute is False

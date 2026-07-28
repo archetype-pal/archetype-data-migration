@@ -243,13 +243,16 @@ Importer contract:
 - Re-key keyword/category joins through current tagulous tables.
 - Rewrite legacy /digipal/page/... publication hrefs to /manuscripts/{item_part_id}/images/{image_id}.
 - Map legacy graph query values through digipal_annotation.graph_id to annotations_graph.id.
+- Rewrite safe legacy /digipal/manuscripts/... hrefs to current manuscript and image text routes.
+- Rewrite verified legacy short image links only when the target image id is known and preserved.
 - Keep static /media/uploads/... publication asset paths unless a verified replacement asset path exists.
 
 Validation:
 - Publication counts match the audit.
 - Sample slugs, statuses, publication dates, and author displays are correct.
 - Publication HTML has no remaining legacy /digipal/page/... hrefs after import.
-- Sample rewritten manuscript image links resolve, and graph query parameters open existing annotations.
+- Publication HTML has no remaining safely resolvable legacy /digipal/manuscripts/... hrefs after import.
+- Sample rewritten manuscript image/text links resolve, and graph query parameters open existing annotations.
 - Publication /media/uploads/... references have restored assets or an explicitly accepted asset plan.
 
 Rollback: Delete publication keyword links, publications, and carousel rows for the phase or restore backup.

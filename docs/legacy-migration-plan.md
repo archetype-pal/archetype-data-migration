@@ -130,13 +130,18 @@ an explicit migration policy decision.
 ### Publication Content Links
 
 Legacy publication HTML is preserved as HTML, but internal DigiPal image-viewer
-links need a current-route rewrite during import. Rewrite `/digipal/page/{image_id}`
-hrefs to `/manuscripts/{item_part_id}/images/{image_id}` using
+and manuscript/text links need a current-route rewrite during import. Rewrite
+`/digipal/page/{image_id}` hrefs to
+`/manuscripts/{item_part_id}/images/{image_id}` using
 `manuscripts_itemimage.item_part_id`. When the old link has
 `?graph={digipal_graph.id}`, map the graph through
 `digipal_annotation.graph_id` to the preserved `annotations_graph.id`; if that
 legacy graph id cannot be resolved, omit the graph query and keep the image
-route.
+route. Rewrite safe `/digipal/manuscripts/{item_part_id}` hrefs to
+`/manuscripts/{item_part_id}`, and legacy `/texts/view` hrefs to the current
+image text tab only when the item part and target image/locus can be resolved.
+Known legacy short links that redirect to verified DigiPal image pages can be
+rewritten through the same preserved image id mapping.
 
 Only rewrite URL-bearing publication links. Do not rewrite arbitrary prose, and
 do not rewrite `/media/uploads/...` image sources unless a replacement asset

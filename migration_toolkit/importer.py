@@ -43,11 +43,35 @@ PUBLICATION_DIGIPAL_HREF_RE = re.compile(
     r"(?P=quote)",
     re.IGNORECASE,
 )
+PUBLICATION_DIGIPAL_MANUSCRIPT_HREF_RE = re.compile(
+    r"(?P<prefix>\bhref\s*=\s*)(?P<quote>[\"'])"
+    r"(?P<url>(?:https?://[^\"']+?)?/digipal/manuscripts/(?P<item_part_id>\d+)/?"
+    r"(?:(?P<texts_path>texts/view)/?(?:\?(?P<query>[^\"']*))?)?)"
+    r"(?P=quote)",
+    re.IGNORECASE,
+)
+PUBLICATION_SHORT_HREF_RE = re.compile(
+    r"(?P<prefix>\bhref\s*=\s*)(?P<quote>[\"'])"
+    r"(?P<url>https?://goo\.gl/[A-Za-z0-9_-]+)/?"
+    r"(?P=quote)",
+    re.IGNORECASE,
+)
 PUBLICATION_DIGIPAL_URL_RE = re.compile(r"/digipal/page/\d+/?(?:\?[^#\s<]*)?", re.IGNORECASE)
 PUBLICATION_LEGACY_HOSTS = (
     "http://www.modelsofauthority.ac.uk",
     "https://www.modelsofauthority.ac.uk",
 )
+PUBLICATION_SHORT_IMAGE_IDS = {
+    "http://goo.gl/75dkrk": 5483,
+    "http://goo.gl/toqjaq": 5483,
+    "http://goo.gl/dxvvrb": 88,
+}
+PUBLICATION_TEXT_LOCUS_ALIASES = {
+    "recto": "face",
+    "r": "face",
+    "verso": "dorse",
+    "v": "dorse",
+}
 
 DESCRIPTION_POLICY_FAIL = "fail"
 DESCRIPTION_POLICY_SKIP = "skip"
@@ -409,20 +433,32 @@ class PublicationGraphLinkTarget:
 class PublicationLinkRewriteStats:
     legacy_href_count: int = 0
     rewritten_href_count: int = 0
+    manuscript_href_count: int = 0
+    rewritten_manuscript_href_count: int = 0
+    short_href_count: int = 0
+    rewritten_short_href_count: int = 0
     graph_href_count: int = 0
     resolved_graph_href_count: int = 0
     visible_text_rewrite_count: int = 0
     unresolved_graph_ids: set[int] = field(default_factory=set)
     unresolved_image_ids: set[int] = field(default_factory=set)
+    unresolved_item_part_ids: set[int] = field(default_factory=set)
+    unresolved_text_view_item_part_ids: set[int] = field(default_factory=set)
 
     def merge(self, other: PublicationLinkRewriteStats) -> None:
         self.legacy_href_count += other.legacy_href_count
         self.rewritten_href_count += other.rewritten_href_count
+        self.manuscript_href_count += other.manuscript_href_count
+        self.rewritten_manuscript_href_count += other.rewritten_manuscript_href_count
+        self.short_href_count += other.short_href_count
+        self.rewritten_short_href_count += other.rewritten_short_href_count
         self.graph_href_count += other.graph_href_count
         self.resolved_graph_href_count += other.resolved_graph_href_count
         self.visible_text_rewrite_count += other.visible_text_rewrite_count
         self.unresolved_graph_ids.update(other.unresolved_graph_ids)
         self.unresolved_image_ids.update(other.unresolved_image_ids)
+        self.unresolved_item_part_ids.update(other.unresolved_item_part_ids)
+        self.unresolved_text_view_item_part_ids.update(other.unresolved_text_view_item_part_ids)
 
 
 def utc_now_iso() -> str:
@@ -496,7 +532,7 @@ def text_or_blank(value: Any) -> str:
 
 def publication_link_rewrite_maps(
     legacy_conn: Connection[Any], target_conn: Connection[Any]
-) -> tuple[dict[int, int], dict[int, PublicationGraphLinkTarget]]:
+) -> tuple[dict[int, int], dict[int, PublicationGraphLinkTarget], set[int], dict[int, dict[str, int]]]:
     image_item_part_by_id = {
         int(row["id"]): int(row["item_part_id"])
         for row in fetch_rows(
@@ -509,6 +545,39 @@ def publication_link_rewrite_maps(
         )
         if row["item_part_id"] is not None
     }
+    item_part_ids = {
+        int(row["id"])
+        for row in fetch_rows(
+            target_conn,
+            """
+            SELECT id
+            FROM manuscripts_itempart
+            ORDER BY id
+            """,
+        )
+    }
+    item_part_image_by_locus: dict[int, dict[str, int]] = {}
+    for row in fetch_rows(
+        target_conn,
+        """
+        SELECT id, item_part_id, lower(locus) AS locus
+        FROM manuscripts_itemimage
+        WHERE item_part_id IS NOT NULL
+        ORDER BY
+          item_part_id,
+          CASE
+            WHEN lower(COALESCE(locus, '')) = 'face' THEN 0
+            WHEN lower(COALESCE(locus, '')) LIKE 'face%%' THEN 1
+            ELSE 2
+          END,
+          id
+        """,
+    ):
+        locus = text_or_blank(row["locus"]).strip().lower()
+        if not locus:
+            continue
+        item_part_id = int(row["item_part_id"])
+        item_part_image_by_locus.setdefault(item_part_id, {}).setdefault(locus, int(row["id"]))
     target_graph_image_by_id = {
         int(row["id"]): int(row["item_image_id"])
         for row in fetch_rows(
@@ -540,7 +609,7 @@ def publication_link_rewrite_maps(
                 image_id=target_image_id,
             )
 
-    return image_item_part_by_id, graph_targets
+    return image_item_part_by_id, graph_targets, item_part_ids, item_part_image_by_locus
 
 
 def _publication_legacy_graph_id(query: str | None) -> int | None:
@@ -550,11 +619,42 @@ def _publication_legacy_graph_id(query: str | None) -> int | None:
     return int(values[0])
 
 
+def _publication_text_view_locus(query: str | None) -> str | None:
+    match = re.search(r"image/locus/(?P<locus>[^/;&]+)", html_unescape(query or ""), re.IGNORECASE)
+    if match is None:
+        return None
+    locus = match.group("locus").strip().lower()
+    return PUBLICATION_TEXT_LOCUS_ALIASES.get(locus, locus)
+
+
+def _publication_text_view_image_id(
+    item_part_id: int,
+    query: str | None,
+    item_part_image_by_locus: dict[int, dict[str, int]],
+) -> int | None:
+    image_by_locus = item_part_image_by_locus.get(item_part_id, {})
+    if len(image_by_locus) == 1:
+        return next(iter(image_by_locus.values()))
+
+    locus = _publication_text_view_locus(query)
+    if locus is None:
+        return None
+    return image_by_locus.get(locus)
+
+
 def _publication_route(item_part_id: int, image_id: int, graph_id: int | None = None) -> str:
     route = f"/manuscripts/{item_part_id}/images/{image_id}"
     if graph_id is not None:
         route = f"{route}?graph={graph_id}"
     return route
+
+
+def _publication_text_route(item_part_id: int, image_id: int) -> str:
+    return f"{_publication_route(item_part_id, image_id)}/texts"
+
+
+def _normalise_publication_short_url(url: str) -> str:
+    return html_unescape(url).strip().rstrip("/").lower()
 
 
 def _legacy_publication_visible_text_candidates(old_url: str) -> set[str]:
@@ -596,11 +696,19 @@ def rewrite_legacy_publication_links(
     html: str,
     image_item_part_by_id: dict[int, int],
     graph_targets: dict[int, PublicationGraphLinkTarget],
+    item_part_ids: set[int] | None = None,
+    item_part_image_by_locus: dict[int, dict[str, int]] | None = None,
+    short_image_link_targets: dict[str, int] | None = None,
 ) -> tuple[str, PublicationLinkRewriteStats]:
     stats = PublicationLinkRewriteStats()
     visible_text_rewrites: list[tuple[str, str]] = []
+    resolved_item_part_ids = set(item_part_ids or set())
+    resolved_item_part_ids.update(image_item_part_by_id.values())
+    resolved_item_part_ids.update((item_part_image_by_locus or {}).keys())
+    text_image_by_locus = item_part_image_by_locus or {}
+    short_targets = short_image_link_targets or PUBLICATION_SHORT_IMAGE_IDS
 
-    def replace_href(match: re.Match[str]) -> str:
+    def replace_page_href(match: re.Match[str]) -> str:
         stats.legacy_href_count += 1
         old_url = match.group("url")
         old_image_id = int(match.group("image_id"))
@@ -630,7 +738,48 @@ def rewrite_legacy_publication_links(
         visible_text_rewrites.append((old_url, new_url))
         return f"{match.group('prefix')}{match.group('quote')}{new_url}{match.group('quote')}"
 
-    rewritten_html = PUBLICATION_DIGIPAL_HREF_RE.sub(replace_href, html)
+    def replace_manuscript_href(match: re.Match[str]) -> str:
+        stats.manuscript_href_count += 1
+        old_url = match.group("url")
+        item_part_id = int(match.group("item_part_id"))
+
+        if item_part_id not in resolved_item_part_ids:
+            stats.unresolved_item_part_ids.add(item_part_id)
+            return match.group(0)
+
+        if match.group("texts_path"):
+            image_id = _publication_text_view_image_id(item_part_id, match.group("query"), text_image_by_locus)
+            if image_id is None:
+                stats.unresolved_text_view_item_part_ids.add(item_part_id)
+                return match.group(0)
+            new_url = _publication_text_route(item_part_id, image_id)
+        else:
+            new_url = f"/manuscripts/{item_part_id}"
+
+        stats.rewritten_manuscript_href_count += 1
+        visible_text_rewrites.append((old_url, new_url))
+        return f"{match.group('prefix')}{match.group('quote')}{new_url}{match.group('quote')}"
+
+    def replace_short_href(match: re.Match[str]) -> str:
+        stats.short_href_count += 1
+        old_url = match.group("url")
+        image_id = short_targets.get(_normalise_publication_short_url(old_url))
+        if image_id is None:
+            return match.group(0)
+
+        item_part_id = image_item_part_by_id.get(image_id)
+        if item_part_id is None:
+            stats.unresolved_image_ids.add(image_id)
+            return match.group(0)
+
+        new_url = _publication_route(item_part_id, image_id)
+        stats.rewritten_short_href_count += 1
+        visible_text_rewrites.append((old_url, new_url))
+        return f"{match.group('prefix')}{match.group('quote')}{new_url}{match.group('quote')}"
+
+    rewritten_html = PUBLICATION_DIGIPAL_HREF_RE.sub(replace_page_href, html)
+    rewritten_html = PUBLICATION_DIGIPAL_MANUSCRIPT_HREF_RE.sub(replace_manuscript_href, rewritten_html)
+    rewritten_html = PUBLICATION_SHORT_HREF_RE.sub(replace_short_href, rewritten_html)
     for old_url, new_url in visible_text_rewrites:
         rewritten_html, rewrite_count = _rewrite_exact_visible_publication_link_text(rewritten_html, old_url, new_url)
         stats.visible_text_rewrite_count += rewrite_count
@@ -649,6 +798,21 @@ def publication_link_rewrite_warnings(stats: PublicationLinkRewriteStats) -> lis
         image_ids = ", ".join(str(image_id) for image_id in sorted(stats.unresolved_image_ids))
         warnings.append(
             f"Publication link rewrite left legacy DigiPal hrefs unchanged for missing target image ids: {image_ids}."
+        )
+    if stats.unresolved_item_part_ids:
+        item_part_ids = ", ".join(str(item_part_id) for item_part_id in sorted(stats.unresolved_item_part_ids))
+        warnings.append(
+            "Publication link rewrite left legacy DigiPal manuscript hrefs unchanged for missing target item part ids: "
+            f"{item_part_ids}."
+        )
+    if stats.unresolved_text_view_item_part_ids:
+        item_part_ids = ", ".join(
+            str(item_part_id) for item_part_id in sorted(stats.unresolved_text_view_item_part_ids)
+        )
+        warnings.append(
+            "Publication link rewrite left legacy DigiPal text-view hrefs unchanged for ambiguous target "
+            "item part ids: "
+            f"{item_part_ids}."
         )
     return warnings
 
@@ -2113,7 +2277,9 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
     legacy_conn = ctx.legacy_conn
     target_conn = ctx.target_conn
     rows_imported: dict[str, int] = {}
-    image_item_part_by_id, graph_targets = publication_link_rewrite_maps(legacy_conn, target_conn)
+    image_item_part_by_id, graph_targets, item_part_ids, item_part_image_by_locus = publication_link_rewrite_maps(
+        legacy_conn, target_conn
+    )
     link_rewrite_stats = PublicationLinkRewriteStats()
 
     category_rows = fetch_rows(
@@ -2186,11 +2352,15 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
             text_or_blank(row["content"]),
             image_item_part_by_id,
             graph_targets,
+            item_part_ids,
+            item_part_image_by_locus,
         )
         preview, preview_stats = rewrite_legacy_publication_links(
             text_or_blank(row["description"]),
             image_item_part_by_id,
             graph_targets,
+            item_part_ids,
+            item_part_image_by_locus,
         )
         link_rewrite_stats.merge(content_stats)
         link_rewrite_stats.merge(preview_stats)
