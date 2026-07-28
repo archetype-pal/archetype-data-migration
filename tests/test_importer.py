@@ -137,14 +137,14 @@ def test_rewrite_legacy_publication_links_omits_unresolved_graph_param():
 def test_rewrite_legacy_publication_links_rewrites_exact_visible_legacy_url_text_only():
     html, stats = rewrite_legacy_publication_links(
         '<a href="/digipal/page/91/"> http://www.modelsofauthority.ac.uk/digipal/page/91/</a>'
-        '<p>http://www.modelsofauthority.ac.uk/digipal/page/91/</p>',
+        "<p>http://www.modelsofauthority.ac.uk/digipal/page/91/</p>",
         {91: 259},
         {},
     )
 
     assert html == (
         '<a href="/manuscripts/259/images/91"> /manuscripts/259/images/91</a>'
-        '<p>http://www.modelsofauthority.ac.uk/digipal/page/91/</p>'
+        "<p>http://www.modelsofauthority.ac.uk/digipal/page/91/</p>"
     )
     assert stats.visible_text_rewrite_count == 1
 

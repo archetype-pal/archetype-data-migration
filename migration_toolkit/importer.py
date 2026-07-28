@@ -643,14 +643,12 @@ def publication_link_rewrite_warnings(stats: PublicationLinkRewriteStats) -> lis
     if stats.unresolved_graph_ids:
         graph_ids = ", ".join(str(graph_id) for graph_id in sorted(stats.unresolved_graph_ids))
         warnings.append(
-            "Publication link rewrite omitted unresolved legacy graph ids from rewritten image links: "
-            f"{graph_ids}."
+            f"Publication link rewrite omitted unresolved legacy graph ids from rewritten image links: {graph_ids}."
         )
     if stats.unresolved_image_ids:
         image_ids = ", ".join(str(image_id) for image_id in sorted(stats.unresolved_image_ids))
         warnings.append(
-            "Publication link rewrite left legacy DigiPal hrefs unchanged for missing target image ids: "
-            f"{image_ids}."
+            f"Publication link rewrite left legacy DigiPal hrefs unchanged for missing target image ids: {image_ids}."
         )
     return warnings
 
