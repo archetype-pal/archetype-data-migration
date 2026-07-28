@@ -246,6 +246,7 @@ Importer contract:
 - Rewrite safe legacy /digipal/manuscripts/... hrefs to current manuscript and image text routes.
 - Rewrite verified legacy short image links only when the target image id is known and preserved.
 - Keep static /media/uploads/... publication asset paths unless a verified replacement asset path exists.
+- Preserve legacy bracket-note publication text such as [5]; the current frontend renders matching Notes entries as internal anchors.
 
 Validation:
 - Publication counts match the audit.
@@ -254,6 +255,7 @@ Validation:
 - Publication HTML has no remaining safely resolvable legacy /digipal/manuscripts/... hrefs after import.
 - Sample rewritten manuscript image/text links resolve, and graph query parameters open existing annotations.
 - Publication /media/uploads/... references have restored assets or an explicitly accepted asset plan.
+- Publication pages with legacy bracket notes render matching note references as clickable internal anchors.
 
 Rollback: Delete publication keyword links, publications, and carousel rows for the phase or restore backup.
 

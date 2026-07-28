@@ -151,6 +151,12 @@ do not rewrite `/media/uploads/...` image sources unless a replacement asset
 location has been verified. Legacy upload assets should be restored/deployed as
 static media and recorded in the run evidence.
 
+Legacy bracket-note text such as `[5]` is stored that way in the source
+`blog_blogpost.content` rows and should be preserved during import. The current
+frontend publication renderer links matching body references and `Notes`
+entries at render time, so the migration does not need to materialize those
+generated internal anchors in the database.
+
 ### Annotations
 
 Legacy annotations are split across:
