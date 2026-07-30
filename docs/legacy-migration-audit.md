@@ -4,13 +4,12 @@ Status: `warn`
 
 | Database | Public tables |
 | --- | ---: |
-| `old_arch` | 142 |
-| `test_db` | 69 |
+| `legacy source database` | 142 |
+| `target database` | 69 |
 
-The target table count includes local backup tables created during
-publication-link, extended publication-link, allograph-placeholder,
-auth-user-id reconciliation, and unreferenced `admin_current` cleanup. Entity
-mapping counts below are for application tables.
+The target table count may include operator-created backup or work tables from
+the inspected environment. Entity mapping counts below are for application
+tables.
 
 ## Entity Mappings
 
