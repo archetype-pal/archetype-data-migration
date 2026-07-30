@@ -13,6 +13,7 @@ from migration_toolkit.audit import (
     check_legacy_catalogue_number_relationships,
     check_legacy_description_relationships,
     check_publication_author_mapping,
+    check_publication_media_paths,
     compare_id_sets,
     legacy_url_from_env,
     render_json,
@@ -141,6 +142,33 @@ def test_check_carousel_image_paths_fails_on_media_prefixed_values(monkeypatch):
     assert result.status == "fail"
     assert "media URL prefix" in result.summary
     assert result.details == [{"id": 1, "image": "/media/carousel/browse.jpg"}]
+
+
+def test_check_publication_media_paths_passes_when_paths_are_same_origin(monkeypatch):
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda *_args, **_kwargs: [])
+
+    result = check_publication_media_paths(None)
+
+    assert result.status == "ok"
+    assert result.summary == "Publication media URLs use same-origin /media/uploads/ paths."
+
+
+def test_check_publication_media_paths_fails_on_old_absolute_hosts(monkeypatch):
+    rows = [
+        {
+            "id": 2,
+            "slug": "registration-opens-digital-approaches-to-hebrew-manuscripts",
+            "field": "content",
+            "legacy_prefix": "http://www.digipal.eu/media/uploads/",
+        }
+    ]
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda *_args, **_kwargs: rows)
+
+    result = check_publication_media_paths(None)
+
+    assert result.status == "fail"
+    assert "old absolute media hosts" in result.summary
+    assert result.details == rows
 
 
 def test_allograph_mapping_does_not_allow_synthetic_placeholder_by_default():

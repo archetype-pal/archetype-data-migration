@@ -61,6 +61,7 @@ tables.
 | `warn` | Annotation shape | Target text/editorial annotations retain allograph/hand values. This is valid under the current database constraint but differs from the model comment that treats those links as optional. |
 | `ok` | Legacy text exclusions | Non-empty legacy text XML rows: 899; target ImageText rows: 899. |
 | `ok` | Carousel image paths | Carousel image paths are MEDIA_ROOT-relative. |
+| `ok` | Publication media paths | Publication media URLs use same-origin /media/uploads/ paths. |
 
 ## Mapping Details
 

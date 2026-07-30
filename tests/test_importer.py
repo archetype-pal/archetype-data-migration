@@ -245,6 +245,24 @@ def test_rewrite_legacy_publication_links_maps_verified_short_image_href():
     assert stats.rewritten_short_href_count == 1
 
 
+def test_rewrite_legacy_publication_links_normalizes_old_absolute_media_urls():
+    html, stats = rewrite_legacy_publication_links(
+        '<img src="http://www.digipal.eu/media/uploads/PDFs/logistics.pdf">'
+        '<a href="http://www.modelsofauthority.ac.uk/media/uploads/DigiPal/lg_banner.jpg">banner</a>'
+        '<img src="https://www.modelsofauthority.ac.uk/media/uploads/Blog/2022/programme_2b.pdf">',
+        {},
+        {},
+    )
+
+    assert html == (
+        '<img src="/media/uploads/PDFs/logistics.pdf">'
+        '<a href="/media/uploads/DigiPal/lg_banner.jpg">banner</a>'
+        '<img src="/media/uploads/Blog/2022/programme_2b.pdf">'
+    )
+    assert stats.legacy_media_url_count == 3
+    assert stats.rewritten_media_url_count == 3
+
+
 def test_migrate_legacy_data_cli_renders_report(monkeypatch, capsys):
     def fake_run_import(options):
         assert options.execute is False

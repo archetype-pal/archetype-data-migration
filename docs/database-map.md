@@ -214,7 +214,7 @@ erDiagram
 | --- | --- | --- |
 | `publications_carouselitem` | Homepage/public carousel item. | `ordering`, `image` as MEDIA_ROOT-relative `carousel/...`, `title`, `url` |
 | `publications_event` | Event content page. | `title`, `slug`, `content`, `created_at`, `updated_at` |
-| `publications_publication` | Article/blog/news publication. | `author_id`, `title`, `slug`, `content`, `preview`, `status`, booleans, `published_at`, timestamps |
+| `publications_publication` | Article/blog/news publication. | `author_id`, `title`, `slug`, `content`, `preview` with publication media URLs normalized to `/media/uploads/...`, `status`, booleans, `published_at`, timestamps |
 | `publications_comment` | Comment on a publication. | `post_id`, `content`, author fields, `is_approved`, timestamps |
 | `publications_publication_similar_posts` | Self many-to-many related posts. | `from_publication_id`, `to_publication_id` |
 | `publications_tagulous_publication_keywords` | Tagulous vocabulary for publication keywords. | `name`, `slug`, `count`, `protected` |

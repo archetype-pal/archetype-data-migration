@@ -146,10 +146,12 @@ image text tab only when the item part and target image/locus can be resolved.
 Known legacy short links that redirect to verified DigiPal image pages can be
 rewritten through the same preserved image id mapping.
 
-Only rewrite URL-bearing publication links. Do not rewrite arbitrary prose, and
-do not rewrite `/media/uploads/...` image sources unless a replacement asset
-location has been verified. Legacy upload assets should be restored/deployed as
-static media and recorded in the run evidence.
+Only rewrite URL-bearing publication links and known legacy absolute media
+prefixes. Normalize old absolute upload URLs from `www.digipal.eu` and
+`www.modelsofauthority.ac.uk` to same-origin `/media/uploads/...` paths. Do not
+rewrite already same-origin `/media/uploads/...` image sources unless a
+replacement asset location has been verified. Legacy upload assets should be
+restored/deployed as static media and recorded in the run evidence.
 
 Legacy bracket-note text such as `[5]` is stored that way in the source
 `blog_blogpost.content` rows and should be preserved during import. The current

@@ -1230,6 +1230,50 @@ def check_carousel_image_paths(target_conn: Connection[Any]) -> CheckResult:
     )
 
 
+def check_publication_media_paths(target_conn: Connection[Any]) -> CheckResult:
+    bad_rows = _dict_rows(
+        target_conn,
+        """
+        WITH bodies AS (
+            SELECT id, slug, 'content' AS field, content AS body
+            FROM publications_publication
+            UNION ALL
+            SELECT id, slug, 'preview' AS field, preview AS body
+            FROM publications_publication
+        )
+        SELECT id, slug, field, match[1] AS legacy_prefix
+        FROM bodies
+        CROSS JOIN LATERAL regexp_matches(
+            body,
+            '(https?://(www\\.)?(digipal\\.eu|modelsofauthority\\.ac\\.uk)/media/uploads/)',
+            'gi'
+        ) AS match
+        WHERE body IS NOT NULL
+        ORDER BY id, field, legacy_prefix
+        LIMIT 20
+        """,
+    )
+
+    if bad_rows:
+        return CheckResult(
+            key="publication_media_paths",
+            title="Publication media paths",
+            status="fail",
+            summary=(
+                f"{len(bad_rows)} sampled publication media URL(s) still use old absolute media hosts. "
+                "Normalize them to same-origin /media/uploads/... paths."
+            ),
+            details=bad_rows,
+        )
+
+    return CheckResult(
+        key="publication_media_paths",
+        title="Publication media paths",
+        status="ok",
+        summary="Publication media URLs use same-origin /media/uploads/ paths.",
+    )
+
+
 def run_audit(
     legacy_url: str | None = None,
     target_url: str | None = None,
@@ -1278,6 +1322,7 @@ def run_audit(
             check_annotation_shape(legacy_conn, target_conn),
             check_legacy_text_exclusions(legacy_conn, target_conn),
             check_carousel_image_paths(target_conn),
+            check_publication_media_paths(target_conn),
         ]
 
         return AuditReport(

@@ -57,6 +57,10 @@ PUBLICATION_SHORT_HREF_RE = re.compile(
     re.IGNORECASE,
 )
 PUBLICATION_DIGIPAL_URL_RE = re.compile(r"/digipal/page/\d+/?(?:\?[^#\s<]*)?", re.IGNORECASE)
+PUBLICATION_LEGACY_MEDIA_URL_RE = re.compile(
+    r"https?://(?:www\.)?(?:digipal\.eu|modelsofauthority\.ac\.uk)(?P<path>/media/uploads/)",
+    re.IGNORECASE,
+)
 PUBLICATION_LEGACY_HOSTS = (
     "http://www.modelsofauthority.ac.uk",
     "https://www.modelsofauthority.ac.uk",
@@ -440,6 +444,8 @@ class PublicationLinkRewriteStats:
     graph_href_count: int = 0
     resolved_graph_href_count: int = 0
     visible_text_rewrite_count: int = 0
+    legacy_media_url_count: int = 0
+    rewritten_media_url_count: int = 0
     unresolved_graph_ids: set[int] = field(default_factory=set)
     unresolved_image_ids: set[int] = field(default_factory=set)
     unresolved_item_part_ids: set[int] = field(default_factory=set)
@@ -455,6 +461,8 @@ class PublicationLinkRewriteStats:
         self.graph_href_count += other.graph_href_count
         self.resolved_graph_href_count += other.resolved_graph_href_count
         self.visible_text_rewrite_count += other.visible_text_rewrite_count
+        self.legacy_media_url_count += other.legacy_media_url_count
+        self.rewritten_media_url_count += other.rewritten_media_url_count
         self.unresolved_graph_ids.update(other.unresolved_graph_ids)
         self.unresolved_image_ids.update(other.unresolved_image_ids)
         self.unresolved_item_part_ids.update(other.unresolved_item_part_ids)
@@ -699,6 +707,17 @@ def _rewrite_exact_visible_publication_link_text(html: str, old_url: str, new_ur
     return anchor_re.sub(replace_anchor, html), rewrite_count
 
 
+def normalize_publication_media_urls(html: str) -> tuple[str, int]:
+    rewrite_count = 0
+
+    def replace_legacy_media_url(match: re.Match[str]) -> str:
+        nonlocal rewrite_count
+        rewrite_count += 1
+        return match.group("path")
+
+    return PUBLICATION_LEGACY_MEDIA_URL_RE.sub(replace_legacy_media_url, html), rewrite_count
+
+
 def rewrite_legacy_publication_links(
     html: str,
     image_item_part_by_id: dict[int, int],
@@ -790,6 +809,10 @@ def rewrite_legacy_publication_links(
     for old_url, new_url in visible_text_rewrites:
         rewritten_html, rewrite_count = _rewrite_exact_visible_publication_link_text(rewritten_html, old_url, new_url)
         stats.visible_text_rewrite_count += rewrite_count
+
+    rewritten_html, media_url_count = normalize_publication_media_urls(rewritten_html)
+    stats.legacy_media_url_count += media_url_count
+    stats.rewritten_media_url_count += media_url_count
 
     return rewritten_html, stats
 
