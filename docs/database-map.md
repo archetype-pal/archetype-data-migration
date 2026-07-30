@@ -212,7 +212,7 @@ erDiagram
 
 | Table | Purpose | Important fields / links |
 | --- | --- | --- |
-| `publications_carouselitem` | Homepage/public carousel item. | `ordering`, `image`, `title`, `url` |
+| `publications_carouselitem` | Homepage/public carousel item. | `ordering`, `image` as MEDIA_ROOT-relative `carousel/...`, `title`, `url` |
 | `publications_event` | Event content page. | `title`, `slug`, `content`, `created_at`, `updated_at` |
 | `publications_publication` | Article/blog/news publication. | `author_id`, `title`, `slug`, `content`, `preview`, `status`, booleans, `published_at`, timestamps |
 | `publications_comment` | Comment on a publication. | `post_id`, `content`, author fields, `is_approved`, timestamps |

@@ -495,7 +495,10 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         target_table="publications_carouselitem",
         category="publications",
         strategy="id-preserved transformed fields",
-        notes="Legacy sort_order/link/image fields map to target ordering/url/image.",
+        notes=(
+            "Legacy sort_order/link/image fields map to target ordering/url/image; carousel image paths are "
+            "MEDIA_ROOT-relative."
+        ),
     ),
     EntityMapping(
         key="worksets",
@@ -1195,6 +1198,38 @@ def check_legacy_text_exclusions(legacy_conn: Connection[Any], target_conn: Conn
     )
 
 
+def check_carousel_image_paths(target_conn: Connection[Any]) -> CheckResult:
+    bad_rows = _dict_rows(
+        target_conn,
+        """
+        SELECT id, image
+        FROM publications_carouselitem
+        WHERE image ~ '^/?(media/)+'
+        ORDER BY id
+        LIMIT 20
+        """,
+    )
+
+    if bad_rows:
+        return CheckResult(
+            key="carousel_image_paths",
+            title="Carousel image paths",
+            status="fail",
+            summary=(
+                f"{len(bad_rows)} sampled carousel image path(s) include a media URL prefix. "
+                "Store MEDIA_ROOT-relative paths such as carousel/browse.jpg."
+            ),
+            details=bad_rows,
+        )
+
+    return CheckResult(
+        key="carousel_image_paths",
+        title="Carousel image paths",
+        status="ok",
+        summary="Carousel image paths are MEDIA_ROOT-relative.",
+    )
+
+
 def run_audit(
     legacy_url: str | None = None,
     target_url: str | None = None,
@@ -1225,7 +1260,13 @@ def run_audit(
         )
         require_tables(
             target_conn,
-            {"common_date", "annotations_graph", "manuscripts_historicalitem", "publications_publication"},
+            {
+                "annotations_graph",
+                "common_date",
+                "manuscripts_historicalitem",
+                "publications_carouselitem",
+                "publications_publication",
+            },
             database_label=f"target database {target_db}",
         )
 
@@ -1236,6 +1277,7 @@ def run_audit(
             check_publication_author_mapping(legacy_conn, target_conn, publication_author_policy),
             check_annotation_shape(legacy_conn, target_conn),
             check_legacy_text_exclusions(legacy_conn, target_conn),
+            check_carousel_image_paths(target_conn),
         ]
 
         return AuditReport(

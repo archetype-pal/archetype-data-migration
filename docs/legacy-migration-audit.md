@@ -49,7 +49,7 @@ mapping counts below are for application tables.
 | `warn` | Graph position links | 1491 | 1485 | ids not preserved, filtered |
 | `ok` | Publications | 61 | 61 | id-preserved transformed fields |
 | `ok` | Publication keyword links | 67 | 67 | ids not preserved |
-| `ok` | Carousel items | 8 | 8 | id-preserved transformed fields |
+| `ok` | Carousel items | 8 | 8 | id-preserved transformed fields; image paths stored MEDIA_ROOT-relative (`carousel/...`) |
 | `warn` | Worksets | 0 | 5 | target-only feature table |
 
 ## Checks
@@ -61,6 +61,7 @@ mapping counts below are for application tables.
 | `ok` | Publication author mapping | Publication author ids resolve to matching usernames. |
 | `warn` | Annotation shape | Target text/editorial annotations retain allograph/hand values. This is valid under the current database constraint but differs from the model comment that treats those links as optional. |
 | `ok` | Legacy text exclusions | Non-empty legacy text XML rows: 899; target ImageText rows: 899. |
+| `ok` | Carousel image paths | Carousel image paths are MEDIA_ROOT-relative. |
 
 ## Mapping Details
 

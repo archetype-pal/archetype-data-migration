@@ -17,6 +17,7 @@ from migration_toolkit.importer import (
     PhaseResult,
     PublicationGraphLinkTarget,
     audit_failure_summary,
+    carousel_image_path,
     default_unsupported_catalogue_number_output_path,
     default_unsupported_description_output_path,
     expand_phases,
@@ -84,6 +85,13 @@ def test_parse_date_weights_falls_back_to_legacy_weights():
 def test_legacy_image_path_converts_iip_tif_paths():
     assert legacy_image_path("jp2/BLno1/path/k90069_51.tif") == "BLno1/path/k90069_51.jp2"
     assert legacy_image_path(None, "already.jp2") == "already.jp2"
+
+
+def test_carousel_image_path_removes_media_url_prefix():
+    assert carousel_image_path("/media/carousel/browse.jpg") == "carousel/browse.jpg"
+    assert carousel_image_path("media/carousel/browse.jpg") == "carousel/browse.jpg"
+    assert carousel_image_path("carousel/browse.jpg") == "carousel/browse.jpg"
+    assert carousel_image_path(None, "/media/carousel/search.jpg") == "carousel/search.jpg"
 
 
 def test_parse_annotation_accepts_legacy_python_dict_strings():

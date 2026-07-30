@@ -100,7 +100,7 @@ The current target is clearly a selective migration, not a full clone:
 | `digipal_graph_aspects` | `annotations_graph_positions` | Re-keyed and filtered with graph rows; six fewer rows in the current target snapshot. |
 | `blog_blogpost` | `publications_publication` | Id-preserved; author ids need special handling. |
 | `blog_blogpost_categories` | `publications_publication_keywords` | Re-keyed through tagulous keywords. |
-| `digipal_carouselitem` | `publications_carouselitem` | Id-preserved; field names transformed. |
+| `digipal_carouselitem` | `publications_carouselitem` | Id-preserved; field names transformed; image paths stored MEDIA_ROOT-relative (`carousel/...`). |
 | none | `worksets_workset` | Target-only user-saved lightbox/citable collection feature; currently five local rows. |
 
 ## Key Differences And Risks

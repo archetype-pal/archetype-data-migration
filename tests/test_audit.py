@@ -9,6 +9,7 @@ from migration_toolkit.audit import (
     IdComparison,
     MappingResult,
     PublicationAuthorPolicy,
+    check_carousel_image_paths,
     check_legacy_catalogue_number_relationships,
     check_legacy_description_relationships,
     check_publication_author_mapping,
@@ -118,6 +119,28 @@ def test_render_json_is_machine_readable():
 
     assert '"legacy_database": "legacy_source"' in rendered
     assert '"status": "ok"' in rendered
+
+
+def test_check_carousel_image_paths_passes_when_paths_are_media_root_relative(monkeypatch):
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda *_args, **_kwargs: [])
+
+    result = check_carousel_image_paths(None)
+
+    assert result.status == "ok"
+    assert result.summary == "Carousel image paths are MEDIA_ROOT-relative."
+
+
+def test_check_carousel_image_paths_fails_on_media_prefixed_values(monkeypatch):
+    monkeypatch.setattr(
+        "migration_toolkit.audit._dict_rows",
+        lambda *_args, **_kwargs: [{"id": 1, "image": "/media/carousel/browse.jpg"}],
+    )
+
+    result = check_carousel_image_paths(None)
+
+    assert result.status == "fail"
+    assert "media URL prefix" in result.summary
+    assert result.details == [{"id": 1, "image": "/media/carousel/browse.jpg"}]
 
 
 def test_allograph_mapping_does_not_allow_synthetic_placeholder_by_default():

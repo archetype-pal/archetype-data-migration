@@ -240,6 +240,7 @@ Import public CMS records represented in the current application.
 Importer contract:
 - Use the approved author policy from phase 02.
 - Preserve publication and carousel ids where the audit says ids are preserved.
+- Store carousel images as MEDIA_ROOT-relative paths such as carousel/browse.jpg, never /media/carousel/browse.jpg.
 - Re-key keyword/category joins through current tagulous tables.
 - Rewrite legacy /digipal/page/... publication hrefs to /manuscripts/{item_part_id}/images/{image_id}.
 - Map legacy graph query values through digipal_annotation.graph_id to annotations_graph.id.
@@ -253,6 +254,7 @@ Validation:
 - Sample slugs, statuses, publication dates, and author displays are correct.
 - Publication HTML has no remaining legacy /digipal/page/... hrefs after import.
 - Publication HTML has no remaining safely resolvable legacy /digipal/manuscripts/... hrefs after import.
+- Carousel image paths are MEDIA_ROOT-relative and do not start with /media/.
 - Sample rewritten manuscript image/text links resolve, and graph query parameters open existing annotations.
 - Publication /media/uploads/... references have restored assets or an explicitly accepted asset plan.
 - Publication pages with legacy bracket notes render matching note references as clickable internal anchors.

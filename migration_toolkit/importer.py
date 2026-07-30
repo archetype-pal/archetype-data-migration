@@ -504,6 +504,13 @@ def legacy_image_path(iipimage: str | None, image: str | None = None) -> str:
     return path
 
 
+def carousel_image_path(image_file: str | None, image: str | None = None) -> str:
+    path = (image_file or image or "").strip().lstrip("/")
+    while path.startswith("media/"):
+        path = path[6:]
+    return path
+
+
 def parse_annotation(raw: str | dict[str, Any] | list[Any] | None) -> dict[str, Any] | list[Any]:
     if raw is None or raw == "":
         return {}
@@ -2434,7 +2441,7 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
             {
                 "id": row["id"],
                 "ordering": row["sort_order"] or 0,
-                "image": truncate(row["image_file"] or row["image"] or "", 100),
+                "image": truncate(carousel_image_path(row["image_file"], row["image"]), 100),
                 "title": truncate(row["title"] or "", 150),
                 "url": truncate(row["link"] or "", 200),
             }
