@@ -35,12 +35,12 @@ just procedure-live
 
 ## Current Comparison Summary
 
-Snapshot: 2026-06-09.
+Snapshot: 2026-07-30.
 
-| Database | Public tables | Shape |
+| Database | Application public tables | Shape |
 | --- | ---: | --- |
 | Legacy source database | 142 | Legacy Digipal/Mezzanine/South-era schema. |
-| Target database | 52 | Current Django app schema. |
+| Target database | 53 | Current Django app schema, excluding operator helper tables. |
 
 The current target is clearly a selective migration, not a full clone:
 

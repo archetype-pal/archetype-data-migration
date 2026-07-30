@@ -12,10 +12,13 @@ from migration_toolkit.audit import (
     check_carousel_image_paths,
     check_legacy_catalogue_number_relationships,
     check_legacy_description_relationships,
+    check_operator_helper_tables_absent,
     check_publication_author_mapping,
     check_publication_media_paths,
     compare_id_sets,
+    is_operator_helper_table_name,
     legacy_url_from_env,
+    public_table_count,
     render_json,
     render_markdown,
     target_url_from_env,
@@ -169,6 +172,60 @@ def test_check_publication_media_paths_fails_on_old_absolute_hosts(monkeypatch):
     assert result.status == "fail"
     assert "old absolute media hosts" in result.summary
     assert result.details == rows
+
+
+def test_public_table_count_excludes_operator_helper_tables(monkeypatch):
+    monkeypatch.setattr(
+        "migration_toolkit.audit._dict_rows",
+        lambda *_args, **_kwargs: [
+            {"table_name": "auth_user"},
+            {"table_name": "publications_publication"},
+            {"table_name": "operator_snapshot_backup_20260101_010203"},
+            {"table_name": "operator_reconcile_map_20260101_010203"},
+            {"table_name": "worksets_workset"},
+        ],
+    )
+
+    assert public_table_count(None) == 3
+
+
+def test_operator_helper_table_name_detection_handles_truncated_names():
+    assert is_operator_helper_table_name("operator_snapshot_backup_20260101_010203")
+    assert is_operator_helper_table_name("operator_reconcile_map_20260101_010203")
+    assert is_operator_helper_table_name("very_long_operator_helper_table_name_backup_20260101_01")
+    assert not is_operator_helper_table_name("worksets_workset")
+    assert not is_operator_helper_table_name("publications_publication")
+
+
+def test_operator_helper_table_check_fails_when_helpers_exist(monkeypatch):
+    monkeypatch.setattr(
+        "migration_toolkit.audit._dict_rows",
+        lambda *_args, **_kwargs: [
+            {"table_name": "publications_publication"},
+            {"table_name": "operator_snapshot_backup_20260101_010203"},
+        ],
+    )
+
+    result = check_operator_helper_tables_absent(None)
+
+    assert result.status == "fail"
+    assert "operator-created helper table" in result.summary
+    assert result.details == [{"table_name": "operator_snapshot_backup_20260101_010203"}]
+
+
+def test_operator_helper_table_check_passes_when_absent(monkeypatch):
+    monkeypatch.setattr(
+        "migration_toolkit.audit._dict_rows",
+        lambda *_args, **_kwargs: [
+            {"table_name": "publications_publication"},
+            {"table_name": "worksets_workset"},
+        ],
+    )
+
+    result = check_operator_helper_tables_absent(None)
+
+    assert result.status == "ok"
+    assert result.details == []
 
 
 def test_allograph_mapping_does_not_allow_synthetic_placeholder_by_default():

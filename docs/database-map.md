@@ -6,12 +6,14 @@ migrations.
 
 Snapshot details:
 
-- Verified against the inspected target database on 2026-07-28 after local
+- Verified against the inspected target database on 2026-07-30 after
   publication-link, extended publication-link, allograph-placeholder, and
   auth-user-id reconciliation, including unreferenced `admin_current` cleanup.
 - PostgreSQL is running from the Compose `postgres` service.
-- The inspected target database has 53 application public tables. Local backup
-  tables created during reconciliation are excluded from this schema map.
+- The inspected target database has 53 application public tables and 0
+  operator-created helper tables. Timestamped helper, backup, and map tables
+  created during reconciliation are not application schema and must not be
+  included in final deployment dumps.
 
 ## Practical Overview
 

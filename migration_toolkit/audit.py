@@ -18,6 +18,7 @@ DEFAULT_LEGACY_DATABASE_NAME = "legacy_source"
 DEFAULT_TARGET_DATABASE_NAME = "target_current"
 
 TABLE_NAME_RE = re.compile(r"^[a-z][a-z0-9_]*$")
+OPERATOR_HELPER_TABLE_RE = re.compile(r"(?:_backup_\d{8}(?:_\d{2,6})?|_map_\d{8}(?:_\d{2,6})?)$")
 
 
 class LegacyMigrationAuditError(RuntimeError):
@@ -690,16 +691,32 @@ def database_name(conn: Connection[Any]) -> str:
 
 
 def public_table_count(conn: Connection[Any]) -> int:
-    return int(
-        _scalar(
-            conn,
-            (
-                "SELECT count(*) "
-                "FROM information_schema.tables "
-                "WHERE table_schema = 'public' AND table_type = 'BASE TABLE'"
-            ),
-        )
+    rows = _dict_rows(
+        conn,
+        (
+            "SELECT table_name "
+            "FROM information_schema.tables "
+            "WHERE table_schema = 'public' AND table_type = 'BASE TABLE'"
+        ),
     )
+    return sum(1 for row in rows if not is_operator_helper_table_name(str(row["table_name"])))
+
+
+def is_operator_helper_table_name(table_name: str) -> bool:
+    return bool(OPERATOR_HELPER_TABLE_RE.search(table_name))
+
+
+def operator_helper_tables(conn: Connection[Any]) -> list[str]:
+    rows = _dict_rows(
+        conn,
+        (
+            "SELECT table_name "
+            "FROM information_schema.tables "
+            "WHERE table_schema = 'public' AND table_type = 'BASE TABLE' "
+            "ORDER BY table_name"
+        ),
+    )
+    return [str(row["table_name"]) for row in rows if is_operator_helper_table_name(str(row["table_name"]))]
 
 
 def require_tables(conn: Connection[Any], tables: set[str], *, database_label: str) -> None:
@@ -1274,6 +1291,28 @@ def check_publication_media_paths(target_conn: Connection[Any]) -> CheckResult:
     )
 
 
+def check_operator_helper_tables_absent(target_conn: Connection[Any]) -> CheckResult:
+    helper_tables = operator_helper_tables(target_conn)
+    if helper_tables:
+        return CheckResult(
+            key="operator_helper_tables",
+            title="Operator helper tables",
+            status="fail",
+            summary=(
+                f"{len(helper_tables)} operator-created helper table(s) are present in the target database. "
+                "Drop them or exclude them before creating a final deployment dump."
+            ),
+            details=[{"table_name": table_name} for table_name in helper_tables],
+        )
+
+    return CheckResult(
+        key="operator_helper_tables",
+        title="Operator helper tables",
+        status="ok",
+        summary="No operator-created helper tables are present in the target database.",
+    )
+
+
 def run_audit(
     legacy_url: str | None = None,
     target_url: str | None = None,
@@ -1323,6 +1362,7 @@ def run_audit(
             check_legacy_text_exclusions(legacy_conn, target_conn),
             check_carousel_image_paths(target_conn),
             check_publication_media_paths(target_conn),
+            check_operator_helper_tables_absent(target_conn),
         ]
 
         return AuditReport(
@@ -1394,7 +1434,7 @@ def render_markdown(report: AuditReport) -> str:
         "",
         f"Status: `{report.status}`",
         "",
-        "| Database | Public tables |",
+        "| Database | Application public tables |",
         "| --- | ---: |",
         f"| `{report.legacy_database}` | {report.legacy_table_count} |",
         f"| `{report.target_database}` | {report.target_table_count} |",

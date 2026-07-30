@@ -421,6 +421,7 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         ),
         validation=(
             "Audit has no fail status and all warnings are listed in the manifest.",
+            "No operator-created helper or backup tables remain in the target public schema.",
             "Foreign key checks and target constraints pass.",
             "Search indexes rebuild successfully.",
         ),
@@ -434,6 +435,7 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         target_tables=("production target database",),
         importer_contract=(
             "Run as a manual deployment job with explicit approval.",
+            "Create final deployment dumps only after temporary operator helper tables are dropped or excluded.",
             "Attach final manifest, final audit, and rollback instructions to the deployment record.",
             "Keep the legacy source database read-only until post-cutover acceptance is complete.",
         ),

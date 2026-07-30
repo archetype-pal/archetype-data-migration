@@ -2,14 +2,14 @@
 
 Status: `warn`
 
-| Database | Public tables |
+| Database | Application public tables |
 | --- | ---: |
 | `legacy source database` | 142 |
-| `target database` | 69 |
+| `target database` | 53 |
 
-The target table count may include operator-created backup or work tables from
-the inspected environment. Entity mapping counts below are for application
-tables.
+Operator-created helper, backup, and map tables are not application schema and
+must be absent from the final target dump. The cleaned inspected target has 53
+application public tables and 0 operator helper tables.
 
 ## Entity Mappings
 
@@ -62,6 +62,7 @@ tables.
 | `ok` | Legacy text exclusions | Non-empty legacy text XML rows: 899; target ImageText rows: 899. |
 | `ok` | Carousel image paths | Carousel image paths are MEDIA_ROOT-relative. |
 | `ok` | Publication media paths | Publication media URLs use same-origin /media/uploads/ paths. |
+| `ok` | Operator helper tables | No operator-created helper tables are present in the target database. |
 
 ## Mapping Details
 

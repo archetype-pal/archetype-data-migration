@@ -19,6 +19,7 @@ def test_render_procedure_markdown_contains_safety_gates_and_phases():
     assert "`08_annotations` Annotations And Graph Details" in rendered
     assert "manuscripts_msdescarea" in rendered
     assert "Target-Only Current Data" in rendered
+    assert "No operator-created helper or backup tables remain" in rendered
     assert "migrate_legacy_data" in rendered
 
 
