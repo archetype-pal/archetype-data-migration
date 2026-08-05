@@ -18,6 +18,7 @@ from migration_toolkit.importer import (
     PublicationGraphLinkTarget,
     audit_failure_summary,
     carousel_image_path,
+    carousel_url,
     default_unsupported_catalogue_number_output_path,
     default_unsupported_description_output_path,
     expand_phases,
@@ -92,6 +93,64 @@ def test_carousel_image_path_removes_media_url_prefix():
     assert carousel_image_path("media/carousel/browse.jpg") == "carousel/browse.jpg"
     assert carousel_image_path("carousel/browse.jpg") == "carousel/browse.jpg"
     assert carousel_image_path(None, "/media/carousel/search.jpg") == "carousel/search.jpg"
+
+
+def test_carousel_url_rewrites_legacy_image_search_to_current_grid_route():
+    assert (
+        carousel_url("/digipal/search/facets/?page=1&result_type=images&img_is_public=1&view=grid")
+        == "/search/images?limit=20&offset=0&view=grid"
+    )
+
+
+def test_carousel_url_rewrites_legacy_list_view_to_current_table_route():
+    assert carousel_url(
+        "/digipal/search/facets/?repo_place=Edinburgh%2C+National+Library+of+Scotland"
+        "&hi_type=Agreement&result_type=images&page=1&view=list"
+    ) == (
+        "/search/images?selected_facets=repository_city_exact:Edinburgh"
+        "&selected_facets=repository_name_exact:National+Library+of+Scotland"
+        "&selected_facets=type_exact:Agreement&limit=20&offset=0&view=table"
+    )
+
+
+def test_carousel_url_rewrites_legacy_graph_search_to_current_grid_route():
+    assert carousel_url(
+        "/digipal/search/facets/?allograph=d&%40xp_result_type=1&img_is_public=1"
+        "&result_type=graphs&repo_place=Edinburgh%2C+National+Library+of+Scotland"
+        "&pgs=100&%40xp_allograph=1&page=1&view=grid"
+    ) == (
+        "/search/graphs?selected_facets=allograph_exact:d"
+        "&selected_facets=repository_city_exact:Edinburgh"
+        "&selected_facets=repository_name_exact:National+Library+of+Scotland"
+        "&limit=100&offset=0&view=grid"
+    )
+
+
+def test_carousel_url_rewrites_legacy_page_graph_route():
+    assert (
+        carousel_url(
+            "/digipal/page/77/?graph=1066",
+            {77: 238},
+            {1066: PublicationGraphLinkTarget(graph_id=1066, image_id=77)},
+        )
+        == "/manuscripts/238/images/77?graph=1066"
+    )
+
+
+def test_carousel_url_rewrites_legacy_text_view_route():
+    assert (
+        carousel_url(
+            "/digipal/manuscripts/239/texts/view/",
+            item_part_ids={239},
+            item_part_image_by_locus={239: {"face": 79}},
+        )
+        == "/manuscripts/239/images/79/texts"
+    )
+
+
+def test_carousel_url_rewrites_about_and_blanks_legacy_collection_route():
+    assert carousel_url("/about/") == "/about/about-models-of-authority"
+    assert carousel_url("/digipal/collection/shared/1/?collection=%7B%7D") == ""
 
 
 def test_parse_annotation_accepts_legacy_python_dict_strings():

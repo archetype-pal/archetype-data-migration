@@ -100,7 +100,7 @@ The current target is clearly a selective migration, not a full clone:
 | `digipal_graph_aspects` | `annotations_graph_positions` | Re-keyed and filtered with graph rows; six fewer rows in the current target snapshot. |
 | `blog_blogpost` | `publications_publication` | Id-preserved; author ids need special handling. |
 | `blog_blogpost_categories` | `publications_publication_keywords` | Re-keyed through tagulous keywords. |
-| `digipal_carouselitem` | `publications_carouselitem` | Id-preserved; field names transformed; image paths stored MEDIA_ROOT-relative (`carousel/...`). |
+| `digipal_carouselitem` | `publications_carouselitem` | Id-preserved; field names transformed; image paths stored MEDIA_ROOT-relative (`carousel/...`); carousel links rewritten to current frontend routes. |
 | none | `worksets_workset` | Target-only user-saved lightbox/citable collection feature; currently five local rows. |
 
 ## Key Differences And Risks
@@ -158,6 +158,19 @@ Legacy bracket-note text such as `[5]` is stored that way in the source
 frontend publication renderer links matching body references and `Notes`
 entries at render time, so the migration does not need to materialize those
 generated internal anchors in the database.
+
+### Carousel Links
+
+Carousel `digipal_carouselitem.link` values must not be copied blindly. Rewrite
+legacy DigiPal search links to current `/search/{type}` routes, including
+translated `selected_facets`, `limit`, `offset`, and an explicit `view`
+parameter. Legacy `view=list` becomes current `view=table`; `view=grid` is
+preserved. Rewrite legacy `/digipal/page/{image_id}` and safe
+`/digipal/manuscripts/{item_part_id}/texts/view` carousel links through the same
+verified target image/item-part maps used for publication HTML. Rewrite the old
+`/about/` placeholder to `/about/about-models-of-authority`. Leave obsolete
+legacy collection carousel links blank until a current collection route is
+approved.
 
 ### Annotations
 

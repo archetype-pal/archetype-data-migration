@@ -10,6 +10,7 @@ from migration_toolkit.audit import (
     MappingResult,
     PublicationAuthorPolicy,
     check_carousel_image_paths,
+    check_carousel_urls,
     check_legacy_catalogue_number_relationships,
     check_legacy_description_relationships,
     check_operator_helper_tables_absent,
@@ -145,6 +146,26 @@ def test_check_carousel_image_paths_fails_on_media_prefixed_values(monkeypatch):
     assert result.status == "fail"
     assert "media URL prefix" in result.summary
     assert result.details == [{"id": 1, "image": "/media/carousel/browse.jpg"}]
+
+
+def test_check_carousel_urls_passes_when_urls_use_current_routes(monkeypatch):
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda *_args, **_kwargs: [])
+
+    result = check_carousel_urls(None)
+
+    assert result.status == "ok"
+    assert result.summary == "Carousel URLs use current frontend routes."
+
+
+def test_check_carousel_urls_fails_on_legacy_values(monkeypatch):
+    rows = [{"id": 2, "title": "Results of a search", "url": "/digipal/search/facets/?view=list"}]
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda *_args, **_kwargs: rows)
+
+    result = check_carousel_urls(None)
+
+    assert result.status == "fail"
+    assert "legacy route" in result.summary
+    assert result.details == rows
 
 
 def test_check_publication_media_paths_passes_when_paths_are_same_origin(monkeypatch):

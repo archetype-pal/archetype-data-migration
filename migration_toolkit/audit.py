@@ -498,7 +498,7 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         strategy="id-preserved transformed fields",
         notes=(
             "Legacy sort_order/link/image fields map to target ordering/url/image; carousel image paths are "
-            "MEDIA_ROOT-relative."
+            "MEDIA_ROOT-relative and carousel URLs use current frontend routes."
         ),
     ),
     EntityMapping(
@@ -1247,6 +1247,44 @@ def check_carousel_image_paths(target_conn: Connection[Any]) -> CheckResult:
     )
 
 
+def check_carousel_urls(target_conn: Connection[Any]) -> CheckResult:
+    bad_rows = _dict_rows(
+        target_conn,
+        """
+        SELECT id, title, url
+        FROM publications_carouselitem
+        WHERE btrim(COALESCE(url, '')) <> ''
+          AND (
+            url ~* '(^https?://[^/]+)?/digipal/'
+            OR url ~* '(^https?://[^/]+)?/search/facets'
+            OR url ~* '(^|[?&])view=list(&|$)'
+            OR url IN ('/about', '/about/')
+          )
+        ORDER BY id
+        LIMIT 20
+        """,
+    )
+
+    if bad_rows:
+        return CheckResult(
+            key="carousel_urls",
+            title="Carousel URLs",
+            status="fail",
+            summary=(
+                f"{len(bad_rows)} sampled carousel URL(s) still use a legacy route, /about/ placeholder, "
+                "or legacy view=list value."
+            ),
+            details=bad_rows,
+        )
+
+    return CheckResult(
+        key="carousel_urls",
+        title="Carousel URLs",
+        status="ok",
+        summary="Carousel URLs use current frontend routes.",
+    )
+
+
 def check_publication_media_paths(target_conn: Connection[Any]) -> CheckResult:
     bad_rows = _dict_rows(
         target_conn,
@@ -1361,6 +1399,7 @@ def run_audit(
             check_annotation_shape(legacy_conn, target_conn),
             check_legacy_text_exclusions(legacy_conn, target_conn),
             check_carousel_image_paths(target_conn),
+            check_carousel_urls(target_conn),
             check_publication_media_paths(target_conn),
             check_operator_helper_tables_absent(target_conn),
         ]

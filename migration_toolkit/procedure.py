@@ -359,6 +359,9 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "Preserve publication and carousel ids where the audit says ids are preserved.",
             "Store carousel images as MEDIA_ROOT-relative paths such as carousel/browse.jpg, never "
             "/media/carousel/browse.jpg.",
+            "Rewrite carousel URLs from legacy DigiPal search/page/manuscript/about routes to current frontend "
+            "routes; translate legacy search view=list to view=table and keep explicit view parameters.",
+            "Leave obsolete legacy collection carousel links blank until a current collection route is approved.",
             "Re-key keyword/category joins through current tagulous tables.",
             "Rewrite legacy /digipal/page/... publication hrefs to /manuscripts/{item_part_id}/images/{image_id}.",
             "Map legacy graph query values through digipal_annotation.graph_id to annotations_graph.id.",
@@ -375,6 +378,8 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "Publication HTML has no remaining legacy /digipal/page/... hrefs after import.",
             "Publication HTML has no remaining safely resolvable legacy /digipal/manuscripts/... hrefs after import.",
             "Carousel image paths are MEDIA_ROOT-relative and do not start with /media/.",
+            "Carousel URLs use current frontend routes and have no remaining legacy /digipal/... routes, "
+            "/about/ placeholder, or view=list values.",
             "Publication HTML has no remaining old absolute /media/uploads/... host prefixes.",
             "Sample rewritten manuscript image/text links resolve, and graph query parameters open existing "
             "annotations.",

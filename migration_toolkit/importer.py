@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 import re
 from typing import Any
-from urllib.parse import parse_qs
+from urllib.parse import parse_qs, parse_qsl, quote_plus, urlparse
 
 import psycopg
 from psycopg import Connection
@@ -61,6 +61,22 @@ PUBLICATION_LEGACY_MEDIA_URL_RE = re.compile(
     r"https?://(?:www\.)?(?:digipal\.eu|modelsofauthority\.ac\.uk)(?P<path>/media/uploads/)",
     re.IGNORECASE,
 )
+CAROUSEL_LEGACY_PAGE_PATH_RE = re.compile(r"^/digipal/page/(?P<image_id>\d+)$", re.IGNORECASE)
+CAROUSEL_LEGACY_MANUSCRIPT_PATH_RE = re.compile(
+    r"^/digipal/manuscripts/(?P<item_part_id>\d+)(?:/(?P<texts_path>texts/view))?$",
+    re.IGNORECASE,
+)
+CAROUSEL_LEGACY_SEARCH_PATH = "/digipal/search/facets"
+CAROUSEL_CURRENT_ABOUT_PATH = "/about/about-models-of-authority"
+CAROUSEL_LEGACY_SEARCH_IGNORED_PARAMS = {
+    "@xp_allograph",
+    "@xp_result_type",
+    "img_is_public",
+    "page",
+    "pgs",
+    "result_type",
+    "view",
+}
 PUBLICATION_LEGACY_HOSTS = (
     "http://www.modelsofauthority.ac.uk",
     "https://www.modelsofauthority.ac.uk",
@@ -517,6 +533,169 @@ def carousel_image_path(image_file: str | None, image: str | None = None) -> str
     while path.startswith("media/"):
         path = path[6:]
     return path
+
+
+def _query_string(items: list[tuple[str, str]]) -> str:
+    return "&".join(f"{quote_plus(key)}={quote_plus(value, safe=':')}" for key, value in items)
+
+
+def _first_query_value(query_pairs: list[tuple[str, str]], key: str) -> str | None:
+    for candidate_key, value in query_pairs:
+        if candidate_key == key:
+            return value
+    return None
+
+
+def _positive_int(value: str | None, default: int) -> int:
+    try:
+        parsed = int(value or "")
+    except ValueError:
+        return default
+    return parsed if parsed > 0 else default
+
+
+def _current_carousel_search_view(raw: str | None, result_type: str) -> str:
+    value = (raw or "").strip().lower()
+    if value == "list":
+        return "table"
+    if value in {"table", "grid"}:
+        return value
+    if result_type == "graphs" and value in {"timeline", "distribution", "map"}:
+        return value
+    return "table"
+
+
+def _rewrite_legacy_carousel_search_url(path: str, query: str) -> str | None:
+    if path.rstrip("/") != CAROUSEL_LEGACY_SEARCH_PATH:
+        return None
+
+    query_pairs = parse_qsl(query, keep_blank_values=True)
+    result_type = (_first_query_value(query_pairs, "result_type") or "").strip().lower()
+    if result_type not in {"images", "graphs"}:
+        return None
+
+    selected_facets: list[str] = []
+    unsupported_params: set[str] = set()
+    for key, value in query_pairs:
+        if key == "repo_place":
+            city, separator, repository_name = value.partition(",")
+            if not separator:
+                unsupported_params.add(key)
+                continue
+            selected_facets.append(f"repository_city_exact:{city.strip()}")
+            selected_facets.append(f"repository_name_exact:{repository_name.strip()}")
+        elif key == "hi_type":
+            selected_facets.append(f"type_exact:{value.strip()}")
+        elif key == "allograph":
+            selected_facets.append(f"allograph_exact:{value.strip()}")
+        elif key not in CAROUSEL_LEGACY_SEARCH_IGNORED_PARAMS and value.strip():
+            unsupported_params.add(key)
+
+    if unsupported_params:
+        return None
+
+    limit = _positive_int(_first_query_value(query_pairs, "pgs"), 20)
+    page = _positive_int(_first_query_value(query_pairs, "page"), 1)
+    view = _current_carousel_search_view(_first_query_value(query_pairs, "view"), result_type)
+
+    current_query_pairs = [("selected_facets", facet) for facet in selected_facets if facet.split(":", 1)[1]]
+    current_query_pairs.extend(
+        [
+            ("limit", str(limit)),
+            ("offset", str((page - 1) * limit)),
+            ("view", view),
+        ]
+    )
+    return f"/search/{result_type}?{_query_string(current_query_pairs)}"
+
+
+def _rewrite_legacy_carousel_page_url(
+    path: str,
+    query: str,
+    image_item_part_by_id: dict[int, int],
+    graph_targets: dict[int, PublicationGraphLinkTarget],
+) -> str | None:
+    match = CAROUSEL_LEGACY_PAGE_PATH_RE.fullmatch(path.rstrip("/"))
+    if match is None:
+        return None
+
+    new_image_id = int(match.group("image_id"))
+    old_graph_id = _publication_legacy_graph_id(query)
+    new_graph_id: int | None = None
+
+    if old_graph_id is not None:
+        graph_target = graph_targets.get(old_graph_id)
+        if graph_target is not None and graph_target.image_id in image_item_part_by_id:
+            new_image_id = graph_target.image_id
+            new_graph_id = graph_target.graph_id
+
+    item_part_id = image_item_part_by_id.get(new_image_id)
+    if item_part_id is None:
+        return None
+
+    return _publication_route(item_part_id, new_image_id, new_graph_id)
+
+
+def _rewrite_legacy_carousel_manuscript_url(
+    path: str,
+    query: str,
+    item_part_ids: set[int],
+    item_part_image_by_locus: dict[int, dict[str, int]],
+) -> str | None:
+    match = CAROUSEL_LEGACY_MANUSCRIPT_PATH_RE.fullmatch(path.rstrip("/"))
+    if match is None:
+        return None
+
+    item_part_id = int(match.group("item_part_id"))
+    if item_part_id not in item_part_ids:
+        return None
+
+    if not match.group("texts_path"):
+        return f"/manuscripts/{item_part_id}"
+
+    image_id = _publication_text_view_image_id(item_part_id, query, item_part_image_by_locus)
+    if image_id is None:
+        return None
+    return _publication_text_route(item_part_id, image_id)
+
+
+def carousel_url(
+    link: str | None,
+    image_item_part_by_id: dict[int, int] | None = None,
+    graph_targets: dict[int, PublicationGraphLinkTarget] | None = None,
+    item_part_ids: set[int] | None = None,
+    item_part_image_by_locus: dict[int, dict[str, int]] | None = None,
+) -> str:
+    value = html_unescape(link or "").strip()
+    if not value:
+        return ""
+
+    parsed = urlparse(value)
+    path = parsed.path
+
+    if path in {"/about", "/about/"}:
+        return CAROUSEL_CURRENT_ABOUT_PATH
+    if path.startswith("/digipal/collection/"):
+        return ""
+
+    rewritten = _rewrite_legacy_carousel_search_url(path, parsed.query)
+    if rewritten is not None:
+        return rewritten
+
+    image_map = image_item_part_by_id or {}
+    graph_map = graph_targets or {}
+    rewritten = _rewrite_legacy_carousel_page_url(path, parsed.query, image_map, graph_map)
+    if rewritten is not None:
+        return rewritten
+
+    resolved_item_part_ids = set(item_part_ids or set())
+    resolved_item_part_ids.update(image_map.values())
+    text_image_by_locus = item_part_image_by_locus or {}
+    rewritten = _rewrite_legacy_carousel_manuscript_url(path, parsed.query, resolved_item_part_ids, text_image_by_locus)
+    if rewritten is not None:
+        return rewritten
+
+    return value
 
 
 def parse_annotation(raw: str | dict[str, Any] | list[Any] | None) -> dict[str, Any] | list[Any]:
@@ -2466,7 +2645,16 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
                 "ordering": row["sort_order"] or 0,
                 "image": truncate(carousel_image_path(row["image_file"], row["image"]), 100),
                 "title": truncate(row["title"] or "", 150),
-                "url": truncate(row["link"] or "", 200),
+                "url": truncate(
+                    carousel_url(
+                        row["link"],
+                        image_item_part_by_id,
+                        graph_targets,
+                        item_part_ids,
+                        item_part_image_by_locus,
+                    ),
+                    200,
+                ),
             }
             for row in carousel_rows
         ],
