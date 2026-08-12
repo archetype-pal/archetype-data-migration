@@ -153,6 +153,10 @@ rewrite already same-origin `/media/uploads/...` image sources unless a
 replacement asset location has been verified. Legacy upload assets should be
 restored/deployed as static media and recorded in the run evidence.
 
+Dead legacy external embeds should be removed during import rather than copied
+into the target publication HTML. Keep adjacent restored local media when it is
+not itself a dead external reference.
+
 Legacy bracket-note text such as `[5]` is stored that way in the source
 `blog_blogpost.content` rows and should be preserved during import. The current
 frontend publication renderer links matching body references and `Notes`

@@ -322,6 +322,28 @@ def test_rewrite_legacy_publication_links_normalizes_old_absolute_media_urls():
     assert stats.rewritten_media_url_count == 3
 
 
+def test_rewrite_legacy_publication_links_removes_dead_storify_embed():
+    html, stats = rewrite_legacy_publication_links(
+        '<div class="storify"><img height="458" src="/media/uploads/Blog/2016/story1.jpg" width="1328"></div>\n'
+        '<div class="storify"><iframe frameborder="no" height="750" '
+        'src="//storify.com/example/dead-story/embed?header=false&amp;border=false&amp;template=grid" '
+        'width="100%"></iframe> [&lt;a href="//storify.com/example/dead-story" target="_blank"&gt;'
+        'View the story "Session 494 at Kalamazoo 2016" on Storify&lt;/a&gt;]</div>'
+        "<p>After</p>",
+        {},
+        {},
+    )
+
+    assert html == (
+        '<div class="storify"><img height="458" src="/media/uploads/Blog/2016/story1.jpg" width="1328"></div>'
+        "<p>After</p>"
+    )
+    assert "<iframe" not in html
+    assert "storify.com" not in html
+    assert stats.dead_external_embed_count == 1
+    assert stats.removed_dead_external_embed_count == 1
+
+
 def test_migrate_legacy_data_cli_renders_report(monkeypatch, capsys):
     def fake_run_import(options):
         assert options.execute is False

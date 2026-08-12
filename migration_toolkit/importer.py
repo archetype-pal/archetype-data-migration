@@ -61,6 +61,12 @@ PUBLICATION_LEGACY_MEDIA_URL_RE = re.compile(
     r"https?://(?:www\.)?(?:digipal\.eu|modelsofauthority\.ac\.uk)(?P<path>/media/uploads/)",
     re.IGNORECASE,
 )
+PUBLICATION_DEAD_STORIFY_EMBED_RE = re.compile(
+    r"\s*<div\b(?=[^>]*\bclass\s*=\s*([\"'])[^\"']*\bstorify\b[^\"']*\1)[^>]*>\s*"
+    r"<iframe\b(?=[^>]*\bsrc\s*=\s*([\"'])(?:(?:https?:)?//)?storify\.com/[^\"']*\2)"
+    r"[\s\S]*?</iframe>\s*(?:\[[\s\S]*?Storify[\s\S]*?\])?\s*</div>",
+    re.IGNORECASE,
+)
 CAROUSEL_LEGACY_PAGE_PATH_RE = re.compile(r"^/digipal/page/(?P<image_id>\d+)$", re.IGNORECASE)
 CAROUSEL_LEGACY_MANUSCRIPT_PATH_RE = re.compile(
     r"^/digipal/manuscripts/(?P<item_part_id>\d+)(?:/(?P<texts_path>texts/view))?$",
@@ -462,6 +468,8 @@ class PublicationLinkRewriteStats:
     visible_text_rewrite_count: int = 0
     legacy_media_url_count: int = 0
     rewritten_media_url_count: int = 0
+    dead_external_embed_count: int = 0
+    removed_dead_external_embed_count: int = 0
     unresolved_graph_ids: set[int] = field(default_factory=set)
     unresolved_image_ids: set[int] = field(default_factory=set)
     unresolved_item_part_ids: set[int] = field(default_factory=set)
@@ -479,6 +487,8 @@ class PublicationLinkRewriteStats:
         self.visible_text_rewrite_count += other.visible_text_rewrite_count
         self.legacy_media_url_count += other.legacy_media_url_count
         self.rewritten_media_url_count += other.rewritten_media_url_count
+        self.dead_external_embed_count += other.dead_external_embed_count
+        self.removed_dead_external_embed_count += other.removed_dead_external_embed_count
         self.unresolved_graph_ids.update(other.unresolved_graph_ids)
         self.unresolved_image_ids.update(other.unresolved_image_ids)
         self.unresolved_item_part_ids.update(other.unresolved_item_part_ids)
@@ -897,6 +907,10 @@ def normalize_publication_media_urls(html: str) -> tuple[str, int]:
     return PUBLICATION_LEGACY_MEDIA_URL_RE.sub(replace_legacy_media_url, html), rewrite_count
 
 
+def remove_dead_publication_embeds(html: str) -> tuple[str, int]:
+    return PUBLICATION_DEAD_STORIFY_EMBED_RE.subn("", html)
+
+
 def rewrite_legacy_publication_links(
     html: str,
     image_item_part_by_id: dict[int, int],
@@ -992,6 +1006,10 @@ def rewrite_legacy_publication_links(
     rewritten_html, media_url_count = normalize_publication_media_urls(rewritten_html)
     stats.legacy_media_url_count += media_url_count
     stats.rewritten_media_url_count += media_url_count
+
+    rewritten_html, dead_embed_count = remove_dead_publication_embeds(rewritten_html)
+    stats.dead_external_embed_count += dead_embed_count
+    stats.removed_dead_external_embed_count += dead_embed_count
 
     return rewritten_html, stats
 

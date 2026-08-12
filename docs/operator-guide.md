@@ -250,6 +250,7 @@ Importer contract:
 - Rewrite verified legacy short image links only when the target image id is known and preserved.
 - Normalize known legacy absolute publication media URLs to same-origin /media/uploads/... paths.
 - Keep static /media/uploads/... publication asset paths unless a verified replacement asset path exists.
+- Remove dead legacy external publication embeds while preserving adjacent restored local media.
 - Preserve legacy bracket-note publication text such as [5]; the current frontend renders matching Notes entries as internal anchors.
 
 Validation:
