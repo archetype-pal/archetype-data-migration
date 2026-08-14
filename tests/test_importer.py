@@ -25,6 +25,7 @@ from migration_toolkit.importer import (
     import_image_text,
     import_report_to_dict,
     legacy_image_path,
+    legacy_publication_url_rewrite_map,
     parse_annotation,
     parse_date_weights,
     publication_link_rewrite_warnings,
@@ -249,9 +250,11 @@ def test_rewrite_legacy_publication_links_maps_manuscript_href_to_item_part_rout
         {},
     )
 
-    assert html == '<a href="/manuscripts/237">local</a><a href="/manuscripts/497">absolute</a>'
-    assert stats.manuscript_href_count == 2
-    assert stats.rewritten_manuscript_href_count == 2
+    assert html == (
+        '<a href="/manuscripts/237">local</a><a href="http://www.digipal.eu/digipal/manuscripts/497/">absolute</a>'
+    )
+    assert stats.manuscript_href_count == 1
+    assert stats.rewritten_manuscript_href_count == 1
 
 
 def test_rewrite_legacy_publication_links_maps_text_view_href_to_image_text_route():
@@ -304,22 +307,24 @@ def test_rewrite_legacy_publication_links_maps_verified_short_image_href():
     assert stats.rewritten_short_href_count == 1
 
 
-def test_rewrite_legacy_publication_links_normalizes_old_absolute_media_urls():
+def test_rewrite_legacy_publication_links_normalizes_old_current_project_media_urls_only():
     html, stats = rewrite_legacy_publication_links(
         '<img src="http://www.digipal.eu/media/uploads/PDFs/logistics.pdf">'
         '<a href="http://www.modelsofauthority.ac.uk/media/uploads/DigiPal/lg_banner.jpg">banner</a>'
-        '<img src="https://www.modelsofauthority.ac.uk/media/uploads/Blog/2022/programme_2b.pdf">',
+        '<img src="https://www.modelsofauthority.ac.uk/media/uploads/Blog/2022/programme_2b.pdf">'
+        '<a href="http://www.exondomesday.ac.uk/media/uploads/Events/poster.pdf">poster</a>',
         {},
         {},
     )
 
     assert html == (
-        '<img src="/media/uploads/PDFs/logistics.pdf">'
+        '<img src="http://www.digipal.eu/media/uploads/PDFs/logistics.pdf">'
         '<a href="/media/uploads/DigiPal/lg_banner.jpg">banner</a>'
         '<img src="/media/uploads/Blog/2022/programme_2b.pdf">'
+        '<a href="http://www.exondomesday.ac.uk/media/uploads/Events/poster.pdf">poster</a>'
     )
-    assert stats.legacy_media_url_count == 3
-    assert stats.rewritten_media_url_count == 3
+    assert stats.legacy_media_url_count == 2
+    assert stats.rewritten_media_url_count == 2
 
 
 def test_rewrite_legacy_publication_links_removes_dead_storify_embed():
@@ -342,6 +347,117 @@ def test_rewrite_legacy_publication_links_removes_dead_storify_embed():
     assert "storify.com" not in html
     assert stats.dead_external_embed_count == 1
     assert stats.removed_dead_external_embed_count == 1
+
+
+def test_legacy_publication_url_rewrite_map_uses_migrated_publication_categories():
+    rewrites = legacy_publication_url_rewrite_map(
+        [
+            {"slug": "introduction", "is_blog_post": True, "is_news": False, "is_featured": False},
+            {"slug": "programme", "is_blog_post": False, "is_news": True, "is_featured": False},
+            {"slug": "handwriting", "is_blog_post": True, "is_news": False, "is_featured": True},
+        ]
+    )
+
+    assert rewrites["/blog/introduction/"] == "/publications/blogs/introduction"
+    assert rewrites["http://www.modelsofauthority.ac.uk/blog/programme/"] == "/publications/news/programme"
+    assert rewrites["https://www.modelsofauthority.ac.uk/blog/handwriting"] == "/publications/blogs/handwriting"
+    assert "http://www.digipal.eu/blog/programme/" not in rewrites
+    assert "http://www.exondomesday.ac.uk/blog/programme/" not in rewrites
+
+
+def test_rewrite_legacy_publication_links_maps_old_blog_and_category_routes():
+    rewrites = legacy_publication_url_rewrite_map(
+        [{"slug": "standardisation-brieves", "is_blog_post": True, "is_news": False, "is_featured": True}]
+    )
+    html, stats = rewrite_legacy_publication_links(
+        '<a href="/blog/standardisation-brieves/">simple brieve</a>'
+        '<a href="/blog/category/feature-of-the-month/">Feature of the Month</a>',
+        {},
+        {},
+        publication_url_rewrites=rewrites,
+    )
+
+    assert html == (
+        '<a href="/publications/blogs/standardisation-brieves">simple brieve</a>'
+        '<a href="/publications/feature">Feature of the Month</a>'
+    )
+    assert stats.legacy_project_url_count == 2
+    assert stats.rewritten_project_url_count == 2
+
+
+def test_rewrite_legacy_publication_links_maps_current_project_about_event_and_manual_slug_routes():
+    html, stats = rewrite_legacy_publication_links(
+        '<a href="https://www.modelsofauthority.ac.uk/about/project-team/">team</a>'
+        '<a href="http://www.modelsofauthority.ac.uk/events/conferece/">conference</a>'
+        '<a href="http://www.modelsofauthority.ac.uk/blog/'
+        'digipal-wins-inaugural-maa-digital-humanities-prize/">DigiPal</a>',
+        {},
+        {},
+    )
+
+    assert html == (
+        '<a href="/about/about-models-of-authority">team</a>'
+        '<a href="/publications/news/models-of-authority-public-conference">conference</a>'
+        '<a href="/publications/news/'
+        'software-behind-models-of-authority-website-wins-inaugural-maa-digital-humanities-prize">DigiPal</a>'
+    )
+    assert stats.legacy_project_url_count == 3
+    assert stats.rewritten_project_url_count == 3
+
+
+def test_rewrite_legacy_publication_links_preserves_digipal_and_exon_links_exactly():
+    html, stats = rewrite_legacy_publication_links(
+        '<a href="http://www.digipal.eu/about/project-team/">DigiPal team</a>'
+        '<a href="http://www.digipal.eu/blog/john-coffin-memorial-lecture-2017/">DigiPal post</a>'
+        '<a href="https://www.exondomesday.ac.uk/blog/john-coffin-memorial-lecture-2017/">Exon post</a>'
+        '<a href="http://www.digipal.eu/digipal/manuscripts/497/">DigiPal manuscript</a>',
+        {497: 497},
+        {},
+        {497},
+    )
+
+    assert html == (
+        '<a href="http://www.digipal.eu/about/project-team/">DigiPal team</a>'
+        '<a href="http://www.digipal.eu/blog/john-coffin-memorial-lecture-2017/">DigiPal post</a>'
+        '<a href="https://www.exondomesday.ac.uk/blog/john-coffin-memorial-lecture-2017/">Exon post</a>'
+        '<a href="http://www.digipal.eu/digipal/manuscripts/497/">DigiPal manuscript</a>'
+    )
+    assert stats.legacy_project_url_count == 0
+    assert stats.rewritten_project_url_count == 0
+    assert stats.manuscript_href_count == 0
+
+
+def test_rewrite_legacy_publication_links_maps_supported_legacy_search_routes():
+    html, stats = rewrite_legacy_publication_links(
+        (
+            '<a href="http://www.modelsofauthority.ac.uk/digipal/search/facets/?'
+            'view=grid&amp;result_type=texts&amp;img_is_public=1&amp;&amp;pgs=100">text database</a>'
+        ),
+        {},
+        {},
+    )
+
+    assert html == '<a href="/search/texts?limit=100&offset=0&view=table">text database</a>'
+    assert stats.legacy_project_url_count == 1
+    assert stats.rewritten_project_url_count == 1
+
+
+def test_rewrite_legacy_publication_links_reports_unmapped_current_project_urls_without_rewriting():
+    url = "http://www.modelsofauthority.ac.uk/blog/the-problem-of-digital-dating-part-i/"
+    html, stats = rewrite_legacy_publication_links(
+        f'<a href="{url}">the first of the DigiPal blog posts</a><a href="http://example.com/events/1">external</a>',
+        {},
+        {},
+    )
+
+    assert html == (
+        '<a href="http://www.modelsofauthority.ac.uk/blog/the-problem-of-digital-dating-part-i/">'
+        'the first of the DigiPal blog posts</a><a href="http://example.com/events/1">external</a>'
+    )
+    assert stats.legacy_project_url_count == 1
+    assert stats.rewritten_project_url_count == 0
+    assert stats.report_only_project_urls == {url}
+    assert "the-problem-of-digital-dating-part-i" in publication_link_rewrite_warnings(stats)[0]
 
 
 def test_migrate_legacy_data_cli_renders_report(monkeypatch, capsys):

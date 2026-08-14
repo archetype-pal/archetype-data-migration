@@ -15,6 +15,7 @@ from migration_toolkit.audit import (
     check_legacy_description_relationships,
     check_operator_helper_tables_absent,
     check_publication_author_mapping,
+    check_publication_legacy_project_links,
     check_publication_media_paths,
     compare_id_sets,
     is_operator_helper_table_name,
@@ -174,7 +175,7 @@ def test_check_publication_media_paths_passes_when_paths_are_same_origin(monkeyp
     result = check_publication_media_paths(None)
 
     assert result.status == "ok"
-    assert result.summary == "Publication media URLs use same-origin /media/uploads/ paths."
+    assert result.summary == "Current-project publication media URLs use same-origin /media/uploads/ paths."
 
 
 def test_check_publication_media_paths_fails_on_old_absolute_hosts(monkeypatch):
@@ -191,7 +192,34 @@ def test_check_publication_media_paths_fails_on_old_absolute_hosts(monkeypatch):
     result = check_publication_media_paths(None)
 
     assert result.status == "fail"
-    assert "old absolute media hosts" in result.summary
+    assert "old absolute current-project media hosts" in result.summary
+    assert result.details == rows
+
+
+def test_check_publication_legacy_project_links_passes_when_no_old_project_urls_remain(monkeypatch):
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda *_args, **_kwargs: [])
+
+    result = check_publication_legacy_project_links(None)
+
+    assert result.status == "ok"
+    assert result.summary == "Publication HTML has no remaining old internal URLs requiring migration policy."
+
+
+def test_check_publication_legacy_project_links_warns_on_remaining_old_project_urls(monkeypatch):
+    rows = [
+        {
+            "id": 12,
+            "slug": "the-problem-of-digital-dating-online-survey",
+            "field": "content",
+            "legacy_url": "http://www.modelsofauthority.ac.uk/blog/the-problem-of-digital-dating-part-i/",
+        }
+    ]
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda *_args, **_kwargs: rows)
+
+    result = check_publication_legacy_project_links(None)
+
+    assert result.status == "warn"
+    assert "old internal publication URL" in result.summary
     assert result.details == rows
 
 

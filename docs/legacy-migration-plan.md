@@ -144,10 +144,24 @@ route. Rewrite safe `/digipal/manuscripts/{item_part_id}` hrefs to
 `/manuscripts/{item_part_id}`, and legacy `/texts/view` hrefs to the current
 image text tab only when the item part and target image/locus can be resolved.
 Known legacy short links that redirect to verified DigiPal image pages can be
-rewritten through the same preserved image id mapping.
+rewritten through the same preserved image id mapping. Old Mezzanine publication
+links from relative `/blog/{slug}/` paths and current-project legacy hosts are
+rewritten to current `/publications/{kind}/{slug}` routes only when the slug is
+part of the migrated publication corpus. The current route kind is derived from
+the migrated publication category flags, with news before blogs before feature
+articles.
+
+Approved old relative/current-project about/category/event/search URLs are also
+rewritten during import, including `/about/project-team/` to
+`/about/about-models-of-authority`, old blog category listings to current
+publication listings, the known Models of Authority event pages to their
+migrated news records, and verified old search URLs to current `/search/...`
+routes. Absolute DigiPal and Exon Domesday publication links are preserved
+exactly as external historical references, including `/about`, `/blog`,
+`/digipal`, and media paths.
 
 Only rewrite URL-bearing publication links and known legacy absolute media
-prefixes. Normalize old absolute upload URLs from `www.digipal.eu` and
+prefixes for current-project hosts. Normalize old absolute upload URLs from
 `www.modelsofauthority.ac.uk` to same-origin `/media/uploads/...` paths. Do not
 rewrite already same-origin `/media/uploads/...` image sources unless a
 replacement asset location has been verified. Legacy upload assets should be

@@ -62,7 +62,8 @@ application public tables and 0 operator helper tables.
 | `ok` | Legacy text exclusions | Non-empty legacy text XML rows: 899; target ImageText rows: 899. |
 | `ok` | Carousel image paths | Carousel image paths are MEDIA_ROOT-relative. |
 | `ok` | Carousel URLs | Carousel URLs use current frontend routes. |
-| `ok` | Publication media paths | Publication media URLs use same-origin /media/uploads/ paths. |
+| `ok` | Publication media paths | Current-project publication media URLs use same-origin /media/uploads/ paths. |
+| `ok` | Publication legacy project links | Publication HTML has no remaining old internal URLs requiring migration policy; DigiPal and Exon Domesday links are preserved as external references. |
 | `ok` | Operator helper tables | No operator-created helper tables are present in the target database. |
 
 ## Mapping Details
@@ -153,6 +154,20 @@ application public tables and 0 operator helper tables.
 
 
 ## Check Details
+
+### Preserved External Publication Links
+
+Absolute DigiPal and Exon Domesday links in migrated publication HTML are
+preserved exactly as external historical references. They are not treated as
+internal route-migration failures.
+
+| URL | Remaining locations | Decision |
+| --- | --- | --- |
+| `http://www.digipal.eu/blog/tag/digital-dating/` | `the-problem-of-digital-dating-online-survey`, `models-of-authority-project-at-dh2015` | Preserve as an external DigiPal reference. |
+| `http://www.digipal.eu/blog/the-problem-of-digital-dating-part-i/` | `the-problem-of-digital-dating-online-survey` | Preserve as an external DigiPal reference. |
+| `http://www.digipal.eu/blog/directions-to-nash-lecture-theatre-k231/` | `cursivity-workshop`, `programme-cursive`, `manuscripts-from-wales-ad-800-1250`, `directions-to-k4u12` | Preserve as an external DigiPal reference. |
+| `http://www.digipal.eu` | `software-behind-models-of-authority-website-wins-inaugural-maa-digital-humanities-prize` | Preserve as an external DigiPal project homepage reference. |
+| `http://www.exondomesday.ac.uk` | `scribes-of-exon`, `models-of-authority-at-kalamazoo-2016`, `software-behind-models-of-authority-website-wins-inaugural-maa-digital-humanities-prize` | Preserve as an external Exon Domesday project homepage reference. |
 
 ### Annotation shape
 

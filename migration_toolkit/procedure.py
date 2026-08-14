@@ -367,9 +367,19 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "Map legacy graph query values through digipal_annotation.graph_id to annotations_graph.id.",
             "Rewrite safe legacy /digipal/manuscripts/... hrefs to current manuscript and image text routes.",
             "Rewrite verified legacy short image links only when the target image id is known and preserved.",
-            "Normalize known legacy absolute publication media URLs to same-origin /media/uploads/... paths.",
+            "Rewrite old Mezzanine publication links from relative /blog/{slug}/ paths and current-project "
+            "legacy hosts to current /publications/{kind}/{slug} routes only when the slug is part of the "
+            "migrated publication corpus.",
+            "Rewrite approved old relative/current-project about/category/event/search publication links to "
+            "current frontend routes.",
+            "Preserve absolute DigiPal and Exon Domesday publication links exactly as external historical "
+            "references, including their /about, /blog, /digipal, and media paths.",
+            "Normalize known legacy absolute publication media URLs from current-project hosts to same-origin "
+            "/media/uploads/... paths.",
             "Keep static /media/uploads/... publication asset paths unless a verified replacement asset path exists.",
             "Remove dead legacy external publication embeds while preserving adjacent restored local media.",
+            "Audit remaining old internal publication links; DigiPal and Exon Domesday external links are "
+            "intentionally preserved.",
             "Preserve legacy bracket-note publication text such as [5]; the current frontend renders matching "
             "Notes entries as internal anchors.",
         ),

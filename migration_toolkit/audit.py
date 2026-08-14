@@ -1300,7 +1300,7 @@ def check_publication_media_paths(target_conn: Connection[Any]) -> CheckResult:
         FROM bodies
         CROSS JOIN LATERAL regexp_matches(
             body,
-            '(https?://(www\\.)?(digipal\\.eu|modelsofauthority\\.ac\\.uk)/media/uploads/)',
+            '(https?://(www\\.)?modelsofauthority\\.ac\\.uk/media/uploads/)',
             'gi'
         ) AS match
         WHERE body IS NOT NULL
@@ -1315,7 +1315,7 @@ def check_publication_media_paths(target_conn: Connection[Any]) -> CheckResult:
             title="Publication media paths",
             status="fail",
             summary=(
-                f"{len(bad_rows)} sampled publication media URL(s) still use old absolute media hosts. "
+                f"{len(bad_rows)} sampled publication media URL(s) still use old absolute current-project media hosts. "
                 "Normalize them to same-origin /media/uploads/... paths."
             ),
             details=bad_rows,
@@ -1325,7 +1325,51 @@ def check_publication_media_paths(target_conn: Connection[Any]) -> CheckResult:
         key="publication_media_paths",
         title="Publication media paths",
         status="ok",
-        summary="Publication media URLs use same-origin /media/uploads/ paths.",
+        summary="Current-project publication media URLs use same-origin /media/uploads/ paths.",
+    )
+
+
+def check_publication_legacy_project_links(target_conn: Connection[Any]) -> CheckResult:
+    rows = _dict_rows(
+        target_conn,
+        """
+        WITH bodies AS (
+            SELECT id, slug, 'content' AS field, content AS body
+            FROM publications_publication
+            UNION ALL
+            SELECT id, slug, 'preview' AS field, preview AS body
+            FROM publications_publication
+        )
+        SELECT id, slug, field, match[2] AS legacy_url
+        FROM bodies
+        CROSS JOIN LATERAL regexp_matches(
+            body,
+            $$(^|[^A-Za-z0-9_/.-])((https?://(www\\.)?modelsofauthority\\.ac\\.uk(/[^"'<>[:space:])]+)?)|(https://mofa-stg\\.dighum\\.kcl\\.ac\\.uk(/[^"'<>[:space:])]+)?)|(/(digipal|blog|events)/[^"'<>[:space:])]+)|(/about/project-team/?))$$,
+            'gi'
+        ) AS match
+        WHERE body IS NOT NULL
+        ORDER BY id, field, legacy_url
+        LIMIT 50
+        """,
+    )
+
+    if rows:
+        return CheckResult(
+            key="publication_legacy_project_links",
+            title="Publication legacy project links",
+            status="warn",
+            summary=(
+                f"{len(rows)} sampled old internal publication URL(s) remain. "
+                "Each must be explicitly mapped to a current route or accepted as a legacy route."
+            ),
+            details=rows,
+        )
+
+    return CheckResult(
+        key="publication_legacy_project_links",
+        title="Publication legacy project links",
+        status="ok",
+        summary="Publication HTML has no remaining old internal URLs requiring migration policy.",
     )
 
 
@@ -1401,6 +1445,7 @@ def run_audit(
             check_carousel_image_paths(target_conn),
             check_carousel_urls(target_conn),
             check_publication_media_paths(target_conn),
+            check_publication_legacy_project_links(target_conn),
             check_operator_helper_tables_absent(target_conn),
         ]
 

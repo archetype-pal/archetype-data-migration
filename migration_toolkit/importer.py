@@ -56,9 +56,13 @@ PUBLICATION_SHORT_HREF_RE = re.compile(
     r"(?P=quote)",
     re.IGNORECASE,
 )
+PUBLICATION_PROJECT_URL_ATTR_RE = re.compile(
+    r"(?P<prefix>\b(?:href|src|action)\s*=\s*)(?P<quote>[\"'])(?P<url>[^\"']+)(?P=quote)",
+    re.IGNORECASE,
+)
 PUBLICATION_DIGIPAL_URL_RE = re.compile(r"/digipal/page/\d+/?(?:\?[^#\s<]*)?", re.IGNORECASE)
 PUBLICATION_LEGACY_MEDIA_URL_RE = re.compile(
-    r"https?://(?:www\.)?(?:digipal\.eu|modelsofauthority\.ac\.uk)(?P<path>/media/uploads/)",
+    r"https?://(?:www\.)?modelsofauthority\.ac\.uk(?P<path>/media/uploads/)",
     re.IGNORECASE,
 )
 PUBLICATION_DEAD_STORIFY_EMBED_RE = re.compile(
@@ -83,10 +87,88 @@ CAROUSEL_LEGACY_SEARCH_IGNORED_PARAMS = {
     "result_type",
     "view",
 }
-PUBLICATION_LEGACY_HOSTS = (
+# Only current-project legacy hosts are rewritten. DigiPal and Exon
+# Domesday publication links are historical external references and are
+# preserved exactly as stored in the legacy content.
+PUBLICATION_OLD_PROJECT_HOSTS = (
+    "http://www.modelsofauthority.ac.uk",
+    "https://www.modelsofauthority.ac.uk",
+    "https://mofa-stg.dighum.kcl.ac.uk",
+)
+PUBLICATION_LEGACY_HOSTS = PUBLICATION_OLD_PROJECT_HOSTS
+PUBLICATION_OLD_PROJECT_NETLOCS = frozenset(urlparse(host).netloc.lower() for host in PUBLICATION_OLD_PROJECT_HOSTS)
+PUBLICATION_EXTERNAL_REFERENCE_HOSTS = (
+    "http://digipal.eu",
+    "https://digipal.eu",
+    "http://www.digipal.eu",
+    "https://www.digipal.eu",
+    "http://exondomesday.ac.uk",
+    "https://exondomesday.ac.uk",
+    "http://www.exondomesday.ac.uk",
+    "https://www.exondomesday.ac.uk",
+)
+PUBLICATION_EXTERNAL_REFERENCE_NETLOCS = frozenset(
+    urlparse(host).netloc.lower() for host in PUBLICATION_EXTERNAL_REFERENCE_HOSTS
+)
+PUBLICATION_MOA_HOSTS = (
     "http://www.modelsofauthority.ac.uk",
     "https://www.modelsofauthority.ac.uk",
 )
+PUBLICATION_LEGACY_ABOUT_PATH_REWRITES = {
+    "/about/project-team/": "/about/about-models-of-authority",
+}
+PUBLICATION_LEGACY_MOA_PATH_REWRITES = {
+    "/events/conferece/": "/publications/news/models-of-authority-public-conference",
+    "/events/exhibition/": "/publications/news/models-of-authority-exhibition-at-the-nrs-now-open",
+}
+PUBLICATION_LEGACY_BLOG_CATEGORY_REWRITES = {
+    "/blog/category/blog/": "/publications/blogs",
+    "/blog/category/news/": "/publications/news",
+    "/blog/category/feature-of-the-month/": "/publications/feature",
+}
+PUBLICATION_LEGACY_MANUAL_BLOG_SLUG_REWRITES = {
+    "digipal-wins-inaugural-maa-digital-humanities-prize": (
+        "/publications/news/software-behind-models-of-authority-website-wins-inaugural-maa-digital-humanities-prize"
+    ),
+}
+PUBLICATION_LEGACY_EXACT_URL_REWRITES = {
+    "http://www.modelsofauthority.ac.uk": "/",
+    "http://www.modelsofauthority.ac.uk/": "/",
+    "https://www.modelsofauthority.ac.uk": "/",
+    "https://www.modelsofauthority.ac.uk/": "/",
+}
+PUBLICATION_LEGACY_SEARCH_URL_REWRITES = {
+    "/digipal/search/facets/?img_is_public=1&result_type=images"
+    "&repo_place=Edinburgh%2C+National+Library+of+Scotland&pgs=90&page=1&view=grid": (
+        "/search/images?selected_facets=repository_city_exact:Edinburgh"
+        "&selected_facets=repository_name_exact:National+Library+of+Scotland&limit=90&offset=0&view=grid"
+    ),
+    "/digipal/search/facets/?page=1&result_type=images&img_is_public=1&view=grid": (
+        "/search/images?limit=20&offset=0&view=grid"
+    ),
+    "/digipal/search/facets/?result_type=manuscripts&page=1&pgs=100&img_is_public=1&view=grid": (
+        "/search/manuscripts?limit=100&offset=0&view=grid"
+    ),
+    "http://www.modelsofauthority.ac.uk/digipal/search/facets/?allograph=m&page=1&img_is_public=1"
+    "&locus=face&_st_allograph=o&chartype=letter&feature=final+limb+extended%2C+turned+left"
+    "&view=grid&result_type=graphs&_xp_allograph=1": (
+        "/search/graphs?selected_facets=allograph_exact:m&selected_facets=locus_exact:face"
+        "&selected_facets=character_type_exact:letter"
+        "&selected_facets=component_features_exact:Limb+-+extended+and+turned+to+left"
+        "&limit=20&offset=0&view=grid"
+    ),
+    "http://www.modelsofauthority.ac.uk/digipal/search/facets/?sort=content&clause_type=Person+Name"
+    "&result_type=people&img_is_public=1&locus=face&pgs=100&text_type=Transcription&page=1&view=images": (
+        "/search/people?selected_facets=person_type_exact:name"
+        "&selected_facets=text_type_exact:Transcription&limit=100&offset=0&ordering=name&view=table"
+    ),
+    "http://www.modelsofauthority.ac.uk/digipal/search/facets/?view=grid&result_type=texts"
+    "&img_is_public=1&&pgs=100": "/search/texts?limit=100&offset=0&view=table",
+    "https://mofa-stg.dighum.kcl.ac.uk/digipal/search/facets/?terms=%22dei+gratia%22"
+    "&hi_date_diff_op=lte&page=1&wr=0result_type%3Dtexts&view=snippet&result_type=texts&pgs=10": (
+        "/search/texts?q=%22dei+gratia%22&limit=10&offset=0&view=table"
+    ),
+}
 PUBLICATION_SHORT_IMAGE_IDS = {
     "http://goo.gl/75dkrk": 5483,
     "http://goo.gl/toqjaq": 5483,
@@ -470,6 +552,9 @@ class PublicationLinkRewriteStats:
     rewritten_media_url_count: int = 0
     dead_external_embed_count: int = 0
     removed_dead_external_embed_count: int = 0
+    legacy_project_url_count: int = 0
+    rewritten_project_url_count: int = 0
+    report_only_project_urls: set[str] = field(default_factory=set)
     unresolved_graph_ids: set[int] = field(default_factory=set)
     unresolved_image_ids: set[int] = field(default_factory=set)
     unresolved_item_part_ids: set[int] = field(default_factory=set)
@@ -489,6 +574,9 @@ class PublicationLinkRewriteStats:
         self.rewritten_media_url_count += other.rewritten_media_url_count
         self.dead_external_embed_count += other.dead_external_embed_count
         self.removed_dead_external_embed_count += other.removed_dead_external_embed_count
+        self.legacy_project_url_count += other.legacy_project_url_count
+        self.rewritten_project_url_count += other.rewritten_project_url_count
+        self.report_only_project_urls.update(other.report_only_project_urls)
         self.unresolved_graph_ids.update(other.unresolved_graph_ids)
         self.unresolved_image_ids.update(other.unresolved_image_ids)
         self.unresolved_item_part_ids.update(other.unresolved_item_part_ids)
@@ -857,6 +945,116 @@ def _publication_text_route(item_part_id: int, image_id: int) -> str:
     return f"{_publication_route(item_part_id, image_id)}/texts"
 
 
+def _boolish(value: Any) -> bool:
+    if isinstance(value, bool):
+        return value
+    return str(value).strip().lower() not in {"", "0", "false", "f", "no", "none"}
+
+
+def _publication_kind_from_flags(row: dict[str, Any]) -> str:
+    if _boolish(row.get("is_news")):
+        return "news"
+    if _boolish(row.get("is_blog_post")):
+        return "blogs"
+    if _boolish(row.get("is_featured")):
+        return "feature"
+    return "blogs"
+
+
+def _publication_url_variants(url: str) -> set[str]:
+    value = html_unescape(url).strip()
+    if not value:
+        return set()
+    variants = {value}
+    parsed = urlparse(value)
+    if parsed.query or parsed.fragment:
+        return variants
+
+    if value.endswith("/"):
+        root_values = {"/"}
+        if parsed.scheme and parsed.netloc:
+            root_values.add(f"{parsed.scheme}://{parsed.netloc}/")
+        if value not in root_values:
+            variants.add(value.rstrip("/"))
+    else:
+        variants.add(f"{value}/")
+    return variants
+
+
+def _add_publication_url_rewrite(rewrites: dict[str, str], old_url: str, new_url: str) -> None:
+    for variant in _publication_url_variants(old_url):
+        rewrites[variant] = new_url
+
+
+def _add_publication_path_rewrites(
+    rewrites: dict[str, str], path_rewrites: dict[str, str], hosts: tuple[str, ...]
+) -> None:
+    for old_path, new_url in path_rewrites.items():
+        _add_publication_url_rewrite(rewrites, old_path, new_url)
+        for host in hosts:
+            _add_publication_url_rewrite(rewrites, f"{host}{old_path}", new_url)
+
+
+def legacy_publication_url_rewrite_map(publication_rows: list[dict[str, Any]] | None = None) -> dict[str, str]:
+    rewrites: dict[str, str] = {}
+    for old_url, new_url in PUBLICATION_LEGACY_EXACT_URL_REWRITES.items():
+        _add_publication_url_rewrite(rewrites, old_url, new_url)
+    for old_url, new_url in PUBLICATION_LEGACY_SEARCH_URL_REWRITES.items():
+        _add_publication_url_rewrite(rewrites, old_url, new_url)
+    _add_publication_path_rewrites(rewrites, PUBLICATION_LEGACY_ABOUT_PATH_REWRITES, PUBLICATION_OLD_PROJECT_HOSTS)
+    _add_publication_path_rewrites(rewrites, PUBLICATION_LEGACY_MOA_PATH_REWRITES, PUBLICATION_MOA_HOSTS)
+    _add_publication_path_rewrites(rewrites, PUBLICATION_LEGACY_BLOG_CATEGORY_REWRITES, PUBLICATION_OLD_PROJECT_HOSTS)
+
+    for old_slug, new_url in PUBLICATION_LEGACY_MANUAL_BLOG_SLUG_REWRITES.items():
+        path = f"/blog/{old_slug}/"
+        _add_publication_url_rewrite(rewrites, path, new_url)
+        for host in PUBLICATION_OLD_PROJECT_HOSTS:
+            _add_publication_url_rewrite(rewrites, f"{host}{path}", new_url)
+
+    for row in publication_rows or []:
+        slug = text_or_blank(row.get("slug")).strip().strip("/")
+        if not slug:
+            continue
+        new_url = f"/publications/{_publication_kind_from_flags(row)}/{slug}"
+        path = f"/blog/{slug}/"
+        _add_publication_url_rewrite(rewrites, path, new_url)
+        for host in PUBLICATION_OLD_PROJECT_HOSTS:
+            _add_publication_url_rewrite(rewrites, f"{host}{path}", new_url)
+    return rewrites
+
+
+def _publication_legacy_url_target(old_url: str, publication_url_rewrites: dict[str, str]) -> str | None:
+    for variant in _publication_url_variants(old_url):
+        target = publication_url_rewrites.get(variant)
+        if target is not None:
+            return target
+    return None
+
+
+def _is_preserved_external_publication_url(url: str) -> bool:
+    value = html_unescape(url).strip()
+    if not value:
+        return False
+    return urlparse(value).netloc.lower() in PUBLICATION_EXTERNAL_REFERENCE_NETLOCS
+
+
+def _is_legacy_project_publication_url(url: str) -> bool:
+    value = html_unescape(url).strip()
+    if not value:
+        return False
+    parsed = urlparse(value)
+    path = parsed.path or value.split("?", 1)[0]
+    if parsed.netloc:
+        if parsed.netloc.lower() not in PUBLICATION_OLD_PROJECT_NETLOCS:
+            return False
+        return not path.startswith(("/digipal/page/", "/digipal/manuscripts/"))
+
+    return path.startswith(("/blog/", "/events/", "/digipal/search/")) or path in {
+        "/about/project-team",
+        "/about/project-team/",
+    }
+
+
 def _normalise_publication_short_url(url: str) -> str:
     return html_unescape(url).strip().rstrip("/").lower()
 
@@ -866,6 +1064,15 @@ def _legacy_publication_visible_text_candidates(old_url: str) -> set[str]:
     for value in list(candidates):
         match = PUBLICATION_DIGIPAL_URL_RE.search(value)
         if match is None:
+            parsed = urlparse(value)
+            if parsed.netloc.lower() in PUBLICATION_OLD_PROJECT_NETLOCS:
+                path_query = parsed.path or "/"
+                if parsed.query:
+                    path_query = f"{path_query}?{parsed.query}"
+                candidates.add(path_query)
+                candidates.update(f"{host}{path_query}" for host in PUBLICATION_OLD_PROJECT_HOSTS)
+            elif value.startswith(("/blog/", "/events/", "/digipal/", "/about/project-team")):
+                candidates.update(f"{host}{value}" for host in PUBLICATION_OLD_PROJECT_HOSTS)
             continue
         relative_url = match.group(0)
         candidates.add(relative_url)
@@ -918,18 +1125,23 @@ def rewrite_legacy_publication_links(
     item_part_ids: set[int] | None = None,
     item_part_image_by_locus: dict[int, dict[str, int]] | None = None,
     short_image_link_targets: dict[str, int] | None = None,
+    publication_url_rewrites: dict[str, str] | None = None,
 ) -> tuple[str, PublicationLinkRewriteStats]:
     stats = PublicationLinkRewriteStats()
     visible_text_rewrites: list[tuple[str, str]] = []
     resolved_item_part_ids = set(item_part_ids or set())
     resolved_item_part_ids.update(image_item_part_by_id.values())
     resolved_item_part_ids.update((item_part_image_by_locus or {}).keys())
+    project_url_rewrites = {**legacy_publication_url_rewrite_map(), **(publication_url_rewrites or {})}
     text_image_by_locus = item_part_image_by_locus or {}
     short_targets = short_image_link_targets or PUBLICATION_SHORT_IMAGE_IDS
 
     def replace_page_href(match: re.Match[str]) -> str:
-        stats.legacy_href_count += 1
         old_url = match.group("url")
+        if _is_preserved_external_publication_url(old_url):
+            return match.group(0)
+
+        stats.legacy_href_count += 1
         old_image_id = int(match.group("image_id"))
         old_graph_id = _publication_legacy_graph_id(match.group("query"))
         new_image_id = old_image_id
@@ -958,8 +1170,11 @@ def rewrite_legacy_publication_links(
         return f"{match.group('prefix')}{match.group('quote')}{new_url}{match.group('quote')}"
 
     def replace_manuscript_href(match: re.Match[str]) -> str:
-        stats.manuscript_href_count += 1
         old_url = match.group("url")
+        if _is_preserved_external_publication_url(old_url):
+            return match.group(0)
+
+        stats.manuscript_href_count += 1
         item_part_id = int(match.group("item_part_id"))
 
         if item_part_id not in resolved_item_part_ids:
@@ -996,9 +1211,29 @@ def rewrite_legacy_publication_links(
         visible_text_rewrites.append((old_url, new_url))
         return f"{match.group('prefix')}{match.group('quote')}{new_url}{match.group('quote')}"
 
+    def replace_project_url_attr(match: re.Match[str]) -> str:
+        old_url = match.group("url")
+        if PUBLICATION_LEGACY_MEDIA_URL_RE.search(old_url):
+            return match.group(0)
+
+        new_url = _publication_legacy_url_target(old_url, project_url_rewrites)
+        is_legacy_project_url = new_url is not None or _is_legacy_project_publication_url(old_url)
+        if not is_legacy_project_url:
+            return match.group(0)
+
+        stats.legacy_project_url_count += 1
+        if new_url is None:
+            stats.report_only_project_urls.add(html_unescape(old_url).strip())
+            return match.group(0)
+
+        stats.rewritten_project_url_count += 1
+        visible_text_rewrites.append((old_url, new_url))
+        return f"{match.group('prefix')}{match.group('quote')}{new_url}{match.group('quote')}"
+
     rewritten_html = PUBLICATION_DIGIPAL_HREF_RE.sub(replace_page_href, html)
     rewritten_html = PUBLICATION_DIGIPAL_MANUSCRIPT_HREF_RE.sub(replace_manuscript_href, rewritten_html)
     rewritten_html = PUBLICATION_SHORT_HREF_RE.sub(replace_short_href, rewritten_html)
+    rewritten_html = PUBLICATION_PROJECT_URL_ATTR_RE.sub(replace_project_url_attr, rewritten_html)
     for old_url, new_url in visible_text_rewrites:
         rewritten_html, rewrite_count = _rewrite_exact_visible_publication_link_text(rewritten_html, old_url, new_url)
         stats.visible_text_rewrite_count += rewrite_count
@@ -1040,6 +1275,13 @@ def publication_link_rewrite_warnings(stats: PublicationLinkRewriteStats) -> lis
             "Publication link rewrite left legacy DigiPal text-view hrefs unchanged for ambiguous target "
             "item part ids: "
             f"{item_part_ids}."
+        )
+    if stats.report_only_project_urls:
+        urls = ", ".join(sorted(stats.report_only_project_urls))
+        warnings.append(
+            "Publication link rewrite left old internal publication URL(s) unchanged because no current route has "
+            "been explicitly mapped: "
+            f"{urls}."
         )
     return warnings
 
@@ -2574,6 +2816,7 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
         """,
     )
     publication_insert_rows = []
+    publication_url_rewrites = legacy_publication_url_rewrite_map(publication_rows)
     for row in publication_rows:
         content, content_stats = rewrite_legacy_publication_links(
             text_or_blank(row["content"]),
@@ -2581,6 +2824,7 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
             graph_targets,
             item_part_ids,
             item_part_image_by_locus,
+            publication_url_rewrites=publication_url_rewrites,
         )
         preview, preview_stats = rewrite_legacy_publication_links(
             text_or_blank(row["description"]),
@@ -2588,6 +2832,7 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
             graph_targets,
             item_part_ids,
             item_part_image_by_locus,
+            publication_url_rewrites=publication_url_rewrites,
         )
         link_rewrite_stats.merge(content_stats)
         link_rewrite_stats.merge(preview_stats)
