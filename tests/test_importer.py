@@ -11,6 +11,7 @@ from migration_toolkit.importer import (
     REQUIRED_TARGET_TABLES,
     SOURCE_COUNT_SQL,
     TARGET_DOMAIN_TABLES,
+    CarouselImagePathError,
     ImportOptions,
     ImportReport,
     LegacyMigrationImportError,
@@ -18,6 +19,7 @@ from migration_toolkit.importer import (
     PublicationGraphLinkTarget,
     audit_failure_summary,
     carousel_image_path,
+    carousel_image_path_profile,
     carousel_url,
     default_unsupported_catalogue_number_output_path,
     default_unsupported_description_output_path,
@@ -89,11 +91,101 @@ def test_legacy_image_path_converts_iip_tif_paths():
     assert legacy_image_path(None, "already.jp2") == "already.jp2"
 
 
-def test_carousel_image_path_removes_media_url_prefix():
-    assert carousel_image_path("/media/carousel/browse.jpg") == "carousel/browse.jpg"
-    assert carousel_image_path("media/carousel/browse.jpg") == "carousel/browse.jpg"
-    assert carousel_image_path("carousel/browse.jpg") == "carousel/browse.jpg"
-    assert carousel_image_path(None, "/media/carousel/search.jpg") == "carousel/search.jpg"
+REAL_LEGACY_CAROUSEL_PATHS = (
+    (1, "/media/uploads/Carousel/browse.jpg", "carousel/browse.jpg"),
+    (2, "/media/uploads/Carousel/search.jpg", "carousel/search.jpg"),
+    (3, "/media/uploads/Carousel/annotating.jpg", "carousel/annotating.jpg"),
+    (4, "/media/uploads/Carousel/seal.jpg", "carousel/seal.jpg"),
+    (5, "/media/uploads/Carousel/kelso_image.jpg", "carousel/kelso_image.jpg"),
+    (7, "/media/uploads/Carousel/editing.jpg", "carousel/editing.jpg"),
+    (8, "/media/uploads/Carousel/allographs.jpg", "carousel/allographs.jpg"),
+    (9, "/media/uploads/Carousel/collections.jpg", "carousel/collections.jpg"),
+)
+
+
+@pytest.mark.parametrize(("carousel_id", "source", "expected"), REAL_LEGACY_CAROUSEL_PATHS)
+def test_carousel_image_path_normalizes_every_current_legacy_row(carousel_id, source, expected):
+    assert carousel_image_path("", source, carousel_id=carousel_id) == expected
+
+
+@pytest.mark.parametrize(
+    "source",
+    (
+        "/media/uploads/Carousel/Browse.JPG",
+        "media/uploads/carousel/Browse.JPG",
+        "/uploads/Carousel/Browse.JPG",
+        "uploads/carousel/Browse.JPG",
+        "/media/carousel/Browse.JPG",
+        "media/carousel/Browse.JPG",
+        "/carousel/Browse.JPG",
+        "carousel/Browse.JPG",
+    ),
+)
+def test_carousel_image_path_accepts_reviewed_variants_and_is_idempotent(source):
+    assert carousel_image_path(source) == "carousel/Browse.JPG"
+
+
+def test_carousel_image_path_falls_back_from_blank_image_file_and_accepts_equivalent_fields():
+    assert carousel_image_path("   ", "/media/uploads/Carousel/search.jpg") == "carousel/search.jpg"
+    assert carousel_image_path(" /media/uploads/Carousel/search.jpg ") == "carousel/search.jpg"
+    assert carousel_image_path("/media/uploads/Carousel/search.jpg", "carousel/search.jpg") == "carousel/search.jpg"
+
+
+def test_carousel_image_path_rejects_conflicting_fields():
+    with pytest.raises(CarouselImagePathError, match="Conflicting carousel image paths for carousel id 4"):
+        carousel_image_path(
+            "/media/uploads/Carousel/seal.jpg",
+            "/media/uploads/Carousel/editing.jpg",
+            carousel_id=4,
+        )
+
+
+@pytest.mark.parametrize(
+    "source",
+    (
+        "",
+        "browse.jpg",
+        "https://example.test/media/uploads/Carousel/browse.jpg",
+        "//media/uploads/Carousel/browse.jpg",
+        r"media\uploads\Carousel\browse.jpg",
+        "/media/uploads/Carousel/../browse.jpg",
+        "/media/uploads/Carousel//browse.jpg",
+        "/media/uploads/Carousel/browse.jpg?size=large",
+        "/media/uploads/Carousel/browse.jpg#slide",
+        "/media/uploads/Carousel/browse.jpg\0",
+        "\t/media/uploads/Carousel/browse.jpg",
+        "/media/uploads/Carousel/browse.jpg\n",
+        "/media/uploads/Carousel/browse.jpg\x7f",
+        "/media/uploads/Carousel/browse.jpg\x85",
+    ),
+)
+def test_carousel_image_path_rejects_missing_unknown_or_unsafe_values(source):
+    with pytest.raises(CarouselImagePathError):
+        carousel_image_path(source)
+
+
+def test_carousel_image_path_enforces_database_field_length_without_truncating():
+    assert len(carousel_image_path(f"carousel/{'a' * 87}.jpg")) == 100
+    with pytest.raises(CarouselImagePathError, match="exceeds 100 characters"):
+        carousel_image_path(f"carousel/{'a' * 88}.jpg")
+
+
+def test_carousel_image_path_profile_records_canonical_paths_and_invalid_rows(monkeypatch):
+    rows = [
+        {"id": 1, "image_file": "", "image": "/media/uploads/Carousel/browse.jpg"},
+        {"id": 2, "image_file": "", "image": "/unexpected/search.jpg"},
+    ]
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", lambda *_args, **_kwargs: rows)
+
+    profile = carousel_image_path_profile(None)
+
+    assert profile["row_count"] == 2
+    assert profile["valid_count"] == 1
+    assert profile["invalid_count"] == 1
+    assert profile["paths"][0]["canonical"] == "carousel/browse.jpg"
+    assert profile["paths"][0]["image_file"] == ""
+    assert profile["paths"][0]["image"] == "/media/uploads/Carousel/browse.jpg"
+    assert profile["invalid"][0]["id"] == 2
 
 
 def test_carousel_url_rewrites_legacy_image_search_to_current_grid_route():
@@ -698,6 +790,41 @@ def test_source_profile_blockers_apply_to_selected_phases():
         )
         == 1
     )
+
+
+def test_source_profile_blockers_reject_invalid_carousel_paths_before_publication_writes():
+    profile = {
+        "description_relationships": {
+            "counts": {
+                "historical_only": 0,
+                "text_only": 0,
+                "both_links": 0,
+                "neither_link": 0,
+                "dangling_historical_item": 0,
+            },
+            "samples": {},
+        },
+        "allograph_character_integrity": {"missing_character_count": 0, "sample": []},
+        "carousel_image_paths": {"invalid_count": 1},
+    }
+
+    assert source_profile_blockers(profile, ("image_text",)) == []
+    blockers = source_profile_blockers(profile, ("publications",))
+    assert len(blockers) == 1
+    assert "cannot be mapped safely" in blockers[0]
+    warnings = source_profile_warnings(profile)
+    assert warnings[-1].endswith(": 1")
+    report = ImportReport(
+        dry_run=True,
+        legacy_database="legacy_source",
+        target_database="target_current",
+        phases=[],
+        target_row_counts_before={},
+        target_row_counts_after={},
+        source_profile=profile,
+        source_warnings=warnings,
+    )
+    assert report.status == "warn"
 
 
 def test_unsupported_description_count_excludes_both_link_rows():

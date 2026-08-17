@@ -30,6 +30,7 @@ from migration_toolkit.audit import (
     run_audit,
     target_url_from_env,
 )
+from migration_toolkit.carousel import CarouselImagePathError, carousel_image_path
 
 
 class LegacyMigrationImportError(RuntimeError):
@@ -623,13 +624,6 @@ def legacy_image_path(iipimage: str | None, image: str | None = None) -> str:
         path = path[4:]
     if path.lower().endswith(".tif"):
         path = f"{path[:-4]}.jp2"
-    return path
-
-
-def carousel_image_path(image_file: str | None, image: str | None = None) -> str:
-    path = (image_file or image or "").strip().lstrip("/")
-    while path.startswith("media/"):
-        path = path[6:]
     return path
 
 
@@ -1712,6 +1706,47 @@ def legacy_publication_author_ids(legacy_conn: Connection[Any]) -> list[int]:
     return [int(row["id"]) for row in legacy_publication_author_profile(legacy_conn)["authors"]]
 
 
+def carousel_image_path_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
+    rows = fetch_rows(
+        legacy_conn,
+        """
+        SELECT id, image_file, image
+        FROM digipal_carouselitem
+        ORDER BY id
+        """,
+    )
+    normalized: list[dict[str, Any]] = []
+    invalid: list[dict[str, Any]] = []
+    for row in rows:
+        try:
+            canonical = carousel_image_path(row["image_file"], row["image"], carousel_id=int(row["id"]))
+        except CarouselImagePathError as exc:
+            invalid.append(
+                {
+                    "id": row["id"],
+                    "image_file": row["image_file"],
+                    "image": row["image"],
+                    "error": str(exc),
+                }
+            )
+        else:
+            normalized.append(
+                {
+                    "id": row["id"],
+                    "image_file": row["image_file"],
+                    "image": row["image"],
+                    "canonical": canonical,
+                }
+            )
+    return {
+        "row_count": len(rows),
+        "valid_count": len(normalized),
+        "invalid_count": len(invalid),
+        "paths": normalized,
+        "invalid": invalid,
+    }
+
+
 def missing_target_publication_author_ids(legacy_conn: Connection[Any], target_conn: Connection[Any]) -> list[int]:
     legacy_author_ids = legacy_publication_author_ids(legacy_conn)
     if not legacy_author_ids:
@@ -1738,6 +1773,7 @@ def build_source_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
         "catalogue_number_relationships": catalogue_number_relationship_profile(legacy_conn),
         "allograph_character_integrity": allograph_character_profile(legacy_conn),
         "legacy_publication_authors": legacy_publication_author_profile(legacy_conn),
+        "carousel_image_paths": carousel_image_path_profile(legacy_conn),
     }
 
 
@@ -1785,6 +1821,11 @@ def source_profile_warnings(profile: dict[str, Any]) -> list[str]:
         warnings.append(
             f"Legacy digipal_allograph contains rows with missing character links: {missing_allograph_characters}"
         )
+    invalid_carousel_paths = int(profile.get("carousel_image_paths", {}).get("invalid_count", 0))
+    if invalid_carousel_paths:
+        warnings.append(
+            f"Legacy digipal_carouselitem contains image paths that cannot be mapped safely: {invalid_carousel_paths}"
+        )
     return warnings
 
 
@@ -1808,6 +1849,12 @@ def source_profile_blockers(
         blockers.append(
             "The symbols phase cannot import allographs whose character_id is missing from digipal_character. "
             "Repair the source data or define an explicit placeholder policy."
+        )
+    carousel_paths = profile.get("carousel_image_paths", {})
+    if "publications" in phases and int(carousel_paths.get("invalid_count", 0)):
+        blockers.append(
+            "The publications phase contains carousel image paths that cannot be mapped safely. "
+            "Review source_profile.carousel_image_paths.invalid and define an explicit source-to-target mapping."
         )
     return blockers
 
@@ -2906,7 +2953,7 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
             {
                 "id": row["id"],
                 "ordering": row["sort_order"] or 0,
-                "image": truncate(carousel_image_path(row["image_file"], row["image"]), 100),
+                "image": carousel_image_path(row["image_file"], row["image"], carousel_id=int(row["id"])),
                 "title": truncate(row["title"] or "", 150),
                 "url": truncate(
                     carousel_url(

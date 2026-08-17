@@ -100,7 +100,7 @@ The current target is clearly a selective migration, not a full clone:
 | `digipal_graph_aspects` | `annotations_graph_positions` | Re-keyed and filtered with graph rows; six fewer rows in the current target snapshot. |
 | `blog_blogpost` | `publications_publication` | Id-preserved; author ids need special handling. |
 | `blog_blogpost_categories` | `publications_publication_keywords` | Re-keyed through tagulous keywords. |
-| `digipal_carouselitem` | `publications_carouselitem` | Id-preserved; field names transformed; image paths stored MEDIA_ROOT-relative (`carousel/...`); carousel links rewritten to current frontend routes. |
+| `digipal_carouselitem` | `publications_carouselitem` | Id-preserved; field names transformed; image paths are mapped exactly from legacy `/media/uploads/Carousel/...` to canonical `carousel/...` values and audited by id; carousel links rewritten to current frontend routes. |
 | none | `worksets_workset` | Target-only user-saved lightbox/citable collection feature; currently five local rows. |
 
 ## Key Differences And Risks
@@ -176,6 +176,25 @@ Legacy bracket-note text such as `[5]` is stored that way in the source
 frontend publication renderer links matching body references and `Notes`
 entries at render time, so the migration does not need to materialize those
 generated internal anchors in the database.
+
+### Carousel Images
+
+Store carousel images as canonical `MEDIA_ROOT`-relative paths. In particular,
+map the legacy `/media/uploads/Carousel/<filename>` form to
+`carousel/<filename>`. The importer accepts only reviewed legacy/canonical
+prefixes, rejects unsafe or unknown paths, and must not silently truncate an
+overlong path. When both legacy image columns contain values, they must resolve
+to the same canonical path.
+
+The legacy model's `image_file` upload field can also contain
+`uploads/images/...`, but none of the eight inspected source rows use it. That
+form is deliberately not guessed: a populated value blocks execution until its
+destination and asset-relocation policy have been explicitly reviewed.
+
+The post-import audit compares each source and target carousel row by preserved
+id and fails if the target does not contain the exact canonical path. Asset
+deployment is a separate operational check: each referenced file must also be
+present under the target media root before go-live.
 
 ### Carousel Links
 

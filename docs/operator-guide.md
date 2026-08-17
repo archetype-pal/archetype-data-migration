@@ -240,7 +240,7 @@ Import public CMS records represented in the current application.
 Importer contract:
 - Use the approved author policy from phase 02.
 - Preserve publication and carousel ids where the audit says ids are preserved.
-- Store carousel images as MEDIA_ROOT-relative paths such as carousel/browse.jpg, never /media/carousel/browse.jpg.
+- Normalize legacy /media/uploads/Carousel/... image values to canonical MEDIA_ROOT-relative carousel/... paths; reject unknown or unsafe path forms instead of copying them.
 - Rewrite carousel URLs from legacy DigiPal search/page/manuscript/about routes to current frontend routes; translate legacy search view=list to view=table and keep explicit view parameters.
 - Leave obsolete legacy collection carousel links blank until a current collection route is approved.
 - Re-key keyword/category joins through current tagulous tables.
@@ -262,7 +262,8 @@ Validation:
 - Sample slugs, statuses, publication dates, and author displays are correct.
 - Publication HTML has no remaining legacy /digipal/page/... hrefs after import.
 - Publication HTML has no remaining safely resolvable legacy /digipal/manuscripts/... hrefs after import.
-- Carousel image paths are MEDIA_ROOT-relative and do not start with /media/.
+- Every carousel image path matches its canonical source-to-target mapping by id and starts with carousel/.
+- Every referenced carousel/... file exists and is readable in the deployment media root, or is listed in an approved asset-deployment artifact before go-live.
 - Carousel URLs use current frontend routes and have no remaining legacy /digipal/... routes, /about/ placeholder, or view=list values.
 - Publication HTML has no remaining old absolute /media/uploads/... host prefixes.
 - Sample rewritten manuscript image/text links resolve, and graph query parameters open existing annotations.

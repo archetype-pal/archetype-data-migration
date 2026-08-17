@@ -5,6 +5,7 @@ import json
 import os
 import re
 from typing import Any
+from unicodedata import category
 from urllib.parse import ParseResult, quote, urlparse, urlunparse
 
 import psycopg
@@ -19,6 +20,16 @@ DEFAULT_TARGET_DATABASE_NAME = "target_current"
 
 TABLE_NAME_RE = re.compile(r"^[a-z][a-z0-9_]*$")
 OPERATOR_HELPER_TABLE_RE = re.compile(r"(?:_backup_\d{8}(?:_\d{2,6})?|_map_\d{8}(?:_\d{2,6})?)$")
+
+# This contract is intentionally independent of the importer implementation.
+# A post-import audit must catch a mapper regression, not reproduce it.
+_AUDIT_CAROUSEL_IMAGE_MAX_LENGTH = 100
+_AUDIT_CAROUSEL_PREFIXES: tuple[tuple[str, ...], ...] = (
+    ("media", "uploads", "carousel"),
+    ("media", "carousel"),
+    ("uploads", "carousel"),
+    ("carousel",),
+)
 
 
 class LegacyMigrationAuditError(RuntimeError):
@@ -497,8 +508,8 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         category="publications",
         strategy="id-preserved transformed fields",
         notes=(
-            "Legacy sort_order/link/image fields map to target ordering/url/image; carousel image paths are "
-            "MEDIA_ROOT-relative and carousel URLs use current frontend routes."
+            "Legacy sort_order/link/image fields map to target ordering/url/image; every image path must match "
+            "the canonical source-to-target mapping by id and carousel URLs use current frontend routes."
         ),
     ),
     EntityMapping(
@@ -1215,35 +1226,152 @@ def check_legacy_text_exclusions(legacy_conn: Connection[Any], target_conn: Conn
     )
 
 
-def check_carousel_image_paths(target_conn: Connection[Any]) -> CheckResult:
-    bad_rows = _dict_rows(
+def _audited_carousel_image_path(
+    image_file: str | None,
+    image: str | None,
+    *,
+    carousel_id: int,
+) -> str:
+    candidates: list[str] = []
+    for value in (image_file, image):
+        if value is None:
+            continue
+        raw = str(value)
+        if not raw.strip():
+            continue
+        candidates.append(raw.strip(" "))
+
+    context = f" for carousel id {carousel_id}"
+    if not candidates:
+        raise ValueError(f"Carousel image path is empty{context}")
+
+    expected_paths: list[str] = []
+    for raw in candidates:
+        if raw.startswith("//") or "\\" in raw or "://" in raw or "?" in raw or "#" in raw:
+            raise ValueError(f"Carousel image path is not a safe relative path{context}: {raw!r}")
+        if any(category(character) == "Cc" for character in raw):
+            raise ValueError(f"Carousel image path contains a control character{context}: {raw!r}")
+
+        path = raw[1:] if raw.startswith("/") else raw
+        parts = path.split("/")
+        if any(part in {"", ".", ".."} for part in parts):
+            raise ValueError(f"Carousel image path contains an unsafe segment{context}: {raw!r}")
+
+        folded_parts = tuple(part.casefold() for part in parts)
+        suffix: list[str] | None = None
+        for prefix in _AUDIT_CAROUSEL_PREFIXES:
+            if folded_parts[: len(prefix)] == prefix:
+                suffix = parts[len(prefix) :]
+                break
+        if not suffix:
+            raise ValueError(f"Unsupported carousel image path{context}: {raw!r}")
+
+        expected = "/".join(("carousel", *suffix))
+        if len(expected) > _AUDIT_CAROUSEL_IMAGE_MAX_LENGTH:
+            raise ValueError(
+                f"Canonical carousel image path{context} exceeds "
+                f"{_AUDIT_CAROUSEL_IMAGE_MAX_LENGTH} characters: {expected!r}"
+            )
+        expected_paths.append(expected)
+
+    if len(set(expected_paths)) != 1:
+        raise ValueError(f"Conflicting carousel image paths{context}: image_file={image_file!r}, image={image!r}")
+    return expected_paths[0]
+
+
+def check_carousel_image_paths(legacy_conn: Connection[Any], target_conn: Connection[Any]) -> CheckResult:
+    legacy_rows = _dict_rows(
+        legacy_conn,
+        """
+        SELECT id, image_file, image
+        FROM digipal_carouselitem
+        ORDER BY id
+        """,
+    )
+    target_rows = _dict_rows(
         target_conn,
         """
         SELECT id, image
         FROM publications_carouselitem
-        WHERE image ~ '^/?(media/)+'
         ORDER BY id
-        LIMIT 20
         """,
     )
+    target_by_id = {int(row["id"]): row.get("image") for row in target_rows}
+    legacy_ids: set[int] = set()
+    problems: list[dict[str, Any]] = []
 
-    if bad_rows:
+    for legacy_row in legacy_rows:
+        row_id = int(legacy_row["id"])
+        legacy_ids.add(row_id)
+        try:
+            expected = _audited_carousel_image_path(
+                legacy_row.get("image_file"),
+                legacy_row.get("image"),
+                carousel_id=row_id,
+            )
+        except ValueError as exc:
+            problems.append(
+                {
+                    "id": row_id,
+                    "reason": "invalid_source_path",
+                    "source_image_file": legacy_row.get("image_file"),
+                    "source_image": legacy_row.get("image"),
+                    "error": str(exc),
+                }
+            )
+            continue
+
+        if row_id not in target_by_id:
+            problems.append(
+                {
+                    "id": row_id,
+                    "reason": "missing_target_row",
+                    "expected": expected,
+                    "actual": None,
+                }
+            )
+            continue
+
+        actual = target_by_id[row_id]
+        if actual != expected or not str(actual).startswith("carousel/"):
+            problems.append(
+                {
+                    "id": row_id,
+                    "reason": "target_path_mismatch",
+                    "source_image_file": legacy_row.get("image_file"),
+                    "source_image": legacy_row.get("image"),
+                    "expected": expected,
+                    "actual": actual,
+                }
+            )
+
+    for row_id in sorted(set(target_by_id) - legacy_ids):
+        problems.append(
+            {
+                "id": row_id,
+                "reason": "unexpected_target_row",
+                "expected": None,
+                "actual": target_by_id[row_id],
+            }
+        )
+
+    if problems:
         return CheckResult(
             key="carousel_image_paths",
             title="Carousel image paths",
             status="fail",
             summary=(
-                f"{len(bad_rows)} sampled carousel image path(s) include a media URL prefix. "
-                "Store MEDIA_ROOT-relative paths such as carousel/browse.jpg."
+                f"{len(problems)} carousel image path issue(s) found. "
+                "Target values must match the canonical source mapping and use carousel/... paths."
             ),
-            details=bad_rows,
+            details=problems[:20],
         )
 
     return CheckResult(
         key="carousel_image_paths",
         title="Carousel image paths",
         status="ok",
-        summary="Carousel image paths are MEDIA_ROOT-relative.",
+        summary=f"All {len(legacy_rows)} carousel image path(s) match the canonical source-to-target mapping.",
     )
 
 
@@ -1420,7 +1548,7 @@ def run_audit(
 
         require_tables(
             legacy_conn,
-            {"digipal_date", "digipal_annotation", "digipal_graph", "blog_blogpost"},
+            {"digipal_date", "digipal_annotation", "digipal_graph", "digipal_carouselitem", "blog_blogpost"},
             database_label=f"legacy database {legacy_db}",
         )
         require_tables(
@@ -1442,7 +1570,7 @@ def run_audit(
             check_publication_author_mapping(legacy_conn, target_conn, publication_author_policy),
             check_annotation_shape(legacy_conn, target_conn),
             check_legacy_text_exclusions(legacy_conn, target_conn),
-            check_carousel_image_paths(target_conn),
+            check_carousel_image_paths(legacy_conn, target_conn),
             check_carousel_urls(target_conn),
             check_publication_media_paths(target_conn),
             check_publication_legacy_project_links(target_conn),

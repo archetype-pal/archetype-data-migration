@@ -48,7 +48,7 @@ application public tables and 0 operator helper tables.
 | `warn` | Graph position links | 1491 | 1485 | ids not preserved, filtered |
 | `ok` | Publications | 61 | 61 | id-preserved transformed fields |
 | `ok` | Publication keyword links | 67 | 67 | ids not preserved |
-| `ok` | Carousel items | 8 | 8 | id-preserved transformed fields; image paths stored MEDIA_ROOT-relative (`carousel/...`); URLs use current frontend routes |
+| `ok` | Carousel items | 8 | 8 | id-preserved transformed fields; image paths must match the canonical source-to-target mapping by id; URLs use current frontend routes |
 | `warn` | Worksets | 0 | 5 | target-only feature table |
 
 ## Checks
@@ -60,7 +60,7 @@ application public tables and 0 operator helper tables.
 | `ok` | Publication author mapping | Publication author ids resolve to matching usernames. |
 | `warn` | Annotation shape | Target text/editorial annotations retain allograph/hand values. This is valid under the current database constraint but differs from the model comment that treats those links as optional. |
 | `ok` | Legacy text exclusions | Non-empty legacy text XML rows: 899; target ImageText rows: 899. |
-| `ok` | Carousel image paths | Carousel image paths are MEDIA_ROOT-relative. |
+| `ok` | Carousel image paths | All 8 carousel image paths match the canonical source-to-target mapping. |
 | `ok` | Carousel URLs | Carousel URLs use current frontend routes. |
 | `ok` | Publication media paths | Current-project publication media URLs use same-origin /media/uploads/ paths. |
 | `ok` | Publication legacy project links | Publication HTML has no remaining old internal URLs requiring migration policy; DigiPal and Exon Domesday links are preserved as external references. |

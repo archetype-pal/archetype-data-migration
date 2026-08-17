@@ -127,26 +127,117 @@ def test_render_json_is_machine_readable():
     assert '"status": "ok"' in rendered
 
 
-def test_check_carousel_image_paths_passes_when_paths_are_media_root_relative(monkeypatch):
-    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda *_args, **_kwargs: [])
+LEGACY_CAROUSEL_ROWS = [
+    {"id": 1, "image_file": "", "image": "/media/uploads/Carousel/browse.jpg"},
+    {"id": 2, "image_file": "", "image": "/media/uploads/Carousel/search.jpg"},
+    {"id": 3, "image_file": "", "image": "/media/uploads/Carousel/annotating.jpg"},
+    {"id": 4, "image_file": "", "image": "/media/uploads/Carousel/seal.jpg"},
+    {"id": 5, "image_file": "", "image": "/media/uploads/Carousel/kelso_image.jpg"},
+    {"id": 7, "image_file": "", "image": "/media/uploads/Carousel/editing.jpg"},
+    {"id": 8, "image_file": "", "image": "/media/uploads/Carousel/allographs.jpg"},
+    {"id": 9, "image_file": "", "image": "/media/uploads/Carousel/collections.jpg"},
+]
+TARGET_CAROUSEL_ROWS = [
+    {"id": row["id"], "image": f"carousel/{str(row['image']).rsplit('/', 1)[-1]}"} for row in LEGACY_CAROUSEL_ROWS
+]
 
-    result = check_carousel_image_paths(None)
 
-    assert result.status == "ok"
-    assert result.summary == "Carousel image paths are MEDIA_ROOT-relative."
+def _carousel_audit_rows(legacy_rows, target_rows):
+    def fake_rows(conn, _query):
+        return legacy_rows if conn == "legacy" else target_rows
+
+    return fake_rows
 
 
-def test_check_carousel_image_paths_fails_on_media_prefixed_values(monkeypatch):
+def test_check_carousel_image_paths_passes_exact_current_source_to_target_mapping(monkeypatch):
     monkeypatch.setattr(
         "migration_toolkit.audit._dict_rows",
-        lambda *_args, **_kwargs: [{"id": 1, "image": "/media/carousel/browse.jpg"}],
+        _carousel_audit_rows(LEGACY_CAROUSEL_ROWS, TARGET_CAROUSEL_ROWS),
     )
 
-    result = check_carousel_image_paths(None)
+    result = check_carousel_image_paths("legacy", "target")
+
+    assert result.status == "ok"
+    assert result.summary == "All 8 carousel image path(s) match the canonical source-to-target mapping."
+
+
+def test_check_carousel_image_paths_rejects_previous_faulty_importer_output(monkeypatch):
+    wrong_target = [{"id": 1, "image": "uploads/Carousel/browse.jpg"}]
+    monkeypatch.setattr(
+        "migration_toolkit.audit._dict_rows",
+        _carousel_audit_rows(LEGACY_CAROUSEL_ROWS[:1], wrong_target),
+    )
+
+    result = check_carousel_image_paths("legacy", "target")
 
     assert result.status == "fail"
-    assert "media URL prefix" in result.summary
-    assert result.details == [{"id": 1, "image": "/media/carousel/browse.jpg"}]
+    assert "1 carousel image path issue" in result.summary
+    assert result.details == [
+        {
+            "id": 1,
+            "reason": "target_path_mismatch",
+            "source_image_file": "",
+            "source_image": "/media/uploads/Carousel/browse.jpg",
+            "expected": "carousel/browse.jpg",
+            "actual": "uploads/Carousel/browse.jpg",
+        }
+    ]
+
+
+def test_check_carousel_image_paths_is_independent_of_the_importer_mapper(monkeypatch):
+    monkeypatch.setattr(
+        "migration_toolkit.importer.carousel_image_path",
+        lambda *_args, **_kwargs: "carousel/wrong.jpg",
+    )
+    wrong_target = [{"id": 1, "image": "carousel/wrong.jpg"}]
+    monkeypatch.setattr(
+        "migration_toolkit.audit._dict_rows",
+        _carousel_audit_rows(LEGACY_CAROUSEL_ROWS[:1], wrong_target),
+    )
+
+    result = check_carousel_image_paths("legacy", "target")
+
+    assert result.status == "fail"
+    assert result.details[0]["expected"] == "carousel/browse.jpg"
+    assert result.details[0]["actual"] == "carousel/wrong.jpg"
+
+
+def test_check_carousel_image_paths_reports_invalid_missing_and_unexpected_rows(monkeypatch):
+    legacy_rows = [
+        {"id": 1, "image_file": "", "image": "/unexpected/browse.jpg"},
+        {"id": 2, "image_file": "", "image": "/media/uploads/Carousel/search.jpg"},
+    ]
+    target_rows = [{"id": 3, "image": "carousel/extra.jpg"}]
+    monkeypatch.setattr(
+        "migration_toolkit.audit._dict_rows",
+        _carousel_audit_rows(legacy_rows, target_rows),
+    )
+
+    result = check_carousel_image_paths("legacy", "target")
+
+    assert result.status == "fail"
+    assert "3 carousel image path issue" in result.summary
+    assert [detail["reason"] for detail in result.details] == [
+        "invalid_source_path",
+        "missing_target_row",
+        "unexpected_target_row",
+    ]
+
+
+def test_check_carousel_image_paths_reports_full_failure_count_but_caps_details(monkeypatch):
+    legacy_rows = [
+        {"id": row_id, "image_file": "", "image": f"/media/uploads/Carousel/{row_id}.jpg"} for row_id in range(25)
+    ]
+    target_rows = [{"id": row_id, "image": f"uploads/Carousel/{row_id}.jpg"} for row_id in range(25)]
+    monkeypatch.setattr(
+        "migration_toolkit.audit._dict_rows",
+        _carousel_audit_rows(legacy_rows, target_rows),
+    )
+
+    result = check_carousel_image_paths("legacy", "target")
+
+    assert "25 carousel image path issue" in result.summary
+    assert len(result.details) == 20
 
 
 def test_check_carousel_urls_passes_when_urls_use_current_routes(monkeypatch):
