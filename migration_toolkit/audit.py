@@ -24,12 +24,22 @@ OPERATOR_HELPER_TABLE_RE = re.compile(r"(?:_backup_\d{8}(?:_\d{2,6})?|_map_\d{8}
 # This contract is intentionally independent of the importer implementation.
 # A post-import audit must catch a mapper regression, not reproduce it.
 _AUDIT_CAROUSEL_IMAGE_MAX_LENGTH = 100
+_AUDIT_CAROUSEL_TITLE_MAX_LENGTH = 150
 _AUDIT_CAROUSEL_PREFIXES: tuple[tuple[str, ...], ...] = (
     ("media", "uploads", "carousel"),
     ("media", "carousel"),
     ("uploads", "carousel"),
     ("carousel",),
 )
+_AUDIT_CAROUSEL_HTML_TAG_RE = re.compile(r"</?[A-Za-z][^>]*>")
+_AUDIT_CURATED_CAROUSEL_TITLES: dict[int, tuple[str, str]] = {
+    5: (
+        'About Models of Authority.</a> <span style="font-size: 75%">Detail from '
+        '<a href="http://digital.nls.uk/scotlandspages/timeline/1159.html">Kelso Charter</a> '
+        "reproduced by permission of His Grace The Duke of Roxburghe</span>",
+        "About Models of Authority",
+    ),
+}
 
 
 class LegacyMigrationAuditError(RuntimeError):
@@ -1375,6 +1385,119 @@ def check_carousel_image_paths(legacy_conn: Connection[Any], target_conn: Connec
     )
 
 
+def _audited_carousel_title(title: str | None, *, carousel_id: int) -> str:
+    context = f" for carousel id {carousel_id}"
+    raw = "" if title is None else str(title)
+    cleaned = raw.strip(" ")
+    if not cleaned:
+        raise ValueError(f"Carousel title is empty{context}")
+    if any(category(character) == "Cc" for character in raw):
+        raise ValueError(f"Carousel title contains a control character{context}: {raw!r}")
+
+    curated = _AUDIT_CURATED_CAROUSEL_TITLES.get(carousel_id)
+    if curated and cleaned == curated[0]:
+        return curated[1]
+
+    if _AUDIT_CAROUSEL_HTML_TAG_RE.search(cleaned):
+        raise ValueError(f"Carousel title contains HTML that has no reviewed target mapping{context}: {raw!r}")
+    if len(cleaned) > _AUDIT_CAROUSEL_TITLE_MAX_LENGTH:
+        raise ValueError(
+            f"Carousel title{context} exceeds {_AUDIT_CAROUSEL_TITLE_MAX_LENGTH} characters and must not be "
+            f"truncated: {raw!r}"
+        )
+    return cleaned
+
+
+def check_carousel_titles(legacy_conn: Connection[Any], target_conn: Connection[Any]) -> CheckResult:
+    legacy_rows = _dict_rows(
+        legacy_conn,
+        """
+        SELECT id, title
+        FROM digipal_carouselitem
+        ORDER BY id
+        """,
+    )
+    target_rows = _dict_rows(
+        target_conn,
+        """
+        SELECT id, title
+        FROM publications_carouselitem
+        ORDER BY id
+        """,
+    )
+    target_by_id = {int(row["id"]): row.get("title") for row in target_rows}
+    legacy_ids: set[int] = set()
+    problems: list[dict[str, Any]] = []
+
+    for legacy_row in legacy_rows:
+        row_id = int(legacy_row["id"])
+        legacy_ids.add(row_id)
+        try:
+            expected = _audited_carousel_title(legacy_row.get("title"), carousel_id=row_id)
+        except ValueError as exc:
+            problems.append(
+                {
+                    "id": row_id,
+                    "reason": "invalid_source_title",
+                    "source_title": legacy_row.get("title"),
+                    "error": str(exc),
+                }
+            )
+            continue
+
+        if row_id not in target_by_id:
+            problems.append(
+                {
+                    "id": row_id,
+                    "reason": "missing_target_row",
+                    "expected": expected,
+                    "actual": None,
+                }
+            )
+            continue
+
+        actual = target_by_id[row_id]
+        if actual != expected:
+            problems.append(
+                {
+                    "id": row_id,
+                    "reason": "target_title_mismatch",
+                    "source_title": legacy_row.get("title"),
+                    "expected": expected,
+                    "actual": actual,
+                }
+            )
+
+    for row_id in sorted(set(target_by_id) - legacy_ids):
+        problems.append(
+            {
+                "id": row_id,
+                "reason": "unexpected_target_row",
+                "expected": None,
+                "actual": target_by_id[row_id],
+            }
+        )
+
+    if problems:
+        return CheckResult(
+            key="carousel_titles",
+            title="Carousel titles",
+            status="fail",
+            summary=(
+                f"{len(problems)} carousel title issue(s) found. "
+                "Target values must match reviewed display titles and must not be raw-truncated HTML."
+            ),
+            details=problems[:20],
+        )
+
+    return CheckResult(
+        key="carousel_titles",
+        title="Carousel titles",
+        status="ok",
+        summary=f"All {len(legacy_rows)} carousel title(s) match the reviewed source-to-target mapping.",
+    )
+
+
 def check_carousel_urls(target_conn: Connection[Any]) -> CheckResult:
     bad_rows = _dict_rows(
         target_conn,
@@ -1571,6 +1694,7 @@ def run_audit(
             check_annotation_shape(legacy_conn, target_conn),
             check_legacy_text_exclusions(legacy_conn, target_conn),
             check_carousel_image_paths(legacy_conn, target_conn),
+            check_carousel_titles(legacy_conn, target_conn),
             check_carousel_urls(target_conn),
             check_publication_media_paths(target_conn),
             check_publication_legacy_project_links(target_conn),

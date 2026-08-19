@@ -196,6 +196,19 @@ id and fails if the target does not contain the exact canonical path. Asset
 deployment is a separate operational check: each referenced file must also be
 present under the target media root before go-live.
 
+### Carousel Titles
+
+Carousel titles are target display labels, not general legacy HTML containers.
+The importer must not raw-truncate them. Plain titles under the target
+`150`-character limit are stored after harmless surrounding-space cleanup.
+Legacy carousel id `5` is explicitly curated from its old attribution-bearing
+HTML value to `About Models of Authority`.
+
+Any other HTML-bearing, overlong, empty, or control-character title blocks the
+publications phase until a reviewed source-to-target value is recorded. The
+post-import audit compares each source and target carousel title by preserved id
+and fails on raw-truncated HTML or any other mismatch.
+
 ### Carousel Links
 
 Carousel `digipal_carouselitem.link` values must not be copied blindly. Rewrite

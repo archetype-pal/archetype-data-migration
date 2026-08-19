@@ -359,6 +359,8 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "Preserve publication and carousel ids where the audit says ids are preserved.",
             "Normalize legacy /media/uploads/Carousel/... image values to canonical MEDIA_ROOT-relative "
             "carousel/... paths; reject unknown or unsafe path forms instead of copying them.",
+            "Map carousel titles to reviewed plain display labels; specifically curate legacy carousel id 5 to "
+            "'About Models of Authority' and reject unreviewed HTML or overlong titles instead of truncating them.",
             "Rewrite carousel URLs from legacy DigiPal search/page/manuscript/about routes to current frontend "
             "routes; translate legacy search view=list to view=table and keep explicit view parameters.",
             "Leave obsolete legacy collection carousel links blank until a current collection route is approved.",
@@ -389,6 +391,7 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "Publication HTML has no remaining legacy /digipal/page/... hrefs after import.",
             "Publication HTML has no remaining safely resolvable legacy /digipal/manuscripts/... hrefs after import.",
             "Every carousel image path matches its canonical source-to-target mapping by id and starts with carousel/.",
+            "Every carousel title matches its reviewed source-to-target display mapping by id.",
             "Every referenced carousel/... file exists and is readable in the deployment media root, or is listed "
             "in an approved asset-deployment artifact before go-live.",
             "Carousel URLs use current frontend routes and have no remaining legacy /digipal/... routes, "

@@ -10,6 +10,7 @@ from migration_toolkit.audit import (
     MappingResult,
     PublicationAuthorPolicy,
     check_carousel_image_paths,
+    check_carousel_titles,
     check_carousel_urls,
     check_legacy_catalogue_number_relationships,
     check_legacy_description_relationships,
@@ -140,6 +141,31 @@ LEGACY_CAROUSEL_ROWS = [
 TARGET_CAROUSEL_ROWS = [
     {"id": row["id"], "image": f"carousel/{str(row['image']).rsplit('/', 1)[-1]}"} for row in LEGACY_CAROUSEL_ROWS
 ]
+LEGACY_CAROUSEL_TITLE_5 = (
+    'About Models of Authority.</a> <span style="font-size: 75%">Detail from '
+    '<a href="http://digital.nls.uk/scotlandspages/timeline/1159.html">Kelso Charter</a> '
+    "reproduced by permission of His Grace The Duke of Roxburghe</span>"
+)
+LEGACY_CAROUSEL_TITLE_ROWS = [
+    {"id": 1, "title": "Browsing images of the charters"},
+    {"id": 2, "title": "Results of a search"},
+    {"id": 3, "title": "Annotating a charter"},
+    {"id": 4, "title": "One of the many seals soon to be available in the Models of Authority database"},
+    {"id": 5, "title": LEGACY_CAROUSEL_TITLE_5},
+    {"id": 7, "title": "The text viewer showing an edited version of a charter alongside its translation"},
+    {"id": 8, "title": 'Search results for allograph "d" in charters from the National Library of Scotland '},
+    {"id": 9, "title": "Add your favourite manuscripts and graphs to a personal Collection"},
+]
+TARGET_CAROUSEL_TITLE_ROWS = [
+    {"id": 1, "title": "Browsing images of the charters"},
+    {"id": 2, "title": "Results of a search"},
+    {"id": 3, "title": "Annotating a charter"},
+    {"id": 4, "title": "One of the many seals soon to be available in the Models of Authority database"},
+    {"id": 5, "title": "About Models of Authority"},
+    {"id": 7, "title": "The text viewer showing an edited version of a charter alongside its translation"},
+    {"id": 8, "title": 'Search results for allograph "d" in charters from the National Library of Scotland'},
+    {"id": 9, "title": "Add your favourite manuscripts and graphs to a personal Collection"},
+]
 
 
 def _carousel_audit_rows(legacy_rows, target_rows):
@@ -238,6 +264,88 @@ def test_check_carousel_image_paths_reports_full_failure_count_but_caps_details(
 
     assert "25 carousel image path issue" in result.summary
     assert len(result.details) == 20
+
+
+def test_check_carousel_titles_passes_exact_current_source_to_target_mapping(monkeypatch):
+    monkeypatch.setattr(
+        "migration_toolkit.audit._dict_rows",
+        _carousel_audit_rows(LEGACY_CAROUSEL_TITLE_ROWS, TARGET_CAROUSEL_TITLE_ROWS),
+    )
+
+    result = check_carousel_titles("legacy", "target")
+
+    assert result.status == "ok"
+    assert result.summary == "All 8 carousel title(s) match the reviewed source-to-target mapping."
+
+
+def test_check_carousel_titles_rejects_raw_truncated_html(monkeypatch):
+    wrong_target = [
+        {
+            "id": 5,
+            "title": (
+                'About Models of Authority.</a> <span style="font-size: 75%">Detail from '
+                '<a href="http://digital.nls.uk/scotlandspages/timeline/1159.html">Kelso Charte'
+            ),
+        }
+    ]
+    monkeypatch.setattr(
+        "migration_toolkit.audit._dict_rows",
+        _carousel_audit_rows(LEGACY_CAROUSEL_TITLE_ROWS[4:5], wrong_target),
+    )
+
+    result = check_carousel_titles("legacy", "target")
+
+    assert result.status == "fail"
+    assert "1 carousel title issue" in result.summary
+    assert result.details == [
+        {
+            "id": 5,
+            "reason": "target_title_mismatch",
+            "source_title": LEGACY_CAROUSEL_TITLE_5,
+            "expected": "About Models of Authority",
+            "actual": wrong_target[0]["title"],
+        }
+    ]
+
+
+def test_check_carousel_titles_is_independent_of_the_importer_mapper(monkeypatch):
+    monkeypatch.setattr(
+        "migration_toolkit.importer.carousel_title",
+        lambda *_args, **_kwargs: "Wrong imported title",
+    )
+    wrong_target = [{"id": 5, "title": "Wrong imported title"}]
+    monkeypatch.setattr(
+        "migration_toolkit.audit._dict_rows",
+        _carousel_audit_rows(LEGACY_CAROUSEL_TITLE_ROWS[4:5], wrong_target),
+    )
+
+    result = check_carousel_titles("legacy", "target")
+
+    assert result.status == "fail"
+    assert result.details[0]["expected"] == "About Models of Authority"
+    assert result.details[0]["actual"] == "Wrong imported title"
+
+
+def test_check_carousel_titles_reports_invalid_missing_and_unexpected_rows(monkeypatch):
+    legacy_rows = [
+        {"id": 1, "title": "<span>Needs review</span>"},
+        {"id": 2, "title": "Results of a search"},
+    ]
+    target_rows = [{"id": 3, "title": "Extra title"}]
+    monkeypatch.setattr(
+        "migration_toolkit.audit._dict_rows",
+        _carousel_audit_rows(legacy_rows, target_rows),
+    )
+
+    result = check_carousel_titles("legacy", "target")
+
+    assert result.status == "fail"
+    assert "3 carousel title issue" in result.summary
+    assert [detail["reason"] for detail in result.details] == [
+        "invalid_source_title",
+        "missing_target_row",
+        "unexpected_target_row",
+    ]
 
 
 def test_check_carousel_urls_passes_when_urls_use_current_routes(monkeypatch):

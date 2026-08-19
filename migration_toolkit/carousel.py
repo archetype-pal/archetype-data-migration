@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+import re
 from unicodedata import category
 
 CAROUSEL_IMAGE_MAX_LENGTH = 100
+CAROUSEL_TITLE_MAX_LENGTH = 150
 CANONICAL_CAROUSEL_PREFIX = "carousel"
 
 # Longest first so the legacy upload directory is consumed as one mapping,
@@ -13,10 +15,23 @@ _SUPPORTED_PREFIXES: tuple[tuple[str, ...], ...] = (
     ("uploads", "carousel"),
     ("carousel",),
 )
+_HTML_TAG_RE = re.compile(r"</?[A-Za-z][^>]*>")
+_CURATED_CAROUSEL_TITLES: dict[int, tuple[str, str]] = {
+    5: (
+        'About Models of Authority.</a> <span style="font-size: 75%">Detail from '
+        '<a href="http://digital.nls.uk/scotlandspages/timeline/1159.html">Kelso Charter</a> '
+        "reproduced by permission of His Grace The Duke of Roxburghe</span>",
+        "About Models of Authority",
+    ),
+}
 
 
 class CarouselImagePathError(ValueError):
     """A carousel image path cannot be mapped safely to the target schema."""
+
+
+class CarouselTitleError(ValueError):
+    """A carousel title cannot be mapped safely to the target schema."""
 
 
 def carousel_image_path(
@@ -45,6 +60,38 @@ def carousel_image_path(
             f"Conflicting carousel image paths{context}: image_file={image_file!r}, image={image!r}"
         )
     return normalized[0]
+
+
+def carousel_title(title: str | None, *, carousel_id: int | None = None) -> str:
+    """Return a reviewed target display title for a legacy carousel item.
+
+    The target title column is a short display label. Legacy carousel row 5
+    stores attribution HTML in the title field, which cannot be copied or
+    truncated safely into that column. Keep that case as a curated mapping and
+    reject any other HTML-bearing or overlong title until it has its own
+    reviewed target value.
+    """
+
+    context = f" for carousel id {carousel_id}" if carousel_id is not None else ""
+    raw = "" if title is None else str(title)
+    cleaned = raw.strip(" ")
+    if not cleaned:
+        raise CarouselTitleError(f"Carousel title is empty{context}")
+    if any(category(character) == "Cc" for character in raw):
+        raise CarouselTitleError(f"Carousel title contains a control character{context}: {raw!r}")
+
+    if carousel_id is not None:
+        curated = _CURATED_CAROUSEL_TITLES.get(int(carousel_id))
+        if curated and cleaned == curated[0]:
+            return curated[1]
+
+    if _HTML_TAG_RE.search(cleaned):
+        raise CarouselTitleError(f"Carousel title contains HTML that has no reviewed target mapping{context}: {raw!r}")
+    if len(cleaned) > CAROUSEL_TITLE_MAX_LENGTH:
+        raise CarouselTitleError(
+            f"Carousel title{context} exceeds {CAROUSEL_TITLE_MAX_LENGTH} characters and must not be truncated: {raw!r}"
+        )
+    return cleaned
 
 
 def _normalize_candidate(raw: str, *, context: str) -> str:

@@ -30,7 +30,7 @@ from migration_toolkit.audit import (
     run_audit,
     target_url_from_env,
 )
-from migration_toolkit.carousel import CarouselImagePathError, carousel_image_path
+from migration_toolkit.carousel import CarouselImagePathError, CarouselTitleError, carousel_image_path, carousel_title
 
 
 class LegacyMigrationImportError(RuntimeError):
@@ -1747,6 +1747,45 @@ def carousel_image_path_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
     }
 
 
+def carousel_title_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
+    rows = fetch_rows(
+        legacy_conn,
+        """
+        SELECT id, title
+        FROM digipal_carouselitem
+        ORDER BY id
+        """,
+    )
+    normalized: list[dict[str, Any]] = []
+    invalid: list[dict[str, Any]] = []
+    for row in rows:
+        try:
+            canonical = carousel_title(row["title"], carousel_id=int(row["id"]))
+        except CarouselTitleError as exc:
+            invalid.append(
+                {
+                    "id": row["id"],
+                    "title": row["title"],
+                    "error": str(exc),
+                }
+            )
+        else:
+            normalized.append(
+                {
+                    "id": row["id"],
+                    "title": row["title"],
+                    "canonical": canonical,
+                }
+            )
+    return {
+        "row_count": len(rows),
+        "valid_count": len(normalized),
+        "invalid_count": len(invalid),
+        "titles": normalized,
+        "invalid": invalid,
+    }
+
+
 def missing_target_publication_author_ids(legacy_conn: Connection[Any], target_conn: Connection[Any]) -> list[int]:
     legacy_author_ids = legacy_publication_author_ids(legacy_conn)
     if not legacy_author_ids:
@@ -1774,6 +1813,7 @@ def build_source_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
         "allograph_character_integrity": allograph_character_profile(legacy_conn),
         "legacy_publication_authors": legacy_publication_author_profile(legacy_conn),
         "carousel_image_paths": carousel_image_path_profile(legacy_conn),
+        "carousel_titles": carousel_title_profile(legacy_conn),
     }
 
 
@@ -1826,6 +1866,11 @@ def source_profile_warnings(profile: dict[str, Any]) -> list[str]:
         warnings.append(
             f"Legacy digipal_carouselitem contains image paths that cannot be mapped safely: {invalid_carousel_paths}"
         )
+    invalid_carousel_titles = int(profile.get("carousel_titles", {}).get("invalid_count", 0))
+    if invalid_carousel_titles:
+        warnings.append(
+            f"Legacy digipal_carouselitem contains titles that cannot be mapped safely: {invalid_carousel_titles}"
+        )
     return warnings
 
 
@@ -1855,6 +1900,12 @@ def source_profile_blockers(
         blockers.append(
             "The publications phase contains carousel image paths that cannot be mapped safely. "
             "Review source_profile.carousel_image_paths.invalid and define an explicit source-to-target mapping."
+        )
+    carousel_titles = profile.get("carousel_titles", {})
+    if "publications" in phases and int(carousel_titles.get("invalid_count", 0)):
+        blockers.append(
+            "The publications phase contains carousel titles that cannot be mapped safely. "
+            "Review source_profile.carousel_titles.invalid and define an explicit source-to-target mapping."
         )
     return blockers
 
@@ -2954,7 +3005,7 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
                 "id": row["id"],
                 "ordering": row["sort_order"] or 0,
                 "image": carousel_image_path(row["image_file"], row["image"], carousel_id=int(row["id"])),
-                "title": truncate(row["title"] or "", 150),
+                "title": carousel_title(row["title"], carousel_id=int(row["id"])),
                 "url": truncate(
                     carousel_url(
                         row["link"],

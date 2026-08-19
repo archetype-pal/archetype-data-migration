@@ -12,6 +12,7 @@ from migration_toolkit.importer import (
     SOURCE_COUNT_SQL,
     TARGET_DOMAIN_TABLES,
     CarouselImagePathError,
+    CarouselTitleError,
     ImportOptions,
     ImportReport,
     LegacyMigrationImportError,
@@ -20,6 +21,8 @@ from migration_toolkit.importer import (
     audit_failure_summary,
     carousel_image_path,
     carousel_image_path_profile,
+    carousel_title,
+    carousel_title_profile,
     carousel_url,
     default_unsupported_catalogue_number_output_path,
     default_unsupported_description_output_path,
@@ -100,6 +103,38 @@ REAL_LEGACY_CAROUSEL_PATHS = (
     (7, "/media/uploads/Carousel/editing.jpg", "carousel/editing.jpg"),
     (8, "/media/uploads/Carousel/allographs.jpg", "carousel/allographs.jpg"),
     (9, "/media/uploads/Carousel/collections.jpg", "carousel/collections.jpg"),
+)
+
+LEGACY_CAROUSEL_TITLE_5 = (
+    'About Models of Authority.</a> <span style="font-size: 75%">Detail from '
+    '<a href="http://digital.nls.uk/scotlandspages/timeline/1159.html">Kelso Charter</a> '
+    "reproduced by permission of His Grace The Duke of Roxburghe</span>"
+)
+REAL_LEGACY_CAROUSEL_TITLES = (
+    (1, "Browsing images of the charters", "Browsing images of the charters"),
+    (2, "Results of a search", "Results of a search"),
+    (3, "Annotating a charter", "Annotating a charter"),
+    (
+        4,
+        "One of the many seals soon to be available in the Models of Authority database",
+        "One of the many seals soon to be available in the Models of Authority database",
+    ),
+    (5, LEGACY_CAROUSEL_TITLE_5, "About Models of Authority"),
+    (
+        7,
+        "The text viewer showing an edited version of a charter alongside its translation",
+        "The text viewer showing an edited version of a charter alongside its translation",
+    ),
+    (
+        8,
+        'Search results for allograph "d" in charters from the National Library of Scotland ',
+        'Search results for allograph "d" in charters from the National Library of Scotland',
+    ),
+    (
+        9,
+        "Add your favourite manuscripts and graphs to a personal Collection",
+        "Add your favourite manuscripts and graphs to a personal Collection",
+    ),
 )
 
 
@@ -186,6 +221,43 @@ def test_carousel_image_path_profile_records_canonical_paths_and_invalid_rows(mo
     assert profile["paths"][0]["image_file"] == ""
     assert profile["paths"][0]["image"] == "/media/uploads/Carousel/browse.jpg"
     assert profile["invalid"][0]["id"] == 2
+
+
+@pytest.mark.parametrize(("carousel_id", "source", "expected"), REAL_LEGACY_CAROUSEL_TITLES)
+def test_carousel_title_maps_every_current_legacy_row(carousel_id, source, expected):
+    assert carousel_title(source, carousel_id=carousel_id) == expected
+
+
+@pytest.mark.parametrize(
+    "source",
+    (
+        "",
+        "   ",
+        "<em>Unreviewed title</em>",
+        "Plain title\nwith newline",
+        "x" * 151,
+    ),
+)
+def test_carousel_title_rejects_missing_html_control_or_overlong_values(source):
+    with pytest.raises(CarouselTitleError):
+        carousel_title(source, carousel_id=99)
+
+
+def test_carousel_title_profile_records_canonical_titles_and_invalid_rows(monkeypatch):
+    rows = [
+        {"id": 5, "title": LEGACY_CAROUSEL_TITLE_5},
+        {"id": 99, "title": "<span>Needs review</span>"},
+    ]
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", lambda *_args, **_kwargs: rows)
+
+    profile = carousel_title_profile(None)
+
+    assert profile["row_count"] == 2
+    assert profile["valid_count"] == 1
+    assert profile["invalid_count"] == 1
+    assert profile["titles"][0]["canonical"] == "About Models of Authority"
+    assert profile["titles"][0]["title"] == LEGACY_CAROUSEL_TITLE_5
+    assert profile["invalid"][0]["id"] == 99
 
 
 def test_carousel_url_rewrites_legacy_image_search_to_current_grid_route():
@@ -812,6 +884,41 @@ def test_source_profile_blockers_reject_invalid_carousel_paths_before_publicatio
     blockers = source_profile_blockers(profile, ("publications",))
     assert len(blockers) == 1
     assert "cannot be mapped safely" in blockers[0]
+    warnings = source_profile_warnings(profile)
+    assert warnings[-1].endswith(": 1")
+    report = ImportReport(
+        dry_run=True,
+        legacy_database="legacy_source",
+        target_database="target_current",
+        phases=[],
+        target_row_counts_before={},
+        target_row_counts_after={},
+        source_profile=profile,
+        source_warnings=warnings,
+    )
+    assert report.status == "warn"
+
+
+def test_source_profile_blockers_reject_invalid_carousel_titles_before_publication_writes():
+    profile = {
+        "description_relationships": {
+            "counts": {
+                "historical_only": 0,
+                "text_only": 0,
+                "both_links": 0,
+                "neither_link": 0,
+                "dangling_historical_item": 0,
+            },
+            "samples": {},
+        },
+        "allograph_character_integrity": {"missing_character_count": 0, "sample": []},
+        "carousel_titles": {"invalid_count": 1},
+    }
+
+    assert source_profile_blockers(profile, ("image_text",)) == []
+    blockers = source_profile_blockers(profile, ("publications",))
+    assert len(blockers) == 1
+    assert "carousel titles" in blockers[0]
     warnings = source_profile_warnings(profile)
     assert warnings[-1].endswith(": 1")
     report = ImportReport(
