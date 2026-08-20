@@ -17,8 +17,8 @@ application public tables and 0 operator helper tables.
 | --- | --- | ---: | ---: | --- |
 | `warn` | Dates | 594 | 610 | id-preserved with target-only date seeds |
 | `warn` | Edit events | 0 | 44 | target-only workflow table |
-| `warn` | Site labels | 0 | 22 | target-only current-system seed data |
-| `warn` | App settings | 0 | 37 | target-only current-system configuration |
+| `ok` | Site labels | 0 | 22 | target-only current-system seed data |
+| `ok` | App settings | 0 | 37 | target-only current-system configuration |
 | `ok` | Item formats | 20 | 20 | id-preserved |
 | `ok` | Bibliographic sources | 40 | 40 | id-preserved |
 | `ok` | Repositories | 9 | 9 | id-preserved transformed fields |
@@ -53,7 +53,7 @@ application public tables and 0 operator helper tables.
 | `warn` | Pages | 17 | 3 | intentionally not imported pending product decision |
 | `ok` | Carousel items | 8 | 8 | id-preserved transformed fields; image paths and titles must match reviewed source-to-target mappings by id; URLs use current frontend routes |
 | `warn` | Partners | 1 | 0 | intentionally not imported pending product decision |
-| `warn` | Events | 5 | 0 | intentionally not imported; current frontend UI unused |
+| `ok` | Events | 0 | 0 | target-only current-system data; current frontend UI unused |
 | `warn` | Worksets | 0 | 5 | target-only feature table |
 
 ## Checks
@@ -65,6 +65,8 @@ application public tables and 0 operator helper tables.
 | `ok` | Publication author mapping | Publication author ids resolve to matching usernames. |
 | `warn` | Annotation shape | Target text/editorial annotations retain allograph/hand values. This is valid under the current database constraint but differs from the model comment that treats those links as optional. |
 | `ok` | Legacy text exclusions | Non-empty legacy text XML rows: 899; target ImageText rows: 899. |
+| `ok` | Site label keys | All 22 current SiteLabel key(s) are present. |
+| `ok` | Public site feature settings | All 37 public site_features.* setting key(s) are present. |
 | `ok` | Carousel image paths | All 8 carousel image paths match the canonical source-to-target mapping. |
 | `ok` | Carousel titles | All 8 carousel titles match the reviewed source-to-target mapping. |
 | `ok` | Carousel URLs | Carousel URLs use current frontend routes. |
@@ -90,15 +92,15 @@ application public tables and 0 operator helper tables.
 
 ### Site labels
 
-- Status: `warn`
+- Status: `ok`
 - Strategy: target-only current-system seed data
 - Notes: Current UI label translations are seeded/edited in the current system; not legacy-mapped.
 
 ### App settings
 
-- Status: `warn`
+- Status: `ok`
 - Strategy: target-only current-system configuration
-- Notes: Current site-features settings are seeded/edited in the current system; legacy conf_setting is not imported wholesale.
+- Notes: Current site-features settings are seeded/edited in the current system; legacy conf_setting is not imported.
 
 ### Item parts
 
@@ -178,9 +180,9 @@ application public tables and 0 operator helper tables.
 
 ### Events
 
-- Status: `warn`
-- Strategy: intentionally not imported; current frontend UI unused
-- Notes: Legacy event richtext pages are not imported into publications_event while the current frontend has no public or backoffice Events UI.
+- Status: `ok`
+- Strategy: target-only current-system data; current frontend UI unused
+- Notes: Events are not imported from the legacy source database. Keep publications_event as target-only current-system data while the current frontend has no public or backoffice Events UI.
 
 ### Worksets
 

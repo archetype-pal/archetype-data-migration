@@ -40,6 +40,73 @@ _AUDIT_CURATED_CAROUSEL_TITLES: dict[int, tuple[str, str]] = {
         "About Models of Authority",
     ),
 }
+EXPECTED_SITE_LABEL_KEYS: frozenset[str] = frozenset(
+    {
+        "historicalItem",
+        "catalogueNumber",
+        "position",
+        "date",
+        "appManuscripts",
+        "fieldHairType",
+        "fieldShelfmark",
+        "fieldDateMinWeight",
+        "fieldDateMaxWeight",
+        "searchCategoryImages",
+        "searchCategoryScribes",
+        "searchCategoryHands",
+        "searchCategoryGraphs",
+        "searchCategoryTexts",
+        "searchCategoryClauses",
+        "searchCategoryPeople",
+        "searchCategoryPlaces",
+        "siteTitle",
+        "siteTagline",
+        "footerLine1",
+        "footerLine2",
+        "footerBottomLine",
+    }
+)
+EXPECTED_PUBLIC_SITE_FEATURE_KEYS: frozenset[str] = frozenset(
+    {
+        "site_features.sections.search",
+        "site_features.sections.collection",
+        "site_features.sections.lightbox",
+        "site_features.sections.news",
+        "site_features.sections.blogs",
+        "site_features.sections.featureArticles",
+        "site_features.sections.events",
+        "site_features.sections.about",
+        "site_features.sectionOrder",
+        "site_features.features.manuscriptDescriptions",
+        "site_features.searchCategories.manuscripts.enabled",
+        "site_features.searchCategories.manuscripts.visibleColumns",
+        "site_features.searchCategories.manuscripts.visibleFacets",
+        "site_features.searchCategories.images.enabled",
+        "site_features.searchCategories.images.visibleColumns",
+        "site_features.searchCategories.images.visibleFacets",
+        "site_features.searchCategories.scribes.enabled",
+        "site_features.searchCategories.scribes.visibleColumns",
+        "site_features.searchCategories.scribes.visibleFacets",
+        "site_features.searchCategories.hands.enabled",
+        "site_features.searchCategories.hands.visibleColumns",
+        "site_features.searchCategories.hands.visibleFacets",
+        "site_features.searchCategories.graphs.enabled",
+        "site_features.searchCategories.graphs.visibleColumns",
+        "site_features.searchCategories.graphs.visibleFacets",
+        "site_features.searchCategories.texts.enabled",
+        "site_features.searchCategories.texts.visibleColumns",
+        "site_features.searchCategories.texts.visibleFacets",
+        "site_features.searchCategories.clauses.enabled",
+        "site_features.searchCategories.clauses.visibleColumns",
+        "site_features.searchCategories.clauses.visibleFacets",
+        "site_features.searchCategories.people.enabled",
+        "site_features.searchCategories.people.visibleColumns",
+        "site_features.searchCategories.people.visibleFacets",
+        "site_features.searchCategories.places.enabled",
+        "site_features.searchCategories.places.visibleColumns",
+        "site_features.searchCategories.places.visibleFacets",
+    }
+)
 
 
 class LegacyMigrationAuditError(RuntimeError):
@@ -117,6 +184,7 @@ class EntityMapping:
     target_count_sql: str | None = None
     legacy_ids_sql: str | None = None
     target_ids_sql: str | None = None
+    compare_counts: bool = True
     allowed_extra_target_ids: frozenset[int] = field(default_factory=frozenset)
     allowed_missing_target_ids: frozenset[int] = field(default_factory=frozenset)
 
@@ -207,6 +275,7 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         notes="Current UI label translations are seeded/edited in the current system; not legacy-mapped.",
         strict_ids=False,
         legacy_count_sql="SELECT 0",
+        compare_counts=False,
     ),
     EntityMapping(
         key="app_settings",
@@ -221,6 +290,7 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         ),
         strict_ids=False,
         legacy_count_sql="SELECT 0",
+        compare_counts=False,
     ),
     EntityMapping(
         key="item_formats",
@@ -587,16 +657,14 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         legacy_table=None,
         target_table="publications_event",
         category="publications",
-        strategy="intentionally not imported; current frontend UI unused",
+        strategy="target-only current-system data; current frontend UI unused",
         notes=(
-            "Legacy event richtext pages are not imported into publications_event while the current frontend "
-            "has no public or backoffice Events UI."
+            "Events are not imported from the legacy source database. Keep publications_event as target-only "
+            "current-system data while the current frontend has no public or backoffice Events UI."
         ),
         strict_ids=False,
-        legacy_count_sql=(
-            "SELECT count(*) FROM pages_page p JOIN pages_richtextpage r ON r.page_ptr_id = p.id "
-            "WHERE p.status = 2 AND p.slug LIKE 'events%' AND btrim(COALESCE(r.content, '')) <> ''"
-        ),
+        legacy_count_sql="SELECT 0",
+        compare_counts=False,
     ),
     EntityMapping(
         key="worksets",
@@ -747,6 +815,8 @@ def _mapping_status(
         return "ok"
 
     if legacy_count == target_count:
+        return "ok"
+    if not mapping.compare_counts:
         return "ok"
     return "warn"
 
@@ -1312,6 +1382,84 @@ def check_legacy_text_exclusions(legacy_conn: Connection[Any], target_conn: Conn
     )
 
 
+def check_site_label_keys(target_conn: Connection[Any]) -> CheckResult:
+    rows = _dict_rows(
+        target_conn,
+        """
+        SELECT key
+        FROM common_sitelabel
+        ORDER BY key
+        """,
+    )
+    actual_keys = {str(row["key"]) for row in rows}
+    missing = sorted(EXPECTED_SITE_LABEL_KEYS - actual_keys)
+    unexpected = sorted(actual_keys - EXPECTED_SITE_LABEL_KEYS)
+
+    if missing or unexpected:
+        return CheckResult(
+            key="site_label_keys",
+            title="Site label keys",
+            status="fail",
+            summary=(
+                "SiteLabel target-only seed keys do not match the current backend contract. "
+                f"Missing: {len(missing)}; unexpected: {len(unexpected)}."
+            ),
+            details=[{"missing": missing, "unexpected": unexpected}],
+        )
+
+    return CheckResult(
+        key="site_label_keys",
+        title="Site label keys",
+        status="ok",
+        summary=f"All {len(EXPECTED_SITE_LABEL_KEYS)} current SiteLabel key(s) are present.",
+    )
+
+
+def check_public_site_feature_settings(target_conn: Connection[Any]) -> CheckResult:
+    rows = _dict_rows(
+        target_conn,
+        """
+        SELECT key, is_active, is_public
+        FROM common_appsettings
+        WHERE key LIKE 'site_features.%'
+        ORDER BY key
+        """,
+    )
+    actual_keys = {str(row["key"]) for row in rows}
+    missing = sorted(EXPECTED_PUBLIC_SITE_FEATURE_KEYS - actual_keys)
+    unexpected = sorted(actual_keys - EXPECTED_PUBLIC_SITE_FEATURE_KEYS)
+    inactive_or_private = sorted(
+        str(row["key"])
+        for row in rows
+        if row["key"] in EXPECTED_PUBLIC_SITE_FEATURE_KEYS and (not row["is_active"] or not row["is_public"])
+    )
+
+    if missing or unexpected or inactive_or_private:
+        return CheckResult(
+            key="public_site_feature_settings",
+            title="Public site feature settings",
+            status="fail",
+            summary=(
+                "Public site_features.* AppSettings rows do not match the current backend contract. "
+                f"Missing: {len(missing)}; unexpected: {len(unexpected)}; inactive/private: {len(inactive_or_private)}."
+            ),
+            details=[
+                {
+                    "missing": missing,
+                    "unexpected": unexpected,
+                    "inactive_or_private": inactive_or_private,
+                }
+            ],
+        )
+
+    return CheckResult(
+        key="public_site_feature_settings",
+        title="Public site feature settings",
+        status="ok",
+        summary=f"All {len(EXPECTED_PUBLIC_SITE_FEATURE_KEYS)} public site_features.* setting key(s) are present.",
+    )
+
+
 def _audited_carousel_image_path(
     image_file: str | None,
     image: str | None,
@@ -1782,6 +1930,8 @@ def run_audit(
             check_publication_author_mapping(legacy_conn, target_conn, publication_author_policy),
             check_annotation_shape(legacy_conn, target_conn),
             check_legacy_text_exclusions(legacy_conn, target_conn),
+            check_site_label_keys(target_conn),
+            check_public_site_feature_settings(target_conn),
             check_carousel_image_paths(legacy_conn, target_conn),
             check_carousel_titles(legacy_conn, target_conn),
             check_carousel_urls(target_conn),

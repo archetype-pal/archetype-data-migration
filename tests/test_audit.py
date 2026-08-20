@@ -1,6 +1,8 @@
 from commands.audit_legacy_migration import main as audit_main
 from migration_toolkit.audit import (
     ENTITY_MAPPINGS,
+    EXPECTED_PUBLIC_SITE_FEATURE_KEYS,
+    EXPECTED_SITE_LABEL_KEYS,
     PUBLICATION_AUTHOR_POLICY_FALLBACK,
     PUBLICATION_AUTHOR_POLICY_USERNAME,
     PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK,
@@ -15,9 +17,11 @@ from migration_toolkit.audit import (
     check_legacy_catalogue_number_relationships,
     check_legacy_description_relationships,
     check_operator_helper_tables_absent,
+    check_public_site_feature_settings,
     check_publication_author_mapping,
     check_publication_legacy_project_links,
     check_publication_media_paths,
+    check_site_label_keys,
     compare_id_sets,
     is_operator_helper_table_name,
     legacy_url_from_env,
@@ -135,10 +139,73 @@ def test_current_content_decision_tables_are_audited():
     assert mappings["app_settings"].strategy == "target-only current-system configuration"
     assert mappings["pages"].strategy == "intentionally not imported pending product decision"
     assert mappings["partners"].strategy == "intentionally not imported pending product decision"
-    assert mappings["events"].strategy == "intentionally not imported; current frontend UI unused"
+    assert mappings["events"].strategy == "target-only current-system data; current frontend UI unused"
+    assert mappings["site_labels"].compare_counts is False
+    assert mappings["app_settings"].compare_counts is False
+    assert mappings["events"].compare_counts is False
+    assert str(mappings["site_labels"].legacy_count_sql) == "SELECT 0"
+    assert str(mappings["app_settings"].legacy_count_sql) == "SELECT 0"
+    assert str(mappings["events"].legacy_count_sql) == "SELECT 0"
     assert "pages_richtextpage" in str(mappings["pages"].legacy_count_sql)
     assert "fragments/footerlogos" in str(mappings["partners"].legacy_count_sql)
-    assert "events%" in str(mappings["events"].legacy_count_sql)
+
+
+def test_check_site_label_keys_passes_expected_current_keys(monkeypatch):
+    monkeypatch.setattr(
+        "migration_toolkit.audit._dict_rows",
+        lambda conn, query, params=None: [{"key": key} for key in sorted(EXPECTED_SITE_LABEL_KEYS)],
+    )
+
+    result = check_site_label_keys(None)
+
+    assert result.status == "ok"
+    assert "22 current SiteLabel key" in result.summary
+
+
+def test_check_site_label_keys_fails_missing_or_unexpected_keys(monkeypatch):
+    rows = [{"key": key} for key in sorted(EXPECTED_SITE_LABEL_KEYS - {"footerLine2"})]
+    rows.append({"key": "legacyFooterCopy"})
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda conn, query, params=None: rows)
+
+    result = check_site_label_keys(None)
+
+    assert result.status == "fail"
+    assert result.details == [{"missing": ["footerLine2"], "unexpected": ["legacyFooterCopy"]}]
+
+
+def test_check_public_site_feature_settings_passes_expected_current_keys(monkeypatch):
+    monkeypatch.setattr(
+        "migration_toolkit.audit._dict_rows",
+        lambda conn, query, params=None: [
+            {"key": key, "is_active": True, "is_public": True} for key in sorted(EXPECTED_PUBLIC_SITE_FEATURE_KEYS)
+        ],
+    )
+
+    result = check_public_site_feature_settings(None)
+
+    assert result.status == "ok"
+    assert "37 public site_features.* setting key" in result.summary
+
+
+def test_check_public_site_feature_settings_fails_missing_unexpected_or_private_keys(monkeypatch):
+    rows = [
+        {"key": key, "is_active": True, "is_public": True}
+        for key in sorted(EXPECTED_PUBLIC_SITE_FEATURE_KEYS - {"site_features.sections.events"})
+    ]
+    rows.append({"key": "site_features.sections.legacy", "is_active": True, "is_public": True})
+    rows.append({"key": "site_features.sections.events", "is_active": True, "is_public": False})
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda conn, query, params=None: rows)
+
+    result = check_public_site_feature_settings(None)
+
+    assert result.status == "fail"
+    assert result.details == [
+        {
+            "missing": [],
+            "unexpected": ["site_features.sections.legacy"],
+            "inactive_or_private": ["site_features.sections.events"],
+        }
+    ]
 
 
 LEGACY_CAROUSEL_ROWS = [

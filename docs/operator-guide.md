@@ -282,7 +282,7 @@ Importer contract:
 - Treat common_sitelabel and common_appsettings as current-system seed/configuration data, not legacy-mapped content.
 - Document pages_page as intentionally not imported until product decides whether page content is rebuilt manually or mapped from legacy richtext pages.
 - Document publications_partner as intentionally not imported until product decides whether footer logos are rebuilt manually or mapped from the legacy footerlogos fragment.
-- Document publications_event as intentionally not imported while the current Events UI is unused.
+- Treat publications_event as target-only current-system data while the current Events UI is unused; do not map legacy event pages into it.
 - Do not derive edit events, status transitions, worksets, pages, partners, or events from legacy source data without a product decision.
 - Create historical item date assessments only from approved current target metadata.
 - Record skipped target-only tables in the manifest.

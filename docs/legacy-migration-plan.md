@@ -269,19 +269,22 @@ Current counts:
 These target structures are valid target data but not legacy imports:
 
 - `common_appsettings`: 37 rows in the current snapshot. Treat as
-  current-system site-features/configuration data, not a wholesale import of
-  legacy `conf_setting`.
+  current-system site-features/configuration data. The migration audit checks
+  expected public `site_features.*` keys, but does not import legacy
+  `conf_setting`.
 - `common_editevent`: 44 rows in the current snapshot.
 - `common_sitelabel`: 22 rows in the current snapshot. Treat as
-  current-system UI label seed data, not legacy-mapped content.
+  current-system UI label seed data. The migration audit checks expected label
+  keys, but does not map these values from legacy content or settings.
 - `manuscripts_historicalitemdateassessment`: 22 rows in the current snapshot,
   generated from current target date metadata.
 - `manuscripts_statustransition`: 0 rows in the current snapshot.
 - `pages_page`: 3 rows in the current snapshot, seeded as current placeholders.
   Legacy `pages_page`/`pages_richtextpage` content is intentionally not imported
   until product decides whether pages are rebuilt manually or mapped.
-- `publications_event`: 0 rows in the current snapshot. Legacy event pages are
-  intentionally not imported while the current Events UI is unused.
+- `publications_event`: 0 rows in the current snapshot. Treat as target-only
+  current-system data while the current Events UI is unused. Legacy event pages
+  are intentionally not imported or expected by the migration.
 - `publications_partner`: 0 rows in the current snapshot. Legacy footer logo
   HTML is intentionally not imported until product decides whether footer logos
   are rebuilt manually or mapped to Partner rows.
