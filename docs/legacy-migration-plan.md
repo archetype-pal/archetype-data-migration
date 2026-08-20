@@ -85,7 +85,7 @@ The current target is clearly a selective migration, not a full clone:
 | `digipal_script` | `scribes_script` | Direct/id-preserved; currently zero rows. |
 | `digipal_hand` | `scribes_hand` | Id-preserved; legacy display fields collapse into target name/place/description. Current `num`, `priority`, and `is_default` drive ordering/default selection. |
 | `digipal_hand_images` | `scribes_hand_item_part_images` | Direct/id-preserved. |
-| `digipal_character` | `symbols_structure_character` | Id-preserved; ontograph/form data flattened into type. |
+| `digipal_character` | `symbols_structure_character` | Id-preserved; `type` comes from `digipal_character.ontograph_id → digipal_ontograph.ontograph_type_id → digipal_ontographtype.name`, not from character form or ontograph name. |
 | `digipal_allograph` | `symbols_structure_allograph` | Id-preserved. Synthetic placeholders require an explicit source policy. |
 | `digipal_component` | `symbols_structure_component` | Direct/id-preserved. |
 | `digipal_feature` | `symbols_structure_feature` | Direct/id-preserved. |

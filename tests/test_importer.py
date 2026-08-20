@@ -13,6 +13,7 @@ from migration_toolkit.importer import (
     TARGET_DOMAIN_TABLES,
     CarouselImagePathError,
     CarouselTitleError,
+    CharacterTypeError,
     ImportOptions,
     ImportReport,
     LegacyMigrationImportError,
@@ -24,6 +25,8 @@ from migration_toolkit.importer import (
     carousel_title,
     carousel_title_profile,
     carousel_url,
+    character_type,
+    character_type_profile,
     default_unsupported_catalogue_number_output_path,
     default_unsupported_description_output_path,
     expand_phases,
@@ -80,6 +83,20 @@ def test_current_content_decision_tables_are_required_but_not_imported():
     assert current_only_tables <= REQUIRED_TARGET_TABLES
     assert current_only_tables.isdisjoint(TARGET_DOMAIN_TABLES)
     assert current_only_tables.isdisjoint(set().union(*PHASE_TARGET_TABLES.values()))
+
+
+@pytest.mark.parametrize(
+    "source",
+    ("letter", "abbreviation", "character-sequence", "punctuation", "accent"),
+)
+def test_character_type_maps_reviewed_ontograph_type_values(source):
+    assert character_type(source, character_id=1) == source
+
+
+@pytest.mark.parametrize("source", ("", None, "majuscule", "minuscule", "n/a", "unknown"))
+def test_character_type_rejects_non_reviewed_values(source):
+    with pytest.raises(CharacterTypeError):
+        character_type(source, character_id=1)
 
 
 def test_image_text_import_sql_matches_backend_0024_schema():
@@ -272,6 +289,25 @@ def test_carousel_title_profile_records_canonical_titles_and_invalid_rows(monkey
     assert profile["titles"][0]["canonical"] == "About Models of Authority"
     assert profile["titles"][0]["title"] == LEGACY_CAROUSEL_TITLE_5
     assert profile["invalid"][0]["id"] == 99
+
+
+def test_character_type_profile_records_reviewed_types_and_invalid_rows(monkeypatch):
+    rows = [
+        {"id": 1, "name": "a", "ontograph_type_name": "letter"},
+        {"id": 2, "name": "7", "ontograph_type_name": "abbreviation"},
+        {"id": 3, "name": ".", "ontograph_type_name": "punctuation"},
+        {"id": 4, "name": "bad", "ontograph_type_name": "majuscule"},
+    ]
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", lambda *_args, **_kwargs: rows)
+
+    profile = character_type_profile(None)
+
+    assert profile["row_count"] == 4
+    assert profile["valid_count"] == 3
+    assert profile["invalid_count"] == 1
+    assert profile["distribution"] == {"abbreviation": 1, "letter": 1, "punctuation": 1}
+    assert profile["types"][0]["target_type"] == "letter"
+    assert profile["invalid"][0]["id"] == 4
 
 
 def test_carousel_url_rewrites_legacy_image_search_to_current_grid_route():
@@ -876,6 +912,30 @@ def test_source_profile_blockers_apply_to_selected_phases():
         )
         == 1
     )
+
+
+def test_source_profile_blockers_reject_invalid_character_types_before_symbol_writes():
+    profile = {
+        "description_relationships": {
+            "counts": {
+                "historical_only": 0,
+                "text_only": 0,
+                "both_links": 0,
+                "neither_link": 0,
+                "dangling_historical_item": 0,
+            },
+            "samples": {},
+        },
+        "allograph_character_integrity": {"missing_character_count": 0, "sample": []},
+        "character_types": {"invalid_count": 1},
+    }
+
+    assert source_profile_blockers(profile, ("manuscripts",)) == []
+    blockers = source_profile_blockers(profile, ("symbols",))
+    assert len(blockers) == 1
+    assert "ontograph type values" in blockers[0]
+    warnings = source_profile_warnings(profile)
+    assert warnings[-1].endswith(": 1")
 
 
 def test_source_profile_blockers_reject_invalid_carousel_paths_before_publication_writes():

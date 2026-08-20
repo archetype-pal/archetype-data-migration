@@ -73,7 +73,7 @@ Legacy `digipal_cataloguenumber` rows must point at an existing historical item 
 | `01_backups` Backups And Restore Point | Create restorable source and target snapshots before trial or production imports. | legacy source database | target database |
 | `02_users_authors` Users And Publication Authors | Define the identity policy required before publication rows can be imported safely. | auth_user, blog_blogpost | auth_user, publications_publication |
 | `03_core_vocabularies` Core Vocabularies | Import stable shared vocabularies before dependent manuscript rows. | digipal_date, digipal_format, digipal_source, digipal_repository | common_date, manuscripts_itemformat, manuscripts_bibliographicsource, manuscripts_repository |
-| `04_symbols` Symbol Structure | Import characters, allographs, components, features, and positions before graph annotations. | digipal_character, digipal_allograph, digipal_component, digipal_feature, digipal_aspect | symbols_structure_character, symbols_structure_allograph, symbols_structure_component, symbols_structure_feature, symbols_structure_position |
+| `04_symbols` Symbol Structure | Import characters, allographs, components, features, and positions before graph annotations. | digipal_character, digipal_ontograph, digipal_ontographtype, digipal_allograph, digipal_component, digipal_feature, digipal_aspect | symbols_structure_character, symbols_structure_allograph, symbols_structure_component, symbols_structure_feature, symbols_structure_position |
 | `05_manuscripts` Manuscripts And Images | Import manuscript hierarchy and IIIF-backed item images. | digipal_currentitem, digipal_historicalitem, digipal_description, digipal_cataloguenumber, digipal_itempart, digipal_itempartitem, digipal_image | manuscripts_currentitem, manuscripts_historicalitem, manuscripts_historicalitemdescription, manuscripts_cataloguenumber, manuscripts_itempart, manuscripts_msdescarea, manuscripts_itemimage |
 | `06_scribes_hands` Scribes And Hands | Import scribes, hands, and image-hand links after item parts and images exist. | digipal_scribe, digipal_script, digipal_hand, digipal_hand_images | scribes_scribe, scribes_script, scribes_hand, scribes_hand_item_part_images |
 | `07_image_text` Image Text | Import non-empty transcription/translation XML as target image text rows. | digipal_text_textcontentxml | manuscripts_imagetext |
@@ -159,11 +159,13 @@ Import characters, allographs, components, features, and positions before graph 
 
 Importer contract:
 - Preserve ids for direct vocabularies.
+- Map Character.type from digipal_character.ontograph_id through digipal_ontograph.ontograph_type_id to digipal_ontographtype.name; do not infer it from character form or ontograph name.
 - Create symbol placeholder rows only when a source-specific policy requires them.
 - Skip known stale/duplicate rows only when listed in the accepted audit warnings.
 
 Validation:
 - Unique allograph/component/position constraints pass.
+- Every Character.type value matches digipal_ontographtype.name by preserved character id.
 - Audit mappings for symbol tables are ok or match accepted warnings.
 
 Rollback: Delete symbol rows only before annotations are imported, or restore backup.

@@ -37,6 +37,10 @@ class LegacyMigrationImportError(RuntimeError):
     pass
 
 
+class CharacterTypeError(ValueError):
+    """A legacy character type cannot be mapped to the reviewed target values."""
+
+
 YEAR_RE = re.compile(r"(?<!\d)([1-2]\d{3}|[5-9]\d{2})(?!\d)")
 PUBLICATION_DIGIPAL_HREF_RE = re.compile(
     r"(?P<prefix>\bhref\s*=\s*)(?P<quote>[\"'])"
@@ -78,6 +82,15 @@ CAROUSEL_LEGACY_MANUSCRIPT_PATH_RE = re.compile(
     re.IGNORECASE,
 )
 CAROUSEL_LEGACY_SEARCH_PATH = "/digipal/search/facets"
+REVIEWED_CHARACTER_TYPES = frozenset(
+    {
+        "letter",
+        "abbreviation",
+        "character-sequence",
+        "punctuation",
+        "accent",
+    }
+)
 CAROUSEL_CURRENT_ABOUT_PATH = "/about/about-models-of-authority"
 CAROUSEL_LEGACY_SEARCH_IGNORED_PARAMS = {
     "@xp_allograph",
@@ -236,6 +249,7 @@ REQUIRED_LEGACY_TABLES: set[str] = {
     "digipal_itempartitem",
     "digipal_language",
     "digipal_ontograph",
+    "digipal_ontographtype",
     "digipal_place",
     "digipal_repository",
     "digipal_script",
@@ -819,6 +833,16 @@ def truncate(value: Any, max_length: int, default: str = "") -> str:
 
 def text_or_blank(value: Any) -> str:
     return "" if value is None else str(value)
+
+
+def character_type(ontograph_type_name: Any, *, character_id: int | None = None) -> str:
+    """Return the reviewed target Character.type value from legacy ontograph type."""
+
+    value = text_or_blank(ontograph_type_name).strip()
+    context = f" for character id {character_id}" if character_id is not None else ""
+    if value not in REVIEWED_CHARACTER_TYPES:
+        raise CharacterTypeError(f"Unsupported legacy ontograph type{context}: {ontograph_type_name!r}")
+    return value
 
 
 def publication_link_rewrite_maps(
@@ -1693,6 +1717,55 @@ def allograph_character_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
     return {"missing_character_count": count, "sample": rows}
 
 
+def character_type_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
+    rows = fetch_rows(
+        legacy_conn,
+        """
+        SELECT c.id, c.name, ot.name AS ontograph_type_name
+        FROM digipal_character c
+        LEFT JOIN digipal_ontograph o ON o.id = c.ontograph_id
+        LEFT JOIN digipal_ontographtype ot ON ot.id = o.ontograph_type_id
+        ORDER BY c.id
+        """,
+    )
+    mapped: list[dict[str, Any]] = []
+    invalid: list[dict[str, Any]] = []
+    distribution: dict[str, int] = {}
+
+    for row in rows:
+        try:
+            target_type = character_type(row["ontograph_type_name"], character_id=int(row["id"]))
+        except CharacterTypeError as exc:
+            invalid.append(
+                {
+                    "id": row["id"],
+                    "name": row["name"],
+                    "ontograph_type_name": row["ontograph_type_name"],
+                    "error": str(exc),
+                }
+            )
+            continue
+
+        distribution[target_type] = distribution.get(target_type, 0) + 1
+        mapped.append(
+            {
+                "id": row["id"],
+                "name": row["name"],
+                "ontograph_type_name": row["ontograph_type_name"],
+                "target_type": target_type,
+            }
+        )
+
+    return {
+        "row_count": len(rows),
+        "valid_count": len(mapped),
+        "invalid_count": len(invalid),
+        "distribution": dict(sorted(distribution.items())),
+        "types": mapped,
+        "invalid": invalid,
+    }
+
+
 def legacy_publication_author_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
     rows = fetch_rows(
         legacy_conn,
@@ -1816,6 +1889,7 @@ def build_source_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
         "description_relationships": description_relationship_profile(legacy_conn),
         "catalogue_number_relationships": catalogue_number_relationship_profile(legacy_conn),
         "allograph_character_integrity": allograph_character_profile(legacy_conn),
+        "character_types": character_type_profile(legacy_conn),
         "legacy_publication_authors": legacy_publication_author_profile(legacy_conn),
         "carousel_image_paths": carousel_image_path_profile(legacy_conn),
         "carousel_titles": carousel_title_profile(legacy_conn),
@@ -1866,6 +1940,11 @@ def source_profile_warnings(profile: dict[str, Any]) -> list[str]:
         warnings.append(
             f"Legacy digipal_allograph contains rows with missing character links: {missing_allograph_characters}"
         )
+    invalid_character_types = int(profile.get("character_types", {}).get("invalid_count", 0))
+    if invalid_character_types:
+        warnings.append(
+            f"Legacy digipal_character contains unsupported ontograph type values: {invalid_character_types}"
+        )
     invalid_carousel_paths = int(profile.get("carousel_image_paths", {}).get("invalid_count", 0))
     if invalid_carousel_paths:
         warnings.append(
@@ -1899,6 +1978,12 @@ def source_profile_blockers(
         blockers.append(
             "The symbols phase cannot import allographs whose character_id is missing from digipal_character. "
             "Repair the source data or define an explicit placeholder policy."
+        )
+    character_types = profile.get("character_types", {})
+    if "symbols" in phases and int(character_types.get("invalid_count", 0)):
+        blockers.append(
+            "The symbols phase contains character ontograph type values that are not in the reviewed mapping. "
+            "Review source_profile.character_types.invalid and define an explicit source-to-target mapping."
         )
     carousel_paths = profile.get("carousel_image_paths", {})
     if "publications" in phases and int(carousel_paths.get("invalid_count", 0)):
@@ -2186,10 +2271,10 @@ def import_symbols(ctx: ImportContext) -> dict[str, int]:
     character_rows = fetch_rows(
         legacy_conn,
         """
-        SELECT c.id, c.name, cf.name AS form_name, o.name AS ontograph_name
+        SELECT c.id, c.name, ot.name AS ontograph_type_name
         FROM digipal_character c
-        LEFT JOIN digipal_characterform cf ON cf.id = c.form_id
         LEFT JOIN digipal_ontograph o ON o.id = c.ontograph_id
+        LEFT JOIN digipal_ontographtype ot ON ot.id = o.ontograph_type_id
         ORDER BY c.id
         """,
     )
@@ -2203,7 +2288,7 @@ def import_symbols(ctx: ImportContext) -> dict[str, int]:
             {
                 "id": row["id"],
                 "name": text_or_blank(row["name"]),
-                "type": truncate(row["form_name"] or row["ontograph_name"] or "", 16) or None,
+                "type": character_type(row["ontograph_type_name"], character_id=int(row["id"])),
             }
             for row in character_rows
         ],

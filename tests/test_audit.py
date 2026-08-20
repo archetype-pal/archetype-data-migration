@@ -14,6 +14,7 @@ from migration_toolkit.audit import (
     check_carousel_image_paths,
     check_carousel_titles,
     check_carousel_urls,
+    check_character_types,
     check_legacy_catalogue_number_relationships,
     check_legacy_description_relationships,
     check_operator_helper_tables_absent,
@@ -148,6 +149,65 @@ def test_current_content_decision_tables_are_audited():
     assert str(mappings["events"].legacy_count_sql) == "SELECT 0"
     assert "pages_richtextpage" in str(mappings["pages"].legacy_count_sql)
     assert "fragments/footerlogos" in str(mappings["partners"].legacy_count_sql)
+
+
+def test_check_character_types_passes_reviewed_ontograph_type_mapping(monkeypatch):
+    legacy_rows = [
+        {"id": 1, "name": "a", "ontograph_type_name": "letter"},
+        {"id": 2, "name": "7", "ontograph_type_name": "abbreviation"},
+        {"id": 3, "name": "et (&)", "ontograph_type_name": "character-sequence"},
+        {"id": 4, "name": ".", "ontograph_type_name": "punctuation"},
+        {"id": 5, "name": "accent", "ontograph_type_name": "accent"},
+    ]
+    target_rows = [
+        {"id": 1, "type": "letter"},
+        {"id": 2, "type": "abbreviation"},
+        {"id": 3, "type": "character-sequence"},
+        {"id": 4, "type": "punctuation"},
+        {"id": 5, "type": "accent"},
+    ]
+    rows = iter((legacy_rows, target_rows))
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda conn, query, params=None: next(rows))
+
+    result = check_character_types(None, None)
+
+    assert result.status == "ok"
+    assert "5 character type value" in result.summary
+
+
+def test_check_character_types_rejects_previous_wrong_form_mapping(monkeypatch):
+    legacy_rows = [
+        {"id": 1, "name": "a", "ontograph_type_name": "letter"},
+        {"id": 2, "name": ".", "ontograph_type_name": "punctuation"},
+    ]
+    target_rows = [
+        {"id": 1, "type": "minuscule"},
+        {"id": 2, "type": "n/a"},
+    ]
+    rows = iter((legacy_rows, target_rows))
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda conn, query, params=None: next(rows))
+
+    result = check_character_types(None, None)
+
+    assert result.status == "fail"
+    assert result.details == [
+        {
+            "id": 1,
+            "reason": "target_type_mismatch",
+            "name": "a",
+            "ontograph_type_name": "letter",
+            "expected": "letter",
+            "actual": "minuscule",
+        },
+        {
+            "id": 2,
+            "reason": "target_type_mismatch",
+            "name": ".",
+            "ontograph_type_name": "punctuation",
+            "expected": "punctuation",
+            "actual": "n/a",
+        },
+    ]
 
 
 def test_check_site_label_keys_passes_expected_current_keys(monkeypatch):

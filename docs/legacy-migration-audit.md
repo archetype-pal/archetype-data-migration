@@ -65,6 +65,7 @@ application public tables and 0 operator helper tables.
 | `ok` | Publication author mapping | Publication author ids resolve to matching usernames. |
 | `warn` | Annotation shape | Target text/editorial annotations retain allograph/hand values. This is valid under the current database constraint but differs from the model comment that treats those links as optional. |
 | `ok` | Legacy text exclusions | Non-empty legacy text XML rows: 899; target ImageText rows: 899. |
+| `ok` | Character types | All 103 character type value(s) match legacy ontograph type labels. |
 | `ok` | Site label keys | All 22 current SiteLabel key(s) are present. |
 | `ok` | Public site feature settings | All 37 public site_features.* setting key(s) are present. |
 | `ok` | Carousel image paths | All 8 carousel image paths match the canonical source-to-target mapping. |

@@ -218,6 +218,8 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         objective="Import characters, allographs, components, features, and positions before graph annotations.",
         source_tables=(
             "digipal_character",
+            "digipal_ontograph",
+            "digipal_ontographtype",
             "digipal_allograph",
             "digipal_component",
             "digipal_feature",
@@ -232,11 +234,14 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         ),
         importer_contract=(
             "Preserve ids for direct vocabularies.",
+            "Map Character.type from digipal_character.ontograph_id through digipal_ontograph.ontograph_type_id "
+            "to digipal_ontographtype.name; do not infer it from character form or ontograph name.",
             "Create symbol placeholder rows only when a source-specific policy requires them.",
             "Skip known stale/duplicate rows only when listed in the accepted audit warnings.",
         ),
         validation=(
             "Unique allograph/component/position constraints pass.",
+            "Every Character.type value matches digipal_ontographtype.name by preserved character id.",
             "Audit mappings for symbol tables are ok or match accepted warnings.",
         ),
         rollback="Delete symbol rows only before annotations are imported, or restore backup.",

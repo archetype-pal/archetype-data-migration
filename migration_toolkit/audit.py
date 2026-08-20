@@ -40,6 +40,15 @@ _AUDIT_CURATED_CAROUSEL_TITLES: dict[int, tuple[str, str]] = {
         "About Models of Authority",
     ),
 }
+REVIEWED_CHARACTER_TYPES: frozenset[str] = frozenset(
+    {
+        "letter",
+        "abbreviation",
+        "character-sequence",
+        "punctuation",
+        "accent",
+    }
+)
 EXPECTED_SITE_LABEL_KEYS: frozenset[str] = frozenset(
     {
         "historicalItem",
@@ -466,7 +475,10 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         target_table="symbols_structure_character",
         category="symbols",
         strategy="id-preserved transformed type",
-        notes="Legacy ontograph/form data is flattened into the target type field.",
+        notes=(
+            "Legacy ontograph type labels map directly to the target type field; the post-import audit checks "
+            "every transformed type by id."
+        ),
     ),
     EntityMapping(
         key="allographs",
@@ -1382,6 +1394,107 @@ def check_legacy_text_exclusions(legacy_conn: Connection[Any], target_conn: Conn
     )
 
 
+def _audited_character_type(ontograph_type_name: str | None, *, character_id: int) -> str:
+    value = "" if ontograph_type_name is None else str(ontograph_type_name).strip()
+    if value not in REVIEWED_CHARACTER_TYPES:
+        raise ValueError(f"Unsupported legacy ontograph type for character id {character_id}: {ontograph_type_name!r}")
+    return value
+
+
+def check_character_types(legacy_conn: Connection[Any], target_conn: Connection[Any]) -> CheckResult:
+    legacy_rows = _dict_rows(
+        legacy_conn,
+        """
+        SELECT c.id, c.name, ot.name AS ontograph_type_name
+        FROM digipal_character c
+        LEFT JOIN digipal_ontograph o ON o.id = c.ontograph_id
+        LEFT JOIN digipal_ontographtype ot ON ot.id = o.ontograph_type_id
+        ORDER BY c.id
+        """,
+    )
+    target_rows = _dict_rows(
+        target_conn,
+        """
+        SELECT id, type
+        FROM symbols_structure_character
+        ORDER BY id
+        """,
+    )
+    target_by_id = {int(row["id"]): row.get("type") for row in target_rows}
+    legacy_ids: set[int] = set()
+    problems: list[dict[str, Any]] = []
+
+    for legacy_row in legacy_rows:
+        row_id = int(legacy_row["id"])
+        legacy_ids.add(row_id)
+        try:
+            expected = _audited_character_type(legacy_row.get("ontograph_type_name"), character_id=row_id)
+        except ValueError as exc:
+            problems.append(
+                {
+                    "id": row_id,
+                    "reason": "invalid_source_type",
+                    "name": legacy_row.get("name"),
+                    "ontograph_type_name": legacy_row.get("ontograph_type_name"),
+                    "error": str(exc),
+                }
+            )
+            continue
+
+        if row_id not in target_by_id:
+            problems.append(
+                {
+                    "id": row_id,
+                    "reason": "missing_target_row",
+                    "expected": expected,
+                    "actual": None,
+                }
+            )
+            continue
+
+        actual = target_by_id[row_id]
+        if actual != expected:
+            problems.append(
+                {
+                    "id": row_id,
+                    "reason": "target_type_mismatch",
+                    "name": legacy_row.get("name"),
+                    "ontograph_type_name": legacy_row.get("ontograph_type_name"),
+                    "expected": expected,
+                    "actual": actual,
+                }
+            )
+
+    for row_id in sorted(set(target_by_id) - legacy_ids):
+        problems.append(
+            {
+                "id": row_id,
+                "reason": "unexpected_target_row",
+                "expected": None,
+                "actual": target_by_id[row_id],
+            }
+        )
+
+    if problems:
+        return CheckResult(
+            key="character_types",
+            title="Character types",
+            status="fail",
+            summary=(
+                f"{len(problems)} character type issue(s) found. Target values must match legacy "
+                "digipal_ontographtype.name values by preserved character id."
+            ),
+            details=problems[:20],
+        )
+
+    return CheckResult(
+        key="character_types",
+        title="Character types",
+        status="ok",
+        summary=f"All {len(legacy_rows)} character type value(s) match legacy ontograph type labels.",
+    )
+
+
 def check_site_label_keys(target_conn: Connection[Any]) -> CheckResult:
     rows = _dict_rows(
         target_conn,
@@ -1899,8 +2012,11 @@ def run_audit(
                 "blog_blogpost",
                 "digipal_annotation",
                 "digipal_carouselitem",
+                "digipal_character",
                 "digipal_date",
                 "digipal_graph",
+                "digipal_ontograph",
+                "digipal_ontographtype",
                 "pages_page",
                 "pages_richtextpage",
             },
@@ -1919,6 +2035,7 @@ def run_audit(
                 "publications_event",
                 "publications_partner",
                 "publications_publication",
+                "symbols_structure_character",
             },
             database_label=f"target database {target_db}",
         )
@@ -1930,6 +2047,7 @@ def run_audit(
             check_publication_author_mapping(legacy_conn, target_conn, publication_author_policy),
             check_annotation_shape(legacy_conn, target_conn),
             check_legacy_text_exclusions(legacy_conn, target_conn),
+            check_character_types(legacy_conn, target_conn),
             check_site_label_keys(target_conn),
             check_public_site_feature_settings(target_conn),
             check_carousel_image_paths(legacy_conn, target_conn),
