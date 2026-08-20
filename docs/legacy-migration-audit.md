@@ -5,10 +5,10 @@ Status: `warn`
 | Database | Application public tables |
 | --- | ---: |
 | `legacy source database` | 142 |
-| `target database` | 53 |
+| `target database` | 57 |
 
 Operator-created helper, backup, and map tables are not application schema and
-must be absent from the final target dump. The cleaned inspected target has 53
+must be absent from the final target dump. The cleaned inspected target has 57
 application public tables and 0 operator helper tables.
 
 ## Entity Mappings
@@ -17,6 +17,8 @@ application public tables and 0 operator helper tables.
 | --- | --- | ---: | ---: | --- |
 | `warn` | Dates | 594 | 610 | id-preserved with target-only date seeds |
 | `warn` | Edit events | 0 | 44 | target-only workflow table |
+| `warn` | Site labels | 0 | 22 | target-only current-system seed data |
+| `warn` | App settings | 0 | 37 | target-only current-system configuration |
 | `ok` | Item formats | 20 | 20 | id-preserved |
 | `ok` | Bibliographic sources | 40 | 40 | id-preserved |
 | `ok` | Repositories | 9 | 9 | id-preserved transformed fields |
@@ -48,7 +50,10 @@ application public tables and 0 operator helper tables.
 | `warn` | Graph position links | 1491 | 1485 | ids not preserved, filtered |
 | `ok` | Publications | 61 | 61 | id-preserved transformed fields |
 | `ok` | Publication keyword links | 67 | 67 | ids not preserved |
+| `warn` | Pages | 17 | 3 | intentionally not imported pending product decision |
 | `ok` | Carousel items | 8 | 8 | id-preserved transformed fields; image paths and titles must match reviewed source-to-target mappings by id; URLs use current frontend routes |
+| `warn` | Partners | 1 | 0 | intentionally not imported pending product decision |
+| `warn` | Events | 5 | 0 | intentionally not imported; current frontend UI unused |
 | `warn` | Worksets | 0 | 5 | target-only feature table |
 
 ## Checks
@@ -82,6 +87,18 @@ application public tables and 0 operator helper tables.
 - Status: `warn`
 - Strategy: target-only workflow table
 - Notes: Current append-only editorial audit log; not imported from the legacy source database.
+
+### Site labels
+
+- Status: `warn`
+- Strategy: target-only current-system seed data
+- Notes: Current UI label translations are seeded/edited in the current system; not legacy-mapped.
+
+### App settings
+
+- Status: `warn`
+- Strategy: target-only current-system configuration
+- Notes: Current site-features settings are seeded/edited in the current system; legacy conf_setting is not imported wholesale.
 
 ### Item parts
 
@@ -146,6 +163,24 @@ application public tables and 0 operator helper tables.
 - Status: `warn`
 - Strategy: ids not preserved, filtered
 - Notes: Legacy graph aspects become target graph positions, are re-keyed, and are filtered with graph rows.
+
+### Pages
+
+- Status: `warn`
+- Strategy: intentionally not imported pending product decision
+- Notes: Legacy richtext pages are not imported until product decides whether page content is rebuilt manually or mapped from the legacy source.
+
+### Partners
+
+- Status: `warn`
+- Strategy: intentionally not imported pending product decision
+- Notes: Legacy footer logo HTML is not imported into Partner rows unless product decides the footer logos should be mapped instead of rebuilt manually.
+
+### Events
+
+- Status: `warn`
+- Strategy: intentionally not imported; current frontend UI unused
+- Notes: Legacy event richtext pages are not imported into publications_event while the current frontend has no public or backoffice Events UI.
 
 ### Worksets
 

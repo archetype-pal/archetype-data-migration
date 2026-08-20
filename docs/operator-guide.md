@@ -79,7 +79,7 @@ Legacy `digipal_cataloguenumber` rows must point at an existing historical item 
 | `07_image_text` Image Text | Import non-empty transcription/translation XML as target image text rows. | digipal_text_textcontentxml | manuscripts_imagetext |
 | `08_annotations` Annotations And Graph Details | Import image/text/editorial annotations and graph through tables after symbols, hands, and images. | digipal_annotation, digipal_graph, digipal_idiograph, digipal_graphcomponent, digipal_graphcomponent_features, digipal_graph_aspects | annotations_graph, annotations_graphcomponent, annotations_graphcomponent_features, annotations_graph_positions |
 | `09_publications` Publications And Carousel | Import public CMS records represented in the current application. | blog_blogpost, blog_blogpost_categories, digipal_carouselitem | publications_publication, publications_publication_keywords, publications_carouselitem |
-| `10_target_only` Target-Only Current Data | Handle current-only tables without inventing unsupported legacy source mappings. | current-system sources only | common_editevent, manuscripts_historicalitemdateassessment, manuscripts_statustransition, worksets_workset |
+| `10_target_only` Target-Only Current Data | Handle current-only tables without inventing unsupported legacy source mappings. | current-system sources only | common_appsettings, common_editevent, common_sitelabel, manuscripts_historicalitemdateassessment, manuscripts_statustransition, pages_page, publications_event, publications_partner, worksets_workset |
 | `11_final_validation` Final Validation | Prove the imported target is internally consistent and application-ready. | all mapped legacy tables | all target domain tables |
 | `12_cutover` Deployment Cutover | Promote the validated target database as a deliberate deployment operation. | validated target database | production target database |
 
@@ -279,7 +279,11 @@ Rollback: Delete publication keyword links, publications, and carousel rows for 
 Handle current-only tables without inventing unsupported legacy source mappings.
 
 Importer contract:
-- Do not derive edit events, status transitions, or worksets from legacy source data without a product decision.
+- Treat common_sitelabel and common_appsettings as current-system seed/configuration data, not legacy-mapped content.
+- Document pages_page as intentionally not imported until product decides whether page content is rebuilt manually or mapped from legacy richtext pages.
+- Document publications_partner as intentionally not imported until product decides whether footer logos are rebuilt manually or mapped from the legacy footerlogos fragment.
+- Document publications_event as intentionally not imported while the current Events UI is unused.
+- Do not derive edit events, status transitions, worksets, pages, partners, or events from legacy source data without a product decision.
 - Create historical item date assessments only from approved current target metadata.
 - Record skipped target-only tables in the manifest.
 

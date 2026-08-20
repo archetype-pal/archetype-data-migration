@@ -268,11 +268,24 @@ Current counts:
 
 These target structures are valid target data but not legacy imports:
 
-- `common_editevent`: 22 rows in the current snapshot.
+- `common_appsettings`: 37 rows in the current snapshot. Treat as
+  current-system site-features/configuration data, not a wholesale import of
+  legacy `conf_setting`.
+- `common_editevent`: 44 rows in the current snapshot.
+- `common_sitelabel`: 22 rows in the current snapshot. Treat as
+  current-system UI label seed data, not legacy-mapped content.
 - `manuscripts_historicalitemdateassessment`: 22 rows in the current snapshot,
   generated from current target date metadata.
 - `manuscripts_statustransition`: 0 rows in the current snapshot.
-- `worksets_workset`: 0 rows in the current snapshot.
+- `pages_page`: 3 rows in the current snapshot, seeded as current placeholders.
+  Legacy `pages_page`/`pages_richtextpage` content is intentionally not imported
+  until product decides whether pages are rebuilt manually or mapped.
+- `publications_event`: 0 rows in the current snapshot. Legacy event pages are
+  intentionally not imported while the current Events UI is unused.
+- `publications_partner`: 0 rows in the current snapshot. Legacy footer logo
+  HTML is intentionally not imported until product decides whether footer logos
+  are rebuilt manually or mapped to Partner rows.
+- `worksets_workset`: 5 rows in the current snapshot.
 
 For a fresh migration, create these through current application workflows or
 target-side data migrations only when their source semantics are clear. Do not
@@ -285,8 +298,8 @@ product requirement reintroduces them:
 
 - Logs/history: `digipal_requestlog`, `reversion_*`,
   `south_migrationhistory`, old `django_session` rows.
-- Legacy CMS structures not represented in the current app:
-  `pages_*`, `forms_*`, `galleries_*`, `twitter_*`.
+- Legacy CMS structures outside the approved Page/Partner/Event decisions:
+  `forms_*`, `galleries_*`, `twitter_*`, and unapproved `pages_*` fragments.
 - Empty or unsupported palaeographic/manuscript tables such as legacy
   collation, decoration, layout, owners, places, institutions, measurements,
   and provenance tables. Some have data, but there is no current model surface

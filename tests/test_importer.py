@@ -68,6 +68,20 @@ def test_msdescarea_is_tracked_as_target_schema_not_legacy_source():
     assert "manuscripts_msdescarea" not in SOURCE_COUNT_SQL["manuscripts"]
 
 
+def test_current_content_decision_tables_are_required_but_not_imported():
+    current_only_tables = {
+        "common_appsettings",
+        "common_sitelabel",
+        "pages_page",
+        "publications_event",
+        "publications_partner",
+    }
+
+    assert current_only_tables <= REQUIRED_TARGET_TABLES
+    assert current_only_tables.isdisjoint(TARGET_DOMAIN_TABLES)
+    assert current_only_tables.isdisjoint(set().union(*PHASE_TARGET_TABLES.values()))
+
+
 def test_image_text_import_sql_matches_backend_0024_schema():
     source = import_image_text.__code__.co_consts
     insert_sql = next(

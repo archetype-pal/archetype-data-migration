@@ -128,6 +128,19 @@ def test_render_json_is_machine_readable():
     assert '"status": "ok"' in rendered
 
 
+def test_current_content_decision_tables_are_audited():
+    mappings = {mapping.key: mapping for mapping in ENTITY_MAPPINGS}
+
+    assert mappings["site_labels"].strategy == "target-only current-system seed data"
+    assert mappings["app_settings"].strategy == "target-only current-system configuration"
+    assert mappings["pages"].strategy == "intentionally not imported pending product decision"
+    assert mappings["partners"].strategy == "intentionally not imported pending product decision"
+    assert mappings["events"].strategy == "intentionally not imported; current frontend UI unused"
+    assert "pages_richtextpage" in str(mappings["pages"].legacy_count_sql)
+    assert "fragments/footerlogos" in str(mappings["partners"].legacy_count_sql)
+    assert "events%" in str(mappings["events"].legacy_count_sql)
+
+
 LEGACY_CAROUSEL_ROWS = [
     {"id": 1, "image_file": "", "image": "/media/uploads/Carousel/browse.jpg"},
     {"id": 2, "image_file": "", "image": "/media/uploads/Carousel/search.jpg"},

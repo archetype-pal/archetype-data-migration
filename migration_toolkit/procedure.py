@@ -411,14 +411,26 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         objective="Handle current-only tables without inventing unsupported legacy source mappings.",
         source_tables=("current-system sources only",),
         target_tables=(
+            "common_appsettings",
             "common_editevent",
+            "common_sitelabel",
             "manuscripts_historicalitemdateassessment",
             "manuscripts_statustransition",
+            "pages_page",
+            "publications_event",
+            "publications_partner",
             "worksets_workset",
         ),
         importer_contract=(
-            "Do not derive edit events, status transitions, or worksets from legacy source data without a "
-            "product decision.",
+            "Treat common_sitelabel and common_appsettings as current-system seed/configuration data, not "
+            "legacy-mapped content.",
+            "Document pages_page as intentionally not imported until product decides whether page content is "
+            "rebuilt manually or mapped from legacy richtext pages.",
+            "Document publications_partner as intentionally not imported until product decides whether footer "
+            "logos are rebuilt manually or mapped from the legacy footerlogos fragment.",
+            "Document publications_event as intentionally not imported while the current Events UI is unused.",
+            "Do not derive edit events, status transitions, worksets, pages, partners, or events from legacy source "
+            "data without a product decision.",
             "Create historical item date assessments only from approved current target metadata.",
             "Record skipped target-only tables in the manifest.",
         ),

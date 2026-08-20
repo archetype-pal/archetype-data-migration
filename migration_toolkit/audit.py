@@ -198,6 +198,31 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         legacy_count_sql="SELECT 0",
     ),
     EntityMapping(
+        key="site_labels",
+        title="Site labels",
+        legacy_table=None,
+        target_table="common_sitelabel",
+        category="common",
+        strategy="target-only current-system seed data",
+        notes="Current UI label translations are seeded/edited in the current system; not legacy-mapped.",
+        strict_ids=False,
+        legacy_count_sql="SELECT 0",
+    ),
+    EntityMapping(
+        key="app_settings",
+        title="App settings",
+        legacy_table=None,
+        target_table="common_appsettings",
+        category="common",
+        strategy="target-only current-system configuration",
+        notes=(
+            "Current site-features settings are seeded/edited in the current system; legacy conf_setting is not "
+            "imported wholesale."
+        ),
+        strict_ids=False,
+        legacy_count_sql="SELECT 0",
+    ),
+    EntityMapping(
         key="item_formats",
         title="Item formats",
         legacy_table="digipal_format",
@@ -511,6 +536,23 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         strict_ids=False,
     ),
     EntityMapping(
+        key="pages",
+        title="Pages",
+        legacy_table=None,
+        target_table="pages_page",
+        category="pages",
+        strategy="intentionally not imported pending product decision",
+        notes=(
+            "Legacy richtext pages are not imported until product decides whether page content is rebuilt manually "
+            "or mapped from the legacy source."
+        ),
+        strict_ids=False,
+        legacy_count_sql=(
+            "SELECT count(*) FROM pages_page p JOIN pages_richtextpage r ON r.page_ptr_id = p.id "
+            "WHERE p.status = 2 AND btrim(COALESCE(r.content, '')) <> ''"
+        ),
+    ),
+    EntityMapping(
         key="carousel_items",
         title="Carousel items",
         legacy_table="digipal_carouselitem",
@@ -520,6 +562,40 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         notes=(
             "Legacy sort_order/link/image fields map to target ordering/url/image; every image path must match "
             "the canonical source-to-target mapping by id and carousel URLs use current frontend routes."
+        ),
+    ),
+    EntityMapping(
+        key="partners",
+        title="Partners",
+        legacy_table=None,
+        target_table="publications_partner",
+        category="publications",
+        strategy="intentionally not imported pending product decision",
+        notes=(
+            "Legacy footer logo HTML is not imported into Partner rows unless product decides the footer logos "
+            "should be mapped instead of rebuilt manually."
+        ),
+        strict_ids=False,
+        legacy_count_sql=(
+            "SELECT count(*) FROM pages_page p JOIN pages_richtextpage r ON r.page_ptr_id = p.id "
+            "WHERE p.slug = 'fragments/footerlogos' AND btrim(COALESCE(r.content, '')) <> ''"
+        ),
+    ),
+    EntityMapping(
+        key="events",
+        title="Events",
+        legacy_table=None,
+        target_table="publications_event",
+        category="publications",
+        strategy="intentionally not imported; current frontend UI unused",
+        notes=(
+            "Legacy event richtext pages are not imported into publications_event while the current frontend "
+            "has no public or backoffice Events UI."
+        ),
+        strict_ids=False,
+        legacy_count_sql=(
+            "SELECT count(*) FROM pages_page p JOIN pages_richtextpage r ON r.page_ptr_id = p.id "
+            "WHERE p.status = 2 AND p.slug LIKE 'events%' AND btrim(COALESCE(r.content, '')) <> ''"
         ),
     ),
     EntityMapping(
@@ -1671,16 +1747,29 @@ def run_audit(
 
         require_tables(
             legacy_conn,
-            {"digipal_date", "digipal_annotation", "digipal_graph", "digipal_carouselitem", "blog_blogpost"},
+            {
+                "blog_blogpost",
+                "digipal_annotation",
+                "digipal_carouselitem",
+                "digipal_date",
+                "digipal_graph",
+                "pages_page",
+                "pages_richtextpage",
+            },
             database_label=f"legacy database {legacy_db}",
         )
         require_tables(
             target_conn,
             {
                 "annotations_graph",
+                "common_appsettings",
                 "common_date",
+                "common_sitelabel",
                 "manuscripts_historicalitem",
                 "publications_carouselitem",
+                "pages_page",
+                "publications_event",
+                "publications_partner",
                 "publications_publication",
             },
             database_label=f"target database {target_db}",
