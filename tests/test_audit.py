@@ -17,6 +17,7 @@ from migration_toolkit.audit import (
     check_carousel_urls,
     check_character_types,
     check_historical_item_types,
+    check_item_image_fields,
     check_legacy_catalogue_number_relationships,
     check_legacy_description_relationships,
     check_operator_helper_tables_absent,
@@ -142,9 +143,11 @@ def test_value_audit_coverage_reports_active_field_checks():
 
     assert covered["historical_items"]["audited_fields"] == ["type"]
     assert covered["historical_items"]["check_keys"] == ["historical_item_types"]
+    assert covered["item_images"]["audited_fields"] == ["item_part_id", "image", "locus"]
+    assert covered["item_images"]["check_keys"] == ["item_image_fields"]
     assert covered["carousel_items"]["audited_fields"] == ["image", "title", "url"]
     assert "current_items" in count_or_id_only
-    assert "item_images" in count_or_id_only
+    assert "image_texts" in count_or_id_only
 
 
 def test_render_markdown_includes_value_audit_coverage():
@@ -315,6 +318,71 @@ def test_check_historical_item_types_rejects_target_values_outside_backend_choic
             "expected": "charter",
             "actual": "Charter",
         }
+    ]
+
+
+def test_check_item_image_fields_passes_reviewed_source_projection(monkeypatch):
+    legacy_rows = [
+        {
+            "id": 1,
+            "item_part_id": 10,
+            "iipimage": "jp2/BLno1/path/k90069_51.tif",
+            "image": "ignored.jpg",
+            "locus": "fol. 1r",
+        },
+        {
+            "id": 2,
+            "item_part_id": None,
+            "iipimage": None,
+            "image": "already.jp2",
+            "locus": None,
+        },
+    ]
+    target_rows = [
+        {"id": 1, "item_part_id": 10, "image": "BLno1/path/k90069_51.jp2", "locus": "fol. 1r"},
+        {"id": 2, "item_part_id": -1, "image": "already.jp2", "locus": ""},
+    ]
+    rows = iter((legacy_rows, target_rows))
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda conn, query, params=None: next(rows))
+
+    result = check_item_image_fields(None, None)
+
+    assert result.status == "ok"
+    assert "2 item image row" in result.summary
+
+
+def test_check_item_image_fields_rejects_wrong_path_locus_and_placeholder(monkeypatch):
+    legacy_rows = [{"id": 1, "item_part_id": None, "iipimage": "jp2/source/image.tif", "image": "", "locus": "fol. 1r"}]
+    target_rows = [{"id": 1, "item_part_id": None, "image": "source/image.tif", "locus": "wrong"}]
+    rows = iter((legacy_rows, target_rows))
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda conn, query, params=None: next(rows))
+
+    result = check_item_image_fields(None, None)
+
+    assert result.status == "fail"
+    assert "target_field_mismatch=3" in result.summary
+    assert result.details == [
+        {
+            "id": 1,
+            "field": "item_part_id",
+            "reason": "target_field_mismatch",
+            "expected": -1,
+            "actual": None,
+        },
+        {
+            "id": 1,
+            "field": "image",
+            "reason": "target_field_mismatch",
+            "expected": "source/image.jp2",
+            "actual": "source/image.tif",
+        },
+        {
+            "id": 1,
+            "field": "locus",
+            "reason": "target_field_mismatch",
+            "expected": "fol. 1r",
+            "actual": "wrong",
+        },
     ]
 
 

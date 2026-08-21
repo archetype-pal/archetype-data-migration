@@ -724,6 +724,16 @@ VALUE_AUDIT_COVERAGE: tuple[ValueAuditCoverage, ...] = (
         notes="Compares legacy historical item type labels to target values using the backend choice contract.",
     ),
     ValueAuditCoverage(
+        entity_key="item_images",
+        target_table="manuscripts_itemimage",
+        audited_fields=("item_part_id", "image", "locus"),
+        check_keys=("item_image_fields",),
+        coverage_type="row-value",
+        notes=(
+            "Compares item image placeholder linkage, IIIF image path normalization, and locus values by preserved id."
+        ),
+    ),
+    ValueAuditCoverage(
         entity_key="characters",
         target_table="symbols_structure_character",
         audited_fields=("type",),
@@ -1492,6 +1502,116 @@ def check_legacy_text_exclusions(legacy_conn: Connection[Any], target_conn: Conn
         status=status,
         summary=f"Non-empty legacy text XML rows: {legacy_non_empty}; target ImageText rows: {target_count}.",
         details=details,
+    )
+
+
+def _audit_truncate(value: Any, max_length: int, default: str = "") -> str:
+    text = default if value is None else str(value)
+    return text[:max_length]
+
+
+def _audited_item_image_path(iipimage: str | None, image: str | None) -> str:
+    path = (iipimage or image or "").strip()
+    if path.startswith("jp2/"):
+        path = path[4:]
+    if path.lower().endswith(".tif"):
+        path = f"{path[:-4]}.jp2"
+    return _audit_truncate(path, 200)
+
+
+def _audited_item_image_row(legacy_row: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "item_part_id": int(legacy_row["item_part_id"]) if legacy_row["item_part_id"] is not None else -1,
+        "image": _audited_item_image_path(legacy_row.get("iipimage"), legacy_row.get("image")),
+        "locus": _audit_truncate(legacy_row.get("locus") or "", 72),
+    }
+
+
+def check_item_image_fields(legacy_conn: Connection[Any], target_conn: Connection[Any]) -> CheckResult:
+    legacy_rows = _dict_rows(
+        legacy_conn,
+        """
+        SELECT id, item_part_id, iipimage, image, locus
+        FROM digipal_image
+        ORDER BY id
+        """,
+    )
+    target_rows = _dict_rows(
+        target_conn,
+        """
+        SELECT id, item_part_id, image, locus
+        FROM manuscripts_itemimage
+        ORDER BY id
+        """,
+    )
+    target_by_id = {int(row["id"]): row for row in target_rows}
+    legacy_ids: set[int] = set()
+    problems: list[dict[str, Any]] = []
+
+    for legacy_row in legacy_rows:
+        row_id = int(legacy_row["id"])
+        legacy_ids.add(row_id)
+        expected = _audited_item_image_row(legacy_row)
+        target_row = target_by_id.get(row_id)
+        if target_row is None:
+            problems.append({"id": row_id, "reason": "missing_target_row", "expected": expected, "actual": None})
+            continue
+
+        actual = {
+            "item_part_id": int(target_row["item_part_id"]) if target_row["item_part_id"] is not None else None,
+            "image": target_row.get("image"),
+            "locus": target_row.get("locus"),
+        }
+        for field_name, expected_value in expected.items():
+            actual_value = actual[field_name]
+            if actual_value != expected_value:
+                problems.append(
+                    {
+                        "id": row_id,
+                        "field": field_name,
+                        "reason": "target_field_mismatch",
+                        "expected": expected_value,
+                        "actual": actual_value,
+                    }
+                )
+
+    for row_id in sorted(set(target_by_id) - legacy_ids):
+        target_row = target_by_id[row_id]
+        problems.append(
+            {
+                "id": row_id,
+                "reason": "unexpected_target_row",
+                "expected": None,
+                "actual": {
+                    "item_part_id": target_row.get("item_part_id"),
+                    "image": target_row.get("image"),
+                    "locus": target_row.get("locus"),
+                },
+            }
+        )
+
+    if problems:
+        reason_counts = {
+            reason: sum(1 for problem in problems if problem["reason"] == reason)
+            for reason in sorted({problem["reason"] for problem in problems})
+        }
+        reason_summary = "; ".join(f"{reason}={count}" for reason, count in reason_counts.items())
+        return CheckResult(
+            key="item_image_fields",
+            title="Item image fields",
+            status="fail",
+            summary=(
+                f"{len(problems)} item image field issue(s) found ({reason_summary}). Target item_part_id, image, "
+                "and locus must match the reviewed source projection."
+            ),
+            details=problems[:20],
+        )
+
+    return CheckResult(
+        key="item_image_fields",
+        title="Item image fields",
+        status="ok",
+        summary=f"All {len(legacy_rows)} item image row(s) match the reviewed source projection.",
     )
 
 
@@ -2280,6 +2400,7 @@ def run_audit(
             check_publication_author_mapping(legacy_conn, target_conn, publication_author_policy),
             check_annotation_shape(legacy_conn, target_conn),
             check_legacy_text_exclusions(legacy_conn, target_conn),
+            check_item_image_fields(legacy_conn, target_conn),
             check_historical_item_types(legacy_conn, target_conn, backend_contract),
             check_character_types(legacy_conn, target_conn),
             check_site_label_keys(target_conn),

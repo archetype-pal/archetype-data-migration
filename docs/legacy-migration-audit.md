@@ -21,13 +21,14 @@ application public tables and 0 operator helper tables.
 | Entity | Target table | Audited fields | Checks | Coverage type |
 | --- | --- | --- | --- | --- |
 | `historical_items` | `manuscripts_historicalitem` | `type` | `historical_item_types` | row-value |
+| `item_images` | `manuscripts_itemimage` | `item_part_id, image, locus` | `item_image_fields` | row-value |
 | `characters` | `symbols_structure_character` | `type` | `character_types` | row-value |
 | `carousel_items` | `publications_carouselitem` | `image, title, url` | `carousel_image_paths, carousel_titles, carousel_urls` | row-value |
 | `site_labels` | `common_sitelabel` | `key` | `site_label_keys` | target-only key set |
 | `app_settings` | `common_appsettings` | `key` | `public_site_feature_settings` | target-only key set |
 | `publications` | `publications_publication` | `content, media references` | `publication_media_paths, publication_legacy_project_links` | content invariant |
 
-Mappings not listed above are still primarily count/ID audits: `dates`, `edit_events`, `item_formats`, `bibliographic_sources`, `repositories`, `current_items`, `historical_item_descriptions`, `catalogue_numbers`, `item_parts`, `item_images`, `image_texts`, `image_text_status_transitions`, `historical_item_date_assessments`, `scribes`, `scripts`, `hands`, `hand_images`, `allographs`, `components`, `features`, `component_features`, `allograph_components`, `allograph_component_features`, `positions`, `allograph_positions`, `annotations`, `graph_components`, `graph_component_features`, `graph_positions`, `publication_keywords`, `pages`, `partners`, `events`, `worksets`.
+Mappings not listed above are still primarily count/ID audits: `dates`, `edit_events`, `item_formats`, `bibliographic_sources`, `repositories`, `current_items`, `historical_item_descriptions`, `catalogue_numbers`, `item_parts`, `image_texts`, `image_text_status_transitions`, `historical_item_date_assessments`, `scribes`, `scripts`, `hands`, `hand_images`, `allographs`, `components`, `features`, `component_features`, `allograph_components`, `allograph_component_features`, `positions`, `allograph_positions`, `annotations`, `graph_components`, `graph_component_features`, `graph_positions`, `publication_keywords`, `pages`, `partners`, `events`, `worksets`.
 
 ## Entity Mappings
 
@@ -83,6 +84,7 @@ Mappings not listed above are still primarily count/ID audits: `dates`, `edit_ev
 | `ok` | Publication author mapping | Publication author ids resolve to matching usernames. |
 | `warn` | Annotation shape | Target text/editorial annotations retain allograph/hand values. This is valid under the current database constraint but differs from the model comment that treats those links as optional. |
 | `ok` | Legacy text exclusions | Non-empty legacy text XML rows: 899; target ImageText rows: 899. |
+| `fail` | Item image fields | 13 item image field issue(s) found (target_field_mismatch=13). Target item_part_id, image, and locus must match the reviewed source projection. |
 | `fail` | Historical item types | 713 historical item type issue(s) found (invalid_source_type=83; target_type_mismatch=630). Target values must use current HistoricalItem.type choices from the backend contract: agreement, charter, letter. |
 | `ok` | Character types | All 103 character type value(s) match legacy ontograph type labels. |
 | `ok` | Site label keys | All 22 current SiteLabel key(s) are present. |
@@ -244,6 +246,106 @@ Target text/editorial annotations retain allograph/hand values. This is valid un
     "non_image_graphs_with_legacy_fk": 3002,
     "text_annotations": 4048,
     "text_graphs": 4048
+  }
+]
+```
+
+### Item image fields
+
+13 item image field issue(s) found (target_field_mismatch=13). Target item_part_id, image, and locus must match the reviewed source projection.
+
+```json
+[
+  {
+    "actual": "jp2/15_1_18/74441896.jp2",
+    "expected": "15_1_18/74441896.jp2",
+    "field": "image",
+    "id": 3047,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": "jp2/15_1_18/74441907.jp2",
+    "expected": "15_1_18/74441907.jp2",
+    "field": "image",
+    "id": 3048,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": "jp2/15_1_18/74441908.jp2",
+    "expected": "15_1_18/74441908.jp2",
+    "field": "image",
+    "id": 3049,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": "jp2/15_1_18/74441914.jp2",
+    "expected": "15_1_18/74441914.jp2",
+    "field": "image",
+    "id": 3050,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": "jp2/15_1_18/74441918.jp2",
+    "expected": "15_1_18/74441918.jp2",
+    "field": "image",
+    "id": 3052,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": "jp2/15_1_18/74441923.jp2",
+    "expected": "15_1_18/74441923.jp2",
+    "field": "image",
+    "id": 3054,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": "jp2/15_1_18/74441924.jp2",
+    "expected": "15_1_18/74441924.jp2",
+    "field": "image",
+    "id": 3055,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": "jp2/15_1_18/74441925.jp2",
+    "expected": "15_1_18/74441925.jp2",
+    "field": "image",
+    "id": 3056,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": "jp2/15_1_18/74441926.jp2",
+    "expected": "15_1_18/74441926.jp2",
+    "field": "image",
+    "id": 3057,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": "jp2/15_1_18/74441933.jp2",
+    "expected": "15_1_18/74441933.jp2",
+    "field": "image",
+    "id": 3060,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": "",
+    "expected": "x",
+    "field": "image",
+    "id": 3115,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": "jp2/Durham_Scottish_Charters/Misc_Charters_016/Misc_Ch_752/misc_ch_752_003.jp2",
+    "expected": "Durham_Scottish_Charters/Misc_Charters_016/Misc_Ch_752/misc_ch_752_003.jp2",
+    "field": "image",
+    "id": 4742,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": "jp2/NRSGD45/244.jp2",
+    "expected": "NRSGD45/244.jp2",
+    "field": "image",
+    "id": 7138,
+    "reason": "target_field_mismatch"
   }
 ]
 ```
