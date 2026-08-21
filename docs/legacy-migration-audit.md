@@ -20,6 +20,7 @@ application public tables and 0 operator helper tables.
 
 | Entity | Target table | Audited fields | Checks | Coverage type |
 | --- | --- | --- | --- | --- |
+| `current_items` | `manuscripts_currentitem` | `repository_id, shelfmark, description` | `current_item_fields` | row-value |
 | `historical_items` | `manuscripts_historicalitem` | `type` | `historical_item_types` | row-value |
 | `item_images` | `manuscripts_itemimage` | `item_part_id, image, locus` | `item_image_fields` | row-value |
 | `characters` | `symbols_structure_character` | `type` | `character_types` | row-value |
@@ -28,7 +29,7 @@ application public tables and 0 operator helper tables.
 | `app_settings` | `common_appsettings` | `key` | `public_site_feature_settings` | target-only key set |
 | `publications` | `publications_publication` | `content, media references` | `publication_media_paths, publication_legacy_project_links` | content invariant |
 
-Mappings not listed above are still primarily count/ID audits: `dates`, `edit_events`, `item_formats`, `bibliographic_sources`, `repositories`, `current_items`, `historical_item_descriptions`, `catalogue_numbers`, `item_parts`, `image_texts`, `image_text_status_transitions`, `historical_item_date_assessments`, `scribes`, `scripts`, `hands`, `hand_images`, `allographs`, `components`, `features`, `component_features`, `allograph_components`, `allograph_component_features`, `positions`, `allograph_positions`, `annotations`, `graph_components`, `graph_component_features`, `graph_positions`, `publication_keywords`, `pages`, `partners`, `events`, `worksets`.
+Mappings not listed above are still primarily count/ID audits: `dates`, `edit_events`, `item_formats`, `bibliographic_sources`, `repositories`, `historical_item_descriptions`, `catalogue_numbers`, `item_parts`, `image_texts`, `image_text_status_transitions`, `historical_item_date_assessments`, `scribes`, `scripts`, `hands`, `hand_images`, `allographs`, `components`, `features`, `component_features`, `allograph_components`, `allograph_component_features`, `positions`, `allograph_positions`, `annotations`, `graph_components`, `graph_component_features`, `graph_positions`, `publication_keywords`, `pages`, `partners`, `events`, `worksets`.
 
 ## Entity Mappings
 
@@ -84,6 +85,7 @@ Mappings not listed above are still primarily count/ID audits: `dates`, `edit_ev
 | `ok` | Publication author mapping | Publication author ids resolve to matching usernames. |
 | `warn` | Annotation shape | Target text/editorial annotations retain allograph/hand values. This is valid under the current database constraint but differs from the model comment that treats those links as optional. |
 | `ok` | Legacy text exclusions | Non-empty legacy text XML rows: 899; target ImageText rows: 899. |
+| `fail` | Current item fields | 691 current item field issue(s) found (target_field_mismatch=691). Target repository_id, shelfmark, and description must match the reviewed source projection. |
 | `fail` | Item image fields | 13 item image field issue(s) found (target_field_mismatch=13). Target item_part_id, image, and locus must match the reviewed source projection. |
 | `fail` | Historical item types | 713 historical item type issue(s) found (invalid_source_type=83; target_type_mismatch=630). Target values must use current HistoricalItem.type choices from the backend contract: agreement, charter, letter. |
 | `ok` | Character types | All 103 character type value(s) match legacy ontograph type labels. |
@@ -246,6 +248,155 @@ Target text/editorial annotations retain allograph/hand values. This is valid un
     "non_image_graphs_with_legacy_fk": 3002,
     "text_annotations": 4048,
     "text_graphs": 4048
+  }
+]
+```
+
+### Current item fields
+
+691 current item field issue(s) found (target_field_mismatch=691). Target repository_id, shelfmark, and description must match the reviewed source projection.
+
+```json
+[
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 2,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 3,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 4,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 5,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 6,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 7,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 8,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 9,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 10,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 11,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 12,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 13,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 14,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 15,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 16,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 17,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 18,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 19,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 20,
+    "reason": "target_field_mismatch"
+  },
+  {
+    "actual": null,
+    "expected": "",
+    "field": "description",
+    "id": 21,
+    "reason": "target_field_mismatch"
   }
 ]
 ```

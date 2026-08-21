@@ -16,6 +16,7 @@ from migration_toolkit.audit import (
     check_carousel_titles,
     check_carousel_urls,
     check_character_types,
+    check_current_item_fields,
     check_historical_item_types,
     check_item_image_fields,
     check_legacy_catalogue_number_relationships,
@@ -143,10 +144,12 @@ def test_value_audit_coverage_reports_active_field_checks():
 
     assert covered["historical_items"]["audited_fields"] == ["type"]
     assert covered["historical_items"]["check_keys"] == ["historical_item_types"]
+    assert covered["current_items"]["audited_fields"] == ["repository_id", "shelfmark", "description"]
+    assert covered["current_items"]["check_keys"] == ["current_item_fields"]
     assert covered["item_images"]["audited_fields"] == ["item_part_id", "image", "locus"]
     assert covered["item_images"]["check_keys"] == ["item_image_fields"]
     assert covered["carousel_items"]["audited_fields"] == ["image", "title", "url"]
-    assert "current_items" in count_or_id_only
+    assert "current_items" not in count_or_id_only
     assert "image_texts" in count_or_id_only
 
 
@@ -167,6 +170,74 @@ def test_render_markdown_includes_value_audit_coverage():
     assert "## Value Audit Coverage" in rendered
     assert "| `historical_items` | `manuscripts_historicalitem` | `type` | `historical_item_types` |" in rendered
     assert "`current_items`" in rendered
+
+
+def test_check_current_item_fields_passes_reviewed_source_projection(monkeypatch):
+    long_shelfmark = "A" * 70
+    legacy_rows = [
+        {"id": 1, "repository_id": 10, "shelfmark": long_shelfmark, "description": None},
+        {"id": 2, "repository_id": 11, "shelfmark": "MS 2", "description": "Existing description"},
+    ]
+    target_rows = [
+        {"id": 1, "repository_id": 10, "shelfmark": "A" * 60, "description": ""},
+        {"id": 2, "repository_id": 11, "shelfmark": "MS 2", "description": "Existing description"},
+    ]
+    rows = iter((legacy_rows, target_rows))
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda conn, query, params=None: next(rows))
+
+    result = check_current_item_fields(None, None)
+
+    assert result.status == "ok"
+    assert "2 current item row" in result.summary
+
+
+def test_check_current_item_fields_rejects_wrong_values_and_unexpected_rows(monkeypatch):
+    legacy_rows = [{"id": 1, "repository_id": 10, "shelfmark": "MS 1", "description": None}]
+    target_rows = [
+        {"id": 1, "repository_id": 99, "shelfmark": "Wrong", "description": None},
+        {"id": 2, "repository_id": 11, "shelfmark": "Extra", "description": "Unexpected"},
+    ]
+    rows = iter((legacy_rows, target_rows))
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda conn, query, params=None: next(rows))
+
+    result = check_current_item_fields(None, None)
+
+    assert result.status == "fail"
+    assert "target_field_mismatch=3" in result.summary
+    assert "unexpected_target_row=1" in result.summary
+    assert result.details == [
+        {
+            "id": 1,
+            "field": "repository_id",
+            "reason": "target_field_mismatch",
+            "expected": 10,
+            "actual": 99,
+        },
+        {
+            "id": 1,
+            "field": "shelfmark",
+            "reason": "target_field_mismatch",
+            "expected": "MS 1",
+            "actual": "Wrong",
+        },
+        {
+            "id": 1,
+            "field": "description",
+            "reason": "target_field_mismatch",
+            "expected": "",
+            "actual": None,
+        },
+        {
+            "id": 2,
+            "reason": "unexpected_target_row",
+            "expected": None,
+            "actual": {
+                "repository_id": 11,
+                "shelfmark": "Extra",
+                "description": "Unexpected",
+            },
+        },
+    ]
 
 
 def test_current_content_decision_tables_are_audited():

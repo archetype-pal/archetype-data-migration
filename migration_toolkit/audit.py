@@ -716,6 +716,14 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
 
 VALUE_AUDIT_COVERAGE: tuple[ValueAuditCoverage, ...] = (
     ValueAuditCoverage(
+        entity_key="current_items",
+        target_table="manuscripts_currentitem",
+        audited_fields=("repository_id", "shelfmark", "description"),
+        check_keys=("current_item_fields",),
+        coverage_type="row-value",
+        notes="Compares repository linkage, shelfmark truncation, and blank-safe description values by preserved id.",
+    ),
+    ValueAuditCoverage(
         entity_key="historical_items",
         target_table="manuscripts_historicalitem",
         audited_fields=("type",),
@@ -1517,6 +1525,102 @@ def _audited_item_image_path(iipimage: str | None, image: str | None) -> str:
     if path.lower().endswith(".tif"):
         path = f"{path[:-4]}.jp2"
     return _audit_truncate(path, 200)
+
+
+def _audited_current_item_row(legacy_row: dict[str, Any]) -> dict[str, Any]:
+    return {
+        "repository_id": int(legacy_row["repository_id"]) if legacy_row["repository_id"] is not None else None,
+        "shelfmark": _audit_truncate(legacy_row.get("shelfmark"), 60),
+        "description": "" if legacy_row.get("description") is None else str(legacy_row["description"]),
+    }
+
+
+def check_current_item_fields(legacy_conn: Connection[Any], target_conn: Connection[Any]) -> CheckResult:
+    legacy_rows = _dict_rows(
+        legacy_conn,
+        """
+        SELECT id, repository_id, shelfmark, description
+        FROM digipal_currentitem
+        ORDER BY id
+        """,
+    )
+    target_rows = _dict_rows(
+        target_conn,
+        """
+        SELECT id, repository_id, shelfmark, description
+        FROM manuscripts_currentitem
+        ORDER BY id
+        """,
+    )
+    target_by_id = {int(row["id"]): row for row in target_rows}
+    legacy_ids: set[int] = set()
+    problems: list[dict[str, Any]] = []
+
+    for legacy_row in legacy_rows:
+        row_id = int(legacy_row["id"])
+        legacy_ids.add(row_id)
+        expected = _audited_current_item_row(legacy_row)
+        target_row = target_by_id.get(row_id)
+        if target_row is None:
+            problems.append({"id": row_id, "reason": "missing_target_row", "expected": expected, "actual": None})
+            continue
+
+        actual = {
+            "repository_id": int(target_row["repository_id"]) if target_row["repository_id"] is not None else None,
+            "shelfmark": target_row.get("shelfmark"),
+            "description": target_row.get("description"),
+        }
+        for field_name, expected_value in expected.items():
+            actual_value = actual[field_name]
+            if actual_value != expected_value:
+                problems.append(
+                    {
+                        "id": row_id,
+                        "field": field_name,
+                        "reason": "target_field_mismatch",
+                        "expected": expected_value,
+                        "actual": actual_value,
+                    }
+                )
+
+    for row_id in sorted(set(target_by_id) - legacy_ids):
+        target_row = target_by_id[row_id]
+        problems.append(
+            {
+                "id": row_id,
+                "reason": "unexpected_target_row",
+                "expected": None,
+                "actual": {
+                    "repository_id": target_row.get("repository_id"),
+                    "shelfmark": target_row.get("shelfmark"),
+                    "description": target_row.get("description"),
+                },
+            }
+        )
+
+    if problems:
+        reason_counts = {
+            reason: sum(1 for problem in problems if problem["reason"] == reason)
+            for reason in sorted({problem["reason"] for problem in problems})
+        }
+        reason_summary = "; ".join(f"{reason}={count}" for reason, count in reason_counts.items())
+        return CheckResult(
+            key="current_item_fields",
+            title="Current item fields",
+            status="fail",
+            summary=(
+                f"{len(problems)} current item field issue(s) found ({reason_summary}). Target repository_id, "
+                "shelfmark, and description must match the reviewed source projection."
+            ),
+            details=problems[:20],
+        )
+
+    return CheckResult(
+        key="current_item_fields",
+        title="Current item fields",
+        status="ok",
+        summary=f"All {len(legacy_rows)} current item row(s) match the reviewed source projection.",
+    )
 
 
 def _audited_item_image_row(legacy_row: dict[str, Any]) -> dict[str, Any]:
@@ -2364,6 +2468,7 @@ def run_audit(
                 "digipal_annotation",
                 "digipal_carouselitem",
                 "digipal_character",
+                "digipal_currentitem",
                 "digipal_date",
                 "digipal_graph",
                 "digipal_historicalitem",
@@ -2382,6 +2487,7 @@ def run_audit(
                 "common_appsettings",
                 "common_date",
                 "common_sitelabel",
+                "manuscripts_currentitem",
                 "manuscripts_historicalitem",
                 "publications_carouselitem",
                 "pages_page",
@@ -2400,6 +2506,7 @@ def run_audit(
             check_publication_author_mapping(legacy_conn, target_conn, publication_author_policy),
             check_annotation_shape(legacy_conn, target_conn),
             check_legacy_text_exclusions(legacy_conn, target_conn),
+            check_current_item_fields(legacy_conn, target_conn),
             check_item_image_fields(legacy_conn, target_conn),
             check_historical_item_types(legacy_conn, target_conn, backend_contract),
             check_character_types(legacy_conn, target_conn),
