@@ -27,6 +27,8 @@ BACKEND_REPO=../backend ./scripts/backend-compose-run.sh python -m commands.audi
 ```
 
 The backend checkout supplies the current Django environment, Postgres network, and dependency set. This repo supplies the migration code and reports.
+The audit/import commands also read the backend contract for configured target choices such as `HISTORICAL_ITEM_TYPES`;
+pass `--backend-root` only when the backend checkout cannot be discovered from `BACKEND_REPO` or `/app`.
 
 Direct local Python is fine for unit tests and offline rendering, but trial/staging/production database operations should use the Compose helper.
 
@@ -182,6 +184,7 @@ Every trial or production run should record:
 - backend git SHA
 - migration repo git SHA
 - Django migration state
+- backend contract source and choice values reported by the audit/import command
 - source database fingerprint
 - target database fingerprint
 - command arguments

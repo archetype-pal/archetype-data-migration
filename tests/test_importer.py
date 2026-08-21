@@ -3,6 +3,7 @@ import json
 import pytest
 
 from commands.migrate_legacy_data import main as migrate_main
+from migration_toolkit.backend_contract import BackendContract
 from migration_toolkit.importer import (
     DESCRIPTION_POLICY_SKIP,
     PHASE_TARGET_TABLES,
@@ -341,11 +342,20 @@ def test_historical_item_type_profile_records_supported_and_invalid_rows(monkeyp
     ]
     monkeypatch.setattr("migration_toolkit.importer.fetch_rows", lambda *_args, **_kwargs: rows)
 
-    profile = historical_item_type_profile(None)
+    profile = historical_item_type_profile(
+        None,
+        BackendContract(
+            historical_item_type_labels=("Agreement", "Charter", "Letter"),
+            historical_item_type_values=frozenset({"agreement", "charter", "letter"}),
+            source="test",
+        ),
+    )
 
     assert profile["row_count"] == 4
     assert profile["valid_count"] == 2
     assert profile["invalid_count"] == 2
+    assert profile["backend_contract_source"] == "test"
+    assert profile["supported_values"] == ["agreement", "charter", "letter"]
     assert profile["distribution"] == {"agreement": 1, "charter": 1}
     assert profile["invalid_distribution"] == {"Brieve": 1, "Settlement": 1}
     assert profile["types"][0]["target_type"] == "charter"
@@ -722,6 +732,7 @@ def test_migrate_legacy_data_cli_renders_report(monkeypatch, capsys):
         assert options.phases == ("manuscripts",)
         assert options.unsupported_description_policy == DESCRIPTION_POLICY_SKIP
         assert options.unsupported_description_output_path.name == "skipped.json"
+        assert options.backend_root.name == "backend"
         return ImportReport(
             dry_run=True,
             legacy_database="legacy_source",
@@ -751,6 +762,8 @@ def test_migrate_legacy_data_cli_renders_report(monkeypatch, capsys):
                 "skip",
                 "--unsupported-description-output",
                 "skipped.json",
+                "--backend-root",
+                "backend",
             ]
         )
         == 0

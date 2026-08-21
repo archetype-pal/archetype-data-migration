@@ -58,6 +58,12 @@ SAFETY_GATES: tuple[SafetyGate, ...] = (
         evidence="Manifest stores baseline and post-import audit paths, statuses, and accepted warnings.",
     ),
     SafetyGate(
+        key="backend_contract",
+        title="Backend contract recorded",
+        rule="Audit and import commands must record the backend choice contract used for target values.",
+        evidence="Audit/import report includes backend_contract.source and historical item type values.",
+    ),
+    SafetyGate(
         key="empty_target_default",
         title="Empty target by default",
         rule="Run the write importer only against a freshly migrated target DB unless explicitly approved.",

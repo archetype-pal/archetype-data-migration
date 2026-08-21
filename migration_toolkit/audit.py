@@ -3,6 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 import json
 import os
+from pathlib import Path
 import re
 from typing import Any
 from unicodedata import category
@@ -11,6 +12,12 @@ from urllib.parse import ParseResult, quote, urlparse, urlunparse
 import psycopg
 from psycopg import Connection, sql
 from psycopg.rows import dict_row
+
+from migration_toolkit.backend_contract import (
+    BackendContract,
+    BackendContractError,
+    load_backend_contract,
+)
 
 DEFAULT_POSTGRES_HOST = "postgres"
 DEFAULT_POSTGRES_PORT = "5432"
@@ -49,7 +56,6 @@ REVIEWED_CHARACTER_TYPES: frozenset[str] = frozenset(
         "accent",
     }
 )
-SUPPORTED_HISTORICAL_ITEM_TYPES: frozenset[str] = frozenset({"agreement", "charter", "letter"})
 EXPECTED_SITE_LABEL_KEYS: frozenset[str] = frozenset(
     {
         "historicalItem",
@@ -242,6 +248,7 @@ class AuditReport:
     target_table_count: int
     mappings: list[MappingResult]
     checks: list[CheckResult]
+    backend_contract: dict[str, Any] = field(default_factory=dict)
 
     @property
     def status(self) -> str:
@@ -1398,14 +1405,24 @@ def check_legacy_text_exclusions(legacy_conn: Connection[Any], target_conn: Conn
     )
 
 
-def _audited_historical_item_type(legacy_type: str | None, *, historical_item_id: int) -> str:
+def _audited_historical_item_type(
+    legacy_type: str | None,
+    *,
+    historical_item_id: int,
+    allowed_values: frozenset[str],
+) -> str:
     value = "" if legacy_type is None else str(legacy_type).strip().lower()
-    if value not in SUPPORTED_HISTORICAL_ITEM_TYPES:
+    if value not in allowed_values:
         raise ValueError(f"Unsupported legacy historical item type for id {historical_item_id}: {legacy_type!r}")
     return value
 
 
-def check_historical_item_types(legacy_conn: Connection[Any], target_conn: Connection[Any]) -> CheckResult:
+def check_historical_item_types(
+    legacy_conn: Connection[Any],
+    target_conn: Connection[Any],
+    backend_contract: BackendContract | None = None,
+) -> CheckResult:
+    contract = backend_contract or load_backend_contract()
     legacy_rows = _dict_rows(
         legacy_conn,
         """
@@ -1431,7 +1448,11 @@ def check_historical_item_types(legacy_conn: Connection[Any], target_conn: Conne
         row_id = int(legacy_row["id"])
         legacy_ids.add(row_id)
         try:
-            expected = _audited_historical_item_type(legacy_row.get("legacy_type"), historical_item_id=row_id)
+            expected = _audited_historical_item_type(
+                legacy_row.get("legacy_type"),
+                historical_item_id=row_id,
+                allowed_values=contract.historical_item_type_values,
+            )
         except ValueError as exc:
             problems.append(
                 {
@@ -1470,7 +1491,7 @@ def check_historical_item_types(legacy_conn: Connection[Any], target_conn: Conne
 
     for row_id in sorted(set(target_by_id) - legacy_ids):
         actual = target_by_id[row_id]
-        if actual not in SUPPORTED_HISTORICAL_ITEM_TYPES:
+        if actual not in contract.historical_item_type_values:
             problems.append(
                 {
                     "id": row_id,
@@ -1492,7 +1513,8 @@ def check_historical_item_types(legacy_conn: Connection[Any], target_conn: Conne
             status="fail",
             summary=(
                 f"{len(problems)} historical item type issue(s) found ({reason_summary}). Target values must use "
-                "current HistoricalItem.type choices: agreement, charter, letter."
+                f"current HistoricalItem.type choices from {contract.source}: "
+                f"{', '.join(sorted(contract.historical_item_type_values))}."
             ),
             details=problems[:20],
         )
@@ -1501,7 +1523,10 @@ def check_historical_item_types(legacy_conn: Connection[Any], target_conn: Conne
         key="historical_item_types",
         title="Historical item types",
         status="ok",
-        summary=f"All {len(legacy_rows)} historical item type value(s) use current HistoricalItem.type choices.",
+        summary=(
+            f"All {len(legacy_rows)} historical item type value(s) use current HistoricalItem.type choices from "
+            f"{contract.source}."
+        ),
     )
 
 
@@ -2098,9 +2123,14 @@ def run_audit(
     legacy_url: str | None = None,
     target_url: str | None = None,
     publication_author_policy: PublicationAuthorPolicy | None = None,
+    backend_root: Path | str | None = None,
 ) -> AuditReport:
     legacy_url = legacy_url or legacy_url_from_env()
     target_url = target_url or target_url_from_env()
+    try:
+        backend_contract = load_backend_contract(backend_root)
+    except BackendContractError as exc:
+        raise LegacyMigrationAuditError(str(exc)) from exc
 
     try:
         legacy_conn = psycopg.connect(legacy_url)
@@ -2160,7 +2190,7 @@ def run_audit(
             check_publication_author_mapping(legacy_conn, target_conn, publication_author_policy),
             check_annotation_shape(legacy_conn, target_conn),
             check_legacy_text_exclusions(legacy_conn, target_conn),
-            check_historical_item_types(legacy_conn, target_conn),
+            check_historical_item_types(legacy_conn, target_conn, backend_contract),
             check_character_types(legacy_conn, target_conn),
             check_site_label_keys(target_conn),
             check_public_site_feature_settings(target_conn),
@@ -2179,6 +2209,7 @@ def run_audit(
             target_table_count=public_table_count(target_conn),
             mappings=mappings,
             checks=checks,
+            backend_contract=backend_contract.to_dict(),
         )
 
 
@@ -2202,6 +2233,7 @@ def report_to_dict(report: AuditReport) -> dict[str, Any]:
         "status": report.status,
         "legacy_database": report.legacy_database,
         "target_database": report.target_database,
+        "backend_contract": report.backend_contract,
         "legacy_table_count": report.legacy_table_count,
         "target_table_count": report.target_table_count,
         "mappings": [
@@ -2245,6 +2277,11 @@ def render_markdown(report: AuditReport) -> str:
         "| --- | ---: |",
         f"| `{report.legacy_database}` | {report.legacy_table_count} |",
         f"| `{report.target_database}` | {report.target_table_count} |",
+        "",
+        "## Backend Contract",
+        "",
+        f"- Source: `{report.backend_contract.get('source', 'unknown')}`",
+        f"- Historical item type values: `{', '.join(report.backend_contract.get('historical_item_type_values', []))}`",
         "",
         "## Entity Mappings",
         "",

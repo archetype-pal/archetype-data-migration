@@ -67,6 +67,15 @@ def build_parser() -> argparse.ArgumentParser:
         default=None,
         help="Expected fallback target auth_user.username when fallback or username-fallback is used.",
     )
+    parser.add_argument(
+        "--backend-root",
+        type=Path,
+        default=None,
+        help=(
+            "Optional path to the backend checkout whose settings define the current target contract. "
+            "Defaults to BACKEND_REPO, /app inside the backend container, or the toolkit fallback."
+        ),
+    )
     return parser
 
 
@@ -97,6 +106,7 @@ def main(argv: list[str] | None = None) -> int:
                 fallback_author_id=options.publication_author_id,
                 fallback_author_username=options.publication_author_username,
             ),
+            backend_root=options.backend_root,
         )
     except LegacyMigrationAuditError as exc:
         parser.error(str(exc))

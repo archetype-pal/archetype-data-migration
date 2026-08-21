@@ -106,6 +106,15 @@ def build_parser() -> argparse.ArgumentParser:
         help="Target auth_user.username for fallback or username-fallback publication author policies.",
     )
     parser.add_argument("--manifest", type=Path, default=None, help="Optional JSON output path for the import report.")
+    parser.add_argument(
+        "--backend-root",
+        type=Path,
+        default=None,
+        help=(
+            "Optional path to the backend checkout whose settings define the current target contract. "
+            "Defaults to BACKEND_REPO, /app inside the backend container, or the toolkit fallback."
+        ),
+    )
     return parser
 
 
@@ -126,6 +135,7 @@ def main(argv: list[str] | None = None) -> int:
         publication_author_username=options.publication_author_username,
         skip_post_audit=options.skip_post_audit,
         manifest_path=options.manifest,
+        backend_root=options.backend_root,
     )
     try:
         report = run_import(import_options)

@@ -11,6 +11,11 @@ Operator-created helper, backup, and map tables are not application schema and
 must be absent from the final target dump. The cleaned inspected target has 57
 application public tables and 0 operator helper tables.
 
+## Backend Contract
+
+- Source: backend `HISTORICAL_ITEM_TYPES` setting from the run environment.
+- Historical item type values: `agreement, charter, letter`
+
 ## Entity Mappings
 
 | Status | Entity | Legacy rows | Target rows | Strategy |
@@ -65,7 +70,7 @@ application public tables and 0 operator helper tables.
 | `ok` | Publication author mapping | Publication author ids resolve to matching usernames. |
 | `warn` | Annotation shape | Target text/editorial annotations retain allograph/hand values. This is valid under the current database constraint but differs from the model comment that treats those links as optional. |
 | `ok` | Legacy text exclusions | Non-empty legacy text XML rows: 899; target ImageText rows: 899. |
-| `fail` | Historical item types | 713 historical item type issue(s) found (invalid_source_type=83; target_type_mismatch=630). Target values must use current HistoricalItem.type choices: agreement, charter, letter. |
+| `fail` | Historical item types | 713 historical item type issue(s) found (invalid_source_type=83; target_type_mismatch=630). Target values must use current HistoricalItem.type choices from the backend contract: agreement, charter, letter. |
 | `ok` | Character types | All 103 character type value(s) match legacy ontograph type labels. |
 | `ok` | Site label keys | All 22 current SiteLabel key(s) are present. |
 | `ok` | Public site feature settings | All 37 public site_features.* setting key(s) are present. |
@@ -232,7 +237,7 @@ Target text/editorial annotations retain allograph/hand values. This is valid un
 
 ### Historical item types
 
-713 historical item type issue(s) found (invalid_source_type=83; target_type_mismatch=630). Target values must use current HistoricalItem.type choices: agreement, charter, letter.
+713 historical item type issue(s) found (invalid_source_type=83; target_type_mismatch=630). Target values must use current HistoricalItem.type choices from the backend contract: agreement, charter, letter.
 
 ```json
 [

@@ -30,6 +30,13 @@ from migration_toolkit.audit import (
     run_audit,
     target_url_from_env,
 )
+from migration_toolkit.backend_contract import (
+    DEFAULT_HISTORICAL_ITEM_TYPE_LABELS,
+    BackendContract,
+    BackendContractError,
+    backend_choice_values,
+    load_backend_contract,
+)
 from migration_toolkit.carousel import CarouselImagePathError, CarouselTitleError, carousel_image_path, carousel_title
 
 
@@ -95,7 +102,7 @@ REVIEWED_CHARACTER_TYPES = frozenset(
         "accent",
     }
 )
-SUPPORTED_HISTORICAL_ITEM_TYPES = frozenset({"agreement", "charter", "letter"})
+DEFAULT_HISTORICAL_ITEM_TYPE_VALUES = backend_choice_values(DEFAULT_HISTORICAL_ITEM_TYPE_LABELS)
 CAROUSEL_CURRENT_ABOUT_PATH = "/about/about-models-of-authority"
 CAROUSEL_LEGACY_SEARCH_IGNORED_PARAMS = {
     "@xp_allograph",
@@ -498,6 +505,7 @@ class ImportOptions:
     publication_author_username: str | None = None
     skip_post_audit: bool = False
     manifest_path: Path | None = None
+    backend_root: Path | None = None
 
 
 @dataclass
@@ -520,6 +528,7 @@ class ImportReport:
     phases: list[PhaseResult]
     target_row_counts_before: dict[str, int]
     target_row_counts_after: dict[str, int]
+    backend_contract: dict[str, Any] = field(default_factory=dict)
     import_policies: dict[str, Any] = field(default_factory=dict)
     generated_artifacts: list[dict[str, Any]] = field(default_factory=list)
     source_profile: dict[str, Any] = field(default_factory=dict)
@@ -547,11 +556,13 @@ class ImportContext:
         legacy_conn: Connection[Any],
         target_conn: Connection[Any],
         options: ImportOptions,
+        backend_contract: BackendContract,
         publication_author_assignments: dict[int, int] | None = None,
     ) -> None:
         self.legacy_conn = legacy_conn
         self.target_conn = target_conn
         self.options = options
+        self.backend_contract = backend_contract
         self.publication_author_assignments = publication_author_assignments or {}
         self.phase_warnings: list[str] = []
 
@@ -1324,12 +1335,18 @@ def choice_value(value: Any, *, max_length: int | None = None) -> str | None:
     return lowered[:max_length] if max_length else lowered
 
 
-def historical_item_type(value: Any, *, historical_item_id: int | None = None) -> str:
+def historical_item_type(
+    value: Any,
+    *,
+    historical_item_id: int | None = None,
+    allowed_values: frozenset[str] | None = None,
+) -> str:
     """Return a current backend HistoricalItem.type value from a legacy lookup label."""
 
     normalized = choice_value(value)
+    supported_values = allowed_values or DEFAULT_HISTORICAL_ITEM_TYPE_VALUES
     context = f" for historical item id {historical_item_id}" if historical_item_id is not None else ""
-    if normalized not in SUPPORTED_HISTORICAL_ITEM_TYPES:
+    if normalized not in supported_values:
         raise HistoricalItemTypeError(f"Unsupported legacy historical item type{context}: {value!r}")
     return normalized
 
@@ -1706,7 +1723,7 @@ def catalogue_number_relationship_profile(legacy_conn: Connection[Any]) -> dict[
     }
 
 
-def historical_item_type_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
+def historical_item_type_profile(legacy_conn: Connection[Any], backend_contract: BackendContract) -> dict[str, Any]:
     rows = fetch_rows(
         legacy_conn,
         """
@@ -1723,7 +1740,11 @@ def historical_item_type_profile(legacy_conn: Connection[Any]) -> dict[str, Any]
 
     for row in rows:
         try:
-            target_type = historical_item_type(row["legacy_type"], historical_item_id=int(row["id"]))
+            target_type = historical_item_type(
+                row["legacy_type"],
+                historical_item_id=int(row["id"]),
+                allowed_values=backend_contract.historical_item_type_values,
+            )
         except HistoricalItemTypeError as exc:
             legacy_type = "<null>" if row["legacy_type"] is None else str(row["legacy_type"])
             invalid_distribution[legacy_type] = invalid_distribution.get(legacy_type, 0) + 1
@@ -1743,6 +1764,8 @@ def historical_item_type_profile(legacy_conn: Connection[Any]) -> dict[str, Any]
         "row_count": len(rows),
         "valid_count": len(mapped),
         "invalid_count": len(invalid),
+        "backend_contract_source": backend_contract.source,
+        "supported_values": sorted(backend_contract.historical_item_type_values),
         "distribution": dict(sorted(distribution.items())),
         "invalid_distribution": dict(sorted(invalid_distribution.items())),
         "types": mapped,
@@ -1943,11 +1966,11 @@ def target_users_by_username(target_conn: Connection[Any], usernames: list[str])
     return {str(row["username"]): row for row in rows}
 
 
-def build_source_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
+def build_source_profile(legacy_conn: Connection[Any], backend_contract: BackendContract) -> dict[str, Any]:
     return {
         "description_relationships": description_relationship_profile(legacy_conn),
         "catalogue_number_relationships": catalogue_number_relationship_profile(legacy_conn),
-        "historical_item_types": historical_item_type_profile(legacy_conn),
+        "historical_item_types": historical_item_type_profile(legacy_conn, backend_contract),
         "allograph_character_integrity": allograph_character_profile(legacy_conn),
         "character_types": character_type_profile(legacy_conn),
         "legacy_publication_authors": legacy_publication_author_profile(legacy_conn),
@@ -2542,7 +2565,11 @@ def import_manuscripts(ctx: ImportContext) -> dict[str, int]:
         [
             {
                 "id": row["id"],
-                "type": historical_item_type(row["type"], historical_item_id=int(row["id"])),
+                "type": historical_item_type(
+                    row["type"],
+                    historical_item_id=int(row["id"]),
+                    allowed_values=ctx.backend_contract.historical_item_type_values,
+                ),
                 "format_id": row["format_id"],
                 "language": row["language"] or None,
                 "hair_type": choice_value(row["hair_type"], max_length=20),
@@ -3209,6 +3236,7 @@ def import_report_to_dict(report: ImportReport) -> dict[str, Any]:
         "dry_run": report.dry_run,
         "legacy_database": report.legacy_database,
         "target_database": report.target_database,
+        "backend_contract": report.backend_contract,
         "import_policies": report.import_policies,
         "generated_artifacts": report.generated_artifacts,
         "source_profile": report.source_profile,
@@ -3301,7 +3329,11 @@ def run_import(options: ImportOptions) -> ImportReport:
         except LegacyMigrationAuditError as exc:
             raise LegacyMigrationImportError(str(exc)) from exc
 
-        source_profile = build_source_profile(legacy_conn)
+        try:
+            backend_contract = load_backend_contract(options.backend_root)
+        except BackendContractError as exc:
+            raise LegacyMigrationImportError(str(exc)) from exc
+        source_profile = build_source_profile(legacy_conn, backend_contract)
         source_warnings = source_profile_warnings(source_profile)
         execute_blockers = source_profile_blockers(
             source_profile,
@@ -3370,6 +3402,7 @@ def run_import(options: ImportOptions) -> ImportReport:
             legacy_conn,
             target_conn,
             options,
+            backend_contract,
             publication_author_assignments=publication_author_assignments,
         )
         phase_results: list[PhaseResult] = []
@@ -3489,6 +3522,7 @@ def run_import(options: ImportOptions) -> ImportReport:
                 legacy_url=legacy_url,
                 target_url=target_url,
                 publication_author_policy=publication_author_policy,
+                backend_root=options.backend_root,
             )
         except LegacyMigrationAuditError as exc:
             raise LegacyMigrationImportError(f"Post-import audit failed to run: {exc}") from exc
@@ -3501,6 +3535,7 @@ def run_import(options: ImportOptions) -> ImportReport:
         phases=phase_results,
         target_row_counts_before=before_counts,
         target_row_counts_after=after_counts,
+        backend_contract=backend_contract.to_dict(),
         import_policies={
             "unsupported_description_policy": options.unsupported_description_policy,
             "unsupported_catalogue_number_policy": CATALOGUE_NUMBER_POLICY_SKIP_UNSUPPORTED,
