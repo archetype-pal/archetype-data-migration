@@ -253,6 +253,7 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         source_tables=(
             "digipal_currentitem",
             "digipal_historicalitem",
+            "digipal_historicalitemtype",
             "digipal_description",
             "digipal_cataloguenumber",
             "digipal_itempart",
@@ -271,6 +272,9 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         importer_contract=(
             "Preserve ids for current items, historical items, descriptions, catalogue numbers, "
             "item parts, and images.",
+            "Map HistoricalItem.type only to current backend choices agreement, charter, and letter; block legacy "
+            "types such as Brieve, Settlement, and Notification until an explicit mapping or source correction "
+            "is approved.",
             "Fail on unsupported digipal_description relationships unless an explicit skip policy is approved.",
             "Treat manuscripts_msdescarea as target-only schema tracking unless an explicit msDesc seed policy is "
             "approved.",
@@ -279,6 +283,7 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         ),
         validation=(
             "All manuscript foreign keys are valid.",
+            "Every HistoricalItem.type value uses the current backend choices agreement, charter, or letter.",
             "Item image counts match the audit.",
             "Sample IIIF image paths resolve in the application.",
         ),

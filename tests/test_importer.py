@@ -14,6 +14,7 @@ from migration_toolkit.importer import (
     CarouselImagePathError,
     CarouselTitleError,
     CharacterTypeError,
+    HistoricalItemTypeError,
     ImportOptions,
     ImportReport,
     LegacyMigrationImportError,
@@ -30,6 +31,8 @@ from migration_toolkit.importer import (
     default_unsupported_catalogue_number_output_path,
     default_unsupported_description_output_path,
     expand_phases,
+    historical_item_type,
+    historical_item_type_profile,
     import_image_text,
     import_report_to_dict,
     legacy_image_path,
@@ -97,6 +100,25 @@ def test_character_type_maps_reviewed_ontograph_type_values(source):
 def test_character_type_rejects_non_reviewed_values(source):
     with pytest.raises(CharacterTypeError):
         character_type(source, character_id=1)
+
+
+@pytest.mark.parametrize(
+    ("source", "expected"),
+    (
+        ("Agreement", "agreement"),
+        ("Charter", "charter"),
+        ("Letter", "letter"),
+        (" charter ", "charter"),
+    ),
+)
+def test_historical_item_type_maps_current_backend_choices(source, expected):
+    assert historical_item_type(source, historical_item_id=1) == expected
+
+
+@pytest.mark.parametrize("source", ("", None, "Brieve", "Settlement", "Notification"))
+def test_historical_item_type_rejects_unsupported_legacy_values(source):
+    with pytest.raises(HistoricalItemTypeError):
+        historical_item_type(source, historical_item_id=1)
 
 
 def test_image_text_import_sql_matches_backend_0024_schema():
@@ -308,6 +330,26 @@ def test_character_type_profile_records_reviewed_types_and_invalid_rows(monkeypa
     assert profile["distribution"] == {"abbreviation": 1, "letter": 1, "punctuation": 1}
     assert profile["types"][0]["target_type"] == "letter"
     assert profile["invalid"][0]["id"] == 4
+
+
+def test_historical_item_type_profile_records_supported_and_invalid_rows(monkeypatch):
+    rows = [
+        {"id": 1, "legacy_type": "Charter"},
+        {"id": 2, "legacy_type": "Agreement"},
+        {"id": 3, "legacy_type": "Brieve"},
+        {"id": 4, "legacy_type": "Settlement"},
+    ]
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", lambda *_args, **_kwargs: rows)
+
+    profile = historical_item_type_profile(None)
+
+    assert profile["row_count"] == 4
+    assert profile["valid_count"] == 2
+    assert profile["invalid_count"] == 2
+    assert profile["distribution"] == {"agreement": 1, "charter": 1}
+    assert profile["invalid_distribution"] == {"Brieve": 1, "Settlement": 1}
+    assert profile["types"][0]["target_type"] == "charter"
+    assert profile["invalid"][0]["id"] == 3
 
 
 def test_carousel_url_rewrites_legacy_image_search_to_current_grid_route():
@@ -912,6 +954,38 @@ def test_source_profile_blockers_apply_to_selected_phases():
         )
         == 1
     )
+
+
+def test_source_profile_blockers_reject_invalid_historical_item_types_before_manuscript_writes():
+    profile = {
+        "description_relationships": {
+            "counts": {
+                "historical_only": 0,
+                "text_only": 0,
+                "both_links": 0,
+                "neither_link": 0,
+                "dangling_historical_item": 0,
+            },
+            "samples": {},
+        },
+        "catalogue_number_relationships": {
+            "counts": {
+                "supported": 0,
+                "missing_historical_item": 0,
+                "dangling_historical_item": 0,
+            },
+            "samples": {},
+        },
+        "historical_item_types": {"invalid_count": 1},
+        "allograph_character_integrity": {"missing_character_count": 0, "sample": []},
+    }
+
+    assert source_profile_blockers(profile, ("symbols",)) == []
+    blockers = source_profile_blockers(profile, ("manuscripts",))
+    assert len(blockers) == 1
+    assert "historical item type values" in blockers[0]
+    warnings = source_profile_warnings(profile)
+    assert warnings[-1].endswith(": 1")
 
 
 def test_source_profile_blockers_reject_invalid_character_types_before_symbol_writes():

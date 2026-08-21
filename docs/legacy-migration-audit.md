@@ -1,6 +1,6 @@
 # Legacy Migration Audit
 
-Status: `warn`
+Status: `fail`
 
 | Database | Application public tables |
 | --- | ---: |
@@ -65,6 +65,7 @@ application public tables and 0 operator helper tables.
 | `ok` | Publication author mapping | Publication author ids resolve to matching usernames. |
 | `warn` | Annotation shape | Target text/editorial annotations retain allograph/hand values. This is valid under the current database constraint but differs from the model comment that treats those links as optional. |
 | `ok` | Legacy text exclusions | Non-empty legacy text XML rows: 899; target ImageText rows: 899. |
+| `fail` | Historical item types | 713 historical item type issue(s) found (invalid_source_type=83; target_type_mismatch=630). Target values must use current HistoricalItem.type choices: agreement, charter, letter. |
 | `ok` | Character types | All 103 character type value(s) match legacy ontograph type labels. |
 | `ok` | Site label keys | All 22 current SiteLabel key(s) are present. |
 | `ok` | Public site feature settings | All 37 public site_features.* setting key(s) are present. |
@@ -225,6 +226,155 @@ Target text/editorial annotations retain allograph/hand values. This is valid un
     "non_image_graphs_with_legacy_fk": 3002,
     "text_annotations": 4048,
     "text_graphs": 4048
+  }
+]
+```
+
+### Historical item types
+
+713 historical item type issue(s) found (invalid_source_type=83; target_type_mismatch=630). Target values must use current HistoricalItem.type choices: agreement, charter, letter.
+
+```json
+[
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 1,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 2,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 3,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 4,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Brieve",
+    "error": "Unsupported legacy historical item type for id 5: 'Brieve'",
+    "id": 5,
+    "legacy_type": "Brieve",
+    "reason": "invalid_source_type"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 6,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 7,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 8,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 9,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 10,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 11,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 12,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 13,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 14,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Agreement",
+    "expected": "agreement",
+    "id": 15,
+    "legacy_type": "Agreement",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 16,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 17,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 18,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 19,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
+  },
+  {
+    "actual": "Charter",
+    "expected": "charter",
+    "id": 20,
+    "legacy_type": "Charter",
+    "reason": "target_type_mismatch"
   }
 ]
 ```

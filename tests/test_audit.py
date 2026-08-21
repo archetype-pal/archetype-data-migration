@@ -15,6 +15,7 @@ from migration_toolkit.audit import (
     check_carousel_titles,
     check_carousel_urls,
     check_character_types,
+    check_historical_item_types,
     check_legacy_catalogue_number_relationships,
     check_legacy_description_relationships,
     check_operator_helper_tables_absent,
@@ -207,6 +208,81 @@ def test_check_character_types_rejects_previous_wrong_form_mapping(monkeypatch):
             "expected": "punctuation",
             "actual": "n/a",
         },
+    ]
+
+
+def test_check_historical_item_types_passes_current_backend_choices(monkeypatch):
+    legacy_rows = [
+        {"id": 1, "legacy_type": "Agreement"},
+        {"id": 2, "legacy_type": "Charter"},
+        {"id": 3, "legacy_type": "Letter"},
+    ]
+    target_rows = [
+        {"id": 1, "type": "agreement"},
+        {"id": 2, "type": "charter"},
+        {"id": 3, "type": "letter"},
+    ]
+    rows = iter((legacy_rows, target_rows))
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda conn, query, params=None: next(rows))
+
+    result = check_historical_item_types(None, None)
+
+    assert result.status == "ok"
+    assert "3 historical item type value" in result.summary
+
+
+def test_check_historical_item_types_rejects_unsupported_source_values(monkeypatch):
+    legacy_rows = [
+        {"id": 1, "legacy_type": "Brieve"},
+        {"id": 2, "legacy_type": "Settlement"},
+    ]
+    target_rows = [
+        {"id": 1, "type": "brieve"},
+        {"id": 2, "type": "settlement"},
+    ]
+    rows = iter((legacy_rows, target_rows))
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda conn, query, params=None: next(rows))
+
+    result = check_historical_item_types(None, None)
+
+    assert result.status == "fail"
+    assert "invalid_source_type=2" in result.summary
+    assert result.details == [
+        {
+            "id": 1,
+            "reason": "invalid_source_type",
+            "legacy_type": "Brieve",
+            "error": "Unsupported legacy historical item type for id 1: 'Brieve'",
+            "actual": "brieve",
+        },
+        {
+            "id": 2,
+            "reason": "invalid_source_type",
+            "legacy_type": "Settlement",
+            "error": "Unsupported legacy historical item type for id 2: 'Settlement'",
+            "actual": "settlement",
+        },
+    ]
+
+
+def test_check_historical_item_types_rejects_target_values_outside_backend_choices(monkeypatch):
+    legacy_rows = [{"id": 1, "legacy_type": "Charter"}]
+    target_rows = [{"id": 1, "type": "Charter"}]
+    rows = iter((legacy_rows, target_rows))
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda conn, query, params=None: next(rows))
+
+    result = check_historical_item_types(None, None)
+
+    assert result.status == "fail"
+    assert "target_type_mismatch=1" in result.summary
+    assert result.details == [
+        {
+            "id": 1,
+            "reason": "target_type_mismatch",
+            "legacy_type": "Charter",
+            "expected": "charter",
+            "actual": "Charter",
+        }
     ]
 
 

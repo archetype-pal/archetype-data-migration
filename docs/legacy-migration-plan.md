@@ -72,7 +72,7 @@ The current target is clearly a selective migration, not a full clone:
 | `digipal_source` | `manuscripts_bibliographicsource` | Direct/id-preserved. |
 | `digipal_repository` | `manuscripts_repository` | Id-preserved; place/type denormalised. Blank labels need explicit fallbacks. |
 | `digipal_currentitem` | `manuscripts_currentitem` | Id-preserved; shelfmarks/descriptions transformed. |
-| `digipal_historicalitem` | `manuscripts_historicalitem` | Id-preserved; type/language/hair/date lookups flattened. |
+| `digipal_historicalitem` | `manuscripts_historicalitem` | Id-preserved; language/hair/date lookups flattened. `type` must use current backend choices (`agreement`, `charter`, `letter`); unsupported legacy types such as Brieve, Settlement, and Notification block import until an explicit mapping or source correction is approved. |
 | target date metadata | `manuscripts_historicalitemdateassessment` | Target-only derived metadata, currently 22 rows. |
 | `digipal_description` | `manuscripts_historicalitemdescription` | Id-preserved; `description` becomes `content`. |
 | `digipal_cataloguenumber` | `manuscripts_cataloguenumber` | Id-preserved; `source_id` becomes `catalogue_id`. |

@@ -49,6 +49,7 @@ REVIEWED_CHARACTER_TYPES: frozenset[str] = frozenset(
         "accent",
     }
 )
+SUPPORTED_HISTORICAL_ITEM_TYPES: frozenset[str] = frozenset({"agreement", "charter", "letter"})
 EXPECTED_SITE_LABEL_KEYS: frozenset[str] = frozenset(
     {
         "historicalItem",
@@ -344,7 +345,10 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         target_table="manuscripts_historicalitem",
         category="manuscripts",
         strategy="id-preserved transformed lookups",
-        notes="Legacy type/language/hair/date lookup data is flattened into target fields.",
+        notes=(
+            "Legacy type/language/hair/date lookup data is flattened into target fields; the post-import audit "
+            "checks HistoricalItem.type values against current backend choices by id."
+        ),
     ),
     EntityMapping(
         key="historical_item_descriptions",
@@ -1394,6 +1398,113 @@ def check_legacy_text_exclusions(legacy_conn: Connection[Any], target_conn: Conn
     )
 
 
+def _audited_historical_item_type(legacy_type: str | None, *, historical_item_id: int) -> str:
+    value = "" if legacy_type is None else str(legacy_type).strip().lower()
+    if value not in SUPPORTED_HISTORICAL_ITEM_TYPES:
+        raise ValueError(f"Unsupported legacy historical item type for id {historical_item_id}: {legacy_type!r}")
+    return value
+
+
+def check_historical_item_types(legacy_conn: Connection[Any], target_conn: Connection[Any]) -> CheckResult:
+    legacy_rows = _dict_rows(
+        legacy_conn,
+        """
+        SELECT h.id, t.name AS legacy_type
+        FROM digipal_historicalitem h
+        LEFT JOIN digipal_historicalitemtype t ON t.id = h.historical_item_type_id
+        ORDER BY h.id
+        """,
+    )
+    target_rows = _dict_rows(
+        target_conn,
+        """
+        SELECT id, type
+        FROM manuscripts_historicalitem
+        ORDER BY id
+        """,
+    )
+    target_by_id = {int(row["id"]): row.get("type") for row in target_rows}
+    legacy_ids: set[int] = set()
+    problems: list[dict[str, Any]] = []
+
+    for legacy_row in legacy_rows:
+        row_id = int(legacy_row["id"])
+        legacy_ids.add(row_id)
+        try:
+            expected = _audited_historical_item_type(legacy_row.get("legacy_type"), historical_item_id=row_id)
+        except ValueError as exc:
+            problems.append(
+                {
+                    "id": row_id,
+                    "reason": "invalid_source_type",
+                    "legacy_type": legacy_row.get("legacy_type"),
+                    "error": str(exc),
+                    "actual": target_by_id.get(row_id),
+                }
+            )
+            continue
+
+        if row_id not in target_by_id:
+            problems.append(
+                {
+                    "id": row_id,
+                    "reason": "missing_target_row",
+                    "legacy_type": legacy_row.get("legacy_type"),
+                    "expected": expected,
+                    "actual": None,
+                }
+            )
+            continue
+
+        actual = target_by_id[row_id]
+        if actual != expected:
+            problems.append(
+                {
+                    "id": row_id,
+                    "reason": "target_type_mismatch",
+                    "legacy_type": legacy_row.get("legacy_type"),
+                    "expected": expected,
+                    "actual": actual,
+                }
+            )
+
+    for row_id in sorted(set(target_by_id) - legacy_ids):
+        actual = target_by_id[row_id]
+        if actual not in SUPPORTED_HISTORICAL_ITEM_TYPES:
+            problems.append(
+                {
+                    "id": row_id,
+                    "reason": "unexpected_target_row",
+                    "expected": None,
+                    "actual": actual,
+                }
+            )
+
+    if problems:
+        reason_counts = {
+            reason: sum(1 for problem in problems if problem["reason"] == reason)
+            for reason in sorted({problem["reason"] for problem in problems})
+        }
+        reason_summary = "; ".join(f"{reason}={count}" for reason, count in reason_counts.items())
+        return CheckResult(
+            key="historical_item_types",
+            title="Historical item types",
+            status="fail",
+            summary=(
+                f"{len(problems)} historical item type issue(s) found ({reason_summary}). Target values must use "
+                "current HistoricalItem.type choices: agreement, charter, letter."
+            ),
+            details=problems[:20],
+        )
+
+    return CheckResult(
+        key="historical_item_types",
+        title="Historical item types",
+        status="ok",
+        summary=f"All {len(legacy_rows)} historical item type value(s) use current HistoricalItem.type choices.",
+    )
+
+
 def _audited_character_type(ontograph_type_name: str | None, *, character_id: int) -> str:
     value = "" if ontograph_type_name is None else str(ontograph_type_name).strip()
     if value not in REVIEWED_CHARACTER_TYPES:
@@ -2015,6 +2126,8 @@ def run_audit(
                 "digipal_character",
                 "digipal_date",
                 "digipal_graph",
+                "digipal_historicalitem",
+                "digipal_historicalitemtype",
                 "digipal_ontograph",
                 "digipal_ontographtype",
                 "pages_page",
@@ -2047,6 +2160,7 @@ def run_audit(
             check_publication_author_mapping(legacy_conn, target_conn, publication_author_policy),
             check_annotation_shape(legacy_conn, target_conn),
             check_legacy_text_exclusions(legacy_conn, target_conn),
+            check_historical_item_types(legacy_conn, target_conn),
             check_character_types(legacy_conn, target_conn),
             check_site_label_keys(target_conn),
             check_public_site_feature_settings(target_conn),

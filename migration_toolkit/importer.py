@@ -41,6 +41,10 @@ class CharacterTypeError(ValueError):
     """A legacy character type cannot be mapped to the reviewed target values."""
 
 
+class HistoricalItemTypeError(ValueError):
+    """A legacy historical item type cannot be mapped to current backend choices."""
+
+
 YEAR_RE = re.compile(r"(?<!\d)([1-2]\d{3}|[5-9]\d{2})(?!\d)")
 PUBLICATION_DIGIPAL_HREF_RE = re.compile(
     r"(?P<prefix>\bhref\s*=\s*)(?P<quote>[\"'])"
@@ -91,6 +95,7 @@ REVIEWED_CHARACTER_TYPES = frozenset(
         "accent",
     }
 )
+SUPPORTED_HISTORICAL_ITEM_TYPES = frozenset({"agreement", "charter", "letter"})
 CAROUSEL_CURRENT_ABOUT_PATH = "/about/about-models-of-authority"
 CAROUSEL_LEGACY_SEARCH_IGNORED_PARAMS = {
     "@xp_allograph",
@@ -1319,6 +1324,16 @@ def choice_value(value: Any, *, max_length: int | None = None) -> str | None:
     return lowered[:max_length] if max_length else lowered
 
 
+def historical_item_type(value: Any, *, historical_item_id: int | None = None) -> str:
+    """Return a current backend HistoricalItem.type value from a legacy lookup label."""
+
+    normalized = choice_value(value)
+    context = f" for historical item id {historical_item_id}" if historical_item_id is not None else ""
+    if normalized not in SUPPORTED_HISTORICAL_ITEM_TYPES:
+        raise HistoricalItemTypeError(f"Unsupported legacy historical item type{context}: {value!r}")
+    return normalized
+
+
 def fetch_rows(
     conn: Connection[Any], query: str, params: tuple[Any, ...] | dict[str, Any] | None = None
 ) -> list[dict[str, Any]]:
@@ -1691,6 +1706,50 @@ def catalogue_number_relationship_profile(legacy_conn: Connection[Any]) -> dict[
     }
 
 
+def historical_item_type_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
+    rows = fetch_rows(
+        legacy_conn,
+        """
+        SELECT h.id, t.name AS legacy_type
+        FROM digipal_historicalitem h
+        LEFT JOIN digipal_historicalitemtype t ON t.id = h.historical_item_type_id
+        ORDER BY h.id
+        """,
+    )
+    mapped: list[dict[str, Any]] = []
+    invalid: list[dict[str, Any]] = []
+    distribution: dict[str, int] = {}
+    invalid_distribution: dict[str, int] = {}
+
+    for row in rows:
+        try:
+            target_type = historical_item_type(row["legacy_type"], historical_item_id=int(row["id"]))
+        except HistoricalItemTypeError as exc:
+            legacy_type = "<null>" if row["legacy_type"] is None else str(row["legacy_type"])
+            invalid_distribution[legacy_type] = invalid_distribution.get(legacy_type, 0) + 1
+            invalid.append(
+                {
+                    "id": row["id"],
+                    "legacy_type": row["legacy_type"],
+                    "error": str(exc),
+                }
+            )
+            continue
+
+        distribution[target_type] = distribution.get(target_type, 0) + 1
+        mapped.append({"id": row["id"], "legacy_type": row["legacy_type"], "target_type": target_type})
+
+    return {
+        "row_count": len(rows),
+        "valid_count": len(mapped),
+        "invalid_count": len(invalid),
+        "distribution": dict(sorted(distribution.items())),
+        "invalid_distribution": dict(sorted(invalid_distribution.items())),
+        "types": mapped,
+        "invalid": invalid,
+    }
+
+
 def allograph_character_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
     rows = fetch_rows(
         legacy_conn,
@@ -1888,6 +1947,7 @@ def build_source_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
     return {
         "description_relationships": description_relationship_profile(legacy_conn),
         "catalogue_number_relationships": catalogue_number_relationship_profile(legacy_conn),
+        "historical_item_types": historical_item_type_profile(legacy_conn),
         "allograph_character_integrity": allograph_character_profile(legacy_conn),
         "character_types": character_type_profile(legacy_conn),
         "legacy_publication_authors": legacy_publication_author_profile(legacy_conn),
@@ -1935,6 +1995,13 @@ def source_profile_warnings(profile: dict[str, Any]) -> list[str]:
             f"{catalogue_counts['dangling_historical_item']}"
         )
 
+    invalid_historical_item_types = int(profile.get("historical_item_types", {}).get("invalid_count", 0))
+    if invalid_historical_item_types:
+        warnings.append(
+            "Legacy digipal_historicalitem contains type values outside current HistoricalItem.type choices: "
+            f"{invalid_historical_item_types}"
+        )
+
     missing_allograph_characters = profile["allograph_character_integrity"]["missing_character_count"]
     if missing_allograph_characters:
         warnings.append(
@@ -1974,6 +2041,13 @@ def source_profile_blockers(
                 "quarantine, or exclusion policy. Use --unsupported-description-policy skip only after the "
                 "skipped rows have been reviewed and recorded in the manifest."
             )
+    historical_item_types = profile.get("historical_item_types", {})
+    if "manuscripts" in phases and int(historical_item_types.get("invalid_count", 0)):
+        blockers.append(
+            "The manuscripts phase contains historical item type values outside current HistoricalItem.type "
+            "choices. Review source_profile.historical_item_types.invalid and define an explicit mapping or "
+            "source correction."
+        )
     if "symbols" in phases and profile["allograph_character_integrity"]["missing_character_count"]:
         blockers.append(
             "The symbols phase cannot import allographs whose character_id is missing from digipal_character. "
@@ -2468,7 +2542,7 @@ def import_manuscripts(ctx: ImportContext) -> dict[str, int]:
         [
             {
                 "id": row["id"],
-                "type": choice_value(row["type"], max_length=20),
+                "type": historical_item_type(row["type"], historical_item_id=int(row["id"])),
                 "format_id": row["format_id"],
                 "language": row["language"] or None,
                 "hair_type": choice_value(row["hair_type"], max_length=20),
