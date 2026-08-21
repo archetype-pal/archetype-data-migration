@@ -11,6 +11,7 @@ from migration_toolkit.audit import (
     IdComparison,
     MappingResult,
     PublicationAuthorPolicy,
+    build_value_audit_coverage,
     check_carousel_image_paths,
     check_carousel_titles,
     check_carousel_urls,
@@ -132,6 +133,37 @@ def test_render_json_is_machine_readable():
 
     assert '"legacy_database": "legacy_source"' in rendered
     assert '"status": "ok"' in rendered
+
+
+def test_value_audit_coverage_reports_active_field_checks():
+    coverage = build_value_audit_coverage()
+    covered = {item["entity_key"]: item for item in coverage["covered"]}
+    count_or_id_only = {item["entity_key"] for item in coverage["count_or_id_only"]}
+
+    assert covered["historical_items"]["audited_fields"] == ["type"]
+    assert covered["historical_items"]["check_keys"] == ["historical_item_types"]
+    assert covered["carousel_items"]["audited_fields"] == ["image", "title", "url"]
+    assert "current_items" in count_or_id_only
+    assert "item_images" in count_or_id_only
+
+
+def test_render_markdown_includes_value_audit_coverage():
+    coverage = build_value_audit_coverage()
+    report = AuditReport(
+        legacy_database="legacy_source",
+        target_database="target_current",
+        legacy_table_count=142,
+        target_table_count=52,
+        mappings=[],
+        checks=[],
+        value_audit_coverage=coverage,
+    )
+
+    rendered = render_markdown(report)
+
+    assert "## Value Audit Coverage" in rendered
+    assert "| `historical_items` | `manuscripts_historicalitem` | `type` | `historical_item_types` |" in rendered
+    assert "`current_items`" in rendered
 
 
 def test_current_content_decision_tables_are_audited():

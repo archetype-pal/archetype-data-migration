@@ -16,6 +16,19 @@ application public tables and 0 operator helper tables.
 - Source: backend `HISTORICAL_ITEM_TYPES` setting from the run environment.
 - Historical item type values: `agreement, charter, letter`
 
+## Value Audit Coverage
+
+| Entity | Target table | Audited fields | Checks | Coverage type |
+| --- | --- | --- | --- | --- |
+| `historical_items` | `manuscripts_historicalitem` | `type` | `historical_item_types` | row-value |
+| `characters` | `symbols_structure_character` | `type` | `character_types` | row-value |
+| `carousel_items` | `publications_carouselitem` | `image, title, url` | `carousel_image_paths, carousel_titles, carousel_urls` | row-value |
+| `site_labels` | `common_sitelabel` | `key` | `site_label_keys` | target-only key set |
+| `app_settings` | `common_appsettings` | `key` | `public_site_feature_settings` | target-only key set |
+| `publications` | `publications_publication` | `content, media references` | `publication_media_paths, publication_legacy_project_links` | content invariant |
+
+Mappings not listed above are still primarily count/ID audits: `dates`, `edit_events`, `item_formats`, `bibliographic_sources`, `repositories`, `current_items`, `historical_item_descriptions`, `catalogue_numbers`, `item_parts`, `item_images`, `image_texts`, `image_text_status_transitions`, `historical_item_date_assessments`, `scribes`, `scripts`, `hands`, `hand_images`, `allographs`, `components`, `features`, `component_features`, `allograph_components`, `allograph_component_features`, `positions`, `allograph_positions`, `annotations`, `graph_components`, `graph_component_features`, `graph_positions`, `publication_keywords`, `pages`, `partners`, `events`, `worksets`.
+
 ## Entity Mappings
 
 | Status | Entity | Legacy rows | Target rows | Strategy |

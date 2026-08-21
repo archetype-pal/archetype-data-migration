@@ -241,6 +241,16 @@ class CheckResult:
 
 
 @dataclass(frozen=True)
+class ValueAuditCoverage:
+    entity_key: str
+    target_table: str
+    audited_fields: tuple[str, ...]
+    check_keys: tuple[str, ...]
+    coverage_type: str
+    notes: str
+
+
+@dataclass(frozen=True)
 class AuditReport:
     legacy_database: str
     target_database: str
@@ -249,6 +259,7 @@ class AuditReport:
     mappings: list[MappingResult]
     checks: list[CheckResult]
     backend_contract: dict[str, Any] = field(default_factory=dict)
+    value_audit_coverage: dict[str, Any] = field(default_factory=dict)
 
     @property
     def status(self) -> str:
@@ -703,6 +714,58 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
 )
 
 
+VALUE_AUDIT_COVERAGE: tuple[ValueAuditCoverage, ...] = (
+    ValueAuditCoverage(
+        entity_key="historical_items",
+        target_table="manuscripts_historicalitem",
+        audited_fields=("type",),
+        check_keys=("historical_item_types",),
+        coverage_type="row-value",
+        notes="Compares legacy historical item type labels to target values using the backend choice contract.",
+    ),
+    ValueAuditCoverage(
+        entity_key="characters",
+        target_table="symbols_structure_character",
+        audited_fields=("type",),
+        check_keys=("character_types",),
+        coverage_type="row-value",
+        notes="Compares legacy ontograph type labels to target character type values by preserved id.",
+    ),
+    ValueAuditCoverage(
+        entity_key="carousel_items",
+        target_table="publications_carouselitem",
+        audited_fields=("image", "title", "url"),
+        check_keys=("carousel_image_paths", "carousel_titles", "carousel_urls"),
+        coverage_type="row-value",
+        notes="Checks reviewed carousel image/title mappings and current frontend route URLs.",
+    ),
+    ValueAuditCoverage(
+        entity_key="site_labels",
+        target_table="common_sitelabel",
+        audited_fields=("key",),
+        check_keys=("site_label_keys",),
+        coverage_type="target-only key set",
+        notes="Checks current-system label keys seeded in the target schema.",
+    ),
+    ValueAuditCoverage(
+        entity_key="app_settings",
+        target_table="common_appsettings",
+        audited_fields=("key",),
+        check_keys=("public_site_feature_settings",),
+        coverage_type="target-only key set",
+        notes="Checks current public site_features.* setting keys seeded in the target schema.",
+    ),
+    ValueAuditCoverage(
+        entity_key="publications",
+        target_table="publications_publication",
+        audited_fields=("content", "media references"),
+        check_keys=("publication_media_paths", "publication_legacy_project_links"),
+        coverage_type="content invariant",
+        notes="Checks migrated publication HTML for approved media paths and unresolved current-project links.",
+    ),
+)
+
+
 def _database_url_with_name(database_url: str, database_name: str) -> str:
     parsed = urlparse(database_url)
     if not parsed.scheme or not parsed.netloc:
@@ -842,6 +905,33 @@ def _mapping_status(
     if not mapping.compare_counts:
         return "ok"
     return "warn"
+
+
+def build_value_audit_coverage() -> dict[str, Any]:
+    covered_entity_keys = {coverage.entity_key for coverage in VALUE_AUDIT_COVERAGE}
+    count_or_id_only = [
+        {
+            "entity_key": mapping.key,
+            "target_table": mapping.target_table,
+            "strategy": mapping.strategy,
+        }
+        for mapping in ENTITY_MAPPINGS
+        if mapping.key not in covered_entity_keys
+    ]
+    return {
+        "covered": [
+            {
+                "entity_key": coverage.entity_key,
+                "target_table": coverage.target_table,
+                "audited_fields": list(coverage.audited_fields),
+                "check_keys": list(coverage.check_keys),
+                "coverage_type": coverage.coverage_type,
+                "notes": coverage.notes,
+            }
+            for coverage in VALUE_AUDIT_COVERAGE
+        ],
+        "count_or_id_only": count_or_id_only,
+    }
 
 
 def audit_mapping(legacy_conn: Connection[Any], target_conn: Connection[Any], mapping: EntityMapping) -> MappingResult:
@@ -2210,6 +2300,7 @@ def run_audit(
             mappings=mappings,
             checks=checks,
             backend_contract=backend_contract.to_dict(),
+            value_audit_coverage=build_value_audit_coverage(),
         )
 
 
@@ -2234,6 +2325,7 @@ def report_to_dict(report: AuditReport) -> dict[str, Any]:
         "legacy_database": report.legacy_database,
         "target_database": report.target_database,
         "backend_contract": report.backend_contract,
+        "value_audit_coverage": report.value_audit_coverage,
         "legacy_table_count": report.legacy_table_count,
         "target_table_count": report.target_table_count,
         "mappings": [
@@ -2283,11 +2375,42 @@ def render_markdown(report: AuditReport) -> str:
         f"- Source: `{report.backend_contract.get('source', 'unknown')}`",
         f"- Historical item type values: `{', '.join(report.backend_contract.get('historical_item_type_values', []))}`",
         "",
-        "## Entity Mappings",
-        "",
-        "| Status | Entity | Legacy rows | Target rows | Strategy |",
-        "| --- | --- | ---: | ---: | --- |",
     ]
+    if report.value_audit_coverage:
+        lines.extend(
+            [
+                "## Value Audit Coverage",
+                "",
+                "| Entity | Target table | Audited fields | Checks | Coverage type |",
+                "| --- | --- | --- | --- | --- |",
+            ]
+        )
+        for coverage in report.value_audit_coverage.get("covered", []):
+            lines.append(
+                f"| `{coverage['entity_key']}` | `{coverage['target_table']}` | "
+                f"`{', '.join(coverage['audited_fields'])}` | `{', '.join(coverage['check_keys'])}` | "
+                f"{coverage['coverage_type']} |"
+            )
+        count_or_id_only = report.value_audit_coverage.get("count_or_id_only", [])
+        if count_or_id_only:
+            count_only_keys = ", ".join(f"`{item['entity_key']}`" for item in count_or_id_only)
+            lines.extend(
+                [
+                    "",
+                    f"Mappings not listed above are still primarily count/ID audits: {count_only_keys}.",
+                    "",
+                ]
+            )
+        else:
+            lines.append("")
+    lines.extend(
+        [
+            "## Entity Mappings",
+            "",
+            "| Status | Entity | Legacy rows | Target rows | Strategy |",
+            "| --- | --- | ---: | ---: | --- |",
+        ]
+    )
     for result in report.mappings:
         lines.append(
             f"| `{result.status}` | {result.title} | {result.legacy_count} | "
