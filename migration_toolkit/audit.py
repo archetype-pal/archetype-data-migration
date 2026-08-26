@@ -134,6 +134,11 @@ PUBLICATION_AUTHOR_POLICY_LEGACY_ID = "legacy-id"
 PUBLICATION_AUTHOR_POLICY_USERNAME = "username"
 PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK = "username-fallback"
 PUBLICATION_AUTHOR_POLICY_FALLBACK = "fallback"
+REVIEWED_REPOSITORY_LABEL_FALLBACKS_BY_ID = {
+    3: "CAM",
+    8: "PMFED",
+    11: "LTNA",
+}
 PUBLICATION_AUTHOR_POLICIES: tuple[str, ...] = (
     PUBLICATION_AUTHOR_POLICY_LEGACY_ID,
     PUBLICATION_AUTHOR_POLICY_USERNAME,
@@ -716,6 +721,14 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
 
 
 VALUE_AUDIT_COVERAGE: tuple[ValueAuditCoverage, ...] = (
+    ValueAuditCoverage(
+        entity_key="repositories",
+        target_table="manuscripts_repository",
+        audited_fields=("name", "label", "place", "url", "type"),
+        check_keys=("repository_fields",),
+        coverage_type="row-value",
+        notes="Compares denormalised repository labels, places, URLs, and derived type values by preserved id.",
+    ),
     ValueAuditCoverage(
         entity_key="current_items",
         target_table="manuscripts_currentitem",
@@ -1517,6 +1530,121 @@ def check_legacy_text_exclusions(legacy_conn: Connection[Any], target_conn: Conn
 def _audit_truncate(value: Any, max_length: int, default: str = "") -> str:
     text = default if value is None else str(value)
     return text[:max_length]
+
+
+def _audited_repository_row(legacy_row: dict[str, Any]) -> dict[str, Any]:
+    repository_id = int(legacy_row["id"])
+    label_source = (
+        REVIEWED_REPOSITORY_LABEL_FALLBACKS_BY_ID.get(repository_id)
+        or legacy_row.get("short_name")
+        or legacy_row.get("name")
+    )
+    label = _audit_truncate(
+        label_source,
+        30,
+        default=f"repo-{repository_id}",
+    )
+    place = _audit_truncate(legacy_row.get("place") or "", 50)
+    return {
+        "name": _audit_truncate(legacy_row.get("name") or label, 100),
+        "label": label,
+        "place": place,
+        "url": legacy_row.get("url") or None,
+        "type": "library" if place and place.lower() != "unknown" else None,
+    }
+
+
+def check_repository_fields(legacy_conn: Connection[Any], target_conn: Connection[Any]) -> CheckResult:
+    legacy_rows = _dict_rows(
+        legacy_conn,
+        """
+        SELECT r.id, r.name, r.short_name, r.url, p.name AS place
+        FROM digipal_repository r
+        LEFT JOIN digipal_place p ON p.id = r.place_id
+        ORDER BY r.id
+        """,
+    )
+    target_rows = _dict_rows(
+        target_conn,
+        """
+        SELECT id, name, label, place, url, type
+        FROM manuscripts_repository
+        ORDER BY id
+        """,
+    )
+    target_by_id = {int(row["id"]): row for row in target_rows}
+    legacy_ids: set[int] = set()
+    problems: list[dict[str, Any]] = []
+
+    for legacy_row in legacy_rows:
+        row_id = int(legacy_row["id"])
+        legacy_ids.add(row_id)
+        expected = _audited_repository_row(legacy_row)
+        target_row = target_by_id.get(row_id)
+        if target_row is None:
+            problems.append({"id": row_id, "reason": "missing_target_row", "expected": expected, "actual": None})
+            continue
+
+        actual = {
+            "name": target_row.get("name"),
+            "label": target_row.get("label"),
+            "place": target_row.get("place"),
+            "url": target_row.get("url"),
+            "type": target_row.get("type"),
+        }
+        for field_name, expected_value in expected.items():
+            actual_value = actual[field_name]
+            if actual_value != expected_value:
+                problems.append(
+                    {
+                        "id": row_id,
+                        "field": field_name,
+                        "reason": "target_field_mismatch",
+                        "expected": expected_value,
+                        "actual": actual_value,
+                    }
+                )
+
+    for row_id in sorted(set(target_by_id) - legacy_ids):
+        target_row = target_by_id[row_id]
+        problems.append(
+            {
+                "id": row_id,
+                "reason": "unexpected_target_row",
+                "expected": None,
+                "actual": {
+                    "name": target_row.get("name"),
+                    "label": target_row.get("label"),
+                    "place": target_row.get("place"),
+                    "url": target_row.get("url"),
+                    "type": target_row.get("type"),
+                },
+            }
+        )
+
+    if problems:
+        reason_counts = {
+            reason: sum(1 for problem in problems if problem["reason"] == reason)
+            for reason in sorted({problem["reason"] for problem in problems})
+        }
+        reason_summary = "; ".join(f"{reason}={count}" for reason, count in reason_counts.items())
+        return CheckResult(
+            key="repository_fields",
+            title="Repository fields",
+            status="fail",
+            summary=(
+                f"{len(problems)} repository field issue(s) found ({reason_summary}). Target name, label, place, "
+                "url, and type must match the reviewed source projection."
+            ),
+            details=problems[:20],
+        )
+
+    return CheckResult(
+        key="repository_fields",
+        title="Repository fields",
+        status="ok",
+        summary=f"All {len(legacy_rows)} repository row(s) match the reviewed source projection.",
+    )
 
 
 def _audited_item_image_path(iipimage: str | None, image: str | None) -> str:
@@ -2534,6 +2662,7 @@ def run_audit(
             check_publication_author_mapping(legacy_conn, target_conn, publication_author_policy),
             check_annotation_shape(legacy_conn, target_conn),
             check_legacy_text_exclusions(legacy_conn, target_conn),
+            check_repository_fields(legacy_conn, target_conn),
             check_current_item_fields(legacy_conn, target_conn),
             check_item_image_fields(legacy_conn, target_conn),
             check_historical_item_types(legacy_conn, target_conn, backend_contract),

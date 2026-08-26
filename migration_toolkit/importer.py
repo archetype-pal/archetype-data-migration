@@ -103,6 +103,11 @@ REVIEWED_CHARACTER_TYPES = frozenset(
         "accent",
     }
 )
+REVIEWED_REPOSITORY_LABEL_FALLBACKS_BY_ID = {
+    3: "CAM",
+    8: "PMFED",
+    11: "LTNA",
+}
 DEFAULT_HISTORICAL_ITEM_TYPE_VALUES = backend_choice_values(DEFAULT_HISTORICAL_ITEM_TYPE_LABELS)
 CAROUSEL_CURRENT_ABOUT_PATH = "/about/about-models-of-authority"
 CAROUSEL_LEGACY_SEARCH_IGNORED_PARAMS = {
@@ -877,6 +882,18 @@ def truncate(value: Any, max_length: int, default: str = "") -> str:
 
 def text_or_blank(value: Any) -> str:
     return "" if value is None else str(value)
+
+
+def repository_label(repository_id: int, name: Any, short_name: Any) -> str:
+    label = REVIEWED_REPOSITORY_LABEL_FALLBACKS_BY_ID.get(repository_id) or short_name or name
+    return truncate(label, 30, default=f"repo-{repository_id}")
+
+
+def repository_type(place: Any) -> str | None:
+    place_value = truncate(place or "", 50)
+    if not place_value or place_value.lower() == "unknown":
+        return None
+    return "library"
 
 
 def character_type(ontograph_type_name: Any, *, character_id: int | None = None) -> str:
@@ -2365,7 +2382,7 @@ def import_core_vocabularies(ctx: ImportContext) -> dict[str, int]:
     )
     repositories = []
     for row in repository_rows:
-        label = truncate(row["short_name"] or row["name"] or f"repo-{row['id']}", 30)
+        label = repository_label(int(row["id"]), row["name"], row["short_name"])
         place = truncate(row["place"] or "", 50)
         repositories.append(
             {
@@ -2374,7 +2391,7 @@ def import_core_vocabularies(ctx: ImportContext) -> dict[str, int]:
                 "label": label,
                 "place": place,
                 "url": row["url"] or None,
-                "type": "library" if place and place.lower() != "unknown" else None,
+                "type": repository_type(row["place"]),
             }
         )
     rows_imported["manuscripts_repository"] = insert_rows(

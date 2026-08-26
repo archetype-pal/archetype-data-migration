@@ -26,6 +26,7 @@ from migration_toolkit.audit import (
     check_publication_author_mapping,
     check_publication_legacy_project_links,
     check_publication_media_paths,
+    check_repository_fields,
     check_site_label_keys,
     compare_id_sets,
     is_operator_helper_table_name,
@@ -144,12 +145,15 @@ def test_value_audit_coverage_reports_active_field_checks():
 
     assert covered["historical_items"]["audited_fields"] == ["type"]
     assert covered["historical_items"]["check_keys"] == ["historical_item_types"]
+    assert covered["repositories"]["audited_fields"] == ["name", "label", "place", "url", "type"]
+    assert covered["repositories"]["check_keys"] == ["repository_fields"]
     assert covered["current_items"]["audited_fields"] == ["repository_id", "shelfmark", "description"]
     assert covered["current_items"]["check_keys"] == ["current_item_fields"]
     assert covered["item_images"]["audited_fields"] == ["item_part_id", "image", "locus"]
     assert covered["item_images"]["check_keys"] == ["item_image_fields"]
     assert covered["carousel_items"]["audited_fields"] == ["image", "title", "url"]
     assert "current_items" not in count_or_id_only
+    assert "repositories" not in count_or_id_only
     assert "image_texts" in count_or_id_only
 
 
@@ -235,6 +239,146 @@ def test_check_current_item_fields_rejects_wrong_values_and_unexpected_rows(monk
                 "repository_id": 11,
                 "shelfmark": "Extra",
                 "description": "Unexpected",
+            },
+        },
+    ]
+
+
+def test_check_repository_fields_passes_reviewed_source_projection(monkeypatch):
+    legacy_rows = [
+        {
+            "id": 1,
+            "name": "British Library",
+            "short_name": "BL",
+            "place": "London",
+            "url": "https://www.bl.uk",
+        },
+        {
+            "id": 2,
+            "name": "Unknown repository",
+            "short_name": None,
+            "place": "unknown",
+            "url": "",
+        },
+        {
+            "id": 3,
+            "name": "Charters of the Abbey of Melrose",
+            "short_name": "",
+            "place": "Unknown",
+            "url": "",
+        },
+        {
+            "id": 100,
+            "name": None,
+            "short_name": None,
+            "place": None,
+            "url": None,
+        },
+    ]
+    target_rows = [
+        {
+            "id": 1,
+            "name": "British Library",
+            "label": "BL",
+            "place": "London",
+            "url": "https://www.bl.uk",
+            "type": "library",
+        },
+        {
+            "id": 2,
+            "name": "Unknown repository",
+            "label": "Unknown repository",
+            "place": "unknown",
+            "url": None,
+            "type": None,
+        },
+        {
+            "id": 3,
+            "name": "Charters of the Abbey of Melrose",
+            "label": "CAM",
+            "place": "Unknown",
+            "url": None,
+            "type": None,
+        },
+        {
+            "id": 100,
+            "name": "repo-100",
+            "label": "repo-100",
+            "place": "",
+            "url": None,
+            "type": None,
+        },
+    ]
+    rows = iter((legacy_rows, target_rows))
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda conn, query, params=None: next(rows))
+
+    result = check_repository_fields(None, None)
+
+    assert result.status == "ok"
+    assert "4 repository row" in result.summary
+
+
+def test_check_repository_fields_rejects_wrong_values_and_unexpected_rows(monkeypatch):
+    legacy_rows = [
+        {
+            "id": 1,
+            "name": "British Library",
+            "short_name": "BL",
+            "place": "London",
+            "url": "https://www.bl.uk",
+        }
+    ]
+    target_rows = [
+        {
+            "id": 1,
+            "name": "Wrong",
+            "label": "BL",
+            "place": "London",
+            "url": "https://www.bl.uk",
+            "type": None,
+        },
+        {
+            "id": 2,
+            "name": "Extra",
+            "label": "Extra",
+            "place": "",
+            "url": None,
+            "type": None,
+        },
+    ]
+    rows = iter((legacy_rows, target_rows))
+    monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda conn, query, params=None: next(rows))
+
+    result = check_repository_fields(None, None)
+
+    assert result.status == "fail"
+    assert "target_field_mismatch=2" in result.summary
+    assert "unexpected_target_row=1" in result.summary
+    assert result.details == [
+        {
+            "id": 1,
+            "field": "name",
+            "reason": "target_field_mismatch",
+            "expected": "British Library",
+            "actual": "Wrong",
+        },
+        {
+            "id": 1,
+            "field": "type",
+            "reason": "target_field_mismatch",
+            "expected": "library",
+            "actual": None,
+        },
+        {
+            "id": 2,
+            "reason": "unexpected_target_row",
+            "expected": None,
+            "actual": {
+                "name": "Extra",
+                "label": "Extra",
+                "place": "",
+                "url": None,
+                "type": None,
             },
         },
     ]

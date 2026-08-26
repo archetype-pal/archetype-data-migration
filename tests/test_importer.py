@@ -41,6 +41,8 @@ from migration_toolkit.importer import (
     parse_annotation,
     parse_date_weights,
     publication_link_rewrite_warnings,
+    repository_label,
+    repository_type,
     resolve_publication_author_assignments,
     rewrite_legacy_publication_links,
     source_profile_blockers,
@@ -120,6 +122,36 @@ def test_historical_item_type_maps_current_backend_choices(source, expected):
 def test_historical_item_type_rejects_unsupported_legacy_values(source):
     with pytest.raises(HistoricalItemTypeError):
         historical_item_type(source, historical_item_id=1)
+
+
+@pytest.mark.parametrize(
+    ("repository_id", "name", "short_name", "expected"),
+    (
+        (2, "National Records of Scotland", "NRS", "NRS"),
+        (3, "Charters of the Abbey of Melrose", "", "CAM"),
+        (8, "Papers of the Maule Family, Earls of Dalhousie", "", "PMFED"),
+        (11, "London, The National Archives", None, "LTNA"),
+        (99, "Fallback Repository", "", "Fallback Repository"),
+        (100, None, None, "repo-100"),
+    ),
+)
+def test_repository_label_uses_reviewed_fallbacks(repository_id, name, short_name, expected):
+    assert repository_label(repository_id, name, short_name) == expected
+
+
+@pytest.mark.parametrize(
+    ("place", "expected"),
+    (
+        ("London", "library"),
+        ("London, The National Archives", "library"),
+        ("Unknown", None),
+        ("unknown", None),
+        ("", None),
+        (None, None),
+    ),
+)
+def test_repository_type_uses_backend_choice_values(place, expected):
+    assert repository_type(place) == expected
 
 
 def test_image_text_import_sql_matches_backend_0024_schema():
