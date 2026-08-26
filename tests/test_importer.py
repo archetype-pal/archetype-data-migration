@@ -145,7 +145,16 @@ def test_parse_date_weights_falls_back_to_legacy_weights():
 
 def test_legacy_image_path_converts_iip_tif_paths():
     assert legacy_image_path("jp2/BLno1/path/k90069_51.tif") == "BLno1/path/k90069_51.jp2"
+    assert legacy_image_path("jp2/BLno1/path/k90069_51.tiff") == "BLno1/path/k90069_51.jp2"
     assert legacy_image_path(None, "already.jp2") == "already.jp2"
+
+
+def test_legacy_image_path_ignores_non_media_path_markers():
+    assert legacy_image_path("", "present") == ""
+    assert legacy_image_path("http://example.com/image.jp2") == ""
+    assert legacy_image_path("/absolute/image.jp2") == ""
+    assert legacy_image_path("../outside/image.jp2") == ""
+    assert legacy_image_path("not-a-path", "fallback/f.1.jpg") == "fallback/f.1.jpg"
 
 
 REAL_LEGACY_CAROUSEL_PATHS = (

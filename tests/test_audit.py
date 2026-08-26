@@ -408,10 +408,18 @@ def test_check_item_image_fields_passes_reviewed_source_projection(monkeypatch):
             "image": "already.jp2",
             "locus": None,
         },
+        {
+            "id": 3,
+            "item_part_id": 20,
+            "iipimage": "",
+            "image": "present",
+            "locus": "face",
+        },
     ]
     target_rows = [
         {"id": 1, "item_part_id": 10, "image": "BLno1/path/k90069_51.jp2", "locus": "fol. 1r"},
         {"id": 2, "item_part_id": -1, "image": "already.jp2", "locus": ""},
+        {"id": 3, "item_part_id": 20, "image": "", "locus": "face"},
     ]
     rows = iter((legacy_rows, target_rows))
     monkeypatch.setattr("migration_toolkit.audit._dict_rows", lambda conn, query, params=None: next(rows))
@@ -419,7 +427,7 @@ def test_check_item_image_fields_passes_reviewed_source_projection(monkeypatch):
     result = check_item_image_fields(None, None)
 
     assert result.status == "ok"
-    assert "2 item image row" in result.summary
+    assert "3 item image row" in result.summary
 
 
 def test_check_item_image_fields_rejects_wrong_path_locus_and_placeholder(monkeypatch):

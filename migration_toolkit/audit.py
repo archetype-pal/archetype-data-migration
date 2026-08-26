@@ -3,7 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 import json
 import os
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 import re
 from typing import Any
 from unicodedata import category
@@ -32,6 +32,7 @@ OPERATOR_HELPER_TABLE_RE = re.compile(r"(?:_backup_\d{8}(?:_\d{2,6})?|_map_\d{8}
 # A post-import audit must catch a mapper regression, not reproduce it.
 _AUDIT_CAROUSEL_IMAGE_MAX_LENGTH = 100
 _AUDIT_CAROUSEL_TITLE_MAX_LENGTH = 150
+_AUDIT_ITEM_IMAGE_EXTENSIONS = frozenset({".jp2", ".tif", ".tiff", ".jpg", ".jpeg", ".png"})
 _AUDIT_CAROUSEL_PREFIXES: tuple[tuple[str, ...], ...] = (
     ("media", "uploads", "carousel"),
     ("media", "carousel"),
@@ -1519,12 +1520,39 @@ def _audit_truncate(value: Any, max_length: int, default: str = "") -> str:
 
 
 def _audited_item_image_path(iipimage: str | None, image: str | None) -> str:
-    path = (iipimage or image or "").strip()
+    for value in (iipimage, image):
+        path = _audited_normalised_item_image_path(value)
+        if path:
+            return _audit_truncate(path, 200)
+    return ""
+
+
+def _audited_normalised_item_image_path(value: Any) -> str:
+    path = "" if value is None else str(value).strip()
     if path.startswith("jp2/"):
         path = path[4:]
-    if path.lower().endswith(".tif"):
-        path = f"{path[:-4]}.jp2"
-    return _audit_truncate(path, 200)
+    if not _audited_media_relative_image_path(path):
+        return ""
+    suffix = PurePosixPath(path).suffix.lower()
+    if suffix == ".tiff":
+        return f"{path[:-5]}.jp2"
+    if suffix == ".tif":
+        return f"{path[:-4]}.jp2"
+    return path
+
+
+def _audited_media_relative_image_path(path: str) -> bool:
+    if not path or "\\" in path:
+        return False
+    parsed = urlparse(path)
+    if parsed.scheme or parsed.netloc or parsed.query or parsed.fragment:
+        return False
+    posix_path = PurePosixPath(path)
+    return (
+        not posix_path.is_absolute()
+        and all(part not in {"", ".", ".."} for part in posix_path.parts)
+        and posix_path.suffix.lower() in _AUDIT_ITEM_IMAGE_EXTENSIONS
+    )
 
 
 def _audited_current_item_row(legacy_row: dict[str, Any]) -> dict[str, Any]:

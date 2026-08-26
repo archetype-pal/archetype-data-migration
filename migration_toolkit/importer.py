@@ -5,7 +5,7 @@ from dataclasses import dataclass, field
 from datetime import UTC, datetime
 from html import unescape as html_unescape
 import json
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 import re
 from typing import Any
 from urllib.parse import parse_qs, parse_qsl, quote_plus, urlparse
@@ -53,6 +53,7 @@ class HistoricalItemTypeError(ValueError):
 
 
 YEAR_RE = re.compile(r"(?<!\d)([1-2]\d{3}|[5-9]\d{2})(?!\d)")
+LEGACY_IMAGE_EXTENSIONS = frozenset({".jp2", ".tif", ".tiff", ".jpg", ".jpeg", ".png"})
 PUBLICATION_DIGIPAL_HREF_RE = re.compile(
     r"(?P<prefix>\bhref\s*=\s*)(?P<quote>[\"'])"
     r"(?P<url>(?:https?://[^\"']+?)?/digipal/page/(?P<image_id>\d+)/?(?:\?(?P<query>[^\"']*))?)"
@@ -654,12 +655,39 @@ def parse_date_weights(
 
 
 def legacy_image_path(iipimage: str | None, image: str | None = None) -> str:
-    path = (iipimage or image or "").strip()
+    for value in (iipimage, image):
+        path = _normalised_legacy_image_path(value)
+        if path:
+            return path
+    return ""
+
+
+def _normalised_legacy_image_path(value: Any) -> str:
+    path = "" if value is None else str(value).strip()
     if path.startswith("jp2/"):
         path = path[4:]
-    if path.lower().endswith(".tif"):
-        path = f"{path[:-4]}.jp2"
+    if not _is_media_relative_image_path(path):
+        return ""
+    suffix = PurePosixPath(path).suffix.lower()
+    if suffix == ".tiff":
+        return f"{path[:-5]}.jp2"
+    if suffix == ".tif":
+        return f"{path[:-4]}.jp2"
     return path
+
+
+def _is_media_relative_image_path(path: str) -> bool:
+    if not path or "\\" in path:
+        return False
+    parsed = urlparse(path)
+    if parsed.scheme or parsed.netloc or parsed.query or parsed.fragment:
+        return False
+    posix_path = PurePosixPath(path)
+    return (
+        not posix_path.is_absolute()
+        and all(part not in {"", ".", ".."} for part in posix_path.parts)
+        and posix_path.suffix.lower() in LEGACY_IMAGE_EXTENSIONS
+    )
 
 
 def _query_string(items: list[tuple[str, str]]) -> str:
