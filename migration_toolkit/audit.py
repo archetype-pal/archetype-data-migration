@@ -638,12 +638,40 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
     EntityMapping(
         key="publication_keywords",
         title="Publication keyword links",
-        legacy_table="blog_blogpost_categories",
+        legacy_table="generic_assignedkeyword",
         target_table="publications_publication_keywords",
         category="publications",
         strategy="ids not preserved",
-        notes="Legacy blog categories/keywords become tagulous publication keywords.",
+        notes="Legacy generic blogpost keyword assignments become tagulous publication keyword links.",
         strict_ids=False,
+        legacy_count_sql=(
+            "SELECT count(*) "
+            "FROM generic_assignedkeyword ak "
+            "JOIN django_content_type ct ON ct.id = ak.content_type_id "
+            "JOIN generic_keyword k ON k.id = ak.keyword_id "
+            "JOIN blog_blogpost b ON b.id = ak.object_pk "
+            "WHERE ct.app_label = 'blog' AND ct.model = 'blogpost'"
+        ),
+    ),
+    EntityMapping(
+        key="publication_keyword_terms",
+        title="Publication keyword terms",
+        legacy_table="generic_keyword",
+        target_table="publications_tagulous_publication_keywords",
+        category="publications",
+        strategy="ids not preserved",
+        notes="Legacy generic keywords assigned to blog posts become the tagulous publication keyword vocabulary.",
+        strict_ids=False,
+        legacy_count_sql=(
+            "SELECT count(*) FROM ("
+            "SELECT DISTINCT k.id "
+            "FROM generic_assignedkeyword ak "
+            "JOIN django_content_type ct ON ct.id = ak.content_type_id "
+            "JOIN generic_keyword k ON k.id = ak.keyword_id "
+            "JOIN blog_blogpost b ON b.id = ak.object_pk "
+            "WHERE ct.app_label = 'blog' AND ct.model = 'blogpost'"
+            ") x"
+        ),
     ),
     EntityMapping(
         key="pages",

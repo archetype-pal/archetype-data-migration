@@ -387,6 +387,11 @@ def test_check_repository_fields_rejects_wrong_values_and_unexpected_rows(monkey
 def test_current_content_decision_tables_are_audited():
     mappings = {mapping.key: mapping for mapping in ENTITY_MAPPINGS}
 
+    assert mappings["publication_keywords"].legacy_table == "generic_assignedkeyword"
+    assert "generic_assignedkeyword" in str(mappings["publication_keywords"].legacy_count_sql)
+    assert "blog_blogpost_categories" not in str(mappings["publication_keywords"].legacy_count_sql)
+    assert mappings["publication_keyword_terms"].legacy_table == "generic_keyword"
+    assert "generic_keyword" in str(mappings["publication_keyword_terms"].legacy_count_sql)
     assert mappings["site_labels"].strategy == "target-only current-system seed data"
     assert mappings["app_settings"].strategy == "target-only current-system configuration"
     assert mappings["pages"].strategy == "intentionally not imported pending product decision"

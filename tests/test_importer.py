@@ -9,6 +9,7 @@ from migration_toolkit.importer import (
     PHASE_TARGET_TABLES,
     PUBLICATION_AUTHOR_POLICY_USERNAME,
     PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK,
+    REQUIRED_LEGACY_TABLES,
     REQUIRED_TARGET_TABLES,
     SOURCE_COUNT_SQL,
     TARGET_DOMAIN_TABLES,
@@ -16,6 +17,7 @@ from migration_toolkit.importer import (
     CarouselTitleError,
     CharacterTypeError,
     HistoricalItemTypeError,
+    ImportContext,
     ImportOptions,
     ImportReport,
     LegacyMigrationImportError,
@@ -35,6 +37,7 @@ from migration_toolkit.importer import (
     historical_item_type,
     historical_item_type_profile,
     import_image_text,
+    import_publications,
     import_report_to_dict,
     legacy_image_path,
     legacy_publication_url_rewrite_map,
@@ -75,6 +78,24 @@ def test_msdescarea_is_tracked_as_target_schema_not_legacy_source():
     assert "manuscripts_msdescarea" in TARGET_DOMAIN_TABLES
     assert "manuscripts_msdescarea" in PHASE_TARGET_TABLES["manuscripts"]
     assert "manuscripts_msdescarea" not in SOURCE_COUNT_SQL["manuscripts"]
+
+
+def test_publication_keyword_tables_are_required_and_planned_from_generic_keywords():
+    assert "django_content_type" in REQUIRED_LEGACY_TABLES
+    assert "generic_assignedkeyword" in REQUIRED_LEGACY_TABLES
+    assert "generic_keyword" in REQUIRED_LEGACY_TABLES
+
+    vocabulary_sql = SOURCE_COUNT_SQL["publications"]["publications_tagulous_publication_keywords"]
+    links_sql = SOURCE_COUNT_SQL["publications"]["publications_publication_keywords"]
+
+    assert "generic_assignedkeyword" in vocabulary_sql
+    assert "generic_keyword" in vocabulary_sql
+    assert "django_content_type" in vocabulary_sql
+    assert "blog_blogpost_categories" not in vocabulary_sql
+    assert "generic_assignedkeyword" in links_sql
+    assert "generic_keyword" in links_sql
+    assert "django_content_type" in links_sql
+    assert "blog_blogpost_categories" not in links_sql
 
 
 def test_current_content_decision_tables_are_required_but_not_imported():
@@ -353,6 +374,84 @@ def test_carousel_title_profile_records_canonical_titles_and_invalid_rows(monkey
     assert profile["titles"][0]["canonical"] == "About Models of Authority"
     assert profile["titles"][0]["title"] == LEGACY_CAROUSEL_TITLE_5
     assert profile["invalid"][0]["id"] == 99
+
+
+def test_import_publications_imports_generic_keywords_not_category_labels(monkeypatch):
+    fetch_queries = []
+    fetch_responses = iter(
+        [
+            [{"id": 16, "name": "Palaeography", "slug": "palaeography", "count": 1}],
+            [
+                {
+                    "id": 4,
+                    "legacy_author_id": 1,
+                    "title": "Publication title",
+                    "slug": "publication-title",
+                    "content": "",
+                    "description": "",
+                    "allow_comments": True,
+                    "publish_date": None,
+                    "created": None,
+                    "updated": None,
+                    "is_blog_post": True,
+                    "is_news": False,
+                    "is_featured": False,
+                }
+            ],
+            [{"id": 99, "publication_id": 4, "tagulous_publication_keywords_id": 16}],
+            [],
+        ]
+    )
+
+    def fake_fetch_rows(_conn, query, _params=None):
+        fetch_queries.append(query)
+        return next(fetch_responses)
+
+    inserted = {}
+
+    def fake_insert_rows(_conn, query, rows):
+        if "INSERT INTO publications_tagulous_publication_keywords" in query:
+            key = "keyword_terms"
+        elif "INSERT INTO publications_publication_keywords" in query:
+            key = "keyword_links"
+        elif "INSERT INTO publications_publication" in query:
+            key = "publications"
+        elif "INSERT INTO publications_carouselitem" in query:
+            key = "carousel"
+        else:
+            raise AssertionError(query)
+        inserted[key] = list(rows)
+        return len(inserted[key])
+
+    monkeypatch.setattr("migration_toolkit.importer.publication_link_rewrite_maps", lambda *_args: ({}, {}, set(), {}))
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.insert_rows", fake_insert_rows)
+
+    ctx = ImportContext(
+        legacy_conn=None,
+        target_conn=None,
+        options=ImportOptions(),
+        backend_contract=BackendContract(
+            historical_item_type_labels=("Charter",),
+            historical_item_type_values=frozenset({"charter"}),
+            source="test",
+        ),
+        publication_author_assignments={1: 7},
+    )
+
+    result = import_publications(ctx)
+
+    assert result["publications_tagulous_publication_keywords"] == 1
+    assert result["publications_publication_keywords"] == 1
+    assert inserted["keyword_terms"] == [{"id": 16, "name": "Palaeography", "slug": "palaeography", "count": 1}]
+    assert inserted["keyword_links"] == [{"id": 99, "publication_id": 4, "tagulous_publication_keywords_id": 16}]
+    assert inserted["publications"][0]["author_id"] == 7
+    assert inserted["publications"][0]["is_blog_post"] is True
+    assert "generic_keyword" in fetch_queries[0]
+    assert "generic_assignedkeyword" in fetch_queries[0]
+    assert "blog_blogpost_categories" not in fetch_queries[0]
+    assert "generic_assignedkeyword" in fetch_queries[2]
+    assert "blog_blogpost_categories" not in fetch_queries[2]
 
 
 def test_character_type_profile_records_reviewed_types_and_invalid_rows(monkeypatch):

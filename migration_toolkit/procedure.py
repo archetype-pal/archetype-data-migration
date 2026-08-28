@@ -364,7 +364,14 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         key="09_publications",
         title="Publications And Carousel",
         objective="Import public CMS records represented in the current application.",
-        source_tables=("blog_blogpost", "blog_blogpost_categories", "digipal_carouselitem"),
+        source_tables=(
+            "blog_blogpost",
+            "blog_blogpost_categories",
+            "django_content_type",
+            "generic_assignedkeyword",
+            "generic_keyword",
+            "digipal_carouselitem",
+        ),
         target_tables=(
             "publications_publication",
             "publications_publication_keywords",
@@ -380,7 +387,8 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "Rewrite carousel URLs from legacy DigiPal search/page/manuscript/about routes to current frontend "
             "routes; translate legacy search view=list to view=table and keep explicit view parameters.",
             "Leave obsolete legacy collection carousel links blank until a current collection route is approved.",
-            "Re-key keyword/category joins through current tagulous tables.",
+            "Use blog categories only for publication type flags.",
+            "Re-key Mezzanine generic blogpost keyword assignments through current tagulous tables.",
             "Rewrite legacy /digipal/page/... publication hrefs to /manuscripts/{item_part_id}/images/{image_id}.",
             "Map legacy graph query values through digipal_annotation.graph_id to annotations_graph.id.",
             "Rewrite safe legacy /digipal/manuscripts/... hrefs to current manuscript and image text routes.",

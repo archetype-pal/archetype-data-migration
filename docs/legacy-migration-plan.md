@@ -98,31 +98,29 @@ The current target is clearly a selective migration, not a full clone:
 | `digipal_graphcomponent` | `annotations_graphcomponent` | Mostly preserved but filtered. |
 | `digipal_graphcomponent_features` | `annotations_graphcomponent_features` | Mostly preserved but filtered. |
 | `digipal_graph_aspects` | `annotations_graph_positions` | Re-keyed and filtered with graph rows; six fewer rows in the current target snapshot. |
-| `blog_blogpost` | `publications_publication` | Id-preserved; author ids need special handling. |
-| `blog_blogpost_categories` | `publications_publication_keywords` | Re-keyed through tagulous keywords. |
+| `blog_blogpost` plus `blog_blogpost_categories` | `publications_publication` | Id-preserved publication rows; categories drive type flags; author ids need special handling. |
+| `generic_assignedkeyword` plus `generic_keyword` | `publications_publication_keywords` | Blog-post keyword assignments re-keyed through tagulous keywords. |
 | `digipal_carouselitem` | `publications_carouselitem` | Id-preserved; field names transformed; image paths are mapped exactly from legacy `/media/uploads/Carousel/...` to canonical `carousel/...` values and audited by id; carousel links rewritten to current frontend routes. |
-| none | `worksets_workset` | Target-only user-saved lightbox/citable collection feature; currently five local rows. |
+| none | `worksets_workset` | Target-only user-saved lightbox/citable collection feature; row count depends on the target environment. |
 
 ## Key Differences And Risks
 
 ### Publication Authors
 
 For a full migration, preserve legacy `auth_user.id` values when user-linked
-legacy relations are in scope. The local target originally had seeded/current
-users in ids `1` to `6`; imported publication rows therefore resolved to the
-wrong usernames. The reconciled local target now moves those current users to
-ids `21` to `25`, restores legacy users at ids `1` to `6`, removes the
-unreferenced moved `admin_current` row, and leaves imported publication
-`author_id` values id-preserved.
+legacy relations are in scope. If the target already contains seeded or current
+users whose ids collide with legacy author ids, reconcile those users before
+importing publication rows. Move current users to approved unused ids, update
+their target-only references, restore the legacy users at their original ids,
+and verify imported publication `author_id` values resolve to the intended
+users.
 
 Use this policy only as an explicit backed-up reconciliation step:
 
 - Move colliding current/seeded users to unused ids.
 - Update their current target references such as auth tokens and worksets.
-- Rename or remove any colliding current username after reference checks; in
-  the inspected local target, local `admin` was first moved to `admin_current`
-  so legacy `admin` could occupy id `1`, then removed after confirming it had
-  no foreign-key references and other active superusers existed.
+- Rename or remove any colliding current username only after reference checks
+  and explicit approval.
 - Insert or import legacy `auth_user` rows at their original ids.
 - Reset the `auth_user` sequence and run the default legacy-id audit.
 

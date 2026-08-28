@@ -79,7 +79,7 @@ Legacy `digipal_cataloguenumber` rows must point at an existing historical item 
 | `06_scribes_hands` Scribes And Hands | Import scribes, hands, and image-hand links after item parts and images exist. | digipal_scribe, digipal_script, digipal_hand, digipal_hand_images | scribes_scribe, scribes_script, scribes_hand, scribes_hand_item_part_images |
 | `07_image_text` Image Text | Import non-empty transcription/translation XML as target image text rows. | digipal_text_textcontentxml | manuscripts_imagetext |
 | `08_annotations` Annotations And Graph Details | Import image/text/editorial annotations and graph through tables after symbols, hands, and images. | digipal_annotation, digipal_graph, digipal_idiograph, digipal_graphcomponent, digipal_graphcomponent_features, digipal_graph_aspects | annotations_graph, annotations_graphcomponent, annotations_graphcomponent_features, annotations_graph_positions |
-| `09_publications` Publications And Carousel | Import public CMS records represented in the current application. | blog_blogpost, blog_blogpost_categories, digipal_carouselitem | publications_publication, publications_publication_keywords, publications_carouselitem |
+| `09_publications` Publications And Carousel | Import public CMS records represented in the current application. | blog_blogpost, blog_blogpost_categories, django_content_type, generic_assignedkeyword, generic_keyword, digipal_carouselitem | publications_publication, publications_publication_keywords, publications_carouselitem |
 | `10_target_only` Target-Only Current Data | Handle current-only tables without inventing unsupported legacy source mappings. | current-system sources only | common_appsettings, common_editevent, common_sitelabel, manuscripts_historicalitemdateassessment, manuscripts_statustransition, pages_page, publications_event, publications_partner, worksets_workset |
 | `11_final_validation` Final Validation | Prove the imported target is internally consistent and application-ready. | all mapped legacy tables | all target domain tables |
 | `12_cutover` Deployment Cutover | Promote the validated target database as a deliberate deployment operation. | validated target database | production target database |
@@ -249,7 +249,8 @@ Importer contract:
 - Map carousel titles to reviewed plain display labels; specifically curate legacy carousel id 5 to 'About Models of Authority' and reject unreviewed HTML or overlong titles instead of truncating them.
 - Rewrite carousel URLs from legacy DigiPal search/page/manuscript/about routes to current frontend routes; translate legacy search view=list to view=table and keep explicit view parameters.
 - Leave obsolete legacy collection carousel links blank until a current collection route is approved.
-- Re-key keyword/category joins through current tagulous tables.
+- Use blog categories only for publication type flags.
+- Re-key Mezzanine generic blogpost keyword assignments through current tagulous tables.
 - Rewrite legacy /digipal/page/... publication hrefs to /manuscripts/{item_part_id}/images/{image_id}.
 - Map legacy graph query values through digipal_annotation.graph_id to annotations_graph.id.
 - Rewrite safe legacy /digipal/manuscripts/... hrefs to current manuscript and image text routes.

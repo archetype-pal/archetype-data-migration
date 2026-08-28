@@ -234,6 +234,7 @@ REQUIRED_LEGACY_TABLES: set[str] = {
     "blog_blogcategory",
     "blog_blogpost",
     "blog_blogpost_categories",
+    "django_content_type",
     "digipal_allograph",
     "digipal_allograph_aspects",
     "digipal_allographcomponent",
@@ -276,6 +277,8 @@ REQUIRED_LEGACY_TABLES: set[str] = {
     "digipal_text_textcontenttype",
     "digipal_text_textcontentxml",
     "digipal_text_textcontentxmlstatus",
+    "generic_assignedkeyword",
+    "generic_keyword",
 }
 
 REQUIRED_TARGET_TABLES: set[str] = {
@@ -487,9 +490,25 @@ SOURCE_COUNT_SQL: dict[str, dict[str, str]] = {
         ),
     },
     "publications": {
-        "publications_tagulous_publication_keywords": "SELECT count(*) FROM blog_blogcategory",
+        "publications_tagulous_publication_keywords": (
+            "SELECT count(*) FROM ("
+            "SELECT DISTINCT k.id "
+            "FROM generic_assignedkeyword ak "
+            "JOIN django_content_type ct ON ct.id = ak.content_type_id "
+            "JOIN generic_keyword k ON k.id = ak.keyword_id "
+            "JOIN blog_blogpost b ON b.id = ak.object_pk "
+            "WHERE ct.app_label = 'blog' AND ct.model = 'blogpost'"
+            ") x"
+        ),
         "publications_publication": "SELECT count(*) FROM blog_blogpost",
-        "publications_publication_keywords": "SELECT count(*) FROM blog_blogpost_categories",
+        "publications_publication_keywords": (
+            "SELECT count(*) "
+            "FROM generic_assignedkeyword ak "
+            "JOIN django_content_type ct ON ct.id = ak.content_type_id "
+            "JOIN generic_keyword k ON k.id = ak.keyword_id "
+            "JOIN blog_blogpost b ON b.id = ak.object_pk "
+            "WHERE ct.app_label = 'blog' AND ct.model = 'blogpost'"
+        ),
         "publications_carouselitem": "SELECT count(*) FROM digipal_carouselitem",
     },
     "target_only": {},
@@ -3085,18 +3104,21 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
     )
     link_rewrite_stats = PublicationLinkRewriteStats()
 
-    category_rows = fetch_rows(
+    keyword_rows = fetch_rows(
         legacy_conn,
         """
         SELECT
-          c.id,
-          c.title AS name,
-          c.slug,
-          count(bpc.id) AS count
-        FROM blog_blogcategory c
-        LEFT JOIN blog_blogpost_categories bpc ON bpc.blogcategory_id = c.id
-        GROUP BY c.id, c.title, c.slug
-        ORDER BY c.id
+          k.id,
+          k.title AS name,
+          k.slug,
+          count(ak.id) AS count
+        FROM generic_keyword k
+        JOIN generic_assignedkeyword ak ON ak.keyword_id = k.id
+        JOIN django_content_type ct ON ct.id = ak.content_type_id
+        JOIN blog_blogpost b ON b.id = ak.object_pk
+        WHERE ct.app_label = 'blog' AND ct.model = 'blogpost'
+        GROUP BY k.id, k.title, k.slug
+        ORDER BY k.id
         """,
     )
     rows_imported["publications_tagulous_publication_keywords"] = insert_rows(
@@ -3112,7 +3134,7 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
                 "slug": text_or_blank(row["slug"]),
                 "count": row["count"],
             }
-            for row in category_rows
+            for row in keyword_rows
         ],
     )
 
@@ -3208,9 +3230,16 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
     publication_keyword_rows = fetch_rows(
         legacy_conn,
         """
-        SELECT id, blogpost_id AS publication_id, blogcategory_id AS tagulous_publication_keywords_id
-        FROM blog_blogpost_categories
-        ORDER BY id
+        SELECT
+          ak.id,
+          ak.object_pk AS publication_id,
+          ak.keyword_id AS tagulous_publication_keywords_id
+        FROM generic_assignedkeyword ak
+        JOIN django_content_type ct ON ct.id = ak.content_type_id
+        JOIN generic_keyword k ON k.id = ak.keyword_id
+        JOIN blog_blogpost b ON b.id = ak.object_pk
+        WHERE ct.app_label = 'blog' AND ct.model = 'blogpost'
+        ORDER BY ak.id
         """,
     )
     rows_imported["publications_publication_keywords"] = insert_rows(
