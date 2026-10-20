@@ -679,12 +679,15 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         legacy_table=None,
         target_table="pages_page",
         category="pages",
-        strategy="intentionally not imported pending product decision",
+        strategy="legacy page tree mapped to menu headings and pages; slugs re-keyed",
         notes=(
-            "Legacy richtext pages are not imported until product decides whether page content is rebuilt manually "
-            "or mapped from the legacy source."
+            "The pages phase maps the Mezzanine page tree onto menu headings and flat pages "
+            "(archetype-pal/frontend#146). Counts cannot match: the target keeps its seeded pages, and legacy "
+            "fragments, forms, empty pages and links are not pages. Review the per-page dispositions, drafts and "
+            "redirects in the *-pages.json import artifact."
         ),
         strict_ids=False,
+        compare_counts=False,
         legacy_count_sql=(
             "SELECT count(*) FROM pages_page p JOIN pages_richtextpage r ON r.page_ptr_id = p.id "
             "WHERE p.status = 2 AND btrim(COALESCE(r.content, '')) <> ''"

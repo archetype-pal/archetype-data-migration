@@ -6,7 +6,7 @@ from typing import Any
 
 from migration_toolkit.audit import AuditReport, report_to_dict
 
-PROCEDURE_VERSION = "2026-07-28"
+PROCEDURE_VERSION = "2026-10-20"
 
 
 @dataclass(frozen=True)
@@ -430,7 +430,42 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         rollback="Delete publication keyword links, publications, and carousel rows for the phase or restore backup.",
     ),
     MigrationPhase(
-        key="10_target_only",
+        key="10_pages",
+        title="Pages And Menu Headings",
+        objective="Map the legacy Mezzanine page tree onto current menu headings, pages, and menu-bar order.",
+        source_tables=("pages_page", "pages_richtextpage"),
+        target_tables=("pages_menuheading", "pages_page", "common_appsettings"),
+        importer_contract=(
+            "Require a target migrated with the menu-heading backend (archetype-pal/frontend#146); refuse to "
+            "execute otherwise.",
+            "Load this instance's choices from --pages-config: its own legacy hosts, legacy link paths that map "
+            "to built-in sections, About slugs, and slug prefixes to skip.",
+            "Map the top-level About entry to the built-in About menu, legacy links to built-in features (search, "
+            "collection, lightbox, blog) to their section keys, and every other top-level entry with pages under "
+            "it to a menu heading.",
+            "Import a heading's own text (a top-level rich-text page with children) as the heading's first page.",
+            "Flatten deeper levels into their top-level heading, depth-first, keeping the legacy order.",
+            "Import legacy drafts, login-only pages, pages outside their legacy publish/expiry window, and pages "
+            "in neither the legacy top nor footer menu as Draft, so nothing hidden in the legacy site becomes public.",
+            "Skip fragments, forms, empty pages, and links inside headings, each with a recorded reason.",
+            "Derive page slugs from the legacy slug only, never overwrite a target page that already has the slug, "
+            "and reuse an existing heading with the same slug.",
+            "Rewrite links to migrated pages in page HTML to /about/{slug}; count other internal legacy links.",
+            "Put the legacy menu-bar order first in site_features.sectionOrder, then the target's remaining entries.",
+            "Write the plan (dispositions, drafts, redirects, link stats) to the *-pages.json artifact, on dry runs "
+            "too.",
+        ),
+        validation=(
+            "Editors review the *-pages.json plan from the dry run before executing.",
+            "Every published legacy menu page is a Published page under its heading, or has a recorded reason.",
+            "Headings appear in the site header in the legacy order, next to the built-in sections.",
+            "The redirects in the artifact are installed in the web server before the old domain is switched.",
+        ),
+        rollback="Delete the imported pages and menu headings by slug from the artifact, restore sectionOrder, or "
+        "restore the target backup.",
+    ),
+    MigrationPhase(
+        key="11_target_only",
         title="Target-Only Current Data",
         objective="Handle current-only tables without inventing unsupported legacy source mappings.",
         source_tables=("current-system sources only",),
@@ -440,7 +475,6 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "common_sitelabel",
             "manuscripts_historicalitemdateassessment",
             "manuscripts_statustransition",
-            "pages_page",
             "publications_event",
             "publications_partner",
             "worksets_workset",
@@ -448,13 +482,11 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         importer_contract=(
             "Treat common_sitelabel and common_appsettings as current-system seed/configuration data, not "
             "legacy-mapped content.",
-            "Document pages_page as intentionally not imported until product decides whether page content is "
-            "rebuilt manually or mapped from legacy richtext pages.",
             "Document publications_partner as intentionally not imported until product decides whether footer "
             "logos are rebuilt manually or mapped from the legacy footerlogos fragment.",
             "Treat publications_event as target-only current-system data while the current Events UI is unused; "
             "do not map legacy event pages into it.",
-            "Do not derive edit events, status transitions, worksets, pages, partners, or events from legacy source "
+            "Do not derive edit events, status transitions, worksets, partners, or events from legacy source "
             "data without a product decision.",
             "Create historical item date assessments only from approved current target metadata.",
             "Record skipped target-only tables in the manifest.",
@@ -466,7 +498,7 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         rollback="Delete current-only rows created during the phase or restore target backup.",
     ),
     MigrationPhase(
-        key="11_final_validation",
+        key="12_final_validation",
         title="Final Validation",
         objective="Prove the imported target is internally consistent and application-ready.",
         source_tables=("all mapped legacy tables",),
@@ -486,7 +518,7 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         rollback="Restore target backup if validation fails after import phases have committed.",
     ),
     MigrationPhase(
-        key="12_cutover",
+        key="13_cutover",
         title="Deployment Cutover",
         objective="Promote the validated target database as a deliberate deployment operation.",
         source_tables=("validated target database",),

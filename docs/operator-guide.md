@@ -1,6 +1,6 @@
 # Legacy Migration Operator Guide
 
-Procedure version: `2026-07-28`
+Procedure version: `2026-10-20`
 
 This is the operational wrapper around the database map, migration plan, and read-only audit. It is designed for deployment runbooks, safe trial imports, and final migration evidence.
 
@@ -80,9 +80,10 @@ Legacy `digipal_cataloguenumber` rows must point at an existing historical item 
 | `07_image_text` Image Text | Import non-empty transcription/translation XML as target image text rows. | digipal_text_textcontentxml | manuscripts_imagetext |
 | `08_annotations` Annotations And Graph Details | Import image/text/editorial annotations and graph through tables after symbols, hands, and images. | digipal_annotation, digipal_graph, digipal_idiograph, digipal_graphcomponent, digipal_graphcomponent_features, digipal_graph_aspects | annotations_graph, annotations_graphcomponent, annotations_graphcomponent_features, annotations_graph_positions |
 | `09_publications` Publications And Carousel | Import public CMS records represented in the current application. | blog_blogpost, blog_blogpost_categories, django_content_type, generic_assignedkeyword, generic_keyword, digipal_carouselitem | publications_publication, publications_publication_keywords, publications_carouselitem |
-| `10_target_only` Target-Only Current Data | Handle current-only tables without inventing unsupported legacy source mappings. | current-system sources only | common_appsettings, common_editevent, common_sitelabel, manuscripts_historicalitemdateassessment, manuscripts_statustransition, pages_page, publications_event, publications_partner, worksets_workset |
-| `11_final_validation` Final Validation | Prove the imported target is internally consistent and application-ready. | all mapped legacy tables | all target domain tables |
-| `12_cutover` Deployment Cutover | Promote the validated target database as a deliberate deployment operation. | validated target database | production target database |
+| `10_pages` Pages And Menu Headings | Map the legacy Mezzanine page tree onto current menu headings, pages, and menu-bar order. | pages_page, pages_richtextpage | pages_menuheading, pages_page, common_appsettings |
+| `11_target_only` Target-Only Current Data | Handle current-only tables without inventing unsupported legacy source mappings. | current-system sources only | common_appsettings, common_editevent, common_sitelabel, manuscripts_historicalitemdateassessment, manuscripts_statustransition, publications_event, publications_partner, worksets_workset |
+| `12_final_validation` Final Validation | Prove the imported target is internally consistent and application-ready. | all mapped legacy tables | all target domain tables |
+| `13_cutover` Deployment Cutover | Promote the validated target database as a deliberate deployment operation. | validated target database | production target database |
 
 ## Phase Details
 
@@ -280,16 +281,40 @@ Validation:
 
 Rollback: Delete publication keyword links, publications, and carousel rows for the phase or restore backup.
 
-### `10_target_only` Target-Only Current Data
+### `10_pages` Pages And Menu Headings
+
+Map the legacy Mezzanine page tree onto current menu headings, pages, and menu-bar order.
+
+Importer contract:
+- Require a target migrated with the menu-heading backend (archetype-pal/frontend#146); refuse to execute otherwise.
+- Load this instance's choices from --pages-config: its own legacy hosts, legacy link paths that map to built-in sections, About slugs, and slug prefixes to skip.
+- Map the top-level About entry to the built-in About menu, legacy links to built-in features (search, collection, lightbox, blog) to their section keys, and every other top-level entry with pages under it to a menu heading.
+- Import a heading's own text (a top-level rich-text page with children) as the heading's first page.
+- Flatten deeper levels into their top-level heading, depth-first, keeping the legacy order.
+- Import legacy drafts, login-only pages, pages outside their legacy publish/expiry window, and pages in neither the legacy top nor footer menu as Draft, so nothing hidden in the legacy site becomes public.
+- Skip fragments, forms, empty pages, and links inside headings, each with a recorded reason.
+- Derive page slugs from the legacy slug only, never overwrite a target page that already has the slug, and reuse an existing heading with the same slug.
+- Rewrite links to migrated pages in page HTML to /about/{slug}; count other internal legacy links.
+- Put the legacy menu-bar order first in site_features.sectionOrder, then the target's remaining entries.
+- Write the plan (dispositions, drafts, redirects, link stats) to the *-pages.json artifact, on dry runs too.
+
+Validation:
+- Editors review the *-pages.json plan from the dry run before executing.
+- Every published legacy menu page is a Published page under its heading, or has a recorded reason.
+- Headings appear in the site header in the legacy order, next to the built-in sections.
+- The redirects in the artifact are installed in the web server before the old domain is switched.
+
+Rollback: Delete the imported pages and menu headings by slug from the artifact, restore sectionOrder, or restore the target backup.
+
+### `11_target_only` Target-Only Current Data
 
 Handle current-only tables without inventing unsupported legacy source mappings.
 
 Importer contract:
 - Treat common_sitelabel and common_appsettings as current-system seed/configuration data, not legacy-mapped content.
-- Document pages_page as intentionally not imported until product decides whether page content is rebuilt manually or mapped from legacy richtext pages.
 - Document publications_partner as intentionally not imported until product decides whether footer logos are rebuilt manually or mapped from the legacy footerlogos fragment.
 - Treat publications_event as target-only current-system data while the current Events UI is unused; do not map legacy event pages into it.
-- Do not derive edit events, status transitions, worksets, pages, partners, or events from legacy source data without a product decision.
+- Do not derive edit events, status transitions, worksets, partners, or events from legacy source data without a product decision.
 - Create historical item date assessments only from approved current target metadata.
 - Record skipped target-only tables in the manifest.
 
@@ -299,7 +324,7 @@ Validation:
 
 Rollback: Delete current-only rows created during the phase or restore target backup.
 
-### `11_final_validation` Final Validation
+### `12_final_validation` Final Validation
 
 Prove the imported target is internally consistent and application-ready.
 
@@ -317,7 +342,7 @@ Validation:
 
 Rollback: Restore target backup if validation fails after import phases have committed.
 
-### `12_cutover` Deployment Cutover
+### `13_cutover` Deployment Cutover
 
 Promote the validated target database as a deliberate deployment operation.
 
