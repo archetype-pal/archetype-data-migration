@@ -1,11 +1,14 @@
+from datetime import UTC, datetime
 import json
 
 import pytest
 
 from migration_toolkit.pages import (
+    DRAFT_EXPIRED,
     DRAFT_LEGACY_DRAFT,
     DRAFT_LOGIN_REQUIRED,
     DRAFT_NOT_IN_MENU,
+    DRAFT_NOT_YET_PUBLISHED,
     SKIP_EMPTY,
     SKIP_FORM,
     SKIP_FRAGMENT,
@@ -35,6 +38,8 @@ def row(page_id, title, slug, *, parent=None, order=0, model="richtextpage", con
         "in_menus": extra.get("in_menus", "1"),
         "content": content if model == "richtextpage" else None,
         "created": None,
+        "publish_date": extra.get("publish_date"),
+        "expiry_date": extra.get("expiry_date"),
     }
 
 
@@ -154,6 +159,33 @@ def test_footer_only_page_becomes_a_published_quick_link_but_top_menu_pages_do_n
     assert pages[67].include_in_quick_link is True
     # In the top menu too ("1,2,3"): reachable from the header already.
     assert pages[75].include_in_quick_link is False
+
+
+def test_every_legacy_row_has_exactly_one_disposition():
+    result = plan()
+    paths = {r["id"]: "/" + r["slug"].strip("/") + "/" for r in DIGIPAL_ROWS}
+    mapped = [page_id for page_id, path in paths.items() if path in result.mapped_links]
+    dispositions = [page.legacy_id for page in result.pages] + [page.legacy_id for page in result.skipped] + mapped
+
+    assert sorted(dispositions) == sorted(paths)
+    assert result.mapped_links["/about/"] == "about"
+
+
+def test_pages_outside_their_legacy_publish_window_are_imported_as_drafts():
+    now = datetime(2026, 10, 20, tzinfo=UTC)
+    about = row(63, "About", "about", model="link")
+    rows = [
+        about,
+        row(1, "Expired", "about/expired", parent=63, expiry_date=datetime(2020, 1, 1, tzinfo=UTC)),
+        row(2, "Scheduled", "about/scheduled", parent=63, publish_date=datetime(2030, 1, 1)),
+        row(3, "Current", "about/current", parent=63, publish_date=datetime(2020, 1, 1, tzinfo=UTC)),
+    ]
+
+    pages = pages_by_legacy_id(plan_pages(rows, now=now))
+
+    assert pages[1].draft_reasons == [DRAFT_EXPIRED]
+    assert pages[2].draft_reasons == [DRAFT_NOT_YET_PUBLISHED]
+    assert pages[3].status == "Published"
 
 
 def test_fragments_forms_and_unmapped_links_are_skipped_with_reasons():

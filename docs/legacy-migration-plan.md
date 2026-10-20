@@ -287,8 +287,10 @@ Mapping:
 - Legacy links to built-in features set the position of that built-in section.
   The legacy menu-bar order goes first in `site_features.sectionOrder`; the
   target's other entries follow.
-- Legacy drafts, login-only pages and pages in neither the top nor the footer
-  menu are imported as Draft. Footer-only pages become footer quick links.
+- Legacy drafts, login-only pages, pages outside their publish/expiry window
+  and pages in neither the top nor the footer menu are imported as Draft, so no
+  page that was hidden in the legacy site becomes public. Footer-only pages
+  become footer quick links.
 - Fragments, forms, empty pages and links inside headings are skipped with a
   recorded reason.
 - Page slugs come from the legacy slug alone (last segment; the full path on a

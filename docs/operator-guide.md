@@ -291,7 +291,7 @@ Importer contract:
 - Map the top-level About entry to the built-in About menu, legacy links to built-in features (search, collection, lightbox, blog) to their section keys, and every other top-level entry with pages under it to a menu heading.
 - Import a heading's own text (a top-level rich-text page with children) as the heading's first page.
 - Flatten deeper levels into their top-level heading, depth-first, keeping the legacy order.
-- Import legacy drafts, login-only pages, and pages missing from the legacy top menu as Draft.
+- Import legacy drafts, login-only pages, pages outside their legacy publish/expiry window, and pages in neither the legacy top nor footer menu as Draft, so nothing hidden in the legacy site becomes public.
 - Skip fragments, forms, empty pages, and links inside headings, each with a recorded reason.
 - Derive page slugs from the legacy slug only, never overwrite a target page that already has the slug, and reuse an existing heading with the same slug.
 - Rewrite links to migrated pages in page HTML to /about/{slug}; count other internal legacy links.

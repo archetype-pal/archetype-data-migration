@@ -16,6 +16,7 @@ from __future__ import annotations
 
 from collections.abc import Iterable, Mapping
 from dataclasses import dataclass, field
+from datetime import UTC, datetime
 from html import unescape as html_unescape
 import json
 from pathlib import Path
@@ -70,6 +71,8 @@ SKIP_TARGET_EXISTS = "the target already has a page with this slug"
 DRAFT_LEGACY_DRAFT = "draft in the legacy site"
 DRAFT_LOGIN_REQUIRED = "login required in the legacy site"
 DRAFT_NOT_IN_MENU = "not shown in the legacy top or footer menu"
+DRAFT_NOT_YET_PUBLISHED = "publish date still in the future in the legacy site"
+DRAFT_EXPIRED = "expired in the legacy site"
 
 _TAG_RE = re.compile(r"<[^>]+>")
 _SLUG_INVALID_RE = re.compile(r"[^a-z0-9]+")
@@ -156,6 +159,8 @@ class LegacyPage:
     in_menus: frozenset[str]
     content: str | None = None
     created: Any = None
+    publish_date: datetime | None = None
+    expiry_date: datetime | None = None
 
     @classmethod
     def from_row(cls, row: Mapping[str, Any]) -> LegacyPage:
@@ -171,6 +176,8 @@ class LegacyPage:
             in_menus=parse_in_menus(row.get("in_menus")),
             content=row.get("content"),
             created=row.get("created"),
+            publish_date=row.get("publish_date"),
+            expiry_date=row.get("expiry_date"),
         )
 
     @property
@@ -251,7 +258,7 @@ class PagesPlan:
         if drafts:
             warnings.append(
                 f"{len(drafts)} legacy page(s) imported as Draft for editorial review "
-                "(legacy draft, login-only, or in neither the legacy top nor footer menu)."
+                "(legacy draft, login-only, expired or scheduled, or in neither the legacy top nor footer menu)."
             )
         unresolved = sum(self.link_stats.unresolved_links.values())
         if unresolved:
@@ -306,6 +313,7 @@ def plan_pages(
     config: PagesConfig | None = None,
     *,
     target_page_slugs: Iterable[str] = (),
+    now: datetime | None = None,
 ) -> PagesPlan:
     """Map the legacy page tree onto menu headings, pages and a menu-bar order.
 
@@ -323,7 +331,7 @@ def plan_pages(
     for siblings in children.values():
         siblings.sort(key=lambda page: (page.order, page.id))
 
-    builder = _PlanBuilder(config, children, frozenset(target_page_slugs))
+    builder = _PlanBuilder(config, children, frozenset(target_page_slugs), now or datetime.now(tz=UTC))
     for top in children.get(None, []):
         builder.add_top_level(top)
     return builder.finish()
@@ -335,10 +343,12 @@ class _PlanBuilder:
         config: PagesConfig,
         children: dict[int | None, list[LegacyPage]],
         target_page_slugs: frozenset[str],
+        now: datetime,
     ) -> None:
         self.config = config
         self.children = children
         self.target_page_slugs = target_page_slugs
+        self.now = now
         self.builtin_links = sorted(config.builtin_links, key=lambda item: len(item[0]), reverse=True)
         self.about_slugs = {slug.strip("/") for slug in config.about_slugs}
         self.headings: list[PlannedHeading] = []
@@ -358,6 +368,8 @@ class _PlanBuilder:
 
         if top.slug.strip("/") in self.about_slugs:
             self._add_nav_key(ABOUT_NAV_KEY)
+            if top.content_model == "link":
+                self.mapped_links[top.path] = ABOUT_NAV_KEY
             if top.content_model == "richtextpage":
                 self._add_page(top, heading_slug=None, ancestors=())
             self._add_descendants(top, heading_slug=None, ancestors=(top,))
@@ -449,6 +461,12 @@ class _PlanBuilder:
             draft_reasons.append(DRAFT_LEGACY_DRAFT)
         if any(node.login_required for node in chain):
             draft_reasons.append(DRAFT_LOGIN_REQUIRED)
+        # Mezzanine hides a page outside its publish/expiry window; publishing
+        # it here would make it public again.
+        if any(node.publish_date and _aware(node.publish_date) > self.now for node in chain):
+            draft_reasons.append(DRAFT_NOT_YET_PUBLISHED)
+        if any(node.expiry_date and _aware(node.expiry_date) < self.now for node in chain):
+            draft_reasons.append(DRAFT_EXPIRED)
         # Mezzanine shows a page in the top menu only if its ancestors are
         # there too; the footer menu lists the page on its own.
         in_top_menu = all(LEGACY_TOP_MENU in node.in_menus for node in chain)
@@ -598,6 +616,10 @@ def merge_nav_order(current: Iterable[str], planned: Iterable[str]) -> list[str]
         if key not in merged:
             merged.append(key)
     return merged
+
+
+def _aware(value: datetime) -> datetime:
+    return value if value.tzinfo else value.replace(tzinfo=UTC)
 
 
 def _last_segment(slug: str) -> str:

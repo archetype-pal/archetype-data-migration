@@ -544,6 +544,8 @@ SELECT
   p.login_required,
   p.in_menus,
   COALESCE(p.publish_date, p.created) AS created,
+  p.publish_date,
+  p.expiry_date,
   r.content
 FROM pages_page p
 LEFT JOIN pages_richtextpage r ON r.page_ptr_id = p.id
@@ -3449,13 +3451,17 @@ def import_pages(ctx: ImportContext) -> dict[str, int]:
         )
         rows_imported["common_appsettings"] = 0
     else:
-        merged = merge_nav_order(json.loads(stored_order), plan.nav_order)
-        with target_conn.cursor() as cursor:
-            cursor.execute(
-                "UPDATE common_appsettings SET value = %s, updated_at = now() WHERE key = %s",
-                (json.dumps(merged), SITE_FEATURES_SECTION_ORDER_KEY),
-            )
-        rows_imported["common_appsettings"] = 1
+        current = json.loads(stored_order)
+        merged = merge_nav_order(current, plan.nav_order)
+        rows_imported["common_appsettings"] = 0
+        # A re-run leaves the row (and its updated_at) alone.
+        if merged != current:
+            with target_conn.cursor() as cursor:
+                cursor.execute(
+                    "UPDATE common_appsettings SET value = %s, updated_at = now() WHERE key = %s",
+                    (json.dumps(merged), SITE_FEATURES_SECTION_ORDER_KEY),
+                )
+            rows_imported["common_appsettings"] = 1
     return rows_imported
 
 
