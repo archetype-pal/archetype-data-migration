@@ -13,6 +13,7 @@ from urllib.parse import parse_qs, parse_qsl, quote_plus, urlparse
 import psycopg
 from psycopg import Connection
 from psycopg.rows import dict_row
+from psycopg.types.json import Jsonb
 
 from migration_toolkit.audit import (
     PUBLICATION_AUTHOR_POLICIES,
@@ -38,6 +39,14 @@ from migration_toolkit.backend_contract import (
     load_backend_contract,
 )
 from migration_toolkit.carousel import CarouselImagePathError, CarouselTitleError, carousel_image_path, carousel_title
+from migration_toolkit.pages import (
+    PagesConfig,
+    PagesConfigError,
+    PagesPlan,
+    load_pages_config,
+    merge_nav_order,
+    plan_pages,
+)
 
 
 class LegacyMigrationImportError(RuntimeError):
@@ -226,6 +235,7 @@ PHASE_ORDER: tuple[str, ...] = (
     "image_text",
     "annotations",
     "publications",
+    "pages",
     "target_only",
 )
 
@@ -242,6 +252,8 @@ REQUIRED_LEGACY_TABLES: set[str] = {
     "digipal_annotation",
     "digipal_aspect",
     "digipal_carouselitem",
+    "pages_page",
+    "pages_richtextpage",
     "digipal_cataloguenumber",
     "digipal_character",
     "digipal_characterform",
@@ -413,6 +425,9 @@ PHASE_TARGET_TABLES: dict[str, tuple[str, ...]] = {
         "publications_publication_keywords",
         "publications_carouselitem",
     ),
+    # pages_page holds rows the backend seeds, so this phase never requires an
+    # empty table: it inserts by slug and skips slugs the target already has.
+    "pages": (),
     "target_only": (),
 }
 
@@ -511,8 +526,34 @@ SOURCE_COUNT_SQL: dict[str, dict[str, str]] = {
         ),
         "publications_carouselitem": "SELECT count(*) FROM digipal_carouselitem",
     },
+    "pages": {
+        "pages_page": "SELECT count(*) FROM pages_page",
+    },
     "target_only": {},
 }
+
+LEGACY_PAGES_SQL = """
+SELECT
+  p.id,
+  p.parent_id,
+  p._order AS sort_order,
+  p.title,
+  p.slug,
+  p.content_model,
+  p.status,
+  p.login_required,
+  p.in_menus,
+  COALESCE(p.publish_date, p.created) AS created,
+  r.content
+FROM pages_page p
+LEFT JOIN pages_richtextpage r ON r.page_ptr_id = p.id
+ORDER BY p.id
+"""
+SITE_FEATURES_SECTION_ORDER_KEY = "site_features.sectionOrder"
+PAGES_SCHEMA_MISSING_MESSAGE = (
+    "The target has no menu headings (pages_menuheading / pages_page.menu_heading_id); the pages phase needs the "
+    "backend from archetype-pal/frontend#146. Migrate the target with that backend, or leave out --phase pages."
+)
 
 
 @dataclass(frozen=True)
@@ -531,6 +572,7 @@ class ImportOptions:
     skip_post_audit: bool = False
     manifest_path: Path | None = None
     backend_root: Path | None = None
+    pages_config_path: Path | None = None
 
 
 @dataclass
@@ -583,12 +625,14 @@ class ImportContext:
         options: ImportOptions,
         backend_contract: BackendContract,
         publication_author_assignments: dict[int, int] | None = None,
+        pages_config: PagesConfig | None = None,
     ) -> None:
         self.legacy_conn = legacy_conn
         self.target_conn = target_conn
         self.options = options
         self.backend_contract = backend_contract
         self.publication_author_assignments = publication_author_assignments or {}
+        self.pages_config = pages_config or PagesConfig()
         self.phase_warnings: list[str] = []
 
 
@@ -3288,6 +3332,133 @@ def import_publications(ctx: ImportContext) -> dict[str, int]:
     return rows_imported
 
 
+def target_supports_menu_headings(conn: Connection[Any]) -> bool:
+    """Whether the target schema has menu headings (backend for archetype-pal/frontend#146)."""
+    return bool(
+        scalar(
+            conn,
+            """
+            SELECT EXISTS (
+              SELECT 1 FROM information_schema.columns
+              WHERE table_schema = 'public' AND table_name = 'pages_page' AND column_name = 'menu_heading_id'
+            ) AND EXISTS (
+              SELECT 1 FROM information_schema.tables
+              WHERE table_schema = 'public' AND table_name = 'pages_menuheading'
+            )
+            """,
+        )
+    )
+
+
+def legacy_pages_plan(legacy_conn: Connection[Any], target_conn: Connection[Any], config: PagesConfig) -> PagesPlan:
+    target_page_slugs = [row["slug"] for row in fetch_rows(target_conn, "SELECT slug FROM pages_page")]
+    return plan_pages(fetch_rows(legacy_conn, LEGACY_PAGES_SQL), config, target_page_slugs=target_page_slugs)
+
+
+def default_pages_output_path(manifest_path: Path | None) -> Path | None:
+    if manifest_path is None:
+        return None
+    return manifest_path.with_name(f"{manifest_path.stem}-pages.json")
+
+
+def write_pages_export(
+    path: Path,
+    *,
+    legacy_database: str,
+    target_database: str,
+    config: PagesConfig,
+    plan: PagesPlan,
+) -> dict[str, Any]:
+    artifact = {
+        "artifact_type": "legacy_pages_plan",
+        "generated_at": utc_now_iso(),
+        "legacy_database": legacy_database,
+        "target_database": target_database,
+        "source_table": "pages_page",
+        "target_tables": ["pages_menuheading", "pages_page", "common_appsettings"],
+        "config": config.to_dict(),
+        **plan.to_dict(),
+    }
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(artifact, indent=2, sort_keys=True, default=str) + "\n", encoding="utf-8")
+    return artifact
+
+
+def import_pages(ctx: ImportContext) -> dict[str, int]:
+    target_conn = ctx.target_conn
+    plan = legacy_pages_plan(ctx.legacy_conn, target_conn, ctx.pages_config)
+    rows_imported: dict[str, int] = {}
+
+    # Headings are matched by slug: an existing heading (an earlier run, or one
+    # an admin created) is reused as is, not retitled.
+    existing_heading_slugs = {row["slug"] for row in fetch_rows(target_conn, "SELECT slug FROM pages_menuheading")}
+    rows_imported["pages_menuheading"] = insert_rows(
+        target_conn,
+        """
+        INSERT INTO pages_menuheading (slug, title, created_at, updated_at)
+        VALUES (%(slug)s, %(title)s, now(), now())
+        """,
+        [
+            {"slug": heading.slug, "title": Jsonb({"en": heading.title})}
+            for heading in plan.headings
+            if heading.slug not in existing_heading_slugs
+        ],
+    )
+    heading_ids = {
+        row["slug"]: row["id"]
+        for row in fetch_rows(
+            target_conn,
+            "SELECT id, slug FROM pages_menuheading WHERE slug = ANY(%s)",
+            ([heading.slug for heading in plan.headings],),
+        )
+    }
+
+    rows_imported["pages_page"] = insert_rows(
+        target_conn,
+        """
+        INSERT INTO pages_page
+          (slug, title, content, status, menu_heading_id, "order", include_in_quick_link, created_at, updated_at)
+        VALUES
+          (%(slug)s, %(title)s, %(content)s, %(status)s, %(menu_heading_id)s, %(order)s,
+           %(include_in_quick_link)s, COALESCE(%(created)s, now()), now())
+        """,
+        [
+            {
+                "slug": page.slug,
+                "title": Jsonb({"en": page.title}),
+                "content": Jsonb({"en": page.content}),
+                "status": page.status,
+                "menu_heading_id": heading_ids[page.heading_slug] if page.heading_slug else None,
+                "order": page.order,
+                "include_in_quick_link": page.include_in_quick_link,
+                "created": page.created,
+            }
+            for page in plan.pages
+        ],
+    )
+
+    stored_order = optional_scalar(
+        target_conn, "SELECT value FROM common_appsettings WHERE key = %s", (SITE_FEATURES_SECTION_ORDER_KEY,)
+    )
+    if stored_order is None:
+        # Creating the row alone would make the site-features endpoint serve a
+        # config with only sectionOrder; leave it to the admin instead.
+        ctx.phase_warnings.append(
+            f"No {SITE_FEATURES_SECTION_ORDER_KEY} setting in the target; the legacy menu-bar order was not applied. "
+            f"Set it in Site Features: {', '.join(plan.nav_order)}."
+        )
+        rows_imported["common_appsettings"] = 0
+    else:
+        merged = merge_nav_order(json.loads(stored_order), plan.nav_order)
+        with target_conn.cursor() as cursor:
+            cursor.execute(
+                "UPDATE common_appsettings SET value = %s, updated_at = now() WHERE key = %s",
+                (json.dumps(merged), SITE_FEATURES_SECTION_ORDER_KEY),
+            )
+        rows_imported["common_appsettings"] = 1
+    return rows_imported
+
+
 def import_target_only(_ctx: ImportContext) -> dict[str, int]:
     return {}
 
@@ -3300,6 +3471,7 @@ PHASE_IMPORTERS = {
     "image_text": import_image_text,
     "annotations": import_annotations,
     "publications": import_publications,
+    "pages": import_pages,
     "target_only": import_target_only,
 }
 
@@ -3460,6 +3632,17 @@ def run_import(options: ImportOptions) -> ImportReport:
                 publication_author_policy_report["message"] = str(exc)
                 if options.execute:
                     execute_blockers.append(str(exc))
+        pages_config = PagesConfig()
+        pages_plan: PagesPlan | None = None
+        if "pages" in phases:
+            try:
+                pages_config = load_pages_config(options.pages_config_path)
+            except PagesConfigError as exc:
+                raise LegacyMigrationImportError(str(exc)) from exc
+            if target_supports_menu_headings(target_conn):
+                pages_plan = legacy_pages_plan(legacy_conn, target_conn, pages_config)
+            else:
+                execute_blockers.append(PAGES_SCHEMA_MISSING_MESSAGE)
         if options.execute and execute_blockers:
             formatted = "\n- ".join(execute_blockers)
             raise LegacyMigrationImportError(
@@ -3478,6 +3661,7 @@ def run_import(options: ImportOptions) -> ImportReport:
             options,
             backend_contract,
             publication_author_assignments=publication_author_assignments,
+            pages_config=pages_config,
         )
         phase_results: list[PhaseResult] = []
 
@@ -3495,6 +3679,12 @@ def run_import(options: ImportOptions) -> ImportReport:
 
             if phase == "target_only":
                 warnings.append("No target-only data is imported from the legacy source database by design.")
+            if phase == "pages":
+                if pages_plan is None:
+                    warnings.append(PAGES_SCHEMA_MISSING_MESSAGE)
+                else:
+                    skipped["pages_page"] = len(pages_plan.skipped)
+                    warnings.extend(pages_plan.warnings())
             if phase == "manuscripts":
                 if options.unsupported_description_policy == DESCRIPTION_POLICY_SKIP:
                     if skipped_description_rows:
@@ -3571,6 +3761,24 @@ def run_import(options: ImportOptions) -> ImportReport:
                     "path": str(unsupported_description_artifact_path),
                     "row_count": artifact["row_count"],
                     "reason_counts": artifact["reason_counts"],
+                }
+            )
+        pages_artifact_path = default_pages_output_path(options.manifest_path)
+        if pages_plan is not None and pages_artifact_path:
+            # Written on dry runs too: it is the plan editors review before executing.
+            artifact = write_pages_export(
+                pages_artifact_path,
+                legacy_database=legacy_db,
+                target_database=target_db,
+                config=pages_config,
+                plan=pages_plan,
+            )
+            generated_artifacts.append(
+                {
+                    "type": artifact["artifact_type"],
+                    "path": str(pages_artifact_path),
+                    "row_count": len(pages_plan.pages),
+                    "reason_counts": artifact["skipped_reason_counts"],
                 }
             )
         if skipped_catalogue_number_rows and unsupported_catalogue_number_artifact_path:

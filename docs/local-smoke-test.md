@@ -137,6 +137,8 @@ Expected result:
 - `image_text`: `ok`
 - `annotations`: `ok`
 - `publications`: `ok`
+- `pages`: `warn` listing skipped pages, drafts and unresolved links; review the
+  `*-pages.json` artifact
 - `target_only`: `warn` by design
 
 The author username supplied to `--publication-author-username` must already

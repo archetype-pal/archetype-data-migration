@@ -394,7 +394,8 @@ def test_current_content_decision_tables_are_audited():
     assert "generic_keyword" in str(mappings["publication_keyword_terms"].legacy_count_sql)
     assert mappings["site_labels"].strategy == "target-only current-system seed data"
     assert mappings["app_settings"].strategy == "target-only current-system configuration"
-    assert mappings["pages"].strategy == "intentionally not imported pending product decision"
+    assert mappings["pages"].strategy == "legacy page tree mapped to menu headings and pages; slugs re-keyed"
+    assert mappings["pages"].compare_counts is False
     assert mappings["partners"].strategy == "intentionally not imported pending product decision"
     assert mappings["events"].strategy == "target-only current-system data; current frontend UI unused"
     assert mappings["site_labels"].compare_counts is False

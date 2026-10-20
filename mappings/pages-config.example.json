@@ -1,0 +1,13 @@
+{
+  "instance_hosts": ["www.digipal.eu", "digipal.eu"],
+  "builtin_links": {
+    "/digipal/search": "search",
+    "/digipal/collection": "collection",
+    "/lightbox": "lightbox",
+    "/blog/category/news": "news",
+    "/blog/category/blog": "blogs",
+    "/blog": "blogs"
+  },
+  "about_slugs": ["about"],
+  "skip_slug_prefixes": ["fragments", "doc"]
+}

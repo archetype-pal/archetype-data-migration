@@ -262,6 +262,50 @@ Current counts:
 - Backend migration `0024_remove_imagetext_content_dpt_legacy` removed the
   temporary `content_dpt_legacy` retention column after TEI cutover.
 
+### Pages And Menu Headings
+
+The `pages` phase maps the legacy Mezzanine page tree (`pages_page`,
+`pages_richtextpage`) onto the current menu headings and pages
+(archetype-pal/frontend#146). It needs a target migrated with the menu-heading
+backend and refuses to execute otherwise. The rules live in
+`migration_toolkit/pages.py`; the per-instance choices go in a `--pages-config`
+file (see `mappings/pages-config.example.json`):
+
+- `instance_hosts`: the legacy site's own hosts. Absolute links to them count
+  as internal. They differ per instance, so there is no default.
+- `builtin_links`: legacy link paths that become built-in menu sections
+  (`/digipal/search` → `search`, `/blog/category/news` → `news`, …).
+- `about_slugs`: the top-level entry that is the built-in About menu.
+- `skip_slug_prefixes`: subtrees that are not pages (`fragments` by default).
+
+Mapping:
+
+- A top-level entry with pages under it becomes a menu heading. Its own text,
+  if any (DigiPal's Help overview), becomes the heading's first page.
+- Deeper levels are flattened into their top-level heading, depth-first, in
+  the legacy order. A lone top-level page joins About.
+- Legacy links to built-in features set the position of that built-in section.
+  The legacy menu-bar order goes first in `site_features.sectionOrder`; the
+  target's other entries follow.
+- Legacy drafts, login-only pages and pages in neither the top nor the footer
+  menu are imported as Draft. Footer-only pages become footer quick links.
+- Fragments, forms, empty pages and links inside headings are skipped with a
+  recorded reason.
+- Page slugs come from the legacy slug alone (last segment; the full path on a
+  clash). A slug the target already has is skipped, never overwritten, so the
+  phase can be re-run and the backend's seeded pages are kept.
+- Links to migrated pages inside page HTML are rewritten to `/about/{slug}`.
+  Other internal links and legacy asset paths are counted for review.
+
+The phase writes its full plan to a `*-pages.json` artifact next to the
+manifest, on dry runs too: every legacy page's disposition, draft reasons, the
+heading layout, the menu-bar order, an old-path → new-path redirect list for
+the web server, and the link statistics. Editors review it before executing.
+
+Known gaps, pending decisions on frontend#146: a heading cannot carry its own
+content (it moves to a first page), and a heading cannot hold links (they are
+skipped).
+
 ### Current-Only Tables And Metadata
 
 These target structures are valid target data but not legacy imports:
@@ -277,9 +321,6 @@ These target structures are valid target data but not legacy imports:
 - `manuscripts_historicalitemdateassessment`: 22 rows in the current snapshot,
   generated from current target date metadata.
 - `manuscripts_statustransition`: 0 rows in the current snapshot.
-- `pages_page`: 3 rows in the current snapshot, seeded as current placeholders.
-  Legacy `pages_page`/`pages_richtextpage` content is intentionally not imported
-  until product decides whether pages are rebuilt manually or mapped.
 - `publications_event`: 0 rows in the current snapshot. Treat as target-only
   current-system data while the current Events UI is unused. Legacy event pages
   are intentionally not imported or expected by the migration.
