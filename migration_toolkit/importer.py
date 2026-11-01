@@ -310,6 +310,7 @@ REQUIRED_TARGET_TABLES: set[str] = {
     "publications_tagulous_publication_keywords",
     "scribes_hand",
     "scribes_hand_item_part_images",
+    "scribes_handdescription",
     "scribes_scribe",
     "scribes_script",
     "symbols_structure_allograph",
@@ -339,6 +340,7 @@ TARGET_DOMAIN_TABLES: tuple[str, ...] = (
     "scribes_scribe",
     "scribes_script",
     "scribes_hand",
+    "scribes_handdescription",
     "scribes_hand_item_part_images",
     "symbols_structure_character",
     "symbols_structure_allograph",
@@ -398,6 +400,7 @@ PHASE_TARGET_TABLES: dict[str, tuple[str, ...]] = {
         "scribes_scribe",
         "scribes_script",
         "scribes_hand",
+        "scribes_handdescription",
         "scribes_hand_item_part_images",
     ),
     "image_text": ("manuscripts_imagetext",),
@@ -455,6 +458,9 @@ SOURCE_COUNT_SQL: dict[str, dict[str, str]] = {
         "scribes_scribe": "SELECT count(*) + 1 FROM digipal_scribe",
         "scribes_script": "SELECT count(*) FROM digipal_script",
         "scribes_hand": "SELECT count(*) FROM digipal_hand",
+        "scribes_handdescription": (
+            "SELECT count(*) FROM digipal_hand WHERE concat_ws('', display_note, internal_note, comments) ~ '\\S'"
+        ),
         "scribes_hand_item_part_images": "SELECT count(*) FROM digipal_hand_images",
     },
     "image_text": {
@@ -2835,6 +2841,7 @@ def import_scribes_hands(ctx: ImportContext) -> dict[str, int]:
         """,
     )
     hands = []
+    hand_descriptions = []
     for row in hand_rows:
         description_parts = [
             str(value).strip()
@@ -2852,22 +2859,28 @@ def import_scribes_hands(ctx: ImportContext) -> dict[str, int]:
                 "priority": 0,
                 "is_default": False,
                 "date_id": row["assigned_date_id"],
-                "place": "",
-                "description": "\n\n".join(description_parts),
             }
         )
+        if description_parts:
+            hand_descriptions.append({"hand_id": row["id"], "content": "\n\n".join(description_parts)})
     rows_imported["scribes_hand"] = insert_rows(
         target_conn,
         """
-        INSERT INTO scribes_hand (
-          id, scribe_id, item_part_id, script_id, name, num, priority, is_default, date_id, place, description
-        )
+        INSERT INTO scribes_hand (id, scribe_id, item_part_id, script_id, name, num, priority, is_default, date_id)
         VALUES (
           %(id)s, %(scribe_id)s, %(item_part_id)s, %(script_id)s, %(name)s, %(num)s, %(priority)s,
-          %(is_default)s, %(date_id)s, %(place)s, %(description)s
+          %(is_default)s, %(date_id)s
         )
         """,
         hands,
+    )
+    rows_imported["scribes_handdescription"] = insert_rows(
+        target_conn,
+        """
+        INSERT INTO scribes_handdescription (hand_id, content)
+        VALUES (%(hand_id)s, %(content)s)
+        """,
+        hand_descriptions,
     )
 
     hand_image_rows = fetch_rows(

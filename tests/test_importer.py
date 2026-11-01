@@ -39,6 +39,7 @@ from migration_toolkit.importer import (
     import_image_text,
     import_publications,
     import_report_to_dict,
+    import_scribes_hands,
     legacy_image_path,
     legacy_publication_url_rewrite_map,
     parse_annotation,
@@ -452,6 +453,89 @@ def test_import_publications_imports_generic_keywords_not_category_labels(monkey
     assert "blog_blogpost_categories" not in fetch_queries[0]
     assert "generic_assignedkeyword" in fetch_queries[2]
     assert "blog_blogpost_categories" not in fetch_queries[2]
+
+
+def test_import_scribes_hands_writes_hand_descriptions_to_their_own_table(monkeypatch):
+    fetch_responses = iter(
+        [
+            [{"id": 1, "name": "Scribe"}],
+            [],
+            [
+                {
+                    "id": 10,
+                    "item_part_id": 5,
+                    "scribe_id": 1,
+                    "script_id": None,
+                    "assigned_date_id": None,
+                    "assigned_place_id": 3,
+                    "label": "Main hand",
+                    "display_label": None,
+                    "internal_note": " Checked ",
+                    "display_note": "Upright",
+                    "comments": None,
+                    "num": 1,
+                },
+                {
+                    "id": 11,
+                    "item_part_id": 5,
+                    "scribe_id": 1,
+                    "script_id": None,
+                    "assigned_date_id": None,
+                    "assigned_place_id": None,
+                    "label": "Second hand",
+                    "display_label": None,
+                    "internal_note": "",
+                    "display_note": "  ",
+                    "comments": None,
+                    "num": 2,
+                },
+            ],
+            [],
+        ]
+    )
+    inserted = {}
+
+    def fake_insert_rows(_conn, query, rows):
+        table = query.split("INSERT INTO ", 1)[1].split()[0]
+        inserted[table] = (query, list(rows))
+        return len(inserted[table][1])
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", lambda *_args, **_kwargs: next(fetch_responses))
+    monkeypatch.setattr("migration_toolkit.importer.insert_rows", fake_insert_rows)
+
+    ctx = ImportContext(
+        legacy_conn=None,
+        target_conn=None,
+        options=ImportOptions(),
+        backend_contract=BackendContract(
+            historical_item_type_labels=("Charter",),
+            historical_item_type_values=frozenset({"charter"}),
+            source="test",
+        ),
+    )
+
+    result = import_scribes_hands(ctx)
+
+    hand_query, hands = inserted["scribes_hand"]
+    hand_columns = {column.strip() for column in hand_query.split("(", 1)[1].split(")", 1)[0].split(",")}
+    assert hand_columns <= {
+        "id",
+        "name",
+        "item_part_id",
+        "scribe_id",
+        "script_id",
+        "date_id",
+        "is_default",
+        "num",
+        "priority",
+        "place_id",
+    }
+    assert [hand["id"] for hand in hands] == [10, 11]
+    assert all("place" not in hand and "description" not in hand for hand in hands)
+    assert inserted["scribes_handdescription"][1] == [{"hand_id": 10, "content": "Upright\n\nChecked"}]
+    assert result["scribes_handdescription"] == 1
+    assert "scribes_handdescription" in PHASE_TARGET_TABLES["scribes_hands"]
+    assert "scribes_handdescription" in REQUIRED_TARGET_TABLES
 
 
 def test_character_type_profile_records_reviewed_types_and_invalid_rows(monkeypatch):

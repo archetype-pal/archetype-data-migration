@@ -485,7 +485,10 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         target_table="scribes_hand",
         category="scribes",
         strategy="id-preserved transformed fields",
-        notes="Legacy labels/display notes collapse into target name/place/description fields.",
+        notes=(
+            "Legacy labels collapse into the target name; display notes, internal notes and comments become one "
+            "hand description."
+        ),
     ),
     EntityMapping(
         key="hand_images",

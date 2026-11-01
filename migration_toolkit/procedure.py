@@ -300,7 +300,13 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         title="Scribes And Hands",
         objective="Import scribes, hands, and image-hand links after item parts and images exist.",
         source_tables=("digipal_scribe", "digipal_script", "digipal_hand", "digipal_hand_images"),
-        target_tables=("scribes_scribe", "scribes_script", "scribes_hand", "scribes_hand_item_part_images"),
+        target_tables=(
+            "scribes_scribe",
+            "scribes_script",
+            "scribes_hand",
+            "scribes_handdescription",
+            "scribes_hand_item_part_images",
+        ),
         importer_contract=(
             "Preserve ids for scribes, scripts, hands, and hand-image links.",
             "Create documented placeholder scribe -1 only if needed.",
