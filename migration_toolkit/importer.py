@@ -15,11 +15,13 @@ from psycopg import Connection
 from psycopg.rows import dict_row
 
 from migration_toolkit.audit import (
+    KEPT_PLACE_COUNT_SQL,
     PUBLICATION_AUTHOR_POLICIES,
     PUBLICATION_AUTHOR_POLICY_FALLBACK,
     PUBLICATION_AUTHOR_POLICY_LEGACY_ID,
     PUBLICATION_AUTHOR_POLICY_USERNAME,
     PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK,
+    SCRIPTORIUM_ONLY_PLACES_SQL,
     LegacyMigrationAuditError,
     PublicationAuthorPolicy,
     configure_read_only_session,
@@ -264,6 +266,7 @@ REQUIRED_LEGACY_TABLES: set[str] = {
     "digipal_historicalitemtype",
     "digipal_idiograph",
     "digipal_image",
+    "digipal_institution",
     "digipal_itempart",
     "digipal_itempartitem",
     "digipal_language",
@@ -425,7 +428,7 @@ PHASE_TARGET_TABLES: dict[str, tuple[str, ...]] = {
 SOURCE_COUNT_SQL: dict[str, dict[str, str]] = {
     "core_vocabularies": {
         "common_date": "SELECT count(*) FROM digipal_date",
-        "common_place": "SELECT count(DISTINCT lower(coalesce(name, ''))) FROM digipal_place",
+        "common_place": KEPT_PLACE_COUNT_SQL,
         "manuscripts_itemformat": "SELECT count(*) FROM digipal_format",
         "manuscripts_bibliographicsource": "SELECT count(*) FROM digipal_source",
         "manuscripts_repository": "SELECT count(*) FROM digipal_repository",
@@ -1885,7 +1888,15 @@ def place_list_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
         ORDER BY p.id
         """,
     )
-    return {"merged_count": len(merged), "merged": merged}
+    added_institutions = fetch_rows(
+        legacy_conn, f"SELECT id, name FROM ({SCRIPTORIUM_ONLY_PLACES_SQL}) scriptorium_places ORDER BY id"
+    )
+    return {
+        "merged_count": len(merged),
+        "merged": merged,
+        "added_institution_count": len(added_institutions),
+        "added_institutions": added_institutions,
+    }
 
 
 def character_type_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
@@ -2113,6 +2124,11 @@ def source_profile_warnings(profile: dict[str, Any]) -> list[str]:
         warnings.append(
             "Legacy digipal_place contains rows that share a name, ignoring case, with an earlier row and are "
             f"merged into it: {place_list['merged_count']}"
+        )
+    if int(place_list.get("added_institution_count", 0)):
+        warnings.append(
+            "Legacy digipal_institution contains scriptoria with no place of the same name, which are "
+            f"added to the place list: {place_list['added_institution_count']}"
         )
 
     invalid_historical_item_types = int(profile.get("historical_item_types", {}).get("invalid_count", 0))
@@ -2414,6 +2430,15 @@ def import_core_vocabularies(ctx: ImportContext) -> dict[str, int]:
         "INSERT INTO common_place (id, name) VALUES (%(id)s, %(name)s)",
         [{"id": row["id"], "name": truncate(row["name"], 150)} for row in place_rows if row["id"] == row["kept_id"]],
     )
+    scriptorium_place_rows = fetch_rows(
+        legacy_conn, f"SELECT id, name FROM ({SCRIPTORIUM_ONLY_PLACES_SQL}) scriptorium_places ORDER BY id"
+    )
+    if scriptorium_place_rows:
+        rows_imported["common_place"] += insert_rows(
+            target_conn,
+            "INSERT INTO common_place (id, name) VALUES (%(id)s, %(name)s)",
+            [{"id": row["id"], "name": truncate(row["name"], 150)} for row in scriptorium_place_rows],
+        )
 
     format_rows = fetch_rows(legacy_conn, "SELECT id, name FROM digipal_format ORDER BY id")
     rows_imported["manuscripts_itemformat"] = insert_rows(
@@ -2851,17 +2876,47 @@ def import_scribes_hands(ctx: ImportContext) -> dict[str, int]:
     target_conn = ctx.target_conn
     rows_imported: dict[str, int] = {}
 
-    scribe_rows = fetch_rows(legacy_conn, "SELECT id, name FROM digipal_scribe ORDER BY id")
-    scribes = [{"id": -1, "name": "[name] update records relations later", "scriptorium": "", "period_id": None}]
+    scribe_rows = fetch_rows(
+        legacy_conn,
+        f"""
+        SELECT
+          scribe.id,
+          scribe.name,
+          (
+            SELECT coalesce(
+              (
+                SELECT min(existing.id)
+                FROM digipal_place existing
+                WHERE lower(coalesce(existing.name, '')) = lower(coalesce(institution.name, ''))
+              ),
+              (
+                SELECT scriptorium_places.id
+                FROM ({SCRIPTORIUM_ONLY_PLACES_SQL}) scriptorium_places
+                WHERE scriptorium_places.name_key = lower(coalesce(institution.name, ''))
+              )
+            )
+            FROM digipal_institution institution
+            WHERE institution.id = scribe.scriptorium_id
+          ) AS scriptorium_id
+        FROM digipal_scribe scribe
+        ORDER BY scribe.id
+        """,
+    )
+    scribes = [{"id": -1, "name": "[name] update records relations later", "scriptorium_id": None, "period_id": None}]
     scribes.extend(
-        {"id": row["id"], "name": text_or_blank(row["name"]), "scriptorium": "", "period_id": None}
+        {
+            "id": row["id"],
+            "name": text_or_blank(row["name"]),
+            "scriptorium_id": row["scriptorium_id"],
+            "period_id": None,
+        }
         for row in scribe_rows
     )
     rows_imported["scribes_scribe"] = insert_rows(
         target_conn,
         """
-        INSERT INTO scribes_scribe (id, name, scriptorium, period_id)
-        VALUES (%(id)s, %(name)s, %(scriptorium)s, %(period_id)s)
+        INSERT INTO scribes_scribe (id, name, scriptorium_id, period_id)
+        VALUES (%(id)s, %(name)s, %(scriptorium_id)s, %(period_id)s)
         """,
         scribes,
     )

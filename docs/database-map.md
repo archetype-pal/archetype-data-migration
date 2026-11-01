@@ -104,6 +104,7 @@ erDiagram
   common_date ||--o{ scribes_hand : dates
   common_place ||--o{ scribes_hand : places
   common_place ||--o{ manuscripts_repository : places
+  common_place ||--o{ scribes_scribe : scriptoria
   auth_user ||--o{ common_editevent : acts
 
   manuscripts_itemformat ||--o{ manuscripts_historicalitem : formats
@@ -185,7 +186,7 @@ erDiagram
 
 | Table | Purpose | Important fields / links |
 | --- | --- | --- |
-| `scribes_scribe` | Named scribe. | `name`, `period_id`, `scriptorium` |
+| `scribes_scribe` | Named scribe. | `name`, `period_id`, `scriptorium_id` |
 | `scribes_script` | Script classification. | `name` |
 | `scribes_hand` | Hand used on an item part. | `scribe_id`, `item_part_id`, `script_id`, `name`, `num`, `priority`, `is_default`, `date_id`, `place_id` |
 | `scribes_handdescription` | Description of a hand. | `hand_id`, `source_id`, `content` |

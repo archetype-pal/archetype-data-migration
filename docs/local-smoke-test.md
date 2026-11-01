@@ -115,7 +115,8 @@ without an existing historical item are skipped from the target table and, when
 `*-skipped-catalogue-numbers.json` quarantine artifact.
 
 Also review `source_profile.place_list`, which lists the places merged into an
-earlier place with the same name, ignoring case.
+earlier place with the same name, ignoring case, and the scriptoria added to
+the place list.
 
 ## Execute
 

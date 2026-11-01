@@ -184,15 +184,33 @@ WHERE c.historical_item_id IS NOT NULL
 ORDER BY c.id
 """
 
-KEPT_PLACE_COUNT_SQL = """
-SELECT count(DISTINCT lower(coalesce(name, '')))
-FROM digipal_place
+SCRIPTORIUM_ONLY_PLACES_SQL = """
+SELECT
+  (SELECT coalesce(max(id), 0) FROM digipal_place) + row_number() OVER (ORDER BY min(institution.id)) AS id,
+  (array_agg(institution.name ORDER BY institution.id))[1] AS name,
+  lower(coalesce(institution.name, '')) AS name_key
+FROM digipal_institution institution
+WHERE institution.id IN (SELECT scriptorium_id FROM digipal_scribe)
+  AND NOT EXISTS (
+    SELECT 1
+    FROM digipal_place existing
+    WHERE lower(coalesce(existing.name, '')) = lower(coalesce(institution.name, ''))
+  )
+GROUP BY lower(coalesce(institution.name, ''))
 """
 
-KEPT_PLACE_IDS_SQL = """
+KEPT_PLACE_COUNT_SQL = f"""
+SELECT
+  (SELECT count(DISTINCT lower(coalesce(name, ''))) FROM digipal_place)
+  + (SELECT count(*) FROM ({SCRIPTORIUM_ONLY_PLACES_SQL}) scriptorium_places)
+"""
+
+KEPT_PLACE_IDS_SQL = f"""
 SELECT min(id)
 FROM digipal_place
 GROUP BY lower(coalesce(name, ''))
+UNION ALL
+SELECT id FROM ({SCRIPTORIUM_ONLY_PLACES_SQL}) scriptorium_places
 ORDER BY 1
 """
 
@@ -309,7 +327,8 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         strategy="id-preserved names, duplicate names merged ignoring case",
         notes=(
             "Legacy place names map to the shared place list. A place with the same name as an earlier one, ignoring "
-            "case, is merged into it; place types, regions, counties and coordinates are not imported."
+            "case, is merged into it; place types, regions, counties and coordinates are not imported. A scribe's "
+            "scriptorium with no place of the same name is added after the legacy place ids."
         ),
         legacy_count_sql=KEPT_PLACE_COUNT_SQL,
         legacy_ids_sql=KEPT_PLACE_IDS_SQL,

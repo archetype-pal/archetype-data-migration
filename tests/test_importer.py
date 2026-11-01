@@ -533,10 +533,80 @@ def test_import_core_vocabularies_links_repositories_to_their_kept_place(monkeyp
     assert all("place" not in row for row in repositories)
 
 
+def test_import_core_vocabularies_adds_scriptoria_with_no_place_of_that_name(monkeypatch):
+    def fake_fetch_rows(_conn, query, _params=None):
+        if "FROM digipal_place p" in query:
+            return [{"id": 3, "name": "Worcester", "kept_id": 3}]
+        if "scriptorium_places" in query:
+            return [{"id": 8, "name": "St Albans Abbey"}]
+        return []
+
+    inserted = []
+
+    def fake_insert_rows(_conn, query, rows):
+        if "INSERT INTO common_place" in query:
+            inserted.extend(rows)
+        return len(rows)
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.insert_rows", fake_insert_rows)
+
+    ctx = ImportContext(
+        legacy_conn=None,
+        target_conn=None,
+        options=ImportOptions(),
+        backend_contract=BackendContract(
+            historical_item_type_labels=("Charter",),
+            historical_item_type_values=frozenset({"charter"}),
+            source="test",
+        ),
+    )
+
+    result = import_core_vocabularies(ctx)
+
+    assert inserted == [{"id": 3, "name": "Worcester"}, {"id": 8, "name": "St Albans Abbey"}]
+    assert result["common_place"] == 2
+
+
+def test_import_scribes_hands_links_scribes_to_their_scriptorium(monkeypatch):
+    def fake_fetch_rows(_conn, query, _params=None):
+        if "FROM digipal_scribe scribe" in query:
+            return [
+                {"id": 1, "name": "Scribe A", "scriptorium_id": 8},
+                {"id": 2, "name": "Scribe B", "scriptorium_id": None},
+            ]
+        return []
+
+    inserted = {}
+
+    def fake_insert_rows(_conn, query, rows):
+        table = query.split("INSERT INTO ", 1)[1].split()[0]
+        inserted.setdefault(table, list(rows))
+        return len(rows)
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.insert_rows", fake_insert_rows)
+
+    import_scribes_hands(
+        ImportContext(
+            legacy_conn=None,
+            target_conn=None,
+            options=ImportOptions(),
+            backend_contract=BackendContract(
+                historical_item_type_labels=("Charter",),
+                historical_item_type_values=frozenset({"charter"}),
+                source="test",
+            ),
+        )
+    )
+
+    assert [(row["id"], row["scriptorium_id"]) for row in inserted["scribes_scribe"]] == [(-1, None), (1, 8), (2, None)]
+
+
 def test_import_scribes_hands_writes_hand_descriptions_to_their_own_table(monkeypatch):
     fetch_responses = iter(
         [
-            [{"id": 1, "name": "Scribe"}],
+            [{"id": 1, "name": "Scribe", "scriptorium_id": None}],
             [],
             [
                 {

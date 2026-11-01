@@ -82,7 +82,7 @@ The current target is clearly a selective migration, not a full clone:
 | `digipal_image` | `manuscripts_itemimage` | Id-preserved; image path/IIIF fields transformed. |
 | Non-empty `digipal_text_textcontentxml` | `manuscripts_imagetext` | Content-preserved; ids not preserved. Empty XML rows are excluded. Current review fields are target-side additions. Backend migration `0024_remove_imagetext_content_dpt_legacy` removed the temporary retention column. |
 | none | `manuscripts_statustransition` | Target-only image-text review workflow log; do not import from legacy. |
-| `digipal_scribe` | `scribes_scribe` | Id-preserved; target has synthetic `-1`. |
+| `digipal_scribe` | `scribes_scribe` | Id-preserved; target has synthetic `-1`. `scriptorium_id` is the place with the legacy scriptorium's name; a scriptorium with no such place is added to the place list. |
 | `digipal_script` | `scribes_script` | Direct/id-preserved; currently zero rows. |
 | `digipal_hand` | `scribes_hand` | Id-preserved; legacy labels collapse into the target name. Display notes, internal notes and comments become one `scribes_handdescription` row with no source. `place_id` is the legacy assigned place, through the merged place ids. Current `num`, `priority`, and `is_default` drive ordering/default selection. |
 | `digipal_hand_images` | `scribes_hand_item_part_images` | Direct/id-preserved. |
@@ -303,7 +303,8 @@ product requirement reintroduces them:
 - Legacy CMS structures outside the approved Page/Partner/Event decisions:
   `forms_*`, `galleries_*`, `twitter_*`, and unapproved `pages_*` fragments.
 - Empty or unsupported palaeographic/manuscript tables such as legacy
-  collation, decoration, layout, owners, institutions, measurements,
+  collation, decoration, layout, owners, institutions (apart from scribes'
+  scriptoria, which become places), measurements,
   and provenance tables. Some have data, but there is no current model surface
   for them.
 - Legacy permission/group assignments. Rebuild these in the current app

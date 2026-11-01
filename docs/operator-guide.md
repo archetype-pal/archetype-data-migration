@@ -73,10 +73,10 @@ Legacy `digipal_cataloguenumber` rows must point at an existing historical item 
 | `00_preflight` Preflight | Confirm environment, database URLs, schema state, table availability, and target readiness. | legacy source public schema | Django migration table, current public schema |
 | `01_backups` Backups And Restore Point | Create restorable source and target snapshots before trial or production imports. | legacy source database | target database |
 | `02_users_authors` Users And Publication Authors | Define the identity policy required before publication rows can be imported safely. | auth_user, blog_blogpost | auth_user, publications_publication |
-| `03_core_vocabularies` Core Vocabularies | Import stable shared vocabularies before dependent manuscript rows. | digipal_date, digipal_place, digipal_format, digipal_source, digipal_repository | common_date, common_place, manuscripts_itemformat, manuscripts_bibliographicsource, manuscripts_repository |
+| `03_core_vocabularies` Core Vocabularies | Import stable shared vocabularies before dependent manuscript rows. | digipal_date, digipal_place, digipal_institution, digipal_format, digipal_source, digipal_repository | common_date, common_place, manuscripts_itemformat, manuscripts_bibliographicsource, manuscripts_repository |
 | `04_symbols` Symbol Structure | Import characters, allographs, components, features, and positions before graph annotations. | digipal_character, digipal_ontograph, digipal_ontographtype, digipal_allograph, digipal_component, digipal_feature, digipal_aspect | symbols_structure_character, symbols_structure_allograph, symbols_structure_component, symbols_structure_feature, symbols_structure_position |
 | `05_manuscripts` Manuscripts And Images | Import manuscript hierarchy and IIIF-backed item images. | digipal_currentitem, digipal_historicalitem, digipal_historicalitemtype, digipal_description, digipal_cataloguenumber, digipal_itempart, digipal_itempartitem, digipal_image | manuscripts_currentitem, manuscripts_historicalitem, manuscripts_historicalitemdescription, manuscripts_cataloguenumber, manuscripts_itempart, manuscripts_msdescarea, manuscripts_itemimage |
-| `06_scribes_hands` Scribes And Hands | Import scribes, hands, and image-hand links after item parts and images exist. | digipal_scribe, digipal_place, digipal_script, digipal_hand, digipal_hand_images | scribes_scribe, scribes_script, scribes_hand, scribes_handdescription, scribes_hand_item_part_images |
+| `06_scribes_hands` Scribes And Hands | Import scribes, hands, and image-hand links after item parts and images exist. | digipal_scribe, digipal_place, digipal_institution, digipal_script, digipal_hand, digipal_hand_images | scribes_scribe, scribes_script, scribes_hand, scribes_handdescription, scribes_hand_item_part_images |
 | `07_image_text` Image Text | Import non-empty transcription/translation XML as target image text rows. | digipal_text_textcontentxml | manuscripts_imagetext |
 | `08_annotations` Annotations And Graph Details | Import image/text/editorial annotations and graph through tables after symbols, hands, and images. | digipal_annotation, digipal_graph, digipal_idiograph, digipal_graphcomponent, digipal_graphcomponent_features, digipal_graph_aspects | annotations_graph, annotations_graphcomponent, annotations_graphcomponent_features, annotations_graph_positions |
 | `09_publications` Publications And Carousel | Import public CMS records represented in the current application. | blog_blogpost, blog_blogpost_categories, django_content_type, generic_assignedkeyword, generic_keyword, digipal_carouselitem | publications_publication, publications_publication_keywords, publications_carouselitem |
@@ -149,6 +149,7 @@ Importer contract:
 - Merge places that share a name, ignoring case, into the first one and list them in source_profile.place_list.
 - Apply repository label/type/place transformations explicitly.
 - Link each repository to its place, through the merged place ids.
+- Add each scribe's scriptorium with no place of the same name to the place list, after the legacy place ids, and list them in source_profile.place_list.
 
 Validation:
 - Audit mappings for dates, places, item formats, sources, and repositories match accepted warnings.
@@ -202,6 +203,7 @@ Importer contract:
 - Create documented placeholder scribe -1 only if needed.
 - Map legacy display order into num/priority/is_default according to product policy.
 - Link each hand to its assigned place, through the merged place ids.
+- Link each scribe to the place that has its scriptorium's name.
 
 Validation:
 - Hand ordering works for sampled item parts.
