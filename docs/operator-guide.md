@@ -148,6 +148,7 @@ Importer contract:
 - Keep target-only date seed rows documented and do not overwrite them.
 - Merge places that share a name, ignoring case, into the first one and list them in source_profile.place_list.
 - Apply repository label/type/place transformations explicitly.
+- Link each repository to its place, through the merged place ids.
 
 Validation:
 - Audit mappings for dates, places, item formats, sources, and repositories match accepted warnings.

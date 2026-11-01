@@ -458,7 +458,7 @@ def test_import_publications_imports_generic_keywords_not_category_labels(monkey
 
 def test_import_core_vocabularies_imports_places_and_merges_case_duplicates(monkeypatch):
     def fake_fetch_rows(_conn, query, _params=None):
-        if "FROM digipal_place" in query:
+        if "FROM digipal_place p" in query:
             return [
                 {"id": 3, "name": "Worcester", "kept_id": 3},
                 {"id": 7, "name": "NE France", "kept_id": 7},
@@ -494,6 +494,43 @@ def test_import_core_vocabularies_imports_places_and_merges_case_duplicates(monk
     assert "common_place" in PHASE_TARGET_TABLES["core_vocabularies"]
     assert "common_place" in TARGET_DOMAIN_TABLES
     assert "common_place" in REQUIRED_TARGET_TABLES
+
+
+def test_import_core_vocabularies_links_repositories_to_their_kept_place(monkeypatch):
+    def fake_fetch_rows(_conn, query, _params=None):
+        if "FROM digipal_repository" in query:
+            return [
+                {"id": 4, "name": "British Library", "short_name": "BL", "url": "", "place": "London", "place_id": 12},
+                {"id": 5, "name": "Private owner", "short_name": "PO", "url": "", "place": None, "place_id": None},
+            ]
+        return []
+
+    inserted = {}
+
+    def fake_insert_rows(_conn, query, rows):
+        table = query.split("INSERT INTO ", 1)[1].split()[0]
+        inserted[table] = list(rows)
+        return len(inserted[table])
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.insert_rows", fake_insert_rows)
+
+    import_core_vocabularies(
+        ImportContext(
+            legacy_conn=None,
+            target_conn=None,
+            options=ImportOptions(),
+            backend_contract=BackendContract(
+                historical_item_type_labels=("Charter",),
+                historical_item_type_values=frozenset({"charter"}),
+                source="test",
+            ),
+        )
+    )
+
+    repositories = inserted["manuscripts_repository"]
+    assert [(row["id"], row["place_id"]) for row in repositories] == [(4, 12), (5, None)]
+    assert all("place" not in row for row in repositories)
 
 
 def test_import_scribes_hands_writes_hand_descriptions_to_their_own_table(monkeypatch):

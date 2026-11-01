@@ -784,7 +784,7 @@ VALUE_AUDIT_COVERAGE: tuple[ValueAuditCoverage, ...] = (
         audited_fields=("name", "label", "place", "url", "type"),
         check_keys=("repository_fields",),
         coverage_type="row-value",
-        notes="Compares denormalised repository labels, places, URLs, and derived type values by preserved id.",
+        notes="Compares repository labels, linked place names, URLs, and derived type values by preserved id.",
     ),
     ValueAuditCoverage(
         entity_key="current_items",
@@ -1601,7 +1601,7 @@ def _audited_repository_row(legacy_row: dict[str, Any]) -> dict[str, Any]:
         30,
         default=f"repo-{repository_id}",
     )
-    place = _audit_truncate(legacy_row.get("place") or "", 50)
+    place = _audit_truncate(legacy_row.get("place") or "", 150)
     return {
         "name": _audit_truncate(legacy_row.get("name") or label, 100),
         "label": label,
@@ -1615,18 +1615,24 @@ def check_repository_fields(legacy_conn: Connection[Any], target_conn: Connectio
     legacy_rows = _dict_rows(
         legacy_conn,
         """
-        SELECT r.id, r.name, r.short_name, r.url, p.name AS place
+        SELECT r.id, r.name, r.short_name, r.url, kept.name AS place
         FROM digipal_repository r
-        LEFT JOIN digipal_place p ON p.id = r.place_id
+        LEFT JOIN digipal_place kept ON kept.id = (
+          SELECT min(candidate.id)
+          FROM digipal_place linked
+          JOIN digipal_place candidate ON lower(coalesce(candidate.name, '')) = lower(coalesce(linked.name, ''))
+          WHERE linked.id = r.place_id
+        )
         ORDER BY r.id
         """,
     )
     target_rows = _dict_rows(
         target_conn,
         """
-        SELECT id, name, label, place, url, type
-        FROM manuscripts_repository
-        ORDER BY id
+        SELECT r.id, r.name, r.label, coalesce(p.name, '') AS place, r.url, r.type
+        FROM manuscripts_repository r
+        LEFT JOIN common_place p ON p.id = r.place_id
+        ORDER BY r.id
         """,
     )
     target_by_id = {int(row["id"]): row for row in target_rows}

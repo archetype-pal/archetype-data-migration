@@ -71,7 +71,7 @@ The current target is clearly a selective migration, not a full clone:
 | none | `common_editevent` | Target-only append-only edit log; do not import from legacy. |
 | `digipal_format` | `manuscripts_itemformat` | Direct/id-preserved. |
 | `digipal_source` | `manuscripts_bibliographicsource` | Direct/id-preserved. |
-| `digipal_repository` | `manuscripts_repository` | Id-preserved; place/type denormalised. Blank labels need explicit fallbacks. |
+| `digipal_repository` | `manuscripts_repository` | Id-preserved; `place_id` is the legacy place, through the merged place ids; type is still derived from the place name. Blank labels need explicit fallbacks. |
 | `digipal_currentitem` | `manuscripts_currentitem` | Id-preserved; shelfmarks/descriptions transformed. |
 | `digipal_historicalitem` | `manuscripts_historicalitem` | Id-preserved; language/hair/date lookups flattened. `type` must use current backend choices (`agreement`, `charter`, `letter`); unsupported legacy types such as Brieve, Settlement, and Notification block import until an explicit mapping or source correction is approved. |
 | target date metadata | `manuscripts_historicalitemdateassessment` | Target-only derived metadata, currently 22 rows. |

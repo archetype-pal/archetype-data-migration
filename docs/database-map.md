@@ -103,6 +103,7 @@ erDiagram
   common_date ||--o{ scribes_scribe : periods
   common_date ||--o{ scribes_hand : dates
   common_place ||--o{ scribes_hand : places
+  common_place ||--o{ manuscripts_repository : places
   auth_user ||--o{ common_editevent : acts
 
   manuscripts_itemformat ||--o{ manuscripts_historicalitem : formats
@@ -165,7 +166,7 @@ erDiagram
 | Table | Purpose | Important fields / links |
 | --- | --- | --- |
 | `manuscripts_itemformat` | Controlled item format list. | `name` |
-| `manuscripts_repository` | Repository/library/person/online source. | `name`, `label`, `place`, `url`, `type` |
+| `manuscripts_repository` | Repository/library/person/online source. | `name`, `label`, `place_id`, `url`, `type` |
 | `manuscripts_bibliographicsource` | Catalogue/manuscript-description source. | `name`, `label` |
 | `manuscripts_currentitem` | Current physical holding. | `repository_id`, `shelfmark`, `description` |
 | `manuscripts_historicalitem` | Historical document/item. | `type`, `format_id`, `language`, `hair_type`, `date_id` |

@@ -2442,7 +2442,18 @@ def import_core_vocabularies(ctx: ImportContext) -> dict[str, int]:
     repository_rows = fetch_rows(
         legacy_conn,
         """
-        SELECT r.id, r.name, r.short_name, r.url, p.name AS place
+        SELECT
+          r.id,
+          r.name,
+          r.short_name,
+          r.url,
+          p.name AS place,
+          (
+            SELECT min(kept.id)
+            FROM digipal_place linked
+            JOIN digipal_place kept ON lower(coalesce(kept.name, '')) = lower(coalesce(linked.name, ''))
+            WHERE linked.id = r.place_id
+          ) AS place_id
         FROM digipal_repository r
         LEFT JOIN digipal_place p ON p.id = r.place_id
         ORDER BY r.id
@@ -2451,13 +2462,12 @@ def import_core_vocabularies(ctx: ImportContext) -> dict[str, int]:
     repositories = []
     for row in repository_rows:
         label = repository_label(int(row["id"]), row["name"], row["short_name"])
-        place = truncate(row["place"] or "", 50)
         repositories.append(
             {
                 "id": row["id"],
                 "name": truncate(row["name"] or label, 100),
                 "label": label,
-                "place": place,
+                "place_id": row["place_id"],
                 "url": row["url"] or None,
                 "type": repository_type(row["place"]),
             }
@@ -2465,8 +2475,8 @@ def import_core_vocabularies(ctx: ImportContext) -> dict[str, int]:
     rows_imported["manuscripts_repository"] = insert_rows(
         target_conn,
         """
-        INSERT INTO manuscripts_repository (id, name, label, place, url, type)
-        VALUES (%(id)s, %(name)s, %(label)s, %(place)s, %(url)s, %(type)s)
+        INSERT INTO manuscripts_repository (id, name, label, place_id, url, type)
+        VALUES (%(id)s, %(name)s, %(label)s, %(place_id)s, %(url)s, %(type)s)
         """,
         repositories,
     )
