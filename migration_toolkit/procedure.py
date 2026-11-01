@@ -302,7 +302,7 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         key="06_scribes_hands",
         title="Scribes And Hands",
         objective="Import scribes, hands, and image-hand links after item parts and images exist.",
-        source_tables=("digipal_scribe", "digipal_script", "digipal_hand", "digipal_hand_images"),
+        source_tables=("digipal_scribe", "digipal_place", "digipal_script", "digipal_hand", "digipal_hand_images"),
         target_tables=(
             "scribes_scribe",
             "scribes_script",
@@ -314,6 +314,7 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "Preserve ids for scribes, scripts, hands, and hand-image links.",
             "Create documented placeholder scribe -1 only if needed.",
             "Map legacy display order into num/priority/is_default according to product policy.",
+            "Link each hand to its assigned place, through the merged place ids.",
         ),
         validation=(
             "Hand ordering works for sampled item parts.",

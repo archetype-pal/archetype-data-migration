@@ -2872,7 +2872,12 @@ def import_scribes_hands(ctx: ImportContext) -> dict[str, int]:
           scribe_id,
           script_id,
           assigned_date_id,
-          assigned_place_id,
+          (
+            SELECT min(kept.id)
+            FROM digipal_place assigned
+            JOIN digipal_place kept ON lower(coalesce(kept.name, '')) = lower(coalesce(assigned.name, ''))
+            WHERE assigned.id = digipal_hand.assigned_place_id
+          ) AS assigned_place_id,
           label,
           display_label,
           internal_note,
@@ -2902,6 +2907,7 @@ def import_scribes_hands(ctx: ImportContext) -> dict[str, int]:
                 "priority": 0,
                 "is_default": False,
                 "date_id": row["assigned_date_id"],
+                "place_id": row["assigned_place_id"],
             }
         )
         if description_parts:
@@ -2909,10 +2915,12 @@ def import_scribes_hands(ctx: ImportContext) -> dict[str, int]:
     rows_imported["scribes_hand"] = insert_rows(
         target_conn,
         """
-        INSERT INTO scribes_hand (id, scribe_id, item_part_id, script_id, name, num, priority, is_default, date_id)
+        INSERT INTO scribes_hand (
+          id, scribe_id, item_part_id, script_id, name, num, priority, is_default, date_id, place_id
+        )
         VALUES (
           %(id)s, %(scribe_id)s, %(item_part_id)s, %(script_id)s, %(name)s, %(num)s, %(priority)s,
-          %(is_default)s, %(date_id)s
+          %(is_default)s, %(date_id)s, %(place_id)s
         )
         """,
         hands,

@@ -579,6 +579,58 @@ def test_import_scribes_hands_writes_hand_descriptions_to_their_own_table(monkey
     assert "scribes_handdescription" in REQUIRED_TARGET_TABLES
 
 
+def test_import_scribes_hands_links_hands_to_their_assigned_place(monkeypatch):
+    def hand(hand_id, place_id):
+        return {
+            "id": hand_id,
+            "item_part_id": 5,
+            "scribe_id": 1,
+            "script_id": None,
+            "assigned_date_id": None,
+            "assigned_place_id": place_id,
+            "label": f"Hand {hand_id}",
+            "display_label": None,
+            "internal_note": None,
+            "display_note": None,
+            "comments": None,
+            "num": 1,
+        }
+
+    def fake_fetch_rows(_conn, query, _params=None):
+        if "digipal_hand_images" in query:
+            return []
+        if "FROM digipal_hand" in query:
+            return [hand(10, 7), hand(11, None)]
+        return []
+
+    inserted = {}
+
+    def fake_insert_rows(_conn, query, rows):
+        table = query.split("INSERT INTO ", 1)[1].split()[0]
+        inserted[table] = (query, list(rows))
+        return len(inserted[table][1])
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.insert_rows", fake_insert_rows)
+
+    ctx = ImportContext(
+        legacy_conn=None,
+        target_conn=None,
+        options=ImportOptions(),
+        backend_contract=BackendContract(
+            historical_item_type_labels=("Charter",),
+            historical_item_type_values=frozenset({"charter"}),
+            source="test",
+        ),
+    )
+
+    import_scribes_hands(ctx)
+
+    hand_query, hands = inserted["scribes_hand"]
+    assert "place_id" in hand_query.split("VALUES", 1)[0]
+    assert [(row["id"], row["place_id"]) for row in hands] == [(10, 7), (11, None)]
+
+
 def test_character_type_profile_records_reviewed_types_and_invalid_rows(monkeypatch):
     rows = [
         {"id": 1, "name": "a", "ontograph_type_name": "letter"},

@@ -84,7 +84,7 @@ The current target is clearly a selective migration, not a full clone:
 | none | `manuscripts_statustransition` | Target-only image-text review workflow log; do not import from legacy. |
 | `digipal_scribe` | `scribes_scribe` | Id-preserved; target has synthetic `-1`. |
 | `digipal_script` | `scribes_script` | Direct/id-preserved; currently zero rows. |
-| `digipal_hand` | `scribes_hand` | Id-preserved; legacy labels collapse into the target name. Display notes, internal notes and comments become one `scribes_handdescription` row with no source. `place_id` is left empty. Current `num`, `priority`, and `is_default` drive ordering/default selection. |
+| `digipal_hand` | `scribes_hand` | Id-preserved; legacy labels collapse into the target name. Display notes, internal notes and comments become one `scribes_handdescription` row with no source. `place_id` is the legacy assigned place, through the merged place ids. Current `num`, `priority`, and `is_default` drive ordering/default selection. |
 | `digipal_hand_images` | `scribes_hand_item_part_images` | Direct/id-preserved. |
 | `digipal_character` | `symbols_structure_character` | Id-preserved; `type` comes from `digipal_character.ontograph_id → digipal_ontograph.ontograph_type_id → digipal_ontographtype.name`, not from character form or ontograph name. |
 | `digipal_allograph` | `symbols_structure_allograph` | Id-preserved. Synthetic placeholders require an explicit source policy. |
