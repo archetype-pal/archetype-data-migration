@@ -73,7 +73,7 @@ Legacy `digipal_cataloguenumber` rows must point at an existing historical item 
 | `00_preflight` Preflight | Confirm environment, database URLs, schema state, table availability, and target readiness. | legacy source public schema | Django migration table, current public schema |
 | `01_backups` Backups And Restore Point | Create restorable source and target snapshots before trial or production imports. | legacy source database | target database |
 | `02_users_authors` Users And Publication Authors | Define the identity policy required before publication rows can be imported safely. | auth_user, blog_blogpost | auth_user, publications_publication |
-| `03_core_vocabularies` Core Vocabularies | Import stable shared vocabularies before dependent manuscript rows. | digipal_date, digipal_format, digipal_source, digipal_repository | common_date, manuscripts_itemformat, manuscripts_bibliographicsource, manuscripts_repository |
+| `03_core_vocabularies` Core Vocabularies | Import stable shared vocabularies before dependent manuscript rows. | digipal_date, digipal_place, digipal_format, digipal_source, digipal_repository | common_date, common_place, manuscripts_itemformat, manuscripts_bibliographicsource, manuscripts_repository |
 | `04_symbols` Symbol Structure | Import characters, allographs, components, features, and positions before graph annotations. | digipal_character, digipal_ontograph, digipal_ontographtype, digipal_allograph, digipal_component, digipal_feature, digipal_aspect | symbols_structure_character, symbols_structure_allograph, symbols_structure_component, symbols_structure_feature, symbols_structure_position |
 | `05_manuscripts` Manuscripts And Images | Import manuscript hierarchy and IIIF-backed item images. | digipal_currentitem, digipal_historicalitem, digipal_historicalitemtype, digipal_description, digipal_cataloguenumber, digipal_itempart, digipal_itempartitem, digipal_image | manuscripts_currentitem, manuscripts_historicalitem, manuscripts_historicalitemdescription, manuscripts_cataloguenumber, manuscripts_itempart, manuscripts_msdescarea, manuscripts_itemimage |
 | `06_scribes_hands` Scribes And Hands | Import scribes, hands, and image-hand links after item parts and images exist. | digipal_scribe, digipal_script, digipal_hand, digipal_hand_images | scribes_scribe, scribes_script, scribes_hand, scribes_handdescription, scribes_hand_item_part_images |
@@ -146,10 +146,11 @@ Import stable shared vocabularies before dependent manuscript rows.
 Importer contract:
 - Preserve ids where the audit says ids are preserved.
 - Keep target-only date seed rows documented and do not overwrite them.
+- Merge places that share a name, ignoring case, into the first one and list them in source_profile.place_list.
 - Apply repository label/type/place transformations explicitly.
 
 Validation:
-- Audit mappings for dates, item formats, sources, and repositories match accepted warnings.
+- Audit mappings for dates, places, item formats, sources, and repositories match accepted warnings.
 - Foreign key lookups used by manuscript phases resolve.
 
 Rollback: Delete rows imported by this phase after dependent phases are rolled back, or restore backup.

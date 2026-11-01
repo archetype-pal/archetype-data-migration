@@ -184,6 +184,18 @@ WHERE c.historical_item_id IS NOT NULL
 ORDER BY c.id
 """
 
+KEPT_PLACE_COUNT_SQL = """
+SELECT count(DISTINCT lower(coalesce(name, '')))
+FROM digipal_place
+"""
+
+KEPT_PLACE_IDS_SQL = """
+SELECT min(id)
+FROM digipal_place
+GROUP BY lower(coalesce(name, ''))
+ORDER BY 1
+"""
+
 
 @dataclass(frozen=True)
 class PublicationAuthorPolicy:
@@ -287,6 +299,20 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         strategy="id-preserved with target-only date seeds",
         notes="Legacy sortable dates map to common.Date. Target ids 1-16 are newer target-only date seeds.",
         allowed_extra_target_ids=frozenset(range(1, 17)),
+    ),
+    EntityMapping(
+        key="places",
+        title="Places",
+        legacy_table="digipal_place",
+        target_table="common_place",
+        category="common",
+        strategy="id-preserved names, duplicate names merged ignoring case",
+        notes=(
+            "Legacy place names map to the shared place list. A place with the same name as an earlier one, ignoring "
+            "case, is merged into it; place types, regions, counties and coordinates are not imported."
+        ),
+        legacy_count_sql=KEPT_PLACE_COUNT_SQL,
+        legacy_ids_sql=KEPT_PLACE_IDS_SQL,
     ),
     EntityMapping(
         key="edit_events",

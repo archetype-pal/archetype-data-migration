@@ -289,6 +289,7 @@ REQUIRED_TARGET_TABLES: set[str] = {
     "auth_user",
     "common_appsettings",
     "common_date",
+    "common_place",
     "common_sitelabel",
     "manuscripts_bibliographicsource",
     "manuscripts_cataloguenumber",
@@ -326,6 +327,7 @@ REQUIRED_TARGET_TABLES: set[str] = {
 
 TARGET_DOMAIN_TABLES: tuple[str, ...] = (
     "common_date",
+    "common_place",
     "manuscripts_itemformat",
     "manuscripts_bibliographicsource",
     "manuscripts_repository",
@@ -372,6 +374,7 @@ SEQUENCE_TABLES: tuple[str, ...] = TARGET_DOMAIN_TABLES + (
 PHASE_TARGET_TABLES: dict[str, tuple[str, ...]] = {
     "core_vocabularies": (
         "common_date",
+        "common_place",
         "manuscripts_itemformat",
         "manuscripts_bibliographicsource",
         "manuscripts_repository",
@@ -422,6 +425,7 @@ PHASE_TARGET_TABLES: dict[str, tuple[str, ...]] = {
 SOURCE_COUNT_SQL: dict[str, dict[str, str]] = {
     "core_vocabularies": {
         "common_date": "SELECT count(*) FROM digipal_date",
+        "common_place": "SELECT count(DISTINCT lower(coalesce(name, ''))) FROM digipal_place",
         "manuscripts_itemformat": "SELECT count(*) FROM digipal_format",
         "manuscripts_bibliographicsource": "SELECT count(*) FROM digipal_source",
         "manuscripts_repository": "SELECT count(*) FROM digipal_repository",
@@ -1869,6 +1873,21 @@ def allograph_character_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
     return {"missing_character_count": count, "sample": rows}
 
 
+def place_list_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
+    merged = fetch_rows(
+        legacy_conn,
+        """
+        SELECT p.id, p.name, min(kept.id) AS kept_id
+        FROM digipal_place p
+        JOIN digipal_place kept ON lower(coalesce(kept.name, '')) = lower(coalesce(p.name, ''))
+        GROUP BY p.id, p.name
+        HAVING p.id <> min(kept.id)
+        ORDER BY p.id
+        """,
+    )
+    return {"merged_count": len(merged), "merged": merged}
+
+
 def character_type_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
     rows = fetch_rows(
         legacy_conn,
@@ -2038,6 +2057,7 @@ def target_users_by_username(target_conn: Connection[Any], usernames: list[str])
 
 def build_source_profile(legacy_conn: Connection[Any], backend_contract: BackendContract) -> dict[str, Any]:
     return {
+        "place_list": place_list_profile(legacy_conn),
         "description_relationships": description_relationship_profile(legacy_conn),
         "catalogue_number_relationships": catalogue_number_relationship_profile(legacy_conn),
         "historical_item_types": historical_item_type_profile(legacy_conn, backend_contract),
@@ -2086,6 +2106,13 @@ def source_profile_warnings(profile: dict[str, Any]) -> list[str]:
         warnings.append(
             "Legacy digipal_cataloguenumber contains rows whose historical_item_id does not exist: "
             f"{catalogue_counts['dangling_historical_item']}"
+        )
+
+    place_list = profile.get("place_list", {})
+    if int(place_list.get("merged_count", 0)):
+        warnings.append(
+            "Legacy digipal_place contains rows that share a name, ignoring case, with an earlier row and are "
+            f"merged into it: {place_list['merged_count']}"
         )
 
     invalid_historical_item_types = int(profile.get("historical_item_types", {}).get("invalid_count", 0))
@@ -2370,6 +2397,22 @@ def import_core_vocabularies(ctx: ImportContext) -> dict[str, int]:
         VALUES (%(id)s, %(date)s, %(min_weight)s, %(max_weight)s)
         """,
         date_values,
+    )
+
+    place_rows = fetch_rows(
+        legacy_conn,
+        """
+        SELECT p.id, p.name, min(kept.id) AS kept_id
+        FROM digipal_place p
+        JOIN digipal_place kept ON lower(coalesce(kept.name, '')) = lower(coalesce(p.name, ''))
+        GROUP BY p.id, p.name
+        ORDER BY p.id
+        """,
+    )
+    rows_imported["common_place"] = insert_rows(
+        target_conn,
+        "INSERT INTO common_place (id, name) VALUES (%(id)s, %(name)s)",
+        [{"id": row["id"], "name": truncate(row["name"], 150)} for row in place_rows if row["id"] == row["kept_id"]],
     )
 
     format_rows = fetch_rows(legacy_conn, "SELECT id, name FROM digipal_format ORDER BY id")

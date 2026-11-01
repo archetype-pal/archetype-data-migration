@@ -102,6 +102,7 @@ erDiagram
   common_date ||--o{ manuscripts_historicalitemdateassessment : assesses
   common_date ||--o{ scribes_scribe : periods
   common_date ||--o{ scribes_hand : dates
+  common_place ||--o{ scribes_hand : places
   auth_user ||--o{ common_editevent : acts
 
   manuscripts_itemformat ||--o{ manuscripts_historicalitem : formats
@@ -156,6 +157,7 @@ erDiagram
 | Table | Purpose | Important fields |
 | --- | --- | --- |
 | `common_date` | Sortable display date/range. | `date`, `min_weight`, `max_weight` |
+| `common_place` | Shared place list. | `name`, unique ignoring case |
 | `common_editevent` | Append-only editorial audit log. | `actor_id`, `action`, `target_type`, `target_id`, `summary`, `payload`, `created` |
 
 ### Manuscripts

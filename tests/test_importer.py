@@ -36,6 +36,7 @@ from migration_toolkit.importer import (
     expand_phases,
     historical_item_type,
     historical_item_type_profile,
+    import_core_vocabularies,
     import_image_text,
     import_publications,
     import_report_to_dict,
@@ -453,6 +454,46 @@ def test_import_publications_imports_generic_keywords_not_category_labels(monkey
     assert "blog_blogpost_categories" not in fetch_queries[0]
     assert "generic_assignedkeyword" in fetch_queries[2]
     assert "blog_blogpost_categories" not in fetch_queries[2]
+
+
+def test_import_core_vocabularies_imports_places_and_merges_case_duplicates(monkeypatch):
+    def fake_fetch_rows(_conn, query, _params=None):
+        if "FROM digipal_place" in query:
+            return [
+                {"id": 3, "name": "Worcester", "kept_id": 3},
+                {"id": 7, "name": "NE France", "kept_id": 7},
+                {"id": 9, "name": "ne france", "kept_id": 7},
+            ]
+        return []
+
+    inserted = {}
+
+    def fake_insert_rows(_conn, query, rows):
+        table = query.split("INSERT INTO ", 1)[1].split()[0]
+        inserted[table] = list(rows)
+        return len(inserted[table])
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.insert_rows", fake_insert_rows)
+
+    ctx = ImportContext(
+        legacy_conn=None,
+        target_conn=None,
+        options=ImportOptions(),
+        backend_contract=BackendContract(
+            historical_item_type_labels=("Charter",),
+            historical_item_type_values=frozenset({"charter"}),
+            source="test",
+        ),
+    )
+
+    result = import_core_vocabularies(ctx)
+
+    assert inserted["common_place"] == [{"id": 3, "name": "Worcester"}, {"id": 7, "name": "NE France"}]
+    assert result["common_place"] == 2
+    assert "common_place" in PHASE_TARGET_TABLES["core_vocabularies"]
+    assert "common_place" in TARGET_DOMAIN_TABLES
+    assert "common_place" in REQUIRED_TARGET_TABLES
 
 
 def test_import_scribes_hands_writes_hand_descriptions_to_their_own_table(monkeypatch):

@@ -67,6 +67,7 @@ The current target is clearly a selective migration, not a full clone:
 | Legacy entity | Current entity | Migration status |
 | --- | --- | --- |
 | `digipal_date` | `common_date` | Id-preserved, with target-only seed dates `1` to `16`. |
+| `digipal_place` | `common_place` | Id-preserved names. A place with the same name as an earlier one, ignoring case, is merged into it and listed in `source_profile.place_list`. Types, regions, counties and coordinates are not imported. |
 | none | `common_editevent` | Target-only append-only edit log; do not import from legacy. |
 | `digipal_format` | `manuscripts_itemformat` | Direct/id-preserved. |
 | `digipal_source` | `manuscripts_bibliographicsource` | Direct/id-preserved. |
@@ -302,7 +303,7 @@ product requirement reintroduces them:
 - Legacy CMS structures outside the approved Page/Partner/Event decisions:
   `forms_*`, `galleries_*`, `twitter_*`, and unapproved `pages_*` fragments.
 - Empty or unsupported palaeographic/manuscript tables such as legacy
-  collation, decoration, layout, owners, places, institutions, measurements,
+  collation, decoration, layout, owners, institutions, measurements,
   and provenance tables. Some have data, but there is no current model surface
   for them.
 - Legacy permission/group assignments. Rebuild these in the current app
