@@ -38,6 +38,7 @@ from migration_toolkit.importer import (
     historical_item_type_profile,
     import_core_vocabularies,
     import_image_text,
+    import_manuscripts,
     import_publications,
     import_report_to_dict,
     import_scribes_hands,
@@ -533,11 +534,11 @@ def test_import_core_vocabularies_links_repositories_to_their_kept_place(monkeyp
     assert all("place" not in row for row in repositories)
 
 
-def test_import_core_vocabularies_adds_scriptoria_with_no_place_of_that_name(monkeypatch):
+def test_import_core_vocabularies_adds_institutions_with_no_place_of_that_name(monkeypatch):
     def fake_fetch_rows(_conn, query, _params=None):
         if "FROM digipal_place p" in query:
             return [{"id": 3, "name": "Worcester", "kept_id": 3}]
-        if "scriptorium_places" in query:
+        if "institution_places" in query:
             return [{"id": 8, "name": "St Albans Abbey"}]
         return []
 
@@ -601,6 +602,46 @@ def test_import_scribes_hands_links_scribes_to_their_scriptorium(monkeypatch):
     )
 
     assert [(row["id"], row["scriptorium_id"]) for row in inserted["scribes_scribe"]] == [(-1, None), (1, 8), (2, None)]
+
+
+def test_import_manuscripts_imports_origins_with_their_place(monkeypatch):
+    def fake_fetch_rows(_conn, query, _params=None):
+        if "FROM digipal_itemorigin origin" in query:
+            return [
+                {"id": 1, "historical_item_id": 384, "evidence": "Ker 1957", "dubitable": True, "place_id": 75},
+                {"id": 2, "historical_item_id": 390, "evidence": None, "dubitable": False, "place_id": 13},
+            ]
+        return []
+
+    inserted = {}
+
+    def fake_insert_rows(_conn, query, rows):
+        table = query.split("INSERT INTO ", 1)[1].split()[0]
+        inserted[table] = list(rows)
+        return len(rows)
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.insert_rows", fake_insert_rows)
+    monkeypatch.setattr("migration_toolkit.importer.scalar", lambda *_args, **_kwargs: 0)
+
+    import_manuscripts(
+        ImportContext(
+            legacy_conn=None,
+            target_conn=None,
+            options=ImportOptions(),
+            backend_contract=BackendContract(
+                historical_item_type_labels=("Charter",),
+                historical_item_type_values=frozenset({"charter"}),
+                source="test",
+            ),
+        )
+    )
+
+    assert inserted["manuscripts_historicalitemorigin"] == [
+        {"id": 1, "historical_item_id": 384, "place_id": 75, "evidence": "Ker 1957", "dubitable": True},
+        {"id": 2, "historical_item_id": 390, "place_id": 13, "evidence": "", "dubitable": False},
+    ]
+    assert "manuscripts_historicalitemorigin" in PHASE_TARGET_TABLES["manuscripts"]
 
 
 def test_import_scribes_hands_writes_hand_descriptions_to_their_own_table(monkeypatch):
@@ -1423,6 +1464,34 @@ def test_source_profile_blockers_reject_invalid_historical_item_types_before_man
     assert "historical item type values" in blockers[0]
     warnings = source_profile_warnings(profile)
     assert warnings[-1].endswith(": 1")
+
+
+def test_source_profile_blockers_reject_origins_without_a_place_before_manuscript_writes():
+    profile = {
+        "description_relationships": {
+            "counts": {
+                "historical_only": 0,
+                "text_only": 0,
+                "both_links": 0,
+                "neither_link": 0,
+                "dangling_historical_item": 0,
+            },
+            "samples": {},
+        },
+        "place_list": {"merged_count": 1, "added_institution_count": 2},
+        "origin_place_integrity": {"missing_place_count": 3, "sample": []},
+        "allograph_character_integrity": {"missing_character_count": 0, "sample": []},
+    }
+
+    assert source_profile_blockers(profile, ("core_vocabularies", "scribes_hands")) == []
+    blockers = source_profile_blockers(profile, ("manuscripts",))
+    assert len(blockers) == 1
+    assert "neither a place nor an institution" in blockers[0]
+    warnings = source_profile_warnings(profile)
+    assert len(warnings) == 3
+    assert "digipal_place" in warnings[0] and warnings[0].endswith(": 1")
+    assert "digipal_institution" in warnings[1] and warnings[1].endswith(": 2")
+    assert "digipal_itemorigin" in warnings[2] and warnings[2].endswith(": 3")
 
 
 def test_source_profile_blockers_reject_invalid_character_types_before_symbol_writes():

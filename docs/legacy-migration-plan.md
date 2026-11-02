@@ -77,6 +77,7 @@ The current target is clearly a selective migration, not a full clone:
 | target date metadata | `manuscripts_historicalitemdateassessment` | Target-only derived metadata, currently 22 rows. |
 | `digipal_description` | `manuscripts_historicalitemdescription` | Id-preserved; `description` becomes `content`. |
 | `digipal_cataloguenumber` | `manuscripts_cataloguenumber` | Id-preserved; `source_id` becomes `catalogue_id`. |
+| `digipal_itemorigin` | `manuscripts_historicalitemorigin` | Id-preserved; `place_id` is the legacy place through the merged place ids, or the place with the institution's name; evidence and dubitable kept. An origin with neither a place nor an institution blocks the import. |
 | `digipal_itempart` plus `digipal_itempartitem` | `manuscripts_itempart` | Id-preserved from item part; target has synthetic `-1`. Historical link comes from `digipal_itempartitem`. |
 | none | `manuscripts_msdescarea` | Target-side TEI msDesc area fragments; no legacy source mapping is currently approved. Keep empty unless an explicit seed policy is defined. |
 | `digipal_image` | `manuscripts_itemimage` | Id-preserved; image path/IIIF fields transformed. |
@@ -303,8 +304,8 @@ product requirement reintroduces them:
 - Legacy CMS structures outside the approved Page/Partner/Event decisions:
   `forms_*`, `galleries_*`, `twitter_*`, and unapproved `pages_*` fragments.
 - Empty or unsupported palaeographic/manuscript tables such as legacy
-  collation, decoration, layout, owners, institutions (apart from scribes'
-  scriptoria, which become places), measurements,
+  collation, decoration, layout, owners, institutions (apart from those used
+  as scriptoria or origins, which become places), measurements,
   and provenance tables. Some have data, but there is no current model surface
   for them.
 - Legacy permission/group assignments. Rebuild these in the current app

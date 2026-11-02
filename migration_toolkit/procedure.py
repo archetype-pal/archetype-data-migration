@@ -222,8 +222,8 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "source_profile.place_list.",
             "Apply repository label/type/place transformations explicitly.",
             "Link each repository to its place, through the merged place ids.",
-            "Add each scribe's scriptorium with no place of the same name to the place list, after the legacy place "
-            "ids, and list them in source_profile.place_list.",
+            "Add each institution used as a scriptorium or an origin, with no place of the same name, to the place "
+            "list after the legacy place ids, and list them in source_profile.place_list.",
         ),
         validation=(
             "Audit mappings for dates, places, item formats, sources, and repositories match accepted warnings.",
@@ -275,6 +275,9 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "digipal_historicalitemtype",
             "digipal_description",
             "digipal_cataloguenumber",
+            "digipal_itemorigin",
+            "digipal_place",
+            "digipal_institution",
             "digipal_itempart",
             "digipal_itempartitem",
             "digipal_image",
@@ -284,6 +287,7 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "manuscripts_historicalitem",
             "manuscripts_historicalitemdescription",
             "manuscripts_cataloguenumber",
+            "manuscripts_historicalitemorigin",
             "manuscripts_itempart",
             "manuscripts_msdescarea",
             "manuscripts_itemimage",
@@ -297,6 +301,9 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "Fail on unsupported digipal_description relationships unless an explicit skip policy is approved.",
             "Treat manuscripts_msdescarea as target-only schema tracking unless an explicit msDesc seed policy is "
             "approved.",
+            "Import each origin with its evidence and dubitable flag; its place is the legacy place, through the "
+            "merged place ids, or the place that has its institution's name.",
+            "Block the import when an origin has neither a place nor an institution.",
             "Create the documented -1 item-part placeholder only if needed.",
             "Validate shortened shelfmark/current locus fields before insert.",
         ),

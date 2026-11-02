@@ -114,6 +114,8 @@ erDiagram
   manuscripts_historicalitem ||--o{ manuscripts_historicalitemdescription : descriptions
   manuscripts_historicalitem ||--o{ manuscripts_historicalitemdateassessment : date_assessments
   manuscripts_historicalitem ||--o{ manuscripts_cataloguenumber : catalogue_numbers
+  manuscripts_historicalitem ||--o{ manuscripts_historicalitemorigin : origins
+  common_place ||--o{ manuscripts_historicalitemorigin : origins
   manuscripts_historicalitem ||--o{ manuscripts_itempart : parts
   manuscripts_currentitem ||--o{ manuscripts_itempart : current_location
   manuscripts_itempart ||--o{ manuscripts_itemimage : images
@@ -175,6 +177,7 @@ erDiagram
 | `manuscripts_historicalitemdescription` | Source-backed description of a historical item. | `historical_item_id`, `source_id`, `content` |
 | `manuscripts_itempart` | Part of a historical item, optionally located in a current item. | `historical_item_id`, `current_item_id`, `current_item_locus`, `custom_label` |
 | `manuscripts_cataloguenumber` | Catalogue identifier for a historical item. | `historical_item_id`, `catalogue_id`, `number`, `url` |
+| `manuscripts_historicalitemorigin` | A place a historical item may have been made. | `historical_item_id`, `place_id`, `evidence`, `dubitable` |
 | `manuscripts_msdescarea` | Target-side TEI msDesc area fragment for an item part; one row per `(item_part_id, area)`, public only when published. | `item_part_id`, `area`, `content`, `is_published`, `created`, `modified` |
 | `manuscripts_itemimage` | IIIF-backed image for an item part. | `item_part_id`, `image`, `locus`, `tags` |
 | `manuscripts_imagetext` | Transcription/translation layer for an image. | `item_image_id`, `content`, `type`, `status`, `review_assignee_id`, `language`, `created`, `modified` |

@@ -184,13 +184,13 @@ WHERE c.historical_item_id IS NOT NULL
 ORDER BY c.id
 """
 
-SCRIPTORIUM_ONLY_PLACES_SQL = """
+INSTITUTION_ONLY_PLACES_SQL = """
 SELECT
   (SELECT coalesce(max(id), 0) FROM digipal_place) + row_number() OVER (ORDER BY min(institution.id)) AS id,
   (array_agg(institution.name ORDER BY institution.id))[1] AS name,
   lower(coalesce(institution.name, '')) AS name_key
 FROM digipal_institution institution
-WHERE institution.id IN (SELECT scriptorium_id FROM digipal_scribe)
+WHERE institution.id IN (SELECT scriptorium_id FROM digipal_scribe UNION SELECT institution_id FROM digipal_itemorigin)
   AND NOT EXISTS (
     SELECT 1
     FROM digipal_place existing
@@ -202,7 +202,7 @@ GROUP BY lower(coalesce(institution.name, ''))
 KEPT_PLACE_COUNT_SQL = f"""
 SELECT
   (SELECT count(DISTINCT lower(coalesce(name, ''))) FROM digipal_place)
-  + (SELECT count(*) FROM ({SCRIPTORIUM_ONLY_PLACES_SQL}) scriptorium_places)
+  + (SELECT count(*) FROM ({INSTITUTION_ONLY_PLACES_SQL}) institution_places)
 """
 
 KEPT_PLACE_IDS_SQL = f"""
@@ -210,7 +210,7 @@ SELECT min(id)
 FROM digipal_place
 GROUP BY lower(coalesce(name, ''))
 UNION ALL
-SELECT id FROM ({SCRIPTORIUM_ONLY_PLACES_SQL}) scriptorium_places
+SELECT id FROM ({INSTITUTION_ONLY_PLACES_SQL}) institution_places
 ORDER BY 1
 """
 
@@ -327,8 +327,9 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         strategy="id-preserved names, duplicate names merged ignoring case",
         notes=(
             "Legacy place names map to the shared place list. A place with the same name as an earlier one, ignoring "
-            "case, is merged into it; place types, regions, counties and coordinates are not imported. A scribe's "
-            "scriptorium with no place of the same name is added after the legacy place ids."
+            "case, is merged into it; place types, regions, counties and coordinates are not imported. An "
+            "institution used as a scriptorium or an origin, with no place of the same name, is added after the "
+            "legacy place ids."
         ),
         legacy_count_sql=KEPT_PLACE_COUNT_SQL,
         legacy_ids_sql=KEPT_PLACE_IDS_SQL,
@@ -446,6 +447,19 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         ),
         legacy_count_sql=SUPPORTED_CATALOGUE_NUMBER_COUNT_SQL,
         legacy_ids_sql=SUPPORTED_CATALOGUE_NUMBER_IDS_SQL,
+    ),
+    EntityMapping(
+        key="origins",
+        title="Manuscript origins",
+        legacy_table="digipal_itemorigin",
+        target_table="manuscripts_historicalitemorigin",
+        category="manuscripts",
+        strategy="id-preserved, place through the place merge or the institution's name",
+        notes=(
+            "Each legacy origin keeps its evidence and dubitable flag. Its place is the legacy place, through the "
+            "merged place ids, or the place that has its institution's name. An origin with neither blocks the "
+            "import before any write."
+        ),
     ),
     EntityMapping(
         key="item_parts",
