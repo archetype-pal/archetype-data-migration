@@ -102,6 +102,9 @@ erDiagram
   common_date ||--o{ manuscripts_historicalitemdateassessment : assesses
   common_date ||--o{ scribes_scribe : periods
   common_date ||--o{ scribes_hand : dates
+  common_place ||--o{ scribes_hand : places
+  common_place ||--o{ manuscripts_repository : places
+  common_place ||--o{ scribes_scribe : scriptoria
   auth_user ||--o{ common_editevent : acts
 
   manuscripts_itemformat ||--o{ manuscripts_historicalitem : formats
@@ -111,6 +114,8 @@ erDiagram
   manuscripts_historicalitem ||--o{ manuscripts_historicalitemdescription : descriptions
   manuscripts_historicalitem ||--o{ manuscripts_historicalitemdateassessment : date_assessments
   manuscripts_historicalitem ||--o{ manuscripts_cataloguenumber : catalogue_numbers
+  manuscripts_historicalitem ||--o{ manuscripts_historicalitemorigin : origins
+  common_place ||--o{ manuscripts_historicalitemorigin : origins
   manuscripts_historicalitem ||--o{ manuscripts_itempart : parts
   manuscripts_currentitem ||--o{ manuscripts_itempart : current_location
   manuscripts_itempart ||--o{ manuscripts_itemimage : images
@@ -156,6 +161,7 @@ erDiagram
 | Table | Purpose | Important fields |
 | --- | --- | --- |
 | `common_date` | Sortable display date/range. | `date`, `min_weight`, `max_weight` |
+| `common_place` | Shared place list. | `name`, unique ignoring case |
 | `common_editevent` | Append-only editorial audit log. | `actor_id`, `action`, `target_type`, `target_id`, `summary`, `payload`, `created` |
 
 ### Manuscripts
@@ -163,7 +169,7 @@ erDiagram
 | Table | Purpose | Important fields / links |
 | --- | --- | --- |
 | `manuscripts_itemformat` | Controlled item format list. | `name` |
-| `manuscripts_repository` | Repository/library/person/online source. | `name`, `label`, `place`, `url`, `type` |
+| `manuscripts_repository` | Repository/library/person/online source. | `name`, `label`, `place_id`, `url`, `type` |
 | `manuscripts_bibliographicsource` | Catalogue/manuscript-description source. | `name`, `label` |
 | `manuscripts_currentitem` | Current physical holding. | `repository_id`, `shelfmark`, `description` |
 | `manuscripts_historicalitem` | Historical document/item. | `type`, `format_id`, `language`, `hair_type`, `date_id` |
@@ -171,6 +177,7 @@ erDiagram
 | `manuscripts_historicalitemdescription` | Source-backed description of a historical item. | `historical_item_id`, `source_id`, `content` |
 | `manuscripts_itempart` | Part of a historical item, optionally located in a current item. | `historical_item_id`, `current_item_id`, `current_item_locus`, `custom_label` |
 | `manuscripts_cataloguenumber` | Catalogue identifier for a historical item. | `historical_item_id`, `catalogue_id`, `number`, `url` |
+| `manuscripts_historicalitemorigin` | A place a historical item may have been made. | `historical_item_id`, `place_id`, `evidence`, `dubitable` |
 | `manuscripts_msdescarea` | Target-side TEI msDesc area fragment for an item part; one row per `(item_part_id, area)`, public only when published. | `item_part_id`, `area`, `content`, `is_published`, `created`, `modified` |
 | `manuscripts_itemimage` | IIIF-backed image for an item part. | `item_part_id`, `image`, `locus`, `tags` |
 | `manuscripts_imagetext` | Transcription/translation layer for an image. | `item_image_id`, `content`, `type`, `status`, `review_assignee_id`, `language`, `created`, `modified` |
@@ -182,9 +189,10 @@ erDiagram
 
 | Table | Purpose | Important fields / links |
 | --- | --- | --- |
-| `scribes_scribe` | Named scribe. | `name`, `period_id`, `scriptorium` |
+| `scribes_scribe` | Named scribe. | `name`, `period_id`, `scriptorium_id` |
 | `scribes_script` | Script classification. | `name` |
-| `scribes_hand` | Hand used on an item part. | `scribe_id`, `item_part_id`, `script_id`, `name`, `num`, `priority`, `is_default`, `date_id`, `place`, `description` |
+| `scribes_hand` | Hand used on an item part. | `scribe_id`, `item_part_id`, `script_id`, `name`, `num`, `priority`, `is_default`, `date_id`, `place_id` |
+| `scribes_handdescription` | Description of a hand. | `hand_id`, `source_id`, `content` |
 | `scribes_hand_item_part_images` | Images associated with a hand. | `hand_id`, `itemimage_id` |
 
 ### Symbols Structure

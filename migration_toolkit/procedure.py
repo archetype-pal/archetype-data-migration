@@ -200,9 +200,17 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         key="03_core_vocabularies",
         title="Core Vocabularies",
         objective="Import stable shared vocabularies before dependent manuscript rows.",
-        source_tables=("digipal_date", "digipal_format", "digipal_source", "digipal_repository"),
+        source_tables=(
+            "digipal_date",
+            "digipal_place",
+            "digipal_institution",
+            "digipal_format",
+            "digipal_source",
+            "digipal_repository",
+        ),
         target_tables=(
             "common_date",
+            "common_place",
             "manuscripts_itemformat",
             "manuscripts_bibliographicsource",
             "manuscripts_repository",
@@ -210,10 +218,15 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         importer_contract=(
             "Preserve ids where the audit says ids are preserved.",
             "Keep target-only date seed rows documented and do not overwrite them.",
+            "Merge places that share a name, ignoring case, into the first one and list them in "
+            "source_profile.place_list.",
             "Apply repository label/type/place transformations explicitly.",
+            "Link each repository to its place, through the merged place ids.",
+            "Add each institution used as a scriptorium or an origin, with no place of the same name, to the place "
+            "list after the legacy place ids, and list them in source_profile.place_list.",
         ),
         validation=(
-            "Audit mappings for dates, item formats, sources, and repositories match accepted warnings.",
+            "Audit mappings for dates, places, item formats, sources, and repositories match accepted warnings.",
             "Foreign key lookups used by manuscript phases resolve.",
         ),
         rollback="Delete rows imported by this phase after dependent phases are rolled back, or restore backup.",
@@ -262,6 +275,9 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "digipal_historicalitemtype",
             "digipal_description",
             "digipal_cataloguenumber",
+            "digipal_itemorigin",
+            "digipal_place",
+            "digipal_institution",
             "digipal_itempart",
             "digipal_itempartitem",
             "digipal_image",
@@ -271,6 +287,7 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "manuscripts_historicalitem",
             "manuscripts_historicalitemdescription",
             "manuscripts_cataloguenumber",
+            "manuscripts_historicalitemorigin",
             "manuscripts_itempart",
             "manuscripts_msdescarea",
             "manuscripts_itemimage",
@@ -284,6 +301,9 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "Fail on unsupported digipal_description relationships unless an explicit skip policy is approved.",
             "Treat manuscripts_msdescarea as target-only schema tracking unless an explicit msDesc seed policy is "
             "approved.",
+            "Import each origin with its evidence and dubitable flag; its place is the legacy place, through the "
+            "merged place ids, or the place that has its institution's name.",
+            "Block the import when an origin has neither a place nor an institution.",
             "Create the documented -1 item-part placeholder only if needed.",
             "Validate shortened shelfmark/current locus fields before insert.",
         ),
@@ -299,12 +319,27 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
         key="06_scribes_hands",
         title="Scribes And Hands",
         objective="Import scribes, hands, and image-hand links after item parts and images exist.",
-        source_tables=("digipal_scribe", "digipal_script", "digipal_hand", "digipal_hand_images"),
-        target_tables=("scribes_scribe", "scribes_script", "scribes_hand", "scribes_hand_item_part_images"),
+        source_tables=(
+            "digipal_scribe",
+            "digipal_place",
+            "digipal_institution",
+            "digipal_script",
+            "digipal_hand",
+            "digipal_hand_images",
+        ),
+        target_tables=(
+            "scribes_scribe",
+            "scribes_script",
+            "scribes_hand",
+            "scribes_handdescription",
+            "scribes_hand_item_part_images",
+        ),
         importer_contract=(
             "Preserve ids for scribes, scripts, hands, and hand-image links.",
             "Create documented placeholder scribe -1 only if needed.",
             "Map legacy display order into num/priority/is_default according to product policy.",
+            "Link each hand to its assigned place, through the merged place ids.",
+            "Link each scribe to the place that has its scriptorium's name.",
         ),
         validation=(
             "Hand ordering works for sampled item parts.",

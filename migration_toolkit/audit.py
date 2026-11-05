@@ -184,6 +184,36 @@ WHERE c.historical_item_id IS NOT NULL
 ORDER BY c.id
 """
 
+INSTITUTION_ONLY_PLACES_SQL = """
+SELECT
+  (SELECT coalesce(max(id), 0) FROM digipal_place) + row_number() OVER (ORDER BY min(institution.id)) AS id,
+  (array_agg(institution.name ORDER BY institution.id))[1] AS name,
+  lower(coalesce(institution.name, '')) AS name_key
+FROM digipal_institution institution
+WHERE institution.id IN (SELECT scriptorium_id FROM digipal_scribe UNION SELECT institution_id FROM digipal_itemorigin)
+  AND NOT EXISTS (
+    SELECT 1
+    FROM digipal_place existing
+    WHERE lower(coalesce(existing.name, '')) = lower(coalesce(institution.name, ''))
+  )
+GROUP BY lower(coalesce(institution.name, ''))
+"""
+
+KEPT_PLACE_COUNT_SQL = f"""
+SELECT
+  (SELECT count(DISTINCT lower(coalesce(name, ''))) FROM digipal_place)
+  + (SELECT count(*) FROM ({INSTITUTION_ONLY_PLACES_SQL}) institution_places)
+"""
+
+KEPT_PLACE_IDS_SQL = f"""
+SELECT min(id)
+FROM digipal_place
+GROUP BY lower(coalesce(name, ''))
+UNION ALL
+SELECT id FROM ({INSTITUTION_ONLY_PLACES_SQL}) institution_places
+ORDER BY 1
+"""
+
 
 @dataclass(frozen=True)
 class PublicationAuthorPolicy:
@@ -287,6 +317,22 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         strategy="id-preserved with target-only date seeds",
         notes="Legacy sortable dates map to common.Date. Target ids 1-16 are newer target-only date seeds.",
         allowed_extra_target_ids=frozenset(range(1, 17)),
+    ),
+    EntityMapping(
+        key="places",
+        title="Places",
+        legacy_table="digipal_place",
+        target_table="common_place",
+        category="common",
+        strategy="id-preserved names, duplicate names merged ignoring case",
+        notes=(
+            "Legacy place names map to the shared place list. A place with the same name as an earlier one, ignoring "
+            "case, is merged into it; place types, regions, counties and coordinates are not imported. An "
+            "institution used as a scriptorium or an origin, with no place of the same name, is added after the "
+            "legacy place ids."
+        ),
+        legacy_count_sql=KEPT_PLACE_COUNT_SQL,
+        legacy_ids_sql=KEPT_PLACE_IDS_SQL,
     ),
     EntityMapping(
         key="edit_events",
@@ -403,6 +449,19 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         legacy_ids_sql=SUPPORTED_CATALOGUE_NUMBER_IDS_SQL,
     ),
     EntityMapping(
+        key="origins",
+        title="Manuscript origins",
+        legacy_table="digipal_itemorigin",
+        target_table="manuscripts_historicalitemorigin",
+        category="manuscripts",
+        strategy="id-preserved, place through the place merge or the institution's name",
+        notes=(
+            "Each legacy origin keeps its evidence and dubitable flag. Its place is the legacy place, through the "
+            "merged place ids, or the place that has its institution's name. An origin with neither blocks the "
+            "import before any write."
+        ),
+    ),
+    EntityMapping(
         key="item_parts",
         title="Item parts",
         legacy_table="digipal_itempart",
@@ -485,7 +544,10 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         target_table="scribes_hand",
         category="scribes",
         strategy="id-preserved transformed fields",
-        notes="Legacy labels/display notes collapse into target name/place/description fields.",
+        notes=(
+            "Legacy labels collapse into the target name; display notes, internal notes and comments become one "
+            "hand description; the assigned place becomes the hand's place."
+        ),
     ),
     EntityMapping(
         key="hand_images",
@@ -755,7 +817,7 @@ VALUE_AUDIT_COVERAGE: tuple[ValueAuditCoverage, ...] = (
         audited_fields=("name", "label", "place", "url", "type"),
         check_keys=("repository_fields",),
         coverage_type="row-value",
-        notes="Compares denormalised repository labels, places, URLs, and derived type values by preserved id.",
+        notes="Compares repository labels, linked place names, URLs, and derived type values by preserved id.",
     ),
     ValueAuditCoverage(
         entity_key="current_items",
@@ -1572,7 +1634,7 @@ def _audited_repository_row(legacy_row: dict[str, Any]) -> dict[str, Any]:
         30,
         default=f"repo-{repository_id}",
     )
-    place = _audit_truncate(legacy_row.get("place") or "", 50)
+    place = _audit_truncate(legacy_row.get("place") or "", 150)
     return {
         "name": _audit_truncate(legacy_row.get("name") or label, 100),
         "label": label,
@@ -1586,18 +1648,24 @@ def check_repository_fields(legacy_conn: Connection[Any], target_conn: Connectio
     legacy_rows = _dict_rows(
         legacy_conn,
         """
-        SELECT r.id, r.name, r.short_name, r.url, p.name AS place
+        SELECT r.id, r.name, r.short_name, r.url, kept.name AS place
         FROM digipal_repository r
-        LEFT JOIN digipal_place p ON p.id = r.place_id
+        LEFT JOIN digipal_place kept ON kept.id = (
+          SELECT min(candidate.id)
+          FROM digipal_place linked
+          JOIN digipal_place candidate ON lower(coalesce(candidate.name, '')) = lower(coalesce(linked.name, ''))
+          WHERE linked.id = r.place_id
+        )
         ORDER BY r.id
         """,
     )
     target_rows = _dict_rows(
         target_conn,
         """
-        SELECT id, name, label, place, url, type
-        FROM manuscripts_repository
-        ORDER BY id
+        SELECT r.id, r.name, r.label, coalesce(p.name, '') AS place, r.url, r.type
+        FROM manuscripts_repository r
+        LEFT JOIN common_place p ON p.id = r.place_id
+        ORDER BY r.id
         """,
     )
     target_by_id = {int(row["id"]): row for row in target_rows}

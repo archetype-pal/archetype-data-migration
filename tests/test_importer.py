@@ -36,9 +36,12 @@ from migration_toolkit.importer import (
     expand_phases,
     historical_item_type,
     historical_item_type_profile,
+    import_core_vocabularies,
     import_image_text,
+    import_manuscripts,
     import_publications,
     import_report_to_dict,
+    import_scribes_hands,
     legacy_image_path,
     legacy_publication_url_rewrite_map,
     parse_annotation,
@@ -452,6 +455,328 @@ def test_import_publications_imports_generic_keywords_not_category_labels(monkey
     assert "blog_blogpost_categories" not in fetch_queries[0]
     assert "generic_assignedkeyword" in fetch_queries[2]
     assert "blog_blogpost_categories" not in fetch_queries[2]
+
+
+def test_import_core_vocabularies_imports_places_and_merges_case_duplicates(monkeypatch):
+    def fake_fetch_rows(_conn, query, _params=None):
+        if "FROM digipal_place p" in query:
+            return [
+                {"id": 3, "name": "Worcester", "kept_id": 3},
+                {"id": 7, "name": "NE France", "kept_id": 7},
+                {"id": 9, "name": "ne france", "kept_id": 7},
+            ]
+        return []
+
+    inserted = {}
+
+    def fake_insert_rows(_conn, query, rows):
+        table = query.split("INSERT INTO ", 1)[1].split()[0]
+        inserted[table] = list(rows)
+        return len(inserted[table])
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.insert_rows", fake_insert_rows)
+
+    ctx = ImportContext(
+        legacy_conn=None,
+        target_conn=None,
+        options=ImportOptions(),
+        backend_contract=BackendContract(
+            historical_item_type_labels=("Charter",),
+            historical_item_type_values=frozenset({"charter"}),
+            source="test",
+        ),
+    )
+
+    result = import_core_vocabularies(ctx)
+
+    assert inserted["common_place"] == [{"id": 3, "name": "Worcester"}, {"id": 7, "name": "NE France"}]
+    assert result["common_place"] == 2
+    assert "common_place" in PHASE_TARGET_TABLES["core_vocabularies"]
+    assert "common_place" in TARGET_DOMAIN_TABLES
+    assert "common_place" in REQUIRED_TARGET_TABLES
+
+
+def test_import_core_vocabularies_links_repositories_to_their_kept_place(monkeypatch):
+    def fake_fetch_rows(_conn, query, _params=None):
+        if "FROM digipal_repository" in query:
+            return [
+                {"id": 4, "name": "British Library", "short_name": "BL", "url": "", "place": "London", "place_id": 12},
+                {"id": 5, "name": "Private owner", "short_name": "PO", "url": "", "place": None, "place_id": None},
+            ]
+        return []
+
+    inserted = {}
+
+    def fake_insert_rows(_conn, query, rows):
+        table = query.split("INSERT INTO ", 1)[1].split()[0]
+        inserted[table] = list(rows)
+        return len(inserted[table])
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.insert_rows", fake_insert_rows)
+
+    import_core_vocabularies(
+        ImportContext(
+            legacy_conn=None,
+            target_conn=None,
+            options=ImportOptions(),
+            backend_contract=BackendContract(
+                historical_item_type_labels=("Charter",),
+                historical_item_type_values=frozenset({"charter"}),
+                source="test",
+            ),
+        )
+    )
+
+    repositories = inserted["manuscripts_repository"]
+    assert [(row["id"], row["place_id"]) for row in repositories] == [(4, 12), (5, None)]
+    assert all("place" not in row for row in repositories)
+
+
+def test_import_core_vocabularies_adds_institutions_with_no_place_of_that_name(monkeypatch):
+    def fake_fetch_rows(_conn, query, _params=None):
+        if "FROM digipal_place p" in query:
+            return [{"id": 3, "name": "Worcester", "kept_id": 3}]
+        if "institution_places" in query:
+            return [{"id": 8, "name": "St Albans Abbey"}]
+        return []
+
+    inserted = []
+
+    def fake_insert_rows(_conn, query, rows):
+        if "INSERT INTO common_place" in query:
+            inserted.extend(rows)
+        return len(rows)
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.insert_rows", fake_insert_rows)
+
+    ctx = ImportContext(
+        legacy_conn=None,
+        target_conn=None,
+        options=ImportOptions(),
+        backend_contract=BackendContract(
+            historical_item_type_labels=("Charter",),
+            historical_item_type_values=frozenset({"charter"}),
+            source="test",
+        ),
+    )
+
+    result = import_core_vocabularies(ctx)
+
+    assert inserted == [{"id": 3, "name": "Worcester"}, {"id": 8, "name": "St Albans Abbey"}]
+    assert result["common_place"] == 2
+
+
+def test_import_scribes_hands_links_scribes_to_their_scriptorium(monkeypatch):
+    def fake_fetch_rows(_conn, query, _params=None):
+        if "FROM digipal_scribe scribe" in query:
+            return [
+                {"id": 1, "name": "Scribe A", "scriptorium_id": 8},
+                {"id": 2, "name": "Scribe B", "scriptorium_id": None},
+            ]
+        return []
+
+    inserted = {}
+
+    def fake_insert_rows(_conn, query, rows):
+        table = query.split("INSERT INTO ", 1)[1].split()[0]
+        inserted.setdefault(table, list(rows))
+        return len(rows)
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.insert_rows", fake_insert_rows)
+
+    import_scribes_hands(
+        ImportContext(
+            legacy_conn=None,
+            target_conn=None,
+            options=ImportOptions(),
+            backend_contract=BackendContract(
+                historical_item_type_labels=("Charter",),
+                historical_item_type_values=frozenset({"charter"}),
+                source="test",
+            ),
+        )
+    )
+
+    assert [(row["id"], row["scriptorium_id"]) for row in inserted["scribes_scribe"]] == [(-1, None), (1, 8), (2, None)]
+
+
+def test_import_manuscripts_imports_origins_with_their_place(monkeypatch):
+    def fake_fetch_rows(_conn, query, _params=None):
+        if "FROM digipal_itemorigin origin" in query:
+            return [
+                {"id": 1, "historical_item_id": 384, "evidence": "Ker 1957", "dubitable": True, "place_id": 75},
+                {"id": 2, "historical_item_id": 390, "evidence": None, "dubitable": False, "place_id": 13},
+            ]
+        return []
+
+    inserted = {}
+
+    def fake_insert_rows(_conn, query, rows):
+        table = query.split("INSERT INTO ", 1)[1].split()[0]
+        inserted[table] = list(rows)
+        return len(rows)
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.insert_rows", fake_insert_rows)
+    monkeypatch.setattr("migration_toolkit.importer.scalar", lambda *_args, **_kwargs: 0)
+
+    import_manuscripts(
+        ImportContext(
+            legacy_conn=None,
+            target_conn=None,
+            options=ImportOptions(),
+            backend_contract=BackendContract(
+                historical_item_type_labels=("Charter",),
+                historical_item_type_values=frozenset({"charter"}),
+                source="test",
+            ),
+        )
+    )
+
+    assert inserted["manuscripts_historicalitemorigin"] == [
+        {"id": 1, "historical_item_id": 384, "place_id": 75, "evidence": "Ker 1957", "dubitable": True},
+        {"id": 2, "historical_item_id": 390, "place_id": 13, "evidence": "", "dubitable": False},
+    ]
+    assert "manuscripts_historicalitemorigin" in PHASE_TARGET_TABLES["manuscripts"]
+
+
+def test_import_scribes_hands_writes_hand_descriptions_to_their_own_table(monkeypatch):
+    fetch_responses = iter(
+        [
+            [{"id": 1, "name": "Scribe", "scriptorium_id": None}],
+            [],
+            [
+                {
+                    "id": 10,
+                    "item_part_id": 5,
+                    "scribe_id": 1,
+                    "script_id": None,
+                    "assigned_date_id": None,
+                    "assigned_place_id": 3,
+                    "label": "Main hand",
+                    "display_label": None,
+                    "internal_note": " Checked ",
+                    "display_note": "Upright",
+                    "comments": None,
+                    "num": 1,
+                },
+                {
+                    "id": 11,
+                    "item_part_id": 5,
+                    "scribe_id": 1,
+                    "script_id": None,
+                    "assigned_date_id": None,
+                    "assigned_place_id": None,
+                    "label": "Second hand",
+                    "display_label": None,
+                    "internal_note": "",
+                    "display_note": "  ",
+                    "comments": None,
+                    "num": 2,
+                },
+            ],
+            [],
+        ]
+    )
+    inserted = {}
+
+    def fake_insert_rows(_conn, query, rows):
+        table = query.split("INSERT INTO ", 1)[1].split()[0]
+        inserted[table] = (query, list(rows))
+        return len(inserted[table][1])
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", lambda *_args, **_kwargs: next(fetch_responses))
+    monkeypatch.setattr("migration_toolkit.importer.insert_rows", fake_insert_rows)
+
+    ctx = ImportContext(
+        legacy_conn=None,
+        target_conn=None,
+        options=ImportOptions(),
+        backend_contract=BackendContract(
+            historical_item_type_labels=("Charter",),
+            historical_item_type_values=frozenset({"charter"}),
+            source="test",
+        ),
+    )
+
+    result = import_scribes_hands(ctx)
+
+    hand_query, hands = inserted["scribes_hand"]
+    hand_columns = {column.strip() for column in hand_query.split("(", 1)[1].split(")", 1)[0].split(",")}
+    assert hand_columns <= {
+        "id",
+        "name",
+        "item_part_id",
+        "scribe_id",
+        "script_id",
+        "date_id",
+        "is_default",
+        "num",
+        "priority",
+        "place_id",
+    }
+    assert [hand["id"] for hand in hands] == [10, 11]
+    assert all("place" not in hand and "description" not in hand for hand in hands)
+    assert inserted["scribes_handdescription"][1] == [{"hand_id": 10, "content": "Upright\n\nChecked"}]
+    assert result["scribes_handdescription"] == 1
+    assert "scribes_handdescription" in PHASE_TARGET_TABLES["scribes_hands"]
+    assert "scribes_handdescription" in REQUIRED_TARGET_TABLES
+
+
+def test_import_scribes_hands_links_hands_to_their_assigned_place(monkeypatch):
+    def hand(hand_id, place_id):
+        return {
+            "id": hand_id,
+            "item_part_id": 5,
+            "scribe_id": 1,
+            "script_id": None,
+            "assigned_date_id": None,
+            "assigned_place_id": place_id,
+            "label": f"Hand {hand_id}",
+            "display_label": None,
+            "internal_note": None,
+            "display_note": None,
+            "comments": None,
+            "num": 1,
+        }
+
+    def fake_fetch_rows(_conn, query, _params=None):
+        if "digipal_hand_images" in query:
+            return []
+        if "FROM digipal_hand" in query:
+            return [hand(10, 7), hand(11, None)]
+        return []
+
+    inserted = {}
+
+    def fake_insert_rows(_conn, query, rows):
+        table = query.split("INSERT INTO ", 1)[1].split()[0]
+        inserted[table] = (query, list(rows))
+        return len(inserted[table][1])
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.insert_rows", fake_insert_rows)
+
+    ctx = ImportContext(
+        legacy_conn=None,
+        target_conn=None,
+        options=ImportOptions(),
+        backend_contract=BackendContract(
+            historical_item_type_labels=("Charter",),
+            historical_item_type_values=frozenset({"charter"}),
+            source="test",
+        ),
+    )
+
+    import_scribes_hands(ctx)
+
+    hand_query, hands = inserted["scribes_hand"]
+    assert "place_id" in hand_query.split("VALUES", 1)[0]
+    assert [(row["id"], row["place_id"]) for row in hands] == [(10, 7), (11, None)]
 
 
 def test_character_type_profile_records_reviewed_types_and_invalid_rows(monkeypatch):
@@ -1139,6 +1464,34 @@ def test_source_profile_blockers_reject_invalid_historical_item_types_before_man
     assert "historical item type values" in blockers[0]
     warnings = source_profile_warnings(profile)
     assert warnings[-1].endswith(": 1")
+
+
+def test_source_profile_blockers_reject_origins_without_a_place_before_manuscript_writes():
+    profile = {
+        "description_relationships": {
+            "counts": {
+                "historical_only": 0,
+                "text_only": 0,
+                "both_links": 0,
+                "neither_link": 0,
+                "dangling_historical_item": 0,
+            },
+            "samples": {},
+        },
+        "place_list": {"merged_count": 1, "added_institution_count": 2},
+        "origin_place_integrity": {"missing_place_count": 3, "sample": []},
+        "allograph_character_integrity": {"missing_character_count": 0, "sample": []},
+    }
+
+    assert source_profile_blockers(profile, ("core_vocabularies", "scribes_hands")) == []
+    blockers = source_profile_blockers(profile, ("manuscripts",))
+    assert len(blockers) == 1
+    assert "neither a place nor an institution" in blockers[0]
+    warnings = source_profile_warnings(profile)
+    assert len(warnings) == 3
+    assert "digipal_place" in warnings[0] and warnings[0].endswith(": 1")
+    assert "digipal_institution" in warnings[1] and warnings[1].endswith(": 2")
+    assert "digipal_itemorigin" in warnings[2] and warnings[2].endswith(": 3")
 
 
 def test_source_profile_blockers_reject_invalid_character_types_before_symbol_writes():

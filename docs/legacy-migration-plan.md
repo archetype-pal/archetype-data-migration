@@ -67,23 +67,25 @@ The current target is clearly a selective migration, not a full clone:
 | Legacy entity | Current entity | Migration status |
 | --- | --- | --- |
 | `digipal_date` | `common_date` | Id-preserved, with target-only seed dates `1` to `16`. |
+| `digipal_place` | `common_place` | Id-preserved names. A place with the same name as an earlier one, ignoring case, is merged into it and listed in `source_profile.place_list`. Types, regions, counties and coordinates are not imported. |
 | none | `common_editevent` | Target-only append-only edit log; do not import from legacy. |
 | `digipal_format` | `manuscripts_itemformat` | Direct/id-preserved. |
 | `digipal_source` | `manuscripts_bibliographicsource` | Direct/id-preserved. |
-| `digipal_repository` | `manuscripts_repository` | Id-preserved; place/type denormalised. Blank labels need explicit fallbacks. |
+| `digipal_repository` | `manuscripts_repository` | Id-preserved; `place_id` is the legacy place, through the merged place ids; type is still derived from the place name. Blank labels need explicit fallbacks. |
 | `digipal_currentitem` | `manuscripts_currentitem` | Id-preserved; shelfmarks/descriptions transformed. |
 | `digipal_historicalitem` | `manuscripts_historicalitem` | Id-preserved; language/hair/date lookups flattened. `type` must use current backend choices (`agreement`, `charter`, `letter`); unsupported legacy types such as Brieve, Settlement, and Notification block import until an explicit mapping or source correction is approved. |
 | target date metadata | `manuscripts_historicalitemdateassessment` | Target-only derived metadata, currently 22 rows. |
 | `digipal_description` | `manuscripts_historicalitemdescription` | Id-preserved; `description` becomes `content`. |
 | `digipal_cataloguenumber` | `manuscripts_cataloguenumber` | Id-preserved; `source_id` becomes `catalogue_id`. |
+| `digipal_itemorigin` | `manuscripts_historicalitemorigin` | Id-preserved; `place_id` is the legacy place through the merged place ids, or the place with the institution's name; evidence and dubitable kept. An origin with neither a place nor an institution blocks the import. |
 | `digipal_itempart` plus `digipal_itempartitem` | `manuscripts_itempart` | Id-preserved from item part; target has synthetic `-1`. Historical link comes from `digipal_itempartitem`. |
 | none | `manuscripts_msdescarea` | Target-side TEI msDesc area fragments; no legacy source mapping is currently approved. Keep empty unless an explicit seed policy is defined. |
 | `digipal_image` | `manuscripts_itemimage` | Id-preserved; image path/IIIF fields transformed. |
 | Non-empty `digipal_text_textcontentxml` | `manuscripts_imagetext` | Content-preserved; ids not preserved. Empty XML rows are excluded. Current review fields are target-side additions. Backend migration `0024_remove_imagetext_content_dpt_legacy` removed the temporary retention column. |
 | none | `manuscripts_statustransition` | Target-only image-text review workflow log; do not import from legacy. |
-| `digipal_scribe` | `scribes_scribe` | Id-preserved; target has synthetic `-1`. |
+| `digipal_scribe` | `scribes_scribe` | Id-preserved; target has synthetic `-1`. `scriptorium_id` is the place with the legacy scriptorium's name; a scriptorium with no such place is added to the place list. |
 | `digipal_script` | `scribes_script` | Direct/id-preserved; currently zero rows. |
-| `digipal_hand` | `scribes_hand` | Id-preserved; legacy display fields collapse into target name/place/description. Current `num`, `priority`, and `is_default` drive ordering/default selection. |
+| `digipal_hand` | `scribes_hand` | Id-preserved; legacy labels collapse into the target name. Display notes, internal notes and comments become one `scribes_handdescription` row with no source. `place_id` is the legacy assigned place, through the merged place ids. Current `num`, `priority`, and `is_default` drive ordering/default selection. |
 | `digipal_hand_images` | `scribes_hand_item_part_images` | Direct/id-preserved. |
 | `digipal_character` | `symbols_structure_character` | Id-preserved; `type` comes from `digipal_character.ontograph_id → digipal_ontograph.ontograph_type_id → digipal_ontographtype.name`, not from character form or ontograph name. |
 | `digipal_allograph` | `symbols_structure_allograph` | Id-preserved. Synthetic placeholders require an explicit source policy. |
@@ -302,7 +304,8 @@ product requirement reintroduces them:
 - Legacy CMS structures outside the approved Page/Partner/Event decisions:
   `forms_*`, `galleries_*`, `twitter_*`, and unapproved `pages_*` fragments.
 - Empty or unsupported palaeographic/manuscript tables such as legacy
-  collation, decoration, layout, owners, places, institutions, measurements,
+  collation, decoration, layout, owners, institutions (apart from those used
+  as scriptoria or origins, which become places), measurements,
   and provenance tables. Some have data, but there is no current model surface
   for them.
 - Legacy permission/group assignments. Rebuild these in the current app
