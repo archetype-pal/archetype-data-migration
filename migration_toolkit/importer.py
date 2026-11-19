@@ -40,6 +40,14 @@ from migration_toolkit.backend_contract import (
     load_backend_contract,
 )
 from migration_toolkit.carousel import CarouselImagePathError, CarouselTitleError, carousel_image_path, carousel_title
+from migration_toolkit.source_mapping import (
+    BUILTIN_CHARACTER_TYPES,
+    BUILTIN_REPOSITORY_LABEL_FALLBACKS_BY_ID,
+    DEFAULT_SOURCE_MAPPING,
+    SourceMapping,
+    SourceMappingError,
+    load_source_mapping,
+)
 
 
 class LegacyMigrationImportError(RuntimeError):
@@ -96,20 +104,9 @@ CAROUSEL_LEGACY_MANUSCRIPT_PATH_RE = re.compile(
     re.IGNORECASE,
 )
 CAROUSEL_LEGACY_SEARCH_PATH = "/digipal/search/facets"
-REVIEWED_CHARACTER_TYPES = frozenset(
-    {
-        "letter",
-        "abbreviation",
-        "character-sequence",
-        "punctuation",
-        "accent",
-    }
-)
-REVIEWED_REPOSITORY_LABEL_FALLBACKS_BY_ID = {
-    3: "CAM",
-    8: "PMFED",
-    11: "LTNA",
-}
+# Built-in defaults; a source mapping file (migration_toolkit.source_mapping) replaces them.
+REVIEWED_CHARACTER_TYPES = frozenset(BUILTIN_CHARACTER_TYPES)
+REVIEWED_REPOSITORY_LABEL_FALLBACKS_BY_ID = dict(BUILTIN_REPOSITORY_LABEL_FALLBACKS_BY_ID)
 DEFAULT_HISTORICAL_ITEM_TYPE_VALUES = backend_choice_values(DEFAULT_HISTORICAL_ITEM_TYPE_LABELS)
 CAROUSEL_CURRENT_ABOUT_PATH = "/about/about-models-of-authority"
 CAROUSEL_LEGACY_SEARCH_IGNORED_PARAMS = {
@@ -549,6 +546,7 @@ class ImportOptions:
     skip_post_audit: bool = False
     manifest_path: Path | None = None
     backend_root: Path | None = None
+    source_mapping_path: Path | None = None
 
 
 @dataclass
@@ -601,11 +599,13 @@ class ImportContext:
         options: ImportOptions,
         backend_contract: BackendContract,
         publication_author_assignments: dict[int, int] | None = None,
+        source_mapping: SourceMapping = DEFAULT_SOURCE_MAPPING,
     ) -> None:
         self.legacy_conn = legacy_conn
         self.target_conn = target_conn
         self.options = options
         self.backend_contract = backend_contract
+        self.source_mapping = source_mapping
         self.publication_author_assignments = publication_author_assignments or {}
         self.phase_warnings: list[str] = []
 
@@ -696,7 +696,16 @@ def parse_date_weights(
     return 0, 0
 
 
-def legacy_image_path(iipimage: str | None, image: str | None = None) -> str:
+def legacy_image_path(
+    iipimage: str | None,
+    image: str | None = None,
+    *,
+    image_id: int | None = None,
+    mapping: SourceMapping = DEFAULT_SOURCE_MAPPING,
+) -> str:
+    override = mapping.item_image_path_overrides.get(image_id) if image_id is not None else None
+    if override is not None:
+        iipimage, image = override.iipimage, None
     for value in (iipimage, image):
         path = _normalised_legacy_image_path(value)
         if path:
@@ -921,8 +930,10 @@ def text_or_blank(value: Any) -> str:
     return "" if value is None else str(value)
 
 
-def repository_label(repository_id: int, name: Any, short_name: Any) -> str:
-    label = REVIEWED_REPOSITORY_LABEL_FALLBACKS_BY_ID.get(repository_id) or short_name or name
+def repository_label(
+    repository_id: int, name: Any, short_name: Any, *, mapping: SourceMapping = DEFAULT_SOURCE_MAPPING
+) -> str:
+    label = mapping.repository_label_fallbacks.get(repository_id) or short_name or name
     return truncate(label, 30, default=f"repo-{repository_id}")
 
 
@@ -933,14 +944,19 @@ def repository_type(place: Any) -> str | None:
     return "library"
 
 
-def character_type(ontograph_type_name: Any, *, character_id: int | None = None) -> str:
+def character_type(
+    ontograph_type_name: Any,
+    *,
+    character_id: int | None = None,
+    mapping: SourceMapping = DEFAULT_SOURCE_MAPPING,
+) -> str:
     """Return the reviewed target Character.type value from legacy ontograph type."""
 
-    value = text_or_blank(ontograph_type_name).strip()
+    target = mapping.character_type(ontograph_type_name)
     context = f" for character id {character_id}" if character_id is not None else ""
-    if value not in REVIEWED_CHARACTER_TYPES:
+    if target is None:
         raise CharacterTypeError(f"Unsupported legacy ontograph type{context}: {ontograph_type_name!r}")
-    return value
+    return target
 
 
 def publication_link_rewrite_maps(
@@ -1924,7 +1940,9 @@ def origin_place_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
     return {"missing_place_count": count, "sample": rows}
 
 
-def character_type_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
+def character_type_profile(
+    legacy_conn: Connection[Any], mapping: SourceMapping = DEFAULT_SOURCE_MAPPING
+) -> dict[str, Any]:
     rows = fetch_rows(
         legacy_conn,
         """
@@ -1941,7 +1959,7 @@ def character_type_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
 
     for row in rows:
         try:
-            target_type = character_type(row["ontograph_type_name"], character_id=int(row["id"]))
+            target_type = character_type(row["ontograph_type_name"], character_id=int(row["id"]), mapping=mapping)
         except CharacterTypeError as exc:
             invalid.append(
                 {
@@ -2091,7 +2109,11 @@ def target_users_by_username(target_conn: Connection[Any], usernames: list[str])
     return {str(row["username"]): row for row in rows}
 
 
-def build_source_profile(legacy_conn: Connection[Any], backend_contract: BackendContract) -> dict[str, Any]:
+def build_source_profile(
+    legacy_conn: Connection[Any],
+    backend_contract: BackendContract,
+    mapping: SourceMapping = DEFAULT_SOURCE_MAPPING,
+) -> dict[str, Any]:
     return {
         "place_list": place_list_profile(legacy_conn),
         "description_relationships": description_relationship_profile(legacy_conn),
@@ -2099,7 +2121,7 @@ def build_source_profile(legacy_conn: Connection[Any], backend_contract: Backend
         "origin_place_integrity": origin_place_profile(legacy_conn),
         "historical_item_types": historical_item_type_profile(legacy_conn, backend_contract),
         "allograph_character_integrity": allograph_character_profile(legacy_conn),
-        "character_types": character_type_profile(legacy_conn),
+        "character_types": character_type_profile(legacy_conn, mapping),
         "legacy_publication_authors": legacy_publication_author_profile(legacy_conn),
         "carousel_image_paths": carousel_image_path_profile(legacy_conn),
         "carousel_titles": carousel_title_profile(legacy_conn),
@@ -2522,7 +2544,7 @@ def import_core_vocabularies(ctx: ImportContext) -> dict[str, int]:
     )
     repositories = []
     for row in repository_rows:
-        label = repository_label(int(row["id"]), row["name"], row["short_name"])
+        label = repository_label(int(row["id"]), row["name"], row["short_name"], mapping=ctx.source_mapping)
         repositories.append(
             {
                 "id": row["id"],
@@ -2569,7 +2591,9 @@ def import_symbols(ctx: ImportContext) -> dict[str, int]:
             {
                 "id": row["id"],
                 "name": text_or_blank(row["name"]),
-                "type": character_type(row["ontograph_type_name"], character_id=int(row["id"])),
+                "type": character_type(
+                    row["ontograph_type_name"], character_id=int(row["id"]), mapping=ctx.source_mapping
+                ),
             }
             for row in character_rows
         ],
@@ -2949,7 +2973,12 @@ def import_manuscripts(ctx: ImportContext) -> dict[str, int]:
             {
                 "id": row["id"],
                 "item_part_id": row["item_part_id"] or -1,
-                "image": truncate(legacy_image_path(row["iipimage"], row["image"]), 200),
+                "image": truncate(
+                    legacy_image_path(
+                        row["iipimage"], row["image"], image_id=int(row["id"]), mapping=ctx.source_mapping
+                    ),
+                    200,
+                ),
                 "locus": truncate(row["locus"] or "", 72),
             }
             for row in image_rows
@@ -3623,7 +3652,11 @@ def run_import(options: ImportOptions) -> ImportReport:
             backend_contract = load_backend_contract(options.backend_root)
         except BackendContractError as exc:
             raise LegacyMigrationImportError(str(exc)) from exc
-        source_profile = build_source_profile(legacy_conn, backend_contract)
+        try:
+            source_mapping = load_source_mapping(options.source_mapping_path)
+        except SourceMappingError as exc:
+            raise LegacyMigrationImportError(str(exc)) from exc
+        source_profile = build_source_profile(legacy_conn, backend_contract, source_mapping)
         source_warnings = source_profile_warnings(source_profile)
         execute_blockers = source_profile_blockers(
             source_profile,
@@ -3694,6 +3727,7 @@ def run_import(options: ImportOptions) -> ImportReport:
             options,
             backend_contract,
             publication_author_assignments=publication_author_assignments,
+            source_mapping=source_mapping,
         )
         phase_results: list[PhaseResult] = []
 
@@ -3813,6 +3847,7 @@ def run_import(options: ImportOptions) -> ImportReport:
                 target_url=target_url,
                 publication_author_policy=publication_author_policy,
                 backend_root=options.backend_root,
+                source_mapping=source_mapping,
             )
         except LegacyMigrationAuditError as exc:
             raise LegacyMigrationImportError(f"Post-import audit failed to run: {exc}") from exc
@@ -3830,6 +3865,7 @@ def run_import(options: ImportOptions) -> ImportReport:
             "unsupported_description_policy": options.unsupported_description_policy,
             "unsupported_catalogue_number_policy": CATALOGUE_NUMBER_POLICY_SKIP_UNSUPPORTED,
             "publication_author_policy": publication_author_policy_report,
+            "source_mapping": source_mapping.report(),
         },
         generated_artifacts=generated_artifacts,
         source_profile=source_profile,

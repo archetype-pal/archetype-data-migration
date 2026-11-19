@@ -37,6 +37,21 @@ compose_cmd=(
   run
   --rm
 )
+# A source mapping file outside this repo is mounted read-only; inside the repo it is
+# already visible under /migration.
+if [[ -n "${SOURCE_MAPPING_PATH:-}" ]]; then
+  mapping_abs="$(cd "$(dirname "$SOURCE_MAPPING_PATH")" && pwd)/$(basename "$SOURCE_MAPPING_PATH")"
+  if [[ ! -f "$mapping_abs" ]]; then
+    echo "SOURCE_MAPPING_PATH not found: $SOURCE_MAPPING_PATH" >&2
+    exit 2
+  fi
+  if [[ "$mapping_abs" == "$migration_repo"/* ]]; then
+    env_args+=("-e" "SOURCE_MAPPING_PATH=/migration/${mapping_abs#"$migration_repo"/}")
+  else
+    compose_cmd+=(-v "$mapping_abs:/source-mapping.json:ro")
+    env_args+=("-e" "SOURCE_MAPPING_PATH=/source-mapping.json")
+  fi
+fi
 if (( ${#env_args[@]} > 0 )); then
   compose_cmd+=("${env_args[@]}")
 fi

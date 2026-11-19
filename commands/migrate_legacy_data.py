@@ -115,6 +115,16 @@ def build_parser() -> argparse.ArgumentParser:
             "Defaults to BACKEND_REPO, /app inside the backend container, or the toolkit fallback."
         ),
     )
+    parser.add_argument(
+        "--source-mapping",
+        type=Path,
+        default=None,
+        help=(
+            "JSON file of reviewed per-source mapping decisions (character types, repository label "
+            "fallbacks, item image path overrides). Defaults to $SOURCE_MAPPING_PATH, else built-in defaults. "
+            "See migration_toolkit/source_mapping.py."
+        ),
+    )
     return parser
 
 
@@ -136,6 +146,7 @@ def main(argv: list[str] | None = None) -> int:
         skip_post_audit=options.skip_post_audit,
         manifest_path=options.manifest,
         backend_root=options.backend_root,
+        source_mapping_path=options.source_mapping,
     )
     try:
         report = run_import(import_options)

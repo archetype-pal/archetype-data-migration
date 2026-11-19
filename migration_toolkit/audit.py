@@ -18,6 +18,14 @@ from migration_toolkit.backend_contract import (
     BackendContractError,
     load_backend_contract,
 )
+from migration_toolkit.source_mapping import (
+    BUILTIN_CHARACTER_TYPES,
+    BUILTIN_REPOSITORY_LABEL_FALLBACKS_BY_ID,
+    DEFAULT_SOURCE_MAPPING,
+    SourceMapping,
+    SourceMappingError,
+    load_source_mapping,
+)
 
 DEFAULT_POSTGRES_HOST = "postgres"
 DEFAULT_POSTGRES_PORT = "5432"
@@ -48,15 +56,8 @@ _AUDIT_CURATED_CAROUSEL_TITLES: dict[int, tuple[str, str]] = {
         "About Models of Authority",
     ),
 }
-REVIEWED_CHARACTER_TYPES: frozenset[str] = frozenset(
-    {
-        "letter",
-        "abbreviation",
-        "character-sequence",
-        "punctuation",
-        "accent",
-    }
-)
+# Built-in defaults; a source mapping file (migration_toolkit.source_mapping) replaces them.
+REVIEWED_CHARACTER_TYPES: frozenset[str] = frozenset(BUILTIN_CHARACTER_TYPES)
 EXPECTED_SITE_LABEL_KEYS: frozenset[str] = frozenset(
     {
         "historicalItem",
@@ -134,11 +135,7 @@ PUBLICATION_AUTHOR_POLICY_LEGACY_ID = "legacy-id"
 PUBLICATION_AUTHOR_POLICY_USERNAME = "username"
 PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK = "username-fallback"
 PUBLICATION_AUTHOR_POLICY_FALLBACK = "fallback"
-REVIEWED_REPOSITORY_LABEL_FALLBACKS_BY_ID = {
-    3: "CAM",
-    8: "PMFED",
-    11: "LTNA",
-}
+REVIEWED_REPOSITORY_LABEL_FALLBACKS_BY_ID = dict(BUILTIN_REPOSITORY_LABEL_FALLBACKS_BY_ID)
 PUBLICATION_AUTHOR_POLICIES: tuple[str, ...] = (
     PUBLICATION_AUTHOR_POLICY_LEGACY_ID,
     PUBLICATION_AUTHOR_POLICY_USERNAME,
@@ -1622,12 +1619,12 @@ def _audit_truncate(value: Any, max_length: int, default: str = "") -> str:
     return text[:max_length]
 
 
-def _audited_repository_row(legacy_row: dict[str, Any]) -> dict[str, Any]:
+def _audited_repository_row(
+    legacy_row: dict[str, Any], mapping: SourceMapping = DEFAULT_SOURCE_MAPPING
+) -> dict[str, Any]:
     repository_id = int(legacy_row["id"])
     label_source = (
-        REVIEWED_REPOSITORY_LABEL_FALLBACKS_BY_ID.get(repository_id)
-        or legacy_row.get("short_name")
-        or legacy_row.get("name")
+        mapping.repository_label_fallbacks.get(repository_id) or legacy_row.get("short_name") or legacy_row.get("name")
     )
     label = _audit_truncate(
         label_source,
@@ -1644,7 +1641,9 @@ def _audited_repository_row(legacy_row: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def check_repository_fields(legacy_conn: Connection[Any], target_conn: Connection[Any]) -> CheckResult:
+def check_repository_fields(
+    legacy_conn: Connection[Any], target_conn: Connection[Any], mapping: SourceMapping = DEFAULT_SOURCE_MAPPING
+) -> CheckResult:
     legacy_rows = _dict_rows(
         legacy_conn,
         """
@@ -1675,7 +1674,7 @@ def check_repository_fields(legacy_conn: Connection[Any], target_conn: Connectio
     for legacy_row in legacy_rows:
         row_id = int(legacy_row["id"])
         legacy_ids.add(row_id)
-        expected = _audited_repository_row(legacy_row)
+        expected = _audited_repository_row(legacy_row, mapping)
         target_row = target_by_id.get(row_id)
         if target_row is None:
             problems.append({"id": row_id, "reason": "missing_target_row", "expected": expected, "actual": None})
@@ -1875,15 +1874,23 @@ def check_current_item_fields(legacy_conn: Connection[Any], target_conn: Connect
     )
 
 
-def _audited_item_image_row(legacy_row: dict[str, Any]) -> dict[str, Any]:
+def _audited_item_image_row(
+    legacy_row: dict[str, Any], mapping: SourceMapping = DEFAULT_SOURCE_MAPPING
+) -> dict[str, Any]:
+    iipimage, image = legacy_row.get("iipimage"), legacy_row.get("image")
+    override = mapping.item_image_path_overrides.get(int(legacy_row["id"])) if "id" in legacy_row else None
+    if override is not None:
+        iipimage, image = override.iipimage, None
     return {
         "item_part_id": int(legacy_row["item_part_id"]) if legacy_row["item_part_id"] is not None else -1,
-        "image": _audited_item_image_path(legacy_row.get("iipimage"), legacy_row.get("image")),
+        "image": _audited_item_image_path(iipimage, image),
         "locus": _audit_truncate(legacy_row.get("locus") or "", 72),
     }
 
 
-def check_item_image_fields(legacy_conn: Connection[Any], target_conn: Connection[Any]) -> CheckResult:
+def check_item_image_fields(
+    legacy_conn: Connection[Any], target_conn: Connection[Any], mapping: SourceMapping = DEFAULT_SOURCE_MAPPING
+) -> CheckResult:
     legacy_rows = _dict_rows(
         legacy_conn,
         """
@@ -1907,7 +1914,7 @@ def check_item_image_fields(legacy_conn: Connection[Any], target_conn: Connectio
     for legacy_row in legacy_rows:
         row_id = int(legacy_row["id"])
         legacy_ids.add(row_id)
-        expected = _audited_item_image_row(legacy_row)
+        expected = _audited_item_image_row(legacy_row, mapping)
         target_row = target_by_id.get(row_id)
         if target_row is None:
             problems.append({"id": row_id, "reason": "missing_target_row", "expected": expected, "actual": None})
@@ -2096,14 +2103,18 @@ def check_historical_item_types(
     )
 
 
-def _audited_character_type(ontograph_type_name: str | None, *, character_id: int) -> str:
-    value = "" if ontograph_type_name is None else str(ontograph_type_name).strip()
-    if value not in REVIEWED_CHARACTER_TYPES:
+def _audited_character_type(
+    ontograph_type_name: str | None, *, character_id: int, mapping: SourceMapping = DEFAULT_SOURCE_MAPPING
+) -> str:
+    value = mapping.character_type(ontograph_type_name)
+    if value is None:
         raise ValueError(f"Unsupported legacy ontograph type for character id {character_id}: {ontograph_type_name!r}")
     return value
 
 
-def check_character_types(legacy_conn: Connection[Any], target_conn: Connection[Any]) -> CheckResult:
+def check_character_types(
+    legacy_conn: Connection[Any], target_conn: Connection[Any], mapping: SourceMapping = DEFAULT_SOURCE_MAPPING
+) -> CheckResult:
     legacy_rows = _dict_rows(
         legacy_conn,
         """
@@ -2130,7 +2141,9 @@ def check_character_types(legacy_conn: Connection[Any], target_conn: Connection[
         row_id = int(legacy_row["id"])
         legacy_ids.add(row_id)
         try:
-            expected = _audited_character_type(legacy_row.get("ontograph_type_name"), character_id=row_id)
+            expected = _audited_character_type(
+                legacy_row.get("ontograph_type_name"), character_id=row_id, mapping=mapping
+            )
         except ValueError as exc:
             problems.append(
                 {
@@ -2690,6 +2703,7 @@ def run_audit(
     target_url: str | None = None,
     publication_author_policy: PublicationAuthorPolicy | None = None,
     backend_root: Path | str | None = None,
+    source_mapping: SourceMapping | None = None,
 ) -> AuditReport:
     legacy_url = legacy_url or legacy_url_from_env()
     target_url = target_url or target_url_from_env()
@@ -2697,6 +2711,11 @@ def run_audit(
         backend_contract = load_backend_contract(backend_root)
     except BackendContractError as exc:
         raise LegacyMigrationAuditError(str(exc)) from exc
+    if source_mapping is None:
+        try:
+            source_mapping = load_source_mapping()
+        except SourceMappingError as exc:
+            raise LegacyMigrationAuditError(str(exc)) from exc
 
     try:
         legacy_conn = psycopg.connect(legacy_url)
@@ -2758,11 +2777,11 @@ def run_audit(
             check_publication_author_mapping(legacy_conn, target_conn, publication_author_policy),
             check_annotation_shape(legacy_conn, target_conn),
             check_legacy_text_exclusions(legacy_conn, target_conn),
-            check_repository_fields(legacy_conn, target_conn),
+            check_repository_fields(legacy_conn, target_conn, source_mapping),
             check_current_item_fields(legacy_conn, target_conn),
-            check_item_image_fields(legacy_conn, target_conn),
+            check_item_image_fields(legacy_conn, target_conn, source_mapping),
             check_historical_item_types(legacy_conn, target_conn, backend_contract),
-            check_character_types(legacy_conn, target_conn),
+            check_character_types(legacy_conn, target_conn, source_mapping),
             check_site_label_keys(target_conn),
             check_public_site_feature_settings(target_conn),
             check_carousel_image_paths(legacy_conn, target_conn),

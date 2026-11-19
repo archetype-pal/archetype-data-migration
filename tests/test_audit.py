@@ -1313,10 +1313,13 @@ def test_legacy_catalogue_number_relationship_check_ok_when_all_supported(monkey
 def test_audit_cli_accepts_publication_author_fallback_policy(monkeypatch, tmp_path):
     output_path = tmp_path / "audit.json"
 
-    def fake_run_audit(legacy_url=None, target_url=None, publication_author_policy=None, backend_root=None):
+    def fake_run_audit(
+        legacy_url=None, target_url=None, publication_author_policy=None, backend_root=None, source_mapping=None
+    ):
         assert publication_author_policy.mode == PUBLICATION_AUTHOR_POLICY_FALLBACK
         assert publication_author_policy.fallback_author_username == "anthony"
         assert backend_root.name == "backend"
+        assert source_mapping is not None
         return AuditReport(
             legacy_database="legacy_source",
             target_database="target_current",
