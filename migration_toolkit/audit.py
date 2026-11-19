@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 import json
 import os
 from pathlib import Path, PurePosixPath
@@ -82,6 +82,22 @@ EXPECTED_SITE_LABEL_KEYS: frozenset[str] = frozenset(
         "footerLine1",
         "footerLine2",
         "footerBottomLine",
+        # backend common 0017_sitelabel_home_page_copy
+        "homeAboutUrl",
+        "homeCardContextDesc",
+        "homeCardContextTitle",
+        "homeCardHandsDesc",
+        "homeCardHandsTitle",
+        "homeCardManuscriptsDesc",
+        "homeCardManuscriptsTitle",
+        "homeContextUrl",
+        "homeHeroEyebrow",
+        "homeHeroSubtitle",
+        "homeHeroTitle",
+        "homeHeroTitleEmphasis",
+        "homeQuote",
+        "homeQuoteLinkLabel",
+        "siteDescription",
     }
 )
 EXPECTED_PUBLIC_SITE_FEATURE_KEYS: frozenset[str] = frozenset(
@@ -95,6 +111,15 @@ EXPECTED_PUBLIC_SITE_FEATURE_KEYS: frozenset[str] = frozenset(
         "site_features.sections.events",
         "site_features.sections.about",
         "site_features.sectionOrder",
+        # backend common 0015_seed_theme_colors and 0016_seed_branding_and_header_colors
+        "site_features.branding.logoUrl",
+        "site_features.theme.accentColor",
+        "site_features.theme.navBarBackgroundColor",
+        "site_features.theme.navBarTextColor",
+        "site_features.theme.primaryColor",
+        "site_features.theme.primaryForegroundColor",
+        "site_features.theme.titleBarBackgroundColor",
+        "site_features.theme.titleBarTextColor",
         "site_features.features.manuscriptDescriptions",
         "site_features.searchCategories.manuscripts.enabled",
         "site_features.searchCategories.manuscripts.visibleColumns",
@@ -2698,6 +2723,22 @@ def check_operator_helper_tables_absent(target_conn: Connection[Any]) -> CheckRe
     )
 
 
+def entity_mappings_for_source(
+    mappings: tuple[EntityMapping, ...] | list[EntityMapping], source_mapping: SourceMapping
+) -> list[EntityMapping]:
+    """Allow the reviewed synthetic rows a source mapping adds (e.g. the placeholder historical item)."""
+
+    placeholder_id = source_mapping.item_part_links.placeholder_id
+    if placeholder_id is None:
+        return list(mappings)
+    return [
+        replace(mapping, allowed_extra_target_ids=mapping.allowed_extra_target_ids | {placeholder_id})
+        if mapping.key == "historical_items"
+        else mapping
+        for mapping in mappings
+    ]
+
+
 def run_audit(
     legacy_url: str | None = None,
     target_url: str | None = None,
@@ -2770,7 +2811,10 @@ def run_audit(
             database_label=f"target database {target_db}",
         )
 
-        mappings = [audit_mapping(legacy_conn, target_conn, mapping) for mapping in ENTITY_MAPPINGS]
+        mappings = [
+            audit_mapping(legacy_conn, target_conn, mapping)
+            for mapping in entity_mappings_for_source(ENTITY_MAPPINGS, source_mapping)
+        ]
         checks = [
             check_legacy_description_relationships(legacy_conn),
             check_legacy_catalogue_number_relationships(legacy_conn),

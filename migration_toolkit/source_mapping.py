@@ -20,6 +20,19 @@ run manifest), never in code:
 - ``item_image_path_overrides``: legacy ``digipal_image.id`` -> replacement legacy image path
   (a string, or an object with ``iipimage`` and an optional ``reason``). The path goes through
   the normal legacy path normalisation, as if it were the row's ``iipimage``.
+- ``item_part_links``: how ``digipal_itempart`` rows become target ItemParts, which need exactly one
+  historical item. Exact duplicate ``digipal_itempartitem`` rows are always collapsed.
+
+      "item_part_links": {
+        "unlinked_policy": "placeholder",           # fail (default) | placeholder
+        "placeholder_historical_item": {"id": -1, "type": "Coin"},
+        "multiple_links_policy": "first",           # fail (default) | first (lowest itempartitem id)
+        "historical_item_by_item_part": {"1760": 2396}
+      }
+
+  With ``placeholder``, parts without any link (and the synthetic part for images without a part)
+  belong to one placeholder historical item created with that id and legacy type label.
+  ``historical_item_by_item_part`` picks the kept link for a part linked to several items.
 
 A missing key keeps the built-in behaviour, so runs without a mapping file are unchanged.
 """
@@ -45,7 +58,11 @@ BUILTIN_REPOSITORY_LABEL_FALLBACKS_BY_ID: Mapping[int, str] = {
     11: "LTNA",
 }
 
-_KNOWN_KEYS = frozenset({"character_types", "repository_label_fallbacks", "item_image_path_overrides"})
+_KNOWN_KEYS = frozenset(
+    {"character_types", "repository_label_fallbacks", "item_image_path_overrides", "item_part_links"}
+)
+UNLINKED_ITEM_PART_POLICIES = ("fail", "placeholder")
+MULTIPLE_ITEM_PART_LINK_POLICIES = ("fail", "first")
 
 
 class SourceMappingError(ValueError):
@@ -59,12 +76,44 @@ class ImagePathOverride:
 
 
 @dataclass(frozen=True)
+class PlaceholderHistoricalItem:
+    id: int
+    type: str
+
+
+@dataclass(frozen=True)
+class ItemPartLinks:
+    unlinked_policy: str = "fail"
+    multiple_links_policy: str = "fail"
+    placeholder_historical_item: PlaceholderHistoricalItem | None = None
+    historical_item_by_item_part: Mapping[int, int] = field(default_factory=dict)
+
+    @property
+    def placeholder_id(self) -> int | None:
+        if self.unlinked_policy == "placeholder" and self.placeholder_historical_item:
+            return self.placeholder_historical_item.id
+        return None
+
+    def report(self) -> dict[str, Any]:
+        placeholder = self.placeholder_historical_item
+        return {
+            "unlinked_policy": self.unlinked_policy,
+            "multiple_links_policy": self.multiple_links_policy,
+            "placeholder_historical_item": (
+                {"id": placeholder.id, "type": placeholder.type} if placeholder is not None else None
+            ),
+            "historical_item_by_item_part": {str(k): v for k, v in sorted(self.historical_item_by_item_part.items())},
+        }
+
+
+@dataclass(frozen=True)
 class SourceMapping:
     character_types: Mapping[str, str] = field(default_factory=lambda: dict(BUILTIN_CHARACTER_TYPES))
     repository_label_fallbacks: Mapping[int, str] = field(
         default_factory=lambda: dict(BUILTIN_REPOSITORY_LABEL_FALLBACKS_BY_ID)
     )
     item_image_path_overrides: Mapping[int, ImagePathOverride] = field(default_factory=dict)
+    item_part_links: ItemPartLinks = field(default_factory=ItemPartLinks)
     path: str | None = None
     sha256: str | None = None
 
@@ -83,6 +132,7 @@ class SourceMapping:
                 str(k): {"iipimage": v.iipimage, "reason": v.reason}
                 for k, v in sorted(self.item_image_path_overrides.items())
             },
+            "item_part_links": self.item_part_links.report(),
         }
 
 
@@ -105,6 +155,56 @@ def _str_map(value: Any, section: str) -> dict[str, str]:
             raise SourceMappingError(f"{section}: value for {key!r} must be a non-empty string")
         result[str(key).strip()] = target.strip()
     return result
+
+
+def _parse_item_part_links(raw: Any) -> ItemPartLinks:
+    section = "item_part_links"
+    if not isinstance(raw, dict):
+        raise SourceMappingError(f"{section} must be a JSON object")
+    unknown = sorted(
+        key
+        for key in raw
+        if key
+        not in {
+            "unlinked_policy",
+            "multiple_links_policy",
+            "placeholder_historical_item",
+            "historical_item_by_item_part",
+        }
+        and not str(key).startswith("_")
+    )
+    if unknown:
+        raise SourceMappingError(f"Unknown {section} key(s): {', '.join(unknown)}")
+    unlinked = raw.get("unlinked_policy", "fail")
+    if unlinked not in UNLINKED_ITEM_PART_POLICIES:
+        raise SourceMappingError(f"{section}.unlinked_policy must be one of {UNLINKED_ITEM_PART_POLICIES}")
+    multiple = raw.get("multiple_links_policy", "fail")
+    if multiple not in MULTIPLE_ITEM_PART_LINK_POLICIES:
+        raise SourceMappingError(f"{section}.multiple_links_policy must be one of {MULTIPLE_ITEM_PART_LINK_POLICIES}")
+    placeholder = None
+    raw_placeholder = raw.get("placeholder_historical_item")
+    if raw_placeholder is not None:
+        if (
+            not isinstance(raw_placeholder, dict)
+            or not isinstance(raw_placeholder.get("id"), int)
+            or not isinstance(raw_placeholder.get("type"), str)
+            or not raw_placeholder["type"].strip()
+        ):
+            raise SourceMappingError(
+                f"{section}.placeholder_historical_item needs an integer 'id' and a non-empty legacy 'type' label"
+            )
+        placeholder = PlaceholderHistoricalItem(raw_placeholder["id"], raw_placeholder["type"].strip())
+    if unlinked == "placeholder" and placeholder is None:
+        raise SourceMappingError(f"{section}.unlinked_policy 'placeholder' requires placeholder_historical_item")
+    chosen = raw.get("historical_item_by_item_part", {})
+    if not isinstance(chosen, dict) or not all(isinstance(v, int) for v in chosen.values()):
+        raise SourceMappingError(f"{section}.historical_item_by_item_part must map part ids to historical item ids")
+    return ItemPartLinks(
+        unlinked_policy=unlinked,
+        multiple_links_policy=multiple,
+        placeholder_historical_item=placeholder,
+        historical_item_by_item_part={_int_key(k, section): v for k, v in chosen.items()},
+    )
 
 
 def parse_source_mapping(data: Any, *, path: str | None = None, sha256: str | None = None) -> SourceMapping:
@@ -137,6 +237,8 @@ def parse_source_mapping(data: Any, *, path: str | None = None, sha256: str | No
                 )
             overrides[image_id] = ImagePathOverride(value["iipimage"].strip(), str(value.get("reason") or ""))
         kwargs["item_image_path_overrides"] = overrides
+    if "item_part_links" in data:
+        kwargs["item_part_links"] = _parse_item_part_links(data["item_part_links"])
     return SourceMapping(path=path, sha256=sha256, **kwargs)
 
 

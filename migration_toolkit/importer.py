@@ -44,6 +44,7 @@ from migration_toolkit.source_mapping import (
     BUILTIN_CHARACTER_TYPES,
     BUILTIN_REPOSITORY_LABEL_FALLBACKS_BY_ID,
     DEFAULT_SOURCE_MAPPING,
+    ItemPartLinks,
     SourceMapping,
     SourceMappingError,
     load_source_mapping,
@@ -1686,8 +1687,17 @@ def phase_plan_counts(
     phase: str,
     *,
     unsupported_description_policy: str = DESCRIPTION_POLICY_FAIL,
+    mapping: SourceMapping = DEFAULT_SOURCE_MAPPING,
 ) -> dict[str, int]:
     planned = {table: int(scalar(legacy_conn, query)) for table, query in SOURCE_COUNT_SQL[phase].items()}
+    if phase == "manuscripts" and mapping.item_part_links.placeholder_id is not None:
+        needs_placeholder = scalar(
+            legacy_conn,
+            "SELECT EXISTS (SELECT 1 FROM digipal_image WHERE item_part_id IS NULL) OR EXISTS ("
+            "SELECT 1 FROM digipal_itempart p WHERE NOT EXISTS ("
+            "SELECT 1 FROM digipal_itempartitem i WHERE i.item_part_id = p.id))",
+        )
+        planned["manuscripts_historicalitem"] += int(bool(needs_placeholder))
     if phase == "manuscripts" and unsupported_description_policy == DESCRIPTION_POLICY_SKIP:
         planned["manuscripts_historicalitemdescription"] = supported_historical_description_count(legacy_conn)
     if phase == "manuscripts":
@@ -1940,6 +1950,103 @@ def origin_place_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
     return {"missing_place_count": count, "sample": rows}
 
 
+ITEM_PART_LINKS_SQL = """
+    SELECT id, item_part_id, historical_item_id, locus
+    FROM digipal_itempartitem
+    WHERE item_part_id IS NOT NULL
+    ORDER BY item_part_id, id
+"""
+
+
+def resolve_item_part_links(
+    item_part_ids: list[int], link_rows: list[dict[str, Any]], links: ItemPartLinks
+) -> dict[str, Any]:
+    """Choose one historical item link per legacy item part.
+
+    Returns ``chosen`` (part id -> kept link row, or None for an unlinked part) and the review
+    lists: collapsed exact duplicates, parts with several distinct items (kept + dropped links),
+    unlinked parts, and ``errors`` that block the import under the configured policies.
+    """
+
+    by_part: dict[int, list[dict[str, Any]]] = {}
+    for row in link_rows:
+        by_part.setdefault(int(row["item_part_id"]), []).append(row)
+
+    chosen: dict[int, dict[str, Any] | None] = {}
+    exact_duplicates: list[dict[str, Any]] = []
+    multiple: list[dict[str, Any]] = []
+    unlinked: list[int] = []
+    errors: list[str] = []
+    for part_id in item_part_ids:
+        rows = sorted(by_part.get(part_id, []), key=lambda row: int(row["id"]))
+        if not rows:
+            unlinked.append(part_id)
+            chosen[part_id] = None
+            continue
+        distinct: dict[Any, dict[str, Any]] = {}
+        for row in rows:
+            first = distinct.setdefault(row["historical_item_id"], row)
+            if first is not row:
+                exact_duplicates.append(
+                    {"item_part_id": part_id, "kept_link_id": first["id"], "dropped_link_id": row["id"]}
+                )
+        candidates = list(distinct.values())
+        if len(candidates) == 1:
+            chosen[part_id] = candidates[0]
+            continue
+        override = links.historical_item_by_item_part.get(part_id)
+        if override is not None:
+            kept = next((row for row in candidates if row["historical_item_id"] == override), None)
+            if kept is None:
+                errors.append(f"item_part_links override for item part {part_id}: {override} is not one of its links")
+                kept = candidates[0]
+            reason = "override"
+        else:
+            kept, reason = candidates[0], "first"
+            if links.multiple_links_policy == "fail":
+                errors.append(f"Item part {part_id} is linked to several historical items")
+        chosen[part_id] = kept
+        multiple.append(
+            {
+                "item_part_id": part_id,
+                "reason": reason,
+                "kept": {"link_id": kept["id"], "historical_item_id": kept["historical_item_id"]},
+                "dropped": [
+                    {"link_id": row["id"], "historical_item_id": row["historical_item_id"]}
+                    for row in candidates
+                    if row is not kept
+                ],
+            }
+        )
+    if unlinked and links.unlinked_policy == "fail":
+        errors.append(f"{len(unlinked)} item part(s) have no historical item link")
+    return {
+        "chosen": chosen,
+        "exact_duplicates": exact_duplicates,
+        "multiple": multiple,
+        "unlinked": unlinked,
+        "errors": errors,
+    }
+
+
+def item_part_link_profile(
+    legacy_conn: Connection[Any], mapping: SourceMapping = DEFAULT_SOURCE_MAPPING
+) -> dict[str, Any]:
+    part_ids = [int(row["id"]) for row in fetch_rows(legacy_conn, "SELECT id FROM digipal_itempart ORDER BY id")]
+    resolved = resolve_item_part_links(part_ids, fetch_rows(legacy_conn, ITEM_PART_LINKS_SQL), mapping.item_part_links)
+    return {
+        "policy": mapping.item_part_links.report(),
+        "item_part_count": len(part_ids),
+        "exact_duplicate_link_count": len(resolved["exact_duplicates"]),
+        "multiple_link_count": len(resolved["multiple"]),
+        "unlinked_count": len(resolved["unlinked"]),
+        "exact_duplicates": resolved["exact_duplicates"],
+        "multiple": resolved["multiple"],
+        "unlinked_sample": resolved["unlinked"][:20],
+        "errors": resolved["errors"],
+    }
+
+
 def character_type_profile(
     legacy_conn: Connection[Any], mapping: SourceMapping = DEFAULT_SOURCE_MAPPING
 ) -> dict[str, Any]:
@@ -2122,6 +2229,7 @@ def build_source_profile(
         "historical_item_types": historical_item_type_profile(legacy_conn, backend_contract),
         "allograph_character_integrity": allograph_character_profile(legacy_conn),
         "character_types": character_type_profile(legacy_conn, mapping),
+        "item_part_links": item_part_link_profile(legacy_conn, mapping),
         "legacy_publication_authors": legacy_publication_author_profile(legacy_conn),
         "carousel_image_paths": carousel_image_path_profile(legacy_conn),
         "carousel_titles": carousel_title_profile(legacy_conn),
@@ -2150,6 +2258,23 @@ def source_profile_warnings(profile: dict[str, Any]) -> list[str]:
         warnings.append(
             "Legacy digipal_description contains rows whose historical_item_id does not exist: "
             f"{description_counts['dangling_historical_item']}"
+        )
+
+    item_part_links = profile.get("item_part_links", {})
+    if item_part_links.get("exact_duplicate_link_count"):
+        warnings.append(
+            "Legacy digipal_itempartitem contains exact duplicate links, collapsed to one: "
+            f"{item_part_links['exact_duplicate_link_count']}"
+        )
+    if item_part_links.get("multiple_link_count"):
+        warnings.append(
+            "Legacy digipal_itempart rows linked to several historical items; one link is kept, the others are "
+            f"listed in source_profile.item_part_links.multiple: {item_part_links['multiple_link_count']}"
+        )
+    if item_part_links.get("unlinked_count"):
+        warnings.append(
+            "Legacy digipal_itempart rows without any historical item link: "
+            f"{item_part_links['unlinked_count']} (policy: {item_part_links['policy']['unlinked_policy']})"
         )
 
     catalogue_counts = profile.get("catalogue_number_relationships", {}).get(
@@ -2241,6 +2366,12 @@ def source_profile_blockers(
         blockers.append(
             "The manuscripts phase cannot import origins with neither a place nor an institution, because every "
             "current origin needs a place. Repair the source data or define an explicit policy."
+        )
+    if "manuscripts" in phases and profile.get("item_part_links", {}).get("errors"):
+        blockers.append(
+            "The manuscripts phase needs exactly one historical item per item part: "
+            + "; ".join(profile["item_part_links"]["errors"][:5])
+            + ". Set item_part_links policies in the source mapping file after review."
         )
     if "symbols" in phases and profile["allograph_character_integrity"]["missing_character_count"]:
         blockers.append(
@@ -2907,39 +3038,58 @@ def import_manuscripts(ctx: ImportContext) -> dict[str, int]:
         ],
     )
 
+    links_policy = ctx.source_mapping.item_part_links
+    placeholder_id = links_policy.placeholder_id
     item_part_rows = fetch_rows(
         legacy_conn,
         """
-        SELECT
-          ip.id,
-          ip.current_item_id,
-          ip.custom_label,
-          ip.locus AS item_part_locus,
-          ipi.historical_item_id,
-          ipi.locus AS item_link_locus
+        SELECT ip.id, ip.current_item_id, ip.custom_label, ip.locus AS item_part_locus
         FROM digipal_itempart ip
-        JOIN digipal_itempartitem ipi ON ipi.item_part_id = ip.id
         ORDER BY ip.id
         """,
     )
-    item_parts = [
-        {
-            "id": row["id"],
-            "current_item_id": row["current_item_id"],
-            "historical_item_id": row["historical_item_id"],
-            "current_item_locus": truncate(row["item_link_locus"] or row["item_part_locus"] or "", 30),
-            "custom_label": truncate(row["custom_label"] or "", 80),
-        }
-        for row in item_part_rows
-    ]
+    resolved = resolve_item_part_links(
+        [int(row["id"]) for row in item_part_rows], fetch_rows(legacy_conn, ITEM_PART_LINKS_SQL), links_policy
+    )
+    if resolved["errors"]:
+        raise LegacyMigrationImportError("; ".join(resolved["errors"]))
     null_image_count = int(scalar(legacy_conn, "SELECT count(*) FROM digipal_image WHERE item_part_id IS NULL"))
+    if placeholder_id is not None and (resolved["unlinked"] or null_image_count):
+        placeholder = links_policy.placeholder_historical_item
+        assert placeholder is not None
+        rows_imported["manuscripts_historicalitem"] += insert_rows(
+            target_conn,
+            "INSERT INTO manuscripts_historicalitem (id, type) VALUES (%(id)s, %(type)s)",
+            [
+                {
+                    "id": placeholder.id,
+                    "type": historical_item_type(
+                        placeholder.type,
+                        historical_item_id=placeholder.id,
+                        allowed_values=ctx.backend_contract.historical_item_type_values,
+                    ),
+                }
+            ],
+        )
+    item_parts = []
+    for row in item_part_rows:
+        link = resolved["chosen"][int(row["id"])]
+        item_parts.append(
+            {
+                "id": row["id"],
+                "current_item_id": row["current_item_id"],
+                "historical_item_id": link["historical_item_id"] if link else placeholder_id,
+                "current_item_locus": truncate((link or {}).get("locus") or row["item_part_locus"] or "", 30),
+                "custom_label": truncate(row["custom_label"] or "", 80),
+            }
+        )
     if null_image_count:
         item_parts.insert(
             0,
             {
                 "id": -1,
-                "current_item_id": 2,
-                "historical_item_id": 1,
+                "current_item_id": None if placeholder_id is not None else 2,
+                "historical_item_id": placeholder_id if placeholder_id is not None else 1,
                 "current_item_locus": "-public.manuscripts_itemimage",
                 "custom_label": "Created for all the nulls contained in public.digipal_image ",
             },
@@ -2985,6 +3135,22 @@ def import_manuscripts(ctx: ImportContext) -> dict[str, int]:
         ],
     )
     return rows_imported
+
+
+def assign_hand_display_orders(hands: list[dict[str, Any]]) -> None:
+    """Number each item part's hands 1, 2, … like backend migration scribes 0019 does.
+
+    The backend replaced Hand.num/priority/is_default with one display_order. Legacy hands
+    have no priority/default flag, so the order is legacy ``num``, then name, then id.
+    """
+
+    position_by_part: dict[Any, int] = {}
+    for hand in sorted(
+        hands, key=lambda h: (h["item_part_id"] is None, h["item_part_id"] or 0, h["num"], h["name"], h["id"])
+    ):
+        position = position_by_part.get(hand["item_part_id"], 0) + 1
+        position_by_part[hand["item_part_id"]] = position
+        hand["display_order"] = position
 
 
 def import_scribes_hands(ctx: ImportContext) -> dict[str, int]:
@@ -3085,23 +3251,22 @@ def import_scribes_hands(ctx: ImportContext) -> dict[str, int]:
                 "script_id": row["script_id"],
                 "name": truncate(row["label"] or row["display_label"] or f"Hand {row['id']}", 100),
                 "num": row["num"] or 1,
-                "priority": 0,
-                "is_default": False,
                 "date_id": row["assigned_date_id"],
                 "place_id": row["assigned_place_id"],
             }
         )
         if description_parts:
             hand_descriptions.append({"hand_id": row["id"], "content": "\n\n".join(description_parts)})
+    assign_hand_display_orders(hands)
     rows_imported["scribes_hand"] = insert_rows(
         target_conn,
         """
         INSERT INTO scribes_hand (
-          id, scribe_id, item_part_id, script_id, name, num, priority, is_default, date_id, place_id
+          id, scribe_id, item_part_id, script_id, name, display_order, date_id, place_id
         )
         VALUES (
-          %(id)s, %(scribe_id)s, %(item_part_id)s, %(script_id)s, %(name)s, %(num)s, %(priority)s,
-          %(is_default)s, %(date_id)s, %(place_id)s
+          %(id)s, %(scribe_id)s, %(item_part_id)s, %(script_id)s, %(name)s, %(display_order)s,
+          %(date_id)s, %(place_id)s
         )
         """,
         hands,
@@ -3737,6 +3902,7 @@ def run_import(options: ImportOptions) -> ImportReport:
                 legacy_conn,
                 phase,
                 unsupported_description_policy=options.unsupported_description_policy,
+                mapping=source_mapping,
             )
             imported: dict[str, int] = {}
             skipped: dict[str, int] = {}

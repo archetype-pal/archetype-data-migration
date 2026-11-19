@@ -156,3 +156,94 @@ def test_audit_item_images_follow_path_overrides(monkeypatch):
 
     assert run(FRENCH).status == "ok"
     assert run().status == "fail"
+
+
+# --- item part links -------------------------------------------------------------------------
+
+from migration_toolkit.audit import ENTITY_MAPPINGS, entity_mappings_for_source  # noqa: E402
+from migration_toolkit.importer import resolve_item_part_links  # noqa: E402
+from migration_toolkit.source_mapping import ItemPartLinks, PlaceholderHistoricalItem  # noqa: E402
+
+LINKS = [
+    {"id": 10, "item_part_id": 1, "historical_item_id": 100, "locus": ""},
+    {"id": 11, "item_part_id": 1, "historical_item_id": 100, "locus": ""},  # exact duplicate
+    {"id": 20, "item_part_id": 2, "historical_item_id": 201, "locus": ""},
+    {"id": 21, "item_part_id": 2, "historical_item_id": 200, "locus": ""},  # second distinct item
+]
+PLACEHOLDER = ItemPartLinks(
+    unlinked_policy="placeholder",
+    multiple_links_policy="first",
+    placeholder_historical_item=PlaceholderHistoricalItem(-1, "Monnaie"),
+)
+
+
+def test_resolve_item_part_links_defaults_fail_on_ambiguity():
+    resolved = resolve_item_part_links([1, 2, 3], LINKS, ItemPartLinks())
+
+    assert resolved["chosen"][1]["id"] == 10
+    assert resolved["exact_duplicates"] == [{"item_part_id": 1, "kept_link_id": 10, "dropped_link_id": 11}]
+    assert resolved["unlinked"] == [3]
+    assert len(resolved["errors"]) == 2  # several items for part 2, one unlinked part
+
+
+def test_resolve_item_part_links_keeps_first_link_and_placeholder():
+    resolved = resolve_item_part_links([1, 2, 3], LINKS, PLACEHOLDER)
+
+    assert resolved["errors"] == []
+    assert resolved["chosen"][2]["historical_item_id"] == 201  # lowest link id, not lowest item id
+    assert resolved["multiple"][0]["dropped"] == [{"link_id": 21, "historical_item_id": 200}]
+    assert resolved["chosen"][3] is None
+
+
+def test_resolve_item_part_links_per_part_override():
+    links = ItemPartLinks(multiple_links_policy="fail", historical_item_by_item_part={2: 200})
+    resolved = resolve_item_part_links([1, 2], LINKS, links)
+    assert resolved["errors"] == []
+    assert resolved["chosen"][2]["historical_item_id"] == 200
+    assert resolved["multiple"][0]["reason"] == "override"
+
+    bad = ItemPartLinks(historical_item_by_item_part={2: 999})
+    assert resolve_item_part_links([2], LINKS, bad)["errors"]
+
+
+def test_parse_item_part_links_section():
+    mapping = parse_source_mapping(
+        {
+            "item_part_links": {
+                "unlinked_policy": "placeholder",
+                "placeholder_historical_item": {"id": -1, "type": "Monnaie"},
+                "multiple_links_policy": "first",
+                "historical_item_by_item_part": {"1760": 2396},
+            }
+        }
+    )
+    assert mapping.item_part_links.placeholder_id == -1
+    assert mapping.item_part_links.historical_item_by_item_part == {1760: 2396}
+    assert mapping.report()["item_part_links"]["placeholder_historical_item"] == {"id": -1, "type": "Monnaie"}
+    assert parse_source_mapping({}).item_part_links.placeholder_id is None
+
+
+@pytest.mark.parametrize(
+    "links",
+    (
+        {"unlinked_policy": "drop"},
+        {"multiple_links_policy": "last"},
+        {"unlinked_policy": "placeholder"},
+        {"placeholder_historical_item": {"id": "x", "type": "Monnaie"}},
+        {"historical_item_by_item_part": {"1": "2"}},
+        {"surprise": 1},
+    ),
+)
+def test_parse_item_part_links_rejects_invalid(links):
+    with pytest.raises(SourceMappingError):
+        parse_source_mapping({"item_part_links": links})
+
+
+def test_audit_allows_placeholder_historical_item_only_when_configured():
+    source = parse_source_mapping(
+        {"item_part_links": {"unlinked_policy": "placeholder", "placeholder_historical_item": {"id": -1, "type": "M"}}}
+    )
+    by_key = {m.key: m for m in entity_mappings_for_source(ENTITY_MAPPINGS, source)}
+    assert -1 in by_key["historical_items"].allowed_extra_target_ids
+    default = {m.key: m for m in entity_mappings_for_source(ENTITY_MAPPINGS, parse_source_mapping({}))}
+    assert -1 not in default["historical_items"].allowed_extra_target_ids
