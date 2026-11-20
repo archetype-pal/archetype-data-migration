@@ -222,8 +222,8 @@ MIGRATION_PHASES: tuple[MigrationPhase, ...] = (
             "source_profile.place_list.",
             "Apply repository label/type/place transformations explicitly.",
             "Link each repository to its place, through the merged place ids.",
-            "Add each institution used as a scriptorium or an origin, with no place of the same name, to the place "
-            "list after the legacy place ids, and list them in source_profile.place_list.",
+            "Add each institution used as a scriptorium, or by an origin without a place, that has no place of the "
+            "same name to the place list after the legacy place ids, and list them in source_profile.place_list.",
         ),
         validation=(
             "Audit mappings for dates, places, item formats, sources, and repositories match accepted warnings.",

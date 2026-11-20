@@ -215,7 +215,11 @@ SELECT
   (array_agg(institution.name ORDER BY institution.id))[1] AS name,
   lower(coalesce(institution.name, '')) AS name_key
 FROM digipal_institution institution
-WHERE institution.id IN (SELECT scriptorium_id FROM digipal_scribe UNION SELECT institution_id FROM digipal_itemorigin)
+WHERE institution.id IN (
+    SELECT scriptorium_id FROM digipal_scribe
+    UNION
+    SELECT institution_id FROM digipal_itemorigin WHERE place_id IS NULL
+  )
   AND NOT EXISTS (
     SELECT 1
     FROM digipal_place existing
@@ -399,8 +403,8 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         notes=(
             "Legacy place names map to the shared place list. A place with the same name as an earlier one, ignoring "
             "case, is merged into it; place types, regions, counties and coordinates are not imported. An "
-            "institution used as a scriptorium or an origin, with no place of the same name, is added after the "
-            "legacy place ids."
+            "institution used as a scriptorium, or by an origin without a place, that has no place of the same name "
+            "is added after the legacy place ids."
         ),
         legacy_count_sql=KEPT_PLACE_COUNT_SQL,
         legacy_ids_sql=KEPT_PLACE_IDS_SQL,

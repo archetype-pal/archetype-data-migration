@@ -2171,8 +2171,8 @@ def source_profile_warnings(profile: dict[str, Any]) -> list[str]:
         )
     if int(place_list.get("added_institution_count", 0)):
         warnings.append(
-            "Legacy digipal_institution contains scriptoria or origins with no place of the same name, which are "
-            f"added to the place list: {place_list['added_institution_count']}"
+            "Legacy digipal_institution contains rows used as a scriptorium or by an origin without a place, with no "
+            f"place of the same name, which are added to the place list: {place_list['added_institution_count']}"
         )
     missing_origin_places = int(profile.get("origin_place_integrity", {}).get("missing_place_count", 0))
     if missing_origin_places:

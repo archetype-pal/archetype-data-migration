@@ -305,7 +305,7 @@ product requirement reintroduces them:
   `forms_*`, `galleries_*`, `twitter_*`, and unapproved `pages_*` fragments.
 - Empty or unsupported palaeographic/manuscript tables such as legacy
   collation, decoration, layout, owners, institutions (apart from those used
-  as scriptoria or origins, which become places), measurements,
+  as scriptoria or by origins without a place, which become places), measurements,
   and provenance tables. Some have data, but there is no current model surface
   for them.
 - Legacy permission/group assignments. Rebuild these in the current app
