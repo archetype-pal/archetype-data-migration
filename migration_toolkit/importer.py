@@ -1958,6 +1958,7 @@ def origin_place_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
             origins.place_id,
             min(origins.id) OVER (PARTITION BY origins.historical_item_id, origins.place_id) AS kept_id
           FROM ({ORIGIN_PLACES_SQL}) origins
+          WHERE origins.place_id IS NOT NULL
         ) resolved
         WHERE id <> kept_id
         ORDER BY id
