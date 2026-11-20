@@ -2958,6 +2958,22 @@ def import_manuscripts(ctx: ImportContext) -> dict[str, int]:
     return rows_imported
 
 
+def assign_hand_display_orders(hands: list[dict[str, Any]]) -> None:
+    """Number each item part's hands 1, 2, … like backend migration scribes 0019 does.
+
+    The backend replaced Hand.num/priority/is_default with one display_order. Legacy hands
+    have no priority/default flag, so the order is legacy ``num``, then name, then id.
+    """
+
+    position_by_part: dict[Any, int] = {}
+    for hand in sorted(
+        hands, key=lambda h: (h["item_part_id"] is None, h["item_part_id"] or 0, h["num"], h["name"], h["id"])
+    ):
+        position = position_by_part.get(hand["item_part_id"], 0) + 1
+        position_by_part[hand["item_part_id"]] = position
+        hand["display_order"] = position
+
+
 def import_scribes_hands(ctx: ImportContext) -> dict[str, int]:
     legacy_conn = ctx.legacy_conn
     target_conn = ctx.target_conn
@@ -3056,23 +3072,22 @@ def import_scribes_hands(ctx: ImportContext) -> dict[str, int]:
                 "script_id": row["script_id"],
                 "name": truncate(row["label"] or row["display_label"] or f"Hand {row['id']}", 100),
                 "num": row["num"] or 1,
-                "priority": 0,
-                "is_default": False,
                 "date_id": row["assigned_date_id"],
                 "place_id": row["assigned_place_id"],
             }
         )
         if description_parts:
             hand_descriptions.append({"hand_id": row["id"], "content": "\n\n".join(description_parts)})
+    assign_hand_display_orders(hands)
     rows_imported["scribes_hand"] = insert_rows(
         target_conn,
         """
         INSERT INTO scribes_hand (
-          id, scribe_id, item_part_id, script_id, name, num, priority, is_default, date_id, place_id
+          id, scribe_id, item_part_id, script_id, name, display_order, date_id, place_id
         )
         VALUES (
-          %(id)s, %(scribe_id)s, %(item_part_id)s, %(script_id)s, %(name)s, %(num)s, %(priority)s,
-          %(is_default)s, %(date_id)s, %(place_id)s
+          %(id)s, %(scribe_id)s, %(item_part_id)s, %(script_id)s, %(name)s, %(display_order)s,
+          %(date_id)s, %(place_id)s
         )
         """,
         hands,

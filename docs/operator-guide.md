@@ -203,7 +203,7 @@ Import scribes, hands, and image-hand links after item parts and images exist.
 Importer contract:
 - Preserve ids for scribes, scripts, hands, and hand-image links.
 - Create documented placeholder scribe -1 only if needed.
-- Map legacy display order into num/priority/is_default according to product policy.
+- Set each hand's display_order to its position in its item part, by legacy num, then name, then id.
 - Link each hand to its assigned place, through the merged place ids.
 - Link each scribe to the place that has its scriptorium's name.
 

@@ -191,7 +191,7 @@ erDiagram
 | --- | --- | --- |
 | `scribes_scribe` | Named scribe. | `name`, `period_id`, `scriptorium_id` |
 | `scribes_script` | Script classification. | `name` |
-| `scribes_hand` | Hand used on an item part. | `scribe_id`, `item_part_id`, `script_id`, `name`, `num`, `priority`, `is_default`, `date_id`, `place_id` |
+| `scribes_hand` | Hand used on an item part. | `scribe_id`, `item_part_id`, `script_id`, `name`, `display_order`, `date_id`, `place_id` |
 | `scribes_handdescription` | Description of a hand. | `hand_id`, `source_id`, `content` |
 | `scribes_hand_item_part_images` | Images associated with a hand. | `hand_id`, `itemimage_id` |
 

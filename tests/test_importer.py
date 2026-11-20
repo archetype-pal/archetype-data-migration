@@ -714,12 +714,11 @@ def test_import_scribes_hands_writes_hand_descriptions_to_their_own_table(monkey
         "scribe_id",
         "script_id",
         "date_id",
-        "is_default",
-        "num",
-        "priority",
+        "display_order",
         "place_id",
     }
     assert [hand["id"] for hand in hands] == [10, 11]
+    assert [hand["display_order"] for hand in hands] == [1, 2]
     assert all("place" not in hand and "description" not in hand for hand in hands)
     assert inserted["scribes_handdescription"][1] == [{"hand_id": 10, "content": "Upright\n\nChecked"}]
     assert result["scribes_handdescription"] == 1
@@ -1834,3 +1833,16 @@ def test_audit_failure_summary_includes_failed_mapping_counts():
     assert "historical_item_descriptions" in summary
     assert "unexpected missing: 356" in summary
     assert "annotation_shape" in summary
+
+
+def test_assign_hand_display_orders_numbers_each_part_like_backend_migration():
+    from migration_toolkit.importer import assign_hand_display_orders
+
+    hands = [
+        {"id": 3, "item_part_id": 10, "num": 2, "name": "B"},
+        {"id": 1, "item_part_id": 10, "num": 1, "name": "Z"},
+        {"id": 2, "item_part_id": 10, "num": 1, "name": "A"},
+        {"id": 4, "item_part_id": 11, "num": 5, "name": "Only"},
+    ]
+    assign_hand_display_orders(hands)
+    assert {h["id"]: h["display_order"] for h in hands} == {2: 1, 1: 2, 3: 3, 4: 1}
