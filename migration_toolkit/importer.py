@@ -3012,7 +3012,8 @@ def assign_hand_display_orders(hands: list[dict[str, Any]]) -> None:
 
     position_by_part: dict[Any, int] = {}
     for hand in sorted(
-        hands, key=lambda h: (h["item_part_id"] is None, h["item_part_id"] or 0, h["num"], h["name"], h["id"])
+        hands,
+        key=lambda h: (h["item_part_id"] is None, h["item_part_id"] or 0, h["num"], h["name"].casefold(), h["id"]),
     ):
         position = position_by_part.get(hand["item_part_id"], 0) + 1
         position_by_part[hand["item_part_id"]] = position
