@@ -81,6 +81,22 @@ EXPECTED_SITE_LABEL_KEYS: frozenset[str] = frozenset(
         "footerLine1",
         "footerLine2",
         "footerBottomLine",
+        # backend common 0017_sitelabel_home_page_copy
+        "homeAboutUrl",
+        "homeCardContextDesc",
+        "homeCardContextTitle",
+        "homeCardHandsDesc",
+        "homeCardHandsTitle",
+        "homeCardManuscriptsDesc",
+        "homeCardManuscriptsTitle",
+        "homeContextUrl",
+        "homeHeroEyebrow",
+        "homeHeroSubtitle",
+        "homeHeroTitle",
+        "homeHeroTitleEmphasis",
+        "homeQuote",
+        "homeQuoteLinkLabel",
+        "siteDescription",
     }
 )
 EXPECTED_PUBLIC_SITE_FEATURE_KEYS: frozenset[str] = frozenset(
@@ -94,6 +110,15 @@ EXPECTED_PUBLIC_SITE_FEATURE_KEYS: frozenset[str] = frozenset(
         "site_features.sections.events",
         "site_features.sections.about",
         "site_features.sectionOrder",
+        # backend common 0015_seed_theme_colors and 0016_seed_branding_and_header_colors
+        "site_features.branding.logoUrl",
+        "site_features.theme.accentColor",
+        "site_features.theme.navBarBackgroundColor",
+        "site_features.theme.navBarTextColor",
+        "site_features.theme.primaryColor",
+        "site_features.theme.primaryForegroundColor",
+        "site_features.theme.titleBarBackgroundColor",
+        "site_features.theme.titleBarTextColor",
         "site_features.features.manuscriptDescriptions",
         "site_features.searchCategories.manuscripts.enabled",
         "site_features.searchCategories.manuscripts.visibleColumns",

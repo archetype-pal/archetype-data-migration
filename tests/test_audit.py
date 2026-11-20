@@ -623,7 +623,7 @@ def test_check_site_label_keys_passes_expected_current_keys(monkeypatch):
     result = check_site_label_keys(None)
 
     assert result.status == "ok"
-    assert "22 current SiteLabel key" in result.summary
+    assert "37 current SiteLabel key" in result.summary
 
 
 def test_check_site_label_keys_fails_missing_or_unexpected_keys(monkeypatch):
@@ -648,7 +648,7 @@ def test_check_public_site_feature_settings_passes_expected_current_keys(monkeyp
     result = check_public_site_feature_settings(None)
 
     assert result.status == "ok"
-    assert "37 public site_features.* setting key" in result.summary
+    assert "45 public site_features.* setting key" in result.summary
 
 
 def test_check_public_site_feature_settings_fails_missing_unexpected_or_private_keys(monkeypatch):
