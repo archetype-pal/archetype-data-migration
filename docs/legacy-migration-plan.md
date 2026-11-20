@@ -67,7 +67,7 @@ The current target is clearly a selective migration, not a full clone:
 | Legacy entity | Current entity | Migration status |
 | --- | --- | --- |
 | `digipal_date` | `common_date` | Id-preserved, with target-only seed dates `1` to `16`. |
-| `digipal_place` | `common_place` | Id-preserved names. A place with the same name as an earlier one, ignoring case, is merged into it and listed in `source_profile.place_list`. Types, regions, counties and coordinates are not imported. |
+| `digipal_place` | `common_place` | Id-preserved names. A place with the same name as an earlier one, ignoring case, is merged into it and listed in `source_profile.place_list`. Names are cut to 150 characters, so two names that are the same, ignoring case, in their first 150 characters but differ after them block the import. Types, regions, counties and coordinates are not imported. |
 | none | `common_editevent` | Target-only append-only edit log; do not import from legacy. |
 | `digipal_format` | `manuscripts_itemformat` | Direct/id-preserved. |
 | `digipal_source` | `manuscripts_bibliographicsource` | Direct/id-preserved. |

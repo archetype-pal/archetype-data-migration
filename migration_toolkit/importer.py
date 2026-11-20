@@ -1898,11 +1898,35 @@ def place_list_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
     added_institutions = fetch_rows(
         legacy_conn, f"SELECT id, name FROM ({INSTITUTION_ONLY_PLACES_SQL}) institution_places ORDER BY id"
     )
+    name_clashes = fetch_rows(
+        legacy_conn,
+        f"""
+        WITH kept_places AS (
+          SELECT DISTINCT ON (lower(coalesce(name, ''))) id, name
+          FROM digipal_place
+          ORDER BY lower(coalesce(name, '')), id
+        ),
+        imported_places AS (
+          SELECT id, name FROM kept_places
+          UNION ALL
+          SELECT id, name FROM ({INSTITUTION_ONLY_PLACES_SQL}) institution_places
+        ),
+        cut_places AS (
+          SELECT id, name, lower(left(coalesce(name, ''), 150)) AS cut_name FROM imported_places
+        )
+        SELECT id, name
+        FROM cut_places
+        WHERE cut_name IN (SELECT cut_name FROM cut_places GROUP BY cut_name HAVING count(*) > 1)
+        ORDER BY id
+        """,
+    )
     return {
         "merged_count": len(merged),
         "merged": merged,
         "added_institution_count": len(added_institutions),
         "added_institutions": added_institutions,
+        "name_clash_count": len(name_clashes),
+        "name_clashes": name_clashes,
     }
 
 
@@ -2174,6 +2198,11 @@ def source_profile_warnings(profile: dict[str, Any]) -> list[str]:
             "Legacy digipal_institution contains rows used as a scriptorium or by an origin without a place, with no "
             f"place of the same name, which are added to the place list: {place_list['added_institution_count']}"
         )
+    if int(place_list.get("name_clash_count", 0)):
+        warnings.append(
+            "Legacy digipal_place or digipal_institution contains place names that are the same, ignoring case, in "
+            f"their first 150 characters but differ after them: {place_list['name_clash_count']}"
+        )
     missing_origin_places = int(profile.get("origin_place_integrity", {}).get("missing_place_count", 0))
     if missing_origin_places:
         warnings.append(
@@ -2223,6 +2252,12 @@ def source_profile_blockers(
     unsupported_description_policy: str = DESCRIPTION_POLICY_FAIL,
 ) -> list[str]:
     blockers: list[str] = []
+    if "core_vocabularies" in phases and int(profile.get("place_list", {}).get("name_clash_count", 0)):
+        blockers.append(
+            "The core_vocabularies phase cannot import place names that are the same, ignoring case, in their first "
+            "150 characters, because names are cut to 150 characters and must stay unique ignoring case. Review "
+            "source_profile.place_list.name_clashes and repair the source data."
+        )
     if "manuscripts" in phases:
         unsupported_descriptions = unsupported_description_count(profile)
         if unsupported_descriptions and unsupported_description_policy == DESCRIPTION_POLICY_FAIL:

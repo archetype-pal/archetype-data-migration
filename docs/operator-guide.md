@@ -147,6 +147,7 @@ Importer contract:
 - Preserve ids where the audit says ids are preserved.
 - Keep target-only date seed rows documented and do not overwrite them.
 - Merge places that share a name, ignoring case, into the first one and list them in source_profile.place_list.
+- Block the import when two place names are the same, ignoring case, in their first 150 characters but differ after them, because names are cut to 150 characters; list them in source_profile.place_list.
 - Apply repository label/type/place transformations explicitly.
 - Link each repository to its place, through the merged place ids.
 - Add each institution used as a scriptorium, or by an origin without a place, that has no place of the same name to the place list after the legacy place ids, and list them in source_profile.place_list.
