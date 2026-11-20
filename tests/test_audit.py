@@ -3,6 +3,7 @@ from migration_toolkit.audit import (
     ENTITY_MAPPINGS,
     EXPECTED_PUBLIC_SITE_FEATURE_KEYS,
     EXPECTED_SITE_LABEL_KEYS,
+    INSTITUTION_ONLY_PLACES_SQL,
     PUBLICATION_AUTHOR_POLICY_FALLBACK,
     PUBLICATION_AUTHOR_POLICY_USERNAME,
     PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK,
@@ -1237,6 +1238,11 @@ def test_origin_mapping_counts_one_origin_per_historical_item_and_place():
     assert mapping.legacy_ids_sql is not None
     assert "GROUP BY origins.historical_item_id, origins.place_id" in mapping.legacy_count_sql
     assert "SELECT min(origins.id)" in mapping.legacy_ids_sql
+
+
+def test_institution_places_come_from_scriptoria_and_origins_without_a_place():
+    assert "SELECT scriptorium_id FROM digipal_scribe" in INSTITUTION_ONLY_PLACES_SQL
+    assert "SELECT institution_id FROM digipal_itemorigin WHERE place_id IS NULL" in INSTITUTION_ONLY_PLACES_SQL
 
 
 def test_legacy_description_relationship_check_warns_on_unsupported_rows(monkeypatch):
