@@ -836,6 +836,18 @@ def test_import_scribes_hands_links_hands_to_their_assigned_place(monkeypatch):
     assert [(row["id"], row["place_id"]) for row in hands] == [(10, 7), (11, None)]
 
 
+def test_assign_hand_display_orders_breaks_name_ties_ignoring_case():
+    from migration_toolkit.importer import assign_hand_display_orders
+
+    hands = [
+        {"id": 1, "item_part_id": 10, "num": 1, "name": "Main Hand (Latin)"},
+        {"id": 2, "item_part_id": 10, "num": 1, "name": "Main Hand (imitative)"},
+        {"id": 3, "item_part_id": 10, "num": 1, "name": "Main Hand (47r)"},
+    ]
+    assign_hand_display_orders(hands)
+    assert {h["id"]: h["display_order"] for h in hands} == {3: 1, 2: 2, 1: 3}
+
+
 def test_character_type_profile_records_reviewed_types_and_invalid_rows(monkeypatch):
     rows = [
         {"id": 1, "name": "a", "ontograph_type_name": "letter"},
