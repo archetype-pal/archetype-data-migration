@@ -17,6 +17,7 @@ from migration_toolkit.audit import (
     run_audit,
     target_url_from_env,
 )
+from migration_toolkit.source_mapping import SourceMappingError, load_source_mapping
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -76,6 +77,16 @@ def build_parser() -> argparse.ArgumentParser:
             "Defaults to BACKEND_REPO, /app inside the backend container, or the toolkit fallback."
         ),
     )
+    parser.add_argument(
+        "--source-mapping",
+        type=Path,
+        default=None,
+        help=(
+            "JSON file of reviewed per-source mapping decisions (character types, repository label "
+            "fallbacks, item image path overrides). Defaults to $SOURCE_MAPPING_PATH, else built-in defaults. "
+            "See migration_toolkit/source_mapping.py."
+        ),
+    )
     return parser
 
 
@@ -98,6 +109,11 @@ def main(argv: list[str] | None = None) -> int:
         )
 
     try:
+        source_mapping = load_source_mapping(options.source_mapping)
+    except SourceMappingError as exc:
+        parser.error(str(exc))
+
+    try:
         report = run_audit(
             legacy_url=legacy_url,
             target_url=target_url,
@@ -107,6 +123,7 @@ def main(argv: list[str] | None = None) -> int:
                 fallback_author_username=options.publication_author_username,
             ),
             backend_root=options.backend_root,
+            source_mapping=source_mapping,
         )
     except LegacyMigrationAuditError as exc:
         parser.error(str(exc))
