@@ -1230,6 +1230,15 @@ def test_catalogue_number_mapping_counts_only_supported_rows():
     assert "digipal_historicalitem" in mapping.legacy_ids_sql
 
 
+def test_origin_mapping_counts_one_origin_per_historical_item_and_place():
+    mapping = next(mapping for mapping in ENTITY_MAPPINGS if mapping.key == "origins")
+
+    assert mapping.legacy_count_sql is not None
+    assert mapping.legacy_ids_sql is not None
+    assert "GROUP BY origins.historical_item_id, origins.place_id" in mapping.legacy_count_sql
+    assert "SELECT min(origins.id)" in mapping.legacy_ids_sql
+
+
 def test_legacy_description_relationship_check_warns_on_unsupported_rows(monkeypatch):
     def fake_dict_rows(conn, query, params=None):
         return [

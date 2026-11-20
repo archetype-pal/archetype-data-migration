@@ -44,6 +44,7 @@ from migration_toolkit.importer import (
     import_scribes_hands,
     legacy_image_path,
     legacy_publication_url_rewrite_map,
+    origin_place_profile,
     parse_annotation,
     parse_date_weights,
     publication_link_rewrite_warnings,
@@ -81,6 +82,13 @@ def test_msdescarea_is_tracked_as_target_schema_not_legacy_source():
     assert "manuscripts_msdescarea" in TARGET_DOMAIN_TABLES
     assert "manuscripts_msdescarea" in PHASE_TARGET_TABLES["manuscripts"]
     assert "manuscripts_msdescarea" not in SOURCE_COUNT_SQL["manuscripts"]
+
+
+def test_origins_are_planned_one_per_historical_item_and_place():
+    origin_sql = SOURCE_COUNT_SQL["manuscripts"]["manuscripts_historicalitemorigin"]
+
+    assert "FROM digipal_itemorigin origin" in origin_sql
+    assert "GROUP BY origins.historical_item_id, origins.place_id" in origin_sql
 
 
 def test_publication_keyword_tables_are_required_and_planned_from_generic_keywords():
@@ -642,6 +650,55 @@ def test_import_manuscripts_imports_origins_with_their_place(monkeypatch):
         {"id": 2, "historical_item_id": 390, "place_id": 13, "evidence": "", "dubitable": False},
     ]
     assert "manuscripts_historicalitemorigin" in PHASE_TARGET_TABLES["manuscripts"]
+
+
+def test_import_manuscripts_merges_origins_that_share_an_item_and_place(monkeypatch):
+    def fake_fetch_rows(_conn, query, _params=None):
+        if "FROM digipal_itemorigin origin" in query:
+            return [
+                {"id": 24, "historical_item_id": 429, "evidence": "colophon 45v", "dubitable": True, "place_id": 31},
+                {"id": 23, "historical_item_id": 429, "evidence": "by association", "dubitable": False, "place_id": 31},
+                {"id": 25, "historical_item_id": 429, "evidence": " colophon 45v ", "dubitable": False, "place_id": 31},
+                {"id": 26, "historical_item_id": 429, "evidence": None, "dubitable": False, "place_id": 32},
+                {"id": 27, "historical_item_id": 430, "evidence": " Ker 1957 ", "dubitable": False, "place_id": 31},
+            ]
+        return []
+
+    inserted = {}
+
+    def fake_insert_rows(_conn, query, rows):
+        table = query.split("INSERT INTO ", 1)[1].split()[0]
+        inserted[table] = list(rows)
+        return len(rows)
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.insert_rows", fake_insert_rows)
+    monkeypatch.setattr("migration_toolkit.importer.scalar", lambda *_args, **_kwargs: 0)
+
+    import_manuscripts(
+        ImportContext(
+            legacy_conn=None,
+            target_conn=None,
+            options=ImportOptions(),
+            backend_contract=BackendContract(
+                historical_item_type_labels=("Charter",),
+                historical_item_type_values=frozenset({"charter"}),
+                source="test",
+            ),
+        )
+    )
+
+    assert inserted["manuscripts_historicalitemorigin"] == [
+        {
+            "id": 23,
+            "historical_item_id": 429,
+            "place_id": 31,
+            "evidence": "by association; colophon 45v",
+            "dubitable": True,
+        },
+        {"id": 26, "historical_item_id": 429, "place_id": 32, "evidence": "", "dubitable": False},
+        {"id": 27, "historical_item_id": 430, "place_id": 31, "evidence": " Ker 1957 ", "dubitable": False},
+    ]
 
 
 def test_import_scribes_hands_writes_hand_descriptions_to_their_own_table(monkeypatch):
@@ -1491,6 +1548,44 @@ def test_source_profile_blockers_reject_origins_without_a_place_before_manuscrip
     assert "digipal_place" in warnings[0] and warnings[0].endswith(": 1")
     assert "digipal_institution" in warnings[1] and warnings[1].endswith(": 2")
     assert "digipal_itemorigin" in warnings[2] and warnings[2].endswith(": 3")
+
+
+def test_origin_place_profile_lists_origins_merged_into_an_earlier_one(monkeypatch):
+    def fake_fetch_rows(_conn, query, _params=None):
+        if "kept_id" in query:
+            return [{"id": 24, "historical_item_id": 429, "place_id": 31, "kept_id": 23}]
+        return []
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.scalar", lambda *_args, **_kwargs: 0)
+
+    profile = origin_place_profile(None)
+
+    assert profile["merged_count"] == 1
+    assert profile["merged"] == [{"id": 24, "historical_item_id": 429, "place_id": 31, "kept_id": 23}]
+
+
+def test_source_profile_warns_about_merged_origins_without_blocking_manuscripts():
+    profile = {
+        "description_relationships": {
+            "counts": {
+                "historical_only": 0,
+                "text_only": 0,
+                "both_links": 0,
+                "neither_link": 0,
+                "dangling_historical_item": 0,
+            },
+            "samples": {},
+        },
+        "origin_place_integrity": {"missing_place_count": 0, "sample": [], "merged_count": 2, "merged": []},
+        "allograph_character_integrity": {"missing_character_count": 0, "sample": []},
+    }
+
+    assert source_profile_blockers(profile, ("manuscripts",)) == []
+    assert source_profile_warnings(profile) == [
+        "Legacy digipal_itemorigin contains rows that share a historical item and a place with an earlier row "
+        "and are merged into it: 2"
+    ]
 
 
 def test_source_profile_blockers_reject_invalid_character_types_before_symbol_writes():
