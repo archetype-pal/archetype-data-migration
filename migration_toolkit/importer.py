@@ -16,7 +16,9 @@ from psycopg.rows import dict_row
 
 from migration_toolkit.audit import (
     INSTITUTION_ONLY_PLACES_SQL,
+    KEPT_ORIGIN_COUNT_SQL,
     KEPT_PLACE_COUNT_SQL,
+    ORIGIN_PLACES_SQL,
     PUBLICATION_AUTHOR_POLICIES,
     PUBLICATION_AUTHOR_POLICY_FALLBACK,
     PUBLICATION_AUTHOR_POLICY_LEGACY_ID,
@@ -459,7 +461,7 @@ SOURCE_COUNT_SQL: dict[str, dict[str, str]] = {
             "WHERE c.historical_item_id IS NOT NULL "
             "AND EXISTS (SELECT 1 FROM digipal_historicalitem h WHERE h.id = c.historical_item_id)"
         ),
-        "manuscripts_historicalitemorigin": "SELECT count(*) FROM digipal_itemorigin",
+        "manuscripts_historicalitemorigin": KEPT_ORIGIN_COUNT_SQL,
         "manuscripts_itempart": (
             "SELECT count(*) + CASE WHEN EXISTS (SELECT 1 FROM digipal_image WHERE item_part_id IS NULL) "
             "THEN 1 ELSE 0 END FROM digipal_itempart"
@@ -1921,7 +1923,23 @@ def origin_place_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
             "SELECT count(*) FROM digipal_itemorigin WHERE place_id IS NULL AND institution_id IS NULL",
         )
     )
-    return {"missing_place_count": count, "sample": rows}
+    merged = fetch_rows(
+        legacy_conn,
+        f"""
+        SELECT id, historical_item_id, place_id, kept_id
+        FROM (
+          SELECT
+            origins.id,
+            origins.historical_item_id,
+            origins.place_id,
+            min(origins.id) OVER (PARTITION BY origins.historical_item_id, origins.place_id) AS kept_id
+          FROM ({ORIGIN_PLACES_SQL}) origins
+        ) resolved
+        WHERE id <> kept_id
+        ORDER BY id
+        """,
+    )
+    return {"missing_place_count": count, "sample": rows, "merged_count": len(merged), "merged": merged}
 
 
 def character_type_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
@@ -2160,6 +2178,12 @@ def source_profile_warnings(profile: dict[str, Any]) -> list[str]:
     if missing_origin_places:
         warnings.append(
             f"Legacy digipal_itemorigin contains rows with neither a place nor an institution: {missing_origin_places}"
+        )
+    merged_origins = int(profile.get("origin_place_integrity", {}).get("merged_count", 0))
+    if merged_origins:
+        warnings.append(
+            "Legacy digipal_itemorigin contains rows that share a historical item and a place with an earlier row "
+            f"and are merged into it: {merged_origins}"
         )
 
     invalid_historical_item_types = int(profile.get("historical_item_types", {}).get("invalid_count", 0))
@@ -2684,6 +2708,33 @@ def import_symbols(ctx: ImportContext) -> dict[str, int]:
     return rows_imported
 
 
+def merge_origin_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    groups: dict[tuple[Any, Any], list[dict[str, Any]]] = {}
+    for row in sorted(rows, key=lambda row: row["id"]):
+        groups.setdefault((row["historical_item_id"], row["place_id"]), []).append(row)
+    merged: list[dict[str, Any]] = []
+    for group in groups.values():
+        kept = group[0]
+        evidence = text_or_blank(kept["evidence"])
+        if len(group) > 1:
+            parts: list[str] = []
+            for row in group:
+                text = text_or_blank(row["evidence"]).strip()
+                if text and text not in parts:
+                    parts.append(text)
+            evidence = "; ".join(parts)
+        merged.append(
+            {
+                "id": kept["id"],
+                "historical_item_id": kept["historical_item_id"],
+                "place_id": kept["place_id"],
+                "evidence": evidence,
+                "dubitable": any(bool(row["dubitable"]) for row in group),
+            }
+        )
+    return merged
+
+
 def import_manuscripts(ctx: ImportContext) -> dict[str, int]:
     legacy_conn = ctx.legacy_conn
     target_conn = ctx.target_conn
@@ -2832,55 +2883,14 @@ def import_manuscripts(ctx: ImportContext) -> dict[str, int]:
         ],
     )
 
-    origin_rows = fetch_rows(
-        legacy_conn,
-        f"""
-        SELECT
-          origin.id,
-          origin.historical_item_id,
-          origin.evidence,
-          origin.dubitable,
-          coalesce(
-            (
-              SELECT min(kept.id)
-              FROM digipal_place linked
-              JOIN digipal_place kept ON lower(coalesce(kept.name, '')) = lower(coalesce(linked.name, ''))
-              WHERE linked.id = origin.place_id
-            ),
-            (
-              SELECT min(existing.id)
-              FROM digipal_institution institution
-              JOIN digipal_place existing ON lower(coalesce(existing.name, '')) = lower(coalesce(institution.name, ''))
-              WHERE institution.id = origin.institution_id
-            ),
-            (
-              SELECT institution_places.id
-              FROM ({INSTITUTION_ONLY_PLACES_SQL}) institution_places
-              JOIN digipal_institution institution
-                ON lower(coalesce(institution.name, '')) = institution_places.name_key
-              WHERE institution.id = origin.institution_id
-            )
-          ) AS place_id
-        FROM digipal_itemorigin origin
-        ORDER BY origin.id
-        """,
-    )
+    origin_rows = fetch_rows(legacy_conn, f"SELECT * FROM ({ORIGIN_PLACES_SQL}) origins ORDER BY origins.id")
     rows_imported["manuscripts_historicalitemorigin"] = insert_rows(
         target_conn,
         """
         INSERT INTO manuscripts_historicalitemorigin (id, historical_item_id, place_id, evidence, dubitable)
         VALUES (%(id)s, %(historical_item_id)s, %(place_id)s, %(evidence)s, %(dubitable)s)
         """,
-        [
-            {
-                "id": row["id"],
-                "historical_item_id": row["historical_item_id"],
-                "place_id": row["place_id"],
-                "evidence": text_or_blank(row["evidence"]),
-                "dubitable": bool(row["dubitable"]),
-            }
-            for row in origin_rows
-        ],
+        merge_origin_rows(origin_rows),
     )
 
     item_part_rows = fetch_rows(

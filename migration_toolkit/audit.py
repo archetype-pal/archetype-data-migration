@@ -239,6 +239,52 @@ SELECT id FROM ({INSTITUTION_ONLY_PLACES_SQL}) institution_places
 ORDER BY 1
 """
 
+ORIGIN_PLACES_SQL = f"""
+SELECT
+  origin.id,
+  origin.historical_item_id,
+  origin.evidence,
+  origin.dubitable,
+  coalesce(
+    (
+      SELECT min(kept.id)
+      FROM digipal_place linked
+      JOIN digipal_place kept ON lower(coalesce(kept.name, '')) = lower(coalesce(linked.name, ''))
+      WHERE linked.id = origin.place_id
+    ),
+    (
+      SELECT min(existing.id)
+      FROM digipal_institution institution
+      JOIN digipal_place existing ON lower(coalesce(existing.name, '')) = lower(coalesce(institution.name, ''))
+      WHERE institution.id = origin.institution_id
+    ),
+    (
+      SELECT institution_places.id
+      FROM ({INSTITUTION_ONLY_PLACES_SQL}) institution_places
+      JOIN digipal_institution institution
+        ON lower(coalesce(institution.name, '')) = institution_places.name_key
+      WHERE institution.id = origin.institution_id
+    )
+  ) AS place_id
+FROM digipal_itemorigin origin
+"""
+
+KEPT_ORIGIN_COUNT_SQL = f"""
+SELECT count(*)
+FROM (
+  SELECT 1
+  FROM ({ORIGIN_PLACES_SQL}) origins
+  GROUP BY origins.historical_item_id, origins.place_id
+) kept_origins
+"""
+
+KEPT_ORIGIN_IDS_SQL = f"""
+SELECT min(origins.id)
+FROM ({ORIGIN_PLACES_SQL}) origins
+GROUP BY origins.historical_item_id, origins.place_id
+ORDER BY 1
+"""
+
 
 @dataclass(frozen=True)
 class PublicationAuthorPolicy:
@@ -479,12 +525,16 @@ ENTITY_MAPPINGS: tuple[EntityMapping, ...] = (
         legacy_table="digipal_itemorigin",
         target_table="manuscripts_historicalitemorigin",
         category="manuscripts",
-        strategy="id-preserved, place through the place merge or the institution's name",
+        strategy="id-preserved, place through the place merge or the institution's name, same item and place merged",
         notes=(
             "Each legacy origin keeps its evidence and dubitable flag. Its place is the legacy place, through the "
-            "merged place ids, or the place that has its institution's name. An origin with neither blocks the "
-            "import before any write."
+            "merged place ids, or the place that has its institution's name. Origins of one historical item that "
+            "land on the same place are merged into the lowest id, which joins their distinct evidence and is "
+            "dubitable when any of them was. An origin with neither a place nor an institution blocks the import "
+            "before any write."
         ),
+        legacy_count_sql=KEPT_ORIGIN_COUNT_SQL,
+        legacy_ids_sql=KEPT_ORIGIN_IDS_SQL,
     ),
     EntityMapping(
         key="item_parts",

@@ -184,6 +184,7 @@ Importer contract:
 - Fail on unsupported digipal_description relationships unless an explicit skip policy is approved.
 - Treat manuscripts_msdescarea as target-only schema tracking unless an explicit msDesc seed policy is approved.
 - Import each origin with its evidence and dubitable flag; its place is the legacy place, through the merged place ids, or the place that has its institution's name.
+- Merge origins of one historical item that land on the same place into the lowest id, which joins their distinct evidence and is dubitable when any of them was; the dry run lists the merged ids.
 - Block the import when an origin has neither a place nor an institution.
 - Create the documented -1 item-part placeholder only if needed.
 - Validate shortened shelfmark/current locus fields before insert.
