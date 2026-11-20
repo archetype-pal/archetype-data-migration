@@ -1578,6 +1578,22 @@ def test_origin_place_profile_lists_origins_merged_into_an_earlier_one(monkeypat
     assert profile["merged"] == [{"id": 24, "historical_item_id": 429, "place_id": 31, "kept_id": 23}]
 
 
+def test_origin_place_profile_leaves_origins_without_a_place_out_of_the_merge_list(monkeypatch):
+    queries = []
+
+    def fake_fetch_rows(_conn, query, _params=None):
+        queries.append(query)
+        return []
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+    monkeypatch.setattr("migration_toolkit.importer.scalar", lambda *_args, **_kwargs: 0)
+
+    origin_place_profile(None)
+
+    merge_query = next(query for query in queries if "kept_id" in query)
+    assert "WHERE origins.place_id IS NOT NULL" in merge_query
+
+
 def test_source_profile_warns_about_merged_origins_without_blocking_manuscripts():
     profile = {
         "description_relationships": {
