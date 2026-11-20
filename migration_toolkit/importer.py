@@ -15,6 +15,10 @@ from psycopg import Connection
 from psycopg.rows import dict_row
 
 from migration_toolkit.audit import (
+    INSTITUTION_ONLY_PLACES_SQL,
+    KEPT_ORIGIN_COUNT_SQL,
+    KEPT_PLACE_COUNT_SQL,
+    ORIGIN_PLACES_SQL,
     PUBLICATION_AUTHOR_POLICIES,
     PUBLICATION_AUTHOR_POLICY_FALLBACK,
     PUBLICATION_AUTHOR_POLICY_LEGACY_ID,
@@ -264,6 +268,8 @@ REQUIRED_LEGACY_TABLES: set[str] = {
     "digipal_historicalitemtype",
     "digipal_idiograph",
     "digipal_image",
+    "digipal_institution",
+    "digipal_itemorigin",
     "digipal_itempart",
     "digipal_itempartitem",
     "digipal_language",
@@ -289,12 +295,14 @@ REQUIRED_TARGET_TABLES: set[str] = {
     "auth_user",
     "common_appsettings",
     "common_date",
+    "common_place",
     "common_sitelabel",
     "manuscripts_bibliographicsource",
     "manuscripts_cataloguenumber",
     "manuscripts_currentitem",
     "manuscripts_historicalitem",
     "manuscripts_historicalitemdescription",
+    "manuscripts_historicalitemorigin",
     "manuscripts_imagetext",
     "manuscripts_itemformat",
     "manuscripts_itemimage",
@@ -310,6 +318,7 @@ REQUIRED_TARGET_TABLES: set[str] = {
     "publications_tagulous_publication_keywords",
     "scribes_hand",
     "scribes_hand_item_part_images",
+    "scribes_handdescription",
     "scribes_scribe",
     "scribes_script",
     "symbols_structure_allograph",
@@ -325,6 +334,7 @@ REQUIRED_TARGET_TABLES: set[str] = {
 
 TARGET_DOMAIN_TABLES: tuple[str, ...] = (
     "common_date",
+    "common_place",
     "manuscripts_itemformat",
     "manuscripts_bibliographicsource",
     "manuscripts_repository",
@@ -332,6 +342,7 @@ TARGET_DOMAIN_TABLES: tuple[str, ...] = (
     "manuscripts_historicalitem",
     "manuscripts_historicalitemdescription",
     "manuscripts_cataloguenumber",
+    "manuscripts_historicalitemorigin",
     "manuscripts_itempart",
     "manuscripts_msdescarea",
     "manuscripts_itemimage",
@@ -339,6 +350,7 @@ TARGET_DOMAIN_TABLES: tuple[str, ...] = (
     "scribes_scribe",
     "scribes_script",
     "scribes_hand",
+    "scribes_handdescription",
     "scribes_hand_item_part_images",
     "symbols_structure_character",
     "symbols_structure_allograph",
@@ -370,6 +382,7 @@ SEQUENCE_TABLES: tuple[str, ...] = TARGET_DOMAIN_TABLES + (
 PHASE_TARGET_TABLES: dict[str, tuple[str, ...]] = {
     "core_vocabularies": (
         "common_date",
+        "common_place",
         "manuscripts_itemformat",
         "manuscripts_bibliographicsource",
         "manuscripts_repository",
@@ -390,6 +403,7 @@ PHASE_TARGET_TABLES: dict[str, tuple[str, ...]] = {
         "manuscripts_historicalitem",
         "manuscripts_historicalitemdescription",
         "manuscripts_cataloguenumber",
+        "manuscripts_historicalitemorigin",
         "manuscripts_itempart",
         "manuscripts_msdescarea",
         "manuscripts_itemimage",
@@ -398,6 +412,7 @@ PHASE_TARGET_TABLES: dict[str, tuple[str, ...]] = {
         "scribes_scribe",
         "scribes_script",
         "scribes_hand",
+        "scribes_handdescription",
         "scribes_hand_item_part_images",
     ),
     "image_text": ("manuscripts_imagetext",),
@@ -419,6 +434,7 @@ PHASE_TARGET_TABLES: dict[str, tuple[str, ...]] = {
 SOURCE_COUNT_SQL: dict[str, dict[str, str]] = {
     "core_vocabularies": {
         "common_date": "SELECT count(*) FROM digipal_date",
+        "common_place": KEPT_PLACE_COUNT_SQL,
         "manuscripts_itemformat": "SELECT count(*) FROM digipal_format",
         "manuscripts_bibliographicsource": "SELECT count(*) FROM digipal_source",
         "manuscripts_repository": "SELECT count(*) FROM digipal_repository",
@@ -445,6 +461,7 @@ SOURCE_COUNT_SQL: dict[str, dict[str, str]] = {
             "WHERE c.historical_item_id IS NOT NULL "
             "AND EXISTS (SELECT 1 FROM digipal_historicalitem h WHERE h.id = c.historical_item_id)"
         ),
+        "manuscripts_historicalitemorigin": KEPT_ORIGIN_COUNT_SQL,
         "manuscripts_itempart": (
             "SELECT count(*) + CASE WHEN EXISTS (SELECT 1 FROM digipal_image WHERE item_part_id IS NULL) "
             "THEN 1 ELSE 0 END FROM digipal_itempart"
@@ -455,6 +472,9 @@ SOURCE_COUNT_SQL: dict[str, dict[str, str]] = {
         "scribes_scribe": "SELECT count(*) + 1 FROM digipal_scribe",
         "scribes_script": "SELECT count(*) FROM digipal_script",
         "scribes_hand": "SELECT count(*) FROM digipal_hand",
+        "scribes_handdescription": (
+            "SELECT count(*) FROM digipal_hand WHERE concat_ws('', display_note, internal_note, comments) ~ '\\S'"
+        ),
         "scribes_hand_item_part_images": "SELECT count(*) FROM digipal_hand_images",
     },
     "image_text": {
@@ -1863,6 +1883,90 @@ def allograph_character_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
     return {"missing_character_count": count, "sample": rows}
 
 
+def place_list_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
+    merged = fetch_rows(
+        legacy_conn,
+        """
+        SELECT p.id, p.name, min(kept.id) AS kept_id
+        FROM digipal_place p
+        JOIN digipal_place kept ON lower(coalesce(kept.name, '')) = lower(coalesce(p.name, ''))
+        GROUP BY p.id, p.name
+        HAVING p.id <> min(kept.id)
+        ORDER BY p.id
+        """,
+    )
+    added_institutions = fetch_rows(
+        legacy_conn, f"SELECT id, name FROM ({INSTITUTION_ONLY_PLACES_SQL}) institution_places ORDER BY id"
+    )
+    name_clashes = fetch_rows(
+        legacy_conn,
+        f"""
+        WITH kept_places AS (
+          SELECT DISTINCT ON (lower(coalesce(name, ''))) id, name
+          FROM digipal_place
+          ORDER BY lower(coalesce(name, '')), id
+        ),
+        imported_places AS (
+          SELECT id, name FROM kept_places
+          UNION ALL
+          SELECT id, name FROM ({INSTITUTION_ONLY_PLACES_SQL}) institution_places
+        ),
+        cut_places AS (
+          SELECT id, name, lower(left(coalesce(name, ''), 150)) AS cut_name FROM imported_places
+        )
+        SELECT id, name
+        FROM cut_places
+        WHERE cut_name IN (SELECT cut_name FROM cut_places GROUP BY cut_name HAVING count(*) > 1)
+        ORDER BY id
+        """,
+    )
+    return {
+        "merged_count": len(merged),
+        "merged": merged,
+        "added_institution_count": len(added_institutions),
+        "added_institutions": added_institutions,
+        "name_clash_count": len(name_clashes),
+        "name_clashes": name_clashes,
+    }
+
+
+def origin_place_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
+    rows = fetch_rows(
+        legacy_conn,
+        """
+        SELECT id, historical_item_id
+        FROM digipal_itemorigin
+        WHERE place_id IS NULL AND institution_id IS NULL
+        ORDER BY id
+        LIMIT 10
+        """,
+    )
+    count = int(
+        scalar(
+            legacy_conn,
+            "SELECT count(*) FROM digipal_itemorigin WHERE place_id IS NULL AND institution_id IS NULL",
+        )
+    )
+    merged = fetch_rows(
+        legacy_conn,
+        f"""
+        SELECT id, historical_item_id, place_id, kept_id
+        FROM (
+          SELECT
+            origins.id,
+            origins.historical_item_id,
+            origins.place_id,
+            min(origins.id) OVER (PARTITION BY origins.historical_item_id, origins.place_id) AS kept_id
+          FROM ({ORIGIN_PLACES_SQL}) origins
+          WHERE origins.place_id IS NOT NULL
+        ) resolved
+        WHERE id <> kept_id
+        ORDER BY id
+        """,
+    )
+    return {"missing_place_count": count, "sample": rows, "merged_count": len(merged), "merged": merged}
+
+
 def character_type_profile(legacy_conn: Connection[Any]) -> dict[str, Any]:
     rows = fetch_rows(
         legacy_conn,
@@ -2032,8 +2136,10 @@ def target_users_by_username(target_conn: Connection[Any], usernames: list[str])
 
 def build_source_profile(legacy_conn: Connection[Any], backend_contract: BackendContract) -> dict[str, Any]:
     return {
+        "place_list": place_list_profile(legacy_conn),
         "description_relationships": description_relationship_profile(legacy_conn),
         "catalogue_number_relationships": catalogue_number_relationship_profile(legacy_conn),
+        "origin_place_integrity": origin_place_profile(legacy_conn),
         "historical_item_types": historical_item_type_profile(legacy_conn, backend_contract),
         "allograph_character_integrity": allograph_character_profile(legacy_conn),
         "character_types": character_type_profile(legacy_conn),
@@ -2082,6 +2188,34 @@ def source_profile_warnings(profile: dict[str, Any]) -> list[str]:
             f"{catalogue_counts['dangling_historical_item']}"
         )
 
+    place_list = profile.get("place_list", {})
+    if int(place_list.get("merged_count", 0)):
+        warnings.append(
+            "Legacy digipal_place contains rows that share a name, ignoring case, with an earlier row and are "
+            f"merged into it: {place_list['merged_count']}"
+        )
+    if int(place_list.get("added_institution_count", 0)):
+        warnings.append(
+            "Legacy digipal_institution contains rows used as a scriptorium or by an origin without a place, with no "
+            f"place of the same name, which are added to the place list: {place_list['added_institution_count']}"
+        )
+    if int(place_list.get("name_clash_count", 0)):
+        warnings.append(
+            "Legacy digipal_place or digipal_institution contains place names that are the same, ignoring case, in "
+            f"their first 150 characters but differ after them: {place_list['name_clash_count']}"
+        )
+    missing_origin_places = int(profile.get("origin_place_integrity", {}).get("missing_place_count", 0))
+    if missing_origin_places:
+        warnings.append(
+            f"Legacy digipal_itemorigin contains rows with neither a place nor an institution: {missing_origin_places}"
+        )
+    merged_origins = int(profile.get("origin_place_integrity", {}).get("merged_count", 0))
+    if merged_origins:
+        warnings.append(
+            "Legacy digipal_itemorigin contains rows that share a historical item and a place with an earlier row "
+            f"and are merged into it: {merged_origins}"
+        )
+
     invalid_historical_item_types = int(profile.get("historical_item_types", {}).get("invalid_count", 0))
     if invalid_historical_item_types:
         warnings.append(
@@ -2119,6 +2253,12 @@ def source_profile_blockers(
     unsupported_description_policy: str = DESCRIPTION_POLICY_FAIL,
 ) -> list[str]:
     blockers: list[str] = []
+    if "core_vocabularies" in phases and int(profile.get("place_list", {}).get("name_clash_count", 0)):
+        blockers.append(
+            "The core_vocabularies phase cannot import place names that are the same, ignoring case, in their first "
+            "150 characters, because names are cut to 150 characters and must stay unique ignoring case. Review "
+            "source_profile.place_list.name_clashes and repair the source data."
+        )
     if "manuscripts" in phases:
         unsupported_descriptions = unsupported_description_count(profile)
         if unsupported_descriptions and unsupported_description_policy == DESCRIPTION_POLICY_FAIL:
@@ -2134,6 +2274,11 @@ def source_profile_blockers(
             "The manuscripts phase contains historical item type values outside current HistoricalItem.type "
             "choices. Review source_profile.historical_item_types.invalid and define an explicit mapping or "
             "source correction."
+        )
+    if "manuscripts" in phases and int(profile.get("origin_place_integrity", {}).get("missing_place_count", 0)):
+        blockers.append(
+            "The manuscripts phase cannot import origins with neither a place nor an institution, because every "
+            "current origin needs a place. Repair the source data or define an explicit policy."
         )
     if "symbols" in phases and profile["allograph_character_integrity"]["missing_character_count"]:
         blockers.append(
@@ -2366,6 +2511,31 @@ def import_core_vocabularies(ctx: ImportContext) -> dict[str, int]:
         date_values,
     )
 
+    place_rows = fetch_rows(
+        legacy_conn,
+        """
+        SELECT p.id, p.name, min(kept.id) AS kept_id
+        FROM digipal_place p
+        JOIN digipal_place kept ON lower(coalesce(kept.name, '')) = lower(coalesce(p.name, ''))
+        GROUP BY p.id, p.name
+        ORDER BY p.id
+        """,
+    )
+    rows_imported["common_place"] = insert_rows(
+        target_conn,
+        "INSERT INTO common_place (id, name) VALUES (%(id)s, %(name)s)",
+        [{"id": row["id"], "name": truncate(row["name"], 150)} for row in place_rows if row["id"] == row["kept_id"]],
+    )
+    institution_place_rows = fetch_rows(
+        legacy_conn, f"SELECT id, name FROM ({INSTITUTION_ONLY_PLACES_SQL}) institution_places ORDER BY id"
+    )
+    if institution_place_rows:
+        rows_imported["common_place"] += insert_rows(
+            target_conn,
+            "INSERT INTO common_place (id, name) VALUES (%(id)s, %(name)s)",
+            [{"id": row["id"], "name": truncate(row["name"], 150)} for row in institution_place_rows],
+        )
+
     format_rows = fetch_rows(legacy_conn, "SELECT id, name FROM digipal_format ORDER BY id")
     rows_imported["manuscripts_itemformat"] = insert_rows(
         target_conn,
@@ -2393,7 +2563,18 @@ def import_core_vocabularies(ctx: ImportContext) -> dict[str, int]:
     repository_rows = fetch_rows(
         legacy_conn,
         """
-        SELECT r.id, r.name, r.short_name, r.url, p.name AS place
+        SELECT
+          r.id,
+          r.name,
+          r.short_name,
+          r.url,
+          p.name AS place,
+          (
+            SELECT min(kept.id)
+            FROM digipal_place linked
+            JOIN digipal_place kept ON lower(coalesce(kept.name, '')) = lower(coalesce(linked.name, ''))
+            WHERE linked.id = r.place_id
+          ) AS place_id
         FROM digipal_repository r
         LEFT JOIN digipal_place p ON p.id = r.place_id
         ORDER BY r.id
@@ -2402,13 +2583,12 @@ def import_core_vocabularies(ctx: ImportContext) -> dict[str, int]:
     repositories = []
     for row in repository_rows:
         label = repository_label(int(row["id"]), row["name"], row["short_name"])
-        place = truncate(row["place"] or "", 50)
         repositories.append(
             {
                 "id": row["id"],
                 "name": truncate(row["name"] or label, 100),
                 "label": label,
-                "place": place,
+                "place_id": row["place_id"],
                 "url": row["url"] or None,
                 "type": repository_type(row["place"]),
             }
@@ -2416,8 +2596,8 @@ def import_core_vocabularies(ctx: ImportContext) -> dict[str, int]:
     rows_imported["manuscripts_repository"] = insert_rows(
         target_conn,
         """
-        INSERT INTO manuscripts_repository (id, name, label, place, url, type)
-        VALUES (%(id)s, %(name)s, %(label)s, %(place)s, %(url)s, %(type)s)
+        INSERT INTO manuscripts_repository (id, name, label, place_id, url, type)
+        VALUES (%(id)s, %(name)s, %(label)s, %(place_id)s, %(url)s, %(type)s)
         """,
         repositories,
     )
@@ -2562,6 +2742,33 @@ def import_symbols(ctx: ImportContext) -> dict[str, int]:
         allograph_position_rows,
     )
     return rows_imported
+
+
+def merge_origin_rows(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    groups: dict[tuple[Any, Any], list[dict[str, Any]]] = {}
+    for row in sorted(rows, key=lambda row: row["id"]):
+        groups.setdefault((row["historical_item_id"], row["place_id"]), []).append(row)
+    merged: list[dict[str, Any]] = []
+    for group in groups.values():
+        kept = group[0]
+        evidence = text_or_blank(kept["evidence"])
+        if len(group) > 1:
+            parts: list[str] = []
+            for row in group:
+                text = text_or_blank(row["evidence"]).strip()
+                if text and text not in parts:
+                    parts.append(text)
+            evidence = "; ".join(parts)
+        merged.append(
+            {
+                "id": kept["id"],
+                "historical_item_id": kept["historical_item_id"],
+                "place_id": kept["place_id"],
+                "evidence": evidence,
+                "dubitable": any(bool(row["dubitable"]) for row in group),
+            }
+        )
+    return merged
 
 
 def import_manuscripts(ctx: ImportContext) -> dict[str, int]:
@@ -2712,6 +2919,16 @@ def import_manuscripts(ctx: ImportContext) -> dict[str, int]:
         ],
     )
 
+    origin_rows = fetch_rows(legacy_conn, f"SELECT * FROM ({ORIGIN_PLACES_SQL}) origins ORDER BY origins.id")
+    rows_imported["manuscripts_historicalitemorigin"] = insert_rows(
+        target_conn,
+        """
+        INSERT INTO manuscripts_historicalitemorigin (id, historical_item_id, place_id, evidence, dubitable)
+        VALUES (%(id)s, %(historical_item_id)s, %(place_id)s, %(evidence)s, %(dubitable)s)
+        """,
+        merge_origin_rows(origin_rows),
+    )
+
     item_part_rows = fetch_rows(
         legacy_conn,
         """
@@ -2787,22 +3004,69 @@ def import_manuscripts(ctx: ImportContext) -> dict[str, int]:
     return rows_imported
 
 
+def assign_hand_display_orders(hands: list[dict[str, Any]]) -> None:
+    """Number each item part's hands 1, 2, … like backend migration scribes 0019 does.
+
+    The backend replaced Hand.num/priority/is_default with one display_order. Legacy hands
+    have no priority/default flag, so the order is legacy ``num``, then name, then id.
+    """
+
+    position_by_part: dict[Any, int] = {}
+    for hand in sorted(
+        hands,
+        key=lambda h: (h["item_part_id"] is None, h["item_part_id"] or 0, h["num"], h["name"].casefold(), h["id"]),
+    ):
+        position = position_by_part.get(hand["item_part_id"], 0) + 1
+        position_by_part[hand["item_part_id"]] = position
+        hand["display_order"] = position
+
+
 def import_scribes_hands(ctx: ImportContext) -> dict[str, int]:
     legacy_conn = ctx.legacy_conn
     target_conn = ctx.target_conn
     rows_imported: dict[str, int] = {}
 
-    scribe_rows = fetch_rows(legacy_conn, "SELECT id, name FROM digipal_scribe ORDER BY id")
-    scribes = [{"id": -1, "name": "[name] update records relations later", "scriptorium": "", "period_id": None}]
+    scribe_rows = fetch_rows(
+        legacy_conn,
+        f"""
+        SELECT
+          scribe.id,
+          scribe.name,
+          (
+            SELECT coalesce(
+              (
+                SELECT min(existing.id)
+                FROM digipal_place existing
+                WHERE lower(coalesce(existing.name, '')) = lower(coalesce(institution.name, ''))
+              ),
+              (
+                SELECT institution_places.id
+                FROM ({INSTITUTION_ONLY_PLACES_SQL}) institution_places
+                WHERE institution_places.name_key = lower(coalesce(institution.name, ''))
+              )
+            )
+            FROM digipal_institution institution
+            WHERE institution.id = scribe.scriptorium_id
+          ) AS scriptorium_id
+        FROM digipal_scribe scribe
+        ORDER BY scribe.id
+        """,
+    )
+    scribes = [{"id": -1, "name": "[name] update records relations later", "scriptorium_id": None, "period_id": None}]
     scribes.extend(
-        {"id": row["id"], "name": text_or_blank(row["name"]), "scriptorium": "", "period_id": None}
+        {
+            "id": row["id"],
+            "name": text_or_blank(row["name"]),
+            "scriptorium_id": row["scriptorium_id"],
+            "period_id": None,
+        }
         for row in scribe_rows
     )
     rows_imported["scribes_scribe"] = insert_rows(
         target_conn,
         """
-        INSERT INTO scribes_scribe (id, name, scriptorium, period_id)
-        VALUES (%(id)s, %(name)s, %(scriptorium)s, %(period_id)s)
+        INSERT INTO scribes_scribe (id, name, scriptorium_id, period_id)
+        VALUES (%(id)s, %(name)s, %(scriptorium_id)s, %(period_id)s)
         """,
         scribes,
     )
@@ -2823,7 +3087,12 @@ def import_scribes_hands(ctx: ImportContext) -> dict[str, int]:
           scribe_id,
           script_id,
           assigned_date_id,
-          assigned_place_id,
+          (
+            SELECT min(kept.id)
+            FROM digipal_place assigned
+            JOIN digipal_place kept ON lower(coalesce(kept.name, '')) = lower(coalesce(assigned.name, ''))
+            WHERE assigned.id = digipal_hand.assigned_place_id
+          ) AS assigned_place_id,
           label,
           display_label,
           internal_note,
@@ -2835,6 +3104,7 @@ def import_scribes_hands(ctx: ImportContext) -> dict[str, int]:
         """,
     )
     hands = []
+    hand_descriptions = []
     for row in hand_rows:
         description_parts = [
             str(value).strip()
@@ -2849,25 +3119,33 @@ def import_scribes_hands(ctx: ImportContext) -> dict[str, int]:
                 "script_id": row["script_id"],
                 "name": truncate(row["label"] or row["display_label"] or f"Hand {row['id']}", 100),
                 "num": row["num"] or 1,
-                "priority": 0,
-                "is_default": False,
                 "date_id": row["assigned_date_id"],
-                "place": "",
-                "description": "\n\n".join(description_parts),
+                "place_id": row["assigned_place_id"],
             }
         )
+        if description_parts:
+            hand_descriptions.append({"hand_id": row["id"], "content": "\n\n".join(description_parts)})
+    assign_hand_display_orders(hands)
     rows_imported["scribes_hand"] = insert_rows(
         target_conn,
         """
         INSERT INTO scribes_hand (
-          id, scribe_id, item_part_id, script_id, name, num, priority, is_default, date_id, place, description
+          id, scribe_id, item_part_id, script_id, name, display_order, date_id, place_id
         )
         VALUES (
-          %(id)s, %(scribe_id)s, %(item_part_id)s, %(script_id)s, %(name)s, %(num)s, %(priority)s,
-          %(is_default)s, %(date_id)s, %(place)s, %(description)s
+          %(id)s, %(scribe_id)s, %(item_part_id)s, %(script_id)s, %(name)s, %(display_order)s,
+          %(date_id)s, %(place_id)s
         )
         """,
         hands,
+    )
+    rows_imported["scribes_handdescription"] = insert_rows(
+        target_conn,
+        """
+        INSERT INTO scribes_handdescription (hand_id, content)
+        VALUES (%(hand_id)s, %(content)s)
+        """,
+        hand_descriptions,
     )
 
     hand_image_rows = fetch_rows(

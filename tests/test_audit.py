@@ -3,6 +3,7 @@ from migration_toolkit.audit import (
     ENTITY_MAPPINGS,
     EXPECTED_PUBLIC_SITE_FEATURE_KEYS,
     EXPECTED_SITE_LABEL_KEYS,
+    INSTITUTION_ONLY_PLACES_SQL,
     PUBLICATION_AUTHOR_POLICY_FALLBACK,
     PUBLICATION_AUTHOR_POLICY_USERNAME,
     PUBLICATION_AUTHOR_POLICY_USERNAME_FALLBACK,
@@ -623,7 +624,7 @@ def test_check_site_label_keys_passes_expected_current_keys(monkeypatch):
     result = check_site_label_keys(None)
 
     assert result.status == "ok"
-    assert "22 current SiteLabel key" in result.summary
+    assert "37 current SiteLabel key" in result.summary
 
 
 def test_check_site_label_keys_fails_missing_or_unexpected_keys(monkeypatch):
@@ -648,7 +649,7 @@ def test_check_public_site_feature_settings_passes_expected_current_keys(monkeyp
     result = check_public_site_feature_settings(None)
 
     assert result.status == "ok"
-    assert "37 public site_features.* setting key" in result.summary
+    assert "45 public site_features.* setting key" in result.summary
 
 
 def test_check_public_site_feature_settings_fails_missing_unexpected_or_private_keys(monkeypatch):
@@ -1228,6 +1229,20 @@ def test_catalogue_number_mapping_counts_only_supported_rows():
     assert mapping.legacy_ids_sql is not None
     assert "historical_item_id IS NOT NULL" in mapping.legacy_count_sql
     assert "digipal_historicalitem" in mapping.legacy_ids_sql
+
+
+def test_origin_mapping_counts_one_origin_per_historical_item_and_place():
+    mapping = next(mapping for mapping in ENTITY_MAPPINGS if mapping.key == "origins")
+
+    assert mapping.legacy_count_sql is not None
+    assert mapping.legacy_ids_sql is not None
+    assert "GROUP BY origins.historical_item_id, origins.place_id" in mapping.legacy_count_sql
+    assert "SELECT min(origins.id)" in mapping.legacy_ids_sql
+
+
+def test_institution_places_come_from_scriptoria_and_origins_without_a_place():
+    assert "SELECT scriptorium_id FROM digipal_scribe" in INSTITUTION_ONLY_PLACES_SQL
+    assert "SELECT institution_id FROM digipal_itemorigin WHERE place_id IS NULL" in INSTITUTION_ONLY_PLACES_SQL
 
 
 def test_legacy_description_relationship_check_warns_on_unsupported_rows(monkeypatch):

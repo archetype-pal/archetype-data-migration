@@ -114,6 +114,11 @@ without an existing historical item are skipped from the target table and, when
 `--manifest` is provided, written to a sibling
 `*-skipped-catalogue-numbers.json` quarantine artifact.
 
+Also review `source_profile.place_list`, which lists the places merged into an
+earlier place with the same name, ignoring case, and the institutions added to
+the place list. Origins with neither a place nor an institution are counted in
+`source_profile.origin_place_integrity` and block execute.
+
 ## Execute
 
 ```bash
