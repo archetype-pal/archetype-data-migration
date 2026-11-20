@@ -47,6 +47,7 @@ from migration_toolkit.importer import (
     origin_place_profile,
     parse_annotation,
     parse_date_weights,
+    place_list_profile,
     publication_link_rewrite_warnings,
     repository_label,
     repository_type,
@@ -1585,6 +1586,47 @@ def test_source_profile_warns_about_merged_origins_without_blocking_manuscripts(
     assert source_profile_warnings(profile) == [
         "Legacy digipal_itemorigin contains rows that share a historical item and a place with an earlier row "
         "and are merged into it: 2"
+    ]
+
+
+def test_place_list_profile_lists_place_names_that_clash_once_cut_to_150_characters(monkeypatch):
+    def fake_fetch_rows(_conn, query, _params=None):
+        if "cut_name" in query:
+            return [{"id": 3, "name": "a" * 150 + " north"}, {"id": 4, "name": "A" * 150 + " south"}]
+        return []
+
+    monkeypatch.setattr("migration_toolkit.importer.fetch_rows", fake_fetch_rows)
+
+    profile = place_list_profile(None)
+
+    assert profile["name_clash_count"] == 2
+    assert [row["id"] for row in profile["name_clashes"]] == [3, 4]
+
+
+def test_source_profile_blocks_place_names_that_clash_once_cut_to_150_characters():
+    profile = {
+        "description_relationships": {
+            "counts": {
+                "historical_only": 0,
+                "text_only": 0,
+                "both_links": 0,
+                "neither_link": 0,
+                "dangling_historical_item": 0,
+            },
+            "samples": {},
+        },
+        "place_list": {"merged_count": 0, "added_institution_count": 0, "name_clash_count": 2, "name_clashes": []},
+        "origin_place_integrity": {"missing_place_count": 0, "sample": []},
+        "allograph_character_integrity": {"missing_character_count": 0, "sample": []},
+    }
+
+    assert source_profile_blockers(profile, ("manuscripts", "scribes_hands")) == []
+    blockers = source_profile_blockers(profile, ("core_vocabularies",))
+    assert len(blockers) == 1
+    assert "first 150 characters" in blockers[0]
+    assert source_profile_warnings(profile) == [
+        "Legacy digipal_place or digipal_institution contains place names that are the same, ignoring case, in "
+        "their first 150 characters but differ after them: 2"
     ]
 
 
