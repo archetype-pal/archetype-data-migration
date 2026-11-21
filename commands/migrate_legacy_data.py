@@ -115,6 +115,15 @@ def build_parser() -> argparse.ArgumentParser:
             "Defaults to BACKEND_REPO, /app inside the backend container, or the toolkit fallback."
         ),
     )
+    parser.add_argument(
+        "--pages-config",
+        type=Path,
+        default=None,
+        help=(
+            "JSON file with this instance's page-migration choices (instance_hosts, builtin_links, about_slugs, "
+            "skip_slug_prefixes). See mappings/pages-config.example.json."
+        ),
+    )
     return parser
 
 
@@ -136,6 +145,7 @@ def main(argv: list[str] | None = None) -> int:
         skip_post_audit=options.skip_post_audit,
         manifest_path=options.manifest,
         backend_root=options.backend_root,
+        pages_config_path=options.pages_config,
     )
     try:
         report = run_import(import_options)

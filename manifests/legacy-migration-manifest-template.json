@@ -153,7 +153,19 @@
     {
       "accepted_warnings": [],
       "finished_at": "",
-      "key": "10_target_only",
+      "key": "10_pages",
+      "notes": "",
+      "rollback_reference": "",
+      "rows_imported": {},
+      "started_at": "",
+      "status": "pending",
+      "title": "Pages And Menu Headings",
+      "validation_evidence": []
+    },
+    {
+      "accepted_warnings": [],
+      "finished_at": "",
+      "key": "11_target_only",
       "notes": "",
       "rollback_reference": "",
       "rows_imported": {},
@@ -165,7 +177,7 @@
     {
       "accepted_warnings": [],
       "finished_at": "",
-      "key": "11_final_validation",
+      "key": "12_final_validation",
       "notes": "",
       "rollback_reference": "",
       "rows_imported": {},
@@ -177,7 +189,7 @@
     {
       "accepted_warnings": [],
       "finished_at": "",
-      "key": "12_cutover",
+      "key": "13_cutover",
       "notes": "",
       "rollback_reference": "",
       "rows_imported": {},
@@ -187,7 +199,7 @@
       "validation_evidence": []
     }
   ],
-  "procedure_version": "2026-07-28",
+  "procedure_version": "2026-10-20",
   "quarantine_artifacts": {
     "unsupported_descriptions": ""
   },

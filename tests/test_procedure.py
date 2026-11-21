@@ -27,16 +27,18 @@ def test_render_procedure_json_is_machine_readable():
     rendered = render_procedure_json()
     data = json.loads(rendered)
 
-    assert data["procedure_version"] == "2026-07-28"
+    assert data["procedure_version"] == "2026-10-20"
     assert data["phases"][0]["key"] == "00_preflight"
     manuscripts_phase = next(phase for phase in data["phases"] if phase["key"] == "05_manuscripts")
     assert "manuscripts_msdescarea" in manuscripts_phase["target_tables"]
-    target_only_phase = next(phase for phase in data["phases"] if phase["key"] == "10_target_only")
+    target_only_phase = next(phase for phase in data["phases"] if phase["key"] == "11_target_only")
     assert "common_appsettings" in target_only_phase["target_tables"]
     assert "common_sitelabel" in target_only_phase["target_tables"]
-    assert "pages_page" in target_only_phase["target_tables"]
+    assert "pages_page" not in target_only_phase["target_tables"]
     assert "publications_event" in target_only_phase["target_tables"]
     assert "publications_partner" in target_only_phase["target_tables"]
+    pages_phase = next(phase for phase in data["phases"] if phase["key"] == "10_pages")
+    assert pages_phase["target_tables"] == ["pages_menuheading", "pages_page", "common_appsettings"]
     assert any(gate["key"] == "audit_gate" for gate in data["safety_gates"])
 
 
